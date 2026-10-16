@@ -12,7 +12,7 @@ window.ForestProgressionUI = {
     const labels = { damage: '攻撃', weaponPower: '武器攻撃', magicPower: '魔法攻撃', haste: '再使用速度', defense: '防御', maxHp: 'HP', maxMp: 'MP', mpRegen: 'MP/秒', attackSpeed: '攻撃速度', interferencePower: '行動妨害力', skillPower: 'スキル威力', skillRange: '範囲', chainRange: '連鎖距離', attackCapacity: '攻撃容量', defenseCapacity: '防御容量', utilityCapacity: '補助容量', commonCapacity: '共通容量', discount: '装着割引', get dedicatedCapacity() { return P.CHARACTERS[id()].name + '容量'; }, skillPoints:'SP' };
     const selectedRegion = () => ForestData.ALL_STAGES.find(s => s.id === save.selectedStage)?.region || 1;
     let tab = 'character', slot = 'weapon', selectedSkill = 'renjin', selectedForge = 'main-1', forgeRegion = selectedRegion();
-    const cameras = {};
+    const cameras = {}, forgeScales = {}, forgeTreeSize = { width: 2240, height: 740 };
     let forgePlans = new Map();
     function forgeFocus(nodes) {
       const stats = getStats(id());
@@ -52,6 +52,45 @@ window.ForestProgressionUI = {
       const end=()=>{drag=null;view.classList.remove('dragging');};view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('lostpointercapture',end);
       view.addEventListener('keydown',e=>{if(e.target!==view)return;const move={ArrowLeft:[60,0],ArrowRight:[-60,0],ArrowUp:[0,60],ArrowDown:[0,-60]}[e.key];if(move){e.preventDefault();camera().x+=move[0];camera().y+=move[1];fitTree();}if(['+','=','-'].includes(e.key)){e.preventDefault();zoom(e.key==='-'?.85:1.15);}});
     }
+    const forgeCameraKey = () => id() + ':' + slot + ':' + forgeRegion;
+    function forgeViewport(nodes, goddess = false) {
+      return '<div class="tree-viewport forge-viewport' + (goddess ? ' goddess-forge-viewport' : '') + '" tabindex="0" aria-label="装備強化ツリー。ホイールで拡大縮小、空白をドラッグして移動。" data-tip="空白をドラッグで移動・ホイールで拡大縮小"><div class="forge-frame"><div class="growth-tree forge-tree' + (goddess ? ' goddess-forge-tree' : '') + '">' + connections(nodes, slot) + nodes.map(n => nodeMarkup(n, slot)).join('') + '</div></div></div>';
+    }
+    function bindForgeTree() {
+      const view = document.querySelector('.forge-viewport');
+      if (!view) return;
+      const frame = view.querySelector('.forge-frame'), tree = view.querySelector('.forge-tree'), key = forgeCameraKey();
+      let scale = forgeScales[key] || 1, drag;
+      function applyScale() {
+        tree.style.transform = 'scale(' + scale + ')';
+        frame.style.width = forgeTreeSize.width * scale + 'px';
+        frame.style.height = forgeTreeSize.height * scale + 'px';
+        forgeScales[key] = scale;
+      }
+      applyScale();
+      view.addEventListener('wheel', e => {
+        e.preventDefault();
+        const rect = view.getBoundingClientRect(), x = e.clientX - rect.left - view.clientLeft, y = e.clientY - rect.top - view.clientTop;
+        const next = Math.max(.2, Math.min(1.8, scale * Math.exp(-e.deltaY * .0015))), ratio = next / scale;
+        const left = (view.scrollLeft + x) * ratio - x, top = (view.scrollTop + y) * ratio - y;
+        scale = next; applyScale(); view.scrollLeft = left; view.scrollTop = top;
+        $('tooltip').hidden = true;
+      }, { passive: false });
+      view.addEventListener('pointerdown', e => {
+        if (drag || e.button !== 0 || e.target.closest('button,a')) return;
+        e.preventDefault(); view.focus({ preventScroll: true });
+        drag = { pointer: e.pointerId, x: e.clientX, y: e.clientY, left: view.scrollLeft, top: view.scrollTop };
+        view.setPointerCapture(e.pointerId); view.classList.add('dragging');
+      });
+      view.addEventListener('pointermove', e => {
+        if (!drag || e.pointerId !== drag.pointer) return;
+        view.scrollLeft = drag.left + drag.x - e.clientX; view.scrollTop = drag.top + drag.y - e.clientY;
+        $('tooltip').hidden = true;
+      });
+      const end = e => { if (drag && e.pointerId === drag.pointer) { drag = null; view.classList.remove('dragging'); } };
+      view.addEventListener('pointerup', end); view.addEventListener('pointercancel', end); view.addEventListener('lostpointercapture', end);
+      view.addEventListener('dragstart', e => e.preventDefault());
+    }
     function id() { return save.progression.selected; }
     function bonuses(effect) { return Object.entries(effect).filter(([k]) => labels[k]).map(([k, v]) => '<span>' + labels[k] + ' <b>' + (k === 'discount' ? '−' : '+') + (['attackSpeed', 'skillPower', 'weaponPower', 'magicPower', 'haste', 'interferencePower'].includes(k) ? pct(v) : num(v)) + '</b></span>').join(''); }
     function capMarkup(character, equipment) {
@@ -84,7 +123,7 @@ window.ForestProgressionUI = {
       }).join('') + '</div></div>';
     }
     function connections(nodes, kind) {
-      const size=kind==='skills'?treeSize(nodes):{width:2240,height:740};
+      const size=kind==='skills'?treeSize(nodes):forgeTreeSize;
       return '<svg class="tree-lines" style="width:'+size.width+'px;height:'+size.height+'px" viewBox="0 0 ' + size.width + ' '+size.height+'" aria-hidden="true">' + nodes.flatMap(n => n.requires.map(req => {
         const from = nodes.find(p => p.id === req); if (!from) return '';
         const state = P.status(save, id(), kind, n), active = state === 'owned' || (kind==='skills'&&P.rank(save,id(),n.id)>0);
@@ -153,7 +192,7 @@ window.ForestProgressionUI = {
       if(!save.cleared.includes(P.Gem.Epic.GODDESS))return forgeTabs()+'<div class="forge-page-locked">'+icon('lock')+'<h3>女神の契約</h3><span>異次元の女神 クリア</span></div>';
       const nodes=P.gearTree(id(),slot,'goddess'),owned=save.progression.characters[id()][slot].filter(uid=>nodes.some(n=>n.id===uid));
       forgePlans=new Map(nodes.map(n=>[n.id,P.gearPurchasePlan(save,id(),slot,n.id)]));if(resetFocus||!nodes.some(n=>n.id===selectedForge))selectedForge=forgeFocus(nodes).id;
-      return forgeTabs()+'<div class="tree-toolbar forge-toolbar"><div><span class="eyebrow">DIVINE COVENANT</span><h3>女神の契約</h3></div><div class="forge-slots">'+['weapon','armor'].map(e=>'<button data-forge-slot="'+e+'" aria-pressed="'+(slot===e)+'">'+'<img src="'+art(gearArt(id(),e))+'" alt=""><span>'+(e==='weapon'?'武器':'防具')+'</span>'+ '</button>').join('')+'</div></div><div class="forge-progress"><span>取得 <b>'+owned.length+' / 41</b></span><span>SP <b>+'+owned.filter(n=>n.startsWith('goddess-sp-')).length*3+' / 30</b></span></div><div class="tree-viewport forge-viewport goddess-forge-viewport"><div class="growth-tree forge-tree goddess-forge-tree">'+connections(nodes,slot)+nodes.map(n=>nodeMarkup(n,slot)).join('')+'</div></div><div class="tree-bottom-caption">'+capMarkup(id(),slot)+'</div>'+selection(nodes,slot);
+      return forgeTabs()+'<div class="tree-toolbar forge-toolbar"><div><span class="eyebrow">DIVINE COVENANT</span><h3>女神の契約</h3></div><div class="forge-slots">'+['weapon','armor'].map(e=>'<button data-forge-slot="'+e+'" aria-pressed="'+(slot===e)+'">'+'<img src="'+art(gearArt(id(),e))+'" alt=""><span>'+(e==='weapon'?'武器':'防具')+'</span>'+ '</button>').join('')+'</div></div><div class="forge-progress"><span>取得 <b>'+owned.length+' / 41</b></span><span>SP <b>+'+owned.filter(n=>n.startsWith('goddess-sp-')).length*3+' / 30</b></span></div>'+forgeViewport(nodes,true)+'<div class="tree-bottom-caption">'+capMarkup(id(),slot)+'</div>'+selection(nodes,slot);
     }
     function forge(resetFocus) {
       if(forgeRegion==='goddess'&&!save.cleared.includes(P.Gem.Epic.GODDESS))forgeRegion=1;
@@ -164,7 +203,7 @@ window.ForestProgressionUI = {
       forgePlans = new Map(nodes.map(n => [n.id, P.gearPurchasePlan(save, id(), slot, n.id)]));
       if (resetFocus || !nodes.some(n => n.id === selectedForge)) selectedForge = forgeFocus(nodes).id;
       const milestones = P.gearBonuses(id(), slot), nextBonus = milestones.find(b => b.count > owned.length)?.count, all = owned.length === 100;
-      return forgeTabs() + '<div class="tree-toolbar forge-toolbar"><div><span class="eyebrow">' + ForestData.REGIONS[forgeRegion - 1].english + '</span><h3>' + (ForestData.REGIONS[forgeRegion - 1].name + ' / 鍛冶') + '</h3></div><div class="forge-slots">' + ['weapon', 'armor'].map(e => '<button data-forge-slot="' + e + '" aria-pressed="' + (slot === e) + '"><img src="' + art(gearArt(id(),e)) + '" alt=""><span>' + (e === 'weapon' ? '武器' : '防具') + '</span></button>').join('') + '</div></div><div class="forge-progress"><span>主道 <b>' + main + ' / 10</b></span><span>全体 <b>' + owned.length + ' / 100</b></span><div class="forge-milestones">' + milestones.map(b => '<span class="' + (owned.length >= b.count ? 'achieved' : '') + '" tabindex="0" data-tip="' + b.count + 'ノード取得ボーナス\n' + escape(Object.entries(b.effect).map(([k,v]) => labels[k] + ' ' + (k === 'discount' ? '−' : '+') + (['skillPower','attackSpeed','discount'].includes(k) ? pct(v) : num(v))).join(' / ')) + '">' + (b.count === 100 ? '✦' : '◆') + '<small>' + b.count + '</small></span>').join('') + '</div><span class="next-generation" data-tip="地域ごとに100ノード。前地域の主道10取得から接続。" tabindex="0">' + (main === 10 ? '✦ 主道完成' : '主道 ' + icon('lock')) + '</span></div><div class="tree-viewport forge-viewport" aria-label="装備強化ツリー · 横スクロール"><div class="growth-tree forge-tree">' + connections(nodes, slot) + nodes.map(n => nodeMarkup(n, slot)).join('') + '</div></div><div class="tree-bottom-caption"><span>' + (all ? '✦ COMPLETE' : '特典まで ' + (nextBonus - owned.length)) + '</span>' + capMarkup(id(), slot) + '<span>01 — 10　↔</span></div>' + selection(nodes, slot);
+      return forgeTabs() + '<div class="tree-toolbar forge-toolbar"><div><span class="eyebrow">' + ForestData.REGIONS[forgeRegion - 1].english + '</span><h3>' + (ForestData.REGIONS[forgeRegion - 1].name + ' / 鍛冶') + '</h3></div><div class="forge-slots">' + ['weapon', 'armor'].map(e => '<button data-forge-slot="' + e + '" aria-pressed="' + (slot === e) + '"><img src="' + art(gearArt(id(),e)) + '" alt=""><span>' + (e === 'weapon' ? '武器' : '防具') + '</span></button>').join('') + '</div></div><div class="forge-progress"><span>主道 <b>' + main + ' / 10</b></span><span>全体 <b>' + owned.length + ' / 100</b></span><div class="forge-milestones">' + milestones.map(b => '<span class="' + (owned.length >= b.count ? 'achieved' : '') + '" tabindex="0" data-tip="' + b.count + 'ノード取得ボーナス\n' + escape(Object.entries(b.effect).map(([k,v]) => labels[k] + ' ' + (k === 'discount' ? '−' : '+') + (['skillPower','attackSpeed','discount'].includes(k) ? pct(v) : num(v))).join(' / ')) + '">' + (b.count === 100 ? '✦' : '◆') + '<small>' + b.count + '</small></span>').join('') + '</div><span class="next-generation" data-tip="地域ごとに100ノード。前地域の主道10取得から接続。" tabindex="0">' + (main === 10 ? '✦ 主道完成' : '主道 ' + icon('lock')) + '</span></div>' + forgeViewport(nodes) + '<div class="tree-bottom-caption"><span>' + (all ? '✦ COMPLETE' : '特典まで ' + (nextBonus - owned.length)) + '</span>' + capMarkup(id(), slot) + '<span>01 — 10　↔</span></div>' + selection(nodes, slot);
     }
     function render(which) {
       if (which) tab = which;
@@ -172,7 +211,7 @@ window.ForestProgressionUI = {
       $('menu-dialog').classList.add('growth-dialog');
       $('menu-content').innerHTML = roster() + '<div class="growth-tabs" role="tablist" aria-label="育成メニュー">' + [['character', '能力', 'user'], ['skills', 'スキル', 'spark'], ['forge', '鍛冶', 'sword']].map(([key, label, img]) => '<button id="growth-tab-' + key + '" role="tab" aria-controls="growth-panel" aria-selected="' + (tab === key) + '" data-growth-tab="' + key + '">' + icon(img) + label + '</button>').join('') + (isRunning() ? '<span class="next-run-hint" data-tip="育成・ジェムの変更は次の戦闘開始時に反映">' + icon('repeat') + '次戦反映</span>' : '<span>CHAPTER I</span>') + '</div><div class="growth-layout">' + profile() + '<section id="growth-panel" class="growth-content" role="tabpanel" aria-labelledby="growth-tab-' + tab + '">' + (tab === 'skills' ? skills() : tab === 'forge' ? forge(!!which) : attributes()) + '</section></div>';
       treeObserver.disconnect(); const view = document.querySelector('.skill-viewport'); if (view) treeObserver.observe(view);
-      bindTree();
+      bindTree(); bindForgeTree();
       const forgeView = document.querySelector('.forge-viewport');
       if (forgeView && which) requestAnimationFrame(() => {
         if (!forgeView.isConnected) return;

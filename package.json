@@ -64,6 +64,7 @@
     "audit:balance": "node tools/balance/audit-balance.cjs",
     "check:balance-ui": "node tools/verify/verify-balance-ui.cjs",
     "check:gear-bulk-ui": "node tools/verify/verify-gear-bulk-ui.cjs",
+    "check:gear-navigation-ui": "node tools/verify/verify-gear-navigation-ui.cjs",
     "check:skill-refund-ui": "node tools/verify/verify-skill-refund-ui.cjs",
     "build:swamp-stage": "node tools/assets/build-swamp-stage.cjs",
     "build:swamp-loot": "node tools/assets/build-swamp-loot.cjs",
