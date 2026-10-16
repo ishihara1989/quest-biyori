@@ -14,7 +14,7 @@
   const a='sand-scorpion',b='bandage-soldier',c='sand-snake',A='obsidian-scorpion',B='golden-pharaoh',C='lamia',pack=(id,n)=>Array(n).fill(id),mixed=n=>[...pack(a,n),...pack(b,n),...pack(c,n)];
   const names=['砂丘への一歩','黒曜の鋏','黄金の埋葬路','蛇姫のオアシス','金砂の大群','鋏と王笏','毒針と蛇尾','墓域の魔陣','三王の眠り','砂を喰らう獣'];
   // Bosses have separate waves; stage 1/5 are recovery routes. Base drops alone fund gear.
-  const waves=[[[a,a,b,b,c],[a,a,a,b,b,c],[a,a,a,b,b,c,c]],
+  const waves=[[mixed(1),mixed(1),mixed(1)],
     [[...pack(a,5),...pack(b,3)],mixed(2),[A]],
     [[...pack(b,5),...pack(c,3)],mixed(2),[B]],
     [[...pack(c,5),...pack(a,3)],mixed(2),[C]],

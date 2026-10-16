@@ -13,7 +13,7 @@
  const REGIONS=[{id:10,name:'宵闇の玉座',english:'THE TWILIGHT THRONE',path:'DEMON CASTLE PATH',asset:'demon-castle',crystal:'castle-crystal',rare:'demon-god-heart',prefix:'castle',intro:'魔腕と宵闇の術式が交わる魔王城'}];
  const a='demon-armored-soldier',b='imp',c='dream-demon',A='black-knight',B='arch-demon',C='lilith',pack=(id,n)=>Array(n).fill(id),mixed=n=>[...pack(a,n),...pack(b,n),...pack(c,n)];
  const names=['魔鎧の城門','黒騎士の回廊','魔炎の広間','宵闇の花園','魔城の軍勢','大剣と魔炎','黒鎧と夢翼','魔炎と静寂','玉座の三守','終焉の魔神'];
- const waves=[[[a,a,b,b,c],[a,a,a,b,b,c],[a,a,a,b,b,c,c]],[[...pack(a,5),...pack(b,3)],mixed(2),[A]],[[...pack(b,5),...pack(c,3)],mixed(2),[B]],[[...pack(c,5),...pack(b,3)],mixed(2),[C]],[mixed(5),mixed(5),mixed(5)],[mixed(3),mixed(3),[A],[B]],[mixed(3),mixed(3),[A],[C]],[mixed(3),mixed(3),[B],[C]],[mixed(4),mixed(3),[A],[B],[C]],[[...pack(a,4),...pack(b,7),...pack(c,7)],[A],[B],[C],['demon-god']]];
+ const waves=[[mixed(1),mixed(1),mixed(1)],[[...pack(a,5),...pack(b,3)],mixed(2),[A]],[[...pack(b,5),...pack(c,3)],mixed(2),[B]],[[...pack(c,5),...pack(b,3)],mixed(2),[C]],[mixed(5),mixed(5),mixed(5)],[mixed(3),mixed(3),[A],[B]],[mixed(3),mixed(3),[A],[C]],[mixed(3),mixed(3),[B],[C]],[mixed(4),mixed(3),[A],[B],[C]],[[...pack(a,4),...pack(b,7),...pack(c,7)],[A],[B],[C],['demon-god']]];
  const STAGES=waves.map((waves,i)=>({id:91+i,name:names[i],waves}));
  const hp=[25,300,286,300,10,126,126,120,75,38];
  const TUNING=Object.fromEntries(STAGES.map((s,i)=>[s.id,{hp:hp[i],damage:s.id===95?1.8:s.id===91?5:38,...s.id===100?{majorBossHp:2.25,majorBossDamage:10.35,majorBossDefense:4900}:{}}]));

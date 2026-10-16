@@ -97,7 +97,7 @@
       enemies: [...new Set(waves.flat())], total: waves.flat().length };
   }
   const STAGES = [
-    { id: 1, name: '木漏れ日の小道', waves: [pack('slime', 3), pack('slime', 4), pack('slime', 5)] },
+    { id: 1, name: '木漏れ日の小道', waves: Array.from({ length: 3 }, () => ['slime', 'boar', 'alraune-minion']) },
     { id: 2, name: '蒼い水辺', waves: [pack('slime', 5), pack('slime', 6), ['boss-slime', ...pack('slime', 3)]] },
     { id: 3, name: '獣の通り道', waves: [pack('boar', 4), pack('boar', 5), ['boss-boar', ...pack('boar', 3)]] },
     { id: 4, name: '妖花の庭', waves: [pack('alraune-minion', 4), pack('alraune-minion', 5), ['alraune', ...pack('alraune-minion', 3)]] },
@@ -107,7 +107,7 @@
     { id: 8, name: '茨の獣道', waves: [[...pack('boar', 4), ...pack('alraune-minion', 3)], ['boss-boar', ...pack('alraune-minion', 4)], ['alraune', ...pack('boar', 4)]] },
     { id: 9, name: '深緑の守り手', waves: [['slime', 'boar', 'alraune-minion', ...pack('slime', 3)], ['boss-slime', 'boss-boar', ...pack('alraune-minion', 3)], ['alraune', 'slime', 'boar', 'alraune-minion']] },
     { id: 10, name: '古樹の心臓', waves: [['slime', 'boar', 'alraune-minion', ...pack('boar', 3)], ['boss-slime', 'boss-boar', 'alraune', 'alraune-minion'], ['treant', 'slime', 'boar', 'alraune-minion']] },
-    { id: 11, name: '毒蛙の水辺', waves: [pack('giga-toad', 3), pack('giga-toad', 4), pack('giga-toad', 5)] },
+    { id: 11, name: '毒蛙の水辺', waves: Array.from({ length: 3 }, () => ['giga-toad', 'mud-hand', 'skeleton']) },
     { id: 12, name: '毒蛙の王座', waves: [pack('giga-toad', 5), pack('giga-toad', 6), ['king-toad', ...pack('giga-toad', 3)]] },
     { id: 13, name: '蠢く泥地', waves: [pack('mud-hand', 4), pack('mud-hand', 5), ['mud-giant', ...pack('mud-hand', 3)]] },
     { id: 14, name: '亡者の祭壇', waves: [pack('skeleton', 4), pack('skeleton', 5), ['lich', ...pack('skeleton', 3)]] },

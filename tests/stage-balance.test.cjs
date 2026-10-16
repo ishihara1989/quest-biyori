@@ -8,12 +8,12 @@ const before = require('./fixtures/stage-encounters-before-tuning.json');
 const beforeExpansion = require('./fixtures/encounters-before-wave-expansion.json');
 const counts = waves => waves.flat().reduce((result, id) => { result[id] = (result[id] || 0) + 1; return result; }, {});
 
-test('region 1/5 encounters keep their original waves, HP, damage and rewards', () => {
+test('region 1/5 encounters retain HP, damage and clear rewards', () => {
   assert.equal(before.protected.length, 8);
   for (const original of before.protected) {
     const stage = D.STAGES[original.id - 1];
     assert.equal(D.STAGE_TUNING[stage.id], undefined);
-    for (const key of ['waves', 'enemyHp', 'enemyDamage', 'reward']) assert.deepEqual(stage[key], original[key], `${stage.id}: ${key}`);
+    for (const key of ['enemyHp', 'enemyDamage', 'reward']) assert.deepEqual(stage[key], original[key], `${stage.id}: ${key}`);
   }
 });
 
@@ -43,13 +43,14 @@ test('all regions have valid waves within their regional limit and consistent se
   }
 });
 
-test('forest/swamp and easy routes retain every value; expansion preserves species and rewards', () => {
+test('historical wave expansion preserves unaffected routes and easy-route stats', () => {
   for (const original of beforeExpansion) {
     const stage = D.STAGES[original.id - 1];
-    if (stage.id <= 20 || [1, 5].includes(stage.number)) {
-      for (const key of ['waves', 'enemyHp', 'enemyDamage', 'reward']) assert.deepEqual(stage[key], original[key], `${stage.id}: ${key}`);
+    const easy = [1, 5].includes(stage.number);
+    if (stage.id <= 20 || easy) {
+      for (const key of ['enemyHp', 'enemyDamage', 'reward', ...(!easy ? ['waves'] : [])]) assert.deepEqual(stage[key], original[key], `${stage.id}: ${key}`);
     }
-    assert.deepEqual(counts(stage.waves), counts(original.waves), `stage ${stage.id}: species budget`);
+    if (!easy) assert.deepEqual(counts(stage.waves), counts(original.waves), `stage ${stage.id}: species budget`);
     assert.equal(stage.reward, original.reward);
   }
 });

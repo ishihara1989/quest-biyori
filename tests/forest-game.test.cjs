@@ -13,7 +13,7 @@ const lastWave = id => {
 
 test('the ten stage lineups match the requested families and exclusions', () => {
   const expected = [
-    ['slime'], ['slime', 'boss-slime'], ['boar', 'boss-boar'], ['alraune-minion', 'alraune'],
+    ['slime', 'boar', 'alraune-minion'], ['slime', 'boss-slime'], ['boar', 'boss-boar'], ['alraune-minion', 'alraune'],
     ['slime', 'boar', 'alraune-minion'], ['slime', 'boss-slime', 'boar', 'boss-boar'],
     ['slime', 'boss-slime', 'alraune-minion', 'alraune'], ['boar', 'boss-boar', 'alraune-minion', 'alraune'],
     ['slime', 'boss-slime', 'boar', 'boss-boar', 'alraune-minion', 'alraune'],
