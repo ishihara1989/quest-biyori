@@ -16,13 +16,13 @@
   ];
   const ACTIVE=rows.map(([id,name,unlockLevel,role,mp,cooldown],i)=>({id,name,unlockLevel,role,mp,cooldown:cooldown*1000,kind:i?'active':'normal',maxRank:i?5:1,cost:i?1:0,requires:[],effect:{},icon:i?'assets/skills/miko/icons/'+id+'.png':'assets/ui/ruins/icons/miko-gohei.png'}));
   const GENERAL=[
-    ['ritual','巫女の心得',1,{damage:5},'攻撃力 +5 / Lv','purifying-bolt'],
-    ['vestment','白衣の守り',7,{maxHp:35,defense:1},'最大HP +35 / Lv · 防御 +1 / Lv','stone-tortoise'],
-    ['prayer','祈りの呼吸',12,{mpRegen:.7},'MP回復 +0.7 / 秒 / Lv','bell-owl'],
+    ['ritual','巫女の心得',1,{damagePercent:.05},'攻撃力 +5% / Lv','purifying-bolt'],
+    ['vestment','白衣の守り',7,{maxHpPercent:.05,defensePercent:.05},'最大HP +5% / Lv · 防御 +5% / Lv','stone-tortoise'],
+    ['prayer','祈りの呼吸',12,{mpRegenPercent:.10},'MP回復 +10% / Lv','bell-owl'],
     ['rhythm','神楽の律動',22,{attackSpeed:.05},'攻撃速度 +5% / Lv','spirit-kagura'],
     ['grace','癒しの祈り',32,{healPower:.04},'回復量 +4% / Lv','white-deer'],
     ['reach','霊域の拡張',42,{skillRange:12},'範囲 +12 / Lv','spring-carp'],
-    ['reserve','霊力の器',52,{maxMp:20,mpRegen:.4},'最大MP +20 / Lv · MP回復 +0.4 / 秒 / Lv','spirit-channel'],
+    ['reserve','霊力の器',52,{maxMpPercent:.05,mpRegenPercent:.05},'最大MP +5% / Lv · MP回復 +5% / Lv','spirit-channel'],
     ['communion','万霊の共鳴',62,{skillPower:.06},'スキル威力 +6% / Lv','spirit-assault'],
     ['protection','守護の祈り',72,{barrierPower:.04},'バリア量 +4% / Lv','guardian-bear'],
     ['cycle','霊力の循環',82,{haste:.05},'再使用速度 +5% / Lv','twin-possession'],

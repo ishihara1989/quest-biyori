@@ -230,11 +230,15 @@
       ...SKILLS[id].map(n => Object.fromEntries(Object.entries(n.effect).map(([k,v]) => [k,v * rank(save,id,n.id)]))), ...['weapon', 'armor'].flatMap(slot => state.gems[slot].map(uid => Gem.describe(gemInstance(save, uid)).effect))]);
     const result = { ...c.base, level: lv, skillPower: 0, cooldownPenalty: 0, skillRange: 0, ...Object.fromEntries(Object.values(Gem.OPTIONS).filter(o=>!Object.hasOwn(c.base,o.key)).map(o=>[o.key,0])), ...Object.fromEntries(Object.entries(all).map(([k, v]) => [k, (c.base[k] || 0) + v])) };
     result.maxHp += (lv - 1) * (id === 'paladin'?30:id === 'warrior' ? 26 : 20); result.maxMp += (lv - 1) * 4;
-    if(result.epicMageArmor){result.maxMp*=3;result.mpRegen+=result.maxMp*.05;}
     result.damage += (lv - 1) * 3; result.defense += Math.floor((lv - 1) / 2);
-    result.baseDamage = result.damage;
-    result.weaponDamage = (result.baseDamage + (result.weaponFlat || 0)) * (1 + (result.weaponPower || 0));
-    result.magicDamage = (result.baseDamage + (result.magicFlat || 0)) * (1 + (result.magicPower || 0));
+    // Scale level growth, equipment and gems together. Same-stat passives add.
+    for (const key of ['maxHp', 'maxMp', 'defense']) result[key] *= 1 + (all[key + 'Percent'] || 0);
+    if(result.epicMageArmor){result.maxMp*=3;result.mpRegen+=result.maxMp*.05;}
+    result.mpRegen *= 1 + (all.mpRegenPercent || 0);
+    const damageScale = 1 + (all.damagePercent || 0);
+    result.baseDamage = result.damage * damageScale;
+    result.weaponDamage = (result.damage + (result.weaponFlat || 0)) * damageScale * (1 + (result.weaponPower || 0));
+    result.magicDamage = (result.damage + (result.magicFlat || 0)) * damageScale * (1 + (result.magicPower || 0));
     result.haste=Math.min(2,result.haste||0);result.interferencePenetration=Math.min(.4,result.interferencePenetration||0);
     result.damage = ['mage','shaman','miko'].includes(id) ? result.magicDamage : result.weaponDamage;
     result.interval = (id==='miko'?1000:id === 'shaman' ? 1100 : id === 'ninja' ? 800 : id === 'warrior' ? 1080 : 1250) / result.attackSpeed;

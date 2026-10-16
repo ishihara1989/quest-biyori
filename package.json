@@ -88,7 +88,7 @@
     "audit:stage-balance": "node tools/balance/tune-stage-balance.cjs --verify",
     "check:wave-balance-ui": "node tools/verify/verify-wave-balance-ui.cjs",
     "build:ninja": "node tools/assets/build-ninja-assets.cjs",
-    "test:passives": "node --test tests/expansion-passives.test.cjs",
+    "test:passives": "node --test tests/expansion-passives.test.cjs tests/passive-percent-stats.test.cjs",
     "check:passives-ui": "node tools/verify/verify-expansion-passives-ui.cjs",
     "test:ninja": "node --test tests/ninja-skills.test.cjs",
     "check:ninja-ui": "node tools/verify/verify-ninja-ui.cjs",

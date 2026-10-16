@@ -32,7 +32,10 @@ test('passive ranks change real stats, save independently, and refund with depen
   for(const [id,skills] of Object.entries(classes)){
     for(const passive of skills.NODES.filter(n=>n.kind==='passive')){
       const save=saveAt(),before=P.stats(save,id);buy(save,id,passive.id,2);const after=P.stats(save,id);
-      for(const [key,value] of Object.entries(passive.effect))near(after[key==='damage'?'baseDamage':key]-(before[key==='damage'?'baseDamage':key]||0),2*value,id+'/'+key);
+      for(const [key,value] of Object.entries(passive.effect)){
+        const percent=key.endsWith('Percent'),stat=key==='damagePercent'||key==='damage'?'baseDamage':percent?key.slice(0,-7):key;
+        near(after[stat]-(before[stat]||0),2*value*(percent?before[stat]:1),id+'/'+key);
+      }
     }
     const save=saveAt(),active=skills.ACTIVE[1].id,passive=skills.NODES.find(n=>n.kind==='passive').id,other=P.points(save,'warrior');
     buy(save,id,active,2);buy(save,id,active+'-enhance',3);buy(save,id,passive,2);buy(save,id,skills.ACTIVE[0].id+'-enhance',2);

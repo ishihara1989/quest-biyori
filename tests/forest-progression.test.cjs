@@ -207,7 +207,7 @@ test('decreasing max-rank enhancements and passives preserves parents and update
   assert.equal(P.rank(save, 'warrior', 'moon'), 1);
   assert.ok(P.stats(save, 'warrior').warriorSkills[0].power < before.warriorSkills[0].power);
   assert.equal(P.decreaseSkill(save, 'warrior', 'edge'), 1);
-  assert.equal(P.stats(save, 'warrior').baseDamage, before.baseDamage - 5);
+  assert.equal(P.stats(save, 'warrior').baseDamage, before.baseDamage / 1.1 * 1.05);
   assert.equal(P.decreaseSkill(save, 'warrior', 'moon'), 5);
   S.applyBuilds(run, builds(save));
   assert.deepEqual(run.hero.warriorSkills, []);

@@ -34,13 +34,13 @@
     maxRank:index?5:1,cost:index?1:0,requires:[],effect:{},icon:'assets/skills/ninja/icons/'+id+'.png',
   }));
   const GENERAL = [
-    ['discipline','忍の心得',1,{damage:5},'攻撃力 +5 / Lv','shuriken'],
-    ['garb','忍装の守り',7,{maxHp:35,defense:1},'最大HP +35 / Lv · 防御 +1 / Lv','shadow-double'],
-    ['breath','忍の呼吸',12,{mpRegen:.6},'MP回復 +0.6 / 秒 / Lv','shadow-clone'],
+    ['discipline','忍の心得',1,{damagePercent:.05},'攻撃力 +5% / Lv','shuriken'],
+    ['garb','忍装の守り',7,{maxHpPercent:.05,defensePercent:.05},'最大HP +5% / Lv · 防御 +5% / Lv','shadow-double'],
+    ['breath','忍の呼吸',12,{mpRegenPercent:.10},'MP回復 +10% / Lv','shadow-clone'],
     ['footwork','疾風の足運び',22,{speed:8,attackSpeed:.03},'移動速度 +8 / Lv · 攻撃速度 +3% / Lv','shadow-cross'],
     ['precision','急所見切り',32,{crit:.025},'クリティカル率 +2.5% / Lv','paralysis-needles'],
     ['reach','投擲の間合い',42,{skillRange:12},'範囲 +12 / Lv','air-fan'],
-    ['reserve','深い呼吸',52,{maxMp:16,mpRegen:.4},'最大MP +16 / Lv · MP回復 +0.4 / 秒 / Lv','shadow-echo'],
+    ['reserve','深い呼吸',52,{maxMpPercent:.05,mpRegenPercent:.05},'最大MP +5% / Lv · MP回復 +5% / Lv','shadow-echo'],
     ['ninjutsu','忍術の極意',62,{skillPower:.06},'スキル威力 +6% / Lv','thousand-shadow'],
     ['mastery','投擲の練達',72,{weaponPower:.04},'武器攻撃 +4% / Lv','fuma-orbit'],
     ['cycle','影の循環',82,{haste:.05},'再使用速度 +5% / Lv','eight-way-clones'],

@@ -27,13 +27,13 @@
   ];
   const ACTIVE=rows.map(([id,name,unlockLevel,motion,power,reach,mp,cooldown,action,release],i)=>({id,name,unlockLevel,motion,power,reach,mp,cooldown,action,release,kind:i?'active':'normal',maxRank:i?5:1,cost:i?1:0,requires:[],effect:{},icon:'assets/skills/shaman/icons/'+id+'.png'}));
   const GENERAL=[
-    ['ritual','呪術の心得',1,{damage:5},'攻撃力 +5 / Lv','curse-bolt'],
-    ['vestment','呪装の守り',7,{maxHp:35,defense:1},'最大HP +35 / Lv · 防御 +1 / Lv','frailty-hex'],
-    ['meditation','儀式の呼吸',12,{mpRegen:.7},'MP回復 +0.7 / 秒 / Lv','curse-mark'],
+    ['ritual','呪術の心得',1,{damagePercent:.05},'攻撃力 +5% / Lv','curse-bolt'],
+    ['vestment','呪装の守り',7,{maxHpPercent:.05,defensePercent:.05},'最大HP +5% / Lv · 防御 +5% / Lv','frailty-hex'],
+    ['meditation','儀式の呼吸',12,{mpRegenPercent:.10},'MP回復 +10% / Lv','curse-mark'],
     ['weave','呪紋の律動',22,{attackSpeed:.05},'攻撃速度 +5% / Lv','curse-chain'],
     ['insight','呪眼',32,{crit:.025},'クリティカル率 +2.5% / Lv','soul-pierce'],
     ['reach','広域呪式',42,{skillRange:12},'範囲 +12 / Lv','erosion-field'],
-    ['reserve','怨念の器',52,{maxMp:20,mpRegen:.4},'最大MP +20 / Lv · MP回復 +0.4 / 秒 / Lv','grudge-ramp'],
+    ['reserve','怨念の器',52,{maxMpPercent:.05,mpRegenPercent:.05},'最大MP +5% / Lv · MP回復 +5% / Lv','grudge-ramp'],
     ['resonance','呪力共鳴',62,{skillPower:.06},'スキル威力 +6% / Lv','curse-resonance'],
     ['conduit','呪鎖の導き',72,{chainRange:18},'連鎖距離 +18 / Lv','curse-chain'],
     ['cycle','呪力の循環',82,{haste:.05},'再使用速度 +5% / Lv','curse-amplify'],

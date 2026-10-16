@@ -27,13 +27,13 @@
  ];
  const ACTIVE=rows.map(([id,name,unlockLevel,element,motion,pattern,hits,power,radius,mp,cooldown,hold],index)=>({id,name,unlockLevel,element,motion,pattern,hits,power,radius,mp,cooldown,hold,index,kind:index?'active':'normal',maxRank:5,cost:1,requires:[],effect:{},icon:'assets/skills/paladin/icons/'+(id==='spear'?'break-strike':id)+'.png'}));
  const GENERAL=[
-  ['faith','聖騎士の心得',1,{damage:5},'攻撃力 +5 / Lv','mace'],
-  ['plate','重装の守り',7,{maxHp:40,defense:1.5},'最大HP +40 / Lv · 防御 +1.5 / Lv','aegis'],
-  ['prayer','祈りの呼吸',12,{mpRegen:.6},'MP回復 +0.6 / 秒 / Lv','purify'],
+  ['faith','聖騎士の心得',1,{damagePercent:.05},'攻撃力 +5% / Lv','mace'],
+  ['plate','重装の守り',7,{maxHpPercent:.06,defensePercent:.08},'最大HP +6% / Lv · 防御 +8% / Lv','aegis'],
+  ['prayer','祈りの呼吸',12,{mpRegenPercent:.10},'MP回復 +10% / Lv','purify'],
   ['march','重装の歩法',22,{speed:5},'移動速度 +5 / Lv','charge'],
-  ['resolve','不屈の精神',32,{maxHp:45},'最大HP +45 / Lv','bastion'],
+  ['resolve','不屈の精神',32,{maxHpPercent:.06},'最大HP +6% / Lv','bastion'],
   ['reach','聖域の拡張',42,{skillRange:12},'範囲 +12 / Lv','sanctuary'],
-  ['reserve','聖力の器',52,{maxMp:18,mpRegen:.3},'最大MP +18 / Lv · MP回復 +0.3 / 秒 / Lv','pillar'],
+  ['reserve','聖力の器',52,{maxMpPercent:.05,mpRegenPercent:.05},'最大MP +5% / Lv · MP回復 +5% / Lv','pillar'],
   ['radiance','神聖の共鳴',62,{skillPower:.06},'スキル威力 +6% / Lv','ray'],
   ['guardian','守護の誓い',72,{guardPower:.02},'ダメージ軽減 +2% / Lv','fortress'],
   ['cycle','祈りの循環',82,{haste:.05},'再使用速度 +5% / Lv','reflect'],
