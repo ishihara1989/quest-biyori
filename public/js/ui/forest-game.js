@@ -813,7 +813,9 @@
     if (run.stage.final) GoddessRenderer.warnings(ctx,run);
     else if (run.stage.special) RiftRenderer.emergence(ctx, run, reduced);
     NinjaSkillRenderer.echoPoses(ctx,run,drawActor);
-    [...run.enemies.filter(actor => !actor.dimensionalGate&&!actor.goddess), run.hero, ...run.allies,...run.ninjaClones].sort((a, b) => a.y - b.y).forEach(actor=>actor.source?NinjaSkillRenderer.drawClone(ctx,actor,drawActor):drawActor(actor));
+    // Boss bodies share the goddess's foreground layer above party attacks.
+    const foregroundEnemies = run.enemies.filter(actor => !actor.dimensionalGate && (actor.boss || actor.majorBoss || actor.goddess)).sort((a, b) => a.y - b.y);
+    [...run.enemies.filter(actor => !actor.dimensionalGate && !actor.boss && !actor.majorBoss && !actor.goddess), run.hero, ...run.allies,...run.ninjaClones].sort((a, b) => a.y - b.y).forEach(actor=>actor.source?NinjaSkillRenderer.drawClone(ctx,actor,drawActor):drawActor(actor));
     if(run.stage.final)GoddessRenderer.overlays(ctx,run,sprites,effectSprites,drawAsset,reduced);
     WarriorSkillRenderer.castOverlay(ctx,run.hero,warriorEffects);
     WarriorSkillRenderer.impacts(ctx,effects,run.time,warriorEffects);
@@ -835,7 +837,10 @@
     MikoSkillRenderer.projectiles(ctx,run,mikoEffects,reduced,{warrior:warriorEffects.slash,mage:mageEffects.arcane,paladin:paladinEffects.hammer,ninja:ninjaEffects.fuma,shaman:shamanEffects['skull-bolt']});
     MikoSkillRenderer.impacts(ctx,effects,run.time,mikoEffects,reduced);
     MikoSkillRenderer.barriers(ctx,run);mikoStatusRegions=MikoSkillRenderer.statuses(ctx,run,mikoEffects);drawRuinsProjectiles();drawDesertProjectiles();drawHighlandProjectiles();GlacierRenderer.projectiles(ctx,run,effectSprites,drawAsset,reduced);VolcanoRenderer.floors(ctx,run,effectSprites,drawAsset);VolcanoRenderer.projectiles(ctx,run,effectSprites,drawAsset,reduced);DemonCastleRenderer.projectiles(ctx,run,effectSprites,drawAsset,reduced);mikoStatusRegions.push(...GlacierRenderer.statuses(ctx,run,effectSprites,drawAsset),...(run.stage.region===10?[]:VolcanoRenderer.statuses(ctx,run,effectSprites,drawAsset)), ...DemonCastleRenderer.statuses(ctx,run,effectSprites,drawAsset));
-    drawProjectiles(); drawEffects(simDt);if(run.mikoContracts.length>4||run.ninjaClones.length>6)[run.hero,...run.allies].filter(a=>a.hp>0).forEach(a=>drawActor(a));if(run.stage.final)run.enemies.filter(e=>e.goddess).forEach(e=>drawActor(e));drawDesertTelegraphs(); if([8,9,10].includes(run.stage.region)){InterferenceRenderer.warnings(ctx,run);interferenceStatusRegions=InterferenceRenderer.bars(ctx,run);}if(run.goddess?.phantom)interferenceStatusRegions.push({x:605,y:474,w:65,h:28,label:'星鏡 / 妨害不可'}); ctx.restore(); hud(); requestAnimationFrame(draw);
+    drawProjectiles(); drawEffects(simDt);
+    if(run.mikoContracts.length>4||run.ninjaClones.length>6)[run.hero,...run.allies].filter(a=>a.hp>0).forEach(a=>drawActor(a));
+    foregroundEnemies.forEach(actor => drawActor(actor));
+    drawDesertTelegraphs(); if([8,9,10].includes(run.stage.region)){InterferenceRenderer.warnings(ctx,run);interferenceStatusRegions=InterferenceRenderer.bars(ctx,run);}if(run.goddess?.phantom)interferenceStatusRegions.push({x:605,y:474,w:65,h:28,label:'星鏡 / 妨害不可'}); ctx.restore(); hud(); requestAnimationFrame(draw);
   }
   // Delegated controls also work in dialogs and for newly earned loot.
   document.addEventListener('click', event => {
