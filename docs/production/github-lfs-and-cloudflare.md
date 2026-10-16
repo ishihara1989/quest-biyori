@@ -88,7 +88,9 @@ npm run build:pages
 
 ## Cloudflare Pagesへの公開
 
-GitHub ActionsでLFSを取得してから、Cloudflare PagesのDirect Uploadへ送る構成を採用する。LFSの取得をワークフローに明示できる。手動公開用の設定は `.github/workflows/deploy-pages.yml`。まだpushだけでは公開しない。[Cloudflare公式：CIからのDirect Upload](https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/)
+2026-10-17以降、**画像の更新がない公開は、今後もローカルからWranglerで直接デプロイする**。画像更新のない公開にGitHub Actionsは使わない。GitHubへのバックアップpushと公開は引き続き別操作とし、公開にはユーザーの指示を受ける。
+
+画像更新を伴う公開には、GitHub ActionsでLFSを取得してからCloudflare PagesのDirect Uploadへ送る既存ワークフローも利用できる。手動公開用の設定は `.github/workflows/deploy-pages.yml`。まだpushだけでは公開しない。[Cloudflare公式：CIからのDirect Upload](https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/)
 
 1. GitHubへの初回pushを完了する。
 2. CloudflareでPagesの **Direct Upload** プロジェクトを作成し、本番ブランチを `main` にする。Git連携プロジェクトの作成は選ばない。Wranglerなら `npx wrangler@4 pages project create YOUR_PROJECT_NAME --production-branch=main` で作成できる。
@@ -101,7 +103,7 @@ GitHub ActionsでLFSを取得してから、Cloudflare PagesのDirect Uploadへ�
 | Secret | `CLOUDFLARE_ACCOUNT_ID` | CloudflareのアカウントID |
 | Variable | `CLOUDFLARE_PAGES_PROJECT` | 作成したPagesのプロジェクト名 |
 
-5. GitHubの `Actions > Deploy to Cloudflare Pages > Run workflow` で `main` を選んで実行する。
+5. 画像更新のない公開は下記のローカル公開手順で実行する。画像更新を伴いGitHub Actionsを使う場合は、`Actions > Deploy to Cloudflare Pages > Run workflow` で `main` を選んで実行する。
 6. 発行された `pages.dev` URLで、ゲームの開始・画像・戦闘・保存・再読込を確認する。
 
 公開データは `output/pages/` に生成する。`public/game.html` をルート用の `index.html` として追加し、開発画像・プロンプト・検証画面・Nodeサーバーは含めない。画像がLFSポインタのままならビルドを失敗させる。Pages Freeの20,000ファイル・単一ファイル25 MiB制限もビルド時に確認する。[Cloudflare公式：Pagesの制限](https://developers.cloudflare.com/pages/platform/limits/)
@@ -121,6 +123,6 @@ GitHub ActionsでLFSを取得してから、Cloudflare PagesのDirect Uploadへ�
       - '.github/workflows/deploy-pages.yml'
 ```
 
-手元から直接送る場合は、`git lfs pull`・`npm run check:structure`・`npm run test:pages`・`npm run build:pages` の確認後、`npx wrangler@4 pages deploy output/pages --project-name=YOUR_PROJECT_NAME --branch=main` を実行する。ブラウザでドラッグして送る方式はファイル数の制約が異なるため使わない。
+ローカル公開は、公開対象の `main` がGitHubへバックアップ済みであることを確認し、`npm run check:structure`・`npm run test:pages`・`npm run build:pages` の確認後、`npx wrangler@4 pages deploy output/pages --project-name=YOUR_PROJECT_NAME --branch=main` を実行する。LFS画像の実体が不足している場合だけ、先に `git lfs pull` で補完する。公開のためだけに同じ画像を再取得しない。ブラウザでドラッグして送る方式はファイル数の制約が異なるため使わない。
 
 ブラウザのセーブはオリジン単位のlocalStorageに保存される。localhostのセーブは `pages.dev` に自動移行せず、後から独自ドメインへ変えた場合も別の保存先になる。
