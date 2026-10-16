@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "playbacks": [
+    {
+      "id": "floating",
+      "speed": 1,
+      "seen": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "count": 4
+    },
+    {
+      "id": "floating",
+      "speed": 0.25,
+      "seen": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "count": 4
+    },
+    {
+      "id": "down",
+      "speed": 1,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "count": 6
+    },
+    {
+      "id": "down",
+      "speed": 0.25,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "count": 6
+    },
+    {
+      "id": "return",
+      "speed": 1,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "count": 6
+    },
+    {
+      "id": "return",
+      "speed": 0.25,
+      "seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "count": 6
+    }
+  ],
+  "captures": [
+    {
+      "phase": 1,
+      "times": [
+        20,
+        180,
+        360,
+        660,
+        840,
+        1020,
+        1200,
+        1350,
+        1500,
+        1700,
+        1850,
+        2000,
+        2100
+      ]
+    },
+    {
+      "phase": 2,
+      "times": [
+        20,
+        180,
+        360,
+        660,
+        840,
+        1020,
+        1200,
+        1350,
+        1500,
+        1700,
+        1850,
+        2000,
+        2100
+      ]
+    }
+  ],
+  "errors": [],
+  "date": "2026-10-16",
+  "visualReview": "Accepted: all ten body poses and six portal poses on light/dark backgrounds, body/limb/costume continuity, four-to-one idle loop, side-to-back turn and return ordering, both phase composites, desktop and mobile captures.",
+  "tests": [
+    "26 goddess/renderer/playback/museum tests passed",
+    "7 static deployment/structure tests passed",
+    "check:structure passed",
+    "build:pages passed; 5701 files; no deployment",
+    "git diff --check passed"
+  ]
+}

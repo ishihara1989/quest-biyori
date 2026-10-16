@@ -8,13 +8,13 @@ window.GoddessRenderer=(()=>{
     ImageEffects.ring(ctx,reduced?0:time,597,67,116,116,awaken?'#e7c87e':'#82cdea',awaken?.55:.22);
     if(!reduced)for(let i=0;i<18;i++){const x=(i*83+Math.sin(time/4200+i)*14)%1024,y=50+i%5*48+Math.cos(time/3100+i)*9;ImageEffects.mote(ctx,x,y,10,i%2?'#b1e5ff':'#ffe2a8',.6,time+i*53);}
   }
-  function draw(ctx,e,run,assets,paint,reduced){const a=assets[e.type],now=run.time,p=e.goddessPlan;if(e.hp<=0&&now-e.departedAt>=1800)return;ctx.save();if(e.hp<=0)ctx.globalAlpha=clamp((1450-(now-e.departedAt))/450);ctx.fillStyle='#16113666';ctx.beginPath();ctx.ellipse(e.x,e.y,74,12,0,0,Math.PI*2);ctx.fill();ctx.restore();
+  function draw(ctx,e,run,assets,paint,reduced){const a=assets[e.type],now=run.time,p=e.goddessPlan;if(e.hp<=0&&now-e.departedAt>=2100)return;ctx.save();if(e.hp<=0)ctx.globalAlpha=clamp((1850-(now-e.departedAt))/350);ctx.fillStyle='#16113666';ctx.beginPath();ctx.ellipse(e.x,e.y,74,12,0,0,Math.PI*2);ctx.fill();ctx.restore();
     const sprite=(id,t=0,dy=0,alpha=1,scale=1)=>paint(a[id],t,e.x,e.y+dy,scale,false,alpha);
     const halo=(alpha=1)=>{ctx.save();ctx.translate(e.x,e.y-133);if(!reduced)ctx.rotate(Math.sin(now/6000)*.05);paint(a.halo,0,0,0,1,false,alpha*.72);ctx.restore();};
-    if(e.hp<=0){const age=now-e.departedAt;if(age>=1800)return;const seated=e.departurePhase===1&&age<350;
+    if(e.hp<=0){const age=now-e.departedAt;const seated=e.departurePhase===1&&age<350;
       if(e.departurePhase===1&&age<450)sprite('throne',0,0,1-age/450);
-      if(age<1450){const fade=age<1000?1:clamp((1450-age)/450);if(seated){sprite('idle',0,-age*.045,clamp((350-age)/250));}else sprite('down',Math.max(0,age-(e.departurePhase===1?300:0)),-Math.max(0,age-1000)*.035,fade*(e.departurePhase===1?clamp((age-350)/180):1));}
-      const doorFade=age<1650?1:clamp((1800-age)/150);paint(a.return,age,e.x,e.y-133,1,false,doorFade);return;
+      if(age<1850){const fade=clamp((1850-age)/350);if(seated){sprite('idle',0,-age*.045,clamp((350-age)/250));}else{const clock=Math.max(0,age-(e.departurePhase===1?300:0)),retreat=clamp((clock-1020)/650);sprite('down',clock,-14-retreat*22,fade*(e.departurePhase===1?clamp((age-350)/180):1),1-retreat*.12);}}
+      const doorFade=clamp((2100-age)/100);paint(a.return,age,e.x,e.y-133,1,false,doorFade);return;
     }
     if(e.phaseChangeAt!=null){const q=clamp((now-e.phaseChangeAt)/2400);halo(q);sprite('throne',0,0,1-q);if(q<.5)sprite('idle',0,-q*20,1-q*2);else sprite('floating',0,(1-q)*24,(q-.5)*2);ImageEffects.ring(ctx,reduced?0:now,e.x,e.y-105,40+q*110,100+q*25,'#fff1bb',Math.sin(q*Math.PI));return;}
     halo();if(e.goddessPhase===1)sprite('throne');const dy=e.goddessPhase===2?-14+(!reduced?Math.sin(now/1050)*3:0):0;let id=e.goddessPhase===2?'floating':'idle',clock=now;

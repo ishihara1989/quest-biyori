@@ -4,7 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0d1513">
-  <title>FORESTBOUND — 始まりの森</title>
+  <title>クエストびより</title>
+  <meta name="application-name" content="クエストびより">
+  <meta name="description" content="仲間と冒険し、装備やジェムを育てる放置RPG。ドット絵の戦闘と成長を、のんびり楽しもう。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="クエストびより">
+  <meta property="og:title" content="クエストびより">
+  <meta property="og:description" content="仲間と冒険し、装備やジェムを育てる放置RPG。ドット絵の戦闘と成長を、のんびり楽しもう。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="クエストびより">
+  <meta name="twitter:description" content="仲間と冒険し、装備やジェムを育てる放置RPG。ドット絵の戦闘と成長を、のんびり楽しもう。">
   <link rel="stylesheet" href="css/forest-game.css">
   <link rel="stylesheet" href="css/forest-progression.css"><link rel="stylesheet" href="css/gem-system.css">
   <link rel="stylesheet" href="css/warrior-skills.css">
@@ -107,7 +117,7 @@
   </svg>
   <div class="game-shell">
     <header class="topbar">
-      <a class="brand" href="./"><span class="brand-emblem"><svg><use href="#i-leaf"/></svg></span><span>FORESTBOUND<small>IDLE CHRONICLES</small></span></a>
+      <a class="brand" href="./"><span class="brand-emblem"><svg><use href="#i-leaf"/></svg></span><span>クエストびより<small>IDLE RPG</small></span></a>
       <nav class="main-nav" aria-label="メインメニュー">
         <button data-open="stages" data-tip="冒険" aria-label="冒険"><svg><use href="#i-map"/></svg><span>冒険</span></button>
         <button data-open="character" data-tip="能力" aria-label="能力"><svg><use href="#i-user"/></svg><span>能力</span></button>
@@ -182,7 +192,7 @@
       </div>
       <section class="forest-route" aria-label="始まりの森の進行状況"><div class="route-caption"><svg><use href="#i-leaf"/></svg><span>FOREST PATH</span><b id="clear-count">0 / 10</b></div><div id="route-nodes" class="route-nodes"></div></section>
     </main>
-    <footer><span><i></i>自動保存 <b id="save-state">READY</b></span><button data-open="museum" data-tip="資料館">資料館</button><span>FORESTBOUND <small>PROTOTYPE 01</small></span></footer>
+    <footer><span><i></i>自動保存 <b id="save-state">READY</b></span><button data-open="museum" data-tip="資料館">資料館</button><span>クエストびより</span></footer>
   </div>
   <dialog id="menu-dialog" class="menu-dialog" aria-labelledby="menu-title"><div class="dialog-heading"><div><p id="menu-kicker" class="eyebrow"></p><h2 id="menu-title"></h2></div><button id="close-menu" class="icon-button" aria-label="閉じる"><svg><use href="#i-close"/></svg></button></div><div id="menu-content"></div></dialog>
   <dialog id="reset-dialog" class="reset-dialog" aria-labelledby="reset-title" aria-describedby="reset-description"><h2 id="reset-title">初期化確認</h2><p id="reset-description">育成・所持アイテム・ステージ進行がすべて初期化されます。この操作は元に戻せません。</p><div><button id="reset-cancel" class="secondary-button" autofocus>戻る</button><button id="reset-confirm" class="reset-save-button">初期化</button></div></dialog>

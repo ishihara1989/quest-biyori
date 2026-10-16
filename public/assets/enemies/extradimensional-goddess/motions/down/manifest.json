@@ -1,7 +1,7 @@
 {
   "id": "down",
   "motion": "down",
-  "label": "満足・会釈・手振り・帰還",
+  "label": "満足・会釈・手振り・半回転・帰還",
   "loop": false,
   "cell": {
     "width": 512,
@@ -11,12 +11,14 @@
     "x": 256,
     "y": 440
   },
-  "durationMs": 1800,
+  "durationMs": 1500,
   "frameSequence": [
     0,
     1,
     2,
-    3
+    3,
+    4,
+    5
   ],
   "sheet": "sheet.png",
   "frames": [
@@ -25,7 +27,7 @@
       "y": 0,
       "width": 512,
       "height": 512,
-      "durationMs": 300,
+      "durationMs": 180,
       "file": "frame-1.png"
     },
     {
@@ -33,7 +35,7 @@
       "y": 0,
       "width": 512,
       "height": 512,
-      "durationMs": 350,
+      "durationMs": 180,
       "file": "frame-2.png"
     },
     {
@@ -41,7 +43,7 @@
       "y": 0,
       "width": 512,
       "height": 512,
-      "durationMs": 350,
+      "durationMs": 300,
       "file": "frame-3.png"
     },
     {
@@ -49,8 +51,24 @@
       "y": 0,
       "width": 512,
       "height": 512,
-      "durationMs": 800,
+      "durationMs": 180,
       "file": "frame-4.png"
+    },
+    {
+      "x": 2048,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "file": "frame-5.png"
+    },
+    {
+      "x": 2560,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 480,
+      "file": "frame-6.png"
     }
   ]
 }
