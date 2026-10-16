@@ -377,10 +377,13 @@
     $('boss-hud').hidden = !started || !bosses.length;
     if (bosses.length) {
       if(run.stage.final){const e=bosses[0];text('boss-name',e.name+' · '+(e.phaseChangeAt!=null?'覚醒':e.goddessPhase===2?'II 浮遊':'I 御座')+' · '+(100*e.hp/e.maxHp).toFixed(1)+'%');$('boss-hp-fill').style.width=100*e.hp/e.maxHp+'%';return;}
+      const batches = gate ? SpecialStages.definition(run.stage.id).BATCHES : null;
       const summonRound = gate ? Math.max(1, gate.gateBatch + (['opening','summoning'].includes(gate.gatePhase) ? 1 : 0)) : 0;
-      text('boss-name', gate ? gate.name + ' · ' + (gate.gatePhase === 'shattering' ? '崩壊' : '召喚 ' + Math.min(SpecialStages.BATCHES[gate.gateTier].length, summonRound) + ' / ' + SpecialStages.BATCHES[gate.gateTier].length) : bosses.map(e => e.name).join(' / '));
-      const budget = gate ? SpecialStages.BATCHES[gate.gateTier].flat().length : 0;
-      $('boss-hp-fill').style.width = (gate ? Math.max(0, 1 - (run.kills - [0,31,47][run.wave]) / budget) : bosses.reduce((a, e) => a + e.hp, 0) / bosses.reduce((a, e) => a + e.maxHp, 0)) * 100 + '%';
+      text('boss-name', gate ? gate.name + ' · ' + (gate.gatePhase === 'shattering' ? '崩壊' : '召喚 ' + Math.min(batches[gate.gateTier].length, summonRound) + ' / ' + batches[gate.gateTier].length) : bosses.map(e => e.name).join(' / '));
+      const budget = gate ? batches[gate.gateTier].flat().length : 0;
+      // Completed tiers include their summoned enemies and one shattered gate each.
+      const previousKills = gate ? batches.slice(0, gate.gateTier).reduce((sum, tier) => sum + tier.flat().length + 1, 0) : 0;
+      $('boss-hp-fill').style.width = (gate ? Math.max(0, 1 - (run.kills - previousKills) / budget) : bosses.reduce((a, e) => a + e.hp, 0) / bosses.reduce((a, e) => a + e.maxHp, 0)) * 100 + '%';
     }
   }
   function showMenu(which, stageId, museumFocus) {
