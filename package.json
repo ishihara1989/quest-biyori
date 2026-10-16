@@ -36,6 +36,7 @@
     "test:image-effects": "node --test tests/image-effects.test.cjs tests/motion-playback.test.cjs tests/volcano-renderer.test.cjs",
     "check:image-effects-ui": "node tools/verify/verify-image-effects-ui.cjs",
     "check:boss-visibility-ui": "node tools/verify/verify-boss-visibility-ui.cjs",
+    "check:gate-gauge-ui": "node tools/verify/verify-gate-gauge-ui.cjs",
     "build:character": "node tools/assets/build-character.cjs",
     "build:preview": "node tools/assets/build-previews.cjs",
     "build:motions": "node tools/assets/build-motions.cjs",
