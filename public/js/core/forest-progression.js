@@ -233,8 +233,8 @@
     if(result.epicMageArmor){result.maxMp*=3;result.mpRegen+=result.maxMp*.05;}
     result.damage += (lv - 1) * 3; result.defense += Math.floor((lv - 1) / 2);
     result.baseDamage = result.damage;
-    result.weaponDamage = result.baseDamage * (1 + (result.weaponPower || 0)) + (result.weaponFlat || 0);
-    result.magicDamage = result.baseDamage * (1 + (result.magicPower || 0)) + (result.magicFlat || 0);
+    result.weaponDamage = (result.baseDamage + (result.weaponFlat || 0)) * (1 + (result.weaponPower || 0));
+    result.magicDamage = (result.baseDamage + (result.magicFlat || 0)) * (1 + (result.magicPower || 0));
     result.haste=Math.min(2,result.haste||0);result.interferencePenetration=Math.min(.4,result.interferencePenetration||0);
     result.damage = ['mage','shaman','miko'].includes(id) ? result.magicDamage : result.weaponDamage;
     result.interval = (id==='miko'?1000:id === 'shaman' ? 1100 : id === 'ninja' ? 800 : id === 'warrior' ? 1080 : 1250) / result.attackSpeed;

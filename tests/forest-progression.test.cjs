@@ -271,7 +271,7 @@ test('refunds remove legacy skill-list entries so fallback ranks cannot revive r
 });
 
 test('individual gems consume directional capacity and cannot be equipped twice across characters',()=>{
-  const save=richSave(),a=P.addGem(save,P.Gem.generate({family:'attack',size:.5,random:()=>.5})),d=P.addGem(save,P.Gem.generate({family:'defense',size:1,random:()=>.5}));
+  const save=richSave(),a=P.addGem(save,P.Gem.generate({family:'attack',random:()=>.5})),d=P.addGem(save,P.Gem.generate({family:'defense',size:1,random:()=>.5}));
   assert.equal(P.equipGem(save,'warrior','weapon',d.id),false);assert.equal(P.equipGem(save,'warrior','armor',d.id),true);
   assert.equal(P.equipGem(save,'warrior','weapon',a.id),true);assert.equal(P.equipGem(save,'mage','weapon',a.id),false);
   assert.deepEqual(P.gemOwner(save,a.id),{character:'warrior',slot:'weapon'});assert.equal(P.toggleGem(save,'mage','weapon',a.id),true);
@@ -280,7 +280,7 @@ test('individual gems consume directional capacity and cannot be equipped twice 
 });
 
 test('copies of a gem have distinct identities, independent equipment and additive effects',()=>{
-  const save=D.freshSave(),gems=Array.from({length:5},()=>P.addGem(save,P.Gem.generate({family:'physical',size:.5,random:()=>.5})));
+  const save=D.freshSave(),gems=Array.from({length:5},()=>P.addGem(save,P.Gem.generate({family:'physical',random:()=>.5})));
   assert.deepEqual(gems.map(g=>g.id),[1,2,3,4,5]);for(const gem of gems.slice(0,4))assert.equal(P.equipGem(save,'warrior','weapon',gem.id),true);
   assert.equal(P.availableGems(save,'rare-physical'),1);assert.equal(P.stats(save,'warrior').weaponFlat,4*P.Gem.describe(gems[0]).effect.weaponFlat);
   assert.equal(P.equipGem(save,'warrior','weapon',gems[4].id),false);assert.equal(P.unequipGem(save,'warrior','weapon',gems[0].id),true);
@@ -292,7 +292,7 @@ test('save validation rejects duplicate instance IDs and duplicate equipment, an
   const dirty=structuredClone(save);dirty.gems.push({...gem},{id:90,type:'unknown'});dirty.progression.characters.mage.gems.weapon.push(gem.id,90);
   const clean=D.readSave(JSON.stringify(dirty));assert.deepEqual(clean.gems,[gem]);assert.deepEqual(clean.progression.characters.mage.gems.weapon,[]);
   assert.ok(P.addGem(clean,'rare-physical',1,()=>.5).id>gem.id);const discounted=richSave();for(const n of P.gearTree('warrior','weapon'))assert.equal(P.purchase(discounted,'warrior','weapon',n.id),true);
-  const a=P.addGem(discounted,'rare-physical',1,()=>.5);assert.equal(P.gemCost(discounted,'warrior','weapon',a.id),180);
+  const a=P.addGem(discounted,'rare-physical',1,()=>.5);assert.equal(P.gemCost(discounted,'warrior','weapon',a.id),90);
   assert.equal(P.equipGem(discounted,'warrior','weapon',a.id),true);assert.deepEqual(D.readSave(JSON.stringify(discounted)),discounted);
 });
 

@@ -17,7 +17,7 @@ test('random gems always have a usable build, valid budget, correct tier and exa
     assert.equal(Object.values(g.costs).reduce((a,b)=>a+b,0),tier.capacity*gem.size);
     if(rarity==='rare')assert.ok(gem.options.every(o=>!G.OPTIONS[o.key].min));
     if(rarity==='legendary')assert.equal(gem.options.filter(o=>G.OPTIONS[o.key].min===2).length,1);
-    if(gem.options.some(o=>o.key==='fortune'))assert.ok(Math.abs(g.effect.treasureHunt-(.1+.02*gem.level))<1e-8);
+    if(gem.options.some(o=>o.key==='fortune')){const weight=gem.options.find(o=>o.key==='fortune').weight;assert.equal(g.effect.treasureHunt,Number(((.1+.02*gem.level)*weight/1.15).toFixed(5)));}
   }
 });
 
@@ -57,7 +57,7 @@ test('each equipment starts at 500 and a complete regional tree adds 200 directi
 
 test('equipped instance effects and shared capacity are applied and removed without lingering combat buffs',()=>{
   const save=fixture();const gem=add(save);assert.equal(P.equipGem(save,'warrior','weapon',gem.id),true);
-  assert.equal(P.gemCosts(save,'warrior','weapon',gem.id).attack,200);assert.equal(P.gemUsage(save,'warrior','weapon').used.attack,200);
+  assert.equal(P.gemCosts(save,'warrior','weapon',gem.id).attack,100);assert.equal(P.gemUsage(save,'warrior','weapon').used.attack,100);
   assert.ok(P.stats(save,'warrior').weaponDamage>P.stats(save,'warrior').baseDamage);
   assert.equal(P.equipGem(save,'mage','weapon',gem.id),false);
   const run=S.createRun(1,{builds:{warrior:P.stats(save,'warrior')}});assert.ok(run.hero.weaponFlat>0);
@@ -70,15 +70,16 @@ test('equipped instance effects and shared capacity are applied and removed with
 test('general and specialized attacks share the full weapon capacity and discount for every job',()=>{
   for(const job of Object.keys(P.CHARACTERS)){
     const save=fixture(),family=['mage','shaman','miko'].includes(job)?'magic':'physical';
-    const general=add(save,'rare','attack'),specialized=add(save,'rare',family),extra=add(save,'rare','attack');
-    assert.deepEqual(G.describe(specialized).costs,{attack:200});
+    const general=add(save,'rare','attack'),specialized=add(save,'rare',family),extra=add(save,'rare','attack'),fourth=add(save,'rare','attack'),overflow=add(save,'rare','attack');
+    assert.deepEqual(G.describe(specialized).costs,{attack:100});
     assert.ok(P.equipGem(save,job,'weapon',general.id));assert.ok(P.equipGem(save,job,'weapon',specialized.id));
+    assert.ok(P.equipGem(save,job,'weapon',extra.id));assert.ok(P.equipGem(save,job,'weapon',fourth.id));
     const usage=P.gemUsage(save,job,'weapon');assert.equal(usage.used.attack,400);assert.equal(usage.used.common,50);
-    assert.equal(P.equipGem(save,job,'weapon',extra.id),false);
+    assert.equal(P.equipGem(save,job,'weapon',overflow.id),false);
     save.progression.characters[job].weapon=P.gearTree(job,'weapon',1).map(n=>n.id);
-    assert.equal(P.gemCosts(save,job,'weapon',general.id).attack,180);
-    assert.equal(P.gemCosts(save,job,'weapon',specialized.id).attack,180);
-    assert.equal(P.gemUsage(save,job,'weapon').used.common,0);assert.ok(P.equipGem(save,job,'weapon',extra.id));
+    assert.equal(P.gemCosts(save,job,'weapon',general.id).attack,90);
+    assert.equal(P.gemCosts(save,job,'weapon',specialized.id).attack,90);
+    assert.equal(P.gemUsage(save,job,'weapon').used.common,0);assert.ok(P.equipGem(save,job,'weapon',overflow.id));
   }
 });
 
@@ -101,7 +102,7 @@ test('upgrade retains ID, affixes, quality, lock and capacity; dismantling and c
   assert.equal(G.dismantle(save,gem.id),true);assert.equal(G.dismantle(save,gem.id),false);assert.equal(save.inventory[G.shardKey('rare')],60);
   assert.equal(G.convert(save,'rare',6),true);assert.equal(save.inventory[G.shardKey('rare')],0);assert.equal(save.inventory[G.shardKey('unique')],6);
   assert.equal(G.convert(save,'rare',1),false);assert.equal(G.convert(save,'rare',-1),false);
-  const again=G.generate({rarity:'rare',family:'physical',level:1,size:.25,random:()=>.5});assert.ok(G.upgradeRecipe(again,6)[G.shardKey('rare')]>G.salvage({...again,level:6})-G.salvage(again));
+  const again=G.generate({rarity:'rare',family:'physical',level:1,random:()=>.5});assert.ok(G.upgradeRecipe(again,6)[G.shardKey('rare')]>G.salvage({...again,level:6})-G.salvage(again));
 });
 
 test('legacy reset clears only gem state and new save restores validated individual rolls and equipment',()=>{
@@ -349,9 +350,9 @@ test('automatic dismantling honors primary and secondary capacity/effect exclusi
   assert.ok(P.equipGem(save,'warrior','weapon',secondary.id));assert.equal(G.autoDismantle(save,secondary.id),false);P.unequipGem(save,'warrior','weapon',secondary.id);
   save.inventory['gem-shard-unique']=Number.MAX_SAFE_INTEGER;assert.equal(G.autoDismantle(save,secondary.id),false);assert.ok(save.gems.includes(secondary));
   save.inventory['gem-shard-unique']=0;assert.equal(G.autoDismantle(save,secondary.id).count,1);assert.equal(save.inventory['gem-shard-unique'],30);assert.equal(G.autoDismantle(save,secondary.id),false);
-  const small=P.addGem(save,G.generate({rarity:'rare',family:'physical',level:2,size:.25,random:()=>.5}));
-  save.autoGemDismantle.maxLevel=1;save.autoGemDismantle.maxRarity=null;assert.equal(G.autoDismantle(save,small.id),false);
-  save.autoGemDismantle.maxLevel=2;assert.equal(G.autoDismantle(save,small.id).shards['gem-shard-rare'],5);
+  const rare=P.addGem(save,G.generate({rarity:'rare',family:'physical',level:2,random:()=>.5}));
+  save.autoGemDismantle.maxLevel=1;save.autoGemDismantle.maxRarity=null;assert.equal(G.autoDismantle(save,rare.id),false);
+  save.autoGemDismantle.maxLevel=2;assert.equal(G.autoDismantle(save,rare.id).shards['gem-shard-rare'],20);
 });
 
 test('automatic dismantling settings default OFF, restore without consuming existing gems and sanitize invalid data',()=>{

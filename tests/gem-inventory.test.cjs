@@ -4,7 +4,7 @@ const D = require('../public/js/data/forest-data.js'), P = require('../public/js
 const I = require('../public/js/core/forest-gem-inventory.js');
 function fixture() {
   const s = D.freshSave(); s.cleared = Array.from({ length: 50 }, (_, i) => i + 1);
-  const add = (family, rarity = 'rare', level = 1) => P.addGem(s, P.Gem.generate({ family, rarity, level, size: .5, random: () => .5 }));
+  const add = (family, rarity = 'rare', level = 1) => P.addGem(s, P.Gem.generate({ family, rarity, level, random: () => .5 }));
   const a = add('physical'), b = add('vitality'), c = add('magic'), d = add('physical', 'rare', 5), e = add('haste', 'unique', 5), f = add('physical', 'rare', 10);
   assert.ok(P.equipGem(s, 'warrior', 'weapon', a.id)); assert.ok(P.equipGem(s, 'warrior', 'armor', b.id)); assert.ok(P.equipGem(s, 'mage', 'weapon', c.id));
   return { s, a, b, c, d, e, f };

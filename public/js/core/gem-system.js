@@ -6,7 +6,7 @@
 })(globalThis, () => {
   const Epic = typeof module === 'object' && module.exports ? require('../data/epic-gems.js') : globalThis.EpicGems;
   const VERSION = 1, DIRECTIONS = ['attack', 'defense', 'utility'];
-  const TIERS = { rare: { rank: 0, units: 1, capacity: 200, count: 1 }, unique: { rank: 1, units: 2.3, capacity: 340, count: 2 }, legendary: { rank: 2, units: 5.152, capacity: 580, count: 4 }, epic: { rank: 3, fixed: true, count: 1 } };
+  const TIERS = { rare: { rank: 0, units: .5, capacity: 100, count: 1 }, unique: { rank: 1, units: 2.3, capacity: 340, count: 2 }, legendary: { rank: 2, units: 5.152, capacity: 580, count: 4 }, epic: { rank: 3, fixed: true, count: 1 } };
   const JOBS = ['warrior', 'mage', 'paladin', 'ninja', 'shaman', 'miko'];
   const PHYSICAL = ['warrior', 'paladin', 'ninja'], MAGIC = ['mage', 'shaman', 'miko'];
   const INTERRUPT = JOBS.filter(id => id !== 'miko');
@@ -21,8 +21,8 @@
   ];
   const OPTIONS = {
     attack: { name: '攻撃力', direction: 'attack', key: 'damage', scaled: true, jobs: JOBS, icon: 'attack-gem', value: r => r.attack * .08 },
-    physical: { name: '物理攻撃力', direction: 'attack', key: 'weaponFlat', scaled: true, jobs: PHYSICAL, icon: 'edgegem', value: r => r.attack * .08 },
-    magic: { name: '魔法攻撃力', direction: 'attack', key: 'magicFlat', scaled: true, jobs: MAGIC, icon: 'arcanegem', value: r => r.attack * .08 },
+    physical: { name: '物理攻撃力', direction: 'attack', key: 'weaponFlat', scaled: true, jobs: PHYSICAL, icon: 'edgegem', value: r => r.attack * .09 },
+    magic: { name: '魔法攻撃力', direction: 'attack', key: 'magicFlat', scaled: true, jobs: MAGIC, icon: 'arcanegem', value: r => r.attack * .09 },
     vitality: { name: '最大HP', direction: 'defense', key: 'maxHp', scaled: true, jobs: JOBS, icon: 'heartgem', value: r => r.hp * .08 },
     defense: { name: '防御力', direction: 'defense', key: 'defense', scaled: true, jobs: JOBS, icon: 'defense-gem', value: r => (80 + r.defense) * .08 },
     recovery: { name: 'MP自然回復', direction: 'utility', key: 'mpRegen', scaled: true, jobs: JOBS, icon: 'utility-gem', value: r => r.mp * .007, suffix: ' / 秒' },
@@ -30,7 +30,7 @@
     range: { name: 'スキル範囲', direction: 'attack', key: 'skillRange', min: 1, jobs: JOBS, icon: 'prism', value: () => 24 },
     interference: { name: '行動妨害力', direction: 'attack', key: 'interferencePower', min: 1, jobs: INTERRUPT, icon: 'interference', value: () => .20, percent: true },
     penetration: { name: '妨害抵抗貫通', direction: 'attack', key: 'interferencePenetration', min: 1, jobs: INTERRUPT, icon: 'interference', value: () => .10, percent: true },
-    fortune: { name: 'トレジャーハント', direction: 'utility', key: 'treasureHunt', min: 1, jobs: JOBS, icon: 'treasure', value: () => .20, percent: true, fixed: true },
+    fortune: { name: 'トレジャーハント', direction: 'utility', key: 'treasureHunt', min: 1, jobs: JOBS, icon: 'treasure', value: () => .20, percent: true, fixed: true, rarityScaled: true },
     echo: { name: '残響追撃', direction: 'attack', key: 'gemEcho', min: 2, jobs: JOBS, icon: 'legendary', value: () => .20, percent: true, suffix: ' / 1秒' },
     siphon: { name: '命中MP回復', direction: 'attack', key: 'gemSiphon', min: 2, jobs: JOBS, icon: 'legendary', value: () => .015, percent: true, suffix: ' / 1秒' },
     aegis: { name: '被弾バリア', direction: 'defense', key: 'gemAegis', min: 2, jobs: JOBS, icon: 'legendary', value: () => .06, percent: true, suffix: ' / 5秒' },
@@ -68,14 +68,13 @@
     return !(directions.includes('attack') && directions.includes('defense')) && compatible(keys).length > 0;
   }
   const choose = (list, random) => list[Math.min(list.length - 1, Math.max(0, Math.floor(random() * list.length)))];
-  function generate({ rarity = 'rare', level = 1, family, random = Math.random, size } = {}) {
+  function generate({ rarity = 'rare', level = 1, family, random = Math.random } = {}) {
     if(rarity==='epic'){family ||= choose(Object.keys(Epic.DEFINITIONS),random);return Epic.DEFINITIONS[family]?{version:VERSION,type:'epic-'+family,rarity,family,locked:false,options:[{key:family,weight:1}]}:null;}
     const tier = TIERS[rarity];
     if (!tier || !Number.isInteger(level) || level < 1 || level > REGIONS.length || (rarity === 'legendary' && level < 6)) return null;
     family ||= choose(Object.keys(OPTIONS).filter(key => (OPTIONS[key].min || 0) <= tier.rank), random);
     if (!TYPES[rarity + '-' + family]) return null;
-    size = rarity === 'rare' ? size ?? choose([.25, .5, 1, 1, 1, 1, 1, 1, 1, 1], random) : 1;
-    if (![.25, .5, 1].includes(size)) return null;
+    const size = 1;
     const keys = [family];
     if (tier.rank === 2 && (OPTIONS[family].min || 0) < 2) {
       keys.push(choose(Object.keys(OPTIONS).filter(key => OPTIONS[key].min===2&&canRollTogether([...keys,key])), random));
@@ -97,12 +96,18 @@
       if(gem.version!==VERSION||!Epic.DEFINITIONS[gem.family]||gem.type!=='epic-'+gem.family)return null;
       return {...(Number.isSafeInteger(gem.id)&&gem.id>0?{id:gem.id}:{}),...generate({rarity:'epic',family:gem.family}),locked:gem.locked===true};
     }
-    // Preserve existing rolls; attack/defense exclusivity applies to new drops and crafts.
+    // Normalize former 50/100/200-capacity rare rolls without rerolling identity or quality.
+    if (gem?.rarity === 'rare' && [.25, .5, 1].includes(gem.size)
+      && Array.isArray(gem.options) && gem.options.length === 1 && gem.options[0]?.key === gem.family
+      && Number.isFinite(gem.options[0].weight) && Math.abs(gem.options[0].weight - gem.size) <= 1e-6) {
+      gem = { ...gem, size: 1, options: [{ key: gem.family, weight: TIERS.rare.units }] };
+    }
+    // Preserve existing upper-tier rolls; attack/defense exclusivity applies to new drops and crafts.
     const tier = TIERS[gem?.rarity];
     if (!tier || gem.version !== VERSION || gem.type !== gem.rarity + '-' + gem.family || !TYPES[gem.type]
       || !Number.isInteger(gem.level) || gem.level < 1 || gem.level > REGIONS.length || (gem.rarity === 'legendary' && gem.level < 6)
       || !Number.isFinite(gem.quality) || gem.quality < .95 || gem.quality > 1.05
-      || ![.25, .5, 1].includes(gem.size) || (gem.rarity !== 'rare' && gem.size !== 1)
+      || gem.size !== 1
       || !Array.isArray(gem.options) || gem.options.length !== tier.count || gem.options.some(o=>!o||typeof o.key!=='string') || gem.options[0]?.key !== gem.family) return null;
     const keys = gem.options.map(o => o.key);
     if (new Set(keys).size !== keys.length || !compatible(keys).length
@@ -123,6 +128,7 @@
     for (const { key, weight } of gem.options) {
       const option = OPTIONS[key];
       let value = option.fixed ? option.value(ref) : option.value(ref) * weight * gem.quality;
+      if(option.rarityScaled)value*=weight/(TIERS.unique.units/TIERS.unique.count);
       if(!option.scaled&&(option.min||0)>=1)value*=.5+.1*gem.level;
       value = Number(value.toFixed(option.percent ? 5 : option.decimal||['defense', 'mpRegen'].includes(option.key) ? 2 : 0));
       effect[option.key] = (effect[option.key] || 0) + value;

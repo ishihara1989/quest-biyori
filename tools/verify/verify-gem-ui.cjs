@@ -20,7 +20,7 @@ function fixture(){const s=D.freshSave();s.cleared=D.STAGES.map(s=>s.id);s.gold=
     await page.locator('[data-open=gems]').first().click();
     assert.equal(await page.locator('[data-gem-instance]').count(),3);
     assert.deepEqual(await page.locator('.inventory-capacities>span').evaluateAll(rows=>rows.map(row=>row.dataset.tip)),['攻撃容量','防御容量','補助容量','共通容量']);
-    assert.ok((await page.locator('[data-gem-instance="1"]').getAttribute('data-tip')).includes('基本容量：攻撃 200'));
+    assert.ok((await page.locator('[data-gem-instance="1"]').getAttribute('data-tip')).includes('基本容量：攻撃 100'));
     await page.locator('[data-gem-instance="1"]').click();await page.locator('[data-gem-lock="1"]').click();
     assert.equal(await page.locator('[data-gem-dismantle="1"]').isDisabled(),true);await page.locator('[data-gem-lock="1"]').click();
     await page.locator('[data-filter=gem-workshop]').click();await page.locator('[data-gem-craft-field=rarity]').selectOption('legendary');
@@ -38,7 +38,9 @@ function fixture(){const s=D.freshSave();s.cleared=D.STAGES.map(s=>s.id);s.gold=
     for(const [key,n]of Object.entries(upgrade))assert.equal(saved.inventory[key],prior.inventory[key]-n);
     const beforeSalvage=saved.inventory[G.shardKey('rare')];page.once('dialog',d=>d.dismiss());await page.locator('[data-gem-dismantle="1"]').click();assert.equal((await read()).gems.length,4);
     page.once('dialog',d=>d.accept());await page.locator('[data-gem-dismantle="1"]').click();saved=await read();assert.equal(saved.gems.length,3);assert.equal(saved.inventory[G.shardKey('rare')],beforeSalvage+60);
+    await page.locator('[data-filter=gem-workshop]').click();
     const priorRare=saved.inventory[G.shardKey('rare')],priorUnique=saved.inventory[G.shardKey('unique')];await page.locator('[data-gem-convert=rare][data-gem-convert-times="1"]').click();saved=await read();assert.equal(saved.inventory[G.shardKey('rare')],priorRare-10);assert.equal(saved.inventory[G.shardKey('unique')],priorUnique+1);
+    await page.locator('[data-filter=gem]').click();
     const fortune=seed.gems[1];await page.locator('[data-gem-instance="'+fortune.id+'"]').click();await page.locator('[data-inventory-slot=armor]').click();await page.locator('[data-toggle-inventory-gem="'+fortune.id+'"]').click();
     const snapshot=await read();await page.reload();await page.locator('#start-button:not([disabled])').waitFor();assert.deepEqual((await read()).gems,snapshot.gems);
     await page.locator('[data-open=character]').first().click();assert.equal(await page.locator('[data-gem]').count(),0);await page.locator('#close-menu').click();
@@ -59,7 +61,7 @@ function fixture(){const s=D.freshSave();s.cleared=D.STAGES.map(s=>s.id);s.gold=
     const lootContext=await browser.newContext({viewport:{width:1440,height:1000}}),lootPage=await lootContext.newPage(),lootSeed=fixture();lootSeed.autoMode='off';
     lootPage.on('pageerror',e=>errors.push(e.message));lootPage.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
     await lootPage.addInitScript(({key,seed})=>localStorage.setItem(key,JSON.stringify(seed)),{key:D.SAVE_KEY,seed:lootSeed});
-    await lootPage.route('**/js/forest-simulation.js',async route=>{const response=await route.fetch(),body=await response.text();await route.fulfill({response,body:body+`\nForestSimulation.update=(run)=>{if(run.status!=='running')return [];run.random=()=>0;run.status='victory';run.gold=480;run.kills=1;run.elapsed=1000;return [{type:'loot',enemy:'sand-behemoth',gold:480,x:600,y:400,timeMs:0},{type:'finished',victory:true}];};`});});
+    await lootPage.route('**/js/combat/forest-simulation.js',async route=>{const response=await route.fetch(),body=await response.text();await route.fulfill({response,body:body+`\nForestSimulation.update=(run)=>{if(run.status!=='running')return [];run.random=()=>0;run.status='victory';run.gold=480;run.kills=1;run.elapsed=1000;return [{type:'loot',enemy:'sand-behemoth',gold:480,x:600,y:400,timeMs:0},{type:'finished',victory:true}];};`});});
     await lootPage.goto(url);await lootPage.locator('#start-button:not([disabled])').waitFor();await lootPage.locator('#start-button').click();await lootPage.locator('#result-overlay:not([hidden])').waitFor();await lootPage.locator('#result-skip').click();
     await lootPage.locator('#result-overlay.loot-complete').waitFor();assert.equal(await lootPage.locator('[data-loot-group=legendary]').count(),1);assert.equal(await lootPage.locator('[data-loot-id="gem-instance-4"]').count(),1);
     const drop=await lootPage.evaluate(key=>JSON.parse(localStorage.getItem(key)).gems.at(-1),D.SAVE_KEY);assert.equal(drop.rarity,'legendary');assert.equal(drop.level,6);assert.ok((await lootPage.locator('[data-loot-id="gem-instance-4"]').getAttribute('data-tip')).includes('残響追撃'));
@@ -67,6 +69,21 @@ function fixture(){const s=D.freshSave();s.cleared=D.STAGES.map(s=>s.id);s.gold=
     const oldContext=await browser.newContext(),oldPage=await oldContext.newPage(),old=fixture();delete old.gemVersion;old.gems=[{id:1,type:'ruby'},{id:2,type:'breaker'}];old.progression.characters.warrior.gems.weapon=[1,2];
     await oldPage.addInitScript(({key,old})=>localStorage.setItem(key,JSON.stringify(old)),{key:D.SAVE_KEY,old});await oldPage.goto(url);await oldPage.locator('#start-button:not([disabled])').waitFor();
     const migrated=await oldPage.evaluate(()=>ForestData.readSave(localStorage.getItem(ForestData.SAVE_KEY)));assert.equal(migrated.gems.length,0);assert.equal(migrated.gold,old.gold);assert.deepEqual(migrated.progression.characters.warrior.weapon,old.progression.characters.warrior.weapon);assert.deepEqual(migrated.cleared,old.cleared);
-    await oldContext.close();assert.deepEqual(errors,[]);console.log('PASS: craft, protected dismantle/cancel, upgrade, conversion, equip/reload, legendary drop presentation, legacy migration and desktop/mobile layout');
+    await oldContext.close();
+    const balanceContext=await browser.newContext({viewport:{width:1440,height:1000}}),balancePage=await balanceContext.newPage(),balanceSeed=fixture();
+    balancePage.on('pageerror',e=>errors.push(e.message));balancePage.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
+    Object.assign(balanceSeed.gems[0],{size:.25,options:[{key:'physical',weight:.25}]});
+    balanceSeed.gems[2]={...G.generate({rarity:'legendary',family:'fortune',level:10,random:()=>0}),id:3};
+    await balancePage.addInitScript(({key,seed})=>{if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify(seed));},{key:D.SAVE_KEY,seed:balanceSeed});
+    await balancePage.goto(url);await balancePage.locator('#start-button:not([disabled])').waitFor();await balancePage.locator('[data-open=gems]').first().click();
+    assert.ok((await balancePage.locator('[data-gem-instance="1"]').getAttribute('data-tip')).includes('基本容量：攻撃 100'));
+    assert.ok((await balancePage.locator('[data-gem-instance="3"]').getAttribute('data-tip')).includes('トレジャーハント +30.9%'));
+    await balancePage.locator('[data-gem-instance="1"]').click();await balancePage.locator('[data-gem-lock="1"]').click();
+    const normalized=await balancePage.evaluate(key=>JSON.parse(localStorage.getItem(key)),D.SAVE_KEY);
+    assert.equal(normalized.gems[0].id,1);assert.equal(normalized.gems[0].size,1);assert.equal(normalized.gems[0].options[0].weight,.5);
+    await balancePage.screenshot({path:path.join(output,'rare-normalized-and-legendary-fortune.png')});
+    await balancePage.reload();await balancePage.locator('#start-button:not([disabled])').waitFor();
+    assert.deepEqual(await balancePage.evaluate(key=>JSON.parse(localStorage.getItem(key)).gems,D.SAVE_KEY),normalized.gems);
+    await balanceContext.close();assert.deepEqual(errors,[]);console.log('PASS: craft, protected dismantle/cancel, upgrade, conversion, equip/reload, legendary drop presentation, legacy migration and desktop/mobile layout');
   }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
