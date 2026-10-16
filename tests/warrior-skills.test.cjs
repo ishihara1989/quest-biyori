@@ -34,7 +34,7 @@ test('general passives scale with rank; dedicated enhancement affects only its o
   const save=saveAt(100);P.purchase(save,'warrior','skills','moon');P.purchase(save,'warrior','skills','fang');const before=P.stats(save,'warrior');
   P.purchase(save,'warrior','skills','moon-enhance');const after=P.stats(save,'warrior');
   assert.ok(after.warriorSkills[0].power>before.warriorSkills[0].power);assert.ok(after.warriorSkills[0].cooldown<before.warriorSkills[0].cooldown);assert.deepEqual(after.warriorSkills[1],before.warriorSkills[1]);
-  for(let i=0;i<3;i++)P.purchase(save,'warrior','skills','edge');assert.equal(P.stats(save,'warrior').baseDamage, before.baseDamage+15);
+  for(let i=0;i<3;i++)P.purchase(save,'warrior','skills','edge');assert.equal(P.stats(save,'warrior').baseDamage, before.baseDamage*1.15);
 });
 test('all 21 motions produce exactly their designed impact count and damage stationary bosses',()=>{
   for(const a of W.ACTIVE){const {run,s}=duel(a.id,true),events=S.update(run,s.duration+100);

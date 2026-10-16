@@ -31,13 +31,13 @@
   ];
   const ACTIVE = rows.map(([id,name,unlockLevel,element,cast,pattern,hits,power,radius,mp,cooldown,chant,hold],index) => ({id,name,unlockLevel,element,cast,pattern,hits,power,radius,mp,cooldown,chant,hold,index,kind:index?'active':'normal',maxRank:5,cost:1,requires:[],effect:{},icon:'assets/skills/mage/icons/'+id+'.png'}));
   const GENERAL = [
-    ['arcane','魔術の心得',1,'staff',{damage:5},'攻撃力 +5 / Lv'],
-    ['ward','魔力の衣',7,'ward',{maxHp:35,defense:1},'最大HP +35 / Lv · 防御 +1 / Lv'],
-    ['meditate','静かな詠唱',12,'utility-gem',{mpRegen:.7},'MP回復 +0.7 / 秒 / Lv'],
+    ['arcane','魔術の心得',1,'staff',{damagePercent:.05},'攻撃力 +5% / Lv'],
+    ['ward','魔力の衣',7,'ward',{maxHpPercent:.05,defensePercent:.05},'最大HP +5% / Lv · 防御 +5% / Lv'],
+    ['meditate','静かな詠唱',12,'utility-gem',{mpRegenPercent:.10},'MP回復 +10% / Lv'],
     ['focus','詠唱集中',22,'clockgem',{castSpeed:.05},'詠唱速度 +5% / Lv'],
     ['precision','魔眼',32,'arcanegem',{crit:.025},'クリティカル率 +2.5% / Lv'],
     ['reach','広域術式',42,'vortex',{skillRange:12},'範囲 +12 / Lv'],
-    ['reserve','深淵の魔力',52,'utility-gem',{maxMp:20,mpRegen:.4},'最大MP +20 / Lv · MP回復 +0.4 / 秒 / Lv'],
+    ['reserve','深淵の魔力',52,'utility-gem',{maxMpPercent:.05,mpRegenPercent:.05},'最大MP +5% / Lv · MP回復 +5% / Lv'],
     ['resonance','元素共鳴',62,'battle-aura',{skillPower:.06},'スキル威力 +6% / Lv'],
     ['conduit','連鎖導体',72,'wind-blade',{chainRange:18},'連鎖距離 +18 / Lv'],
     ['haste','術式循環',82,'clockgem',{haste:.05},'再使用速度 +5% / Lv'],

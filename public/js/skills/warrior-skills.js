@@ -32,13 +32,13 @@
   ];
   const ACTIVE = rows.map(([id,name,unlockLevel,pattern,hits,power,radius,mp,cooldown,duration,note],i) => ({id,name,unlockLevel,pattern,hits,power,radius,mp,cooldown,duration,note,icon:'assets/skills/warrior/icons/'+id+'.png',kind:id==='renjin'?'normal':'active',maxRank:5,cost:1,requires:[],effect:{},index:i}));
   const GENERAL = [
-    ['edge','剣の心得',1,'greatsword',{damage:5},'攻撃力 +5 / Lv'],
-    ['resolve','不屈の肉体',7,'leather',{maxHp:45,defense:1},'最大HP +45、防御 +1 / Lv'],
-    ['flow','戦場の呼吸',12,'utility-gem',{mpRegen:.6},'MP回復 +0.6 / 秒 / Lv'],
+    ['edge','剣の心得',1,'greatsword',{damagePercent:.05},'攻撃力 +5% / Lv'],
+    ['resolve','不屈の肉体',7,'leather',{maxHpPercent:.06,defensePercent:.05},'最大HP +6% / Lv · 防御 +5% / Lv'],
+    ['flow','戦場の呼吸',12,'utility-gem',{mpRegenPercent:.10},'MP回復 +10% / Lv'],
     ['footwork','疾風の足運び',22,'evade',{speed:8,attackSpeed:.03},'移動速度 +8、攻撃速度 +3% / Lv'],
     ['precision','急所見切り',32,'counter',{crit:.025},'クリティカル率 +2.5% / Lv'],
     ['tempo','剣技の律動',42,'quickgem',{attackSpeed:.05},'攻撃速度 +5% / Lv'],
-    ['reserve','深い呼吸',52,'utility-gem',{maxMp:16,mpRegen:.4},'最大MP +16、MP回復 +0.4 / 秒 / Lv'],
+    ['reserve','深い呼吸',52,'utility-gem',{maxMpPercent:.05,mpRegenPercent:.05},'最大MP +5% / Lv · MP回復 +5% / Lv'],
     ['fury','戦意解放',62,'battle-aura',{skillPower:.06},'スキル威力 +6% / Lv'],
     ['mastery','達人の間合い',72,'greatsword',{skillRange:10},'スキル範囲 +10 / Lv'],
     ['haste','極限集中',82,'clockgem',{haste:.05},'再使用速度 +5% / Lv'],

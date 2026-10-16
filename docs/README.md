@@ -35,6 +35,8 @@
 
 ## 実装済み機能と検証
 
+- [パッシブの成長能力を割合補正へ変更（2026-10-17）](implementation/passive-percent-stats.md)
+
 - [通常ステージ1・5のABC編成（2026-10-17）](implementation/easy-stage-routes.md)
 - [UI名称の短縮と説明表示の整理（2026-10-16）](implementation/ui-labels.md)
 - [クリア時の報酬・戦闘中の育成・ジェム整理と性能改善（2026-10-15）](implementation/run-flow-and-performance.md)
