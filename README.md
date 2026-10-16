@@ -2,6 +2,8 @@
 
 10地域・100ステージ・6職の放置RPG。本編は `public/`、素材制作と検証は `development/` に分けています。
 
+開発は [ワークツリーを使う手順](docs/policies/development-workflow.md) に従い、別ワークツリーで実装・検証した後、明示指示を受けてmainへマージします。GitHubは主にバックアップとして使います。
+
 GitHubへの初回登録、LFSの使い方、Cloudflare Pagesへの公開は [運用手順](docs/production/github-lfs-and-cloudflare.md) を参照してください。本編の画像はGit LFS、それ以外の制作画像はGit管理外です。新規cloneの前にGit LFSをインストールしてください。
 
 ```sh
