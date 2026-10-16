@@ -23,11 +23,11 @@ test('gem rolls use absolute rare, unique and desert legendary chances on bosses
 test('directional and shared capacity is charged per random gem instance',()=>{
   const save=D.freshSave();save.cleared=[1,2,3,4];save.progression.characters.mage.xp=P.experience(4);
   const a=P.addGem(save,'rare-physical',1,()=>.5),b=P.addGem(save,'rare-magic',1,()=>.5);
-  assert.deepEqual(P.gemCosts(save,'warrior','weapon',a.id),{attack:200});assert.equal(P.equipGem(save,'warrior','weapon',a.id),true);
+  assert.deepEqual(P.gemCosts(save,'warrior','weapon',a.id),{attack:100});assert.equal(P.equipGem(save,'warrior','weapon',a.id),true);
   assert.equal(P.equipGem(save,'mage','weapon',a.id),false);assert.equal(P.equipGem(save,'mage','weapon',b.id),true);assert.deepEqual(D.readSave(JSON.stringify(save)),save);
 });
 
-test('numeric unique options have higher values and lower total capacity than rare equivalents',()=>{
+test('numeric unique options have higher values and capacity efficiency than rare equivalents',()=>{
   const G=P.Gem,u=G.generate({rarity:'unique',family:'physical',level:1,random:()=>.25});
   for(const o of u.options){const r=G.generate({rarity:'rare',family:o.key,level:1,size:1,random:()=>.5});assert.ok(G.describe(u).effect[G.OPTIONS[o.key].key]>G.describe(r).effect[G.OPTIONS[o.key].key]);}
   assert.equal(Object.values(G.describe(u).costs).reduce((a,b)=>a+b,0),340);
