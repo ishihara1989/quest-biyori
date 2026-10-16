@@ -11,7 +11,7 @@
     "x": 256,
     "y": 256
   },
-  "durationMs": 1800,
+  "durationMs": 2100,
   "frameSequence": [
     0,
     1,
@@ -51,7 +51,7 @@
       "y": 0,
       "width": 512,
       "height": 512,
-      "durationMs": 650,
+      "durationMs": 1050,
       "file": "frame-4.png"
     },
     {
@@ -59,7 +59,7 @@
       "y": 0,
       "width": 512,
       "height": 512,
-      "durationMs": 200,
+      "durationMs": 150,
       "file": "frame-5.png"
     },
     {
@@ -67,7 +67,7 @@
       "y": 0,
       "width": 512,
       "height": 512,
-      "durationMs": 150,
+      "durationMs": 100,
       "file": "frame-6.png"
     }
   ]

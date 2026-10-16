@@ -12947,12 +12947,12 @@
         },
         {
           "id": "down",
-          "label": "満足・会釈・手振り・帰還",
+          "label": "満足・会釈・手振り・半回転・帰還",
           "kind": "motion",
           "assets": [
             {
               "id": "down",
-              "label": "満足・会釈・手振り・帰還",
+              "label": "満足・会釈・手振り・半回転・帰還",
               "manifest": "/assets/enemies/extradimensional-goddess/motions/down/manifest.json"
             }
           ]

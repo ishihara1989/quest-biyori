@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-16",
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "jobs": [
+    {
+      "id": "floating",
+      "source": "source/floating-r2.png",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a144c1-5d26-7a11-838e-1ce0e226e000\\exec-797ef85e-ddfd-4e65-9218-238868ac5867.png",
+      "cols": 2,
+      "rows": 2,
+      "prompt": "Use case: precise-object-edit\nAsset type: FOUR FRAME transparent pixel-art idle animation sheet for this existing goddess.\nInput 1: existing shipped body sprite, fixed identity/style/pose reference.\nInput 2: original goddess for identity/palette ONLY, ignore large golden rings.\nPrimary requirement: EXACTLY FOUR separate complete figures, on a strict TWO BY TWO grid of equal SQUARE cells. WIDE EMPTY TRANSPARENT GUTTERS. Each figure takes at most 65% of its cell width and 72% of its cell height. No visible pixels within the outer 15% on any cell edge. If cell is 512x512, keep EVERYTHING inside x=90..422 and y=72..440. Absolutely no hair, cloth or shoes crosses a cell boundary. Do not let the bottom-left figure's hair enter the bottom-right cell. No panels, grid lines or labels. True transparent background.\nSame adult fantasy goddess and outfit in all four frames: silver lavender wavy hair, small gold crown, cyan eyes, ivory/navy/gold ceremonial dress, cyan jewels, gold shoes, dark violet pixel contour. Match the first input's figure and camera, not the large canvas margins. Body upright floating, relaxed open palms at hip height, legs naturally downward. Exactly two arms and two legs. No large halo, throne, magic FX, glow or shadow.\nFour subtly different continuous IDLE poses, chronological row major; SAME character height and width in all four cells. Head center (256,135), hips (256,280), lower shoe (256,425).\nF1 neutral, eyes open; hand centers (180,245),(332,256). Hair silhouette neatly within x=100..412.\nF2 gentle inhale, head rises 2 pixels, chest/shoulders rise 1 pixel, hands rise 2 pixels; hair ends and sleeve hems trail 2 pixels down.\nF3 gentle exhale, eyes half closed, hair tips shift only 2 pixels right; hands return to F1. Hair remains comfortably INSIDE the cell.\nF4 head settles 2 pixels lower, eyes open, sleeve hems/hair begin returning smoothly to F1. Smooth loop F4->F1, no new pose or rotation.\nKeep changes very small. No growing hair silhouette, size changes, missing limbs, extra limbs, random ornaments, background, text or watermark. Each figure fully contained with WIDE empty padding.",
+      "references": [
+        {
+          "file": "references/floating-original.png",
+          "sha256": "2e8d628e9da34c1fc1128d7df8cf7fe37d244481562ddb5e994c59af55fb2ad8"
+        },
+        {
+          "file": "references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        }
+      ],
+      "sha256": "fc3e573229b8603c60d9460b73300e5d7d725f95c37763077eb21cd4e2250219"
+    },
+    {
+      "id": "turn",
+      "source": "source/turn.png",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a144c1-5d26-7a11-838e-1ce0e226e000\\exec-230e8a29-2746-4101-9ce2-e1a5761a5768.png",
+      "cols": 3,
+      "rows": 1,
+      "prompt": "Use case: precise-object-edit\nAsset type: transparent JRPG pixel-art body TURN animation for the existing goddess returning home.\nInput 1 is the existing farewell sheet: use its THIRD cell (raised hand waving) as exact identity, costume, camera and pixel-style reference. Input 2 is the original master identity/palette reference only; omit the huge rings.\nCreate exactly THREE sequential TURN poses in a strict horizontal row of three equal square cells. All cells use the same virtual 512x512 camera, figure size and anchor. Prefer a 1536x512 sheet, or equivalent three square cells. Keep ALL visible pixels in EACH cell inside x=96..416,y=72..448. Never cross any cell edge. True transparent background and ample empty margins.\nCharacter invariants: SAME adult goddess, silver lavender flowing hair, small gold crown, ivory/navy/gold ceremonial dress, cyan gems, gold shoes. Upright hovering with legs naturally downward. Same face, outfit construction, colors and discrete crisp pixel clusters. Exactly TWO arms and TWO legs, anatomically connected. No throne, large ring, shadows, portal, particle, light trail, duplicate body or text.\nChoreography: she has JUST finished waving her screen-right hand near her shoulder toward the party on screen-left. She now lowers that hand and turns AWAY gracefully through 180 degrees around her vertical body axis. This is a real turn with new SIDE AND BACK views, never a flat mirrored or screen-rotated front view.\nIn every virtual cell crown at y=82, head at y=130, torso/pelvis center at (256,260), shoes near (256,428).\nF1 (60 degrees from starting front-left three-quarter view): LEFT side profile, face looking left and slightly away; the raised farewell hand is lowering to chest height. Hair trails to the right. Body stays vertical, camera unchanged.\nF2 (120 degrees from start): BACK-LEFT three-quarter view. Back of crown, head and shoulders visible; her face is now hidden. BOTH hands lowered and relaxed beside hips. Long lavender hair drapes down the BACK of the body; dress back and long skirt cover the torso and legs. Hair and sleeves trail the turning motion to the right. Do not draw a front-facing face or chest on the back.\nF3 (180 degrees from start): BACK-RIGHT three-quarter view, looking away toward a doorway behind her. Face completely hidden, crown and back hair visible. Hands fully lowered. Body is upright, rear dress navy panels with gold trim visible beneath long hair. Hair and sleeves settle; feet point away. This pose is held while she glides away.\nFull opaque body and clothing in every frame, no fading baked into sprite. Preserve consistent body/head dimensions and footwear height across frames. No redesign, no extra limbs, no seam lines, no labels.",
+      "references": [
+        {
+          "file": "references/down-original.png",
+          "sha256": "2f41a660e1705ad199ec0c68e5748d99eb0ff308289788b1d5a83dee7e03d9d1"
+        },
+        {
+          "file": "references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        }
+      ],
+      "sha256": "253fd4b223fe656a608cc0aff81780c597ab5127ee37e6e4a9bba8e8bf447e5e"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "floating",
+      "source": "source/floating.png",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a144c1-5d26-7a11-838e-1ce0e226e000\\exec-4c592d0e-9334-495f-b708-74ff27bb6ce9.png",
+      "cols": 2,
+      "rows": 2,
+      "prompt": "Use case: precise-object-edit\nAsset type: transparent JRPG pixel-art animation sheet, goddess floating idle, FOUR frames.\nInput 1 is the EXACT currently shipped 512x512 idle sprite and the identity / palette / size / framing reference. Input 2 is the original master reference for identity only; omit its large rings.\nMake a new FOUR DISTINCT FRAME looping idle sheet in a strict 2 columns x 2 rows grid, row-major. Each square cell is a virtual 512x512 canvas. In EACH cell the body uses the SAME dimensions and position as input 1: head center approximately (256,238), hips (258,324), shoes around (262,430). Visible body fits x=130..382,y=195..448. Keep generous fully transparent margins. No captions, labels, borders, grid lines or background. True transparent alpha.\nPreserve the SAME adult goddess, silver lavender wavy hair, cyan eyes, small gold crown, ivory/navy/gold ceremonial clothing with cyan jewels, gold shoes, dark violet outlines and crisp discrete pixel clusters. Exactly two connected arms and two legs. Upright hovering torso, legs pointing down, palms relaxed and open at hip height. Match the existing outfit and silhouette, no large halo, throne, shadows, magic FX or extra ornaments.\nMovement plan (coordinates are local cell coordinates, NOT text):\nF1 neutral: head (256,238), left hand (192,304), right hand (329,317), hair tips rest.\nF2 inhale and float upward 2px: head (256,236), left hand (192,301), right hand (329,314); chest rises subtly, hair and sleeve tips trail 2px downward relative to body.\nF3 relaxed exhale, head (256,238); left hand (194,304), right hand (327,317); hair tips sway 3px right, sleeves follow. Eyes gently half-close, calm face.\nF4 lower hover by 2px: head (256,240), left hand (192,306), right hand (329,319); hair tips begin returning to F1, eyes open. F4 -> F1 is a smooth 2px return. The body must NEVER rotate or change size.\nKeep variations subtle but visibly different, continuous cyclic hair and cloth motion. Do not duplicate the exact same sprite four times. No new character redesign. Full opaque body, same camera and scale in every cell.",
+      "references": [
+        "references/floating-original.png",
+        "references/phase-2-awakened.png"
+      ],
+      "rejection": "Bottom row hair crosses the cell boundary; not adopted.",
+      "sha256": "ef40a52e6d5a4552ff4e5fc3b68942d006e8d3037fc4a1c64374bfe334976fb5"
+    }
+  ]
+}

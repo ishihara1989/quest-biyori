@@ -38,4 +38,6 @@
 
 異次元の女神の本編採用素材、指パッチンの追加生成、縮尺・原点の登録と54コマの検収資料は [runtime-v3](assets/extradimensional-goddess/runtime-v3/README.md)。`npm run build:goddess` で再現します。[実装・難度・検証](../docs/implementation/extradimensional-goddess.md)。
 
+女神の浮遊待機4コマ・手振り後の180度ターンは [motion-v4](assets/extradimensional-goddess/motion-v4/README.md)。本編は計59コマ。`npm run build:goddess-motion` と `npm run check:goddess-motion-ui` で対象の登録・検証を再現できます。
+
 エピックジェム12種・新レジェンダリー・残滓・女神強化ページの全17アイコンは [制作・原画・プロンプト・検収](assets/ui/epic-gems/README.md)に保存。本編登録は `npm run build:epic-gems`、[実装記録](../docs/implementation/epic-gems.md)。

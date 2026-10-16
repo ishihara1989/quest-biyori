@@ -118,7 +118,7 @@
     const region = REGIONS[run.stage.region - 1];
     document.body.dataset.region = region.id;
     document.body.dataset.special = run.stage.special ? run.stage.id : '';
-    document.title = 'FORESTBOUND — ' + (run.stage.realmName || region.name);
+    document.title = 'クエストびより';
     document.querySelector('.adventure-heading .eyebrow').innerHTML = run.stage.special ? '<span></span>SPECIAL <i>/</i> ' + run.stage.english : '<span></span>CHAPTER ' + String(region.id).padStart(2, '0') + ' <i>/</i> ' + region.english;
     document.querySelector('.adventure-heading h1').innerHTML = run.stage.special ? run.stage.realmName + ' <span class="chapter-badge">✧</span>' : region.name + ' <span class="chapter-badge">' + String(region.id).padStart(2, '0') + '</span>';
     document.querySelector('.forest-route').setAttribute('aria-label', (run.stage.special ? '特殊ステージ' : region.name) + 'の進行状況');

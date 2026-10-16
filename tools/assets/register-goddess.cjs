@@ -49,6 +49,7 @@ async function build(){makeAssetDirectory(dev);makeAssetDirectory(out);const reg
   makeAssetDirectory(runtimeAsset('ui/enemies'));await sharp(path.join(out,'motions/idle/frame-1.png')).extract({left:128,top:188,width:256,height:256}).png().toFile(runtimeAsset('ui/enemies/extradimensional-goddess.png'));
   writeAssetJson(path.join(dev,'registration.json'),{date:'2026-10-15',tool:'built-in image_gen',prompt:'snap-prompt.txt',newSource:'source/p1-snap.png',newSourceSha256:hash(snap),processing:'Fixed nearest-neighbor scales per segment; measured alpha-center and baseline translations; no paint, anatomy edits or pixel removal. Broken first-pass animations are excluded. Idle breathing, phase change, recovery, star mirrors and convergence are Canvas animations using registered poses.',registrations});
   writeAssetJson(path.join(dev,'generation.json'),{date:'2026-10-15',tool:'built-in image_gen',transparent_background:true,prompt:fs.readFileSync(path.join(dev,'snap-prompt.txt'),'utf8'),output:'source/p1-snap.png',sha256:hash(snap),references:['../repair-v2/review/motions/p1-shot/frame-01.png','../v1/references/phase-1-seated.png'].map(file=>({file,sha256:hash(path.resolve(dev,file))})),layout:'three equal 724x724 cells in one row; no visible pixels on cell boundaries'});
+  await require('./build-goddess-motion-v4.cjs').build();
   console.log(JSON.stringify({clips:list.length,frames:registrations.length}));
 }
 if(require.main===module)build().catch(e=>{console.error(e);process.exitCode=1;});module.exports={build};

@@ -1,0 +1,224 @@
+{
+  "date": "2026-10-16",
+  "processing": "Uniform nearest-neighbor scale per segment; measured alpha bounds and observed turn foot axes; translations only. First three farewell frames are unchanged v3 pixels. No repainting or alpha removal.",
+  "targetHeight": 239,
+  "frames": [
+    {
+      "clip": "floating",
+      "frame": 1,
+      "source": "source/floating-r2.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": [
+        138,
+        202,
+        373,
+        439
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8637733459472656,
+      "sourceBounds": [
+        77,
+        71,
+        574,
+        574
+      ],
+      "footAxisX": 325.5,
+      "scale": 0.4742063492063492,
+      "translation": [
+        102,
+        168
+      ]
+    },
+    {
+      "clip": "floating",
+      "frame": 2,
+      "source": "source/floating-r2.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": [
+        138,
+        196,
+        373,
+        439
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.859649658203125,
+      "sourceBounds": [
+        78,
+        63,
+        575,
+        578
+      ],
+      "footAxisX": 326.5,
+      "scale": 0.4742063492063492,
+      "translation": [
+        101,
+        166
+      ]
+    },
+    {
+      "clip": "floating",
+      "frame": 3,
+      "source": "source/floating-r2.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": [
+        136,
+        202,
+        375,
+        440
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8617210388183594,
+      "sourceBounds": [
+        80,
+        65,
+        586,
+        568
+      ],
+      "footAxisX": 333,
+      "scale": 0.4742063492063492,
+      "translation": [
+        98,
+        171
+      ]
+    },
+    {
+      "clip": "floating",
+      "frame": 4,
+      "source": "source/floating-r2.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": [
+        137,
+        203,
+        373,
+        439
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8618202209472656,
+      "sourceBounds": [
+        77,
+        71,
+        575,
+        571
+      ],
+      "footAxisX": 326,
+      "scale": 0.4742063492063492,
+      "translation": [
+        101,
+        169
+      ]
+    },
+    {
+      "clip": "turn",
+      "frame": 1,
+      "source": "source/turn.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "bounds": [
+        196,
+        202,
+        388,
+        439
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8877677917480469,
+      "sourceBounds": [
+        208,
+        70,
+        703,
+        682
+      ],
+      "footAxisX": 362,
+      "scale": 0.3898858075040783,
+      "translation": [
+        115,
+        174
+      ]
+    },
+    {
+      "clip": "turn",
+      "frame": 2,
+      "source": "source/turn.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "bounds": [
+        171,
+        194,
+        366,
+        439
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8870010375976562,
+      "sourceBounds": [
+        156,
+        65,
+        660,
+        694
+      ],
+      "footAxisX": 374,
+      "scale": 0.3898858075040783,
+      "translation": [
+        110,
+        169
+      ]
+    },
+    {
+      "clip": "turn",
+      "frame": 3,
+      "source": "source/turn.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "bounds": [
+        128,
+        194,
+        327,
+        439
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8907279968261719,
+      "sourceBounds": [
+        83,
+        64,
+        594,
+        694
+      ],
+      "footAxisX": 410,
+      "scale": 0.3898858075040783,
+      "translation": [
+        96,
+        169
+      ]
+    }
+  ]
+}
