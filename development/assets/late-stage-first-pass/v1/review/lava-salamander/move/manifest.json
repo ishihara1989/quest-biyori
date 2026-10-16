@@ -1,0 +1,137 @@
+{
+  "id": "lava-salamander/move",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/lava-salamander/move-1-generated.png",
+    "sources/lava-salamander/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "ラヴァサラマンダー",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 50,
+        "top": 207,
+        "right": 700,
+        "bottom": 599
+      },
+      "sourceWidth": 736,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 380847,
+      "transparentFraction": 0.7147170760269037
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 34,
+        "top": 207,
+        "right": 688,
+        "bottom": 595
+      },
+      "sourceWidth": 714,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 364189,
+      "transparentFraction": 0.7045146787996966
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 25,
+        "top": 207,
+        "right": 676,
+        "bottom": 598
+      },
+      "sourceWidth": 722,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 373509,
+      "transparentFraction": 0.7145379623819654
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 38,
+        "top": 180,
+        "right": 721,
+        "bottom": 590
+      },
+      "sourceWidth": 731,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 357580,
+      "transparentFraction": 0.675642992646114
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 9,
+        "top": 176,
+        "right": 695,
+        "bottom": 591
+      },
+      "sourceWidth": 706,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 341333,
+      "transparentFraction": 0.6677824644327235
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 9,
+        "top": 176,
+        "right": 695,
+        "bottom": 584
+      },
+      "sourceWidth": 735,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 365892,
+      "transparentFraction": 0.6875859736159657
+    }
+  ],
+  "reference": "../../../references/lava-salamander.png",
+  "originalSources": [
+    "../../../sources/lava-salamander/move-1-generated.png",
+    "../../../sources/lava-salamander/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

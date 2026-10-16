@@ -1,0 +1,137 @@
+{
+  "id": "demon-armored-soldier/move",
+  "enemy": "demon-armored-soldier",
+  "region": "demon-castle",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/demon-armored-soldier/move-1-generated.png",
+    "sources/demon-armored-soldier/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "魔鎧兵",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 48,
+        "top": 63,
+        "right": 700,
+        "bottom": 658
+      },
+      "sourceWidth": 729,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 339078,
+      "transparentFraction": 0.6424413978127913
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 27,
+        "top": 63,
+        "right": 696,
+        "bottom": 658
+      },
+      "sourceWidth": 714,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 330866,
+      "transparentFraction": 0.6400521534580683
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 17,
+        "top": 61,
+        "right": 680,
+        "bottom": 658
+      },
+      "sourceWidth": 729,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 337611,
+      "transparentFraction": 0.6396619148307301
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 56,
+        "top": 53,
+        "right": 685,
+        "bottom": 665
+      },
+      "sourceWidth": 705,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 325495,
+      "transparentFraction": 0.6377003252223659
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 19,
+        "top": 50,
+        "right": 690,
+        "bottom": 664
+      },
+      "sourceWidth": 701,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 328034,
+      "transparentFraction": 0.646341847873204
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 10,
+        "top": 51,
+        "right": 716,
+        "bottom": 672
+      },
+      "sourceWidth": 766,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 361248,
+      "transparentFraction": 0.6513855430376643
+    }
+  ],
+  "reference": "../../../references/demon-armored-soldier.png",
+  "originalSources": [
+    "../../../sources/demon-armored-soldier/move-1-generated.png",
+    "../../../sources/demon-armored-soldier/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

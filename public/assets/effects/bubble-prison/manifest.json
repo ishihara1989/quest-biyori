@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "bubble-prison",
+  "label": "泡・行動不能",
+  "sheet": "bubble-prison.png",
+  "preview": "../../../../development/assets/effects/bubble-prison/bubble-prison-preview.gif",
+  "prompt": "../../../../development/assets/effects/bubble-prison/PROMPT.md",
+  "width": 1024,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 274
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/bubble-prison/source-generated.png",
+  "sourceScale": 0.5022026431718062,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "bubble-prison-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 22,
+        "top": 54,
+        "right": 234,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 449,
+        "y": 471
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "bubble-prison-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 19,
+        "top": 45,
+        "right": 236,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 340,
+        "y": 471
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "bubble-prison-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 14,
+        "top": 46,
+        "right": 241,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 453,
+        "y": 468
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "bubble-prison-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 24,
+        "top": 50,
+        "right": 232,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

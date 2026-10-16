@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "character": "warrior",
+  "motion": "hit",
+  "label": "被撃",
+  "facing": "right",
+  "sheet": "warrior-hit.png",
+  "width": 512,
+  "height": 224,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.1770460704607046,
+  "sampling": "nearest-neighbor",
+  "source": "../../../../../development/assets/warrior/motions/hit/source/warrior-hit-generated-v1.png",
+  "sourceWidth": 1774,
+  "sourceHeight": 887,
+  "sourceGrid": [
+    2,
+    1
+  ],
+  "columnSplit": 926,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Jump previewOffset is for the review viewer only. Use world jump physics and the common pivot when integrating into a game.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "のけぞり",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 926,
+        "height": 887
+      },
+      "sourceAnchor": {
+        "x": 538,
+        "y": 822
+      },
+      "sourceBounds": {
+        "left": 52,
+        "top": 84,
+        "right": 856,
+        "bottom": 822
+      },
+      "bounds": {
+        "left": 42,
+        "top": 77,
+        "right": 184,
+        "bottom": 207
+      },
+      "visiblePixels": 7357,
+      "transparentPixels": 48919
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 220,
+      "phase": "立て直し",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 926,
+        "y": 0,
+        "width": 848,
+        "height": 887
+      },
+      "sourceAnchor": {
+        "x": 381,
+        "y": 822
+      },
+      "sourceBounds": {
+        "left": 71,
+        "top": 90,
+        "right": 778,
+        "bottom": 822
+      },
+      "bounds": {
+        "left": 74,
+        "top": 78,
+        "right": 198,
+        "bottom": 207
+      },
+      "visiblePixels": 6974,
+      "transparentPixels": 49379
+    }
+  ]
+}

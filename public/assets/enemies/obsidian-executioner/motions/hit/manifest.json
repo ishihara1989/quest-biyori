@@ -1,0 +1,119 @@
+{
+  "id": "obsidian-executioner/hit",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "label": "被弾",
+  "kind": null,
+  "motion": "hit",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/reaction-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8791236877441406,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 110,
+        "top": 113,
+        "right": 382,
+        "bottom": 370
+      },
+      "visibleBounds": {
+        "left": 136,
+        "top": 121,
+        "right": 380,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/reaction-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 667,
+        "height": 679
+      },
+      "sourceScale": 0.42190305206463197,
+      "sourceAnchor": {
+        "x": 442,
+        "y": 600
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8723182678222656,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 148,
+        "top": 90,
+        "right": 397,
+        "bottom": 364
+      },
+      "visibleBounds": {
+        "left": 151,
+        "top": 104,
+        "right": 394,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/reaction-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 667,
+        "y": 0,
+        "width": 632,
+        "height": 679
+      },
+      "sourceScale": 0.42190305206463197,
+      "sourceAnchor": {
+        "x": 342,
+        "y": 611
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/obsidian-executioner/hit/preview.gif",
+  "action": null
+}

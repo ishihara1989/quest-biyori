@@ -1,0 +1,104 @@
+{
+  "id": "dragon/danger-2",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "danger-2",
+  "label": "双脈ブレス",
+  "effects": [
+    "fire-beam",
+    "burn"
+  ],
+  "repeat": 2,
+  "sources": [
+    "sources/dragon/danger-2-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "ドラゴン",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 109,
+        "top": 75,
+        "right": 719,
+        "bottom": 447
+      },
+      "sourceWidth": 769,
+      "sourceHeight": 478,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 203573,
+      "transparentFraction": 0.5538165633790556
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 49,
+        "top": 37,
+        "right": 716,
+        "bottom": 447
+      },
+      "sourceWidth": 767,
+      "sourceHeight": 478,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 168344,
+      "transparentFraction": 0.45917092623000005
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 60,
+        "top": 30,
+        "right": 852,
+        "bottom": 454
+      },
+      "sourceWidth": 859,
+      "sourceHeight": 546,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 252115,
+      "transparentFraction": 0.537542589347013
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 6,
+        "top": 66,
+        "right": 639,
+        "bottom": 456
+      },
+      "sourceWidth": 677,
+      "sourceHeight": 546,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 196286,
+      "transparentFraction": 0.531016497043085
+    }
+  ],
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/danger-2-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

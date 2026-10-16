@@ -1,0 +1,67 @@
+{
+  "id": "obsidian-executioner/down",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "motion": "down",
+  "label": "撃破",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-executioner/reaction-generated.png"
+  ],
+  "durations": [
+    400,
+    1000
+  ],
+  "phases": [
+    "崩れる",
+    "倒れた状態"
+  ],
+  "enemyLabel": "黒曜の処刑者",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "sourceBounds": {
+        "left": 55,
+        "top": 67,
+        "right": 652,
+        "bottom": 444
+      },
+      "sourceWidth": 670,
+      "sourceHeight": 532,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 215364,
+      "transparentFraction": 0.6042082818987768
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 17,
+        "top": 150,
+        "right": 592,
+        "bottom": 480
+      },
+      "sourceWidth": 629,
+      "sourceHeight": 532,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 219453,
+      "transparentFraction": 0.6558118268644585
+    }
+  ],
+  "reference": "../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../sources/obsidian-executioner/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": true,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

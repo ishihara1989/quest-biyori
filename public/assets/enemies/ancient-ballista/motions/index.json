@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "shoot",
+    "label": "貫通大矢",
+    "manifest": "shoot/manifest.json"
+  },
+  {
+    "id": "fan",
+    "label": "扇状射撃",
+    "manifest": "fan/manifest.json"
+  },
+  {
+    "id": "burst",
+    "label": "三連射",
+    "manifest": "burst/manifest.json"
+  },
+  {
+    "id": "ram",
+    "label": "近距離体当たり",
+    "manifest": "ram/manifest.json"
+  }
+]

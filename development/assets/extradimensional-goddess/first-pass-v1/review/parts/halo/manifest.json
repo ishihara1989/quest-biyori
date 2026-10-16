@@ -1,0 +1,52 @@
+{
+  "id": "parts/halo",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    268,
+    156
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/halo/review/parts/halo/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/halo.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "Three rigid broken gold celestial rings with cyan nodes, no feathers, no body or chair.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.7530346273106283,
+      "lowAlphaPixels": 75796,
+      "edgePixels": 0,
+      "bounds": [
+        8,
+        117,
+        1246,
+        1093
+      ],
+      "marginFraction": 0.005582137161084529
+    }
+  ],
+  "sources": [
+    "source/parts/halo.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/halo/contact.png",
+  "gif": "review/parts/halo/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

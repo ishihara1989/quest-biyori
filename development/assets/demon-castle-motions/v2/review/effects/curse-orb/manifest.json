@@ -1,0 +1,130 @@
+{
+  "id": "effects/curse-orb",
+  "label": "呪弾・飛行ループ",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "projectile",
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "飛行1",
+      "source": "../../../sources/effects/curse-orb-v2.png",
+      "sourceSha256": "ac11ec1ee70e43d2eb0871336881400d555f04d3bc57c0589a96b50c819f9b1c",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        250,
+        260
+      ],
+      "scale": 0.5,
+      "pivot": [
+        210,
+        256
+      ],
+      "sha256": "821ebfebc71c974ba91cbc23572d39bd52584bc4f25e5235ca93a27082696a6c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9008216857910156
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "飛行2",
+      "source": "../../../sources/effects/curse-orb-v2.png",
+      "sourceSha256": "ac11ec1ee70e43d2eb0871336881400d555f04d3bc57c0589a96b50c819f9b1c",
+      "sourceRect": {
+        "left": 768,
+        "top": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        282,
+        256
+      ],
+      "scale": 0.5,
+      "pivot": [
+        210,
+        256
+      ],
+      "sha256": "746ef79ec01818bc57ea8bee84f81e93e6b36a13142d3b2a8537b770858b104b",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8963088989257812
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "飛行3",
+      "source": "../../../sources/effects/curse-orb-v2.png",
+      "sourceSha256": "ac11ec1ee70e43d2eb0871336881400d555f04d3bc57c0589a96b50c819f9b1c",
+      "sourceRect": {
+        "left": 0,
+        "top": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        250,
+        240
+      ],
+      "scale": 0.5,
+      "pivot": [
+        210,
+        256
+      ],
+      "sha256": "a952bf2e68fa917f1ea8527d7ce7b651d001f4855394085fa46708418bb73d7d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8896713256835938
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "飛行4",
+      "source": "../../../sources/effects/curse-orb-v2.png",
+      "sourceSha256": "ac11ec1ee70e43d2eb0871336881400d555f04d3bc57c0589a96b50c819f9b1c",
+      "sourceRect": {
+        "left": 768,
+        "top": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        290,
+        238
+      ],
+      "scale": 0.5,
+      "pivot": [
+        210,
+        256
+      ],
+      "sha256": "85e01da698c8caf3ac6ccb4f9eaa3a1b7640578f515e72df6d1c709260a18d4a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9042320251464844
+    }
+  ],
+  "fingerprint": "39d8d7717c410ceaac15e5ebd9b4dc8d54f5899996152958653969bc378f20f5",
+  "events": [],
+  "effects": []
+}

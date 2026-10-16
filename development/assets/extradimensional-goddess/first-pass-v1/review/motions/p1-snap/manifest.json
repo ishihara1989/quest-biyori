@@ -1,0 +1,127 @@
+{
+  "id": "motions/p1-snap",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-snap/review/motions/p1-snap/frame-01.png",
+      "index": 1,
+      "durationMs": 100,
+      "source": "source/motions/p1-snap.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "R=(392,288), relaxed.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.4046814150062702,
+      "lowAlphaPixels": 13757,
+      "edgePixels": 0,
+      "bounds": [
+        9,
+        11,
+        619,
+        592
+      ],
+      "marginFraction": 0.011164274322169059
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-snap/review/motions/p1-snap/frame-02.png",
+      "index": 2,
+      "durationMs": 120,
+      "source": "source/motions/p1-snap.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "R=(354,246), thumb and middle fingertip TOUCH.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.39701217666465716,
+      "lowAlphaPixels": 13193,
+      "edgePixels": 0,
+      "bounds": [
+        8,
+        11,
+        618,
+        592
+      ],
+      "marginFraction": 0.012759170653907496
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-snap/review/motions/p1-snap/frame-03.png",
+      "index": 3,
+      "durationMs": 100,
+      "source": "source/motions/p1-snap.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "R=(348,243), middle finger folds into palm after SNAP, thumb separates, no drawn glint.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.3889868211197851,
+      "lowAlphaPixels": 15571,
+      "edgePixels": 0,
+      "bounds": [
+        9,
+        3,
+        622,
+        584
+      ],
+      "marginFraction": 0.004784688995215311
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-snap/review/motions/p1-snap/frame-04.png",
+      "index": 4,
+      "durationMs": 160,
+      "source": "source/motions/p1-snap.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "R=(392,288), return.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.4046814150062702,
+      "lowAlphaPixels": 14128,
+      "edgePixels": 0,
+      "bounds": [
+        11,
+        3,
+        619,
+        584
+      ],
+      "marginFraction": 0.004784688995215311
+    }
+  ],
+  "sources": [
+    "source/motions/p1-snap.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p1-snap/contact.png",
+  "gif": "review/motions/p1-snap/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

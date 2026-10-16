@@ -1,0 +1,11 @@
+{
+  "id": "prayer-cranes-idle",
+  "source": "development/assets/skills/miko/source/prayer-cranes-idle-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-88985a12-4818-4400-b22f-bfaa57d68220.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Create exactly 3 frames in ONE horizontal row of equally sized square cells. Subject: ONE white sacred crane, red crown, long charcoal beak, gold neck ring with red ribbon, TWO white wings with charcoal tips, exactly TWO slender legs tucked in flight. ONE creature per cell, facing RIGHT, no effects baked into body. Position: head (.66,.30), body (.49,.50), wings (.22,.28)/(.77,.36). Idle loop: 1 exhale/relaxed; 2 chest/head rise one logical pixel and wings/tail lift two; 3 ease halfway back. Feet stay planted for ground creatures, hover center stays fixed for flying.",
+  "refs": [],
+  "receivedAt": "2026-10-10T14:04:26.818Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

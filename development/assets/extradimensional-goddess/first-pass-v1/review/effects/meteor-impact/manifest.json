@@ -1,0 +1,102 @@
+{
+  "id": "effects/meteor-impact",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    160
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/meteor-impact/review/effects/meteor-impact/frame-01.png",
+      "index": 1,
+      "durationMs": 70,
+      "source": "source/effects/meteor-impact.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":70,\"center\":[128,160],\"radius\":10,\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.950533790177345,
+      "lowAlphaPixels": 13435,
+      "edgePixels": 0,
+      "bounds": [
+        251,
+        315,
+        478,
+        596
+      ],
+      "marginFraction": 0.17541436464088397
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/meteor-impact/review/effects/meteor-impact/frame-02.png",
+      "index": 2,
+      "durationMs": 90,
+      "source": "source/effects/meteor-impact.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":90,\"center\":[128,160],\"crownSize\":[104,72],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.732210173682122,
+      "lowAlphaPixels": 64439,
+      "edgePixels": 0,
+      "bounds": [
+        44,
+        196,
+        678,
+        593
+      ],
+      "marginFraction": 0.06077348066298342
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/meteor-impact/review/effects/meteor-impact/frame-03.png",
+      "index": 3,
+      "durationMs": 140,
+      "source": "source/effects/meteor-impact.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":140,\"center\":[128,160],\"radius\":64,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9102877659412106,
+      "lowAlphaPixels": 37516,
+      "edgePixels": 0,
+      "bounds": [
+        96,
+        251,
+        674,
+        584
+      ],
+      "marginFraction": 0.06767955801104972
+    }
+  ],
+  "sources": [
+    "source/effects/meteor-impact.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/meteor-impact/contact.png",
+  "gif": "review/effects/meteor-impact/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

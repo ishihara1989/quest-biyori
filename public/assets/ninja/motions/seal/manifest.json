@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "seal",
+  "label": "印を結ぶ",
+  "facing": "right",
+  "sheet": "ninja-seal.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.21806853582554517,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/ninja/motions/seal/source/ninja-seal-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "seal-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "胸元で印",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 744,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 442,
+        "y": 685
+      },
+      "sourceBounds": {
+        "left": 146,
+        "top": 43,
+        "right": 648,
+        "bottom": 685
+      },
+      "bounds": {
+        "left": 96,
+        "top": 99,
+        "right": 205,
+        "bottom": 239
+      },
+      "visiblePixels": 6470,
+      "transparentPixels": 74530
+    },
+    {
+      "index": 1,
+      "file": "seal-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "印を高く結ぶ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 744,
+        "y": 0,
+        "width": 699,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 685
+      },
+      "sourceBounds": {
+        "left": 95,
+        "top": 43,
+        "right": 592,
+        "bottom": 685
+      },
+      "bounds": {
+        "left": 97,
+        "top": 99,
+        "right": 205,
+        "bottom": 239
+      },
+      "visiblePixels": 6288,
+      "transparentPixels": 74805
+    },
+    {
+      "index": 2,
+      "file": "seal-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "印を保つ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1443,
+        "y": 0,
+        "width": 729,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 375,
+        "y": 685
+      },
+      "sourceBounds": {
+        "left": 106,
+        "top": 43,
+        "right": 583,
+        "bottom": 685
+      },
+      "bounds": {
+        "left": 102,
+        "top": 99,
+        "right": 205,
+        "bottom": 239
+      },
+      "visiblePixels": 6457,
+      "transparentPixels": 74517
+    }
+  ]
+}

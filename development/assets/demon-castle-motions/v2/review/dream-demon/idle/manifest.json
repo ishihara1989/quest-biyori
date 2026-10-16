@@ -1,0 +1,133 @@
+{
+  "id": "dream-demon/idle",
+  "label": "夢魔・待機",
+  "enemy": "dream-demon",
+  "motion": "idle",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "2コマ目の髪が強く右へ流れる。待機4→1の連続性と翼端の揺れを確認する。",
+    "顔と身体が正面寄り。攻撃方向の左向きと揃える。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/dream-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "待機1",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/idle-generated.png",
+      "sourceSha256": "ce9b09251bd4935ade66e9a377cc592b059aa91702a04006a0f4e777387a933a",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 658,
+        "height": 610
+      },
+      "sourceAnchor": [
+        341,
+        594
+      ],
+      "scale": 0.45936395759717313,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "7c10ba07096dc6a714cf28ddfbeaaf63f8cab5b6ee622bde69bb10db0109d150",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8740043640136719
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "待機2",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/idle-generated.png",
+      "sourceSha256": "ce9b09251bd4935ade66e9a377cc592b059aa91702a04006a0f4e777387a933a",
+      "sourceRect": {
+        "left": 658,
+        "top": 0,
+        "width": 642,
+        "height": 610
+      },
+      "sourceAnchor": [
+        297,
+        594
+      ],
+      "scale": 0.45936395759717313,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "1e84c16abebe7cd3cfb552ecd02167473360c55c9dc6ea9fe87fd1c0d8af94d9",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8608207702636719
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "待機3",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/idle-generated.png",
+      "sourceSha256": "ce9b09251bd4935ade66e9a377cc592b059aa91702a04006a0f4e777387a933a",
+      "sourceRect": {
+        "left": 0,
+        "top": 610,
+        "width": 663,
+        "height": 600
+      },
+      "sourceAnchor": [
+        342,
+        573
+      ],
+      "scale": 0.45936395759717313,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "279af4439c33b9b07b1c6b405e0154787f5ffa8a2e9bca7a4e5fe04c56297d27",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8727798461914062
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "待機4",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/idle-generated.png",
+      "sourceSha256": "ce9b09251bd4935ade66e9a377cc592b059aa91702a04006a0f4e777387a933a",
+      "sourceRect": {
+        "left": 663,
+        "top": 610,
+        "width": 637,
+        "height": 600
+      },
+      "sourceAnchor": [
+        291,
+        575
+      ],
+      "scale": 0.45936395759717313,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "81a91b2fbf7f08eb9c1f81827b3fd155774ff77b66064e7566ee9d56006bdf5b",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8694000244140625
+    }
+  ],
+  "fingerprint": "8f1e080c085a10d0090d18beb0eb820bd0b5e4c1acfc793bd77f029a0169c4c0",
+  "events": [],
+  "effects": []
+}

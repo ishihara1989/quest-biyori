@@ -1,0 +1,24 @@
+{
+  "id": "dragon-girl/move-1",
+  "source": "sources/dragon-girl/move-1-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames1-3 of the exact adult dragon girl in image1, horizontal equal 3-cell sheet. Same LEFT-facing three-quarter head, red hair/horns, black/gold armor, bare hands with original short claws, folded wings at original span, attached red tail, same scale, fixed hips/head. Absolutely no sword/shield. The darker far leg at SCREEN-LEFT is the swinging leg in this FIRST HALF; the bright near leg at SCREEN-RIGHT supports flat on the floor. Frame1: left far knee flexes slightly, far heel raises; frame2: SCREEN-LEFT far knee lifts and its foot is 40 local pixels off floor while SCREEN-RIGHT near foot stays planted; frame3 far foot reaches forward LEFT and touches floor, bright near foot trails to right. Ground y820 in each 1024 local cell. Modest opposite arm swing 15px, hair/tail tips drift under10px. Exactly two legs, same hip/knee/ankle connections. Entire horns/wings/tail/feet inside central70% of each equal cell, wide fully transparent gutters. Crisp JRPG pixel clusters and dark outlines, original red and gold colors. Transparent alpha everywhere outside outlined silhouette. No aura/glow background, floor, shadow, text or labels. This half must later join a second half lifting the SCREEN-RIGHT near foot.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "a41cb1d28ec62fd05729b93b145ecce2be4283336edaed0783e0271e4ba6838a",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/move-1-generated.png",
+  "issues": [
+    "上げた脚と腕の反対振りが小さく、歩行の左右交代が読みづらい。脚の所属と支持を確認する。",
+    "翼を広げたまま尾が動く。身体の基準位置と地面への接続を固定する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "effects/claw-arc",
+  "source": "sources/effects/claw-arc-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. three curved red-gold claw trails sweeping LEFT with crisp white-hot tips and sparse ember fragments. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "11b6533003192e9cd40b86df5eba2d5e5c699af1ae625bfd12c32245c4b8dce7",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/claw-arc-generated.png",
+  "issues": [
+    "橙の光がセル全体へ広がる。背景透過と重ね合わせの視認性を修正する。",
+    "最大コマの軌跡が広く、指定のセル余白が足りない。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

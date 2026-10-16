@@ -1,0 +1,186 @@
+{
+  "id": "castle-royal-cleave",
+  "label": "王断の大剣・斬撃",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "arc",
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 80,
+      "phase": "構え",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/royal-cleave-v2.png",
+      "sourceSha256": "130a65b5203b7c8473ba0fb0143f3a29d5fd870ee0a7e0b3c2f12d34a7f1ea47",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 671,
+        "height": 641
+      },
+      "sourceAnchor": [
+        220,
+        550
+      ],
+      "scale": 0.55,
+      "pivot": [
+        200,
+        410
+      ],
+      "sha256": "60c6d1a8ff326eafee67ca02919c243a5e46e99e14e99385b9aca2cc9f547bd7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9774627685546875,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 136,
+        "top": 131,
+        "right": 428,
+        "bottom": 455
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 160,
+      "phase": "溜め",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/royal-cleave-v2.png",
+      "sourceSha256": "130a65b5203b7c8473ba0fb0143f3a29d5fd870ee0a7e0b3c2f12d34a7f1ea47",
+      "sourceRect": {
+        "left": 671,
+        "top": 0,
+        "width": 594,
+        "height": 641
+      },
+      "sourceAnchor": [
+        140,
+        540
+      ],
+      "scale": 0.55,
+      "pivot": [
+        200,
+        410
+      ],
+      "sha256": "a15ae5d963699ab5818c42ee472fd4e83ace5d43a688c2df4ed80ef265807261",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8989524841308594,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 142,
+        "top": 161,
+        "right": 425,
+        "bottom": 441
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "phase": "発動",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/royal-cleave-v2.png",
+      "sourceSha256": "130a65b5203b7c8473ba0fb0143f3a29d5fd870ee0a7e0b3c2f12d34a7f1ea47",
+      "sourceRect": {
+        "left": 0,
+        "top": 641,
+        "width": 684,
+        "height": 602
+      },
+      "sourceAnchor": [
+        220,
+        459
+      ],
+      "scale": 0.55,
+      "pivot": [
+        200,
+        410
+      ],
+      "sha256": "65b57091ba5b8887843ed68ffd622c978f22e6e43eb39e1bfdb9d35419fef781",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9084129333496094,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 97,
+        "top": 184,
+        "right": 454,
+        "bottom": 476
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "復帰",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/royal-cleave-v2.png",
+      "sourceSha256": "130a65b5203b7c8473ba0fb0143f3a29d5fd870ee0a7e0b3c2f12d34a7f1ea47",
+      "sourceRect": {
+        "left": 684,
+        "top": 641,
+        "width": 581,
+        "height": 602
+      },
+      "sourceAnchor": [
+        145,
+        464
+      ],
+      "scale": 0.55,
+      "pivot": [
+        200,
+        410
+      ],
+      "sha256": "f7b3166b5e982880eb61ed47481b929f5e91032bca1ba2565c879cce45c9d8b1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9788818359375,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 120,
+        "top": 170,
+        "right": 418,
+        "bottom": 437
+      }
+    }
+  ],
+  "fingerprint": "55f0ef2ac2964cb43879f27537446578068542adbf08a8e563bc027010c89ca1",
+  "events": [],
+  "pivot": {
+    "x": 200,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 500,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/royal-cleave/manifest.json",
+  "sourceFingerprint": "55f0ef2ac2964cb43879f27537446578068542adbf08a8e563bc027010c89ca1",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "black-knight/idle",
+  "enemy": "black-knight",
+  "region": "demon-castle",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/black-knight/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "黒騎士",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 48,
+        "top": 26,
+        "right": 638,
+        "bottom": 576
+      },
+      "sourceWidth": 655,
+      "sourceHeight": 589,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 205684,
+      "transparentFraction": 0.5331432496533133
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 16,
+        "top": 26,
+        "right": 643,
+        "bottom": 576
+      },
+      "sourceWidth": 671,
+      "sourceHeight": 589,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 204416,
+      "transparentFraction": 0.5172220971157763
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 47,
+        "top": 10,
+        "right": 642,
+        "bottom": 558
+      },
+      "sourceWidth": 658,
+      "sourceHeight": 597,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 210398,
+      "transparentFraction": 0.5356010040068631
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 14,
+        "top": 13,
+        "right": 623,
+        "bottom": 557
+      },
+      "sourceWidth": 668,
+      "sourceHeight": 597,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 215904,
+      "transparentFraction": 0.5413895826437577
+    }
+  ],
+  "reference": "../../../references/black-knight.png",
+  "originalSources": [
+    "../../../sources/black-knight/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

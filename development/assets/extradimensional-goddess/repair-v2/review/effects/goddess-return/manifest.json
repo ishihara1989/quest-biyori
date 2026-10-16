@@ -1,0 +1,243 @@
+{
+  "id": "effects/goddess-return",
+  "kind": "effect",
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    256
+  ],
+  "loop": false,
+  "frames": [
+    {
+      "index": 1,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/effects/goddess-return/review/effects/goddess-return/frame-01.png",
+      "source": "source/effects/goddess-return-1.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 150,
+      "description": "F1: a quiet thin vertical gold/cyan oval outline, width130 height300, transparent star-specked interior.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.8739125789811056,
+      "edgePixels": 0,
+      "bounds": [
+        276,
+        149,
+        452,
+        554
+      ],
+      "marginFraction": 0.2058011049723757,
+      "registrationAnchor": [
+        364,
+        351.5
+      ],
+      "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+    },
+    {
+      "index": 2,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/effects/goddess-return/review/effects/goddess-return/frame-02.png",
+      "source": "source/effects/goddess-return-1.png",
+      "cellRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 250,
+      "description": "F2: oval opens to width270 height360, a welcoming deep-violet transparent aperture with sparse cyan stars.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.7459059552516712,
+      "edgePixels": 0,
+      "bounds": [
+        191,
+        123,
+        532,
+        582
+      ],
+      "marginFraction": 0.16988950276243095,
+      "registrationAnchor": [
+        361.5,
+        352.5
+      ],
+      "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+    },
+    {
+      "index": 3,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/effects/goddess-return/review/effects/goddess-return/frame-03.png",
+      "source": "source/effects/goddess-return-1.png",
+      "cellRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 400,
+      "description": "F3: oval fully open width300 height380, thin luminous gold rim, stable and peaceful.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.6620524404016972,
+      "edgePixels": 0,
+      "bounds": [
+        145,
+        108,
+        573,
+        598
+      ],
+      "marginFraction": 0.14917127071823205,
+      "registrationAnchor": [
+        359,
+        353
+      ],
+      "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+    },
+    {
+      "index": 4,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/effects/goddess-return/review/effects/goddess-return/frame-04.png",
+      "source": "source/effects/goddess-return-2.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 650,
+      "description": "F4: same oval remains fully open width300 height380, rim softens slightly; the separate body is departing.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.6896576722322273,
+      "edgePixels": 0,
+      "bounds": [
+        216,
+        133,
+        634,
+        588
+      ],
+      "marginFraction": 0.12292817679558012,
+      "registrationAnchor": [
+        425,
+        360.5
+      ],
+      "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+    },
+    {
+      "index": 5,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/effects/goddess-return/review/effects/goddess-return/frame-05.png",
+      "source": "source/effects/goddess-return-2.png",
+      "cellRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 200,
+      "description": "F5: AFTER the separate body is gone, oval narrows to width90 height340, smooth rim draws inward. No cracking or shards.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.839435609413632,
+      "edgePixels": 0,
+      "bounds": [
+        254,
+        149,
+        474,
+        571
+      ],
+      "marginFraction": 0.2058011049723757,
+      "registrationAnchor": [
+        364,
+        360
+      ],
+      "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+    },
+    {
+      "index": 6,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/effects/goddess-return/review/effects/goddess-return/frame-06.png",
+      "source": "source/effects/goddess-return-2.png",
+      "cellRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 150,
+      "description": "F6: one dim thin vertical seam, width6 height90, almost gone. Only this seam, no gems or extra glowing objects. Playback fades it to zero.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9312005891151064,
+      "edgePixels": 0,
+      "bounds": [
+        273,
+        244,
+        387,
+        488
+      ],
+      "marginFraction": 0.324585635359116,
+      "registrationAnchor": [
+        330,
+        366
+      ],
+      "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+    }
+  ],
+  "sources": [
+    "source/effects/goddess-return-1.png",
+    "source/effects/goddess-return-2.png"
+  ],
+  "expectedFrames": 6,
+  "missingFrames": [],
+  "complete": true,
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+  "contact": "review/effects/goddess-return/contact.png",
+  "gif": "review/effects/goddess-return/preview.gif"
+}

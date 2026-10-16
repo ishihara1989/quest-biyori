@@ -1,0 +1,13 @@
+[
+  {
+    "enemy": "storm-jackal",
+    "frame": 5,
+    "source": "trot/storm-jackal/sources/frame-5-focused.png",
+    "reference": "trot/storm-jackal/sources/frame-5-single.png",
+    "guide": "trot/storm-jackal/guides/contact-correction-5.png",
+    "prompt": "Edit ONLY the TWO FRONT LEGS of Image1. Image2 overlays the required leg centerlines and paw-bottom markers in the SAME 1254x1254 coordinates. Bright BLUE foreground LEFT FRONT (big visible shoulder, golden cuff) must CURL UP with paw bottom (360,1080), YELLOW target ellipse. Small DARK background RIGHT FRONT must STRAIGHTEN DOWN with planted paw bottom (370,1175), BLUE target ellipse. This reverses the current front-leg support: in Image1 the bright front paw is down and the dark front is up, both are wrong. Near front UP, far front DOWN. Preserve the exact existing rear legs: bright near hind DOWN, dark far hind UP. Keep the far front paw near/behind the curled near foreleg, not extended out beyond the muzzle. Follow the guide centerline under the correct own shoulder, knee and ankle all continuously connected. Exactly four existing feet, no fifth, no foot disconnected from its thigh. Keep face, horns, mane, torso, tail, fur palette, armor detail, brightness, body position and scale EXACTLY like Image1. Image2 is QA guide ONLY: no dark tint, colored strokes, circles, labels or guide pixels in output. Transparent full canvas, no floor/shadow. These are small controlled leg changes for frame 5 of a 6-frame diagonal trot.",
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13090-86c2-7f71-8c3e-886a539df52e\\exec-be1d8e13-6a4b-4c2f-9583-c0e946af7d5b.png",
+    "status": "superseded",
+    "selectionReason": "Retained intermediate source; selected revision corrects contact, excessive far-leg reach, or clipped tail tips."
+  }
+]

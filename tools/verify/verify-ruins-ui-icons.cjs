@@ -1,0 +1,17 @@
+'use strict';
+const fs=require('node:fs'),path=require('../lib/project-paths.cjs').assetPaths,assert=require('node:assert/strict');
+const bundled=path.join(process.env.USERPROFILE,'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules'),{chromium}=require(require.resolve('playwright',{paths:[__dirname,bundled]}));
+const D=require('../../public/js/data/forest-data.js'),P=require('../../public/js/core/forest-progression.js'),R=require('../../public/js/data/ruins-data.js');
+const output=path.resolve(__dirname,'../../output/ruins-ui-icons'),url=process.env.FOREST_TEST_URL||'http://127.0.0.1:4191/';
+(async()=>{fs.mkdirSync(output,{recursive:true});const seed=D.freshSave();seed.cleared=Array.from({length:40},(_,i)=>i+1);seed.selectedStage=41;seed.autoMode='off';P.recruitMiko(seed);for(const item of R.ITEMS)seed.inventory[item.id]=99;
+  const browser=await chromium.launch({headless:true,executablePath:process.env.FOREST_TEST_BROWSER||'C:/Program Files/Google/Chrome/Application/chrome.exe'}),errors=[];
+  try{const context=await browser.newContext({viewport:{width:1440,height:1050}}),page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});await page.route('**/favicon.ico',r=>r.fulfill({status:204,body:''}));await page.addInitScript(({key,seed})=>localStorage.setItem(key,JSON.stringify(seed)),{key:D.SAVE_KEY,seed});
+    const loaded=async locator=>{await locator.waitFor();await locator.evaluate(img=>new Promise((resolve,reject)=>{if(img.complete)return img.naturalWidth?resolve():reject(Error(img.src));img.onload=resolve;img.onerror=()=>reject(Error(img.src));}));};
+    await page.goto(url);await page.locator('#start-button:not([disabled])').waitFor({timeout:60000});await loaded(page.locator('img[src="assets/ui/ruins/icons/ruins-crystal.png"]').first());
+    await page.locator('[data-party-character=miko]').click();await page.locator('[data-open=character]').first().click();await page.locator('[data-growth-tab=character]').click();for(const id of ['miko-gohei','miko-robe'])await loaded(page.locator('.gear-card img[src="assets/ui/ruins/icons/'+id+'.png"]'));await page.screenshot({path:path.join(output,'miko-equipment.png')});
+    await page.locator('[data-growth-tab=skills]').click();await loaded(page.locator('.growth-node img[src="assets/ui/ruins/icons/miko-gohei.png"]'));await page.locator('#close-menu').click();
+    await page.locator('[data-open=inventory]').first().click();for(const item of R.ITEMS)await loaded(page.locator('[data-item="'+item.id+'"] img[src="'+item.image+'"]'));await page.screenshot({path:path.join(output,'ruins-inventory.png')});
+    await page.locator('[data-filter=conversion]').click();await page.locator('[data-conversion-region="5"]').click();for(const item of R.ITEMS)await loaded(page.locator('#material-conversion img[src="'+item.image+'"]').first());await page.screenshot({path:path.join(output,'ruins-conversion.png')});
+    assert.equal(await page.locator('img').evaluateAll(images=>images.filter(i=>i.complete&&!i.naturalWidth).length),0);assert.deepEqual(errors,[]);await context.close();console.log(JSON.stringify({checks:'seven generated icons in equipment, normal attack, inventory and conversion; no missing images or page errors',screenshots:output}));
+  }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/bell-owl-idle-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 701,
+      "height": 724
+    },
+    {
+      "x": 701,
+      "y": 0,
+      "width": 752,
+      "height": 724
+    },
+    {
+      "x": 1453,
+      "y": 0,
+      "width": 719,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.1206896551724138
+}

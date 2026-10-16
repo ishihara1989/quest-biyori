@@ -1,0 +1,301 @@
+[
+  {
+    "id": "frost-wolf/move/frame-1",
+    "enemy": "frost-wolf",
+    "frame": 1,
+    "pair": "A",
+    "guide": "guides/frost-wolf/annotated-A.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-1-generated-v2.png",
+    "prompt": "EDIT the wolf from image 1 into ONE new trot pose. Image 2 identifies exactly which paws to move with yellow arrows and which to plant with green circles; it is ONLY a drawing guide, erase all labels and guide marks from the output. Raise the RIGHTMOST white rear paw in the picture by bending its knee and ankle, and also raise the LEFTMOST grey front paw. The two MIDDLE paws must TOUCH THE GROUND: middle-front large white paw and middle-back grey paw. Two raised paws and two grounded paws, in diagonal pairs. Keep the head, torso, mane, ears, tail, colors and camera unchanged; redraw the four connected legs to make this specific pose possible. All hips connect through knee/ankle to the correct paw. No extra or detached feet. Preserve crisp white/navy/azure pixel art. ONE sprite, transparent alpha canvas, full silhouette with ample transparent margin, no text or colored guide lines, no sheet or scenery.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-1-prompt.txt",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/references/frost-wolf.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/guides/frost-wolf/annotated-A.png"
+    ],
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-5479f8ea-dae1-4b89-90fb-a89382a80338.png"
+  },
+  {
+    "id": "frost-wolf/move/frame-2",
+    "enemy": "frost-wolf",
+    "frame": 2,
+    "pair": "A",
+    "guide": "guides/frost-wolf/frame-2.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-2-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct A diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 2 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: LEFTMOST grey front paw and RIGHTMOST white rear paw raised, two middle paws grounded. Move the TWO RAISED paws LEFT/forward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently RIGHT/backward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-2-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/frost-wolf.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-1-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/frost-wolf/frame-2.png"
+    ],
+    "protoSource": "sources/frost-wolf/move-frame-1-generated-v2.png"
+  },
+  {
+    "id": "frost-wolf/move/frame-3",
+    "enemy": "frost-wolf",
+    "frame": 3,
+    "pair": "B",
+    "guide": "guides/frost-wolf/frame-3.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-3-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct B diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 3 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: large white FRONT paw second from left and middle grey REAR paw third from left raised, outermost front/rear paws grounded. Move the TWO RAISED paws RIGHT/backward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently LEFT/forward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-3-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/frost-wolf.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-4-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/frost-wolf/frame-3.png"
+    ],
+    "protoSource": "sources/frost-wolf/move-frame-4-generated-v2.png"
+  },
+  {
+    "id": "frost-wolf/move/frame-4",
+    "enemy": "frost-wolf",
+    "frame": 4,
+    "pair": "B",
+    "guide": "guides/frost-wolf/annotated-B.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-4-generated-v2.png",
+    "prompt": "EDIT the wolf from image 1 into ONE new trot pose. Image 2 identifies exactly which paws to move with yellow arrows and which to plant with green circles; it is ONLY a drawing guide, erase all labels and guide marks from the output. Raise the large WHITE FRONT paw (second paw from the LEFT in the picture) and the GREY REAR paw under the middle belly (third from left). Plant the LEFTMOST grey front paw and the RIGHTMOST white rear paw on the ground. The white FRONT leg must have a clearly BENT elbow, rather than remaining a straight standing leg. Two raised paws and two grounded paws, in diagonal pairs. Keep the head, torso, mane, ears, tail, colors and camera unchanged; redraw the four connected legs to make this specific pose possible. All hips connect through knee/ankle to the correct paw. No extra or detached feet. Preserve crisp white/navy/azure pixel art. ONE sprite, transparent alpha canvas, full silhouette with ample transparent margin, no text or colored guide lines, no sheet or scenery.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-4-prompt.txt",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/references/frost-wolf.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/guides/frost-wolf/annotated-B.png"
+    ],
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-9badda04-b381-4f06-8502-e4ba574e4769.png"
+  },
+  {
+    "id": "frost-wolf/move/frame-5",
+    "enemy": "frost-wolf",
+    "frame": 5,
+    "pair": "B",
+    "guide": "guides/frost-wolf/frame-5.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-5-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct B diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 5 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: large white FRONT paw second from left and middle grey REAR paw third from left raised, outermost front/rear paws grounded. Move the TWO RAISED paws LEFT/forward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently RIGHT/backward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-5-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/frost-wolf.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-4-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/frost-wolf/frame-5.png"
+    ],
+    "protoSource": "sources/frost-wolf/move-frame-4-generated-v2.png"
+  },
+  {
+    "id": "frost-wolf/move/frame-6",
+    "enemy": "frost-wolf",
+    "frame": 6,
+    "pair": "A",
+    "guide": "guides/frost-wolf/frame-6.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-6-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct A diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 6 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: LEFTMOST grey front paw and RIGHTMOST white rear paw raised, two middle paws grounded. Move the TWO RAISED paws RIGHT/backward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently LEFT/forward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-6-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/frost-wolf.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-1-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/frost-wolf/frame-6.png"
+    ],
+    "protoSource": "sources/frost-wolf/move-frame-1-generated-v2.png"
+  },
+  {
+    "id": "fenrir/move/frame-1",
+    "enemy": "fenrir",
+    "frame": 1,
+    "pair": "A",
+    "guide": "guides/fenrir/annotated-A.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-1-generated-v2.png",
+    "prompt": "EDIT the fenrir from image 1 into ONE new trot pose. Image 2 identifies exactly which paws to move with yellow arrows and which to plant with green circles; it is ONLY a drawing guide, erase all labels and guide marks from the output. Raise the RIGHTMOST white rear paw in the picture by bending its knee and ankle, and also raise the LEFTMOST grey front paw. The two MIDDLE paws must TOUCH THE GROUND: middle-front large white paw and middle-back grey paw. Two raised paws and two grounded paws, in diagonal pairs. Keep the head, torso, mane, ears, tail, colors and camera unchanged; redraw the four connected legs to make this specific pose possible. All hips connect through knee/ankle to the correct paw. No extra or detached feet. Preserve crisp white/navy/azure pixel art and all original rune markings and crystal mane. ONE sprite, transparent alpha canvas, full silhouette with ample transparent margin, no text or colored guide lines, no sheet or scenery.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-1-prompt.txt",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/references/fenrir.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/guides/fenrir/annotated-A.png"
+    ],
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-c42be921-b87c-4d40-89c1-4b751bf6dc66.png"
+  },
+  {
+    "id": "fenrir/move/frame-2",
+    "enemy": "fenrir",
+    "frame": 2,
+    "pair": "A",
+    "guide": "guides/fenrir/frame-2.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-2-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct A diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 2 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: LEFTMOST grey front paw and RIGHTMOST white rear paw raised, two middle paws grounded. Move the TWO RAISED paws LEFT/forward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently RIGHT/backward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-2-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/fenrir.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-1-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/fenrir/frame-2.png"
+    ],
+    "protoSource": "sources/fenrir/move-frame-1-generated-v2.png"
+  },
+  {
+    "id": "fenrir/move/frame-3",
+    "enemy": "fenrir",
+    "frame": 3,
+    "pair": "B",
+    "guide": "guides/fenrir/frame-3.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-3-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct B diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 3 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: large white FRONT paw second from left and middle grey REAR paw third from left raised, outermost front/rear paws grounded. Move the TWO RAISED paws RIGHT/backward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently LEFT/forward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-3-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/fenrir.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-4-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/fenrir/frame-3.png"
+    ],
+    "protoSource": "sources/fenrir/move-frame-4-generated-v2.png"
+  },
+  {
+    "id": "fenrir/move/frame-4",
+    "enemy": "fenrir",
+    "frame": 4,
+    "pair": "B",
+    "guide": "guides/fenrir/annotated-B.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-4-generated-v2.png",
+    "prompt": "EDIT the fenrir from image 1 into ONE new trot pose. Image 2 identifies exactly which paws to move with yellow arrows and which to plant with green circles; it is ONLY a drawing guide, erase all labels and guide marks from the output. Raise the large WHITE FRONT paw (second paw from the LEFT in the picture) and the GREY REAR paw under the middle belly (third from left). Plant the LEFTMOST grey front paw and the RIGHTMOST white rear paw on the ground. The white FRONT leg must have a clearly BENT elbow, rather than remaining a straight standing leg. Two raised paws and two grounded paws, in diagonal pairs. Keep the head, torso, mane, ears, tail, colors and camera unchanged; redraw the four connected legs to make this specific pose possible. All hips connect through knee/ankle to the correct paw. No extra or detached feet. Preserve crisp white/navy/azure pixel art and all original rune markings and crystal mane. ONE sprite, transparent alpha canvas, full silhouette with ample transparent margin, no text or colored guide lines, no sheet or scenery.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-4-prompt.txt",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/references/fenrir.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/guides/fenrir/annotated-B.png"
+    ],
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-db983b9a-447e-4955-bb37-3ae3ee1c896a.png"
+  },
+  {
+    "id": "fenrir/move/frame-5",
+    "enemy": "fenrir",
+    "frame": 5,
+    "pair": "B",
+    "guide": "guides/fenrir/frame-5.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-5-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct B diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 5 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: large white FRONT paw second from left and middle grey REAR paw third from left raised, outermost front/rear paws grounded. Move the TWO RAISED paws LEFT/forward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently RIGHT/backward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-5-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/fenrir.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-4-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/fenrir/frame-5.png"
+    ],
+    "protoSource": "sources/fenrir/move-frame-4-generated-v2.png"
+  },
+  {
+    "id": "fenrir/move/frame-6",
+    "enemy": "fenrir",
+    "frame": 6,
+    "pair": "A",
+    "guide": "guides/fenrir/frame-6.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-6-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct A diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 6 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: LEFTMOST grey front paw and RIGHTMOST white rear paw raised, two middle paws grounded. Move the TWO RAISED paws RIGHT/backward by about 55 pixels on a 1280 canvas, and LOWER those toes by 40 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently LEFT/forward by about 55 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-6-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/fenrir.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-1-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/fenrir/frame-6.png"
+    ],
+    "protoSource": "sources/fenrir/move-frame-1-generated-v2.png"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-1",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 1,
+    "pair": "A",
+    "guide": "guides/ice-tusk-mammoth/annotated-A.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-1-generated-v2.png",
+    "prompt": "EDIT the ice-tusk-mammoth from image 1 into ONE new trot pose. Image 2 identifies exactly which paws to move with yellow arrows and which to plant with green circles; it is ONLY a drawing guide, erase all labels and guide marks from the output. Raise the RIGHTMOST white rear paw in the picture by bending its knee and ankle, and also raise the LEFTMOST grey front paw. The two MIDDLE paws must TOUCH THE GROUND: middle-front large white paw and middle-back grey paw. Two raised paws and two grounded paws, in diagonal pairs. Keep the head, torso, mane, ears, tail, colors and camera unchanged; redraw the four connected legs to make this specific pose possible. All hips connect through knee/ankle to the correct paw. No extra or detached feet. Preserve crisp white/navy/azure pixel art and all original three back slabs, TWO curved ice tusks and ONE trunk. ONE sprite, transparent alpha canvas, full silhouette with ample transparent margin, no text or colored guide lines, no sheet or scenery.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-1-prompt.txt",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/glacier-motions/guides/ice-tusk-mammoth/annotated-A.png"
+    ],
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-97510e26-b945-46b2-ac78-2109ad0dfd1d.png"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-2",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 2,
+    "pair": "A",
+    "guide": "guides/ice-tusk-mammoth/frame-2.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-2-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct A diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 2 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: LEFTMOST grey front paw and RIGHTMOST white rear paw raised, two middle paws grounded. Move the TWO RAISED paws LEFT/forward by about 35 pixels on a 1280 canvas, and LOWER those toes by 25 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently RIGHT/backward by about 35 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-2-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/ice-tusk-mammoth.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-1-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/ice-tusk-mammoth/frame-2.png"
+    ],
+    "protoSource": "sources/ice-tusk-mammoth/move-frame-1-generated-v2.png"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-3",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 3,
+    "pair": "B",
+    "guide": "guides/ice-tusk-mammoth/frame-3.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-3-generated-v3.png",
+    "prompt": "First image is fixed canonical mammoth identity, second image is the specific single trot pose to reframe. Edit ONLY image 2. Preserve its EXACT four connected legs and diagonal B pose: large central white front leg lifted, middle dark rear leg lifted, outermost left front and right rear planted; exact knee/ankle/paw locations RELATIVE TO THE BODY must remain unchanged. Preserve skull, two curved azure tusks, one trunk, three back slabs, fur, proportions and pixel-art palette from image 1. The tail at the right canvas edge is clipped: reconstruct its complete natural tip using image 1. Make the ENTIRE mammoth including both tusks and complete tail MUCH SMALLER and centered: maximum 60% of new canvas width AND maximum 65% height, at least 20% fully transparent empty border on EVERY side. Full silhouette entirely visible. No part, glow or alpha island may touch a global edge. Actually reframe the image with a smaller complete creature, not just padding a cropped tip. Preserve transparent alpha, crisp pixel clusters, no background, floor, shadow, annotations, duplicate limbs or text. This is ONE sprite, not a sheet.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-3-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/ice-tusk-mammoth.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-3-generated-v2.png"
+    ],
+    "protoSource": "sources/ice-tusk-mammoth/move-frame-4-generated-v2.png"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-4",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 4,
+    "pair": "B",
+    "guide": "guides/ice-tusk-mammoth/annotated-B.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-4-generated-v3.png",
+    "prompt": "First image is fixed canonical mammoth identity, second image is the specific single trot pose to reframe. Edit ONLY image 2. Preserve its EXACT four connected legs and diagonal B pose: large central white front leg lifted, middle dark rear leg lifted, outermost left front and right rear planted; exact knee/ankle/paw locations RELATIVE TO THE BODY must remain unchanged. Preserve skull, two curved azure tusks, one trunk, three back slabs, fur, proportions and pixel-art palette from image 1. The tail at the right canvas edge is clipped: reconstruct its complete natural tip using image 1. Make the ENTIRE mammoth including both tusks and complete tail MUCH SMALLER and centered: maximum 60% of new canvas width AND maximum 65% height, at least 20% fully transparent empty border on EVERY side. Full silhouette entirely visible. No part, glow or alpha island may touch a global edge. Actually reframe the image with a smaller complete creature, not just padding a cropped tip. Preserve transparent alpha, crisp pixel clusters, no background, floor, shadow, annotations, duplicate limbs or text. This is ONE sprite, not a sheet.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-4-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/ice-tusk-mammoth.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-4-generated-v2.png"
+    ],
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-0150d7b0-2105-4215-9e27-1aefaedcdc02.png"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-5",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 5,
+    "pair": "B",
+    "guide": "guides/ice-tusk-mammoth/frame-5.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-5-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct B diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 5 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: large white FRONT paw second from left and middle grey REAR paw third from left raised, outermost front/rear paws grounded. Move the TWO RAISED paws LEFT/forward by about 35 pixels on a 1280 canvas, and LOWER those toes by 25 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently RIGHT/backward by about 35 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-5-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/ice-tusk-mammoth.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-4-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/ice-tusk-mammoth/frame-5.png"
+    ],
+    "protoSource": "sources/ice-tusk-mammoth/move-frame-4-generated-v2.png"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-6",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 6,
+    "pair": "A",
+    "guide": "guides/ice-tusk-mammoth/frame-6.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-6-generated-v2.png",
+    "prompt": "First reference is fixed character identity. SECOND is the accepted correct A diagonal trot pose to EDIT, not the standing pose. Third image is skeletal trajectory target only. Create ONE adjacent sprite frame 6 for its six-frame in-place trot. Preserve the SAME two raised paws and the SAME two grounded paws as image 2: LEFTMOST grey front paw and RIGHTMOST white rear paw raised, two middle paws grounded. Move the TWO RAISED paws RIGHT/backward by about 35 pixels on a 1280 canvas, and LOWER those toes by 25 pixels compared with image 2 (descending toward contact but still visibly above their own planted plane). Move the TWO GROUNDED paws gently LEFT/forward by about 35 pixels without lifting them. Modify knees/ankles with the toes to preserve full connections to their original hips. No fifth foot, no toe left at the old position. Hold skull, torso, hip positions, mane, tail, TWO tusks/ONE trunk if mammoth, crystals, rune ownership, perspective and white/navy/azure palette fixed. Preserve the clear diagonal support already correct in image 2. Pixel art, one full silhouette with transparent alpha and empty margins; no sheet, text, guide colors, floor, cast shadow or effect.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-6-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/ice-tusk-mammoth.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-1-generated-v2.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/ice-tusk-mammoth/frame-6.png"
+    ],
+    "protoSource": "sources/ice-tusk-mammoth/move-frame-1-generated-v2.png"
+  }
+]

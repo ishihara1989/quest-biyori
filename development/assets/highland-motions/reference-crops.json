@@ -1,0 +1,54 @@
+{
+  "source": "../mid-late-design/v1/highland/monsters-v2.png",
+  "crops": [
+    {
+      "id": "horn-jackal",
+      "left": 0,
+      "top": 0,
+      "width": 431,
+      "height": 416
+    },
+    {
+      "id": "rock-horn-goat",
+      "left": 431,
+      "top": 0,
+      "width": 401,
+      "height": 416
+    },
+    {
+      "id": "wind-sprite",
+      "left": 832,
+      "top": 0,
+      "width": 421,
+      "height": 416
+    },
+    {
+      "id": "storm-jackal",
+      "left": 0,
+      "top": 416,
+      "width": 431,
+      "height": 401
+    },
+    {
+      "id": "iron-horn",
+      "left": 431,
+      "top": 416,
+      "width": 401,
+      "height": 401
+    },
+    {
+      "id": "harpy-queen",
+      "left": 832,
+      "top": 416,
+      "width": 421,
+      "height": 401
+    },
+    {
+      "id": "manticore",
+      "left": 362,
+      "top": 818,
+      "width": 587,
+      "height": 435
+    }
+  ]
+}

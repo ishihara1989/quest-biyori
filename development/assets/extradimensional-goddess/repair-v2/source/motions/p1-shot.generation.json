@@ -1,0 +1,19 @@
+{
+  "id": "motions/p1-shot",
+  "source": "source/motions/p1-shot.png",
+  "sha256": "c1d3f2a6bc01b52afb3b312e8affdb72a20f9c554bf752f872474673745c44a2",
+  "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p1-shot.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 4 equal square cells, 2 columns and 2 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nSeated body only, unsupported sitting pose, cheek supported by the SCREEN-LEFT arm, crossed legs unchanged. Move ONLY the SCREEN-RIGHT arm from its existing shoulder. EXACTLY TWO ARMS: the emitting hand is still on the screen-right side of the body, never add a hand to the left of the cheek-support arm. No throne, large ring, shadow, projectile or glow. \nFrames:\nRight-on-screen hand (392,288), neutral.\nR=(367,270), prepare finger flick.\nR=(344,260), flick toward LEFT, emission pose; no drawn projectile.\nR=(392,288), original neutral.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-2fe95953-d267-4e38-8630-996ff599f4e1.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "../v1/references/phase-1-seated.png",
+      "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+    },
+    {
+      "file": "../first-pass-v1/source/parts/body-seated.png",
+      "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+    }
+  ],
+  "attempt": 1
+}

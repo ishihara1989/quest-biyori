@@ -1,0 +1,52 @@
+{
+  "id": "parts/ground-shadow",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/ground-shadow/review/parts/ground-shadow/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/ground-shadow.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "One soft low elliptical contact shadow, dark violet, transparent center-to-edge falloff; no hard floor slab.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.9653968544676175,
+      "lowAlphaPixels": 20597,
+      "edgePixels": 0,
+      "bounds": [
+        363,
+        1075,
+        895,
+        1158
+      ],
+      "marginFraction": 0.07575757575757576
+    }
+  ],
+  "sources": [
+    "source/parts/ground-shadow.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/ground-shadow/contact.png",
+  "gif": "review/parts/ground-shadow/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

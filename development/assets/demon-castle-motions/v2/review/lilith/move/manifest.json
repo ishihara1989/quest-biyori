@@ -1,0 +1,133 @@
+{
+  "id": "lilith/move",
+  "label": "リリス・移動",
+  "enemy": "lilith",
+  "motion": "move",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "翼の幅と髪の量がコマ間で変わる。胴体と翼根を固定し4→1を合わせる。",
+    "翼端と裾の余白が少ない。移動の傾き・浮遊上下と待機の姿勢差を確認する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/lilith.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "移動1",
+      "source": "../../../../../late-stage-first-pass/v1/sources/lilith/move-generated.png",
+      "sourceSha256": "61699acb2ba47c772619bf633de22d72f70b6428367976ab9d98404e50ac4c18",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 652,
+        "height": 599
+      },
+      "sourceAnchor": [
+        367,
+        568
+      ],
+      "scale": 0.4646840148698885,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "53bb33320f13bb7220bd9600e898d88e644d16ab1100ae89c49967c7a416986f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8041343688964844
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "移動2",
+      "source": "../../../../../late-stage-first-pass/v1/sources/lilith/move-generated.png",
+      "sourceSha256": "61699acb2ba47c772619bf633de22d72f70b6428367976ab9d98404e50ac4c18",
+      "sourceRect": {
+        "left": 652,
+        "top": 0,
+        "width": 649,
+        "height": 599
+      },
+      "sourceAnchor": [
+        313,
+        579
+      ],
+      "scale": 0.4646840148698885,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "d017a58d686b0c80510579864d9d650a4faee05b8f9554b2b107c20943f52015",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8112869262695312
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "移動3",
+      "source": "../../../../../late-stage-first-pass/v1/sources/lilith/move-generated.png",
+      "sourceSha256": "61699acb2ba47c772619bf633de22d72f70b6428367976ab9d98404e50ac4c18",
+      "sourceRect": {
+        "left": 0,
+        "top": 599,
+        "width": 652,
+        "height": 610
+      },
+      "sourceAnchor": [
+        349,
+        557
+      ],
+      "scale": 0.4646840148698885,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "da74d96f6da11812591880fc3d2d2f990b07165bea371413d261ecc9822f1a0f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8152046203613281
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "移動4",
+      "source": "../../../../../late-stage-first-pass/v1/sources/lilith/move-generated.png",
+      "sourceSha256": "61699acb2ba47c772619bf633de22d72f70b6428367976ab9d98404e50ac4c18",
+      "sourceRect": {
+        "left": 652,
+        "top": 599,
+        "width": 649,
+        "height": 610
+      },
+      "sourceAnchor": [
+        323,
+        559
+      ],
+      "scale": 0.4646840148698885,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "1ed313f00cbe6f406be7a1a82691a6d97e0b7296c7073ac0e991fee8e2af7785",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8045463562011719
+    }
+  ],
+  "fingerprint": "d0ae7de821776dc5b7c7701e955e9144b444e9b454fd69c2c01051fae057a332",
+  "events": [],
+  "effects": []
+}

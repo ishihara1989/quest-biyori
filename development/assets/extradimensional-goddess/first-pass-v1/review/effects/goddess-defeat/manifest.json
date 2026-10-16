@@ -1,0 +1,178 @@
+{
+  "id": "effects/goddess-defeat",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    240
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/goddess-defeat/review/effects/goddess-defeat/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/effects/goddess-defeat-1.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":160,\"ringCenter\":[268,156],\"radius\":110,\"crackAnglesDeg\":[45,180,290]}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.48278059277799823,
+      "lowAlphaPixels": 137891,
+      "edgePixels": 0,
+      "bounds": [
+        46,
+        15,
+        694,
+        669
+      ],
+      "marginFraction": 0.020718232044198894
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/goddess-defeat/review/effects/goddess-defeat/frame-02.png",
+      "index": 2,
+      "durationMs": 180,
+      "source": "source/effects/goddess-defeat-1.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":180,\"fragmentCenters\":[[150,110],[386,130],[155,275],[371,290]]}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.46521397393241964,
+      "lowAlphaPixels": 174849,
+      "edgePixels": 0,
+      "bounds": [
+        93,
+        41,
+        661,
+        629
+      ],
+      "marginFraction": 0.05662983425414365
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/goddess-defeat/review/effects/goddess-defeat/frame-03.png",
+      "index": 3,
+      "durationMs": 200,
+      "source": "source/effects/goddess-defeat-1.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":200,\"center\":[256,240],\"radius\":70}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.6924391807331889,
+      "lowAlphaPixels": 108162,
+      "edgePixels": 0,
+      "bounds": [
+        173,
+        121,
+        584,
+        573
+      ],
+      "marginFraction": 0.1671270718232044
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/goddess-defeat/review/effects/goddess-defeat/frame-04.png",
+      "index": 4,
+      "durationMs": 180,
+      "source": "source/effects/goddess-defeat-2.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F4: {\"f\":4,\"ms\":180,\"center\":[256,240],\"diamondSize\":[36,52]}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3229411495375599,
+      "lowAlphaPixels": 171284,
+      "edgePixels": 0,
+      "bounds": [
+        23,
+        40,
+        722,
+        689
+      ],
+      "marginFraction": 0.0013812154696132596
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/goddess-defeat/review/effects/goddess-defeat/frame-05.png",
+      "index": 5,
+      "durationMs": 260,
+      "source": "source/effects/goddess-defeat-2.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F5: {\"f\":5,\"ms\":260,\"center\":[256,240],\"radius\":140,\"alpha\":0.4}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.46318412136381676,
+      "lowAlphaPixels": 185764,
+      "edgePixels": 0,
+      "bounds": [
+        54,
+        56,
+        697,
+        641
+      ],
+      "marginFraction": 0.03591160220994475
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/goddess-defeat/review/effects/goddess-defeat/frame-06.png",
+      "index": 6,
+      "durationMs": 200,
+      "source": "source/effects/goddess-defeat-2.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F6: {\"f\":6,\"ms\":200,\"center\":[256,240],\"radius\":140,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.7495001678825433,
+      "lowAlphaPixels": 115255,
+      "edgePixels": 0,
+      "bounds": [
+        74,
+        129,
+        674,
+        585
+      ],
+      "marginFraction": 0.06767955801104972
+    }
+  ],
+  "sources": [
+    "source/effects/goddess-defeat-1.png",
+    "source/effects/goddess-defeat-2.png"
+  ],
+  "expectedFrames": 6,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/goddess-defeat/contact.png",
+  "gif": "review/effects/goddess-defeat/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

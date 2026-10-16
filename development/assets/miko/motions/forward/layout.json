@@ -1,0 +1,48 @@
+{
+  "source": "source/miko-forward-generated-v3.png",
+  "columns": 4,
+  "rows": 2,
+  "rowSplit": 512,
+  "frames": [
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    }
+  ]
+}

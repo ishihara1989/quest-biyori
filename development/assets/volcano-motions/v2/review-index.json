@@ -1,0 +1,622 @@
+[
+  {
+    "id": "lava-salamander/idle",
+    "enemy": "lava-salamander",
+    "label": "待機",
+    "motion": "idle",
+    "kind": null,
+    "manifest": "ready/lava-salamander/idle/manifest.json",
+    "contact": "review/lava-salamander/idle/contact.png",
+    "gif": "review/lava-salamander/idle/preview.gif"
+  },
+  {
+    "id": "lava-salamander/hit",
+    "enemy": "lava-salamander",
+    "label": "被弾",
+    "motion": "hit",
+    "kind": null,
+    "manifest": "ready/lava-salamander/hit/manifest.json",
+    "contact": "review/lava-salamander/hit/contact.png",
+    "gif": "review/lava-salamander/hit/preview.gif"
+  },
+  {
+    "id": "lava-salamander/down",
+    "enemy": "lava-salamander",
+    "label": "撃破",
+    "motion": "down",
+    "kind": null,
+    "manifest": "ready/lava-salamander/down/manifest.json",
+    "contact": "review/lava-salamander/down/contact.png",
+    "gif": "review/lava-salamander/down/preview.gif"
+  },
+  {
+    "id": "lava-salamander/attack",
+    "enemy": "lava-salamander",
+    "label": "噛みつき",
+    "motion": "attack",
+    "kind": null,
+    "manifest": "ready/lava-salamander/attack/manifest.json",
+    "contact": "review/lava-salamander/attack/contact.png",
+    "gif": "review/lava-salamander/attack/preview.gif"
+  },
+  {
+    "id": "lava-salamander/danger-1",
+    "enemy": "lava-salamander",
+    "label": "灼熱噴き",
+    "motion": "danger-1",
+    "kind": null,
+    "manifest": "ready/lava-salamander/danger-1/manifest.json",
+    "contact": "review/lava-salamander/danger-1/contact.png",
+    "gif": "review/lava-salamander/danger-1/preview.gif"
+  },
+  {
+    "id": "lava-salamander/move",
+    "enemy": "lava-salamander",
+    "label": "移動",
+    "motion": "move",
+    "kind": null,
+    "manifest": "ready/lava-salamander/move/manifest.json",
+    "contact": "review/lava-salamander/move/contact.png",
+    "gif": "review/lava-salamander/move/preview.gif"
+  },
+  {
+    "id": "obsidian-soldier/idle",
+    "enemy": "obsidian-soldier",
+    "label": "待機",
+    "motion": "idle",
+    "kind": null,
+    "manifest": "ready/obsidian-soldier/idle/manifest.json",
+    "contact": "review/obsidian-soldier/idle/contact.png",
+    "gif": "review/obsidian-soldier/idle/preview.gif"
+  },
+  {
+    "id": "obsidian-soldier/hit",
+    "enemy": "obsidian-soldier",
+    "label": "被弾",
+    "motion": "hit",
+    "kind": null,
+    "manifest": "ready/obsidian-soldier/hit/manifest.json",
+    "contact": "review/obsidian-soldier/hit/contact.png",
+    "gif": "review/obsidian-soldier/hit/preview.gif"
+  },
+  {
+    "id": "obsidian-soldier/down",
+    "enemy": "obsidian-soldier",
+    "label": "撃破",
+    "motion": "down",
+    "kind": null,
+    "manifest": "ready/obsidian-soldier/down/manifest.json",
+    "contact": "review/obsidian-soldier/down/contact.png",
+    "gif": "review/obsidian-soldier/down/preview.gif"
+  },
+  {
+    "id": "obsidian-soldier/move",
+    "enemy": "obsidian-soldier",
+    "label": "移動",
+    "motion": "move",
+    "kind": null,
+    "manifest": "ready/obsidian-soldier/move/manifest.json",
+    "contact": "review/obsidian-soldier/move/contact.png",
+    "gif": "review/obsidian-soldier/move/preview.gif"
+  },
+  {
+    "id": "obsidian-soldier/attack",
+    "enemy": "obsidian-soldier",
+    "label": "斧撃",
+    "motion": "attack",
+    "kind": null,
+    "manifest": "ready/obsidian-soldier/attack/manifest.json",
+    "contact": "review/obsidian-soldier/attack/contact.png",
+    "gif": "review/obsidian-soldier/attack/preview.gif"
+  },
+  {
+    "id": "obsidian-soldier/danger-1",
+    "enemy": "obsidian-soldier",
+    "label": "破甲の斧",
+    "motion": "danger-1",
+    "kind": null,
+    "manifest": "ready/obsidian-soldier/danger-1/manifest.json",
+    "contact": "review/obsidian-soldier/danger-1/contact.png",
+    "gif": "review/obsidian-soldier/danger-1/preview.gif"
+  },
+  {
+    "id": "young-fire-dragon/idle",
+    "enemy": "young-fire-dragon",
+    "label": "待機",
+    "motion": "idle",
+    "kind": null,
+    "manifest": "ready/young-fire-dragon/idle/manifest.json",
+    "contact": "review/young-fire-dragon/idle/contact.png",
+    "gif": "review/young-fire-dragon/idle/preview.gif"
+  },
+  {
+    "id": "young-fire-dragon/hit",
+    "enemy": "young-fire-dragon",
+    "label": "被弾",
+    "motion": "hit",
+    "kind": null,
+    "manifest": "ready/young-fire-dragon/hit/manifest.json",
+    "contact": "review/young-fire-dragon/hit/contact.png",
+    "gif": "review/young-fire-dragon/hit/preview.gif"
+  },
+  {
+    "id": "young-fire-dragon/down",
+    "enemy": "young-fire-dragon",
+    "label": "撃破",
+    "motion": "down",
+    "kind": null,
+    "manifest": "ready/young-fire-dragon/down/manifest.json",
+    "contact": "review/young-fire-dragon/down/contact.png",
+    "gif": "review/young-fire-dragon/down/preview.gif"
+  },
+  {
+    "id": "young-fire-dragon/attack",
+    "enemy": "young-fire-dragon",
+    "label": "爪撃",
+    "motion": "attack",
+    "kind": null,
+    "manifest": "ready/young-fire-dragon/attack/manifest.json",
+    "contact": "review/young-fire-dragon/attack/contact.png",
+    "gif": "review/young-fire-dragon/attack/preview.gif"
+  },
+  {
+    "id": "young-fire-dragon/danger-1",
+    "enemy": "young-fire-dragon",
+    "label": "灼球",
+    "motion": "danger-1",
+    "kind": null,
+    "manifest": "ready/young-fire-dragon/danger-1/manifest.json",
+    "contact": "review/young-fire-dragon/danger-1/contact.png",
+    "gif": "review/young-fire-dragon/danger-1/preview.gif"
+  },
+  {
+    "id": "young-fire-dragon/move",
+    "enemy": "young-fire-dragon",
+    "label": "移動",
+    "motion": "move",
+    "kind": null,
+    "manifest": "ready/young-fire-dragon/move/manifest.json",
+    "contact": "review/young-fire-dragon/move/contact.png",
+    "gif": "review/young-fire-dragon/move/preview.gif"
+  },
+  {
+    "id": "magma-salamander/idle",
+    "enemy": "magma-salamander",
+    "label": "待機",
+    "motion": "idle",
+    "kind": null,
+    "manifest": "ready/magma-salamander/idle/manifest.json",
+    "contact": "review/magma-salamander/idle/contact.png",
+    "gif": "review/magma-salamander/idle/preview.gif"
+  },
+  {
+    "id": "magma-salamander/hit",
+    "enemy": "magma-salamander",
+    "label": "被弾",
+    "motion": "hit",
+    "kind": null,
+    "manifest": "ready/magma-salamander/hit/manifest.json",
+    "contact": "review/magma-salamander/hit/contact.png",
+    "gif": "review/magma-salamander/hit/preview.gif"
+  },
+  {
+    "id": "magma-salamander/down",
+    "enemy": "magma-salamander",
+    "label": "撃破",
+    "motion": "down",
+    "kind": null,
+    "manifest": "ready/magma-salamander/down/manifest.json",
+    "contact": "review/magma-salamander/down/contact.png",
+    "gif": "review/magma-salamander/down/preview.gif"
+  },
+  {
+    "id": "magma-salamander/attack",
+    "enemy": "magma-salamander",
+    "label": "噛みつき",
+    "motion": "attack",
+    "kind": null,
+    "manifest": "ready/magma-salamander/attack/manifest.json",
+    "contact": "review/magma-salamander/attack/contact.png",
+    "gif": "review/magma-salamander/attack/preview.gif"
+  },
+  {
+    "id": "magma-salamander/danger-1",
+    "enemy": "magma-salamander",
+    "label": "双溶岩弾",
+    "motion": "danger-1",
+    "kind": null,
+    "manifest": "ready/magma-salamander/danger-1/manifest.json",
+    "contact": "review/magma-salamander/danger-1/contact.png",
+    "gif": "review/magma-salamander/danger-1/preview.gif"
+  },
+  {
+    "id": "magma-salamander/danger-2",
+    "enemy": "magma-salamander",
+    "label": "灼熱大扇",
+    "motion": "danger-2",
+    "kind": null,
+    "manifest": "ready/magma-salamander/danger-2/manifest.json",
+    "contact": "review/magma-salamander/danger-2/contact.png",
+    "gif": "review/magma-salamander/danger-2/preview.gif"
+  },
+  {
+    "id": "magma-salamander/move",
+    "enemy": "magma-salamander",
+    "label": "移動",
+    "motion": "move",
+    "kind": null,
+    "manifest": "ready/magma-salamander/move/manifest.json",
+    "contact": "review/magma-salamander/move/contact.png",
+    "gif": "review/magma-salamander/move/preview.gif"
+  },
+  {
+    "id": "obsidian-executioner/idle",
+    "enemy": "obsidian-executioner",
+    "label": "待機",
+    "motion": "idle",
+    "kind": null,
+    "manifest": "ready/obsidian-executioner/idle/manifest.json",
+    "contact": "review/obsidian-executioner/idle/contact.png",
+    "gif": "review/obsidian-executioner/idle/preview.gif"
+  },
+  {
+    "id": "obsidian-executioner/hit",
+    "enemy": "obsidian-executioner",
+    "label": "被弾",
+    "motion": "hit",
+    "kind": null,
+    "manifest": "ready/obsidian-executioner/hit/manifest.json",
+    "contact": "review/obsidian-executioner/hit/contact.png",
+    "gif": "review/obsidian-executioner/hit/preview.gif"
+  },
+  {
+    "id": "obsidian-executioner/down",
+    "enemy": "obsidian-executioner",
+    "label": "撃破",
+    "motion": "down",
+    "kind": null,
+    "manifest": "ready/obsidian-executioner/down/manifest.json",
+    "contact": "review/obsidian-executioner/down/contact.png",
+    "gif": "review/obsidian-executioner/down/preview.gif"
+  },
+  {
+    "id": "obsidian-executioner/move",
+    "enemy": "obsidian-executioner",
+    "label": "移動",
+    "motion": "move",
+    "kind": null,
+    "manifest": "ready/obsidian-executioner/move/manifest.json",
+    "contact": "review/obsidian-executioner/move/contact.png",
+    "gif": "review/obsidian-executioner/move/preview.gif"
+  },
+  {
+    "id": "obsidian-executioner/attack",
+    "enemy": "obsidian-executioner",
+    "label": "斧撃",
+    "motion": "attack",
+    "kind": null,
+    "manifest": "ready/obsidian-executioner/attack/manifest.json",
+    "contact": "review/obsidian-executioner/attack/contact.png",
+    "gif": "review/obsidian-executioner/attack/preview.gif"
+  },
+  {
+    "id": "obsidian-executioner/danger-1",
+    "enemy": "obsidian-executioner",
+    "label": "断罪大薙ぎ",
+    "motion": "danger-1",
+    "kind": null,
+    "manifest": "ready/obsidian-executioner/danger-1/manifest.json",
+    "contact": "review/obsidian-executioner/danger-1/contact.png",
+    "gif": "review/obsidian-executioner/danger-1/preview.gif"
+  },
+  {
+    "id": "obsidian-executioner/danger-2",
+    "enemy": "obsidian-executioner",
+    "label": "断層斬",
+    "motion": "danger-2",
+    "kind": null,
+    "manifest": "ready/obsidian-executioner/danger-2/manifest.json",
+    "contact": "review/obsidian-executioner/danger-2/contact.png",
+    "gif": "review/obsidian-executioner/danger-2/preview.gif"
+  },
+  {
+    "id": "dragon-girl/idle",
+    "enemy": "dragon-girl",
+    "label": "待機",
+    "motion": "idle",
+    "kind": null,
+    "manifest": "ready/dragon-girl/idle/manifest.json",
+    "contact": "review/dragon-girl/idle/contact.png",
+    "gif": "review/dragon-girl/idle/preview.gif"
+  },
+  {
+    "id": "dragon-girl/hit",
+    "enemy": "dragon-girl",
+    "label": "被弾",
+    "motion": "hit",
+    "kind": null,
+    "manifest": "ready/dragon-girl/hit/manifest.json",
+    "contact": "review/dragon-girl/hit/contact.png",
+    "gif": "review/dragon-girl/hit/preview.gif"
+  },
+  {
+    "id": "dragon-girl/down",
+    "enemy": "dragon-girl",
+    "label": "撃破",
+    "motion": "down",
+    "kind": null,
+    "manifest": "ready/dragon-girl/down/manifest.json",
+    "contact": "review/dragon-girl/down/contact.png",
+    "gif": "review/dragon-girl/down/preview.gif"
+  },
+  {
+    "id": "dragon-girl/move",
+    "enemy": "dragon-girl",
+    "label": "移動",
+    "motion": "move",
+    "kind": null,
+    "manifest": "ready/dragon-girl/move/manifest.json",
+    "contact": "review/dragon-girl/move/contact.png",
+    "gif": "review/dragon-girl/move/preview.gif"
+  },
+  {
+    "id": "dragon-girl/attack",
+    "enemy": "dragon-girl",
+    "label": "爪撃",
+    "motion": "attack",
+    "kind": null,
+    "manifest": "ready/dragon-girl/attack/manifest.json",
+    "contact": "review/dragon-girl/attack/contact.png",
+    "gif": "review/dragon-girl/attack/preview.gif"
+  },
+  {
+    "id": "dragon-girl/danger-1",
+    "enemy": "dragon-girl",
+    "label": "紅蓮三連球",
+    "motion": "danger-1",
+    "kind": null,
+    "manifest": "ready/dragon-girl/danger-1/manifest.json",
+    "contact": "review/dragon-girl/danger-1/contact.png",
+    "gif": "review/dragon-girl/danger-1/preview.gif"
+  },
+  {
+    "id": "dragon-girl/danger-2",
+    "enemy": "dragon-girl",
+    "label": "紅翼竜息",
+    "motion": "danger-2",
+    "kind": null,
+    "manifest": "ready/dragon-girl/danger-2/manifest.json",
+    "contact": "review/dragon-girl/danger-2/contact.png",
+    "gif": "review/dragon-girl/danger-2/preview.gif"
+  },
+  {
+    "id": "dragon/idle",
+    "enemy": "dragon",
+    "label": "待機",
+    "motion": "idle",
+    "kind": null,
+    "manifest": "ready/dragon/idle/manifest.json",
+    "contact": "review/dragon/idle/contact.png",
+    "gif": "review/dragon/idle/preview.gif"
+  },
+  {
+    "id": "dragon/hit",
+    "enemy": "dragon",
+    "label": "被弾",
+    "motion": "hit",
+    "kind": null,
+    "manifest": "ready/dragon/hit/manifest.json",
+    "contact": "review/dragon/hit/contact.png",
+    "gif": "review/dragon/hit/preview.gif"
+  },
+  {
+    "id": "dragon/down",
+    "enemy": "dragon",
+    "label": "撃破",
+    "motion": "down",
+    "kind": null,
+    "manifest": "ready/dragon/down/manifest.json",
+    "contact": "review/dragon/down/contact.png",
+    "gif": "review/dragon/down/preview.gif"
+  },
+  {
+    "id": "dragon/attack",
+    "enemy": "dragon",
+    "label": "爪撃",
+    "motion": "attack",
+    "kind": null,
+    "manifest": "ready/dragon/attack/manifest.json",
+    "contact": "review/dragon/attack/contact.png",
+    "gif": "review/dragon/attack/preview.gif"
+  },
+  {
+    "id": "dragon/danger-1",
+    "enemy": "dragon",
+    "label": "翼震着地",
+    "motion": "danger-1",
+    "kind": null,
+    "manifest": "ready/dragon/danger-1/manifest.json",
+    "contact": "review/dragon/danger-1/contact.png",
+    "gif": "review/dragon/danger-1/preview.gif"
+  },
+  {
+    "id": "dragon/danger-2",
+    "enemy": "dragon",
+    "label": "双脈ブレス",
+    "motion": "danger-2",
+    "kind": null,
+    "manifest": "ready/dragon/danger-2/manifest.json",
+    "contact": "review/dragon/danger-2/contact.png",
+    "gif": "review/dragon/danger-2/preview.gif"
+  },
+  {
+    "id": "dragon/danger-3",
+    "enemy": "dragon",
+    "label": "噴火の三巣",
+    "motion": "danger-3",
+    "kind": null,
+    "manifest": "ready/dragon/danger-3/manifest.json",
+    "contact": "review/dragon/danger-3/contact.png",
+    "gif": "review/dragon/danger-3/preview.gif"
+  },
+  {
+    "id": "dragon/move",
+    "enemy": "dragon",
+    "label": "移動",
+    "motion": "move",
+    "kind": null,
+    "manifest": "ready/dragon/move/manifest.json",
+    "contact": "review/dragon/move/contact.png",
+    "gif": "review/dragon/move/preview.gif"
+  },
+  {
+    "id": "effects/bite-impact",
+    "enemy": null,
+    "label": "灼牙の衝撃",
+    "motion": "effect",
+    "kind": "target",
+    "manifest": "ready/effects/bite-impact/manifest.json",
+    "contact": "review/effects/bite-impact/contact.png",
+    "gif": "review/effects/bite-impact/preview.gif"
+  },
+  {
+    "id": "effects/claw-arc",
+    "enemy": null,
+    "label": "紅爪の軌跡",
+    "motion": "effect",
+    "kind": "target",
+    "manifest": "ready/effects/claw-arc/manifest.json",
+    "contact": "review/effects/claw-arc/contact.png",
+    "gif": "review/effects/claw-arc/preview.gif"
+  },
+  {
+    "id": "effects/axe-arc",
+    "enemy": null,
+    "label": "黒曜斧の軌跡",
+    "motion": "effect",
+    "kind": "target",
+    "manifest": "ready/effects/axe-arc/manifest.json",
+    "contact": "review/effects/axe-arc/contact.png",
+    "gif": "review/effects/axe-arc/preview.gif"
+  },
+  {
+    "id": "effects/heavy-axe-arc",
+    "enemy": null,
+    "label": "断罪大薙ぎ",
+    "motion": "effect",
+    "kind": "target",
+    "manifest": "ready/effects/heavy-axe-arc/manifest.json",
+    "contact": "review/effects/heavy-axe-arc/contact.png",
+    "gif": "review/effects/heavy-axe-arc/preview.gif"
+  },
+  {
+    "id": "effects/fire-fan",
+    "enemy": null,
+    "label": "灼熱の扇",
+    "motion": "effect",
+    "kind": "origin",
+    "manifest": "ready/effects/fire-fan/manifest.json",
+    "contact": "review/effects/fire-fan/contact.png",
+    "gif": "review/effects/fire-fan/preview.gif"
+  },
+  {
+    "id": "effects/fireball",
+    "enemy": null,
+    "label": "灼熱火球",
+    "motion": "effect",
+    "kind": "projectile",
+    "manifest": "ready/effects/fireball/manifest.json",
+    "contact": "review/effects/fireball/contact.png",
+    "gif": "review/effects/fireball/preview.gif"
+  },
+  {
+    "id": "effects/fireball-impact",
+    "enemy": null,
+    "label": "火球爆発",
+    "motion": "effect",
+    "kind": "ground",
+    "manifest": "ready/effects/fireball-impact/manifest.json",
+    "contact": "review/effects/fireball-impact/contact.png",
+    "gif": "review/effects/fireball-impact/preview.gif"
+  },
+  {
+    "id": "effects/lava-bomb",
+    "enemy": null,
+    "label": "落下溶岩弾",
+    "motion": "effect",
+    "kind": "projectile",
+    "manifest": "ready/effects/lava-bomb/manifest.json",
+    "contact": "review/effects/lava-bomb/contact.png",
+    "gif": "review/effects/lava-bomb/preview.gif"
+  },
+  {
+    "id": "effects/lava-impact",
+    "enemy": null,
+    "label": "溶岩着弾",
+    "motion": "effect",
+    "kind": "ground",
+    "manifest": "ready/effects/lava-impact/manifest.json",
+    "contact": "review/effects/lava-impact/contact.png",
+    "gif": "review/effects/lava-impact/preview.gif"
+  },
+  {
+    "id": "effects/lava-pool",
+    "enemy": null,
+    "label": "残留溶岩床",
+    "motion": "effect",
+    "kind": "ground",
+    "manifest": "ready/effects/lava-pool/manifest.json",
+    "contact": "review/effects/lava-pool/contact.png",
+    "gif": "review/effects/lava-pool/preview.gif"
+  },
+  {
+    "id": "effects/fissure",
+    "enemy": null,
+    "label": "断層斬の地割れ",
+    "motion": "effect",
+    "kind": "ground",
+    "manifest": "ready/effects/fissure/manifest.json",
+    "contact": "review/effects/fissure/contact.png",
+    "gif": "review/effects/fissure/preview.gif"
+  },
+  {
+    "id": "effects/fire-beam",
+    "enemy": null,
+    "label": "双脈竜息",
+    "motion": "effect",
+    "kind": "origin",
+    "manifest": "ready/effects/fire-beam/manifest.json",
+    "contact": "review/effects/fire-beam/contact.png",
+    "gif": "review/effects/fire-beam/preview.gif"
+  },
+  {
+    "id": "effects/landing-shock",
+    "enemy": null,
+    "label": "翼震の着地衝撃",
+    "motion": "effect",
+    "kind": "ground",
+    "manifest": "ready/effects/landing-shock/manifest.json",
+    "contact": "review/effects/landing-shock/contact.png",
+    "gif": "review/effects/landing-shock/preview.gif"
+  },
+  {
+    "id": "effects/burn",
+    "enemy": null,
+    "label": "火傷",
+    "motion": "effect",
+    "kind": "status",
+    "manifest": "ready/effects/burn/manifest.json",
+    "contact": "review/effects/burn/contact.png",
+    "gif": "review/effects/burn/preview.gif"
+  },
+  {
+    "id": "effects/armor-break",
+    "enemy": null,
+    "label": "破甲",
+    "motion": "effect",
+    "kind": "status",
+    "manifest": "ready/effects/armor-break/manifest.json",
+    "contact": "review/effects/armor-break/contact.png",
+    "gif": "review/effects/armor-break/preview.gif"
+  }
+]

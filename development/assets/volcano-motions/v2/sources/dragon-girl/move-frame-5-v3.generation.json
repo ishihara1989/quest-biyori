@@ -1,0 +1,24 @@
+{
+  "id": "dragon-girl/move-2",
+  "source": "sources/dragon-girl/move-frame-5-v3.png",
+  "selected": false,
+  "prompt": "Create ONE single WALKING pose of the exact character in image1. This is frame5 of a six-frame in-place walk. The NEAR leg at SCREEN-RIGHT (the leg beside the tail) bends its KNEE UP strongly: its thigh is raised, lower leg folds downward, and its foot is clearly LIFTED 70px ABOVE the floor. The FAR leg at SCREEN-LEFT stays STRAIGHT with its foot planted FLAT on the ground, supporting the body. Only two connected legs. NEVER lift the screen-left foot. Keep fixed head/torso, facing LEFT, wings, tail, hair, hands, armor, canonical colors and pixel clusters unchanged. No weapon or shield. Complete silhouette in central70% of square canvas, full wings/tail/claws visible with wide clear margin. True transparent alpha everywhere outside the silhouette. No aura, background, floor, shadow, VFX or labels.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "9675909bfbaeeaf5ca344fa2a8484ddee68c04588de636228b6f560ca387753d",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/move-2-generated.png",
+  "issues": [
+    "両半分とも画面左の脚を上げる構図が強く、前半・後半の左右交代が弱い。膝と足先の所属を確定して修正する。",
+    "3→4・6→1で支持足・尾先・体格がつながるか確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

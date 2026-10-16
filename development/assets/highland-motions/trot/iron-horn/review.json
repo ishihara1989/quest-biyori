@@ -1,0 +1,65 @@
+{
+  "id": "iron-horn",
+  "status": "adopted",
+  "unresolved": [],
+  "frames": 6,
+  "gait": "trot",
+  "durationMs": 720,
+  "sourceSelection": [
+    {
+      "frame": 1,
+      "source": "trot/iron-horn/sources/frame-1-single.png",
+      "sha256": "a1abe17ec60703e10eaf272245afb3c1d943f8b683f6df5b589327dc3f412a01",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 2,
+      "source": "trot/iron-horn/sources/frame-2-single.png",
+      "sha256": "d6a8980dfc87a8d1d3c7dcb14c6d1b0b7731b65642749d4c884b9e03b5611e58",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 3,
+      "source": "trot/iron-horn/sources/frame-3-single.png",
+      "sha256": "112d0454dce9ccf2c7422cece7387583d1b5482b716adba24ddad6035d7e69a4",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 4,
+      "source": "trot/iron-horn/sources/frame-4-single.png",
+      "sha256": "41b241fbcedb3ee1c392a4acd9ddb912275f14976dcf92ddca890c1e1f2360cd",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 5,
+      "source": "trot/iron-horn/sources/frame-5-single.png",
+      "sha256": "a3ca59083f5892861c2f08dba9e113862a906dd681b64fdc3b79d27e1dde97ce",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 6,
+      "source": "trot/iron-horn/sources/frame-6-single.png",
+      "sha256": "b7ae089b5522169e19fede1426aa00590ee07a845fb38993df6afc5011a1ba8f",
+      "originalEdge": "unclipped at alpha >=192"
+    }
+  ],
+  "checks": {
+    "referenceAndPalette": "reviewed against canonical reference",
+    "fourConnectedLegs": "reviewed including occluded thigh/shin/ankle",
+    "diagonalContact": "reviewed per frame, failed contact revisions retained as rejected",
+    "bodyAndHeadRegistration": "common scale and fixed eye, no per-frame foot alignment",
+    "frameTransitions": "contact sheet reviewed; browser stepping and replay exercised",
+    "splitBoundary": "3 to 4 reviewed",
+    "loop": "6 to 1 reviewed and runtime frame wrap checked",
+    "alphaAndClipping": "selected originals and packed cells checked separately",
+    "gameRendering": "both facings, all six frames, loop wrap, idle/hit/attack transitions checked"
+  },
+  "backup": {
+    "path": "backups/iron-horn-walk-before-trot-20261013",
+    "files": 9,
+    "sha256": "verified"
+  },
+  "guides": "trot/iron-horn/guide.json",
+  "contact": "trot/iron-horn/contact.png",
+  "browser": "output/highland-implementation/browser-qa.json"
+}

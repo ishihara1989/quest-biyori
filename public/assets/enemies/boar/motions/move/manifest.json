@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boar",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "boar-move.png",
+  "preview": "../../../../../../development/assets/enemies/boar/motions/move/boar-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boar/PROMPT.md",
+  "width": 1920,
+  "height": 224,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 6,
+  "pivot": {
+    "x": 160,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/boar/source/boar-move-combined-v1.png",
+  "sourceScale": 0.4,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 120,
+      "phase": "右前脚が前・待機と共通・左後脚は後方",
+      "bounds": {
+        "left": 63,
+        "top": 53,
+        "right": 257,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 566
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/boar/source/boar-idle-generated-v1.png",
+      "sourceScale": 0.35,
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 120,
+      "phase": "左前脚と左後脚を持ち上げて通す",
+      "bounds": {
+        "left": 64,
+        "top": 61,
+        "right": 256,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 512,
+        "y": 0,
+        "width": 512,
+        "height": 1024
+      },
+      "sourceAnchor": {
+        "x": 256,
+        "y": 700
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 120,
+      "phase": "左前脚と左後脚を前へ・接地直前",
+      "bounds": {
+        "left": 64,
+        "top": 61,
+        "right": 255,
+        "bottom": 203
+      },
+      "sourceCell": {
+        "x": 1024,
+        "y": 0,
+        "width": 512,
+        "height": 1024
+      },
+      "sourceAnchor": {
+        "x": 256,
+        "y": 700
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 120,
+      "phase": "左前脚と左後脚が前・接地",
+      "bounds": {
+        "left": 64,
+        "top": 59,
+        "right": 255,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1024,
+        "width": 512,
+        "height": 1024
+      },
+      "sourceAnchor": {
+        "x": 256,
+        "y": 700
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1280,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 120,
+      "phase": "右前脚と右後脚を持ち上げて通す",
+      "bounds": {
+        "left": 64,
+        "top": 58,
+        "right": 255,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 512,
+        "y": 1024,
+        "width": 512,
+        "height": 1024
+      },
+      "sourceAnchor": {
+        "x": 256,
+        "y": 700
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 1600,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 120,
+      "phase": "右前脚と右後脚が前・左後脚は後方",
+      "bounds": {
+        "left": 64,
+        "top": 60,
+        "right": 256,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 1024,
+        "y": 1024,
+        "width": 512,
+        "height": 1024
+      },
+      "sourceAnchor": {
+        "x": 256,
+        "y": 700
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 1
+      }
+    }
+  ],
+  "gait": {
+    "nearSide": "anatomical-left",
+    "farSide": "anatomical-right",
+    "nearOccludesFar": true,
+    "generationGroups": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "leadForeleg": [
+      "right",
+      "left-passing",
+      "left-approaching",
+      "left",
+      "right-passing",
+      "right-approaching"
+    ],
+    "wrap": "6 → 1: right forefoot finishes planting",
+    "hindlegSwing": "near left: back -> raised -> forward -> forward -> vertical -> back; far right reciprocal"
+  },
+  "rootMotion": {
+    "mode": "external",
+    "direction": "left"
+  },
+  "generationSources": [
+    "../../../../../../development/assets/enemies/boar/source/boar-move-01-03-refined-color-v1.png",
+    "../../../../../../development/assets/enemies/boar/source/boar-move-04-06-refined-color-v1.png"
+  ],
+  "poseRefinementSources": [
+    "../../../../../../development/assets/enemies/boar/source/boar-move-frame2-generated-v1.png",
+    "../../../../../../development/assets/enemies/boar/source/boar-move-frame3-generated-v1.png",
+    "../../../../../../development/assets/enemies/boar/source/boar-move-frame4-generated-v1.png",
+    "../../../../../../development/assets/enemies/boar/source/boar-move-frame5-generated-v1.png"
+  ],
+  "halves": [
+    {
+      "file": "boar-move-01-03.png",
+      "firstFrame": 0,
+      "frameCount": 3
+    },
+    {
+      "file": "boar-move-04-06.png",
+      "firstFrame": 3,
+      "frameCount": 3
+    }
+  ]
+}

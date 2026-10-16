@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-13 JST",
+  "status": "user-accepted-direction; retained-as-fallback",
+  "sourceRoot": "../..",
+  "files": [
+    {
+      "path": "enemies/manticore/motions/move/manifest.json",
+      "sha256": "08ad7dbfa4e91c0b17f2590a4cd8ea2e2da497c83eff236b479766414dd8bb67"
+    },
+    {
+      "path": "enemies/manticore/motions/move/manticore-move-preview.gif",
+      "sha256": "856ac611ec29b5257fcebdafc5b38e49b14f4f0fac5ee1629ac5448d3f0dac43"
+    },
+    {
+      "path": "enemies/manticore/motions/move/manticore-move.png",
+      "sha256": "868af6d5b2490da7bd3331ec1e5d295781011d1e5603aeb08233e0539873bcd6"
+    },
+    {
+      "path": "enemies/manticore/motions/move/move-01.png",
+      "sha256": "9fcd2519cd67d54531f5e12ec8ecaa9777716f7a06d07d570a570c304825db9a"
+    },
+    {
+      "path": "enemies/manticore/motions/move/move-02.png",
+      "sha256": "8990bd8be5c6311a51fde1d306929d951b04288dae5755d68a9fb03f2271c003"
+    },
+    {
+      "path": "enemies/manticore/motions/move/move-03.png",
+      "sha256": "5e345bc287edf09d99502799b416b0b01ba27432698e162b7aefa08e24ee1342"
+    },
+    {
+      "path": "enemies/manticore/motions/move/move-04.png",
+      "sha256": "c79d2f1f50b484dd8f75b600e463294d52066740118e67b9add09443e44378ab"
+    },
+    {
+      "path": "enemies/manticore/motions/move/move-05.png",
+      "sha256": "60ede0356d284373e8c9de3bf4a40d1f5a6bfb4638be0c44ce5e27e16e800f24"
+    },
+    {
+      "path": "enemies/manticore/motions/move/move-06.png",
+      "sha256": "32bf2dee7e9c9034446a850f3f911529987999221a29e69b36736256c98f1729"
+    },
+    {
+      "path": "enemies/manticore/motions/move/trot-contact.png",
+      "sha256": "c852af575a32440c3a1293a1d811426b34c09b86566c37f8fcb3e261e9e6d29a"
+    },
+    {
+      "path": "enemies/manticore/motions/move/trot-preview.gif",
+      "sha256": "6c0d9cb7070992485c6a25582e65cc8212c476218eb782dbb9f4b92083c12b27"
+    },
+    {
+      "path": "enemies/manticore/registered/move.png",
+      "sha256": "11bfc9fbaffebace15cf5cb4d70abe162ec6e2b89372fccbb75895191ac1277e"
+    },
+    {
+      "path": "references/manticore.png",
+      "sha256": "06f5a82ab854fc5d603170e2290c6f6a6444a0c66b7b954345abd778b1e3799b"
+    },
+    {
+      "path": "MANTICORE-TROT-PROMPTS.md",
+      "sha256": "8084636a304a53c97ae84f3bb11a948d1b07d84e2e3da88f2ecb199e710b6fce"
+    },
+    {
+      "path": "sources/manticore/move-trot-frame-1-generated.png",
+      "sha256": "15c4070763eb02285420671615848eb5d542ea47afb240e04583bde41fd071f2"
+    },
+    {
+      "path": "sources/manticore/move-trot-frame-2-generated.png",
+      "sha256": "f557ac7603116d961893ac7a55097eabeefb5dce99f2e6d7879192015b94bc11"
+    },
+    {
+      "path": "sources/manticore/move-trot-frame-3-generated.png",
+      "sha256": "05314e4ac437accdb6362c7f243b88c04ef988b2df82067fca90cf9a53720128"
+    },
+    {
+      "path": "sources/manticore/move-trot-frame-4-generated.png",
+      "sha256": "962cd799981634be70b24d61388a8c9c6e742008afdf0b732f20060ee6bcc1fe"
+    },
+    {
+      "path": "sources/manticore/move-trot-frame-5-generated.png",
+      "sha256": "cfdda4a12d9ee1fd049c81f0380f08255db1130f0bef5bf5dc04f2ab587d8202"
+    },
+    {
+      "path": "sources/manticore/move-trot-frame-6-generated.png",
+      "sha256": "eafc2b5ddbc9e55c8cd5b738efdd12c9a0ffe107c9df054935f7f3b85a4d3ff3"
+    },
+    {
+      "path": "manticore-trot.json",
+      "sha256": "66dbcdbc5dd47257fc113791715811e6fefee075b5cbb8d07ff56cd1f848d306"
+    },
+    {
+      "path": "generation-manticore-trot.json",
+      "sha256": "c0502616ceae5102f33c203697b545d3a7126941ad5cd7d7427e67556d1ab0d2"
+    },
+    {
+      "path": "manticore-trot-qa.json",
+      "sha256": "c5926377604ff578de588ec47d4ce1ce3b4b0e4b8fb38266e474dcf55e8ca090"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "character": "shaman",
+  "motion": "backward",
+  "label": "後退",
+  "facing": "right",
+  "sheet": "shaman-backward.png",
+  "width": 2048,
+  "height": 224,
+  "columns": 8,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 8,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": -1,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.32860520094562645,
+  "sampling": "nearest-neighbor",
+  "source": "../../../../../development/assets/shaman/motions/backward/source/shaman-backward-generated-v6.png",
+  "sourceWidth": 1774,
+  "sourceHeight": 887,
+  "sourceGrid": [
+    4,
+    2
+  ],
+  "columnSplit": 906,
+  "rowSplit": 438,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Jump previewOffset is for the review viewer only. Use world jump physics and the common pivot when integrating into a game.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "backward-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "警戒・左足が前",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 444,
+        "height": 438
+      },
+      "sourceAnchor": {
+        "x": 239,
+        "y": 427
+      },
+      "sourceBounds": {
+        "left": 54,
+        "top": 10,
+        "right": 408,
+        "bottom": 427
+      },
+      "bounds": {
+        "left": 68,
+        "top": 70,
+        "right": 183,
+        "bottom": 207
+      },
+      "visiblePixels": 9368,
+      "transparentPixels": 46489
+    },
+    {
+      "index": 1,
+      "file": "backward-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "左足を体下へ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 444,
+        "y": 0,
+        "width": 443,
+        "height": 438
+      },
+      "sourceAnchor": {
+        "x": 253,
+        "y": 428
+      },
+      "sourceBounds": {
+        "left": 61,
+        "top": 8,
+        "right": 414,
+        "bottom": 428
+      },
+      "bounds": {
+        "left": 65,
+        "top": 69,
+        "right": 181,
+        "bottom": 207
+      },
+      "visiblePixels": 8694,
+      "transparentPixels": 47164
+    },
+    {
+      "index": 2,
+      "file": "backward-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "右足が奥で通過",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 887,
+        "y": 0,
+        "width": 444,
+        "height": 438
+      },
+      "sourceAnchor": {
+        "x": 250,
+        "y": 428
+      },
+      "sourceBounds": {
+        "left": 60,
+        "top": 10,
+        "right": 419,
+        "bottom": 428
+      },
+      "bounds": {
+        "left": 66,
+        "top": 70,
+        "right": 183,
+        "bottom": 207
+      },
+      "visiblePixels": 8439,
+      "transparentPixels": 47633
+    },
+    {
+      "index": 3,
+      "file": "backward-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "右足を前へ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1331,
+        "y": 0,
+        "width": 443,
+        "height": 438
+      },
+      "sourceAnchor": {
+        "x": 265,
+        "y": 427
+      },
+      "sourceBounds": {
+        "left": 76,
+        "top": 10,
+        "right": 430,
+        "bottom": 427
+      },
+      "bounds": {
+        "left": 66,
+        "top": 70,
+        "right": 182,
+        "bottom": 207
+      },
+      "visiblePixels": 8990,
+      "transparentPixels": 46845
+    },
+    {
+      "index": 4,
+      "file": "backward-05.png",
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "警戒・右足が前",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 438,
+        "width": 444,
+        "height": 449
+      },
+      "sourceAnchor": {
+        "x": 244,
+        "y": 422
+      },
+      "sourceBounds": {
+        "left": 54,
+        "top": 9,
+        "right": 416,
+        "bottom": 422
+      },
+      "bounds": {
+        "left": 66,
+        "top": 72,
+        "right": 184,
+        "bottom": 207
+      },
+      "visiblePixels": 9369,
+      "transparentPixels": 46565
+    },
+    {
+      "index": 5,
+      "file": "backward-06.png",
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "右足を体下へ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 444,
+        "y": 438,
+        "width": 443,
+        "height": 449
+      },
+      "sourceAnchor": {
+        "x": 259,
+        "y": 430
+      },
+      "sourceBounds": {
+        "left": 64,
+        "top": 10,
+        "right": 427,
+        "bottom": 430
+      },
+      "bounds": {
+        "left": 64,
+        "top": 69,
+        "right": 183,
+        "bottom": 207
+      },
+      "visiblePixels": 8835,
+      "transparentPixels": 47147
+    },
+    {
+      "index": 6,
+      "file": "backward-07.png",
+      "x": 1536,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "左足が手前で通過",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 887,
+        "y": 438,
+        "width": 444,
+        "height": 449
+      },
+      "sourceAnchor": {
+        "x": 252,
+        "y": 428
+      },
+      "sourceBounds": {
+        "left": 55,
+        "top": 10,
+        "right": 420,
+        "bottom": 428
+      },
+      "bounds": {
+        "left": 64,
+        "top": 70,
+        "right": 183,
+        "bottom": 207
+      },
+      "visiblePixels": 8411,
+      "transparentPixels": 47688
+    },
+    {
+      "index": 7,
+      "file": "backward-08.png",
+      "x": 1792,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "左足を前へ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1331,
+        "y": 438,
+        "width": 443,
+        "height": 449
+      },
+      "sourceAnchor": {
+        "x": 265,
+        "y": 432
+      },
+      "sourceBounds": {
+        "left": 67,
+        "top": 9,
+        "right": 430,
+        "bottom": 432
+      },
+      "bounds": {
+        "left": 63,
+        "top": 68,
+        "right": 182,
+        "bottom": 207
+      },
+      "visiblePixels": 9392,
+      "transparentPixels": 46454
+    }
+  ]
+}

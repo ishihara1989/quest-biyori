@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "bell-owl-idle",
+  "character": "miko",
+  "subject": "bell-owl",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "bell-owl-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 64
+  },
+  "scale": 0.1206896551724138,
+  "frames": [
+    {
+      "index": 0,
+      "file": "bell-owl-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 20,
+        "t": 27,
+        "r": 104,
+        "b": 110,
+        "n": 4526,
+        "width": 85,
+        "height": 84
+      }
+    },
+    {
+      "index": 1,
+      "file": "bell-owl-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 20,
+        "t": 25,
+        "r": 108,
+        "b": 110,
+        "n": 4885,
+        "width": 89,
+        "height": 86
+      }
+    },
+    {
+      "index": 2,
+      "file": "bell-owl-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 23,
+        "t": 28,
+        "r": 106,
+        "b": 110,
+        "n": 4621,
+        "width": 84,
+        "height": 83
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/bell-owl-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "development/assets/skills/miko/source/ember-fox-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

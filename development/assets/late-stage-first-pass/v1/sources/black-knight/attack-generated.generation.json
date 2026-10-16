@@ -1,0 +1,29 @@
+{
+  "id": "black-knight/attack",
+  "enemy": "black-knight",
+  "region": "demon-castle",
+  "motion": "attack",
+  "label": "剣撃",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/black-knight.png",
+  "guide": null,
+  "source": "sources/black-knight/attack-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame NORMAL ATTACK 剣撃 by 黒騎士 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: sword tip (250,700) draws back to (660,330), rises (470,220), cuts left-down (160,760), returns (250,700). Original sword and shield if present retained. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "dark-slash"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-1e4aa380-c71a-4bdb-b563-6eb7f4037188.png",
+  "sha256": "5f8a79f18fbebd2f603de1440dd9e7952471ecf1c5731bf13462e80a21cca2e3",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "頭上の剣が原画上端で切れている。武器全体と余白を再制作する。",
+      "大剣の長さ・幅と握り手、発動時の左下先端を確認する。"
+    ]
+  }
+}

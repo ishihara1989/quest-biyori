@@ -1,0 +1,30 @@
+{
+  "id": "demon-god/danger-3",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "danger-3",
+  "label": "封声",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/demon-god.png",
+  "guide": null,
+  "source": "sources/demon-god/danger-3-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 封声 by 魔神 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: EXACT SIX arms: lower pair meets before chest (470,500),(580,500), one palm raises before mouth (490,310), hands open to release and return. Four outer arms held stable. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference. EXACTLY SIX arms in three pairs, each with its own shoulder, upper arm, elbow, forearm, wrist and hand. Preserve frontal readable arm spread and rotate gaze/torso only slightly LEFT 15 degrees; never hide an entire arm. Original dark halo and two legs.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "silence-seal"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-cfac33aa-64cf-4a90-8f54-6656f795264a.png",
+  "sha256": "0608f084255400cf1060f563fcaeba3f1e6d823daf9566393c18c50483f39055",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "発動・復帰で外側4手に加え前面に3手が見え、計7手に見える。6腕へ修正し肩から手までの所属を確定する。",
+      "口元へ上げる手の腕が途中で増えたように見える。口元の1腕・胸前の相方・外側4腕を全コマで維持する。",
+      "足先と背輪の位置を固定し、封印エフェクトの発射点を合わせる。"
+    ]
+  }
+}

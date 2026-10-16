@@ -1,0 +1,10 @@
+{
+  "id": "effects/goddess-return-1",
+  "source": "source/effects/goddess-return-1.png",
+  "sha256": "be8466c63cbb547e027c17b4825f98b7701f54f4817a8ca9654b59059eb40bbd",
+  "prompt": "Use case: stylized-concept\nAsset type: transparent JRPG pixel-art dimensional-return OVERLAY, effects/goddess-return-1.\nExactly THREE equal square cells in ONE horizontal row. Every cell is virtual 512x512, portal center fixed at (256,256). Strict safe bounds x=60..452,y=52..460 in EACH cell, wide transparent gutters. Crisp stepped pixels, thin pale gold rim, cyan stars, dark-violet transparent aperture. Same camera and palette across all frames.\nPrimary request: a calm welcoming doorway to another dimension for a satisfied goddess leaving after battle. ONLY portal overlay, no goddess, person, humanoid outline, chair, body halo, small crown, shattering ring, explosion, reward jewel, text or background. True transparent alpha; see-through interior with sparse tiny stars.\nFrames:\nF1: a quiet thin vertical gold/cyan oval outline, width130 height300, transparent star-specked interior.\nF2: oval opens to width270 height360, a welcoming deep-violet transparent aperture with sparse cyan stars.\nF3: oval fully open width300 height380, thin luminous gold rim, stable and peaceful.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-77df7846-7b59-4707-a669-a4319720d24a.png",
+  "transparent_background": true,
+  "references": [],
+  "attempt": 1
+}

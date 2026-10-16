@@ -1,0 +1,234 @@
+{
+  "id": "young-fire-dragon/attack",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "label": "爪撃",
+  "kind": null,
+  "motion": "attack",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/young-fire-dragon.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/attack-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "transparentFraction": 0.8525009155273438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 62,
+        "top": 130,
+        "right": 466,
+        "bottom": 351
+      },
+      "visibleBounds": {
+        "left": 148,
+        "top": 143,
+        "right": 427,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/attack-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 803,
+        "height": 518
+      },
+      "sourceScale": 0.5072463768115942,
+      "sourceAnchor": {
+        "x": 472,
+        "y": 462
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.84417724609375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 108,
+        "top": 125,
+        "right": 445,
+        "bottom": 361
+      },
+      "visibleBounds": {
+        "left": 146,
+        "top": 139,
+        "right": 444,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/attack-v3.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 803,
+        "y": 0,
+        "width": 733,
+        "height": 518
+      },
+      "sourceScale": 0.5072463768115942,
+      "sourceAnchor": {
+        "x": 382,
+        "y": 466
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8469581604003906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 57,
+        "top": 125,
+        "right": 467,
+        "bottom": 379
+      },
+      "visibleBounds": {
+        "left": 116,
+        "top": 149,
+        "right": 447,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/attack-v3.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 518,
+        "width": 856,
+        "height": 506
+      },
+      "sourceScale": 0.5072463768115942,
+      "sourceAnchor": {
+        "x": 515,
+        "y": 423
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "transparentFraction": 0.848663330078125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 141,
+        "top": 119,
+        "right": 441,
+        "bottom": 353
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 141,
+        "right": 433,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/attack-v3.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 856,
+        "y": 518,
+        "width": 680,
+        "height": 506
+      },
+      "sourceScale": 0.5072463768115942,
+      "sourceAnchor": {
+        "x": 352,
+        "y": 438
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "claw-arc",
+      "timeMs": 280,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "claw-arc"
+  ],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/young-fire-dragon/attack/preview.gif",
+  "action": {
+    "name": "通常攻撃",
+    "motion": "attack",
+    "warn": 0,
+    "times": [
+      280
+    ],
+    "kind": "melee",
+    "radius": 170,
+    "effect": "claw-arc",
+    "rest": 1800,
+    "status": null,
+    "duration": 700
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-claw-arc",
+        "manifest": "../../../../effects/volcano-claw-arc/manifest.json"
+      }
+    ]
+  }
+}

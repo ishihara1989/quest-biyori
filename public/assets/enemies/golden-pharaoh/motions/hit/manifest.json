@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "golden-pharaoh",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "golden-pharaoh-hit.png",
+  "preview": "../../../../../../development/assets/enemies/golden-pharaoh/motions/hit/golden-pharaoh-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1080,
+  "height": 430,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 430,
+  "frameCount": 2,
+  "pivot": {
+    "x": 313,
+    "y": 412
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/golden-pharaoh/source/hit-registered.png",
+  "sourceScale": 0.5221238938053098,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 170,
+      "phase": "被弾",
+      "bounds": {
+        "left": 145,
+        "top": 117,
+        "right": 445,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 759,
+        "height": 682
+      },
+      "sourceAnchor": {
+        "x": 445,
+        "y": 646
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 210,
+      "phase": "復帰",
+      "bounds": {
+        "left": 175,
+        "top": 102,
+        "right": 417,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 759,
+        "y": 0,
+        "width": 759,
+        "height": 682
+      },
+      "sourceAnchor": {
+        "x": 326,
+        "y": 646
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/golden-pharaoh-reaction-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/golden-pharaoh.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 726,
+          "height": 649
+        },
+        {
+          "x": 726,
+          "y": 0,
+          "width": 648,
+          "height": 649
+        },
+        {
+          "x": 0,
+          "y": 649,
+          "width": 705,
+          "height": 496
+        },
+        {
+          "x": 705,
+          "y": 649,
+          "width": 669,
+          "height": 496
+        }
+      ]
+    }
+  ]
+}

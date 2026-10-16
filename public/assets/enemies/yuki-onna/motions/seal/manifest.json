@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "yuki-onna",
+  "motion": "seal",
+  "facing": "left",
+  "label": "薄氷の封輪",
+  "sheet": "yuki-onna-seal.png",
+  "preview": "../../../../../../development/assets/enemies/yuki-onna/motions/seal/yuki-onna-seal-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2000,
+  "height": 410,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 500,
+  "frameHeight": 410,
+  "frameCount": 4,
+  "pivot": {
+    "x": 280,
+    "y": 388
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/yuki-onna/seal.png",
+  "sourceScale": 0.44483985765124556,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-seal",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "seal-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 500,
+      "height": 410,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 162,
+        "top": 104,
+        "right": 394,
+        "bottom": 356
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 715,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 378.5,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 1,
+      "file": "seal-02.png",
+      "x": 500,
+      "y": 0,
+      "width": 500,
+      "height": 410,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 167,
+        "top": 105,
+        "right": 388,
+        "bottom": 356
+      },
+      "sourceCell": {
+        "x": 715,
+        "y": 0,
+        "width": 715,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 319,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 2,
+      "file": "seal-03.png",
+      "x": 1000,
+      "y": 0,
+      "width": 500,
+      "height": 410,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 144,
+        "top": 110,
+        "right": 411,
+        "bottom": 356
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 669,
+        "width": 715,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 363,
+        "y": 595
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 3,
+      "file": "seal-04.png",
+      "x": 1500,
+      "y": 0,
+      "width": 500,
+      "height": 410,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 168,
+        "top": 107,
+        "right": 387,
+        "bottom": 356
+      },
+      "sourceCell": {
+        "x": 715,
+        "y": 669,
+        "width": 715,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 308,
+        "y": 603
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/yuki-onna.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/yuki-onna/seal-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 670,
+          "height": 637
+        },
+        {
+          "x": 670,
+          "y": 0,
+          "width": 584,
+          "height": 637
+        },
+        {
+          "x": 0,
+          "y": 637,
+          "width": 683,
+          "height": 617
+        },
+        {
+          "x": 683,
+          "y": 637,
+          "width": 571,
+          "height": 617
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "seal",
+    "warn": 4600,
+    "times": [
+      4600
+    ],
+    "kind": "seal",
+    "radius": 70,
+    "effect": "seal",
+    "rest": 9000,
+    "status": "freeze",
+    "duration": 5100,
+    "freezeMs": 1500
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "浮遊移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "attack",
+    "label": "拳撃",
+    "manifest": "attack/manifest.json"
+  },
+  {
+    "id": "danger-1",
+    "label": "魔腕の断界",
+    "manifest": "danger-1/manifest.json"
+  },
+  {
+    "id": "danger-2",
+    "label": "三界魔柱",
+    "manifest": "danger-2/manifest.json"
+  },
+  {
+    "id": "danger-3",
+    "label": "封声",
+    "manifest": "danger-3/manifest.json"
+  },
+  {
+    "id": "danger-4",
+    "label": "終焉の交差",
+    "manifest": "danger-4/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  }
+]

@@ -1,0 +1,7 @@
+body[data-region="6"]{--gold:#e6bf79;--green:#d8bd80;--mint:#91ddd0;--line:#494534;--muted:#a99b80;background:radial-gradient(ellipse at 50% 0,#604c2a55,transparent 65%),#171b16}
+body[data-region="6"] .battle-panel{border-color:#bc915555;box-shadow:0 12px 60px #6f432329}
+body[data-region="6"] .arena{background:#84663f}
+.stage-map[data-region="6"]{background:linear-gradient(#49361f33,#3b302bd9),url('/assets/stages/golden-desert/distant.png') center/cover}
+body[data-region="6"] .route-node.current>span{border-color:#ffd692;box-shadow:0 0 24px #e6a65044}
+body[data-region="6"] #wave-dots .active{background:#ffe0a0;box-shadow:0 0 14px #e4aa5a88}
+body[data-region="6"] .forest-route{border-color:#bc915544;background:linear-gradient(90deg,#47382366,#29291f55)}

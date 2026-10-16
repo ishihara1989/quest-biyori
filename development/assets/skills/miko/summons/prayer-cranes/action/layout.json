@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/prayer-cranes-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 732,
+      "height": 724
+    },
+    {
+      "x": 732,
+      "y": 0,
+      "width": 709,
+      "height": 724
+    },
+    {
+      "x": 1441,
+      "y": 0,
+      "width": 731,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.11023622047244094
+}

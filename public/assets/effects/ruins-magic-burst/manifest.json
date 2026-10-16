@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-magic-burst",
+  "label": "魔力炸裂",
+  "sheet": "ruins-magic-burst.png",
+  "preview": "../../../../development/assets/effects/ruins-magic-burst/ruins-magic-burst-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-magic-burst/PROMPT.md",
+  "width": 1280,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 240
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-magic-burst/source-registered.png",
+  "sourceScale": 0.3956043956043956,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-magic-burst-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 86,
+        "top": 115,
+        "right": 234,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 889,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 399,
+        "y": 476
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-magic-burst-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 19,
+        "top": 61,
+        "right": 301,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 889,
+        "y": 0,
+        "width": 889,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 469,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-magic-burst-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 16,
+        "top": 71,
+        "right": 303,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 550,
+        "width": 889,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 414,
+        "y": 479
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-magic-burst-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 39,
+        "top": 83,
+        "right": 281,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 889,
+        "y": 550,
+        "width": 889,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 475
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "ground",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-magic-burst/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 679,
+        "height": 518
+      },
+      {
+        "x": 679,
+        "y": 0,
+        "width": 857,
+        "height": 518
+      },
+      {
+        "x": 0,
+        "y": 518,
+        "width": 807,
+        "height": 506
+      },
+      {
+        "x": 807,
+        "y": 518,
+        "width": 729,
+        "height": 506
+      }
+    ]
+  }
+}

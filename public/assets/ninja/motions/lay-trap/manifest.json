@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "lay-trap",
+  "label": "地面への散布",
+  "facing": "right",
+  "sheet": "ninja-lay-trap.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 560,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.20378457059679767,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/ninja/motions/lay-trap/source/ninja-lay-trap-generated-v2.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; complete skill sequences in ninja-skill-lab.html. Separate swept projectiles own flight and damage.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "lay-trap-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "沈み込む",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 342,
+        "y": 707
+      },
+      "sourceBounds": {
+        "left": 86,
+        "top": 106,
+        "right": 616,
+        "bottom": 707
+      },
+      "bounds": {
+        "left": 108,
+        "top": 117,
+        "right": 215,
+        "bottom": 239
+      },
+      "visiblePixels": 7392,
+      "transparentPixels": 73501
+    },
+    {
+      "index": 1,
+      "file": "lay-trap-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "地面へ散布",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 309,
+        "y": 707
+      },
+      "sourceBounds": {
+        "left": 88,
+        "top": 144,
+        "right": 722,
+        "bottom": 707
+      },
+      "bounds": {
+        "left": 115,
+        "top": 125,
+        "right": 244,
+        "bottom": 239
+      },
+      "visiblePixels": 7005,
+      "transparentPixels": 73858
+    },
+    {
+      "index": 2,
+      "file": "lay-trap-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "立ち直る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 373,
+        "y": 707
+      },
+      "sourceBounds": {
+        "left": 91,
+        "top": 20,
+        "right": 591,
+        "bottom": 707
+      },
+      "bounds": {
+        "left": 103,
+        "top": 99,
+        "right": 204,
+        "bottom": 239
+      },
+      "visiblePixels": 6704,
+      "transparentPixels": 74171
+    }
+  ]
+}

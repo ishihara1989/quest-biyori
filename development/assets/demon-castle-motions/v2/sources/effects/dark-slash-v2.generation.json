@@ -1,0 +1,18 @@
+{
+  "id": "effects/dark-slash",
+  "source": "dark-slash-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: four-frame SHORT DARK SWORD SLASH, a separate visual effect for black-and-gold knight enemies in a refined pixel-art JRPG.\nInput image: use ONLY its palette and pixel-cluster quality (dark violet, red, narrow white-hot edge). Correct its arrow-like shape and extra rings. Create a SINGLE CURVED BLADE ARC sweeping upper-right to lower-left, not a projectile or beam.\nExactly FOUR separate complete effect sprites in a 2x2 sheet with very broad transparent gutters. Same coordinate system and same maximum scale across frames. Native transparent background.\nPer-cell normalized trajectory: one thin diagonal curved blade arc runs from upper-right (700,260), bends through (430,480), ends lower-left (260,740). All visible pixels stay inside x=170..830,y=170..830 with ample clear margins. White inner edge is narrow, deep violet/red outer edge has only a few tiny red sparks. Empty center, no character, no weapon.\nFrame 1: short faint starting arc occupies only the upper-right section from (700,260) to (530,410).\nFrame 2: one crisp bright crescent sweeps along the full upper-right to lower-left trajectory. Thickest part only about 55 units wide, pointed taper at both ends. Strong readable flash, WITHOUT circle or shockwave.\nFrame 3: SAME crescent position and size, lower brightness, only lower-left section still bright, upper-right edge starts to dissolve into 4-6 tiny red pixels.\nFrame 4: only 5-8 small separated red/violet ember clusters near the lower-left ending segment, central region mostly transparent. NO remaining white edge or pointed projectile. The effect stops after frame 4, no persistent loop.\nCritical: this is ONE directional curved sword arc, never a three-pronged arrow, full ring, expanding blast, vortex, second arc or multiple simultaneous hits.\nCrisp deliberate pixel clusters and stepped edges, restrained white/magenta highlights with dark-violet and red outline. Genuine transparent alpha outside arc and individual sparks. No backdrop, halo sheet, floor, painted checkerboard, text, labels, grid or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-8926646b-0bd3-45a2-ad38-355e38d871b3.png",
+  "sha256": "0d050e2a6b81f0b1957c107a60a6936529f2710b6eefd9ea56f8d85b992d587f",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/sources/effects/dark-slash-generated.png",
+      "sha256": "b16f1aecf430100b31c50c2ee2c06e187543bfe2bd28971bec63ed24e84549ac"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "dark-slash-v2.prompt.txt"
+}

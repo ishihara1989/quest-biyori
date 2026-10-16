@@ -1,0 +1,47 @@
+{
+  "source": "source/paladin-backward-generated-v7.png",
+  "columns": 4,
+  "rows": 2,
+  "frames": [
+    {
+      "anchor": {
+        "x": 263
+      }
+    },
+    {
+      "anchor": {
+        "x": 263
+      }
+    },
+    {
+      "anchor": {
+        "x": 263
+      }
+    },
+    {
+      "anchor": {
+        "x": 270
+      }
+    },
+    {
+      "anchor": {
+        "x": 263
+      }
+    },
+    {
+      "anchor": {
+        "x": 263
+      }
+    },
+    {
+      "anchor": {
+        "x": 268
+      }
+    },
+    {
+      "anchor": {
+        "x": 268
+      }
+    }
+  ]
+}

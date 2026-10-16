@@ -1,0 +1,20 @@
+{
+  "id": "effects/armor-break",
+  "source": "sources/effects/armor-break-v2-rejected.png",
+  "selected": false,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. recognizable small gold-silver shield emblem splits with a crimson crack and sparse orange-metal shards, clean isolated icon, no text. Compact split gold shield icon, clear isolated outline, red fracture, 4 subtle pulse phases. No backdrop or floor. Status loop. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "reason": "One-shot destruction instead of stable cracked-shield loop. Must regenerate constant shape with four brightness phases.",
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "a4378806f7a84f46693065d00a7e84dbc6a3100878b61764776be4f0e13358a1",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/armor-break-generated.png",
+  "issues": [
+    "最終コマで盾の印が消えて粒子だけになる。破甲の付与演出と状態維持のアイコンを分ける。",
+    "反復で盾が毎回復元される構成になる。状態表示には割れた盾の保持コマが必要。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

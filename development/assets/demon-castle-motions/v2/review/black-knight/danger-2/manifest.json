@@ -1,0 +1,143 @@
+{
+  "id": "black-knight/danger-2",
+  "label": "黒騎士・黒環薙ぎ",
+  "enemy": "black-knight",
+  "motion": "danger-2",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/black-knight.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 802,
+        "height": 521
+      },
+      "sourceAnchor": [
+        420,
+        484
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "af9042a742ab4fbd81959fa0b10af4ba1b3b31876d6e10af57e0c23f625fb767",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.903411865234375
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4220,
+      "phase": "腰へ剣を引く",
+      "source": "../../../sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 802,
+        "top": 0,
+        "width": 734,
+        "height": 521
+      },
+      "sourceAnchor": [
+        390,
+        475
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "94f8e3cf1d7b12dda87053e9b3f3e199cd05879bd9069747bfeaee6f8a1169c7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9047698974609375
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "phase": "横薙ぎ",
+      "source": "../../../sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 0,
+        "top": 521,
+        "width": 805,
+        "height": 503
+      },
+      "sourceAnchor": [
+        450,
+        466
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "0aa3660bd5d75d520454dbd8e2f382447c67228411dc192890c0082d8b3cb95e",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8991889953613281
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 805,
+        "top": 521,
+        "width": 731,
+        "height": 503
+      },
+      "sourceAnchor": [
+        375,
+        477
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "c5897bd2572cf5bdde66aee41e78abbdfc6d82936817f5cda915af9020f3724e",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9023323059082031
+    }
+  ],
+  "fingerprint": "7888336d95f6dfdf29975789c04c19d814e1891a6a12bcf65be24bc56e090622",
+  "events": [
+    {
+      "id": "effects/black-ring-slash",
+      "timeMs": 4400,
+      "durationMs": 520,
+      "x": 600,
+      "y": 350,
+      "scale": 0.85,
+      "anchor": [
+        350,
+        256
+      ]
+    }
+  ],
+  "effects": []
+}

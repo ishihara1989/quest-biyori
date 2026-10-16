@@ -1,0 +1,24 @@
+{
+  "id": "young-fire-dragon/danger-1",
+  "source": "sources/young-fire-dragon/danger-1-v3.png",
+  "prompt": "Use case: stylized-concept. Four sprite poses EXACT equal 2x2 TL TR BL BR of canonical young fire dragon. EVERY head including the windup MUST point LEFT: nose on LEFT, ears/horns behind to RIGHT, no right-facing head or coiled U-shaped neck. Frame1 neutral; frame2 slight lowered head drawn back toward chest WHILE NOSE STILL POINTS LEFT, tiny attached orange ember INSIDE mouth; frame3 mouth opens LEFT, same neck length and short snout, tiny ember remains inside mouth, no detached projectile; frame4 neutral recovery. Four supporting connected legs, same torso/head dimensions and wing span all frames. Smooth neutral return. Small centered sprite per cell with ample empty gutters, whole wings/tail/feet visible. Canonical refined pixel art, actual transparent alpha=0 outside silhouette, no background, no shadow, no external VFX.",
+  "selected": true,
+  "reason": "Visual/source separation correction",
+  "tool": "built-in image_gen",
+  "sha256": "56aa8d6be72bc243cf87de14bf9dbc0ba5cbca1d180b46120d3ba3b078e071c9",
+  "reference": "references/young-fire-dragon.png",
+  "guide": null,
+  "firstPass": "sources/young-fire-dragon/danger-1-generated.png",
+  "issues": [
+    "溜めで描かれた火球と別の飛行エフェクトの二重表示を避けるよう発射位置と時刻を決める。",
+    "翼・首・胸の形が発動で伸びる。復帰から待機への体格を揃える。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/young-fire-dragon.png",
+      "sha256": "a13d12a29ea3a0e80223d22a3e1c2e492a9a434845dbc11a1578f0296c4406c8"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

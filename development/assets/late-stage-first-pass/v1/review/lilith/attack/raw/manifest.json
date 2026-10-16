@@ -1,0 +1,50 @@
+{
+  "id": "lilith/attack/raw",
+  "enemy": "lilith",
+  "region": "demon-castle",
+  "motion": "raw-sheet",
+  "label": "魔弾（原画のみ）",
+  "kind": "raw-sheet",
+  "sources": [
+    "sources/lilith/attack-generated.png"
+  ],
+  "durations": [
+    1000
+  ],
+  "phases": [
+    "切り出し不可・原画"
+  ],
+  "extractionError": "生成された透過・粒子を保持するため、画素マスク方式の切り出しは使わない。矩形の手動切り出しが必要",
+  "enemyLabel": "リリス",
+  "expectedFrames": 1,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 14,
+        "top": 25,
+        "right": 1282,
+        "bottom": 1143
+      },
+      "sourceWidth": 1292,
+      "sourceHeight": 1217,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 633001,
+      "transparentFraction": 0.4025791737790995
+    }
+  ],
+  "reference": "../../../../references/lilith.png",
+  "originalSources": [
+    "../../../../sources/lilith/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,67 @@
+{
+  "id": "lava-salamander/down",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "down",
+  "label": "撃破",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/lava-salamander/reaction-generated.png"
+  ],
+  "durations": [
+    400,
+    1000
+  ],
+  "phases": [
+    "崩れる",
+    "倒れた状態"
+  ],
+  "enemyLabel": "ラヴァサラマンダー",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "sourceBounds": {
+        "left": 94,
+        "top": 51,
+        "right": 753,
+        "bottom": 382
+      },
+      "sourceWidth": 781,
+      "sourceHeight": 480,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 235685,
+      "transparentFraction": 0.6286945155783183
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 25,
+        "top": 149,
+        "right": 706,
+        "bottom": 388
+      },
+      "sourceWidth": 755,
+      "sourceHeight": 480,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 253500,
+      "transparentFraction": 0.6995033112582781
+    }
+  ],
+  "reference": "../../../references/lava-salamander.png",
+  "originalSources": [
+    "../../../sources/lava-salamander/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": true,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

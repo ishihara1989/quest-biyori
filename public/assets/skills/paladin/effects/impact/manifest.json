@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "label": "impact",
+  "motion": "impact",
+  "sheet": "impact.png",
+  "width": 1024,
+  "height": 256,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "loop": false,
+  "terminal": false,
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 128
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "impact-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 96,
+        "t": 90,
+        "r": 170,
+        "b": 180
+      },
+      "phase": "1",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 1,
+      "file": "impact-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 46,
+        "t": 62,
+        "r": 199,
+        "b": 208
+      },
+      "phase": "2",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 2,
+      "file": "impact-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 40,
+        "t": 41,
+        "r": 238,
+        "b": 205
+      },
+      "phase": "3",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 3,
+      "file": "impact-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 41,
+        "t": 54,
+        "r": 215,
+        "b": 208
+      },
+      "phase": "4",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/paladin/source/impact-generated-v1.png",
+  "generation": "built-in image_gen; generated RGBA preserved",
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  }
+}

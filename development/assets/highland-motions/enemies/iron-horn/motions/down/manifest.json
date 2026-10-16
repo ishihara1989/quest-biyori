@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "enemy": "iron-horn",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "iron-horn-down.png",
+  "preview": "iron-horn-down-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 1280,
+  "height": 460,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 460,
+  "frameCount": 2,
+  "pivot": {
+    "x": 365,
+    "y": 436
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1220,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../registered/down.png",
+  "sourceScale": 0.5825242718446602,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 320,
+      "phase": "落下・崩れる",
+      "bounds": {
+        "left": 174,
+        "top": 211,
+        "right": 562,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 617,
+        "width": 855,
+        "height": 617
+      },
+      "sourceAnchor": {
+        "x": 425,
+        "y": 421
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 134,
+        "top": 291,
+        "right": 549,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 855,
+        "y": 617,
+        "width": 855,
+        "height": 617
+      },
+      "sourceAnchor": {
+        "x": 443,
+        "y": 422
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/iron-horn.png",
+  "originalSources": [
+    "../../../../sources/iron-horn/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 794,
+          "height": 565
+        },
+        {
+          "x": 794,
+          "y": 0,
+          "width": 742,
+          "height": 565
+        },
+        {
+          "x": 0,
+          "y": 565,
+          "width": 752,
+          "height": 459
+        },
+        {
+          "x": 752,
+          "y": 565,
+          "width": 784,
+          "height": 459
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.0362173038229376,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": []
+}

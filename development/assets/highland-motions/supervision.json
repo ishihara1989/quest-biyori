@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-12 JST",
+  "status": "approved-for-staging",
+  "previewOnly": true,
+  "mainGameIntegrated": false,
+  "tool": "built-in image_gen",
+  "subagentCount": 2,
+  "coverage": {
+    "enemies": 7,
+    "motions": 48,
+    "effects": 10,
+    "frames": 214,
+    "acceptedSourceSheets": 52
+  },
+  "reviewers": [
+    {
+      "id": "/root/ground_generation",
+      "role": "地上4種の生成と原画監修",
+      "evidence": "generation-ground.json",
+      "result": "23原画を採用。全canonical原画の存在と生成元のSHA256一致を確認。"
+    },
+    {
+      "id": "/root/aerial_supervision",
+      "role": "飛行種・マンティコア・エフェクトの生成と監修",
+      "evidence": "generation-aerial.json",
+      "result": "採用原画を基準画像と比較し、形・配色・視点・透過・部位の見切れを確認。最終版の基準比較と主要contactシートの各コマを確認し、追加生成不要と判定。最終ネイティブ確認ページをreloadし、7種・48モーション・10エフェクトの表示と待機カードの再生情報を確認。"
+    },
+    {
+      "id": "/root",
+      "role": "書き出し・位置登録・確認画面・検証・最終記録の取りまとめ",
+      "result": "最終7種lineup、iron-horn全8モーションのcontact、iron-hornのcharge/rocks、manticoreのeffect-tailを目視。214コマの機械監査とブラウザ52チェックを完了。"
+    }
+  ],
+  "manualVisualReview": {
+    "sourceReview": [
+      "generation-ground.json",
+      "generation-aerial.json"
+    ],
+    "frameReview": "基準画像とcontactシートを使い、形・色・位置・動作の順序・部位の見切れを比較。",
+    "finalRootEvidence": [
+      "idle-lineup.png",
+      "../../../output/highland-motions/contact-sheets/iron-horn.png",
+      "../../../output/highland-motions/iron-horn-charge.png",
+      "../../../output/highland-motions/iron-horn-rocks.png",
+      "../../../output/highland-motions/manticore-effect-tail.png"
+    ],
+    "nativePreview": "最終版reloadと7種48モーション・10エフェクトの表示確認。全48モーションの手動連続再生・手動コマ送りを完了したという記録にはしていない。"
+  },
+  "automatedReview": {
+    "frameAudit": {
+      "evidence": "qa.json",
+      "status": "passed",
+      "frames": 214,
+      "checks": [
+        "全素材の網羅",
+        "PNG寸法",
+        "透明な外周",
+        "異なるコマ",
+        "GIFのコマ数と時間",
+        "原画と基準画像の参照",
+        "飛行時の接地回避",
+        "撃破の終端保持",
+        "エフェクト発生情報"
+      ]
+    },
+    "browserAudit": {
+      "evidence": "../../../output/highland-motions/browser-qa.json",
+      "status": "passed",
+      "checks": 52,
+      "coverage": "全48動作の先頭・最終コマ送り、移動・被弾・撃破の一括再生、専用行動とエフェクト表示、撃破保持、待機復帰後のエフェクト収束、ハーピー飛行、390px幅、画像・ページエラーなし。"
+    }
+  },
+  "appliedCorrections": [
+    {
+      "subject": "harpy-queen",
+      "change": "翼端と顔・胴の位置を分けて登録。idle/move/feathers/ringの位置補正を適用。待機・移動・被弾・全専用行動・休息は飛行、撃破のみ落下・接地。",
+      "evidence": "registration-adjustments.json"
+    },
+    {
+      "subject": "manticore/gust",
+      "change": "突風動作の体格補正を1.1倍に調整。",
+      "evidence": "registration-adjustments.json"
+    },
+    {
+      "subject": "effects",
+      "change": "噛みつき・角薙ぎ・岩片を含む10種類を独立素材として採用。風の円は中央を透過。"
+    },
+    {
+      "subject": "preview playback",
+      "change": "キャラが待機に復帰した後もエフェクトを自然な終端まで再生。"
+    }
+  ],
+  "remainingIssues": [],
+  "handoffNotes": [
+    "素材と独立確認画面までを採用。本編catalog・戦闘AIへの接続は行っていない。",
+    "各モーションの時刻は確認用。本編接続時に行動時間へ合わせる。",
+    "休息4種は各敵の待機原画を低速で再利用。",
+    "手動目視と機械・ブラウザ検証の確認範囲は上記の通り区別して保存。"
+  ],
+  "latestRevision": {
+    "date": "2026-10-13 JST",
+    "motion": "manticore/move",
+    "variant": "coordinate-guided V2",
+    "status": "comparison-ready; coordinate-adherence-partial",
+    "record": "trot-v2/review.json",
+    "directionApproved": true,
+    "activeVariant": "V1"
+  }
+}

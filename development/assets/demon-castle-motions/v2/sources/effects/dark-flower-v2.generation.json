@@ -1,0 +1,18 @@
+{
+  "id": "effects/dark-flower",
+  "source": "dark-flower-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame single dark-flower ground burst, separate Lilith spell VFX for refined pixel-art JRPG.\nInput image: exact palette and flower design reference. Preserve pointed black-violet petals with thin crimson/magenta and gold illuminated veins. Correct the timing: closed bud -> opening -> full low flower -> fading petals. No tall pillar.\nExactly FOUR small separate effects in equal 2x2 cells, row-major. Native transparent alpha. Same fixed ground center (500,730) in normalized 0..1000 cell coordinates. All visible pixels must stay within x=200..800,y=300..800, with 20% clear transparent border and broad cell gutters.\nFrame 1: compact CLOSED pointed dark bud at (500,650), height 150, base only 170 wide. Only a tiny magenta line along seams, no already-open broad petals.\nFrame 2: outer petals open outward and slightly upward, width 400, height 270; dark center bud starts to separate. One thin gold rim at ground, no rays extending above y=400.\nFrame 3: fully OPEN LOW flower, width 560, height 300, pointed petals fan horizontally in a shallow cup. Bright magenta veins and a small white-pink central flash at (500,650), no vertical spire, no upward beam. Flower's ground center remains (500,730).\nFrame 4: petals fold/dissolve into 8-12 small dark crimson/violet petal fragments around same ground center, fading gold flecks. NO opaque broad glow or intact fully-lit flower remains. End and hide after frame 4.\nOnly one flower per cell. Multiple locations and time offsets will be placed externally. Strong vivid magic at peak while leaving ground and nearby characters readable.\nCrisp deliberate pixel clusters, stepped outlines, reference colors. No background, floor platform, opaque shadow, vignette, tall flame, pillar, character, text, labels, grid, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-7b424124-e93a-4beb-b0ce-63e23dbc53d4.png",
+  "sha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/sources/effects/dark-flower-generated.png",
+      "sha256": "2d09254c5bfb988ea388c08e9e628cb49bf1d0346d5751cf505161df61d428f2"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "dark-flower-v2.prompt.txt"
+}

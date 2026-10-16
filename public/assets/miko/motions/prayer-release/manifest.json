@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "character": "miko",
+  "motion": "prayer-release",
+  "label": "祈り終了・一回転",
+  "facing": "right",
+  "sheet": "miko-prayer-release.png",
+  "width": 1920,
+  "height": 256,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 800,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "prayer",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.2879120879120879,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/miko/motions/prayer-release/source/miko-prayer-release-generated-v1.png",
+  "sourceWidth": 1881,
+  "sourceHeight": 1254,
+  "sourceGrid": [
+    3,
+    2
+  ],
+  "columnSplit": 941,
+  "rowSplit": 627,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "prayer-release-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 140,
+      "phase": "棒を掲げる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 605
+      },
+      "sourceBounds": {
+        "left": 128,
+        "top": 26,
+        "right": 538,
+        "bottom": 605
+      },
+      "bounds": {
+        "left": 98,
+        "top": 73,
+        "right": 215,
+        "bottom": 239
+      },
+      "visiblePixels": 9176,
+      "transparentPixels": 70943
+    },
+    {
+      "index": 1,
+      "file": "prayer-release-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "背面へ回る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 602
+      },
+      "sourceBounds": {
+        "left": 138,
+        "top": 20,
+        "right": 496,
+        "bottom": 602
+      },
+      "bounds": {
+        "left": 104,
+        "top": 72,
+        "right": 206,
+        "bottom": 239
+      },
+      "visiblePixels": 8357,
+      "transparentPixels": 71700
+    },
+    {
+      "index": 2,
+      "file": "prayer-release-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "背を向ける",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1254,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 320,
+        "y": 593
+      },
+      "sourceBounds": {
+        "left": 131,
+        "top": 18,
+        "right": 523,
+        "bottom": 593
+      },
+      "bounds": {
+        "left": 106,
+        "top": 74,
+        "right": 218,
+        "bottom": 239
+      },
+      "visiblePixels": 8810,
+      "transparentPixels": 71025
+    },
+    {
+      "index": 3,
+      "file": "prayer-release-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "反対側へ回る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 284,
+        "y": 583
+      },
+      "sourceBounds": {
+        "left": 111,
+        "top": 23,
+        "right": 540,
+        "bottom": 583
+      },
+      "bounds": {
+        "left": 111,
+        "top": 78,
+        "right": 233,
+        "bottom": 239
+      },
+      "visiblePixels": 9170,
+      "transparentPixels": 70600
+    },
+    {
+      "index": 4,
+      "file": "prayer-release-05.png",
+      "x": 1280,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "正面を通る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 256,
+        "y": 583
+      },
+      "sourceBounds": {
+        "left": 58,
+        "top": 23,
+        "right": 472,
+        "bottom": 583
+      },
+      "bounds": {
+        "left": 103,
+        "top": 78,
+        "right": 222,
+        "bottom": 239
+      },
+      "visiblePixels": 9322,
+      "transparentPixels": 70788
+    },
+    {
+      "index": 5,
+      "file": "prayer-release-06.png",
+      "x": 1600,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 260,
+      "phase": "一回転・棒を前へ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1254,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 298,
+        "y": 483
+      },
+      "sourceBounds": {
+        "left": 55,
+        "top": 20,
+        "right": 575,
+        "bottom": 483
+      },
+      "bounds": {
+        "left": 90,
+        "top": 106,
+        "right": 239,
+        "bottom": 239
+      },
+      "visiblePixels": 10143,
+      "transparentPixels": 69790
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/life-serpent-appear-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 762,
+      "height": 724
+    },
+    {
+      "x": 762,
+      "y": 0,
+      "width": 684,
+      "height": 724
+    },
+    {
+      "x": 1446,
+      "y": 0,
+      "width": 726,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 931
+    },
+    {
+      "x": 512,
+      "y": 931
+    },
+    {
+      "x": 512,
+      "y": 931
+    }
+  ],
+  "scale": 0.5070422535211268
+}

@@ -1,0 +1,33 @@
+{
+  "id": "young-fire-dragon/danger-1",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "motion": "danger-1",
+  "label": "灼球",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/young-fire-dragon.png",
+  "guide": null,
+  "source": "sources/young-fire-dragon/danger-1-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 灼球 by 幼火竜 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: head (300,470) pulls (350,440), mouth opens and ember gathers (300,450), head thrusts (250,490), returns. Wings flare 35px. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "fireball",
+    "fireball-impact"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-b5035f72-29e5-4e6d-a28c-cdc756ed438d.png",
+  "sha256": "3e4d45c46b1978232470dde65479c6da8ee492efeabe7daf4a1db9e09f737b97",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "口に火種を集め、左へ発射する構えが読み取れる。"
+    ],
+    "issues": [
+      "溜めで描かれた火球と別の飛行エフェクトの二重表示を避けるよう発射位置と時刻を決める。",
+      "翼・首・胸の形が発動で伸びる。復帰から待機への体格を揃える。"
+    ]
+  }
+}

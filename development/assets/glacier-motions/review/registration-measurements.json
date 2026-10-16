@@ -1,0 +1,1204 @@
+[
+  {
+    "enemy": "frost-wolf",
+    "frameCount": 6,
+    "sourceScale": 0.1986754966887417,
+    "sourceExtraction": [
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.0161507402422612
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.1927330173775672
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.1353383458646618
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.1319340329835081
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.0486111111111112
+      }
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "sourceCell": {
+          "x": 0,
+          "y": 0,
+          "width": 1528,
+          "height": 1528
+        },
+        "sourceAnchor": {
+          "x": 689.7149423511462,
+          "y": 1098
+        },
+        "sourceScale": 0.1986754966887417,
+        "bounds": {
+          "left": 116,
+          "top": 129,
+          "right": 327,
+          "bottom": 278
+        }
+      },
+      {
+        "index": 1,
+        "sourceCell": {
+          "x": 1528,
+          "y": 0,
+          "width": 1528,
+          "height": 1528
+        },
+        "sourceAnchor": {
+          "x": 710.913738985743,
+          "y": 1152
+        },
+        "sourceScale": 0.1986754966887417,
+        "bounds": {
+          "left": 114,
+          "top": 129,
+          "right": 329,
+          "bottom": 278
+        }
+      },
+      {
+        "index": 2,
+        "sourceCell": {
+          "x": 0,
+          "y": 1528,
+          "width": 1528,
+          "height": 1528
+        },
+        "sourceAnchor": {
+          "x": 885,
+          "y": 1361
+        },
+        "sourceScale": 0.1986754966887417,
+        "bounds": {
+          "left": 111,
+          "top": 129,
+          "right": 333,
+          "bottom": 278
+        }
+      },
+      {
+        "index": 3,
+        "sourceCell": {
+          "x": 1528,
+          "y": 1528,
+          "width": 1528,
+          "height": 1528
+        },
+        "sourceAnchor": {
+          "x": 866.7965745192307,
+          "y": 1244
+        },
+        "sourceScale": 0.1986754966887417,
+        "bounds": {
+          "left": 121,
+          "top": 129,
+          "right": 323,
+          "bottom": 278
+        }
+      },
+      {
+        "index": 4,
+        "sourceCell": {
+          "x": 0,
+          "y": 3056,
+          "width": 1528,
+          "height": 1528
+        },
+        "sourceAnchor": {
+          "x": 821.9115849084908,
+          "y": 1318
+        },
+        "sourceScale": 0.1986754966887417,
+        "bounds": {
+          "left": 114,
+          "top": 129,
+          "right": 330,
+          "bottom": 278
+        }
+      },
+      {
+        "index": 5,
+        "sourceCell": {
+          "x": 1528,
+          "y": 3056,
+          "width": 1528,
+          "height": 1528
+        },
+        "sourceAnchor": {
+          "x": 729.5110983509484,
+          "y": 1183
+        },
+        "sourceScale": 0.1986754966887417,
+        "bounds": {
+          "left": 109,
+          "top": 129,
+          "right": 334,
+          "bottom": 277
+        }
+      }
+    ],
+    "status": "registration measurements; coordinate target is not an actual paw measurement"
+  },
+  {
+    "enemy": "ice-shell-golem",
+    "frameCount": 6,
+    "sourceScale": 0.3258845437616387,
+    "sourceExtraction": [
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 733,
+            "height": 724
+          },
+          {
+            "x": 733,
+            "y": 0,
+            "width": 721,
+            "height": 724
+          },
+          {
+            "x": 1454,
+            "y": 0,
+            "width": 718,
+            "height": 724
+          }
+        ],
+        "normalizationScale": 1
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 735,
+            "height": 724
+          },
+          {
+            "x": 735,
+            "y": 0,
+            "width": 713,
+            "height": 724
+          },
+          {
+            "x": 1448,
+            "y": 0,
+            "width": 724,
+            "height": 724
+          }
+        ],
+        "normalizationScale": 1.0280791320995533
+      }
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "sourceCell": {
+          "x": 0,
+          "y": 0,
+          "width": 788,
+          "height": 776
+        },
+        "sourceAnchor": {
+          "x": 378.5583709000466,
+          "y": 656
+        },
+        "sourceScale": 0.3258845437616387,
+        "bounds": {
+          "left": 119,
+          "top": 134,
+          "right": 331,
+          "bottom": 308
+        }
+      },
+      {
+        "index": 1,
+        "sourceCell": {
+          "x": 788,
+          "y": 0,
+          "width": 788,
+          "height": 776
+        },
+        "sourceAnchor": {
+          "x": 373.0227803738318,
+          "y": 656
+        },
+        "sourceScale": 0.3258845437616387,
+        "bounds": {
+          "left": 121,
+          "top": 134,
+          "right": 332,
+          "bottom": 308
+        }
+      },
+      {
+        "index": 2,
+        "sourceCell": {
+          "x": 0,
+          "y": 776,
+          "width": 788,
+          "height": 776
+        },
+        "sourceAnchor": {
+          "x": 366.606183424266,
+          "y": 656
+        },
+        "sourceScale": 0.3258845437616387,
+        "bounds": {
+          "left": 120,
+          "top": 134,
+          "right": 332,
+          "bottom": 308
+        }
+      },
+      {
+        "index": 3,
+        "sourceCell": {
+          "x": 788,
+          "y": 776,
+          "width": 788,
+          "height": 776
+        },
+        "sourceAnchor": {
+          "x": 399.8058781941218,
+          "y": 665
+        },
+        "sourceScale": 0.3258845437616387,
+        "bounds": {
+          "left": 120,
+          "top": 135,
+          "right": 331,
+          "bottom": 308
+        }
+      },
+      {
+        "index": 4,
+        "sourceCell": {
+          "x": 0,
+          "y": 1552,
+          "width": 788,
+          "height": 776
+        },
+        "sourceAnchor": {
+          "x": 376.73765432098764,
+          "y": 670
+        },
+        "sourceScale": 0.3258845437616387,
+        "bounds": {
+          "left": 120,
+          "top": 133,
+          "right": 334,
+          "bottom": 308
+        }
+      },
+      {
+        "index": 5,
+        "sourceCell": {
+          "x": 788,
+          "y": 1552,
+          "width": 788,
+          "height": 776
+        },
+        "sourceAnchor": {
+          "x": 362.13428965517244,
+          "y": 670
+        },
+        "sourceScale": 0.3258845437616387,
+        "bounds": {
+          "left": 123,
+          "top": 133,
+          "right": 333,
+          "bottom": 308
+        }
+      }
+    ],
+    "status": "registration measurements; coordinate target is not an actual paw measurement"
+  },
+  {
+    "enemy": "snow-spirit",
+    "frameCount": 4,
+    "sourceScale": 0.3243847874720358,
+    "sourceExtraction": [
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 634,
+            "height": 632
+          },
+          {
+            "x": 634,
+            "y": 0,
+            "width": 620,
+            "height": 632
+          },
+          {
+            "x": 0,
+            "y": 632,
+            "width": 637,
+            "height": 622
+          },
+          {
+            "x": 637,
+            "y": 632,
+            "width": 617,
+            "height": 622
+          }
+        ],
+        "normalizationScale": 1
+      }
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "sourceCell": {
+          "x": 0,
+          "y": 0,
+          "width": 669,
+          "height": 664
+        },
+        "sourceAnchor": {
+          "x": 358.4678563428657,
+          "y": 582
+        },
+        "sourceScale": 0.3243847874720358,
+        "bounds": {
+          "left": 138,
+          "top": 112,
+          "right": 285,
+          "bottom": 256
+        }
+      },
+      {
+        "index": 1,
+        "sourceCell": {
+          "x": 669,
+          "y": 0,
+          "width": 669,
+          "height": 664
+        },
+        "sourceAnchor": {
+          "x": 313.37121750248616,
+          "y": 584
+        },
+        "sourceScale": 0.3243847874720358,
+        "bounds": {
+          "left": 139,
+          "top": 99,
+          "right": 285,
+          "bottom": 253
+        }
+      },
+      {
+        "index": 2,
+        "sourceCell": {
+          "x": 0,
+          "y": 664,
+          "width": 669,
+          "height": 664
+        },
+        "sourceAnchor": {
+          "x": 354.69634607307853,
+          "y": 550
+        },
+        "sourceScale": 0.3243847874720358,
+        "bounds": {
+          "left": 137,
+          "top": 104,
+          "right": 286,
+          "bottom": 256
+        }
+      },
+      {
+        "index": 3,
+        "sourceCell": {
+          "x": 669,
+          "y": 664,
+          "width": 669,
+          "height": 664
+        },
+        "sourceAnchor": {
+          "x": 320.6016744714063,
+          "y": 555
+        },
+        "sourceScale": 0.3243847874720358,
+        "bounds": {
+          "left": 137,
+          "top": 110,
+          "right": 286,
+          "bottom": 259
+        }
+      }
+    ],
+    "status": "registration measurements; coordinate target is not an actual paw measurement"
+  },
+  {
+    "enemy": "fenrir",
+    "frameCount": 6,
+    "sourceScale": 0.24301964839710444,
+    "sourceExtraction": [
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.020042194092827
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 0.9415774099318404
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.0115062761506277
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 0.9747983870967742
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.008342022940563
+      }
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "sourceCell": {
+          "x": 0,
+          "y": 0,
+          "width": 1311,
+          "height": 1311
+        },
+        "sourceAnchor": {
+          "x": 726.5,
+          "y": 1172.6666666666665
+        },
+        "sourceScale": 0.24301964839710444,
+        "bounds": {
+          "left": 184,
+          "top": 144,
+          "right": 439,
+          "bottom": 378
+        }
+      },
+      {
+        "index": 1,
+        "sourceCell": {
+          "x": 1311,
+          "y": 0,
+          "width": 1311,
+          "height": 1311
+        },
+        "sourceAnchor": {
+          "x": 744.5,
+          "y": 1207.6666666666665
+        },
+        "sourceScale": 0.24301964839710444,
+        "bounds": {
+          "left": 176,
+          "top": 144,
+          "right": 446,
+          "bottom": 378
+        }
+      },
+      {
+        "index": 2,
+        "sourceCell": {
+          "x": 0,
+          "y": 1311,
+          "width": 1311,
+          "height": 1311
+        },
+        "sourceAnchor": {
+          "x": 654.5,
+          "y": 1141.6666666666665
+        },
+        "sourceScale": 0.24301964839710444,
+        "bounds": {
+          "left": 187,
+          "top": 144,
+          "right": 436,
+          "bottom": 377
+        }
+      },
+      {
+        "index": 3,
+        "sourceCell": {
+          "x": 1311,
+          "y": 1311,
+          "width": 1311,
+          "height": 1311
+        },
+        "sourceAnchor": {
+          "x": 736.5,
+          "y": 1172.6666666666665
+        },
+        "sourceScale": 0.24301964839710444,
+        "bounds": {
+          "left": 188,
+          "top": 144,
+          "right": 435,
+          "bottom": 377
+        }
+      },
+      {
+        "index": 4,
+        "sourceCell": {
+          "x": 0,
+          "y": 2622,
+          "width": 1311,
+          "height": 1311
+        },
+        "sourceAnchor": {
+          "x": 688.9494255668349,
+          "y": 1185.6666666666665
+        },
+        "sourceScale": 0.24301964839710444,
+        "bounds": {
+          "left": 185,
+          "top": 144,
+          "right": 438,
+          "bottom": 377
+        }
+      },
+      {
+        "index": 5,
+        "sourceCell": {
+          "x": 1311,
+          "y": 2622,
+          "width": 1311,
+          "height": 1311
+        },
+        "sourceAnchor": {
+          "x": 735,
+          "y": 1187.6666666666665
+        },
+        "sourceScale": 0.24301964839710444,
+        "bounds": {
+          "left": 177,
+          "top": 144,
+          "right": 445,
+          "bottom": 378
+        }
+      }
+    ],
+    "status": "registration measurements; coordinate target is not an actual paw measurement"
+  },
+  {
+    "enemy": "crystal-golem",
+    "frameCount": 6,
+    "sourceScale": 0.45532646048109965,
+    "sourceExtraction": [
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 738,
+            "height": 724
+          },
+          {
+            "x": 738,
+            "y": 0,
+            "width": 719,
+            "height": 724
+          },
+          {
+            "x": 1457,
+            "y": 0,
+            "width": 715,
+            "height": 724
+          }
+        ],
+        "normalizationScale": 1
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 748,
+            "height": 724
+          },
+          {
+            "x": 748,
+            "y": 0,
+            "width": 703,
+            "height": 724
+          },
+          {
+            "x": 1451,
+            "y": 0,
+            "width": 721,
+            "height": 724
+          }
+        ],
+        "normalizationScale": 1.0098152424942262
+      }
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "sourceCell": {
+          "x": 0,
+          "y": 0,
+          "width": 787,
+          "height": 763
+        },
+        "sourceAnchor": {
+          "x": 387.08800670953315,
+          "y": 651
+        },
+        "sourceScale": 0.45532646048109965,
+        "bounds": {
+          "left": 161,
+          "top": 134,
+          "right": 446,
+          "bottom": 398
+        }
+      },
+      {
+        "index": 1,
+        "sourceCell": {
+          "x": 787,
+          "y": 0,
+          "width": 787,
+          "height": 763
+        },
+        "sourceAnchor": {
+          "x": 370.2368071424776,
+          "y": 651
+        },
+        "sourceScale": 0.45532646048109965,
+        "bounds": {
+          "left": 162,
+          "top": 133,
+          "right": 450,
+          "bottom": 398
+        }
+      },
+      {
+        "index": 2,
+        "sourceCell": {
+          "x": 0,
+          "y": 763,
+          "width": 787,
+          "height": 763
+        },
+        "sourceAnchor": {
+          "x": 381.68434857081684,
+          "y": 651
+        },
+        "sourceScale": 0.45532646048109965,
+        "bounds": {
+          "left": 153,
+          "top": 133,
+          "right": 447,
+          "bottom": 398
+        }
+      },
+      {
+        "index": 3,
+        "sourceCell": {
+          "x": 787,
+          "y": 763,
+          "width": 787,
+          "height": 763
+        },
+        "sourceAnchor": {
+          "x": 395.1287023977433,
+          "y": 669
+        },
+        "sourceScale": 0.45532646048109965,
+        "bounds": {
+          "left": 156,
+          "top": 133,
+          "right": 456,
+          "bottom": 398
+        }
+      },
+      {
+        "index": 4,
+        "sourceCell": {
+          "x": 0,
+          "y": 1526,
+          "width": 787,
+          "height": 763
+        },
+        "sourceAnchor": {
+          "x": 357.1483429773803,
+          "y": 669
+        },
+        "sourceScale": 0.45532646048109965,
+        "bounds": {
+          "left": 164,
+          "top": 133,
+          "right": 451,
+          "bottom": 398
+        }
+      },
+      {
+        "index": 5,
+        "sourceCell": {
+          "x": 787,
+          "y": 1526,
+          "width": 787,
+          "height": 763
+        },
+        "sourceAnchor": {
+          "x": 362.07364078566593,
+          "y": 669
+        },
+        "sourceScale": 0.45532646048109965,
+        "bounds": {
+          "left": 163,
+          "top": 133,
+          "right": 452,
+          "bottom": 398
+        }
+      }
+    ],
+    "status": "registration measurements; coordinate target is not an actual paw measurement"
+  },
+  {
+    "enemy": "yuki-onna",
+    "frameCount": 4,
+    "sourceScale": 0.4340277777777778,
+    "sourceExtraction": [
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 646,
+            "height": 629
+          },
+          {
+            "x": 646,
+            "y": 0,
+            "width": 608,
+            "height": 629
+          },
+          {
+            "x": 0,
+            "y": 629,
+            "width": 680,
+            "height": 625
+          },
+          {
+            "x": 680,
+            "y": 629,
+            "width": 574,
+            "height": 625
+          }
+        ],
+        "normalizationScale": 1
+      }
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "sourceCell": {
+          "x": 0,
+          "y": 0,
+          "width": 712,
+          "height": 661
+        },
+        "sourceAnchor": {
+          "x": 376,
+          "y": 628
+        },
+        "sourceScale": 0.4340277777777778,
+        "bounds": {
+          "left": 167,
+          "top": 107,
+          "right": 388,
+          "bottom": 356
+        }
+      },
+      {
+        "index": 1,
+        "sourceCell": {
+          "x": 712,
+          "y": 0,
+          "width": 712,
+          "height": 661
+        },
+        "sourceAnchor": {
+          "x": 340,
+          "y": 632
+        },
+        "sourceScale": 0.4340277777777778,
+        "bounds": {
+          "left": 155,
+          "top": 103,
+          "right": 400,
+          "bottom": 353
+        }
+      },
+      {
+        "index": 2,
+        "sourceCell": {
+          "x": 0,
+          "y": 661,
+          "width": 712,
+          "height": 661
+        },
+        "sourceAnchor": {
+          "x": 380.02668732020356,
+          "y": 598
+        },
+        "sourceScale": 0.4340277777777778,
+        "bounds": {
+          "left": 146,
+          "top": 109,
+          "right": 409,
+          "bottom": 356
+        }
+      },
+      {
+        "index": 3,
+        "sourceCell": {
+          "x": 712,
+          "y": 661,
+          "width": 712,
+          "height": 661
+        },
+        "sourceAnchor": {
+          "x": 308,
+          "y": 597
+        },
+        "sourceScale": 0.4340277777777778,
+        "bounds": {
+          "left": 160,
+          "top": 113,
+          "right": 395,
+          "bottom": 359
+        }
+      }
+    ],
+    "status": "registration measurements; coordinate target is not an actual paw measurement"
+  },
+  {
+    "enemy": "ice-tusk-mammoth",
+    "frameCount": 6,
+    "sourceScale": 0.2694610778443114,
+    "sourceExtraction": [
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 0.9756572541382668
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.336
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 1.5729984301412874
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 0.9940476190476191
+      },
+      {
+        "method": "transparent-grid",
+        "rects": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "normalizationScale": 0.9970149253731343
+      }
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "sourceCell": {
+          "x": 0,
+          "y": 0,
+          "width": 2005,
+          "height": 2005
+        },
+        "sourceAnchor": {
+          "x": 665,
+          "y": 1148.8333333333335
+        },
+        "sourceScale": 0.2694610778443114,
+        "bounds": {
+          "left": 215,
+          "top": 159,
+          "right": 541,
+          "bottom": 428
+        }
+      },
+      {
+        "index": 1,
+        "sourceCell": {
+          "x": 2005,
+          "y": 0,
+          "width": 2005,
+          "height": 2005
+        },
+        "sourceAnchor": {
+          "x": 648,
+          "y": 1145.8333333333335
+        },
+        "sourceScale": 0.2694610778443114,
+        "bounds": {
+          "left": 217,
+          "top": 159,
+          "right": 539,
+          "bottom": 427
+        }
+      },
+      {
+        "index": 2,
+        "sourceCell": {
+          "x": 0,
+          "y": 2005,
+          "width": 2005,
+          "height": 2005
+        },
+        "sourceAnchor": {
+          "x": 865.5,
+          "y": 1389.8333333333335
+        },
+        "sourceScale": 0.2694610778443114,
+        "bounds": {
+          "left": 204,
+          "top": 159,
+          "right": 551,
+          "bottom": 428
+        }
+      },
+      {
+        "index": 3,
+        "sourceCell": {
+          "x": 2005,
+          "y": 2005,
+          "width": 2005,
+          "height": 2005
+        },
+        "sourceAnchor": {
+          "x": 1015,
+          "y": 1536.8333333333335
+        },
+        "sourceScale": 0.2694610778443114,
+        "bounds": {
+          "left": 204,
+          "top": 159,
+          "right": 551,
+          "bottom": 428
+        }
+      },
+      {
+        "index": 4,
+        "sourceCell": {
+          "x": 0,
+          "y": 4010,
+          "width": 2005,
+          "height": 2005
+        },
+        "sourceAnchor": {
+          "x": 659,
+          "y": 1146.8333333333335
+        },
+        "sourceScale": 0.2694610778443114,
+        "bounds": {
+          "left": 213,
+          "top": 159,
+          "right": 542,
+          "bottom": 428
+        }
+      },
+      {
+        "index": 5,
+        "sourceCell": {
+          "x": 2005,
+          "y": 4010,
+          "width": 2005,
+          "height": 2005
+        },
+        "sourceAnchor": {
+          "x": 661,
+          "y": 1170.8333333333335
+        },
+        "sourceScale": 0.2694610778443114,
+        "bounds": {
+          "left": 213,
+          "top": 159,
+          "right": 542,
+          "bottom": 427
+        }
+      }
+    ],
+    "status": "registration measurements; coordinate target is not an actual paw measurement"
+  }
+]

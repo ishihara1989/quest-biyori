@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-15",
+  "timezone": "Asia/Tokyo",
+  "status": "first-pass-and-one-review-complete-with-generation-failures",
+  "accepted": false,
+  "plannedJobs": 43,
+  "generatedJobs": 41,
+  "failedJobs": 2,
+  "plannedCells": 117,
+  "generatedCells": 111,
+  "motionCells": 56,
+  "effectCells": 46,
+  "components": 9,
+  "reviewGroups": 36,
+  "playbackReviewed": 26,
+  "sourceEdgeFailures": [],
+  "cellBoundaryIssues": [
+    "motions/p1-idle",
+    "motions/p1-shot",
+    "motions/phase-rise-1",
+    "motions/phase-rise-2",
+    "motions/phase-rise-3",
+    "motions/p2-idle",
+    "motions/p2-drift",
+    "motions/p2-meteor-2",
+    "motions/p2-cast-1",
+    "motions/p2-ultimate-1",
+    "motions/p2-ultimate-3",
+    "motions/p2-hit",
+    "motions/down",
+    "effects/star-bolt",
+    "effects/star-mirror-open",
+    "effects/phantom-recall",
+    "effects/rift-open",
+    "effects/zero-converge"
+  ],
+  "missing": [
+    {
+      "id": "motions/p2-cast-2",
+      "frames": 3,
+      "reason": "image generation service output moderation rejected; no image returned; no retry"
+    },
+    {
+      "id": "motions/p2-ultimate-2",
+      "frames": 3,
+      "reason": "image generation service output moderation rejected; no image returned; no retry"
+    }
+  ],
+  "reviewConditions": {
+    "fullFrames": "all returned originals and proportional rectangular cells",
+    "playback": "browser canvas; 1x for 26 clips, additionally 0.25x for 25; incomplete clips only available frames",
+    "backgrounds": [
+      "checker",
+      "dark",
+      "light"
+    ],
+    "runtimeIntegration": false,
+    "phantoms": "inventory only, existing 20 sources; not connected to star mirror"
+  },
+  "scopeExcluded": [
+    "image correction",
+    "regeneration",
+    "runtime adoption",
+    "combat or balance tests",
+    "final integration acceptance"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "demon-armored-soldier/danger-1",
+  "label": "魔鎧兵・鎧崩し",
+  "enemy": "demon-armored-soldier",
+  "motion": "danger-1",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../sources/demon-armored-soldier/danger-1-v2.png",
+      "sourceSha256": "4ad7207e466b7c6aa4a28d9d9d13d1c4dad02973fc955b8c8c9d02c8395d1054",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 759,
+        "height": 513
+      },
+      "sourceAnchor": [
+        440,
+        493
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "6d2a9fac14ef245230cbb3060aa2b4f4fa9e3ab1e7d4094e325348d1b9e3545b",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.900909423828125
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 2420,
+      "phase": "溜め",
+      "source": "../../../sources/demon-armored-soldier/danger-1-v2.png",
+      "sourceSha256": "4ad7207e466b7c6aa4a28d9d9d13d1c4dad02973fc955b8c8c9d02c8395d1054",
+      "sourceRect": {
+        "left": 759,
+        "top": 0,
+        "width": 777,
+        "height": 513
+      },
+      "sourceAnchor": [
+        345,
+        492
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "e5259d3ae81bfaff3b095cfd82cbbf9efeffab4cfd56f4ef34ed62c6068524ab",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.90716552734375
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 400,
+      "phase": "発動",
+      "source": "../../../sources/demon-armored-soldier/danger-1-v2.png",
+      "sourceSha256": "4ad7207e466b7c6aa4a28d9d9d13d1c4dad02973fc955b8c8c9d02c8395d1054",
+      "sourceRect": {
+        "left": 0,
+        "top": 513,
+        "width": 795,
+        "height": 511
+      },
+      "sourceAnchor": [
+        450,
+        465
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "0cad332f39187bf1b9db18963a0da248942149eac08de3849f5de595ed0cc69c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.893768310546875
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../sources/demon-armored-soldier/danger-1-v2.png",
+      "sourceSha256": "4ad7207e466b7c6aa4a28d9d9d13d1c4dad02973fc955b8c8c9d02c8395d1054",
+      "sourceRect": {
+        "left": 795,
+        "top": 513,
+        "width": 741,
+        "height": 511
+      },
+      "sourceAnchor": [
+        365,
+        471
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "9461e4e7c7e6d2907bcaa94d6bd8ef10cadf979f3371924293c29e61e4a070fc",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.900634765625
+    }
+  ],
+  "fingerprint": "9ac1dc13a510a364db9e4584de92be9b8123da3ca7564fffa0755ac0c99efb9d",
+  "events": [
+    {
+      "id": "effects/demon-impact",
+      "timeMs": 2600,
+      "durationMs": 280,
+      "x": 430,
+      "y": 330,
+      "scale": 0.4,
+      "anchor": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "effects/armor-break",
+      "timeMs": 2680,
+      "durationMs": 480,
+      "x": 430,
+      "y": 280,
+      "scale": 0.3,
+      "anchor": [
+        256,
+        256
+      ]
+    }
+  ],
+  "effects": []
+}

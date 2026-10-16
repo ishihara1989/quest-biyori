@@ -1,0 +1,264 @@
+{
+  "id": "demon-armored-soldier/move",
+  "label": "魔鎧兵・移動",
+  "enemy": "demon-armored-soldier",
+  "motion": "move",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "盾の奥の脚の膝・足首と持ち手が隠れる。2脚の支持と武器の接続を確認する。",
+    "3→4・6→1の支持足と剣先・盾の位置を検収する。",
+    "待機から移動への胴体位置合わせが必要。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/demon-armored-soldier.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "移動1",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/move-1-generated.png",
+      "sourceSha256": "cee987d033587efd2f8456427dd964067779bb39f3977cad08985e15576e3c29",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 729,
+        "height": 724
+      },
+      "sourceAnchor": [
+        423,
+        658
+      ],
+      "scale": 0.41946308724832215,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "4555bddafb296aee5376258cc563ead7ac9f3cfaad6f7f3629b49b173c54484c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8732490539550781,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 142,
+        "top": 155,
+        "right": 429,
+        "bottom": 421
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "移動2",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/move-1-generated.png",
+      "sourceSha256": "cee987d033587efd2f8456427dd964067779bb39f3977cad08985e15576e3c29",
+      "sourceRect": {
+        "left": 729,
+        "top": 0,
+        "width": 714,
+        "height": 724
+      },
+      "sourceAnchor": [
+        423,
+        658
+      ],
+      "scale": 0.41946308724832215,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "feab0a919a79db55dc48f5a31cb45a1f6e9998abb8301ab16879fd879678616c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8747673034667969,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 123,
+        "top": 160,
+        "right": 418,
+        "bottom": 431
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "移動3",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/move-1-generated.png",
+      "sourceSha256": "cee987d033587efd2f8456427dd964067779bb39f3977cad08985e15576e3c29",
+      "sourceRect": {
+        "left": 1443,
+        "top": 0,
+        "width": 729,
+        "height": 724
+      },
+      "sourceAnchor": [
+        395,
+        658
+      ],
+      "scale": 0.41946308724832215,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "4f47fc29482635114d5169da4b8d71937b2f2823632e1c616fa90bc86c336677",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8721923828125,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 139,
+        "top": 141,
+        "right": 421,
+        "bottom": 412
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "移動4",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/move-2-generated.png",
+      "sourceSha256": "8a21cab19823686871b47c7de856c0957b95c79ef8f7dc6951f2afbac09b104f",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 705,
+        "height": 724
+      },
+      "sourceAnchor": [
+        469,
+        665
+      ],
+      "scale": 0.4078303425774878,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c2d5a253cf2bae0c82c290d8ab4c41ce681205ed244e88b33a4e5b2d54b5b39c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8822708129882812,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 130,
+        "top": 159,
+        "right": 393,
+        "bottom": 414
+      }
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "phase": "移動5",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/move-2-generated.png",
+      "sourceSha256": "8a21cab19823686871b47c7de856c0957b95c79ef8f7dc6951f2afbac09b104f",
+      "sourceRect": {
+        "left": 705,
+        "top": 0,
+        "width": 701,
+        "height": 724
+      },
+      "sourceAnchor": [
+        423,
+        664
+      ],
+      "scale": 0.4078303425774878,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "e462444bd2ea1ed2f4ccbf1ba2f1b34a687300bd2fc39e14fa6712d670113fad",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8861351013183594,
+      "index": 4,
+      "x": 2048,
+      "y": 0,
+      "visibleBounds": {
+        "left": 134,
+        "top": 158,
+        "right": 412,
+        "bottom": 427
+      }
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "phase": "移動6",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/move-2-generated.png",
+      "sourceSha256": "8a21cab19823686871b47c7de856c0957b95c79ef8f7dc6951f2afbac09b104f",
+      "sourceRect": {
+        "left": 1406,
+        "top": 0,
+        "width": 766,
+        "height": 724
+      },
+      "sourceAnchor": [
+        431,
+        672
+      ],
+      "scale": 0.4078303425774878,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "58223bf15e5a670bb1daffcf67c220fa5542bc2f2397f63d991a4d755b0dd543",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8775520324707031,
+      "index": 5,
+      "x": 2560,
+      "y": 0,
+      "visibleBounds": {
+        "left": 124,
+        "top": 146,
+        "right": 417,
+        "bottom": 424
+      }
+    }
+  ],
+  "fingerprint": "3d7c72e28f5f7a1d15ab424902de74979b53ea0271f261c19b93bf8efc7e4465",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/demon-armored-soldier/move/manifest.json",
+  "sourceFingerprint": "3d7c72e28f5f7a1d15ab424902de74979b53ea0271f261c19b93bf8efc7e4465",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

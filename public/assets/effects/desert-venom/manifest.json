@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "effect": "desert-venom",
+  "label": "毒針・毒液",
+  "sheet": "desert-venom.png",
+  "preview": "../../../../development/assets/effects/desert-venom/desert-venom-preview.gif",
+  "prompt": "../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1120,
+  "height": 240,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 280,
+  "frameHeight": 240,
+  "frameCount": 4,
+  "pivot": {
+    "x": 140,
+    "y": 120
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 650,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/desert-venom/source-registered.png",
+  "sourceScale": 0.32249674902470743,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "desert-venom-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 280,
+      "height": 240,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 99,
+        "top": 92,
+        "right": 201,
+        "bottom": 199
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 843,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 318
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "desert-venom-02.png",
+      "x": 280,
+      "y": 0,
+      "width": 280,
+      "height": 240,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 53,
+        "top": 81,
+        "right": 251,
+        "bottom": 156
+      },
+      "sourceCell": {
+        "x": 843,
+        "y": 0,
+        "width": 843,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 426,
+        "y": 300
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "desert-venom-03.png",
+      "x": 560,
+      "y": 0,
+      "width": 280,
+      "height": 240,
+      "durationMs": 230,
+      "phase": "最大",
+      "bounds": {
+        "left": 51,
+        "top": 51,
+        "right": 236,
+        "bottom": 175
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 587,
+        "width": 843,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 238
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "desert-venom-04.png",
+      "x": 840,
+      "y": 0,
+      "width": 280,
+      "height": 240,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 39,
+        "top": 83,
+        "right": 247,
+        "bottom": 144
+      },
+      "sourceCell": {
+        "x": 843,
+        "y": 587,
+        "width": 843,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 392,
+        "y": 240
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../development/assets/desert-motions/desert-venom-generated.png"
+}

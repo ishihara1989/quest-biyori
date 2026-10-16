@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/spring-carp-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 710,
+      "height": 724
+    },
+    {
+      "x": 710,
+      "y": 0,
+      "width": 764,
+      "height": 724
+    },
+    {
+      "x": 1474,
+      "y": 0,
+      "width": 698,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 796
+    },
+    {
+      "x": 512,
+      "y": 796
+    },
+    {
+      "x": 512,
+      "y": 796
+    }
+  ],
+  "scale": 0.3181818181818182
+}

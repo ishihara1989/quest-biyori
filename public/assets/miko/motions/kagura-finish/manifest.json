@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "id": "kagura-finish",
+  "character": "miko",
+  "subject": "kagura-finish",
+  "group": "miko",
+  "motion": "motion",
+  "sheet": "kagura-finish-motion.png",
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 300,
+  "loop": false,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.218,
+  "frames": [
+    {
+      "index": 0,
+      "file": "kagura-finish-motion-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "motion",
+      "bounds": {
+        "l": 92,
+        "t": 100,
+        "r": 258,
+        "b": 239,
+        "n": 11069,
+        "width": 167,
+        "height": 140
+      }
+    },
+    {
+      "index": 1,
+      "file": "kagura-finish-motion-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "motion",
+      "bounds": {
+        "l": 106,
+        "t": 64,
+        "r": 206,
+        "b": 239,
+        "n": 9268,
+        "width": 101,
+        "height": 176
+      }
+    },
+    {
+      "index": 2,
+      "file": "kagura-finish-motion-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "motion",
+      "bounds": {
+        "l": 70,
+        "t": 102,
+        "r": 231,
+        "b": 239,
+        "n": 10650,
+        "width": 162,
+        "height": 138
+      }
+    }
+  ],
+  "source": "../../../../../development/assets/skills/miko/source/kagura-finish-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/idle-01.png",
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/motions/prayer/prayer-04.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "slime",
+    "label": "スライム",
+    "name": "Slime",
+    "summary": "青い体と小さな目。左向きの、序盤に登場するシンプルな敵。",
+    "base": "assets/enemies/slime/",
+    "thumbnail": "motions/idle/idle-01.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 256,
+      "height": 224,
+      "pivot": {
+        "x": 128,
+        "y": 207
+      }
+    }
+  },
+  {
+    "id": "treant",
+    "label": "トレント",
+    "name": "Treant",
+    "summary": "始まりの森のボス。太い幹、葉の冠、根の足。枝腕の叩きつけ、樹の実の投げ上げ、地面へ根を差し込む動作。",
+    "base": "assets/enemies/treant/",
+    "thumbnail": "motions/idle/idle-01.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 448,
+      "height": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      }
+    }
+  },
+  {
+    "id": "boss-slime",
+    "label": "ボススライム",
+    "name": "Boss Slime",
+    "summary": "通常スライムと同じ青い体の大型ボス。待機・移動・被弾・体当たり・撃破・分裂を各4コマ。分裂は4コマ目でちぎれ、再生終了時に通常スライムを1体召喚。分裂後の召喚を表示すると連続使用を確認できます。",
+    "base": "assets/enemies/boss-slime/",
+    "thumbnail": "motions/idle/idle-01.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 320,
+      "pivot": {
+        "x": 288,
+        "y": 303
+      }
+    }
+  },
+  {
+    "id": "boar",
+    "label": "イノシシ",
+    "name": "Boar",
+    "summary": "左向きの四足イノシシ型モンスター。移動は右前脚が前の待機姿勢から踏み替える6コマ。前脚と後脚の持ち上げ・前方への踏み出しを描き分け、手前は左脚、奥は右脚。突進は『前脚を上げる→跳ぶ→前脚で着地→後脚も着地してかがむ』の4コマループで、左右の脚は同時に動きます。待機・被弾・撃破は各4コマ。毛色は待機の濃い茶色を共通基準にしています。",
+    "base": "assets/enemies/boar/",
+    "thumbnail": "motions/idle/idle-01.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 320,
+      "height": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      }
+    }
+  },
+  {
+    "id": "boss-boar",
+    "label": "ボスイノシシ",
+    "name": "Boss Boar",
+    "summary": "大きな牙、赤銅色のたてがみ、肩の古傷を持つ大型イノシシ。待機・移動・突進・被弾・撃破に加え、少し屈んで後ろ片足で地面を蹴る4コマの突進予告ループ。予告中はその場に留まり、地面の攻撃範囲はゲーム側で重ねて表示し、突進へ切り替えます。",
+    "base": "assets/enemies/boss-boar/",
+    "thumbnail": "motions/idle/idle-01.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 480,
+      "height": 320,
+      "pivot": {
+        "x": 240,
+        "y": 303
+      }
+    }
+  },
+  {
+    "id": "alraune",
+    "label": "アルラウネ",
+    "name": "Alraune",
+    "summary": "緑肌の女性の上半身が大きな赤紫の花から生えるボス。小花3輪とトゲ付きのツル。待機・根で這う移動・被弾・撃破・残像付きのツル叩きつけ・小花の種の連射を各4コマ。種の弾群は攻撃エフェクトページから保存できます。",
+    "base": "assets/enemies/alraune/",
+    "thumbnail": "motions/idle/idle-01.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 640,
+      "height": 384,
+      "pivot": {
+        "x": 360,
+        "y": 367
+      }
+    }
+  },
+  {
+    "id": "alraune-minion",
+    "label": "アルラウネの手下",
+    "name": "Alraune Minion",
+    "summary": "アルラウネの周囲の小花と同じピンクのラッパ状の花が頭。葉と茎の体、根の足を持つ植物クリーチャー。待機・移動・被弾・撃破・頭から横へ種を飛ばす攻撃を各4コマ。種はアルラウネと同じものを横1列にした別画像。",
+    "base": "assets/enemies/alraune-minion/",
+    "thumbnail": "motions/idle/idle-01.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 320,
+      "height": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      }
+    }
+  },
+  {
+    "id": "giga-toad",
+    "label": "ギガトード",
+    "name": "Giga Toad",
+    "region": "poison-swamp",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "ギガトード · 毒の沼地",
+    "base": "assets/enemies/giga-toad/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 256,
+      "pivot": {
+        "x": 223,
+        "y": 239
+      }
+    }
+  },
+  {
+    "id": "king-toad",
+    "label": "キングトード",
+    "name": "King Toad",
+    "region": "poison-swamp",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "キングトード · 毒の沼地",
+    "base": "assets/enemies/king-toad/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 704,
+      "height": 352,
+      "pivot": {
+        "x": 408,
+        "y": 335
+      }
+    }
+  },
+  {
+    "id": "mud-hand",
+    "label": "泥の手",
+    "name": "Mud Hand",
+    "region": "poison-swamp",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "泥の手 · 毒の沼地",
+    "base": "assets/enemies/mud-hand/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 288,
+      "pivot": {
+        "x": 223,
+        "y": 271
+      }
+    }
+  },
+  {
+    "id": "mud-giant",
+    "label": "泥巨人",
+    "name": "Mud Giant",
+    "region": "poison-swamp",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "泥巨人 · 毒の沼地",
+    "base": "assets/enemies/mud-giant/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 416,
+      "pivot": {
+        "x": 334,
+        "y": 399
+      }
+    }
+  },
+  {
+    "id": "skeleton",
+    "label": "スケルトン",
+    "name": "Skeleton",
+    "region": "poison-swamp",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "スケルトン · 毒の沼地",
+    "base": "assets/enemies/skeleton/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 320,
+      "pivot": {
+        "x": 223,
+        "y": 303
+      }
+    }
+  },
+  {
+    "id": "lich",
+    "label": "リッチ",
+    "name": "Lich",
+    "region": "poison-swamp",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "リッチ · 毒の沼地",
+    "base": "assets/enemies/lich/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 448,
+      "pivot": {
+        "x": 334,
+        "y": 431
+      }
+    }
+  },
+  {
+    "id": "hydra",
+    "label": "ヒュドラ",
+    "name": "Hydra",
+    "region": "poison-swamp",
+    "boss": true,
+    "majorBoss": true,
+    "summary": "ヒュドラ · 毒の沼地",
+    "base": "assets/enemies/hydra/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 704,
+      "height": 448,
+      "pivot": {
+        "x": 408,
+        "y": 431
+      }
+    }
+  },
+  {
+    "id": "cave-bat",
+    "label": "コウモリ",
+    "name": "Cave Bat",
+    "region": "echo-cave",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "コウモリ",
+    "base": "assets/enemies/cave-bat/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 288,
+      "pivot": {
+        "x": 223,
+        "y": 271
+      }
+    }
+  },
+  {
+    "id": "great-bat",
+    "label": "大コウモリ",
+    "name": "Great Bat",
+    "region": "echo-cave",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "大コウモリ",
+    "base": "assets/enemies/great-bat/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 416,
+      "pivot": {
+        "x": 334,
+        "y": 399
+      }
+    }
+  },
+  {
+    "id": "cave-worm",
+    "label": "ワーム",
+    "name": "Cave Worm",
+    "region": "echo-cave",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "ワーム",
+    "base": "assets/enemies/cave-worm/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 288,
+      "pivot": {
+        "x": 223,
+        "y": 271
+      }
+    }
+  },
+  {
+    "id": "large-worm",
+    "label": "ラージワーム",
+    "name": "Large Worm",
+    "region": "echo-cave",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "ラージワーム",
+    "base": "assets/enemies/large-worm/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 416,
+      "pivot": {
+        "x": 334,
+        "y": 399
+      }
+    }
+  },
+  {
+    "id": "cave-spider",
+    "label": "蜘蛛",
+    "name": "Cave Spider",
+    "region": "echo-cave",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "蜘蛛",
+    "base": "assets/enemies/cave-spider/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 288,
+      "pivot": {
+        "x": 223,
+        "y": 271
+      }
+    }
+  },
+  {
+    "id": "arachne",
+    "label": "アラクネ",
+    "name": "Arachne",
+    "region": "echo-cave",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "アラクネ",
+    "base": "assets/enemies/arachne/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 448,
+      "pivot": {
+        "x": 334,
+        "y": 431
+      }
+    }
+  },
+  {
+    "id": "cave-troll",
+    "label": "ケイブトロール",
+    "name": "Cave Troll",
+    "region": "echo-cave",
+    "boss": true,
+    "majorBoss": true,
+    "summary": "ケイブトロール",
+    "base": "assets/enemies/cave-troll/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 704,
+      "height": 512,
+      "pivot": {
+        "x": 408,
+        "y": 495
+      }
+    }
+  },
+  {
+    "id": "hermit-crab",
+    "label": "ヤドカリ",
+    "name": "Hermit Crab",
+    "region": "sunlit-coast",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "ヤドカリ",
+    "base": "assets/enemies/hermit-crab/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 288,
+      "pivot": {
+        "x": 223,
+        "y": 271
+      }
+    }
+  },
+  {
+    "id": "great-hermit",
+    "label": "オオヤドカリ",
+    "name": "Great Hermit Crab",
+    "region": "sunlit-coast",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "オオヤドカリ",
+    "base": "assets/enemies/great-hermit/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 416,
+      "pivot": {
+        "x": 334,
+        "y": 399
+      }
+    }
+  },
+  {
+    "id": "lizardman",
+    "label": "リザードマン",
+    "name": "Lizardman",
+    "region": "sunlit-coast",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "リザードマン",
+    "base": "assets/enemies/lizardman/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 448,
+      "height": 352,
+      "pivot": {
+        "x": 260,
+        "y": 335
+      }
+    }
+  },
+  {
+    "id": "lizard-chief",
+    "label": "ボスリザードマン",
+    "name": "Lizard Chief",
+    "region": "sunlit-coast",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "ボスリザードマン",
+    "base": "assets/enemies/lizard-chief/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 640,
+      "height": 448,
+      "pivot": {
+        "x": 371,
+        "y": 431
+      }
+    }
+  },
+  {
+    "id": "octopus",
+    "label": "タコ",
+    "name": "Octopus",
+    "region": "sunlit-coast",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "タコ",
+    "base": "assets/enemies/octopus/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 288,
+      "pivot": {
+        "x": 223,
+        "y": 271
+      }
+    }
+  },
+  {
+    "id": "scylla",
+    "label": "スキュラ",
+    "name": "Scylla",
+    "region": "sunlit-coast",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "スキュラ",
+    "base": "assets/enemies/scylla/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 640,
+      "height": 448,
+      "pivot": {
+        "x": 371,
+        "y": 431
+      }
+    }
+  },
+  {
+    "id": "kraken",
+    "label": "クラーケン",
+    "name": "Kraken",
+    "region": "sunlit-coast",
+    "boss": true,
+    "majorBoss": true,
+    "summary": "クラーケン",
+    "base": "assets/enemies/kraken/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 704,
+      "height": 512,
+      "pivot": {
+        "x": 408,
+        "y": 495
+      }
+    }
+  },
+  {
+    "id": "stone-guard",
+    "label": "石の衛兵",
+    "name": "stone guard",
+    "region": "ancient-ruins",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "石の衛兵。遺跡の敵。",
+    "base": "assets/enemies/stone-guard/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 320,
+      "pivot": {
+        "x": 223,
+        "y": 302
+      }
+    }
+  },
+  {
+    "id": "rune-gargoyle",
+    "label": "ルーンガーゴイル",
+    "name": "rune gargoyle",
+    "region": "ancient-ruins",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "ルーンガーゴイル。待機・移動・被弾は飛行状態。",
+    "base": "assets/enemies/rune-gargoyle/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 448,
+      "height": 352,
+      "pivot": {
+        "x": 260,
+        "y": 334
+      }
+    }
+  },
+  {
+    "id": "ancient-crossbowman",
+    "label": "古代の弩兵",
+    "name": "ancient crossbowman",
+    "region": "ancient-ruins",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "古代の弩兵。遺跡の敵。",
+    "base": "assets/enemies/ancient-crossbowman/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 320,
+      "pivot": {
+        "x": 223,
+        "y": 302
+      }
+    }
+  },
+  {
+    "id": "floating-magic-core",
+    "label": "浮遊魔導器",
+    "name": "floating magic core",
+    "region": "ancient-ruins",
+    "boss": false,
+    "majorBoss": false,
+    "summary": "浮遊魔導器。遺跡の敵。",
+    "base": "assets/enemies/floating-magic-core/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 320,
+      "pivot": {
+        "x": 223,
+        "y": 302
+      }
+    }
+  },
+  {
+    "id": "armored-golem",
+    "label": "重装ゴーレム",
+    "name": "armored golem",
+    "region": "ancient-ruins",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "重装ゴーレム。遺跡の敵。",
+    "base": "assets/enemies/armored-golem/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 400,
+      "pivot": {
+        "x": 297,
+        "y": 382
+      }
+    }
+  },
+  {
+    "id": "ancient-ballista",
+    "label": "古代弩砲兵",
+    "name": "ancient ballista",
+    "region": "ancient-ruins",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "古代弩砲兵。遺跡の敵。",
+    "base": "assets/enemies/ancient-ballista/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 576,
+      "height": 400,
+      "pivot": {
+        "x": 334,
+        "y": 382
+      }
+    }
+  },
+  {
+    "id": "seraphina",
+    "label": "魔導人形セラフィナ",
+    "name": "seraphina",
+    "region": "ancient-ruins",
+    "boss": true,
+    "majorBoss": false,
+    "summary": "魔導人形セラフィナ。遺跡の敵。",
+    "base": "assets/enemies/seraphina/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 432,
+      "pivot": {
+        "x": 297,
+        "y": 414
+      }
+    }
+  },
+  {
+    "id": "ancient-titan",
+    "label": "古代機兵タイタン",
+    "name": "ancient titan",
+    "region": "ancient-ruins",
+    "boss": true,
+    "majorBoss": true,
+    "summary": "古代機兵タイタン。遺跡の敵。",
+    "base": "assets/enemies/ancient-titan/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 640,
+      "height": 496,
+      "pivot": {
+        "x": 371,
+        "y": 478
+      }
+    }
+  },
+  {
+    "id": "sand-scorpion",
+    "label": "サンドスコーピオン",
+    "name": "sand scorpion",
+    "region": "金砂の墓域",
+    "boss": false,
+    "base": "assets/enemies/sand-scorpion/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 360,
+      "height": 280,
+      "pivot": {
+        "x": 209,
+        "y": 262
+      }
+    }
+  },
+  {
+    "id": "bandage-soldier",
+    "label": "包帯兵",
+    "name": "bandage soldier",
+    "region": "金砂の墓域",
+    "boss": false,
+    "base": "assets/enemies/bandage-soldier/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 480,
+      "height": 320,
+      "pivot": {
+        "x": 278,
+        "y": 302
+      }
+    }
+  },
+  {
+    "id": "sand-snake",
+    "label": "砂蛇",
+    "name": "sand snake",
+    "region": "金砂の墓域",
+    "boss": false,
+    "base": "assets/enemies/sand-snake/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 340,
+      "height": 280,
+      "pivot": {
+        "x": 197,
+        "y": 262
+      }
+    }
+  },
+  {
+    "id": "obsidian-scorpion",
+    "label": "オブシディアンスコーピオン",
+    "name": "obsidian scorpion",
+    "region": "金砂の墓域",
+    "boss": true,
+    "base": "assets/enemies/obsidian-scorpion/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 600,
+      "height": 410,
+      "pivot": {
+        "x": 348,
+        "y": 392
+      }
+    }
+  },
+  {
+    "id": "golden-pharaoh",
+    "label": "黄金のファラオ",
+    "name": "golden pharaoh",
+    "region": "金砂の墓域",
+    "boss": true,
+    "base": "assets/enemies/golden-pharaoh/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 540,
+      "height": 430,
+      "pivot": {
+        "x": 313,
+        "y": 412
+      }
+    }
+  },
+  {
+    "id": "lamia",
+    "label": "ラミア",
+    "name": "lamia",
+    "region": "金砂の墓域",
+    "boss": true,
+    "base": "assets/enemies/lamia/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 600,
+      "height": 440,
+      "pivot": {
+        "x": 348,
+        "y": 422
+      }
+    }
+  },
+  {
+    "id": "sand-behemoth",
+    "label": "砂喰いベヒモス",
+    "name": "sand behemoth",
+    "region": "金砂の墓域",
+    "boss": true,
+    "base": "assets/enemies/sand-behemoth/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 820,
+      "height": 680,
+      "pivot": {
+        "x": 476,
+        "y": 662
+      }
+    }
+  },
+  {
+    "id": "horn-jackal",
+    "label": "ホーンジャッカル",
+    "name": "horn jackal",
+    "region": "嵐渡りの高原",
+    "boss": false,
+    "base": "assets/enemies/horn-jackal/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 480,
+      "height": 340,
+      "pivot": {
+        "x": 274,
+        "y": 316
+      }
+    }
+  },
+  {
+    "id": "rock-horn-goat",
+    "label": "岩角ヤギ",
+    "name": "rock horn goat",
+    "region": "嵐渡りの高原",
+    "boss": false,
+    "base": "assets/enemies/rock-horn-goat/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 480,
+      "height": 350,
+      "pivot": {
+        "x": 274,
+        "y": 326
+      }
+    }
+  },
+  {
+    "id": "wind-sprite",
+    "label": "風の小精霊",
+    "name": "wind sprite",
+    "region": "嵐渡りの高原",
+    "boss": false,
+    "base": "assets/enemies/wind-sprite/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 440,
+      "height": 350,
+      "pivot": {
+        "x": 251,
+        "y": 326
+      }
+    }
+  },
+  {
+    "id": "storm-jackal",
+    "label": "ストームジャッカル",
+    "name": "storm jackal",
+    "region": "嵐渡りの高原",
+    "boss": true,
+    "base": "assets/enemies/storm-jackal/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 580,
+      "height": 430,
+      "pivot": {
+        "x": 331,
+        "y": 406
+      }
+    }
+  },
+  {
+    "id": "iron-horn",
+    "label": "アイアンホーン",
+    "name": "iron horn",
+    "region": "嵐渡りの高原",
+    "boss": true,
+    "base": "assets/enemies/iron-horn/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 640,
+      "height": 460,
+      "pivot": {
+        "x": 365,
+        "y": 436
+      }
+    }
+  },
+  {
+    "id": "harpy-queen",
+    "label": "ハーピークイーン",
+    "name": "harpy queen",
+    "region": "嵐渡りの高原",
+    "boss": true,
+    "base": "assets/enemies/harpy-queen/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 650,
+      "height": 530,
+      "pivot": {
+        "x": 370,
+        "y": 506
+      }
+    }
+  },
+  {
+    "id": "manticore",
+    "label": "マンティコア",
+    "name": "manticore",
+    "region": "嵐渡りの高原",
+    "boss": true,
+    "base": "assets/enemies/manticore/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 800,
+      "height": 580,
+      "pivot": {
+        "x": 456,
+        "y": 556
+      }
+    }
+  },
+  {
+    "id": "frost-wolf",
+    "label": "フロストウルフ",
+    "name": "frost wolf",
+    "region": "蒼氷の聖域",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/frost-wolf/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 400,
+      "height": 300,
+      "pivot": {
+        "x": 224,
+        "y": 278
+      }
+    }
+  },
+  {
+    "id": "ice-shell-golem",
+    "label": "氷殻ゴーレム",
+    "name": "ice shell golem",
+    "region": "蒼氷の聖域",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/ice-shell-golem/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 400,
+      "height": 330,
+      "pivot": {
+        "x": 224,
+        "y": 308
+      }
+    }
+  },
+  {
+    "id": "snow-spirit",
+    "label": "雪の精",
+    "name": "snow spirit",
+    "region": "蒼氷の聖域",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/snow-spirit/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 380,
+      "height": 310,
+      "pivot": {
+        "x": 213,
+        "y": 288
+      }
+    }
+  },
+  {
+    "id": "fenrir",
+    "label": "フェンリル",
+    "name": "fenrir",
+    "region": "蒼氷の聖域",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/fenrir/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 560,
+      "height": 400,
+      "pivot": {
+        "x": 314,
+        "y": 378
+      }
+    }
+  },
+  {
+    "id": "crystal-golem",
+    "label": "クリスタルゴーレム",
+    "name": "crystal golem",
+    "region": "蒼氷の聖域",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/crystal-golem/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 540,
+      "height": 420,
+      "pivot": {
+        "x": 302,
+        "y": 398
+      }
+    }
+  },
+  {
+    "id": "yuki-onna",
+    "label": "雪女",
+    "name": "yuki onna",
+    "region": "蒼氷の聖域",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/yuki-onna/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 500,
+      "height": 410,
+      "pivot": {
+        "x": 280,
+        "y": 388
+      }
+    }
+  },
+  {
+    "id": "ice-tusk-mammoth",
+    "label": "氷牙マンモス",
+    "name": "ice tusk mammoth",
+    "region": "蒼氷の聖域",
+    "boss": true,
+    "majorBoss": true,
+    "base": "assets/enemies/ice-tusk-mammoth/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 680,
+      "height": 450,
+      "pivot": {
+        "x": 381,
+        "y": 428
+      }
+    }
+  },
+  {
+    "id": "lava-salamander",
+    "label": "ラヴァサラマンダー",
+    "name": "lava salamander",
+    "region": "紅蓮の竜脈",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/lava-salamander/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  },
+  {
+    "id": "obsidian-soldier",
+    "label": "黒曜兵",
+    "name": "obsidian soldier",
+    "region": "紅蓮の竜脈",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/obsidian-soldier/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  },
+  {
+    "id": "young-fire-dragon",
+    "label": "幼火竜",
+    "name": "young fire dragon",
+    "region": "紅蓮の竜脈",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/young-fire-dragon/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  },
+  {
+    "id": "magma-salamander",
+    "label": "マグマサラマンダー",
+    "name": "magma salamander",
+    "region": "紅蓮の竜脈",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/magma-salamander/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  },
+  {
+    "id": "obsidian-executioner",
+    "label": "黒曜の処刑者",
+    "name": "obsidian executioner",
+    "region": "紅蓮の竜脈",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/obsidian-executioner/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  },
+  {
+    "id": "dragon-girl",
+    "label": "ドラゴンガール",
+    "name": "dragon girl",
+    "region": "紅蓮の竜脈",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/dragon-girl/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  },
+  {
+    "id": "dragon",
+    "label": "ドラゴン",
+    "name": "dragon",
+    "region": "紅蓮の竜脈",
+    "boss": true,
+    "majorBoss": true,
+    "base": "assets/enemies/dragon/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  },
+  {
+    "id": "demon-armored-soldier",
+    "label": "魔鎧兵",
+    "name": "demon armored soldier",
+    "region": "宵闇の玉座",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/demon-armored-soldier/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 410
+      }
+    }
+  },
+  {
+    "id": "imp",
+    "label": "インプ",
+    "name": "imp",
+    "region": "宵闇の玉座",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/imp/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 390
+      }
+    }
+  },
+  {
+    "id": "dream-demon",
+    "label": "夢魔",
+    "name": "dream demon",
+    "region": "宵闇の玉座",
+    "boss": false,
+    "majorBoss": false,
+    "base": "assets/enemies/dream-demon/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 410
+      }
+    }
+  },
+  {
+    "id": "black-knight",
+    "label": "黒騎士",
+    "name": "black knight",
+    "region": "宵闇の玉座",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/black-knight/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 410
+      }
+    }
+  },
+  {
+    "id": "arch-demon",
+    "label": "アークデーモン",
+    "name": "arch demon",
+    "region": "宵闇の玉座",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/arch-demon/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 300,
+        "y": 410
+      }
+    }
+  },
+  {
+    "id": "lilith",
+    "label": "リリス",
+    "name": "lilith",
+    "region": "宵闇の玉座",
+    "boss": true,
+    "majorBoss": false,
+    "base": "assets/enemies/lilith/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 512,
+      "height": 512,
+      "pivot": {
+        "x": 270,
+        "y": 410
+      }
+    }
+  },
+  {
+    "id": "demon-god",
+    "label": "魔神",
+    "name": "demon god",
+    "region": "宵闇の玉座",
+    "boss": true,
+    "majorBoss": true,
+    "base": "assets/enemies/demon-god/",
+    "thumbnail": "thumbnail.png",
+    "motionIndex": "motions/index.json",
+    "viewport": {
+      "width": 384,
+      "height": 384,
+      "pivot": {
+        "x": 192,
+        "y": 330
+      }
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/blade-spirit-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 738,
+      "height": 724
+    },
+    {
+      "x": 738,
+      "y": 0,
+      "width": 757,
+      "height": 724
+    },
+    {
+      "x": 1495,
+      "y": 0,
+      "width": 677,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 990
+    },
+    {
+      "x": 512,
+      "y": 990
+    },
+    {
+      "x": 512,
+      "y": 990
+    }
+  ],
+  "scale": 0.49628844114528103
+}

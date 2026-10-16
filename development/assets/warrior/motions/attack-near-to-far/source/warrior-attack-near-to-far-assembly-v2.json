@@ -1,0 +1,76 @@
+{
+  "cellWidth": 1024,
+  "cellHeight": 832,
+  "output": "warrior-attack-near-to-far-assembled-v2.png",
+  "frames": [
+    {
+      "source": "warrior-attack-near-to-far-generated-v1.png",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 600,
+        "height": 625
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 581
+      },
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "source": "warrior-attack-near-to-far-generated-v1.png",
+      "rect": {
+        "x": 600,
+        "y": 0,
+        "width": 678,
+        "height": 625
+      },
+      "sourceAnchor": {
+        "x": 306,
+        "y": 581
+      },
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "source": "warrior-attack-near-to-far-generated-v1.png",
+      "rect": {
+        "x": 0,
+        "y": 625,
+        "width": 720,
+        "height": 605
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 516
+      },
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "source": "warrior-attack-near-to-far-generated-v3.png",
+      "rect": {
+        "x": 704,
+        "y": 664,
+        "width": 574,
+        "height": 455
+      },
+      "sourceAnchor": {
+        "x": 279,
+        "y": 420
+      },
+      "scale": 1.4067278287461773,
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    }
+  ]
+}

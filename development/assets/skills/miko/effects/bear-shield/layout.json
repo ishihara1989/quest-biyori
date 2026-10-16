@@ -1,0 +1,38 @@
+{
+  "source": "../../source/bear-shield-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 703,
+      "height": 724
+    },
+    {
+      "x": 703,
+      "y": 0,
+      "width": 701,
+      "height": 724
+    },
+    {
+      "x": 1404,
+      "y": 0,
+      "width": 768,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.5254237288135594
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/white-deer-guardian-appear-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 717,
+      "height": 724
+    },
+    {
+      "x": 717,
+      "y": 0,
+      "width": 730,
+      "height": 724
+    },
+    {
+      "x": 1447,
+      "y": 0,
+      "width": 725,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 969
+    },
+    {
+      "x": 512,
+      "y": 969
+    },
+    {
+      "x": 512,
+      "y": 969
+    }
+  ],
+  "scale": 0.5092402464065708
+}

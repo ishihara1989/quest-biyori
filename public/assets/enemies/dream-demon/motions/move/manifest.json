@@ -1,0 +1,188 @@
+{
+  "id": "dream-demon/move",
+  "label": "夢魔・移動",
+  "enemy": "dream-demon",
+  "motion": "move",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "翼端と尾先の余白が少ない。見切れと4→1の大きさ・髪の連続性を検収する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/dream-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "移動1",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/dream-demon/move-generated.png",
+      "sourceSha256": "62325b89ba77e49b9bc5ed47db956a717739b49ba3a7fd12c153c655b59cee2a",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 690,
+        "height": 588
+      },
+      "sourceAnchor": [
+        369,
+        546
+      ],
+      "scale": 0.5058365758754864,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "29c02485c2f416f0783813922a0f247dbb9dd9f57eb343ae1569db941fd116f2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8459053039550781,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 113,
+        "top": 126,
+        "right": 459,
+        "bottom": 402
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "移動2",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/dream-demon/move-generated.png",
+      "sourceSha256": "62325b89ba77e49b9bc5ed47db956a717739b49ba3a7fd12c153c655b59cee2a",
+      "sourceRect": {
+        "left": 690,
+        "top": 0,
+        "width": 684,
+        "height": 588
+      },
+      "sourceAnchor": [
+        308,
+        569
+      ],
+      "scale": 0.5058365758754864,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "e3643d29d6765374e77987b5b8c1abf44e2f806caa72c9ff7c70fd202fbe9991",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8461265563964844,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 144,
+        "top": 135,
+        "right": 470,
+        "bottom": 405
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "移動3",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/dream-demon/move-generated.png",
+      "sourceSha256": "62325b89ba77e49b9bc5ed47db956a717739b49ba3a7fd12c153c655b59cee2a",
+      "sourceRect": {
+        "left": 0,
+        "top": 588,
+        "width": 668,
+        "height": 557
+      },
+      "sourceAnchor": [
+        365,
+        515
+      ],
+      "scale": 0.5058365758754864,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "a24ecdf9a33e6572f85fb53d4b9f5629758e3852bfcbbfc79ddbb5aa84076c3c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8618125915527344,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 115,
+        "top": 151,
+        "right": 453,
+        "bottom": 421
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "移動4",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/dream-demon/move-generated.png",
+      "sourceSha256": "62325b89ba77e49b9bc5ed47db956a717739b49ba3a7fd12c153c655b59cee2a",
+      "sourceRect": {
+        "left": 668,
+        "top": 588,
+        "width": 706,
+        "height": 557
+      },
+      "sourceAnchor": [
+        329,
+        513
+      ],
+      "scale": 0.5058365758754864,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "3eb9188388aa32ef4ee8e6ae2cf97437b3c620c604a584bc76c4ec9e6eb45a7a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8521041870117188,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 145,
+        "top": 145,
+        "right": 467,
+        "bottom": 426
+      }
+    }
+  ],
+  "fingerprint": "bcfe7a9272873e85de6ce58919e41a655ce66493eb6736a72bbcc1104596d145",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 400
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/dream-demon/move/manifest.json",
+  "sourceFingerprint": "bcfe7a9272873e85de6ce58919e41a655ce66493eb6736a72bbcc1104596d145",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

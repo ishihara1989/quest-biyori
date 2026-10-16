@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "seal",
+  "sheet": "seal.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 4,
+  "frames": [
+    {
+      "index": 0,
+      "file": "seal-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    },
+    {
+      "index": 1,
+      "file": "seal-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    },
+    {
+      "index": 2,
+      "file": "seal-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    },
+    {
+      "index": 3,
+      "file": "seal-04.png",
+      "x": 384,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    }
+  ],
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "pivot": {
+    "x": 64,
+    "y": 64
+  },
+  "durationMs": 720,
+  "loop": false,
+  "source": "../../../../../../development/assets/skills/ninja/effects/seal/source/seal-generated-v1.png",
+  "generation": "built-in image_gen; see PROMPT.md"
+}

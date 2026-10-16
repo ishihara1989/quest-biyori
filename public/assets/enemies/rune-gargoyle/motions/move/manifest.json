@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rune-gargoyle",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "rune-gargoyle-move.png",
+  "preview": "../../../../../../development/assets/enemies/rune-gargoyle/motions/move/rune-gargoyle-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/rune-gargoyle/PROMPT.md",
+  "width": 1792,
+  "height": 352,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 352,
+  "frameCount": 4,
+  "pivot": {
+    "x": 260,
+    "y": 334
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/rune-gargoyle/source/move-registered.png",
+  "sourceScale": 0.38839285714285715,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 120,
+      "phase": "開始",
+      "bounds": {
+        "left": 176,
+        "top": 78,
+        "right": 403,
+        "bottom": 296
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 792,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 250,
+        "y": 594
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -38
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 120,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 144,
+        "top": 109,
+        "right": 426,
+        "bottom": 293
+      },
+      "sourceCell": {
+        "x": 792,
+        "y": 0,
+        "width": 792,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 332,
+        "y": 507
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -41
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 120,
+      "phase": "作用",
+      "bounds": {
+        "left": 166,
+        "top": 121,
+        "right": 433,
+        "bottom": 296
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 792,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 275,
+        "y": 484
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -38
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 120,
+      "phase": "復帰",
+      "bounds": {
+        "left": 180,
+        "top": 104,
+        "right": 412,
+        "bottom": 299
+      },
+      "sourceCell": {
+        "x": 792,
+        "y": 627,
+        "width": 792,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 239,
+        "y": 536
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -35
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/rune-gargoyle/source/move-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/rune-gargoyle/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "width": 1402,
+      "height": 1122,
+      "cells": [
+        {
+          "x": 75,
+          "y": 8,
+          "width": 589,
+          "height": 563,
+          "mainComponent": 1
+        },
+        {
+          "x": 658,
+          "y": 89,
+          "width": 728,
+          "height": 476,
+          "mainComponent": 2
+        },
+        {
+          "x": 40,
+          "y": 638,
+          "width": 691,
+          "height": 453,
+          "mainComponent": 4
+        },
+        {
+          "x": 767,
+          "y": 593,
+          "width": 600,
+          "height": 505,
+          "mainComponent": 3
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 38,
+    "legsTucked": true,
+    "groundY": 334,
+    "horizontalAnchor": "central cyan core"
+  }
+}

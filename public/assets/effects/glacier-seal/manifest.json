@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-seal",
+  "label": "薄氷の封輪",
+  "sheet": "glacier-seal.png",
+  "preview": "../../../../development/assets/effects/glacier-seal/glacier-seal-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1240,
+  "height": 340,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 310,
+  "frameHeight": 340,
+  "frameCount": 4,
+  "pivot": {
+    "x": 155,
+    "y": 318
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/seal.png",
+  "sourceScale": 0.44481054365733114,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-seal/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-seal-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 310,
+      "height": 340,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 65,
+        "top": 184,
+        "right": 245,
+        "bottom": 318
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 834,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 486
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-seal-02.png",
+      "x": 310,
+      "y": 0,
+      "width": 310,
+      "height": 340,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 33,
+        "top": 117,
+        "right": 276,
+        "bottom": 318
+      },
+      "sourceCell": {
+        "x": 834,
+        "y": 0,
+        "width": 834,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 435,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-seal-03.png",
+      "x": 620,
+      "y": 0,
+      "width": 310,
+      "height": 340,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 25,
+        "top": 96,
+        "right": 285,
+        "bottom": 318
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 558,
+        "width": 834,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 403,
+        "y": 527
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-seal-04.png",
+      "x": 930,
+      "y": 0,
+      "width": 310,
+      "height": 340,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 20,
+        "top": 104,
+        "right": 289,
+        "bottom": 318
+      },
+      "sourceCell": {
+        "x": 834,
+        "y": 558,
+        "width": 834,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 406,
+        "y": 526
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "ground",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/seal-generated.png"
+}

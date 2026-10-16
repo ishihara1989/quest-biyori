@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "rock-shards",
+  "label": "岩片",
+  "sheet": "rock-shards.png",
+  "preview": "../../../../development/assets/effects/highland-rock-shards/rock-shards-preview.gif",
+  "prompt": "../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1360,
+  "height": 280,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 280,
+  "frameCount": 4,
+  "pivot": {
+    "x": 170,
+    "y": 140
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/highland-motions/effects/rock-shards/registered.png",
+  "sourceScale": 0.4048582995951417,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "rock-shards-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 148,
+        "top": 111,
+        "right": 260,
+        "bottom": 165
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 812,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 415,
+        "y": 295
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "rock-shards-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 86,
+        "top": 110,
+        "right": 262,
+        "bottom": 183
+      },
+      "sourceCell": {
+        "x": 812,
+        "y": 0,
+        "width": 812,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 378,
+        "y": 281
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "rock-shards-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 107,
+        "top": 89,
+        "right": 256,
+        "bottom": 175
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 544,
+        "width": 812,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 426,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "rock-shards-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 82,
+        "top": 90,
+        "right": 263,
+        "bottom": 183
+      },
+      "sourceCell": {
+        "x": 812,
+        "y": 544,
+        "width": 812,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 387,
+        "y": 262
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": false,
+  "originalSource": "../../../../development/assets/highland-motions/sources/effects/rock-shards-generated.png",
+  "kind": "projectile",
+  "id": "highland-rock-shards"
+}

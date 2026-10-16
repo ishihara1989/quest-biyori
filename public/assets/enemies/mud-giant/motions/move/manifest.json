@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "enemy": "mud-giant",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "mud-giant-move.png",
+  "preview": "../../../../../../development/assets/enemies/mud-giant/motions/move/mud-giant-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/mud-giant/PROMPT.md",
+  "width": 2304,
+  "height": 416,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/mud-giant/source/move-registered.png",
+  "sourceScale": 0.6224066390041494,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 150,
+      "phase": "開始",
+      "bounds": {
+        "left": 169,
+        "top": 101,
+        "right": 550,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 695,
+        "height": 515
+      },
+      "sourceAnchor": {
+        "x": 281,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 140,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 91,
+        "top": 138,
+        "right": 533,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 695,
+        "y": 0,
+        "width": 793,
+        "height": 515
+      },
+      "sourceAnchor": {
+        "x": 456,
+        "y": 436
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 170,
+      "phase": "作用",
+      "bounds": {
+        "left": 133,
+        "top": 98,
+        "right": 535,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 515,
+        "width": 713,
+        "height": 519
+      },
+      "sourceAnchor": {
+        "x": 340,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 167,
+        "top": 102,
+        "right": 501,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 713,
+        "y": 515,
+        "width": 775,
+        "height": 519
+      },
+      "sourceAnchor": {
+        "x": 316,
+        "y": 496
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/mud-giant/source/move-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 152396,
+      "left": 167,
+      "top": 20,
+      "right": 780,
+      "bottom": 499,
+      "cx": 431.8300677183128,
+      "cy": 292.3709480563794
+    },
+    {
+      "id": 2,
+      "count": 170125,
+      "left": 779,
+      "top": 80,
+      "right": 1490,
+      "bottom": 500,
+      "cx": 1163.4051021307862,
+      "cy": 307.96207494489346
+    },
+    {
+      "id": 24,
+      "count": 172236,
+      "left": 147,
+      "top": 521,
+      "right": 795,
+      "bottom": 1005,
+      "cx": 454.2465802735781,
+      "cy": 797.069015769061
+    },
+    {
+      "id": 25,
+      "count": 154259,
+      "left": 931,
+      "top": 523,
+      "right": 1469,
+      "bottom": 1001,
+      "cx": 1198.1330813761272,
+      "cy": 792.8148244186725
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "toad-poison-bolt",
+  "label": "毒液弾",
+  "sheet": "toad-poison-bolt.png",
+  "preview": "../../../../development/assets/effects/toad-poison-bolt/toad-poison-bolt-preview.gif",
+  "prompt": "../../../../development/assets/effects/toad-poison-bolt/PROMPT.md",
+  "width": 768,
+  "height": 128,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 192,
+  "frameHeight": 128,
+  "frameCount": 4,
+  "pivot": {
+    "x": 96,
+    "y": 64
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/toad-poison-bolt/source-generated.png",
+  "sourceScale": 0.3187855787476281,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "toad-poison-bolt-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "発生",
+      "bounds": {
+        "left": 28,
+        "top": 23,
+        "right": 164,
+        "bottom": 104
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 620,
+        "height": 649
+      },
+      "sourceAnchor": {
+        "x": 342,
+        "y": 373
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "toad-poison-bolt-02.png",
+      "x": 192,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "展開",
+      "bounds": {
+        "left": 20,
+        "top": 27,
+        "right": 172,
+        "bottom": 101
+      },
+      "sourceCell": {
+        "x": 620,
+        "y": 0,
+        "width": 634,
+        "height": 649
+      },
+      "sourceAnchor": {
+        "x": 303,
+        "y": 391
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "toad-poison-bolt-03.png",
+      "x": 384,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "最大",
+      "bounds": {
+        "left": 12,
+        "top": 32,
+        "right": 179,
+        "bottom": 96
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 649,
+        "width": 642,
+        "height": 605
+      },
+      "sourceAnchor": {
+        "x": 332,
+        "y": 297
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "toad-poison-bolt-04.png",
+      "x": 576,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "収束",
+      "bounds": {
+        "left": 17,
+        "top": 33,
+        "right": 175,
+        "bottom": 95
+      },
+      "sourceCell": {
+        "x": 642,
+        "y": 649,
+        "width": 612,
+        "height": 605
+      },
+      "sourceAnchor": {
+        "x": 295,
+        "y": 316
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

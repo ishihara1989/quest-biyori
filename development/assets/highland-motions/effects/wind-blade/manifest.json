@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "effect": "wind-blade",
+  "label": "風刃",
+  "sheet": "wind-blade.png",
+  "preview": "wind-blade-preview.gif",
+  "prompt": "../../PROMPTS.md",
+  "width": 1360,
+  "height": 260,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 260,
+  "frameCount": 4,
+  "pivot": {
+    "x": 170,
+    "y": 130
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "registered.png",
+  "sourceScale": 0.3712871287128713,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "wind-blade-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 145,
+        "top": 109,
+        "right": 220,
+        "bottom": 167
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 841,
+        "height": 566
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 267
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "wind-blade-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 102,
+        "top": 72,
+        "right": 267,
+        "bottom": 188
+      },
+      "sourceCell": {
+        "x": 841,
+        "y": 0,
+        "width": 841,
+        "height": 566
+      },
+      "sourceAnchor": {
+        "x": 393,
+        "y": 271
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "wind-blade-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 92,
+        "top": 59,
+        "right": 268,
+        "bottom": 204
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 566,
+        "width": 841,
+        "height": 566
+      },
+      "sourceAnchor": {
+        "x": 420,
+        "y": 283
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "wind-blade-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 105,
+        "top": 78,
+        "right": 259,
+        "bottom": 184
+      },
+      "sourceCell": {
+        "x": 841,
+        "y": 566,
+        "width": 841,
+        "height": 566
+      },
+      "sourceAnchor": {
+        "x": 369,
+        "y": 283
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": true,
+  "originalSource": "../../sources/effects/wind-blade-generated.png",
+  "kind": "projectile"
+}

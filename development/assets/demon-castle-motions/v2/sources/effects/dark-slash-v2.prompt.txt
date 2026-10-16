@@ -1,0 +1,11 @@
+Use case: stylized-concept.
+Asset type: four-frame SHORT DARK SWORD SLASH, a separate visual effect for black-and-gold knight enemies in a refined pixel-art JRPG.
+Input image: use ONLY its palette and pixel-cluster quality (dark violet, red, narrow white-hot edge). Correct its arrow-like shape and extra rings. Create a SINGLE CURVED BLADE ARC sweeping upper-right to lower-left, not a projectile or beam.
+Exactly FOUR separate complete effect sprites in a 2x2 sheet with very broad transparent gutters. Same coordinate system and same maximum scale across frames. Native transparent background.
+Per-cell normalized trajectory: one thin diagonal curved blade arc runs from upper-right (700,260), bends through (430,480), ends lower-left (260,740). All visible pixels stay inside x=170..830,y=170..830 with ample clear margins. White inner edge is narrow, deep violet/red outer edge has only a few tiny red sparks. Empty center, no character, no weapon.
+Frame 1: short faint starting arc occupies only the upper-right section from (700,260) to (530,410).
+Frame 2: one crisp bright crescent sweeps along the full upper-right to lower-left trajectory. Thickest part only about 55 units wide, pointed taper at both ends. Strong readable flash, WITHOUT circle or shockwave.
+Frame 3: SAME crescent position and size, lower brightness, only lower-left section still bright, upper-right edge starts to dissolve into 4-6 tiny red pixels.
+Frame 4: only 5-8 small separated red/violet ember clusters near the lower-left ending segment, central region mostly transparent. NO remaining white edge or pointed projectile. The effect stops after frame 4, no persistent loop.
+Critical: this is ONE directional curved sword arc, never a three-pronged arrow, full ring, expanding blast, vortex, second arc or multiple simultaneous hits.
+Crisp deliberate pixel clusters and stepped edges, restrained white/magenta highlights with dark-violet and red outline. Genuine transparent alpha outside arc and individual sparks. No backdrop, halo sheet, floor, painted checkerboard, text, labels, grid or watermark.

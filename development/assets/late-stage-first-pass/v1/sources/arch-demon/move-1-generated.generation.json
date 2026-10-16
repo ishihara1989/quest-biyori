@@ -1,0 +1,25 @@
+{
+  "id": "arch-demon/move-1",
+  "enemy": "arch-demon",
+  "region": "demon-castle",
+  "motion": "move-1",
+  "label": "移動 1〜3",
+  "cols": 3,
+  "rows": 1,
+  "reference": "references/arch-demon.png",
+  "guide": null,
+  "source": "sources/arch-demon/move-1-generated.png",
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of アークデーモン in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 1-3: near foot x=470,430,410; far foot x=620,650,680; near foot lifts 30px at frame2. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-bf7ecbd5-8721-4de6-a2d6-146886fd4c15.png",
+  "sha256": "04519d2268e8dc6b2d2d809f72708b446c843113110a6d43d5743fd6ecc4ddd9",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "大きい翼・手・尾がセル境界に近い。",
+      "持ち上げ脚と奥脚の付け根を確定し、後半の支持交代を確認する。"
+    ]
+  }
+}

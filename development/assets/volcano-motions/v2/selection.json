@@ -1,0 +1,46 @@
+{
+  "overrides": {
+    "lava-salamander/move-3": "sources/lava-salamander/move-frame-3-v3.png",
+    "lava-salamander/danger-1": "sources/lava-salamander/danger-1-v3.png",
+    "obsidian-soldier/move-2": "sources/obsidian-soldier/move-2-v3.png",
+    "obsidian-soldier/attack": "sources/obsidian-soldier/attack-v4.png",
+    "obsidian-soldier/danger-1": "sources/obsidian-soldier/danger-1-v4.png",
+    "young-fire-dragon/idle": "sources/young-fire-dragon/idle-v1-reused.png",
+    "young-fire-dragon/reaction": "sources/young-fire-dragon/reaction-v1-reused.png",
+    "magma-salamander/reaction": "sources/magma-salamander/reaction-v1-reused.png",
+    "obsidian-executioner/idle": "sources/obsidian-executioner/idle-v1-reused.png",
+    "obsidian-executioner/reaction": "sources/obsidian-executioner/reaction-v1-reused.png",
+    "obsidian-executioner/move-1": "sources/obsidian-executioner/move-1-v1-reused.png",
+    "obsidian-executioner/move-2": "sources/obsidian-executioner/move-2-v1-reused.png",
+    "dragon-girl/idle": "sources/dragon-girl/idle-v1-reused.png",
+    "dragon-girl/reaction": "sources/dragon-girl/reaction-v1-reused.png",
+    "dragon/idle": "sources/dragon/idle-v1-reused.png",
+    "dragon/reaction": "sources/dragon/reaction-v1-reused.png",
+    "young-fire-dragon/attack": "sources/young-fire-dragon/attack-v3.png",
+    "young-fire-dragon/danger-1": "sources/young-fire-dragon/danger-1-v3.png",
+    "lava-salamander/move-6": "sources/lava-salamander/move-frame-6-v3.png",
+    "young-fire-dragon/move-6": "sources/young-fire-dragon/move-frame-6-v3.png",
+    "magma-salamander/move-6": "sources/magma-salamander/move-frame-6-v3.png",
+    "obsidian-executioner/attack": "sources/obsidian-executioner/attack-v3.png",
+    "obsidian-executioner/danger-1": "sources/obsidian-executioner/danger-1-v3.png",
+    "dragon-girl/attack": "sources/dragon-girl/attack-v3.png",
+    "dragon/move-5": "sources/dragon/move-frame-5-v3.png",
+    "effects/fire-fan": "sources/effects/fire-fan-v3.png"
+  },
+  "notes": {
+    "lava-salamander/danger-1": "Windup head faces right; replace cell 1 before acceptance",
+    "lava-salamander/move-3": "Generic guide output retained wrong diagonal support; v3 swaps contact and lifted legs"
+  },
+  "frameSources": {
+    "dragon-girl/move-2": [
+      "sources/dragon-girl/move-frame-4-v3.png",
+      "sources/dragon-girl/move-frame-5-v3.png",
+      "sources/dragon-girl/move-frame-6-v3.png"
+    ],
+    "obsidian-executioner/move-2": [
+      "sources/obsidian-executioner/move-frame-4-v5.png",
+      "sources/obsidian-executioner/move-frame-5-v5.png",
+      "sources/obsidian-executioner/move-frame-6-v5.png"
+    ]
+  }
+}

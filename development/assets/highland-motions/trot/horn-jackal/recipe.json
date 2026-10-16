@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "horn-jackal",
+  "date": "2026-10-13 JST",
+  "gait": "trot",
+  "status": "adopted-coordinate-guided",
+  "standardAdopted": true,
+  "reference": "references/horn-jackal.png",
+  "frameWidth": 480,
+  "frameHeight": 340,
+  "pivot": {
+    "x": 274,
+    "y": 316
+  },
+  "outputEye": {
+    "x": 206,
+    "y": 165
+  },
+  "coordinateGuide": "trot/horn-jackal/guide.json",
+  "generationParts": 6,
+  "framesPerPart": 1,
+  "registration": "Fixed eye/body landmark; source pixels preserved",
+  "frames": [
+    {
+      "source": "trot/horn-jackal/sources/frame-1-single.png",
+      "eye": {
+        "x": 285,
+        "y": 348
+      },
+      "scale": 0.1949317738791423,
+      "phase": "中立・A遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-2-single.png",
+      "eye": {
+        "x": 285,
+        "y": 348
+      },
+      "scale": 0.1949317738791423,
+      "phase": "手前閉／奥開・A遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-3-focused.png",
+      "eye": {
+        "x": 285,
+        "y": 348
+      },
+      "scale": 0.1949317738791423,
+      "phase": "手前閉／奥開・B遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-4-focused.png",
+      "eye": {
+        "x": 285,
+        "y": 348
+      },
+      "scale": 0.1949317738791423,
+      "phase": "中立・B遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-5-focused.png",
+      "eye": {
+        "x": 285,
+        "y": 348
+      },
+      "scale": 0.1949317738791423,
+      "phase": "手前開／奥閉・B遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-6-single.png",
+      "eye": {
+        "x": 285,
+        "y": 348
+      },
+      "scale": 0.1949317738791423,
+      "phase": "手前開／奥閉・A遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    }
+  ]
+}

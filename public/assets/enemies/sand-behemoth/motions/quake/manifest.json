@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-behemoth",
+  "motion": "quake",
+  "facing": "left",
+  "label": "quake",
+  "sheet": "sand-behemoth-quake.png",
+  "preview": "../../../../../../development/assets/enemies/sand-behemoth/motions/quake/sand-behemoth-quake-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 3280,
+  "height": 680,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 820,
+  "frameHeight": 680,
+  "frameCount": 4,
+  "pivot": {
+    "x": 476,
+    "y": 662
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1950,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/sand-behemoth/source/quake-registered.png",
+  "sourceScale": 0.8660508083140878,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "quake-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 530,
+      "phase": "構え",
+      "bounds": {
+        "left": 166,
+        "top": 287,
+        "right": 743,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 935,
+        "height": 678
+      },
+      "sourceAnchor": {
+        "x": 507,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "quake-02.png",
+      "x": 820,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 970,
+      "phase": "予告",
+      "bounds": {
+        "left": 127,
+        "top": 131,
+        "right": 731,
+        "bottom": 662
+      },
+      "sourceCell": {
+        "x": 935,
+        "y": 0,
+        "width": 935,
+        "height": 678
+      },
+      "sourceAnchor": {
+        "x": 499,
+        "y": 640
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "quake-03.png",
+      "x": 1640,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 200,
+      "phase": "発動",
+      "bounds": {
+        "left": 148,
+        "top": 280,
+        "right": 778,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 678,
+        "width": 935,
+        "height": 678
+      },
+      "sourceAnchor": {
+        "x": 502,
+        "y": 478
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "quake-04.png",
+      "x": 2460,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 250,
+      "phase": "復帰",
+      "bounds": {
+        "left": 163,
+        "top": 286,
+        "right": 750,
+        "bottom": 662
+      },
+      "sourceCell": {
+        "x": 935,
+        "y": 678,
+        "width": 935,
+        "height": 678
+      },
+      "sourceAnchor": {
+        "x": 446,
+        "y": 478
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-behemoth-slam-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-behemoth.png",
+  "action": {
+    "motion": "quake",
+    "warn": 1500,
+    "times": [
+      1500
+    ],
+    "power": 0.9,
+    "radius": 40,
+    "kind": "fissure",
+    "status": null,
+    "duration": 1950
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 775,
+          "height": 570
+        },
+        {
+          "x": 775,
+          "y": 0,
+          "width": 761,
+          "height": 570
+        },
+        {
+          "x": 0,
+          "y": 570,
+          "width": 797,
+          "height": 454
+        },
+        {
+          "x": 797,
+          "y": 570,
+          "width": 739,
+          "height": 454
+        }
+      ]
+    }
+  ]
+}

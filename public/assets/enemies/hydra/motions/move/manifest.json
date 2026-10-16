@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hydra",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "hydra-move.png",
+  "preview": "../../../../../../development/assets/enemies/hydra/motions/move/hydra-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hydra/PROMPT.md",
+  "width": 2816,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/hydra/source/move-registered.png",
+  "sourceScale": 0.6721649484536083,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 245,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 150,
+      "phase": "開始",
+      "bounds": {
+        "left": 135,
+        "top": 106,
+        "right": 581,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 721,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 140,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 115,
+        "top": 117,
+        "right": 592,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 721,
+        "y": 0,
+        "width": 767,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 475,
+        "y": 484
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 170,
+      "phase": "作用",
+      "bounds": {
+        "left": 118,
+        "top": 99,
+        "right": 585,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 522,
+        "width": 736,
+        "height": 532
+      },
+      "sourceAnchor": {
+        "x": 447,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 131,
+        "top": 107,
+        "right": 585,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 736,
+        "y": 522,
+        "width": 752,
+        "height": 532
+      },
+      "sourceAnchor": {
+        "x": 436,
+        "y": 503
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/hydra/source/move-facing-left-generated-v3.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 182055,
+      "left": 88,
+      "top": 18,
+      "right": 753,
+      "bottom": 502,
+      "cx": 394.23664277278846,
+      "cy": 301.80616297272803
+    },
+    {
+      "id": 2,
+      "count": 188619,
+      "left": 815,
+      "top": 34,
+      "right": 1526,
+      "bottom": 502,
+      "cx": 1126.9616369506784,
+      "cy": 297.11327066732406
+    },
+    {
+      "id": 57,
+      "count": 193946,
+      "left": 89,
+      "top": 512,
+      "right": 784,
+      "bottom": 1006,
+      "cx": 417.5062904107329,
+      "cy": 791.5898033473235
+    },
+    {
+      "id": 58,
+      "count": 185109,
+      "left": 855,
+      "top": 525,
+      "right": 1531,
+      "bottom": 1007,
+      "cx": 1161.2952746760018,
+      "cy": 804.6678821667234
+    }
+  ],
+  "anatomyRevision": {
+    "heads": 5,
+    "facing": "left",
+    "prompt": "../../source/move-facing-left-generated-v3-prompt.txt",
+    "previousSource": "../../../../../../development/assets/enemies/hydra/source/move-generated.png"
+  },
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

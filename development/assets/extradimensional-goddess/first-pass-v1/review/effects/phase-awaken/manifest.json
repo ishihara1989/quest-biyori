@@ -1,0 +1,102 @@
+{
+  "id": "effects/phase-awaken",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/phase-awaken/review/effects/phase-awaken/frame-01.png",
+      "index": 1,
+      "durationMs": 180,
+      "source": "source/effects/phase-awaken.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":180,\"ringCenter\":[256,410],\"ellipseSize\":[140,30]}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.899232318915784,
+      "lowAlphaPixels": 14257,
+      "edgePixels": 0,
+      "bounds": [
+        106,
+        526,
+        630,
+        677
+      ],
+      "marginFraction": 0.06353591160220995
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/phase-awaken/review/effects/phase-awaken/frame-02.png",
+      "index": 2,
+      "durationMs": 240,
+      "source": "source/effects/phase-awaken.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":240,\"particlesCenters\":[[230,380],[256,330],[284,270]],\"radius\":6}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9358078202741064,
+      "lowAlphaPixels": 17828,
+      "edgePixels": 0,
+      "bounds": [
+        262,
+        173,
+        448,
+        639
+      ],
+      "marginFraction": 0.11602209944751381
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/phase-awaken/review/effects/phase-awaken/frame-03.png",
+      "index": 3,
+      "durationMs": 220,
+      "source": "source/effects/phase-awaken.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":220,\"nodeCenters\":[[126,166],[256,100],[386,166]],\"radius\":8}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.877722368059583,
+      "lowAlphaPixels": 27172,
+      "edgePixels": 0,
+      "bounds": [
+        26,
+        74,
+        653,
+        359
+      ],
+      "marginFraction": 0.03591160220994475
+    }
+  ],
+  "sources": [
+    "source/effects/phase-awaken.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/phase-awaken/contact.png",
+  "gif": "review/effects/phase-awaken/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

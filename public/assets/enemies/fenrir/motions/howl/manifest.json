@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "enemy": "fenrir",
+  "motion": "howl",
+  "facing": "left",
+  "label": "氷柱遠吠え",
+  "sheet": "fenrir-howl.png",
+  "preview": "../../../../../../development/assets/enemies/fenrir/motions/howl/fenrir-howl-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2240,
+  "height": 400,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 560,
+  "frameHeight": 400,
+  "frameCount": 4,
+  "pivot": {
+    "x": 314,
+    "y": 378
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/fenrir/howl.png",
+  "sourceScale": 0.46078431372549017,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-pillar",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "howl-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 193,
+        "top": 145,
+        "right": 431,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 697,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 369.5,
+        "y": 623
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "howl-02.png",
+      "x": 560,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 193,
+        "top": 145,
+        "right": 431,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 697,
+        "y": 0,
+        "width": 697,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 327.5,
+        "y": 623
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "howl-03.png",
+      "x": 1120,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 193,
+        "top": 129,
+        "right": 431,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 671,
+        "width": 697,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 393.5,
+        "y": 586
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "howl-04.png",
+      "x": 1680,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 193,
+        "top": 144,
+        "right": 430,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 697,
+        "y": 671,
+        "width": 697,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 312,
+        "y": 586
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/fenrir.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/howl-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 657,
+          "height": 639
+        },
+        {
+          "x": 657,
+          "y": 0,
+          "width": 597,
+          "height": 639
+        },
+        {
+          "x": 0,
+          "y": 639,
+          "width": 665,
+          "height": 615
+        },
+        {
+          "x": 665,
+          "y": 639,
+          "width": 589,
+          "height": 615
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "howl",
+    "warn": 4200,
+    "times": [
+      4200,
+      5000
+    ],
+    "kind": "circles",
+    "radius": 110,
+    "effect": "pillar",
+    "rest": 9000,
+    "status": "freeze",
+    "duration": 5500,
+    "freezeMs": 1000
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

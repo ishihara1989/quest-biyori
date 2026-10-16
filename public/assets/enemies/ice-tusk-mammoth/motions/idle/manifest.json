@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-tusk-mammoth",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "ice-tusk-mammoth-idle.png",
+  "preview": "../../../../../../development/assets/enemies/ice-tusk-mammoth/motions/idle/ice-tusk-mammoth-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2720,
+  "height": 450,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 680,
+  "frameHeight": 450,
+  "frameCount": 4,
+  "pivot": {
+    "x": 381,
+    "y": 428
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-tusk-mammoth/idle.png",
+  "sourceScale": 0.72,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 212,
+        "top": 159,
+        "right": 543,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 665,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 370.5,
+        "y": 550
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 680,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 213,
+        "top": 156,
+        "right": 542,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 665,
+        "y": 0,
+        "width": 665,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 297,
+        "y": 551
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1360,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 209,
+        "top": 159,
+        "right": 546,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 671,
+        "width": 665,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 372,
+        "y": 493
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 2040,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 209,
+        "top": 162,
+        "right": 546,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 665,
+        "y": 671,
+        "width": 665,
+        "height": 671
+      },
+      "sourceAnchor": {
+        "x": 301,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/idle-generated-v2.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 629,
+          "height": 639
+        },
+        {
+          "x": 629,
+          "y": 0,
+          "width": 625,
+          "height": 639
+        },
+        {
+          "x": 0,
+          "y": 639,
+          "width": 633,
+          "height": 615
+        },
+        {
+          "x": 633,
+          "y": 639,
+          "width": 621,
+          "height": 615
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

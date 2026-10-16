@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "bite",
+    "label": "噛みつき",
+    "manifest": "bite/manifest.json"
+  },
+  {
+    "id": "sonic",
+    "label": "超音波",
+    "manifest": "sonic/manifest.json"
+  },
+  {
+    "id": "drain",
+    "label": "吸血",
+    "manifest": "drain/manifest.json"
+  },
+  {
+    "id": "dive",
+    "label": "急降下突進",
+    "manifest": "dive/manifest.json"
+  }
+]

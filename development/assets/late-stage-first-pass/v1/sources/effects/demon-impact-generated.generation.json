@@ -1,0 +1,27 @@
+{
+  "id": "effects/demon-impact",
+  "effect": "demon-impact",
+  "region": "demon-castle",
+  "label": "魔拳の衝撃",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/demon-impact-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. powerful compact red-white impact star with angular purple shards, broken shock ring and transparent gaps. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-e5a79e81-ff80-4ef8-a560-991f99f46ecd.png",
+  "sha256": "154a5681fb8a43565cb1bd122c06f2f054fa5c57be9135b740b767595a24a38e",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "赤白の衝撃星、紫の破片、割れた金の輪を表現。"
+    ],
+    "issues": [
+      "紫赤の背景光が混入。",
+      "最大時の白い核と長い突起が大きい。単発の衝撃として対象を覆う時間と範囲を確認する。"
+    ]
+  }
+}

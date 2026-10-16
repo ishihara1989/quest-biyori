@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "golden-lion-idle",
+  "character": "miko",
+  "subject": "golden-lion",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "golden-lion-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.08005718370264475,
+  "frames": [
+    {
+      "index": 0,
+      "file": "golden-lion-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 23,
+        "t": 57,
+        "r": 95,
+        "b": 116,
+        "n": 3115,
+        "width": 73,
+        "height": 60
+      }
+    },
+    {
+      "index": 1,
+      "file": "golden-lion-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 28,
+        "t": 51,
+        "r": 101,
+        "b": 115,
+        "n": 3381,
+        "width": 74,
+        "height": 65
+      }
+    },
+    {
+      "index": 2,
+      "file": "golden-lion-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 28,
+        "t": 56,
+        "r": 101,
+        "b": 115,
+        "n": 3123,
+        "width": 74,
+        "height": 60
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/golden-lion-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

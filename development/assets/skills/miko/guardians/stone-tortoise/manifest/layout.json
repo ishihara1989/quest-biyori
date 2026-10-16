@@ -1,0 +1,72 @@
+{
+  "source": "../../../source/stone-tortoise-guardian-generated-v2.png",
+  "sourceRects": [
+    {
+      "component": 3,
+      "sourceBounds": {
+        "l": 21,
+        "t": 97,
+        "r": 605,
+        "b": 559,
+        "n": 192575,
+        "width": 585,
+        "height": 463
+      }
+    },
+    {
+      "component": 1,
+      "sourceBounds": {
+        "l": 639,
+        "t": 78,
+        "r": 1230,
+        "b": 560,
+        "n": 217098,
+        "width": 592,
+        "height": 483
+      }
+    },
+    {
+      "component": 13,
+      "sourceBounds": {
+        "l": 20,
+        "t": 671,
+        "r": 651,
+        "b": 1175,
+        "n": 254401,
+        "width": 632,
+        "height": 505
+      }
+    },
+    {
+      "component": 16,
+      "sourceBounds": {
+        "l": 645,
+        "t": 707,
+        "r": 1230,
+        "b": 1175,
+        "n": 194318,
+        "width": 586,
+        "height": 469
+      }
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 976
+    },
+    {
+      "x": 512,
+      "y": 976
+    },
+    {
+      "x": 512,
+      "y": 976
+    },
+    {
+      "x": 512,
+      "y": 976
+    }
+  ],
+  "scale": 0.5030425963488844
+}

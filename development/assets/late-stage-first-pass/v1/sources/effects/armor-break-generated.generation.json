@@ -1,0 +1,27 @@
+{
+  "id": "effects/armor-break",
+  "effect": "armor-break",
+  "region": "shared",
+  "label": "破甲",
+  "kind": "status",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/armor-break-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. recognizable small gold-silver shield emblem splits with a crimson crack and sparse orange-metal shards, clean isolated icon, no text. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Also design frame4->1 as a smooth subtle pulse for status/residue loop. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-4e6a4479-61f3-4fab-b832-b9e8f21e09ed.png",
+  "sha256": "f0fa8cbd39c6cc0a799ae1fc12016823203ea2d9f63fc6a00eece8756d3eea0f",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "金銀の盾と赤いひび、割れる金属片で破甲を表現。"
+    ],
+    "issues": [
+      "最終コマで盾の印が消えて粒子だけになる。破甲の付与演出と状態維持のアイコンを分ける。",
+      "反復で盾が毎回復元される構成になる。状態表示には割れた盾の保持コマが必要。"
+    ]
+  }
+}

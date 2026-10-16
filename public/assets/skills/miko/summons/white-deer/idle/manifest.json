@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "white-deer-idle",
+  "character": "miko",
+  "subject": "white-deer",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "white-deer-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.08641975308641975,
+  "frames": [
+    {
+      "index": 0,
+      "file": "white-deer-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 45,
+        "t": 37,
+        "r": 96,
+        "b": 116,
+        "n": 1590,
+        "width": 52,
+        "height": 80
+      }
+    },
+    {
+      "index": 1,
+      "file": "white-deer-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 46,
+        "t": 38,
+        "r": 95,
+        "b": 116,
+        "n": 1634,
+        "width": 50,
+        "height": 79
+      }
+    },
+    {
+      "index": 2,
+      "file": "white-deer-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 45,
+        "t": 38,
+        "r": 96,
+        "b": 116,
+        "n": 1593,
+        "width": 52,
+        "height": 79
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/white-deer-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

@@ -1,0 +1,260 @@
+{
+  "id": "black-knight/move",
+  "label": "黒騎士・歩行",
+  "enemy": "black-knight",
+  "motion": "move",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/black-knight.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "移動1",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/move-2-v2.png",
+      "sourceSha256": "dfd4ca60bd96382ccb3bf85ba401e6461eca37458372642221c18623ecf2ae84",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 739,
+        "height": 724
+      },
+      "sourceAnchor": [
+        410.72,
+        644
+      ],
+      "scale": 0.41308089500860584,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "68f42b782d197630f2c3003d1c5e4c08d690cd4dcc842e81ef80f28d5a102d35",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8646469116210938,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 138,
+        "top": 169,
+        "right": 435,
+        "bottom": 422
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "移動2",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/move-2-v2.png",
+      "sourceSha256": "dfd4ca60bd96382ccb3bf85ba401e6461eca37458372642221c18623ecf2ae84",
+      "sourceRect": {
+        "left": 739,
+        "top": 0,
+        "width": 705,
+        "height": 724
+      },
+      "sourceAnchor": [
+        381.44,
+        650
+      ],
+      "scale": 0.41308089500860584,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "62877adfe50fd3bf01b60549f5e31fb8b38bd9baf92f1179335670f8b46e43f8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8723640441894531,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 142,
+        "top": 147,
+        "right": 433,
+        "bottom": 413
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "移動3",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/move-2-v2.png",
+      "sourceSha256": "dfd4ca60bd96382ccb3bf85ba401e6461eca37458372642221c18623ecf2ae84",
+      "sourceRect": {
+        "left": 1444,
+        "top": 0,
+        "width": 728,
+        "height": 724
+      },
+      "sourceAnchor": [
+        379.08,
+        647
+      ],
+      "scale": 0.41308089500860584,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "44439404160e3631bf9a2042c37ffe5b6379867ad62dd3c39361ddc6dd31959f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8647003173828125,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 143,
+        "top": 153,
+        "right": 437,
+        "bottom": 425
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "移動4",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/move-1-v2.png",
+      "sourceSha256": "9b8a1597dda21b95676ada441f0f1cfa7e6e1c19aa65f8aa77bf7b7f8e22c719",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 703,
+        "height": 724
+      },
+      "sourceAnchor": [
+        387.52,
+        631
+      ],
+      "scale": 0.43956043956043955,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "d5fc67bf7d9570b68cc0c393c27fc5567c46cf0f15260ca55623f47ad9efdfe4",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.865264892578125,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 144,
+        "top": 161,
+        "right": 427,
+        "bottom": 414
+      }
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "phase": "移動5",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/move-1-v2.png",
+      "sourceSha256": "9b8a1597dda21b95676ada441f0f1cfa7e6e1c19aa65f8aa77bf7b7f8e22c719",
+      "sourceRect": {
+        "left": 703,
+        "top": 0,
+        "width": 722,
+        "height": 724
+      },
+      "sourceAnchor": [
+        386.72,
+        641
+      ],
+      "scale": 0.43956043956043955,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "22d48ff2e6a50bdbe96891b82652a6bc5bc9232a8499963d365fca36d391d817",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8717994689941406,
+      "index": 4,
+      "x": 2048,
+      "y": 0,
+      "visibleBounds": {
+        "left": 143,
+        "top": 137,
+        "right": 428,
+        "bottom": 437
+      }
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "phase": "移動6",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/move-1-v2.png",
+      "sourceSha256": "9b8a1597dda21b95676ada441f0f1cfa7e6e1c19aa65f8aa77bf7b7f8e22c719",
+      "sourceRect": {
+        "left": 1425,
+        "top": 0,
+        "width": 747,
+        "height": 724
+      },
+      "sourceAnchor": [
+        403.72,
+        641
+      ],
+      "scale": 0.43956043956043955,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "28ecf22f158e74ba33a8ff74639431537ecc2f0b2ebe8a6f6697b2c1f83a3dee",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8617362976074219,
+      "index": 5,
+      "x": 2560,
+      "y": 0,
+      "visibleBounds": {
+        "left": 126,
+        "top": 164,
+        "right": 431,
+        "bottom": 427
+      }
+    }
+  ],
+  "fingerprint": "2d7a3cb58a4ea134239924b9a845e8c15724f965f6fd50765e5cb9019c764ebd",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/black-knight/move/manifest.json",
+  "sourceFingerprint": "2d7a3cb58a4ea134239924b9a845e8c15724f965f6fd50765e5cb9019c764ebd",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

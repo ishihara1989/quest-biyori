@@ -1,0 +1,486 @@
+{
+  "assets": [
+    {
+      "id": "idle",
+      "label": "待機",
+      "enemy": "treant",
+      "directory": "assets/enemies/treant/motions/idle",
+      "source": "../../source/treant-idle-generated-v2.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 448,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      },
+      "scale": 0.5,
+      "anchorMode": "root",
+      "loop": true,
+      "terminal": false,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "基準姿勢",
+          "durationMs": 400
+        },
+        {
+          "cell": 1,
+          "phase": "息を吸う・枝が上がる",
+          "durationMs": 400
+        },
+        {
+          "cell": 2,
+          "phase": "葉の冠が揺れる",
+          "durationMs": 400
+        },
+        {
+          "cell": 3,
+          "phase": "息を吐く・戻る",
+          "durationMs": 400
+        }
+      ]
+    },
+    {
+      "id": "move",
+      "label": "移動",
+      "enemy": "treant",
+      "directory": "assets/enemies/treant/motions/move",
+      "source": "../../source/treant-move-generated-v1.png",
+      "prompt": "PROMPT.md",
+      "frameWidth": 448,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      },
+      "scale": 0.5,
+      "anchorMode": "root",
+      "loop": true,
+      "terminal": false,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "前の根を低く伸ばして接地",
+          "durationMs": 220,
+          "anchor": {
+            "x": 440,
+            "y": 475
+          }
+        },
+        {
+          "cell": 1,
+          "phase": "前の根を巻き込み、後ろの根で支える",
+          "durationMs": 220,
+          "anchor": {
+            "x": 354,
+            "y": 475
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "前の根を伸ばし、後ろの根が蠢く",
+          "durationMs": 220,
+          "anchor": {
+            "x": 440,
+            "y": 480
+          }
+        },
+        {
+          "cell": 3,
+          "phase": "後ろの根を戻して接地",
+          "durationMs": 220,
+          "anchor": {
+            "x": 354,
+            "y": 484
+          }
+        }
+      ],
+      "registration": "Upper-body alpha centroid; roots flex without shifting trunk sideways"
+    },
+    {
+      "id": "attack",
+      "label": "枝腕の攻撃",
+      "enemy": "treant",
+      "directory": "assets/enemies/treant/motions/attack",
+      "source": "../../source/treant-attack-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 448,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      },
+      "scale": 0.5,
+      "anchorMode": "root",
+      "loop": false,
+      "terminal": false,
+      "events": [
+        {
+          "name": "melee-impact",
+          "frame": 2,
+          "timeMs": 340
+        }
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "振りかぶり",
+          "durationMs": 180
+        },
+        {
+          "cell": 1,
+          "phase": "枝腕を高く上げる",
+          "durationMs": 160
+        },
+        {
+          "cell": 2,
+          "phase": "左下へ叩きつけ",
+          "durationMs": 100
+        },
+        {
+          "cell": 3,
+          "phase": "低い位置で振り抜き",
+          "durationMs": 240
+        }
+      ]
+    },
+    {
+      "id": "hit",
+      "label": "被弾",
+      "enemy": "treant",
+      "directory": "assets/enemies/treant/motions/hit",
+      "source": "../../source/treant-hit-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 448,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      },
+      "scale": 0.5,
+      "anchorMode": "root",
+      "loop": false,
+      "terminal": false,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "衝撃・ひるむ",
+          "durationMs": 90
+        },
+        {
+          "cell": 1,
+          "phase": "のけぞる",
+          "durationMs": 120
+        },
+        {
+          "cell": 2,
+          "phase": "姿勢を戻す",
+          "durationMs": 130
+        },
+        {
+          "cell": 3,
+          "phase": "待機姿勢へ",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "id": "down",
+      "label": "撃破",
+      "enemy": "treant",
+      "directory": "assets/enemies/treant/motions/down",
+      "source": "../../source/treant-down-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 448,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      },
+      "scale": 0.45,
+      "anchorMode": "ground",
+      "loop": false,
+      "terminal": true,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "幹が割れ・力が抜ける",
+          "durationMs": 180
+        },
+        {
+          "cell": 1,
+          "phase": "左へ崩れる",
+          "durationMs": 240
+        },
+        {
+          "cell": 2,
+          "phase": "幹が倒れる",
+          "durationMs": 280
+        },
+        {
+          "cell": 3,
+          "phase": "倒木・静止",
+          "durationMs": 700
+        }
+      ],
+      "columnEdgesByRow": [
+        [
+          0,
+          714,
+          1536
+        ],
+        [
+          0,
+          768,
+          1536
+        ]
+      ]
+    },
+    {
+      "id": "throw-fruit",
+      "label": "樹の実・投げ上げ",
+      "enemy": "treant",
+      "directory": "assets/enemies/treant/motions/throw-fruit",
+      "source": "../../source/treant-throw-fruit-generated-v2.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 448,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      },
+      "scale": 0.5,
+      "anchorMode": "root",
+      "loop": false,
+      "terminal": false,
+      "events": [
+        {
+          "name": "release-fruit",
+          "frame": 2,
+          "timeMs": 380,
+          "spawnOffset": {
+            "x": -106,
+            "y": -195
+          },
+          "suggestedVelocity": {
+            "x": -95,
+            "y": -320
+          },
+          "notes": "左向き・倍率1での仮設定。3コマ目から本体は空の手。樹の実は別スプライトを生成し、軌道と着地はゲーム側で制御。"
+        }
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "樹の実を手に構える",
+          "durationMs": 180
+        },
+        {
+          "cell": 1,
+          "phase": "腕を下げてためる",
+          "durationMs": 200
+        },
+        {
+          "cell": 2,
+          "phase": "上へ放る・手を開く",
+          "durationMs": 120
+        },
+        {
+          "cell": 3,
+          "phase": "空の手で振り抜く",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "id": "root-bury",
+      "label": "根・地面へ差し込む",
+      "enemy": "treant",
+      "directory": "assets/enemies/treant/motions/root-bury",
+      "source": "../../source/treant-root-bury-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 448,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 224,
+        "y": 303
+      },
+      "scale": 0.5,
+      "anchorMode": "root",
+      "loop": false,
+      "terminal": false,
+      "events": [
+        {
+          "name": "roots-inserted",
+          "frame": 2,
+          "timeMs": 340,
+          "notes": "対象の地面にroot-eruptionを1回再生。伸長2コマ目と最大突出3コマ目を攻撃判定の候補にする。"
+        }
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "指根を下へ向ける",
+          "durationMs": 180,
+          "anchor": {
+            "x": 442,
+            "y": 497
+          }
+        },
+        {
+          "cell": 1,
+          "phase": "地面へ突き込む",
+          "durationMs": 160,
+          "anchor": {
+            "x": 444,
+            "y": 497
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "根を地中へ押し込む",
+          "durationMs": 260,
+          "anchor": {
+            "x": 536,
+            "y": 438
+          }
+        },
+        {
+          "cell": 3,
+          "phase": "地中へ根を送り続ける",
+          "durationMs": 300,
+          "anchor": {
+            "x": 435,
+            "y": 438
+          }
+        }
+      ],
+      "clipBelowGround": true
+    },
+    {
+      "id": "fruit-bomb",
+      "label": "樹の実爆弾",
+      "directory": "assets/effects/fruit-bomb",
+      "source": "source/fruit-bomb-generated-v1.png",
+      "prompt": "PROMPT.md",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "scale": 0.05,
+      "anchorMode": "center",
+      "loop": true,
+      "columns": 1,
+      "columnEdges": [
+        0,
+        1185
+      ],
+      "rowEdges": [
+        0,
+        1327
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "樹の実・投射物",
+          "durationMs": 400,
+          "anchor": {
+            "x": 660,
+            "y": 719
+          }
+        }
+      ]
+    },
+    {
+      "id": "explosion",
+      "label": "汎用爆発",
+      "directory": "assets/effects/explosion",
+      "source": "source/explosion-generated-v1.png",
+      "prompt": "PROMPT.md",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "pivot": {
+        "x": 128,
+        "y": 128
+      },
+      "scale": 0.4,
+      "anchorMode": "bounds-center",
+      "loop": false,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "点火・閃光",
+          "durationMs": 80
+        },
+        {
+          "cell": 1,
+          "phase": "爆発・最大火球",
+          "durationMs": 100
+        },
+        {
+          "cell": 2,
+          "phase": "火と煙が分かれる",
+          "durationMs": 130
+        },
+        {
+          "cell": 3,
+          "phase": "煙・火の粉の消散",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "id": "root-eruption",
+      "label": "根っこ攻撃",
+      "directory": "assets/effects/root-eruption",
+      "source": "source/root-eruption-generated-v1.png",
+      "prompt": "PROMPT.md",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "pivot": {
+        "x": 128,
+        "y": 240
+      },
+      "scale": 0.4,
+      "anchorMode": "ground",
+      "loop": false,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "根の先端が出る",
+          "durationMs": 80
+        },
+        {
+          "cell": 1,
+          "phase": "根が伸びる",
+          "durationMs": 100
+        },
+        {
+          "cell": 2,
+          "phase": "最大突出",
+          "durationMs": 130
+        },
+        {
+          "cell": 3,
+          "phase": "根が引っ込む",
+          "durationMs": 180
+        }
+      ],
+      "events": [
+        {
+          "name": "root-hit",
+          "frame": 1,
+          "timeMs": 80
+        },
+        {
+          "name": "max-extension",
+          "frame": 2,
+          "timeMs": 180
+        }
+      ],
+      "splitRowsByColumn": true
+    }
+  ]
+}

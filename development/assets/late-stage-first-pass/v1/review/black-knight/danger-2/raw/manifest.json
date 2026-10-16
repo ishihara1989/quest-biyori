@@ -1,0 +1,50 @@
+{
+  "id": "black-knight/danger-2/raw",
+  "enemy": "black-knight",
+  "region": "demon-castle",
+  "motion": "raw-sheet",
+  "label": "黒環薙ぎ（原画のみ）",
+  "kind": "raw-sheet",
+  "sources": [
+    "sources/black-knight/danger-2-generated.png"
+  ],
+  "durations": [
+    1000
+  ],
+  "phases": [
+    "切り出し不可・原画"
+  ],
+  "extractionError": "生成された透過・粒子を保持するため、画素マスク方式の切り出しは使わない。矩形の手動切り出しが必要",
+  "enemyLabel": "黒騎士",
+  "expectedFrames": 1,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 16,
+        "top": 84,
+        "right": 1308,
+        "bottom": 1102
+      },
+      "sourceWidth": 1326,
+      "sourceHeight": 1186,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 923189,
+      "transparentFraction": 0.5870328543922434
+    }
+  ],
+  "reference": "../../../../references/black-knight.png",
+  "originalSources": [
+    "../../../../sources/black-knight/danger-2-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

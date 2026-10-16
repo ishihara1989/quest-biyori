@@ -1,0 +1,11 @@
+{
+  "id": "double-robes",
+  "source": "development/assets/skills/miko/source/double-robes-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-a057e267-3c06-43ba-af71-04eb48168c00.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 4 chronological frames in a TWO BY TWO grid of equal square cells, ordered top-left, top-right, bottom-left, bottom-right. Large dramatic shrine VFX. TWO interwoven full-body spirit ribbon enclosures, one crimson-gold and one cyan-ivory, for a single invisible host. Tall double helix from .86 to .16, empty center x=.38..62, distinct two ribbons never merge. Four-frame loop with ordered traveling gold crests. No animals or people. All frames same scale and common center/ground. Subject fills .14..86 without touching cell margins. OUTPUT MUST BE A SQUARE CANVAS, a spacious TWO-BY-TWO atlas with exactly TWO rows of TWO frames. Every cell has completely EMPTY 12% margins on all four sides, no cell overlaps.",
+  "refs": [],
+  "receivedAt": "2026-10-10T15:17:11.773Z",
+  "width": 1254,
+  "height": 1254,
+  "status": "generated"
+}

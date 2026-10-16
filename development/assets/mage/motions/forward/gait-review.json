@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "character": "mage",
+  "motion": "forward",
+  "source": "source/mage-forward-generated-v8.png",
+  "measurement": "Manual visual ankle-center estimates from 256x224 installed frames; approximate +/-4px, occluded far ankles inferred. Not image segmentation or machine proof.",
+  "leftIdentity": "anatomical left, always camera-near; visible near knee and bright blue/gold boot; foreground during passing",
+  "rightIdentity": "anatomical right, always camera-far; calf/boot behind near leg and cream skirt",
+  "frames": [
+    {
+      "frame": 1,
+      "L": {
+        "x": 148,
+        "y": 197
+      },
+      "R": {
+        "x": 97,
+        "y": 196
+      }
+    },
+    {
+      "frame": 2,
+      "L": {
+        "x": 132,
+        "y": 197
+      },
+      "R": {
+        "x": 110,
+        "y": 190
+      }
+    },
+    {
+      "frame": 3,
+      "L": {
+        "x": 124,
+        "y": 198
+      },
+      "R": {
+        "x": 116,
+        "y": 197,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 4,
+      "L": {
+        "x": 107,
+        "y": 197
+      },
+      "R": {
+        "x": 149,
+        "y": 197
+      }
+    },
+    {
+      "frame": 5,
+      "L": {
+        "x": 95,
+        "y": 198
+      },
+      "R": {
+        "x": 146,
+        "y": 196
+      }
+    },
+    {
+      "frame": 6,
+      "L": {
+        "x": 110,
+        "y": 194
+      },
+      "R": {
+        "x": 136,
+        "y": 197
+      }
+    },
+    {
+      "frame": 7,
+      "L": {
+        "x": 123,
+        "y": 198
+      },
+      "R": {
+        "x": 118,
+        "y": 201,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 8,
+      "L": {
+        "x": 146,
+        "y": 198
+      },
+      "R": {
+        "x": 98,
+        "y": 197
+      }
+    }
+  ]
+}

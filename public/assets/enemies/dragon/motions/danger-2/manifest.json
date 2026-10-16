@@ -1,0 +1,254 @@
+{
+  "id": "dragon/danger-2",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "双脈ブレス",
+  "kind": null,
+  "motion": "danger-2",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 6900,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/dragon.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/danger-2-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8553619384765625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 103,
+        "top": 136,
+        "right": 492,
+        "bottom": 363
+      },
+      "visibleBounds": {
+        "left": 166,
+        "top": 157,
+        "right": 445,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/danger-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 827,
+        "height": 504
+      },
+      "sourceScale": 0.4713804713804714,
+      "sourceAnchor": {
+        "x": 417,
+        "y": 447
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4820,
+      "transparentFraction": 0.8562355041503906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 117,
+        "top": 131,
+        "right": 443,
+        "bottom": 364
+      },
+      "visibleBounds": {
+        "left": 164,
+        "top": 157,
+        "right": 442,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/danger-2-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 827,
+        "y": 0,
+        "width": 709,
+        "height": 504
+      },
+      "sourceScale": 0.4713804713804714,
+      "sourceAnchor": {
+        "x": 389,
+        "y": 447
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 1600,
+      "transparentFraction": 0.8476524353027344,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 96,
+        "top": 127,
+        "right": 486,
+        "bottom": 364
+      },
+      "visibleBounds": {
+        "left": 138,
+        "top": 158,
+        "right": 448,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/danger-2-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 504,
+        "width": 829,
+        "height": 520
+      },
+      "sourceScale": 0.4713804713804714,
+      "sourceAnchor": {
+        "x": 432,
+        "y": 448
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8522415161132812,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 133,
+        "top": 131,
+        "right": 462,
+        "bottom": 367
+      },
+      "visibleBounds": {
+        "left": 171,
+        "top": 154,
+        "right": 450,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/danger-2-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 829,
+        "y": 504,
+        "width": 707,
+        "height": 520
+      },
+      "sourceScale": 0.4713804713804714,
+      "sourceAnchor": {
+        "x": 354,
+        "y": 447
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "fire-beam",
+      "timeMs": 5000,
+      "slot": 0,
+      "placement": "origin",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    },
+    {
+      "id": "fire-beam",
+      "timeMs": 6000,
+      "slot": 1,
+      "placement": "origin",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "fire-beam",
+    "burn"
+  ],
+  "repeatRelease": true,
+  "releaseOrigin": {
+    "x": 155,
+    "y": 224
+  },
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/dragon/danger-2/preview.gif",
+  "action": {
+    "name": "双脈ブレス",
+    "motion": "danger-2",
+    "warn": 5000,
+    "times": [
+      5000,
+      6000
+    ],
+    "kind": "lane",
+    "radius": 75,
+    "effect": "fire-beam",
+    "rest": 3500,
+    "status": "burn",
+    "duration": 6900,
+    "length": 660
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-fire-beam",
+        "manifest": "../../../../effects/volcano-fire-beam/manifest.json"
+      },
+      {
+        "id": "volcano-burn",
+        "manifest": "../../../../effects/volcano-burn/manifest.json"
+      }
+    ]
+  }
+}

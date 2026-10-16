@@ -1,0 +1,28 @@
+{
+  "id": "demon-god/reaction",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "reaction",
+  "label": "被弾・撃破",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/demon-god.png",
+  "guide": null,
+  "source": "sources/demon-god/reaction-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of 魔神. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: hovering body sinks 120px, wings close and knees fold. Bottom-right TERMINAL DEFEAT: collapsed demon god with EXACTLY SIX folded connected arms, extinguished core and fading halo. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference. EXACTLY SIX arms in three pairs, each with its own shoulder, upper arm, elbow, forearm, wrist and hand. Preserve frontal readable arm spread and rotate gaze/torso only slightly LEFT 15 degrees; never hide an entire arm. Original dark halo and two legs.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-5ef2234d-6112-43ef-b839-d511e80069a6.png",
+  "sha256": "87af35e4c90808938b7c50c9af7650112c8d3c1d42e6af2a309044cd1b10c985",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "被弾で全身を傾け、撃破で腕を胸前に折りたたみ低く崩れる。"
+    ],
+    "issues": [
+      "倒れた2コマで腕と手が密集する。6腕それぞれの肩・肘・手首を追い、消失・余分な腕を検収する。",
+      "背輪の一部が紫煙へ変わるため、本体と別の消滅演出を分離する。正面寄りの向きと待機への接続を確認する。"
+    ]
+  }
+}

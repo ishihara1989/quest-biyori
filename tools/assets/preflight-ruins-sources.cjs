@@ -1,0 +1,6 @@
+'use strict';
+const { writeAssetJson, makeAssetDirectory } = require('../lib/project-paths.cjs');
+const fs=require('node:fs'),path=require('../lib/project-paths.cjs').assetPaths,{extract}=require('./build-ruins.cjs');
+const dir=process.argv[2],jobs=JSON.parse(fs.readFileSync(path.join(__dirname,'../../development/records/ruins-generation.json'))),base=dir?fs.statSync(path.join(dir,'exec-6efb5ed0-4b5c-4500-95b4-90a2cda69b0c.png')).mtimeMs:0,files=dir?fs.readdirSync(dir).filter(f=>f.endsWith('.png')).map(f=>path.join(dir,f)).filter(f=>{const time=fs.statSync(f).mtimeMs;return time>base&&time<Date.now()-1000;}):jobs.map(j=>path.resolve(__dirname,'../..',j.selectedSource||j.source)),failures=[],layouts=[];
+for(const file of files){try{const a=extract(file);layouts.push({file,columns:2,rows:2,cells:a.rects});}catch(four){try{const a=extract(file,3,1);layouts.push({file,columns:3,rows:1,cells:a.rects});}catch(three){failures.push({file,error:four.message,alternateError:three.message});}}}
+const output=path.resolve(__dirname,'../../output/ruins-source-review/preflight.json');makeAssetDirectory(path.dirname(output),{recursive:true});writeAssetJson(output, {count:files.length,layouts,failures});console.log(JSON.stringify({count:files.length,failures,walkHalves:layouts.filter(l=>l.columns===3).length}));

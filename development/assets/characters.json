@@ -1,0 +1,44 @@
+[
+  {
+    "id": "warrior",
+    "label": "戦士",
+    "name": "Warrior",
+    "summary": "茶色のポニーテール、革鎧、両手剣を引き継いだ試作。",
+    "reference": "references/warrior-original.png"
+  },
+  {
+    "id": "mage",
+    "label": "魔法使い",
+    "name": "Mage",
+    "summary": "青い髪、金縁の帽子とローブ、青水晶の杖を引き継いだ試作。",
+    "reference": "references/mage-original.png"
+  },
+  {
+    "id": "paladin",
+    "label": "パラディン",
+    "name": "Paladin",
+    "summary": "金髪、銀と金の鎧、紺のマント、メイスと大盾を引き継いだ試作。",
+    "reference": "references/paladin-original.png"
+  },
+  {
+    "id": "ninja",
+    "label": "忍者",
+    "name": "Ninja",
+    "summary": "黒髪、赤いリボンとマフラー、黒装束と手裏剣を引き継いだ試作。",
+    "reference": "references/ninja-original.png"
+  },
+  {
+    "id": "shaman",
+    "label": "呪術師",
+    "name": "Shaman",
+    "summary": "銀髪、褐色の肌、羽飾りと頭蓋骨の杖を引き継いだ試作。",
+    "reference": "references/shaman-original.png"
+  },
+  {
+    "id": "miko",
+    "label": "巫女",
+    "name": "Miko",
+    "summary": "黒い長髪、赤いリボン、白衣と緋袴、御幣を引き継いだ試作。",
+    "reference": "references/miko-original.png"
+  }
+]

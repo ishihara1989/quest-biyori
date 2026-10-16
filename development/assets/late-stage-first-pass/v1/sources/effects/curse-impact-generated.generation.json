@@ -1,0 +1,27 @@
+{
+  "id": "effects/curse-impact",
+  "effect": "curse-impact",
+  "region": "demon-castle",
+  "label": "呪弾着弾",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/curse-impact-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. compact crimson-violet starburst with broken black ring shards, transparent central gaps, no whole screen fog. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-f699b10d-a869-4103-a5b8-2a95e7e5202b.png",
+  "sha256": "8404526ada9d53539607e9ebc1d77bd40cd4333593decd26dbf737451874006e",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "紫黒の割れた輪と赤白の衝撃を表現。"
+    ],
+    "issues": [
+      "衝撃の白い核が輪の右側にあり、対象中心からずれる。着弾点の基準を決める。",
+      "最大コマと終端の輪郭が強い。消失と対象の視認性を確認する。"
+    ]
+  }
+}

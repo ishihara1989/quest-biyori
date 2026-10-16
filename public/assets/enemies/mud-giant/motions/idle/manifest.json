@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "enemy": "mud-giant",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "mud-giant-idle.png",
+  "preview": "../../../../../../development/assets/enemies/mud-giant/motions/idle/mud-giant-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/mud-giant/PROMPT.md",
+  "width": 2304,
+  "height": 416,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/mud-giant/source/idle-registered.png",
+  "sourceScale": 0.6224066390041494,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 173,
+        "top": 100,
+        "right": 494,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 562,
+        "height": 514
+      },
+      "sourceAnchor": {
+        "x": 275,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 170,
+        "top": 100,
+        "right": 489,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 562,
+        "y": 0,
+        "width": 584,
+        "height": 514
+      },
+      "sourceAnchor": {
+        "x": 290,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 166,
+        "top": 103,
+        "right": 502,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 514,
+        "width": 573,
+        "height": 514
+      },
+      "sourceAnchor": {
+        "x": 286,
+        "y": 492
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 400,
+      "phase": "終端",
+      "bounds": {
+        "left": 175,
+        "top": 104,
+        "right": 486,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 573,
+        "y": 514,
+        "width": 573,
+        "height": 514
+      },
+      "sourceAnchor": {
+        "x": 272,
+        "y": 491
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/mud-giant/source/idle-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 148871,
+      "left": 177,
+      "top": 16,
+      "right": 694,
+      "bottom": 497,
+      "cx": 434.2575182540589,
+      "cy": 290.53713617830203
+    },
+    {
+      "id": 2,
+      "count": 151252,
+      "left": 900,
+      "top": 16,
+      "right": 1414,
+      "bottom": 497,
+      "cx": 1166.8686695051965,
+      "cy": 292.0274971570624
+    },
+    {
+      "id": 13,
+      "count": 147409,
+      "left": 154,
+      "top": 528,
+      "right": 694,
+      "bottom": 1004,
+      "cx": 441.14282710010923,
+      "cy": 794.0625809821653
+    },
+    {
+      "id": 14,
+      "count": 147048,
+      "left": 945,
+      "top": 529,
+      "right": 1446,
+      "bottom": 1004,
+      "cx": 1193.3246150916707,
+      "cy": 797.6850824220662
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

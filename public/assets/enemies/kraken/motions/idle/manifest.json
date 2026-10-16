@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "kraken",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "kraken-idle.png",
+  "preview": "../../../../../../development/assets/enemies/kraken/motions/idle/kraken-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/kraken/PROMPT.md",
+  "width": 2816,
+  "height": 512,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/kraken/source/idle-registered.png",
+  "sourceScale": 0.7186932849364791,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 75,
+        "top": 205,
+        "right": 594,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 757,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 480,
+        "y": 420
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 27,
+        "top": 160,
+        "right": 535,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 757,
+        "y": 0,
+        "width": 757,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 547,
+        "y": 483
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 13,
+        "top": 147,
+        "right": 531,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 518,
+        "width": 757,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 566,
+        "y": 501
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 73,
+        "top": 208,
+        "right": 593,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 757,
+        "y": 518,
+        "width": 757,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 482,
+        "y": 415
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/kraken/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 3,
+        "count": 168286,
+        "left": 24,
+        "top": 82,
+        "right": 747,
+        "bottom": 486,
+        "cx": 389.3865086816491,
+        "cy": 318.1771210914752
+      },
+      {
+        "id": 1,
+        "count": 181437,
+        "left": 801,
+        "top": 26,
+        "right": 1509,
+        "bottom": 493,
+        "cx": 1158.7936473817358,
+        "cy": 295.645414110683
+      },
+      {
+        "id": 6,
+        "count": 189069,
+        "left": 31,
+        "top": 509,
+        "right": 753,
+        "bottom": 994,
+        "cx": 401.31824889326117,
+        "cy": 795.0732748361709
+      },
+      {
+        "id": 8,
+        "count": 167848,
+        "left": 791,
+        "top": 599,
+        "right": 1515,
+        "bottom": 998,
+        "cx": 1157.936680806444,
+        "cy": 831.0201193937372
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

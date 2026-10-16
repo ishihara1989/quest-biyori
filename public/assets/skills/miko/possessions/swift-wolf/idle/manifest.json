@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "swift-wolf-idle",
+  "character": "miko",
+  "subject": "swift-wolf",
+  "group": "possession",
+  "motion": "idle",
+  "sheet": "swift-wolf-idle.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 680,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.49206349206349204,
+  "frames": [
+    {
+      "index": 0,
+      "file": "swift-wolf-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 65,
+        "t": 85,
+        "r": 465,
+        "b": 476,
+        "n": 89345,
+        "width": 401,
+        "height": 392
+      }
+    },
+    {
+      "index": 1,
+      "file": "swift-wolf-idle-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 48,
+        "t": 63,
+        "r": 449,
+        "b": 475,
+        "n": 94947,
+        "width": 402,
+        "height": 413
+      }
+    },
+    {
+      "index": 2,
+      "file": "swift-wolf-idle-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 76,
+        "t": 63,
+        "r": 470,
+        "b": 465,
+        "n": 91642,
+        "width": 395,
+        "height": 403
+      }
+    },
+    {
+      "index": 3,
+      "file": "swift-wolf-idle-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 46,
+        "t": 75,
+        "r": 447,
+        "b": 467,
+        "n": 91595,
+        "width": 402,
+        "height": 393
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/swift-wolf-idle-generated-v2.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-f54a0075-f325-4b79-88ec-68132093db7c.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

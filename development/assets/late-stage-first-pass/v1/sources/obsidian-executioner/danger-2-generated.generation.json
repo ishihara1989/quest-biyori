@@ -1,0 +1,33 @@
+{
+  "id": "obsidian-executioner/danger-2",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "motion": "danger-2",
+  "label": "断層斬",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/obsidian-executioner.png",
+  "guide": null,
+  "source": "sources/obsidian-executioner/danger-2-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 断層斬 by 黒曜の処刑者 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: axe raises from (280,680) to (540,260), holds over head (520,150), slams left-down (230,850), returns. Exactly same double blade. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "fissure",
+    "armor-break"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-846adac7-912d-4fbf-898c-14a379784d3f.png",
+  "sha256": "1a3fbbb55f52e2104ca7b152de04dcb44361b13791d403014de05d6040058178",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "斧を頭上へ持ち上げ、低く踏み込み左下へ打ち下ろす。"
+    ],
+    "issues": [
+      "発動でマントが高く跳ねる。背・腰への接続と復帰の連続性を検収する。",
+      "斧先の着地点を地割れの開始点へ合わせる。武器サイズと頭上余白を確認する。"
+    ]
+  }
+}

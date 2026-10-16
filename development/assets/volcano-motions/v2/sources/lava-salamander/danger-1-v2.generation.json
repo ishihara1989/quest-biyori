@@ -1,0 +1,23 @@
+{
+  "id": "lava-salamander/danger-1",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ラヴァサラマンダー. Distinct dangerous windup: neck retracts RIGHT, back fins then chest brighten strongly, head extends LEFT without stretching at release, canonical neutral recovery. Attached mouth origin only; fire fan separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/lava-salamander/danger-1-v2.png",
+  "sha256": "9848d2e969e7e1160f90ffd48f85f89fd23af39dcd55dcd555fe51ba26c82d8c",
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "firstPass": "sources/lava-salamander/danger-1-generated.png",
+  "issues": [
+    "通常の噛みつきと構え・発動が近く、危険技の胸・背びれの溜めが弱い。専用の溜め差を付ける。",
+    "火炎エフェクトの放射位置を口の先端に合わせる必要がある。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

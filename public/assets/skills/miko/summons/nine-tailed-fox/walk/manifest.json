@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "id": "nine-tailed-fox-walk",
+  "character": "miko",
+  "subject": "nine-tailed-fox",
+  "group": "summon",
+  "motion": "walk",
+  "sheet": "walk.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.07577807848443843,
+  "frames": [
+    {
+      "index": 0,
+      "file": "nine-tailed-fox-walk-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-a",
+      "bounds": {
+        "l": 19,
+        "t": 54,
+        "r": 85,
+        "b": 115,
+        "n": 2867,
+        "width": 67,
+        "height": 62
+      }
+    },
+    {
+      "index": 1,
+      "file": "nine-tailed-fox-walk-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-a",
+      "bounds": {
+        "l": 15,
+        "t": 50,
+        "r": 83,
+        "b": 116,
+        "n": 3085,
+        "width": 69,
+        "height": 67
+      }
+    },
+    {
+      "index": 2,
+      "file": "nine-tailed-fox-walk-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-a",
+      "bounds": {
+        "l": 14,
+        "t": 54,
+        "r": 80,
+        "b": 116,
+        "n": 2897,
+        "width": 67,
+        "height": 63
+      }
+    },
+    {
+      "index": 3,
+      "file": "nine-tailed-fox-walk-04.png",
+      "x": 384,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-b",
+      "bounds": {
+        "l": 26,
+        "t": 53,
+        "r": 92,
+        "b": 116,
+        "n": 2903,
+        "width": 67,
+        "height": 64
+      }
+    },
+    {
+      "index": 4,
+      "file": "nine-tailed-fox-walk-05.png",
+      "x": 512,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-b",
+      "bounds": {
+        "l": 19,
+        "t": 51,
+        "r": 86,
+        "b": 116,
+        "n": 3036,
+        "width": 68,
+        "height": 66
+      }
+    },
+    {
+      "index": 5,
+      "file": "nine-tailed-fox-walk-06.png",
+      "x": 640,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-b",
+      "bounds": {
+        "l": 44,
+        "t": 53,
+        "r": 109,
+        "b": 116,
+        "n": 2897,
+        "width": 66,
+        "height": 64
+      }
+    }
+  ],
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/nine-tailed-fox-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop",
+  "path": "assets/skills/miko/summons/nine-tailed-fox/walk/manifest.json",
+  "sourceParts": [
+    "../../../../../../../development/assets/skills/miko/source/nine-tailed-fox-walk-a-generated-v1.png",
+    "../../../../../../../development/assets/skills/miko/source/nine-tailed-fox-walk-b-generated-v1.png"
+  ]
+}

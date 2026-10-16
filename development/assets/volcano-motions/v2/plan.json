@@ -1,0 +1,1840 @@
+{
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "scope": "complete volcano asset library for subsequent stage integration",
+  "firstPass": "../../late-stage-first-pass/v1/coverage.json",
+  "enemies": [
+    {
+      "region": "volcano",
+      "id": "lava-salamander",
+      "label": "ラヴァサラマンダー",
+      "cell": 0,
+      "gait": "trot",
+      "normal": "bite",
+      "actions": [
+        "灼熱噴き"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "obsidian-soldier",
+      "label": "黒曜兵",
+      "cell": 1,
+      "gait": "walk",
+      "normal": "axe",
+      "actions": [
+        "破甲の斧"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "young-fire-dragon",
+      "label": "幼火竜",
+      "cell": 2,
+      "gait": "trot",
+      "normal": "claw",
+      "actions": [
+        "灼球"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "magma-salamander",
+      "label": "マグマサラマンダー",
+      "cell": 3,
+      "gait": "trot",
+      "normal": "bite",
+      "actions": [
+        "双溶岩弾",
+        "灼熱大扇"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "obsidian-executioner",
+      "label": "黒曜の処刑者",
+      "cell": 4,
+      "gait": "walk",
+      "normal": "axe",
+      "actions": [
+        "断罪大薙ぎ",
+        "断層斬"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "dragon-girl",
+      "label": "ドラゴンガール",
+      "cell": 5,
+      "gait": "walk",
+      "normal": "claw",
+      "actions": [
+        "紅蓮三連球",
+        "紅翼竜息"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "dragon",
+      "label": "ドラゴン",
+      "cell": 7,
+      "gait": "trot",
+      "normal": "claw",
+      "actions": [
+        "翼震着地",
+        "双脈ブレス",
+        "噴火の三巣"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "region": "volcano",
+      "id": "bite-impact",
+      "label": "灼牙の衝撃",
+      "kind": "target",
+      "description": "two jagged incandescent fang streaks converge into a bright orange-white impact, basalt chips and embers"
+    },
+    {
+      "region": "volcano",
+      "id": "claw-arc",
+      "label": "紅爪の軌跡",
+      "kind": "target",
+      "description": "three curved red-gold claw trails sweeping LEFT with crisp white-hot tips and sparse ember fragments"
+    },
+    {
+      "region": "volcano",
+      "id": "axe-arc",
+      "label": "黒曜斧の軌跡",
+      "kind": "target",
+      "description": "broad short orange-white axe slash crescent sweeping left-down with black obsidian chips"
+    },
+    {
+      "region": "volcano",
+      "id": "heavy-axe-arc",
+      "label": "断罪大薙ぎ",
+      "kind": "target",
+      "description": "spectacular huge 150-degree molten-orange double-edged axe crescent sweeping left, dark inner edge and white-hot rim"
+    },
+    {
+      "region": "volcano",
+      "id": "fire-fan",
+      "label": "灼熱の扇",
+      "kind": "origin",
+      "description": "huge leftward fan of layered yellow-white flame tongues, red-black outer rim and orange sparks; wide angular fan silhouette"
+    },
+    {
+      "region": "volcano",
+      "id": "fireball",
+      "label": "灼熱火球",
+      "kind": "projectile",
+      "description": "single LEFT-travelling spherical yellow-white fireball, orange-red shell, fiery tail extends RIGHT; no ground impact"
+    },
+    {
+      "region": "volcano",
+      "id": "fireball-impact",
+      "label": "火球爆発",
+      "kind": "ground",
+      "description": "one explosive orange-white fireburst with low black-red elliptical boundary, radial sparks, no full opaque smoke disk"
+    },
+    {
+      "region": "volcano",
+      "id": "lava-bomb",
+      "label": "落下溶岩弾",
+      "kind": "projectile",
+      "description": "one falling diagonal down-left black basalt lava bomb with glowing cracks, white-hot core, long tail toward upper-right"
+    },
+    {
+      "region": "volcano",
+      "id": "lava-impact",
+      "label": "溶岩着弾",
+      "kind": "ground",
+      "description": "violent low volcanic impact, black basalt chunks fly outward, orange lava splashes upward, elliptical red-black ground rim"
+    },
+    {
+      "region": "volcano",
+      "id": "lava-pool",
+      "label": "残留溶岩床",
+      "kind": "ground",
+      "description": "short-lived low elliptical molten pool, dark basalt perimeter clearly visible, internal orange bubbles and sparse sparks, readable open edges"
+    },
+    {
+      "region": "volcano",
+      "id": "fissure",
+      "label": "断層斬の地割れ",
+      "kind": "ground",
+      "description": "long LEFT-directed jagged black-red ground fissure opening in sequential segments with molten orange jets and scattered rock; low side-view perspective"
+    },
+    {
+      "region": "volcano",
+      "id": "fire-beam",
+      "label": "双脈竜息",
+      "kind": "origin",
+      "description": "spectacular long horizontal LEFT-directed dragon breath, white-hot narrow core, layered gold-orange flame, clear red-black outer contour, embers trail right"
+    },
+    {
+      "region": "volcano",
+      "id": "landing-shock",
+      "label": "翼震の着地衝撃",
+      "kind": "ground",
+      "description": "huge LOW hollow elliptical orange-white shock ring expanding from center with basalt fragments and short flame spires on rim; transparent center"
+    },
+    {
+      "region": "volcano",
+      "id": "burn",
+      "label": "火傷",
+      "kind": "status",
+      "description": "compact orange-red ember aura forming a hollow ring around a transparent character-shaped empty center"
+    },
+    {
+      "region": "shared",
+      "id": "armor-break",
+      "label": "破甲",
+      "kind": "status",
+      "description": "recognizable small gold-silver shield emblem splits with a crimson crack and sparse orange-metal shards, clean isolated icon, no text"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "lava-salamander/idle",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/lava-salamander.png",
+      "guide": null,
+      "source": "sources/lava-salamander/idle-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. ラヴァサラマンダー. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/lava-salamander/idle-generated.png",
+      "issues": [
+        "背びれの呼吸変化は見える。体格・接地位置の差を採用前に揃える。"
+      ]
+    },
+    {
+      "id": "lava-salamander/reaction",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/lava-salamander.png",
+      "guide": null,
+      "source": "sources/lava-salamander/reaction-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. ラヴァサラマンダー. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/lava-salamander/reaction-generated.png",
+      "issues": [
+        "赤い光の背景が原画の広範囲に混入。透過PNGとしての再制作が必要。",
+        "撃破最終コマは低い伏せ姿勢になっているが背びれと溶岩光が残り、待機との状態差が弱い。",
+        "被弾1コマ目は前脚が浮くため、接地と荷重の対応を確認する。"
+      ]
+    },
+    {
+      "id": "lava-salamander/attack",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "attack",
+      "label": "噛みつき",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/lava-salamander.png",
+      "guide": null,
+      "source": "sources/lava-salamander/attack-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ラヴァサラマンダー. Keep head aligned forward; no upward gaze. Jaw pulls right 25px, opens, lunges LEFT 35px, returns neutral. Neck NEVER stretches or changes thickness. All four legs support body. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "bite-impact"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/lava-salamander/attack-generated.png",
+      "issues": [
+        "溜めで顎が大きく上を向くため、前方への噛みつきの軌道が上下に振れる。",
+        "発動コマで頭と首が伸び、背びれ・胴体の比率が変わる。基準絵と寸法を再確認する。"
+      ]
+    },
+    {
+      "id": "lava-salamander/danger-1",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "danger-1",
+      "label": "灼熱噴き",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/lava-salamander.png",
+      "guide": null,
+      "source": "sources/lava-salamander/danger-1-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ラヴァサラマンダー. Distinct dangerous windup: neck retracts RIGHT, back fins then chest brighten strongly, head extends LEFT without stretching at release, canonical neutral recovery. Attached mouth origin only; fire fan separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "fire-fan",
+        "burn"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/lava-salamander/danger-1-generated.png",
+      "issues": [
+        "通常の噛みつきと構え・発動が近く、危険技の胸・背びれの溜めが弱い。専用の溜め差を付ける。",
+        "火炎エフェクトの放射位置を口の先端に合わせる必要がある。"
+      ]
+    },
+    {
+      "id": "lava-salamander/move-1",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 0,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/lava-salamander.png",
+      "guide": "guides/lava-salamander/frame-1.png",
+      "source": "sources/lava-salamander/move-frame-1-v2.png",
+      "firstPass": "sources/lava-salamander/move-1-generated.png",
+      "issues": [
+        "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+        "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+        "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+        "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 1 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (389,850), hip (389,689), knee (476,739); RF LIFTED SWING paw (353,799), hip (353,667), knee (448,702); LH LIFTED SWING paw (708,793), hip (708,663), knee (613,712); RH GROUND SUPPORT paw (673,802), hip (673,641), knee (585,705). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "lava-salamander/move-2",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 1,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/lava-salamander.png",
+      "guide": "guides/lava-salamander/frame-2.png",
+      "source": "sources/lava-salamander/move-frame-2-v2.png",
+      "firstPass": "sources/lava-salamander/move-1-generated.png",
+      "issues": [
+        "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+        "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+        "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+        "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 2 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (420,847), hip (389,689), knee (487,714); RF LIFTED SWING paw (327,815), hip (353,667), knee (428,735); LH LIFTED SWING paw (680,810), hip (708,663), knee (607,694); RH GROUND SUPPORT paw (690,800), hip (673,641), knee (596,719). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "lava-salamander/move-3",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 2,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/lava-salamander.png",
+      "guide": "guides/lava-salamander/frame-3.png",
+      "source": "sources/lava-salamander/move-frame-3-v2.png",
+      "firstPass": "sources/lava-salamander/move-1-generated.png",
+      "issues": [
+        "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+        "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+        "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+        "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 3 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (420,830), hip (389,689), knee (490,699); RF GROUND SUPPORT paw (327,830), hip (353,667), knee (424,739); LH GROUND SUPPORT paw (680,826), hip (708,663), knee (610,706); RH LIFTED SWING paw (690,788), hip (673,641), knee (592,715). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "lava-salamander/move-4",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 3,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/lava-salamander.png",
+      "guide": "guides/lava-salamander/frame-4.png",
+      "source": "sources/lava-salamander/move-frame-4-v2.png",
+      "firstPass": "sources/lava-salamander/move-2-generated.png",
+      "issues": [
+        "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+        "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+        "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+        "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 4 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (389,815), hip (389,689), knee (485,721); RF GROUND SUPPORT paw (353,828), hip (353,667), knee (441,717); LH GROUND SUPPORT paw (708,824), hip (708,663), knee (621,727); RH LIFTED SWING paw (673,777), hip (673,641), knee (579,693). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "lava-salamander/move-5",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 4,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/lava-salamander.png",
+      "guide": "guides/lava-salamander/frame-5.png",
+      "source": "sources/lava-salamander/move-frame-5-v2.png",
+      "firstPass": "sources/lava-salamander/move-2-generated.png",
+      "issues": [
+        "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+        "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+        "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+        "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 5 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (358,835), hip (389,689), knee (460,761); RF GROUND SUPPORT paw (379,826), hip (353,667), knee (450,695); LH GROUND SUPPORT paw (736,821), hip (708,663), knee (638,748); RH LIFTED SWING paw (655,791), hip (673,641), knee (575,683). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "lava-salamander/move-6",
+      "enemy": "lava-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 5,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/lava-salamander.png",
+      "guide": "guides/lava-salamander/frame-6.png",
+      "source": "sources/lava-salamander/move-frame-6-v2.png",
+      "firstPass": "sources/lava-salamander/move-2-generated.png",
+      "issues": [
+        "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+        "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+        "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+        "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 6 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (358,852), hip (389,689), knee (456,765); RF LIFTED SWING paw (379,811), hip (353,667), knee (454,684); LH LIFTED SWING paw (736,806), hip (708,663), knee (635,744); RH GROUND SUPPORT paw (655,803), hip (673,641), knee (578,691). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "obsidian-soldier/idle",
+      "enemy": "obsidian-soldier",
+      "region": "volcano",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-soldier.png",
+      "guide": null,
+      "source": "sources/obsidian-soldier/idle-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. 黒曜兵. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-soldier/idle-generated.png",
+      "issues": [
+        "下段の体格が上段より小さく見える。呼吸量と同一縮尺を確認する。",
+        "2コマ目のマントの張り出しが大きい。ループ時の跳ねを確認する。"
+      ]
+    },
+    {
+      "id": "obsidian-soldier/reaction",
+      "enemy": "obsidian-soldier",
+      "region": "volcano",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-soldier.png",
+      "guide": null,
+      "source": "sources/obsidian-soldier/reaction-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. 黒曜兵. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-soldier/reaction-generated.png",
+      "issues": [
+        "被弾時の頭部が右上へ大きく回り、兜の形が変化する。",
+        "倒れた最終コマでも斧・鎧が明るい。終端の消灯と輪郭を基準絵に合わせる。"
+      ]
+    },
+    {
+      "id": "obsidian-soldier/move-1",
+      "enemy": "obsidian-soldier",
+      "region": "volcano",
+      "motion": "move-1",
+      "label": "移動 1〜3",
+      "cols": 3,
+      "rows": 1,
+      "reference": "references/obsidian-soldier.png",
+      "guide": null,
+      "source": "sources/obsidian-soldier/move-1-v2.png",
+      "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 黒曜兵 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 1-3: near foot x=470,430,410; far foot x=620,650,680; near foot lifts 30px at frame2. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous.  Keep exact same canonical armor/face/wing/tail proportions in both halves; anatomical left leg near, right leg far. Grounded sole y=820. Full neutral return across 3->4 and 6->1. No crouched foot becoming a hand. Adult girl face clearly LEFT. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-soldier/move-1-generated.png",
+      "issues": [
+        "歩行2コマ目の持ち上げ足と膝の接続、3コマ目の支持足切り替えを確認する。",
+        "斧先・手・マントの位置も歩行に伴って変わる。後半との寸法・接地を揃える。"
+      ]
+    },
+    {
+      "id": "obsidian-soldier/move-2",
+      "enemy": "obsidian-soldier",
+      "region": "volcano",
+      "motion": "move-2",
+      "label": "移動 4〜6",
+      "cols": 3,
+      "rows": 1,
+      "reference": "references/obsidian-soldier.png",
+      "guide": null,
+      "source": "sources/obsidian-soldier/move-2-v2.png",
+      "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 黒曜兵 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 4-6: far foot x=650,610,590; near foot x=430,470,500; far foot lifts 30px at frame5. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous.  Keep exact same canonical armor/face/wing/tail proportions in both halves; anatomical left leg near, right leg far. Grounded sole y=820. Full neutral return across 3->4 and 6->1. No crouched foot becoming a hand. Adult girl face clearly LEFT. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-soldier/move-2-generated.png",
+      "issues": [
+        "前半より鎧の線と足の形が変わる。3→4の寸法・色調・支持足を合わせる。",
+        "5〜6コマ目の奥足が手前脚に隠れる。膝から足先まで同じ脚への接続を検収する。"
+      ]
+    },
+    {
+      "id": "obsidian-soldier/attack",
+      "enemy": "obsidian-soldier",
+      "region": "volcano",
+      "motion": "attack",
+      "label": "斧撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-soldier.png",
+      "guide": null,
+      "source": "sources/obsidian-soldier/attack-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 黒曜兵. Exactly SAME original axe blade shape and haft length; both hands remain attached to haft. Windup, lifted blade with generous top padding, LEFT-down cut, upright neutral recovery. NO oversized blade or mutated helmet. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "axe-arc"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/obsidian-soldier/attack-generated.png",
+      "issues": [
+        "頭上に振り上げた斧が原画の上端に近い。刃の見切れと余白を確認する。",
+        "復帰が低い構えのため、直立待機への切り替えを確認する。"
+      ]
+    },
+    {
+      "id": "obsidian-soldier/danger-1",
+      "enemy": "obsidian-soldier",
+      "region": "volcano",
+      "motion": "danger-1",
+      "label": "破甲の斧",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-soldier.png",
+      "guide": null,
+      "source": "sources/obsidian-soldier/danger-1-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 黒曜兵. Distinct dangerous windup with planted feet and white reflection confined to the SAME axe edge. Blade pulls up-right, held bright windup, LEFT-down strike, upright neutral recovery. Full blade with extra top and left padding. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "axe-arc",
+        "armor-break"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/obsidian-soldier/danger-1-generated.png",
+      "issues": [
+        "通常斧撃と溜め・発動の形が近い。危険行動の斧刃の白い反射と専用の溜めを明確にする。",
+        "頭上の斧・マントの余白と発動時の斧先を確認する。"
+      ]
+    },
+    {
+      "id": "young-fire-dragon/idle",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/young-fire-dragon.png",
+      "guide": null,
+      "source": "sources/young-fire-dragon/idle-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. 幼火竜. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/young-fire-dragon/idle-generated.png",
+      "issues": [
+        "翼の大きさと尾先の高さが2コマ目で変わる。呼吸の意図内か、体格変化かを連続再生で判定する。"
+      ]
+    },
+    {
+      "id": "young-fire-dragon/reaction",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/young-fire-dragon.png",
+      "guide": null,
+      "source": "sources/young-fire-dragon/reaction-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. 幼火竜. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/young-fire-dragon/reaction-generated.png",
+      "issues": [
+        "被弾で両前脚が浮くため後脚への荷重と接続を検収する。",
+        "倒れた姿勢で隠れる脚を、付け根から足先まで追って4脚の所属を確認する。"
+      ]
+    },
+    {
+      "id": "young-fire-dragon/attack",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "attack",
+      "label": "爪撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/young-fire-dragon.png",
+      "guide": null,
+      "source": "sources/young-fire-dragon/attack-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 幼火竜. The same short original claws, NEVER elongated. One near front limb retracts, coils, rakes LEFT and returns. Other original limbs support body and stay connected; wing roots and torso size unchanged. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "claw-arc"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/young-fire-dragon/attack-generated.png",
+      "issues": [
+        "3コマ目の爪が大きく伸びる。基準の足先寸法・爪の所属・見切れを確認する。",
+        "溜めで後脚に体重をかけて立つ。隠れた前脚の接続と荷重を確認する。"
+      ]
+    },
+    {
+      "id": "young-fire-dragon/danger-1",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "danger-1",
+      "label": "灼球",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/young-fire-dragon.png",
+      "guide": null,
+      "source": "sources/young-fire-dragon/danger-1-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 幼火竜. Neck retracts RIGHT, tiny ember attached inside open mouth, mouth faces LEFT at release, neutral recovery. NO detached fireball in any body cell. Wings retain canonical dimensions. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "fireball",
+        "fireball-impact"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/young-fire-dragon/danger-1-generated.png",
+      "issues": [
+        "溜めで描かれた火球と別の飛行エフェクトの二重表示を避けるよう発射位置と時刻を決める。",
+        "翼・首・胸の形が発動で伸びる。復帰から待機への体格を揃える。"
+      ]
+    },
+    {
+      "id": "young-fire-dragon/move-1",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 0,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/young-fire-dragon.png",
+      "guide": "guides/young-fire-dragon/frame-1.png",
+      "source": "sources/young-fire-dragon/move-frame-1-v2.png",
+      "firstPass": "sources/young-fire-dragon/move-1-generated.png",
+      "issues": [
+        "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+        "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。",
+        "浮いた前足の爪が丸まり、前半から足首・足先の形が変わる。",
+        "6コマ目で口が開き、頭の表情と輪郭が変わる。6→1の体格・表情・支持足を確認する。",
+        "奥後脚が隠れるコマの接続、3→4の脚の所属を検収する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 1 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (417,848), hip (417,633), knee (521,708); RF LIFTED SWING paw (381,796), hip (381,611), knee (495,671); LH LIFTED SWING paw (699,793), hip (699,610), knee (585,688); RH GROUND SUPPORT paw (663,802), hip (663,588), knee (559,680). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "young-fire-dragon/move-2",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 1,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/young-fire-dragon.png",
+      "guide": "guides/young-fire-dragon/frame-2.png",
+      "source": "sources/young-fire-dragon/move-frame-2-v2.png",
+      "firstPass": "sources/young-fire-dragon/move-1-generated.png",
+      "issues": [
+        "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+        "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。",
+        "浮いた前足の爪が丸まり、前半から足首・足先の形が変わる。",
+        "6コマ目で口が開き、頭の表情と輪郭が変わる。6→1の体格・表情・支持足を確認する。",
+        "奥後脚が隠れるコマの接続、3→4の脚の所属を検収する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 2 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (448,845), hip (417,633), knee (533,687); RF LIFTED SWING paw (355,813), hip (381,611), knee (475,700); LH LIFTED SWING paw (671,811), hip (699,610), knee (578,675); RH GROUND SUPPORT paw (681,801), hip (663,588), knee (569,691). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "young-fire-dragon/move-3",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 2,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/young-fire-dragon.png",
+      "guide": "guides/young-fire-dragon/frame-3.png",
+      "source": "sources/young-fire-dragon/move-frame-3-v2.png",
+      "firstPass": "sources/young-fire-dragon/move-1-generated.png",
+      "issues": [
+        "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+        "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。",
+        "浮いた前足の爪が丸まり、前半から足首・足先の形が変わる。",
+        "6コマ目で口が開き、頭の表情と輪郭が変わる。6→1の体格・表情・支持足を確認する。",
+        "奥後脚が隠れるコマの接続、3→4の脚の所属を検収する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 3 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (448,827), hip (417,633), knee (539,675); RF GROUND SUPPORT paw (355,828), hip (381,611), knee (470,705); LH GROUND SUPPORT paw (671,827), hip (699,610), knee (583,685); RH LIFTED SWING paw (681,789), hip (663,588), knee (565,687). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "young-fire-dragon/move-4",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 3,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/young-fire-dragon.png",
+      "guide": "guides/young-fire-dragon/frame-4.png",
+      "source": "sources/young-fire-dragon/move-frame-4-v2.png",
+      "firstPass": "sources/young-fire-dragon/move-2-generated.png",
+      "issues": [
+        "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+        "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。",
+        "浮いた前足の爪が丸まり、前半から足首・足先の形が変わる。",
+        "6コマ目で口が開き、頭の表情と輪郭が変わる。6→1の体格・表情・支持足を確認する。",
+        "奥後脚が隠れるコマの接続、3→4の脚の所属を検収する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 4 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (417,812), hip (417,633), knee (532,690); RF GROUND SUPPORT paw (381,826), hip (381,611), knee (485,686); LH GROUND SUPPORT paw (699,824), hip (699,610), knee (595,702); RH LIFTED SWING paw (663,778), hip (663,588), knee (551,669). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "young-fire-dragon/move-5",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 4,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/young-fire-dragon.png",
+      "guide": "guides/young-fire-dragon/frame-5.png",
+      "source": "sources/young-fire-dragon/move-frame-5-v2.png",
+      "firstPass": "sources/young-fire-dragon/move-2-generated.png",
+      "issues": [
+        "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+        "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。",
+        "浮いた前足の爪が丸まり、前半から足首・足先の形が変わる。",
+        "6コマ目で口が開き、頭の表情と輪郭が変わる。6→1の体格・表情・支持足を確認する。",
+        "奥後脚が隠れるコマの接続、3→4の脚の所属を検収する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 5 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (386,833), hip (417,633), knee (508,724); RF GROUND SUPPORT paw (407,823), hip (381,611), knee (496,669); LH GROUND SUPPORT paw (726,822), hip (699,610), knee (611,719); RH LIFTED SWING paw (645,792), hip (663,588), knee (547,662). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "young-fire-dragon/move-6",
+      "enemy": "young-fire-dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 5,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/young-fire-dragon.png",
+      "guide": "guides/young-fire-dragon/frame-6.png",
+      "source": "sources/young-fire-dragon/move-frame-6-v2.png",
+      "firstPass": "sources/young-fire-dragon/move-2-generated.png",
+      "issues": [
+        "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+        "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。",
+        "浮いた前足の爪が丸まり、前半から足首・足先の形が変わる。",
+        "6コマ目で口が開き、頭の表情と輪郭が変わる。6→1の体格・表情・支持足を確認する。",
+        "奥後脚が隠れるコマの接続、3→4の脚の所属を検収する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 6 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (386,850), hip (417,633), knee (502,730); RF LIFTED SWING paw (407,809), hip (381,611), knee (501,658); LH LIFTED SWING paw (726,807), hip (699,610), knee (606,715); RH GROUND SUPPORT paw (645,804), hip (663,588), knee (551,669). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "magma-salamander/idle",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/magma-salamander.png",
+      "guide": null,
+      "source": "sources/magma-salamander/idle-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. マグマサラマンダー. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/magma-salamander/idle-generated.png",
+      "issues": [
+        "赤い背景光が広範囲に混入。原画の透過と背景分離を修正する。",
+        "2コマ目で胸・頭が大きく持ち上がり、呼吸としては体格変化が強い。"
+      ]
+    },
+    {
+      "id": "magma-salamander/reaction",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/magma-salamander.png",
+      "guide": null,
+      "source": "sources/magma-salamander/reaction-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. マグマサラマンダー. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/magma-salamander/reaction-generated.png",
+      "issues": [
+        "赤い背景光が混入。",
+        "被弾の姿勢差が小さい。重い本体の怯みと復帰をもう少し明確にする。",
+        "撃破時も溶岩の光が残り、最終コマの隠れた4脚の接続も検収が必要。"
+      ]
+    },
+    {
+      "id": "magma-salamander/attack",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "attack",
+      "label": "噛みつき",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/magma-salamander.png",
+      "guide": null,
+      "source": "sources/magma-salamander/attack-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. マグマサラマンダー. Keep head aligned forward; no upward gaze. Jaw pulls right 25px, opens, lunges LEFT 35px, returns neutral. Neck NEVER stretches or changes thickness. All four legs support body. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "bite-impact"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/magma-salamander/attack-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "溜めで頭が大きく上を向き、発動で首と胴体が伸びる。噛みつきの前方軌道と体格を整理する。"
+      ]
+    },
+    {
+      "id": "magma-salamander/danger-1",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "danger-1",
+      "label": "双溶岩弾",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/magma-salamander.png",
+      "guide": null,
+      "source": "sources/magma-salamander/danger-1-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. マグマサラマンダー. Neck retracts RIGHT without torso/neck elongation; dorsal fins pulse low then bright in held windup; LEFT mouth release pose can be replayed twice, neutral recovery. Tiny mouth light ONLY, NO detached bomb. Separate events at 0.8 second spacing. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "lava-bomb",
+        "lava-impact",
+        "lava-pool"
+      ],
+      "repeat": 2,
+      "firstPass": "sources/magma-salamander/danger-1-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "噛みつきに近い4ポーズで、背の2回点灯と2発の時間差を読むコマが足りない。専用の溜め・発射反復を設計する。",
+        "口の発射点を別の溶岩弾へ合わせる。"
+      ]
+    },
+    {
+      "id": "magma-salamander/danger-2",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "danger-2",
+      "label": "灼熱大扇",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/magma-salamander.png",
+      "guide": null,
+      "source": "sources/magma-salamander/danger-2-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. マグマサラマンダー. Neck retracts RIGHT and DOWN slightly, dorsal fins and chest brighten; jaw releases LEFT with torso remaining low; neutral recovery. Four planted legs. Mouth emitter only; fan separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "fire-fan",
+        "burn"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/magma-salamander/danger-2-generated.png",
+      "issues": [
+        "溜めで胸が大きく伸び、首を引く動きより上体を起こす動きが強い。基準体格と専用の首の軌道を合わせる。",
+        "広い火炎扇の発射点を口に合わせる。"
+      ]
+    },
+    {
+      "id": "magma-salamander/move-1",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 0,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/magma-salamander.png",
+      "guide": "guides/magma-salamander/frame-1.png",
+      "source": "sources/magma-salamander/move-frame-1-v2.png",
+      "firstPass": "sources/magma-salamander/move-1-generated.png",
+      "issues": [
+        "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+        "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+        "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+        "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 1 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (389,850), hip (389,689), knee (476,739); RF LIFTED SWING paw (353,799), hip (353,667), knee (448,702); LH LIFTED SWING paw (708,793), hip (708,663), knee (613,712); RH GROUND SUPPORT paw (673,802), hip (673,641), knee (585,705). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "magma-salamander/move-2",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 1,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/magma-salamander.png",
+      "guide": "guides/magma-salamander/frame-2.png",
+      "source": "sources/magma-salamander/move-frame-2-v2.png",
+      "firstPass": "sources/magma-salamander/move-1-generated.png",
+      "issues": [
+        "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+        "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+        "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+        "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 2 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (420,847), hip (389,689), knee (487,714); RF LIFTED SWING paw (327,815), hip (353,667), knee (428,735); LH LIFTED SWING paw (680,810), hip (708,663), knee (607,694); RH GROUND SUPPORT paw (690,800), hip (673,641), knee (596,719). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "magma-salamander/move-3",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 2,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/magma-salamander.png",
+      "guide": "guides/magma-salamander/frame-3.png",
+      "source": "sources/magma-salamander/move-frame-3-v2.png",
+      "firstPass": "sources/magma-salamander/move-1-generated.png",
+      "issues": [
+        "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+        "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+        "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+        "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 3 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (420,830), hip (389,689), knee (490,699); RF GROUND SUPPORT paw (327,830), hip (353,667), knee (424,739); LH GROUND SUPPORT paw (680,826), hip (708,663), knee (610,706); RH LIFTED SWING paw (690,788), hip (673,641), knee (592,715). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "magma-salamander/move-4",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 3,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/magma-salamander.png",
+      "guide": "guides/magma-salamander/frame-4.png",
+      "source": "sources/magma-salamander/move-frame-4-v2.png",
+      "firstPass": "sources/magma-salamander/move-2-generated.png",
+      "issues": [
+        "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+        "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+        "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+        "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 4 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (389,815), hip (389,689), knee (485,721); RF GROUND SUPPORT paw (353,828), hip (353,667), knee (441,717); LH GROUND SUPPORT paw (708,824), hip (708,663), knee (621,727); RH LIFTED SWING paw (673,777), hip (673,641), knee (579,693). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "magma-salamander/move-5",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 4,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/magma-salamander.png",
+      "guide": "guides/magma-salamander/frame-5.png",
+      "source": "sources/magma-salamander/move-frame-5-v2.png",
+      "firstPass": "sources/magma-salamander/move-2-generated.png",
+      "issues": [
+        "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+        "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+        "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+        "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 5 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (358,835), hip (389,689), knee (460,761); RF GROUND SUPPORT paw (379,826), hip (353,667), knee (450,695); LH GROUND SUPPORT paw (736,821), hip (708,663), knee (638,748); RH LIFTED SWING paw (655,791), hip (673,641), knee (575,683). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "magma-salamander/move-6",
+      "enemy": "magma-salamander",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 5,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/magma-salamander.png",
+      "guide": "guides/magma-salamander/frame-6.png",
+      "source": "sources/magma-salamander/move-frame-6-v2.png",
+      "firstPass": "sources/magma-salamander/move-2-generated.png",
+      "issues": [
+        "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+        "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+        "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+        "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 6 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (358,852), hip (389,689), knee (456,765); RF LIFTED SWING paw (379,811), hip (353,667), knee (454,684); LH LIFTED SWING paw (736,806), hip (708,663), knee (635,744); RH GROUND SUPPORT paw (655,803), hip (673,641), knee (578,691). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "obsidian-executioner/idle",
+      "enemy": "obsidian-executioner",
+      "region": "volcano",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-executioner.png",
+      "guide": null,
+      "source": "sources/obsidian-executioner/idle-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. 黒曜の処刑者. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-executioner/idle-generated.png",
+      "issues": [
+        "マントが2コマ目で大きく広がる。復帰・ループで突発的に跳ねないか確認する。",
+        "コマごとの胴体サイズと足元の高さを採用時に揃える。"
+      ]
+    },
+    {
+      "id": "obsidian-executioner/reaction",
+      "enemy": "obsidian-executioner",
+      "region": "volcano",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-executioner.png",
+      "guide": null,
+      "source": "sources/obsidian-executioner/reaction-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. 黒曜の処刑者. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-executioner/reaction-generated.png",
+      "issues": [
+        "被弾で兜と首・肩の位置が変わる。頭部の接続と戻りを確認する。",
+        "撃破後も斧と鎧の光が強い。終端の消灯と両刃の形を確認する。"
+      ]
+    },
+    {
+      "id": "obsidian-executioner/move-1",
+      "enemy": "obsidian-executioner",
+      "region": "volcano",
+      "motion": "move-1",
+      "label": "移動 1〜3",
+      "cols": 3,
+      "rows": 1,
+      "reference": "references/obsidian-executioner.png",
+      "guide": null,
+      "source": "sources/obsidian-executioner/move-1-v2.png",
+      "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 黒曜の処刑者 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 1-3: near foot x=470,430,410; far foot x=620,650,680; near foot lifts 30px at frame2. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous.  Keep exact same canonical armor/face/wing/tail proportions in both halves; anatomical left leg near, right leg far. Grounded sole y=820. Full neutral return across 3->4 and 6->1. No crouched foot becoming a hand. Adult girl face clearly LEFT. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-executioner/move-1-generated.png",
+      "issues": [
+        "浮いた足の甲・膝とマントの奥の脚を検収する。後半との支持足・接地を揃える。"
+      ]
+    },
+    {
+      "id": "obsidian-executioner/move-2",
+      "enemy": "obsidian-executioner",
+      "region": "volcano",
+      "motion": "move-2",
+      "label": "移動 4〜6",
+      "cols": 3,
+      "rows": 1,
+      "reference": "references/obsidian-executioner.png",
+      "guide": null,
+      "source": "sources/obsidian-executioner/move-2-v2.png",
+      "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 黒曜の処刑者 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 4-6: far foot x=650,610,590; near foot x=430,470,500; far foot lifts 30px at frame5. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous.  Keep exact same canonical armor/face/wing/tail proportions in both halves; anatomical left leg near, right leg far. Grounded sole y=820. Full neutral return across 3->4 and 6->1. No crouched foot becoming a hand. Adult girl face clearly LEFT. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/obsidian-executioner/move-2-generated.png",
+      "issues": [
+        "前半と後半で足の甲・膝の向きが変わる。3→4・6→1の支持とマントの接続を確認する。",
+        "待機・移動間の胴体の基準位置合わせが必要。"
+      ]
+    },
+    {
+      "id": "obsidian-executioner/attack",
+      "enemy": "obsidian-executioner",
+      "region": "volcano",
+      "motion": "attack",
+      "label": "斧撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-executioner.png",
+      "guide": null,
+      "source": "sources/obsidian-executioner/attack-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 黒曜の処刑者. Exactly SAME original axe blade shape and haft length; both hands remain attached to haft. Windup, lifted blade with generous top padding, LEFT-down cut, upright neutral recovery. NO oversized blade or mutated helmet. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "axe-arc"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/obsidian-executioner/attack-generated.png",
+      "issues": [
+        "頭上の斧の刃が原画上端に接し、見切れの疑いがある。修正版では武器全体の余白を確保する。",
+        "発動の両刃斧が大きく、柄の長さ・手の位置・刃形がコマ間で変わる。固定武器として合わせる。"
+      ]
+    },
+    {
+      "id": "obsidian-executioner/danger-1",
+      "enemy": "obsidian-executioner",
+      "region": "volcano",
+      "motion": "danger-1",
+      "label": "断罪大薙ぎ",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-executioner.png",
+      "guide": null,
+      "source": "sources/obsidian-executioner/danger-1-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 黒曜の処刑者. Distinct HORIZONTAL great sweep, never overhead: SAME double axe pulled to RIGHT shoulder, held beside shoulder with waist turned 15 degrees, broad LEFT horizontal waist-height sweep, upright neutral return. Both hands continuously grip SAME haft. Cape attached, restrained lag. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "heavy-axe-arc"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/obsidian-executioner/danger-1-generated.png",
+      "issues": [
+        "溜めが肩へ引く姿勢より頭上姿勢になり、断層斬と区別しにくい。大薙ぎ専用の肩・腰の回転を整理する。",
+        "頭上の刃と発動の左先端、マントの見切れを検収する。"
+      ]
+    },
+    {
+      "id": "obsidian-executioner/danger-2",
+      "enemy": "obsidian-executioner",
+      "region": "volcano",
+      "motion": "danger-2",
+      "label": "断層斬",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/obsidian-executioner.png",
+      "guide": null,
+      "source": "sources/obsidian-executioner/danger-2-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 黒曜の処刑者. Distinct OVERHEAD slam: SAME double axe raised above head with very ample top padding, held vertical windup, full blade slams LEFT-down to ground, upright neutral return. Same haft, both grips. Cape attached with modest lag. Ground crack separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "fissure",
+        "armor-break"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/obsidian-executioner/danger-2-generated.png",
+      "issues": [
+        "発動でマントが高く跳ねる。背・腰への接続と復帰の連続性を検収する。",
+        "斧先の着地点を地割れの開始点へ合わせる。武器サイズと頭上余白を確認する。"
+      ]
+    },
+    {
+      "id": "dragon-girl/idle",
+      "enemy": "dragon-girl",
+      "region": "volcano",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon-girl.png",
+      "guide": null,
+      "source": "sources/dragon-girl/idle-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. ドラゴンガール. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/dragon-girl/idle-generated.png",
+      "issues": [
+        "待機の尾先と翼端の位置変化が大きい。4→1のつながりと胴体の揺れを確認する。",
+        "本編の左向きとしては顔が正面寄り。行動素材との向きを揃える。"
+      ]
+    },
+    {
+      "id": "dragon-girl/reaction",
+      "enemy": "dragon-girl",
+      "region": "volcano",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon-girl.png",
+      "guide": null,
+      "source": "sources/dragon-girl/reaction-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. ドラゴンガール. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/dragon-girl/reaction-generated.png",
+      "issues": [
+        "撃破姿勢で手・脚・尾が重なる。赤い手と金爪の足の所属、翼の付け根を追って確認する。",
+        "撃破後も翼膜が明るい。終端の状態差と待機からの位置合わせを確認する。"
+      ]
+    },
+    {
+      "id": "dragon-girl/move-1",
+      "enemy": "dragon-girl",
+      "region": "volcano",
+      "motion": "move-1",
+      "label": "移動 1〜3",
+      "cols": 3,
+      "rows": 1,
+      "reference": "references/dragon-girl.png",
+      "guide": null,
+      "source": "sources/dragon-girl/move-1-v2.png",
+      "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of ドラゴンガール in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 1-3: near foot x=470,430,410; far foot x=620,650,680; near foot lifts 30px at frame2. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous.  Keep exact same canonical armor/face/wing/tail proportions in both halves; anatomical left leg near, right leg far. Grounded sole y=820. Full neutral return across 3->4 and 6->1. No crouched foot becoming a hand. Adult girl face clearly LEFT. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/dragon-girl/move-1-generated.png",
+      "issues": [
+        "上げた脚と腕の反対振りが小さく、歩行の左右交代が読みづらい。脚の所属と支持を確認する。",
+        "翼を広げたまま尾が動く。身体の基準位置と地面への接続を固定する。"
+      ]
+    },
+    {
+      "id": "dragon-girl/move-2",
+      "enemy": "dragon-girl",
+      "region": "volcano",
+      "motion": "move-2",
+      "label": "移動 4〜6",
+      "cols": 3,
+      "rows": 1,
+      "reference": "references/dragon-girl.png",
+      "guide": null,
+      "source": "sources/dragon-girl/move-2-v2.png",
+      "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of ドラゴンガール in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 4-6: far foot x=650,610,590; near foot x=430,470,500; far foot lifts 30px at frame5. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous.  Keep exact same canonical armor/face/wing/tail proportions in both halves; anatomical left leg near, right leg far. Grounded sole y=820. Full neutral return across 3->4 and 6->1. No crouched foot becoming a hand. Adult girl face clearly LEFT. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/dragon-girl/move-2-generated.png",
+      "issues": [
+        "両半分とも画面左の脚を上げる構図が強く、前半・後半の左右交代が弱い。膝と足先の所属を確定して修正する。",
+        "3→4・6→1で支持足・尾先・体格がつながるか確認する。"
+      ]
+    },
+    {
+      "id": "dragon-girl/attack",
+      "enemy": "dragon-girl",
+      "region": "volcano",
+      "motion": "attack",
+      "label": "爪撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon-girl.png",
+      "guide": null,
+      "source": "sources/dragon-girl/attack-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴンガール. The same short original claws, NEVER elongated. One near front limb retracts, coils, rakes LEFT and returns. Other original limbs support body and stay connected; wing roots and torso size unchanged. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "claw-arc"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/dragon-girl/attack-generated.png",
+      "issues": [
+        "爪が待機より大きく伸びる。指・爪の数と寸法、腕から手の接続を合わせる。",
+        "復帰が低い構えのため直立待機へのつながりを確認する。"
+      ]
+    },
+    {
+      "id": "dragon-girl/danger-1",
+      "enemy": "dragon-girl",
+      "region": "volcano",
+      "motion": "danger-1",
+      "label": "紅蓮三連球",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon-girl.png",
+      "guide": null,
+      "source": "sources/dragon-girl/danger-1-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴンガール. Adult dragon girl. Face turned LEFT consistently. Both hands gather at chest, palms spread with tiny attached ember light, both palms extend LEFT as repeatable release, upright neutral return. Fingers connected and original claw sizes. NO free fireball in body sheet. Separate three launch events 0.8 seconds apart. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "fireball",
+        "fireball-impact"
+      ],
+      "repeat": 3,
+      "firstPass": "sources/dragon-girl/danger-1-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "発動コマに3つの大きな火球が直接描かれている。身体と飛行エフェクトを分離し、0.8秒差の三連球に対応させる。",
+        "別の火球素材を重ねると二重に描かれる。手の発射点と指の接続も検収する。"
+      ]
+    },
+    {
+      "id": "dragon-girl/danger-2",
+      "enemy": "dragon-girl",
+      "region": "volcano",
+      "motion": "danger-2",
+      "label": "紅翼竜息",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon-girl.png",
+      "guide": null,
+      "source": "sources/dragon-girl/danger-2-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴンガール. Adult dragon girl. Wings open modestly maintaining SAME span and shape; chest then throat light; torso leans LEFT and mouth opens LEFT at release; upright neutral return. Both feet planted, tail counterbalances, complete wing tips. NO beam in body sheet. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "fire-beam",
+        "burn"
+      ],
+      "repeat": 2,
+      "firstPass": "sources/dragon-girl/danger-2-generated.png",
+      "issues": [
+        "翼端がセル境界に近く、発動で翼の形と広さが大きく変わる。付け根・見切れを確認する。",
+        "口の発射点を横長ブレスへ合わせ、逆向きの矢印に見えないか背景上で検収する。"
+      ]
+    },
+    {
+      "id": "dragon/idle",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon.png",
+      "guide": null,
+      "source": "sources/dragon/idle-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. ドラゴン. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/dragon/idle-generated.png",
+      "issues": [
+        "胸・翼周囲に赤い背景光が混入。透過素材としての修正が必要。",
+        "2コマ目で翼の広さと尾の高さが変わり、画面上の占有範囲が揺れる。"
+      ]
+    },
+    {
+      "id": "dragon/reaction",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon.png",
+      "guide": null,
+      "source": "sources/dragon/reaction-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. ドラゴン. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "firstPass": "sources/dragon/reaction-generated.png",
+      "issues": [
+        "尾先・翼端がセル境界に近い。",
+        "倒れた状態で脚の足先が重なる。全4脚の付け根から足先を追う。",
+        "終端でも胸と尾に強い溶岩光が残る。消灯と状態差を検収する。"
+      ]
+    },
+    {
+      "id": "dragon/attack",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "attack",
+      "label": "爪撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon.png",
+      "guide": null,
+      "source": "sources/dragon/attack-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. The same short original claws, NEVER elongated. One near front limb retracts, coils, rakes LEFT and returns. Other original limbs support body and stay connected; wing roots and torso size unchanged. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "claw-arc"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/dragon/attack-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "爪を上げて払う動きで前脚が腕状に伸びる。4脚の所属・爪の寸法・荷重を確認する。",
+        "爪先と翼が大きく動き、頭・胴体の縮尺にも差がある。"
+      ]
+    },
+    {
+      "id": "dragon/danger-1",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "danger-1",
+      "label": "翼震着地",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon.png",
+      "guide": null,
+      "source": "sources/dragon/danger-1-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. Four-legged dragon. Chest rises slightly, next pose lifts whole body 70px with ALL four connected feet tucked and both wings raised, release lands ALL four feet with knees bent at fixed ground baseline, neutral recovery. Wings stay SAME size and attached; tail uncoils only slightly. Shock VFX separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "landing-shock"
+      ],
+      "repeat": 1,
+      "firstPass": "sources/dragon/danger-1-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "飛翔→着地で翼の大きさと尾の巻き方が大きく変わる。翼根・尾根と4脚の接続を検収する。",
+        "着地フレームの接地点を衝撃輪の中心へ合わせる。"
+      ]
+    },
+    {
+      "id": "dragon/danger-2",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "danger-2",
+      "label": "双脈ブレス",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon.png",
+      "guide": null,
+      "source": "sources/dragon/danger-2-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. Four-legged dragon with four planted feet. Neck retracts RIGHT 35px, chest then throat lights, jaw releases LEFT 40px without stretching torso; neutral recovery. SAME wings and tail. Repeat release for second wave 1 second later; beam separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "fire-beam",
+        "burn"
+      ],
+      "repeat": 2,
+      "firstPass": "sources/dragon/danger-2-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "発動で首・翼・胸の形が伸びる。基準体格と口の固定発射点を合わせる。",
+        "2波のブレスと逆側帯は別エフェクトの配置・時刻として実装する必要がある。"
+      ]
+    },
+    {
+      "id": "dragon/danger-3",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "danger-3",
+      "label": "噴火の三巣",
+      "cols": 2,
+      "rows": 2,
+      "reference": "references/dragon.png",
+      "guide": null,
+      "source": "sources/dragon/danger-3-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. Four-legged dragon. Wings raise, whole torso lifts 80px with FOUR connected tucked feet, wing downbeat and mouth aims down-LEFT release, four feet return neutral. Wing rim light ONLY, NO lava bombs in body. Same wing dimensions and tail shape. Three launches 0.9 seconds apart. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+      "effects": [
+        "lava-bomb",
+        "lava-impact",
+        "lava-pool"
+      ],
+      "repeat": 3,
+      "firstPass": "sources/dragon/danger-3-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "飛翔で4脚の膝と爪が重なる。脚数・所属と翼の付け根を検収する。",
+        "3地点への時間差の溶岩落下は、この本体1ポーズと別素材・配置・時刻で組む必要がある。"
+      ]
+    },
+    {
+      "id": "dragon/move-1",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 0,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/dragon.png",
+      "guide": "guides/dragon/frame-1.png",
+      "source": "sources/dragon/move-frame-1-v2.png",
+      "firstPass": "sources/dragon/move-1-generated.png",
+      "issues": [
+        "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+        "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+        "足先実測とガイド座標の比較は未実施。",
+        "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+        "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+        "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 1 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (417,848), hip (417,633), knee (521,708); RF LIFTED SWING paw (381,796), hip (381,611), knee (495,671); LH LIFTED SWING paw (699,793), hip (699,610), knee (585,688); RH GROUND SUPPORT paw (663,802), hip (663,588), knee (559,680). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "dragon/move-2",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 1,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/dragon.png",
+      "guide": "guides/dragon/frame-2.png",
+      "source": "sources/dragon/move-frame-2-v2.png",
+      "firstPass": "sources/dragon/move-1-generated.png",
+      "issues": [
+        "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+        "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+        "足先実測とガイド座標の比較は未実施。",
+        "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+        "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+        "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 2 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (448,845), hip (417,633), knee (533,687); RF LIFTED SWING paw (355,813), hip (381,611), knee (475,700); LH LIFTED SWING paw (671,811), hip (699,610), knee (578,675); RH GROUND SUPPORT paw (681,801), hip (663,588), knee (569,691). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "dragon/move-3",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 2,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/dragon.png",
+      "guide": "guides/dragon/frame-3.png",
+      "source": "sources/dragon/move-frame-3-v2.png",
+      "firstPass": "sources/dragon/move-1-generated.png",
+      "issues": [
+        "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+        "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+        "足先実測とガイド座標の比較は未実施。",
+        "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+        "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+        "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 3 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (448,827), hip (417,633), knee (539,675); RF GROUND SUPPORT paw (355,828), hip (381,611), knee (470,705); LH GROUND SUPPORT paw (671,827), hip (699,610), knee (583,685); RH LIFTED SWING paw (681,789), hip (663,588), knee (565,687). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "dragon/move-4",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 3,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/dragon.png",
+      "guide": "guides/dragon/frame-4.png",
+      "source": "sources/dragon/move-frame-4-v2.png",
+      "firstPass": "sources/dragon/move-2-generated.png",
+      "issues": [
+        "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+        "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+        "足先実測とガイド座標の比較は未実施。",
+        "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+        "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+        "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 4 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (417,812), hip (417,633), knee (532,690); RF GROUND SUPPORT paw (381,826), hip (381,611), knee (485,686); LH GROUND SUPPORT paw (699,824), hip (699,610), knee (595,702); RH LIFTED SWING paw (663,778), hip (663,588), knee (551,669). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "dragon/move-5",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 4,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/dragon.png",
+      "guide": "guides/dragon/frame-5.png",
+      "source": "sources/dragon/move-frame-5-v2.png",
+      "firstPass": "sources/dragon/move-2-generated.png",
+      "issues": [
+        "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+        "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+        "足先実測とガイド座標の比較は未実施。",
+        "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+        "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+        "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 5 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (386,833), hip (417,633), knee (508,724); RF GROUND SUPPORT paw (407,823), hip (381,611), knee (496,669); LH GROUND SUPPORT paw (726,822), hip (699,610), knee (611,719); RH LIFTED SWING paw (645,792), hip (663,588), knee (547,662). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "dragon/move-6",
+      "enemy": "dragon",
+      "region": "volcano",
+      "motion": "move-single",
+      "frame": 5,
+      "cols": 1,
+      "rows": 1,
+      "reference": "references/dragon.png",
+      "guide": "guides/dragon/frame-6.png",
+      "source": "sources/dragon/move-frame-6-v2.png",
+      "firstPass": "sources/dragon/move-2-generated.png",
+      "issues": [
+        "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+        "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+        "足先実測とガイド座標の比較は未実施。",
+        "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+        "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+        "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+      ],
+      "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 6 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (386,850), hip (417,633), knee (502,730); RF LIFTED SWING paw (407,809), hip (381,611), knee (501,658); LH LIFTED SWING paw (726,807), hip (699,610), knee (606,715); RH GROUND SUPPORT paw (645,804), hip (663,588), knee (551,669). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed."
+    },
+    {
+      "id": "effects/bite-impact",
+      "effect": "bite-impact",
+      "region": "volcano",
+      "label": "灼牙の衝撃",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/bite-impact-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. two jagged incandescent fang streaks converge into a bright orange-white impact, basalt chips and embers. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/bite-impact-generated.png",
+      "issues": [
+        "赤橙の背景光が広範囲に混入。透明な空隙を含めて背景分離する。",
+        "最終コマが左右に開いた大きな光のまま。収束・消失への接続を確認する。"
+      ]
+    },
+    {
+      "id": "effects/claw-arc",
+      "effect": "claw-arc",
+      "region": "volcano",
+      "label": "紅爪の軌跡",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/claw-arc-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. three curved red-gold claw trails sweeping LEFT with crisp white-hot tips and sparse ember fragments. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/claw-arc-generated.png",
+      "issues": [
+        "橙の光がセル全体へ広がる。背景透過と重ね合わせの視認性を修正する。",
+        "最大コマの軌跡が広く、指定のセル余白が足りない。"
+      ]
+    },
+    {
+      "id": "effects/axe-arc",
+      "effect": "axe-arc",
+      "region": "volcano",
+      "label": "黒曜斧の軌跡",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/axe-arc-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. broad short orange-white axe slash crescent sweeping left-down with black obsidian chips. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/axe-arc-generated.png",
+      "issues": [
+        "最大コマが等分セルの境界を越える。原画を保持して個別切り出し位置を確定する。",
+        "4コマ目にも白い主円弧が強く残る。消失へのつながりを確認する。"
+      ]
+    },
+    {
+      "id": "effects/heavy-axe-arc",
+      "effect": "heavy-axe-arc",
+      "region": "volcano",
+      "label": "断罪大薙ぎ",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/heavy-axe-arc-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. spectacular huge 150-degree molten-orange double-edged axe crescent sweeping left, dark inner edge and white-hot rim. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/heavy-axe-arc-generated.png",
+      "issues": [
+        "最大コマの余白が少なく、等分セルを越える部分がある。",
+        "4コマ目は小さくなるが強い円弧が残る。消失へつなぐ必要がある。"
+      ]
+    },
+    {
+      "id": "effects/fire-fan",
+      "effect": "fire-fan",
+      "region": "volcano",
+      "label": "灼熱の扇",
+      "kind": "origin",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/fire-fan-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. huge leftward fan of layered yellow-white flame tongues, red-black outer rim and orange sparks; wide angular fan silhouette. ONE-SHOT fan. FIXED RIGHT mouth origin (850,512); flame grows LEFTward as wide fan. White-gold tongues and red-black outline; final phase sparse dying sparks, almost gone. No backdrop haze. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/fire-fan-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。背景透過と黒い外縁を検収する。",
+        "最大コマの左端がセル・原画の四辺に近い。発射点固定と見切れを確認する。"
+      ]
+    },
+    {
+      "id": "effects/fireball",
+      "effect": "fireball",
+      "region": "volcano",
+      "label": "灼熱火球",
+      "kind": "projectile",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/fireball-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. single LEFT-travelling spherical yellow-white fireball, orange-red shell, fiery tail extends RIGHT; no ground impact. FLIGHT LOOP ONLY: same intact spherical core in all four frames, centered (400,512), short tail points RIGHT and flickers up/neutral/down/neutral. Never explodes, shrinks, vanishes or strikes floor. Frame4->1 seamless. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/fireball-generated.png",
+      "issues": [
+        "背景光が混入。透明な周囲を保つように修正する。",
+        "飛行用シートの最終コマが球の消失・爆散になっている。飛行ループと着弾を分離する。",
+        "発生→最大衝撃→収束という共通VFX指定が飛翔用に適さなかった。次の修正では飛翔の脈動として指定する。"
+      ]
+    },
+    {
+      "id": "effects/fireball-impact",
+      "effect": "fireball-impact",
+      "region": "volcano",
+      "label": "火球爆発",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/fireball-impact-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. one explosive orange-white fireburst with low black-red elliptical boundary, radial sparks, no full opaque smoke disk. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/fireball-impact-generated.png",
+      "issues": [
+        "最大コマがセル境界に近く、白い核が広い。味方・敵の輪郭を覆う範囲を検収する。",
+        "終端の残留炎が強い。残留床と混同しない消失を整える。"
+      ]
+    },
+    {
+      "id": "effects/lava-bomb",
+      "effect": "lava-bomb",
+      "region": "volcano",
+      "label": "落下溶岩弾",
+      "kind": "projectile",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/lava-bomb-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. one falling diagonal down-left black basalt lava bomb with glowing cracks, white-hot core, long tail toward upper-right. FALLING FLIGHT LOOP ONLY: identical intact black basalt bomb centered (430,560), cracked orange core, short tail upper-RIGHT. Tail flickers 4 phases, no breaking apart, explosion or floor. Seamless 4->1. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/lava-bomb-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "飛翔用なのに3コマ目で爆散する。落下のループと着弾エフェクトを分離する。",
+        "発生→最大衝撃→収束という共通指定を、飛翔の脈動・軌道に修正する。"
+      ]
+    },
+    {
+      "id": "effects/lava-impact",
+      "effect": "lava-impact",
+      "region": "volcano",
+      "label": "溶岩着弾",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/lava-impact-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. violent low volcanic impact, black basalt chunks fly outward, orange lava splashes upward, elliptical red-black ground rim. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/lava-impact-generated.png",
+      "issues": [
+        "最大コマで岩片がセル境界へ迫る。原画の余白を確認する。",
+        "低い岩床が全コマに残る。着弾の消失と別の残留床への切り替えを検収する。"
+      ]
+    },
+    {
+      "id": "effects/lava-pool",
+      "effect": "lava-pool",
+      "region": "volcano",
+      "label": "残留溶岩床",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/lava-pool-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. short-lived low elliptical molten pool, dark basalt perimeter clearly visible, internal orange bubbles and sparse sparks, readable open edges. LOW GROUND LOOP ONLY: stable elliptical dark basalt perimeter centered (512,760), shallow molten surface height under 130px, tiny internal bubbles. Same perimeter all four frames. NO tall eruptions or big rocks. Smooth 4->1. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/lava-pool-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "残留床の3コマ目で高い溶岩噴出と大きい岩片が出る。低い床の脈動へ抑え、着弾との役割を分ける。",
+        "4→1の反復で床の外形と飛沫が急に変わらないか確認する。"
+      ]
+    },
+    {
+      "id": "effects/fissure",
+      "effect": "fissure",
+      "region": "volcano",
+      "label": "断層斬の地割れ",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/fissure-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. long LEFT-directed jagged black-red ground fissure opening in sequential segments with molten orange jets and scattered rock; low side-view perspective. ONE-SHOT directional progression with FIXED right origin (860,700): frame1 short crack x740..860, frame2 grows LEFT to x530, frame3 reaches x150, frame4 dies into small dark fragments. Low jagged crack, height under 180px, no giant rocks. Not full-length in all frames. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/fissure-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "全コマで地割れが横帯の全長に出ており、奥へ走る進行が弱い。発動点から先端へ移る順序を修正する。",
+        "最大コマの岩片が高く、細い帯の判定に対して占有範囲が広い。"
+      ]
+    },
+    {
+      "id": "effects/fire-beam",
+      "effect": "fire-beam",
+      "region": "volcano",
+      "label": "双脈竜息",
+      "kind": "origin",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/fire-beam-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. spectacular long horizontal LEFT-directed dragon breath, white-hot narrow core, layered gold-orange flame, clear red-black outer contour, embers trail right. ONE-SHOT LEFTward breath. FIXED narrow round emitter at RIGHT (860,512) in all frames, open broad flame front pushed LEFT. NO right-pointing arrow tip. Phase1 short flame, phase2 stretches LEFT, phase3 full horizontal white-gold core, phase4 very sparse dying tongues. Clear red-black outline. Emitter never shifts. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/fire-beam-generated.png",
+      "issues": [
+        "赤橙の背景光が混入。",
+        "右端が矢印状に尖り、右向きの弾にも見える。右の放射口から左へ押し寄せる炎として発射方向を明確にする。",
+        "最大コマで放射口と左端の位置が変わるため、口の基準点を固定する。"
+      ]
+    },
+    {
+      "id": "effects/landing-shock",
+      "effect": "landing-shock",
+      "region": "volcano",
+      "label": "翼震の着地衝撃",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/landing-shock-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. huge LOW hollow elliptical orange-white shock ring expanding from center with basalt fragments and short flame spires on rim; transparent center. ONE-SHOT LOW hollow elliptical ring centered (512,760), FULLY empty transparent center. Small ring -> expands -> large thin ring -> sparse dying rim fragments. Never fill center with orange light. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/landing-shock-generated.png",
+      "issues": [
+        "輪の中央と周囲に橙の光が混入。中央が透明な衝撃輪として修正する。",
+        "最大コマの外周がセル境界に近い。原画の見切れを検収する。"
+      ]
+    },
+    {
+      "id": "effects/burn",
+      "effect": "burn",
+      "region": "volcano",
+      "label": "火傷",
+      "kind": "status",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/burn-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. compact orange-red ember aura forming a hollow ring around a transparent character-shaped empty center. SMALL STATUS LOOP: only 5-7 tiny orange ember clusters in a broken low hollow oval, empty transparent center. Same compact size in all 4 phases, not an attack flame ring. Smooth 4->1. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/burn-generated.png",
+      "issues": [
+        "火傷の小さな状態表示に対して炎の輪が大きく、攻撃エフェクトに近い。小粒の火種へ縮小・整理する。",
+        "最大コマが原画の端に近い。見切れと反復の寸法差を確認する。",
+        "輪の内側に赤い点が残る。キャラクター中心の透過を検収する。"
+      ]
+    },
+    {
+      "id": "effects/armor-break",
+      "effect": "armor-break",
+      "region": "shared",
+      "label": "破甲",
+      "kind": "status",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "source": "sources/effects/armor-break-v2.png",
+      "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. recognizable small gold-silver shield emblem splits with a crimson crack and sparse orange-metal shards, clean isolated icon, no text. Compact split gold shield icon, clear isolated outline, red fracture, 4 subtle pulse phases. No backdrop or floor. Status loop. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+      "firstPass": "sources/effects/armor-break-generated.png",
+      "issues": [
+        "最終コマで盾の印が消えて粒子だけになる。破甲の付与演出と状態維持のアイコンを分ける。",
+        "反復で盾が毎回復元される構成になる。状態表示には割れた盾の保持コマが必要。"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "enemy": "lava-salamander",
+      "file": "references/lava-salamander.png",
+      "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 418,
+        "height": 418
+      },
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    },
+    {
+      "enemy": "obsidian-soldier",
+      "file": "references/obsidian-soldier.png",
+      "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+      "rect": {
+        "left": 431,
+        "top": 0,
+        "width": 399,
+        "height": 409
+      },
+      "sha256": "e32e29dd7943525d5656d13a9973bdfae81bed56d7a98fac3038447efce39a57"
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "file": "references/young-fire-dragon.png",
+      "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+      "rect": {
+        "left": 830,
+        "top": 0,
+        "width": 424,
+        "height": 409
+      },
+      "sha256": "a13d12a29ea3a0e80223d22a3e1c2e492a9a434845dbc11a1578f0296c4406c8"
+    },
+    {
+      "enemy": "magma-salamander",
+      "file": "references/magma-salamander.png",
+      "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+      "rect": {
+        "left": 0,
+        "top": 409,
+        "width": 474,
+        "height": 404
+      },
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    },
+    {
+      "enemy": "obsidian-executioner",
+      "file": "references/obsidian-executioner.png",
+      "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+      "rect": {
+        "left": 474,
+        "top": 409,
+        "width": 378,
+        "height": 404
+      },
+      "sha256": "f3e9668fb5b632ea2ad16a0d6f0ca6c5eb1fa5c53eee22a445fef708ec7d9aa3"
+    },
+    {
+      "enemy": "dragon-girl",
+      "file": "references/dragon-girl.png",
+      "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+      "rect": {
+        "left": 852,
+        "top": 409,
+        "width": 402,
+        "height": 404
+      },
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    },
+    {
+      "enemy": "dragon",
+      "file": "references/dragon.png",
+      "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+      "rect": {
+        "left": 0,
+        "top": 813,
+        "width": 1254,
+        "height": 441
+      },
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "review/idle/manifest.json",
+    "gif": "review/idle/preview.gif",
+    "contact": "review/idle/contact.png"
+  },
+  {
+    "id": "move",
+    "label": "浮遊移動",
+    "manifest": "review/move/manifest.json",
+    "gif": "review/move/preview.gif",
+    "contact": "review/move/contact.png"
+  },
+  {
+    "id": "attack",
+    "label": "拳撃",
+    "manifest": "review/attack/manifest.json",
+    "gif": "review/attack/preview.gif",
+    "contact": "review/attack/contact.png"
+  },
+  {
+    "id": "danger-1",
+    "label": "魔腕の断界",
+    "manifest": "review/danger-1/manifest.json",
+    "gif": "review/danger-1/preview.gif",
+    "contact": "review/danger-1/contact.png"
+  },
+  {
+    "id": "danger-2",
+    "label": "三界魔柱",
+    "manifest": "review/danger-2/manifest.json",
+    "gif": "review/danger-2/preview.gif",
+    "contact": "review/danger-2/contact.png"
+  },
+  {
+    "id": "danger-3",
+    "label": "封声",
+    "manifest": "review/danger-3/manifest.json",
+    "gif": "review/danger-3/preview.gif",
+    "contact": "review/danger-3/contact.png"
+  },
+  {
+    "id": "danger-4",
+    "label": "終焉の交差",
+    "manifest": "review/danger-4/manifest.json",
+    "gif": "review/danger-4/preview.gif",
+    "contact": "review/danger-4/contact.png"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "review/hit/manifest.json",
+    "gif": "review/hit/preview.gif",
+    "contact": "review/hit/contact.png"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "review/down/manifest.json",
+    "gif": "review/down/preview.gif",
+    "contact": "review/down/contact.png"
+  }
+]

@@ -1,0 +1,4 @@
+.heading p,.catalog-head,.skill-heading p,.skill-choice small{color:#c8ab70}
+.skill-choice[aria-pressed=true]{border-color:#c9aa60;background:#302b20}
+.skill-banner{color:#fff0b9;text-shadow:0 0 18px #ffd05d}
+#timeline{accent-color:#d7b765}.hit-markers i{background:#e8cc8d}

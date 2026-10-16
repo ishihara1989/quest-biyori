@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "kraken",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "kraken-move.png",
+  "preview": "../../../../../../development/assets/enemies/kraken/motions/move/kraken-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/kraken/PROMPT.md",
+  "width": 2816,
+  "height": 512,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/kraken/source/move-registered.png",
+  "sourceScale": 0.515426497277677,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 170,
+        "top": 282,
+        "right": 549,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 813,
+        "height": 458
+      },
+      "sourceAnchor": {
+        "x": 478,
+        "y": 429
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 105,
+        "top": 281,
+        "right": 492,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 813,
+        "y": 0,
+        "width": 813,
+        "height": 458
+      },
+      "sourceAnchor": {
+        "x": 605,
+        "y": 431
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 290,
+        "top": 276,
+        "right": 691,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 458,
+        "width": 813,
+        "height": 458
+      },
+      "sourceAnchor": {
+        "x": 246,
+        "y": 441
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "復帰",
+      "bounds": {
+        "left": 155,
+        "top": 283,
+        "right": 526,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 813,
+        "y": 458,
+        "width": 813,
+        "height": 458
+      },
+      "sourceAnchor": {
+        "x": 508,
+        "y": 428
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/kraken/source/move-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 174446,
+        "left": 11,
+        "top": 68,
+        "right": 747,
+        "bottom": 481,
+        "cx": 379.4803434873829,
+        "cy": 308.55747910528186
+      },
+      {
+        "id": 1,
+        "count": 182868,
+        "left": 771,
+        "top": 67,
+        "right": 1524,
+        "bottom": 482,
+        "cx": 1147.916409650677,
+        "cy": 300.4774044666098
+      },
+      {
+        "id": 3,
+        "count": 193919,
+        "left": 13,
+        "top": 537,
+        "right": 793,
+        "bottom": 962,
+        "cx": 407.56364770857937,
+        "cy": 779.2223918233901
+      },
+      {
+        "id": 4,
+        "count": 172582,
+        "left": 803,
+        "top": 561,
+        "right": 1524,
+        "bottom": 973,
+        "cx": 1171.675151522175,
+        "cy": 801.3561901009375
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

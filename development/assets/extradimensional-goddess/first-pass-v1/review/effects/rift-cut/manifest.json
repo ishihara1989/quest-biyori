@@ -1,0 +1,102 @@
+{
+  "id": "effects/rift-cut",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    1024,
+    256
+  ],
+  "anchor": [
+    512,
+    128
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/rift-cut/review/effects/rift-cut/frame-01.png",
+      "index": 1,
+      "durationMs": 60,
+      "source": "source/effects/rift-cut.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":60,\"center\":[512,128],\"bandSize\":[820,4],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9467736027593785,
+      "lowAlphaPixels": 13615,
+      "edgePixels": 0,
+      "bounds": [
+        21,
+        334,
+        697,
+        398
+      ],
+      "marginFraction": 0.029005524861878452
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/rift-cut/review/effects/rift-cut/frame-02.png",
+      "index": 2,
+      "durationMs": 100,
+      "source": "source/effects/rift-cut.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":100,\"center\":[512,128],\"bandSize\":[820,80],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.8442889411190134,
+      "lowAlphaPixels": 31137,
+      "edgePixels": 0,
+      "bounds": [
+        14,
+        266,
+        711,
+        461
+      ],
+      "marginFraction": 0.016574585635359115
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/rift-cut/review/effects/rift-cut/frame-03.png",
+      "index": 3,
+      "durationMs": 180,
+      "source": "source/effects/rift-cut.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":180,\"center\":[512,128],\"bandSize\":[780,30],\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9288597722902231,
+      "lowAlphaPixels": 19713,
+      "edgePixels": 0,
+      "bounds": [
+        41,
+        322,
+        687,
+        404
+      ],
+      "marginFraction": 0.049723756906077346
+    }
+  ],
+  "sources": [
+    "source/effects/rift-cut.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/rift-cut/contact.png",
+  "gif": "review/effects/rift-cut/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

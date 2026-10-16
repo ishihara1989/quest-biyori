@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lich",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "lich-move.png",
+  "preview": "../../../../../../development/assets/enemies/lich/motions/move/lich-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lich/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/lich/source/move-registered.png",
+  "sourceScale": 0.48042704626334515,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 150,
+      "phase": "開始",
+      "bounds": {
+        "left": 178,
+        "top": 151,
+        "right": 450,
+        "bottom": 421
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 637,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 341,
+        "y": 578
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -10
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 140,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 178,
+        "top": 138,
+        "right": 456,
+        "bottom": 413
+      },
+      "sourceCell": {
+        "x": 637,
+        "y": 0,
+        "width": 711,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -18
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 170,
+      "phase": "作用",
+      "bounds": {
+        "left": 157,
+        "top": 141,
+        "right": 464,
+        "bottom": 405
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 606,
+        "width": 674,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 567
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -26
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 176,
+        "top": 147,
+        "right": 451,
+        "bottom": 413
+      },
+      "sourceCell": {
+        "x": 674,
+        "y": 606,
+        "width": 674,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 571
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -18
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/lich/source/move-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 3,
+      "count": 175004,
+      "left": 58,
+      "top": 63,
+      "right": 625,
+      "bottom": 625,
+      "cx": 321.4262931133003,
+      "cy": 354.89526525108
+    },
+    {
+      "id": 2,
+      "count": 179721,
+      "left": 659,
+      "top": 47,
+      "right": 1240,
+      "bottom": 620,
+      "cx": 926.5271893657391,
+      "cy": 337.2126351400226
+    },
+    {
+      "id": 18,
+      "count": 196465,
+      "left": 40,
+      "top": 653,
+      "right": 681,
+      "bottom": 1204,
+      "cx": 347.91491614282444,
+      "cy": 926.3955004708217
+    },
+    {
+      "id": 19,
+      "count": 176325,
+      "left": 659,
+      "top": 661,
+      "right": 1233,
+      "bottom": 1216,
+      "cx": 928.6997249397419,
+      "cy": 948.6630823762938
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

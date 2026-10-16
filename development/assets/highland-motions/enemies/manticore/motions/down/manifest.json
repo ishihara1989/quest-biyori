@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "enemy": "manticore",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "manticore-down.png",
+  "preview": "manticore-down-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 1600,
+  "height": 580,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 800,
+  "frameHeight": 580,
+  "frameCount": 2,
+  "pivot": {
+    "x": 456,
+    "y": 556
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1220,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../registered/down.png",
+  "sourceScale": 0.7261410788381742,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 320,
+      "phase": "落下・崩れる",
+      "bounds": {
+        "left": 221,
+        "top": 264,
+        "right": 703,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 616,
+        "width": 776,
+        "height": 616
+      },
+      "sourceAnchor": {
+        "x": 396,
+        "y": 458
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 800,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 203,
+        "top": 339,
+        "right": 675,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 776,
+        "y": 616,
+        "width": 776,
+        "height": 616
+      },
+      "sourceAnchor": {
+        "x": 375,
+        "y": 421
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/manticore.png",
+  "originalSources": [
+    "../../../../sources/manticore/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 752,
+          "height": 590
+        },
+        {
+          "x": 752,
+          "y": 0,
+          "width": 679,
+          "height": 590
+        },
+        {
+          "x": 0,
+          "y": 590,
+          "width": 742,
+          "height": 509
+        },
+        {
+          "x": 742,
+          "y": 590,
+          "width": 689,
+          "height": 509
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.9897330595482546,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": []
+}

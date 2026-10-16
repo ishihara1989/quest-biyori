@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "floating-magic-core",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "floating-magic-core-move.png",
+  "preview": "../../../../../../development/assets/enemies/floating-magic-core/motions/move/floating-magic-core-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/floating-magic-core/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/floating-magic-core/source/move-registered.png",
+  "sourceScale": 0.35610766045548653,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "開始",
+      "bounds": {
+        "left": 109,
+        "top": 99,
+        "right": 310,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 543
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 113,
+        "top": 87,
+        "right": 315,
+        "bottom": 267
+      },
+      "sourceCell": {
+        "x": 760,
+        "y": 0,
+        "width": 760,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 396,
+        "y": 550
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -35
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "作用",
+      "bounds": {
+        "left": 109,
+        "top": 96,
+        "right": 318,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 579,
+        "width": 760,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 524
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "復帰",
+      "bounds": {
+        "left": 104,
+        "top": 93,
+        "right": 315,
+        "bottom": 273
+      },
+      "sourceCell": {
+        "x": 760,
+        "y": 579,
+        "width": 760,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 415,
+        "y": 533
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -29
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/floating-magic-core/source/move-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/floating-magic-core/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1448,
+      "height": 1086,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 724,
+          "height": 547
+        },
+        {
+          "x": 724,
+          "y": 0,
+          "width": 724,
+          "height": 547
+        },
+        {
+          "x": 0,
+          "y": 547,
+          "width": 728,
+          "height": 539
+        },
+        {
+          "x": 728,
+          "y": 547,
+          "width": 720,
+          "height": 539
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 32,
+    "legsTucked": false,
+    "groundY": 302,
+    "horizontalAnchor": "central cyan core"
+  }
+}

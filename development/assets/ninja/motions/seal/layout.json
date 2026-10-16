@@ -1,0 +1,32 @@
+{
+  "source": "source/ninja-seal-generated-v1.png",
+  "columns": 3,
+  "rows": 1,
+  "scale": 0.21806853582554517,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 744,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 744,
+        "y": 0,
+        "width": 699,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1443,
+        "y": 0,
+        "width": 729,
+        "height": 724
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "octopus",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "octopus-down.png",
+  "preview": "../../../../../../development/assets/enemies/octopus/motions/down/octopus-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/octopus/PROMPT.md",
+  "width": 768,
+  "height": 288,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 2,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/octopus/source/down-registered.png",
+  "sourceScale": 0.30612244897959184,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 280,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 99,
+        "top": 174,
+        "right": 321,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 424,
+        "width": 760,
+        "height": 424
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 333
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 600,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 112,
+        "top": 193,
+        "right": 322,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 760,
+        "y": 424,
+        "width": 760,
+        "height": 424
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/octopus/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 149971,
+        "left": 97,
+        "top": 103,
+        "right": 725,
+        "bottom": 483,
+        "cx": 426.4363843676444,
+        "cy": 311.65908075561276
+      },
+      {
+        "id": 2,
+        "count": 154935,
+        "left": 824,
+        "top": 103,
+        "right": 1472,
+        "bottom": 494,
+        "cx": 1138.9139703746732,
+        "cy": 331.24278568431924
+      },
+      {
+        "id": 3,
+        "count": 134401,
+        "left": 53,
+        "top": 629,
+        "right": 780,
+        "bottom": 946,
+        "cx": 416.45194604206813,
+        "cy": 824.150430428345
+      },
+      {
+        "id": 4,
+        "count": 106317,
+        "left": 813,
+        "top": 697,
+        "right": 1500,
+        "bottom": 953,
+        "cx": 1147.5692222316281,
+        "cy": 851.8523942549169
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

@@ -1,0 +1,189 @@
+{
+  "id": "black-knight/idle",
+  "label": "黒騎士・待機",
+  "enemy": "black-knight",
+  "motion": "idle",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "剣先とマントがセル境界に近く、12%の指定余白が足りない。原画の四辺を検収する。",
+    "マントの面積と剣の傾きがコマ間で変わる。待機の揺れとして調整する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/black-knight.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "待機1",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/black-knight/idle-generated.png",
+      "sourceSha256": "12c33b6d6192cf782e3fb4caf2604578807e24f85a9d3ce9b9e37eb8677d4a5c",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 655,
+        "height": 589
+      },
+      "sourceAnchor": [
+        414,
+        576
+      ],
+      "scale": 0.4537205081669691,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c2a431ac0e0f8694218e5417afc251e01575378784cb4bad2833ff4ef8d79015",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8586921691894531,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 126,
+        "top": 160,
+        "right": 405,
+        "bottom": 412
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "待機2",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/black-knight/idle-generated.png",
+      "sourceSha256": "12c33b6d6192cf782e3fb4caf2604578807e24f85a9d3ce9b9e37eb8677d4a5c",
+      "sourceRect": {
+        "left": 655,
+        "top": 0,
+        "width": 671,
+        "height": 589
+      },
+      "sourceAnchor": [
+        390,
+        576
+      ],
+      "scale": 0.4537205081669691,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "deede04ce1c66ad4b7e78b4b4f3538bed7f11a5874a3b135960b6ac621e56cbe",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8505096435546875,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 127,
+        "top": 159,
+        "right": 416,
+        "bottom": 412
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "待機3",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/black-knight/idle-generated.png",
+      "sourceSha256": "12c33b6d6192cf782e3fb4caf2604578807e24f85a9d3ce9b9e37eb8677d4a5c",
+      "sourceRect": {
+        "left": 0,
+        "top": 589,
+        "width": 658,
+        "height": 597
+      },
+      "sourceAnchor": [
+        414,
+        558
+      ],
+      "scale": 0.4537205081669691,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "fb599cf410d19076cd291662d19128003ab5064ff261e79413650430c850272d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8562202453613281,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 130,
+        "top": 158,
+        "right": 411,
+        "bottom": 415
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "待機4",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/black-knight/idle-generated.png",
+      "sourceSha256": "12c33b6d6192cf782e3fb4caf2604578807e24f85a9d3ce9b9e37eb8677d4a5c",
+      "sourceRect": {
+        "left": 658,
+        "top": 589,
+        "width": 668,
+        "height": 597
+      },
+      "sourceAnchor": [
+        386,
+        557
+      ],
+      "scale": 0.4537205081669691,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c23bca733a7ce094cea0f8c192a2a3795621aae04f1740dc3e2c5769be0648a2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8561134338378906,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 125,
+        "top": 159,
+        "right": 413,
+        "bottom": 414
+      }
+    }
+  ],
+  "fingerprint": "d620bdbef14c7e1747160dffbaf9b985c64b28d8c42d5d12ac1a3fd9650ac09b",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/black-knight/idle/manifest.json",
+  "sourceFingerprint": "d620bdbef14c7e1747160dffbaf9b985c64b28d8c42d5d12ac1a3fd9650ac09b",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

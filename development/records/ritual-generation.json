@@ -1,0 +1,189 @@
+[
+  {
+    "character": "ninja",
+    "id": "seal",
+    "prompt": "Use case: identity-preserve. Asset type: RPG pixel-art transparent animation atlas. Image 1 is the LOCKED pixel-style and scale reference; image 2 is character design reference only. Create EXACTLY THREE new full-body poses of this same ninja woman in one horizontal row of three equal cells on genuinely transparent RGBA background. No labels, borders, floor or shadows. Match reference pixel density, dark black hair high ponytail, red ribbon/scarf, black face mask, black ninja outfit, red sash, sandals and proportions; no palette/style changes. In each cell use normalized coordinates, feet midpoint (.50,.90), head crown (.49,.24). Facing screen RIGHT, stable feet, no travel. 1: bring both empty hands together at chest (.60,.48) with extended index fingers forming a ninja hand seal, elbows apart. 2: join fingers higher at chin (.59,.40), concentrated eyes, scarf lifts slightly toward left. 3: seal held at chest (.60,.46), fingers visibly interlocked differently, scarf settles. Hands must be EMPTY with no held shuriken in these poses. Clear silhouette and recognisable hand-seal gesture. Subtle breathing loop 1→2→3→1. Keep whole equipment and hair in cells with ample transparent gutters. Sharp crisp pixel outlines and restrained reference highlights; no smooth painted surfaces, no glow effects.",
+    "source": "development/assets/ninja/motions/seal/source/ninja-seal-generated-v1.png",
+    "xCuts": [
+      0,
+      744,
+      1443,
+      2172
+    ],
+    "scale": 0.21806853582554517
+  },
+  {
+    "character": "ninja",
+    "id": "attack-shuriken",
+    "prompt": "Use case: identity-preserve. Asset type: RPG pixel-art transparent attack animation atlas. Image 1 locked pixel style/character proportion reference, image 2 design reference. EXACTLY THREE full-body poses of this SAME ninja woman, one horizontal row of equal cells, real transparent RGBA. Reference black ponytail, red ribbon and scarf, black mask/outfit, red sash, sandals. Facing RIGHT, feet midpoint (.50,.90), hair crown (.49,.24), constant size and ground. Frame 1 wind-up: right hand HOLDING one small grey four-point shuriken pulled behind right shoulder at (.35,.40), elbow bent, body twists slightly back, left hand guarding chest. Frame 2 RELEASE: throwing arm sharply extends toward right, open throwing hand (.79,.44), empty fingers after release, shuriken just separated at (.89,.44), slight red scarf follow-through left, chest lunges forward. Frame 3 follow-through: throwing hand empty and angled down at (.74,.54), arm partly retracts, shuriken has LEFT CELL and is not drawn, body settles toward idle. Keep exactly 1 shuriken in frame 1 and 2, NONE in frame 3. Preserve anatomy, outfit, reference palette and crisp pixel density. Full silhouette stays inside every cell with ample margins. No text, grid, floor, extra weapons, shadows or glow. Short subtle pale pixel streak next to released shuriken only in frame2.",
+    "source": "development/assets/ninja/motions/attack-shuriken/source/ninja-attack-shuriken-generated-v1.png",
+    "xCuts": [
+      0,
+      698,
+      1596,
+      2172
+    ],
+    "scale": 0.23728813559322035,
+    "projectile": {
+      "frame": 1,
+      "rect": {
+        "x": 775,
+        "y": 250,
+        "width": 72,
+        "height": 89
+      },
+      "width": 18,
+      "emission": {
+        "x": 138,
+        "y": -92
+      }
+    }
+  },
+  {
+    "character": "shaman",
+    "id": "attack-staff",
+    "prompt": "Use case: identity-preserve. Asset type: RPG pixel-art attack atlas. Image1 locked pixel style, image2 original character design. EXACTLY THREE full-body poses of SAME shaman woman in horizontal three equal cells. Real transparent RGBA, no labels/grid/floor/shadows. Match dark tan skin, silver high ponytail, gold hoop earrings, brown tribal clothes, teal/orange fabrics, bone ornaments, one brown crooked staff with ivory horned animal skull and turquoise hanging orb. Feet center (.48,.90), hair crown (.45,.23), facing RIGHT, constant body size. Frame1 windup: staff skull at (.28,.26), grip (.43,.55), bring staff diagonally behind shoulder, body coils slightly. Frame2 sweep: skull at (.78,.42), grip (.57,.55), staff swings forward at chest level, arm extends, feathers and orb lag behind. Frame3 follow through: skull at (.83,.57), grip (.61,.67), lower staff toward front, slight knee bend, hair follows left; then returns to idle. Keep skull/shaft physical shape and length consistent while rotating. Short turquoise pixel arc around moving staff in frame2 only; readable body. Keep whole staff/skull/orb/feet/ponytail within cells, generous gutters. Sharp authentic low resolution pixels matching ref, no smooth repainting or palette shifts.",
+    "source": "development/assets/shaman/motions/attack-staff/source/shaman-attack-staff-generated-v1.png",
+    "xCuts": [
+      0,
+      672,
+      1522,
+      2172
+    ],
+    "scale": 0.2808080808080808,
+    "anchors": [
+      null,
+      null,
+      {
+        "x": 220,
+        "y": 659
+      }
+    ],
+    "anchorBasis": "feet"
+  },
+  {
+    "character": "shaman",
+    "id": "chant",
+    "prompt": "Use case: identity-preserve. RPG pixel-art looping chant atlas. Image1 locked pixel style reference; image2 original design. Make EXACTLY THREE new poses of SAME shaman woman in one horizontal row of three generously spaced equal square cells, real transparent RGBA. Preserve silver high ponytail, tan skin, teal/orange tribal dress, gold ornaments, brown crooked staff with ivory horned skull, turquoise hanging orb, same body proportions/pixel density/palette as image1. Facing RIGHT, both feet stationary midpoint (.46,.91), head crown (.43,.26). Staff held near-vertical, skull (.73,.23), gripping hand (.60,.58). Free left palm open before chest (.55,.48), eyes CLOSED chanting. Frame1 relaxed breathing, hair and feathers hang left. Frame2 chest rises subtly, free hand slightly higher (.55,.44), silver ponytail softly lifts left, teal orb shifts slightly. Frame3 breath lowers, hand returns (.55,.47), hair settles. Staff skull and length stay constant; arm pose nearly static; three unique hand/hair motions create a smooth 1→2→3→1 loop. Whole hair, feet, staff and feathers must fit inside .12… .88 cell horizontal and .08… .93 vertical, with EMPTY TRANSPARENT GUTTERS BETWEEN CHARACTERS. No trails, no effects, no text, floor, cast shadows, grid or watercolor rendering.",
+    "source": "development/assets/shaman/motions/chant/source/shaman-chant-generated-v1.png",
+    "xCuts": [
+      0,
+      735,
+      1483,
+      2172
+    ],
+    "scale": 0.2376068376068376
+  },
+  {
+    "character": "shaman",
+    "id": "cast-forward",
+    "prompt": "Use case: identity-preserve. RPG pixel-art casting-release atlas. Image1 LOCKED pixel style/proportion, image2 original design. EXACTLY THREE new full-body poses of same shaman woman, horizontal row of THREE equal square cells, transparent RGBA. Tan skin, silver ponytail, teal/orange tribal clothes, gold hoops, one crooked brown skull staff with ivory horned skull and hanging teal orb. Facing RIGHT, feet midpoint (.44,.91), head crown (.41,.26), same character scale in every frame. Frame1 eyes closed chanting, skull (.71,.22), upright staff, grip (.58,.58), free left hand at chest. Frame2 eyes open, rotate staff clockwise and extend right forearm, skull (.78,.34), grip (.58,.60), shaft diagonally from low left to high right, free hand opens behind. Frame3 eyes focused right, arm FULLY EXTENDED, skull (.84,.43), grip (.64,.57), staff pointing diagonally forward to right, hold forceful release pose, hair streaming slightly left. One same staff, constant shaft LENGTH and skull SIZE at all angles, no extra weapons, no hands on skull. Each full silhouette including ornaments must fit within .08… .93 horizontally and .08… .93 vertically of its OWN CELL, generous blank gutters, don't overlap neighboring cell. Match crisp reference pixels exactly in style, avoid palette shifts. No particles/glow/floor/shadows/text/grid.",
+    "source": "development/assets/shaman/motions/cast-forward/source/shaman-cast-forward-generated-v1.png",
+    "xCuts": [
+      0,
+      697,
+      1425,
+      2172
+    ],
+    "scale": 0.24821428571428572,
+    "connection": {
+      "motion": "chant",
+      "frame": 0
+    },
+    "version": 3,
+    "anchors": [
+      null,
+      null,
+      {
+        "x": 277,
+        "y": 671
+      }
+    ],
+    "frameEdits": [
+      {
+        "frame": 2,
+        "source": "development/assets/shaman/motions/cast-forward/source/shaman-cast-forward-final-left-forward-generated-v3.png",
+        "scale": 0.5831509846827133,
+        "anchor": {
+          "x": 495,
+          "y": 1127
+        },
+        "targetAnchor": {
+          "x": 277,
+          "y": 671
+        },
+        "prompt": "Use case: precise-object-edit / identity-preserve.\nAsset type: ONE corrected final casting-release frame for a transparent pixel-art RPG sprite.\nInput images: Image 1 is the EDIT TARGET: the ORIGINAL final casting frame, which has an extended front arm, an open rear hand and a diagonal staff. Image 2 is the LOCKED pixel-art idle reference for pixel scale, colors and equipment. Image 3 is the original character design reference, especially the bone/tooth necklace and the ONE wooden skull staff.\nPrimary request: Repair the staff construction, make the character's anatomical LEFT arm hold the staff extended FORWARD toward screen RIGHT, keep her anatomical RIGHT arm stretched BACK toward screen LEFT with an OPEN EMPTY palm, and show the ivory bone/tooth necklace clearly at the base of her neck.\nThis is NOT the failed waist-grip pose: do not make a hand hold the staff at the belt and do not put the open empty hand in front. The front, screen-right hand GRIPS the staff firmly. The rear, screen-left hand is OPEN and EMPTY.\nPose planning in normalized canvas coordinates: Preserve Image 1 feet midpoint about (.37,.925), silver hair top about (.33,.19), head and lower body position, right-facing gaze and wide planted stance. Anatomical LEFT shoulder is the far shoulder toward screen right; left upper arm and forearm extend toward screen right at chest height to a closed grip around the shaft near (.64,.47). Anatomical RIGHT shoulder is the near shoulder; right arm sweeps BACK/down to screen-left open hand near (.17,.56). Exactly TWO complete arms, exactly TWO hands, one closed front grip and one empty rear palm. Neither arm crosses over the neck/chest necklace.\nStaff construction: ONE solid long crooked brown wooden staff matching the locked design, retaining the original length, thickness, distinctive ivory horned skull, turquoise spiral mark, suspended turquoise orb and feathers. Use a SINGLE continuous shaft, visible from the lower tail at about (.38,.78), diagonally up-right through the left hand grip (.64,.47), then through the wrapped upper wood to the crook at about (.84,.29). The skull is securely fastened to that upper crook near (.87,.35). The shaft centerline must stay aligned on both sides of the gripping fingers: fingers wrap and occlude a short grip segment, but wood visibly continues along the same diagonal above and below the fist. The lower shaft tail is visible beside the hip/thigh. No disconnected wooden pieces, no extra rods, no impossible fork, no collapsed short shaft, no floating skull or orb, no bent severed shaft at the wrist, no shaft passing through the empty rear palm or neck.\nNecklace: restore the original visible bone/tooth collar directly below the throat and above the dark bust garment. Several distinct small ivory teeth/fangs hang from a gold/ochre cord with the small teal center stone, as in Image 3. Readable pale ivory bones at the collar, not a gold-only necklace and not a skull attached to her neck. Preserve the waist skull ornament separately.\nInvariants: Same tan-skinned female shaman, silver ponytail, amber eyes, pointed ears, gold earrings, teal/orange tribal outfit, arm cuffs, waist skull ornament, leg shapes, boots, pixel-art detail level and original warm/dark colors. Change only the arm/hand ownership, repair the staff geometry, and restore the neck necklace. Keep the target framing, identity, body scale and style. All full silhouette, staff, horn tips, hair, dangling ornaments and toes fit inside the canvas with generous transparent margin. Crisp pixel clusters and hard pixel edges at the SAME effective pixel scale as Image1, no smooth illustration look.\nBackground: actual transparent RGBA. No background, floor, shadow, glow, action effects, labels, arrows, text or grid. Output ONE isolated full-body sprite, not a multi-frame sheet."
+      }
+    ]
+  },
+  {
+    "character": "miko",
+    "id": "attack-wand",
+    "prompt": "Use case: identity-preserve. RPG pixel-art normal attack atlas. Image1 locked pixel style/proportion reference, image2 original design reference. EXACTLY THREE full-body poses of SAME shrine maiden woman in horizontal three equal square cells. Genuine transparent RGBA. Match black long hair, red large head ribbon, white broad sleeves with red trim, red hakama, sandals, SAME wooden gohei wand with white zigzag paper streamers/red tassel. Face RIGHT, feet midpoint (.45,.91), head crown (.43,.24), reference character body size constant. Frame1 windup: raise gohei diagonally behind shoulder, paper tip (.29,.30), grip (.43,.53), torso twists back a little. Frame2 swing: sweep gohei forward to RIGHT, tip (.79,.43), grip (.59,.55), broad sleeve swings after the hand, papers bend with momentum; thin white/gold pixel crescent following just the wand. Frame3 follow-through: wand tip (.82,.62), grip (.60,.70), lowered in front, hair and sleeves lag left; body returns to upright. Same short wooden wand LENGTH in every pose, clear white paper/shaft separation. Every full silhouette must stay inside .08… .92 horizontal and .07… .93 vertical of EACH CELL; ample empty transparent gutters, nothing may spill to another cell. Crisp low resolution pixels identical to reference, no blur/smooth repainting/palette shifts. No text/grid/floor/shadows/extra objects.",
+    "source": "development/assets/miko/motions/attack-wand/source/miko-attack-wand-generated-v1.png",
+    "xCuts": [
+      0,
+      672,
+      1501,
+      2172
+    ],
+    "scale": 0.262
+  },
+  {
+    "character": "miko",
+    "id": "prayer",
+    "columns": 2,
+    "rows": 2,
+    "prompt": "Use case: identity-preserve. RPG pixel-art prayer LOOP atlas. Image1 locked pixel style/proportions; image2 original design. EXACTLY FOUR new full-body poses of SAME shrine maiden in equally sized 2x2 square cells, chronological top-left→top-right→bottom-left→bottom-right, real transparent RGBA. Same black long hair, big red head ribbon, white wide sleeves red trim, red hakama, sandals and same short wooden gohei wand with white zigzag paper and red tassel. Facing RIGHT three-quarter, feet midpoint (.50,.91), head crown (.48,.30), constant body dimensions, same stationary soles. She prays with eyes CLOSED, left palm before chest, right hand raises wand overhead and gently sways it LEFT and RIGHT. 1 LEFT extreme: paper tip (.32,.12), grip (.44,.37), wand above LEFT side of head, torso slight left sway. 2 center rising: tip (.50,.08), grip (.56,.32), wand straight above head, sleeves slightly lift. 3 RIGHT extreme: tip (.77,.12), grip (.65,.37), wand above RIGHT side of head, torso slight right sway. 4 center returning: tip (.50,.13), grip (.56,.38), wand above head slightly lower, sleeves settling differently from frame2. Keep SAME wooden wand shaft LENGTH and paper SIZE; smooth 1→2→3→4→1 loop, NO spinning body. All gohei/hair/ribbons/soles within .06… .94 cell bounds and never cross into adjacent cell, wide transparent gutters. Crisp reference pixel shading, no effects, text, grid, floor or shadows.",
+    "source": "development/assets/miko/motions/prayer/source/miko-prayer-generated-v1.png",
+    "scale": 0.30465116279069765
+  },
+  {
+    "character": "miko",
+    "id": "prayer-release-a",
+    "columns": 2,
+    "rows": 2,
+    "count": 3,
+    "prompt": "Use case: identity-preserve. RPG pixel-art shrine-maiden FULL 360 turn, FIRST HALF animation atlas. Image1 locked pixel style/proportion, image2 design reference. EXACTLY THREE full-body poses in 2x2 equal square cells: top-left frame1, top-right frame2, bottom-left frame3; bottom-right ENTIRELY EMPTY transparent. Genuine transparent RGBA. The same shrine maiden with black long hair, red large head ribbon, white broad sleeve kimono red trim, red hakama, sandals, short wooden gohei with white paper streamers and red tassel. Feet midpoint (.50,.92), head crown (.48,.32), CONSTANT HEIGHT, planted stable center, slight skirt flare. Frame1 START: face toward screen RIGHT at original three-quarter angle, eyes open after prayer, right hand raises same gohei OVERHEAD, paper tip (.57,.10), grip (.58,.36), free hand at chest. Frame2 turn AWAY 90 degrees: REAR RIGHT three-quarter view, face is mostly hidden looking back-right, back and long hair visible, gohei stays overhead at (.54,.10), clothing and sleeve wrap with actual torso rotation, don't just move arms. Frame3 turn AWAY 180 degrees: REAR LEFT three-quarter view, BACK OF HEAD and ribbon clearly visible, face HIDDEN, back/hair covers torso, gohei overhead at (.48,.10). It is continuous rotation around vertical axis, NOT cartwheel or tumbling. Preserve design/pixel density/palette/body scale, complete full gohei and soles visible, margins .06… .94 each own cell. Do NOT draw front faces in rear poses. No trails/effects/shadows/floor/text/grid or duplicates. Final pose will connect to next batch facing screen LEFT.",
+    "source": "development/assets/miko/motions/prayer-release/source/prayer-release-part-1.png"
+  },
+  {
+    "character": "miko",
+    "id": "prayer-release-b",
+    "columns": 2,
+    "rows": 2,
+    "count": 3,
+    "prompt": "Use case: identity-preserve. RPG pixel-art shrine-maiden FULL 360 turn, SECOND HALF animation atlas. Image1 locked pixel style/proportion, image2 original design. EXACTLY THREE full-body poses in equally-sized 2x2 cells, top-left frame4, top-right frame5, bottom-left frame6; bottom-right EMPTY transparent. Real RGBA transparency. Same shrine maiden, black long hair with red large bow, white wide sleeve kimono red trim, red hakama, sandals, SAME short wooden gohei white zigzag paper/red tassel. Feet midpoint (.50,.92), head crown (.48,.32), CONSTANT character HEIGHT and planted center, slight skirt flare. Continues rotation from previous rear-facing pose: Frame4 faces screen LEFT in clear left SIDE profile, face visible with nose pointing LEFT, right hand holds gohei ABOVE HEAD, tip (.45,.10), grip (.47,.36); hair trails right. Frame5 rotates toward camera: FULL FRONT view, symmetrical face and both eyes looking at camera, front kimono visible, gohei still raised at (.57,.10), grip (.61,.36), broad sleeves flare with turning. Frame6 completes 360 degrees back to original RIGHT three-quarter view, face/nose points RIGHT, eyes focused forward, right arm EXTENDS toward screen RIGHT and gohei lowers FORWARD: grip (.67,.51), white paper tip (.84,.36), shaft diagonal forward, left hand lowered behind. One full spin completed; no extra turn. Same wand LENGTH and white paper SIZE in every pose. Everything including raised wand, paper and hair stays within .05… .94 own cell with transparent gutters. Sharp reference pixel shading, no duplicate poses, no effects/text/grid/floor/shadows.",
+    "source": "development/assets/miko/motions/prayer-release/source/prayer-release-part-2.png",
+    "registrationScale": 0.9,
+    "rects": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 684
+      },
+      {
+        "x": 640,
+        "y": 0,
+        "width": 640,
+        "height": 684
+      },
+      {
+        "x": 0,
+        "y": 684,
+        "width": 640,
+        "height": 596
+      }
+    ]
+  },
+  {
+    "character": "miko",
+    "id": "prayer-release",
+    "parts": [
+      "prayer-release-a",
+      "prayer-release-b"
+    ],
+    "scale": 0.2879120879120879
+  }
+]

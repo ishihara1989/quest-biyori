@@ -1,0 +1,103 @@
+{
+  "id": "demon-god/attack",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "attack",
+  "label": "拳撃",
+  "effects": [
+    "demon-impact"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/demon-god/attack-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "魔神",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 142,
+        "top": 1,
+        "right": 705,
+        "bottom": 531
+      },
+      "sourceWidth": 779,
+      "sourceHeight": 538,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 228665,
+      "transparentFraction": 0.5456070359960106
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 72,
+        "top": 9,
+        "right": 624,
+        "bottom": 530
+      },
+      "sourceWidth": 669,
+      "sourceHeight": 538,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 162321,
+      "transparentFraction": 0.45098938103255704
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 44,
+        "top": 10,
+        "right": 770,
+        "bottom": 519
+      },
+      "sourceWidth": 834,
+      "sourceHeight": 548,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 257989,
+      "transparentFraction": 0.5644878257977559
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 79,
+        "top": 7,
+        "right": 602,
+        "bottom": 524
+      },
+      "sourceWidth": 614,
+      "sourceHeight": 548,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 156321,
+      "transparentFraction": 0.4645884352932785
+    }
+  ],
+  "reference": "../../../references/demon-god.png",
+  "originalSources": [
+    "../../../sources/demon-god/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

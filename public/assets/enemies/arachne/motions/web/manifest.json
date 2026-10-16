@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "arachne",
+  "motion": "web",
+  "facing": "left",
+  "label": "クモ糸",
+  "sheet": "arachne-web.png",
+  "preview": "../../../../../../development/assets/enemies/arachne/motions/web/arachne-web-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/arachne/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 800,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/arachne/source/web-registered.png",
+  "sourceScale": 0.556745182012848,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "arachne-web-web-bolt",
+      "type": "spawn-projectile",
+      "effect": "spider-web-bolt",
+      "frame": 2,
+      "timeMs": 380,
+      "power": 0.55
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "web-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 211,
+        "top": 172,
+        "right": 554,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 791,
+        "height": 499
+      },
+      "sourceAnchor": {
+        "x": 238,
+        "y": 482
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "web-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 177,
+        "top": 191,
+        "right": 559,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 791,
+        "y": 0,
+        "width": 791,
+        "height": 499
+      },
+      "sourceAnchor": {
+        "x": 298,
+        "y": 447
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "web-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 129,
+        "top": 185,
+        "right": 550,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 499,
+        "width": 791,
+        "height": 499
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 458
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "web-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "復帰",
+      "bounds": {
+        "left": 211,
+        "top": 174,
+        "right": 559,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 791,
+        "y": 499,
+        "width": 791,
+        "height": 499
+      },
+      "sourceAnchor": {
+        "x": 238,
+        "y": 478
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/arachne/source/web-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 151316,
+        "left": 130,
+        "top": 35,
+        "right": 747,
+        "bottom": 501,
+        "cx": 444.6417761505723,
+        "cy": 288.3257421554892
+      },
+      {
+        "id": 2,
+        "count": 156291,
+        "left": 817,
+        "top": 70,
+        "right": 1504,
+        "bottom": 501,
+        "cx": 1188.373738730957,
+        "cy": 285.0129629985092
+      },
+      {
+        "id": 8,
+        "count": 143870,
+        "left": 17,
+        "top": 561,
+        "right": 775,
+        "bottom": 1003,
+        "cx": 465.5831931604921,
+        "cy": 784.8338708556336
+      },
+      {
+        "id": 7,
+        "count": 154187,
+        "left": 886,
+        "top": 541,
+        "right": 1513,
+        "bottom": 1003,
+        "cx": 1205.1730496085922,
+        "cy": 788.1434945877409
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 431
+    },
+    "origin": {
+      "x": 235.2,
+      "y": 301
+    },
+    "assets": [
+      {
+        "id": "spider-web-bolt",
+        "manifest": "../../../../effects/spider-web-bolt/manifest.json"
+      }
+    ]
+  }
+}

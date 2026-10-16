@@ -1,0 +1,50 @@
+{
+  "id": "demon-armored-soldier/danger-1/raw",
+  "enemy": "demon-armored-soldier",
+  "region": "demon-castle",
+  "motion": "raw-sheet",
+  "label": "鎧崩し（原画のみ）",
+  "kind": "raw-sheet",
+  "sources": [
+    "sources/demon-armored-soldier/danger-1-generated.png"
+  ],
+  "durations": [
+    1000
+  ],
+  "phases": [
+    "切り出し不可・原画"
+  ],
+  "extractionError": "生成された透過・粒子を保持するため、画素マスク方式の切り出しは使わない。矩形の手動切り出しが必要",
+  "enemyLabel": "魔鎧兵",
+  "expectedFrames": 1,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 10,
+        "top": 61,
+        "right": 1289,
+        "bottom": 1119
+      },
+      "sourceWidth": 1312,
+      "sourceHeight": 1199,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1002841,
+      "transparentFraction": 0.6374983471999024
+    }
+  ],
+  "reference": "../../../../references/demon-armored-soldier.png",
+  "originalSources": [
+    "../../../../sources/demon-armored-soldier/danger-1-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

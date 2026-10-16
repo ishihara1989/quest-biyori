@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "spirit-impact",
+  "character": "miko",
+  "subject": "spirit-impact",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "spirit-impact-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 480,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5020242914979757,
+  "frames": [
+    {
+      "index": 0,
+      "file": "spirit-impact-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 88,
+        "t": 100,
+        "r": 459,
+        "b": 416,
+        "n": 83454,
+        "width": 372,
+        "height": 317
+      }
+    },
+    {
+      "index": 1,
+      "file": "spirit-impact-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 35,
+        "t": 29,
+        "r": 490,
+        "b": 464,
+        "n": 118314,
+        "width": 456,
+        "height": 436
+      }
+    },
+    {
+      "index": 2,
+      "file": "spirit-impact-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 8,
+        "t": 22,
+        "r": 486,
+        "b": 460,
+        "n": 139491,
+        "width": 479,
+        "height": 439
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/spirit-impact-generated-v2.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/spirit-impact-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

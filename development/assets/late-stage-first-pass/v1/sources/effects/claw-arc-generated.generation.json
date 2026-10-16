@@ -1,0 +1,27 @@
+{
+  "id": "effects/claw-arc",
+  "effect": "claw-arc",
+  "region": "volcano",
+  "label": "紅爪の軌跡",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/claw-arc-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. three curved red-gold claw trails sweeping LEFT with crisp white-hot tips and sparse ember fragments. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-f31e57f5-8818-41fd-ad01-2d4d2f16b498.png",
+  "sha256": "6718b0ac903381f19d1ac7248984d34e351a57be7a092a018c2b7cf120ba9873",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "3本の爪の軌跡と左向きの白い先端が読み取れる。"
+    ],
+    "issues": [
+      "橙の光がセル全体へ広がる。背景透過と重ね合わせの視認性を修正する。",
+      "最大コマの軌跡が広く、指定のセル余白が足りない。"
+    ]
+  }
+}

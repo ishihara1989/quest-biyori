@@ -1,0 +1,28 @@
+{
+  "id": "dragon-girl/reaction",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "motion": "reaction",
+  "label": "被弾・撃破",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "source": "sources/dragon-girl/reaction-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of ドラゴンガール. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: knees fold and torso falls right-down 100px. Bottom-right TERMINAL DEFEAT: recognizable whole character collapsed/kneeling low, original equipment and wings on body, no gore. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-d2c086ca-b73c-4d6a-9220-040a87cd070f.png",
+  "sha256": "4d6b7b0328607927a4576739593d959e8c9d639318eddd1adafce4590a754bbe",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "怯んだ表情→復帰、膝をつく→地面に崩れるの順序。基準の顔と鎧を保持。"
+    ],
+    "issues": [
+      "撃破姿勢で手・脚・尾が重なる。赤い手と金爪の足の所属、翼の付け根を追って確認する。",
+      "撃破後も翼膜が明るい。終端の状態差と待機からの位置合わせを確認する。"
+    ]
+  }
+}

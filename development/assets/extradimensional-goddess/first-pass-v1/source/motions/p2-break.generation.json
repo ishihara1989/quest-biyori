@@ -1,0 +1,27 @@
+{
+  "id": "motions/p2-break",
+  "source": "source/motions/p2-break.png",
+  "sha256": "85220737fc91ba10e4c501a78f0dc41da1622952e90ed4e735cfe26deeecd994",
+  "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-break.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Interruption followed by rest, not defeat.\nFrames:\n1. L/R=(238,209)/(286,209), interrupted chest-level hold.\n2. L/R=(215,276)/(313,278), palms DROP, shoulders lose tension.\n3. L/R=(185,270)/(335,275), tired rest pose, connected arms.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+  "transparent_background": true,
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-52cc8999-8aee-492d-8981-ab78fb186289.png",
+  "references": [
+    {
+      "file": "../v1/references/phase-1-seated.png",
+      "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+    },
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    },
+    {
+      "file": "source/parts/body-seated.png",
+      "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+    },
+    {
+      "file": "source/parts/body-floating.png",
+      "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+    }
+  ],
+  "attempt": 1
+}

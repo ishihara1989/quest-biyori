@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "spring-carp-guardian",
+  "character": "miko",
+  "subject": "spring-carp",
+  "group": "guardian",
+  "motion": "manifest",
+  "sheet": "spring-carp-manifest.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.3181818181818182,
+  "frames": [
+    {
+      "index": 0,
+      "file": "spring-carp-manifest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 113,
+        "t": 294,
+        "r": 404,
+        "b": 476,
+        "n": 30619,
+        "width": 292,
+        "height": 183
+      }
+    },
+    {
+      "index": 1,
+      "file": "spring-carp-manifest-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 108,
+        "t": 277,
+        "r": 409,
+        "b": 483,
+        "n": 37587,
+        "width": 302,
+        "height": 207
+      }
+    },
+    {
+      "index": 2,
+      "file": "spring-carp-manifest-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 100,
+        "t": 224,
+        "r": 415,
+        "b": 473,
+        "n": 48988,
+        "width": 316,
+        "height": 250
+      }
+    },
+    {
+      "index": 3,
+      "file": "spring-carp-manifest-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 109,
+        "t": 275,
+        "r": 403,
+        "b": 456,
+        "n": 31840,
+        "width": 295,
+        "height": 182
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/spring-carp-guardian-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/spring-carp-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

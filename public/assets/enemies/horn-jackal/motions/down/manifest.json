@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "enemy": "horn-jackal",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "horn-jackal-down.png",
+  "preview": "../../../../../../development/assets/enemies/horn-jackal/motions/down/horn-jackal-down-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 960,
+  "height": 340,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 340,
+  "frameCount": 2,
+  "pivot": {
+    "x": 274,
+    "y": 316
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1220,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/highland-motions/enemies/horn-jackal/registered/down.png",
+  "sourceScale": 0.3663003663003663,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 320,
+      "phase": "落下・崩れる",
+      "bounds": {
+        "left": 148,
+        "top": 188,
+        "right": 391,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 812,
+        "width": 765,
+        "height": 812
+      },
+      "sourceAnchor": {
+        "x": 391,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 141,
+        "top": 246,
+        "right": 388,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 765,
+        "y": 812,
+        "width": 765,
+        "height": 812
+      },
+      "sourceAnchor": {
+        "x": 392,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/horn-jackal.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/horn-jackal/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 647,
+          "height": 689
+        },
+        {
+          "x": 647,
+          "y": 0,
+          "width": 607,
+          "height": 689
+        },
+        {
+          "x": 0,
+          "y": 689,
+          "width": 623,
+          "height": 565
+        },
+        {
+          "x": 623,
+          "y": 689,
+          "width": 631,
+          "height": 565
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.1327800829875518,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [],
+  "action": null
+}

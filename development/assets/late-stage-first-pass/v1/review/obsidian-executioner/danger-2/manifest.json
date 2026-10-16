@@ -1,0 +1,104 @@
+{
+  "id": "obsidian-executioner/danger-2",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "motion": "danger-2",
+  "label": "断層斬",
+  "effects": [
+    "fissure",
+    "armor-break"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-executioner/danger-2-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "黒曜の処刑者",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 54,
+        "top": 184,
+        "right": 664,
+        "bottom": 575
+      },
+      "sourceWidth": 703,
+      "sourceHeight": 607,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 293721,
+      "transparentFraction": 0.6883209403802485
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 37,
+        "top": 15,
+        "right": 533,
+        "bottom": 577
+      },
+      "sourceWidth": 619,
+      "sourceHeight": 607,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 216185,
+      "transparentFraction": 0.5753686793547546
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 46,
+        "top": 29,
+        "right": 672,
+        "bottom": 518
+      },
+      "sourceWidth": 699,
+      "sourceHeight": 583,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 256160,
+      "transparentFraction": 0.6285872736597492
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 25,
+        "top": 57,
+        "right": 582,
+        "bottom": 518
+      },
+      "sourceWidth": 623,
+      "sourceHeight": 583,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 217925,
+      "transparentFraction": 0.5999988987057039
+    }
+  ],
+  "reference": "../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../sources/obsidian-executioner/danger-2-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

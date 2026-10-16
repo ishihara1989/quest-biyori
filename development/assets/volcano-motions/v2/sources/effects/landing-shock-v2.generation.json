@@ -1,0 +1,19 @@
+{
+  "id": "effects/landing-shock",
+  "source": "sources/effects/landing-shock-v2.png",
+  "selected": true,
+  "prompt": "FOUR SMALL isolated JRPG pixel-art VFX thumbnails arranged in EXACT equal 2x2 cells on TRUE transparent PNG. An orange-white LOW THIN HOLLOW elliptical shockwave ring, dark-red rim, only a few tiny basalt chips. Absolutely no glowing disk in center, center transparent. TL small ring diameter160local pixels; TR medium ring diameter240; BL large ring diameter320; BR only5 tiny dim rim fragments, no full ring. Each local cell is512x512, ground center(256,350), so even the widest ring has96px CLEAR SPACE on both sides. Ellipse height under100pixels, entire sprites stay INSIDE central60% of cell. VERY WIDE totally clear gutters. NO clipping anywhere: leftmost ring edge at least96px from cell left edge. Flame/rim in crisp stepped pixels, no soft glow/haze/shadow/background/text/grid/floor. Orange/gold/white heat and black-red outline. Full outer border alpha0. Keep all4 effect centers aligned.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "082e650715bc6abe17064310e9dca1a17c7c072442cfd50403aceba01cf0e7cd",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/landing-shock-generated.png",
+  "issues": [
+    "輪の中央と周囲に橙の光が混入。中央が透明な衝撃輪として修正する。",
+    "最大コマの外周がセル境界に近い。原画の見切れを検収する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

@@ -1,0 +1,15 @@
+{
+  "source": "../../../../development/assets/ui/gems/source/gem-ui-atlas-v1.png",
+  "generator": "built-in image_gen",
+  "icons": [
+    "legendary.png",
+    "treasure.png",
+    "interference.png",
+    "shard-rare.png",
+    "shard-unique.png",
+    "shard-legendary.png",
+    "forge.png",
+    "upgrade.png",
+    "convert.png"
+  ]
+}

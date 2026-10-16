@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "id": "lightning",
+  "sheet": "lightning.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frames": [
+    {
+      "index": 0,
+      "file": "lightning-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    },
+    {
+      "index": 1,
+      "file": "lightning-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    },
+    {
+      "index": 2,
+      "file": "lightning-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    }
+  ],
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "pivot": {
+    "x": 64,
+    "y": 64
+  },
+  "durationMs": 540,
+  "loop": false,
+  "source": "../../../../../../development/assets/skills/ninja/effects/lightning/source/lightning-generated-v1.png",
+  "generation": "built-in image_gen; see PROMPT.md"
+}

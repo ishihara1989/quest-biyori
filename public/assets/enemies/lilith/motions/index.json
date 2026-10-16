@@ -1,0 +1,37 @@
+[
+  {
+    "id": "danger-1",
+    "label": "リリス・宵闇の花冠",
+    "manifest": "danger-1/manifest.json"
+  },
+  {
+    "id": "attack",
+    "label": "リリス・魔弾",
+    "manifest": "attack/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "リリス・被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "リリス・撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "リリス・移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "danger-2",
+    "label": "リリス・静寂の封印",
+    "manifest": "danger-2/manifest.json"
+  },
+  {
+    "id": "idle",
+    "label": "リリス・待機",
+    "manifest": "idle/manifest.json"
+  }
+]

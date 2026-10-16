@@ -1,0 +1,52 @@
+{
+  "id": "parts/throne",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/throne/review/parts/throne/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/throne.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "EMPTY ivory-gold crescent throne with navy cushions. No woman, hair, dress, small crown or large circular halo.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.5310699541371916,
+      "lowAlphaPixels": 45758,
+      "edgePixels": 0,
+      "bounds": [
+        137,
+        39,
+        1171,
+        1183
+      ],
+      "marginFraction": 0.03110047846889952
+    }
+  ],
+  "sources": [
+    "source/parts/throne.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/throne/contact.png",
+  "gif": "review/parts/throne/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "effect": "desert-royal-wave",
+  "label": "王墓の砂魔法",
+  "sheet": "desert-royal-wave.png",
+  "preview": "../../../../development/assets/effects/desert-royal-wave/desert-royal-wave-preview.gif",
+  "prompt": "../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1760,
+  "height": 240,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 440,
+  "frameHeight": 240,
+  "frameCount": 4,
+  "pivot": {
+    "x": 220,
+    "y": 120
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 650,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/desert-royal-wave/source-registered.png",
+  "sourceScale": 0.3844731977818854,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "desert-royal-wave-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 240,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 190,
+        "top": 99,
+        "right": 318,
+        "bottom": 171
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 872,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 257
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "desert-royal-wave-02.png",
+      "x": 440,
+      "y": 0,
+      "width": 440,
+      "height": 240,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 108,
+        "top": 63,
+        "right": 337,
+        "bottom": 206
+      },
+      "sourceCell": {
+        "x": 872,
+        "y": 0,
+        "width": 872,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 425,
+        "y": 259
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "desert-royal-wave-03.png",
+      "x": 880,
+      "y": 0,
+      "width": 440,
+      "height": 240,
+      "durationMs": 230,
+      "phase": "最大",
+      "bounds": {
+        "left": 73,
+        "top": 22,
+        "right": 381,
+        "bottom": 200
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 573,
+        "width": 872,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 436,
+        "y": 286
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "desert-royal-wave-04.png",
+      "x": 1320,
+      "y": 0,
+      "width": 440,
+      "height": 240,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 87,
+        "top": 48,
+        "right": 335,
+        "bottom": 184
+      },
+      "sourceCell": {
+        "x": 872,
+        "y": 573,
+        "width": 872,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 364,
+        "y": 286
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../development/assets/desert-motions/desert-royal-wave-generated.png"
+}

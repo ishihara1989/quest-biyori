@@ -1,0 +1,57 @@
+{
+  "id": "parts/halo",
+  "kind": "component",
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    268,
+    156
+  ],
+  "loop": false,
+  "frames": [
+    {
+      "index": 1,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/parts/halo/review/parts/halo/frame-01.png",
+      "source": "source/parts/halo.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "extractionWindow": null,
+      "durationMs": 160,
+      "description": "Three rigid broken gold celestial rings with cyan nodes, no feathers, no body or chair.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.8580364206151162,
+      "edgePixels": 0,
+      "bounds": [
+        178,
+        195,
+        1076,
+        1048
+      ],
+      "marginFraction": 0.14114832535885166
+    }
+  ],
+  "sources": [
+    "source/parts/halo.png"
+  ],
+  "expectedFrames": 1,
+  "missingFrames": [],
+  "complete": true,
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+  "contact": "review/parts/halo/contact.png",
+  "gif": "review/parts/halo/preview.gif"
+}

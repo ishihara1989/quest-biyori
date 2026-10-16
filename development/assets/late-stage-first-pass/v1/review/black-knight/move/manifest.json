@@ -1,0 +1,84 @@
+{
+  "id": "black-knight/move",
+  "enemy": "black-knight",
+  "region": "demon-castle",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/black-knight/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "黒騎士",
+  "expectedFrames": 6,
+  "complete": false,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 14,
+        "top": 41,
+        "right": 734,
+        "bottom": 665
+      },
+      "sourceWidth": 737,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 290482,
+      "transparentFraction": 0.5443938019595643
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 1,
+        "top": 41,
+        "right": 717,
+        "bottom": 665
+      },
+      "sourceWidth": 723,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 283311,
+      "transparentFraction": 0.5412358726301552
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 4,
+        "top": 43,
+        "right": 692,
+        "bottom": 665
+      },
+      "sourceWidth": 712,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 279477,
+      "transparentFraction": 0.5421600502824508
+    }
+  ],
+  "reference": "../../../references/black-knight.png",
+  "originalSources": [
+    "../../../sources/black-knight/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

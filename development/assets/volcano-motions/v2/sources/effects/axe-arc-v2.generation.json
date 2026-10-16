@@ -1,0 +1,19 @@
+{
+  "id": "effects/axe-arc",
+  "source": "sources/effects/axe-arc-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. broad short orange-white axe slash crescent sweeping left-down with black obsidian chips. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else. Four small isolated VFX icons. MAXIMUM effect fits inside central60% of each cell, 20% fully empty margin on all sides, especially the large BL peak crescent. Slash heads toward LEFT-DOWN.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "01b9af1169bf65ed6bd40f97f2273fc9d8396ba630c01a2912cee34712179d0f",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/axe-arc-generated.png",
+  "issues": [
+    "最大コマが等分セルの境界を越える。原画を保持して個別切り出し位置を確定する。",
+    "4コマ目にも白い主円弧が強く残る。消失へのつながりを確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

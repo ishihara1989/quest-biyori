@@ -1,0 +1,215 @@
+{
+  "id": "magma-salamander/danger-1",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "label": "双溶岩弾",
+  "kind": null,
+  "motion": "danger-1",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 6100,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/magma-salamander.png",
+  "originalSources": [
+    "../../../sources/magma-salamander/danger-1-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/magma-salamander/danger-1/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8773612976074219,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 141,
+        "top": 160,
+        "right": 424,
+        "bottom": 343
+      },
+      "visibleBounds": {
+        "left": 143,
+        "top": 171,
+        "right": 422,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 775,
+        "height": 525
+      },
+      "sourceScale": 0.3905160390516039,
+      "sourceAnchor": {
+        "x": 438,
+        "y": 491
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4220,
+      "transparentFraction": 0.8733100891113281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 140,
+        "top": 158,
+        "right": 428,
+        "bottom": 340
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 168,
+        "right": 424,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-1-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 775,
+        "y": 0,
+        "width": 761,
+        "height": 525
+      },
+      "sourceScale": 0.3905160390516039,
+      "sourceAnchor": {
+        "x": 417,
+        "y": 491
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 1400,
+      "transparentFraction": 0.8782196044921875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 143,
+        "top": 172,
+        "right": 424,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 143,
+        "top": 174,
+        "right": 423,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-1-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 525,
+        "width": 771,
+        "height": 499
+      },
+      "sourceScale": 0.3905160390516039,
+      "sourceAnchor": {
+        "x": 433,
+        "y": 455
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8778266906738281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 141,
+        "top": 166,
+        "right": 424,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 144,
+        "top": 171,
+        "right": 423,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-1-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 771,
+        "y": 525,
+        "width": 765,
+        "height": 499
+      },
+      "sourceScale": 0.3905160390516039,
+      "sourceAnchor": {
+        "x": 420,
+        "y": 456
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "lava-bomb",
+      "timeMs": 4400,
+      "slot": 0,
+      "placement": "projectile",
+      "impact": "lava-impact",
+      "residue": "lava-pool",
+      "originFrame": 2
+    },
+    {
+      "id": "lava-bomb",
+      "timeMs": 5200,
+      "slot": 1,
+      "placement": "projectile",
+      "impact": "lava-impact",
+      "residue": "lava-pool",
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "lava-bomb",
+    "lava-impact",
+    "lava-pool"
+  ],
+  "repeatRelease": true,
+  "releaseOrigin": {
+    "x": 154,
+    "y": 269
+  }
+}

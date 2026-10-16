@@ -1,0 +1,18 @@
+{
+  "id": "black-knight/move-1",
+  "source": "move-1-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept. Pixel-art RPG black knight WALK-IN-PLACE cycle facing LEFT, mild three-quarter angle. Fixed reference identity: same black horned helmet/red visor, black-and-gold armor, ragged crimson cape, broad silver-edged black greatsword with red center rune. Same scale, palette, proportions and crisp JRPG pixel clusters in every frame.\nExactly THREE separate COMPLETE small sprites in ONE HORIZONTAL ROW (3 equal square cells). Very broad clear gutters. All horns, sword tip, cape, fingers and boots fit inside central 60% of each cell. No cropped blades or overlap.\nSword stays carried low in BOTH hands on the SAME hilt at normalized (480,625), full blade extends left-down to (210,780) in EVERY frame. Keep arms connected, no extra hands, no weapon swing. Root pelvis around (550,590), head (530,350), ground y=840.\nLeg identity: NEAR leg starts at viewer-right hip (570,590), has the larger foreground knee armor and boot. FAR leg starts at viewer-left hip (490,590), is slightly smaller and behind. Each stays attached to its OWN hip through knee and ankle even where legs cross in projection. Two legs and two boots, do not mirror or swap armor ownership.\nComplete six-phase plan:\n1 near/larger boot forward-left (400,840) planted; far/smaller boot back-right (650,840) planted.\n2 near boot supports at (480,840); far boot swings forward above ground at (610,750), far knee raised.\n3 near boot supports at (570,840); far boot approaches landing at (450,800).\n4 far/smaller boot lands forward-left (400,840); near/larger boot back-right (650,840) supports.\n5 far boot supports at (480,840); near/larger boot swings forward above ground at (610,750), near knee raised.\n6 far boot supports at (570,840); near/larger boot approaches landing at (450,800).\nThen 6 -> 1 is the near boot landing, 3 -> 4 is far boot landing. Torso, sword and head bob at most 8 units. Cape lags at most 15 units, no giant expansion.\nNative transparent alpha, no floor, ground shadow, motion trail, VFX, aura, labels, text, grid, checkerboard or watermark.\nTHIS SHEET CONTAINS ONLY PHASES 1,2,3 in that left-to-right order. The FAR smaller leg is the swinging leg in the middle cell. Do not draw phases 4,5,6 here.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-b2a2fd48-78db-45b0-8ebb-65d2481561d3.png",
+  "sha256": "9b8a1597dda21b95676ada441f0f1cfa7e6e1c19aa65f8aa77bf7b7f8e22c719",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/black-knight.png",
+      "sha256": "960272c41473b518701eeb9f49bb35c9d06273070244ac4f956e2196937d2c59"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "move-1-v2.prompt.txt"
+}

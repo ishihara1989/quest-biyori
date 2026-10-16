@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "enemy": "great-hermit",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "great-hermit-move.png",
+  "preview": "../../../../../../development/assets/enemies/great-hermit/motions/move/great-hermit-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/great-hermit/PROMPT.md",
+  "width": 3456,
+  "height": 416,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 6,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/great-hermit/source/move-registered.png",
+  "sourceScale": 0.4784688995215311,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 120,
+      "phase": "左接地",
+      "bounds": {
+        "left": 136,
+        "top": 200,
+        "right": 463,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 452
+      },
+      "sourceAnchor": {
+        "x": 430,
+        "y": 433
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 120,
+      "phase": "右遊脚",
+      "bounds": {
+        "left": 198,
+        "top": 199,
+        "right": 524,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 720,
+        "y": 0,
+        "width": 720,
+        "height": 452
+      },
+      "sourceAnchor": {
+        "x": 301,
+        "y": 435
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 120,
+      "phase": "右前進",
+      "bounds": {
+        "left": 124,
+        "top": 199,
+        "right": 452,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 1440,
+        "y": 0,
+        "width": 720,
+        "height": 452
+      },
+      "sourceAnchor": {
+        "x": 455,
+        "y": 435
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 120,
+      "phase": "右接地",
+      "bounds": {
+        "left": 148,
+        "top": 204,
+        "right": 471,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 452,
+        "width": 720,
+        "height": 452
+      },
+      "sourceAnchor": {
+        "x": 410,
+        "y": 425
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2304,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 120,
+      "phase": "左遊脚",
+      "bounds": {
+        "left": 216,
+        "top": 203,
+        "right": 533,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 720,
+        "y": 452,
+        "width": 720,
+        "height": 452
+      },
+      "sourceAnchor": {
+        "x": 269,
+        "y": 426
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2880,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 120,
+      "phase": "左前進",
+      "bounds": {
+        "left": 120,
+        "top": 204,
+        "right": 444,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 1440,
+        "y": 452,
+        "width": 720,
+        "height": 452
+      },
+      "sourceAnchor": {
+        "x": 468,
+        "y": 425
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/great-hermit/source/move-1-generated.png",
+    "../../../../../../development/assets/enemies/great-hermit/source/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 3,
+        "count": 179531,
+        "left": 16,
+        "top": 148,
+        "right": 700,
+        "bottom": 565,
+        "cx": 372.0781090730849,
+        "cy": 359.8474803794331
+      },
+      {
+        "id": 1,
+        "count": 174221,
+        "left": 735,
+        "top": 146,
+        "right": 1418,
+        "bottom": 565,
+        "cx": 1090.9711860223508,
+        "cy": 355.09239414307115
+      },
+      {
+        "id": 2,
+        "count": 177601,
+        "left": 1458,
+        "top": 146,
+        "right": 2145,
+        "bottom": 565,
+        "cx": 1819.6420234120303,
+        "cy": 359.4593217380533
+      }
+    ],
+    [
+      {
+        "id": 2,
+        "count": 167694,
+        "left": 19,
+        "top": 165,
+        "right": 694,
+        "bottom": 574,
+        "cx": 374.3811704652522,
+        "cy": 368.94681980273594
+      },
+      {
+        "id": 1,
+        "count": 163744,
+        "left": 749,
+        "top": 164,
+        "right": 1414,
+        "bottom": 574,
+        "cx": 1094.7694938440493,
+        "cy": 367.0577608950557
+      },
+      {
+        "id": 3,
+        "count": 167306,
+        "left": 1464,
+        "top": 165,
+        "right": 2141,
+        "bottom": 574,
+        "cx": 1819.1291286624507,
+        "cy": 370.4280838702736
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1,
+  "walkCycle": {
+    "nearLeg": "left",
+    "farLeg": "right",
+    "parts": [
+      "../../../../../../development/assets/enemies/great-hermit/source/move-1-generated.png",
+      "../../../../../../development/assets/enemies/great-hermit/source/move-2-generated.png"
+    ],
+    "phases": [
+      "left-contact",
+      "right-passing",
+      "right-approach",
+      "right-contact",
+      "left-passing",
+      "left-approach"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "shadow-eruption",
+  "sheet": "shadow-eruption.png",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "frames": [
+    {
+      "index": 0,
+      "file": "shadow-eruption-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    },
+    {
+      "index": 1,
+      "file": "shadow-eruption-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    },
+    {
+      "index": 2,
+      "file": "shadow-eruption-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    },
+    {
+      "index": 3,
+      "file": "shadow-eruption-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    }
+  ],
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "pivot": {
+    "x": 128,
+    "y": 248
+  },
+  "durationMs": 560,
+  "loop": false,
+  "source": "../../../../../../development/assets/skills/ninja/effects/shadow-eruption/source/shadow-eruption-generated-v1.png",
+  "generation": "built-in image_gen; see PROMPT.md"
+}

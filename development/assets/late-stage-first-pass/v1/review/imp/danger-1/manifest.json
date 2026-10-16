@@ -1,0 +1,105 @@
+{
+  "id": "imp/danger-1",
+  "enemy": "imp",
+  "region": "demon-castle",
+  "motion": "danger-1",
+  "label": "呪弾",
+  "effects": [
+    "curse-orb",
+    "curse-impact",
+    "curse"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/imp/danger-1-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "インプ",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 40,
+        "top": 112,
+        "right": 702,
+        "bottom": 557
+      },
+      "sourceWidth": 719,
+      "sourceHeight": 584,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 262815,
+      "transparentFraction": 0.6259049859965324
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 16,
+        "top": 114,
+        "right": 535,
+        "bottom": 557
+      },
+      "sourceWidth": 610,
+      "sourceHeight": 584,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 213712,
+      "transparentFraction": 0.5999101729171346
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 47,
+        "top": 24,
+        "right": 701,
+        "bottom": 491
+      },
+      "sourceWidth": 712,
+      "sourceHeight": 599,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 264209,
+      "transparentFraction": 0.6194992590647334
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 10,
+        "top": 56,
+        "right": 566,
+        "bottom": 500
+      },
+      "sourceWidth": 617,
+      "sourceHeight": 599,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 220359,
+      "transparentFraction": 0.5962368398979391
+    }
+  ],
+  "reference": "../../../references/imp.png",
+  "originalSources": [
+    "../../../sources/imp/danger-1-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

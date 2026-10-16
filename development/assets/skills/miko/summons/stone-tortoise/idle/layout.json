@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/stone-tortoise-idle-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 733,
+      "height": 724
+    },
+    {
+      "x": 733,
+      "y": 0,
+      "width": 717,
+      "height": 724
+    },
+    {
+      "x": 1450,
+      "y": 0,
+      "width": 722,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 470,
+      "y": 816
+    },
+    {
+      "x": 458.5,
+      "y": 815
+    },
+    {
+      "x": 451,
+      "y": 815
+    }
+  ],
+  "scale": 0.09451476793248945
+}

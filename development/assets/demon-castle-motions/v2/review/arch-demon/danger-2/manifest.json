@@ -1,0 +1,186 @@
+{
+  "id": "arch-demon/danger-2",
+  "label": "アークデーモン・悪魔の援軍",
+  "enemy": "arch-demon",
+  "motion": "danger-2",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "大きく開いた翼・尾がセル境界に近い。矩形切り出しと余白を確定する。",
+    "開いた掌の指・肘の接続と復帰時の手の大きさを合わせる。召喚門とインプは別素材で配置する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-2-generated.png",
+      "sourceSha256": "8b4662e0143a16cb1800e17c95bcc7eebea4bb18337c58a3e7c5ee33391342a9",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 632,
+        "height": 591
+      },
+      "sourceAnchor": [
+        314,
+        568
+      ],
+      "scale": 0.4708097928436911,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "756b0ac1355e8bd615953bf772ac457ba0e14ed364c7e7747c00862e579e76e7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8208999633789062
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4820,
+      "phase": "溜め",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-2-generated.png",
+      "sourceSha256": "8b4662e0143a16cb1800e17c95bcc7eebea4bb18337c58a3e7c5ee33391342a9",
+      "sourceRect": {
+        "left": 632,
+        "top": 0,
+        "width": 645,
+        "height": 591
+      },
+      "sourceAnchor": [
+        319,
+        570
+      ],
+      "scale": 0.4708097928436911,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "54d1e05f522857a974fe7df09582a65e8aa9353a5c5d9892f3b4567bc2956fe0",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8082809448242188
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 2000,
+      "phase": "発動",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-2-generated.png",
+      "sourceSha256": "8b4662e0143a16cb1800e17c95bcc7eebea4bb18337c58a3e7c5ee33391342a9",
+      "sourceRect": {
+        "left": 0,
+        "top": 591,
+        "width": 690,
+        "height": 641
+      },
+      "sourceAnchor": [
+        337,
+        568
+      ],
+      "scale": 0.4708097928436911,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "dcd15964552d1b47997d7abf8349d893db296e17e76315820a667ad644a01f50",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.7959976196289062
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-2-generated.png",
+      "sourceSha256": "8b4662e0143a16cb1800e17c95bcc7eebea4bb18337c58a3e7c5ee33391342a9",
+      "sourceRect": {
+        "left": 690,
+        "top": 591,
+        "width": 587,
+        "height": 641
+      },
+      "sourceAnchor": [
+        273,
+        576
+      ],
+      "scale": 0.4708097928436911,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "6229971ae0aeeb19955b6702eb1b5cec675be90926459934006f0b449551588a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8077392578125
+    }
+  ],
+  "fingerprint": "6c0d5944d61b0252d0203c0d193676c2575b7b725d8343107cfa3aa0e1a44d40",
+  "events": [
+    {
+      "id": "effects/summon-gate",
+      "timeMs": 5000,
+      "durationMs": 680,
+      "x": 350,
+      "y": 410,
+      "scale": 0.65,
+      "anchor": [
+        256,
+        410
+      ],
+      "slot": 0
+    },
+    {
+      "id": "imp/idle",
+      "timeMs": 5500,
+      "durationMs": 1200,
+      "x": 350,
+      "y": 410,
+      "scale": 0.6,
+      "anchor": [
+        300,
+        400
+      ],
+      "slot": 0
+    },
+    {
+      "id": "effects/summon-gate",
+      "timeMs": 5000,
+      "durationMs": 680,
+      "x": 520,
+      "y": 410,
+      "scale": 0.65,
+      "anchor": [
+        256,
+        410
+      ],
+      "slot": 1
+    },
+    {
+      "id": "imp/idle",
+      "timeMs": 5500,
+      "durationMs": 1200,
+      "x": 520,
+      "y": 410,
+      "scale": 0.6,
+      "anchor": [
+        300,
+        400
+      ],
+      "slot": 1
+    }
+  ],
+  "effects": []
+}

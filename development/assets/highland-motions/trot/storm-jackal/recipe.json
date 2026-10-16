@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "storm-jackal",
+  "date": "2026-10-13 JST",
+  "gait": "trot",
+  "status": "adopted-coordinate-guided",
+  "standardAdopted": true,
+  "reference": "references/storm-jackal.png",
+  "frameWidth": 580,
+  "frameHeight": 430,
+  "pivot": {
+    "x": 331,
+    "y": 406
+  },
+  "outputEye": {
+    "x": 235,
+    "y": 238
+  },
+  "coordinateGuide": "trot/storm-jackal/guide.json",
+  "generationParts": 6,
+  "framesPerPart": 1,
+  "registration": "Fixed eye/body landmark; source pixels preserved",
+  "frames": [
+    {
+      "source": "trot/storm-jackal/sources/frame-1-tail.png",
+      "eye": {
+        "x": 165,
+        "y": 486
+      },
+      "scale": 0.22550335570469798,
+      "phase": "中立・A遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-2-tail.png",
+      "eye": {
+        "x": 165,
+        "y": 486
+      },
+      "scale": 0.22550335570469798,
+      "phase": "手前閉／奥開・A遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-3-focused.png",
+      "eye": {
+        "x": 165,
+        "y": 486
+      },
+      "scale": 0.22550335570469798,
+      "phase": "手前閉／奥開・B遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-4-tail.png",
+      "eye": {
+        "x": 165,
+        "y": 486
+      },
+      "scale": 0.22550335570469798,
+      "phase": "中立・B遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-5-tail.png",
+      "eye": {
+        "x": 165,
+        "y": 486
+      },
+      "scale": 0.22550335570469798,
+      "phase": "手前開／奥閉・B遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-6-tail.png",
+      "eye": {
+        "x": 165,
+        "y": 486
+      },
+      "scale": 0.22550335570469798,
+      "phase": "手前開／奥閉・A遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    }
+  ]
+}

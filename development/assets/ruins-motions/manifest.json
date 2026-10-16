@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "region": "ancient-ruins",
+  "generator": "built-in image_gen",
+  "review": "../../labs/ruins-motions.html",
+  "enemyReview": "../../enemies.html#rune-gargoyle",
+  "enemies": [
+    {
+      "id": "stone-guard",
+      "label": "石の衛兵",
+      "base": "../enemies/stone-guard/",
+      "index": "../../../public/assets/enemies/stone-guard/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "strike",
+          "label": "剣撃",
+          "manifest": "strike/manifest.json"
+        },
+        {
+          "id": "sweep",
+          "label": "薙ぎ払い",
+          "manifest": "sweep/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "rune-gargoyle",
+      "label": "ルーンガーゴイル",
+      "base": "../enemies/rune-gargoyle/",
+      "index": "../../../public/assets/enemies/rune-gargoyle/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "claw",
+          "label": "飛行爪撃",
+          "manifest": "claw/manifest.json"
+        },
+        {
+          "id": "shock",
+          "label": "ルーン衝撃",
+          "manifest": "shock/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "ancient-crossbowman",
+      "label": "古代の弩兵",
+      "base": "../enemies/ancient-crossbowman/",
+      "index": "../../../public/assets/enemies/ancient-crossbowman/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "shoot",
+          "label": "弩射撃",
+          "manifest": "shoot/manifest.json"
+        },
+        {
+          "id": "double",
+          "label": "連射",
+          "manifest": "double/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "floating-magic-core",
+      "label": "浮遊魔導器",
+      "base": "../enemies/floating-magic-core/",
+      "index": "../../../public/assets/enemies/floating-magic-core/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "bolt",
+          "label": "魔弾",
+          "manifest": "bolt/manifest.json"
+        },
+        {
+          "id": "bomb",
+          "label": "魔力炸裂",
+          "manifest": "bomb/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "armored-golem",
+      "label": "重装ゴーレム",
+      "base": "../enemies/armored-golem/",
+      "index": "../../../public/assets/enemies/armored-golem/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "slam",
+          "label": "叩きつけ",
+          "manifest": "slam/manifest.json"
+        },
+        {
+          "id": "sweep",
+          "label": "大薙ぎ",
+          "manifest": "sweep/manifest.json"
+        },
+        {
+          "id": "combo",
+          "label": "二連打",
+          "manifest": "combo/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "ancient-ballista",
+      "label": "古代弩砲兵",
+      "base": "../enemies/ancient-ballista/",
+      "index": "../../../public/assets/enemies/ancient-ballista/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "shoot",
+          "label": "貫通大矢",
+          "manifest": "shoot/manifest.json"
+        },
+        {
+          "id": "fan",
+          "label": "扇状射撃",
+          "manifest": "fan/manifest.json"
+        },
+        {
+          "id": "burst",
+          "label": "三連射",
+          "manifest": "burst/manifest.json"
+        },
+        {
+          "id": "ram",
+          "label": "近距離体当たり",
+          "manifest": "ram/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "seraphina",
+      "label": "魔導人形セラフィナ",
+      "base": "../enemies/seraphina/",
+      "index": "../../../public/assets/enemies/seraphina/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "volley",
+          "label": "三重光弾",
+          "manifest": "volley/manifest.json"
+        },
+        {
+          "id": "ring",
+          "label": "環刃",
+          "manifest": "ring/manifest.json"
+        },
+        {
+          "id": "pillars",
+          "label": "光柱",
+          "manifest": "pillars/manifest.json"
+        },
+        {
+          "id": "rest",
+          "label": "魔導再調整",
+          "manifest": "rest/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "ancient-titan",
+      "label": "古代機兵タイタン",
+      "base": "../enemies/ancient-titan/",
+      "index": "../../../public/assets/enemies/ancient-titan/motions/index.json",
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "down/manifest.json"
+        },
+        {
+          "id": "slam",
+          "label": "巨腕打撃",
+          "manifest": "slam/manifest.json"
+        },
+        {
+          "id": "fire",
+          "label": "左右砲撃",
+          "manifest": "fire/manifest.json"
+        },
+        {
+          "id": "beam",
+          "label": "炉心照射",
+          "manifest": "beam/manifest.json"
+        },
+        {
+          "id": "stomp",
+          "label": "魔導踏撃",
+          "manifest": "stomp/manifest.json"
+        },
+        {
+          "id": "vent",
+          "label": "排熱停止",
+          "manifest": "vent/manifest.json"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ruins-stone-slash",
+      "label": "石剣斬撃",
+      "manifest": "../../../public/assets/effects/ruins-stone-slash/manifest.json"
+    },
+    {
+      "id": "ruins-rune-claw",
+      "label": "ルーン爪撃",
+      "manifest": "../../../public/assets/effects/ruins-rune-claw/manifest.json"
+    },
+    {
+      "id": "ruins-rune-shock",
+      "label": "ルーン衝撃",
+      "manifest": "../../../public/assets/effects/ruins-rune-shock/manifest.json"
+    },
+    {
+      "id": "ruins-infantry-bolt",
+      "label": "古代弩矢",
+      "manifest": "../../../public/assets/effects/ruins-infantry-bolt/manifest.json"
+    },
+    {
+      "id": "ruins-heavy-bolt",
+      "label": "弩砲大矢",
+      "manifest": "../../../public/assets/effects/ruins-heavy-bolt/manifest.json"
+    },
+    {
+      "id": "ruins-bronze-impact",
+      "label": "機兵衝突",
+      "manifest": "../../../public/assets/effects/ruins-bronze-impact/manifest.json"
+    },
+    {
+      "id": "ruins-magic-bolt",
+      "label": "魔導弾",
+      "manifest": "../../../public/assets/effects/ruins-magic-bolt/manifest.json"
+    },
+    {
+      "id": "ruins-magic-burst",
+      "label": "魔力炸裂",
+      "manifest": "../../../public/assets/effects/ruins-magic-burst/manifest.json"
+    },
+    {
+      "id": "ruins-stone-impact",
+      "label": "石腕衝撃",
+      "manifest": "../../../public/assets/effects/ruins-stone-impact/manifest.json"
+    },
+    {
+      "id": "ruins-golem-sweep",
+      "label": "重腕薙ぎ",
+      "manifest": "../../../public/assets/effects/ruins-golem-sweep/manifest.json"
+    },
+    {
+      "id": "ruins-seraph-light",
+      "label": "セラフィナ光弾",
+      "manifest": "../../../public/assets/effects/ruins-seraph-light/manifest.json"
+    },
+    {
+      "id": "ruins-ring-blade",
+      "label": "魔導環刃",
+      "manifest": "../../../public/assets/effects/ruins-ring-blade/manifest.json"
+    },
+    {
+      "id": "ruins-light-pillar",
+      "label": "魔導光柱",
+      "manifest": "../../../public/assets/effects/ruins-light-pillar/manifest.json"
+    },
+    {
+      "id": "ruins-recharge",
+      "label": "魔導再調整光",
+      "manifest": "../../../public/assets/effects/ruins-recharge/manifest.json"
+    },
+    {
+      "id": "ruins-cannon-shell",
+      "label": "古代砲弾",
+      "manifest": "../../../public/assets/effects/ruins-cannon-shell/manifest.json"
+    },
+    {
+      "id": "ruins-furnace-beam",
+      "label": "炉心光線",
+      "manifest": "../../../public/assets/effects/ruins-furnace-beam/manifest.json"
+    },
+    {
+      "id": "ruins-magic-quake",
+      "label": "魔導踏撃波",
+      "manifest": "../../../public/assets/effects/ruins-magic-quake/manifest.json"
+    },
+    {
+      "id": "ruins-vent-steam",
+      "label": "機兵排熱",
+      "manifest": "../../../public/assets/effects/ruins-vent-steam/manifest.json"
+    }
+  ],
+  "generationRecord": "../../records/ruins-generation.json"
+}

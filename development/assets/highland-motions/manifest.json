@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "sourceDesign": "../mid-late-design/v1/highland/monsters-v2.png",
+  "enemies": [
+    {
+      "id": "horn-jackal",
+      "label": "ホーンジャッカル",
+      "locomotion": "walk",
+      "size": 200,
+      "width": 480,
+      "height": 340,
+      "actions": {
+        "bite": [
+          "噛みつき",
+          "bite-impact",
+          "target"
+        ]
+      },
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "enemies/horn-jackal/motions/idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "enemies/horn-jackal/motions/move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "enemies/horn-jackal/motions/hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "enemies/horn-jackal/motions/down/manifest.json"
+        },
+        {
+          "id": "bite",
+          "label": "噛みつき",
+          "manifest": "enemies/horn-jackal/motions/bite/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "rock-horn-goat",
+      "label": "岩角ヤギ",
+      "locomotion": "walk",
+      "size": 210,
+      "width": 480,
+      "height": 350,
+      "actions": {
+        "charge": [
+          "短突進",
+          "charge-impact",
+          "target"
+        ]
+      },
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "enemies/rock-horn-goat/motions/idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "enemies/rock-horn-goat/motions/move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "enemies/rock-horn-goat/motions/hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "enemies/rock-horn-goat/motions/down/manifest.json"
+        },
+        {
+          "id": "charge",
+          "label": "短突進",
+          "manifest": "enemies/rock-horn-goat/motions/charge/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "wind-sprite",
+      "label": "風の小精霊",
+      "locomotion": "hover",
+      "size": 200,
+      "width": 440,
+      "height": 350,
+      "actions": {
+        "blade": [
+          "風刃",
+          "wind-blade",
+          "projectile"
+        ],
+        "retreat": [
+          "後退",
+          null,
+          null
+        ]
+      },
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "enemies/wind-sprite/motions/idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "enemies/wind-sprite/motions/move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "enemies/wind-sprite/motions/hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "enemies/wind-sprite/motions/down/manifest.json"
+        },
+        {
+          "id": "blade",
+          "label": "風刃",
+          "manifest": "enemies/wind-sprite/motions/blade/manifest.json"
+        },
+        {
+          "id": "retreat",
+          "label": "後退",
+          "manifest": "enemies/wind-sprite/motions/retreat/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "storm-jackal",
+      "label": "ストームジャッカル",
+      "locomotion": "walk",
+      "size": 260,
+      "width": 580,
+      "height": 430,
+      "actions": {
+        "charge": [
+          "直線突進",
+          "charge-impact",
+          "target"
+        ],
+        "claw": [
+          "出血爪",
+          "claw",
+          "target"
+        ],
+        "rest": [
+          "休息",
+          null,
+          null
+        ]
+      },
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "enemies/storm-jackal/motions/idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "enemies/storm-jackal/motions/move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "enemies/storm-jackal/motions/hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "enemies/storm-jackal/motions/down/manifest.json"
+        },
+        {
+          "id": "charge",
+          "label": "直線突進",
+          "manifest": "enemies/storm-jackal/motions/charge/manifest.json"
+        },
+        {
+          "id": "claw",
+          "label": "出血爪",
+          "manifest": "enemies/storm-jackal/motions/claw/manifest.json"
+        },
+        {
+          "id": "rest",
+          "label": "休息",
+          "manifest": "enemies/storm-jackal/motions/rest/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "iron-horn",
+      "label": "アイアンホーン",
+      "locomotion": "walk",
+      "size": 300,
+      "width": 640,
+      "height": 460,
+      "actions": {
+        "sweep": [
+          "角の薙ぎ",
+          "horn-sweep",
+          "target"
+        ],
+        "charge": [
+          "長突進",
+          "charge-impact",
+          "target"
+        ],
+        "rocks": [
+          "岩片三発",
+          "rock-shards",
+          "projectile"
+        ],
+        "rest": [
+          "休息",
+          null,
+          null
+        ]
+      },
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "enemies/iron-horn/motions/idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "enemies/iron-horn/motions/move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "enemies/iron-horn/motions/hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "enemies/iron-horn/motions/down/manifest.json"
+        },
+        {
+          "id": "sweep",
+          "label": "角の薙ぎ",
+          "manifest": "enemies/iron-horn/motions/sweep/manifest.json"
+        },
+        {
+          "id": "charge",
+          "label": "長突進",
+          "manifest": "enemies/iron-horn/motions/charge/manifest.json"
+        },
+        {
+          "id": "rocks",
+          "label": "岩片三発",
+          "manifest": "enemies/iron-horn/motions/rocks/manifest.json"
+        },
+        {
+          "id": "rest",
+          "label": "休息",
+          "manifest": "enemies/iron-horn/motions/rest/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "harpy-queen",
+      "label": "ハーピークイーン",
+      "locomotion": "fly",
+      "size": 300,
+      "width": 650,
+      "height": 530,
+      "actions": {
+        "feathers": [
+          "三方向の羽根",
+          "feather",
+          "projectile"
+        ],
+        "ring": [
+          "風の円",
+          "wind-ring",
+          "origin"
+        ],
+        "dive": [
+          "急降下",
+          "charge-impact",
+          "target"
+        ],
+        "rest": [
+          "飛行休息",
+          null,
+          null
+        ]
+      },
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "enemies/harpy-queen/motions/idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "enemies/harpy-queen/motions/move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "enemies/harpy-queen/motions/hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "enemies/harpy-queen/motions/down/manifest.json"
+        },
+        {
+          "id": "feathers",
+          "label": "三方向の羽根",
+          "manifest": "enemies/harpy-queen/motions/feathers/manifest.json"
+        },
+        {
+          "id": "ring",
+          "label": "風の円",
+          "manifest": "enemies/harpy-queen/motions/ring/manifest.json"
+        },
+        {
+          "id": "dive",
+          "label": "急降下",
+          "manifest": "enemies/harpy-queen/motions/dive/manifest.json"
+        },
+        {
+          "id": "rest",
+          "label": "飛行休息",
+          "manifest": "enemies/harpy-queen/motions/rest/manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "manticore",
+      "label": "マンティコア",
+      "locomotion": "walk",
+      "size": 350,
+      "width": 800,
+      "height": 580,
+      "actions": {
+        "double-claw": [
+          "爪の二連撃",
+          "claw",
+          "target"
+        ],
+        "venom": [
+          "毒尾の扇射",
+          "venom",
+          "projectile"
+        ],
+        "gust": [
+          "翼の突風",
+          "wind-gust",
+          "origin"
+        ],
+        "pounce": [
+          "飛び込み",
+          "charge-impact",
+          "target"
+        ],
+        "rest": [
+          "休息",
+          null,
+          null
+        ]
+      },
+      "motions": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "manifest": "enemies/manticore/motions/idle/manifest.json"
+        },
+        {
+          "id": "move",
+          "label": "移動",
+          "manifest": "enemies/manticore/motions/move/manifest.json"
+        },
+        {
+          "id": "hit",
+          "label": "被弾",
+          "manifest": "enemies/manticore/motions/hit/manifest.json"
+        },
+        {
+          "id": "down",
+          "label": "撃破",
+          "manifest": "enemies/manticore/motions/down/manifest.json"
+        },
+        {
+          "id": "double-claw",
+          "label": "爪の二連撃",
+          "manifest": "enemies/manticore/motions/double-claw/manifest.json"
+        },
+        {
+          "id": "venom",
+          "label": "毒尾の扇射",
+          "manifest": "enemies/manticore/motions/venom/manifest.json"
+        },
+        {
+          "id": "gust",
+          "label": "翼の突風",
+          "manifest": "enemies/manticore/motions/gust/manifest.json"
+        },
+        {
+          "id": "pounce",
+          "label": "飛び込み",
+          "manifest": "enemies/manticore/motions/pounce/manifest.json"
+        },
+        {
+          "id": "rest",
+          "label": "休息",
+          "manifest": "enemies/manticore/motions/rest/manifest.json"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "wind-blade",
+      "label": "風刃",
+      "width": 340,
+      "height": 260,
+      "kind": "projectile",
+      "manifest": "effects/wind-blade/manifest.json"
+    },
+    {
+      "id": "feather",
+      "label": "羽根射撃",
+      "width": 340,
+      "height": 260,
+      "kind": "projectile",
+      "manifest": "effects/feather/manifest.json"
+    },
+    {
+      "id": "wind-ring",
+      "label": "風の円",
+      "width": 520,
+      "height": 320,
+      "kind": "origin",
+      "manifest": "effects/wind-ring/manifest.json"
+    },
+    {
+      "id": "wind-gust",
+      "label": "翼の突風",
+      "width": 540,
+      "height": 340,
+      "kind": "origin",
+      "manifest": "effects/wind-gust/manifest.json"
+    },
+    {
+      "id": "venom",
+      "label": "毒尾の毒針",
+      "width": 340,
+      "height": 260,
+      "kind": "projectile",
+      "manifest": "effects/venom/manifest.json"
+    },
+    {
+      "id": "claw",
+      "label": "爪・近接斬撃",
+      "width": 340,
+      "height": 280,
+      "kind": "target",
+      "manifest": "effects/claw/manifest.json"
+    },
+    {
+      "id": "charge-impact",
+      "label": "突進の衝撃",
+      "width": 460,
+      "height": 310,
+      "kind": "ground",
+      "manifest": "effects/charge-impact/manifest.json"
+    },
+    {
+      "id": "rock-shards",
+      "label": "岩片",
+      "width": 340,
+      "height": 280,
+      "kind": "projectile",
+      "manifest": "effects/rock-shards/manifest.json"
+    },
+    {
+      "id": "bite-impact",
+      "label": "噛みつきの衝撃",
+      "width": 340,
+      "height": 280,
+      "kind": "target",
+      "manifest": "effects/bite-impact/manifest.json"
+    },
+    {
+      "id": "horn-sweep",
+      "label": "角の薙ぎ",
+      "width": 460,
+      "height": 310,
+      "kind": "target",
+      "manifest": "effects/horn-sweep/manifest.json"
+    }
+  ]
+}

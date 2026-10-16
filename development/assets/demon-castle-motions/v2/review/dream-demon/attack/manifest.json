@@ -1,0 +1,162 @@
+{
+  "id": "dream-demon/attack",
+  "label": "夢魔・魔弾",
+  "enemy": "dream-demon",
+  "motion": "attack",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "発動の手の光が大きい。飛行エフェクトとの二重描画と指の接続を確認する。",
+    "裾・髪・尾の広がりが大きい。身体の縮尺と復帰を合わせる。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/dream-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/attack-generated.png",
+      "sourceSha256": "fb598be081adfabe10712f598ad0d4d1a0fe806aed02ae5f45602b9912a71d4d",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 679,
+        "height": 616
+      },
+      "sourceAnchor": [
+        365,
+        596
+      ],
+      "scale": 0.5168986083499006,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "b7f28b4b62b9ceb7c416b56defa4b48ec453422e6905135ce24187c2a8660f76",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8266983032226562
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "溜め",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/attack-generated.png",
+      "sourceSha256": "fb598be081adfabe10712f598ad0d4d1a0fe806aed02ae5f45602b9912a71d4d",
+      "sourceRect": {
+        "left": 679,
+        "top": 0,
+        "width": 626,
+        "height": 616
+      },
+      "sourceAnchor": [
+        284,
+        596
+      ],
+      "scale": 0.5168986083499006,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "10a1465faddfb58bc309b32258a49023b806fe4122245dd7c24548a839907956",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8127174377441406
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 800,
+      "phase": "発動",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/attack-generated.png",
+      "sourceSha256": "fb598be081adfabe10712f598ad0d4d1a0fe806aed02ae5f45602b9912a71d4d",
+      "sourceRect": {
+        "left": 0,
+        "top": 616,
+        "width": 717,
+        "height": 590
+      },
+      "sourceAnchor": [
+        402,
+        515
+      ],
+      "scale": 0.5168986083499006,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "ff0d0c96cc31e4c59eacd40068ae31bdcfb107bf6c8b4f38a2151165a0326bf6",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8041801452636719
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 600,
+      "phase": "復帰",
+      "source": "../../../../../late-stage-first-pass/v1/sources/dream-demon/attack-generated.png",
+      "sourceSha256": "fb598be081adfabe10712f598ad0d4d1a0fe806aed02ae5f45602b9912a71d4d",
+      "sourceRect": {
+        "left": 717,
+        "top": 616,
+        "width": 588,
+        "height": 590
+      },
+      "sourceAnchor": [
+        256,
+        522
+      ],
+      "scale": 0.5168986083499006,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "761c59455ecbea3dc0442dc9fd29f0c6779ac918d52f5c0d2dd1bf795ff6929f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8222236633300781
+    }
+  ],
+  "fingerprint": "305b67203db727b6aef36b9d0ab4d9d4ee40cbc8a9e1fe5f56abd0f82711fd30",
+  "events": [
+    {
+      "id": "effects/curse-orb",
+      "timeMs": 280,
+      "durationMs": 600,
+      "x": 520,
+      "y": 250,
+      "scale": 0.4,
+      "anchor": [
+        210,
+        256
+      ],
+      "to": [
+        405,
+        330
+      ]
+    },
+    {
+      "id": "effects/curse-impact",
+      "timeMs": 880,
+      "durationMs": 520,
+      "x": 405,
+      "y": 330,
+      "scale": 0.45,
+      "anchor": [
+        256,
+        256
+      ]
+    }
+  ],
+  "effects": []
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "idle",
+    "count": 1,
+    "contact": "idle.png",
+    "animation": null
+  },
+  {
+    "id": "shot",
+    "count": 4,
+    "contact": "shot.png",
+    "animation": "shot.gif"
+  },
+  {
+    "id": "snap",
+    "count": 3,
+    "contact": "snap.png",
+    "animation": "snap.gif"
+  },
+  {
+    "id": "floating",
+    "count": 1,
+    "contact": "floating.png",
+    "animation": null
+  },
+  {
+    "id": "cast",
+    "count": 6,
+    "contact": "cast.png",
+    "animation": "cast.gif"
+  },
+  {
+    "id": "ultimate",
+    "count": 9,
+    "contact": "ultimate.png",
+    "animation": "ultimate.gif"
+  },
+  {
+    "id": "down",
+    "count": 4,
+    "contact": "down.png",
+    "animation": "down.gif"
+  },
+  {
+    "id": "return",
+    "count": 6,
+    "contact": "return.png",
+    "animation": "return.gif"
+  },
+  {
+    "id": "throne",
+    "count": 1,
+    "contact": "throne.png",
+    "animation": null
+  },
+  {
+    "id": "halo",
+    "count": 1,
+    "contact": "halo.png",
+    "animation": null
+  },
+  {
+    "id": "star-impact",
+    "count": 3,
+    "contact": "star-impact.png",
+    "animation": "star-impact.gif"
+  },
+  {
+    "id": "snap-glint",
+    "count": 3,
+    "contact": "snap-glint.png",
+    "animation": "snap-glint.gif"
+  },
+  {
+    "id": "homing-meteor",
+    "count": 3,
+    "contact": "homing-meteor.png",
+    "animation": "homing-meteor.gif"
+  },
+  {
+    "id": "meteor-impact",
+    "count": 3,
+    "contact": "meteor-impact.png",
+    "animation": "meteor-impact.gif"
+  },
+  {
+    "id": "rift-cut",
+    "count": 3,
+    "contact": "rift-cut.png",
+    "animation": "rift-cut.gif"
+  },
+  {
+    "id": "celestial-wave",
+    "count": 3,
+    "contact": "celestial-wave.png",
+    "animation": "celestial-wave.gif"
+  }
+]

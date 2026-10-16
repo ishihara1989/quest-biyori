@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "thousand-bloom",
+  "sheet": "thousand-bloom.png",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "frames": [
+    {
+      "index": 0,
+      "file": "thousand-bloom-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    },
+    {
+      "index": 1,
+      "file": "thousand-bloom-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    },
+    {
+      "index": 2,
+      "file": "thousand-bloom-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    },
+    {
+      "index": 3,
+      "file": "thousand-bloom-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140
+    }
+  ],
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "pivot": {
+    "x": 128,
+    "y": 128
+  },
+  "durationMs": 560,
+  "loop": false,
+  "source": "../../../../../../development/assets/skills/ninja/effects/thousand-bloom/source/thousand-bloom-generated-v1.png",
+  "generation": "built-in image_gen; see PROMPT.md"
+}

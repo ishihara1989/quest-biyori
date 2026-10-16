@@ -1,0 +1,292 @@
+{
+  "id": "dragon-girl/move",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "label": "移動",
+  "kind": null,
+  "motion": "move",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/dragon-girl.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-1-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-frame-4-v3.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-frame-5-v3.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-frame-6-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8730964660644531,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 182,
+        "top": 102,
+        "right": 409,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 184,
+        "top": 103,
+        "right": 406,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 748,
+        "height": 724
+      },
+      "sourceScale": 0.37066246056782337,
+      "sourceAnchor": {
+        "x": 373.0936170212766,
+        "y": 667
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8726692199707031,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 169,
+        "top": 102,
+        "right": 410,
+        "bottom": 352
+      },
+      "visibleBounds": {
+        "left": 183,
+        "top": 103,
+        "right": 406,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-1-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 748,
+        "y": 0,
+        "width": 726,
+        "height": 724
+      },
+      "sourceScale": 0.37066246056782337,
+      "sourceAnchor": {
+        "x": 347.30212765957447,
+        "y": 667
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8704414367675781,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 159,
+        "top": 105,
+        "right": 405,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 181,
+        "top": 106,
+        "right": 404,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-1-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 1474,
+        "y": 0,
+        "width": 698,
+        "height": 724
+      },
+      "sourceScale": 0.37066246056782337,
+      "sourceAnchor": {
+        "x": 358.30212765957447,
+        "y": 658
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8800888061523438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 159,
+        "top": 91,
+        "right": 424,
+        "bottom": 349
+      },
+      "visibleBounds": {
+        "left": 177,
+        "top": 100,
+        "right": 408,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-frame-4-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.22605163476874005,
+      "sourceAnchor": {
+        "x": 623.5002756035718,
+        "y": 1154
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8784675598144531,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 152,
+        "top": 101,
+        "right": 405,
+        "bottom": 362
+      },
+      "visibleBounds": {
+        "left": 174,
+        "top": 101,
+        "right": 404,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-frame-5-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.2341821824302694,
+      "sourceAnchor": {
+        "x": 632.7692205930989,
+        "y": 1130
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 2048,
+      "y": 0,
+      "index": 4
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8827018737792969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 176,
+        "top": 97,
+        "right": 407,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 179,
+        "top": 98,
+        "right": 406,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/move-frame-6-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.2081297007576279,
+      "sourceAnchor": {
+        "x": 640.3536545033623,
+        "y": 1213
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 2560,
+      "y": 0,
+      "index": 5
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "walkCycle": {
+    "gait": "walk",
+    "nearLeg": "left",
+    "farLeg": "right",
+    "swingPairs": null
+  },
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/dragon-girl/move/preview.gif",
+  "action": null
+}

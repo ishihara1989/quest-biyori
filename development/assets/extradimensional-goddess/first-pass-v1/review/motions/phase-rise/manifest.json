@@ -1,0 +1,254 @@
+{
+  "id": "motions/phase-rise",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-01.png",
+      "index": 1,
+      "durationMs": 250,
+      "source": "source/motions/phase-rise-1.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F1 face(246,157),hips(268,294),L(219,199),R(392,288),shoes(222,418)/(304,448): seated, crossed legs, half-closed eyes.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4413460364457739,
+      "lowAlphaPixels": 13354,
+      "edgePixels": 55,
+      "bounds": [
+        23,
+        41,
+        723,
+        693
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-02.png",
+      "index": 2,
+      "durationMs": 250,
+      "source": "source/motions/phase-rise-1.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F2 face(248,154),hips(268,294),L(225,214),R(387,282),shoes(223,421)/(303,448): release cheek, open eyes.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3936330545465645,
+      "lowAlphaPixels": 14346,
+      "edgePixels": 60,
+      "bounds": [
+        0,
+        35,
+        723,
+        708
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-03.png",
+      "index": 3,
+      "durationMs": 300,
+      "source": "source/motions/phase-rise-1.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F3 face(251,151),hips(268,294),L(224,240),R(374,276),shoes(230,432)/(297,448): straighten shoulders, begin UNcrossing legs.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3642421629376393,
+      "lowAlphaPixels": 17777,
+      "edgePixels": 16,
+      "bounds": [
+        0,
+        14,
+        707,
+        713
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-04.png",
+      "index": 4,
+      "durationMs": 300,
+      "source": "source/motions/phase-rise-2.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F4 face(252,148),hips(266,289),L(217,267),R(368,273),BOTH shoes(242,448)/(286,448) planted: lean forward to stand.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.5308903879612954,
+      "lowAlphaPixels": 11601,
+      "edgePixels": 137,
+      "bounds": [
+        29,
+        123,
+        723,
+        705
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-05.png",
+      "index": 5,
+      "durationMs": 300,
+      "source": "source/motions/phase-rise-2.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F5 face(252,140),hips(266,281),L(207,268),R(357,269),BOTH shoes(242,448)/(286,448): rise upright, feet still grounded.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.46089099844327097,
+      "lowAlphaPixels": 15458,
+      "edgePixels": 174,
+      "bounds": [
+        0,
+        36,
+        723,
+        714
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-06.png",
+      "index": 6,
+      "durationMs": 300,
+      "source": "source/motions/phase-rise-2.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F6 face(252,132),hips(267,273),L(196,261),R(349,264),shoes(240,428)/(282,436): lift off, hair still hangs downward.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.38366312078385884,
+      "lowAlphaPixels": 20451,
+      "edgePixels": 46,
+      "bounds": [
+        0,
+        2,
+        712,
+        705
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-07.png",
+      "index": 7,
+      "durationMs": 300,
+      "source": "source/motions/phase-rise-3.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F7 face(252,128),hips(268,265),L(184,252),R(348,259),shoes(236,405)/(279,423): arms open, hair begins lifting with delay.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.41032782882085406,
+      "lowAlphaPixels": 15111,
+      "edgePixels": 108,
+      "bounds": [
+        11,
+        49,
+        723,
+        702
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-08.png",
+      "index": 8,
+      "durationMs": 400,
+      "source": "source/motions/phase-rise-3.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F8 face(252,127),hips(268,264),L(175,245),R(351,259),shoes(233,393)/(276,417): sleeves expand, no halo baked in.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.39841579927352644,
+      "lowAlphaPixels": 22759,
+      "edgePixels": 90,
+      "bounds": [
+        0,
+        34,
+        722,
+        697
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/phase-rise/review/motions/phase-rise/frame-09.png",
+      "index": 9,
+      "durationMs": 300,
+      "source": "source/motions/phase-rise-3.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "F9 face(252,128),hips(268,265),L(170,244),R(352,260),shoes(232,391)/(276,416): match floating master.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.34517604773969046,
+      "lowAlphaPixels": 19303,
+      "edgePixels": 0,
+      "bounds": [
+        3,
+        4,
+        718,
+        712
+      ],
+      "marginFraction": 0.004143646408839779
+    }
+  ],
+  "sources": [
+    "source/motions/phase-rise-1.png",
+    "source/motions/phase-rise-2.png",
+    "source/motions/phase-rise-3.png"
+  ],
+  "expectedFrames": 9,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/phase-rise/contact.png",
+  "gif": "review/motions/phase-rise/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

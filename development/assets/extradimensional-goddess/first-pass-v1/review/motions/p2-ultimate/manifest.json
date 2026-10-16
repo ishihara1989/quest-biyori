@@ -1,0 +1,182 @@
+{
+  "id": "motions/p2-ultimate",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/motions/p2-ultimate-1.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(170,244)/(352,260), neutral.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.43346318793687616,
+      "lowAlphaPixels": 19888,
+      "edgePixels": 242,
+      "bounds": [
+        24,
+        23,
+        723,
+        692
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-02.png",
+      "index": 2,
+      "durationMs": 180,
+      "source": "source/motions/p2-ultimate-1.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(216,211)/(310,211), draw toward chest.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4322861023778273,
+      "lowAlphaPixels": 20105,
+      "edgePixels": 506,
+      "bounds": [
+        0,
+        23,
+        723,
+        692
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-03.png",
+      "index": 3,
+      "durationMs": 180,
+      "source": "source/motions/p2-ultimate-1.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(238,195)/(286,195), palms close at chest.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4613984615854217,
+      "lowAlphaPixels": 20142,
+      "edgePixels": 273,
+      "bounds": [
+        0,
+        23,
+        705,
+        692
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-07.png",
+      "index": 7,
+      "durationMs": 180,
+      "source": "source/motions/p2-ultimate-3.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(169,167)/(353,167), powerful outward release.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3436879979243613,
+      "lowAlphaPixels": 20946,
+      "edgePixels": 362,
+      "bounds": [
+        10,
+        17,
+        723,
+        702
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-08.png",
+      "index": 8,
+      "durationMs": 180,
+      "source": "source/motions/p2-ultimate-3.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(145,220)/(378,220), arms down/out, impact pose.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3839626385030982,
+      "lowAlphaPixels": 23737,
+      "edgePixels": 478,
+      "bounds": [
+        0,
+        18,
+        723,
+        695
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-09.png",
+      "index": 9,
+      "durationMs": 180,
+      "source": "source/motions/p2-ultimate-3.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(170,244)/(352,260), return to idle.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4092747474130826,
+      "lowAlphaPixels": 19293,
+      "edgePixels": 121,
+      "bounds": [
+        0,
+        24,
+        710,
+        691
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/motions/p2-ultimate-1.png",
+    "source/motions/p2-ultimate-3.png"
+  ],
+  "expectedFrames": 9,
+  "complete": false,
+  "missingFrames": [
+    4,
+    5,
+    6
+  ],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p2-ultimate/contact.png",
+  "gif": "review/motions/p2-ultimate/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

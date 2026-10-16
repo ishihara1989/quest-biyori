@@ -1,0 +1,735 @@
+{
+  "version": 1,
+  "purpose": "次タスクの巫女・遺跡実装に渡す素材対応表。数値バランスは docs/miko-skill-design.md を参照。",
+  "coordinateSystem": "PNGの左上原点。pivotを接地点または中心に合わせる。Hはキャラ本体の頭頂から接地まで。",
+  "sampling": "nearest-neighbor",
+  "rendering": {
+    "backOpacity": 0.42,
+    "frontEffectOpacity": 0.68,
+    "order": [
+      "ground crest",
+      "guardian / possession / full-body robes behind host",
+      "actors and enemies",
+      "contact effects in front; keep host faces clear",
+      "HP / UI"
+    ],
+    "largeSilhouette": "サイズは透明セルでなく frames[].bounds の描画高から算出。全身像を縮小せず内部の濃さと重なりを調整。"
+  },
+  "skills": [
+    {
+      "id": "ember-fox",
+      "name": "火狐招来",
+      "level": 5,
+      "icon": "assets/skills/miko/icons/ember-fox.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/summon-forward/manifest.json",
+        "releaseMs": 820,
+        "recoveryMs": 100,
+        "totalMs": 1120,
+        "type": "M1",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/ember-fox/idle/manifest.json",
+        "action": "assets/skills/miko/summons/ember-fox/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/ember-fox/walk/manifest.json",
+        "appear": "assets/skills/miko/guardians/ember-fox/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/ember-fox/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/ember-fox/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/foxfire/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": "assets/skills/miko/effects/spirit-impact/manifest.json",
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.5
+      }
+    },
+    {
+      "id": "healing-butterflies",
+      "name": "癒蝶招来",
+      "level": 10,
+      "icon": "assets/skills/miko/icons/healing-butterflies.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/blessing-up/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M3",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/healing-butterflies/idle/manifest.json",
+        "action": "assets/skills/miko/summons/healing-butterflies/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/healing-butterflies/idle/manifest.json",
+        "appear": "assets/skills/miko/guardians/healing-butterflies/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/healing-butterflies/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/healing-butterflies/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/butterfly-wings/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.25
+      }
+    },
+    {
+      "id": "stone-tortoise",
+      "name": "岩亀招来",
+      "level": 15,
+      "icon": "assets/skills/miko/icons/stone-tortoise.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/summon-forward/manifest.json",
+        "releaseMs": 820,
+        "recoveryMs": 100,
+        "totalMs": 1120,
+        "type": "M1",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/stone-tortoise/idle/manifest.json",
+        "action": "assets/skills/miko/summons/stone-tortoise/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/stone-tortoise/walk/manifest.json",
+        "appear": "assets/skills/miko/guardians/stone-tortoise/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/stone-tortoise/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/stone-tortoise/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/tortoise-dome/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.5
+      }
+    },
+    {
+      "id": "thunder-crows",
+      "name": "雷烏招来",
+      "level": 20,
+      "icon": "assets/skills/miko/icons/thunder-crows.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/summon-forward/manifest.json",
+        "releaseMs": 820,
+        "recoveryMs": 100,
+        "totalMs": 1120,
+        "type": "M1",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/thunder-crows/idle/manifest.json",
+        "action": "assets/skills/miko/summons/thunder-crows/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/thunder-crows/idle/manifest.json",
+        "appear": "assets/skills/miko/guardians/thunder-crows/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/thunder-crows/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/thunder-crows/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/feather-lightning/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": "assets/skills/miko/effects/spirit-impact/manifest.json",
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.25
+      }
+    },
+    {
+      "id": "swift-wolf",
+      "name": "疾狼憑依",
+      "level": 25,
+      "icon": "assets/skills/miko/icons/swift-wolf.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/spirit-send/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M2",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "possession",
+        "idle": "assets/skills/miko/possessions/swift-wolf/idle/manifest.json",
+        "action": "assets/skills/miko/possessions/swift-wolf/action/manifest.json",
+        "locomotion": "assets/skills/miko/possessions/swift-wolf/idle/manifest.json",
+        "appear": "assets/skills/miko/possessions/swift-wolf/appear/manifest.json",
+        "manifest": "assets/skills/miko/possessions/swift-wolf/idle/manifest.json",
+        "disperse": "assets/skills/miko/possessions/swift-wolf/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/spirit-channel/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3.2,
+        "sustain": 2.5,
+        "action": 2.5
+      }
+    },
+    {
+      "id": "white-deer",
+      "name": "白鹿招来",
+      "level": 30,
+      "icon": "assets/skills/miko/icons/white-deer.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/blessing-up/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M3",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/white-deer/idle/manifest.json",
+        "action": "assets/skills/miko/summons/white-deer/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/white-deer/walk/manifest.json",
+        "appear": "assets/skills/miko/guardians/white-deer/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/white-deer/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/white-deer/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/flower-column/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 4,
+        "guardian": 2.5,
+        "sprite": 0.5
+      }
+    },
+    {
+      "id": "bell-owl",
+      "name": "鈴梟招来",
+      "level": 35,
+      "icon": "assets/skills/miko/icons/bell-owl.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/summon-forward/manifest.json",
+        "releaseMs": 820,
+        "recoveryMs": 100,
+        "totalMs": 1120,
+        "type": "M1",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/bell-owl/idle/manifest.json",
+        "action": "assets/skills/miko/summons/bell-owl/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/bell-owl/idle/manifest.json",
+        "appear": "assets/skills/miko/guardians/bell-owl/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/bell-owl/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/bell-owl/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/owl-halo/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.25
+      }
+    },
+    {
+      "id": "blade-spirit",
+      "name": "剣鬼憑依",
+      "level": 40,
+      "icon": "assets/skills/miko/icons/blade-spirit.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/spirit-send/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M2",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "possession",
+        "idle": "assets/skills/miko/possessions/blade-spirit/idle/manifest.json",
+        "action": "assets/skills/miko/possessions/blade-spirit/action/manifest.json",
+        "locomotion": "assets/skills/miko/possessions/blade-spirit/idle/manifest.json",
+        "appear": "assets/skills/miko/possessions/blade-spirit/appear/manifest.json",
+        "manifest": "assets/skills/miko/possessions/blade-spirit/idle/manifest.json",
+        "disperse": "assets/skills/miko/possessions/blade-spirit/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/blade-slash/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3.2,
+        "sustain": 2.5,
+        "action": 2.5
+      }
+    },
+    {
+      "id": "guardian-bear",
+      "name": "守熊憑依",
+      "level": 45,
+      "icon": "assets/skills/miko/icons/guardian-bear.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/spirit-send/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M2",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "possession",
+        "idle": "assets/skills/miko/possessions/guardian-bear/idle/manifest.json",
+        "action": "assets/skills/miko/possessions/guardian-bear/action/manifest.json",
+        "locomotion": "assets/skills/miko/possessions/guardian-bear/idle/manifest.json",
+        "appear": "assets/skills/miko/possessions/guardian-bear/appear/manifest.json",
+        "manifest": "assets/skills/miko/possessions/guardian-bear/idle/manifest.json",
+        "disperse": "assets/skills/miko/possessions/guardian-bear/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/bear-shield/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3.2,
+        "sustain": 2.5,
+        "action": 2.5
+      }
+    },
+    {
+      "id": "spirit-kagura",
+      "name": "総霊神楽",
+      "level": 50,
+      "icon": "assets/skills/miko/icons/spirit-kagura.png",
+      "motion": {
+        "prayerCycles": 1,
+        "rotation": "assets/miko/motions/prayer-release/manifest.json",
+        "finisher": "assets/miko/motions/kagura-finish/manifest.json",
+        "releaseMs": 1260,
+        "recoveryMs": 180,
+        "totalMs": 2000,
+        "type": "M4",
+        "prayer": "assets/miko/motions/prayer/manifest.json"
+      },
+      "summon": null,
+      "effects": [
+        "assets/skills/miko/effects/kagura-robes/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "torii-open",
+        "torii-loop",
+        "torii-close",
+        "kagura-robes"
+      ],
+      "visualHeightInHeroHeights": null
+    },
+    {
+      "id": "flame-wheel",
+      "name": "火車招来",
+      "level": 55,
+      "icon": "assets/skills/miko/icons/flame-wheel.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/summon-forward/manifest.json",
+        "releaseMs": 820,
+        "recoveryMs": 100,
+        "totalMs": 1120,
+        "type": "M1",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/flame-wheel/idle/manifest.json",
+        "action": "assets/skills/miko/summons/flame-wheel/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/flame-wheel/roll/manifest.json",
+        "appear": "assets/skills/miko/guardians/flame-wheel/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/flame-wheel/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/flame-wheel/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/flame-wheel-trail/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": "assets/skills/miko/effects/spirit-impact/manifest.json",
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.5
+      }
+    },
+    {
+      "id": "spring-carp",
+      "name": "泉鯉招来",
+      "level": 60,
+      "icon": "assets/skills/miko/icons/spring-carp.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/blessing-up/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M3",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/spring-carp/idle/manifest.json",
+        "action": "assets/skills/miko/summons/spring-carp/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/spring-carp/idle/manifest.json",
+        "appear": "assets/skills/miko/guardians/spring-carp/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/spring-carp/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/spring-carp/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/water-veil/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.25
+      }
+    },
+    {
+      "id": "life-serpent",
+      "name": "命蛇憑依",
+      "level": 65,
+      "icon": "assets/skills/miko/icons/life-serpent.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/spirit-send/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M2",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "possession",
+        "idle": "assets/skills/miko/possessions/life-serpent/idle/manifest.json",
+        "action": "assets/skills/miko/possessions/life-serpent/action/manifest.json",
+        "locomotion": "assets/skills/miko/possessions/life-serpent/idle/manifest.json",
+        "appear": "assets/skills/miko/possessions/life-serpent/appear/manifest.json",
+        "manifest": "assets/skills/miko/possessions/life-serpent/idle/manifest.json",
+        "disperse": "assets/skills/miko/possessions/life-serpent/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/flower-column/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3.2,
+        "sustain": 2.5,
+        "action": 2.5
+      }
+    },
+    {
+      "id": "golden-lion",
+      "name": "金獅子招来",
+      "level": 70,
+      "icon": "assets/skills/miko/icons/golden-lion.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/summon-forward/manifest.json",
+        "releaseMs": 820,
+        "recoveryMs": 100,
+        "totalMs": 1120,
+        "type": "M1",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/golden-lion/idle/manifest.json",
+        "action": "assets/skills/miko/summons/golden-lion/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/golden-lion/walk/manifest.json",
+        "appear": "assets/skills/miko/guardians/golden-lion/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/golden-lion/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/golden-lion/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/lion-claws/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": "assets/skills/miko/effects/spirit-impact/manifest.json",
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 4,
+        "guardian": 2.5,
+        "sprite": 0.5
+      }
+    },
+    {
+      "id": "spirit-assault",
+      "name": "霊軍進撃",
+      "level": 75,
+      "icon": "assets/skills/miko/icons/spirit-assault.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/spirit-send/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M2",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": null,
+      "effects": [
+        "assets/skills/miko/effects/spirit-impact/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": null
+    },
+    {
+      "id": "prayer-cranes",
+      "name": "祈鶴招来",
+      "level": 80,
+      "icon": "assets/skills/miko/icons/prayer-cranes.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/summon-forward/manifest.json",
+        "releaseMs": 820,
+        "recoveryMs": 100,
+        "totalMs": 1120,
+        "type": "M1",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/prayer-cranes/idle/manifest.json",
+        "action": "assets/skills/miko/summons/prayer-cranes/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/prayer-cranes/idle/manifest.json",
+        "appear": "assets/skills/miko/guardians/prayer-cranes/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/prayer-cranes/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/prayer-cranes/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/crane-guard/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 3,
+        "guardian": 2.5,
+        "sprite": 0.25
+      }
+    },
+    {
+      "id": "twin-possession",
+      "name": "双霊憑依",
+      "level": 85,
+      "icon": "assets/skills/miko/icons/twin-possession.png",
+      "motion": {
+        "prayerCycles": 1,
+        "finisher": "assets/miko/motions/spirit-send/manifest.json",
+        "releaseMs": 830,
+        "recoveryMs": 110,
+        "totalMs": 1160,
+        "type": "M2",
+        "prayer": "assets/miko/motions/prayer/manifest.json",
+        "rotation": null
+      },
+      "summon": null,
+      "effects": [
+        "assets/skills/miko/effects/double-robes/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": null
+    },
+    {
+      "id": "spirit-channel",
+      "name": "霊脈開放",
+      "level": 90,
+      "icon": "assets/skills/miko/icons/spirit-channel.png",
+      "motion": {
+        "prayerCycles": 1,
+        "rotation": "assets/miko/motions/prayer-release/manifest.json",
+        "finisher": "assets/miko/motions/kagura-finish/manifest.json",
+        "releaseMs": 1260,
+        "recoveryMs": 180,
+        "totalMs": 2000,
+        "type": "M4",
+        "prayer": "assets/miko/motions/prayer/manifest.json"
+      },
+      "summon": null,
+      "effects": [
+        "assets/skills/miko/effects/spirit-channel/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "torii-open",
+        "torii-loop",
+        "torii-close",
+        "spirit-channel",
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": null
+    },
+    {
+      "id": "nine-tailed-fox",
+      "name": "神狐・九尾招来",
+      "level": 95,
+      "icon": "assets/skills/miko/icons/nine-tailed-fox.png",
+      "motion": {
+        "prayerCycles": 1,
+        "rotation": "assets/miko/motions/prayer-release/manifest.json",
+        "finisher": "assets/miko/motions/kagura-finish/manifest.json",
+        "releaseMs": 1260,
+        "recoveryMs": 180,
+        "totalMs": 2000,
+        "type": "M4",
+        "prayer": "assets/miko/motions/prayer/manifest.json"
+      },
+      "summon": {
+        "type": "independent",
+        "idle": "assets/skills/miko/summons/nine-tailed-fox/idle/manifest.json",
+        "action": "assets/skills/miko/summons/nine-tailed-fox/action/manifest.json",
+        "locomotion": "assets/skills/miko/summons/nine-tailed-fox/walk/manifest.json",
+        "appear": "assets/skills/miko/guardians/nine-tailed-fox/appear/manifest.json",
+        "manifest": "assets/skills/miko/guardians/nine-tailed-fox/manifest/manifest.json",
+        "disperse": "assets/skills/miko/guardians/nine-tailed-fox/disperse/manifest.json"
+      },
+      "effects": [
+        "assets/skills/miko/effects/foxfire/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": "assets/skills/miko/effects/spirit-impact/manifest.json",
+      "castLayers": [
+        "torii-open",
+        "torii-loop",
+        "torii-close",
+        "summon-circle"
+      ],
+      "visualHeightInHeroHeights": {
+        "appear": 5,
+        "guardian": 3,
+        "sprite": 0.65
+      }
+    },
+    {
+      "id": "myriad-spirit-festival",
+      "name": "奥義・万霊神楽",
+      "level": 100,
+      "icon": "assets/skills/miko/icons/myriad-spirit-festival.png",
+      "motion": {
+        "prayerCycles": 2,
+        "rotation": "assets/miko/motions/prayer-release/manifest.json",
+        "finisher": "assets/miko/motions/kagura-finish/manifest.json",
+        "releaseMs": 1980,
+        "recoveryMs": 180,
+        "totalMs": 2720,
+        "type": "M4",
+        "prayer": "assets/miko/motions/prayer/manifest.json"
+      },
+      "summon": null,
+      "effects": [
+        "assets/skills/miko/effects/festival-finale/manifest.json",
+        "assets/skills/miko/effects/summon-circle/manifest.json"
+      ],
+      "onHit": null,
+      "castLayers": [
+        "torii-open",
+        "torii-loop",
+        "torii-close",
+        "shrine-domain",
+        "kagura-robes",
+        "festival-finale"
+      ],
+      "visualHeightInHeroHeights": null
+    }
+  ]
+}

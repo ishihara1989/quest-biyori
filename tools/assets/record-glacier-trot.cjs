@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const {developmentAsset,makeAssetDirectory,writeAssetJson}=require('../lib/project-paths.cjs');
+const root=developmentAsset('glacier-motions'),[id,file]=process.argv.slice(2),job=JSON.parse(fs.readFileSync(path.join(root,'single-trot-jobs.json'),'utf8')).find(j=>j.id===id);
+if(!job||!file)throw Error('Expected a single trot frame job and generated PNG');
+const target=path.join(root,job.source);if(fs.existsSync(target))throw Error('Source already recorded: '+target);
+makeAssetDirectory(path.dirname(target));fs.copyFileSync(file,target);
+const recordFile=path.join(root,'single-trot.json'),records=fs.existsSync(recordFile)?JSON.parse(fs.readFileSync(recordFile,'utf8')).records:[];
+const previous=records.find(r=>r.id===id),record={...job,generatedPath:file,sha256:crypto.createHash('sha256').update(fs.readFileSync(target)).digest('hex'),tool:'built-in image_gen',reason:previous?'Selected: reconstructed clipped tail, wider source margin; diagonal pose preserved':'Selected: spatially identified diagonal feet; single-frame generation after sheet support/margin failure'};
+if(previous){record.previousSelections=[...(previous.previousSelections||[]),{source:previous.source,sha256:previous.sha256,prompt:previous.prompt,references:previous.references,reason:'Rejected: original tail touched canvas edge'}];records[records.indexOf(previous)]=record;}else records.push(record);
+records.sort((a,b)=>a.enemy.localeCompare(b.enemy)||a.frame-b.frame);
+writeAssetJson(recordFile,{schemaVersion:1,records});
+fs.writeFileSync(path.join(root,'SINGLE-TROT-PROMPTS.md'),'# 氷河・四足歩行の単コマ修正\n\n固定基準絵と脚の位置ガイドを併用。元の原画と不採用記録を保持。A=LH+RF、B=LF+RH。1・2・6でA、3・4・5でBが遊脚。\n\n'+records.map(r=>'## '+r.id+'\n\n'+r.prompt+'\n\n採用原画: '+r.source+'\n参照: '+r.references.join(', ')+'\n').join('\n'));
+console.log(JSON.stringify({id,source:job.source}));

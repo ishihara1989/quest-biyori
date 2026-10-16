@@ -1,0 +1,101 @@
+{
+  "id": "lava-salamander/idle",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/lava-salamander/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "ラヴァサラマンダー",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 41,
+        "top": 259,
+        "right": 613,
+        "bottom": 620
+      },
+      "sourceWidth": 629,
+      "sourceHeight": 684,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 299105,
+      "transparentFraction": 0.6952114653353043
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 14,
+        "top": 240,
+        "right": 599,
+        "bottom": 619
+      },
+      "sourceWidth": 625,
+      "sourceHeight": 684,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 289360,
+      "transparentFraction": 0.6768654970760234
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 41,
+        "top": 62,
+        "right": 616,
+        "bottom": 426
+      },
+      "sourceWidth": 634,
+      "sourceHeight": 570,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 228620,
+      "transparentFraction": 0.6326304720792517
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 16,
+        "top": 75,
+        "right": 594,
+        "bottom": 426
+      },
+      "sourceWidth": 620,
+      "sourceHeight": 570,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 219343,
+      "transparentFraction": 0.6206649688737974
+    }
+  ],
+  "reference": "../../../references/lava-salamander.png",
+  "originalSources": [
+    "../../../sources/lava-salamander/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

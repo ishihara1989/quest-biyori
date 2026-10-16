@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "toad-poison-impact",
+  "label": "毒液の飛沫",
+  "sheet": "toad-poison-impact.png",
+  "preview": "../../../../development/assets/effects/toad-poison-impact/toad-poison-impact-preview.gif",
+  "prompt": "../../../../development/assets/effects/toad-poison-impact/PROMPT.md",
+  "width": 1024,
+  "height": 192,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 192,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 180
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/toad-poison-impact/source-generated.png",
+  "sourceScale": 0.3684210526315789,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "toad-poison-impact-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 82,
+        "top": 13,
+        "right": 174,
+        "bottom": 180
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 572,
+        "height": 693
+      },
+      "sourceAnchor": {
+        "x": 340,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "toad-poison-impact-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 34,
+        "top": 64,
+        "right": 222,
+        "bottom": 180
+      },
+      "sourceCell": {
+        "x": 572,
+        "y": 0,
+        "width": 682,
+        "height": 693
+      },
+      "sourceAnchor": {
+        "x": 361,
+        "y": 595
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "toad-poison-impact-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 32,
+        "top": 61,
+        "right": 223,
+        "bottom": 180
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 693,
+        "width": 652,
+        "height": 561
+      },
+      "sourceAnchor": {
+        "x": 329,
+        "y": 450
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "toad-poison-impact-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 42,
+        "top": 107,
+        "right": 214,
+        "bottom": 180
+      },
+      "sourceCell": {
+        "x": 652,
+        "y": 693,
+        "width": 602,
+        "height": 561
+      },
+      "sourceAnchor": {
+        "x": 296,
+        "y": 437
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

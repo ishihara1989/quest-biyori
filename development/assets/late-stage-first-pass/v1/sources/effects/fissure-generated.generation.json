@@ -1,0 +1,25 @@
+{
+  "id": "effects/fissure",
+  "effect": "fissure",
+  "region": "volcano",
+  "label": "断層斬の地割れ",
+  "kind": "ground",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/fissure-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. long LEFT-directed jagged black-red ground fissure opening in sequential segments with molten orange jets and scattered rock; low side-view perspective. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed ground center (512,850), expand upward/outward; elliptical side-view base. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-38cbc39e-9b08-4a61-bb56-4f279703b910.png",
+  "sha256": "93d3ebe118d4c84e7b232948c560ebfd1264e4ebdc9cbb998549eafde7f7e6e1",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "赤橙の背景光が混入。",
+      "全コマで地割れが横帯の全長に出ており、奥へ走る進行が弱い。発動点から先端へ移る順序を修正する。",
+      "最大コマの岩片が高く、細い帯の判定に対して占有範囲が広い。"
+    ]
+  }
+}

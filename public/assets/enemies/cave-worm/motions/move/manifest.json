@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-worm",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "cave-worm-move.png",
+  "preview": "../../../../../../development/assets/enemies/cave-worm/motions/move/cave-worm-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-worm/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/cave-worm/source/move-registered.png",
+  "sourceScale": 0.3125,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 82,
+        "top": 157,
+        "right": 287,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 752,
+        "height": 436
+      },
+      "sourceAnchor": {
+        "x": 469,
+        "y": 383
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 70,
+        "top": 145,
+        "right": 288,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 752,
+        "y": 0,
+        "width": 752,
+        "height": 436
+      },
+      "sourceAnchor": {
+        "x": 508,
+        "y": 419
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 95,
+        "top": 151,
+        "right": 319,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 436,
+        "width": 752,
+        "height": 436
+      },
+      "sourceAnchor": {
+        "x": 426,
+        "y": 400
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "復帰",
+      "bounds": {
+        "left": 90,
+        "top": 160,
+        "right": 299,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 752,
+        "y": 436,
+        "width": 752,
+        "height": 436
+      },
+      "sourceAnchor": {
+        "x": 443,
+        "y": 372
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-worm/source/move-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 137578,
+        "left": 82,
+        "top": 124,
+        "right": 740,
+        "bottom": 491,
+        "cx": 392.85604529794006,
+        "cy": 332.7370509819884
+      },
+      {
+        "id": 1,
+        "count": 142388,
+        "left": 771,
+        "top": 86,
+        "right": 1473,
+        "bottom": 489,
+        "cx": 1103.675801331573,
+        "cy": 311.7649310335141
+      },
+      {
+        "id": 3,
+        "count": 148050,
+        "left": 49,
+        "top": 544,
+        "right": 768,
+        "bottom": 928,
+        "cx": 392.60180344478215,
+        "cy": 764.6117933130699
+      },
+      {
+        "id": 4,
+        "count": 136993,
+        "left": 820,
+        "top": 583,
+        "right": 1490,
+        "bottom": 939,
+        "cx": 1136.2731526428358,
+        "cy": 784.8397290372501
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

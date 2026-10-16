@@ -1,0 +1,65 @@
+{
+  "id": "horn-jackal",
+  "status": "adopted",
+  "unresolved": [],
+  "frames": 6,
+  "gait": "trot",
+  "durationMs": 720,
+  "sourceSelection": [
+    {
+      "frame": 1,
+      "source": "trot/horn-jackal/sources/frame-1-single.png",
+      "sha256": "ba05390517d3e95f6d7f078d23c177104516223aeef118222cf337ff5060868a",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 2,
+      "source": "trot/horn-jackal/sources/frame-2-single.png",
+      "sha256": "930373f828bdb13a821a32a56cb905d1ecd3dca375272c5e0c8110b6add214d1",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 3,
+      "source": "trot/horn-jackal/sources/frame-3-focused.png",
+      "sha256": "f54a8effef5dd5226c0b699d541395726e11fbc5c52c29ad9c7e9cbcf082dc06",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 4,
+      "source": "trot/horn-jackal/sources/frame-4-focused.png",
+      "sha256": "9bd4526576ebdad9069222fb57aaa4f99d426cd6edfef64439974d9aced351a5",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 5,
+      "source": "trot/horn-jackal/sources/frame-5-focused.png",
+      "sha256": "7b6abd41f62f0f5c09e6e49709c0d5df66752616b542fdd0f06f097912339e06",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 6,
+      "source": "trot/horn-jackal/sources/frame-6-single.png",
+      "sha256": "eddcdb24e7bc1a23be2ce1e4adab6a2ebfd006028ca06a181458991d3e0c23b8",
+      "originalEdge": "unclipped at alpha >=192"
+    }
+  ],
+  "checks": {
+    "referenceAndPalette": "reviewed against canonical reference",
+    "fourConnectedLegs": "reviewed including occluded thigh/shin/ankle",
+    "diagonalContact": "reviewed per frame, failed contact revisions retained as rejected",
+    "bodyAndHeadRegistration": "common scale and fixed eye, no per-frame foot alignment",
+    "frameTransitions": "contact sheet reviewed; browser stepping and replay exercised",
+    "splitBoundary": "3 to 4 reviewed",
+    "loop": "6 to 1 reviewed and runtime frame wrap checked",
+    "alphaAndClipping": "selected originals and packed cells checked separately",
+    "gameRendering": "both facings, all six frames, loop wrap, idle/hit/attack transitions checked"
+  },
+  "backup": {
+    "path": "backups/horn-jackal-walk-before-trot-20261013",
+    "files": 9,
+    "sha256": "verified"
+  },
+  "guides": "trot/horn-jackal/guide.json",
+  "contact": "trot/horn-jackal/contact.png",
+  "browser": "output/highland-implementation/browser-qa.json"
+}

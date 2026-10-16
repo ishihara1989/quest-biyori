@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "id": "epic-warrior-weapon",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone or relic, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. A legendary ruby-red sword-shaped gemstone, three interlocking spectral blade facets, roaring gold corona, crimson and white-hot slash sparks. This is the unique EPIC weapon gem of the sword warrior: endless triple sword strikes.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-b7652338-5b9c-4639-9ea5-3a895110e10a.png",
+      "runtime": "public/assets/ui/gems/epic-warrior-weapon.png",
+      "original": "development/assets/ui/epic-gems/source/epic-warrior-weapon.png"
+    },
+    {
+      "id": "epic-warrior-armor",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone or relic, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. A unique EPIC armor gemstone: a dark blood-red heart-shaped faceted crystal held in a massive blackened-gold armored crest, ten small rising embers, ferocious unbroken-warrior aura. A jewel, not a literal organ, no flesh.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-5fbf0c21-ae2c-49db-b195-267af582c35b.png",
+      "runtime": "public/assets/ui/gems/epic-warrior-armor.png",
+      "original": "development/assets/ui/epic-gems/source/epic-warrior-armor.png"
+    },
+    {
+      "id": "goddess-residue",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone or relic, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. A UNIQUE crafting material called 'Celestial Reverie Residue', intangible divine afterglow left when a gracious goddess peacefully returns to another dimension. Abstract lavender-blue and champagne-gold vapor looping around a tiny empty star-shaped space, drifting diamond motes and translucent overlapping rings, a compact graceful wisp. Do not depict a gem, stone, skull, heart, body part, cloth fragment, weapon, or physical broken piece. Elegant magical residue, recognizably collectible.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-34eb8290-a1b6-42d0-ae24-fd82ac9cfcdb.png",
+      "runtime": "public/assets/ui/gems/goddess-residue.png",
+      "original": "development/assets/ui/epic-gems/source/goddess-residue.png"
+    },
+    {
+      "id": "epic-mage-weapon",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC mage weapon gem: a brilliant cyan sapphire cut as a six-pointed star, encircled by three distinct orbiting miniature spell sigils in violet fire, ice blue and warm gold; a magnificent threefold cosmic spell jewel.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-73c0411c-bff8-42e1-ae51-871c6197aa02.png",
+      "runtime": "public/assets/ui/gems/epic-mage-weapon.png",
+      "original": "development/assets/ui/epic-gems/source/epic-mage-weapon.png"
+    },
+    {
+      "id": "epic-mage-armor",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC mage armor gem: a deep midnight-blue egg-shaped gemstone housing a radiant cyan magical furnace, protected by three concentric platinum-gold astrolabe shield rings; elegant reservoir of boundless mana, imposing defensive jewel.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-862b5deb-4b6b-4020-93d1-7be3ca2f6d46.png",
+      "runtime": "public/assets/ui/gems/epic-mage-armor.png",
+      "original": "development/assets/ui/epic-gems/source/epic-mage-armor.png"
+    },
+    {
+      "id": "epic-paladin-weapon",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC paladin weapon gem: a sun-yellow diamond with a crystal warhammer silhouette at its center, massive golden wing-like beveled facets, white-gold judgment rays and a clear central four-point star; radiant holy power.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-a9b22502-64dc-478d-a211-e693a1104b0b.png",
+      "runtime": "public/assets/ui/gems/epic-paladin-weapon.png",
+      "original": "development/assets/ui/epic-gems/source/epic-paladin-weapon.png"
+    },
+    {
+      "id": "epic-paladin-armor",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC paladin armor gem: a broad shield-shaped pearl-white opal in a royal gold miniature fortress setting, three luminous crenellated towers merging into the gemstone frame, cobalt-blue shield glow; unbreakable divine sanctuary.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-0cc6c05b-f4af-4966-8c68-286a3b3d6b44.png",
+      "runtime": "public/assets/ui/gems/epic-paladin-armor.png",
+      "original": "development/assets/ui/epic-gems/source/epic-paladin-armor.png"
+    },
+    {
+      "id": "epic-ninja-weapon",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC ninja weapon gem: a violet-black faceted shuriken gemstone with four razor diamond points, triple offset silver spectral throwing-star silhouettes and narrow magenta trails; intricate dark platinum and fine gold trim.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-b4083da1-1033-4ee4-a50c-16cba3387b8b.png",
+      "runtime": "public/assets/ui/gems/epic-ninja-weapon.png",
+      "original": "development/assets/ui/epic-gems/source/epic-ninja-weapon.png"
+    },
+    {
+      "id": "epic-ninja-armor",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC ninja armor gem: a mysterious smoky amethyst triangular jewel surrounded by six clearly separate small crescent-shaped shadow jewels, black platinum and gold curling frames, faint violet mist; an army of shadows, distinct silhouette from shuriken.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-95372732-ddc6-41ce-8394-17147c9d867f.png",
+      "runtime": "public/assets/ui/gems/epic-ninja-armor.png",
+      "original": "development/assets/ui/epic-gems/source/epic-ninja-armor.png"
+    },
+    {
+      "id": "goddess-page",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Equipment enhancement PAGE ICON for the final goddess: an ornate floating circular celestial gateway, champagne-gold concentric halo, elegant four-pointed stars and one lavender-blue central diamond-shaped empty portal glowing softly. Regal abstract divine presence, no person, no body, no damage or broken fragments. Make a distinctive navigational emblem, not a gemstone inventory item.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-4ad04140-bdf7-45c1-9050-c02a4f8f6e14.png",
+      "runtime": "public/assets/ui/gems/goddess-page.png",
+      "original": "development/assets/ui/epic-gems/source/goddess-page.png"
+    },
+    {
+      "id": "epic-shaman-weapon",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC shaman weapon gem: an emerald-teal elongated hexagonal jewel in ornate black-gold thorn filigree, three small orbiting curse-flame gems and twenty-five tiny luminous rune-like notches without writing; sinister beautiful endless layered curses, no bones, no skull.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-8dd0615d-9724-4d44-b323-b87d56ced0c3.png",
+      "runtime": "public/assets/ui/gems/epic-shaman-weapon.png",
+      "original": "development/assets/ui/epic-gems/source/epic-shaman-weapon.png"
+    },
+    {
+      "id": "epic-shaman-armor",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC shaman armor gem: a wide jade-green and ghost-white crescent gemstone with two interwoven spectral teal streams forming a closed circulation loop, antique gold protective knotwork and soft green soul sparks; life and mana returning from curses.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-8fec1cd7-69f8-4248-9f0c-5e657f394147.png",
+      "runtime": "public/assets/ui/gems/epic-shaman-armor.png",
+      "original": "development/assets/ui/epic-gems/source/epic-shaman-armor.png"
+    },
+    {
+      "id": "epic-miko-weapon",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC shrine maiden weapon gem: a spectacular vermilion and pearl-white faceted jewel shaped like a sacred bell, golden torii-shaped mounting, flowing white zigzag paper-streamer-like crystal facets and a luminous sun-disc halo. Eternal divine kagura festival, festive red white gold.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-30a5ad31-4d89-4ace-8ce7-20b651ffd077.png",
+      "runtime": "public/assets/ui/gems/epic-miko-weapon.png",
+      "original": "development/assets/ui/epic-gems/source/epic-miko-weapon.png"
+    },
+    {
+      "id": "epic-miko-armor",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. Unique EPIC shrine maiden armor gem: a magnificent pearl-white moonstone jewel cradled in a golden shrine-roof-shaped frame, surrounded by fifteen small multicolored spirit lights, stylized fox-tail and crane-wing crystal motifs. All spirits together, sacred red accents, rich emerald blue and violet glints.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-0dedce73-4391-4dd0-ad71-0915a0cacd70.png",
+      "runtime": "public/assets/ui/gems/epic-miko-armor.png",
+      "original": "development/assets/ui/epic-gems/source/epic-miko-armor.png"
+    },
+    {
+      "id": "legendary-reprisal",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. A LEGENDARY defensive MP recovery jewel: a rich sapphire blue teardrop gemstone nested inside a sturdy golden shield crest, two rising cyan mana streams and a tiny impact flare on the outer shield. Slightly simpler than the EPIC jewels, powerful and readable.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-0c4aea18-dfb4-4e94-9c5e-2ad52239aeb7.png",
+      "runtime": "public/assets/ui/gems/legendary-reprisal.png",
+      "original": "development/assets/ui/epic-gems/source/legendary-reprisal.png"
+    },
+    {
+      "id": "legendary-timeshift",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. A LEGENDARY defensive cooldown recovery jewel: an amber and violet faceted hourglass-shaped gemstone nested in a golden shield frame, a clear circular cyan rewind arc around the jewel and small impact sparks. No clock numerals or writing. Slightly simpler than the EPIC jewels.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-60c5932d-ffce-4485-9c92-09eb8c49c8b2.png",
+      "runtime": "public/assets/ui/gems/legendary-timeshift.png",
+      "original": "development/assets/ui/epic-gems/source/legendary-timeshift.png"
+    },
+    {
+      "id": "shard-epic",
+      "prompt": "Use case: stylized-concept. Asset type: one premium inventory icon for a pixel-art-inspired fantasy idle RPG, square canvas, truly transparent RGBA background. A single isolated richly faceted magical gemstone, crisp pixel-art edges, elaborate gold and celestial platinum filigree, luminous colored core, small distinct orbiting glints, exceptionally rare endgame treasure quality. Strong readable silhouette at 64px. Object centered in middle 76% of canvas with ample transparent margin. No text, letters, numbers, UI border, checkerboard, backdrop, ground shadow, body parts. One inventory icon showing a small elegant pile of seven faceted iridescent gemstone shards, white-cyan cores refracting lavender, pink, gold and emerald, tiny floating sparks and delicate gold flecks; visibly more precious than legendary amber gem shards, no setting, no bag.",
+      "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ed3-5412-7702-ad2a-91076c522fd6\\exec-ae502aaa-77d2-49ef-bf42-07f5155738c2.png",
+      "runtime": "public/assets/ui/gems/shard-epic.png",
+      "original": "development/assets/ui/epic-gems/source/shard-epic.png"
+    }
+  ]
+}

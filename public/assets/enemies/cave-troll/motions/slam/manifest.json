@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-troll",
+  "motion": "slam",
+  "facing": "left",
+  "label": "棍棒振り下ろし",
+  "sheet": "cave-troll-slam.png",
+  "preview": "../../../../../../development/assets/enemies/cave-troll/motions/slam/cave-troll-slam-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-troll/PROMPT.md",
+  "width": 2816,
+  "height": 512,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1040,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/cave-troll/source/slam-registered.png",
+  "sourceScale": 0.6407766990291263,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "cave-troll-slam-quake",
+      "type": "spawn-effect",
+      "effect": "cave-quake",
+      "frame": 2,
+      "timeMs": 500,
+      "power": 1.4
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "slam-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 240,
+      "phase": "開始",
+      "bounds": {
+        "left": 97,
+        "top": 221,
+        "right": 483,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 741,
+        "height": 564
+      },
+      "sourceAnchor": {
+        "x": 502,
+        "y": 444
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "slam-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 260,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 145,
+        "top": 155,
+        "right": 471,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 741,
+        "y": 0,
+        "width": 741,
+        "height": 564
+      },
+      "sourceAnchor": {
+        "x": 427,
+        "y": 547
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "slam-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 240,
+      "phase": "作用",
+      "bounds": {
+        "left": 13,
+        "top": 234,
+        "right": 466,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 564,
+        "width": 741,
+        "height": 564
+      },
+      "sourceAnchor": {
+        "x": 633,
+        "y": 423
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "slam-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 43,
+        "top": 247,
+        "right": 462,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 741,
+        "y": 564,
+        "width": 741,
+        "height": 564
+      },
+      "sourceAnchor": {
+        "x": 586,
+        "y": 404
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-troll/source/slam-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 125584,
+        "left": 72,
+        "top": 84,
+        "right": 675,
+        "bottom": 512,
+        "cx": 424.92538858453304,
+        "cy": 307.13336890049686
+      },
+      {
+        "id": 1,
+        "count": 122296,
+        "left": 886,
+        "top": 5,
+        "right": 1395,
+        "bottom": 536,
+        "cx": 1137.4129652646038,
+        "cy": 290.3808464708576
+      },
+      {
+        "id": 13,
+        "count": 132824,
+        "left": 56,
+        "top": 561,
+        "right": 764,
+        "bottom": 968,
+        "cx": 460.71017286032645,
+        "cy": 775.4782042401976
+      },
+      {
+        "id": 14,
+        "count": 127916,
+        "left": 795,
+        "top": 587,
+        "right": 1449,
+        "bottom": 975,
+        "cx": 1166.9950123518558,
+        "cy": 793.3393086087746
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 495
+    },
+    "origin": {
+      "x": 294,
+      "y": 345
+    },
+    "assets": [
+      {
+        "id": "cave-quake",
+        "manifest": "../../../../effects/cave-quake/manifest.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "enemy": "obsidian-scorpion",
+  "motion": "rest",
+  "facing": "left",
+  "label": "rest",
+  "sheet": "obsidian-scorpion-rest.png",
+  "preview": "../../../../../../development/assets/enemies/obsidian-scorpion/motions/rest/obsidian-scorpion-rest-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1200,
+  "height": 410,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 600,
+  "frameHeight": 410,
+  "frameCount": 2,
+  "pivot": {
+    "x": 348,
+    "y": 392
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1950,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/obsidian-scorpion/source/rest-registered.png",
+  "sourceScale": 0.5588822355289421,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "rest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 1700,
+      "phase": "構え",
+      "bounds": {
+        "left": 189,
+        "top": 112,
+        "right": 510,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 709,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 356,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "rest-02.png",
+      "x": 600,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 250,
+      "phase": "予告",
+      "bounds": {
+        "left": 189,
+        "top": 114,
+        "right": 511,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 709,
+        "y": 632,
+        "width": 709,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 551
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/obsidian-scorpion-idle-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/obsidian-scorpion.png",
+  "action": {
+    "motion": "rest",
+    "warn": 1500,
+    "times": [],
+    "power": 0,
+    "radius": 0,
+    "kind": "rest",
+    "status": null,
+    "duration": 1950
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 671,
+          "height": 600
+        },
+        {
+          "x": 671,
+          "y": 0,
+          "width": 659,
+          "height": 600
+        },
+        {
+          "x": 0,
+          "y": 600,
+          "width": 677,
+          "height": 582
+        },
+        {
+          "x": 677,
+          "y": 600,
+          "width": 653,
+          "height": 582
+        }
+      ]
+    }
+  ]
+}

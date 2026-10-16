@@ -1,0 +1,201 @@
+{
+  "id": "volcano-lava-pool",
+  "enemy": null,
+  "region": "volcano",
+  "label": "残留溶岩床",
+  "kind": "ground",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "pivot": {
+    "x": 256,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/lava-pool-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8971061706542969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 101,
+        "top": 129,
+        "right": 419,
+        "bottom": 384
+      },
+      "visibleBounds": {
+        "left": 106,
+        "top": 206,
+        "right": 405,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-pool-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 727,
+        "height": 572
+      },
+      "sourceScale": 0.45385779122541603,
+      "sourceAnchor": {
+        "x": 365,
+        "y": 470
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8984870910644531,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 96,
+        "top": 132,
+        "right": 418,
+        "bottom": 383
+      },
+      "visibleBounds": {
+        "left": 106,
+        "top": 214,
+        "right": 405,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-pool-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 727,
+        "y": 0,
+        "width": 721,
+        "height": 572
+      },
+      "sourceScale": 0.45385779122541603,
+      "sourceAnchor": {
+        "x": 361,
+        "y": 470
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8925323486328125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 105,
+        "top": 138,
+        "right": 414,
+        "bottom": 367
+      },
+      "visibleBounds": {
+        "left": 106,
+        "top": 188,
+        "right": 405,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-pool-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 572,
+        "width": 727,
+        "height": 514
+      },
+      "sourceScale": 0.45385779122541603,
+      "sourceAnchor": {
+        "x": 365,
+        "y": 441
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9014320373535156,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 92,
+        "top": 138,
+        "right": 411,
+        "bottom": 370
+      },
+      "visibleBounds": {
+        "left": 106,
+        "top": 210,
+        "right": 406,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-pool-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 727,
+        "y": 572,
+        "width": 721,
+        "height": 514
+      },
+      "sourceScale": 0.45385779122541603,
+      "sourceAnchor": {
+        "x": 360.5,
+        "y": 441
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/lava-pool/preview.gif",
+  "action": null
+}

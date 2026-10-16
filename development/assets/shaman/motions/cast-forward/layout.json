@@ -1,0 +1,40 @@
+{
+  "source": "source/shaman-cast-forward-generated-v3.png",
+  "columns": 3,
+  "rows": 1,
+  "scale": 0.24821428571428572,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 697,
+        "height": 724
+      },
+      "connectionSource": {
+        "motion": "chant",
+        "frame": 0
+      }
+    },
+    {
+      "rect": {
+        "x": 697,
+        "y": 0,
+        "width": 728,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1425,
+        "y": 0,
+        "width": 747,
+        "height": 724
+      },
+      "anchor": {
+        "x": 277,
+        "y": 671
+      }
+    }
+  ]
+}

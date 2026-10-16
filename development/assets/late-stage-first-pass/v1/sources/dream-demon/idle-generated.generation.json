@@ -1,0 +1,28 @@
+{
+  "id": "dream-demon/idle",
+  "enemy": "dream-demon",
+  "region": "demon-castle",
+  "motion": "idle",
+  "label": "待機",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/dream-demon.png",
+  "guide": null,
+  "source": "sources/dream-demon/idle-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame IDLE breathing sheet EXACT 2x2, order top-left, top-right, bottom-left, bottom-right. 夢魔. Frame1 canonical neutral; frame2 chest rises 8px, hair/tail/cape/wing tip moves 12px; frame3 neutral; frame4 chest settles 5px, secondary parts return. Feet stay planted, body does not translate, subtle distinct redraws, smooth 4->1 loop. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-4f02b310-e4ed-4d6a-842b-13d48819a659.png",
+  "sha256": "ce9b09251bd4935ade66e9a377cc592b059aa91702a04006a0f4e777387a933a",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "紫髪・小翼・衣装と成人の顔を保持。"
+    ],
+    "issues": [
+      "2コマ目の髪が強く右へ流れる。待機4→1の連続性と翼端の揺れを確認する。",
+      "顔と身体が正面寄り。攻撃方向の左向きと揃える。"
+    ]
+  }
+}

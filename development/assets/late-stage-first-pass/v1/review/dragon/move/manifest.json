@@ -1,0 +1,137 @@
+{
+  "id": "dragon/move",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon/move-1-generated.png",
+    "sources/dragon/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "ドラゴン",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 73,
+        "top": 129,
+        "right": 717,
+        "bottom": 567
+      },
+      "sourceWidth": 752,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 348583,
+      "transparentFraction": 0.6402503085694135
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 31,
+        "top": 130,
+        "right": 687,
+        "bottom": 572
+      },
+      "sourceWidth": 726,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 326618,
+      "transparentFraction": 0.6213909562729252
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 36,
+        "top": 129,
+        "right": 669,
+        "bottom": 572
+      },
+      "sourceWidth": 694,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 308412,
+      "transparentFraction": 0.6138089703377012
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 69,
+        "top": 100,
+        "right": 721,
+        "bottom": 590
+      },
+      "sourceWidth": 753,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 325123,
+      "transparentFraction": 0.5963677518287807
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 30,
+        "top": 100,
+        "right": 692,
+        "bottom": 591
+      },
+      "sourceWidth": 724,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 303242,
+      "transparentFraction": 0.5785117975641769
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 30,
+        "top": 100,
+        "right": 674,
+        "bottom": 589
+      },
+      "sourceWidth": 695,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 285106,
+      "transparentFraction": 0.566608370761954
+    }
+  ],
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/move-1-generated.png",
+    "../../../sources/dragon/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

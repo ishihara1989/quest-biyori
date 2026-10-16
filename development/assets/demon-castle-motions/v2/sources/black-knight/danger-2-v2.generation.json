@@ -1,0 +1,18 @@
+{
+  "id": "black-knight/danger-2",
+  "source": "danger-2-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame dangerous HORIZONTAL \"black ring sweep\" action by the exact canonical horned black knight. BODY and held sword only, ring VFX separate.\nSame closed black horned helmet/red visor, black armor with restrained gold trim, crimson ragged cape, broad black greatsword with silver edge and red rune. Two arms, two gauntleted hands, two legs. LEFT-facing mild three-quarter view, unchanged canonical proportions/palette and crisp JRPG pixel art.\nExactly FOUR complete SMALL figures in equal 2x2 cells, row-major, broad transparent margins. Entire sword, cape, horns and boots fit inside normalized x=150..850,y=160..850 of each cell, with large clear gutters. No neighboring overlap or edge clipping. Same body and sword scale in all frames. Make body smaller to fit wide sweep.\nThis attack is a WAIST-HEIGHT SIDEWAYS SWEEP, NOT overhead or downward. Sword NEVER rises above the shoulders. Both hands always hold the SAME single hilt, each wrist/elbow connects to own shoulder.\nRoot pelvis around (550,610), head (525,350), boots y=835.\nFrame 1 PREPARE: slightly bent knees, both hands near (480,645), blade points down-left to (210,780), quiet cape.\nFrame 2 LONG WINDUP: waist and shoulders rotate RIGHT, both hands draw hilt to right hip at (575,590), SAME sword extends behind/right toward tip (830,550), blade nearly horizontal and below shoulders. Elbows bent, both hands on one handle. Head still looks LEFT. Cape stays within x=400..800.\nFrame 3 RELEASE: forceful horizontal sweep to LEFT at waist height, both hands push hilt to (430,580), blade extends LEFT to tip (170,580). Torso rotates left 12 degrees, knees flex, two feet planted. Same sword length/width and red rune. No drawn arc or circle.\nFrame 4 RECOVERY: sword returns to low left ready angle and frame-1 posture, cape settles without expanding.\nNo overhead sword pose, external slash, magic ring, lightning, ground cracks, aura, background, floor, shadow slab, labels, text, grid, checkerboard or watermark. Genuine transparent alpha.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-69adb98d-c889-40e0-8ba6-5408ab6dca26.png",
+  "sha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/black-knight.png",
+      "sha256": "960272c41473b518701eeb9f49bb35c9d06273070244ac4f956e2196937d2c59"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "danger-2-v2.prompt.txt"
+}

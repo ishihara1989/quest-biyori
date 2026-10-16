@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-14",
+  "scope": "static candidate images only",
+  "registeredInGame": false,
+  "animationGenerated": false,
+  "checks": {
+    "visual": "Generated final images inspected individually: seated pose, hovering pose, same face/costume/palette, full figure/throne, empty battle floor",
+    "alpha": "PNG pixels decoded with pngjs; character references have alpha=0 background, stage is fully opaque; original alpha preserved",
+    "animation": "Not applicable yet; all-frame and continuous-playback inspection required after motion generation",
+    "inGame": "Pending adoption; current request is planning and static references"
+  },
+  "images": [
+    {
+      "file": "references/phase-1-seated.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaCounts": {
+        "transparent": 982206,
+        "partial": 589544,
+        "opaque": 766
+      },
+      "visibleBoundsAlphaGreaterThan16": [
+        167,
+        145,
+        1081,
+        1093
+      ],
+      "visibleMargins": [
+        167,
+        145,
+        172,
+        160
+      ],
+      "tenPercentMargin": true,
+      "fullyContained": true
+    },
+    {
+      "file": "references/phase-2-awakened.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaCounts": {
+        "transparent": 797688,
+        "partial": 774548,
+        "opaque": 280
+      },
+      "visibleBoundsAlphaGreaterThan16": [
+        66,
+        35,
+        1190,
+        1195
+      ],
+      "visibleMargins": [
+        66,
+        35,
+        63,
+        58
+      ],
+      "tenPercentMargin": false,
+      "fullyContained": true,
+      "note": "Expand cell padding when preparing animation; do not shrink body relative to phase 1."
+    },
+    {
+      "file": "references/stage-throne-beyond-dimensions.png",
+      "size": [
+        1672,
+        941
+      ],
+      "alphaCounts": {
+        "transparent": 0,
+        "partial": 0,
+        "opaque": 1573352
+      },
+      "fullyContained": true,
+      "note": "Composition leaves flat empty arena; white floor/white goddess contrast to review at runtime scale."
+    }
+  ],
+  "observations": [
+    "Character interiors are mainly alpha 251-254; do not strip the original generated alpha.",
+    "Low-alpha fringe includes saturated RGB; dark/light runtime appearance and edge cleanup remain adoption checks."
+  ],
+  "futureRequired": [
+    "Separate body/throne/halo references",
+    "Normalize body size and anchors",
+    "Inspect every generated frame and continuous playback",
+    "Verify in-game forecasts, phase change, interruption and defeat cleanup"
+  ]
+}

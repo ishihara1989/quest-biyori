@@ -1,0 +1,24 @@
+{
+  "id": "lava-salamander/danger-1",
+  "source": "sources/lava-salamander/danger-1-v3.png",
+  "prompt": "Use case: stylized-concept. Four 2x2 body poses for lava salamander dangerous flame breath. Neutral, windup, release, neutral return. Windup: KEEP HEAD AND MUZZLE POINTING LEFT throughout; slide ENTIRE head RIGHT 25px toward torso without rotating it rightward or changing neck length. Dorsal fins and attached chest orange stripes become yellow for windup. Release same head moves LEFT 35px and opens mouth LEFT. Four planted feet, SAME proportions and fins. No fire beam in body sheet. Canonical input is immutable identity, same armor/face/head proportions and refined crisp JRPG pixel clusters. LEFT-facing 3/4. TRUE transparent alpha=0 outside sharply outlined silhouette, NO gradient haze, NO glow beyond outline, NO floor or shadow, no checkerboard or text. All complete silhouettes stay within equal cells and empty gutters. No huge canvas-filling subjects.",
+  "selected": true,
+  "reason": "Targeted second revision after visual review",
+  "tool": "built-in image_gen",
+  "sha256": "b439ee887b6db197fa04385524235dfc8b3fd18ecbc732d1202ca493084ac7d8",
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "firstPass": "sources/lava-salamander/danger-1-generated.png",
+  "issues": [
+    "通常の噛みつきと構え・発動が近く、危険技の胸・背びれの溜めが弱い。専用の溜め差を付ける。",
+    "火炎エフェクトの放射位置を口の先端に合わせる必要がある。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

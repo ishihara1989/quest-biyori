@@ -1,0 +1,32 @@
+[
+  {
+    "id": "attack",
+    "label": "インプ・爪撃",
+    "manifest": "attack/manifest.json"
+  },
+  {
+    "id": "idle",
+    "label": "インプ・待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "インプ・被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "インプ・撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "インプ・移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "danger-1",
+    "label": "インプ・呪弾",
+    "manifest": "danger-1/manifest.json"
+  }
+]

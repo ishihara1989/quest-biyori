@@ -1,0 +1,101 @@
+{
+  "id": "effects/axe-arc",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "黒曜斧の軌跡",
+  "kind": "target",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/axe-arc-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 186,
+        "top": 136,
+        "right": 556,
+        "bottom": 482
+      },
+      "sourceWidth": 626,
+      "sourceHeight": 570,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 293272,
+      "transparentFraction": 0.821904601759991
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 68,
+        "top": 59,
+        "right": 609,
+        "bottom": 554
+      },
+      "sourceWidth": 652,
+      "sourceHeight": 570,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 212426,
+      "transparentFraction": 0.5715907867829082
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 39,
+        "top": 14,
+        "right": 754,
+        "bottom": 612
+      },
+      "sourceWidth": 768,
+      "sourceHeight": 660,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 185273,
+      "transparentFraction": 0.36551649305555556
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 13,
+        "top": 149,
+        "right": 456,
+        "bottom": 573
+      },
+      "sourceWidth": 510,
+      "sourceHeight": 660,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 227652,
+      "transparentFraction": 0.6763279857397504
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/axe-arc-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

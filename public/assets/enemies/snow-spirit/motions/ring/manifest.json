@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "enemy": "snow-spirit",
+  "motion": "ring",
+  "facing": "left",
+  "label": "冷気輪",
+  "sheet": "snow-spirit-ring.png",
+  "preview": "../../../../../../development/assets/enemies/snow-spirit/motions/ring/snow-spirit-ring-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1520,
+  "height": 310,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 380,
+  "frameHeight": 310,
+  "frameCount": 4,
+  "pivot": {
+    "x": 213,
+    "y": 288
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/snow-spirit/ring.png",
+  "sourceScale": 0.3419811320754717,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-ring",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "ring-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 152,
+        "top": 114,
+        "right": 272,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 728,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 348.5,
+        "y": 573
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 1,
+      "file": "ring-02.png",
+      "x": 380,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 128,
+        "top": 99,
+        "right": 295,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 728,
+        "y": 0,
+        "width": 728,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 362.5,
+        "y": 583
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 2,
+      "file": "ring-03.png",
+      "x": 760,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 114,
+        "top": 82,
+        "right": 310,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 663,
+        "width": 728,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 345.03516001284385,
+        "y": 581
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 3,
+      "file": "ring-04.png",
+      "x": 1140,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 149,
+        "top": 112,
+        "right": 274,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 728,
+        "y": 663,
+        "width": 728,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 284,
+        "y": 572
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/snow-spirit.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/snow-spirit/ring-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 603,
+          "height": 623
+        },
+        {
+          "x": 603,
+          "y": 0,
+          "width": 651,
+          "height": 623
+        },
+        {
+          "x": 0,
+          "y": 623,
+          "width": 696,
+          "height": 631
+        },
+        {
+          "x": 696,
+          "y": 623,
+          "width": 558,
+          "height": 631
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "ring",
+    "warn": 2600,
+    "times": [
+      2600
+    ],
+    "kind": "circles",
+    "radius": 110,
+    "effect": "ring",
+    "rest": 5000,
+    "status": "chill",
+    "duration": 3100
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "id": "volcano-lava-impact",
+  "enemy": null,
+  "region": "volcano",
+  "label": "溶岩着弾",
+  "kind": "ground",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "pivot": {
+    "x": 256,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/lava-impact-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9626693725585938,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 46,
+        "top": 113,
+        "right": 423,
+        "bottom": 389
+      },
+      "visibleBounds": {
+        "left": 183,
+        "top": 239,
+        "right": 327,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-impact-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 729,
+        "height": 505
+      },
+      "sourceScale": 0.5760743321718932,
+      "sourceAnchor": {
+        "x": 435.5,
+        "y": 415
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8784027099609375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 18,
+        "top": 78,
+        "right": 480,
+        "bottom": 368
+      },
+      "visibleBounds": {
+        "left": 101,
+        "top": 170,
+        "right": 411,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-impact-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 729,
+        "y": 0,
+        "width": 807,
+        "height": 505
+      },
+      "sourceScale": 0.5760743321718932,
+      "sourceAnchor": {
+        "x": 414,
+        "y": 452
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.7343101501464844,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 8,
+        "top": 75,
+        "right": 471,
+        "bottom": 373
+      },
+      "visibleBounds": {
+        "left": 44,
+        "top": 105,
+        "right": 468,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-impact-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 505,
+        "width": 816,
+        "height": 519
+      },
+      "sourceScale": 0.5760743321718932,
+      "sourceAnchor": {
+        "x": 441.5,
+        "y": 456
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "transparentFraction": 0.983642578125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 103,
+        "top": 102,
+        "right": 496,
+        "bottom": 400
+      },
+      "visibleBounds": {
+        "left": 106,
+        "top": 245,
+        "right": 404,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-impact-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 816,
+        "y": 505,
+        "width": 720,
+        "height": 519
+      },
+      "sourceScale": 0.5760743321718932,
+      "sourceAnchor": {
+        "x": 265,
+        "y": 409
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/lava-impact/preview.gif",
+  "action": null
+}

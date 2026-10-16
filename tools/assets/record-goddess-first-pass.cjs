@@ -1,0 +1,16 @@
+'use strict';
+const fs=require('node:fs'), path=require('node:path'), crypto=require('node:crypto');
+const {developmentAsset,makeAssetDirectory,writeAssetJson}=require('../lib/project-paths.cjs');
+const root=developmentAsset('extradimensional-goddess/first-pass-v1');
+const [id,input]=process.argv.slice(2);
+const jobs=JSON.parse(fs.readFileSync(path.join(root,'jobs.json'),'utf8'));
+const job=jobs.find(j=>j.id===id); if(!job)throw Error('Unknown job '+id);
+const file=path.join(root,'generation.json');
+const generation=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):{date:'2026-10-15',timezone:'Asia/Tokyo',tool:'built-in image_gen',status:'first-pass-only-not-registered',records:[]};
+if(generation.records.some(j=>j.id===id))throw Error('Refusing second generation or replacement '+id);
+const dest=path.join(root,job.source);makeAssetDirectory(path.dirname(dest));fs.copyFileSync(input,dest,fs.constants.COPYFILE_EXCL);
+const hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const supplied=job.references.filter(f=>fs.existsSync(path.resolve(root,f))),unavailable=job.references.filter(f=>!fs.existsSync(path.resolve(root,f)));
+const record={id,source:job.source,sha256:hash(dest),prompt:job.prompt,transparent_background:true,generatedPath:input,references:supplied.map(f=>({file:f,sha256:hash(path.resolve(root,f))})),unavailableReferences:unavailable,attempt:1};
+generation.records.push(record);writeAssetJson(dest.replace(/\.png$/,'.generation.json'),record);writeAssetJson(file,generation);
+console.log(JSON.stringify({id,source:job.source,generated:generation.records.length,planned:jobs.length}));

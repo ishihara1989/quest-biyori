@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ancient-crossbowman",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "ancient-crossbowman-idle.png",
+  "preview": "../../../../../../development/assets/enemies/ancient-crossbowman/motions/idle/ancient-crossbowman-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/ancient-crossbowman/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1040,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/ancient-crossbowman/source/idle-registered.png",
+  "sourceScale": 0.3415492957746479,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 260,
+      "phase": "開始",
+      "bounds": {
+        "left": 65,
+        "top": 109,
+        "right": 242,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 676,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 523,
+        "y": 622
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 260,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 63,
+        "top": 106,
+        "right": 241,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 0,
+        "width": 676,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 529,
+        "y": 622
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 260,
+      "phase": "作用",
+      "bounds": {
+        "left": 63,
+        "top": 109,
+        "right": 242,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 662,
+        "width": 676,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 529,
+        "y": 605
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 260,
+      "phase": "復帰",
+      "bounds": {
+        "left": 66,
+        "top": 113,
+        "right": 245,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 662,
+        "width": 676,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 521,
+        "y": 605
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/ancient-crossbowman/source/idle-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/ancient-crossbowman/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 610,
+          "height": 630
+        },
+        {
+          "x": 610,
+          "y": 0,
+          "width": 644,
+          "height": 630
+        },
+        {
+          "x": 0,
+          "y": 630,
+          "width": 616,
+          "height": 624
+        },
+        {
+          "x": 616,
+          "y": 630,
+          "width": 638,
+          "height": 624
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ]
+}

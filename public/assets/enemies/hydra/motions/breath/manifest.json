@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hydra",
+  "motion": "breath",
+  "facing": "left",
+  "label": "毒ガスブレス",
+  "sheet": "hydra-breath.png",
+  "preview": "../../../../../../development/assets/enemies/hydra/motions/breath/hydra-breath-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hydra/PROMPT.md",
+  "width": 2816,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/hydra/source/breath-registered.png",
+  "sourceScale": 0.6626016260162602,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "hydra-breath-1",
+      "type": "spawn-effect",
+      "effect": "hydra-poison-breath",
+      "frame": 1,
+      "timeMs": 180,
+      "power": 2
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "breath-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "毒ガス溜めから",
+      "bounds": {
+        "left": 142,
+        "top": 110,
+        "right": 576,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 712,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/hydra/source/charge-registered.png",
+      "reusedPose": "charge/0"
+    },
+    {
+      "index": 1,
+      "file": "breath-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 97,
+        "top": 110,
+        "right": 566,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 952,
+        "height": 563
+      },
+      "sourceAnchor": {
+        "x": 578,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "breath-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 300,
+      "phase": "作用",
+      "bounds": {
+        "left": 9,
+        "top": 101,
+        "right": 557,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 563,
+        "width": 860,
+        "height": 563
+      },
+      "sourceAnchor": {
+        "x": 618,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "breath-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 114,
+        "top": 106,
+        "right": 577,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 749,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 462,
+        "y": 509
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/hydra/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/hydra/source/breath-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 167152,
+      "left": 124,
+      "top": 6,
+      "right": 767,
+      "bottom": 536,
+      "cx": 427.4972958744137,
+      "cy": 290.33261941227147
+    },
+    {
+      "id": 2,
+      "count": 168614,
+      "left": 822,
+      "top": 16,
+      "right": 1530,
+      "bottom": 500,
+      "cx": 1157.3819433736226,
+      "cy": 295.8132717330708
+    },
+    {
+      "id": 16,
+      "count": 204394,
+      "left": 14,
+      "top": 511,
+      "right": 841,
+      "bottom": 1010,
+      "cx": 430.8495699482372,
+      "cy": 779.9382271495249
+    },
+    {
+      "id": 15,
+      "count": 161560,
+      "left": 877,
+      "top": 506,
+      "right": 1532,
+      "bottom": 1011,
+      "cx": 1189.8813753404308,
+      "cy": 800.8174981431048
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 300,
+    "defaultZoom": 1,
+    "target": {
+      "x": 140,
+      "y": 431
+    },
+    "assets": [
+      {
+        "id": "hydra-poison-breath",
+        "manifest": "../../../../effects/hydra-poison-breath/manifest.json"
+      }
+    ],
+    "origin": {
+      "x": 233.28000000000003,
+      "y": 261.48
+    },
+    "targetRange": 233
+  }
+}

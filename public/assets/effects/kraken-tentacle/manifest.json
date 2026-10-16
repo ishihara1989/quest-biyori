@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "kraken-tentacle",
+  "label": "地中から出る触手",
+  "sheet": "kraken-tentacle.png",
+  "preview": "../../../../development/assets/effects/kraken-tentacle/kraken-tentacle-preview.gif",
+  "prompt": "../../../../development/assets/effects/kraken-tentacle/PROMPT.md",
+  "width": 1152,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 288,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 144,
+    "y": 306
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/kraken-tentacle/source-generated.png",
+  "sourceScale": 0.6375545851528385,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "kraken-tentacle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 288,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 42,
+        "top": 17,
+        "right": 246,
+        "bottom": 305
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 420,
+        "y": 481
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "kraken-tentacle-02.png",
+      "x": 288,
+      "y": 0,
+      "width": 288,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 35,
+        "top": 26,
+        "right": 252,
+        "bottom": 306
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 350,
+        "y": 480
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "kraken-tentacle-03.png",
+      "x": 576,
+      "y": 0,
+      "width": 288,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 28,
+        "top": 18,
+        "right": 259,
+        "bottom": 306
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 415,
+        "y": 481
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "kraken-tentacle-04.png",
+      "x": 864,
+      "y": 0,
+      "width": 288,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 40,
+        "top": 15,
+        "right": 248,
+        "bottom": 306
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 361,
+        "y": 481
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

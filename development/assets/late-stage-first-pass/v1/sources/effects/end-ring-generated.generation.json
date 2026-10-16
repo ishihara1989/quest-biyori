@@ -1,0 +1,27 @@
+{
+  "id": "effects/end-ring",
+  "effect": "end-ring",
+  "region": "demon-castle",
+  "label": "終焉の衝撃輪",
+  "kind": "ground",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/end-ring-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. spectacular enormous THIN hollow low elliptical gold-white ring with violet-black outer boundary and sparse crimson sparks, FULLY transparent center. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed ground center (512,850), expand upward/outward; elliptical side-view base. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-f64a7b6a-3632-4be7-952d-cde7ce87f916.png",
+  "sha256": "d139205b1e706190a05af06680a5e07c54ade7d6aa3e11b5f1d038628b804b0c",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "低い金白の薄い楕円輪、紫黒の外縁、赤い粒子を表現。"
+    ],
+    "issues": [
+      "輪の中央に茶灰色の光が塗られている。中央を完全透過にする。",
+      "最大コマで外周の尖った光が増える。薄い衝撃輪の役割と大きさを維持する。"
+    ]
+  }
+}

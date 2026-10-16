@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "nine-tailed-fox-walk-a",
+  "character": "miko",
+  "subject": "nine-tailed-fox",
+  "group": "summon",
+  "motion": "walk-a",
+  "sheet": "nine-tailed-fox-walk-a.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 330,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.07577807848443843,
+  "frames": [
+    {
+      "index": 0,
+      "file": "nine-tailed-fox-walk-a-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-a",
+      "bounds": {
+        "l": 19,
+        "t": 54,
+        "r": 85,
+        "b": 115,
+        "n": 2867,
+        "width": 67,
+        "height": 62
+      }
+    },
+    {
+      "index": 1,
+      "file": "nine-tailed-fox-walk-a-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-a",
+      "bounds": {
+        "l": 15,
+        "t": 50,
+        "r": 83,
+        "b": 116,
+        "n": 3085,
+        "width": 69,
+        "height": 67
+      }
+    },
+    {
+      "index": 2,
+      "file": "nine-tailed-fox-walk-a-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-a",
+      "bounds": {
+        "l": 14,
+        "t": 54,
+        "r": 80,
+        "b": 116,
+        "n": 2897,
+        "width": 67,
+        "height": 63
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/nine-tailed-fox-walk-a-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/nine-tailed-fox-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

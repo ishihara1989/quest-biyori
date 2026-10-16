@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ancient-titan",
+  "motion": "vent",
+  "facing": "left",
+  "label": "排熱停止",
+  "sheet": "ancient-titan-vent.png",
+  "preview": "../../../../../../development/assets/enemies/ancient-titan/motions/vent/ancient-titan-vent-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/ancient-titan/PROMPT.md",
+  "width": 2560,
+  "height": 496,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 496,
+  "frameCount": 4,
+  "pivot": {
+    "x": 371,
+    "y": 478
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1700,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/ancient-titan/source/vent-registered.png",
+  "sourceScale": 0.5709281961471103,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "ancient-titan-vent-1-0",
+      "type": "spawn-effect",
+      "effect": "ruins-vent-steam",
+      "frame": 1,
+      "timeMs": 360,
+      "durationMs": 1100,
+      "placement": "origin",
+      "originOffset": {
+        "x": 55,
+        "y": -90
+      }
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "vent-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 360,
+      "phase": "開始",
+      "bounds": {
+        "left": 212,
+        "top": 153,
+        "right": 496,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 676,
+        "height": 684
+      },
+      "sourceAnchor": {
+        "x": 364,
+        "y": 610
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "vent-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 440,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 214,
+        "top": 152,
+        "right": 502,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 0,
+        "width": 676,
+        "height": 684
+      },
+      "sourceAnchor": {
+        "x": 352,
+        "y": 610
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "vent-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 540,
+      "phase": "作用",
+      "bounds": {
+        "left": 191,
+        "top": 123,
+        "right": 491,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 684,
+        "width": 676,
+        "height": 684
+      },
+      "sourceAnchor": {
+        "x": 398,
+        "y": 645
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "vent-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 360,
+      "phase": "復帰",
+      "bounds": {
+        "left": 207,
+        "top": 153,
+        "right": 492,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 684,
+        "width": 676,
+        "height": 684
+      },
+      "sourceAnchor": {
+        "x": 355,
+        "y": 648
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/ancient-titan/source/vent-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/ancient-titan/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 629,
+          "height": 602
+        },
+        {
+          "x": 629,
+          "y": 0,
+          "width": 625,
+          "height": 602
+        },
+        {
+          "x": 0,
+          "y": 602,
+          "width": 644,
+          "height": 652
+        },
+        {
+          "x": 644,
+          "y": 602,
+          "width": 610,
+          "height": 652
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 115,
+      "y": 478
+    },
+    "origin": {
+      "x": 289.5,
+      "y": 321.52
+    },
+    "assets": [
+      {
+        "id": "ruins-vent-steam",
+        "manifest": "../../../../effects/ruins-vent-steam/manifest.json"
+      }
+    ]
+  }
+}

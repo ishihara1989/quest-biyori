@@ -1,0 +1,1928 @@
+{
+  "date": "2026-10-12 JST",
+  "method": "PNG alpha inspection; grid cells split at verified transparent gutters near the requested layout; source artwork is not repainted",
+  "assets": [
+    {
+      "id": "desert-background",
+      "file": "desert/background.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "visiblePixels": 1573352,
+      "transparentPixels": 0,
+      "fullyTransparentPixels": 0,
+      "partialAlphaPixels": 0,
+      "hasTransparency": false,
+      "empty": false,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1671,
+        "bottom": 940
+      },
+      "noClipping": null,
+      "edgePolicy": "full-bleed-background"
+    },
+    {
+      "id": "desert-props",
+      "file": "desert/props.png",
+      "kind": "props",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 598941,
+      "transparentPixels": 1572206,
+      "fullyTransparentPixels": 875908,
+      "partialAlphaPixels": 696298,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 35,
+        "top": 59,
+        "right": 1222,
+        "bottom": 1164
+      },
+      "noClipping": true
+    },
+    {
+      "id": "desert-drops",
+      "file": "desert/drops.png",
+      "kind": "drops",
+      "width": 1536,
+      "height": 1024,
+      "visiblePixels": 511740,
+      "transparentPixels": 1572864,
+      "fullyTransparentPixels": 990596,
+      "partialAlphaPixels": 582268,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 61,
+        "top": 36,
+        "right": 1470,
+        "bottom": 995
+      },
+      "noClipping": true
+    },
+    {
+      "id": "desert-monsters",
+      "file": "desert/monsters-v3.png",
+      "kind": "monsters",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 360865,
+      "transparentPixels": 1571489,
+      "fullyTransparentPixels": 1151748,
+      "partialAlphaPixels": 419741,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 45,
+        "top": 78,
+        "right": 1210,
+        "bottom": 1183
+      },
+      "noClipping": true
+    },
+    {
+      "id": "desert-prop-1",
+      "file": "desert/props/prop-1.png",
+      "kind": "prop",
+      "width": 627,
+      "height": 627,
+      "visiblePixels": 125313,
+      "transparentPixels": 393100,
+      "fullyTransparentPixels": 245905,
+      "partialAlphaPixels": 147195,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 54,
+        "top": 59,
+        "right": 594,
+        "bottom": 577
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "id": "desert-prop-2",
+      "file": "desert/props/prop-2.png",
+      "kind": "prop",
+      "width": 627,
+      "height": 627,
+      "visiblePixels": 136625,
+      "transparentPixels": 393099,
+      "fullyTransparentPixels": 228045,
+      "partialAlphaPixels": 165054,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 28,
+        "top": 108,
+        "right": 580,
+        "bottom": 574
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "id": "desert-prop-3",
+      "file": "desert/props/prop-3.png",
+      "kind": "prop",
+      "width": 632,
+      "height": 627,
+      "visiblePixels": 177049,
+      "transparentPixels": 396208,
+      "fullyTransparentPixels": 198109,
+      "partialAlphaPixels": 198099,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 35,
+        "top": 115,
+        "right": 630,
+        "bottom": 527
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 627,
+        "width": 632,
+        "height": 627
+      }
+    },
+    {
+      "id": "desert-prop-4",
+      "file": "desert/props/prop-4.png",
+      "kind": "prop",
+      "width": 622,
+      "height": 627,
+      "visiblePixels": 159954,
+      "transparentPixels": 389799,
+      "fullyTransparentPixels": 203849,
+      "partialAlphaPixels": 185950,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 34,
+        "top": 45,
+        "right": 590,
+        "bottom": 537
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 632,
+        "top": 627,
+        "width": 622,
+        "height": 627
+      }
+    },
+    {
+      "id": "scorpion-pincer",
+      "file": "desert/drops/scorpion-pincer.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 506,
+      "visiblePixels": 89005,
+      "transparentPixels": 259072,
+      "fullyTransparentPixels": 157033,
+      "partialAlphaPixels": 102039,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 80,
+        "top": 36,
+        "right": 477,
+        "bottom": 477
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 506
+      }
+    },
+    {
+      "id": "ancient-bandage",
+      "file": "desert/drops/ancient-bandage.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 506,
+      "visiblePixels": 98182,
+      "transparentPixels": 259072,
+      "fullyTransparentPixels": 144429,
+      "partialAlphaPixels": 114643,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 59,
+        "top": 62,
+        "right": 469,
+        "bottom": 460
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 506
+      }
+    },
+    {
+      "id": "sand-snake-scale",
+      "file": "desert/drops/sand-snake-scale.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 506,
+      "visiblePixels": 96410,
+      "transparentPixels": 259072,
+      "fullyTransparentPixels": 150557,
+      "partialAlphaPixels": 108515,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 72,
+        "top": 78,
+        "right": 446,
+        "bottom": 455
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 0,
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 506
+      }
+    },
+    {
+      "id": "desert-crystal",
+      "file": "desert/drops/desert-crystal.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 518,
+      "visiblePixels": 125523,
+      "transparentPixels": 265216,
+      "fullyTransparentPixels": 127497,
+      "partialAlphaPixels": 137719,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 61,
+        "top": 16,
+        "right": 465,
+        "bottom": 488
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 506,
+        "width": 512,
+        "height": 518
+      }
+    },
+    {
+      "id": "behemoth-horn",
+      "file": "desert/drops/behemoth-horn.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 518,
+      "visiblePixels": 102620,
+      "transparentPixels": 265216,
+      "fullyTransparentPixels": 148574,
+      "partialAlphaPixels": 116642,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 40,
+        "top": 1,
+        "right": 496,
+        "bottom": 489
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 512,
+        "top": 506,
+        "width": 512,
+        "height": 518
+      }
+    },
+    {
+      "id": "highland-background",
+      "file": "highland/background.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "visiblePixels": 1573352,
+      "transparentPixels": 0,
+      "fullyTransparentPixels": 0,
+      "partialAlphaPixels": 0,
+      "hasTransparency": false,
+      "empty": false,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1671,
+        "bottom": 940
+      },
+      "noClipping": null,
+      "edgePolicy": "full-bleed-background"
+    },
+    {
+      "id": "highland-props",
+      "file": "highland/props.png",
+      "kind": "props",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 592740,
+      "transparentPixels": 1572287,
+      "fullyTransparentPixels": 860820,
+      "partialAlphaPixels": 711467,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 34,
+        "top": 50,
+        "right": 1219,
+        "bottom": 1203
+      },
+      "noClipping": true
+    },
+    {
+      "id": "highland-drops",
+      "file": "highland/drops.png",
+      "kind": "drops",
+      "width": 1536,
+      "height": 1024,
+      "visiblePixels": 422876,
+      "transparentPixels": 1572864,
+      "fullyTransparentPixels": 1032355,
+      "partialAlphaPixels": 540509,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 88,
+        "top": 26,
+        "right": 1491,
+        "bottom": 1004
+      },
+      "noClipping": true
+    },
+    {
+      "id": "highland-monsters",
+      "file": "highland/monsters-v2.png",
+      "kind": "monsters",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 483004,
+      "transparentPixels": 1571637,
+      "fullyTransparentPixels": 1001163,
+      "partialAlphaPixels": 570474,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 69,
+        "top": 73,
+        "right": 1215,
+        "bottom": 1202
+      },
+      "noClipping": true
+    },
+    {
+      "id": "highland-prop-1",
+      "file": "highland/props/prop-1.png",
+      "kind": "prop",
+      "width": 657,
+      "height": 627,
+      "visiblePixels": 171147,
+      "transparentPixels": 411898,
+      "fullyTransparentPixels": 197678,
+      "partialAlphaPixels": 214220,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 34,
+        "top": 89,
+        "right": 655,
+        "bottom": 577
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 657,
+        "height": 627
+      }
+    },
+    {
+      "id": "highland-prop-2",
+      "file": "highland/props/prop-2.png",
+      "kind": "prop",
+      "width": 597,
+      "height": 627,
+      "visiblePixels": 145454,
+      "transparentPixels": 374230,
+      "fullyTransparentPixels": 214290,
+      "partialAlphaPixels": 159940,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 71,
+        "top": 50,
+        "right": 552,
+        "bottom": 601
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 657,
+        "top": 0,
+        "width": 597,
+        "height": 627
+      }
+    },
+    {
+      "id": "highland-prop-3",
+      "file": "highland/props/prop-3.png",
+      "kind": "prop",
+      "width": 654,
+      "height": 627,
+      "visiblePixels": 121646,
+      "transparentPixels": 409998,
+      "fullyTransparentPixels": 248758,
+      "partialAlphaPixels": 161240,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 53,
+        "top": 17,
+        "right": 652,
+        "bottom": 549
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 627,
+        "width": 654,
+        "height": 627
+      }
+    },
+    {
+      "id": "highland-prop-4",
+      "file": "highland/props/prop-4.png",
+      "kind": "prop",
+      "width": 600,
+      "height": 627,
+      "visiblePixels": 154493,
+      "transparentPixels": 376161,
+      "fullyTransparentPixels": 200094,
+      "partialAlphaPixels": 176067,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 34,
+        "top": 86,
+        "right": 565,
+        "bottom": 576
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 654,
+        "top": 627,
+        "width": 600,
+        "height": 627
+      }
+    },
+    {
+      "id": "horn-beast-fang",
+      "file": "highland/drops/horn-beast-fang.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 81307,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 160388,
+      "partialAlphaPixels": 101756,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 88,
+        "top": 46,
+        "right": 458,
+        "bottom": 479
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "rock-horn-fragment",
+      "file": "highland/drops/rock-horn-fragment.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 76409,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 169267,
+      "partialAlphaPixels": 92877,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 66,
+        "top": 55,
+        "right": 479,
+        "bottom": 473
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "wind-spirit-feather",
+      "file": "highland/drops/wind-spirit-feather.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 75730,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 155873,
+      "partialAlphaPixels": 106271,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 83,
+        "top": 26,
+        "right": 467,
+        "bottom": 487
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 0,
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "highland-crystal",
+      "file": "highland/drops/highland-crystal.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 93749,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 148693,
+      "partialAlphaPixels": 113451,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 111,
+        "top": 27,
+        "right": 427,
+        "bottom": 492
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "manticore-tail",
+      "file": "highland/drops/manticore-tail.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 95681,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 143728,
+      "partialAlphaPixels": 118416,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 124,
+        "top": 21,
+        "right": 447,
+        "bottom": 491
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 512,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "glacier-background",
+      "file": "glacier/background.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "visiblePixels": 1573352,
+      "transparentPixels": 0,
+      "fullyTransparentPixels": 0,
+      "partialAlphaPixels": 0,
+      "hasTransparency": false,
+      "empty": false,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1671,
+        "bottom": 940
+      },
+      "noClipping": null,
+      "edgePolicy": "full-bleed-background"
+    },
+    {
+      "id": "glacier-props",
+      "file": "glacier/props.png",
+      "kind": "props",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 568591,
+      "transparentPixels": 1572380,
+      "fullyTransparentPixels": 793568,
+      "partialAlphaPixels": 778812,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 48,
+        "top": 33,
+        "right": 1181,
+        "bottom": 1207
+      },
+      "noClipping": true
+    },
+    {
+      "id": "glacier-drops",
+      "file": "glacier/drops-v2.png",
+      "kind": "drops",
+      "width": 1536,
+      "height": 1024,
+      "visiblePixels": 466354,
+      "transparentPixels": 1572830,
+      "fullyTransparentPixels": 969595,
+      "partialAlphaPixels": 603235,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 80,
+        "top": 39,
+        "right": 1491,
+        "bottom": 992
+      },
+      "noClipping": true
+    },
+    {
+      "id": "glacier-monsters",
+      "file": "glacier/monsters-v3.png",
+      "kind": "monsters",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 368238,
+      "transparentPixels": 1571802,
+      "fullyTransparentPixels": 1138847,
+      "partialAlphaPixels": 432955,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 88,
+        "top": 127,
+        "right": 1189,
+        "bottom": 1186
+      },
+      "noClipping": true
+    },
+    {
+      "id": "glacier-prop-1",
+      "file": "glacier/props/prop-1.png",
+      "kind": "prop",
+      "width": 627,
+      "height": 627,
+      "visiblePixels": 171784,
+      "transparentPixels": 393091,
+      "fullyTransparentPixels": 178527,
+      "partialAlphaPixels": 214564,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 48,
+        "top": 90,
+        "right": 598,
+        "bottom": 548
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "id": "glacier-prop-2",
+      "file": "glacier/props/prop-2.png",
+      "kind": "prop",
+      "width": 627,
+      "height": 627,
+      "visiblePixels": 148143,
+      "transparentPixels": 393120,
+      "fullyTransparentPixels": 192145,
+      "partialAlphaPixels": 200975,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 83,
+        "top": 33,
+        "right": 554,
+        "bottom": 570
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "id": "glacier-prop-3",
+      "file": "glacier/props/prop-3.png",
+      "kind": "prop",
+      "width": 627,
+      "height": 627,
+      "visiblePixels": 127450,
+      "transparentPixels": 393074,
+      "fullyTransparentPixels": 188034,
+      "partialAlphaPixels": 205040,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 60,
+        "top": 15,
+        "right": 616,
+        "bottom": 577
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "id": "glacier-prop-4",
+      "file": "glacier/props/prop-4.png",
+      "kind": "prop",
+      "width": 627,
+      "height": 627,
+      "visiblePixels": 121214,
+      "transparentPixels": 393095,
+      "fullyTransparentPixels": 234862,
+      "partialAlphaPixels": 158233,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 97,
+        "top": 14,
+        "right": 533,
+        "bottom": 580
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "id": "ice-wolf-fang",
+      "file": "glacier/drops/ice-wolf-fang.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 77444,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 145923,
+      "partialAlphaPixels": 116221,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 127,
+        "top": 39,
+        "right": 470,
+        "bottom": 486
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "ice-shell-fragment",
+      "file": "glacier/drops/ice-shell-fragment.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 116692,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 118064,
+      "partialAlphaPixels": 144080,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 51,
+        "top": 73,
+        "right": 489,
+        "bottom": 476
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "snow-spirit-flower",
+      "file": "glacier/drops/snow-spirit-flower.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 109592,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 125465,
+      "partialAlphaPixels": 136679,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 58,
+        "top": 41,
+        "right": 467,
+        "bottom": 495
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 0,
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "glacier-crystal",
+      "file": "glacier/drops/glacier-crystal.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 112232,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 122374,
+      "partialAlphaPixels": 139770,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 80,
+        "top": 14,
+        "right": 463,
+        "bottom": 480
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "mammoth-ice-tusk",
+      "file": "glacier/drops/mammoth-ice-tusk.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 50394,
+      "transparentPixels": 262110,
+      "fullyTransparentPixels": 207870,
+      "partialAlphaPixels": 54240,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 68,
+        "top": 57,
+        "right": 443,
+        "bottom": 455
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 512,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "volcano-background",
+      "file": "volcano/background.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "visiblePixels": 1573352,
+      "transparentPixels": 0,
+      "fullyTransparentPixels": 0,
+      "partialAlphaPixels": 0,
+      "hasTransparency": false,
+      "empty": false,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1671,
+        "bottom": 940
+      },
+      "noClipping": null,
+      "edgePolicy": "full-bleed-background"
+    },
+    {
+      "id": "volcano-props",
+      "file": "volcano/props.png",
+      "kind": "props",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 605185,
+      "transparentPixels": 1571873,
+      "fullyTransparentPixels": 901939,
+      "partialAlphaPixels": 669934,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 27,
+        "top": 49,
+        "right": 1232,
+        "bottom": 1205
+      },
+      "noClipping": true
+    },
+    {
+      "id": "volcano-drops",
+      "file": "volcano/drops.png",
+      "kind": "drops",
+      "width": 1536,
+      "height": 1024,
+      "visiblePixels": 483855,
+      "transparentPixels": 1572864,
+      "fullyTransparentPixels": 1030889,
+      "partialAlphaPixels": 541975,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 52,
+        "top": 53,
+        "right": 1468,
+        "bottom": 975
+      },
+      "noClipping": true
+    },
+    {
+      "id": "volcano-monsters",
+      "file": "volcano/monsters-v3.png",
+      "kind": "monsters",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 388513,
+      "transparentPixels": 1571404,
+      "fullyTransparentPixels": 1126986,
+      "partialAlphaPixels": 444418,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 57,
+        "top": 70,
+        "right": 1220,
+        "bottom": 1155
+      },
+      "noClipping": true
+    },
+    {
+      "id": "volcano-prop-1",
+      "file": "volcano/props/prop-1.png",
+      "kind": "prop",
+      "width": 654,
+      "height": 618,
+      "visiblePixels": 149570,
+      "transparentPixels": 403978,
+      "fullyTransparentPixels": 242857,
+      "partialAlphaPixels": 161121,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 32,
+        "top": 209,
+        "right": 652,
+        "bottom": 566
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 654,
+        "height": 618
+      }
+    },
+    {
+      "id": "volcano-prop-2",
+      "file": "volcano/props/prop-2.png",
+      "kind": "prop",
+      "width": 600,
+      "height": 618,
+      "visiblePixels": 141157,
+      "transparentPixels": 370637,
+      "fullyTransparentPixels": 214386,
+      "partialAlphaPixels": 156251,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 62,
+        "top": 49,
+        "right": 578,
+        "bottom": 578
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 654,
+        "top": 0,
+        "width": 600,
+        "height": 618
+      }
+    },
+    {
+      "id": "volcano-prop-3",
+      "file": "volcano/props/prop-3.png",
+      "kind": "prop",
+      "width": 746,
+      "height": 636,
+      "visiblePixels": 178741,
+      "transparentPixels": 474296,
+      "fullyTransparentPixels": 268878,
+      "partialAlphaPixels": 205418,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 27,
+        "top": 119,
+        "right": 744,
+        "bottom": 545
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 618,
+        "width": 746,
+        "height": 636
+      }
+    },
+    {
+      "id": "volcano-prop-4",
+      "file": "volcano/props/prop-4.png",
+      "kind": "prop",
+      "width": 508,
+      "height": 636,
+      "visiblePixels": 135717,
+      "transparentPixels": 322962,
+      "fullyTransparentPixels": 175818,
+      "partialAlphaPixels": 147144,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 8,
+        "top": 1,
+        "right": 486,
+        "bottom": 587
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 746,
+        "top": 618,
+        "width": 508,
+        "height": 636
+      }
+    },
+    {
+      "id": "fire-lizard-hide",
+      "file": "volcano/drops/fire-lizard-hide.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 96084,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 155209,
+      "partialAlphaPixels": 106935,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 52,
+        "top": 95,
+        "right": 484,
+        "bottom": 455
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "obsidian-blade-shard",
+      "file": "volcano/drops/obsidian-blade-shard.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 85042,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 166314,
+      "partialAlphaPixels": 95830,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 80,
+        "top": 53,
+        "right": 464,
+        "bottom": 472
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "fire-dragon-scale",
+      "file": "volcano/drops/fire-dragon-scale.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 92098,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 159357,
+      "partialAlphaPixels": 102787,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 76,
+        "top": 64,
+        "right": 444,
+        "bottom": 476
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 0,
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "volcano-crystal",
+      "file": "volcano/drops/volcano-crystal.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 95490,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 157043,
+      "partialAlphaPixels": 105101,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 96,
+        "top": 17,
+        "right": 437,
+        "bottom": 463
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "dragon-furnace-heart",
+      "file": "volcano/drops/dragon-furnace-heart.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 512,
+      "visiblePixels": 115141,
+      "transparentPixels": 262144,
+      "fullyTransparentPixels": 135033,
+      "partialAlphaPixels": 127111,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 82,
+        "top": 21,
+        "right": 463,
+        "bottom": 456
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 512,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "id": "demon-castle-background",
+      "file": "demon-castle/background.png",
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "visiblePixels": 1573352,
+      "transparentPixels": 0,
+      "fullyTransparentPixels": 0,
+      "partialAlphaPixels": 0,
+      "hasTransparency": false,
+      "empty": false,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1671,
+        "bottom": 940
+      },
+      "noClipping": null,
+      "edgePolicy": "full-bleed-background"
+    },
+    {
+      "id": "demon-castle-props",
+      "file": "demon-castle/props.png",
+      "kind": "props",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 492813,
+      "transparentPixels": 1571785,
+      "fullyTransparentPixels": 1010829,
+      "partialAlphaPixels": 560956,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 57,
+        "top": 24,
+        "right": 1153,
+        "bottom": 1200
+      },
+      "noClipping": true
+    },
+    {
+      "id": "demon-castle-drops",
+      "file": "demon-castle/drops.png",
+      "kind": "drops",
+      "width": 1536,
+      "height": 1024,
+      "visiblePixels": 450725,
+      "transparentPixels": 1572864,
+      "fullyTransparentPixels": 1054186,
+      "partialAlphaPixels": 518678,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 64,
+        "top": 13,
+        "right": 1489,
+        "bottom": 1012
+      },
+      "noClipping": true
+    },
+    {
+      "id": "demon-castle-monsters",
+      "file": "demon-castle/monsters-v2.png",
+      "kind": "monsters",
+      "width": 1254,
+      "height": 1254,
+      "visiblePixels": 432794,
+      "transparentPixels": 1571475,
+      "fullyTransparentPixels": 1053805,
+      "partialAlphaPixels": 517670,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 42,
+        "top": 75,
+        "right": 1208,
+        "bottom": 1197
+      },
+      "noClipping": true
+    },
+    {
+      "id": "demon-castle-prop-1",
+      "file": "demon-castle/props/prop-1.png",
+      "kind": "prop",
+      "width": 651,
+      "height": 595,
+      "visiblePixels": 124070,
+      "transparentPixels": 387172,
+      "fullyTransparentPixels": 252523,
+      "partialAlphaPixels": 134649,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 57,
+        "top": 153,
+        "right": 649,
+        "bottom": 546
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 651,
+        "height": 595
+      }
+    },
+    {
+      "id": "demon-castle-prop-2",
+      "file": "demon-castle/props/prop-2.png",
+      "kind": "prop",
+      "width": 603,
+      "height": 595,
+      "visiblePixels": 62311,
+      "transparentPixels": 358681,
+      "fullyTransparentPixels": 277876,
+      "partialAlphaPixels": 80805,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 142,
+        "top": 24,
+        "right": 426,
+        "bottom": 559
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 651,
+        "top": 0,
+        "width": 603,
+        "height": 595
+      }
+    },
+    {
+      "id": "demon-castle-prop-3",
+      "file": "demon-castle/props/prop-3.png",
+      "kind": "prop",
+      "width": 651,
+      "height": 659,
+      "visiblePixels": 175267,
+      "transparentPixels": 428789,
+      "fullyTransparentPixels": 237648,
+      "partialAlphaPixels": 191141,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 96,
+        "top": 13,
+        "right": 649,
+        "bottom": 603
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 595,
+        "width": 651,
+        "height": 659
+      }
+    },
+    {
+      "id": "demon-castle-prop-4",
+      "file": "demon-castle/props/prop-4.png",
+      "kind": "prop",
+      "width": 603,
+      "height": 659,
+      "visiblePixels": 131165,
+      "transparentPixels": 397143,
+      "fullyTransparentPixels": 242782,
+      "partialAlphaPixels": 154361,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 133,
+        "top": 1,
+        "right": 502,
+        "bottom": 605
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 651,
+        "top": 595,
+        "width": 603,
+        "height": 659
+      }
+    },
+    {
+      "id": "demon-armor-fragment",
+      "file": "demon-castle/drops/demon-armor-fragment.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 507,
+      "visiblePixels": 97291,
+      "transparentPixels": 259584,
+      "fullyTransparentPixels": 149783,
+      "partialAlphaPixels": 109801,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 64,
+        "top": 13,
+        "right": 465,
+        "bottom": 493
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 0,
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 507
+      }
+    },
+    {
+      "id": "demon-horn",
+      "file": "demon-castle/drops/demon-horn.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 507,
+      "visiblePixels": 67793,
+      "transparentPixels": 259584,
+      "fullyTransparentPixels": 181593,
+      "partialAlphaPixels": 77991,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 80,
+        "top": 29,
+        "right": 435,
+        "bottom": 463
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 0,
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 507
+      }
+    },
+    {
+      "id": "dream-demon-feather",
+      "file": "demon-castle/drops/dream-demon-feather.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 507,
+      "visiblePixels": 74577,
+      "transparentPixels": 259584,
+      "fullyTransparentPixels": 170612,
+      "partialAlphaPixels": 88972,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 78,
+        "top": 17,
+        "right": 465,
+        "bottom": 493
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 2,
+        "row": 0,
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 507
+      }
+    },
+    {
+      "id": "castle-crystal",
+      "file": "demon-castle/drops/castle-crystal.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 517,
+      "visiblePixels": 111003,
+      "transparentPixels": 264704,
+      "fullyTransparentPixels": 142608,
+      "partialAlphaPixels": 122096,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 85,
+        "top": 8,
+        "right": 432,
+        "bottom": 505
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 0,
+        "row": 1,
+        "left": 0,
+        "top": 507,
+        "width": 512,
+        "height": 517
+      }
+    },
+    {
+      "id": "demon-god-heart",
+      "file": "demon-castle/drops/demon-god-heart.png",
+      "kind": "drop",
+      "width": 512,
+      "height": 517,
+      "visiblePixels": 100061,
+      "transparentPixels": 264704,
+      "fullyTransparentPixels": 147281,
+      "partialAlphaPixels": 117423,
+      "hasTransparency": true,
+      "empty": false,
+      "bounds": {
+        "left": 49,
+        "top": 1,
+        "right": 463,
+        "bottom": 488
+      },
+      "noClipping": true,
+      "sourceCell": {
+        "cols": 3,
+        "rows": 2,
+        "col": 1,
+        "row": 1,
+        "left": 512,
+        "top": 507,
+        "width": 512,
+        "height": 517
+      }
+    }
+  ],
+  "emptyCells": [
+    {
+      "region": "desert",
+      "kind": "drops",
+      "col": 2,
+      "row": 1,
+      "visiblePixels": 0
+    },
+    {
+      "region": "highland",
+      "kind": "drops",
+      "col": 2,
+      "row": 1,
+      "visiblePixels": 0
+    },
+    {
+      "region": "glacier",
+      "kind": "drops",
+      "col": 2,
+      "row": 1,
+      "visiblePixels": 0
+    },
+    {
+      "region": "volcano",
+      "kind": "drops",
+      "col": 2,
+      "row": 1,
+      "visiblePixels": 0
+    },
+    {
+      "region": "demon-castle",
+      "kind": "drops",
+      "col": 2,
+      "row": 1,
+      "visiblePixels": 0
+    }
+  ],
+  "sourceIntegrity": [
+    {
+      "id": "desert-background",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "desert-props",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "desert-drops",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "desert-monsters",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "highland-background",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "highland-props",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "highland-drops",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "highland-monsters",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-background",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-props",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-drops",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-monsters",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "volcano-background",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "volcano-props",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "volcano-drops",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "volcano-monsters",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "demon-castle-background",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "demon-castle-props",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "demon-castle-drops",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "demon-castle-monsters",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "desert-monsters-v2",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "highland-monsters-v2",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-monsters-v2",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "volcano-monsters-v2",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "demon-castle-monsters-v2",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "desert-monsters-v3",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "volcano-monsters-v3",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-ice-tusk-mammoth",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-mammoth-ice-tusk",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-mammoth-effects",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-monsters-v3",
+      "canonicalMatchesSavedSource": true
+    },
+    {
+      "id": "glacier-drops-v2",
+      "canonicalMatchesSavedSource": true
+    }
+  ]
+}

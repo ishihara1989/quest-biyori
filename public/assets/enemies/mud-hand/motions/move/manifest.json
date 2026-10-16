@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "enemy": "mud-hand",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "mud-hand-move.png",
+  "preview": "../../../../../../development/assets/enemies/mud-hand/motions/move/mud-hand-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/mud-hand/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/mud-hand/source/move-registered.png",
+  "sourceScale": 0.40798226164079826,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 150,
+      "phase": "開始",
+      "bounds": {
+        "left": 62,
+        "top": 85,
+        "right": 295,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 643,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 411,
+        "y": 473
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 140,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 46,
+        "top": 98,
+        "right": 310,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 643,
+        "y": 0,
+        "width": 717,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 487,
+        "y": 440
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 170,
+      "phase": "作用",
+      "bounds": {
+        "left": 102,
+        "top": 54,
+        "right": 310,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 528,
+        "width": 613,
+        "height": 602
+      },
+      "sourceAnchor": {
+        "x": 313,
+        "y": 585
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 61,
+        "top": 84,
+        "right": 292,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 613,
+        "y": 528,
+        "width": 747,
+        "height": 602
+      },
+      "sourceAnchor": {
+        "x": 482,
+        "y": 513
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/mud-hand/source/move-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 123923,
+      "left": 50,
+      "top": 127,
+      "right": 622,
+      "bottom": 584,
+      "cx": 339.1609386473859,
+      "cy": 355.3405098327187
+    },
+    {
+      "id": 2,
+      "count": 134513,
+      "left": 600,
+      "top": 164,
+      "right": 1247,
+      "bottom": 588,
+      "cx": 927.156230252838,
+      "cy": 376.2378580508947
+    },
+    {
+      "id": 10,
+      "count": 143423,
+      "left": 116,
+      "top": 647,
+      "right": 628,
+      "bottom": 1179,
+      "cx": 365.49819763915133,
+      "cy": 927.9467031089853
+    },
+    {
+      "id": 11,
+      "count": 124454,
+      "left": 671,
+      "top": 712,
+      "right": 1241,
+      "bottom": 1172,
+      "cx": 962.5519870795636,
+      "cy": 939.6480627380398
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

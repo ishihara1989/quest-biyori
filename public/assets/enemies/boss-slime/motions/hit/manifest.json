@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boss-slime",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "boss-slime-hit.png",
+  "preview": "../../../../../../development/assets/enemies/boss-slime/motions/hit/boss-slime-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boss-slime/PROMPT.md",
+  "width": 2304,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 288,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 520,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/boss-slime/source/boss-slime-hit-generated-v1.png",
+  "sourceScale": 0.526,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 90,
+      "phase": "衝撃・ひるむ",
+      "bounds": {
+        "left": 159,
+        "top": 149,
+        "right": 435,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 353,
+        "y": 604
+      },
+      "bakedOffset": {
+        "x": 9,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "右へのけぞる",
+      "bounds": {
+        "left": 162,
+        "top": 122,
+        "right": 442,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 329,
+        "y": 605
+      },
+      "bakedOffset": {
+        "x": 14,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "hit-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 140,
+      "phase": "立て直す",
+      "bounds": {
+        "left": 152,
+        "top": 156,
+        "right": 434,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 542
+      },
+      "bakedOffset": {
+        "x": 5,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "hit-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 170,
+      "phase": "待機の基準姿勢",
+      "bounds": {
+        "left": 147,
+        "top": 147,
+        "right": 429,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/boss-slime/source/boss-slime-idle-generated-v1.png",
+      "sourceScale": 0.5,
+      "reusedPose": "idle/0"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/stone-tortoise-guardian-appear-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 721,
+      "height": 724
+    },
+    {
+      "x": 721,
+      "y": 0,
+      "width": 720,
+      "height": 724
+    },
+    {
+      "x": 1441,
+      "y": 0,
+      "width": 731,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 876
+    },
+    {
+      "x": 512,
+      "y": 876
+    },
+    {
+      "x": 512,
+      "y": 876
+    }
+  ],
+  "scale": 0.5030425963488844
+}

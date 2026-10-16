@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "prayer-cranes-idle",
+  "character": "miko",
+  "subject": "prayer-cranes",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "prayer-cranes-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 64
+  },
+  "scale": 0.11023622047244094,
+  "frames": [
+    {
+      "index": 0,
+      "file": "prayer-cranes-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 14,
+        "t": 27,
+        "r": 118,
+        "b": 99,
+        "n": 3262,
+        "width": 105,
+        "height": 73
+      }
+    },
+    {
+      "index": 1,
+      "file": "prayer-cranes-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 11,
+        "t": 12,
+        "r": 114,
+        "b": 96,
+        "n": 3762,
+        "width": 104,
+        "height": 85
+      }
+    },
+    {
+      "index": 2,
+      "file": "prayer-cranes-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 13,
+        "t": 25,
+        "r": 115,
+        "b": 99,
+        "n": 3264,
+        "width": 103,
+        "height": 75
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/prayer-cranes-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

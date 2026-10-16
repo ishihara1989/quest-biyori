@@ -1,0 +1,48 @@
+{
+  "source": "../../../source/nine-tailed-fox-guardian-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 621,
+      "height": 610
+    },
+    {
+      "x": 621,
+      "y": 0,
+      "width": 633,
+      "height": 610
+    },
+    {
+      "x": 0,
+      "y": 610,
+      "width": 641,
+      "height": 644
+    },
+    {
+      "x": 641,
+      "y": 610,
+      "width": 613,
+      "height": 644
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 947
+    },
+    {
+      "x": 512,
+      "y": 947
+    },
+    {
+      "x": 512,
+      "y": 947
+    },
+    {
+      "x": 512,
+      "y": 947
+    }
+  ],
+  "scale": 0.5155925155925156
+}

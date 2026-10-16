@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hermit-crab",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "hermit-crab-idle.png",
+  "preview": "../../../../../../development/assets/enemies/hermit-crab/motions/idle/hermit-crab-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hermit-crab/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/hermit-crab/source/idle-registered.png",
+  "sourceScale": 0.34965034965034963,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 151,
+        "top": 172,
+        "right": 313,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 503,
+        "height": 381
+      },
+      "sourceAnchor": {
+        "x": 223,
+        "y": 301
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 116,
+        "top": 162,
+        "right": 278,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 503,
+        "y": 0,
+        "width": 503,
+        "height": 381
+      },
+      "sourceAnchor": {
+        "x": 323,
+        "y": 328
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 113,
+        "top": 150,
+        "right": 277,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 381,
+        "width": 503,
+        "height": 381
+      },
+      "sourceAnchor": {
+        "x": 331,
+        "y": 364
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 119,
+        "top": 172,
+        "right": 280,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 503,
+        "y": 381,
+        "width": 503,
+        "height": 381
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 300
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/hermit-crab/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 86353,
+        "left": 169,
+        "top": 154,
+        "right": 633,
+        "bottom": 439,
+        "cx": 407.6134471298044,
+        "cy": 304.70708603059535
+      },
+      {
+        "id": 1,
+        "count": 89282,
+        "left": 903,
+        "top": 128,
+        "right": 1369,
+        "bottom": 440,
+        "cx": 1141.4954414103627,
+        "cy": 297.3282296543536
+      },
+      {
+        "id": 3,
+        "count": 91076,
+        "left": 169,
+        "top": 579,
+        "right": 639,
+        "bottom": 927,
+        "cx": 411.90873556150905,
+        "cy": 768.7844876806184
+      },
+      {
+        "id": 4,
+        "count": 84965,
+        "left": 907,
+        "top": 648,
+        "right": 1369,
+        "bottom": 932,
+        "cx": 1145.8879538633555,
+        "cy": 796.9988465838875
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

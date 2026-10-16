@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lich",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "lich-down.png",
+  "preview": "../../../../../../development/assets/enemies/lich/motions/down/lich-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lich/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/lich/source/down-registered.png",
+  "sourceScale": 0.47703180212014135,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "待機から",
+      "bounds": {
+        "left": 180,
+        "top": 162,
+        "right": 447,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 604,
+        "height": 594
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 577
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/lich/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 154,
+        "top": 193,
+        "right": 449,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 629,
+        "y": 0,
+        "width": 677,
+        "height": 598
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 516
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "作用",
+      "bounds": {
+        "left": 156,
+        "top": 215,
+        "right": 443,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 598,
+        "width": 645,
+        "height": 598
+      },
+      "sourceAnchor": {
+        "x": 390,
+        "y": 470
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 360,
+      "phase": "終端",
+      "bounds": {
+        "left": 189,
+        "top": 271,
+        "right": 476,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 645,
+        "y": 598,
+        "width": 661,
+        "height": 598
+      },
+      "sourceAnchor": {
+        "x": 329,
+        "y": 351
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/lich/source/down-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 178612,
+      "left": 54,
+      "top": 62,
+      "right": 625,
+      "bottom": 627,
+      "cx": 317.4380108839272,
+      "cy": 353.83720578684523
+    },
+    {
+      "id": 2,
+      "count": 166439,
+      "left": 610,
+      "top": 120,
+      "right": 1230,
+      "bottom": 620,
+      "cx": 902.3554094893625,
+      "cy": 384.27013500441603
+    },
+    {
+      "id": 5,
+      "count": 158345,
+      "left": 19,
+      "top": 752,
+      "right": 623,
+      "bottom": 1206,
+      "cx": 332.37121475259715,
+      "cy": 984.1592724746598
+    },
+    {
+      "id": 7,
+      "count": 122755,
+      "left": 634,
+      "top": 879,
+      "right": 1238,
+      "bottom": 1214,
+      "cx": 956.2116980978371,
+      "cy": 1056.1436845749663
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-tusk-mammoth",
+  "motion": "boulder",
+  "facing": "left",
+  "label": "氷塊天落",
+  "sheet": "ice-tusk-mammoth-boulder.png",
+  "preview": "../../../../../../development/assets/enemies/ice-tusk-mammoth/motions/boulder/ice-tusk-mammoth-boulder-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2720,
+  "height": 450,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 680,
+  "frameHeight": 450,
+  "frameCount": 4,
+  "pivot": {
+    "x": 381,
+    "y": 428
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-tusk-mammoth/boulder.png",
+  "sourceScale": 0.5242718446601942,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-boulder",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "boulder-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 214,
+        "top": 162,
+        "right": 541,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 705,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 350.57359896803786,
+        "y": 539
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "boulder-02.png",
+      "x": 680,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 218,
+        "top": 162,
+        "right": 538,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 705,
+        "y": 0,
+        "width": 705,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 539
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "boulder-03.png",
+      "x": 1360,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 210,
+        "top": 137,
+        "right": 545,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 620,
+        "width": 705,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 358.73846614739364,
+        "y": 587
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "boulder-04.png",
+      "x": 2040,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 218,
+        "top": 159,
+        "right": 537,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 705,
+        "y": 620,
+        "width": 705,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 344.03961555349565,
+        "y": 546
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/boulder-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 31,
+          "y": 96,
+          "width": 625,
+          "height": 508,
+          "mainComponent": 1
+        },
+        {
+          "x": 639,
+          "y": 96,
+          "width": 613,
+          "height": 508,
+          "mainComponent": 2
+        },
+        {
+          "x": 23,
+          "y": 647,
+          "width": 641,
+          "height": 556,
+          "mainComponent": 7
+        },
+        {
+          "x": 640,
+          "y": 690,
+          "width": 612,
+          "height": 515,
+          "mainComponent": 8
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "boulder",
+    "warn": 4800,
+    "times": [
+      4800,
+      5600,
+      6400
+    ],
+    "kind": "circles",
+    "radius": 130,
+    "effect": "boulder",
+    "rest": 3500,
+    "status": "chill",
+    "duration": 6800,
+    "separation": 260
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

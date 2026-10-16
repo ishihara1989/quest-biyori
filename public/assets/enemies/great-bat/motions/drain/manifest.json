@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "great-bat",
+  "motion": "drain",
+  "facing": "left",
+  "label": "吸血",
+  "sheet": "great-bat-drain.png",
+  "preview": "../../../../../../development/assets/enemies/great-bat/motions/drain/great-bat-drain-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/great-bat/PROMPT.md",
+  "width": 2304,
+  "height": 416,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/great-bat/source/drain-registered.png",
+  "sourceScale": 0.536723163841808,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "great-bat-drain-drain",
+      "type": "spawn-effect",
+      "effect": "vampire-drain",
+      "frame": 2,
+      "timeMs": 400,
+      "power": 1.1
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "drain-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 158,
+        "top": 210,
+        "right": 510,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 702,
+        "height": 386
+      },
+      "sourceAnchor": {
+        "x": 345,
+        "y": 369
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "drain-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 240,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 196,
+        "top": 224,
+        "right": 472,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 702,
+        "y": 0,
+        "width": 702,
+        "height": 386
+      },
+      "sourceAnchor": {
+        "x": 274,
+        "y": 343
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "drain-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 240,
+      "phase": "作用",
+      "bounds": {
+        "left": 154,
+        "top": 231,
+        "right": 513,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 386,
+        "width": 702,
+        "height": 386
+      },
+      "sourceAnchor": {
+        "x": 351,
+        "y": 329
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "drain-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 240,
+      "phase": "復帰",
+      "bounds": {
+        "left": 157,
+        "top": 210,
+        "right": 511,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 702,
+        "y": 386,
+        "width": 702,
+        "height": 386
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 369
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/great-bat/source/drain-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 98277,
+        "left": 102,
+        "top": 105,
+        "right": 760,
+        "bottom": 458,
+        "cx": 425.204269564598,
+        "cy": 248.14369588001261
+      },
+      {
+        "id": 2,
+        "count": 100572,
+        "left": 898,
+        "top": 133,
+        "right": 1414,
+        "bottom": 460,
+        "cx": 1167.29477389333,
+        "cy": 287.4243029869148
+      },
+      {
+        "id": 5,
+        "count": 102288,
+        "left": 82,
+        "top": 595,
+        "right": 751,
+        "bottom": 908,
+        "cx": 434.9108106522759,
+        "cy": 741.6562255592054
+      },
+      {
+        "id": 3,
+        "count": 98631,
+        "left": 843,
+        "top": 580,
+        "right": 1503,
+        "bottom": 933,
+        "cx": 1168.4868753231742,
+        "cy": 723.9025154363233
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 399
+    },
+    "origin": {
+      "x": 261.8,
+      "y": 304
+    },
+    "assets": [
+      {
+        "id": "vampire-drain",
+        "manifest": "../../../../effects/vampire-drain/manifest.json"
+      }
+    ]
+  }
+}

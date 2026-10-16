@@ -1,0 +1,119 @@
+{
+  "id": "obsidian-soldier/down",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "label": "撃破",
+  "kind": null,
+  "motion": "down",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1400,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": true,
+  "endBehavior": "hold",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/reaction-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "transparentFraction": 0.9179840087890625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 140,
+        "top": 175,
+        "right": 418,
+        "bottom": 364
+      },
+      "visibleBounds": {
+        "left": 173,
+        "top": 181,
+        "right": 410,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/reaction-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 669,
+        "width": 683,
+        "height": 476
+      },
+      "sourceScale": 0.426497277676951,
+      "sourceAnchor": {
+        "x": 381,
+        "y": 391
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "transparentFraction": 0.9416275024414062,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 148,
+        "top": 176,
+        "right": 434,
+        "bottom": 367
+      },
+      "visibleBounds": {
+        "left": 156,
+        "top": 252,
+        "right": 433,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/reaction-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 683,
+        "y": 669,
+        "width": 691,
+        "height": 476
+      },
+      "sourceScale": 0.426497277676951,
+      "sourceAnchor": {
+        "x": 334,
+        "y": 380
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/obsidian-soldier/down/preview.gif",
+  "action": null
+}

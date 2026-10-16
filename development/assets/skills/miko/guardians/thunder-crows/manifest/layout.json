@@ -1,0 +1,48 @@
+{
+  "source": "../../../source/thunder-crows-guardian-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 618,
+      "height": 627
+    },
+    {
+      "x": 618,
+      "y": 0,
+      "width": 636,
+      "height": 627
+    },
+    {
+      "x": 0,
+      "y": 627,
+      "width": 635,
+      "height": 627
+    },
+    {
+      "x": 635,
+      "y": 627,
+      "width": 619,
+      "height": 627
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 1002
+    },
+    {
+      "x": 512,
+      "y": 1002
+    },
+    {
+      "x": 512,
+      "y": 1002
+    },
+    {
+      "x": 512,
+      "y": 1002
+    }
+  ],
+  "scale": 0.4775510204081633
+}

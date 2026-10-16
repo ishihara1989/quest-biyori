@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "character": "shaman",
+  "motion": "ritual-raise",
+  "label": "大儀式",
+  "facing": "right",
+  "sheet": "shaman-ritual-raise.png",
+  "width": 1920,
+  "height": 256,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 1800,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.295,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/shaman/motions/ritual-raise/source/shaman-ritual-raise-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 1448,
+  "sourceGrid": [
+    3,
+    2
+  ],
+  "columnSplit": 1086,
+  "rowSplit": 720,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ritual-raise-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "儀式の構え",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 701
+      },
+      "sourceBounds": {
+        "left": 177,
+        "top": 228,
+        "right": 604,
+        "bottom": 701
+      },
+      "bounds": {
+        "left": 101,
+        "top": 100,
+        "right": 226,
+        "bottom": 239
+      },
+      "visiblePixels": 9720,
+      "transparentPixels": 69145
+    },
+    {
+      "index": 1,
+      "file": "ritual-raise-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "杖を上げる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 374,
+        "y": 702
+      },
+      "sourceBounds": {
+        "left": 155,
+        "top": 54,
+        "right": 580,
+        "bottom": 702
+      },
+      "bounds": {
+        "left": 96,
+        "top": 48,
+        "right": 220,
+        "bottom": 239
+      },
+      "visiblePixels": 9625,
+      "transparentPixels": 69067
+    },
+    {
+      "index": 2,
+      "file": "ritual-raise-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 420,
+      "phase": "掲げてためる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 327,
+        "y": 702
+      },
+      "sourceBounds": {
+        "left": 110,
+        "top": 14,
+        "right": 528,
+        "bottom": 702
+      },
+      "bounds": {
+        "left": 96,
+        "top": 36,
+        "right": 219,
+        "bottom": 239
+      },
+      "visiblePixels": 10098,
+      "transparentPixels": 68355
+    },
+    {
+      "index": 3,
+      "file": "ritual-raise-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 300,
+      "phase": "振り下ろし",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 724,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 396,
+        "y": 692
+      },
+      "sourceBounds": {
+        "left": 160,
+        "top": 13,
+        "right": 616,
+        "bottom": 692
+      },
+      "bounds": {
+        "left": 91,
+        "top": 39,
+        "right": 225,
+        "bottom": 239
+      },
+      "visiblePixels": 10685,
+      "transparentPixels": 67960
+    },
+    {
+      "index": 4,
+      "file": "ritual-raise-05.png",
+      "x": 1280,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 300,
+      "phase": "接地・大呪法",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 724,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 341,
+        "y": 690
+      },
+      "sourceBounds": {
+        "left": 156,
+        "top": 165,
+        "right": 625,
+        "bottom": 690
+      },
+      "bounds": {
+        "left": 106,
+        "top": 84,
+        "right": 243,
+        "bottom": 239
+      },
+      "visiblePixels": 10456,
+      "transparentPixels": 68373
+    },
+    {
+      "index": 5,
+      "file": "ritual-raise-06.png",
+      "x": 1600,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 300,
+      "phase": "復帰",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 724,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 372,
+        "y": 691
+      },
+      "sourceBounds": {
+        "left": 150,
+        "top": 189,
+        "right": 578,
+        "bottom": 691
+      },
+      "bounds": {
+        "left": 95,
+        "top": 91,
+        "right": 220,
+        "bottom": 239
+      },
+      "visiblePixels": 10415,
+      "transparentPixels": 68736
+    }
+  ]
+}

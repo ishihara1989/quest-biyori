@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-ring",
+  "label": "冷気輪",
+  "sheet": "glacier-ring.png",
+  "preview": "../../../../development/assets/effects/glacier-ring/glacier-ring-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1680,
+  "height": 290,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 420,
+  "frameHeight": 290,
+  "frameCount": 4,
+  "pivot": {
+    "x": 210,
+    "y": 268
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/ring.png",
+  "sourceScale": 0.46296296296296297,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-ring/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-ring-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 290,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 119,
+        "top": 169,
+        "right": 300,
+        "bottom": 268
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 845,
+        "height": 601
+      },
+      "sourceAnchor": {
+        "x": 395,
+        "y": 394
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-ring-02.png",
+      "x": 420,
+      "y": 0,
+      "width": 420,
+      "height": 290,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 77,
+        "top": 87,
+        "right": 343,
+        "bottom": 268
+      },
+      "sourceCell": {
+        "x": 845,
+        "y": 0,
+        "width": 845,
+        "height": 601
+      },
+      "sourceAnchor": {
+        "x": 441,
+        "y": 461
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-ring-03.png",
+      "x": 840,
+      "y": 0,
+      "width": 420,
+      "height": 290,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 38,
+        "top": 19,
+        "right": 381,
+        "bottom": 268
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 601,
+        "width": 845,
+        "height": 601
+      },
+      "sourceAnchor": {
+        "x": 404,
+        "y": 563
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-ring-04.png",
+      "x": 1260,
+      "y": 0,
+      "width": 420,
+      "height": 290,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 60,
+        "top": 56,
+        "right": 359,
+        "bottom": 268
+      },
+      "sourceCell": {
+        "x": 845,
+        "y": 601,
+        "width": 845,
+        "height": 601
+      },
+      "sourceAnchor": {
+        "x": 376,
+        "y": 542
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "ground",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/ring-generated.png"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "obsidian-soldier/danger-1",
+  "source": "sources/obsidian-soldier/danger-1-v3.png",
+  "prompt": "Use case: stylized-concept. EXACT FOUR 2x2 poses for armor-breaking axe attack. Whole character SMALL within each cell, generous 20% margin. First brace knees with SAME axe lowLEFT; second hold SAME axe drawn toward RIGHT shoulder horizontally at crown height with narrow WHITE PAINTED REFLECTION STRIPE along blade edge; third cut LEFT-down with same blade and haft/grips; fourth UPRIGHT neutral recovery. No detached projectile. Sharp hard white stripe, NOT physical light source. ZERO ambient illumination, aura or glow, absolutely NO red gradient background, no sparks outside silhouette. Original armor yellow cracks stay painted hard pixels. Blade always fully visible and same shape, top of blade below crown plus20px. Canonical input is immutable identity, same armor/face/head proportions and refined crisp JRPG pixel clusters. LEFT-facing 3/4. TRUE transparent alpha=0 outside sharply outlined silhouette, NO gradient haze, NO glow beyond outline, NO floor or shadow, no checkerboard or text. All complete silhouettes stay within equal cells and empty gutters. No huge canvas-filling subjects.",
+  "selected": true,
+  "reason": "Targeted second revision after visual review",
+  "tool": "built-in image_gen",
+  "sha256": "33c5c7ed3b35b9fb2949052040dc76367d527d9ead28d6298bab3429b3f81f3a",
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-soldier/danger-1-generated.png",
+  "issues": [
+    "通常斧撃と溜め・発動の形が近い。危険行動の斧刃の白い反射と専用の溜めを明確にする。",
+    "頭上の斧・マントの余白と発動時の斧先を確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-soldier.png",
+      "sha256": "e32e29dd7943525d5656d13a9973bdfae81bed56d7a98fac3038447efce39a57"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

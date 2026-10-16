@@ -1,0 +1,292 @@
+TAP version 13
+# Subtest: automatic acquisition is OFF initially and cannot spend before forest 10
+ok 1 - automatic acquisition is OFF initially and cannot spend before forest 10
+  ---
+  duration_ms: 3.1616
+  type: 'test'
+  ...
+# Subtest: node priority leads character priority; order can favor a different character
+ok 2 - node priority leads character priority; order can favor a different character
+  ---
+  duration_ms: 99.8761
+  type: 'test'
+  ...
+# Subtest: automatic spending matches manual purchases exactly and never repurchases nodes
+ok 3 - automatic spending matches manual purchases exactly and never repurchases nodes
+  ---
+  duration_ms: 194.2217
+  type: 'test'
+  ...
+# Subtest: exclusions, stage gates, dependencies and locked characters remain effective
+ok 4 - exclusions, stage gates, dependencies and locked characters remain effective
+  ---
+  duration_ms: 47.0478
+  type: 'test'
+  ...
+# Subtest: unaffordable high priority nodes skip to an affordable candidate without going negative
+ok 5 - unaffordable high priority nodes skip to an affordable candidate without going negative
+  ---
+  duration_ms: 60.1638
+  type: 'test'
+  ...
+# Subtest: settings survive restoration; old and invalid settings receive safe defaults
+ok 6 - settings survive restoration; old and invalid settings receive safe defaults
+  ---
+  duration_ms: 65.8823
+  type: 'test'
+  ...
+# Subtest: regional first clears unlock forge pages; every region 10 reports actual new recipes
+ok 7 - regional first clears unlock forge pages; every region 10 reports actual new recipes
+  ---
+  duration_ms: 1.2605
+  type: 'test'
+  ...
+# Subtest: option unlocks, early recipes and repeat suppression follow availability rather than inventory
+ok 8 - option unlocks, early recipes and repeat suppression follow availability rather than inventory
+  ---
+  duration_ms: 0.3205
+  type: 'test'
+  ...
+# Subtest: named special stages unlock on ruins 10 and stay outside numbered routes
+ok 9 - named special stages unlock on ruins 10 and stay outside numbered routes
+  ---
+  duration_ms: 3.1352
+  type: 'test'
+  ...
+# Subtest: all families and five regions appear in exact 30/15/5 summon budgets
+ok 10 - all families and five regions appear in exact 30/15/5 summon budgets
+  ---
+  duration_ms: 0.7461
+  type: 'test'
+  ...
+# Subtest: gates resist attacks, wait for every summon, reopen and shatter once per wave
+ok 11 - gates resist attacks, wait for every summon, reopen and shatter once per wave
+  ---
+  duration_ms: 81.4201
+  type: 'test'
+  ...
+# Subtest: early monsters use ruins-10 class stats while retaining their regional behavior
+ok 12 - early monsters use ruins-10 class stats while retaining their regional behavior
+  ---
+  duration_ms: 2.9014
+  type: 'test'
+  ...
+# Subtest: normal balance tools can replace a stage profile without changing the special registry
+ok 13 - normal balance tools can replace a stage profile without changing the special registry
+  ---
+  duration_ms: 0.4148
+  type: 'test'
+  ...
+# Subtest: gems have twice the exclusive drop chance, combine treasure hunt and always drop at Lv.5
+ok 14 - gems have twice the exclusive drop chance, combine treasure hunt and always drop at Lv.5
+  ---
+  duration_ms: 4.7645
+  type: 'test'
+  ...
+# Subtest: special completion gives no first-clear bonus and survives save restoration
+ok 15 - special completion gives no first-clear bonus and survives save restoration
+  ---
+  duration_ms: 1704.5883
+  type: 'test'
+  ...
+# Subtest: main-only ruins completion loses, complete gear through every unique wins without gems or potions
+ok 16 - main-only ruins completion loses, complete gear through every unique wins without gems or potions
+  ---
+  duration_ms: 22710.1699
+  type: 'test'
+  ...
+# Subtest: gate PNG preserves transparent margins and the background is a usable wide image
+ok 17 - gate PNG preserves transparent margins and the background is a usable wide image
+  ---
+  duration_ms: 246.7973
+  type: 'test'
+  ...
+# Subtest: the ten stage lineups match the requested families and exclusions
+ok 18 - the ten stage lineups match the requested families and exclusions
+  ---
+  duration_ms: 2.095
+  type: 'test'
+  ...
+# Subtest: initial equipment clears the first stage across 100 random layouts without potions
+ok 19 - initial equipment clears the first stage across 100 random layouts without potions
+  ---
+  duration_ms: 942.6958
+  type: 'test'
+  ...
+# Subtest: fixed-step updates give identical results for different rendering frame intervals
+ok 20 - fixed-step updates give identical results for different rendering frame intervals
+  ---
+  duration_ms: 4.6082
+  type: 'test'
+  ...
+# Subtest: victory fires once and stops further damage, kills and gold awards
+ok 21 - victory fires once and stops further damage, kills and gold awards
+  ---
+  duration_ms: 12.8297
+  type: 'test'
+  ...
+# Subtest: boss slime splits once per completed split and the summoned enemy must also be defeated
+ok 22 - boss slime splits once per completed split and the summoned enemy must also be defeated
+  ---
+  duration_ms: 6.282
+  type: 'test'
+  ...
+# Subtest: boss boar finishes its windup and charge instead of resetting the attack clock
+ok 23 - boss boar finishes its windup and charge instead of resetting the attack clock
+  ---
+  duration_ms: 5.1467
+  type: 'test'
+  ...
+# Subtest: plant and treant attacks launch delayed projectiles and ground impacts
+ok 24 - plant and treant attacks launch delayed projectiles and ground impacts
+  ---
+  duration_ms: 4.4066
+  type: 'test'
+  ...
+# Subtest: potions heal only living, injured players in an active battle
+ok 25 - potions heal only living, injured players in an active battle
+  ---
+  duration_ms: 0.3884
+  type: 'test'
+  ...
+# Subtest: rewards unlock the next stage and first-clear items are awarded only once
+ok 26 - rewards unlock the next stage and first-clear items are awarded only once
+  ---
+  duration_ms: 1.1706
+  type: 'test'
+  ...
+# Subtest: save roundtrips retain progression, inventory and settings; corrupted saves recover
+ok 27 - save roundtrips retain progression, inventory and settings; corrupted saves recover
+  ---
+  duration_ms: 19.2838
+  type: 'test'
+  ...
+# Subtest: every combat motion and generated icon consumed by the game exists
+ok 28 - every combat motion and generated icon consumed by the game exists
+  ---
+  duration_ms: 186.945
+  type: 'test'
+  ...
+# Subtest: only drops and gems are collectible; boss material rarities follow their sources
+ok 29 - only drops and gems are collectible; boss material rarities follow their sources
+  ---
+  duration_ms: 13.7456
+  type: 'test'
+  ...
+# Subtest: gem rolls use absolute rare, unique and desert legendary chances on bosses only
+ok 30 - gem rolls use absolute rare, unique and desert legendary chances on bosses only
+  ---
+  duration_ms: 1.2002
+  type: 'test'
+  ...
+# Subtest: directional and shared capacity is charged per random gem instance
+ok 31 - directional and shared capacity is charged per random gem instance
+  ---
+  duration_ms: 50.6962
+  type: 'test'
+  ...
+# Subtest: numeric unique options have higher values and lower total capacity than rare equivalents
+ok 32 - numeric unique options have higher values and lower total capacity than rare equivalents
+  ---
+  duration_ms: 95.2343
+  type: 'test'
+  ...
+# Subtest: range gems extend actual skill parameters and keep utility magnitude independent of regional level
+ok 33 - range gems extend actual skill parameters and keep utility magnitude independent of regional level
+  ---
+  duration_ms: 1.2388
+  type: 'test'
+  ...
+# Subtest: reward reveal is sorted, four chest frames precede items, and auto repeat waits for all loot
+ok 34 - reward reveal is sorted, four chest frames precede items, and auto repeat waits for all loot
+  ---
+  duration_ms: 0.8652
+  type: 'test'
+  ...
+# Subtest: generated chest and new gem images exist and retain real alpha
+ok 35 - generated chest and new gem images exist and retain real alpha
+  ---
+  duration_ms: 176.7649
+  type: 'test'
+  ...
+# Subtest: random gems always have a usable build, valid budget, correct tier and exact capacity
+ok 36 - random gems always have a usable build, valid budget, correct tier and exact capacity
+  ---
+  duration_ms: 166.5463
+  type: 'test'
+  ...
+# Subtest: fixed regional values grow while utility parameters and preserved rolls do not
+ok 37 - fixed regional values grow while utility parameters and preserved rolls do not
+  ---
+  duration_ms: 0.7324
+  type: 'test'
+  ...
+# Subtest: each equipment starts at 500 and a complete regional tree adds 200 directional plus 50 common
+ok 38 - each equipment starts at 500 and a complete regional tree adds 200 directional plus 50 common
+  ---
+  duration_ms: 260.9498
+  type: 'test'
+  ...
+# Subtest: equipped instance effects and shared capacity are applied and removed without lingering combat buffs
+ok 39 - equipped instance effects and shared capacity are applied and removed without lingering combat buffs
+  ---
+  duration_ms: 61.412
+  type: 'test'
+  ...
+# Subtest: craft guarantees only the selected primary family and spends the visible recipe atomically
+ok 40 - craft guarantees only the selected primary family and spends the visible recipe atomically
+  ---
+  duration_ms: 1.4616
+  type: 'test'
+  ...
+# Subtest: upgrade retains ID, affixes, quality, lock and capacity; dismantling and conversions cannot duplicate gems
+ok 41 - upgrade retains ID, affixes, quality, lock and capacity; dismantling and conversions cannot duplicate gems
+  ---
+  duration_ms: 5.5442
+  type: 'test'
+  ...
+# Subtest: legacy reset clears only gem state and new save restores validated individual rolls and equipment
+ok 42 - legacy reset clears only gem state and new save restores validated individual rolls and equipment
+  ---
+  duration_ms: 131.2949
+  type: 'test'
+  ...
+# Subtest: treasure hunt is additive over items and multiplies the original exclusive rarity chances
+ok 43 - treasure hunt is additive over items and multiplies the original exclusive rarity chances
+  ---
+  duration_ms: 0.732
+  type: 'test'
+  ...
+# Subtest: interference penetration affects real cancellation and the AI score without reducing permanent resistance
+ok 44 - interference penetration affects real cancellation and the AI score without reducing permanent resistance
+  ---
+  duration_ms: 0.8904
+  type: 'test'
+  ...
+# Subtest: legendary procs have cooldowns, cannot recursively trigger, and a proc kill awards exactly one drop
+ok 45 - legendary procs have cooldowns, cannot recursively trigger, and a proc kill awards exactly one drop
+  ---
+  duration_ms: 1.7824
+  type: 'test'
+  ...
+# Subtest: loot presentation keeps different random gem instances separate
+ok 46 - loot presentation keeps different random gem instances separate
+  ---
+  duration_ms: 0.5389
+  type: 'test'
+  ...
+# Subtest: generated gem assets have exact icon dimensions and real transparent margins
+ok 47 - generated gem assets have exact icon dimensions and real transparent margins
+  ---
+  duration_ms: 56.0037
+  type: 'test'
+  ...
+1..47
+# tests 47
+# suites 0
+# pass 47
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 25011.3705

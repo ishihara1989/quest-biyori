@@ -1,0 +1,15 @@
+{
+  "id": "parts/halo-node",
+  "source": "source/parts/halo-node.png",
+  "sha256": "230bde663e8632dd3339d51b7405577e14049b34709041800fc04e325f20bcec",
+  "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/halo-node.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Independent celestial halo diamond node, 36x52 maximum silhouette centered (128,128).\nFrames:\n1. One cyan diamond gemstone with gold frame, thin dark-violet edge.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+  "transparent_background": true,
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-3a46cbe1-66db-41b3-9e61-a2a61ff41e4b.png",
+  "references": [
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    }
+  ],
+  "attempt": 1
+}

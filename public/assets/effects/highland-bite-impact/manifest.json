@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "bite-impact",
+  "label": "噛みつきの衝撃",
+  "sheet": "bite-impact.png",
+  "preview": "../../../../development/assets/effects/highland-bite-impact/bite-impact-preview.gif",
+  "prompt": "../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1360,
+  "height": 280,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 280,
+  "frameCount": 4,
+  "pivot": {
+    "x": 170,
+    "y": 140
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/highland-motions/effects/bite-impact/registered.png",
+  "sourceScale": 0.38860103626943004,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "bite-impact-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 95,
+        "top": 72,
+        "right": 266,
+        "bottom": 209
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 805,
+        "height": 581
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 299
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "bite-impact-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 78,
+        "top": 92,
+        "right": 245,
+        "bottom": 195
+      },
+      "sourceCell": {
+        "x": 805,
+        "y": 0,
+        "width": 805,
+        "height": 581
+      },
+      "sourceAnchor": {
+        "x": 389,
+        "y": 294
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "bite-impact-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 103,
+        "top": 89,
+        "right": 239,
+        "bottom": 175
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 581,
+        "width": 805,
+        "height": 581
+      },
+      "sourceAnchor": {
+        "x": 419,
+        "y": 253
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "bite-impact-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 107,
+        "top": 81,
+        "right": 236,
+        "bottom": 174
+      },
+      "sourceCell": {
+        "x": 805,
+        "y": 581,
+        "width": 805,
+        "height": 581
+      },
+      "sourceAnchor": {
+        "x": 375,
+        "y": 253
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": false,
+  "originalSource": "../../../../development/assets/highland-motions/sources/effects/bite-impact-generated.png",
+  "kind": "target",
+  "id": "highland-bite-impact"
+}

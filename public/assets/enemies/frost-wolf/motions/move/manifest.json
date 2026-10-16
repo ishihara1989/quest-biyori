@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "enemy": "frost-wolf",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "frost-wolf-move.png",
+  "preview": "../../../../../../development/assets/enemies/frost-wolf/motions/move/frost-wolf-move-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/SINGLE-TROT-PROMPTS.md",
+  "width": 2400,
+  "height": 300,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 400,
+  "frameHeight": 300,
+  "frameCount": 6,
+  "pivot": {
+    "x": 224,
+    "y": 278
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/frost-wolf/move.png",
+  "sourceScale": 0.1986754966887417,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/single-trot.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 116,
+        "top": 129,
+        "right": 327,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1528,
+        "height": 1528
+      },
+      "sourceAnchor": {
+        "x": 689.7149423511462,
+        "y": 1098
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 400,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 114,
+        "top": 129,
+        "right": 329,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 1528,
+        "y": 0,
+        "width": 1528,
+        "height": 1528
+      },
+      "sourceAnchor": {
+        "x": 710.913738985743,
+        "y": 1152
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 111,
+        "top": 129,
+        "right": 333,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1528,
+        "width": 1528,
+        "height": 1528
+      },
+      "sourceAnchor": {
+        "x": 885,
+        "y": 1361
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 121,
+        "top": 129,
+        "right": 323,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 1528,
+        "y": 1528,
+        "width": 1528,
+        "height": 1528
+      },
+      "sourceAnchor": {
+        "x": 866.7965745192307,
+        "y": 1244
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1600,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 114,
+        "top": 129,
+        "right": 330,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 3056,
+        "width": 1528,
+        "height": 1528
+      },
+      "sourceAnchor": {
+        "x": 821.9115849084908,
+        "y": 1318
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2000,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 109,
+        "top": 129,
+        "right": 334,
+        "bottom": 277
+      },
+      "sourceCell": {
+        "x": 1528,
+        "y": 3056,
+        "width": 1528,
+        "height": 1528
+      },
+      "sourceAnchor": {
+        "x": 729.5110983509484,
+        "y": 1183
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/frost-wolf.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/frost-wolf/move-frame-1-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/frost-wolf/move-frame-2-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/frost-wolf/move-frame-3-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/frost-wolf/move-frame-4-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/frost-wolf/move-frame-5-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/frost-wolf/move-frame-6-generated-v2.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.0161507402422612
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.1927330173775672
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.1353383458646618
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.1319340329835081
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.0486111111111112
+    }
+  ],
+  "action": null,
+  "animationPhases": null,
+  "walkCycle": {
+    "gait": "trot",
+    "parts": 6,
+    "framesPerPart": 1,
+    "durationMs": 720,
+    "diagonalPairs": [
+      [
+        "LH",
+        "RF"
+      ],
+      [
+        "LF",
+        "RH"
+      ]
+    ],
+    "coordinateGuide": "../../../../../../development/assets/glacier-motions/guides/frost-wolf/coordinates.json"
+  }
+}

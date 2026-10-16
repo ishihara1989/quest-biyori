@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "lich-energy-impact",
+  "label": "闇の弾の衝撃",
+  "sheet": "lich-energy-impact.png",
+  "preview": "../../../../development/assets/effects/lich-energy-impact/lich-energy-impact-preview.gif",
+  "prompt": "../../../../development/assets/effects/lich-energy-impact/PROMPT.md",
+  "width": 896,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 224,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 112,
+    "y": 112
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/lich-energy-impact/source-generated.png",
+  "sourceScale": 0.38095238095238093,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "lich-energy-impact-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 43,
+        "top": 38,
+        "right": 181,
+        "bottom": 186
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 599,
+        "height": 624
+      },
+      "sourceAnchor": {
+        "x": 314,
+        "y": 311
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "lich-energy-impact-02.png",
+      "x": 224,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 20,
+        "top": 20,
+        "right": 204,
+        "bottom": 203
+      },
+      "sourceCell": {
+        "x": 599,
+        "y": 0,
+        "width": 655,
+        "height": 624
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 312
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "lich-energy-impact-03.png",
+      "x": 448,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 12,
+        "top": 18,
+        "right": 211,
+        "bottom": 206
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 624,
+        "width": 679,
+        "height": 630
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 315
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "lich-energy-impact-04.png",
+      "x": 672,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 44,
+        "top": 50,
+        "right": 179,
+        "bottom": 174
+      },
+      "sourceCell": {
+        "x": 679,
+        "y": 624,
+        "width": 575,
+        "height": 630
+      },
+      "sourceAnchor": {
+        "x": 268,
+        "y": 314
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

@@ -1,0 +1,32 @@
+{
+  "source": "source/shaman-chant-generated-v1.png",
+  "columns": 3,
+  "rows": 1,
+  "scale": 0.2376068376068376,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 735,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 735,
+        "y": 0,
+        "width": 748,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1483,
+        "y": 0,
+        "width": 689,
+        "height": 724
+      }
+    }
+  ]
+}

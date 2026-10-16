@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "attack-shuriken",
+  "label": "手裏剣・通常攻撃",
+  "facing": "right",
+  "sheet": "ninja-attack-shuriken.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 520,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.23728813559322035,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/ninja/motions/attack-shuriken/source/ninja-attack-shuriken-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-shuriken-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "手裏剣を引く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 698,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 373,
+        "y": 666
+      },
+      "sourceBounds": {
+        "left": 93,
+        "top": 81,
+        "right": 604,
+        "bottom": 666
+      },
+      "bounds": {
+        "left": 94,
+        "top": 101,
+        "right": 214,
+        "bottom": 239
+      },
+      "visiblePixels": 6780,
+      "transparentPixels": 73198
+    },
+    {
+      "index": 1,
+      "file": "attack-shuriken-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "投げる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 698,
+        "y": 0,
+        "width": 898,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 318,
+        "y": 662
+      },
+      "sourceBounds": {
+        "left": 93,
+        "top": 74,
+        "right": 842,
+        "bottom": 662
+      },
+      "bounds": {
+        "left": 107,
+        "top": 100,
+        "right": 284,
+        "bottom": 239
+      },
+      "visiblePixels": 7355,
+      "transparentPixels": 72140
+    },
+    {
+      "index": 2,
+      "file": "attack-shuriken-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "振り抜く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1596,
+        "y": 0,
+        "width": 576,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 290,
+        "y": 662
+      },
+      "sourceBounds": {
+        "left": 55,
+        "top": 81,
+        "right": 525,
+        "bottom": 662
+      },
+      "bounds": {
+        "left": 105,
+        "top": 102,
+        "right": 215,
+        "bottom": 239
+      },
+      "visiblePixels": 6488,
+      "transparentPixels": 73617
+    }
+  ],
+  "projectile": {
+    "file": "shuriken-projectile.png",
+    "emission": {
+      "x": 138,
+      "y": -92
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "effects/black-ring-slash",
+  "effect": "black-ring-slash",
+  "region": "demon-castle",
+  "label": "黒環薙ぎ",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/black-ring-slash-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. wide 150-degree black-violet crescent sweep left, silver rim and sparse crimson fragments, hollow inner arc. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-746f1004-224c-4ada-b445-8c8797ef8195.png",
+  "sha256": "e8a1835f803b07064e7e8a278f0de222ed704b7ce13dea886ee404c47db8fb53",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "銀縁の紫黒円弧と赤い破片、透明な内側の形が見える。"
+    ],
+    "issues": [
+      "紫赤の背景光が混入。",
+      "円弧の中心位置と大きさが変わるため、薙ぎの原点と150度の扇範囲を実装時に照合する。"
+    ]
+  }
+}

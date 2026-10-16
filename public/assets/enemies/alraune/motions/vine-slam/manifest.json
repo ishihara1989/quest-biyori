@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "enemy": "alraune",
+  "motion": "vine-slam",
+  "facing": "left",
+  "label": "ツルの叩きつけ",
+  "sheet": "alraune-vine-slam.png",
+  "preview": "../../../../../../development/assets/enemies/alraune/motions/vine-slam/alraune-vine-slam-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/alraune/PROMPT.md",
+  "width": 2560,
+  "height": 384,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 384,
+  "frameCount": 4,
+  "pivot": {
+    "x": 360,
+    "y": 367
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 800,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/alraune/source/alraune-vine-slam-generated-v1.png",
+  "sourceScale": 0.64,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 64,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "vine-impact",
+      "frame": 2,
+      "timeMs": 370,
+      "type": "attack",
+      "description": "ツルが左の地面に接触する開始時刻"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "vine-slam-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 240,
+      "phase": "振りかぶる",
+      "bounds": {
+        "left": 164,
+        "top": 18,
+        "right": 511,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 752,
+        "height": 592
+      },
+      "sourceAnchor": {
+        "x": 500,
+        "y": 567
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "vine-slam-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 130,
+      "phase": "振り下ろし・残像",
+      "bounds": {
+        "left": 105,
+        "top": 43,
+        "right": 522,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 752,
+        "y": 0,
+        "width": 696,
+        "height": 592
+      },
+      "sourceAnchor": {
+        "x": 416,
+        "y": 582
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "vine-slam-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 180,
+      "phase": "地面を叩く・残像",
+      "bounds": {
+        "left": 31,
+        "top": 83,
+        "right": 529,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 592,
+        "width": 836,
+        "height": 494
+      },
+      "sourceAnchor": {
+        "x": 550,
+        "y": 465
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "vine-slam-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 250,
+      "phase": "ツルを戻して待機へ",
+      "bounds": {
+        "left": 183,
+        "top": 127,
+        "right": 531,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 400,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/alraune/source/alraune-idle-generated-v1.png",
+      "sourceScale": 0.5,
+      "reusedPose": "idle/0"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-shell-golem",
+  "motion": "punch",
+  "facing": "left",
+  "label": "氷拳",
+  "sheet": "ice-shell-golem-punch.png",
+  "preview": "../../../../../../development/assets/enemies/ice-shell-golem/motions/punch/ice-shell-golem-punch-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1600,
+  "height": 330,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 400,
+  "frameHeight": 330,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 308
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-shell-golem/punch.png",
+  "sourceScale": 0.4088785046728972,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-punch",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "punch-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 123,
+        "top": 134,
+        "right": 326,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 694,
+        "height": 695
+      },
+      "sourceAnchor": {
+        "x": 362.67830033648954,
+        "y": 598
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "punch-02.png",
+      "x": 400,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 120,
+        "top": 96,
+        "right": 329,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 694,
+        "y": 0,
+        "width": 694,
+        "height": 695
+      },
+      "sourceAnchor": {
+        "x": 314.1634966620481,
+        "y": 598
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "punch-03.png",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 102,
+        "top": 137,
+        "right": 339,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 695,
+        "width": 694,
+        "height": 695
+      },
+      "sourceAnchor": {
+        "x": 349.41364285177673,
+        "y": 518
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "punch-04.png",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 125,
+        "top": 134,
+        "right": 326,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 694,
+        "y": 695,
+        "width": 694,
+        "height": 695
+      },
+      "sourceAnchor": {
+        "x": 304.7209619238477,
+        "y": 522
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-shell-golem.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-shell-golem/punch-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 644,
+          "height": 663
+        },
+        {
+          "x": 644,
+          "y": 0,
+          "width": 610,
+          "height": 663
+        },
+        {
+          "x": 0,
+          "y": 663,
+          "width": 662,
+          "height": 591
+        },
+        {
+          "x": 662,
+          "y": 663,
+          "width": 592,
+          "height": 591
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "punch",
+    "warn": 0,
+    "times": [
+      420
+    ],
+    "kind": "melee",
+    "radius": 170,
+    "effect": "punch",
+    "rest": 1800,
+    "status": null,
+    "duration": 900,
+    "power": 1
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

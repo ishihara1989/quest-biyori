@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "throw-tool",
+  "label": "道具投擲",
+  "facing": "right",
+  "sheet": "ninja-throw-tool.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 560,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.20648967551622419,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/ninja/motions/throw-tool/source/ninja-throw-tool-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; complete skill sequences in ninja-skill-lab.html. Separate swept projectiles own flight and damage.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "throw-tool-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 220,
+      "phase": "腰から取る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 428,
+        "y": 691
+      },
+      "sourceBounds": {
+        "left": 159,
+        "top": 15,
+        "right": 664,
+        "bottom": 691
+      },
+      "bounds": {
+        "left": 105,
+        "top": 100,
+        "right": 208,
+        "bottom": 239
+      },
+      "visiblePixels": 6291,
+      "transparentPixels": 74408
+    },
+    {
+      "index": 1,
+      "file": "throw-tool-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "上へ放る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 370,
+        "y": 691
+      },
+      "sourceBounds": {
+        "left": 95,
+        "top": 13,
+        "right": 673,
+        "bottom": 691
+      },
+      "bounds": {
+        "left": 104,
+        "top": 99,
+        "right": 222,
+        "bottom": 239
+      },
+      "visiblePixels": 6879,
+      "transparentPixels": 73594
+    },
+    {
+      "index": 2,
+      "file": "throw-tool-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "復帰",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 372,
+        "y": 691
+      },
+      "sourceBounds": {
+        "left": 105,
+        "top": 15,
+        "right": 606,
+        "bottom": 691
+      },
+      "bounds": {
+        "left": 105,
+        "top": 100,
+        "right": 208,
+        "bottom": 239
+      },
+      "visiblePixels": 6299,
+      "transparentPixels": 74307
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dragon/idle",
+  "source": "sources/dragon/idle-v1-reused.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame IDLE breathing sheet EXACT 2x2, order top-left, top-right, bottom-left, bottom-right. ドラゴン. Frame1 canonical neutral; frame2 chest rises 8px, hair/tail/cape/wing tip moves 12px; frame3 neutral; frame4 chest settles 5px, secondary parts return. Feet stay planted, body does not translate, subtle distinct redraws, smooth 4->1 loop. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "selected": true,
+  "reusedFirstPass": true,
+  "reason": "First-pass alpha composite and full poses reviewed; preserve original art and resolve registration/playback checks in final packing",
+  "tool": "built-in image_gen",
+  "sha256": "8cdc48b19150f18297ebcb2071a3734bbc658b633e5396a85e5ba4fa6d7ce037",
+  "reference": "references/dragon.png",
+  "guide": null,
+  "firstPass": "sources/dragon/idle-generated.png",
+  "issues": [
+    "胸・翼周囲に赤い背景光が混入。透過素材としての修正が必要。",
+    "2コマ目で翼の広さと尾の高さが変わり、画面上の占有範囲が揺れる。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/dragon.png",
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

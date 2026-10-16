@@ -1,0 +1,67 @@
+{
+  "id": "demon-armored-soldier/down",
+  "enemy": "demon-armored-soldier",
+  "region": "demon-castle",
+  "motion": "down",
+  "label": "撃破",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/demon-armored-soldier/reaction-generated.png"
+  ],
+  "durations": [
+    400,
+    1000
+  ],
+  "phases": [
+    "崩れる",
+    "倒れた状態"
+  ],
+  "enemyLabel": "魔鎧兵",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "sourceBounds": {
+        "left": 40,
+        "top": 66,
+        "right": 629,
+        "bottom": 464
+      },
+      "sourceWidth": 643,
+      "sourceHeight": 551,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 235715,
+      "transparentFraction": 0.6653109149771517
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 12,
+        "top": 148,
+        "right": 636,
+        "bottom": 459
+      },
+      "sourceWidth": 687,
+      "sourceHeight": 551,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 274243,
+      "transparentFraction": 0.7244813584933574
+    }
+  ],
+  "reference": "../../../references/demon-armored-soldier.png",
+  "originalSources": [
+    "../../../sources/demon-armored-soldier/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": true,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

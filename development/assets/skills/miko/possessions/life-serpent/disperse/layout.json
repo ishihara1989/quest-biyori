@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/life-serpent-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 774,
+      "height": 724
+    },
+    {
+      "x": 774,
+      "y": 0,
+      "width": 713,
+      "height": 724
+    },
+    {
+      "x": 1487,
+      "y": 0,
+      "width": 685,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 926
+    },
+    {
+      "x": 512,
+      "y": 926
+    },
+    {
+      "x": 512,
+      "y": 926
+    }
+  ],
+  "scale": 0.5070422535211268
+}

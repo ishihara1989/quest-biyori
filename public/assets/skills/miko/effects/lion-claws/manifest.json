@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "lion-claws",
+  "character": "miko",
+  "subject": "lion-claws",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "lion-claws-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 480,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5243128964059197,
+  "frames": [
+    {
+      "index": 0,
+      "file": "lion-claws-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 43,
+        "t": 36,
+        "r": 492,
+        "b": 440,
+        "n": 70968,
+        "width": 450,
+        "height": 405
+      }
+    },
+    {
+      "index": 1,
+      "file": "lion-claws-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 28,
+        "t": 41,
+        "r": 492,
+        "b": 454,
+        "n": 109286,
+        "width": 465,
+        "height": 414
+      }
+    },
+    {
+      "index": 2,
+      "file": "lion-claws-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 8,
+        "t": 49,
+        "r": 492,
+        "b": 465,
+        "n": 114694,
+        "width": 485,
+        "height": 417
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/lion-claws-generated-v2.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/lion-claws-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/flame-wheel-idle-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 698,
+      "height": 724
+    },
+    {
+      "x": 698,
+      "y": 0,
+      "width": 727,
+      "height": 724
+    },
+    {
+      "x": 1425,
+      "y": 0,
+      "width": 747,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 600.5,
+      "y": 906
+    },
+    {
+      "x": 608,
+      "y": 896
+    },
+    {
+      "x": 590.5,
+      "y": 905
+    }
+  ],
+  "scale": 0.12147505422993492
+}

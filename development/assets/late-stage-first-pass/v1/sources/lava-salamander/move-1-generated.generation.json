@@ -1,0 +1,25 @@
+{
+  "id": "lava-salamander/move-1",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "move-1",
+  "label": "移動 1〜3",
+  "cols": 3,
+  "rows": 1,
+  "reference": "references/lava-salamander.png",
+  "guide": "guides/lava-salamander/half-1.png",
+  "source": "sources/lava-salamander/move-1-generated.png",
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place TROT poses of ラヴァサラマンダー in a horizontal 3-cell sheet, frames 1-3 of six, 120ms each. SECOND reference is SKELETAL GUIDE only, never copy its lines/colors. Anatomical LEFT legs NEAR, RIGHT legs FAR darker. A=LH+RF, B=LF+RH alternate diagonal support. Exactly FOUR connected legs, track hip/thigh/knee/shin/ankle/paw for all including occluded legs. Naturally hide far legs; never widen them to show all feet. Stable head/torso, short smooth stride, wings held stable, tail sways 12px. Seamless 3->4 and 6->1. Target coordinates:\nFRAME 1: LF grounded paw-bottom (389,850), hip (389,689), knee (476,739); RF lifted paw-bottom (353,799), hip (353,667), knee (448,702); LH lifted paw-bottom (708,793), hip (708,663), knee (613,712); RH grounded paw-bottom (673,802), hip (673,641), knee (585,705)\nFRAME 2: LF grounded paw-bottom (420,847), hip (389,689), knee (487,714); RF lifted paw-bottom (327,815), hip (353,667), knee (428,735); LH lifted paw-bottom (680,810), hip (708,663), knee (607,694); RH grounded paw-bottom (690,800), hip (673,641), knee (596,719)\nFRAME 3: LF lifted paw-bottom (420,830), hip (389,689), knee (490,699); RF grounded paw-bottom (327,830), hip (353,667), knee (424,739); LH grounded paw-bottom (680,826), hip (708,663), knee (610,706); RH lifted paw-bottom (690,788), hip (673,641), knee (592,715) Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-7c708800-5b4d-43e0-a682-92797ed412fc.png",
+  "sha256": "bc43ca0b620aa55e1a21eccc20026048958fe7d2b31bf5732d4f12a0368c538c",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+      "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。"
+    ]
+  }
+}

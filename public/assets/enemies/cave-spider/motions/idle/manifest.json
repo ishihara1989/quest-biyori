@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-spider",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "cave-spider-idle.png",
+  "preview": "../../../../../../development/assets/enemies/cave-spider/motions/idle/cave-spider-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-spider/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/cave-spider/source/idle-registered.png",
+  "sourceScale": 0.3888888888888889,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 137,
+        "top": 160,
+        "right": 326,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 574,
+        "height": 352
+      },
+      "sourceAnchor": {
+        "x": 239,
+        "y": 303
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 132,
+        "top": 157,
+        "right": 341,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 574,
+        "y": 0,
+        "width": 574,
+        "height": 352
+      },
+      "sourceAnchor": {
+        "x": 252,
+        "y": 310
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 130,
+        "top": 147,
+        "right": 340,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 352,
+        "width": 574,
+        "height": 352
+      },
+      "sourceAnchor": {
+        "x": 256,
+        "y": 335
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 132,
+        "top": 157,
+        "right": 333,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 574,
+        "y": 352,
+        "width": 574,
+        "height": 352
+      },
+      "sourceAnchor": {
+        "x": 251,
+        "y": 309
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-spider/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 3,
+        "count": 78152,
+        "left": 155,
+        "top": 165,
+        "right": 644,
+        "bottom": 452,
+        "cx": 437.2549518886273,
+        "cy": 303.5757498208619
+      },
+      {
+        "id": 1,
+        "count": 93106,
+        "left": 866,
+        "top": 158,
+        "right": 1405,
+        "bottom": 452,
+        "cx": 1164.9174167078384,
+        "cy": 292.7923764311645
+      },
+      {
+        "id": 5,
+        "count": 99534,
+        "left": 130,
+        "top": 612,
+        "right": 671,
+        "bottom": 931,
+        "cx": 425.9006470150903,
+        "cy": 758.9331987059699
+      },
+      {
+        "id": 6,
+        "count": 86231,
+        "left": 878,
+        "top": 638,
+        "right": 1396,
+        "bottom": 931,
+        "cx": 1173.135913998446,
+        "cy": 779.042942793195
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

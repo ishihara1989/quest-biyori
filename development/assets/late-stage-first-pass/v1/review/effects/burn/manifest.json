@@ -1,0 +1,101 @@
+{
+  "id": "effects/burn",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "火傷",
+  "kind": "status",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/burn-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 135,
+        "top": 138,
+        "right": 599,
+        "bottom": 491
+      },
+      "sourceWidth": 629,
+      "sourceHeight": 574,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 227940,
+      "transparentFraction": 0.6313322956077619
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 29,
+        "top": 67,
+        "right": 625,
+        "bottom": 565
+      },
+      "sourceWidth": 666,
+      "sourceHeight": 574,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 166375,
+      "transparentFraction": 0.43521308765211203
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 29,
+        "top": 5,
+        "right": 735,
+        "bottom": 604
+      },
+      "sourceWidth": 748,
+      "sourceHeight": 640,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 176769,
+      "transparentFraction": 0.36925342580213905
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 11,
+        "top": 116,
+        "right": 526,
+        "bottom": 577
+      },
+      "sourceWidth": 547,
+      "sourceHeight": 640,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 185392,
+      "transparentFraction": 0.5295703839122486
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/burn-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

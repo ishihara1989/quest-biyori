@@ -1,0 +1,101 @@
+{
+  "id": "effects/fire-beam",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "双脈竜息",
+  "kind": "origin",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/fire-beam-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 177,
+        "top": 174,
+        "right": 725,
+        "bottom": 371
+      },
+      "sourceWidth": 767,
+      "sourceHeight": 483,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 289952,
+      "transparentFraction": 0.7826788784784363
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 41,
+        "top": 129,
+        "right": 716,
+        "bottom": 425
+      },
+      "sourceWidth": 769,
+      "sourceHeight": 483,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 235454,
+      "transparentFraction": 0.6339172973424119
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 26,
+        "top": 57,
+        "right": 792,
+        "bottom": 480
+      },
+      "sourceWidth": 844,
+      "sourceHeight": 541,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 215334,
+      "transparentFraction": 0.4715990223475922
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 26,
+        "top": 166,
+        "right": 656,
+        "bottom": 388
+      },
+      "sourceWidth": 692,
+      "sourceHeight": 541,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 269452,
+      "transparentFraction": 0.7197439979485646
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/fire-beam-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

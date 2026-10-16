@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "effect": "charge-impact",
+  "label": "突進の衝撃",
+  "sheet": "charge-impact.png",
+  "preview": "charge-impact-preview.gif",
+  "prompt": "../../PROMPTS.md",
+  "width": 1840,
+  "height": 310,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 460,
+  "frameHeight": 310,
+  "frameCount": 4,
+  "pivot": {
+    "x": 230,
+    "y": 286
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "registered.png",
+  "sourceScale": 0.515970515970516,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "charge-impact-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 186,
+        "top": 181,
+        "right": 297,
+        "bottom": 258
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 846,
+        "height": 559
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 542
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "charge-impact-02.png",
+      "x": 460,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 106,
+        "top": 98,
+        "right": 366,
+        "bottom": 259
+      },
+      "sourceCell": {
+        "x": 846,
+        "y": 0,
+        "width": 846,
+        "height": 559
+      },
+      "sourceAnchor": {
+        "x": 405,
+        "y": 541
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "charge-impact-03.png",
+      "x": 920,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 63,
+        "top": 58,
+        "right": 408,
+        "bottom": 251
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 559,
+        "width": 846,
+        "height": 559
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 512
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "charge-impact-04.png",
+      "x": 1380,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 80,
+        "top": 129,
+        "right": 367,
+        "bottom": 249
+      },
+      "sourceCell": {
+        "x": 846,
+        "y": 559,
+        "width": 846,
+        "height": 559
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 512
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": true,
+  "originalSource": "../../sources/effects/charge-impact-generated.png",
+  "kind": "ground"
+}

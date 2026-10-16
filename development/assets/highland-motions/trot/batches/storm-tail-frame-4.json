@@ -1,0 +1,12 @@
+[
+  {
+    "enemy": "storm-jackal",
+    "frame": 4,
+    "source": "trot/storm-jackal/sources/frame-4-tail.png",
+    "reference": "trot/storm-jackal/sources/frame-4-focused.png",
+    "prompt": "Edit ONLY the very rightmost TAIL FUR TIPS of this transparent 1254x1254 pixel sprite. The tail's blue/white fur currently hits/crosses the RIGHT CANVAS EDGE around y985..1015, and its fur tips are clipped. Restore complete natural tapered fur tips and curl these last few hairs slightly INWARD so the rightmost nontransparent pixel is x<=1235, leaving at least 18px of clear transparent margin. Do NOT change tail base, flowing mane or large tail shape; only the last approximately 35px-wide rightmost extremity. Keep ALL FOUR LEGS and their feet, thighs, joints, contact states and exact paw coordinates COMPLETELY UNCHANGED. Keep face, horns, head, torso, armor, palette, texture, scale and all body positions unchanged. Retain original 1254x1254 transparent canvas; do not shrink or recenter character. No extra limbs, no guide/labels, no opaque background, no floor/shadow. This is frame 4 of a six-frame trot; preserve the accepted movement, fix visible tail-tip clipping only.",
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13090-86c2-7f71-8c3e-886a539df52e\\exec-3c347b33-d8d8-415c-a781-e773f893e646.png",
+    "status": "selected",
+    "selectionReason": "Four connected legs and alternating diagonal support reviewed; canonical appearance retained."
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "enemies/storm-jackal/motions/idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "enemies/storm-jackal/motions/move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "enemies/storm-jackal/motions/hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "enemies/storm-jackal/motions/down/manifest.json"
+  },
+  {
+    "id": "charge",
+    "label": "直線突進",
+    "manifest": "enemies/storm-jackal/motions/charge/manifest.json"
+  },
+  {
+    "id": "claw",
+    "label": "出血爪",
+    "manifest": "enemies/storm-jackal/motions/claw/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "休息",
+    "manifest": "enemies/storm-jackal/motions/rest/manifest.json"
+  }
+]

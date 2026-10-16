@@ -1,0 +1,200 @@
+{
+  "id": "dragon-girl/attack",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "label": "爪撃",
+  "kind": null,
+  "motion": "attack",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon-girl.png",
+  "originalSources": [
+    "../../../sources/dragon-girl/attack-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon-girl/attack/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "transparentFraction": 0.8590469360351562,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 64,
+        "top": 103,
+        "right": 411,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 164,
+        "top": 104,
+        "right": 409,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/attack-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 809,
+        "height": 515
+      },
+      "sourceScale": 0.48254620123203285,
+      "sourceAnchor": {
+        "x": 492,
+        "y": 506
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8576278686523438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 167,
+        "top": 104,
+        "right": 422,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 168,
+        "top": 105,
+        "right": 418,
+        "bottom": 336
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/attack-v3.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 809,
+        "y": 0,
+        "width": 727,
+        "height": 515
+      },
+      "sourceScale": 0.48254620123203285,
+      "sourceAnchor": {
+        "x": 320,
+        "y": 502
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8581466674804688,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 49,
+        "top": 102,
+        "right": 405,
+        "bottom": 338
+      },
+      "visibleBounds": {
+        "left": 139,
+        "top": 104,
+        "right": 404,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/attack-v3.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 515,
+        "width": 822,
+        "height": 509
+      },
+      "sourceScale": 0.48254620123203285,
+      "sourceAnchor": {
+        "x": 516,
+        "y": 491
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8600883483886719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 166,
+        "top": 104,
+        "right": 418,
+        "bottom": 338
+      },
+      "visibleBounds": {
+        "left": 170,
+        "top": 105,
+        "right": 415,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/attack-v3.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 822,
+        "y": 515,
+        "width": 714,
+        "height": 509
+      },
+      "sourceScale": 0.48254620123203285,
+      "sourceAnchor": {
+        "x": 315,
+        "y": 492
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "claw-arc",
+      "timeMs": 280,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "claw-arc"
+  ],
+  "repeatRelease": false
+}

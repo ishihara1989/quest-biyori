@@ -1,0 +1,32 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "punch",
+    "label": "氷拳",
+    "manifest": "punch/manifest.json"
+  },
+  {
+    "id": "smash",
+    "label": "氷拳砕き",
+    "manifest": "smash/manifest.json"
+  }
+]

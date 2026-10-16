@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-spider",
+  "motion": "bite",
+  "facing": "left",
+  "label": "通常攻撃",
+  "sheet": "cave-spider-bite.png",
+  "preview": "../../../../../../development/assets/enemies/cave-spider/motions/bite/cave-spider-bite-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-spider/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 740,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/cave-spider/source/bite-registered.png",
+  "sourceScale": 0.3104166666666667,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "bite-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 140,
+      "phase": "開始",
+      "bounds": {
+        "left": 149,
+        "top": 174,
+        "right": 315,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 362
+      },
+      "sourceAnchor": {
+        "x": 257,
+        "y": 331
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "bite-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 200,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 149,
+        "top": 172,
+        "right": 326,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 362
+      },
+      "sourceAnchor": {
+        "x": 258,
+        "y": 336
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "bite-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 188,
+        "top": 169,
+        "right": 371,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 362,
+        "width": 627,
+        "height": 362
+      },
+      "sourceAnchor": {
+        "x": 131,
+        "y": 345
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "bite-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 240,
+      "phase": "復帰",
+      "bounds": {
+        "left": 142,
+        "top": 170,
+        "right": 321,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 362,
+        "width": 627,
+        "height": 362
+      },
+      "sourceAnchor": {
+        "x": 277,
+        "y": 341
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-spider/source/bite-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 97465,
+        "left": 139,
+        "top": 158,
+        "right": 677,
+        "bottom": 473,
+        "cx": 443.92651721130665,
+        "cy": 311.1479813266301
+      },
+      {
+        "id": 1,
+        "count": 111135,
+        "left": 863,
+        "top": 157,
+        "right": 1439,
+        "bottom": 477,
+        "cx": 1178.7727718540514,
+        "cy": 304.6546002609439
+      },
+      {
+        "id": 3,
+        "count": 114248,
+        "left": 97,
+        "top": 619,
+        "right": 691,
+        "bottom": 948,
+        "cx": 420.0866886072404,
+        "cy": 775.4979430712135
+      },
+      {
+        "id": 4,
+        "count": 106769,
+        "left": 856,
+        "top": 619,
+        "right": 1433,
+        "bottom": 944,
+        "cx": 1185.6135301445177,
+        "cy": 777.3909936404762
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

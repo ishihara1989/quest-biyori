@@ -1,0 +1,201 @@
+{
+  "id": "obsidian-executioner/idle",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "label": "待機",
+  "kind": null,
+  "motion": "idle",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/idle-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8770942687988281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 127,
+        "top": 103,
+        "right": 414,
+        "bottom": 342
+      },
+      "visibleBounds": {
+        "left": 149,
+        "top": 104,
+        "right": 384,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/idle-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 669,
+        "height": 571
+      },
+      "sourceScale": 0.44933078393881454,
+      "sourceAnchor": {
+        "x": 381,
+        "y": 554
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8718833923339844,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 144,
+        "top": 101,
+        "right": 409,
+        "bottom": 344
+      },
+      "visibleBounds": {
+        "left": 146,
+        "top": 102,
+        "right": 397,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/idle-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 669,
+        "y": 0,
+        "width": 704,
+        "height": 571
+      },
+      "sourceScale": 0.44933078393881454,
+      "sourceAnchor": {
+        "x": 398,
+        "y": 554
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8770790100097656,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 119,
+        "top": 100,
+        "right": 409,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 149,
+        "top": 103,
+        "right": 382,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/idle-v1-reused.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 571,
+        "width": 669,
+        "height": 574
+      },
+      "sourceScale": 0.44933078393881454,
+      "sourceAnchor": {
+        "x": 380,
+        "y": 540
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8760223388671875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 125,
+        "top": 95,
+        "right": 415,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 151,
+        "top": 103,
+        "right": 382,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/idle-v1-reused.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 669,
+        "y": 571,
+        "width": 704,
+        "height": 574
+      },
+      "sourceScale": 0.44933078393881454,
+      "sourceAnchor": {
+        "x": 392,
+        "y": 540
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/obsidian-executioner/idle/preview.gif",
+  "action": null
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "enemy": "crystal-golem",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "crystal-golem-idle.png",
+  "preview": "../../../../../../development/assets/enemies/crystal-golem/motions/idle/crystal-golem-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2160,
+  "height": 420,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 420,
+  "frameCount": 4,
+  "pivot": {
+    "x": 302,
+    "y": 398
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/crystal-golem/idle.png",
+  "sourceScale": 0.49256505576208176,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 172,
+        "top": 134,
+        "right": 441,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 674,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 355.28553299492387,
+        "y": 622
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 173,
+        "top": 130,
+        "right": 440,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 674,
+        "y": 0,
+        "width": 674,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 296.62686940742134,
+        "y": 622
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1080,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 172,
+        "top": 135,
+        "right": 440,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 668,
+        "width": 674,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 355.43358681875793,
+        "y": 578
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1620,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 172,
+        "top": 147,
+        "right": 440,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 674,
+        "y": 668,
+        "width": 674,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 301.0279989557499,
+        "y": 578
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/crystal-golem.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/crystal-golem/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 642,
+          "height": 636
+        },
+        {
+          "x": 642,
+          "y": 0,
+          "width": 612,
+          "height": 636
+        },
+        {
+          "x": 0,
+          "y": 636,
+          "width": 642,
+          "height": 618
+        },
+        {
+          "x": 642,
+          "y": 636,
+          "width": 612,
+          "height": 618
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

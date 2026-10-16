@@ -1,0 +1,813 @@
+{
+  "schemaVersion": 1,
+  "status": "desert-implemented; highland-motions-in-progress; glacier-and-later-awaiting-design-review",
+  "generation": "built-in image_gen",
+  "motionProduction": "partially-complete",
+  "gameRegistered": false,
+  "regions": [
+    {
+      "id": "desert",
+      "name": "砂漠",
+      "title": "金砂の墓域",
+      "levels": "51–60",
+      "background": "desert/background.png",
+      "backgroundPreview": "desert/background-preview.png",
+      "monsterSheet": "desert/monsters-v3.png",
+      "dropSheet": "desert/drops.png",
+      "props": [
+        {
+          "file": "desert/props/prop-1.png",
+          "description": "a low broken sandstone obelisk with turquoise inset"
+        },
+        {
+          "file": "desert/props/prop-2.png",
+          "description": "a cluster of small ochre rocks and dry cactus"
+        },
+        {
+          "file": "desert/props/prop-3.png",
+          "description": "a partly buried ornate golden sarcophagus"
+        },
+        {
+          "file": "desert/props/prop-4.png",
+          "description": "a ruined sandstone arch with turquoise stone"
+        }
+      ],
+      "drops": [
+        {
+          "id": "scorpion-pincer",
+          "name": "砂蠍の鋏",
+          "role": "A",
+          "file": "desert/drops/scorpion-pincer.png",
+          "rarity": "common"
+        },
+        {
+          "id": "ancient-bandage",
+          "name": "古代の包帯",
+          "role": "B",
+          "file": "desert/drops/ancient-bandage.png",
+          "rarity": "common"
+        },
+        {
+          "id": "sand-snake-scale",
+          "name": "砂蛇の鱗",
+          "role": "C",
+          "file": "desert/drops/sand-snake-scale.png",
+          "rarity": "common"
+        },
+        {
+          "id": "desert-crystal",
+          "name": "砂漠の結晶",
+          "role": "結晶",
+          "file": "desert/drops/desert-crystal.png",
+          "rarity": "uncommon"
+        },
+        {
+          "id": "behemoth-horn",
+          "name": "ベヒモスの角",
+          "role": "レア",
+          "file": "desert/drops/behemoth-horn.png",
+          "rarity": "rare"
+        }
+      ],
+      "enemies": [
+        {
+          "id": "sand-scorpion",
+          "name": "サンドスコーピオン",
+          "role": "A",
+          "file": "desert/monsters-v3.png",
+          "sheetPosition": "top-1",
+          "femaleBoss": false,
+          "reference": "desert/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "bandage-soldier",
+          "name": "包帯兵",
+          "role": "B",
+          "file": "desert/monsters-v3.png",
+          "sheetPosition": "top-2",
+          "femaleBoss": false,
+          "reference": "desert/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "sand-snake",
+          "name": "砂蛇",
+          "role": "C",
+          "file": "desert/monsters-v3.png",
+          "sheetPosition": "top-3",
+          "femaleBoss": false,
+          "reference": "desert/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "obsidian-scorpion",
+          "name": "オブシディアンスコーピオン",
+          "role": "A+",
+          "file": "desert/monsters-v3.png",
+          "sheetPosition": "middle-1",
+          "femaleBoss": false,
+          "reference": "desert/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "golden-pharaoh",
+          "name": "黄金のファラオ",
+          "role": "B+",
+          "file": "desert/monsters-v3.png",
+          "sheetPosition": "middle-2",
+          "femaleBoss": false,
+          "reference": "desert/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "lamia",
+          "name": "ラミア",
+          "role": "C+",
+          "file": "desert/monsters-v3.png",
+          "sheetPosition": "middle-3",
+          "femaleBoss": true,
+          "reference": "desert/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "sand-behemoth",
+          "name": "砂喰いベヒモス",
+          "role": "D",
+          "file": "desert/monsters-v3.png",
+          "sheetPosition": "bottom-center",
+          "femaleBoss": false,
+          "reference": "desert/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        }
+      ],
+      "gameRegistered": true,
+      "motionProduction": "complete",
+      "motions": "../../desert-motions/README.md"
+    },
+    {
+      "id": "highland",
+      "name": "高原",
+      "title": "嵐渡りの高原",
+      "levels": "61–70",
+      "background": "highland/background.png",
+      "backgroundPreview": "highland/background-preview.png",
+      "monsterSheet": "highland/monsters-v2.png",
+      "dropSheet": "highland/drops.png",
+      "props": [
+        {
+          "file": "highland/props/prop-1.png",
+          "description": "a low gray rock and tall wind-bent grass cluster"
+        },
+        {
+          "file": "highland/props/prop-2.png",
+          "description": "an old standing stone with a spiral wind rune"
+        },
+        {
+          "file": "highland/props/prop-3.png",
+          "description": "a weathered dead tree bent by wind"
+        },
+        {
+          "file": "highland/props/prop-4.png",
+          "description": "a broken cliff-edge rock ledge with hanging grass"
+        }
+      ],
+      "drops": [
+        {
+          "id": "horn-beast-fang",
+          "name": "角獣の牙",
+          "role": "A",
+          "file": "highland/drops/horn-beast-fang.png",
+          "rarity": "common"
+        },
+        {
+          "id": "rock-horn-fragment",
+          "name": "岩角の欠片",
+          "role": "B",
+          "file": "highland/drops/rock-horn-fragment.png",
+          "rarity": "common"
+        },
+        {
+          "id": "wind-spirit-feather",
+          "name": "風精の羽",
+          "role": "C",
+          "file": "highland/drops/wind-spirit-feather.png",
+          "rarity": "common"
+        },
+        {
+          "id": "highland-crystal",
+          "name": "高原の結晶",
+          "role": "結晶",
+          "file": "highland/drops/highland-crystal.png",
+          "rarity": "uncommon"
+        },
+        {
+          "id": "manticore-tail",
+          "name": "マンティコアの毒尾",
+          "role": "レア",
+          "file": "highland/drops/manticore-tail.png",
+          "rarity": "rare"
+        }
+      ],
+      "enemies": [
+        {
+          "id": "horn-jackal",
+          "name": "ホーンジャッカル",
+          "role": "A",
+          "file": "highland/monsters-v2.png",
+          "sheetPosition": "top-1",
+          "femaleBoss": false,
+          "reference": "highland/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "rock-horn-goat",
+          "name": "岩角ヤギ",
+          "role": "B",
+          "file": "highland/monsters-v2.png",
+          "sheetPosition": "top-2",
+          "femaleBoss": false,
+          "reference": "highland/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "wind-sprite",
+          "name": "風の小精霊",
+          "role": "C",
+          "file": "highland/monsters-v2.png",
+          "sheetPosition": "top-3",
+          "femaleBoss": false,
+          "reference": "highland/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "storm-jackal",
+          "name": "ストームジャッカル",
+          "role": "A+",
+          "file": "highland/monsters-v2.png",
+          "sheetPosition": "middle-1",
+          "femaleBoss": false,
+          "reference": "highland/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "iron-horn",
+          "name": "アイアンホーン",
+          "role": "B+",
+          "file": "highland/monsters-v2.png",
+          "sheetPosition": "middle-2",
+          "femaleBoss": false,
+          "reference": "highland/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "harpy-queen",
+          "name": "ハーピークイーン",
+          "role": "C+",
+          "file": "highland/monsters-v2.png",
+          "sheetPosition": "middle-3",
+          "femaleBoss": true,
+          "reference": "highland/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "manticore",
+          "name": "マンティコア",
+          "role": "D",
+          "file": "highland/monsters-v2.png",
+          "sheetPosition": "bottom-center",
+          "femaleBoss": false,
+          "reference": "highland/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        }
+      ],
+      "gameRegistered": false,
+      "motionProduction": "in-progress",
+      "motions": "../../highland-motions/README.md"
+    },
+    {
+      "id": "glacier",
+      "name": "氷河",
+      "title": "蒼氷の聖域",
+      "levels": "71–80",
+      "background": "glacier/background.png",
+      "backgroundPreview": "glacier/background-preview.png",
+      "monsterSheet": "glacier/monsters-v3.png",
+      "dropSheet": "glacier/drops-v2.png",
+      "props": [
+        {
+          "file": "glacier/props/prop-1.png",
+          "description": "a low dark-blue ice boulder capped with snow"
+        },
+        {
+          "file": "glacier/props/prop-2.png",
+          "description": "a translucent blue ice crystal cluster"
+        },
+        {
+          "file": "glacier/props/prop-3.png",
+          "description": "a frozen bare tree with icicles"
+        },
+        {
+          "file": "glacier/props/prop-4.png",
+          "description": "a broken frost-covered stone pillar with blue runes"
+        }
+      ],
+      "drops": [
+        {
+          "id": "ice-wolf-fang",
+          "name": "氷狼の牙",
+          "role": "A",
+          "file": "glacier/drops/ice-wolf-fang.png",
+          "rarity": "common"
+        },
+        {
+          "id": "ice-shell-fragment",
+          "name": "氷殻の欠片",
+          "role": "B",
+          "file": "glacier/drops/ice-shell-fragment.png",
+          "rarity": "common"
+        },
+        {
+          "id": "snow-spirit-flower",
+          "name": "雪精の花",
+          "role": "C",
+          "file": "glacier/drops/snow-spirit-flower.png",
+          "rarity": "common"
+        },
+        {
+          "id": "glacier-crystal",
+          "name": "氷河の結晶",
+          "role": "結晶",
+          "file": "glacier/drops/glacier-crystal.png",
+          "rarity": "uncommon"
+        },
+        {
+          "id": "mammoth-ice-tusk",
+          "name": "マンモスの氷牙",
+          "role": "レア",
+          "file": "glacier/drops/mammoth-ice-tusk.png",
+          "rarity": "rare"
+        }
+      ],
+      "enemies": [
+        {
+          "id": "frost-wolf",
+          "name": "フロストウルフ",
+          "role": "A",
+          "file": "glacier/monsters-v3.png",
+          "sheetPosition": "top-1",
+          "femaleBoss": false,
+          "reference": "glacier/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "ice-shell-golem",
+          "name": "氷殻ゴーレム",
+          "role": "B",
+          "file": "glacier/monsters-v3.png",
+          "sheetPosition": "top-2",
+          "femaleBoss": false,
+          "reference": "glacier/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "snow-sprite",
+          "name": "雪の精",
+          "role": "C",
+          "file": "glacier/monsters-v3.png",
+          "sheetPosition": "top-3",
+          "femaleBoss": false,
+          "reference": "glacier/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "fenrir",
+          "name": "フェンリル",
+          "role": "A+",
+          "file": "glacier/monsters-v3.png",
+          "sheetPosition": "middle-1",
+          "femaleBoss": false,
+          "reference": "glacier/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "crystal-golem",
+          "name": "クリスタルゴーレム",
+          "role": "B+",
+          "file": "glacier/monsters-v3.png",
+          "sheetPosition": "middle-2",
+          "femaleBoss": false,
+          "reference": "glacier/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "yuki-onna",
+          "name": "雪女",
+          "role": "C+",
+          "file": "glacier/monsters-v3.png",
+          "sheetPosition": "middle-3",
+          "femaleBoss": true,
+          "reference": "glacier/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "ice-tusk-mammoth",
+          "name": "氷牙マンモス",
+          "role": "D",
+          "file": "glacier/monsters-v3.png",
+          "sheetPosition": "bottom-center",
+          "femaleBoss": false,
+          "reference": "glacier/ice-tusk-mammoth.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "standalone-generated-reference"
+        }
+      ],
+      "bossDesign": {
+        "reference": "glacier/ice-tusk-mammoth.png",
+        "review": "glacier/mammoth-review.html",
+        "plan": "GLACIER-PLAN.md",
+        "dangerPlan": "DANGER-ACTIONS.md",
+        "effects": "glacier/effects.png",
+        "motionProduction": "not-started"
+      }
+    },
+    {
+      "id": "volcano",
+      "name": "火山",
+      "title": "紅蓮の竜脈",
+      "levels": "81–90",
+      "background": "volcano/background.png",
+      "backgroundPreview": "volcano/background-preview.png",
+      "monsterSheet": "volcano/monsters-v3.png",
+      "dropSheet": "volcano/drops.png",
+      "props": [
+        {
+          "file": "volcano/props/prop-1.png",
+          "description": "a low black basalt boulder with a small glowing orange fissure"
+        },
+        {
+          "file": "volcano/props/prop-2.png",
+          "description": "a cluster of sharp obsidian spires"
+        },
+        {
+          "file": "volcano/props/prop-3.png",
+          "description": "a half-buried dragon rib and skull fragment"
+        },
+        {
+          "file": "volcano/props/prop-4.png",
+          "description": "a broken basalt shrine pillar with an ember rune"
+        }
+      ],
+      "drops": [
+        {
+          "id": "fire-lizard-hide",
+          "name": "火蜥蜴の皮",
+          "role": "A",
+          "file": "volcano/drops/fire-lizard-hide.png",
+          "rarity": "common"
+        },
+        {
+          "id": "obsidian-blade-shard",
+          "name": "黒曜の刃片",
+          "role": "B",
+          "file": "volcano/drops/obsidian-blade-shard.png",
+          "rarity": "common"
+        },
+        {
+          "id": "fire-dragon-scale",
+          "name": "火竜の鱗",
+          "role": "C",
+          "file": "volcano/drops/fire-dragon-scale.png",
+          "rarity": "common"
+        },
+        {
+          "id": "volcano-crystal",
+          "name": "火山の結晶",
+          "role": "結晶",
+          "file": "volcano/drops/volcano-crystal.png",
+          "rarity": "uncommon"
+        },
+        {
+          "id": "dragon-furnace-heart",
+          "name": "ドラゴンの炉心",
+          "role": "レア",
+          "file": "volcano/drops/dragon-furnace-heart.png",
+          "rarity": "rare"
+        }
+      ],
+      "enemies": [
+        {
+          "id": "lava-salamander",
+          "name": "ラヴァサラマンダー",
+          "role": "A",
+          "file": "volcano/monsters-v3.png",
+          "sheetPosition": "top-1",
+          "femaleBoss": false,
+          "reference": "volcano/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "obsidian-soldier",
+          "name": "黒曜兵",
+          "role": "B",
+          "file": "volcano/monsters-v3.png",
+          "sheetPosition": "top-2",
+          "femaleBoss": false,
+          "reference": "volcano/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "young-fire-dragon",
+          "name": "幼火竜",
+          "role": "C",
+          "file": "volcano/monsters-v3.png",
+          "sheetPosition": "top-3",
+          "femaleBoss": false,
+          "reference": "volcano/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "magma-salamander",
+          "name": "マグマサラマンダー",
+          "role": "A+",
+          "file": "volcano/monsters-v3.png",
+          "sheetPosition": "middle-1",
+          "femaleBoss": false,
+          "reference": "volcano/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "obsidian-executioner",
+          "name": "黒曜の処刑者",
+          "role": "B+",
+          "file": "volcano/monsters-v3.png",
+          "sheetPosition": "middle-2",
+          "femaleBoss": false,
+          "reference": "volcano/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "dragon-girl",
+          "name": "ドラゴンガール",
+          "role": "C+",
+          "file": "volcano/monsters-v3.png",
+          "sheetPosition": "middle-3",
+          "femaleBoss": true,
+          "reference": "volcano/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "red-dragon",
+          "name": "ドラゴン",
+          "role": "D",
+          "file": "volcano/monsters-v3.png",
+          "sheetPosition": "bottom-center",
+          "femaleBoss": false,
+          "reference": "volcano/monsters-v3.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        }
+      ]
+    },
+    {
+      "id": "demon-castle",
+      "name": "魔王城",
+      "title": "宵闇の玉座",
+      "levels": "91–100",
+      "background": "demon-castle/background.png",
+      "backgroundPreview": "demon-castle/background-preview.png",
+      "monsterSheet": "demon-castle/monsters-v2.png",
+      "dropSheet": "demon-castle/drops.png",
+      "props": [
+        {
+          "file": "demon-castle/props/prop-1.png",
+          "description": "a low black-purple stone rubble pile with gold ornament"
+        },
+        {
+          "file": "demon-castle/props/prop-2.png",
+          "description": "a gothic black brazier holding a small violet flame"
+        },
+        {
+          "file": "demon-castle/props/prop-3.png",
+          "description": "a broken gold-trimmed demon statue bust"
+        },
+        {
+          "file": "demon-castle/props/prop-4.png",
+          "description": "a tall black-and-gold pillar segment with a crimson hanging banner"
+        }
+      ],
+      "drops": [
+        {
+          "id": "demon-armor-fragment",
+          "name": "魔鎧の破片",
+          "role": "A",
+          "file": "demon-castle/drops/demon-armor-fragment.png",
+          "rarity": "common"
+        },
+        {
+          "id": "demon-horn",
+          "name": "悪魔の角",
+          "role": "B",
+          "file": "demon-castle/drops/demon-horn.png",
+          "rarity": "common"
+        },
+        {
+          "id": "dream-demon-feather",
+          "name": "夢魔の羽",
+          "role": "C",
+          "file": "demon-castle/drops/dream-demon-feather.png",
+          "rarity": "common"
+        },
+        {
+          "id": "castle-crystal",
+          "name": "魔城の結晶",
+          "role": "結晶",
+          "file": "demon-castle/drops/castle-crystal.png",
+          "rarity": "uncommon"
+        },
+        {
+          "id": "demon-god-heart",
+          "name": "魔神の心核",
+          "role": "レア",
+          "file": "demon-castle/drops/demon-god-heart.png",
+          "rarity": "rare"
+        }
+      ],
+      "enemies": [
+        {
+          "id": "demon-armor-soldier",
+          "name": "魔鎧兵",
+          "role": "A",
+          "file": "demon-castle/monsters-v2.png",
+          "sheetPosition": "top-1",
+          "femaleBoss": false,
+          "reference": "demon-castle/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "imp",
+          "name": "インプ",
+          "role": "B",
+          "file": "demon-castle/monsters-v2.png",
+          "sheetPosition": "top-2",
+          "femaleBoss": false,
+          "reference": "demon-castle/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "dream-demon",
+          "name": "夢魔",
+          "role": "C",
+          "file": "demon-castle/monsters-v2.png",
+          "sheetPosition": "top-3",
+          "femaleBoss": false,
+          "reference": "demon-castle/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "black-knight",
+          "name": "黒騎士",
+          "role": "A+",
+          "file": "demon-castle/monsters-v2.png",
+          "sheetPosition": "middle-1",
+          "femaleBoss": false,
+          "reference": "demon-castle/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "arch-demon",
+          "name": "アークデーモン",
+          "role": "B+",
+          "file": "demon-castle/monsters-v2.png",
+          "sheetPosition": "middle-2",
+          "femaleBoss": false,
+          "reference": "demon-castle/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "lilith",
+          "name": "リリス",
+          "role": "C+",
+          "file": "demon-castle/monsters-v2.png",
+          "sheetPosition": "middle-3",
+          "femaleBoss": true,
+          "reference": "demon-castle/monsters-v2.png",
+          "facing": "left-three-quarter",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        },
+        {
+          "id": "demon-god",
+          "name": "魔神",
+          "role": "D",
+          "file": "demon-castle/monsters-v2.png",
+          "sheetPosition": "bottom-center",
+          "femaleBoss": false,
+          "reference": "demon-castle/monsters-v2.png",
+          "facing": "front",
+          "pose": "single-neutral",
+          "motionProduction": "not-started",
+          "individualExtraction": "deferred-until-design-review"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "demon-god/danger-4",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "danger-4",
+  "label": "終焉の交差",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/demon-god.png",
+  "guide": null,
+  "source": "sources/demon-god/danger-4-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 終焉の交差 by 魔神 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: EXACT SIX arms light in order upper pair, middle pair, lower pair; all palms spread radially to (240,280),(790,280),(180,470),(840,470),(300,650),(730,650); upper/middle pairs cross inward at release while lower pair pushes out, return. Dark halo brightens. Preserve each arm connection. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference. EXACTLY SIX arms in three pairs, each with its own shoulder, upper arm, elbow, forearm, wrist and hand. Preserve frontal readable arm spread and rotate gaze/torso only slightly LEFT 15 degrees; never hide an entire arm. Original dark halo and two legs.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "end-cross",
+    "end-ring"
+  ],
+  "repeat": 2,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-329c5674-6341-4c6f-9be9-f36a383e2c14.png",
+  "sha256": "17a8397f7be636976b0b4fc7b35cc48a6837e95f1c5d594b80924705280c82cf",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "6掌を点灯し、胸前へ集め、腕を交差する強い発動姿勢。"
+    ],
+    "issues": [
+      "溜め・交差時に腕が密集し、左右の肩と肘の所属が読みにくい。6腕を個別に追い、手の合体や隠れた腕を検収する。",
+      "発動の外套と輪の光が広がる。セル境界と同一縮尺を確認する。",
+      "2方向の時間差の帯と衝撃輪は別素材・時刻で組む。輪の赤光との重複を確認する。"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/flame-wheel-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 684,
+      "height": 724
+    },
+    {
+      "x": 684,
+      "y": 0,
+      "width": 763,
+      "height": 724
+    },
+    {
+      "x": 1447,
+      "y": 0,
+      "width": 725,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 556,
+      "y": 917
+    },
+    {
+      "x": 541,
+      "y": 913
+    },
+    {
+      "x": 532.5,
+      "y": 914
+    }
+  ],
+  "scale": 0.12147505422993492
+}

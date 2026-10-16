@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "hit",
+  "label": "被撃",
+  "facing": "right",
+  "sheet": "ninja-hit.png",
+  "width": 512,
+  "height": 224,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.17453580901856763,
+  "sampling": "nearest-neighbor",
+  "source": "../../../../../development/assets/ninja/motions/hit/source/ninja-hit-generated-v1.png",
+  "sourceWidth": 1774,
+  "sourceHeight": 887,
+  "sourceGrid": [
+    2,
+    1
+  ],
+  "columnSplit": 917,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Jump previewOffset is for the review viewer only. Use world jump physics and the common pivot when integrating into a game.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "のけぞり",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 917,
+        "height": 887
+      },
+      "sourceAnchor": {
+        "x": 585,
+        "y": 843
+      },
+      "sourceBounds": {
+        "left": 109,
+        "top": 123,
+        "right": 845,
+        "bottom": 843
+      },
+      "bounds": {
+        "left": 45,
+        "top": 82,
+        "right": 173,
+        "bottom": 207
+      },
+      "visiblePixels": 6645,
+      "transparentPixels": 49827
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 220,
+      "phase": "立て直し",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 917,
+        "y": 0,
+        "width": 857,
+        "height": 887
+      },
+      "sourceAnchor": {
+        "x": 440,
+        "y": 843
+      },
+      "sourceBounds": {
+        "left": 72,
+        "top": 89,
+        "right": 749,
+        "bottom": 843
+      },
+      "bounds": {
+        "left": 64,
+        "top": 76,
+        "right": 182,
+        "bottom": 207
+      },
+      "visiblePixels": 6840,
+      "transparentPixels": 49643
+    }
+  ]
+}

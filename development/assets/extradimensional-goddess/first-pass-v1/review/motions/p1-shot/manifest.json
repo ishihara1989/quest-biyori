@@ -1,0 +1,127 @@
+{
+  "id": "motions/p1-shot",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-shot/review/motions/p1-shot/frame-01.png",
+      "index": 1,
+      "durationMs": 100,
+      "source": "source/motions/p1-shot.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 631,
+        "height": 623
+      },
+      "description": "Right-on-screen hand (392,288), neutral.",
+      "width": 631,
+      "height": 623,
+      "transparentFraction": 0.37636506551551335,
+      "lowAlphaPixels": 10100,
+      "edgePixels": 34,
+      "bounds": [
+        12,
+        12,
+        630,
+        622
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-shot/review/motions/p1-shot/frame-02.png",
+      "index": 2,
+      "durationMs": 120,
+      "source": "source/motions/p1-shot.png",
+      "sourceRect": {
+        "left": 631,
+        "top": 0,
+        "width": 631,
+        "height": 623
+      },
+      "description": "R=(367,270), prepare finger flick.",
+      "width": 631,
+      "height": 623,
+      "transparentFraction": 0.3729258508367823,
+      "lowAlphaPixels": 9375,
+      "edgePixels": 43,
+      "bounds": [
+        0,
+        12,
+        619,
+        622
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-shot/review/motions/p1-shot/frame-03.png",
+      "index": 3,
+      "durationMs": 100,
+      "source": "source/motions/p1-shot.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 623,
+        "width": 631,
+        "height": 623
+      },
+      "description": "R=(344,260), flick toward LEFT, emission pose; no drawn projectile.",
+      "width": 631,
+      "height": 623,
+      "transparentFraction": 0.350677794934281,
+      "lowAlphaPixels": 9185,
+      "edgePixels": 82,
+      "bounds": [
+        11,
+        0,
+        630,
+        594
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-shot/review/motions/p1-shot/frame-04.png",
+      "index": 4,
+      "durationMs": 160,
+      "source": "source/motions/p1-shot.png",
+      "sourceRect": {
+        "left": 631,
+        "top": 623,
+        "width": 631,
+        "height": 623
+      },
+      "description": "R=(392,288), original neutral.",
+      "width": 631,
+      "height": 623,
+      "transparentFraction": 0.37140465972888204,
+      "lowAlphaPixels": 9859,
+      "edgePixels": 75,
+      "bounds": [
+        0,
+        0,
+        617,
+        595
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/motions/p1-shot.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p1-shot/contact.png",
+  "gif": "review/motions/p1-shot/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

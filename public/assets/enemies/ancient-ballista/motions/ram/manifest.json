@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ancient-ballista",
+  "motion": "ram",
+  "facing": "left",
+  "label": "近距離体当たり",
+  "sheet": "ancient-ballista-ram.png",
+  "preview": "../../../../../../development/assets/enemies/ancient-ballista/motions/ram/ancient-ballista-ram-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/ancient-ballista/PROMPT.md",
+  "width": 2304,
+  "height": 400,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 400,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 382
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 780,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/ancient-ballista/source/ram-registered.png",
+  "sourceScale": 0.5363825363825364,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "ancient-ballista-ram-2-0",
+      "type": "spawn-effect",
+      "effect": "ruins-bronze-impact",
+      "frame": 2,
+      "timeMs": 380,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "ram-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 400,
+      "durationMs": 200,
+      "phase": "開始",
+      "bounds": {
+        "left": 79,
+        "top": 125,
+        "right": 388,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 821,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 584,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ram-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 400,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 42,
+        "top": 160,
+        "right": 389,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 821,
+        "y": 0,
+        "width": 821,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 638,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ram-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 400,
+      "durationMs": 140,
+      "phase": "作用",
+      "bounds": {
+        "left": 23,
+        "top": 162,
+        "right": 401,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 546,
+        "width": 821,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 627,
+        "y": 505
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ram-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 400,
+      "durationMs": 260,
+      "phase": "復帰",
+      "bounds": {
+        "left": 67,
+        "top": 125,
+        "right": 388,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 821,
+        "y": 546,
+        "width": 821,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 565,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/ancient-ballista/source/ram-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/ancient-ballista/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1536,
+      "height": 1024,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 749,
+          "height": 510
+        },
+        {
+          "x": 749,
+          "y": 0,
+          "width": 787,
+          "height": 510
+        },
+        {
+          "x": 0,
+          "y": 510,
+          "width": 789,
+          "height": 514
+        },
+        {
+          "x": 789,
+          "y": 510,
+          "width": 747,
+          "height": 514
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 129,
+      "y": 382
+    },
+    "origin": {
+      "x": 32,
+      "y": 231
+    },
+    "assets": [
+      {
+        "id": "ruins-bronze-impact",
+        "manifest": "../../../../effects/ruins-bronze-impact/manifest.json"
+      }
+    ]
+  }
+}

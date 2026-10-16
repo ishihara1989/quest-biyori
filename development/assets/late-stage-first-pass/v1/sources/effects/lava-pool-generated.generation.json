@@ -1,0 +1,25 @@
+{
+  "id": "effects/lava-pool",
+  "effect": "lava-pool",
+  "region": "volcano",
+  "label": "残留溶岩床",
+  "kind": "ground",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/lava-pool-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. short-lived low elliptical molten pool, dark basalt perimeter clearly visible, internal orange bubbles and sparse sparks, readable open edges. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Also design frame4->1 as a smooth subtle pulse for status/residue loop. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed ground center (512,850), expand upward/outward; elliptical side-view base. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-e83604a1-1df5-47d7-a9ec-5d139ef7233b.png",
+  "sha256": "f57a6f576fcef4a1dac36bea23f3477e65538ce31a8afc8f29bc42c43582c9dd",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "赤橙の背景光が混入。",
+      "残留床の3コマ目で高い溶岩噴出と大きい岩片が出る。低い床の脈動へ抑え、着弾との役割を分ける。",
+      "4→1の反復で床の外形と飛沫が急に変わらないか確認する。"
+    ]
+  }
+}

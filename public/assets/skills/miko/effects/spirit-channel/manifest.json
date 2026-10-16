@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "spirit-channel",
+  "character": "miko",
+  "subject": "spirit-channel",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "spirit-channel-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5794392523364486,
+  "frames": [
+    {
+      "index": 0,
+      "file": "spirit-channel-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 38,
+        "t": 34,
+        "r": 497,
+        "b": 466,
+        "n": 82093,
+        "width": 460,
+        "height": 433
+      }
+    },
+    {
+      "index": 1,
+      "file": "spirit-channel-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 15,
+        "t": 34,
+        "r": 477,
+        "b": 466,
+        "n": 116729,
+        "width": 463,
+        "height": 433
+      }
+    },
+    {
+      "index": 2,
+      "file": "spirit-channel-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 33,
+        "t": 8,
+        "r": 498,
+        "b": 444,
+        "n": 131907,
+        "width": 466,
+        "height": 437
+      }
+    },
+    {
+      "index": 3,
+      "file": "spirit-channel-effect-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 15,
+        "t": 8,
+        "r": 482,
+        "b": 444,
+        "n": 131297,
+        "width": 468,
+        "height": 437
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/spirit-channel-generated-v2.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/spirit-channel-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

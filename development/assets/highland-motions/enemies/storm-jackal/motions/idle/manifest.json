@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "enemy": "storm-jackal",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "storm-jackal-idle.png",
+  "preview": "storm-jackal-idle-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 2320,
+  "height": 430,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 580,
+  "frameHeight": 430,
+  "frameCount": 4,
+  "pivot": {
+    "x": 331,
+    "y": 406
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/idle.png",
+  "sourceScale": 0.4693140794223827,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 207,
+        "top": 147,
+        "right": 459,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 690,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 354,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 580,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 205,
+        "top": 143,
+        "right": 457,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 690,
+        "y": 0,
+        "width": 690,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 326,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1160,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 199,
+        "top": 149,
+        "right": 465,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 663,
+        "width": 690,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 358,
+        "y": 596
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1740,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 199,
+        "top": 148,
+        "right": 445,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 690,
+        "y": 663,
+        "width": 690,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 597
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/storm-jackal.png",
+  "originalSources": [
+    "../../../../sources/storm-jackal/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 655,
+          "height": 631
+        },
+        {
+          "x": 655,
+          "y": 0,
+          "width": 599,
+          "height": 631
+        },
+        {
+          "x": 0,
+          "y": 631,
+          "width": 658,
+          "height": 623
+        },
+        {
+          "x": 658,
+          "y": 631,
+          "width": 596,
+          "height": 623
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": []
+}

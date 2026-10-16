@@ -1,0 +1,14 @@
+Use case: stylized-concept. Pixel-art RPG black knight WALK-IN-PLACE cycle facing LEFT, mild three-quarter angle. Fixed reference identity: same black horned helmet/red visor, black-and-gold armor, ragged crimson cape, broad silver-edged black greatsword with red center rune. Same scale, palette, proportions and crisp JRPG pixel clusters in every frame.
+Exactly THREE separate COMPLETE small sprites in ONE HORIZONTAL ROW (3 equal square cells). Very broad clear gutters. All horns, sword tip, cape, fingers and boots fit inside central 60% of each cell. No cropped blades or overlap.
+Sword stays carried low in BOTH hands on the SAME hilt at normalized (480,625), full blade extends left-down to (210,780) in EVERY frame. Keep arms connected, no extra hands, no weapon swing. Root pelvis around (550,590), head (530,350), ground y=840.
+Leg identity: NEAR leg starts at viewer-right hip (570,590), has the larger foreground knee armor and boot. FAR leg starts at viewer-left hip (490,590), is slightly smaller and behind. Each stays attached to its OWN hip through knee and ankle even where legs cross in projection. Two legs and two boots, do not mirror or swap armor ownership.
+Complete six-phase plan:
+1 near/larger boot forward-left (400,840) planted; far/smaller boot back-right (650,840) planted.
+2 near boot supports at (480,840); far boot swings forward above ground at (610,750), far knee raised.
+3 near boot supports at (570,840); far boot approaches landing at (450,800).
+4 far/smaller boot lands forward-left (400,840); near/larger boot back-right (650,840) supports.
+5 far boot supports at (480,840); near/larger boot swings forward above ground at (610,750), near knee raised.
+6 far boot supports at (570,840); near/larger boot approaches landing at (450,800).
+Then 6 -> 1 is the near boot landing, 3 -> 4 is far boot landing. Torso, sword and head bob at most 8 units. Cape lags at most 15 units, no giant expansion.
+Native transparent alpha, no floor, ground shadow, motion trail, VFX, aura, labels, text, grid, checkerboard or watermark.
+THIS SHEET CONTAINS ONLY PHASES 1,2,3 in that left-to-right order. The FAR smaller leg is the swinging leg in the middle cell. Do not draw phases 4,5,6 here.

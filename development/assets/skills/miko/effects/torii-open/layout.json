@@ -1,0 +1,38 @@
+{
+  "source": "../../source/torii-open-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 721,
+      "height": 724
+    },
+    {
+      "x": 721,
+      "y": 0,
+      "width": 724,
+      "height": 724
+    },
+    {
+      "x": 1445,
+      "y": 0,
+      "width": 727,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.505091649694501
+}

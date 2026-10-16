@@ -1,0 +1,18 @@
+{
+  "id": "arch-demon/attack",
+  "source": "attack-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame normal punch animation of the exact arch-demon from the fixed reference.\nPreserve massive purple humanoid demon, two gold/brown curved horns, attached purple bat wings, red abdominal core, black spiked armor with gold trim, one tail, two muscular arms and two clawed legs. Left-facing mild three-quarter view, identical canonical proportions, colors and refined crisp JRPG pixel art.\nCritical arm continuity: The ATTACKING ARM is the NEAR ARM with the LARGE SPIKED PAULDRON visible on SCREEN RIGHT in the neutral reference. Follow THAT SAME shoulder -> upper arm -> elbow -> wrist -> fist in all four frames. The other FAR ARM, originating at the SMALLER shoulder on screen-left, stays guarding at his chest, fist around (445,490). Never alternate the punching arm or swap pauldron sides.\nExactly four COMPLETE smaller separate poses in equal 2x2 cells, row-major. Entire horns, wings, tail, fists and feet inside central 60% of each cell; broad transparent margins and gutters. Same body scale in every frame.\nPer-cell normalized coordinates: pelvis (555,620), head (490,335), boots on y=835. Two wing roots fixed to upper back, tips fit x=230..800.\nFrame 1 ANTICIPATION: the NEAR big-pauldron shoulder at (625,430), its attacking fist drawn back near (610,560). Other FAR fist remains guarding chest (445,490).\nFrame 2 WINDUP: SAME near shoulder (640,425), near elbow (710,480), SAME fist coils back at (675,420). Far fist stays guarding (445,490). Torso twists slightly right, does not reverse its facing.\nFrame 3 RELEASE: SAME near big-pauldron shoulder rotates left to (570,440), its upper arm reaches forward through elbow (420,475), SAME fist extends horizontally LEFT to (270,500). Forearm must connect continuously back to the large near shoulder, no arm emerging from chest. Far fist still visible bent at chest (470,540); do not draw a second punch. Feet planted, tail lags right, wings remain the same size.\nFrame 4 RECOVERY: attacking near fist retracts to (610,560) and large pauldron returns screen-right. Other far fist remains at chest, then relaxes. Reference neutral body height.\nNo punch trails or impact VFX on body sheet, no aura or external light. Native transparent alpha outside figure. No extra hands, arms, wings, detached parts, floor, shadow slab, text, labels, grid, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-a830e8e0-86f9-4399-af3e-e161f6e04fde.png",
+  "sha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/arch-demon.png",
+      "sha256": "4595303add5f307662871dbb6a23d109b96c53cde2dbd3db4c2e5b69ae7ff09c"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "attack-v2.prompt.txt"
+}

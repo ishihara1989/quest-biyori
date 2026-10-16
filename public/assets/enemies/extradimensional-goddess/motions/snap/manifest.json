@@ -1,0 +1,47 @@
+{
+  "id": "snap",
+  "motion": "snap",
+  "label": "星鏡・指パッチン",
+  "loop": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 440
+  },
+  "durationMs": 700,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 300,
+      "file": "frame-1.png"
+    },
+    {
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 100,
+      "file": "frame-2.png"
+    },
+    {
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 300,
+      "file": "frame-3.png"
+    }
+  ]
+}

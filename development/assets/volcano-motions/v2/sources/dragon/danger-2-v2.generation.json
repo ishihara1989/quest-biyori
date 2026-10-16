@@ -1,0 +1,25 @@
+{
+  "id": "dragon/danger-2",
+  "source": "sources/dragon/danger-2-v2.png",
+  "selected": true,
+  "prompt": "BODY ONLY, NO EXTERNAL FLAME OR BREATH. Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. Four-legged dragon with four planted feet. Neck retracts RIGHT 35px, chest then throat lights, jaw releases LEFT 40px without stretching torso; neutral recovery. SAME wings and tail. Repeat release for second wave 1 second later; beam separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. TL neck pulls right35px chest moderate heat; TR chest/throat white gold internal heat with jaw partly open left, stronger than idle; BL jaw fully open LEFT with small ember INSIDE mouth only, neck extends40px LEFT never stretches; BR exact canonical idle. Four connected planted feet. Wing height/span fixed. Wide gutters, 15% fully clear margin.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon.png",
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "05ec55eb8e0203e4d81a7c700f386ae7e144aa795dee74e5298f8d7a11d99929",
+  "reference": "references/dragon.png",
+  "guide": null,
+  "firstPass": "sources/dragon/danger-2-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "発動で首・翼・胸の形が伸びる。基準体格と口の固定発射点を合わせる。",
+    "2波のブレスと逆側帯は別エフェクトの配置・時刻として実装する必要がある。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

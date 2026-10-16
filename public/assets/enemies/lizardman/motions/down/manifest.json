@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lizardman",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "lizardman-down.png",
+  "preview": "../../../../../../development/assets/enemies/lizardman/motions/down/lizardman-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lizardman/PROMPT.md",
+  "width": 896,
+  "height": 352,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 352,
+  "frameCount": 2,
+  "pivot": {
+    "x": 260,
+    "y": 335
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/lizardman/source/down-registered.png",
+  "sourceScale": 0.38271604938271603,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 280,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 115,
+        "top": 231,
+        "right": 371,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 437,
+        "width": 730,
+        "height": 437
+      },
+      "sourceAnchor": {
+        "x": 395,
+        "y": 289
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 600,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 113,
+        "top": 268,
+        "right": 368,
+        "bottom": 334
+      },
+      "sourceCell": {
+        "x": 730,
+        "y": 437,
+        "width": 730,
+        "height": 437
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 193
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/lizardman/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 75544,
+        "left": 42,
+        "top": 163,
+        "right": 739,
+        "bottom": 547,
+        "cx": 389.1218892301176,
+        "cy": 366.31984009319075
+      },
+      {
+        "id": 1,
+        "count": 73740,
+        "left": 726,
+        "top": 143,
+        "right": 1390,
+        "bottom": 547,
+        "cx": 1050.2491320857066,
+        "cy": 367.3185381068619
+      },
+      {
+        "id": 3,
+        "count": 62071,
+        "left": 53,
+        "top": 772,
+        "right": 723,
+        "bottom": 1045,
+        "cx": 374.1843534017496,
+        "cy": 925.1988851476535
+      },
+      {
+        "id": 4,
+        "count": 53709,
+        "left": 725,
+        "top": 877,
+        "right": 1394,
+        "bottom": 1054,
+        "cx": 1050.9967975572065,
+        "cy": 962.9881584092052
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

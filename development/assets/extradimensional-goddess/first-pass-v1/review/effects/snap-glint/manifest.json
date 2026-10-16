@@ -1,0 +1,102 @@
+{
+  "id": "effects/snap-glint",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/snap-glint/review/effects/snap-glint/frame-01.png",
+      "index": 1,
+      "durationMs": 40,
+      "source": "source/effects/snap-glint.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":40,\"center\":[128,128],\"radius\":4,\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.985100424284973,
+      "lowAlphaPixels": 3912,
+      "edgePixels": 0,
+      "bounds": [
+        305,
+        282,
+        433,
+        418
+      ],
+      "marginFraction": 0.38950276243093923
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/snap-glint/review/effects/snap-glint/frame-02.png",
+      "index": 2,
+      "durationMs": 40,
+      "source": "source/effects/snap-glint.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":40,\"center\":[128,128],\"crossSize\":[44,44],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9057377674674155,
+      "lowAlphaPixels": 21621,
+      "edgePixels": 0,
+      "bounds": [
+        139,
+        137,
+        587,
+        580
+      ],
+      "marginFraction": 0.1878453038674033
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/snap-glint/review/effects/snap-glint/frame-03.png",
+      "index": 3,
+      "durationMs": 40,
+      "source": "source/effects/snap-glint.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":40,\"center\":[128,128],\"crossSize\":[28,28],\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9800181618387717,
+      "lowAlphaPixels": 6877,
+      "edgePixels": 0,
+      "bounds": [
+        273,
+        256,
+        439,
+        454
+      ],
+      "marginFraction": 0.35359116022099446
+    }
+  ],
+  "sources": [
+    "source/effects/snap-glint.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/snap-glint/contact.png",
+  "gif": "review/effects/snap-glint/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

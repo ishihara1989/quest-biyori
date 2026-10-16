@@ -1,0 +1,22 @@
+{
+  "id": "arch-demon/move-2",
+  "source": "move-2-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: THREE complementary walking poses of the exact canonical arch-demon, refined crisp JRPG pixel-art, LEFT-facing mild three-quarter view.\nInput 1: fixed canonical reference, match identity, anatomy, armor, palette and body scale. Input 2: first walking half, whose middle pose lifts the SMALL SCREEN-LEFT foot. Generate the OPPOSITE half: this time lift the LARGE SCREEN-RIGHT near foot.\nExactly THREE complete small separate figures in ONE HORIZONTAL ROW, three equal square cells, huge transparent gutters. All horns, wings, fingers, tail and feet completely visible inside central 60% of each cell. Same size and camera in all cells.\nSame massive purple demon, two gold horns, red abdomen core, black/gold spiked armor, two attached wings, one tail, two arms, two legs. Near hip is on viewer-right under the big spiked shoulder; near leg has larger gold knee armor and larger foreground clawed foot. Far leg starts at viewer-left hip and is smaller/behind.\nRoot pelvis (555,610), head (490,340), ground y=840. Upper body, arms, hands, horns and wings steady; only tiny 6-unit bob. Wings do NOT flap or grow during walking.\nLeft cell: smaller FAR foot is planted forward-left (420,840); larger NEAR foot trails back-right at (650,840), heel beginning to lift. Keep each leg attached to its own hip.\nMiddle cell: SMALL FAR foot remains planted at (450,840) supporting weight. LARGE NEAR knee rises visibly on SCREEN RIGHT around (620,660), large near foot lifted at (620,745), well above ground. It is the viewer-RIGHT near leg, not the small screen-left leg, that bends and lifts.\nRight cell: smaller FAR foot supports at (510,840), larger NEAR foot swings forward-left and lowers toward (430,800), preparing its next contact. Near knee remains connected to right-origin hip. Tail lags right by 10 units.\nDo not repeat the first-half middle lifted small left foot. No extra foot, disconnected toes, jumping both feet, pose mirroring, side-swapped armor or missing leg. Native transparent alpha, no floor, shadow slab, aura, VFX, text, labels, grid, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-6e2e9692-a597-44f8-8e2b-cc370a76a467.png",
+  "sha256": "613228afbb61b53f545482ec11c28aca1f028de9e98fe6a1bf7f097625c4890f",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/arch-demon.png",
+      "sha256": "4595303add5f307662871dbb6a23d109b96c53cde2dbd3db4c2e5b69ae7ff09c"
+    },
+    {
+      "file": "../../../../late-stage-first-pass/v1/sources/arch-demon/move-1-generated.png",
+      "sha256": "04519d2268e8dc6b2d2d809f72708b446c843113110a6d43d5743fd6ecc4ddd9"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "move-2-v2.prompt.txt"
+}

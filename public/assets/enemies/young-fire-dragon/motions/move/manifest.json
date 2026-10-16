@@ -1,0 +1,301 @@
+{
+  "id": "young-fire-dragon/move",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "label": "移動",
+  "kind": null,
+  "motion": "move",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/young-fire-dragon.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-1-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-2-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-3-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-4-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-5-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-6-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8726844787597656,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 101,
+        "top": 71,
+        "right": 461,
+        "bottom": 390
+      },
+      "visibleBounds": {
+        "left": 149,
+        "top": 138,
+        "right": 420,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1277,
+        "height": 1231
+      },
+      "sourceScale": 0.30833347451166415,
+      "sourceAnchor": {
+        "x": 706.5207692307692,
+        "y": 1027
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8659286499023438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 99,
+        "top": 42,
+        "right": 465,
+        "bottom": 392
+      },
+      "visibleBounds": {
+        "left": 150,
+        "top": 138,
+        "right": 418,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1277,
+        "height": 1231
+      },
+      "sourceScale": 0.297604447714823,
+      "sourceAnchor": {
+        "x": 697.8096153846154,
+        "y": 1030
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8627128601074219,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 109,
+        "top": 96,
+        "right": 447,
+        "bottom": 386
+      },
+      "visibleBounds": {
+        "left": 138,
+        "top": 135,
+        "right": 417,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-3-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1277,
+        "height": 1231
+      },
+      "sourceScale": 0.28776978417266186,
+      "sourceAnchor": {
+        "x": 732.325,
+        "y": 1024
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8588409423828125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 103,
+        "top": 33,
+        "right": 475,
+        "bottom": 402
+      },
+      "visibleBounds": {
+        "left": 150,
+        "top": 133,
+        "right": 436,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-4-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1277,
+        "height": 1231
+      },
+      "sourceScale": 0.3313458650038687,
+      "sourceAnchor": {
+        "x": 675.1592032967034,
+        "y": 1006
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8599662780761719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 99,
+        "top": 56,
+        "right": 485,
+        "bottom": 399
+      },
+      "visibleBounds": {
+        "left": 153,
+        "top": 136,
+        "right": 432,
+        "bottom": 336
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-5-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1277,
+        "height": 1231
+      },
+      "sourceScale": 0.3111111111111111,
+      "sourceAnchor": {
+        "x": 679.9285714285714,
+        "y": 988
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2048,
+      "y": 0,
+      "index": 4
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8646392822265625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 94,
+        "top": 45,
+        "right": 461,
+        "bottom": 381
+      },
+      "visibleBounds": {
+        "left": 146,
+        "top": 135,
+        "right": 439,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/move-frame-6-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1278,
+        "height": 1231
+      },
+      "sourceScale": 0.3041952197894033,
+      "sourceAnchor": {
+        "x": 714.6425824175824,
+        "y": 1025
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2560,
+      "y": 0,
+      "index": 5
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "walkCycle": {
+    "gait": "trot",
+    "nearLeg": "left",
+    "farLeg": "right",
+    "swingPairs": [
+      "A",
+      "A",
+      "B",
+      "B",
+      "B",
+      "A"
+    ]
+  },
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/young-fire-dragon/move/preview.gif",
+  "action": null
+}

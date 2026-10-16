@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "enemy": "armored-golem",
+  "motion": "combo",
+  "facing": "left",
+  "label": "二連打",
+  "sheet": "armored-golem-combo.png",
+  "preview": "../../../../../../development/assets/enemies/armored-golem/motions/combo/armored-golem-combo-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/armored-golem/PROMPT.md",
+  "width": 2048,
+  "height": 400,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 512,
+  "frameHeight": 400,
+  "frameCount": 4,
+  "pivot": {
+    "x": 297,
+    "y": 382
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 960,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/armored-golem/source/combo-registered.png",
+  "sourceScale": 0.4492063492063492,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "armored-golem-combo-1-0",
+      "type": "spawn-effect",
+      "effect": "ruins-stone-impact",
+      "frame": 1,
+      "timeMs": 260,
+      "durationMs": 720,
+      "placement": "target"
+    },
+    {
+      "id": "armored-golem-combo-2-0",
+      "type": "spawn-effect",
+      "effect": "ruins-stone-impact",
+      "frame": 2,
+      "timeMs": 430,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "combo-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 260,
+      "phase": "開始",
+      "bounds": {
+        "left": 123,
+        "top": 165,
+        "right": 367,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 905,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 606,
+        "y": 511
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "combo-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 170,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 119,
+        "top": 172,
+        "right": 459,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 905,
+        "y": 0,
+        "width": 905,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 513
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "combo-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 190,
+      "phase": "作用",
+      "bounds": {
+        "left": 15,
+        "top": 169,
+        "right": 369,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 547,
+        "width": 905,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 659,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "combo-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 340,
+      "phase": "復帰",
+      "bounds": {
+        "left": 185,
+        "top": 170,
+        "right": 443,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 905,
+        "y": 547,
+        "width": 905,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 333,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/armored-golem/source/combo-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/armored-golem/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1536,
+      "height": 1024,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 753,
+          "height": 509
+        },
+        {
+          "x": 753,
+          "y": 0,
+          "width": 783,
+          "height": 509
+        },
+        {
+          "x": 0,
+          "y": 509,
+          "width": 873,
+          "height": 515
+        },
+        {
+          "x": 873,
+          "y": 509,
+          "width": 663,
+          "height": 515
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 341,
+    "defaultZoom": 1,
+    "target": {
+      "x": 156,
+      "y": 382
+    },
+    "origin": {
+      "x": 232.5,
+      "y": 258.16
+    },
+    "assets": [
+      {
+        "id": "ruins-stone-impact",
+        "manifest": "../../../../effects/ruins-stone-impact/manifest.json"
+      }
+    ]
+  }
+}

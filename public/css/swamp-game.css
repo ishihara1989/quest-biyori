@@ -1,0 +1,22 @@
+.region-tabs{display:flex;gap:8px;padding:15px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.region-tabs button{display:flex;align-items:center;gap:8px;border:1px solid #465445;border-radius:4px;padding:9px 16px;color:#a4b391;background:#15231d;font-size:12px}
+.region-tabs button[aria-pressed=true]{color:#e8dec2;background:#384438;border-color:#c3b77e}
+.region-tabs svg{width:16px;height:16px}
+.forge-regions{padding:12px 0;margin-bottom:12px}
+.stage-map[data-region="2"]{background:linear-gradient(#190c2a99,#111e20cc),url('/assets/stages/poison-swamp/swamp-distant.png') center/cover}
+body[data-region="2"]{--gold:#d3b5e9;--line:#414048;background:radial-gradient(ellipse at top,#232333,#11191d 70%)}
+body[data-region="2"] .battle-panel{border-color:#55465e}
+body[data-region="2"] .chapter-badge,body[data-region="2"] .route-caption svg{color:#c6a2e0}
+body[data-region="2"] .forest-route{background:#241b2d80;border-color:#51435d}
+body[data-region="2"] .route-node.current>span{border-color:#c89ae6;box-shadow:0 0 0 4px #ad77ce22,0 0 22px #ad77ce44}
+body[data-region="2"] .live-dot{background:#c7ed7b;box-shadow:0 0 10px #afdd62}
+.stage-map[data-region="3"]{background:linear-gradient(#180d2999,#161721cc),url('/assets/stages/echo-cave/ground-near.png') center/cover}
+.stage-map[data-region="4"]{background:linear-gradient(#05334699,#14313acc),url('/assets/stages/sunlit-coast/distant.png') center/cover}
+body[data-region="3"]{--gold:#dcbbf4;--line:#514454;background:radial-gradient(ellipse at top,#2b2039,#13141c 70%)}
+body[data-region="4"]{--gold:#e8d89d;--line:#3d666a;background:radial-gradient(ellipse at top,#16434b,#111e26 70%)}
+body[data-region="3"] .battle-panel{border-color:#685174}
+body[data-region="4"] .battle-panel{border-color:#558e9b}
+body[data-region="3"] .forest-route{background:#271c3580;border-color:#69517c}
+body[data-region="4"] .forest-route{background:#17394680;border-color:#4c7982}
+body[data-region="3"] .route-node.current>span{border-color:#d6aff5;box-shadow:0 0 0 4px #af7fd522,0 0 22px #af7fd544}
+body[data-region="4"] .route-node.current>span{border-color:#96e3ec;box-shadow:0 0 0 4px #7ad7e022,0 0 22px #7ad7e044}

@@ -1,0 +1,200 @@
+{
+  "id": "dragon/danger-1",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "翼震着地",
+  "kind": null,
+  "motion": "danger-1",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 5500,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/danger-1-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon/danger-1/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.900177001953125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 103,
+        "top": 137,
+        "right": 452,
+        "bottom": 367
+      },
+      "visibleBounds": {
+        "left": 180,
+        "top": 197,
+        "right": 444,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 809,
+        "height": 511
+      },
+      "sourceScale": 0.4939467312348668,
+      "sourceAnchor": {
+        "x": 437,
+        "y": 427
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4420,
+      "transparentFraction": 0.89910888671875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 144,
+        "top": 80,
+        "right": 494,
+        "bottom": 306
+      },
+      "visibleBounds": {
+        "left": 182,
+        "top": 89,
+        "right": 427,
+        "bottom": 267
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-1-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 809,
+        "y": 0,
+        "width": 727,
+        "height": 511
+      },
+      "sourceScale": 0.4939467312348668,
+      "sourceAnchor": {
+        "x": 316,
+        "y": 558.7156862745098
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "transparentFraction": 0.8776397705078125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 115,
+        "top": 137,
+        "right": 466,
+        "bottom": 340
+      },
+      "visibleBounds": {
+        "left": 185,
+        "top": 176,
+        "right": 453,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-1-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 511,
+        "width": 821,
+        "height": 513
+      },
+      "sourceScale": 0.4939467312348668,
+      "sourceAnchor": {
+        "x": 408,
+        "y": 411
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8868675231933594,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 150,
+        "top": 166,
+        "right": 484,
+        "bottom": 360
+      },
+      "visibleBounds": {
+        "left": 194,
+        "top": 174,
+        "right": 436,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-1-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 821,
+        "y": 511,
+        "width": 715,
+        "height": 513
+      },
+      "sourceScale": 0.4939467312348668,
+      "sourceAnchor": {
+        "x": 313,
+        "y": 415
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "landing-shock",
+      "timeMs": 4600,
+      "slot": 0,
+      "placement": "self-ground",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "landing-shock"
+  ],
+  "repeatRelease": false
+}

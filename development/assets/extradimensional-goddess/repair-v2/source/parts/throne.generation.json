@@ -1,0 +1,15 @@
+{
+  "id": "parts/throne",
+  "source": "source/parts/throne.png",
+  "sha256": "85ef1442ccc4e8e0a8f58acf8b31899465369f904ef8ead736d810c0874a97bc",
+  "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, parts/throne.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 1 equal square cells, 1 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nONE empty ivory/navy/gold throne matching the original. Preserve the chair silhouette, crescent back, cushions, legs and armrests. Remove the entire LARGE circular celestial ring behind the chair. No rings floating behind or above it, no woman, body, hair, dress, small crown or gems detached as extra objects. Complete chair within central safe area.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-579ecfb4-4929-4d11-a25f-d3ed364aa43b.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "../v1/references/phase-1-seated.png",
+      "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+    }
+  ],
+  "attempt": 1
+}

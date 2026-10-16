@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "enemy": "seraphina",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "seraphina-hit.png",
+  "preview": "../../../../../../development/assets/enemies/seraphina/motions/hit/seraphina-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/seraphina/PROMPT.md",
+  "width": 1024,
+  "height": 432,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 512,
+  "frameHeight": 432,
+  "frameCount": 2,
+  "pivot": {
+    "x": 297,
+    "y": 414
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/seraphina/source/hit-registered.png",
+  "sourceScale": 0.43389830508474575,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 150,
+      "phase": "のけぞり",
+      "bounds": {
+        "left": 257,
+        "top": 160,
+        "right": 483,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 788,
+        "height": 676
+      },
+      "sourceAnchor": {
+        "x": 271,
+        "y": 615
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 230,
+      "phase": "復帰",
+      "bounds": {
+        "left": 198,
+        "top": 159,
+        "right": 393,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 788,
+        "y": 0,
+        "width": 788,
+        "height": 676
+      },
+      "sourceAnchor": {
+        "x": 342,
+        "y": 623
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/seraphina/source/reaction-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/seraphina/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1330,
+      "height": 1182,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 756,
+          "height": 644
+        },
+        {
+          "x": 756,
+          "y": 0,
+          "width": 574,
+          "height": 644
+        },
+        {
+          "x": 0,
+          "y": 644,
+          "width": 673,
+          "height": 538
+        },
+        {
+          "x": 673,
+          "y": 644,
+          "width": 657,
+          "height": 538
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ]
+}

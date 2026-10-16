@@ -1,0 +1,101 @@
+{
+  "id": "effects/silence-seal",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "封声の印",
+  "kind": "status",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/silence-seal-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 207,
+        "top": 72,
+        "right": 661,
+        "bottom": 435
+      },
+      "sourceWidth": 793,
+      "sourceHeight": 441,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 265153,
+      "transparentFraction": 0.7582017254148402
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 50,
+        "top": 8,
+        "right": 715,
+        "bottom": 495
+      },
+      "sourceWidth": 743,
+      "sourceHeight": 513,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 217731,
+      "transparentFraction": 0.5712340519310839
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 18,
+        "top": 7,
+        "right": 791,
+        "bottom": 582
+      },
+      "sourceWidth": 793,
+      "sourceHeight": 583,
+      "edgeOpaquePixels": 4,
+      "transparentPixels": 196701,
+      "transparentFraction": 0.42546596614026244
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 2,
+        "top": 16,
+        "right": 723,
+        "bottom": 461
+      },
+      "sourceWidth": 743,
+      "sourceHeight": 511,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 223378,
+      "transparentFraction": 0.5883431268486302
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/silence-seal-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

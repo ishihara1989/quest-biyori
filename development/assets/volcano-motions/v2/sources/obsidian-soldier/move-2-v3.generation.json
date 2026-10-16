@@ -1,0 +1,24 @@
+{
+  "id": "obsidian-soldier/move-2",
+  "source": "sources/obsidian-soldier/move-2-v3.png",
+  "prompt": "Use case: stylized-concept. EXACTLY THREE horizontal cells for walk frames4-6. Same black obsidian soldier. The BRIGHT foreground leg attached to broad right hip on screen, NOT the dark far leg, swings in this half. Frame4 DARK far leg extended forward LEFT flat grounded, BRIGHT near leg trailing RIGHT with heel raised. Frame5 DARK far leg supports flat forward, BRIGHT near knee lifted with bright boot suspended 45px above floor and moved forward under pelvis. Frame6 BRIGHT near leg extends forward LEFT to next contact, DARK far leg trails right flat ground. Torso, helmet, axe, cape same proportions as canonical. Keep both connected thighs knees ankles, never lift dark leg in middle pose. Canonical input is immutable identity, same armor/face/head proportions and refined crisp JRPG pixel clusters. LEFT-facing 3/4. TRUE transparent alpha=0 outside sharply outlined silhouette, NO gradient haze, NO glow beyond outline, NO floor or shadow, no checkerboard or text. All complete silhouettes stay within equal cells and empty gutters. No huge canvas-filling subjects.",
+  "selected": true,
+  "reason": "Targeted second revision after visual review",
+  "tool": "built-in image_gen",
+  "sha256": "5d8f79e4aafdf6558657017b500a7b61251ce4ebde70d7db72bd5d872b1e9912",
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-soldier/move-2-generated.png",
+  "issues": [
+    "前半より鎧の線と足の形が変わる。3→4の寸法・色調・支持足を合わせる。",
+    "5〜6コマ目の奥足が手前脚に隠れる。膝から足先まで同じ脚への接続を検収する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-soldier.png",
+      "sha256": "e32e29dd7943525d5656d13a9973bdfae81bed56d7a98fac3038447efce39a57"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

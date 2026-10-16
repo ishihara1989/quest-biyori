@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "enemy": "storm-jackal",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "storm-jackal-hit.png",
+  "preview": "../../../../../../development/assets/enemies/storm-jackal/motions/hit/storm-jackal-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1160,
+  "height": 430,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 580,
+  "frameHeight": 430,
+  "frameCount": 2,
+  "pivot": {
+    "x": 331,
+    "y": 406
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/highland-motions/enemies/storm-jackal/registered/hit.png",
+  "sourceScale": 0.4693140794223827,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "被弾",
+      "bounds": {
+        "left": 238,
+        "top": 167,
+        "right": 466,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 628,
+        "height": 685
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 621
+      },
+      "bakedOffset": {
+        "x": 20,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 580,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 220,
+      "phase": "復帰",
+      "bounds": {
+        "left": 215,
+        "top": 147,
+        "right": 443,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 628,
+        "y": 0,
+        "width": 628,
+        "height": 685
+      },
+      "sourceAnchor": {
+        "x": 304,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/storm-jackal.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/storm-jackal/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 650,
+          "height": 712
+        },
+        {
+          "x": 650,
+          "y": 0,
+          "width": 604,
+          "height": 712
+        },
+        {
+          "x": 0,
+          "y": 712,
+          "width": 631,
+          "height": 542
+        },
+        {
+          "x": 631,
+          "y": 712,
+          "width": 623,
+          "height": 542
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.9172185430463576,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [],
+  "action": null
+}

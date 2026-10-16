@@ -1,0 +1,130 @@
+{
+  "id": "demon-armored-soldier/attack",
+  "label": "魔鎧兵・剣撃",
+  "enemy": "demon-armored-soldier",
+  "motion": "attack",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../sources/demon-armored-soldier/attack-v2.png",
+      "sourceSha256": "2d44042a108e98fa76edbe0db9ed9275e6ecdda46efb8bbfc0347b5a1574c650",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 677,
+        "height": 645
+      },
+      "sourceAnchor": [
+        380,
+        600
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "369bdc05b7ef8d9eaadae8832bad5737bd1cfcff0ae76e0cb0f0ff7f27d0f6e6",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8776664733886719
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "片腕で振り上げ",
+      "source": "../../../sources/demon-armored-soldier/attack-v2.png",
+      "sourceSha256": "2d44042a108e98fa76edbe0db9ed9275e6ecdda46efb8bbfc0347b5a1574c650",
+      "sourceRect": {
+        "left": 677,
+        "top": 0,
+        "width": 653,
+        "height": 645
+      },
+      "sourceAnchor": [
+        340,
+        600
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c67fce50c0ca0e446e471afd95de76ea5fe8ce4cad897e249cffcc2b235fd12c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.87420654296875
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "phase": "左下へ剣撃",
+      "source": "../../../sources/demon-armored-soldier/attack-v2.png",
+      "sourceSha256": "2d44042a108e98fa76edbe0db9ed9275e6ecdda46efb8bbfc0347b5a1574c650",
+      "sourceRect": {
+        "left": 0,
+        "top": 645,
+        "width": 694,
+        "height": 538
+      },
+      "sourceAnchor": [
+        380,
+        472
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "ff48785ed95b4217321e893e01828224d0e881913e2ba0ba3a674fc54f6fb799",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8734703063964844
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../sources/demon-armored-soldier/attack-v2.png",
+      "sourceSha256": "2d44042a108e98fa76edbe0db9ed9275e6ecdda46efb8bbfc0347b5a1574c650",
+      "sourceRect": {
+        "left": 694,
+        "top": 645,
+        "width": 636,
+        "height": 538
+      },
+      "sourceAnchor": [
+        335,
+        488
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "e717c95cfdf20d7a523c514f832ff714955207e0c929d6b866788fc865929243",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8748664855957031
+    }
+  ],
+  "fingerprint": "8e07d2ec0db9c61091e357f1c9d3338f6afa45c9716d7453360fa2e8af232404",
+  "events": [],
+  "effects": []
+}

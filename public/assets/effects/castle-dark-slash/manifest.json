@@ -1,0 +1,186 @@
+{
+  "id": "castle-dark-slash",
+  "label": "闇の剣撃",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "arc",
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 70,
+      "phase": "発生",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-slash-v2.png",
+      "sourceSha256": "0d050e2a6b81f0b1957c107a60a6936529f2710b6eefd9ea56f8d85b992d587f",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        384,
+        256
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "42f7d38503075426fb812c138f462d999dcba207ddf95bbaa1f2f10d65c5d27f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9778251647949219,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 64,
+        "top": 132,
+        "right": 448,
+        "bottom": 384
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 100,
+      "phase": "斬撃",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-slash-v2.png",
+      "sourceSha256": "0d050e2a6b81f0b1957c107a60a6936529f2710b6eefd9ea56f8d85b992d587f",
+      "sourceRect": {
+        "left": 768,
+        "top": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        384,
+        256
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "8078cf7937c8662602ad270e68b0deaa7b2e40f1c1eac03b4447a21cf315dbe3",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9349746704101562,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 64,
+        "top": 135,
+        "right": 438,
+        "bottom": 384
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 100,
+      "phase": "残光",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-slash-v2.png",
+      "sourceSha256": "0d050e2a6b81f0b1957c107a60a6936529f2710b6eefd9ea56f8d85b992d587f",
+      "sourceRect": {
+        "left": 0,
+        "top": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        384,
+        256
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "4851cebd9a0be18e13c7a045d9fa2cc4bb1658ad0db26cc647b59d16a6b6853a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9414215087890625,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 75,
+        "top": 130,
+        "right": 448,
+        "bottom": 376
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 90,
+      "phase": "火の粉",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-slash-v2.png",
+      "sourceSha256": "0d050e2a6b81f0b1957c107a60a6936529f2710b6eefd9ea56f8d85b992d587f",
+      "sourceRect": {
+        "left": 768,
+        "top": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        384,
+        256
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "5a545b136f49751baf53c662d0d344030c0d18f064f64c5f361f5d9acdd901d3",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9796295166015625,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 64,
+        "top": 128,
+        "right": 417,
+        "bottom": 384
+      }
+    }
+  ],
+  "fingerprint": "ffc51ac1bb799424680d31ace724c670c1644052053f01ccdd4ba5ba79daaaf9",
+  "events": [],
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 360,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/dark-slash/manifest.json",
+  "sourceFingerprint": "ffc51ac1bb799424680d31ace724c670c1644052053f01ccdd4ba5ba79daaaf9",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

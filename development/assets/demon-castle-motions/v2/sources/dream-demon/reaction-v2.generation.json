@@ -1,0 +1,18 @@
+{
+  "id": "dream-demon/reaction",
+  "source": "reaction-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: four-frame HIT and DEFEAT reaction sprite sheet of the exact adult dream demon in the reference.\nMatch canonical identity: adult woman with lavender hair, two dark red horns, pointed ears, red eyes, two attached purple bat wings, one arrow-tipped tail, fitted black-and-gold dress and exactly TWO black thigh-high boots. Refined crisp JRPG pixel art, exact reference palette, brightness and proportions. Left-facing mild three-quarter view.\nFOUR separate complete small poses in equal 2x2 cells with very broad transparent gutters. Row-major order. Each pose fits entirely in central 60% of its own cell; every horn, wingtip, hair tip, boot and tail tip has clear transparent space around it. Never let neighboring poses overlap. Leave 20% blank margin on every side of each cell. SAME scale for all four figures.\nMovement plan per cell 0..1000: neutral floating pelvis (500,580), head (480,300), boot toes normally at y=830, wing roots remain on upper back.\nFrame 1 HIT: torso recoils 8 degrees to right, near hand at chest (510,420), other hand low (400,580), two knees at (480,680) and (565,710). Boots at (465,830) and (570,840), EXACTLY TWO BOOTS. No trails, ghost limbs or duplicated soles.\nFrame 2 RECOVERY: resumes the canonical floating neutral stance, two arms relaxed and exactly two legs, pelvis (500,580), toes (475,830),(560,845).\nFrame 3 COLLAPSE: stops hovering, pelvis lowers to (510,685), both knees bend together toward bottom-left; one hand at own thigh, other hand reaches downward (420,800). Wings fold slightly and remain attached; only TWO legs and TWO boots.\nFrame 4 DEFEATED HOLD: seated/slumped on the ground, pelvis (515,760), both knees folded to her left (430,815), two boots tucked at (570,850),(660,850), near palm resting on ground at (405,850). Eyes closed, head tilted down, wings relaxed and folded. No new glow.\nKeep the exact same anatomical two legs connected from hips through thighs and knees to their own two boots in EVERY cell. Tail is one thin arrow-tipped tail, never a third leg or boot. No loose detached body parts.\nGenuine transparent alpha only, no background, colored haze, floor, shadow plate, hit star, spell effect, text, labels, grid, watermark or checkerboard. Body-only sprites.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-61e9a304-6f1b-4340-ac45-660251a3af0d.png",
+  "sha256": "cecd32767441b1a42001118cfdc77e530b41de12a148e1480b81064255948418",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/dream-demon.png",
+      "sha256": "c4e940abf1b2623984fd52a7044c6fb287dd4543191f03ac4fcb13d5e4cd5637"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "reaction-v2.prompt.txt"
+}

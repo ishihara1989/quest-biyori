@@ -1,0 +1,186 @@
+{
+  "id": "castle-demon-impact",
+  "label": "魔拳・衝撃",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "impact",
+  "origin": "first-pass",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 60,
+      "phase": "発生",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-impact-generated.png",
+      "sourceSha256": "154a5681fb8a43565cb1bd122c06f2f054fa5c57be9135b740b767595a24a38e",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 770,
+        "height": 456
+      },
+      "sourceAnchor": [
+        384,
+        256
+      ],
+      "scale": 0.34,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "667fcb1aa8df36fdb833c5b19b2980f2f5993370648c61a93c3c413fe76acfeb",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9671630859375,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 127,
+        "top": 175,
+        "right": 387,
+        "bottom": 323
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 80,
+      "phase": "展開",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-impact-generated.png",
+      "sourceSha256": "154a5681fb8a43565cb1bd122c06f2f054fa5c57be9135b740b767595a24a38e",
+      "sourceRect": {
+        "left": 770,
+        "top": 0,
+        "width": 766,
+        "height": 456
+      },
+      "sourceAnchor": [
+        382,
+        256
+      ],
+      "scale": 0.34,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "58a64583e29651a495f7cf75dc3ad9b85a431c900eef446e48d865c45ef8c4d0",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9328842163085938,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 127,
+        "top": 175,
+        "right": 381,
+        "bottom": 323
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 80,
+      "phase": "最大",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-impact-generated.png",
+      "sourceSha256": "154a5681fb8a43565cb1bd122c06f2f054fa5c57be9135b740b767595a24a38e",
+      "sourceRect": {
+        "left": 0,
+        "top": 456,
+        "width": 857,
+        "height": 568
+      },
+      "sourceAnchor": [
+        384,
+        312
+      ],
+      "scale": 0.34,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "4aa6148d084c2508d5b07034d0779c895439208731194a370a67166737488a02",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8753242492675781,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 125,
+        "top": 150,
+        "right": 416,
+        "bottom": 339
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 60,
+      "phase": "収束",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-impact-generated.png",
+      "sourceSha256": "154a5681fb8a43565cb1bd122c06f2f054fa5c57be9135b740b767595a24a38e",
+      "sourceRect": {
+        "left": 857,
+        "top": 456,
+        "width": 679,
+        "height": 568
+      },
+      "sourceAnchor": [
+        295,
+        312
+      ],
+      "scale": 0.34,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "75462043e2850e496c682a13889371fe29af8b7aca8972e98f61f909d7c1102a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9402198791503906,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 156,
+        "top": 150,
+        "right": 383,
+        "bottom": 339
+      }
+    }
+  ],
+  "fingerprint": "35da0708912ff75ee1edb2c07f7116185a5344a8ee7d0d66f30e09443fcff644",
+  "events": [],
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 280,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/demon-impact/manifest.json",
+  "sourceFingerprint": "35da0708912ff75ee1edb2c07f7116185a5344a8ee7d0d66f30e09443fcff644",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

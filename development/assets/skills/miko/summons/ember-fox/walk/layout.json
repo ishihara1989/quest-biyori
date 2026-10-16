@@ -1,0 +1,15 @@
+{
+  "sourceParts": [
+    "assets/skills/miko/summons/ember-fox/walk-a/manifest.json",
+    "assets/skills/miko/summons/ember-fox/walk-b/manifest.json"
+  ],
+  "order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "scale": 0.08743169398907104
+}

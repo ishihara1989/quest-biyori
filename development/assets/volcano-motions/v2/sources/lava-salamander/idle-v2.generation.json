@@ -1,0 +1,22 @@
+{
+  "id": "lava-salamander/idle",
+  "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. ラヴァサラマンダー. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/lava-salamander/idle-v2.png",
+  "sha256": "56ca079cf5a15061c230cd78e3a1d42244c1a0a8b169cb81a4a20f68d832fc23",
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "firstPass": "sources/lava-salamander/idle-generated.png",
+  "issues": [
+    "背びれの呼吸変化は見える。体格・接地位置の差を採用前に揃える。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

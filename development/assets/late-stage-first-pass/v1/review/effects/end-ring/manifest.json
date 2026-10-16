@@ -1,0 +1,101 @@
+{
+  "id": "effects/end-ring",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "終焉の衝撃輪",
+  "kind": "ground",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/end-ring-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 76,
+        "top": 216,
+        "right": 681,
+        "bottom": 524
+      },
+      "sourceWidth": 742,
+      "sourceHeight": 525,
+      "edgeOpaquePixels": 3,
+      "transparentPixels": 302494,
+      "transparentFraction": 0.7765216275189321
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 59,
+        "top": 134,
+        "right": 759,
+        "bottom": 418
+      },
+      "sourceWidth": 794,
+      "sourceHeight": 525,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 274427,
+      "transparentFraction": 0.6583351325416816
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 9,
+        "top": 0,
+        "right": 758,
+        "bottom": 438
+      },
+      "sourceWidth": 791,
+      "sourceHeight": 499,
+      "edgeOpaquePixels": 3,
+      "transparentPixels": 163289,
+      "transparentFraction": 0.4136946459290262
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 31,
+        "top": 101,
+        "right": 720,
+        "bottom": 397
+      },
+      "sourceWidth": 745,
+      "sourceHeight": 499,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 229057,
+      "transparentFraction": 0.6161504216486665
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/end-ring-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

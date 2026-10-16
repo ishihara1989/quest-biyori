@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lizard-chief",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "lizard-chief-move.png",
+  "preview": "../../../../../../development/assets/enemies/lizard-chief/motions/move/lizard-chief-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lizard-chief/PROMPT.md",
+  "width": 3840,
+  "height": 448,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 448,
+  "frameCount": 6,
+  "pivot": {
+    "x": 371,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/lizard-chief/source/move-registered.png",
+  "sourceScale": 0.4821763602251407,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "左接地",
+      "bounds": {
+        "left": 119,
+        "top": 219,
+        "right": 510,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 874,
+        "height": 509
+      },
+      "sourceAnchor": {
+        "x": 553,
+        "y": 457
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "右遊脚",
+      "bounds": {
+        "left": 245,
+        "top": 223,
+        "right": 627,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 874,
+        "y": 0,
+        "width": 874,
+        "height": 509
+      },
+      "sourceAnchor": {
+        "x": 292,
+        "y": 447
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "右前進",
+      "bounds": {
+        "left": 126,
+        "top": 218,
+        "right": 488,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 1748,
+        "y": 0,
+        "width": 874,
+        "height": 509
+      },
+      "sourceAnchor": {
+        "x": 539,
+        "y": 459
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "右接地",
+      "bounds": {
+        "left": 113,
+        "top": 202,
+        "right": 518,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 509,
+        "width": 874,
+        "height": 509
+      },
+      "sourceAnchor": {
+        "x": 552,
+        "y": 492
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2560,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "左遊脚",
+      "bounds": {
+        "left": 228,
+        "top": 204,
+        "right": 623,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 874,
+        "y": 509,
+        "width": 874,
+        "height": 509
+      },
+      "sourceAnchor": {
+        "x": 313,
+        "y": 487
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 3200,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "左前進",
+      "bounds": {
+        "left": 244,
+        "top": 204,
+        "right": 627,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 1748,
+        "y": 509,
+        "width": 874,
+        "height": 509
+      },
+      "sourceAnchor": {
+        "x": 279,
+        "y": 487
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/lizard-chief/source/move-1-generated.png",
+    "../../../../../../development/assets/enemies/lizard-chief/source/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 3,
+        "count": 101801,
+        "left": 15,
+        "top": 143,
+        "right": 827,
+        "bottom": 584,
+        "cx": 408.9127120558737,
+        "cy": 370.4939833596919
+      },
+      {
+        "id": 2,
+        "count": 95636,
+        "left": 718,
+        "top": 142,
+        "right": 1511,
+        "bottom": 573,
+        "cx": 1100.7899431176545,
+        "cy": 364.6734284160776
+      },
+      {
+        "id": 1,
+        "count": 96333,
+        "left": 1401,
+        "top": 141,
+        "right": 2154,
+        "bottom": 584,
+        "cx": 1780.2890909657126,
+        "cy": 366.7342655164897
+      }
+    ],
+    [
+      {
+        "id": 2,
+        "count": 114347,
+        "left": 10,
+        "top": 136,
+        "right": 851,
+        "bottom": 612,
+        "cx": 427.23179445022606,
+        "cy": 383.502619220443
+      },
+      {
+        "id": 1,
+        "count": 107623,
+        "left": 665,
+        "top": 133,
+        "right": 1486,
+        "bottom": 604,
+        "cx": 1060.2594891426554,
+        "cy": 373.3133438019754
+      },
+      {
+        "id": 3,
+        "count": 111616,
+        "left": 1363,
+        "top": 136,
+        "right": 2158,
+        "bottom": 607,
+        "cx": 1760.0588714879586,
+        "cy": 384.39038309919727
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1,
+  "walkCycle": {
+    "nearLeg": "left",
+    "farLeg": "right",
+    "parts": [
+      "../../../../../../development/assets/enemies/lizard-chief/source/move-1-generated.png",
+      "../../../../../../development/assets/enemies/lizard-chief/source/move-2-generated.png"
+    ],
+    "phases": [
+      "left-contact",
+      "right-passing",
+      "right-approach",
+      "right-contact",
+      "left-passing",
+      "left-approach"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "obsidian-soldier/attack",
+  "source": "sources/obsidian-soldier/attack-v3.png",
+  "prompt": "Use case: stylized-concept. EXACT FOUR 2x2 ordered poses: short normal axe attack. Whole character rendered SMALL inside EACH cell with 20% margin. Neutral stance holding original axe low LEFT; windup draws axe toward RIGHT shoulder at head height, blade top ALWAYS BELOW crown tip, never above head; release SAME axe blade cuts left-down with fixed haft and both hand grips; upright neutral canonical recovery. Keep original blade curved silhouette and size and full two tips. Do not enlarge axe. No raised-overhead pose. No light or glow or particles whatsoever outside sharply outlined axe/armor silhouette. Canonical input is immutable identity, same armor/face/head proportions and refined crisp JRPG pixel clusters. LEFT-facing 3/4. TRUE transparent alpha=0 outside sharply outlined silhouette, NO gradient haze, NO glow beyond outline, NO floor or shadow, no checkerboard or text. All complete silhouettes stay within equal cells and empty gutters. No huge canvas-filling subjects.",
+  "selected": true,
+  "reason": "Targeted second revision after visual review",
+  "tool": "built-in image_gen",
+  "sha256": "02ccd20e2b893b14e32b86f6a048e29406af689467114c0626d91b8d9463ab77",
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-soldier/attack-generated.png",
+  "issues": [
+    "頭上に振り上げた斧が原画の上端に近い。刃の見切れと余白を確認する。",
+    "復帰が低い構えのため、直立待機への切り替えを確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-soldier.png",
+      "sha256": "e32e29dd7943525d5656d13a9973bdfae81bed56d7a98fac3038447efce39a57"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

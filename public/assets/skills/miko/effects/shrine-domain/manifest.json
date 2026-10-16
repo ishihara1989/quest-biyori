@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "id": "shrine-domain",
+  "character": "miko",
+  "subject": "shrine-domain",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "shrine-domain-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.519916142557652,
+  "frames": [
+    {
+      "index": 0,
+      "file": "shrine-domain-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 14,
+        "t": 44,
+        "r": 502,
+        "b": 433,
+        "n": 113003,
+        "width": 489,
+        "height": 390
+      }
+    },
+    {
+      "index": 1,
+      "file": "shrine-domain-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 20,
+        "t": 35,
+        "r": 492,
+        "b": 452,
+        "n": 124451,
+        "width": 473,
+        "height": 418
+      }
+    },
+    {
+      "index": 2,
+      "file": "shrine-domain-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 18,
+        "t": 30,
+        "r": 504,
+        "b": 452,
+        "n": 138181,
+        "width": 487,
+        "height": 423
+      }
+    },
+    {
+      "index": 3,
+      "file": "shrine-domain-effect-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 14,
+        "t": 46,
+        "r": 494,
+        "b": 438,
+        "n": 112557,
+        "width": 481,
+        "height": 393
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/shrine-domain-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

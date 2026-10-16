@@ -1,0 +1,48 @@
+{
+  "source": "source/shaman-backward-generated-v6.png",
+  "columns": 4,
+  "rows": 2,
+  "rowSplit": 438,
+  "frames": [
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 253
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 265
+      }
+    },
+    {
+      "anchor": {
+        "x": 244
+      }
+    },
+    {
+      "anchor": {
+        "x": 259
+      }
+    },
+    {
+      "anchor": {
+        "x": 252
+      }
+    },
+    {
+      "anchor": {
+        "x": 265
+      }
+    }
+  ]
+}

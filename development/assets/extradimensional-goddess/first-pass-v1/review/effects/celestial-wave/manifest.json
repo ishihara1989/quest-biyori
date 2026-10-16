@@ -1,0 +1,102 @@
+{
+  "id": "effects/celestial-wave",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    256
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/celestial-wave/review/effects/celestial-wave/frame-01.png",
+      "index": 1,
+      "durationMs": 100,
+      "source": "source/effects/celestial-wave.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":100,\"center\":[256,256],\"radius\":170,\"thickness\":4,\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.7873366960715484,
+      "lowAlphaPixels": 52020,
+      "edgePixels": 0,
+      "bounds": [
+        92,
+        90,
+        632,
+        619
+      ],
+      "marginFraction": 0.12430939226519337
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/celestial-wave/review/effects/celestial-wave/frame-02.png",
+      "index": 2,
+      "durationMs": 160,
+      "source": "source/effects/celestial-wave.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":160,\"center\":[256,256],\"radius\":205,\"thickness\":12,\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.5965152925734868,
+      "lowAlphaPixels": 64973,
+      "edgePixels": 0,
+      "bounds": [
+        28,
+        29,
+        699,
+        678
+      ],
+      "marginFraction": 0.03314917127071823
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/celestial-wave/review/effects/celestial-wave/frame-03.png",
+      "index": 3,
+      "durationMs": 240,
+      "source": "source/effects/celestial-wave.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":240,\"center\":[256,256],\"radius\":220,\"thickness\":5,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.7703595738835811,
+      "lowAlphaPixels": 91430,
+      "edgePixels": 0,
+      "bounds": [
+        69,
+        57,
+        656,
+        649
+      ],
+      "marginFraction": 0.0787292817679558
+    }
+  ],
+  "sources": [
+    "source/effects/celestial-wave.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/celestial-wave/contact.png",
+  "gif": "review/effects/celestial-wave/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

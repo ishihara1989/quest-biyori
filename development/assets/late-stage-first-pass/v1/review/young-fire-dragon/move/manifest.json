@@ -1,0 +1,137 @@
+{
+  "id": "young-fire-dragon/move",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/young-fire-dragon/move-1-generated.png",
+    "sources/young-fire-dragon/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "幼火竜",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 62,
+        "top": 124,
+        "right": 701,
+        "bottom": 592
+      },
+      "sourceWidth": 740,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 340650,
+      "transparentFraction": 0.6358257428699418
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 37,
+        "top": 121,
+        "right": 672,
+        "bottom": 594
+      },
+      "sourceWidth": 711,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 319978,
+      "transparentFraction": 0.6216013551841232
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 37,
+        "top": 121,
+        "right": 666,
+        "bottom": 594
+      },
+      "sourceWidth": 721,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 328527,
+      "transparentFraction": 0.629357246304626
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 69,
+        "top": 119,
+        "right": 715,
+        "bottom": 582
+      },
+      "sourceWidth": 753,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 360310,
+      "transparentFraction": 0.6609106850681986
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 35,
+        "top": 119,
+        "right": 675,
+        "bottom": 583
+      },
+      "sourceWidth": 719,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 333880,
+      "transparentFraction": 0.6413911279478096
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 42,
+        "top": 119,
+        "right": 662,
+        "bottom": 574
+      },
+      "sourceWidth": 700,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 328288,
+      "transparentFraction": 0.6477663772691397
+    }
+  ],
+  "reference": "../../../references/young-fire-dragon.png",
+  "originalSources": [
+    "../../../sources/young-fire-dragon/move-1-generated.png",
+    "../../../sources/young-fire-dragon/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

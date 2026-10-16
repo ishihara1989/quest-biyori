@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-spider",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "cave-spider-down.png",
+  "preview": "../../../../../../development/assets/enemies/cave-spider/motions/down/cave-spider-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-spider/PROMPT.md",
+  "width": 768,
+  "height": 288,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 2,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/cave-spider/source/down-registered.png",
+  "sourceScale": 0.36129032258064514,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 280,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 41,
+        "top": 166,
+        "right": 265,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 348,
+        "width": 655,
+        "height": 348
+      },
+      "sourceAnchor": {
+        "x": 522,
+        "y": 307
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 600,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 102,
+        "top": 191,
+        "right": 321,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 655,
+        "y": 348,
+        "width": 655,
+        "height": 348
+      },
+      "sourceAnchor": {
+        "x": 352,
+        "y": 239
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-spider/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 95275,
+        "left": 157,
+        "top": 176,
+        "right": 688,
+        "bottom": 491,
+        "cx": 463.6241511414327,
+        "cy": 313.6637837837838
+      },
+      {
+        "id": 2,
+        "count": 104529,
+        "left": 835,
+        "top": 182,
+        "right": 1411,
+        "bottom": 491,
+        "cx": 1159.6560189038448,
+        "cy": 326.11237072965395
+      },
+      {
+        "id": 3,
+        "count": 107911,
+        "left": 93,
+        "top": 651,
+        "right": 715,
+        "bottom": 942,
+        "cx": 459.48747579023456,
+        "cy": 802.8717646949801
+      },
+      {
+        "id": 4,
+        "count": 85432,
+        "left": 835,
+        "top": 715,
+        "right": 1443,
+        "bottom": 938,
+        "cx": 1178.3376018353779,
+        "cy": 844.5116115741174
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

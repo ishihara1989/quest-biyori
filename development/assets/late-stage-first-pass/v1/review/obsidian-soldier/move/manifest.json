@@ -1,0 +1,137 @@
+{
+  "id": "obsidian-soldier/move",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-soldier/move-1-generated.png",
+    "sources/obsidian-soldier/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "黒曜兵",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 102,
+        "top": 57,
+        "right": 685,
+        "bottom": 666
+      },
+      "sourceWidth": 739,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 358568,
+      "transparentFraction": 0.6701754648285349
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 53,
+        "top": 54,
+        "right": 675,
+        "bottom": 671
+      },
+      "sourceWidth": 710,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 331190,
+      "transparentFraction": 0.6442883822270641
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 33,
+        "top": 54,
+        "right": 675,
+        "bottom": 671
+      },
+      "sourceWidth": 723,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 341646,
+      "transparentFraction": 0.6526787556452167
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 65,
+        "top": 31,
+        "right": 719,
+        "bottom": 672
+      },
+      "sourceWidth": 747,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 336033,
+      "transparentFraction": 0.6213306263728949
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 26,
+        "top": 31,
+        "right": 653,
+        "bottom": 676
+      },
+      "sourceWidth": 694,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 305985,
+      "transparentFraction": 0.608978696642094
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 39,
+        "top": 31,
+        "right": 681,
+        "bottom": 676
+      },
+      "sourceWidth": 731,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 328537,
+      "transparentFraction": 0.62076660292795
+    }
+  ],
+  "reference": "../../../references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../sources/obsidian-soldier/move-1-generated.png",
+    "../../../sources/obsidian-soldier/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

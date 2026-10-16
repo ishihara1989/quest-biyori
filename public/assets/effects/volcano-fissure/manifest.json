@@ -1,0 +1,201 @@
+{
+  "id": "volcano-fissure",
+  "enemy": null,
+  "region": "volcano",
+  "label": "断層斬の地割れ",
+  "kind": "ground",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "pivot": {
+    "x": 384,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/fissure-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9680938720703125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 32,
+        "top": 144,
+        "right": 466,
+        "bottom": 416
+      },
+      "visibleBounds": {
+        "left": 267,
+        "top": 265,
+        "right": 411,
+        "bottom": 363
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fissure-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 850,
+        "height": 541
+      },
+      "sourceScale": 0.5402564897349065,
+      "sourceAnchor": {
+        "x": 696.0241935483871,
+        "y": 395.1532258064516
+      },
+      "pivot": {
+        "x": 384,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9289665222167969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 60,
+        "top": 141,
+        "right": 429,
+        "bottom": 417
+      },
+      "visibleBounds": {
+        "left": 119,
+        "top": 259,
+        "right": 418,
+        "bottom": 369
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fissure-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 850,
+        "y": 0,
+        "width": 686,
+        "height": 541
+      },
+      "sourceScale": 0.5402564897349065,
+      "sourceAnchor": {
+        "x": 600.1875,
+        "y": 393.6915322580645
+      },
+      "pivot": {
+        "x": 384,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8842124938964844,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 8,
+        "top": 157,
+        "right": 462,
+        "bottom": 417
+      },
+      "visibleBounds": {
+        "left": 22,
+        "top": 250,
+        "right": 411,
+        "bottom": 376
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fissure-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 541,
+        "width": 842,
+        "height": 483
+      },
+      "sourceScale": 0.5402564897349065,
+      "sourceAnchor": {
+        "x": 695.9657258064517,
+        "y": 334.9375
+      },
+      "pivot": {
+        "x": 384,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9619827270507812,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 15,
+        "top": 172,
+        "right": 386,
+        "bottom": 432
+      },
+      "visibleBounds": {
+        "left": 64,
+        "top": 321,
+        "right": 369,
+        "bottom": 376
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fissure-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 842,
+        "y": 541,
+        "width": 694,
+        "height": 483
+      },
+      "sourceScale": 0.5402564897349065,
+      "sourceAnchor": {
+        "x": 683.4657258064517,
+        "y": 306.9375
+      },
+      "pivot": {
+        "x": 384,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/fissure/preview.gif",
+  "action": null
+}

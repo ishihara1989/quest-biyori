@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/blade-spirit-appear-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 736,
+      "height": 724
+    },
+    {
+      "x": 736,
+      "y": 0,
+      "width": 705,
+      "height": 724
+    },
+    {
+      "x": 1441,
+      "y": 0,
+      "width": 731,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 962
+    },
+    {
+      "x": 512,
+      "y": 962
+    },
+    {
+      "x": 512,
+      "y": 962
+    }
+  ],
+  "scale": 0.49628844114528103
+}

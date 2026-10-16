@@ -1,0 +1,127 @@
+{
+  "id": "effects/rift-open",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    256
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/rift-open/review/effects/rift-open/frame-01.png",
+      "index": 1,
+      "durationMs": 80,
+      "source": "source/effects/rift-open.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 644,
+        "height": 610
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":80,\"center\":[256,256],\"openingSize\":[6,6]}. ",
+      "width": 644,
+      "height": 610,
+      "transparentFraction": 0.9688219122288972,
+      "lowAlphaPixels": 9378,
+      "edgePixels": 8,
+      "bounds": [
+        289,
+        210,
+        378,
+        609
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/rift-open/review/effects/rift-open/frame-02.png",
+      "index": 2,
+      "durationMs": 100,
+      "source": "source/effects/rift-open.png",
+      "sourceRect": {
+        "left": 644,
+        "top": 0,
+        "width": 644,
+        "height": 610
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":100,\"center\":[256,256],\"openingSize\":[8,190]}. ",
+      "width": 644,
+      "height": 610,
+      "transparentFraction": 0.8551114957743611,
+      "lowAlphaPixels": 31835,
+      "edgePixels": 74,
+      "bounds": [
+        181,
+        39,
+        422,
+        609
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/rift-open/review/effects/rift-open/frame-03.png",
+      "index": 3,
+      "durationMs": 110,
+      "source": "source/effects/rift-open.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 610,
+        "width": 644,
+        "height": 611
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":110,\"center\":[256,256],\"openingSize\":[44,280]}. ",
+      "width": 644,
+      "height": 611,
+      "transparentFraction": 0.7348176800073193,
+      "lowAlphaPixels": 49215,
+      "edgePixels": 7,
+      "bounds": [
+        211,
+        0,
+        468,
+        549
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/rift-open/review/effects/rift-open/frame-04.png",
+      "index": 4,
+      "durationMs": 140,
+      "source": "source/effects/rift-open.png",
+      "sourceRect": {
+        "left": 644,
+        "top": 610,
+        "width": 644,
+        "height": 611
+      },
+      "description": "Global F4: {\"f\":4,\"ms\":140,\"center\":[256,256],\"openingSize\":[84,350]}. ",
+      "width": 644,
+      "height": 611,
+      "transparentFraction": 0.5495140844354536,
+      "lowAlphaPixels": 63741,
+      "edgePixels": 74,
+      "bounds": [
+        105,
+        0,
+        515,
+        588
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/effects/rift-open.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/rift-open/contact.png",
+  "gif": "review/effects/rift-open/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

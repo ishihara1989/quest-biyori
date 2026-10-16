@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ancient-crossbowman",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "ancient-crossbowman-move.png",
+  "preview": "../../../../../../development/assets/enemies/ancient-crossbowman/motions/move/ancient-crossbowman-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/ancient-crossbowman/PROMPT.md",
+  "width": 2304,
+  "height": 320,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 6,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/ancient-crossbowman/source/move-registered.png",
+  "sourceScale": 0.30171073094867806,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "左接地",
+      "bounds": {
+        "left": 63,
+        "top": 109,
+        "right": 251,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 815,
+        "height": 756
+      },
+      "sourceAnchor": {
+        "x": 581.5773195876288,
+        "y": 694
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "右遊脚",
+      "bounds": {
+        "left": 56,
+        "top": 108,
+        "right": 227,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 815,
+        "y": 0,
+        "width": 815,
+        "height": 756
+      },
+      "sourceAnchor": {
+        "x": 610.5773195876288,
+        "y": 697
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "右前進",
+      "bounds": {
+        "left": 55,
+        "top": 107,
+        "right": 249,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 1630,
+        "y": 0,
+        "width": 815,
+        "height": 756
+      },
+      "sourceAnchor": {
+        "x": 651.5773195876288,
+        "y": 702
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "右接地",
+      "bounds": {
+        "left": 52,
+        "top": 108,
+        "right": 246,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 756,
+        "width": 815,
+        "height": 756
+      },
+      "sourceAnchor": {
+        "x": 606.5773195876288,
+        "y": 691
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1536,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "左遊脚",
+      "bounds": {
+        "left": 58,
+        "top": 108,
+        "right": 245,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 815,
+        "y": 756,
+        "width": 815,
+        "height": 756
+      },
+      "sourceAnchor": {
+        "x": 594.5773195876288,
+        "y": 693
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 1920,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "左前進",
+      "bounds": {
+        "left": 53,
+        "top": 107,
+        "right": 250,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 1630,
+        "y": 756,
+        "width": 815,
+        "height": 756
+      },
+      "sourceAnchor": {
+        "x": 625.5773195876288,
+        "y": 694
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/ancient-crossbowman/source/move-1-generated.png",
+    "../../../../../../development/assets/enemies/ancient-crossbowman/source/move-2-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/ancient-crossbowman/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 2172,
+      "height": 724,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 701,
+          "height": 724
+        },
+        {
+          "x": 701,
+          "y": 0,
+          "width": 688,
+          "height": 724
+        },
+        {
+          "x": 1389,
+          "y": 0,
+          "width": 783,
+          "height": 724
+        }
+      ],
+      "normalizeScale": 1
+    },
+    {
+      "method": "transparent-grid",
+      "width": 2172,
+      "height": 724,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 708,
+          "height": 724
+        },
+        {
+          "x": 708,
+          "y": 0,
+          "width": 709,
+          "height": 724
+        },
+        {
+          "x": 1417,
+          "y": 0,
+          "width": 755,
+          "height": 724
+        }
+      ],
+      "normalizeScale": 0.9852342158859471
+    }
+  ],
+  "walkCycle": {
+    "nearLeg": "left",
+    "farLeg": "right",
+    "horizontalAnchor": "torso registered to idle",
+    "parts": [
+      "../../../../../../development/assets/enemies/ancient-crossbowman/source/move-1-generated.png",
+      "../../../../../../development/assets/enemies/ancient-crossbowman/source/move-2-generated.png"
+    ],
+    "phases": [
+      "left-contact",
+      "right-passing",
+      "right-approach",
+      "right-contact",
+      "left-passing",
+      "left-approach"
+    ]
+  }
+}

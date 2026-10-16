@@ -1,0 +1,112 @@
+{
+  "id": "lava-salamander/hit",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "label": "被弾",
+  "kind": null,
+  "motion": "hit",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/lava-salamander.png",
+  "originalSources": [
+    "../../../sources/lava-salamander/reaction-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/lava-salamander/hit/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8706817626953125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 145,
+        "top": 58,
+        "right": 429,
+        "bottom": 378
+      },
+      "visibleBounds": {
+        "left": 149,
+        "top": 143,
+        "right": 421,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/lava-salamander/reaction-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 628,
+        "height": 695
+      },
+      "sourceScale": 0.4835924006908463,
+      "sourceAnchor": {
+        "x": 355,
+        "y": 611
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8740386962890625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 139,
+        "top": 52,
+        "right": 431,
+        "bottom": 378
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 157,
+        "right": 424,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/lava-salamander/reaction-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 628,
+        "y": 0,
+        "width": 626,
+        "height": 695
+      },
+      "sourceScale": 0.4835924006908463,
+      "sourceAnchor": {
+        "x": 340,
+        "y": 610
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

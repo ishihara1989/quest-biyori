@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-tusk-mammoth",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "ice-tusk-mammoth-down.png",
+  "preview": "../../../../../../development/assets/enemies/ice-tusk-mammoth/motions/down/ice-tusk-mammoth-down-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1360,
+  "height": 450,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 680,
+  "frameHeight": 450,
+  "frameCount": 2,
+  "pivot": {
+    "x": 381,
+    "y": 428
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1250,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-tusk-mammoth/down.png",
+  "sourceScale": 0.4972375690607735,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 350,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 222,
+        "top": 211,
+        "right": 533,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 608,
+        "width": 692,
+        "height": 608
+      },
+      "sourceAnchor": {
+        "x": 352,
+        "y": 469
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 680,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 225,
+        "top": 263,
+        "right": 531,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 692,
+        "y": 608,
+        "width": 692,
+        "height": 608
+      },
+      "sourceAnchor": {
+        "x": 346.5,
+        "y": 365
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 25,
+          "y": 82,
+          "width": 618,
+          "height": 544,
+          "mainComponent": 1
+        },
+        {
+          "x": 625,
+          "y": 83,
+          "width": 626,
+          "height": 543,
+          "mainComponent": 2
+        },
+        {
+          "x": 13,
+          "y": 747,
+          "width": 628,
+          "height": 438,
+          "mainComponent": 7
+        },
+        {
+          "x": 626,
+          "y": 872,
+          "width": 618,
+          "height": 334,
+          "mainComponent": 8
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

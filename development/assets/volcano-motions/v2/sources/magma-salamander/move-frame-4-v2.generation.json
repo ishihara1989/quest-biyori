@@ -1,0 +1,29 @@
+{
+  "id": "magma-salamander/move-4",
+  "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 4 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (389,815), hip (389,689), knee (485,721); RF GROUND SUPPORT paw (353,828), hip (353,667), knee (441,717); LH GROUND SUPPORT paw (708,824), hip (708,663), knee (621,727); RH LIFTED SWING paw (673,777), hip (673,641), knee (579,693). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. Explicit contact pair: DARK far FRONT paw at far LEFT under chin and BRIGHT near REAR paw below right hip rest flat on ground. Explicit lifted pair: BRIGHT near FRONT paw directly below orange chest CLEARLY raised 45px above its ground level, bent knee and intact paw, and DARK far REAR paw under belly raised 30px. NO grounded bright front paw. Head/torso fixed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/magma-salamander/move-frame-4-v2.png",
+  "sha256": "fe9c2eb319a280016dc5a75226a5a0f0f52d1abbbf230b5d2220478407ee9a09",
+  "reference": "references/magma-salamander.png",
+  "guide": "guides/magma-salamander/frame-4.png",
+  "firstPass": "sources/magma-salamander/move-2-generated.png",
+  "issues": [
+    "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+    "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+    "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+    "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/magma-salamander.png",
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    },
+    {
+      "file": "guides/magma-salamander/frame-4.png",
+      "sha256": "676a7ace714af357126875d7122023d9f8968473ca7cbe8b7921fdeb30895833"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

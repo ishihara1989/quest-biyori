@@ -1,0 +1,101 @@
+{
+  "id": "effects/fissure",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "断層斬の地割れ",
+  "kind": "ground",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/fissure-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 60,
+        "top": 196,
+        "right": 720,
+        "bottom": 448
+      },
+      "sourceWidth": 764,
+      "sourceHeight": 497,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 308429,
+      "transparentFraction": 0.8122794357769655
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 42,
+        "top": 137,
+        "right": 734,
+        "bottom": 472
+      },
+      "sourceWidth": 772,
+      "sourceHeight": 497,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 259456,
+      "transparentFraction": 0.6762231419605718
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 27,
+        "top": 23,
+        "right": 790,
+        "bottom": 474
+      },
+      "sourceWidth": 807,
+      "sourceHeight": 527,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 220871,
+      "transparentFraction": 0.5193433171325852
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 15,
+        "top": 158,
+        "right": 701,
+        "bottom": 471
+      },
+      "sourceWidth": 729,
+      "sourceHeight": 527,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 280724,
+      "transparentFraction": 0.7307038572763501
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/fissure-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

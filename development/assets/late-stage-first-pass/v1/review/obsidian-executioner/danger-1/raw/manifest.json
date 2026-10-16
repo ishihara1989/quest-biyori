@@ -1,0 +1,50 @@
+{
+  "id": "obsidian-executioner/danger-1/raw",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "motion": "raw-sheet",
+  "label": "断罪大薙ぎ（原画のみ）",
+  "kind": "raw-sheet",
+  "sources": [
+    "sources/obsidian-executioner/danger-1-generated.png"
+  ],
+  "durations": [
+    1000
+  ],
+  "phases": [
+    "切り出し不可・原画"
+  ],
+  "extractionError": "生成された透過・粒子を保持するため、画素マスク方式の切り出しは使わない。矩形の手動切り出しが必要",
+  "enemyLabel": "黒曜の処刑者",
+  "expectedFrames": 1,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 18,
+        "top": 8,
+        "right": 1312,
+        "bottom": 1128
+      },
+      "sourceWidth": 1330,
+      "sourceHeight": 1182,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 936984,
+      "transparentFraction": 0.596023052555246
+    }
+  ],
+  "reference": "../../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../../sources/obsidian-executioner/danger-1-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "golden-pharaoh",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "golden-pharaoh-move.png",
+  "preview": "../../../../../../development/assets/enemies/golden-pharaoh/motions/move/golden-pharaoh-move-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 2160,
+  "height": 430,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 430,
+  "frameCount": 4,
+  "pivot": {
+    "x": 313,
+    "y": 412
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/golden-pharaoh/source/move-registered.png",
+  "sourceScale": 0.5221238938053098,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 179,
+        "top": 101,
+        "right": 414,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 638,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 613
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 184,
+        "top": 100,
+        "right": 456,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 638,
+        "y": 0,
+        "width": 638,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 332,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -20
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1080,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 168,
+        "top": 103,
+        "right": 441,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 655,
+        "width": 638,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1620,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 175,
+        "top": 106,
+        "right": 421,
+        "bottom": 400
+      },
+      "sourceCell": {
+        "x": 638,
+        "y": 655,
+        "width": 638,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 310,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -12
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/golden-pharaoh-move-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/golden-pharaoh.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 592,
+          "height": 647
+        },
+        {
+          "x": 592,
+          "y": 0,
+          "width": 622,
+          "height": 647
+        },
+        {
+          "x": 0,
+          "y": 647,
+          "width": 631,
+          "height": 648
+        },
+        {
+          "x": 631,
+          "y": 647,
+          "width": 583,
+          "height": 648
+        }
+      ]
+    }
+  ]
+}

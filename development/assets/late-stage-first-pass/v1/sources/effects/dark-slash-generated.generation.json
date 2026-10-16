@@ -1,0 +1,28 @@
+{
+  "id": "effects/dark-slash",
+  "effect": "dark-slash",
+  "region": "demon-castle",
+  "label": "魔剣の斬撃",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/dark-slash-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. sharp silver-white sword slash travelling left, violet-black rim and crimson sparks, clear narrow attack direction. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-b1c6fd43-1f34-47b9-a0c9-4ef5004cc2d4.png",
+  "sha256": "b16f1aecf430100b31c50c2ee2c06e187543bfe2bd28971bec63ed24e84549ac",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "銀の刃先が左向きに明瞭。"
+    ],
+    "issues": [
+      "紫赤の背景光が混入。",
+      "最大コマで追加の輪が現れ、通常の短い剣撃として占有範囲が広い。",
+      "最後の白い先端が残る。消失を確認する。"
+    ]
+  }
+}

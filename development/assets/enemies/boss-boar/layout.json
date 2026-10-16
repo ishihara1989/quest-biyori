@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "assets": [
+    {
+      "enemy": "boss-boar",
+      "frameWidth": 480,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 240,
+        "y": 303
+      },
+      "prompt": "../../PROMPT.md",
+      "anchorMode": "ground",
+      "id": "idle",
+      "label": "待機",
+      "columns": 2,
+      "columnEdges": [
+        0,
+        638,
+        1254
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "scale": 0.58,
+      "loop": true,
+      "directory": "assets/enemies/boss-boar/motions/idle",
+      "source": "../../source/boss-boar-idle-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "力強い四足の待機姿勢",
+          "durationMs": 320
+        },
+        {
+          "cell": 1,
+          "phase": "息を吸い・耳が揺れる",
+          "durationMs": 320
+        },
+        {
+          "cell": 2,
+          "phase": "息を吐き・尾を下げる",
+          "durationMs": 320
+        },
+        {
+          "cell": 3,
+          "phase": "呼吸を戻し・尾を上げる",
+          "durationMs": 320
+        }
+      ]
+    },
+    {
+      "enemy": "boss-boar",
+      "frameWidth": 480,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 240,
+        "y": 303
+      },
+      "prompt": "../../PROMPT.md",
+      "anchorMode": "ground",
+      "id": "move",
+      "label": "移動",
+      "columns": 3,
+      "columnEdges": [
+        0,
+        724,
+        1448,
+        2172
+      ],
+      "rowEdges": [
+        0,
+        725,
+        1450
+      ],
+      "scale": 0.535,
+      "loop": true,
+      "reuseIdle": [
+        0
+      ],
+      "directory": "assets/enemies/boss-boar/motions/move",
+      "source": "../../source/boss-boar-move-combined-v2.png",
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "右前脚が前・待機姿勢",
+          "durationMs": 120,
+          "anchor": {
+            "x": 362,
+            "y": 620
+          }
+        },
+        {
+          "cell": 1,
+          "phase": "左前脚と左後脚を持ち上げて通す",
+          "durationMs": 120,
+          "anchor": {
+            "x": 362,
+            "y": 620
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "左前脚と左後脚を前へ伸ばす・接地直前",
+          "durationMs": 120,
+          "anchor": {
+            "x": 362,
+            "y": 620
+          }
+        },
+        {
+          "cell": 3,
+          "phase": "左前脚と左後脚を前に接地",
+          "durationMs": 120,
+          "anchor": {
+            "x": 362,
+            "y": 620
+          }
+        },
+        {
+          "cell": 4,
+          "phase": "右前脚と右後脚を持ち上げて通す",
+          "durationMs": 120,
+          "anchor": {
+            "x": 362,
+            "y": 620
+          }
+        },
+        {
+          "cell": 5,
+          "phase": "右前脚と右後脚を前へ伸ばす",
+          "durationMs": 120,
+          "anchor": {
+            "x": 362,
+            "y": 620
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "boss-boar",
+      "frameWidth": 480,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 240,
+        "y": 303
+      },
+      "prompt": "../../PROMPT.md",
+      "anchorMode": "ground",
+      "id": "charge-windup",
+      "label": "突進予告",
+      "columns": 2,
+      "columnEdgesByRow": [
+        [
+          0,
+          750,
+          1536
+        ],
+        [
+          0,
+          782,
+          1536
+        ]
+      ],
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "scale": 0.51,
+      "loop": true,
+      "chargeTelegraph": {
+        "nextMotion": "attack",
+        "repeatCount": "game-controlled",
+        "releaseBoundary": "cycle-end",
+        "rangeOverlay": "external-ground-layer",
+        "rootPosition": "locked",
+        "pawingFoot": "left-hind",
+        "supportFeet": [
+          "left-front",
+          "right-front",
+          "right-hind"
+        ]
+      },
+      "directory": "assets/enemies/boss-boar/motions/charge-windup",
+      "source": "../../source/boss-boar-charge-windup-generated-v4.png",
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "屈み・左後脚を前へ持ち上げる",
+          "durationMs": 220,
+          "anchor": {
+            "x": 340,
+            "y": 490
+          },
+          "offset": {
+            "x": -17,
+            "y": 0
+          }
+        },
+        {
+          "cell": 1,
+          "phase": "左後脚を前に接地する",
+          "durationMs": 160,
+          "anchor": {
+            "x": 343,
+            "y": 490
+          },
+          "offset": {
+            "x": -17,
+            "y": 0
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "左後脚で地面を後ろへ蹴る",
+          "durationMs": 180,
+          "anchor": {
+            "x": 344,
+            "y": 457
+          },
+          "offset": {
+            "x": -17,
+            "y": 0
+          }
+        },
+        {
+          "cell": 3,
+          "phase": "左後脚を浮かせて引き戻す",
+          "durationMs": 240,
+          "anchor": {
+            "x": 313,
+            "y": 460
+          },
+          "offset": {
+            "x": -17,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "boss-boar",
+      "frameWidth": 480,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 240,
+        "y": 303
+      },
+      "prompt": "../../PROMPT.md",
+      "anchorMode": "ground",
+      "id": "attack",
+      "label": "突進",
+      "columns": 2,
+      "columnEdgesByRow": [
+        [
+          0,
+          725,
+          1536
+        ],
+        [
+          0,
+          780,
+          1536
+        ]
+      ],
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "scale": 0.54,
+      "loop": true,
+      "rootMotion": {
+        "mode": "external",
+        "direction": "facing",
+        "bakedTranslation": false
+      },
+      "directory": "assets/enemies/boss-boar/motions/attack",
+      "source": "../../source/boss-boar-attack-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "両前脚を持ち上げる",
+          "durationMs": 100
+        },
+        {
+          "cell": 1,
+          "phase": "前脚を前方・後脚を後方へ伸ばして跳ぶ",
+          "durationMs": 100,
+          "offset": {
+            "x": 0,
+            "y": -32
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "両前脚で着地・後脚は空中",
+          "durationMs": 90
+        },
+        {
+          "cell": 3,
+          "phase": "両後脚も着地し・全脚を曲げる",
+          "durationMs": 110
+        }
+      ]
+    },
+    {
+      "enemy": "boss-boar",
+      "frameWidth": 480,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 240,
+        "y": 303
+      },
+      "prompt": "../../PROMPT.md",
+      "anchorMode": "ground",
+      "id": "hit",
+      "label": "被弾",
+      "columns": 2,
+      "columnEdges": [
+        0,
+        768,
+        1536
+      ],
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "scale": 0.6,
+      "reuseIdle": [
+        3
+      ],
+      "directory": "assets/enemies/boss-boar/motions/hit",
+      "source": "../../source/boss-boar-hit-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "衝撃を受け・脚を踏ん張る",
+          "durationMs": 100
+        },
+        {
+          "cell": 1,
+          "phase": "頭を上げ・後ろへのけぞる",
+          "durationMs": 140
+        },
+        {
+          "cell": 2,
+          "phase": "頭と体を戻す",
+          "durationMs": 140
+        },
+        {
+          "cell": 3,
+          "phase": "待機へ戻る",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "enemy": "boss-boar",
+      "frameWidth": 480,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 240,
+        "y": 303
+      },
+      "prompt": "../../PROMPT.md",
+      "anchorMode": "ground",
+      "id": "down",
+      "label": "撃破",
+      "columns": 2,
+      "columnEdges": [
+        0,
+        768,
+        1536
+      ],
+      "rowEdges": [
+        0,
+        547,
+        1024
+      ],
+      "scale": 0.53,
+      "terminal": true,
+      "directory": "assets/enemies/boss-boar/motions/down",
+      "source": "../../source/boss-boar-down-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "頭を下げ・前脚が崩れる",
+          "durationMs": 140
+        },
+        {
+          "cell": 1,
+          "phase": "胸と鼻先を地面へ落とす",
+          "durationMs": 220
+        },
+        {
+          "cell": 2,
+          "phase": "手前の左側へ横倒し",
+          "durationMs": 260
+        },
+        {
+          "cell": 3,
+          "phase": "横倒し・最終姿勢を保持",
+          "durationMs": 400
+        }
+      ]
+    }
+  ],
+  "walkSources": [
+    "source/boss-boar-move-01-03-generated-v3.png",
+    "source/boss-boar-move-04-06-generated-v1.png"
+  ],
+  "walkRefinementSources": [
+    "source/boss-boar-move-frame2-generated-v1.png",
+    "source/boss-boar-move-frame3-generated-v2.png",
+    "source/boss-boar-move-frame4-generated-v2.png"
+  ],
+  "walkRegistration": {
+    "cellWidth": 724,
+    "cellHeight": 725,
+    "spriteWidth": 640,
+    "pivot": {
+      "x": 362,
+      "y": 620
+    },
+    "halves": [
+      "source/boss-boar-move-01-03-registered-v1.png",
+      "source/boss-boar-move-04-06-registered-v1.png"
+    ],
+    "combined": "source/boss-boar-move-combined-v2.png",
+    "frames": [
+      {
+        "source": "source/boss-boar-move-01-03-generated-v3.png",
+        "cell": {
+          "x": 0,
+          "y": 0,
+          "width": 723,
+          "height": 725
+        }
+      },
+      {
+        "source": "source/boss-boar-move-frame2-generated-v1.png"
+      },
+      {
+        "source": "source/boss-boar-move-frame3-generated-v2.png"
+      },
+      {
+        "source": "source/boss-boar-move-frame4-generated-v2.png"
+      },
+      {
+        "source": "source/boss-boar-move-04-06-generated-v1.png",
+        "cell": {
+          "x": 723,
+          "y": 0,
+          "width": 724,
+          "height": 725
+        }
+      },
+      {
+        "source": "source/boss-boar-move-04-06-generated-v1.png",
+        "cell": {
+          "x": 1447,
+          "y": 0,
+          "width": 723,
+          "height": 725
+        }
+      }
+    ]
+  }
+}

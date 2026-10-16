@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "motion": "hit",
+  "label": "被撃",
+  "facing": "right",
+  "sheet": "paladin-hit.png",
+  "width": 512,
+  "height": 224,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.16408660351826793,
+  "sampling": "nearest-neighbor",
+  "source": "../../../../../development/assets/paladin/motions/hit/source/paladin-hit-generated-v1.png",
+  "sourceWidth": 1774,
+  "sourceHeight": 887,
+  "sourceGrid": [
+    2,
+    1
+  ],
+  "columnSplit": 881,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Jump previewOffset is for the review viewer only. Use world jump physics and the common pivot when integrating into a game.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "のけぞり",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 881,
+        "height": 887
+      },
+      "sourceAnchor": {
+        "x": 586,
+        "y": 814
+      },
+      "sourceBounds": {
+        "left": 73,
+        "top": 78,
+        "right": 804,
+        "bottom": 814
+      },
+      "bounds": {
+        "left": 44,
+        "top": 87,
+        "right": 163,
+        "bottom": 207
+      },
+      "visiblePixels": 8677,
+      "transparentPixels": 47972
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 220,
+      "phase": "立て直し",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 881,
+        "y": 0,
+        "width": 893,
+        "height": 887
+      },
+      "sourceAnchor": {
+        "x": 536,
+        "y": 812
+      },
+      "sourceBounds": {
+        "left": 76,
+        "top": 73,
+        "right": 818,
+        "bottom": 812
+      },
+      "bounds": {
+        "left": 53,
+        "top": 86,
+        "right": 174,
+        "bottom": 207
+      },
+      "visiblePixels": 8772,
+      "transparentPixels": 47774
+    }
+  ]
+}

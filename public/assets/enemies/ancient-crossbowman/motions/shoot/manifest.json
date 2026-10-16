@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ancient-crossbowman",
+  "motion": "shoot",
+  "facing": "left",
+  "label": "弩射撃",
+  "sheet": "ancient-crossbowman-shoot.png",
+  "preview": "../../../../../../development/assets/enemies/ancient-crossbowman/motions/shoot/ancient-crossbowman-shoot-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/ancient-crossbowman/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 840,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/ancient-crossbowman/source/shoot-registered.png",
+  "sourceScale": 0.34581105169340465,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "ancient-crossbowman-shoot-2-0",
+      "type": "spawn-projectile",
+      "effect": "ruins-infantry-bolt",
+      "frame": 2,
+      "timeMs": 440,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "shoot-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 200,
+      "phase": "開始",
+      "bounds": {
+        "left": 50,
+        "top": 109,
+        "right": 241,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 685,
+        "height": 665
+      },
+      "sourceAnchor": {
+        "x": 546,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "shoot-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 116,
+        "top": 116,
+        "right": 301,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 685,
+        "y": 0,
+        "width": 685,
+        "height": 665
+      },
+      "sourceAnchor": {
+        "x": 375,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "shoot-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "作用",
+      "bounds": {
+        "left": 74,
+        "top": 115,
+        "right": 242,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 665,
+        "width": 685,
+        "height": 665
+      },
+      "sourceAnchor": {
+        "x": 531,
+        "y": 588
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "shoot-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 72,
+        "top": 117,
+        "right": 240,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 685,
+        "y": 665,
+        "width": 685,
+        "height": 665
+      },
+      "sourceAnchor": {
+        "x": 534,
+        "y": 588
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/ancient-crossbowman/source/shoot-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/ancient-crossbowman/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 635,
+          "height": 633
+        },
+        {
+          "x": 635,
+          "y": 0,
+          "width": 619,
+          "height": 633
+        },
+        {
+          "x": 0,
+          "y": 633,
+          "width": 653,
+          "height": 621
+        },
+        {
+          "x": 653,
+          "y": 633,
+          "width": 601,
+          "height": 621
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 115,
+      "y": 302
+    },
+    "origin": {
+      "x": 83,
+      "y": 169
+    },
+    "assets": [
+      {
+        "id": "ruins-infantry-bolt",
+        "manifest": "../../../../effects/ruins-infantry-bolt/manifest.json"
+      }
+    ]
+  }
+}

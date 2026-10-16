@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/golden-lion-walk-b-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 732,
+      "height": 724
+    },
+    {
+      "x": 732,
+      "y": 0,
+      "width": 701,
+      "height": 724
+    },
+    {
+      "x": 1433,
+      "y": 0,
+      "width": 739,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 460.5,
+      "y": 911
+    },
+    {
+      "x": 301,
+      "y": 911
+    },
+    {
+      "x": 529,
+      "y": 910
+    }
+  ],
+  "scale": 0.08005718370264475
+}

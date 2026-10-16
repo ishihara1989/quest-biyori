@@ -1,0 +1,28 @@
+{
+  "id": "imp/reaction",
+  "enemy": "imp",
+  "region": "demon-castle",
+  "motion": "reaction",
+  "label": "被弾・撃破",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/imp.png",
+  "guide": null,
+  "source": "sources/imp/reaction-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of インプ. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: hovering body sinks 120px, wings close and knees fold. Bottom-right TERMINAL DEFEAT: recognizable whole character collapsed/kneeling low, original equipment and wings on body, no gore. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-961b4c46-42a5-4cdd-a412-d7d3db6daac5.png",
+  "sha256": "d8b98b14804b7a2a828650fd46f4e49fcc3414bec22bd168de8a70d921a067f5",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "被弾・復帰と、浮遊から落ちて伏せる撃破が読める。"
+    ],
+    "issues": [
+      "被弾に大きな衝撃星が直接描かれている。共通被弾演出との重複とセル余白を確認する。",
+      "撃破時の翼・尾・手足の重なりを検収する。"
+    ]
+  }
+}

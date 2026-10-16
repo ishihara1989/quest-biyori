@@ -1,0 +1,201 @@
+{
+  "id": "obsidian-soldier/idle",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "label": "待機",
+  "kind": null,
+  "motion": "idle",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/idle-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8938560485839844,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 161,
+        "top": 102,
+        "right": 436,
+        "bottom": 342
+      },
+      "visibleBounds": {
+        "left": 185,
+        "top": 103,
+        "right": 407,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/idle-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 705,
+        "height": 562
+      },
+      "sourceScale": 0.46168958742632615,
+      "sourceAnchor": {
+        "x": 348,
+        "y": 536
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8940277099609375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 150,
+        "top": 99,
+        "right": 411,
+        "bottom": 344
+      },
+      "visibleBounds": {
+        "left": 184,
+        "top": 103,
+        "right": 407,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/idle-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 705,
+        "y": 0,
+        "width": 697,
+        "height": 562
+      },
+      "sourceScale": 0.46168958742632615,
+      "sourceAnchor": {
+        "x": 331,
+        "y": 536
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8933448791503906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 163,
+        "top": 99,
+        "right": 449,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 185,
+        "top": 102,
+        "right": 408,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/idle-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 562,
+        "width": 705,
+        "height": 560
+      },
+      "sourceScale": 0.46168958742632615,
+      "sourceAnchor": {
+        "x": 347,
+        "y": 535
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8935127258300781,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 138,
+        "top": 97,
+        "right": 444,
+        "bottom": 342
+      },
+      "visibleBounds": {
+        "left": 185,
+        "top": 102,
+        "right": 408,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/idle-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 705,
+        "y": 562,
+        "width": 697,
+        "height": 560
+      },
+      "sourceScale": 0.46168958742632615,
+      "sourceAnchor": {
+        "x": 330,
+        "y": 535
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/obsidian-soldier/idle/preview.gif",
+  "action": null
+}

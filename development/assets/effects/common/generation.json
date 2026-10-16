@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-16",
+  "mode": "built-in image_gen",
+  "useCase": "stylized-concept",
+  "specs": [
+    {
+      "id": "aura",
+      "prompt": "Use case: stylized-concept. Asset type: production transparent PNG sprite sheet for a pixel-art fantasy idle RPG. Create ONE magical luminous aura animation, four sequential frames in a precise 2 by 2 grid on a 1024 by 1024 transparent canvas; each 512 by 512 cell is one animation frame. Centers at (256,256), (768,256), (256,768), (768,768). Each aura fits inside a 420 by 420 box with transparent margin and identical center. Frame order top-left, top-right, bottom-left, bottom-right: dim gathering radiance, bright swelling light, brightest full bloom, settling radiance returning to first frame. White and very pale silver monochrome, designed for runtime color tinting. Hand drawn pixel art, small clustered pixels, dithered feathered alpha, irregular wispy energy edges and textured inner radiance with a solid bright center. Circular overall silhouette, no outline, no hard geometric rings. No characters, no text, no cell borders, no floor, no checkerboard. Real transparent background. Preserve clean empty gutters."
+    },
+    {
+      "id": "ring",
+      "prompt": "Use case: stylized-concept. Asset type: production transparent PNG sprite sheet for a pixel-art fantasy idle RPG. Create ONE looping magical shockwave ring animation, four sequential frames in a precise 2 by 2 grid on a 1024 by 1024 transparent canvas; each 512 by 512 cell is one animation frame, centers (256,256), (768,256), (256,768), (768,768). Every frame keeps the same ring center and outer diameter 410 pixels. Ring is face-on, suitable to flatten into a ground ellipse at runtime. White and pale silver monochrome for color tinting. A beautiful ragged ribbon of mystical energy with jagged pixel flame edges, flecks of sparks and broken crystalline highlights. Fully transparent hollow center roughly 280 pixels diameter, transparent exterior. Four phases of energy traveling clockwise around the ring, natural loop last to first. Crisp hand crafted pixel art with stepped silhouettes and subtle dithered alpha. No mechanical perfect geometric outlines, no runic lettering, no characters, no text, no grid lines, no black ground, no checkerboard. Everything stays inside its cell with transparent margin."
+    },
+    {
+      "id": "mote",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent pixel art animation sprite sheet. A tiny brilliant white magical spark, with an irregular six-point star core and a few flecks, usable as fantasy combat particle and star projectile. Four sequential twinkling frames in a 2x2 grid. Each entire sprite must occupy only the central HALF of its quadrant; leave extremely wide empty transparent gutters between sprites and the whole canvas outer edges. Every sprite stays completely isolated. Centered in each cell, identical scale and alignment: bright small star, opening glint, large bright glint, settling small glint. Monochrome white and silver, crisp clustered pixel art, beautiful stepped sparkle silhouette, no square particle blocks, no text, no checkerboard, no background. Real alpha transparency. No cropping."
+    },
+    {
+      "id": "streak",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent pixel art animation sprite sheet of a horizontal energy trail. Four sequential frames in a 2x2 grid. A narrow luminous white and silver ribbon travels LEFT TO RIGHT, with a bright tapered point at the RIGHT and wispy split fading tails on the LEFT. Designed for projectile tails, sword movement trails and healing tethers. Each horizontal sprite is centered in its cell and fits within the middle 65 percent cell width and middle 25 percent height, with very generous transparent margins. Four phases of flowing light: gather, stretch, bright, fade, same overall size and position. Crisp textured pixel art, stepped edges, luminous core already painted into the texture. No characters, no text, no grid lines, no checkerboard. Real transparent background, no cropped ends."
+    },
+    {
+      "id": "lightning",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent pixel art animation sprite sheet of horizontal magical lightning. Four sequential frames in a 2x2 grid. Every bolt goes from LEFT to RIGHT, from x about 20 percent to 80 percent of its own cell; centered vertically within middle HALF cell height. Wide transparent gutters and wide outer canvas margins. Single jagged lightning bolt with branching small fractures, blazing white core and silver edges, monochrome for tinting. Four flickering phases sharing endpoints and center. Detailed crisp pixel art with clustered stepped pixels and little sparks. No text, no grid, no opaque ground, no checkerboard, no crop. True alpha transparency."
+    },
+    {
+      "id": "portal",
+      "prompt": "Use case: stylized-concept. Asset type: ONE fantasy spatial portal animation sprite sheet on real transparent background. Four looping frames in a precise 2x2 grid. Each circular portal must fit completely inside the central 65 percent of its quadrant with huge transparent gutters around it and around the outer canvas. Same center and diameter every frame. Face-on round dimensional vortex, dark opaque midnight-violet INNER DISC surrounded by a luminous silver-white ragged crystalline rim, swirling pale energy threads and wispy lightning. Four sequential phases of the inner spiral rotating clockwise, last connects to first. The rim may flicker but stays aligned. Used for opening dimensional gates and framing ghostly boss reflections. Pixel art fantasy game style, crisp clustered pixels, stepped silhouettes. Neutral mostly white and pale silver rim, dark low-saturation violet center to allow runtime hue tinting. No floor, no characters, no text, no checkerboard, no crop."
+    }
+  ],
+  "repairs": [
+    {
+      "id": "aura",
+      "path": "source/aura-layout-v1.png",
+      "prompt": "Edit target: this 2 by 2 four-frame luminous aura sprite sheet. Preserve the four aura forms, monochrome pixel art and real transparency. Repair ONLY the layout: shrink every individual aura to 60 percent of its current size and center it precisely in its own quadrant. Add very wide clean fully transparent gutters between all four frames and fully transparent outer canvas margins. Every aura including ALL sparks and wisps must be comfortably inside its own quadrant and must not touch its quadrant boundary. No overlap. Keep four aligned frames at identical scale, all intact with no cropped edges. Transparent background, no grid, no text."
+    },
+    {
+      "id": "ring",
+      "path": "source/ring-layout-v1.png",
+      "prompt": "Edit target: this 2 by 2 four-frame energy ring sprite sheet. Preserve four ring forms, empty transparent holes, white silver pixel art and real transparency. Repair ONLY the layout: shrink every individual ring to 60 percent of its current size and center it precisely in its own quadrant. Add very wide clean fully transparent gutters between all four frames and fully transparent outer canvas margins. Every ring including ALL sparks and wisps must be comfortably inside its own quadrant, never touching quadrant boundaries. No overlap. Keep four aligned frames at identical scale, all intact with no cropped edges. Transparent background, no grid, no text."
+    },
+    {
+      "id": "portal",
+      "path": "source/portal-layout-v1.png",
+      "prompt": "Edit target: this 2x2 portal animation sheet. Preserve all four portal paintings and inner dark spirals, pixel art, centers and four frame order. Remove the broad diffuse outer fog/glow completely, leaving ONLY the intact sharply defined crystalline portal rims, their little lightning wisps, and dark inner discs, each cleanly isolated on true transparency. Shrink all four portals to 65 percent of their current size centered in their respective quadrants, with huge empty transparent margins. No pixel from any frame touches a quadrant boundary or canvas boundary. No checkerboard, no text, no new objects. Identical scale and alignment for all four frames."
+    }
+  ],
+  "selected": [
+    {
+      "id": "aura",
+      "source": "source/aura.png"
+    },
+    {
+      "id": "ring",
+      "source": "source/ring.png"
+    },
+    {
+      "id": "mote",
+      "source": "source/mote.png"
+    },
+    {
+      "id": "streak",
+      "source": "source/streak.png"
+    },
+    {
+      "id": "lightning",
+      "source": "source/lightning.png"
+    },
+    {
+      "id": "portal",
+      "source": "source/portal.png"
+    }
+  ],
+  "transparentBackground": true
+}

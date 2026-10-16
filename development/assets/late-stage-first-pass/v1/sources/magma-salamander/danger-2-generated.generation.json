@@ -1,0 +1,33 @@
+{
+  "id": "magma-salamander/danger-2",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "motion": "danger-2",
+  "label": "灼熱大扇",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "source": "sources/magma-salamander/danger-2-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 灼熱大扇 by マグマサラマンダー EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: neck (340,530) pulls (410,480), chest swells and fins brighten, jaw sweeps left-down (230,570), returns. Four grounded legs. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "fire-fan",
+    "burn"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-dc4bcc26-c3d2-4b91-b5fa-81d0e3fe30b8.png",
+  "sha256": "ee2177f18cf4907d76fa36989cc2e38590ae2fbbc79403af95882649e79a3489",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "胸と喉が明るくなり、左下へ口を開く強い火炎の構え。"
+    ],
+    "issues": [
+      "溜めで胸が大きく伸び、首を引く動きより上体を起こす動きが強い。基準体格と専用の首の軌道を合わせる。",
+      "広い火炎扇の発射点を口に合わせる。"
+    ]
+  }
+}

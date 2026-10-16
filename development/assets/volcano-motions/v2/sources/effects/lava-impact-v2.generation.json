@@ -1,0 +1,19 @@
+{
+  "id": "effects/lava-impact",
+  "source": "sources/effects/lava-impact-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. violent low volcanic impact, black basalt chunks fly outward, orange lava splashes upward, elliptical red-black ground rim. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else. TL very small initial ground splash; TR expanding medium low splash; BL maximum basalt and lava impact but height low; BR only5-8 tiny dim basalt/ember particles, NO floor and NO pool. Entire peak fits within central70% of cell.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "c96398bbf02fee7d558c5afd33b756b5d5893b019bee1ebd42aa3579861da1ac",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/lava-impact-generated.png",
+  "issues": [
+    "最大コマで岩片がセル境界へ迫る。原画の余白を確認する。",
+    "低い岩床が全コマに残る。着弾の消失と別の残留床への切り替えを検収する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

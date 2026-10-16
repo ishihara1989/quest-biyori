@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-tusk-mammoth",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "ice-tusk-mammoth-move.png",
+  "preview": "../../../../../../development/assets/enemies/ice-tusk-mammoth/motions/move/ice-tusk-mammoth-move-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/SINGLE-TROT-PROMPTS.md",
+  "width": 4080,
+  "height": 450,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 680,
+  "frameHeight": 450,
+  "frameCount": 6,
+  "pivot": {
+    "x": 381,
+    "y": 428
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-tusk-mammoth/move.png",
+  "sourceScale": 0.2694610778443114,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/single-trot.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 215,
+        "top": 159,
+        "right": 541,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 2005,
+        "height": 2005
+      },
+      "sourceAnchor": {
+        "x": 665,
+        "y": 1148.8333333333335
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 680,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 217,
+        "top": 159,
+        "right": 539,
+        "bottom": 427
+      },
+      "sourceCell": {
+        "x": 2005,
+        "y": 0,
+        "width": 2005,
+        "height": 2005
+      },
+      "sourceAnchor": {
+        "x": 648,
+        "y": 1145.8333333333335
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1360,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 204,
+        "top": 159,
+        "right": 551,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 2005,
+        "width": 2005,
+        "height": 2005
+      },
+      "sourceAnchor": {
+        "x": 865.5,
+        "y": 1389.8333333333335
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 2040,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 204,
+        "top": 159,
+        "right": 551,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 2005,
+        "y": 2005,
+        "width": 2005,
+        "height": 2005
+      },
+      "sourceAnchor": {
+        "x": 1015,
+        "y": 1536.8333333333335
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2720,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 213,
+        "top": 159,
+        "right": 542,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 4010,
+        "width": 2005,
+        "height": 2005
+      },
+      "sourceAnchor": {
+        "x": 659,
+        "y": 1146.8333333333335
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 3400,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 213,
+        "top": 159,
+        "right": 542,
+        "bottom": 427
+      },
+      "sourceCell": {
+        "x": 2005,
+        "y": 4010,
+        "width": 2005,
+        "height": 2005
+      },
+      "sourceAnchor": {
+        "x": 661,
+        "y": 1170.8333333333335
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/move-frame-1-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/move-frame-2-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/move-frame-3-generated-v3.png",
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/move-frame-4-generated-v3.png",
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/move-frame-5-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/move-frame-6-generated-v2.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 0.9756572541382668
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.336
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.5729984301412874
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 0.9940476190476191
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 0.9970149253731343
+    }
+  ],
+  "action": null,
+  "animationPhases": null,
+  "walkCycle": {
+    "gait": "trot",
+    "parts": 6,
+    "framesPerPart": 1,
+    "durationMs": 720,
+    "diagonalPairs": [
+      [
+        "LH",
+        "RF"
+      ],
+      [
+        "LF",
+        "RH"
+      ]
+    ],
+    "coordinateGuide": "../../../../../../development/assets/glacier-motions/guides/ice-tusk-mammoth/coordinates.json"
+  }
+}

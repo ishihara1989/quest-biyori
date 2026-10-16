@@ -1,0 +1,27 @@
+{
+  "id": "effects/bite-impact",
+  "effect": "bite-impact",
+  "region": "volcano",
+  "label": "灼牙の衝撃",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/bite-impact-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. two jagged incandescent fang streaks converge into a bright orange-white impact, basalt chips and embers. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-bfc68d06-a50e-4cb3-810c-3d5e7e3e63a7.png",
+  "sha256": "c226861c9724a8ad7e71b5c85e6a2492821ec5de88c3dc8605521fe5148e900c",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "2つの牙光が集まり、最大衝撃と岩片を表現。"
+    ],
+    "issues": [
+      "赤橙の背景光が広範囲に混入。透明な空隙を含めて背景分離する。",
+      "最終コマが左右に開いた大きな光のまま。収束・消失への接続を確認する。"
+    ]
+  }
+}

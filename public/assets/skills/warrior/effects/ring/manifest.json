@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "ring",
+  "sheet": "ring.png",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "width": 1024,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "durationMs": 400,
+  "loop": false,
+  "pivot": {
+    "x": 128,
+    "y": 170
+  },
+  "sampling": "nearest-neighbor",
+  "generation": "built-in image_gen; 4 frames in 2x2; preserve generated alpha",
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 100
+    },
+    {
+      "index": 1,
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 100
+    },
+    {
+      "index": 2,
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 100
+    },
+    {
+      "index": 3,
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 100
+    }
+  ],
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

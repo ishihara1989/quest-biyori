@@ -1,0 +1,1197 @@
+[
+  {
+    "id": "parts/throne",
+    "kind": "component",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "loop": false,
+    "frames": [
+      {
+        "index": 1,
+        "file": "review/parts/throne/frame-01.png",
+        "source": "source/parts/throne.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "extractionWindow": null,
+        "durationMs": 160,
+        "description": "EMPTY ivory-gold crescent throne with navy cushions. No woman, hair, dress, small crown or large circular halo.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.8093494756174182,
+        "edgePixels": 0,
+        "bounds": [
+          308,
+          322,
+          946,
+          996
+        ],
+        "marginFraction": 0.20494417862838915
+      }
+    ],
+    "sources": [
+      "source/parts/throne.png"
+    ],
+    "expectedFrames": 1,
+    "missingFrames": [],
+    "complete": true,
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+    "contact": "review/parts/throne/contact.png",
+    "gif": "review/parts/throne/preview.gif"
+  },
+  {
+    "id": "parts/halo",
+    "kind": "component",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      268,
+      156
+    ],
+    "loop": false,
+    "frames": [
+      {
+        "index": 1,
+        "file": "review/parts/halo/frame-01.png",
+        "source": "source/parts/halo.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "extractionWindow": null,
+        "durationMs": 160,
+        "description": "Three rigid broken gold celestial rings with cyan nodes, no feathers, no body or chair.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.8580364206151162,
+        "edgePixels": 0,
+        "bounds": [
+          178,
+          195,
+          1076,
+          1048
+        ],
+        "marginFraction": 0.14114832535885166
+      }
+    ],
+    "sources": [
+      "source/parts/halo.png"
+    ],
+    "expectedFrames": 1,
+    "missingFrames": [],
+    "complete": true,
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+    "contact": "review/parts/halo/contact.png",
+    "gif": "review/parts/halo/preview.gif"
+  },
+  {
+    "id": "motions/p1-shot",
+    "kind": "motion",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "loop": false,
+    "frames": [
+      {
+        "index": 1,
+        "file": "review/motions/p1-shot/frame-01.png",
+        "source": "source/motions/p1-shot.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "extractionWindow": null,
+        "durationMs": 100,
+        "description": "Right-on-screen hand (392,288), neutral.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.6748599060359323,
+        "edgePixels": 0,
+        "bounds": [
+          100,
+          116,
+          551,
+          556
+        ],
+        "marginFraction": 0.11164274322169059
+      },
+      {
+        "index": 2,
+        "file": "review/motions/p1-shot/frame-02.png",
+        "source": "source/motions/p1-shot.png",
+        "cellRect": {
+          "left": 627,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "sourceRect": {
+          "left": 627,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "extractionWindow": null,
+        "durationMs": 120,
+        "description": "R=(367,270), prepare finger flick.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.6740815355773805,
+        "edgePixels": 0,
+        "bounds": [
+          100,
+          116,
+          551,
+          556
+        ],
+        "marginFraction": 0.11164274322169059
+      },
+      {
+        "index": 3,
+        "file": "review/motions/p1-shot/frame-03.png",
+        "source": "source/motions/p1-shot.png",
+        "cellRect": {
+          "left": 0,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "extractionWindow": null,
+        "durationMs": 100,
+        "description": "R=(344,260), flick toward LEFT, emission pose; no drawn projectile.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.6549783913168451,
+        "edgePixels": 0,
+        "bounds": [
+          100,
+          114,
+          559,
+          556
+        ],
+        "marginFraction": 0.10685805422647528
+      },
+      {
+        "index": 4,
+        "file": "review/motions/p1-shot/frame-04.png",
+        "source": "source/motions/p1-shot.png",
+        "cellRect": {
+          "left": 627,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "sourceRect": {
+          "left": 627,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "extractionWindow": null,
+        "durationMs": 160,
+        "description": "R=(392,288), original neutral.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.6572219296973767,
+        "edgePixels": 0,
+        "bounds": [
+          100,
+          115,
+          551,
+          556
+        ],
+        "marginFraction": 0.11164274322169059
+      }
+    ],
+    "sources": [
+      "source/motions/p1-shot.png"
+    ],
+    "expectedFrames": 4,
+    "missingFrames": [],
+    "complete": true,
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+    "contact": "review/motions/p1-shot/contact.png",
+    "gif": "review/motions/p1-shot/preview.gif"
+  },
+  {
+    "id": "motions/p2-cast",
+    "kind": "motion",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "loop": false,
+    "frames": [
+      {
+        "index": 1,
+        "file": "review/motions/p2-cast/frame-01.png",
+        "source": "source/motions/p2-cast-1.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 160,
+        "description": "L/R=(170,244)/(352,260), neutral.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.6209364793504472,
+        "edgePixels": 0,
+        "bounds": [
+          135,
+          100,
+          706,
+          654
+        ],
+        "marginFraction": 0.023480662983425413
+      },
+      {
+        "index": 2,
+        "file": "review/motions/p2-cast/frame-02.png",
+        "source": "source/motions/p2-cast-1.png",
+        "cellRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 160,
+        "description": "L/R=(216,222)/(309,222), gather palms inward.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.6308587192088153,
+        "edgePixels": 0,
+        "bounds": [
+          106,
+          100,
+          656,
+          654
+        ],
+        "marginFraction": 0.0925414364640884
+      },
+      {
+        "index": 3,
+        "file": "review/motions/p2-cast/frame-03.png",
+        "source": "source/motions/p2-cast-1.png",
+        "cellRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(238,209)/(286,209), palms close before chest, HOLD-ready.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.6355842312505723,
+        "edgePixels": 0,
+        "bounds": [
+          70,
+          101,
+          611,
+          654
+        ],
+        "marginFraction": 0.09530386740331492
+      },
+      {
+        "index": 4,
+        "file": "review/motions/p2-cast/frame-04.png",
+        "source": "source/motions/p2-cast-2-r3.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 96,
+          "top": 96,
+          "width": 532,
+          "height": 532
+        },
+        "extractionWindow": {
+          "left": 96,
+          "top": 96,
+          "width": 532,
+          "height": 532,
+          "reason": "One fixed central window shared by all three cells; correct the common zoom-out and exclude remote gutter lines. No per-pose bounding-box fit or anatomy modification."
+        },
+        "durationMs": 160,
+        "description": "L/R=(157,183)/(367,190), open both arms apart.",
+        "width": 532,
+        "height": 532,
+        "transparentFraction": 0.6017122222850358,
+        "edgePixels": 0,
+        "bounds": [
+          71,
+          79,
+          500,
+          493
+        ],
+        "marginFraction": 0.05827067669172932
+      },
+      {
+        "index": 5,
+        "file": "review/motions/p2-cast/frame-05.png",
+        "source": "source/motions/p2-cast-2-r3.png",
+        "cellRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 820,
+          "top": 96,
+          "width": 532,
+          "height": 532
+        },
+        "extractionWindow": {
+          "left": 96,
+          "top": 96,
+          "width": 532,
+          "height": 532,
+          "reason": "One fixed central window shared by all three cells; correct the common zoom-out and exclude remote gutter lines. No per-pose bounding-box fit or anatomy modification."
+        },
+        "durationMs": 180,
+        "description": "L/R=(136,215)/(386,222), press forward/outward, release.",
+        "width": 532,
+        "height": 532,
+        "transparentFraction": 0.6174140708915145,
+        "edgePixels": 0,
+        "bounds": [
+          70,
+          79,
+          476,
+          493
+        ],
+        "marginFraction": 0.07142857142857142
+      },
+      {
+        "index": 6,
+        "file": "review/motions/p2-cast/frame-06.png",
+        "source": "source/motions/p2-cast-2-r3.png",
+        "cellRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 1544,
+          "top": 96,
+          "width": 532,
+          "height": 532
+        },
+        "extractionWindow": {
+          "left": 96,
+          "top": 96,
+          "width": 532,
+          "height": 532,
+          "reason": "One fixed central window shared by all three cells; correct the common zoom-out and exclude remote gutter lines. No per-pose bounding-box fit or anatomy modification."
+        },
+        "durationMs": 160,
+        "description": "L/R=(170,244)/(352,260), recover idle.",
+        "width": 532,
+        "height": 532,
+        "transparentFraction": 0.6144708575951157,
+        "edgePixels": 0,
+        "bounds": [
+          58,
+          79,
+          470,
+          492
+        ],
+        "marginFraction": 0.07330827067669173
+      }
+    ],
+    "sources": [
+      "source/motions/p2-cast-1.png",
+      "source/motions/p2-cast-2-r3.png"
+    ],
+    "expectedFrames": 6,
+    "missingFrames": [],
+    "complete": true,
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+    "contact": "review/motions/p2-cast/contact.png",
+    "gif": "review/motions/p2-cast/preview.gif"
+  },
+  {
+    "id": "motions/p2-ultimate",
+    "kind": "motion",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "loop": false,
+    "frames": [
+      {
+        "index": 1,
+        "file": "review/motions/p2-ultimate/frame-01.png",
+        "source": "source/motions/p2-ultimate-1-r2.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 160,
+        "description": "L/R=(170,244)/(352,260), neutral.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4490934342663533,
+        "edgePixels": 0,
+        "bounds": [
+          26,
+          20,
+          706,
+          704
+        ],
+        "marginFraction": 0.023480662983425413
+      },
+      {
+        "index": 2,
+        "file": "review/motions/p2-ultimate/frame-02.png",
+        "source": "source/motions/p2-ultimate-1-r2.png",
+        "cellRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(216,211)/(310,211), draw toward chest.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4484905833155276,
+        "edgePixels": 0,
+        "bounds": [
+          27,
+          21,
+          706,
+          704
+        ],
+        "marginFraction": 0.023480662983425413
+      },
+      {
+        "index": 3,
+        "file": "review/motions/p2-ultimate/frame-03.png",
+        "source": "source/motions/p2-ultimate-1-r2.png",
+        "cellRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(238,195)/(286,195), palms close at chest.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.45377506791611977,
+        "edgePixels": 0,
+        "bounds": [
+          26,
+          20,
+          706,
+          703
+        ],
+        "marginFraction": 0.023480662983425413
+      },
+      {
+        "index": 4,
+        "file": "review/motions/p2-ultimate/frame-04.png",
+        "source": "source/motions/p2-ultimate-2.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(240,155)/(284,155), raise together before face.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.470143615884741,
+        "edgePixels": 0,
+        "bounds": [
+          35,
+          45,
+          687,
+          711
+        ],
+        "marginFraction": 0.016574585635359115
+      },
+      {
+        "index": 5,
+        "file": "review/motions/p2-ultimate/frame-05.png",
+        "source": "source/motions/p2-ultimate-2.png",
+        "cellRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(238,121)/(286,121), raise above brow.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4416722627514423,
+        "edgePixels": 0,
+        "bounds": [
+          35,
+          42,
+          696,
+          712
+        ],
+        "marginFraction": 0.015193370165745856
+      },
+      {
+        "index": 6,
+        "file": "review/motions/p2-ultimate/frame-06.png",
+        "source": "source/motions/p2-ultimate-2.png",
+        "cellRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(236,104)/(288,104), palms above head, HOLD-ready.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4528211898293703,
+        "edgePixels": 0,
+        "bounds": [
+          33,
+          10,
+          688,
+          712
+        ],
+        "marginFraction": 0.013812154696132596
+      },
+      {
+        "index": 7,
+        "file": "review/motions/p2-ultimate/frame-07.png",
+        "source": "source/motions/p2-ultimate-3-r2.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(169,167)/(353,167), powerful outward release.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.46075554775495253,
+        "edgePixels": 0,
+        "bounds": [
+          47,
+          24,
+          707,
+          706
+        ],
+        "marginFraction": 0.022099447513812154
+      },
+      {
+        "index": 8,
+        "file": "review/motions/p2-ultimate/frame-08.png",
+        "source": "source/motions/p2-ultimate-3-r2.png",
+        "cellRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(145,220)/(378,220), arms down/out, impact pose.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.5032565397881628,
+        "edgePixels": 0,
+        "bounds": [
+          63,
+          24,
+          691,
+          706
+        ],
+        "marginFraction": 0.023480662983425413
+      },
+      {
+        "index": 9,
+        "file": "review/motions/p2-ultimate/frame-09.png",
+        "source": "source/motions/p2-ultimate-3-r2.png",
+        "cellRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 180,
+        "description": "L/R=(170,244)/(352,260), return to idle.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.5046320319892555,
+        "edgePixels": 0,
+        "bounds": [
+          63,
+          24,
+          690,
+          706
+        ],
+        "marginFraction": 0.023480662983425413
+      }
+    ],
+    "sources": [
+      "source/motions/p2-ultimate-1-r2.png",
+      "source/motions/p2-ultimate-2.png",
+      "source/motions/p2-ultimate-3-r2.png"
+    ],
+    "expectedFrames": 9,
+    "missingFrames": [],
+    "complete": true,
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+    "contact": "review/motions/p2-ultimate/contact.png",
+    "gif": "review/motions/p2-ultimate/preview.gif"
+  },
+  {
+    "id": "motions/down",
+    "kind": "motion",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "loop": false,
+    "frames": [
+      {
+        "index": 1,
+        "file": "review/motions/down/frame-01.png",
+        "source": "source/motions/down.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 612,
+          "height": 642
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 612,
+          "height": 642
+        },
+        "extractionWindow": null,
+        "durationMs": 300,
+        "description": "F1: upright hovering neutral body, gentle satisfied smile, eyes softly open. L/R=(170,244)/(352,260).",
+        "width": 612,
+        "height": 642,
+        "transparentFraction": 0.5752982916946633,
+        "edgePixels": 0,
+        "bounds": [
+          64,
+          87,
+          582,
+          596
+        ],
+        "marginFraction": 0.04738562091503268
+      },
+      {
+        "index": 2,
+        "file": "review/motions/down/frame-02.png",
+        "source": "source/motions/down.png",
+        "cellRect": {
+          "left": 612,
+          "top": 0,
+          "width": 613,
+          "height": 642
+        },
+        "sourceRect": {
+          "left": 612,
+          "top": 0,
+          "width": 613,
+          "height": 642
+        },
+        "extractionWindow": null,
+        "durationMs": 350,
+        "description": "F2: head nods politely by five degrees, eyes gently close, warm contented smile. Torso stays upright, hands relax. No loss of strength.",
+        "width": 613,
+        "height": 642,
+        "transparentFraction": 0.5760190676566399,
+        "edgePixels": 0,
+        "bounds": [
+          56,
+          88,
+          572,
+          597
+        ],
+        "marginFraction": 0.06525285481239804
+      },
+      {
+        "index": 3,
+        "file": "review/motions/down/frame-03.png",
+        "source": "source/motions/down.png",
+        "cellRect": {
+          "left": 0,
+          "top": 642,
+          "width": 612,
+          "height": 642
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 642,
+          "width": 612,
+          "height": 642
+        },
+        "extractionWindow": null,
+        "durationMs": 350,
+        "description": "F3: head upright again, contented smile, screen-right hand rises to shoulder R=(342,190), palm outward in a restrained farewell; L=(180,250).",
+        "width": 612,
+        "height": 642,
+        "transparentFraction": 0.5671079958463136,
+        "edgePixels": 0,
+        "bounds": [
+          69,
+          81,
+          574,
+          584
+        ],
+        "marginFraction": 0.06045751633986928
+      },
+      {
+        "index": 4,
+        "file": "review/motions/down/frame-04.png",
+        "source": "source/motions/down.png",
+        "cellRect": {
+          "left": 612,
+          "top": 642,
+          "width": 613,
+          "height": 642
+        },
+        "sourceRect": {
+          "left": 612,
+          "top": 642,
+          "width": 613,
+          "height": 642
+        },
+        "extractionWindow": null,
+        "durationMs": 800,
+        "description": "F4: the SAME one figure rises 12 virtual pixels, maintains farewell hand and smile, hair/sleeves trail slightly downward. Full opaque body ONLY. Playback will fade this single sprite to zero; do not draw transparency, afterimages, particles or a portal.",
+        "width": 613,
+        "height": 642,
+        "transparentFraction": 0.583263455860306,
+        "edgePixels": 0,
+        "bounds": [
+          66,
+          55,
+          569,
+          551
+        ],
+        "marginFraction": 0.0701468189233279
+      }
+    ],
+    "sources": [
+      "source/motions/down.png"
+    ],
+    "expectedFrames": 4,
+    "missingFrames": [],
+    "complete": true,
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+    "contact": "review/motions/down/contact.png",
+    "gif": "review/motions/down/preview.gif"
+  },
+  {
+    "id": "effects/goddess-return",
+    "kind": "effect",
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      256
+    ],
+    "loop": false,
+    "frames": [
+      {
+        "index": 1,
+        "file": "review/effects/goddess-return/frame-01.png",
+        "source": "source/effects/goddess-return-1.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 150,
+        "description": "F1: a quiet thin vertical gold/cyan oval outline, width130 height300, transparent star-specked interior.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.8739125789811056,
+        "edgePixels": 0,
+        "bounds": [
+          276,
+          149,
+          452,
+          554
+        ],
+        "marginFraction": 0.2058011049723757,
+        "registrationAnchor": [
+          364,
+          351.5
+        ],
+        "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+      },
+      {
+        "index": 2,
+        "file": "review/effects/goddess-return/frame-02.png",
+        "source": "source/effects/goddess-return-1.png",
+        "cellRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 250,
+        "description": "F2: oval opens to width270 height360, a welcoming deep-violet transparent aperture with sparse cyan stars.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.7459059552516712,
+        "edgePixels": 0,
+        "bounds": [
+          191,
+          123,
+          532,
+          582
+        ],
+        "marginFraction": 0.16988950276243095,
+        "registrationAnchor": [
+          361.5,
+          352.5
+        ],
+        "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+      },
+      {
+        "index": 3,
+        "file": "review/effects/goddess-return/frame-03.png",
+        "source": "source/effects/goddess-return-1.png",
+        "cellRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 400,
+        "description": "F3: oval fully open width300 height380, thin luminous gold rim, stable and peaceful.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.6620524404016972,
+        "edgePixels": 0,
+        "bounds": [
+          145,
+          108,
+          573,
+          598
+        ],
+        "marginFraction": 0.14917127071823205,
+        "registrationAnchor": [
+          359,
+          353
+        ],
+        "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+      },
+      {
+        "index": 4,
+        "file": "review/effects/goddess-return/frame-04.png",
+        "source": "source/effects/goddess-return-2.png",
+        "cellRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 650,
+        "description": "F4: same oval remains fully open width300 height380, rim softens slightly; the separate body is departing.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.6896576722322273,
+        "edgePixels": 0,
+        "bounds": [
+          216,
+          133,
+          634,
+          588
+        ],
+        "marginFraction": 0.12292817679558012,
+        "registrationAnchor": [
+          425,
+          360.5
+        ],
+        "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+      },
+      {
+        "index": 5,
+        "file": "review/effects/goddess-return/frame-05.png",
+        "source": "source/effects/goddess-return-2.png",
+        "cellRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 200,
+        "description": "F5: AFTER the separate body is gone, oval narrows to width90 height340, smooth rim draws inward. No cracking or shards.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.839435609413632,
+        "edgePixels": 0,
+        "bounds": [
+          254,
+          149,
+          474,
+          571
+        ],
+        "marginFraction": 0.2058011049723757,
+        "registrationAnchor": [
+          364,
+          360
+        ],
+        "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+      },
+      {
+        "index": 6,
+        "file": "review/effects/goddess-return/frame-06.png",
+        "source": "source/effects/goddess-return-2.png",
+        "cellRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "extractionWindow": null,
+        "durationMs": 150,
+        "description": "F6: one dim thin vertical seam, width6 height90, almost gone. Only this seam, no gems or extra glowing objects. Playback fades it to zero.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9312005891151064,
+        "edgePixels": 0,
+        "bounds": [
+          273,
+          244,
+          387,
+          488
+        ],
+        "marginFraction": 0.324585635359116,
+        "registrationAnchor": [
+          330,
+          366
+        ],
+        "anchorMethod": "measured center of alpha>32 bounds; portal rim visually checked; display placement only"
+      }
+    ],
+    "sources": [
+      "source/effects/goddess-return-1.png",
+      "source/effects/goddess-return-2.png"
+    ],
+    "expectedFrames": 6,
+    "missingFrames": [],
+    "complete": true,
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+    "contact": "review/effects/goddess-return/contact.png",
+    "gif": "review/effects/goddess-return/preview.gif"
+  }
+]

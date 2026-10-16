@@ -1,0 +1,18 @@
+{
+  "id": "effects/summon-gate",
+  "source": "summon-gate-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame single SUMMON GATE VFX, separate arch-demon spell for a pixel-art JRPG.\nUse reference for dark-violet/crimson fire, black-and-gold pointed oval gate frame and gold-red ground seal. Correct the changing frame size. Exactly FOUR complete SMALL gates in a 2x2 sprite sheet, same scale, fixed geometry, wide transparent gutters, all sparks and crown tips inside central 60% of each cell.\nNormalized geometry per cell 0..1000 is IDENTICAL in all frames: tall oval outer frame centered (500,490), outer radii (170,245), top gold finial at (500,210), bottom frame rests at (500,735). Ground ellipse center (500,740), radii (230,45). Entire effect stays x=230..770,y=180..820. Opening inside oval stays fully transparent so an imp can be seen through it. No opaque disc, backdrop, floor or new character.\nFrame 1: fixed complete thin black/gold oval frame and finial faintly lit, a few tiny red-violet edge embers; opening clear.\nFrame 2: SAME frame shape, width and height, inner crimson/violet rim brightens to open the portal. Tiny gold rim details become bright; aperture remains transparent.\nFrame 3: SAME frame geometry at maximum power, bright flowing magenta inside the rim and 6 small embers confined near outer frame. No giant growing halo, lightning branches or increased frame size. Gold ground seal stays same position and size.\nFrame 4: SAME frame geometry dims and dissolves into sparse rim fragments, no intact bright portal after this frame. Ground seal fades. Stop and hide after frame 4.\nAll frames fixed outer finial and ellipse coordinates. No expanding or contracting oval, extra ring, horned monster face, character, tall pillar or floor platform.\nRefined crisp JRPG pixel clusters, stepped edges and exact reference palette. Genuine transparent alpha outside frame, flames and sigil strokes AND inside the empty portal. No background glow sheet, text, labels, borders, grid, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-b2453263-6b7b-40ac-a995-38f50a211774.png",
+  "sha256": "699ef6f488ffa9fd1d397d137e48e10cdef40619833c1d9c666c4aa1476298bb",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/sources/effects/summon-gate-generated.png",
+      "sha256": "062a55c13b95e6ffcfe180972ed95eae79b52c91e77ed400089f404e571c3263"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "summon-gate-v2.prompt.txt"
+}

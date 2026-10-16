@@ -1,0 +1,42 @@
+{
+  "bat-fang": {
+    "source": "../development/assets/ui/expansion/source/bat-fang-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "worm-shell": {
+    "source": "../development/assets/ui/expansion/source/worm-shell-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "spider-silk": {
+    "source": "../development/assets/ui/expansion/source/spider-silk-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "cave-crystal": {
+    "source": "../development/assets/ui/expansion/source/cave-crystal-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "troll-stone": {
+    "source": "../development/assets/ui/expansion/source/troll-stone-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "crab-shell": {
+    "source": "../development/assets/ui/expansion/source/crab-shell-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "lizard-scale": {
+    "source": "../development/assets/ui/expansion/source/lizard-scale-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "octopus-ink": {
+    "source": "../development/assets/ui/expansion/source/octopus-ink-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "coast-crystal": {
+    "source": "../development/assets/ui/expansion/source/coast-crystal-generated.png",
+    "dedicatedGenerationPending": false
+  },
+  "kraken-pearl": {
+    "source": "../development/assets/ui/expansion/source/kraken-pearl-generated.png",
+    "dedicatedGenerationPending": false
+  }
+}

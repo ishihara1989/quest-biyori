@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "id": "summon-forward",
+  "character": "miko",
+  "subject": "summon-forward",
+  "group": "miko",
+  "motion": "motion",
+  "sheet": "summon-forward-motion.png",
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 300,
+  "loop": false,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.218,
+  "frames": [
+    {
+      "index": 0,
+      "file": "summon-forward-motion-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "motion",
+      "bounds": {
+        "l": 130,
+        "t": 47,
+        "r": 239,
+        "b": 239,
+        "n": 11242,
+        "width": 110,
+        "height": 193
+      }
+    },
+    {
+      "index": 1,
+      "file": "summon-forward-motion-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "motion",
+      "bounds": {
+        "l": 73,
+        "t": 99,
+        "r": 264,
+        "b": 239,
+        "n": 12100,
+        "width": 192,
+        "height": 141
+      }
+    },
+    {
+      "index": 2,
+      "file": "summon-forward-motion-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "motion",
+      "bounds": {
+        "l": 72,
+        "t": 97,
+        "r": 224,
+        "b": 239,
+        "n": 11656,
+        "width": 153,
+        "height": 143
+      }
+    }
+  ],
+  "source": "../../../../../development/assets/skills/miko/source/summon-forward-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/idle-01.png",
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/motions/prayer/prayer-04.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-15 JST",
+  "productionReviewComplete": true,
+  "runtimeRegistered": false,
+  "bodies": [
+    {
+      "id": "demon-armored-soldier",
+      "label": "魔鎧兵",
+      "clips": [
+        "demon-armored-soldier/idle",
+        "demon-armored-soldier/move",
+        "demon-armored-soldier/hit",
+        "demon-armored-soldier/down",
+        "demon-armored-soldier/attack",
+        "demon-armored-soldier/danger-1"
+      ],
+      "frames": 22
+    },
+    {
+      "id": "imp",
+      "label": "インプ",
+      "clips": [
+        "imp/idle",
+        "imp/move",
+        "imp/hit",
+        "imp/down",
+        "imp/attack",
+        "imp/danger-1"
+      ],
+      "frames": 20
+    },
+    {
+      "id": "dream-demon",
+      "label": "夢魔",
+      "clips": [
+        "dream-demon/idle",
+        "dream-demon/move",
+        "dream-demon/hit",
+        "dream-demon/down",
+        "dream-demon/attack",
+        "dream-demon/danger-1"
+      ],
+      "frames": 20
+    },
+    {
+      "id": "black-knight",
+      "label": "黒騎士",
+      "clips": [
+        "black-knight/idle",
+        "black-knight/move",
+        "black-knight/hit",
+        "black-knight/down",
+        "black-knight/attack",
+        "black-knight/danger-1",
+        "black-knight/danger-2"
+      ],
+      "frames": 26
+    },
+    {
+      "id": "arch-demon",
+      "label": "アークデーモン",
+      "clips": [
+        "arch-demon/idle",
+        "arch-demon/move",
+        "arch-demon/hit",
+        "arch-demon/down",
+        "arch-demon/attack",
+        "arch-demon/danger-1",
+        "arch-demon/danger-2"
+      ],
+      "frames": 26
+    },
+    {
+      "id": "lilith",
+      "label": "リリス",
+      "clips": [
+        "lilith/idle",
+        "lilith/move",
+        "lilith/hit",
+        "lilith/down",
+        "lilith/attack",
+        "lilith/danger-1",
+        "lilith/danger-2"
+      ],
+      "frames": 24
+    }
+  ],
+  "effects": [
+    "dark-slash",
+    "royal-cleave",
+    "black-ring-slash",
+    "curse-orb",
+    "curse-impact",
+    "sleep-moon",
+    "demon-pillar",
+    "summon-gate",
+    "dark-flower",
+    "silence-seal",
+    "demon-impact",
+    "end-cross",
+    "end-ring",
+    "curse",
+    "armor-break",
+    "burn",
+    "claw-arc"
+  ],
+  "totalClips": 56,
+  "totalFrames": 205,
+  "newGeneratedSheets": 25,
+  "rateLimitReached": false,
+  "preservedDemonGod": {
+    "reference": "../../demon-god-redesign/v2/references/demon-god.png",
+    "review": "../../demon-god-redesign/v2/review-notes.json",
+    "clips": 9,
+    "frames": 32,
+    "unchanged": true
+  }
+}

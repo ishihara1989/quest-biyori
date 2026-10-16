@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "manticore",
+  "motion": "venom",
+  "facing": "left",
+  "label": "毒尾の扇射",
+  "sheet": "manticore-venom.png",
+  "preview": "manticore-venom-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 3200,
+  "height": 580,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 800,
+  "frameHeight": 580,
+  "frameCount": 4,
+  "pivot": {
+    "x": 456,
+    "y": 556
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../registered/venom.png",
+  "sourceScale": 0.7261410788381742,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "venom",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "projectile",
+      "angleDeg": -18
+    },
+    {
+      "effect": "venom",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "projectile",
+      "angleDeg": 0
+    },
+    {
+      "effect": "venom",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "projectile",
+      "angleDeg": 18
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "venom-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 230,
+        "top": 207,
+        "right": 692,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 840,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 434,
+        "y": 559
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "venom-02.png",
+      "x": 800,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 244,
+        "top": 189,
+        "right": 654,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 840,
+        "y": 0,
+        "width": 840,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 372,
+        "y": 557
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "venom-03.png",
+      "x": 1600,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 144,
+        "top": 199,
+        "right": 692,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 606,
+        "width": 840,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 461,
+        "y": 540
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "venom-04.png",
+      "x": 2400,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 227,
+        "top": 206,
+        "right": 685,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 840,
+        "y": 606,
+        "width": 840,
+        "height": 606
+      },
+      "sourceAnchor": {
+        "x": 369,
+        "y": 540
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/manticore.png",
+  "originalSources": [
+    "../../../../sources/manticore/venom-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 778,
+          "height": 553
+        },
+        {
+          "x": 778,
+          "y": 0,
+          "width": 653,
+          "height": 553
+        },
+        {
+          "x": 0,
+          "y": 553,
+          "width": 778,
+          "height": 546
+        },
+        {
+          "x": 778,
+          "y": 553,
+          "width": 653,
+          "height": 546
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.0387931034482758,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [
+    {
+      "id": "venom",
+      "manifest": "../../../../effects/venom/manifest.json"
+    }
+  ]
+}

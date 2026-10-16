@@ -1,0 +1,186 @@
+{
+  "id": "castle-black-ring",
+  "label": "黒環薙ぎ・円弧",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "arc",
+  "origin": "first-pass",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 80,
+      "phase": "発生",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/black-ring-slash-generated.png",
+      "sourceSha256": "e8a1835f803b07064e7e8a278f0de222ed704b7ce13dea886ee404c47db8fb53",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 720,
+        "height": 457
+      },
+      "sourceAnchor": [
+        377.24,
+        218.5
+      ],
+      "scale": 0.43,
+      "pivot": [
+        350,
+        256
+      ],
+      "sha256": "b138feb574dc03115d091f48a2deeeaa2d2b4aea9fd09341c3059f1e66f17054",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9567909240722656,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 198,
+        "top": 166,
+        "right": 498,
+        "bottom": 359
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "phase": "展開",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/black-ring-slash-generated.png",
+      "sourceSha256": "e8a1835f803b07064e7e8a278f0de222ed704b7ce13dea886ee404c47db8fb53",
+      "sourceRect": {
+        "left": 720,
+        "top": 0,
+        "width": 816,
+        "height": 457
+      },
+      "sourceAnchor": [
+        552.5999999999999,
+        231.5
+      ],
+      "scale": 0.43,
+      "pivot": [
+        350,
+        256
+      ],
+      "sha256": "5061c0e0c32eb6e1ffc44eb68dc0b95d68a283b0f704bc711340155aa7209051",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9021492004394531,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 112,
+        "top": 156,
+        "right": 455,
+        "bottom": 353
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "最大",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/black-ring-slash-generated.png",
+      "sourceSha256": "e8a1835f803b07064e7e8a278f0de222ed704b7ce13dea886ee404c47db8fb53",
+      "sourceRect": {
+        "left": 0,
+        "top": 457,
+        "width": 843,
+        "height": 567
+      },
+      "sourceAnchor": [
+        583.72,
+        274
+      ],
+      "scale": 0.43,
+      "pivot": [
+        350,
+        256
+      ],
+      "sha256": "afb1f2a23b45f2dd7eef58d5191dea0afd7c88520bf5c633bce6c6f9cdf31faa",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8031158447265625,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 105,
+        "top": 138,
+        "right": 461,
+        "bottom": 376
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "収束",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/black-ring-slash-generated.png",
+      "sourceSha256": "e8a1835f803b07064e7e8a278f0de222ed704b7ce13dea886ee404c47db8fb53",
+      "sourceRect": {
+        "left": 843,
+        "top": 457,
+        "width": 693,
+        "height": 567
+      },
+      "sourceAnchor": [
+        461,
+        295.5
+      ],
+      "scale": 0.43,
+      "pivot": [
+        350,
+        256
+      ],
+      "sha256": "97fa6f320f914898e975169bb5d152ba05a3178cb472e9c72b6b9a0a4000f728",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9185371398925781,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 152,
+        "top": 129,
+        "right": 450,
+        "bottom": 373
+      }
+    }
+  ],
+  "fingerprint": "56e1794d77f761dde331259f5e9ac1bb7a11bb098c43708691307bba1f6484cb",
+  "events": [],
+  "pivot": {
+    "x": 350,
+    "y": 256
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 520,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/black-ring-slash/manifest.json",
+  "sourceFingerprint": "56e1794d77f761dde331259f5e9ac1bb7a11bb098c43708691307bba1f6484cb",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "young-fire-dragon/attack",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "motion": "attack",
+  "label": "爪撃",
+  "effects": [
+    "claw-arc"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/young-fire-dragon/attack-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "幼火竜",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 69,
+        "top": 179,
+        "right": 613,
+        "bottom": 557
+      },
+      "sourceWidth": 647,
+      "sourceHeight": 619,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 250891,
+      "transparentFraction": 0.6264553937272311
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 32,
+        "top": 100,
+        "right": 589,
+        "bottom": 560
+      },
+      "sourceWidth": 630,
+      "sourceHeight": 619,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 218070,
+      "transparentFraction": 0.5591968612970228
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 47,
+        "top": 58,
+        "right": 657,
+        "bottom": 483
+      },
+      "sourceWidth": 676,
+      "sourceHeight": 612,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 239234,
+      "transparentFraction": 0.5782621727191863
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 18,
+        "top": 103,
+        "right": 578,
+        "bottom": 487
+      },
+      "sourceWidth": 601,
+      "sourceHeight": 612,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 212318,
+      "transparentFraction": 0.577245984361576
+    }
+  ],
+  "reference": "../../../references/young-fire-dragon.png",
+  "originalSources": [
+    "../../../sources/young-fire-dragon/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

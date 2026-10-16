@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ja">
+<head><base href="/"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>装備アイコン</title>
+<script src="/js/ui/equipment-visuals.js"></script>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101b17;color:#e5e0c8;font:14px system-ui,sans-serif}main{min-width:2250px;max-width:2400px;padding:24px;margin:auto}h1{font-size:23px;font-weight:500;margin:0 0 20px}header,.row{display:grid;grid-template-columns:115px repeat(11,1fr) 275px;align-items:center;gap:8px}header{padding:0 0 12px;color:#adb59b;font-size:12px}.row{border-top:1px solid #364331;padding:12px 0}.row h2{font-size:15px;font-weight:500}.pair{display:flex;justify-content:center;gap:5px}.item{display:flex;flex-direction:column;align-items:center;gap:3px}.item img{width:72px;height:72px;object-fit:contain;image-rendering:pixelated}.item small{font-size:10px;color:#8f9d82}.branches{display:grid;grid-template-columns:repeat(6,1fr);gap:0}.branches img{width:40px;height:40px;object-fit:contain;image-rendering:pixelated}a{color:#c4b77e;text-decoration:none}footer{margin-top:14px;color:#8f9d82;font-size:11px}@media(max-width:1000px){main{width:2250px}body{overflow:auto}}
+</style></head><body><main><h1>装備アイコン <a href="/game.html">↗</a></h1><header><span></span><span>森</span><span>沼</span><span>洞窟</span><span>海岸</span><span>遺跡</span><span>砂漠</span><span>高原</span><span>氷河</span><span>火山</span><span>魔王城</span><span>女神</span><span>枝・ユニーク / 40px</span></header><div id="gallery"></div><footer>武器・防具それぞれの地域メイン取得で進化</footer></main>
+<script>
+const V=EquipmentVisuals, labels={warrior:'戦士',mage:'魔法使い',paladin:'パラディン',ninja:'忍者',shaman:'呪術師',miko:'巫女'};
+document.getElementById('gallery').innerHTML=Object.entries(V.CLASSES).map(([id,config])=>'<section class="row"><h2>'+labels[id]+'</h2>'+[...V.REGIONS,'goddess'].map((_,i)=>'<div class="pair">'+['weapon','armor'].map(slot=>'<span class="item"><img src="'+V.image(id,slot,i===10?'goddess':i+1)+'" alt="'+labels[id]+(slot==='weapon'?'武器':'防具')+'"><small>'+(slot==='weapon'?'武器':'防具')+'</small></span>').join('')+'</div>').join('')+'<div class="branches">'+['power','tempo','vitality','guard','skill','recovery'].map(role=>'<img src="'+V.image(id,role)+'" alt="'+role+'" title="'+role+'">').join('')+'</div></section>').join('');
+</script></body></html>

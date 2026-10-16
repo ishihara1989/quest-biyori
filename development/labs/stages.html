@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head><base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111317">
+  <title>始まりの森 — Idle RPG Stage Lab</title>
+  <link rel="stylesheet" href="/development/labs/css/sprite-lab.css">
+  <link rel="stylesheet" href="/development/labs/css/stage-lab.css">
+  <script defer src="/development/labs/js/stage-tiling.js"></script>
+  <script defer src="/development/labs/js/stage-lab.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✦</span><span>IDLE RPG <b>STAGE LAB</b></span></a>
+      <nav class="forest-nav" aria-label="素材ページ"><a href="/development/labs/battle.html">戦闘シーン</a><a href="/development/labs/index.html">キャラクター</a><a href="/development/labs/enemies.html">敵キャラクター</a></nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div><p class="eyebrow" id="stage-eyebrow">BATTLE STAGE / STARTING FOREST</p><h1><span id="stage-name">始まりの森</span><span class="version">2 LAYERS</span></h1>
+          <p class="intro-copy" id="stage-summary">木々の奥行きと、広い土のバトルエリア。</p></div>
+        <label class="stage-choice" for="stage-select">背景 <select id="stage-select" disabled><option value="starting-forest">始まりの森</option><option value="poison-swamp">毒の沼地</option><option value="echo-cave">洞窟</option><option value="sunlit-coast">海岸</option></select></label>
+      </section>
+      <section class="forest-panel" aria-label="ステージプレビュー">
+        <div class="panel-heading"><h2><span class="small-dot"></span>ステージプレビュー</h2><span id="forest-state" class="state-label">読み込み中</span></div>
+        <div class="forest-viewport">
+          <canvas id="forest-canvas" width="1024" height="576" tabindex="0" role="img" aria-label="始まりの森。地面をクリックするとキャラクターの接地点を移動できます"></canvas>
+          <p id="forest-status" role="status">背景とキャラクターを読み込んでいます…</p>
+        </div>
+        <fieldset id="forest-controls" disabled>
+          <div class="forest-transport">
+            <button type="button" id="forest-play" class="play-button">スクロール開始</button>
+            <button type="button" id="forest-reset" class="restart-button">開始位置へ</button>
+            <label class="forest-speed" for="forest-speed">速度 <input id="forest-speed" type="range" min="-160" max="160" step="10" value="40"><output id="forest-speed-value">40 px/s</output></label>
+          </div>
+          <div class="forest-settings">
+            <div class="forest-control-group">
+              <label for="forest-camera">横スクロール位置 <output id="forest-camera-value">0 px</output></label>
+              <input id="forest-camera" type="range" min="0" max="4096" step="1" value="0">
+              <div class="forest-toggles">
+                <label><input id="forest-mirror" type="checkbox" checked>左右反転を交互につなぐ</label>
+                <label><input id="forest-parallax" type="checkbox" checked>遠景をゆっくり動かす</label>
+                <label><input id="forest-grid" type="checkbox">移動範囲を表示</label>
+              </div>
+            </div>
+            <div class="forest-control-group">
+              <label for="forest-character">キャラクター <select id="forest-character"><option value="warrior">戦士</option><option value="mage">魔法使い</option><option value="paladin">パラディン</option><option value="ninja">忍者</option><option value="shaman">呪術師</option><option value="miko">巫女</option></select></label>
+              <div class="forest-coordinates"><label for="forest-x">X <input id="forest-x" type="range" min="100" max="924" value="400"><output id="forest-x-value">400</output></label><label for="forest-y">Y <input id="forest-y" type="range" min="323" max="512" value="430"><output id="forest-y-value">430</output></label></div>
+              <div class="forest-toggles"><label><input id="forest-characters" type="checkbox" checked>キャラを表示</label><label><input id="forest-company" type="checkbox" checked>魔法使いとスライムを比較</label></div>
+            </div>
+          </div>
+        </fieldset>
+        <p class="forest-help">地面をクリック・ドラッグして接地点を移動。矢印キーで上下左右、Spaceでスクロールを開始・停止できます。</p>
+      </section>
+      <section class="forest-assets" aria-label="レイヤー素材">
+        <article class="forest-asset"><div class="forest-asset-image"><img src="assets/stages/starting-forest/forest-distant.png" alt="奥に薄くなる木々が広がる森の遠景" width="1672" height="941"></div><div class="forest-asset-copy"><p class="eyebrow">LAYER 01 / DISTANT</p><h2>遠景</h2><p>奥へ薄くなる木々と葉。スクロール速度は地面の0.28倍。</p><a href="assets/stages/starting-forest/forest-distant.png" download>遠景PNGを保存 ↓</a><span>1672 × 941 px</span></div></article>
+        <article class="forest-asset"><div class="forest-asset-image checker"><img src="assets/stages/starting-forest/forest-ground-near.png" alt="上部が透過した木々と、奥行きの広い土の地面" width="1672" height="940"></div><div class="forest-asset-copy"><p class="eyebrow">LAYER 02 / GROUND + NEAR</p><h2>地面＋近景</h2><p>木の間は透過。土の中央を広く空けて、上下移動の余白を確保。</p><a href="assets/stages/starting-forest/forest-ground-near.png" download>地面＋近景PNGを保存 ↓</a><span>1672 × 940 px / RGBA</span></div></article>
+      </section>
+      <div class="forest-notes"><p>左右反転を交互に並べると、同じ端の画素が接するため横方向につながります。同じ向きだけで並べると、生成画像の左右端に小さな差が残ります。</p><p>プレビューの接地点Yは323〜512。キャラクターは足元のY順で重ねています。</p><a id="stage-manifest" href="assets/stages/starting-forest/manifest.json" download>レイヤー・座標情報JSON ↓</a><a id="stage-prompt" href="/development/assets/stages/starting-forest/PROMPT.md">生成プロンプト ↗</a></div>
+    </main>
+    <footer><span><span class="footer-star">✦</span> IDLE RPG / STAGE LAB</span><span id="stage-footer">STARTING FOREST — 01</span></footer>
+  </div>
+</body>
+</html>

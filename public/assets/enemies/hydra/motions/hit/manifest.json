@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hydra",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "hydra-hit.png",
+  "preview": "../../../../../../development/assets/enemies/hydra/motions/hit/hydra-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hydra/PROMPT.md",
+  "width": 2816,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 460,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/hydra/source/hit-registered.png",
+  "sourceScale": 0.659919028340081,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 80,
+      "phase": "待機から",
+      "bounds": {
+        "left": 114,
+        "top": 106,
+        "right": 577,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 749,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 462,
+        "y": 509
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/hydra/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 100,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 169,
+        "top": 107,
+        "right": 571,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 733,
+        "y": 0,
+        "width": 735,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 380,
+        "y": 507
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "hit-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "作用",
+      "bounds": {
+        "left": 134,
+        "top": 103,
+        "right": 570,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 528,
+        "width": 714,
+        "height": 532
+      },
+      "sourceAnchor": {
+        "x": 432,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "hit-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 160,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 114,
+        "top": 106,
+        "right": 577,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 749,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 462,
+        "y": 509
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/hydra/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/hydra/source/hit-five-left-generated-v2.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 164581,
+      "left": 53,
+      "top": 7,
+      "right": 751,
+      "bottom": 500,
+      "cx": 386.8518480261999,
+      "cy": 302.3209848038352
+    },
+    {
+      "id": 2,
+      "count": 159895,
+      "left": 904,
+      "top": 11,
+      "right": 1515,
+      "bottom": 502,
+      "cx": 1212.2187060258295,
+      "cy": 299.9708558741674
+    },
+    {
+      "id": 24,
+      "count": 166959,
+      "left": 90,
+      "top": 514,
+      "right": 751,
+      "bottom": 1011,
+      "cx": 420.61687599949687,
+      "cy": 805.9785096939968
+    },
+    {
+      "id": 25,
+      "count": 167609,
+      "left": 814,
+      "top": 515,
+      "right": 1515,
+      "bottom": 1012,
+      "cx": 1151.2403928190013,
+      "cy": 811.9353077698692
+    }
+  ],
+  "anatomyRevision": {
+    "heads": 5,
+    "facing": "left",
+    "prompt": "../../source/hit-five-left-generated-v2-prompt.txt",
+    "previousSource": "../../../../../../development/assets/enemies/hydra/source/hit-generated.png"
+  },
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

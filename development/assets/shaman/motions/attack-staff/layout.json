@@ -1,0 +1,37 @@
+{
+  "source": "source/shaman-attack-staff-generated-v1.png",
+  "columns": 3,
+  "rows": 1,
+  "scale": 0.2808080808080808,
+  "anchorBasis": "feet",
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 672,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 672,
+        "y": 0,
+        "width": 850,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1522,
+        "y": 0,
+        "width": 650,
+        "height": 724
+      },
+      "anchor": {
+        "x": 220,
+        "y": 659
+      }
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "enemy": "fenrir",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "fenrir-idle.png",
+  "preview": "../../../../../../development/assets/enemies/fenrir/motions/idle/fenrir-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2240,
+  "height": 400,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 560,
+  "frameHeight": 400,
+  "frameCount": 4,
+  "pivot": {
+    "x": 314,
+    "y": 378
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/fenrir/idle.png",
+  "sourceScale": 0.42190305206463197,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 197,
+        "top": 144,
+        "right": 426,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 662,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 560,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 195,
+        "top": 142,
+        "right": 429,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 662,
+        "y": 0,
+        "width": 662,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 336.5,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1120,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 197,
+        "top": 144,
+        "right": 427,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 679,
+        "width": 662,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1680,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 196,
+        "top": 144,
+        "right": 427,
+        "bottom": 377
+      },
+      "sourceCell": {
+        "x": 662,
+        "y": 679,
+        "width": 662,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 334.5,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/fenrir.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 624,
+          "height": 647
+        },
+        {
+          "x": 624,
+          "y": 0,
+          "width": 630,
+          "height": 647
+        },
+        {
+          "x": 0,
+          "y": 647,
+          "width": 626,
+          "height": 607
+        },
+        {
+          "x": 626,
+          "y": 647,
+          "width": 628,
+          "height": 607
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

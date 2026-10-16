@@ -1,0 +1,115 @@
+{
+  "id": "lilith/hit",
+  "label": "リリス・被弾",
+  "enemy": "lilith",
+  "motion": "hit",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "被弾の上体と衣装が大きく傾くため、翼根・髪・手の所属を検収する。",
+    "復帰で裾・翼が横に広い。倒れた姿勢の両膝・ブーツと手の接地位置を確定する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/lilith.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "被弾",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/lilith/reaction-generated.png",
+      "sourceSha256": "4efe0afed3fb32941083c127cdc69b25a61a301de5f9755c9ed1ff5108bf2c19",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 739,
+        "height": 640
+      },
+      "sourceAnchor": [
+        391,
+        612
+      ],
+      "scale": 0.4084967320261438,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "d8276766f21558dc2074acb67504d43e6e40701bcf9298c143a5151155a5804c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8357124328613281,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 164,
+        "top": 156,
+        "right": 442,
+        "bottom": 409
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/lilith/reaction-generated.png",
+      "sourceSha256": "4efe0afed3fb32941083c127cdc69b25a61a301de5f9755c9ed1ff5108bf2c19",
+      "sourceRect": {
+        "left": 739,
+        "top": 0,
+        "width": 663,
+        "height": 640
+      },
+      "sourceAnchor": [
+        336,
+        636
+      ],
+      "scale": 0.4084967320261438,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "d195ffbc96d169c8d0b7e84312da6907e1e50086364ef86ababa04a8a49dab67",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8237190246582031,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 163,
+        "top": 137,
+        "right": 427,
+        "bottom": 398
+      }
+    }
+  ],
+  "fingerprint": "9b4557dca61b58224114106d3f0f387ae550f7557d822cdb3d266fdf52d18678",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 400
+  },
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/lilith/hit/manifest.json",
+  "sourceFingerprint": "9b4557dca61b58224114106d3f0f387ae550f7557d822cdb3d266fdf52d18678",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

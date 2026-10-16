@@ -1,0 +1,122 @@
+{
+  "character": "shaman",
+  "motion": "forward",
+  "coordinateSpace": {
+    "width": 256,
+    "height": 224,
+    "origin": "top left"
+  },
+  "measurement": "approximate manual visual ankle-center estimates from final PNG; ±4 px; concealed ankle estimate is uncertain; use QA images for definitive review, not these numbers alone",
+  "legIdentity": {
+    "L": "anatomical left; near; bare brown thigh with white markings and gold/turquoise fittings",
+    "R": "anatomical right; far; dark brown trouser thigh"
+  },
+  "cameraDepth": "L near and occluding R in all eight frames",
+  "source": "source/shaman-forward-generated-v9.png",
+  "frames": [
+    {
+      "frame": 1,
+      "L": {
+        "x": 140,
+        "y": 196
+      },
+      "R": {
+        "x": 98,
+        "y": 192
+      },
+      "support": "see QA.md",
+      "notes": "fixed same-leg markings and fittings"
+    },
+    {
+      "frame": 2,
+      "L": {
+        "x": 133,
+        "y": 194
+      },
+      "R": {
+        "x": 111,
+        "y": 187
+      },
+      "support": "see QA.md",
+      "notes": "fixed same-leg markings and fittings"
+    },
+    {
+      "frame": 3,
+      "L": {
+        "x": 127,
+        "y": 194
+      },
+      "R": {
+        "x": 121,
+        "y": 191
+      },
+      "support": "L",
+      "notes": "R ankle partly occluded behind near L; low passing"
+    },
+    {
+      "frame": 4,
+      "L": {
+        "x": 111,
+        "y": 187
+      },
+      "R": {
+        "x": 146,
+        "y": 194
+      },
+      "support": "see QA.md",
+      "notes": "fixed same-leg markings and fittings"
+    },
+    {
+      "frame": 5,
+      "L": {
+        "x": 94,
+        "y": 194
+      },
+      "R": {
+        "x": 149,
+        "y": 193
+      },
+      "support": "see QA.md",
+      "notes": "white L rear; dark R front"
+    },
+    {
+      "frame": 6,
+      "L": {
+        "x": 112,
+        "y": 188
+      },
+      "R": {
+        "x": 135,
+        "y": 195
+      },
+      "support": "see QA.md",
+      "notes": "fixed same-leg markings and fittings"
+    },
+    {
+      "frame": 7,
+      "L": {
+        "x": 128,
+        "y": 181
+      },
+      "R": {
+        "x": 126,
+        "y": 195
+      },
+      "support": "R",
+      "notes": "L lifted just above far R; low passing in front"
+    },
+    {
+      "frame": 8,
+      "L": {
+        "x": 143,
+        "y": 194
+      },
+      "R": {
+        "x": 104,
+        "y": 192
+      },
+      "support": "see QA.md",
+      "notes": "white L front ready for contact into frame 1"
+    }
+  ]
+}

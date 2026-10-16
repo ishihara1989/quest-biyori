@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-scorpion",
+  "motion": "pincer",
+  "facing": "left",
+  "label": "pincer",
+  "sheet": "sand-scorpion-pincer.png",
+  "preview": "../../../../../../development/assets/enemies/sand-scorpion/motions/pincer/sand-scorpion-pincer-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1440,
+  "height": 280,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 360,
+  "frameHeight": 280,
+  "frameCount": 4,
+  "pivot": {
+    "x": 209,
+    "y": 262
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 800,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/sand-scorpion/source/pincer-registered.png",
+  "sourceScale": 0.36281179138321995,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "pincer-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 120,
+      "phase": "構え",
+      "bounds": {
+        "left": 103,
+        "top": 102,
+        "right": 308,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 759,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 380,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "pincer-02.png",
+      "x": 360,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 230,
+      "phase": "予告",
+      "bounds": {
+        "left": 93,
+        "top": 102,
+        "right": 324,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 759,
+        "y": 0,
+        "width": 759,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 389,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "pincer-03.png",
+      "x": 720,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 200,
+      "phase": "発動",
+      "bounds": {
+        "left": 100,
+        "top": 108,
+        "right": 318,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 575,
+        "width": 759,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 384,
+        "y": 477
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "pincer-04.png",
+      "x": 1080,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 250,
+      "phase": "復帰",
+      "bounds": {
+        "left": 102,
+        "top": 103,
+        "right": 310,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 759,
+        "y": 575,
+        "width": 759,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 365,
+        "y": 494
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-scorpion-attack-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-scorpion.png",
+  "action": {
+    "motion": "pincer",
+    "warn": 350,
+    "times": [
+      350
+    ],
+    "power": 1,
+    "radius": 145,
+    "kind": "melee",
+    "status": null,
+    "duration": 800
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 703,
+          "height": 544
+        },
+        {
+          "x": 703,
+          "y": 0,
+          "width": 733,
+          "height": 544
+        },
+        {
+          "x": 0,
+          "y": 544,
+          "width": 739,
+          "height": 552
+        },
+        {
+          "x": 739,
+          "y": 544,
+          "width": 697,
+          "height": 552
+        }
+      ]
+    }
+  ]
+}

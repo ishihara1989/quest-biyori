@@ -1,0 +1,11 @@
+{
+  "id": "lion-claws",
+  "source": "development/assets/skills/miko/source/lion-claws-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-89795dda-b40d-4028-b12c-c374c4fc2f02.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 3 chronological frames in ONE horizontal row of equal square cells. Large dramatic shrine VFX. Exactly THREE parallel immense gold-white claw slash arcs moving upper-left to lower-right, vermilion sparks. Frame1 three bright starting claw points at .25,.22; frame2 three broad sweeps across center; frame3 three long lower-right arcs and ground shock crest. Maintain exactly three traces. All frames same scale and common center/ground. Subject fills .14..86 without touching cell margins. Keep all anatomy and motion effects entirely within each cell with clear 10% empty margins.",
+  "refs": [],
+  "receivedAt": "2026-10-10T15:14:35.275Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

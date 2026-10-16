@@ -1,0 +1,130 @@
+{
+  "id": "effects/end-ring",
+  "label": "終撃の輪",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "ring",
+  "origin": "reuse",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "既存1",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/final-ring/final-ring-01.png",
+      "sourceSha256": "6691180ca1a97e2c4ff15bd71352b2a88ff59351b5386c9aee84a385b52401f6",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "d5e9cc9f2c74baa1bbacad358594f3febc2c823ba22607fd58dc0cf99c051368",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9641265869140625
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "既存2",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/final-ring/final-ring-02.png",
+      "sourceSha256": "d61ec4239384f08b167ae08c6a7e4416395f7b8eb540fdaacf83541ab70e1d67",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "56c39cf0ea0c283f945738b9aa386b6d7bebb7f0a74c9b93fdb1bd7f993d37a7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9028778076171875
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "既存3",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/final-ring/final-ring-03.png",
+      "sourceSha256": "2f2bec4d75d3da5827995a63c5102b627e654bd78a312404516778e2b486979e",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "5177ba1ef50e21e762895db62a44dcc6084f348e33b63c83af9df9d025d81c68",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9179229736328125
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "既存4",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/final-ring/final-ring-04.png",
+      "sourceSha256": "2cfdb0d0d361784a0e85d339b4f9acd435c8fc7fca0f0c9337bd1d9ffa510d0d",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "c28de8c855a78462de0635d8f0e8fcbad451dbc5c04ea5b3491ac7e750385d6a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.969146728515625
+    }
+  ],
+  "fingerprint": "d1453ceae23dfd312a655da5e6d7816619d0161d92b2b9e0990f2ece22721f08",
+  "events": [],
+  "effects": []
+}

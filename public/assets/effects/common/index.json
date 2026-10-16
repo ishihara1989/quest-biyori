@@ -1,0 +1,28 @@
+{
+  "assets": [
+    {
+      "id": "aura",
+      "manifest": "aura.json"
+    },
+    {
+      "id": "ring",
+      "manifest": "ring.json"
+    },
+    {
+      "id": "mote",
+      "manifest": "mote.json"
+    },
+    {
+      "id": "streak",
+      "manifest": "streak.json"
+    },
+    {
+      "id": "lightning",
+      "manifest": "lightning.json"
+    },
+    {
+      "id": "portal",
+      "manifest": "portal.json"
+    }
+  ]
+}

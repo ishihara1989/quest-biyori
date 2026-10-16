@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "obsidian-scorpion",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "obsidian-scorpion-idle.png",
+  "preview": "../../../../../../development/assets/enemies/obsidian-scorpion/motions/idle/obsidian-scorpion-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 2400,
+  "height": 410,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 600,
+  "frameHeight": 410,
+  "frameCount": 4,
+  "pivot": {
+    "x": 348,
+    "y": 392
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/obsidian-scorpion/source/idle-registered.png",
+  "sourceScale": 0.5588822355289421,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 220,
+      "phase": "呼吸1",
+      "bounds": {
+        "left": 189,
+        "top": 112,
+        "right": 510,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 709,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 356,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 600,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 220,
+      "phase": "呼吸2",
+      "bounds": {
+        "left": 185,
+        "top": 112,
+        "right": 517,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 709,
+        "y": 0,
+        "width": 709,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 347,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1200,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 220,
+      "phase": "呼吸3",
+      "bounds": {
+        "left": 188,
+        "top": 114,
+        "right": 511,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 632,
+        "width": 709,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 357,
+        "y": 551
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1800,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 220,
+      "phase": "呼吸4",
+      "bounds": {
+        "left": 189,
+        "top": 114,
+        "right": 511,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 709,
+        "y": 632,
+        "width": 709,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 551
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/obsidian-scorpion-idle-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/obsidian-scorpion.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 671,
+          "height": 600
+        },
+        {
+          "x": 671,
+          "y": 0,
+          "width": 659,
+          "height": 600
+        },
+        {
+          "x": 0,
+          "y": 600,
+          "width": 677,
+          "height": 582
+        },
+        {
+          "x": 677,
+          "y": 600,
+          "width": 653,
+          "height": 582
+        }
+      ]
+    }
+  ]
+}

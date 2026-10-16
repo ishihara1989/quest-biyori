@@ -1,0 +1,231 @@
+{
+  "id": "motions/p2-cast",
+  "kind": "motion",
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "loop": false,
+  "frames": [
+    {
+      "index": 1,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-cast/review/motions/p2-cast/frame-01.png",
+      "source": "source/motions/p2-cast-1.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 160,
+      "description": "L/R=(170,244)/(352,260), neutral.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.6209364793504472,
+      "edgePixels": 0,
+      "bounds": [
+        135,
+        100,
+        706,
+        654
+      ],
+      "marginFraction": 0.023480662983425413
+    },
+    {
+      "index": 2,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-cast/review/motions/p2-cast/frame-02.png",
+      "source": "source/motions/p2-cast-1.png",
+      "cellRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 160,
+      "description": "L/R=(216,222)/(309,222), gather palms inward.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.6308587192088153,
+      "edgePixels": 0,
+      "bounds": [
+        106,
+        100,
+        656,
+        654
+      ],
+      "marginFraction": 0.0925414364640884
+    },
+    {
+      "index": 3,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-cast/review/motions/p2-cast/frame-03.png",
+      "source": "source/motions/p2-cast-1.png",
+      "cellRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(238,209)/(286,209), palms close before chest, HOLD-ready.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.6355842312505723,
+      "edgePixels": 0,
+      "bounds": [
+        70,
+        101,
+        611,
+        654
+      ],
+      "marginFraction": 0.09530386740331492
+    },
+    {
+      "index": 4,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-cast/review/motions/p2-cast/frame-04.png",
+      "source": "source/motions/p2-cast-2-r3.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 96,
+        "top": 96,
+        "width": 532,
+        "height": 532
+      },
+      "extractionWindow": {
+        "left": 96,
+        "top": 96,
+        "width": 532,
+        "height": 532,
+        "reason": "One fixed central window shared by all three cells; correct the common zoom-out and exclude remote gutter lines. No per-pose bounding-box fit or anatomy modification."
+      },
+      "durationMs": 160,
+      "description": "L/R=(157,183)/(367,190), open both arms apart.",
+      "width": 532,
+      "height": 532,
+      "transparentFraction": 0.6017122222850358,
+      "edgePixels": 0,
+      "bounds": [
+        71,
+        79,
+        500,
+        493
+      ],
+      "marginFraction": 0.05827067669172932
+    },
+    {
+      "index": 5,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-cast/review/motions/p2-cast/frame-05.png",
+      "source": "source/motions/p2-cast-2-r3.png",
+      "cellRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 820,
+        "top": 96,
+        "width": 532,
+        "height": 532
+      },
+      "extractionWindow": {
+        "left": 96,
+        "top": 96,
+        "width": 532,
+        "height": 532,
+        "reason": "One fixed central window shared by all three cells; correct the common zoom-out and exclude remote gutter lines. No per-pose bounding-box fit or anatomy modification."
+      },
+      "durationMs": 180,
+      "description": "L/R=(136,215)/(386,222), press forward/outward, release.",
+      "width": 532,
+      "height": 532,
+      "transparentFraction": 0.6174140708915145,
+      "edgePixels": 0,
+      "bounds": [
+        70,
+        79,
+        476,
+        493
+      ],
+      "marginFraction": 0.07142857142857142
+    },
+    {
+      "index": 6,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-cast/review/motions/p2-cast/frame-06.png",
+      "source": "source/motions/p2-cast-2-r3.png",
+      "cellRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 1544,
+        "top": 96,
+        "width": 532,
+        "height": 532
+      },
+      "extractionWindow": {
+        "left": 96,
+        "top": 96,
+        "width": 532,
+        "height": 532,
+        "reason": "One fixed central window shared by all three cells; correct the common zoom-out and exclude remote gutter lines. No per-pose bounding-box fit or anatomy modification."
+      },
+      "durationMs": 160,
+      "description": "L/R=(170,244)/(352,260), recover idle.",
+      "width": 532,
+      "height": 532,
+      "transparentFraction": 0.6144708575951157,
+      "edgePixels": 0,
+      "bounds": [
+        58,
+        79,
+        470,
+        492
+      ],
+      "marginFraction": 0.07330827067669173
+    }
+  ],
+  "sources": [
+    "source/motions/p2-cast-1.png",
+    "source/motions/p2-cast-2-r3.png"
+  ],
+  "expectedFrames": 6,
+  "missingFrames": [],
+  "complete": true,
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+  "contact": "review/motions/p2-cast/contact.png",
+  "gif": "review/motions/p2-cast/preview.gif"
+}

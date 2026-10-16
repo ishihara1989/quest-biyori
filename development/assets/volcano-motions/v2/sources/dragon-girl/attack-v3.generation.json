@@ -1,0 +1,28 @@
+{
+  "id": "dragon-girl/attack",
+  "source": "sources/dragon-girl/attack-v3.png",
+  "selected": true,
+  "prompt": "Precise object edit, image1 canonical identity, image2 exact 2x2 attack sheet to edit. Change ONLY the BOTTOM-LEFT cell: REMOVE ALL three bright red/orange claw trails to LEFT of the outstretched hand, and ALL detached sparks. Those pixels must become fully transparent alpha0, leaving only her original short connected claw fingers. Preserve her BL hand and arm, same red fingers, exactly reference short gold claws, no elongated blade-like claw. Keep the OTHER THREE cells and all body/wings/tail/hair/head/armor/pose/colors EXACTLY as image2. Keep same2x2 layout, size and spacing. NO external attack VFX anywhere. Preserve transparent background and complete silhouette.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    },
+    {
+      "file": "sources/dragon-girl/attack-v2.png",
+      "sha256": "4b7bc3b2860defa3eaa6584e2b349d91e0e2521f9b93f833d1bd544c496de856"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "a9045cbbec0741a5f6c82bd75952da9670b948cb3c94aed3922a8bb89098cea6",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/attack-generated.png",
+  "issues": [
+    "爪が待機より大きく伸びる。指・爪の数と寸法、腕から手の接続を合わせる。",
+    "復帰が低い構えのため直立待機へのつながりを確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

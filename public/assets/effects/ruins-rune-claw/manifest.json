@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-rune-claw",
+  "label": "ルーン爪撃",
+  "sheet": "ruins-rune-claw.png",
+  "preview": "../../../../development/assets/effects/ruins-rune-claw/ruins-rune-claw-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-rune-claw/PROMPT.md",
+  "width": 1024,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 112
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-rune-claw/source-registered.png",
+  "sourceScale": 0.35555555555555557,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-rune-claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 49,
+        "top": 44,
+        "right": 207,
+        "bottom": 180
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 851,
+        "height": 545
+      },
+      "sourceAnchor": {
+        "x": 463,
+        "y": 266
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-rune-claw-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 16,
+        "top": 29,
+        "right": 239,
+        "bottom": 195
+      },
+      "sourceCell": {
+        "x": 851,
+        "y": 0,
+        "width": 851,
+        "height": 545
+      },
+      "sourceAnchor": {
+        "x": 407,
+        "y": 277
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-rune-claw-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 24,
+        "top": 29,
+        "right": 232,
+        "bottom": 195
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 545,
+        "width": 851,
+        "height": 545
+      },
+      "sourceAnchor": {
+        "x": 444,
+        "y": 265
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-rune-claw-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 37,
+        "top": 40,
+        "right": 218,
+        "bottom": 183
+      },
+      "sourceCell": {
+        "x": 851,
+        "y": 545,
+        "width": 851,
+        "height": 545
+      },
+      "sourceAnchor": {
+        "x": 369,
+        "y": 263
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "arc",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-rune-claw/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 747,
+        "height": 511
+      },
+      {
+        "x": 747,
+        "y": 0,
+        "width": 789,
+        "height": 511
+      },
+      {
+        "x": 0,
+        "y": 511,
+        "width": 819,
+        "height": 513
+      },
+      {
+        "x": 819,
+        "y": 511,
+        "width": 717,
+        "height": 513
+      }
+    ]
+  }
+}

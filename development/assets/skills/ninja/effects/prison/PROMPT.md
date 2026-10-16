@@ -1,0 +1,5 @@
+# prison
+
+Built-in image_gen; generated RGBA preserved; nearest-neighbor packaging.
+
+Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a thin ninja shadow-prison magic boundary seen isometrically: four small violet/crimson paper seal markers around a hollow oval, frame1 dim outline, frame2 violet threads run from boundary toward center, frame3 brief white-violet sharp inward converging waves, frame4 fade to dim outline. Transparent empty center, no opaque fill, no characters, no text. Open geometry readable over a battlefield.

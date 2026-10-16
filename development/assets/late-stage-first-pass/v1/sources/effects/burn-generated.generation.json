@@ -1,0 +1,25 @@
+{
+  "id": "effects/burn",
+  "effect": "burn",
+  "region": "volcano",
+  "label": "火傷",
+  "kind": "status",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/burn-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. compact orange-red ember aura forming a hollow ring around a transparent character-shaped empty center. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Also design frame4->1 as a smooth subtle pulse for status/residue loop. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-8ec40420-13b6-4be9-bdf3-d8245d99cbb1.png",
+  "sha256": "49d9e26a424b80c4451d0c21961f05fa1415a90a727bb60429192703be196372",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "火傷の小さな状態表示に対して炎の輪が大きく、攻撃エフェクトに近い。小粒の火種へ縮小・整理する。",
+      "最大コマが原画の端に近い。見切れと反復の寸法差を確認する。",
+      "輪の内側に赤い点が残る。キャラクター中心の透過を検収する。"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "dream-demon/hit",
+  "label": "夢魔・被弾",
+  "enemy": "dream-demon",
+  "motion": "hit",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/dream-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "被弾",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/dream-demon/reaction-v2.png",
+      "sourceSha256": "cecd32767441b1a42001118cfdc77e530b41de12a148e1480b81064255948418",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 795,
+        "height": 593
+      },
+      "sourceAnchor": [
+        445,
+        563
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "27f0cc98abac931a03d4469dbcf5476aebdb78df30ebeb11fb62e0979566772c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8748779296875,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 111,
+        "top": 147,
+        "right": 463,
+        "bottom": 425
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/dream-demon/reaction-v2.png",
+      "sourceSha256": "cecd32767441b1a42001118cfdc77e530b41de12a148e1480b81064255948418",
+      "sourceRect": {
+        "left": 795,
+        "top": 0,
+        "width": 741,
+        "height": 593
+      },
+      "sourceAnchor": [
+        345,
+        563
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "1c85be0fb6ee9b564f5e8919ab816c1adb7f11da92b1c1a61faaac100db4f450",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8755149841308594,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 145,
+        "top": 148,
+        "right": 475,
+        "bottom": 413
+      }
+    }
+  ],
+  "fingerprint": "efe225de6acdfd4f8a376a0df287f0c579a91401c44ebd9cfc77876dd7bfc294",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/dream-demon/hit/manifest.json",
+  "sourceFingerprint": "efe225de6acdfd4f8a376a0df287f0c579a91401c44ebd9cfc77876dd7bfc294",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

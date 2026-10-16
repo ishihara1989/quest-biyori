@@ -1,0 +1,115 @@
+{
+  "id": "demon-armored-soldier/hit",
+  "label": "魔鎧兵・被弾",
+  "enemy": "demon-armored-soldier",
+  "motion": "hit",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "倒れた状態で盾が腕と脚を隠す。盾の持ち手・手・2脚の接続を確認する。",
+    "被弾の頭・盾の傾きと待機への戻りを検収する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/demon-armored-soldier.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "被弾",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/reaction-generated.png",
+      "sourceSha256": "18923a01764ff08b3687dbc3c704b81cd788c57f8960134b56c502b925754d11",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 667,
+        "height": 632
+      },
+      "sourceAnchor": [
+        441,
+        559
+      ],
+      "scale": 0.4921259842519685,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "73df51414e3b4b3f8a7cc4bf0aee8f4963a1a3f3b28d33c650972b7f5dd7ff87",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8731040954589844,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 99,
+        "top": 145,
+        "right": 405,
+        "bottom": 446
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/demon-armored-soldier/reaction-generated.png",
+      "sourceSha256": "18923a01764ff08b3687dbc3c704b81cd788c57f8960134b56c502b925754d11",
+      "sourceRect": {
+        "left": 667,
+        "top": 0,
+        "width": 663,
+        "height": 632
+      },
+      "sourceAnchor": [
+        347,
+        565
+      ],
+      "scale": 0.4921259842519685,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "d96e498d40fa743dc6dd6bc985a09d8733407a911a0738531b20d501b1ee4f81",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8703651428222656,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 136,
+        "top": 151,
+        "right": 439,
+        "bottom": 438
+      }
+    }
+  ],
+  "fingerprint": "ce37f05c63cd58b8df90acd09d48311dcae9ebba4a78186eed4e7826c65586d5",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/demon-armored-soldier/hit/manifest.json",
+  "sourceFingerprint": "ce37f05c63cd58b8df90acd09d48311dcae9ebba4a78186eed4e7826c65586d5",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

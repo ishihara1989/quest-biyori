@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "shaman",
+  "motion": "attack-staff",
+  "label": "杖・通常攻撃",
+  "facing": "right",
+  "sheet": "shaman-attack-staff.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 540,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.2808080808080808,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "feet",
+  "source": "../../../../../development/assets/shaman/motions/attack-staff/source/shaman-attack-staff-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-staff-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "杖を引く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 672,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 416,
+        "y": 659
+      },
+      "sourceBounds": {
+        "left": 86,
+        "top": 69,
+        "right": 597,
+        "bottom": 659
+      },
+      "bounds": {
+        "left": 68,
+        "top": 74,
+        "right": 210,
+        "bottom": 239
+      },
+      "visiblePixels": 10771,
+      "transparentPixels": 67900
+    },
+    {
+      "index": 1,
+      "file": "attack-staff-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 120,
+      "phase": "前へ振る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 672,
+        "y": 0,
+        "width": 850,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 303,
+        "y": 659
+      },
+      "sourceBounds": {
+        "left": 74,
+        "top": 164,
+        "right": 832,
+        "bottom": 659
+      },
+      "bounds": {
+        "left": 96,
+        "top": 100,
+        "right": 308,
+        "bottom": 239
+      },
+      "visiblePixels": 12489,
+      "transparentPixels": 64031
+    },
+    {
+      "index": 2,
+      "file": "attack-staff-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "振り抜く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1522,
+        "y": 0,
+        "width": 650,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 220,
+        "y": 659
+      },
+      "sourceBounds": {
+        "left": 17,
+        "top": 169,
+        "right": 602,
+        "bottom": 675
+      },
+      "bounds": {
+        "left": 103,
+        "top": 102,
+        "right": 267,
+        "bottom": 243
+      },
+      "visiblePixels": 10692,
+      "transparentPixels": 68074
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "sunlit-coast",
+  "label": "海岸",
+  "generation": "built-in image_gen",
+  "sampling": "nearest-neighbor",
+  "coordinateSystem": {
+    "previewWidth": 1024,
+    "previewHeight": 576,
+    "groundY": {
+      "min": 323,
+      "max": 512
+    },
+    "units": "preview pixels",
+    "notes": "Y is the foot/contact point; these bounds are an unobstructed recommended lane, not a collision map."
+  },
+  "repeat": {
+    "axis": "x",
+    "mode": "alternate-mirror",
+    "tilesPerPeriod": 2,
+    "notes": "Alternate the source and its horizontal mirror. Identical edge columns meet at both joins. Direct same-orientation repetition has small generated edge differences."
+  },
+  "layers": [
+    {
+      "id": "distant",
+      "label": "遠景",
+      "file": "distant.png",
+      "source": "../../../../development/assets/stages/sunlit-coast/source/distant-generated.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "parallax": 0.28
+    },
+    {
+      "id": "ground-near",
+      "label": "地面＋近景",
+      "file": "ground-near.png",
+      "source": "../../../../development/assets/stages/sunlit-coast/source/ground-near-generated.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": true,
+      "parallax": 1,
+      "alphaCleanup": {
+        "transparentMax": 2,
+        "opaqueMin": 250
+      }
+    }
+  ],
+  "notes": [
+    "Draw distant ocean then transparent sand/near layer.",
+    "Contact lane Y323–512; movement Y334–501."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "motions/p2-drift",
+  "kind": "motion",
+  "loop": true,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-drift/review/motions/p2-drift/frame-01.png",
+      "index": 1,
+      "durationMs": 170,
+      "source": "source/motions/p2-drift.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=0; hair tips dx=8.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.446698157602212,
+      "lowAlphaPixels": 16540,
+      "edgePixels": 97,
+      "bounds": [
+        60,
+        10,
+        626,
+        608
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-drift/review/motions/p2-drift/frame-02.png",
+      "index": 2,
+      "durationMs": 180,
+      "source": "source/motions/p2-drift.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=-1; hair tips dx=12.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.40886324845025424,
+      "lowAlphaPixels": 18300,
+      "edgePixels": 96,
+      "bounds": [
+        0,
+        6,
+        623,
+        626
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-drift/review/motions/p2-drift/frame-03.png",
+      "index": 3,
+      "durationMs": 170,
+      "source": "source/motions/p2-drift.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=0; hair tips dx=8.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.4277145669741993,
+      "lowAlphaPixels": 16206,
+      "edgePixels": 110,
+      "bounds": [
+        64,
+        2,
+        626,
+        597
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-drift/review/motions/p2-drift/frame-04.png",
+      "index": 4,
+      "durationMs": 180,
+      "source": "source/motions/p2-drift.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=1; hair tips dx=4.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.43402801624911924,
+      "lowAlphaPixels": 15514,
+      "edgePixels": 101,
+      "bounds": [
+        0,
+        0,
+        603,
+        604
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/motions/p2-drift.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p2-drift/contact.png",
+  "gif": "review/motions/p2-drift/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

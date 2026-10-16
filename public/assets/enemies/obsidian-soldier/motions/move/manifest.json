@@ -1,0 +1,290 @@
+{
+  "id": "obsidian-soldier/move",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "label": "移動",
+  "kind": null,
+  "motion": "move",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-1-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-2-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8951950073242188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 185,
+        "top": 83,
+        "right": 413,
+        "bottom": 349
+      },
+      "visibleBounds": {
+        "left": 188,
+        "top": 103,
+        "right": 408,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 658,
+        "height": 799
+      },
+      "sourceScale": 0.35714285714285715,
+      "sourceAnchor": {
+        "x": 313,
+        "y": 740
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9023208618164062,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 174,
+        "top": 81,
+        "right": 399,
+        "bottom": 351
+      },
+      "visibleBounds": {
+        "left": 177,
+        "top": 102,
+        "right": 398,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-1-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 658,
+        "y": 0,
+        "width": 643,
+        "height": 799
+      },
+      "sourceScale": 0.35714285714285715,
+      "sourceAnchor": {
+        "x": 326,
+        "y": 743
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8972892761230469,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 174,
+        "top": 83,
+        "right": 405,
+        "bottom": 349
+      },
+      "visibleBounds": {
+        "left": 177,
+        "top": 105,
+        "right": 401,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-1-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 1301,
+        "y": 0,
+        "width": 666,
+        "height": 799
+      },
+      "sourceScale": 0.35714285714285715,
+      "sourceAnchor": {
+        "x": 329,
+        "y": 737
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.89093017578125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 160,
+        "top": 102,
+        "right": 418,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 161,
+        "top": 103,
+        "right": 407,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-2-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 730,
+        "height": 725
+      },
+      "sourceScale": 0.3839869281045752,
+      "sourceAnchor": {
+        "x": 384,
+        "y": 659
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8994064331054688,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 166,
+        "top": 93,
+        "right": 427,
+        "bottom": 355
+      },
+      "visibleBounds": {
+        "left": 169,
+        "top": 104,
+        "right": 411,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-2-v3.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 730,
+        "y": 0,
+        "width": 724,
+        "height": 725
+      },
+      "sourceScale": 0.3839869281045752,
+      "sourceAnchor": {
+        "x": 351,
+        "y": 659
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 2048,
+      "y": 0,
+      "index": 4
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "transparentFraction": 0.897186279296875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 153,
+        "top": 103,
+        "right": 394,
+        "bottom": 354
+      },
+      "visibleBounds": {
+        "left": 159,
+        "top": 103,
+        "right": 393,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/move-2-v3.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 1454,
+        "y": 0,
+        "width": 713,
+        "height": 725
+      },
+      "sourceScale": 0.3839869281045752,
+      "sourceAnchor": {
+        "x": 396,
+        "y": 659
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 2560,
+      "y": 0,
+      "index": 5
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "walkCycle": {
+    "gait": "walk",
+    "nearLeg": "left",
+    "farLeg": "right",
+    "swingPairs": null
+  },
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/obsidian-soldier/move/preview.gif",
+  "action": null
+}

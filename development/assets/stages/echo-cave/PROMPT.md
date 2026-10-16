@@ -1,0 +1,3 @@
+# 洞窟
+
+Use case: stylized-concept. Wide 16:9 side-view fantasy RPG pixel-art background, crisp 16-bit pixel clusters, same grounded battle composition as supplied forest layer. Logical screen1024x576. Inside enclosed cave. ONE opaque ground-and-near layer, no distant landscape or sky. Gray violet cave walls with stalactites above y300, amber small crystal clusters near edges. Broad level charcoal stone fighting lane y323..512, unobstructed center. Low stalagmites and rocks only along bottom edge y530..576. Dark navy upper wall, subtle violet/amber mineral lights. Keep ground/contact height, horizontal battle lane and pixel style matching reference, no enemies, characters, buildings, lettering or UI. Left/right edges compatible with alternating mirrored repetition.

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "air-throw",
+  "label": "空中投擲",
+  "facing": "right",
+  "sheet": "ninja-air-throw.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 520,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.22229729729729727,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/ninja/motions/air-throw/source/ninja-air-throw-generated-v2.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; complete skill sequences in ninja-skill-lab.html. Separate swept projectiles own flight and damage.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "air-throw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 200,
+      "phase": "空中で構える",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 626
+      },
+      "sourceBounds": {
+        "left": 112,
+        "top": 75,
+        "right": 676,
+        "bottom": 626
+      },
+      "bounds": {
+        "left": 96,
+        "top": 117,
+        "right": 221,
+        "bottom": 239
+      },
+      "visiblePixels": 6419,
+      "transparentPixels": 74516
+    },
+    {
+      "index": 1,
+      "file": "air-throw-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "前下方へ投げる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 348,
+        "y": 649
+      },
+      "sourceBounds": {
+        "left": 81,
+        "top": 74,
+        "right": 689,
+        "bottom": 649
+      },
+      "bounds": {
+        "left": 101,
+        "top": 112,
+        "right": 235,
+        "bottom": 239
+      },
+      "visiblePixels": 6746,
+      "transparentPixels": 74063
+    },
+    {
+      "index": 2,
+      "file": "air-throw-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "着地へ脚を伸ばす",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 378,
+        "y": 666
+      },
+      "sourceBounds": {
+        "left": 116,
+        "top": 74,
+        "right": 610,
+        "bottom": 666
+      },
+      "bounds": {
+        "left": 102,
+        "top": 108,
+        "right": 211,
+        "bottom": 239
+      },
+      "visiblePixels": 6604,
+      "transparentPixels": 74117
+    }
+  ]
+}

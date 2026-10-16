@@ -1,0 +1,67 @@
+{
+  "id": "dragon-girl/hit",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "motion": "hit",
+  "label": "被弾",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon-girl/reaction-generated.png"
+  ],
+  "durations": [
+    180,
+    220
+  ],
+  "phases": [
+    "被弾",
+    "復帰"
+  ],
+  "enemyLabel": "ドラゴンガール",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 66,
+        "top": 70,
+        "right": 606,
+        "bottom": 627
+      },
+      "sourceWidth": 637,
+      "sourceHeight": 687,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 231941,
+      "transparentFraction": 0.5300066953217296
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 30,
+        "top": 58,
+        "right": 594,
+        "bottom": 631
+      },
+      "sourceWidth": 617,
+      "sourceHeight": 687,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 204267,
+      "transparentFraction": 0.4818993156065764
+    }
+  ],
+  "reference": "../../../references/dragon-girl.png",
+  "originalSources": [
+    "../../../sources/dragon-girl/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

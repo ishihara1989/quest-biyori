@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lizard-chief",
+  "motion": "sweep",
+  "facing": "left",
+  "label": "薙ぎ払い",
+  "sheet": "lizard-chief-sweep.png",
+  "preview": "../../../../../../development/assets/enemies/lizard-chief/motions/sweep/lizard-chief-sweep-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lizard-chief/PROMPT.md",
+  "width": 2560,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 371,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 860,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/lizard-chief/source/sweep-registered.png",
+  "sourceScale": 0.5710659898477157,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "sweep-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "開始",
+      "bounds": {
+        "left": 79,
+        "top": 207,
+        "right": 545,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 894,
+        "height": 471
+      },
+      "sourceAnchor": {
+        "x": 528,
+        "y": 409
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "sweep-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 142,
+        "top": 181,
+        "right": 501,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 894,
+        "y": 0,
+        "width": 894,
+        "height": 471
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 454
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "sweep-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 200,
+      "phase": "作用",
+      "bounds": {
+        "left": 19,
+        "top": 209,
+        "right": 510,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 471,
+        "width": 894,
+        "height": 471
+      },
+      "sourceAnchor": {
+        "x": 634,
+        "y": 405
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "sweep-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 260,
+      "phase": "復帰",
+      "bounds": {
+        "left": 79,
+        "top": 207,
+        "right": 516,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 894,
+        "y": 471,
+        "width": 894,
+        "height": 471
+      },
+      "sourceAnchor": {
+        "x": 527,
+        "y": 409
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/lizard-chief/source/sweep-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 89177,
+        "left": 11,
+        "top": 99,
+        "right": 828,
+        "bottom": 492,
+        "cx": 412.8453188602442,
+        "cy": 309.89879677495315
+      },
+      {
+        "id": 1,
+        "count": 88583,
+        "left": 896,
+        "top": 60,
+        "right": 1526,
+        "bottom": 498,
+        "cx": 1162.465687547272,
+        "cy": 296.6060079247711
+      },
+      {
+        "id": 4,
+        "count": 88916,
+        "left": 8,
+        "top": 568,
+        "right": 869,
+        "bottom": 957,
+        "cx": 457.80308380943814,
+        "cy": 766.6308988258581
+      },
+      {
+        "id": 5,
+        "count": 85779,
+        "left": 763,
+        "top": 568,
+        "right": 1528,
+        "bottom": 961,
+        "cx": 1152.9688501847772,
+        "cy": 774.3701955023957
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

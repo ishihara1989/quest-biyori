@@ -1,0 +1,9 @@
+Use case: stylized-concept. FOUR-frame BODY-ONLY normal magic bolt animation of the adult demon queen Lilith in the fixed canonical reference.
+Preserve exact lavender hair, gold-red crown between two dark-red horns, face, black/crimson gold-trimmed long dress, two attached purple/red bat wings, two booted legs, body proportions, palette and refined crisp JRPG pixel art. Left-facing mild three-quarter view.
+Exactly four small complete separate poses in equal 2x2 cells, row-major, same scale and huge transparent gutters. All horns, wings, hair, hands and dress fit central 60% of each cell with generous clear margins. Maintain floating posture, toes together at y=835, NEVER a planted wide-legged lunge.
+Per-cell normalized plan: pelvis (520,585), head (485,300), wing roots (540,390), two feet close together around (495,825),(565,835).
+Frame 1: relaxed hands at (440,570),(570,570), wings and dress canonical.
+Frame 2: both palms gather at chest (450,450),(510,450), tiny attached magenta light radius 12 between them. Torso upright and floating.
+Frame 3: same two arms extend LEFT modestly, palms (320,510),(370,530), clearly attached wrists and elbows; torso inclines 6 degrees left, pelvis remains (510,585), legs remain close and airborne. NO projectile, orb, beam, trail or external spell is drawn. Only fingertips may have 2-3 bright pixels.
+Frame 4: hands lower and return to frame-1 neutral. Wings, hair and hem settle, body size stays fixed.
+Flying curse orb and impact are separate images. The body sheet contains ZERO large magical balls, flashes, circles, haze or backgrounds. Native transparent alpha. No extra hands/limbs, floor, ground shadow, text, labels, grid, checkerboard or watermark.

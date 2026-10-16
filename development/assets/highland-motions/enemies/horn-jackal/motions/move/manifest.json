@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "enemy": "horn-jackal",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "horn-jackal-move.png",
+  "preview": "horn-jackal-move-preview.gif",
+  "prompt": "../../../../trot/horn-jackal/PROMPTS.md",
+  "width": 2880,
+  "height": 340,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 340,
+  "frameCount": 6,
+  "pivot": {
+    "x": 274,
+    "y": 316
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/move.png",
+  "sourceScale": 0.1949317738791423,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in trot/horn-jackal/PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "中立・A遊脚",
+      "bounds": {
+        "left": 181,
+        "top": 117,
+        "right": 392,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 649.84,
+        "y": 1138.63
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.1949317738791423
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・A遊脚",
+      "bounds": {
+        "left": 181,
+        "top": 117,
+        "right": 393,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 0,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 649.84,
+        "y": 1138.63
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.1949317738791423
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・B遊脚",
+      "bounds": {
+        "left": 181,
+        "top": 117,
+        "right": 392,
+        "bottom": 311
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1286,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 649.84,
+        "y": 1138.63
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.1949317738791423
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "中立・B遊脚",
+      "bounds": {
+        "left": 181,
+        "top": 117,
+        "right": 392,
+        "bottom": 307
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 1286,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 649.84,
+        "y": 1138.63
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.1949317738791423
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1920,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・B遊脚",
+      "bounds": {
+        "left": 181,
+        "top": 117,
+        "right": 393,
+        "bottom": 311
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 2572,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 649.84,
+        "y": 1138.63
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.1949317738791423
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2400,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・A遊脚",
+      "bounds": {
+        "left": 181,
+        "top": 117,
+        "right": 393,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 2572,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 649.84,
+        "y": 1138.63
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.1949317738791423
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/horn-jackal.png",
+  "originalSources": [
+    "../../../../trot/horn-jackal/sources/frame-1-single.png",
+    "../../../../trot/horn-jackal/sources/frame-2-single.png",
+    "../../../../trot/horn-jackal/sources/frame-3-focused.png",
+    "../../../../trot/horn-jackal/sources/frame-4-focused.png",
+    "../../../../trot/horn-jackal/sources/frame-5-focused.png",
+    "../../../../trot/horn-jackal/sources/frame-6-single.png"
+  ],
+  "sourceExtraction": [
+    {
+      "source": "trot/horn-jackal/sources/frame-1-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-2-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-3-focused.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-4-focused.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-5-focused.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/horn-jackal/sources/frame-6-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    }
+  ],
+  "registration": {
+    "method": "fixed-eye-landmark",
+    "outputEye": {
+      "x": 206,
+      "y": 165
+    },
+    "recipe": "../../../../trot/horn-jackal/recipe.json"
+  },
+  "walkCycle": {
+    "gait": "trot",
+    "status": "adopted-coordinate-guided",
+    "parts": 6,
+    "framesPerPart": 1,
+    "nearSide": "left",
+    "farSide": "right",
+    "diagonalPairs": {
+      "A": [
+        "left-hind",
+        "right-front"
+      ],
+      "B": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    "phases": [
+      "中立・A遊脚",
+      "手前閉／奥開・A遊脚",
+      "手前閉／奥開・B遊脚",
+      "中立・B遊脚",
+      "手前開／奥閉・B遊脚",
+      "手前開／奥閉・A遊脚"
+    ],
+    "contacts": [
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "open",
+        "far": "closed"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "open",
+        "far": "closed"
+      }
+    ]
+  },
+  "effectAssets": [],
+  "coordinateGuide": {
+    "file": "../../../../trot/horn-jackal/guide.json",
+    "targetsOnly": true
+  }
+}

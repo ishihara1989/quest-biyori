@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "enemy": "storm-jackal",
+  "motion": "charge",
+  "facing": "left",
+  "label": "直線突進",
+  "sheet": "storm-jackal-charge.png",
+  "preview": "storm-jackal-charge-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 2320,
+  "height": 430,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 580,
+  "frameHeight": 430,
+  "frameCount": 4,
+  "pivot": {
+    "x": 331,
+    "y": 406
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../registered/charge.png",
+  "sourceScale": 0.4693140794223827,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "charge-impact",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "charge-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 141,
+        "top": 148,
+        "right": 463,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 851,
+        "height": 688
+      },
+      "sourceAnchor": {
+        "x": 442,
+        "y": 588
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "charge-02.png",
+      "x": 580,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 151,
+        "top": 159,
+        "right": 515,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 851,
+        "y": 0,
+        "width": 851,
+        "height": 688
+      },
+      "sourceAnchor": {
+        "x": 445,
+        "y": 562
+      },
+      "bakedOffset": {
+        "x": 12,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "charge-03.png",
+      "x": 1160,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 69,
+        "top": 161,
+        "right": 434,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 688,
+        "width": 851,
+        "height": 688
+      },
+      "sourceAnchor": {
+        "x": 445,
+        "y": 560
+      },
+      "bakedOffset": {
+        "x": -70,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "charge-04.png",
+      "x": 1740,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 144,
+        "top": 117,
+        "right": 470,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 851,
+        "y": 688,
+        "width": 851,
+        "height": 688
+      },
+      "sourceAnchor": {
+        "x": 435,
+        "y": 653
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/storm-jackal.png",
+  "originalSources": [
+    "../../../../sources/storm-jackal/charge-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 18,
+          "y": 114,
+          "width": 579,
+          "height": 466,
+          "mainComponent": 1
+        },
+        {
+          "x": 584,
+          "y": 122,
+          "width": 655,
+          "height": 444,
+          "mainComponent": 2
+        },
+        {
+          "x": 18,
+          "y": 684,
+          "width": 657,
+          "height": 442,
+          "mainComponent": 5
+        },
+        {
+          "x": 655,
+          "y": 658,
+          "width": 587,
+          "height": 520,
+          "mainComponent": 4
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.1888412017167382,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "afterimage": {
+    "frames": [
+      1,
+      2
+    ],
+    "count": 3,
+    "spacing": 28,
+    "opacity": 0.2
+  },
+  "effectAssets": [
+    {
+      "id": "charge-impact",
+      "manifest": "../../../../effects/charge-impact/manifest.json"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-shell-golem",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "ice-shell-golem-move.png",
+  "preview": "../../../../../../development/assets/enemies/ice-shell-golem/motions/move/ice-shell-golem-move-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2400,
+  "height": 330,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 400,
+  "frameHeight": 330,
+  "frameCount": 6,
+  "pivot": {
+    "x": 224,
+    "y": 308
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-shell-golem/move.png",
+  "sourceScale": 0.3258845437616387,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 119,
+        "top": 134,
+        "right": 331,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 788,
+        "height": 776
+      },
+      "sourceAnchor": {
+        "x": 378.5583709000466,
+        "y": 656
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 400,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 121,
+        "top": 134,
+        "right": 332,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 788,
+        "y": 0,
+        "width": 788,
+        "height": 776
+      },
+      "sourceAnchor": {
+        "x": 373.0227803738318,
+        "y": 656
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 800,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 120,
+        "top": 134,
+        "right": 332,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 776,
+        "width": 788,
+        "height": 776
+      },
+      "sourceAnchor": {
+        "x": 366.606183424266,
+        "y": 656
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 120,
+        "top": 135,
+        "right": 331,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 788,
+        "y": 776,
+        "width": 788,
+        "height": 776
+      },
+      "sourceAnchor": {
+        "x": 399.8058781941218,
+        "y": 665
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1600,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 120,
+        "top": 133,
+        "right": 334,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1552,
+        "width": 788,
+        "height": 776
+      },
+      "sourceAnchor": {
+        "x": 376.73765432098764,
+        "y": 670
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2000,
+      "y": 0,
+      "width": 400,
+      "height": 330,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 123,
+        "top": 133,
+        "right": 333,
+        "bottom": 308
+      },
+      "sourceCell": {
+        "x": 788,
+        "y": 1552,
+        "width": 788,
+        "height": 776
+      },
+      "sourceAnchor": {
+        "x": 362.13428965517244,
+        "y": 670
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-shell-golem.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-shell-golem/move-1-generated.png",
+    "../../../../../../development/assets/glacier-motions/sources/ice-shell-golem/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 733,
+          "height": 724
+        },
+        {
+          "x": 733,
+          "y": 0,
+          "width": 721,
+          "height": 724
+        },
+        {
+          "x": 1454,
+          "y": 0,
+          "width": 718,
+          "height": 724
+        }
+      ],
+      "normalizationScale": 1
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 735,
+          "height": 724
+        },
+        {
+          "x": 735,
+          "y": 0,
+          "width": 713,
+          "height": 724
+        },
+        {
+          "x": 1448,
+          "y": 0,
+          "width": 724,
+          "height": 724
+        }
+      ],
+      "normalizationScale": 1.0280791320995533
+    }
+  ],
+  "action": null,
+  "animationPhases": null,
+  "walkCycle": {
+    "gait": "walk",
+    "parts": 2,
+    "framesPerPart": 3,
+    "durationMs": 720
+  }
+}

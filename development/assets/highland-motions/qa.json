@@ -1,0 +1,2004 @@
+{
+  "date": "2026-10-12 JST",
+  "status": "passed",
+  "coverageComplete": true,
+  "tool": "built-in image_gen",
+  "previewOnly": true,
+  "enemyCount": 7,
+  "motionCount": 48,
+  "effectCount": 10,
+  "totalFrames": 214,
+  "checks": [
+    "coverage",
+    "PNG dimensions",
+    "transparent edges",
+    "nonidentical poses",
+    "GIF frame timing",
+    "source and reference paths",
+    "flight ground clearance",
+    "terminal hold",
+    "effect event coverage"
+  ],
+  "assets": [
+    {
+      "id": "horn-jackal/idle",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8981541053921569,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 176,
+          "top": 117,
+          "right": 378,
+          "bottom": 316
+        },
+        {
+          "left": 168,
+          "top": 115,
+          "right": 371,
+          "bottom": 316
+        },
+        {
+          "left": 172,
+          "top": 131,
+          "right": 377,
+          "bottom": 316
+        },
+        {
+          "left": 172,
+          "top": 125,
+          "right": 370,
+          "bottom": 316
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "horn-jackal/move",
+      "frames": 6,
+      "distinctFrames": 6,
+      "transparentRatio": 0.8998641748366013,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 181,
+          "top": 117,
+          "right": 392,
+          "bottom": 316
+        },
+        {
+          "left": 181,
+          "top": 117,
+          "right": 393,
+          "bottom": 316
+        },
+        {
+          "left": 181,
+          "top": 117,
+          "right": 392,
+          "bottom": 311
+        },
+        {
+          "left": 181,
+          "top": 117,
+          "right": 392,
+          "bottom": 307
+        },
+        {
+          "left": 181,
+          "top": 117,
+          "right": 393,
+          "bottom": 311
+        },
+        {
+          "left": 181,
+          "top": 117,
+          "right": 393,
+          "bottom": 316
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "horn-jackal/hit",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.8819730392156863,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 181,
+          "top": 113,
+          "right": 412,
+          "bottom": 316
+        },
+        {
+          "left": 153,
+          "top": 117,
+          "right": 383,
+          "bottom": 316
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "horn-jackal/down",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.911124387254902,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": true,
+      "bounds": [
+        {
+          "left": 148,
+          "top": 188,
+          "right": 391,
+          "bottom": 316
+        },
+        {
+          "left": 141,
+          "top": 246,
+          "right": 388,
+          "bottom": 316
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "horn-jackal/bite",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.878921568627451,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 178,
+          "top": 117,
+          "right": 389,
+          "bottom": 316
+        },
+        {
+          "left": 138,
+          "top": 149,
+          "right": 396,
+          "bottom": 316
+        },
+        {
+          "left": 151,
+          "top": 141,
+          "right": 400,
+          "bottom": 316
+        },
+        {
+          "left": 145,
+          "top": 125,
+          "right": 382,
+          "bottom": 316
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "rock-horn-goat/idle",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8449523809523809,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 178,
+          "top": 117,
+          "right": 374,
+          "bottom": 326
+        },
+        {
+          "left": 175,
+          "top": 114,
+          "right": 372,
+          "bottom": 326
+        },
+        {
+          "left": 177,
+          "top": 124,
+          "right": 374,
+          "bottom": 326
+        },
+        {
+          "left": 177,
+          "top": 120,
+          "right": 372,
+          "bottom": 326
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "rock-horn-goat/move",
+      "frames": 6,
+      "distinctFrames": 6,
+      "transparentRatio": 0.8695039682539683,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 184,
+          "top": 125,
+          "right": 356,
+          "bottom": 326
+        },
+        {
+          "left": 184,
+          "top": 125,
+          "right": 357,
+          "bottom": 326
+        },
+        {
+          "left": 183,
+          "top": 124,
+          "right": 357,
+          "bottom": 322
+        },
+        {
+          "left": 184,
+          "top": 125,
+          "right": 356,
+          "bottom": 320
+        },
+        {
+          "left": 184,
+          "top": 125,
+          "right": 357,
+          "bottom": 320
+        },
+        {
+          "left": 184,
+          "top": 125,
+          "right": 365,
+          "bottom": 326
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "rock-horn-goat/hit",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.8451458333333334,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 216,
+          "top": 99,
+          "right": 393,
+          "bottom": 326
+        },
+        {
+          "left": 168,
+          "top": 117,
+          "right": 366,
+          "bottom": 326
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "rock-horn-goat/down",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.8839761904761905,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": true,
+      "bounds": [
+        {
+          "left": 170,
+          "top": 165,
+          "right": 379,
+          "bottom": 326
+        },
+        {
+          "left": 150,
+          "top": 234,
+          "right": 383,
+          "bottom": 326
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "rock-horn-goat/charge",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7772708333333334,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 132,
+          "top": 123,
+          "right": 422,
+          "bottom": 326
+        },
+        {
+          "left": 129,
+          "top": 140,
+          "right": 432,
+          "bottom": 326
+        },
+        {
+          "left": 21,
+          "top": 145,
+          "right": 368,
+          "bottom": 326
+        },
+        {
+          "left": 142,
+          "top": 86,
+          "right": 390,
+          "bottom": 326
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-sprite/idle",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8751996753246754,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 160,
+          "top": 87,
+          "right": 345,
+          "bottom": 286
+        },
+        {
+          "left": 155,
+          "top": 75,
+          "right": 339,
+          "bottom": 283
+        },
+        {
+          "left": 149,
+          "top": 92,
+          "right": 342,
+          "bottom": 286
+        },
+        {
+          "left": 155,
+          "top": 88,
+          "right": 340,
+          "bottom": 289
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-sprite/move",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8556931818181818,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 144,
+          "top": 87,
+          "right": 357,
+          "bottom": 286
+        },
+        {
+          "left": 157,
+          "top": 76,
+          "right": 354,
+          "bottom": 283
+        },
+        {
+          "left": 148,
+          "top": 90,
+          "right": 344,
+          "bottom": 286
+        },
+        {
+          "left": 155,
+          "top": 89,
+          "right": 356,
+          "bottom": 289
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-sprite/hit",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.890288961038961,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 188,
+          "top": 104,
+          "right": 385,
+          "bottom": 286
+        },
+        {
+          "left": 157,
+          "top": 86,
+          "right": 331,
+          "bottom": 286
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-sprite/down",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.9402532467532467,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": true,
+      "bounds": [
+        {
+          "left": 190,
+          "top": 148,
+          "right": 322,
+          "bottom": 306
+        },
+        {
+          "left": 180,
+          "top": 214,
+          "right": 319,
+          "bottom": 326
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-sprite/blade",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8624285714285714,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 184,
+          "top": 87,
+          "right": 351,
+          "bottom": 286
+        },
+        {
+          "left": 128,
+          "top": 87,
+          "right": 337,
+          "bottom": 286
+        },
+        {
+          "left": 92,
+          "top": 85,
+          "right": 372,
+          "bottom": 286
+        },
+        {
+          "left": 123,
+          "top": 90,
+          "right": 341,
+          "bottom": 286
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-sprite/retreat",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8658863636363636,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 188,
+          "top": 87,
+          "right": 353,
+          "bottom": 286
+        },
+        {
+          "left": 152,
+          "top": 91,
+          "right": 363,
+          "bottom": 286
+        },
+        {
+          "left": 182,
+          "top": 83,
+          "right": 401,
+          "bottom": 286
+        },
+        {
+          "left": 181,
+          "top": 74,
+          "right": 361,
+          "bottom": 286
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "storm-jackal/idle",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.880786888532478,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 207,
+          "top": 147,
+          "right": 459,
+          "bottom": 406
+        },
+        {
+          "left": 205,
+          "top": 143,
+          "right": 457,
+          "bottom": 406
+        },
+        {
+          "left": 199,
+          "top": 149,
+          "right": 465,
+          "bottom": 406
+        },
+        {
+          "left": 199,
+          "top": 148,
+          "right": 445,
+          "bottom": 406
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "storm-jackal/move",
+      "frames": 6,
+      "distinctFrames": 6,
+      "transparentRatio": 0.8731114675220529,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 209,
+          "top": 138,
+          "right": 473,
+          "bottom": 406
+        },
+        {
+          "left": 209,
+          "top": 136,
+          "right": 472,
+          "bottom": 406
+        },
+        {
+          "left": 209,
+          "top": 137,
+          "right": 480,
+          "bottom": 403
+        },
+        {
+          "left": 209,
+          "top": 138,
+          "right": 474,
+          "bottom": 397
+        },
+        {
+          "left": 209,
+          "top": 136,
+          "right": 473,
+          "bottom": 400
+        },
+        {
+          "left": 209,
+          "top": 138,
+          "right": 474,
+          "bottom": 406
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "storm-jackal/hit",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.8876663993584603,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 238,
+          "top": 167,
+          "right": 466,
+          "bottom": 406
+        },
+        {
+          "left": 215,
+          "top": 147,
+          "right": 443,
+          "bottom": 406
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "storm-jackal/down",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.9223957497995189,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": true,
+      "bounds": [
+        {
+          "left": 210,
+          "top": 227,
+          "right": 455,
+          "bottom": 406
+        },
+        {
+          "left": 197,
+          "top": 301,
+          "right": 446,
+          "bottom": 406
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "storm-jackal/charge",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8364234161988773,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 141,
+          "top": 148,
+          "right": 463,
+          "bottom": 406
+        },
+        {
+          "left": 151,
+          "top": 159,
+          "right": 515,
+          "bottom": 406
+        },
+        {
+          "left": 69,
+          "top": 161,
+          "right": 434,
+          "bottom": 406
+        },
+        {
+          "left": 144,
+          "top": 117,
+          "right": 470,
+          "bottom": 406
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "storm-jackal/claw",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8791309141940657,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 212,
+          "top": 147,
+          "right": 464,
+          "bottom": 406
+        },
+        {
+          "left": 183,
+          "top": 148,
+          "right": 468,
+          "bottom": 406
+        },
+        {
+          "left": 175,
+          "top": 159,
+          "right": 467,
+          "bottom": 406
+        },
+        {
+          "left": 197,
+          "top": 149,
+          "right": 459,
+          "bottom": 406
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "storm-jackal/rest",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.880786888532478,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 207,
+          "top": 147,
+          "right": 459,
+          "bottom": 406
+        },
+        {
+          "left": 205,
+          "top": 143,
+          "right": 457,
+          "bottom": 406
+        },
+        {
+          "left": 199,
+          "top": 149,
+          "right": 465,
+          "bottom": 406
+        },
+        {
+          "left": 199,
+          "top": 148,
+          "right": 445,
+          "bottom": 406
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/idle",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7679424252717392,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 197,
+          "top": 137,
+          "right": 517,
+          "bottom": 436
+        },
+        {
+          "left": 201,
+          "top": 130,
+          "right": 523,
+          "bottom": 436
+        },
+        {
+          "left": 199,
+          "top": 140,
+          "right": 520,
+          "bottom": 436
+        },
+        {
+          "left": 201,
+          "top": 139,
+          "right": 522,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/move",
+      "frames": 6,
+      "distinctFrames": 6,
+      "transparentRatio": 0.8005338541666667,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 208,
+          "top": 141,
+          "right": 515,
+          "bottom": 436
+        },
+        {
+          "left": 208,
+          "top": 140,
+          "right": 510,
+          "bottom": 436
+        },
+        {
+          "left": 208,
+          "top": 140,
+          "right": 511,
+          "bottom": 432
+        },
+        {
+          "left": 208,
+          "top": 141,
+          "right": 507,
+          "bottom": 434
+        },
+        {
+          "left": 209,
+          "top": 142,
+          "right": 518,
+          "bottom": 428
+        },
+        {
+          "left": 208,
+          "top": 141,
+          "right": 515,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/hit",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.7684986413043479,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 242,
+          "top": 110,
+          "right": 575,
+          "bottom": 436
+        },
+        {
+          "left": 167,
+          "top": 137,
+          "right": 501,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/down",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.8262330163043479,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": true,
+      "bounds": [
+        {
+          "left": 174,
+          "top": 211,
+          "right": 562,
+          "bottom": 436
+        },
+        {
+          "left": 134,
+          "top": 291,
+          "right": 549,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/sweep",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8024668817934782,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 176,
+          "top": 136,
+          "right": 467,
+          "bottom": 436
+        },
+        {
+          "left": 167,
+          "top": 168,
+          "right": 522,
+          "bottom": 436
+        },
+        {
+          "left": 167,
+          "top": 190,
+          "right": 541,
+          "bottom": 436
+        },
+        {
+          "left": 175,
+          "top": 157,
+          "right": 468,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/charge",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.74033203125,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 92,
+          "top": 185,
+          "right": 556,
+          "bottom": 436
+        },
+        {
+          "left": 108,
+          "top": 123,
+          "right": 588,
+          "bottom": 436
+        },
+        {
+          "left": 21,
+          "top": 187,
+          "right": 541,
+          "bottom": 436
+        },
+        {
+          "left": 93,
+          "top": 131,
+          "right": 562,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/rocks",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7970397418478261,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 222,
+          "top": 136,
+          "right": 540,
+          "bottom": 436
+        },
+        {
+          "left": 175,
+          "top": 186,
+          "right": 523,
+          "bottom": 436
+        },
+        {
+          "left": 182,
+          "top": 193,
+          "right": 547,
+          "bottom": 436
+        },
+        {
+          "left": 207,
+          "top": 155,
+          "right": 510,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "iron-horn/rest",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7679424252717392,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 197,
+          "top": 137,
+          "right": 517,
+          "bottom": 436
+        },
+        {
+          "left": 201,
+          "top": 130,
+          "right": 523,
+          "bottom": 436
+        },
+        {
+          "left": 199,
+          "top": 140,
+          "right": 520,
+          "bottom": 436
+        },
+        {
+          "left": 201,
+          "top": 139,
+          "right": 522,
+          "bottom": 436
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/idle",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8660319303338171,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 208,
+          "top": 159,
+          "right": 505,
+          "bottom": 458
+        },
+        {
+          "left": 202,
+          "top": 193,
+          "right": 524,
+          "bottom": 424
+        },
+        {
+          "left": 222,
+          "top": 195,
+          "right": 494,
+          "bottom": 447
+        },
+        {
+          "left": 213,
+          "top": 187,
+          "right": 510,
+          "bottom": 449
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/move",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8412539912917272,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 205,
+          "top": 148,
+          "right": 542,
+          "bottom": 447
+        },
+        {
+          "left": 175,
+          "top": 191,
+          "right": 580,
+          "bottom": 449
+        },
+        {
+          "left": 220,
+          "top": 189,
+          "right": 543,
+          "bottom": 497
+        },
+        {
+          "left": 197,
+          "top": 166,
+          "right": 563,
+          "bottom": 432
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/hit",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.7981059506531205,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 213,
+          "top": 129,
+          "right": 583,
+          "bottom": 450
+        },
+        {
+          "left": 173,
+          "top": 151,
+          "right": 529,
+          "bottom": 450
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/down",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.8573846153846154,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": true,
+      "bounds": [
+        {
+          "left": 191,
+          "top": 160,
+          "right": 548,
+          "bottom": 478
+        },
+        {
+          "left": 171,
+          "top": 376,
+          "right": 546,
+          "bottom": 506
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/feathers",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8528911465892598,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 161,
+          "top": 149,
+          "right": 555,
+          "bottom": 448
+        },
+        {
+          "left": 212,
+          "top": 203,
+          "right": 510,
+          "bottom": 430
+        },
+        {
+          "left": 73,
+          "top": 191,
+          "right": 594,
+          "bottom": 433
+        },
+        {
+          "left": 165,
+          "top": 159,
+          "right": 540,
+          "bottom": 439
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/ring",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8127939042089986,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 206,
+          "top": 197,
+          "right": 474,
+          "bottom": 496
+        },
+        {
+          "left": 157,
+          "top": 141,
+          "right": 571,
+          "bottom": 491
+        },
+        {
+          "left": 127,
+          "top": 201,
+          "right": 618,
+          "bottom": 469
+        },
+        {
+          "left": 179,
+          "top": 140,
+          "right": 545,
+          "bottom": 461
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/dive",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8256901306240929,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 163,
+          "top": 151,
+          "right": 557,
+          "bottom": 450
+        },
+        {
+          "left": 221,
+          "top": 156,
+          "right": 545,
+          "bottom": 418
+        },
+        {
+          "left": 154,
+          "top": 149,
+          "right": 489,
+          "bottom": 476
+        },
+        {
+          "left": 183,
+          "top": 117,
+          "right": 538,
+          "bottom": 450
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "harpy-queen/rest",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8660319303338171,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 208,
+          "top": 159,
+          "right": 505,
+          "bottom": 458
+        },
+        {
+          "left": 202,
+          "top": 193,
+          "right": 524,
+          "bottom": 424
+        },
+        {
+          "left": 222,
+          "top": 195,
+          "right": 494,
+          "bottom": 447
+        },
+        {
+          "left": 213,
+          "top": 187,
+          "right": 510,
+          "bottom": 449
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/idle",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7630425646551724,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 215,
+          "top": 207,
+          "right": 685,
+          "bottom": 556
+        },
+        {
+          "left": 215,
+          "top": 198,
+          "right": 684,
+          "bottom": 556
+        },
+        {
+          "left": 206,
+          "top": 219,
+          "right": 690,
+          "bottom": 556
+        },
+        {
+          "left": 211,
+          "top": 208,
+          "right": 682,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/move",
+      "frames": 6,
+      "distinctFrames": 6,
+      "transparentRatio": 0.7925930316091954,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 265,
+          "top": 203,
+          "right": 710,
+          "bottom": 560
+        },
+        {
+          "left": 265,
+          "top": 203,
+          "right": 711,
+          "bottom": 558
+        },
+        {
+          "left": 264,
+          "top": 203,
+          "right": 711,
+          "bottom": 543
+        },
+        {
+          "left": 265,
+          "top": 203,
+          "right": 710,
+          "bottom": 543
+        },
+        {
+          "left": 265,
+          "top": 203,
+          "right": 710,
+          "bottom": 542
+        },
+        {
+          "left": 265,
+          "top": 203,
+          "right": 711,
+          "bottom": 552
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/hit",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.7648394396551724,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 225,
+          "top": 205,
+          "right": 721,
+          "bottom": 556
+        },
+        {
+          "left": 223,
+          "top": 207,
+          "right": 677,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/down",
+      "frames": 2,
+      "distinctFrames": 2,
+      "transparentRatio": 0.8199040948275862,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": true,
+      "bounds": [
+        {
+          "left": 221,
+          "top": 264,
+          "right": 703,
+          "bottom": 556
+        },
+        {
+          "left": 203,
+          "top": 339,
+          "right": 675,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/double-claw",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7626174568965517,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 171,
+          "top": 207,
+          "right": 717,
+          "bottom": 556
+        },
+        {
+          "left": 171,
+          "top": 186,
+          "right": 687,
+          "bottom": 556
+        },
+        {
+          "left": 174,
+          "top": 206,
+          "right": 690,
+          "bottom": 556
+        },
+        {
+          "left": 177,
+          "top": 195,
+          "right": 663,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/venom",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.782087823275862,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 230,
+          "top": 207,
+          "right": 692,
+          "bottom": 556
+        },
+        {
+          "left": 244,
+          "top": 189,
+          "right": 654,
+          "bottom": 556
+        },
+        {
+          "left": 144,
+          "top": 199,
+          "right": 692,
+          "bottom": 556
+        },
+        {
+          "left": 227,
+          "top": 206,
+          "right": 685,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/gust",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7889865301724138,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 254,
+          "top": 172,
+          "right": 700,
+          "bottom": 556
+        },
+        {
+          "left": 180,
+          "top": 240,
+          "right": 708,
+          "bottom": 556
+        },
+        {
+          "left": 193,
+          "top": 274,
+          "right": 685,
+          "bottom": 556
+        },
+        {
+          "left": 224,
+          "top": 237,
+          "right": 674,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/pounce",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8137252155172414,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 212,
+          "top": 207,
+          "right": 637,
+          "bottom": 556
+        },
+        {
+          "left": 229,
+          "top": 172,
+          "right": 668,
+          "bottom": 511
+        },
+        {
+          "left": 131,
+          "top": 255,
+          "right": 615,
+          "bottom": 532
+        },
+        {
+          "left": 204,
+          "top": 230,
+          "right": 667,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "manticore/rest",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.7630425646551724,
+      "edgePixels": 0,
+      "loop": true,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 215,
+          "top": 207,
+          "right": 685,
+          "bottom": 556
+        },
+        {
+          "left": 215,
+          "top": 198,
+          "right": 684,
+          "bottom": 556
+        },
+        {
+          "left": 206,
+          "top": 219,
+          "right": 690,
+          "bottom": 556
+        },
+        {
+          "left": 211,
+          "top": 208,
+          "right": 682,
+          "bottom": 556
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-blade",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8776923076923077,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 145,
+          "top": 109,
+          "right": 220,
+          "bottom": 167
+        },
+        {
+          "left": 102,
+          "top": 72,
+          "right": 267,
+          "bottom": 188
+        },
+        {
+          "left": 92,
+          "top": 59,
+          "right": 268,
+          "bottom": 204
+        },
+        {
+          "left": 105,
+          "top": 78,
+          "right": 259,
+          "bottom": 184
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "feather",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.9276046380090498,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 117,
+          "top": 110,
+          "right": 239,
+          "bottom": 150
+        },
+        {
+          "left": 89,
+          "top": 115,
+          "right": 267,
+          "bottom": 155
+        },
+        {
+          "left": 55,
+          "top": 102,
+          "right": 283,
+          "bottom": 154
+        },
+        {
+          "left": 66,
+          "top": 88,
+          "right": 245,
+          "bottom": 163
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-ring",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8367127403846154,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 167,
+          "top": 129,
+          "right": 378,
+          "bottom": 200
+        },
+        {
+          "left": 122,
+          "top": 114,
+          "right": 418,
+          "bottom": 216
+        },
+        {
+          "left": 62,
+          "top": 82,
+          "right": 444,
+          "bottom": 245
+        },
+        {
+          "left": 83,
+          "top": 86,
+          "right": 441,
+          "bottom": 234
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "wind-gust",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.80635348583878,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 243,
+          "top": 131,
+          "right": 355,
+          "bottom": 238
+        },
+        {
+          "left": 173,
+          "top": 87,
+          "right": 379,
+          "bottom": 275
+        },
+        {
+          "left": 128,
+          "top": 61,
+          "right": 420,
+          "bottom": 278
+        },
+        {
+          "left": 149,
+          "top": 90,
+          "right": 376,
+          "bottom": 258
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "venom",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.9438207013574661,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 119,
+          "top": 138,
+          "right": 191,
+          "bottom": 170
+        },
+        {
+          "left": 89,
+          "top": 130,
+          "right": 284,
+          "bottom": 165
+        },
+        {
+          "left": 60,
+          "top": 112,
+          "right": 277,
+          "bottom": 155
+        },
+        {
+          "left": 113,
+          "top": 97,
+          "right": 260,
+          "bottom": 170
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "claw",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8497951680672269,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 155,
+          "top": 75,
+          "right": 244,
+          "bottom": 164
+        },
+        {
+          "left": 111,
+          "top": 74,
+          "right": 251,
+          "bottom": 218
+        },
+        {
+          "left": 75,
+          "top": 50,
+          "right": 268,
+          "bottom": 236
+        },
+        {
+          "left": 113,
+          "top": 73,
+          "right": 235,
+          "bottom": 214
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "charge-impact",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8143092566619916,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 186,
+          "top": 181,
+          "right": 297,
+          "bottom": 258
+        },
+        {
+          "left": 106,
+          "top": 98,
+          "right": 366,
+          "bottom": 259
+        },
+        {
+          "left": 63,
+          "top": 58,
+          "right": 408,
+          "bottom": 251
+        },
+        {
+          "left": 80,
+          "top": 129,
+          "right": 367,
+          "bottom": 249
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "rock-shards",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.9267962184873949,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 148,
+          "top": 111,
+          "right": 260,
+          "bottom": 165
+        },
+        {
+          "left": 86,
+          "top": 110,
+          "right": 262,
+          "bottom": 183
+        },
+        {
+          "left": 107,
+          "top": 89,
+          "right": 256,
+          "bottom": 175
+        },
+        {
+          "left": 82,
+          "top": 90,
+          "right": 263,
+          "bottom": 183
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "bite-impact",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8998949579831933,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 95,
+          "top": 72,
+          "right": 266,
+          "bottom": 209
+        },
+        {
+          "left": 78,
+          "top": 92,
+          "right": 245,
+          "bottom": 195
+        },
+        {
+          "left": 103,
+          "top": 89,
+          "right": 239,
+          "bottom": 175
+        },
+        {
+          "left": 107,
+          "top": 81,
+          "right": 236,
+          "bottom": 174
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "horn-sweep",
+      "frames": 4,
+      "distinctFrames": 4,
+      "transparentRatio": 0.8664481065918653,
+      "edgePixels": 0,
+      "loop": false,
+      "terminal": false,
+      "bounds": [
+        {
+          "left": 239,
+          "top": 92,
+          "right": 328,
+          "bottom": 164
+        },
+        {
+          "left": 118,
+          "top": 85,
+          "right": 358,
+          "bottom": 230
+        },
+        {
+          "left": 62,
+          "top": 58,
+          "right": 373,
+          "bottom": 259
+        },
+        {
+          "left": 116,
+          "top": 80,
+          "right": 357,
+          "bottom": 241
+        }
+      ],
+      "status": "passed"
+    }
+  ]
+}

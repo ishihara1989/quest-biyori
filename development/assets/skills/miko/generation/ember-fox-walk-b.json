@@ -1,0 +1,13 @@
+{
+  "id": "ember-fox-walk-b",
+  "source": "development/assets/skills/miko/source/ember-fox-walk-b-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-c34a9fb4-b62a-4af9-9948-fa4c89194979.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Reference is SAME SUBJECT. Exactly THREE frames in ONE horizontal row. Subject small sacred white fox, vermilion ear tips and ONE bushy tail with red tip, amber eyes, tiny gold knotted collar with ONE red tassel. Right-facing walking in place, feet baseline .82, torso fixed center. Camera-facing near legs remain NEAR throughout; never exchange anatomy. 1 far forepaw ahead, near forepaw behind; 2 far forepaw planted under shoulder, near paw lifts; 3 near paw passes in front of far paw, returns to first walk-a pose. Keep size and palette matched to reference and other walking half; no effects. Keep all anatomy and motion effects entirely within each cell with clear 10% empty margins.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/ember-fox-idle-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T14:17:26.975Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

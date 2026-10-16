@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "low-dash",
+  "label": "低い抜け動作",
+  "facing": "right",
+  "sheet": "ninja-low-dash.png",
+  "width": 1920,
+  "height": 256,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 600,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.21739130434782608,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/ninja/motions/low-dash/source/ninja-low-dash-generated-v2.png",
+  "sourceWidth": 2520,
+  "sourceHeight": 1448,
+  "sourceGrid": [
+    3,
+    2
+  ],
+  "columnSplit": 1260,
+  "rowSplit": 717,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; complete skill sequences in ninja-skill-lab.html. Separate swept projectiles own flight and damage.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "low-dash-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "低く構える",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 840,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 364,
+        "y": 667
+      },
+      "sourceBounds": {
+        "left": 107,
+        "top": 160,
+        "right": 639,
+        "bottom": 667
+      },
+      "bounds": {
+        "left": 105,
+        "top": 129,
+        "right": 219,
+        "bottom": 239
+      },
+      "visiblePixels": 5697,
+      "transparentPixels": 75179
+    },
+    {
+      "index": 1,
+      "file": "low-dash-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "後ろ脚で蹴る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 840,
+        "y": 0,
+        "width": 840,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 310,
+        "y": 666
+      },
+      "sourceBounds": {
+        "left": 81,
+        "top": 122,
+        "right": 631,
+        "bottom": 666
+      },
+      "bounds": {
+        "left": 111,
+        "top": 121,
+        "right": 229,
+        "bottom": 239
+      },
+      "visiblePixels": 6307,
+      "transparentPixels": 74220
+    },
+    {
+      "index": 2,
+      "file": "low-dash-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "低く抜ける",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1680,
+        "y": 0,
+        "width": 840,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 128,
+        "y": 664
+      },
+      "sourceBounds": {
+        "left": 77,
+        "top": 165,
+        "right": 700,
+        "bottom": 664
+      },
+      "bounds": {
+        "left": 149,
+        "top": 131,
+        "right": 284,
+        "bottom": 239
+      },
+      "visiblePixels": 6222,
+      "transparentPixels": 74506
+    },
+    {
+      "index": 3,
+      "file": "low-dash-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "前脚で受ける",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 724,
+        "width": 840,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 272,
+        "y": 681
+      },
+      "sourceBounds": {
+        "left": 45,
+        "top": 175,
+        "right": 803,
+        "bottom": 681
+      },
+      "bounds": {
+        "left": 111,
+        "top": 129,
+        "right": 275,
+        "bottom": 239
+      },
+      "visiblePixels": 8017,
+      "transparentPixels": 72575
+    },
+    {
+      "index": 4,
+      "file": "low-dash-05.png",
+      "x": 1280,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "腰を上げる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 840,
+        "y": 724,
+        "width": 840,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 337,
+        "y": 686
+      },
+      "sourceBounds": {
+        "left": 38,
+        "top": 42,
+        "right": 617,
+        "bottom": 686
+      },
+      "bounds": {
+        "left": 95,
+        "top": 99,
+        "right": 220,
+        "bottom": 239
+      },
+      "visiblePixels": 7643,
+      "transparentPixels": 73199
+    },
+    {
+      "index": 5,
+      "file": "low-dash-06.png",
+      "x": 1600,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "投擲の構え",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1680,
+        "y": 724,
+        "width": 840,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 320,
+        "y": 686
+      },
+      "sourceBounds": {
+        "left": 68,
+        "top": 49,
+        "right": 604,
+        "bottom": 686
+      },
+      "bounds": {
+        "left": 106,
+        "top": 101,
+        "right": 221,
+        "bottom": 239
+      },
+      "visiblePixels": 7273,
+      "transparentPixels": 73484
+    }
+  ]
+}

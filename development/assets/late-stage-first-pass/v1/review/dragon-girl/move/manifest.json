@@ -1,0 +1,137 @@
+{
+  "id": "dragon-girl/move",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon-girl/move-1-generated.png",
+    "sources/dragon-girl/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "ドラゴンガール",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 79,
+        "top": 28,
+        "right": 710,
+        "bottom": 676
+      },
+      "sourceWidth": 754,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 291831,
+      "transparentFraction": 0.5345908378152615
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 42,
+        "top": 26,
+        "right": 668,
+        "bottom": 679
+      },
+      "sourceWidth": 713,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 265555,
+      "transparentFraction": 0.5144301178585542
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 43,
+        "top": 32,
+        "right": 668,
+        "bottom": 679
+      },
+      "sourceWidth": 705,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 251187,
+      "transparentFraction": 0.49211825555424943
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 43,
+        "top": 30,
+        "right": 675,
+        "bottom": 677
+      },
+      "sourceWidth": 720,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 243352,
+      "transparentFraction": 0.4668354818907305
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 44,
+        "top": 34,
+        "right": 682,
+        "bottom": 677
+      },
+      "sourceWidth": 722,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 254321,
+      "transparentFraction": 0.4865264535284125
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 38,
+        "top": 36,
+        "right": 689,
+        "bottom": 669
+      },
+      "sourceWidth": 730,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 257150,
+      "transparentFraction": 0.486547339741164
+    }
+  ],
+  "reference": "../../../references/dragon-girl.png",
+  "originalSources": [
+    "../../../sources/dragon-girl/move-1-generated.png",
+    "../../../sources/dragon-girl/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

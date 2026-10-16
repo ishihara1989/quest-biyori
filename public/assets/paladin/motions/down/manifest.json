@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "motion": "down",
+  "label": "ダウン",
+  "facing": "right",
+  "sheet": "paladin-down.png",
+  "width": 1024,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1250,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.24363817097415508,
+  "sampling": "nearest-neighbor",
+  "source": "../../../../../development/assets/paladin/motions/down/source/paladin-down-generated-v1.png",
+  "sourceWidth": 1278,
+  "sourceHeight": 1230,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "columnSplit": 644,
+  "rowSplit": 660,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Jump previewOffset is for the review viewer only. Use world jump physics and the common pivot when integrating into a game.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 150,
+      "phase": "のけぞり",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 644,
+        "height": 660
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 594
+      },
+      "sourceBounds": {
+        "left": 38,
+        "top": 91,
+        "right": 589,
+        "bottom": 594
+      },
+      "bounds": {
+        "left": 59,
+        "top": 85,
+        "right": 193,
+        "bottom": 207
+      },
+      "visiblePixels": 10918,
+      "transparentPixels": 45295
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "崩れる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 644,
+        "y": 0,
+        "width": 634,
+        "height": 660
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 616
+      },
+      "sourceBounds": {
+        "left": 11,
+        "top": 173,
+        "right": 614,
+        "bottom": 616
+      },
+      "bounds": {
+        "left": 53,
+        "top": 99,
+        "right": 199,
+        "bottom": 207
+      },
+      "visiblePixels": 9774,
+      "transparentPixels": 46479
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 220,
+      "phase": "倒れ込む",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 660,
+        "width": 644,
+        "height": 570
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 475
+      },
+      "sourceBounds": {
+        "left": 23,
+        "top": 107,
+        "right": 641,
+        "bottom": 475
+      },
+      "bounds": {
+        "left": 56,
+        "top": 118,
+        "right": 205,
+        "bottom": 207
+      },
+      "visiblePixels": 8871,
+      "transparentPixels": 47448
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 700,
+      "phase": "倒れて静止",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 644,
+        "y": 660,
+        "width": 634,
+        "height": 570
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 511
+      },
+      "sourceBounds": {
+        "left": 2,
+        "top": 242,
+        "right": 621,
+        "bottom": 511
+      },
+      "bounds": {
+        "left": 50,
+        "top": 142,
+        "right": 200,
+        "bottom": 207
+      },
+      "visiblePixels": 6286,
+      "transparentPixels": 50381
+    }
+  ]
+}

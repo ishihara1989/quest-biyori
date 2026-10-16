@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-troll",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "cave-troll-idle.png",
+  "preview": "../../../../../../development/assets/enemies/cave-troll/motions/idle/cave-troll-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-troll/PROMPT.md",
+  "width": 2816,
+  "height": 512,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/cave-troll/source/idle-registered.png",
+  "sourceScale": 0.7159904534606205,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 78,
+        "top": 196,
+        "right": 487,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 622,
+        "height": 506
+      },
+      "sourceAnchor": {
+        "x": 477,
+        "y": 434
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 82,
+        "top": 167,
+        "right": 485,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 622,
+        "y": 0,
+        "width": 622,
+        "height": 506
+      },
+      "sourceAnchor": {
+        "x": 472,
+        "y": 475
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 77,
+        "top": 156,
+        "right": 499,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 506,
+        "width": 622,
+        "height": 506
+      },
+      "sourceAnchor": {
+        "x": 478,
+        "y": 489
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 77,
+        "top": 199,
+        "right": 489,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 622,
+        "y": 506,
+        "width": 622,
+        "height": 506
+      },
+      "sourceAnchor": {
+        "x": 478,
+        "y": 429
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-troll/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 4,
+        "count": 119299,
+        "left": 72,
+        "top": 73,
+        "right": 643,
+        "bottom": 491,
+        "cx": 414.9675688815497,
+        "cy": 289.0965054191569
+      },
+      {
+        "id": 1,
+        "count": 126628,
+        "left": 834,
+        "top": 32,
+        "right": 1398,
+        "bottom": 491,
+        "cx": 1171.171573427678,
+        "cy": 276.6822582683135
+      },
+      {
+        "id": 15,
+        "count": 129649,
+        "left": 70,
+        "top": 513,
+        "right": 659,
+        "bottom": 986,
+        "cx": 418.04468989348163,
+        "cy": 764.5406135026109
+      },
+      {
+        "id": 18,
+        "count": 118975,
+        "left": 829,
+        "top": 576,
+        "right": 1404,
+        "bottom": 989,
+        "cx": 1172.6831098970372,
+        "cy": 790.7680184912797
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

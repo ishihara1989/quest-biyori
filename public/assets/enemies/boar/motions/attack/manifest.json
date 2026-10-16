@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boar",
+  "motion": "attack",
+  "facing": "left",
+  "label": "突進",
+  "sheet": "boar-attack.png",
+  "preview": "../../../../../../development/assets/enemies/boar/motions/attack/boar-attack-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boar/PROMPT.md",
+  "width": 1280,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 400,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/boar/source/boar-attack-refined-v1.png",
+  "sourceScale": 0.35,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "両前脚を少し持ち上げる・後脚は接地",
+      "bounds": {
+        "left": 58,
+        "top": 63,
+        "right": 262,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 621,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 324,
+        "y": 605
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "attack-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "両前脚を前へ・両後脚を後方へ伸ばして跳び上がる",
+      "bounds": {
+        "left": 58,
+        "top": 43,
+        "right": 269,
+        "bottom": 181
+      },
+      "sourceCell": {
+        "x": 621,
+        "y": 0,
+        "width": 633,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 299,
+        "y": 527
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 2,
+      "file": "attack-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 90,
+      "phase": "両前脚で着地・両後脚はまだ浮いている",
+      "bounds": {
+        "left": 61,
+        "top": 69,
+        "right": 259,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "attack-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 110,
+      "phase": "両後脚も着地・全脚を曲げてかがむ",
+      "bounds": {
+        "left": 61,
+        "top": 85,
+        "right": 259,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "gait": {
+    "leftRightPhase": "synchronized",
+    "hindlegPushOff": "simultaneous",
+    "forelegLanding": "paired-frame-3",
+    "hindlegLanding": "paired-frame-4",
+    "phases": [
+      "front-feet-raised",
+      "airborne-legs-extended",
+      "front-feet-land",
+      "hind-feet-land-crouch"
+    ]
+  },
+  "rootMotion": {
+    "mode": "external",
+    "direction": "left"
+  },
+  "poseRefinementSources": [
+    "../../../../../../development/assets/enemies/boar/source/boar-attack-generated-v4.png",
+    "../../../../../../development/assets/enemies/boar/source/boar-attack-generated-v5.png"
+  ]
+}

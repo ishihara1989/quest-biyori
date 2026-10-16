@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/golden-lion-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 719,
+      "height": 724
+    },
+    {
+      "x": 719,
+      "y": 0,
+      "width": 752,
+      "height": 724
+    },
+    {
+      "x": 1471,
+      "y": 0,
+      "width": 701,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 585.5,
+      "y": 913
+    },
+    {
+      "x": 565,
+      "y": 913
+    },
+    {
+      "x": 555.5,
+      "y": 914
+    }
+  ],
+  "scale": 0.08005718370264475
+}

@@ -1,0 +1,7 @@
+body[data-region="10"]{--gold:#e2b5ff;--green:#b7a0cf;--mint:#f1d3ff;--line:#664777;--muted:#c8aacd;background:radial-gradient(ellipse at 50% 0,#63338366,transparent 65%),#1a1325}
+body[data-region="10"] .battle-panel{border-color:#bd8cff66;box-shadow:0 12px 60px #7933a329}
+body[data-region="10"] .arena{background:#271b35}
+.stage-map[data-region="10"]{background:linear-gradient(#23112d33,#261531d9),url('/assets/stages/demon-castle/distant.png') center/cover}
+body[data-region="10"] .route-node.current>span{border-color:#efd5ff;box-shadow:0 0 24px #b75aff66}
+body[data-region="10"] #wave-dots .active{background:#e8b5ff;box-shadow:0 0 14px #ae60ff88}
+body[data-region="10"] .forest-route{border-color:#c08af044;background:linear-gradient(90deg,#59277666,#35224555)}

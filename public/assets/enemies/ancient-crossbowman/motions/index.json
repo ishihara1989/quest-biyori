@@ -1,0 +1,32 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "shoot",
+    "label": "弩射撃",
+    "manifest": "shoot/manifest.json"
+  },
+  {
+    "id": "double",
+    "label": "連射",
+    "manifest": "double/manifest.json"
+  }
+]

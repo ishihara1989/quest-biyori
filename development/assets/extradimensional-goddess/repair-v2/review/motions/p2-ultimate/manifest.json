@@ -1,0 +1,307 @@
+{
+  "id": "motions/p2-ultimate",
+  "kind": "motion",
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "loop": false,
+  "frames": [
+    {
+      "index": 1,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-01.png",
+      "source": "source/motions/p2-ultimate-1-r2.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 160,
+      "description": "L/R=(170,244)/(352,260), neutral.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4490934342663533,
+      "edgePixels": 0,
+      "bounds": [
+        26,
+        20,
+        706,
+        704
+      ],
+      "marginFraction": 0.023480662983425413
+    },
+    {
+      "index": 2,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-02.png",
+      "source": "source/motions/p2-ultimate-1-r2.png",
+      "cellRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(216,211)/(310,211), draw toward chest.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4484905833155276,
+      "edgePixels": 0,
+      "bounds": [
+        27,
+        21,
+        706,
+        704
+      ],
+      "marginFraction": 0.023480662983425413
+    },
+    {
+      "index": 3,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-03.png",
+      "source": "source/motions/p2-ultimate-1-r2.png",
+      "cellRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(238,195)/(286,195), palms close at chest.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.45377506791611977,
+      "edgePixels": 0,
+      "bounds": [
+        26,
+        20,
+        706,
+        703
+      ],
+      "marginFraction": 0.023480662983425413
+    },
+    {
+      "index": 4,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-04.png",
+      "source": "source/motions/p2-ultimate-2.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(240,155)/(284,155), raise together before face.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.470143615884741,
+      "edgePixels": 0,
+      "bounds": [
+        35,
+        45,
+        687,
+        711
+      ],
+      "marginFraction": 0.016574585635359115
+    },
+    {
+      "index": 5,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-05.png",
+      "source": "source/motions/p2-ultimate-2.png",
+      "cellRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(238,121)/(286,121), raise above brow.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4416722627514423,
+      "edgePixels": 0,
+      "bounds": [
+        35,
+        42,
+        696,
+        712
+      ],
+      "marginFraction": 0.015193370165745856
+    },
+    {
+      "index": 6,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-06.png",
+      "source": "source/motions/p2-ultimate-2.png",
+      "cellRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(236,104)/(288,104), palms above head, HOLD-ready.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4528211898293703,
+      "edgePixels": 0,
+      "bounds": [
+        33,
+        10,
+        688,
+        712
+      ],
+      "marginFraction": 0.013812154696132596
+    },
+    {
+      "index": 7,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-07.png",
+      "source": "source/motions/p2-ultimate-3-r2.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(169,167)/(353,167), powerful outward release.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.46075554775495253,
+      "edgePixels": 0,
+      "bounds": [
+        47,
+        24,
+        707,
+        706
+      ],
+      "marginFraction": 0.022099447513812154
+    },
+    {
+      "index": 8,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-08.png",
+      "source": "source/motions/p2-ultimate-3-r2.png",
+      "cellRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(145,220)/(378,220), arms down/out, impact pose.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.5032565397881628,
+      "edgePixels": 0,
+      "bounds": [
+        63,
+        24,
+        691,
+        706
+      ],
+      "marginFraction": 0.023480662983425413
+    },
+    {
+      "index": 9,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p2-ultimate/review/motions/p2-ultimate/frame-09.png",
+      "source": "source/motions/p2-ultimate-3-r2.png",
+      "cellRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "extractionWindow": null,
+      "durationMs": 180,
+      "description": "L/R=(170,244)/(352,260), return to idle.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.5046320319892555,
+      "edgePixels": 0,
+      "bounds": [
+        63,
+        24,
+        690,
+        706
+      ],
+      "marginFraction": 0.023480662983425413
+    }
+  ],
+  "sources": [
+    "source/motions/p2-ultimate-1-r2.png",
+    "source/motions/p2-ultimate-2.png",
+    "source/motions/p2-ultimate-3-r2.png"
+  ],
+  "expectedFrames": 9,
+  "missingFrames": [],
+  "complete": true,
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+  "contact": "review/motions/p2-ultimate/contact.png",
+  "gif": "review/motions/p2-ultimate/preview.gif"
+}

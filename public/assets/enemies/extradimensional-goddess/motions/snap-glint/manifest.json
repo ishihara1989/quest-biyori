@@ -1,0 +1,47 @@
+{
+  "id": "snap-glint",
+  "motion": "snap-glint",
+  "label": "指先の光",
+  "loop": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "durationMs": 120,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 40,
+      "file": "frame-1.png"
+    },
+    {
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 40,
+      "file": "frame-2.png"
+    },
+    {
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 40,
+      "file": "frame-3.png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "effects/landing-shock",
+  "effect": "landing-shock",
+  "region": "volcano",
+  "label": "翼震の着地衝撃",
+  "kind": "ground",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/landing-shock-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. huge LOW hollow elliptical orange-white shock ring expanding from center with basalt fragments and short flame spires on rim; transparent center. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed ground center (512,850), expand upward/outward; elliptical side-view base. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-6e927853-9786-4f75-a8f5-1a71e512fde6.png",
+  "sha256": "4e8ca720970d6f1fd0d800c12fad2eb5c511e544ee5eb088e87dfeedbdcc8614",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "低い楕円輪と外周の岩片・炎で着地の衝撃を表現。"
+    ],
+    "issues": [
+      "輪の中央と周囲に橙の光が混入。中央が透明な衝撃輪として修正する。",
+      "最大コマの外周がセル境界に近い。原画の見切れを検収する。"
+    ]
+  }
+}

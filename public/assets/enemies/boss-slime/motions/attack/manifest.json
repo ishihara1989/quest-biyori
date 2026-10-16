@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boss-slime",
+  "motion": "attack",
+  "facing": "left",
+  "label": "攻撃",
+  "sheet": "boss-slime-attack.png",
+  "preview": "../../../../../../development/assets/enemies/boss-slime/motions/attack/boss-slime-attack-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boss-slime/PROMPT.md",
+  "width": 2304,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 288,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/boss-slime/source/boss-slime-attack-generated-v1.png",
+  "sourceScale": 0.545,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "name": "melee-impact",
+      "frame": 1,
+      "timeMs": 180
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "右に引いてためる",
+      "bounds": {
+        "left": 177,
+        "top": 156,
+        "right": 429,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 580,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 321,
+        "y": 614
+      },
+      "bakedOffset": {
+        "x": 15,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "attack-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 100,
+      "phase": "左へ体当たり",
+      "bounds": {
+        "left": 87,
+        "top": 197,
+        "right": 425,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 580,
+        "y": 0,
+        "width": 674,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 321,
+        "y": 612
+      },
+      "bakedOffset": {
+        "x": -32,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "attack-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 160,
+      "phase": "反動を戻す",
+      "bounds": {
+        "left": 129,
+        "top": 174,
+        "right": 428,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 332,
+        "y": 511
+      },
+      "bakedOffset": {
+        "x": -9,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "attack-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 200,
+      "phase": "待機の基準姿勢",
+      "bounds": {
+        "left": 147,
+        "top": 147,
+        "right": 429,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/boss-slime/source/boss-slime-idle-generated-v1.png",
+      "sourceScale": 0.5,
+      "reusedPose": "idle/0"
+    }
+  ]
+}

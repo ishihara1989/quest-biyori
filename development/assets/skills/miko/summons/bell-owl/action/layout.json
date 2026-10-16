@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/bell-owl-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 751,
+      "height": 724
+    },
+    {
+      "x": 751,
+      "y": 0,
+      "width": 736,
+      "height": 724
+    },
+    {
+      "x": 1487,
+      "y": 0,
+      "width": 685,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.1206896551724138
+}

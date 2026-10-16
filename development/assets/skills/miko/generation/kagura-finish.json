@@ -1,0 +1,14 @@
+{
+  "id": "kagura-finish",
+  "source": "development/assets/skills/miko/source/kagura-finish-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-b707b06f-c892-4aaf-b46f-64da92c3cbb9.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Reference1 SAME shrine maiden identity and pixel style; reference2 her prayer pose connection. Exactly THREE full-body frames in one row. Preserve black long hair, large red head ribbon with white border, white wide kimono sleeves red trim, vermilion hakama, tabi and zori, same wooden gohei with white zigzag shide and red tassel. Facing RIGHT, identical head/body scale, feet midpoint (.50,.91), head crown (.48,.30), same right-hand gohei length, left free hand. 1 gohei tip (.84,.36) receives end of spin; 2 tip (.64,.12) lifted above head, hair and sleeves settle; 3 tip (.74,.28) lowers toward ready. Whole gohei, sleeves and hair fit generous margins. No beasts, magic or particles baked into character.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/idle-01.png",
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/motions/prayer/prayer-04.png"
+  ],
+  "receivedAt": "2026-10-10T14:20:43.832Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

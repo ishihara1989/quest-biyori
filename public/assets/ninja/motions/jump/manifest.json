@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "jump",
+  "label": "ジャンプ",
+  "facing": "right",
+  "sheet": "ninja-jump.png",
+  "width": 768,
+  "height": 224,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.22661870503597123,
+  "sampling": "nearest-neighbor",
+  "source": "../../../../../development/assets/ninja/motions/jump/source/ninja-jump-generated-v1.png",
+  "sourceWidth": 1278,
+  "sourceHeight": 1230,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "columnSplit": 661,
+  "rowSplit": 650,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Jump previewOffset is for the review viewer only. Use world jump physics and the common pivot when integrating into a game.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "jump-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "しゃがみ・踏切",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 661,
+        "height": 650
+      },
+      "sourceAnchor": {
+        "x": 353,
+        "y": 621
+      },
+      "sourceBounds": {
+        "left": 82,
+        "top": 163,
+        "right": 634,
+        "bottom": 621
+      },
+      "bounds": {
+        "left": 67,
+        "top": 104,
+        "right": 191,
+        "bottom": 207
+      },
+      "visiblePixels": 6421,
+      "transparentPixels": 49999
+    },
+    {
+      "index": 1,
+      "file": "jump-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 360,
+      "phase": "飛び上がり・滞空",
+      "airborne": true,
+      "previewOffset": {
+        "x": 0,
+        "y": -38
+      },
+      "sourceCell": {
+        "x": 661,
+        "y": 0,
+        "width": 617,
+        "height": 650
+      },
+      "sourceAnchor": {
+        "x": 285,
+        "y": 603
+      },
+      "sourceBounds": {
+        "left": 26,
+        "top": 47,
+        "right": 572,
+        "bottom": 603
+      },
+      "bounds": {
+        "left": 70,
+        "top": 81,
+        "right": 193,
+        "bottom": 207
+      },
+      "visiblePixels": 7029,
+      "transparentPixels": 49439
+    },
+    {
+      "index": 2,
+      "file": "jump-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 200,
+      "phase": "着地",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 650,
+        "width": 661,
+        "height": 580
+      },
+      "sourceAnchor": {
+        "x": 370,
+        "y": 551
+      },
+      "sourceBounds": {
+        "left": 98,
+        "top": 29,
+        "right": 631,
+        "bottom": 551
+      },
+      "bounds": {
+        "left": 67,
+        "top": 89,
+        "right": 187,
+        "bottom": 207
+      },
+      "visiblePixels": 6382,
+      "transparentPixels": 50053
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "king-toad",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "king-toad-down.png",
+  "preview": "../../../../../../development/assets/enemies/king-toad/motions/down/king-toad-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/king-toad/PROMPT.md",
+  "width": 2816,
+  "height": 352,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 352,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 335
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/king-toad/source/down-registered.png",
+  "sourceScale": 0.5061728395061729,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 120,
+      "phase": "待機から",
+      "bounds": {
+        "left": 270,
+        "top": 90,
+        "right": 565,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 622,
+        "height": 534
+      },
+      "sourceAnchor": {
+        "x": 290,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/king-toad/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 275,
+        "top": 126,
+        "right": 573,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 617,
+        "y": 0,
+        "width": 647,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 295,
+        "y": 430
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 220,
+      "phase": "作用",
+      "bounds": {
+        "left": 268,
+        "top": 168,
+        "right": 570,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 518,
+        "width": 632,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 294,
+        "y": 346
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 360,
+      "phase": "終端",
+      "bounds": {
+        "left": 259,
+        "top": 198,
+        "right": 562,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 632,
+        "y": 518,
+        "width": 632,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 310,
+        "y": 288
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/king-toad/source/down-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 190357,
+      "left": 38,
+      "top": 129,
+      "right": 607,
+      "bottom": 614,
+      "cx": 320.6865048303976,
+      "cy": 393.25917092620705
+    },
+    {
+      "id": 2,
+      "count": 174477,
+      "left": 641,
+      "top": 195,
+      "right": 1232,
+      "bottom": 609,
+      "cx": 927.1925411372273,
+      "cy": 425.5418651168922
+    },
+    {
+      "id": 3,
+      "count": 134123,
+      "left": 13,
+      "top": 810,
+      "right": 612,
+      "bottom": 1140,
+      "cx": 308.88646988212315,
+      "cy": 994.0175137746695
+    },
+    {
+      "id": 4,
+      "count": 114188,
+      "left": 641,
+      "top": 868,
+      "right": 1239,
+      "bottom": 1140,
+      "cx": 940.9398185448558,
+      "cy": 1013.3403860300557
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

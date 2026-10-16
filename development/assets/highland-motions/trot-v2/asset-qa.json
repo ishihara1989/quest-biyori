@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-13 JST",
+  "status": "passed",
+  "scope": "technical asset integrity; no claim of exact generated paw position",
+  "backupFiles": 23,
+  "frames": 6,
+  "distinctFrames": 6,
+  "checks": [
+    "backup SHA256",
+    "resource paths",
+    "800x580 cells",
+    "six distinct PNGs",
+    "transparent edges",
+    "unclipped output",
+    "720ms looping GIF"
+  ]
+}

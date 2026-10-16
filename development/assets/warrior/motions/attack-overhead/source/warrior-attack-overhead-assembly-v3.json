@@ -1,0 +1,75 @@
+{
+  "cellWidth": 1024,
+  "cellHeight": 768,
+  "output": "warrior-attack-overhead-assembled-v3.png",
+  "frames": [
+    {
+      "source": "warrior-attack-overhead-generated-v2.png",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 690,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 633
+      },
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "source": "warrior-attack-overhead-generated-v4.png",
+      "rect": {
+        "x": 690,
+        "y": 0,
+        "width": 588,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 333,
+        "y": 634
+      },
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "source": "warrior-attack-overhead-generated-v2.png",
+      "rect": {
+        "x": 0,
+        "y": 664,
+        "width": 670,
+        "height": 566
+      },
+      "sourceAnchor": {
+        "x": 276,
+        "y": 490
+      },
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "source": "warrior-attack-overhead-generated-v2.png",
+      "rect": {
+        "x": 690,
+        "y": 664,
+        "width": 588,
+        "height": 566
+      },
+      "sourceAnchor": {
+        "x": 200,
+        "y": 491
+      },
+      "destinationAnchor": {
+        "x": 512,
+        "y": 720
+      }
+    }
+  ]
+}

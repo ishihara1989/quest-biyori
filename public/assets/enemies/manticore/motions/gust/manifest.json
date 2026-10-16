@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "enemy": "manticore",
+  "motion": "gust",
+  "facing": "left",
+  "label": "翼の突風",
+  "sheet": "manticore-gust.png",
+  "preview": "../../../../../../development/assets/enemies/manticore/motions/gust/manticore-gust-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 3200,
+  "height": 580,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 800,
+  "frameHeight": 580,
+  "frameCount": 4,
+  "pivot": {
+    "x": 456,
+    "y": 556
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/highland-motions/enemies/manticore/registered/gust.png",
+  "sourceScale": 0.7987551867219919,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "wind-gust",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "origin"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "gust-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 254,
+        "top": 172,
+        "right": 700,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 712,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 519
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "gust-02.png",
+      "x": 800,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 180,
+        "top": 240,
+        "right": 708,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 712,
+        "y": 0,
+        "width": 712,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 519
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "gust-03.png",
+      "x": 1600,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 193,
+        "top": 274,
+        "right": 685,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 558,
+        "width": 712,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 373,
+        "y": 437
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "gust-04.png",
+      "x": 2400,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 224,
+        "top": 237,
+        "right": 674,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 712,
+        "y": 558,
+        "width": 712,
+        "height": 558
+      },
+      "sourceAnchor": {
+        "x": 341,
+        "y": 438
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/manticore.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/manticore/gust-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 688,
+          "height": 575
+        },
+        {
+          "x": 688,
+          "y": 0,
+          "width": 743,
+          "height": 575
+        },
+        {
+          "x": 0,
+          "y": 575,
+          "width": 743,
+          "height": 524
+        },
+        {
+          "x": 743,
+          "y": 575,
+          "width": 688,
+          "height": 524
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.9146110056925996,
+  "requestedScaleMultiplier": 1.1,
+  "registrationCorrections": [],
+  "effectAssets": [
+    {
+      "id": "highland-wind-gust",
+      "manifest": "../../../../effects/highland-wind-gust/manifest.json"
+    }
+  ],
+  "action": {
+    "motion": "gust",
+    "warn": 1300,
+    "times": [
+      1300
+    ],
+    "power": 0.75,
+    "radius": 300,
+    "kind": "arc",
+    "effect": "wind-gust",
+    "status": null,
+    "push": 70,
+    "duration": 1800
+  }
+}

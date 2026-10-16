@@ -1,0 +1,7 @@
+body[data-region="9"]{--gold:#ffc77a;--green:#d7a48b;--mint:#ffdba5;--line:#784839;--muted:#d3ada1;background:radial-gradient(ellipse at 50% 0,#a6392566,transparent 65%),#211515}
+body[data-region="9"] .battle-panel{border-color:#ffab6955;box-shadow:0 12px 60px #c4432429}
+body[data-region="9"] .arena{background:#392523}
+.stage-map[data-region="9"]{background:linear-gradient(#391c1933,#321a1bd9),url('/assets/stages/crimson-volcano/distant.png') center/cover}
+body[data-region="9"] .route-node.current>span{border-color:#ffe4ba;box-shadow:0 0 24px #ff8c5555}
+body[data-region="9"] #wave-dots .active{background:#ffe1a0;box-shadow:0 0 14px #ff805988}
+body[data-region="9"] .forest-route{border-color:#f5966844;background:linear-gradient(90deg,#78352666,#45252255)}

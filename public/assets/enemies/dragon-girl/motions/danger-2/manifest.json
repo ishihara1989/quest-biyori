@@ -1,0 +1,254 @@
+{
+  "id": "dragon-girl/danger-2",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "label": "紅翼竜息",
+  "kind": null,
+  "motion": "danger-2",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 6600,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/dragon-girl.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/danger-2-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8377113342285156,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 87,
+        "top": 102,
+        "right": 443,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 131,
+        "top": 103,
+        "right": 422,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/danger-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 788,
+        "height": 508
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 433,
+        "y": 499
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4620,
+      "transparentFraction": 0.8326988220214844,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 112,
+        "top": 98,
+        "right": 440,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 139,
+        "top": 101,
+        "right": 436,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/danger-2-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 788,
+        "y": 0,
+        "width": 748,
+        "height": 508
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 391,
+        "y": 499
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 1500,
+      "transparentFraction": 0.837249755859375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 76,
+        "top": 99,
+        "right": 455,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 114,
+        "top": 110,
+        "right": 417,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/danger-2-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 508,
+        "width": 786,
+        "height": 516
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 440,
+        "y": 491
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8389549255371094,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 120,
+        "top": 99,
+        "right": 435,
+        "bottom": 340
+      },
+      "visibleBounds": {
+        "left": 143,
+        "top": 101,
+        "right": 431,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon-girl/danger-2-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 786,
+        "y": 508,
+        "width": 750,
+        "height": 516
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 385,
+        "y": 494
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "fire-beam",
+      "timeMs": 4800,
+      "slot": 0,
+      "placement": "origin",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    },
+    {
+      "id": "fire-beam",
+      "timeMs": 5700,
+      "slot": 1,
+      "placement": "origin",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "fire-beam",
+    "burn"
+  ],
+  "repeatRelease": true,
+  "releaseOrigin": {
+    "x": 189,
+    "y": 161
+  },
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/dragon-girl/danger-2/preview.gif",
+  "action": {
+    "name": "紅翼竜息",
+    "motion": "danger-2",
+    "warn": 4800,
+    "times": [
+      4800,
+      5700
+    ],
+    "kind": "lane",
+    "radius": 70,
+    "effect": "fire-beam",
+    "rest": 9000,
+    "status": "burn",
+    "duration": 6600,
+    "length": 560
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-fire-beam",
+        "manifest": "../../../../effects/volcano-fire-beam/manifest.json"
+      },
+      {
+        "id": "volcano-burn",
+        "manifest": "../../../../effects/volcano-burn/manifest.json"
+      }
+    ]
+  }
+}

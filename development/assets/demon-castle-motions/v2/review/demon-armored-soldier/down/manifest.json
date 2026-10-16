@@ -1,0 +1,79 @@
+{
+  "id": "demon-armored-soldier/down",
+  "label": "魔鎧兵・撃破",
+  "enemy": "demon-armored-soldier",
+  "motion": "down",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "倒れた状態で盾が腕と脚を隠す。盾の持ち手・手・2脚の接続を確認する。",
+    "被弾の頭・盾の傾きと待機への戻りを検収する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": true,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "phase": "崩れる",
+      "source": "../../../../../late-stage-first-pass/v1/sources/demon-armored-soldier/reaction-generated.png",
+      "sourceSha256": "18923a01764ff08b3687dbc3c704b81cd788c57f8960134b56c502b925754d11",
+      "sourceRect": {
+        "left": 0,
+        "top": 632,
+        "width": 643,
+        "height": 551
+      },
+      "sourceAnchor": [
+        406,
+        464
+      ],
+      "scale": 0.4921259842519685,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "e88e9c8b225f7e5608c3ac36e9b89f3081358cd6508b1b2ea933ae16014a45f0",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.890411376953125
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "phase": "終端保持",
+      "source": "../../../../../late-stage-first-pass/v1/sources/demon-armored-soldier/reaction-generated.png",
+      "sourceSha256": "18923a01764ff08b3687dbc3c704b81cd788c57f8960134b56c502b925754d11",
+      "sourceRect": {
+        "left": 643,
+        "top": 632,
+        "width": 687,
+        "height": 551
+      },
+      "sourceAnchor": [
+        391,
+        459
+      ],
+      "scale": 0.4921259842519685,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "0afe8c46a6e9fafa5a2e7a8c6c7e6f6d9cb2188646e33719718020d40c800309",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9041481018066406
+    }
+  ],
+  "fingerprint": "6ded50b315c824e5474620e8bb8cd8b55b82f27c4c13642f6cb1c3885322f8d4",
+  "events": [],
+  "effects": []
+}

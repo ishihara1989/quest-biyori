@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "large-worm",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "large-worm-down.png",
+  "preview": "../../../../../../development/assets/enemies/large-worm/motions/down/large-worm-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/large-worm/PROMPT.md",
+  "width": 1152,
+  "height": 416,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 2,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/large-worm/source/down-registered.png",
+  "sourceScale": 0.5021834061135371,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 280,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 109,
+        "top": 264,
+        "right": 473,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 378,
+        "width": 758,
+        "height": 378
+      },
+      "sourceAnchor": {
+        "x": 464,
+        "y": 285
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 600,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 204,
+        "top": 292,
+        "right": 563,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 758,
+        "y": 378,
+        "width": 758,
+        "height": 378
+      },
+      "sourceAnchor": {
+        "x": 276,
+        "y": 230
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/large-worm/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 107231,
+        "left": 153,
+        "top": 145,
+        "right": 734,
+        "bottom": 490,
+        "cx": 432.5523869030411,
+        "cy": 342.32121308203784
+      },
+      {
+        "id": 2,
+        "count": 124916,
+        "left": 815,
+        "top": 158,
+        "right": 1484,
+        "bottom": 486,
+        "cx": 1134.7859441544717,
+        "cy": 344.7684043677351
+      },
+      {
+        "id": 3,
+        "count": 128156,
+        "left": 43,
+        "top": 672,
+        "right": 768,
+        "bottom": 941,
+        "cx": 389.05729735634696,
+        "cy": 830.6622787852305
+      },
+      {
+        "id": 4,
+        "count": 95863,
+        "left": 794,
+        "top": 746,
+        "right": 1511,
+        "bottom": 960,
+        "cx": 1134.5235388001627,
+        "cy": 878.3508757289048
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

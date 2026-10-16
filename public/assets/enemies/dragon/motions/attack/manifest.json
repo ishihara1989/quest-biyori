@@ -1,0 +1,234 @@
+{
+  "id": "dragon/attack",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "爪撃",
+  "kind": null,
+  "motion": "attack",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/dragon.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/attack-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "transparentFraction": 0.8481826782226562,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 118,
+        "top": 141,
+        "right": 472,
+        "bottom": 360
+      },
+      "visibleBounds": {
+        "left": 169,
+        "top": 145,
+        "right": 448,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/attack-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 811,
+        "height": 502
+      },
+      "sourceScale": 0.4697986577181208,
+      "sourceAnchor": {
+        "x": 427,
+        "y": 454
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8441352844238281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 132,
+        "top": 134,
+        "right": 463,
+        "bottom": 353
+      },
+      "visibleBounds": {
+        "left": 157,
+        "top": 145,
+        "right": 449,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/attack-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 811,
+        "y": 0,
+        "width": 725,
+        "height": 502
+      },
+      "sourceScale": 0.4697986577181208,
+      "sourceAnchor": {
+        "x": 371,
+        "y": 456
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8467216491699219,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 121,
+        "top": 124,
+        "right": 491,
+        "bottom": 361
+      },
+      "visibleBounds": {
+        "left": 134,
+        "top": 149,
+        "right": 457,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/attack-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 502,
+        "width": 822,
+        "height": 522
+      },
+      "sourceScale": 0.4697986577181208,
+      "sourceAnchor": {
+        "x": 414,
+        "y": 456
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8381729125976562,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 139,
+        "top": 121,
+        "right": 454,
+        "bottom": 342
+      },
+      "visibleBounds": {
+        "left": 168,
+        "top": 142,
+        "right": 452,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/attack-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 822,
+        "y": 502,
+        "width": 714,
+        "height": 522
+      },
+      "sourceScale": 0.4697986577181208,
+      "sourceAnchor": {
+        "x": 355,
+        "y": 461
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "claw-arc",
+      "timeMs": 280,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "claw-arc"
+  ],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/dragon/attack/preview.gif",
+  "action": {
+    "name": "通常攻撃",
+    "motion": "attack",
+    "warn": 0,
+    "times": [
+      280
+    ],
+    "kind": "melee",
+    "radius": 300,
+    "effect": "claw-arc",
+    "rest": 600,
+    "status": null,
+    "duration": 700
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-claw-arc",
+        "manifest": "../../../../effects/volcano-claw-arc/manifest.json"
+      }
+    ]
+  }
+}

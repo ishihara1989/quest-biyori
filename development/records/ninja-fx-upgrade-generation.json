@@ -1,0 +1,85 @@
+[
+  {
+    "id": "shadow-slash",
+    "count": 4,
+    "size": 192,
+    "delay": 110,
+    "loop": false,
+    "source": "development/assets/skills/ninja/effects/shadow-slash/source/shadow-slash-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art combat VFX for the ninja in a side-view idle RPG. Create a NEW transparent RGBA sprite sheet. Images are STYLE REFERENCES ONLY: image 1 ninja white/gold/crimson impact palette, image 2 warrior forceful multi-slash scale and pixel clusters, image 3 mage layered luminous detail; do not copy backgrounds. ONE horizontal row of FOUR equally spaced square cells, exactly four frames left to right, no labels, no borders. Each effect centered (.5,.5), all colored pixels within [.13,.87] on both axes, ample truly transparent margin. Crisp visible pixel clusters, sharp bright white highlights, crimson weapon energy, indigo/violet shadows, gold accents. Strong luminous high-contrast silhouette suitable for a large late-game effect, transparent gaps keep enemies readable. No characters, no weapons held by people, no scenery, no checkerboard, no blur, no text, no floor. Lock palette, center, and perspective across frames. A forceful diagonal ninja energy slash from lower-left (.2,.74) to upper-right (.8,.26), with a second thinner opposite diagonal cutting through the first. Frame 1: narrow white/crimson slicing streak (.33,.65) to (.67,.35), violet afterimage. Frame 2: both crossed crescents extend toward (.18,.78)/(.82,.22), broad crimson outer edge, white center, sharp gold sparks. Frame 3: cuts split into bright serrated fragments and purple blade-shaped wisps. Frame 4: sparse fading crimson/violet shards along exactly the same diagonal axes. No opaque central explosion; the crossing point stays small."
+  },
+  {
+    "id": "blade-vortex",
+    "count": 4,
+    "size": 192,
+    "delay": 100,
+    "loop": true,
+    "source": "development/assets/skills/ninja/effects/blade-vortex/source/blade-vortex-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art combat VFX for the ninja in a side-view idle RPG. Create a NEW transparent RGBA sprite sheet. Images are STYLE REFERENCES ONLY: image 1 ninja white/gold/crimson impact palette, image 2 warrior forceful multi-slash scale and pixel clusters, image 3 mage layered luminous detail; do not copy backgrounds. ONE horizontal row of FOUR equally spaced square cells, exactly four frames left to right, no labels, no borders. Each effect centered (.5,.5), all colored pixels within [.13,.87] on both axes, ample truly transparent margin. Crisp visible pixel clusters, sharp bright white highlights, crimson weapon energy, indigo/violet shadows, gold accents. Strong luminous high-contrast silhouette suitable for a large late-game effect, transparent gaps keep enemies readable. No characters, no weapons held by people, no scenery, no checkerboard, no blur, no text, no floor. Lock palette, center, and perspective across frames. Looping circular vortex made of FOUR scythe-shaped crimson/white blade streaks with violet secondary trails, facing camera; open transparent center radius .18, outer radius .34. Frames rotate all four blades clockwise by 0,22.5,45,67.5 degrees. Same size and brightness across four frames; fourfold symmetry makes frame 4 return smoothly to frame 1. Additional short gold sparks evenly distributed on perimeter. The ring is made of segmented slashing arcs, NOT a smooth solid donut. No actual metal shuriken; this is a surrounding energy vortex."
+  },
+  {
+    "id": "thunder-bloom",
+    "xCuts": [
+      0,
+      498,
+      1082,
+      1678,
+      2170
+    ],
+    "count": 4,
+    "size": 192,
+    "delay": 120,
+    "loop": false,
+    "source": "development/assets/skills/ninja/effects/thunder-bloom/source/thunder-bloom-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art combat VFX for the ninja in a side-view idle RPG. Create a NEW transparent RGBA sprite sheet. Images are STYLE REFERENCES ONLY: image 1 ninja white/gold/crimson impact palette, image 2 warrior forceful multi-slash scale and pixel clusters, image 3 mage layered luminous detail; do not copy backgrounds. ONE horizontal row of FOUR equally spaced square cells, exactly four frames left to right, no labels, no borders. Each effect centered (.5,.5), all colored pixels within [.13,.87] on both axes, ample truly transparent margin. Crisp visible pixel clusters, sharp bright white highlights, crimson weapon energy, indigo/violet shadows, gold accents. Strong luminous high-contrast silhouette suitable for a large late-game effect, transparent gaps keep enemies readable. No characters, no weapons held by people, no scenery, no checkerboard, no blur, no text, no floor. Lock palette, center, and perspective across frames. Paralysis-needle impact branching VIOLET AND WHITE lightning with crimson needle sparks. Frame 1 tight (.5,.5) white flash with two small jagged branches. Frame 2 eight angular branching bolts expand toward (.18,.2),(.82,.2),(.18,.8),(.82,.8); open transparent areas between branches; central white four-way star. Frame 3 branches break into hot violet zigzag fragments, crimson and gold needle-shaped shards. Frame 4 dissipates into small purple/white pixel sparks around center. Keep jagged bolts bold enough to read at 150 pixels."
+  },
+  {
+    "id": "shadow-eruption",
+    "xCuts": [
+      0,
+      536,
+      1061,
+      1682,
+      2172
+    ],
+    "count": 4,
+    "size": 256,
+    "delay": 140,
+    "loop": false,
+    "anchor": "bottom",
+    "source": "development/assets/skills/ninja/effects/shadow-eruption/source/shadow-eruption-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art combat VFX for the ninja in a side-view idle RPG. Create a NEW transparent RGBA sprite sheet. Images are STYLE REFERENCES ONLY: image 1 ninja white/gold/crimson impact palette, image 2 warrior forceful multi-slash scale and pixel clusters, image 3 mage layered luminous detail; do not copy backgrounds. ONE horizontal row of FOUR equally spaced square cells, exactly four frames left to right, no labels, no borders. Each effect centered (.5,.5), all colored pixels within [.13,.87] on both axes, ample truly transparent margin. Crisp visible pixel clusters, sharp bright white highlights, crimson weapon energy, indigo/violet shadows, gold accents. Strong luminous high-contrast silhouette suitable for a large late-game effect, transparent gaps keep enemies readable. No characters, no weapons held by people, no scenery, no checkerboard, no blur, no text, no floor. Lock palette, center, and perspective across frames. Tall spectacular shadow-seal eruption viewed from the side. Bottom footprint (.5,.78), top limit .16. Frame 1: thin elliptical purple/gold seal at (.5,.77), three low pointed shadow spikes rise to y .53. Frame 2: three jagged towering violet columns with white/gold edges reach y .2, curled dark-indigo wisps, crimson shards rise along columns; footprint width .6. Frame 3: columns split into five narrow blazing lances reaching y .16 and spread to x .22..78, an expanding white/violet circular wave surrounds the base at y .72. Frame 4: broken purple pillars, descending glowing gold/red embers and a dim footprint at y .78. Big open transparent gaps BETWEEN columns, not an opaque wall. Maintain same base anchor across frames."
+  },
+  {
+    "id": "clone-sigil",
+    "xCuts": [
+      0,
+      490,
+      1038,
+      1645,
+      2170
+    ],
+    "count": 4,
+    "size": 192,
+    "delay": 130,
+    "loop": false,
+    "source": "development/assets/skills/ninja/effects/clone-sigil/source/clone-sigil-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art combat VFX for the ninja in a side-view idle RPG. Create a NEW transparent RGBA sprite sheet. Images are STYLE REFERENCES ONLY: image 1 ninja white/gold/crimson impact palette, image 2 warrior forceful multi-slash scale and pixel clusters, image 3 mage layered luminous detail; do not copy backgrounds. ONE horizontal row of FOUR equally spaced square cells, exactly four frames left to right, no labels, no borders. Each effect centered (.5,.5), all colored pixels within [.13,.87] on both axes, ample truly transparent margin. Crisp visible pixel clusters, sharp bright white highlights, crimson weapon energy, indigo/violet shadows, gold accents. Strong luminous high-contrast silhouette suitable for a large late-game effect, transparent gaps keep enemies readable. No characters, no weapons held by people, no scenery, no checkerboard, no blur, no text, no floor. Lock palette, center, and perspective across frames. Shadow-clone summoning burst: open circular segmented violet seal with six triangular arrowhead marks, red/gold outer sparks and rising shadow wisps. Frame 1: compact open violet ring radius .16 and six bright points. Frame 2: ring radius .29, six distinct arrowheads point outward, white/violet core outline and two curved indigo smoke lobes rise inside without filling the center. Frame 3: arrowheads shoot outward to radius .34 leaving red/purple traces and gold sparkles; a bright broken hexagonal ring. Frame 4: broken seal segments, drifting violet smoke and tiny gold embers. Strong symmetrical rhythm; no glyphs, letters, or runic text."
+  },
+  {
+    "id": "thousand-bloom",
+    "xCuts": [
+      0,
+      441,
+      1018,
+      1619,
+      2172
+    ],
+    "count": 4,
+    "size": 256,
+    "delay": 140,
+    "loop": false,
+    "source": "development/assets/skills/ninja/effects/thousand-bloom/source/thousand-bloom-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art combat VFX for the ninja in a side-view idle RPG. Create a NEW transparent RGBA sprite sheet. Images are STYLE REFERENCES ONLY: image 1 ninja white/gold/crimson impact palette, image 2 warrior forceful multi-slash scale and pixel clusters, image 3 mage layered luminous detail; do not copy backgrounds. ONE horizontal row of FOUR equally spaced square cells, exactly four frames left to right, no labels, no borders. Each effect centered (.5,.5), all colored pixels within [.13,.87] on both axes, ample truly transparent margin. Crisp visible pixel clusters, sharp bright white highlights, crimson weapon energy, indigo/violet shadows, gold accents. Strong luminous high-contrast silhouette suitable for a large late-game effect, transparent gaps keep enemies readable. No characters, no weapons held by people, no scenery, no checkerboard, no blur, no text, no floor. Lock palette, center, and perspective across frames. The ninja's ultimate finishing burst, an enormous sharp WHITE/GOLD HEXAGONAL FLOWER of crossing energy blades, surrounded by crimson and violet shadow-fire. Frame 1: small brilliant gold hexagon radius .18 and six white blade tips. Frame 2: twelve huge pointed white/gold petals radiate to radius .34, six thick diagonal intersecting slash lines, crimson outer flames and indigo/violet curled shards; transparent holes BETWEEN petals and open hexagonal center. Frame 3: the golden hexagonal shock ring expands radius .36, petals explode outward into dozens of red/violet/gold blade fragments, white star at center. Frame 4: broad scattered gold and purple burning shards with six residual long blade streaks, center nearly empty. Epic bright dramatic peak but preserve transparent negative spaces. Not a spell orb, not a ball of solid smoke."
+  }
+]

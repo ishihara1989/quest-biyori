@@ -1,0 +1,19 @@
+{
+  "id": "motions/p2-cast-2",
+  "source": "source/motions/p2-cast-2-r3.png",
+  "sha256": "232f76a08353bce5e3901b33d210d9b079d89694fa42d8939b7d95fa65e43b28",
+  "prompt": "Use case: precise-object-edit. Input 1 is the EDIT TARGET: a three-cell transparent pixel-art animation strip. Input 2 is the ORIGINAL identity and palette reference. Fix ONLY the composition of the three-cell strip: ZOOM OUT substantially, reduce EVERY complete figure to 70 percent of its current height and width, leave very broad empty TRANSPARENT borders around EACH figure. Maintain three equal square cells in one horizontal row. All hair, shoes, hands and sleeves must be fully isolated, no pixels touching or crossing cell boundaries. Keep the existing three poses and their LEFT-to-RIGHT order: 1 spread both palms at shoulder height; 2 press both palms forward; 3 low relaxed open palms at waist. Preserve exactly two arms, the same adult goddess, face, hair, clothing, colors, upright floating legs, and small crown. No background, grid, text, large halo, throne or effects. Do not redraw the pose sequence or add any object. Each sprite must visibly appear SMALL inside its cell. True transparent alpha.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-16b4bd79-e379-4738-b4b9-df0b8e8ca539.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "source/motions/p2-cast-2-r2.png",
+      "sha256": "b467cf76d5d5d10808d046cfcd42b526ec3ddd79614472188f8d64939667326f"
+    },
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    }
+  ],
+  "attempt": 3
+}

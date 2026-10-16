@@ -1,0 +1,101 @@
+{
+  "id": "effects/fireball-impact",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "火球爆発",
+  "kind": "ground",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/fireball-impact-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 98,
+        "top": 211,
+        "right": 551,
+        "bottom": 500
+      },
+      "sourceWidth": 613,
+      "sourceHeight": 530,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 236894,
+      "transparentFraction": 0.7291514050909539
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 62,
+        "top": 58,
+        "right": 623,
+        "bottom": 506
+      },
+      "sourceWidth": 653,
+      "sourceHeight": 530,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 164288,
+      "transparentFraction": 0.47469733306365397
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 10,
+        "top": 22,
+        "right": 719,
+        "bottom": 645
+      },
+      "sourceWidth": 727,
+      "sourceHeight": 713,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 149308,
+      "transparentFraction": 0.2880442017088807
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 7,
+        "top": 168,
+        "right": 521,
+        "bottom": 644
+      },
+      "sourceWidth": 539,
+      "sourceHeight": 713,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 207405,
+      "transparentFraction": 0.5396857200103042
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/fireball-impact-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

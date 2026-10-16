@@ -1,0 +1,102 @@
+{
+  "id": "effects/star-bolt",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-bolt/review/effects/star-bolt/frame-01.png",
+      "index": 1,
+      "durationMs": 70,
+      "source": "source/effects/star-bolt.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":70,\"center\":[128,128],\"diamondSize\":[24,16],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9231212417203382,
+      "lowAlphaPixels": 17044,
+      "edgePixels": 130,
+      "bounds": [
+        174,
+        258,
+        723,
+        478
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-bolt/review/effects/star-bolt/frame-02.png",
+      "index": 2,
+      "durationMs": 90,
+      "source": "source/effects/star-bolt.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":90,\"center\":[128,128],\"diamondSize\":[80,28],\"tailEnd\":[206,128],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.8519638442049998,
+      "lowAlphaPixels": 28864,
+      "edgePixels": 256,
+      "bounds": [
+        0,
+        237,
+        723,
+        509
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-bolt/review/effects/star-bolt/frame-03.png",
+      "index": 3,
+      "durationMs": 80,
+      "source": "source/effects/star-bolt.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":80,\"center\":[128,128],\"diamondSize\":[110,14],\"tailEnd\":[223,128],\"alpha\":0.55}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.8770279448124294,
+      "lowAlphaPixels": 26185,
+      "edgePixels": 127,
+      "bounds": [
+        0,
+        258,
+        673,
+        480
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/effects/star-bolt.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/star-bolt/contact.png",
+  "gif": "review/effects/star-bolt/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

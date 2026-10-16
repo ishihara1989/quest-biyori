@@ -1,0 +1,19 @@
+{
+  "character": "ninja",
+  "idle": "../manifest.json",
+  "motions": {
+    "forward": "forward/manifest.json",
+    "backward": "backward/manifest.json",
+    "jump": "jump/manifest.json",
+    "hit": "hit/manifest.json",
+    "down": "down/manifest.json",
+    "throw-combo": "throw-combo/manifest.json",
+    "throw-tool": "throw-tool/manifest.json",
+    "cast-release": "cast-release/manifest.json",
+    "air-throw": "air-throw/manifest.json",
+    "lay-trap": "lay-trap/manifest.json",
+    "low-dash": "low-dash/manifest.json",
+    "seal": "seal/manifest.json",
+    "attack-shuriken": "attack-shuriken/manifest.json"
+  }
+}

@@ -1,0 +1,5 @@
+# smoke-out
+
+Built-in image_gen; generated RGBA preserved; nearest-neighbor packaging.
+
+Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: THREE frames of dissolving low indigo shadow smoke viewed side-on: 1 compact broken smoke curl with a few crimson clothlike sparks, 2 curls split sideways into scattered violet wisps, 3 only tiny purple fading particles. Begins at footprint (.5,.75). Smoke dissolves completely, leave room around it.

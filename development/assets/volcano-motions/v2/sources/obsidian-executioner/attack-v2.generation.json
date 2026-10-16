@@ -1,0 +1,23 @@
+{
+  "id": "obsidian-executioner/attack",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 黒曜の処刑者. Exactly SAME original axe blade shape and haft length; both hands remain attached to haft. Windup, lifted blade with generous top padding, LEFT-down cut, upright neutral recovery. NO oversized blade or mutated helmet. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/obsidian-executioner/attack-v2.png",
+  "sha256": "e8a55cbbc051203bda8b46d64487146daf75b7006536361d9f43f5ac151cf922",
+  "reference": "references/obsidian-executioner.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-executioner/attack-generated.png",
+  "issues": [
+    "頭上の斧の刃が原画上端に接し、見切れの疑いがある。修正版では武器全体の余白を確保する。",
+    "発動の両刃斧が大きく、柄の長さ・手の位置・刃形がコマ間で変わる。固定武器として合わせる。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-executioner.png",
+      "sha256": "f3e9668fb5b632ea2ad16a0d6f0ca6c5eb1fa5c53eee22a445fef708ec7d9aa3"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

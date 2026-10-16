@@ -1,0 +1,103 @@
+[
+  {
+    "id": "throw-combo-a",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/throw-combo/source/throw-combo-part-1.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art ninja sprite animation for an idle RPG. Input image 1 is the LOCKED pixel-style idle reference. Input image 2 is character identity reference only. Create an RGBA transparent PNG sprite strip, THREE equal square cells in a single horizontal row, NO text, NO labels, NO cell lines, no background, no shadows, no VFX. Each full-body pose centered in its own cell facing RIGHT in a fixed 3/4 view. Same pixel density, dark hair ponytail with red ribbon, red scarf and waist cloth, black face mask, black and gold ninja clothes, fingerless gloves. Keep her anatomical LEFT leg (foreground / screen-right in neutral reference) fishnet and gold buckle; RIGHT leg (background / screen-left in neutral reference) bare skin with black strap. NEVER swap the leg equipment. Lock palette and proportions to idle, not polished illustration. In normalized local cell coordinates ground pivot (.50,.90), idle head top (.49,.24). Body height .66 cell. No clipped hands, scarf, or feet. Do not flip the character or draw embedded flying projectiles. Movement follows these THREE planned poses in exact left-to-right order: A1: right hand holding a small steel star at (.35,.40), winding back behind shoulder. A2: right throwing hand extended and opened at (.79,.44), star has left the hand and is NOT drawn. A3: right hand empty retracting, left hand readies the next star at (.57,.48). Feet stay planted. Waist and red cloth respond to throw."
+  },
+  {
+    "id": "throw-combo-b",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/throw-combo/source/throw-combo-part-2.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art ninja sprite animation for an idle RPG. Input image 1 is the LOCKED pixel-style idle reference. Input image 2 is character identity reference only. Create an RGBA transparent PNG sprite strip, THREE equal square cells in a single horizontal row, NO text, NO labels, NO cell lines, no background, no shadows, no VFX. Each full-body pose centered in its own cell facing RIGHT in a fixed 3/4 view. Same pixel density, dark hair ponytail with red ribbon, red scarf and waist cloth, black face mask, black and gold ninja clothes, fingerless gloves. Keep her anatomical LEFT leg (foreground / screen-right in neutral reference) fishnet and gold buckle; RIGHT leg (background / screen-left in neutral reference) bare skin with black strap. NEVER swap the leg equipment. Lock palette and proportions to idle, not polished illustration. In normalized local cell coordinates ground pivot (.50,.90), idle head top (.49,.24). Body height .66 cell. No clipped hands, scarf, or feet. Do not flip the character or draw embedded flying projectiles. Movement follows these THREE planned poses in exact left-to-right order: B1: LEFT hand holds next star at (.47,.41), right hand withdrawn to chest. B2: LEFT hand extended/open at (.80,.47), projectile NOT drawn. B3: both hands return to (.58,.49), neutral throwing-ready stance. This is the second half of alternating arm throws; keep left/right arm identities, do not mirror first half. Feet planted."
+  },
+  {
+    "id": "throw-tool",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/throw-tool/source/ninja-throw-tool-generated-v1.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art ninja sprite animation for an idle RPG. Input image 1 is the LOCKED pixel-style idle reference. Input image 2 is character identity reference only. Create an RGBA transparent PNG sprite strip, THREE equal square cells in a single horizontal row, NO text, NO labels, NO cell lines, no background, no shadows, no VFX. Each full-body pose centered in its own cell facing RIGHT in a fixed 3/4 view. Same pixel density, dark hair ponytail with red ribbon, red scarf and waist cloth, black face mask, black and gold ninja clothes, fingerless gloves. Keep her anatomical LEFT leg (foreground / screen-right in neutral reference) fishnet and gold buckle; RIGHT leg (background / screen-left in neutral reference) bare skin with black strap. NEVER swap the leg equipment. Lock palette and proportions to idle, not polished illustration. In normalized local cell coordinates ground pivot (.50,.90), idle head top (.49,.24). Body height .66 cell. No clipped hands, scarf, or feet. Do not flip the character or draw embedded flying projectiles. Movement follows these THREE planned poses in exact left-to-right order: 1: throwing hand reaching for a small round tool at waist (.46,.63). 2: hand open at (.75,.38), upward tossing gesture, released tool NOT drawn. 3: empty throwing hand returns to (.68,.51). Ground stays (.50,.90)."
+  },
+  {
+    "id": "cast-release",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/cast-release/source/ninja-cast-release-generated-v1.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art ninja sprite animation for an idle RPG. Input image 1 is the LOCKED pixel-style idle reference. Input image 2 is character identity reference only. Create an RGBA transparent PNG sprite strip, THREE equal square cells in a single horizontal row, NO text, NO labels, NO cell lines, no background, no shadows, no VFX. Each full-body pose centered in its own cell facing RIGHT in a fixed 3/4 view. Same pixel density, dark hair ponytail with red ribbon, red scarf and waist cloth, black face mask, black and gold ninja clothes, fingerless gloves. Keep her anatomical LEFT leg (foreground / screen-right in neutral reference) fishnet and gold buckle; RIGHT leg (background / screen-left in neutral reference) bare skin with black strap. NEVER swap the leg equipment. Lock palette and proportions to idle, not polished illustration. In normalized local cell coordinates ground pivot (.50,.90), idle head top (.49,.24). Body height .66 cell. No clipped hands, scarf, or feet. Do not flip the character or draw embedded flying projectiles. Movement follows these THREE planned poses in exact left-to-right order: 1: both hands close in a ninja seal at chest (.60,.46). 2: open both hands outward at (.70,.44) and (.52,.46), ninja ritual release. 3: empty hands ease back to (.65,.51) and (.47,.55), returning to idle. NO magic or smoke baked into body."
+  },
+  {
+    "id": "air-throw",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/air-throw/source/ninja-air-throw-generated-v2.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art ninja sprite animation for an idle RPG. Input image 1 is the LOCKED pixel-style idle reference. Input image 2 is character identity reference only. Create an RGBA transparent PNG sprite strip, THREE equal square cells in a single horizontal row, NO text, NO labels, NO cell lines, no background, no shadows, no VFX. Each full-body pose centered in its own cell facing RIGHT in a fixed 3/4 view. Same pixel density, dark hair ponytail with red ribbon, red scarf and waist cloth, black face mask, black and gold ninja clothes, fingerless gloves. Keep her anatomical LEFT leg (foreground / screen-right in neutral reference) fishnet and gold buckle; RIGHT leg (background / screen-left in neutral reference) bare skin with black strap. NEVER swap the leg equipment. Lock palette and proportions to idle, not polished illustration. In normalized local cell coordinates ground pivot (.50,.90), idle head top (.49,.24). Body height .66 cell. No clipped hands, scarf, or feet. Do not flip the character or draw embedded flying projectiles. Movement follows these THREE planned poses in exact left-to-right order: 1: both knees bent in mid-air ready-to-throw pose, throwing hand at (.40,.37), feet near local ground pivot (.50,.90) because vertical lift is handled externally by game. 2: hand open at (.79,.42), throw forwards/downwards, NO flying projectile. 3: empty hand at (.69,.51), legs extend in preparation for landing. Body does NOT move vertically inside the cell. Preserve the reference leg equipment throughout. Absolutely NO letters or numbers, NO A1 A2 A3 labels, NO arrows, NO floor or shadow strokes. Important: coarse actual pixel clusters and the same palette as the pixel reference, not the smooth high-resolution character illustration.",
+    "version": 2
+  },
+  {
+    "id": "lay-trap",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/lay-trap/source/ninja-lay-trap-generated-v2.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: precise-object-edit. Input image 1 is the target sprite sequence; image 2 is LOCKED pixel-art idle style reference. Output TRUE transparent RGBA PNG. The goal is a clean production pixel-art sprite sequence, chunky pixels matching reference 2, no smooth cartoon rendering, no effects. Recreate the same ninja identity as THREE game sprite poses in THREE perfectly equal 512x512 square cells, in ONE horizontal row (1536x512 composition), each FULL body with at least 10% margin on ALL sides. Leftmost: crouch knees, hand collecting a tool at waist. Middle: crouched ninja stretches the front hand diagonally DOWN and RIGHT to scatter a tool, empty hand. Rightmost: stand back upright and return empty hand to waist. Correct the crouch pose order. Remove ALL red arrows and all layout markings. Keep all fingers inside their own cell, no overlap between cells. Lock anatomical LEFT leg (foreground) to fishnet with gold buckle and anatomical RIGHT leg (background) to bare skin with black thigh strap. Maintain black-and-red palette. NO text, NO arrows, NO lines, NO floor, NO drop shadows.",
+    "version": 2
+  },
+  {
+    "id": "low-dash-a",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/low-dash/source/low-dash-part-1.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: illustration-story. Asset type: production pixel-art ninja sprite animation for an idle RPG. Input image 1 is the LOCKED pixel-style idle reference. Input image 2 is character identity reference only. Create an RGBA transparent PNG sprite strip, THREE equal square cells in a single horizontal row, NO text, NO labels, NO cell lines, no background, no shadows, no VFX. Each full-body pose centered in its own cell facing RIGHT in a fixed 3/4 view. Same pixel density, dark hair ponytail with red ribbon, red scarf and waist cloth, black face mask, black and gold ninja clothes, fingerless gloves. Keep her anatomical LEFT leg (foreground / screen-right in neutral reference) fishnet and gold buckle; RIGHT leg (background / screen-left in neutral reference) bare skin with black strap. NEVER swap the leg equipment. Lock palette and proportions to idle, not polished illustration. In normalized local cell coordinates ground pivot (.50,.90), idle head top (.49,.24). Body height .66 cell. No clipped hands, scarf, or feet. Do not flip the character or draw embedded flying projectiles. Movement follows these THREE planned poses in exact left-to-right order: A1: chest leans forward into deep low stance, head top (.50,.32), arms compact. A2: head top (.55,.34), rear leg pushes off while front knee bends. A3: low forward ninja dash posture with chest forward, both arms compact and red scarf trailing to left. Character stays centered on local ground (.50,.90); horizontal displacement is controlled by game. Show different legs, no duplication. Absolutely NO letters or numbers, NO A1 A2 A3 labels, NO arrows, NO floor or shadow strokes. Important: coarse actual pixel clusters and the same palette as the pixel reference, not the smooth high-resolution character illustration.",
+    "version": 2
+  },
+  {
+    "id": "low-dash-b",
+    "character": "ninja",
+    "source": "development/assets/ninja/motions/low-dash/source/low-dash-part-2.png",
+    "columns": 3,
+    "rows": 1,
+    "count": 3,
+    "prompt": "Use case: precise-object-edit. Input image 1 is the target sprite sequence; image 2 is LOCKED pixel-art idle style reference. Output TRUE transparent RGBA PNG. The goal is a clean production pixel-art sprite sequence, chunky pixels matching reference 2, no smooth cartoon rendering, no effects. Preserve the three same ninja poses and right-facing sequence, but remove ALL B1 B2 B3 text, all lettering, ALL horizontal grey floor strokes and ALL ground shadows completely. THREE perfectly equal square cells in one horizontal strip; silhouettes inside 12% margin, no contact with cell boundaries. First low forward dash catching front foot, second hips rise, third return to neutral throwing-ready stance. Keep exact legs, scarf, face, outfit and orientation. Lock anatomical LEFT leg (foreground) to fishnet with gold buckle and anatomical RIGHT leg (background) to bare skin with black thigh strap. Maintain black-and-red palette. NO text, NO arrows, NO lines, NO floor, NO drop shadows.",
+    "version": 2,
+    "xCuts": [
+      0,
+      840,
+      1525,
+      2172
+    ]
+  },
+  {
+    "id": "throw-combo",
+    "character": "ninja",
+    "parts": [
+      "throw-combo-a",
+      "throw-combo-b"
+    ],
+    "count": 6
+  },
+  {
+    "id": "low-dash",
+    "character": "ninja",
+    "parts": [
+      "low-dash-a",
+      "low-dash-b"
+    ],
+    "count": 6,
+    "version": 2
+  }
+]

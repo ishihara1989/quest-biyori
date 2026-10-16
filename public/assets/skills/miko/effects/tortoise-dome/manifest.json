@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "id": "tortoise-dome",
+  "character": "miko",
+  "subject": "tortoise-dome",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "tortoise-dome-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5020242914979757,
+  "frames": [
+    {
+      "index": 0,
+      "file": "tortoise-dome-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 54,
+        "t": 96,
+        "r": 471,
+        "b": 451,
+        "n": 85367,
+        "width": 418,
+        "height": 356
+      }
+    },
+    {
+      "index": 1,
+      "file": "tortoise-dome-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 24,
+        "t": 72,
+        "r": 504,
+        "b": 451,
+        "n": 107477,
+        "width": 481,
+        "height": 380
+      }
+    },
+    {
+      "index": 2,
+      "file": "tortoise-dome-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 21,
+        "t": 33,
+        "r": 485,
+        "b": 451,
+        "n": 124367,
+        "width": 465,
+        "height": 419
+      }
+    },
+    {
+      "index": 3,
+      "file": "tortoise-dome-effect-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 27,
+        "t": 40,
+        "r": 488,
+        "b": 451,
+        "n": 102430,
+        "width": 462,
+        "height": 412
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/tortoise-dome-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

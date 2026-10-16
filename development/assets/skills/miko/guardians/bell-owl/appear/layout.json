@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/bell-owl-guardian-appear-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 721,
+      "height": 724
+    },
+    {
+      "x": 721,
+      "y": 0,
+      "width": 727,
+      "height": 724
+    },
+    {
+      "x": 1448,
+      "y": 0,
+      "width": 724,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 899
+    },
+    {
+      "x": 512,
+      "y": 899
+    },
+    {
+      "x": 512,
+      "y": 899
+    }
+  ],
+  "scale": 0.5071574642126789
+}

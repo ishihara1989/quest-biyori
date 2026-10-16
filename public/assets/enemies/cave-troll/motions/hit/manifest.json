@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-troll",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "cave-troll-hit.png",
+  "preview": "../../../../../../development/assets/enemies/cave-troll/motions/hit/cave-troll-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-troll/PROMPT.md",
+  "width": 1408,
+  "height": 512,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 460,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/cave-troll/source/hit-registered.png",
+  "sourceScale": 0.6607929515418502,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "のけぞり",
+      "bounds": {
+        "left": 56,
+        "top": 206,
+        "right": 480,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 737,
+        "height": 486
+      },
+      "sourceAnchor": {
+        "x": 549,
+        "y": 454
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 96,
+        "top": 196,
+        "right": 481,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 737,
+        "y": 0,
+        "width": 737,
+        "height": 486
+      },
+      "sourceAnchor": {
+        "x": 488,
+        "y": 469
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-troll/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 130272,
+        "left": 79,
+        "top": 76,
+        "right": 721,
+        "bottom": 514,
+        "cx": 429.3627947678703,
+        "cy": 295.8877963031196
+      },
+      {
+        "id": 1,
+        "count": 133124,
+        "left": 823,
+        "top": 73,
+        "right": 1405,
+        "bottom": 526,
+        "cx": 1167.7352318139478,
+        "cy": 311.8069393948499
+      },
+      {
+        "id": 19,
+        "count": 116469,
+        "left": 49,
+        "top": 611,
+        "right": 752,
+        "bottom": 948,
+        "cx": 424.0854819737441,
+        "cy": 803.5370012621385
+      },
+      {
+        "id": 26,
+        "count": 85783,
+        "left": 796,
+        "top": 727,
+        "right": 1500,
+        "bottom": 945,
+        "cx": 1151.0630194793841,
+        "cy": 847.7879300094424
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

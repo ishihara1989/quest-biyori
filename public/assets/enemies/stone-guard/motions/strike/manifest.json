@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "enemy": "stone-guard",
+  "motion": "strike",
+  "facing": "left",
+  "label": "剣撃",
+  "sheet": "stone-guard-strike.png",
+  "preview": "../../../../../../development/assets/enemies/stone-guard/motions/strike/stone-guard-strike-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/stone-guard/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 790,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/stone-guard/source/strike-registered.png",
+  "sourceScale": 0.35062611806797855,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "stone-guard-strike-2-0",
+      "type": "spawn-effect",
+      "effect": "ruins-stone-slash",
+      "frame": 2,
+      "timeMs": 400,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "strike-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "開始",
+      "bounds": {
+        "left": 86,
+        "top": 107,
+        "right": 266,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 680,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 590
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "strike-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 103,
+        "top": 92,
+        "right": 259,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 680,
+        "y": 0,
+        "width": 680,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 376,
+        "y": 631
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "strike-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 150,
+      "phase": "作用",
+      "bounds": {
+        "left": 35,
+        "top": 137,
+        "right": 250,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 664,
+        "width": 680,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 570,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "strike-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "復帰",
+      "bounds": {
+        "left": 61,
+        "top": 130,
+        "right": 255,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 680,
+        "y": 664,
+        "width": 680,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 494,
+        "y": 523
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/stone-guard/source/strike-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/stone-guard/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 130,
+          "y": 72,
+          "width": 516,
+          "height": 559,
+          "mainComponent": 2
+        },
+        {
+          "x": 730,
+          "y": 33,
+          "width": 449,
+          "height": 600,
+          "mainComponent": 1
+        },
+        {
+          "x": 37,
+          "y": 707,
+          "width": 616,
+          "height": 473,
+          "mainComponent": 4
+        },
+        {
+          "x": 645,
+          "y": 694,
+          "width": 554,
+          "height": 492,
+          "mainComponent": 3
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 129,
+      "y": 302
+    },
+    "origin": {
+      "x": 174,
+      "y": 207.92000000000002
+    },
+    "assets": [
+      {
+        "id": "ruins-stone-slash",
+        "manifest": "../../../../effects/ruins-stone-slash/manifest.json"
+      }
+    ]
+  }
+}

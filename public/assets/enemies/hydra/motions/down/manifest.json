@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hydra",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "hydra-down.png",
+  "preview": "../../../../../../development/assets/enemies/hydra/motions/down/hydra-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hydra/PROMPT.md",
+  "width": 2816,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/hydra/source/down-registered.png",
+  "sourceScale": 0.6626016260162602,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "待機から",
+      "bounds": {
+        "left": 114,
+        "top": 106,
+        "right": 577,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 749,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 462,
+        "y": 509
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/hydra/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 158,
+        "top": 185,
+        "right": 635,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 767,
+        "y": 0,
+        "width": 803,
+        "height": 531
+      },
+      "sourceAnchor": {
+        "x": 411,
+        "y": 388
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "作用",
+      "bounds": {
+        "left": 169,
+        "top": 221,
+        "right": 667,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 531,
+        "width": 785,
+        "height": 531
+      },
+      "sourceAnchor": {
+        "x": 377,
+        "y": 333
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 360,
+      "phase": "終端",
+      "bounds": {
+        "left": 174,
+        "top": 281,
+        "right": 667,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 785,
+        "y": 531,
+        "width": 785,
+        "height": 531
+      },
+      "sourceAnchor": {
+        "x": 369,
+        "y": 242
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/hydra/source/down-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 176713,
+      "left": 43,
+      "top": 9,
+      "right": 759,
+      "bottom": 507,
+      "cx": 386.7343828693984,
+      "cy": 301.9221109935319
+    },
+    {
+      "id": 4,
+      "count": 147245,
+      "left": 807,
+      "top": 137,
+      "right": 1527,
+      "bottom": 509,
+      "cx": 1156.228129987436,
+      "cy": 355.35558423036434
+    },
+    {
+      "id": 14,
+      "count": 141078,
+      "left": 14,
+      "top": 671,
+      "right": 766,
+      "bottom": 988,
+      "cx": 409.8141878960575,
+      "cy": 853.173903797899
+    },
+    {
+      "id": 15,
+      "count": 110790,
+      "left": 772,
+      "top": 772,
+      "right": 1516,
+      "bottom": 998,
+      "cx": 1168.8538496254175,
+      "cy": 894.0466107049373
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

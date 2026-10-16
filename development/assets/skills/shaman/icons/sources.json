@@ -1,0 +1,23 @@
+{
+  "curse-bolt": "public/assets/skills/shaman/effects/skull-bolt/skull-bolt-02.png",
+  "curse-mark": "public/assets/skills/shaman/effects/mark/mark-02.png",
+  "armor-hex": "public/assets/skills/shaman/effects/armor-crack/armor-crack-02.png",
+  "pain-hex": "public/assets/skills/shaman/effects/reaction-ring/reaction-ring-02.png",
+  "frailty-hex": "public/assets/skills/shaman/effects/frailty/frailty-02.png",
+  "erosion-field": "public/assets/skills/shaman/effects/field-open/field-open-02.png",
+  "grudge-flame": "public/assets/skills/shaman/effects/grudge-flame/grudge-flame-02.png",
+  "curse-chain": "public/assets/skills/shaman/effects/curse-chain/curse-chain-02.png",
+  "curse-amplify": "public/assets/skills/shaman/effects/amplify-ring/amplify-ring-02.png",
+  "curse-burst": "public/assets/skills/shaman/effects/curse-burst/curse-burst-02.png",
+  "curse-spread": "public/assets/skills/shaman/effects/curse-moth/curse-moth-02.png",
+  "grudge-ramp": "public/assets/skills/shaman/effects/ramp-skull/ramp-skull-02.png",
+  "retaliation-hex": "public/assets/skills/shaman/effects/curse-spike/curse-spike-02.png",
+  "healing-seal": "public/assets/skills/shaman/effects/healing-seal/healing-seal-02.png",
+  "hex-stakes": "public/assets/skills/shaman/effects/bone-stake/bone-stake-02.png",
+  "soul-pierce": "public/assets/skills/shaman/effects/soul-lance/soul-lance-02.png",
+  "curse-resonance": "public/assets/skills/shaman/effects/reaction-ring/reaction-ring-02.png",
+  "life-erosion": "public/assets/skills/shaman/effects/life-vines/life-vines-02.png",
+  "soul-seal-field": "public/assets/skills/shaman/effects/field-pulse/field-pulse-02.png",
+  "grudge-collapse": "public/assets/skills/shaman/effects/curse-collapse/curse-collapse-02.png",
+  "hundred-hex": "public/assets/skills/shaman/effects/hundred-ghosts/hundred-ghosts-02.png"
+}

@@ -1,0 +1,250 @@
+{
+  "id": "demon-god/danger-1",
+  "label": "魔腕の断界",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../../../../../development/assets/demon-god-redesign/v2/references/demon-god.png",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "loop": false,
+  "terminal": false,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 4800,
+      "phase": "両腕を引く",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-1-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 637,
+        "height": 640
+      },
+      "sourceChestCore": {
+        "x": 309,
+        "y": 230
+      },
+      "plannedRoot": [
+        565,
+        545
+      ],
+      "exportChestCore": {
+        "x": 197.85,
+        "y": 131.1
+      },
+      "sourceScale": 0.47700170357751276,
+      "transparentFraction": 0.7942776150173612,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 162,
+        "top": 39,
+        "right": 339,
+        "bottom": 318
+      },
+      "width": 384,
+      "height": 384,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 162,
+        "top": 39,
+        "right": 340,
+        "bottom": 319
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 900,
+      "phase": "第一打",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-1-generated.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 637,
+        "y": 0,
+        "width": 617,
+        "height": 640
+      },
+      "sourceChestCore": {
+        "x": 273,
+        "y": 235
+      },
+      "plannedRoot": [
+        515,
+        550
+      ],
+      "exportChestCore": {
+        "x": 178.35,
+        "y": 133.05
+      },
+      "sourceScale": 0.47700170357751276,
+      "transparentFraction": 0.7749837239583334,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 63,
+        "top": 39,
+        "right": 332,
+        "bottom": 319
+      },
+      "width": 384,
+      "height": 384,
+      "index": 1,
+      "x": 384,
+      "y": 0,
+      "visibleBounds": {
+        "left": 63,
+        "top": 39,
+        "right": 333,
+        "bottom": 320
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 300,
+      "phase": "第二打",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-1-generated.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 640,
+        "width": 705,
+        "height": 614
+      },
+      "sourceChestCore": {
+        "x": 356,
+        "y": 204
+      },
+      "plannedRoot": [
+        510,
+        555
+      ],
+      "exportChestCore": {
+        "x": 176.4,
+        "y": 135
+      },
+      "sourceScale": 0.47700170357751276,
+      "transparentFraction": 0.7873128255208334,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 40,
+        "top": 45,
+        "right": 307,
+        "bottom": 318
+      },
+      "width": 384,
+      "height": 384,
+      "index": 2,
+      "x": 768,
+      "y": 0,
+      "visibleBounds": {
+        "left": 40,
+        "top": 45,
+        "right": 308,
+        "bottom": 319
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 420,
+      "phase": "復帰",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-1-generated.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 705,
+        "y": 640,
+        "width": 549,
+        "height": 614
+      },
+      "sourceChestCore": {
+        "x": 194,
+        "y": 206
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.47700170357751276,
+      "transparentFraction": 0.7831692165798612,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 137,
+        "top": 43,
+        "right": 333,
+        "bottom": 317
+      },
+      "width": 384,
+      "height": 384,
+      "index": 3,
+      "x": 1152,
+      "y": 0,
+      "visibleBounds": {
+        "left": 137,
+        "top": 43,
+        "right": 334,
+        "bottom": 318
+      }
+    }
+  ],
+  "events": [
+    {
+      "timeMs": 4800,
+      "effect": "castle-demon-impact",
+      "kind": "sector"
+    },
+    {
+      "timeMs": 5700,
+      "effect": "castle-demon-impact",
+      "kind": "sector"
+    }
+  ],
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact",
+  "pivot": {
+    "x": 192,
+    "y": 330
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 6420,
+  "sheet": "sheet.png",
+  "motion": "danger-1",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-god-redesign/v2/review/danger-1/manifest.json",
+  "sourceFingerprint": "d586c99e8878aeef868e1ce8adc5722854f44818afa0fdb4ff137dd33d610c44",
+  "acceptedForIntegration": true,
+  "action": {
+    "name": "魔腕の断界",
+    "motion": "danger-1",
+    "warn": 4800,
+    "times": [
+      4800,
+      5700
+    ],
+    "kind": "sector",
+    "radius": 340,
+    "effect": "demon-impact",
+    "rest": 3000,
+    "status": null,
+    "duration": 6420,
+    "angle": 160
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-demon-impact",
+        "manifest": "../../../../effects/castle-demon-impact/manifest.json"
+      }
+    ]
+  }
+}

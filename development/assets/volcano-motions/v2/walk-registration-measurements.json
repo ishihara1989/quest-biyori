@@ -1,0 +1,799 @@
+{
+  "date": "2026-10-14 JST",
+  "coordinateSpace": "actual exported 512x512 PNG, distinct from planning guides",
+  "method": "manual landmark observations on 20px head grid, approximate +/-4px",
+  "records": [
+    {
+      "enemy": "lava-salamander",
+      "frame": 1,
+      "observedExportedPoint": [
+        169,
+        244
+      ],
+      "targetExportedPoint": [
+        176,
+        252
+      ],
+      "source": "sources/lava-salamander/move-frame-1-v2.png",
+      "sourcePoint": {
+        "x": 409.81071428571425,
+        "y": 628.4214285714286
+      },
+      "sourceScaleBefore": 0.29692470837751855,
+      "sourceScaleAfter": 0.2746553552492047,
+      "uniformScaleFactor": 0.925,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "lava-salamander",
+      "frame": 2,
+      "observedExportedPoint": [
+        183,
+        256
+      ],
+      "targetExportedPoint": [
+        176,
+        252
+      ],
+      "source": "sources/lava-salamander/move-frame-2-v2.png",
+      "sourcePoint": {
+        "x": 375.51071428571424,
+        "y": 731.1357142857142
+      },
+      "sourceScaleBefore": 0.31076581576026635,
+      "sourceScaleAfter": 0.318534961154273,
+      "uniformScaleFactor": 1.025,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "lava-salamander",
+      "frame": 3,
+      "observedExportedPoint": [
+        180,
+        256
+      ],
+      "targetExportedPoint": [
+        176,
+        252
+      ],
+      "source": "sources/lava-salamander/move-frame-3-v3.png",
+      "sourcePoint": {
+        "x": 358.2857142857143,
+        "y": 674.4285714285714
+      },
+      "sourceScaleBefore": 0.3111111111111111,
+      "sourceScaleAfter": 0.3188888888888889,
+      "uniformScaleFactor": 1.025,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "lava-salamander",
+      "frame": 4,
+      "observedExportedPoint": [
+        173,
+        254
+      ],
+      "targetExportedPoint": [
+        176,
+        252
+      ],
+      "source": "sources/lava-salamander/move-frame-4-v2.png",
+      "sourcePoint": {
+        "x": 295.625,
+        "y": 773.5
+      },
+      "sourceScaleBefore": 0.27586206896551724,
+      "sourceScaleAfter": 0.2824302134646962,
+      "uniformScaleFactor": 1.0238095238095237,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "lava-salamander",
+      "frame": 5,
+      "observedExportedPoint": [
+        176,
+        253
+      ],
+      "targetExportedPoint": [
+        176,
+        252
+      ],
+      "source": "sources/lava-salamander/move-frame-5-v2.png",
+      "sourcePoint": {
+        "x": 271.20000000000005,
+        "y": 727.5
+      },
+      "sourceScaleBefore": 0.2702702702702703,
+      "sourceScaleAfter": 0.27344992050874406,
+      "uniformScaleFactor": 1.011764705882353,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "lava-salamander",
+      "frame": 6,
+      "observedExportedPoint": [
+        184,
+        256
+      ],
+      "targetExportedPoint": [
+        176,
+        252
+      ],
+      "source": "sources/lava-salamander/move-frame-6-v3.png",
+      "sourcePoint": {
+        "x": 365.8,
+        "y": 782.6
+      },
+      "sourceScaleBefore": 0.3125,
+      "sourceScaleAfter": 0.3203125,
+      "uniformScaleFactor": 1.025,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "frame": 1,
+      "observedExportedPoint": [
+        181,
+        204
+      ],
+      "targetExportedPoint": [
+        181,
+        208
+      ],
+      "source": "sources/young-fire-dragon/move-frame-1-v2.png",
+      "sourcePoint": {
+        "x": 320.575,
+        "y": 605.3785714285714
+      },
+      "sourceScaleBefore": 0.3178206583427923,
+      "sourceScaleAfter": 0.30833347451166415,
+      "uniformScaleFactor": 0.9701492537313433,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "frame": 2,
+      "observedExportedPoint": [
+        181,
+        203
+      ],
+      "targetExportedPoint": [
+        181,
+        208
+      ],
+      "source": "sources/young-fire-dragon/move-frame-2-v2.png",
+      "sourcePoint": {
+        "x": 297.95000000000005,
+        "y": 593.1785714285714
+      },
+      "sourceScaleBefore": 0.3090507726269316,
+      "sourceScaleAfter": 0.297604447714823,
+      "uniformScaleFactor": 0.9629629629629629,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "frame": 3,
+      "observedExportedPoint": [
+        188,
+        208
+      ],
+      "targetExportedPoint": [
+        181,
+        208
+      ],
+      "source": "sources/young-fire-dragon/move-frame-3-v2.png",
+      "sourcePoint": {
+        "x": 318.79999999999995,
+        "y": 572.25
+      },
+      "sourceScaleBefore": 0.28776978417266186,
+      "sourceScaleAfter": 0.28776978417266186,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "frame": 4,
+      "observedExportedPoint": [
+        177,
+        211
+      ],
+      "targetExportedPoint": [
+        181,
+        208
+      ],
+      "source": "sources/young-fire-dragon/move-frame-4-v2.png",
+      "sourcePoint": {
+        "x": 316.01785714285717,
+        "y": 613.6607142857142
+      },
+      "sourceScaleBefore": 0.3236994219653179,
+      "sourceScaleAfter": 0.3313458650038687,
+      "uniformScaleFactor": 1.0236220472440944,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "frame": 5,
+      "observedExportedPoint": [
+        176,
+        208
+      ],
+      "targetExportedPoint": [
+        181,
+        208
+      ],
+      "source": "sources/young-fire-dragon/move-frame-5-v2.png",
+      "sourcePoint": {
+        "x": 297.42857142857144,
+        "y": 570.1428571428571
+      },
+      "sourceScaleBefore": 0.3111111111111111,
+      "sourceScaleAfter": 0.3111111111111111,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "frame": 6,
+      "observedExportedPoint": [
+        189,
+        214
+      ],
+      "targetExportedPoint": [
+        181,
+        208
+      ],
+      "source": "sources/young-fire-dragon/move-frame-6-v3.png",
+      "sourcePoint": {
+        "x": 323.44642857142856,
+        "y": 597.6428571428571
+      },
+      "sourceScaleBefore": 0.29015544041450775,
+      "sourceScaleAfter": 0.3041952197894033,
+      "uniformScaleFactor": 1.0483870967741935,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "magma-salamander",
+      "frame": 1,
+      "observedExportedPoint": [
+        176,
+        238
+      ],
+      "targetExportedPoint": [
+        176,
+        238
+      ],
+      "source": "sources/magma-salamander/move-frame-1-v2.png",
+      "sourcePoint": {
+        "x": 314.1571428571428,
+        "y": 558.6428571428571
+      },
+      "sourceScaleBefore": 0.2594995366079703,
+      "sourceScaleAfter": 0.2594995366079703,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "magma-salamander",
+      "frame": 2,
+      "observedExportedPoint": [
+        179,
+        232
+      ],
+      "targetExportedPoint": [
+        176,
+        238
+      ],
+      "source": "sources/magma-salamander/move-frame-2-v2.png",
+      "sourcePoint": {
+        "x": 303.6428571428571,
+        "y": 549.5714285714286
+      },
+      "sourceScaleBefore": 0.2545454545454545,
+      "sourceScaleAfter": 0.2401372212692967,
+      "uniformScaleFactor": 0.9433962264150944,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "magma-salamander",
+      "frame": 3,
+      "observedExportedPoint": [
+        177,
+        240
+      ],
+      "targetExportedPoint": [
+        176,
+        238
+      ],
+      "source": "sources/magma-salamander/move-frame-3-v2.png",
+      "sourcePoint": {
+        "x": 281.26071428571424,
+        "y": 546.8499999999999
+      },
+      "sourceScaleBefore": 0.24369016536118362,
+      "sourceScaleAfter": 0.24866343404202412,
+      "uniformScaleFactor": 1.0204081632653061,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "magma-salamander",
+      "frame": 4,
+      "observedExportedPoint": [
+        172,
+        243
+      ],
+      "targetExportedPoint": [
+        176,
+        238
+      ],
+      "source": "sources/magma-salamander/move-frame-4-v2.png",
+      "sourcePoint": {
+        "x": 269.6857142857143,
+        "y": 563.5714285714286
+      },
+      "sourceScaleBefore": 0.24647887323943662,
+      "sourceScaleAfter": 0.25945144551519644,
+      "uniformScaleFactor": 1.0526315789473684,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "magma-salamander",
+      "frame": 5,
+      "observedExportedPoint": [
+        176,
+        240
+      ],
+      "targetExportedPoint": [
+        176,
+        238
+      ],
+      "source": "sources/magma-salamander/move-frame-5-v2.png",
+      "sourcePoint": {
+        "x": 278.48571428571427,
+        "y": 562.9
+      },
+      "sourceScaleBefore": 0.2443280977312391,
+      "sourceScaleAfter": 0.2493143854400399,
+      "uniformScaleFactor": 1.0204081632653061,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "magma-salamander",
+      "frame": 6,
+      "observedExportedPoint": [
+        178,
+        237
+      ],
+      "targetExportedPoint": [
+        176,
+        238
+      ],
+      "source": "sources/magma-salamander/move-frame-6-v3.png",
+      "sourcePoint": {
+        "x": 290.4428571428572,
+        "y": 586.2928571428572
+      },
+      "sourceScaleBefore": 0.24179620034542315,
+      "sourceScaleAfter": 0.2394021785598249,
+      "uniformScaleFactor": 0.9900990099009901,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "obsidian-executioner",
+      "frame": 1,
+      "observedExportedPoint": [
+        257,
+        139
+      ],
+      "targetExportedPoint": [
+        257,
+        139
+      ],
+      "source": "sources/obsidian-executioner/move-1-v1-reused.png",
+      "sourcePoint": {
+        "x": 374.40851063829786,
+        "y": 128.73617021276596
+      },
+      "sourceScaleBefore": 0.3683385579937304,
+      "sourceScaleAfter": 0.3683385579937304,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "obsidian-executioner",
+      "frame": 2,
+      "observedExportedPoint": [
+        257,
+        136
+      ],
+      "targetExportedPoint": [
+        257,
+        139
+      ],
+      "source": "sources/obsidian-executioner/move-1-v1-reused.png",
+      "sourcePoint": {
+        "x": 349.40851063829786,
+        "y": 128.5914893617021
+      },
+      "sourceScaleBefore": 0.3683385579937304,
+      "sourceScaleAfter": 0.3628681833700611,
+      "uniformScaleFactor": 0.9851485148514851,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "obsidian-executioner",
+      "frame": 3,
+      "observedExportedPoint": [
+        257,
+        139
+      ],
+      "targetExportedPoint": [
+        257,
+        139
+      ],
+      "source": "sources/obsidian-executioner/move-1-v1-reused.png",
+      "sourcePoint": {
+        "x": 342.40851063829786,
+        "y": 128.73617021276596
+      },
+      "sourceScaleBefore": 0.3683385579937304,
+      "sourceScaleAfter": 0.3683385579937304,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "obsidian-executioner",
+      "frame": 4,
+      "observedExportedPoint": [
+        254,
+        141
+      ],
+      "targetExportedPoint": [
+        257,
+        139
+      ],
+      "source": "sources/obsidian-executioner/move-frame-4-v5.png",
+      "sourcePoint": {
+        "x": 565.0765957446808,
+        "y": 242.91914893617025
+      },
+      "sourceScaleBefore": 0.22232734153263956,
+      "sourceScaleAfter": 0.22458447190352931,
+      "uniformScaleFactor": 1.0101522842639594,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "obsidian-executioner",
+      "frame": 5,
+      "observedExportedPoint": [
+        268,
+        140
+      ],
+      "targetExportedPoint": [
+        257,
+        139
+      ],
+      "source": "sources/obsidian-executioner/move-frame-5-v5.png",
+      "sourcePoint": {
+        "x": 623.2340425531914,
+        "y": 240.10638297872345
+      },
+      "sourceScaleBefore": 0.22274881516587677,
+      "sourceScaleAfter": 0.22387380918186603,
+      "uniformScaleFactor": 1.005050505050505,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "obsidian-executioner",
+      "frame": 6,
+      "observedExportedPoint": [
+        260,
+        141
+      ],
+      "targetExportedPoint": [
+        257,
+        139
+      ],
+      "source": "sources/obsidian-executioner/move-frame-6-v5.png",
+      "sourcePoint": {
+        "x": 606.9148936170213,
+        "y": 254.3744680851064
+      },
+      "sourceScaleBefore": 0.22045028142589118,
+      "sourceScaleAfter": 0.22268835534899667,
+      "uniformScaleFactor": 1.0101522842639594,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon-girl",
+      "frame": 1,
+      "observedExportedPoint": [
+        263,
+        142
+      ],
+      "targetExportedPoint": [
+        260,
+        145
+      ],
+      "source": "sources/dragon-girl/move-1-v2.png",
+      "sourcePoint": {
+        "x": 292.15744680851066,
+        "y": 138.2170212765958
+      },
+      "sourceScaleBefore": 0.37066246056782337,
+      "sourceScaleAfter": 0.3649890555591322,
+      "uniformScaleFactor": 0.9846938775510204,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon-girl",
+      "frame": 2,
+      "observedExportedPoint": [
+        259,
+        142
+      ],
+      "targetExportedPoint": [
+        260,
+        145
+      ],
+      "source": "sources/dragon-girl/move-1-v2.png",
+      "sourcePoint": {
+        "x": 266.3659574468085,
+        "y": 138.2170212765958
+      },
+      "sourceScaleBefore": 0.37066246056782337,
+      "sourceScaleAfter": 0.3649890555591322,
+      "uniformScaleFactor": 0.9846938775510204,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon-girl",
+      "frame": 3,
+      "observedExportedPoint": [
+        259,
+        145
+      ],
+      "targetExportedPoint": [
+        260,
+        145
+      ],
+      "source": "sources/dragon-girl/move-1-v2.png",
+      "sourcePoint": {
+        "x": 277.3659574468085,
+        "y": 137.3106382978724
+      },
+      "sourceScaleBefore": 0.37066246056782337,
+      "sourceScaleAfter": 0.37066246056782337,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon-girl",
+      "frame": 4,
+      "observedExportedPoint": [
+        245,
+        148
+      ],
+      "targetExportedPoint": [
+        260,
+        145
+      ],
+      "source": "sources/dragon-girl/move-frame-4-v3.png",
+      "sourcePoint": {
+        "x": 490.7872340425532,
+        "y": 300.2127659574468
+      },
+      "sourceScaleBefore": 0.22253787878787878,
+      "sourceScaleAfter": 0.22605163476874005,
+      "uniformScaleFactor": 1.0157894736842106,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon-girl",
+      "frame": 5,
+      "observedExportedPoint": [
+        254,
+        147
+      ],
+      "targetExportedPoint": [
+        260,
+        145
+      ],
+      "source": "sources/dragon-girl/move-frame-5-v3.png",
+      "sourcePoint": {
+        "x": 504.663829787234,
+        "y": 305.85531914893613
+      },
+      "sourceScaleBefore": 0.23175542406311636,
+      "sourceScaleAfter": 0.2341821824302694,
+      "uniformScaleFactor": 1.0104712041884816,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon-girl",
+      "frame": 6,
+      "observedExportedPoint": [
+        245,
+        149
+      ],
+      "targetExportedPoint": [
+        260,
+        145
+      ],
+      "source": "sources/dragon-girl/move-frame-6-v3.png",
+      "sourcePoint": {
+        "x": 496.21276595744683,
+        "y": 285.6936170212766
+      },
+      "sourceScaleBefore": 0.20381613183000868,
+      "sourceScaleAfter": 0.2081297007576279,
+      "uniformScaleFactor": 1.0211640211640212,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon",
+      "frame": 1,
+      "observedExportedPoint": [
+        198,
+        195
+      ],
+      "targetExportedPoint": [
+        198,
+        196
+      ],
+      "source": "sources/dragon/move-frame-1-v2.png",
+      "sourcePoint": {
+        "x": 394.8285714285715,
+        "y": 315.1714285714286
+      },
+      "sourceScaleBefore": 0.2536231884057971,
+      "sourceScaleAfter": 0.25184959967568665,
+      "uniformScaleFactor": 0.993006993006993,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon",
+      "frame": 2,
+      "observedExportedPoint": [
+        199,
+        194
+      ],
+      "targetExportedPoint": [
+        198,
+        196
+      ],
+      "source": "sources/dragon/move-frame-2-v2.png",
+      "sourcePoint": {
+        "x": 396.3285714285714,
+        "y": 301.1714285714286
+      },
+      "sourceScaleBefore": 0.2527075812274368,
+      "sourceScaleAfter": 0.24919775371038907,
+      "uniformScaleFactor": 0.9861111111111112,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon",
+      "frame": 3,
+      "observedExportedPoint": [
+        199,
+        199
+      ],
+      "targetExportedPoint": [
+        198,
+        196
+      ],
+      "source": "sources/dragon/move-frame-3-v2.png",
+      "sourcePoint": {
+        "x": 333.5892857142857,
+        "y": 336.55357142857144
+      },
+      "sourceScaleBefore": 0.24669603524229075,
+      "sourceScaleAfter": 0.2520204101036352,
+      "uniformScaleFactor": 1.0215827338129497,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon",
+      "frame": 4,
+      "observedExportedPoint": [
+        196,
+        207
+      ],
+      "targetExportedPoint": [
+        198,
+        196
+      ],
+      "source": "sources/dragon/move-frame-4-v2.png",
+      "sourcePoint": {
+        "x": 336.9714285714286,
+        "y": 307.99285714285713
+      },
+      "sourceScaleBefore": 0.23688663282571912,
+      "sourceScaleAfter": 0.25677787680345127,
+      "uniformScaleFactor": 1.083969465648855,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon",
+      "frame": 5,
+      "observedExportedPoint": [
+        192,
+        196
+      ],
+      "targetExportedPoint": [
+        198,
+        196
+      ],
+      "source": "sources/dragon/move-frame-5-v3.png",
+      "sourcePoint": {
+        "x": 327.78571428571433,
+        "y": 298.1071428571429
+      },
+      "sourceScaleBefore": 0.23829787234042554,
+      "sourceScaleAfter": 0.23829787234042554,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    },
+    {
+      "enemy": "dragon",
+      "frame": 6,
+      "observedExportedPoint": [
+        191,
+        196
+      ],
+      "targetExportedPoint": [
+        198,
+        196
+      ],
+      "source": "sources/dragon/move-frame-6-v2.png",
+      "sourcePoint": {
+        "x": 334.5964285714286,
+        "y": 305.23571428571427
+      },
+      "sourceScaleBefore": 0.24200518582541056,
+      "sourceScaleAfter": 0.24200518582541056,
+      "uniformScaleFactor": 1,
+      "groundBaseline": 338,
+      "uncertaintyPx": 4
+    }
+  ]
+}

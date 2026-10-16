@@ -1,0 +1,112 @@
+[
+  {
+    "id": "fuma",
+    "count": 4,
+    "loop": true,
+    "delay": 80,
+    "source": "development/assets/skills/ninja/effects/fuma/source/fuma-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a large steel four-bladed curved fuma shuriken rotating clockwise at angles 0,22.5,45,67.5 degrees. Identical size and steel grey blades, crimson/gold blade edges, white center ring. Tiny red motion accents, no wide trail. Must loop smoothly as a rotationally symmetric star."
+  },
+  {
+    "id": "flash",
+    "count": 4,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/flash/source/flash-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a LOCAL white-gold ninja flash-bomb impact: 1 tight white core and four rays, 2 expanding sharply edged gold-white circular ring with violet smoke shards, 3 ring fragments and bright four-way sparks, 4 scattered fading gold and lavender pixels. Transparent center except very short flash. No all-screen explosion."
+  },
+  {
+    "id": "smoke-in",
+    "count": 3,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/smoke-in/source/smoke-in-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: THREE frames of compact indigo/purple smoke summoning puff viewed side-on: 1 low tiny dense puff, 2 rising two curling lobes with crimson glowing shards and dark transparent gaps, 3 smoke expands sideways into a low open curl and a few drifting purple pixels. Center footprint (.5,.75), never an opaque wall."
+  },
+  {
+    "id": "smoke-out",
+    "count": 3,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/smoke-out/source/smoke-out-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: THREE frames of dissolving low indigo shadow smoke viewed side-on: 1 compact broken smoke curl with a few crimson clothlike sparks, 2 curls split sideways into scattered violet wisps, 3 only tiny purple fading particles. Begins at footprint (.5,.75). Smoke dissolves completely, leave room around it."
+  },
+  {
+    "id": "caltrop-scatter",
+    "count": 3,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/caltrop-scatter/source/caltrop-scatter-generated-v1.png",
+    "prompt": "Use case: illustration-story. Production PIXEL ART ninja combat VFX RGBA transparent PNG sprite strip. One horizontal row of equal SQUARE cells, three or four as specified. No background, no text, no annotations, no arrows, no ground plane, no character. Crisp coarse pixel clusters, restrained black/steel/crimson/indigo/white/gold palette. Each whole effect has at least 12% clear transparent margin within its own cell. Animation left to right. THREE frames: 1 small cluster of black steel four-point caltrops with crimson tiny tips thrown upward in a fan, 2 caltrops falling apart toward ground in a shallow arc, 3 a spread of sharp black steel caltrops resting in a small isometric oval formation with a few tiny red perimeter dots. No colored floor fill."
+  },
+  {
+    "id": "shadow-pin",
+    "count": 3,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/shadow-pin/source/shadow-pin-generated-v1.png",
+    "prompt": "Use case: illustration-story. Production PIXEL ART ninja combat VFX RGBA transparent PNG sprite strip. One horizontal row of equal SQUARE cells, three or four as specified. No background, no text, no annotations, no arrows, no ground plane, no character. Crisp coarse pixel clusters, restrained black/steel/crimson/indigo/white/gold palette. Each whole effect has at least 12% clear transparent margin within its own cell. Animation left to right. THREE frames: 1 narrow black-violet steel shadow nail descending diagonally with thin violet band, 2 nail pins a little black ground shadow, short purple chain appears from nail to shadow, 3 pinned shadow held by a thin glowing violet band and tiny white spark. Compact transparent isometric ground effect."
+  },
+  {
+    "id": "seal",
+    "count": 4,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/seal/source/seal-generated-v1.png",
+    "prompt": "Use case: illustration-story. Production PIXEL ART ninja combat VFX RGBA transparent PNG sprite strip. One horizontal row of equal SQUARE cells, three or four as specified. No background, no text, no annotations, no arrows, no ground plane, no character. Crisp coarse pixel clusters, restrained black/steel/crimson/indigo/white/gold palette. Each whole effect has at least 12% clear transparent margin within its own cell. Animation left to right. FOUR frames: 1 one ivory rectangular ninja paper talisman with crimson geometric stamp floating vertically, 2 crimson stamp glows, 3 thin crimson sealing circle pulses around the same talisman, 4 glow fades to the original talisman. No real text, only abstract rune geometry.",
+    "xCuts": [
+      0,
+      500,
+      1048,
+      1700,
+      2172
+    ]
+  },
+  {
+    "id": "thread",
+    "count": 3,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/thread/source/thread-generated-v1.png",
+    "prompt": "Use case: illustration-story. Production PIXEL ART ninja combat VFX RGBA transparent PNG sprite strip. One horizontal row of equal SQUARE cells, three or four as specified. No background, no text, no annotations, no arrows, no ground plane, no character. Crisp coarse pixel clusters, restrained black/steel/crimson/indigo/white/gold palette. Each whole effect has at least 12% clear transparent margin within its own cell. Animation left to right. THREE frames: 1 a small crimson ninja silk spool unwinding, 2 thin bright crimson threads stretch into an open triangular ground net, 3 the same triangular silk threads snap into thin fading red segments and sparks. No solid filled triangle. Identical centered ground footprint."
+  },
+  {
+    "id": "lightning",
+    "count": 3,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/lightning/source/lightning-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: THREE frames of a slim steel ninja paralysis needle aligned horizontally: 1 narrow silver needle with dark center and a faint violet electric zigzag, 2 same needle with brief white-violet jagged electric spark around its tip, 3 tiny fading electric fragments with no needle. Needle is a recognizable thin metal dart, not a lightning sword."
+  },
+  {
+    "id": "haze",
+    "count": 4,
+    "loop": true,
+    "delay": 160,
+    "source": "development/assets/skills/ninja/effects/haze/source/haze-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a VERY LOW indigo shadow mist loop blowing sideways: 1 compact dark blue wisps with transparent gaps, 2 shift curls to right slightly, 3 stretch thinner flowing strands further right, 4 strands ease back towards starting shape. Each frame's visible mist is a flat horizontal oval only in lower quarter of the cell. No wall of smoke, no solid fog."
+  },
+  {
+    "id": "prison",
+    "count": 4,
+    "loop": true,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/prison/source/prison-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a thin ninja shadow-prison magic boundary seen isometrically: four small violet/crimson paper seal markers around a hollow oval, frame1 dim outline, frame2 violet threads run from boundary toward center, frame3 brief white-violet sharp inward converging waves, frame4 fade to dim outline. Transparent empty center, no opaque fill, no characters, no text. Open geometry readable over a battlefield."
+  },
+  {
+    "id": "final-ring",
+    "count": 4,
+    "loop": false,
+    "delay": 180,
+    "source": "development/assets/skills/ninja/effects/final-ring/source/final-ring-generated-v1.png",
+    "prompt": "Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a ninja finishing burst: 1 a sharp thin white-gold hexagonal ring, 2 hexagon expands with six blade-like gold flares aligned to corners and small crimson/indigo streaks, 3 ring breaks into fine gold sparks and tiny silver blade glints, 4 sparks disperse and fade. Hollow and transparent center. No opaque explosion, no characters, no text.",
+    "xCuts": [
+      0,
+      480,
+      1105,
+      1630,
+      2172
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-13 JST",
+  "status": "trial-ready-for-review",
+  "standardAdopted": false,
+  "previewOnly": true,
+  "tool": "built-in image_gen",
+  "selectedSourceSheets": 6,
+  "generatedAttempts": 9,
+  "sourceSha256": "all copied originals match generated files",
+  "assetAudit": "qa.json: 214 frames passed",
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "focused URL",
+      "six frame stepping",
+      "720ms cycle",
+      "three consecutive identical loop sequences",
+      "no page errors"
+    ],
+    "observed": [
+      "1/6",
+      "2/6",
+      "3/6",
+      "4/6",
+      "5/6",
+      "6/6",
+      "1/6",
+      "2/6",
+      "3/6",
+      "4/6",
+      "5/6",
+      "6/6",
+      "1/6",
+      "2/6",
+      "3/6",
+      "4/6",
+      "5/6",
+      "6/6"
+    ],
+    "errors": []
+  },
+  "visualReview": {
+    "reviewed": [
+      "canonical design reference",
+      "generated single poses",
+      "six-frame contact sheet"
+    ],
+    "checks": [
+      "four connected legs and paws",
+      "diagonal support exchanges",
+      "near closed / far open and reverse",
+      "neutral phases",
+      "consistent color and face registration",
+      "no clipped wings or tail"
+    ],
+    "remaining": "Small generated foot and body silhouette differences remain. Standardization awaits evaluation of this trial."
+  }
+}

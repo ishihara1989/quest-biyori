@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "hydra-poison-aura",
+  "label": "毒ガスの溜め",
+  "sheet": "hydra-poison-aura.png",
+  "preview": "../../../../development/assets/effects/hydra-poison-aura/hydra-poison-aura-preview.gif",
+  "prompt": "../../../../development/assets/effects/hydra-poison-aura/PROMPT.md",
+  "width": 1536,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 192,
+    "y": 128
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/hydra-poison-aura/source-generated.png",
+  "sourceScale": 0.4280442804428044,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hydra-poison-aura-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "発生",
+      "bounds": {
+        "left": 88,
+        "top": 27,
+        "right": 296,
+        "bottom": 229
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 618,
+        "height": 612
+      },
+      "sourceAnchor": {
+        "x": 314,
+        "y": 320
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hydra-poison-aura-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "展開",
+      "bounds": {
+        "left": 75,
+        "top": 21,
+        "right": 308,
+        "bottom": 235
+      },
+      "sourceCell": {
+        "x": 618,
+        "y": 0,
+        "width": 636,
+        "height": 612
+      },
+      "sourceAnchor": {
+        "x": 333,
+        "y": 311
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "hydra-poison-aura-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "最大",
+      "bounds": {
+        "left": 72,
+        "top": 12,
+        "right": 312,
+        "bottom": 243
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 612,
+        "width": 660,
+        "height": 642
+      },
+      "sourceAnchor": {
+        "x": 341,
+        "y": 321
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "hydra-poison-aura-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "収束",
+      "bounds": {
+        "left": 84,
+        "top": 29,
+        "right": 299,
+        "bottom": 227
+      },
+      "sourceCell": {
+        "x": 660,
+        "y": 612,
+        "width": 594,
+        "height": 642
+      },
+      "sourceAnchor": {
+        "x": 289,
+        "y": 332
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

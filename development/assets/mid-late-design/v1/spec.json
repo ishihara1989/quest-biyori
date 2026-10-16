@@ -1,0 +1,642 @@
+{
+  "date": "2026-10-12 JST",
+  "status": "awaiting-design-review",
+  "generation": "built-in image_gen",
+  "motionProduction": "not-started",
+  "dangerActionPlan": "DANGER-ACTIONS.md",
+  "glacierPlan": "GLACIER-PLAN.md",
+  "regions": [
+    {
+      "id": "desert",
+      "name": "砂漠",
+      "title": "金砂の墓域",
+      "levels": "51–60",
+      "palette": "#d9ad55",
+      "scene": "amber dunes surrounding an ancient partially buried sandstone mortuary temple, turquoise inset stones, distant pyramid-like mausoleums, a pale hot sky, calm spacious sandy arena",
+      "props": [
+        "a low broken sandstone obelisk with turquoise inset",
+        "a cluster of small ochre rocks and dry cactus",
+        "a partly buried ornate golden sarcophagus",
+        "a ruined sandstone arch with turquoise stone"
+      ],
+      "enemies": [
+        [
+          "sand-scorpion",
+          "サンドスコーピオン",
+          "A",
+          "a small amber scorpion, black pincers, one green venom stinger"
+        ],
+        [
+          "bandage-soldier",
+          "包帯兵",
+          "B",
+          "a standing ancient mummy soldier, dry beige bandages, one curved bronze sword, turquoise glowing eyes"
+        ],
+        [
+          "sand-snake",
+          "砂蛇",
+          "C",
+          "a small sandy pale snake, turquoise dorsal fins, coiled serpentine body, no arms"
+        ],
+        [
+          "obsidian-scorpion",
+          "オブシディアンスコーピオン",
+          "A+",
+          "a massive obsidian-black scorpion, huge asymmetric pincers, gold joints, thick arched green-tipped tail"
+        ],
+        [
+          "golden-pharaoh",
+          "黄金のファラオ",
+          "B+",
+          "a male undead pharaoh, elaborate gold funerary mask and tall royal crown, turquoise staff, dark bandage robes"
+        ],
+        [
+          "lamia",
+          "ラミア",
+          "C+",
+          "an adult female lamia, gold serpentine lower body with a single long coiled tail, turquoise fitted ceremonial clothing, gold jeweled crown, long dark hair, elegant dangerous face, fully clothed upper body"
+        ],
+        [
+          "sand-behemoth",
+          "砂喰いベヒモス",
+          "D",
+          "a colossal stocky quadruped behemoth, rock-armored back, two enormous forward-curving horns, sandy mane, muscular bull-like limbs, no wings, no serpent tail"
+        ]
+      ],
+      "drops": [
+        [
+          "scorpion-pincer",
+          "砂蠍の鋏",
+          "A",
+          "one curved amber and black scorpion pincer"
+        ],
+        [
+          "ancient-bandage",
+          "古代の包帯",
+          "B",
+          "a small rolled ancient ivory bandage with frayed ends"
+        ],
+        [
+          "sand-snake-scale",
+          "砂蛇の鱗",
+          "C",
+          "three overlapping pale gold snake scales with turquoise edges"
+        ],
+        [
+          "desert-crystal",
+          "砂漠の結晶",
+          "結晶",
+          "a sharp upright amber crystal cluster, turquoise mineral center"
+        ],
+        [
+          "behemoth-horn",
+          "ベヒモスの角",
+          "レア",
+          "one huge curved ivory behemoth horn with dark rocky base"
+        ]
+      ]
+    },
+    {
+      "id": "highland",
+      "name": "高原",
+      "title": "嵐渡りの高原",
+      "levels": "61–70",
+      "palette": "#85bf9c",
+      "scene": "windswept highland meadow on tall cliffs, layered green hills and gray rock terraces, distant storm clouds with gentle sunlight breaks, open grassy arena",
+      "props": [
+        "a low gray rock and tall wind-bent grass cluster",
+        "an old standing stone with a spiral wind rune",
+        "a weathered dead tree bent by wind",
+        "a broken cliff-edge rock ledge with hanging grass"
+      ],
+      "enemies": [
+        [
+          "horn-jackal",
+          "ホーンジャッカル",
+          "A",
+          "a slender brown jackal beast with two small backward horns and long legs"
+        ],
+        [
+          "rock-horn-goat",
+          "岩角ヤギ",
+          "B",
+          "a stocky gray-brown mountain goat with rounded stone spiral horns"
+        ],
+        [
+          "wind-sprite",
+          "風の小精霊",
+          "C",
+          "a small floating green-cyan wind spirit with a visible face, swirling lower body and leaf crown"
+        ],
+        [
+          "storm-jackal",
+          "ストームジャッカル",
+          "A+",
+          "a tall slender jackal beast, blue-white flowing mane, two large lightning-shaped horns, dark teal fur and long legs"
+        ],
+        [
+          "iron-horn",
+          "アイアンホーン",
+          "B+",
+          "an immense heavy mountain ram, massive black iron spiral horns, rock plates on chest and shoulders, thick sturdy legs"
+        ],
+        [
+          "harpy-queen",
+          "ハーピークイーン",
+          "C+",
+          "an adult female harpy queen, elegant woman face and clothed torso, white and violet-blue feathered wing arms, bird talons, jeweled crown, wide clear wing silhouette"
+        ],
+        [
+          "manticore",
+          "マンティコア",
+          "D",
+          "a giant red-brown lion-bodied manticore, fearsome mature humanoid face, purple bat wings, articulated scorpion tail with a green venom tip, four powerful paws"
+        ]
+      ],
+      "drops": [
+        [
+          "horn-beast-fang",
+          "角獣の牙",
+          "A",
+          "a pair of slender ivory beast fangs with brown root"
+        ],
+        [
+          "rock-horn-fragment",
+          "岩角の欠片",
+          "B",
+          "a curved chipped gray stone horn segment"
+        ],
+        [
+          "wind-spirit-feather",
+          "風精の羽",
+          "C",
+          "one long pale teal feather with a curved cyan tip"
+        ],
+        [
+          "highland-crystal",
+          "高原の結晶",
+          "結晶",
+          "a faceted upright green-cyan crystal with a silver mineral base"
+        ],
+        [
+          "manticore-tail",
+          "マンティコアの毒尾",
+          "レア",
+          "a curved purple armored scorpion tail section with an emerald venom stinger"
+        ]
+      ]
+    },
+    {
+      "id": "glacier",
+      "name": "氷河",
+      "title": "蒼氷の聖域",
+      "levels": "71–80",
+      "palette": "#87c6ef",
+      "scene": "deep blue glacial sanctuary, towering layered ice walls and snow mountains, faint mint aurora in a twilight blue sky, a spacious flat blue-white snow and ice arena, distant icy temple silhouette",
+      "props": [
+        "a low dark-blue ice boulder capped with snow",
+        "a translucent blue ice crystal cluster",
+        "a frozen bare tree with icicles",
+        "a broken frost-covered stone pillar with blue runes"
+      ],
+      "enemies": [
+        [
+          "frost-wolf",
+          "フロストウルフ",
+          "A",
+          "a white wolf with a navy blue back, small icy blue fangs and dark outlined fur"
+        ],
+        [
+          "ice-shell-golem",
+          "氷殻ゴーレム",
+          "B",
+          "a stocky snow-covered dull blue ice golem with thick round arms and a small recessed face"
+        ],
+        [
+          "snow-sprite",
+          "雪の精",
+          "C",
+          "a small floating blue-eyed snow spirit surrounded by six simple snow-crystal points"
+        ],
+        [
+          "fenrir",
+          "フェンリル",
+          "A+",
+          "an enormous white and dark-navy wolf, huge navy mane, icy fangs, luminous blue runes on shoulders, imposing quadruped stance"
+        ],
+        [
+          "crystal-golem",
+          "クリスタルゴーレム",
+          "B+",
+          "a giant angular transparent blue ice-crystal golem, large faceted chest core with violet inner light, huge faceted forearms"
+        ],
+        [
+          "yuki-onna",
+          "雪女",
+          "C+",
+          "an adult female snow spirit, long white hair, elegant white and deep indigo kimono, crystalline snow crown, floating lower hem, pale face with visible dark outline, no wings or tail"
+        ],
+        [
+          "ice-tusk-mammoth",
+          "氷牙マンモス",
+          "D",
+          "a colossal woolly mammoth, huge domed shoulders, exactly four thick elephant legs, long flexible trunk, two enormous curved translucent azure ice tusks with ivory roots, silver-white shaggy wool with navy shadows, small round ears, three broad glacial crystal slabs on the back, cyan eyes, left-facing three-quarter grounded stance"
+        ]
+      ],
+      "drops": [
+        [
+          "ice-wolf-fang",
+          "氷狼の牙",
+          "A",
+          "two white wolf fangs with blue frosted roots"
+        ],
+        [
+          "ice-shell-fragment",
+          "氷殻の欠片",
+          "B",
+          "a chunky dull blue ice shell fragment with snow edge"
+        ],
+        [
+          "snow-spirit-flower",
+          "雪精の花",
+          "C",
+          "one six-petal crystalline white and blue snow flower"
+        ],
+        [
+          "glacier-crystal",
+          "氷河の結晶",
+          "結晶",
+          "a tall clear azure faceted crystal cluster with violet center"
+        ],
+        [
+          "mammoth-ice-tusk",
+          "マンモスの氷牙",
+          "レア",
+          "one thick curved mammoth tusk, ivory-white root with a few silver wool strands, translucent azure crystalline shell and a luminous icy-white tip"
+        ]
+      ]
+    },
+    {
+      "id": "volcano",
+      "name": "火山",
+      "title": "紅蓮の竜脈",
+      "levels": "81–90",
+      "palette": "#e77f58",
+      "scene": "black basalt volcanic valley, distant erupting mountain and dragon nesting spires, orange lava rivers along the far edges, smoky red-gray sky, wide calm dark charcoal rock arena in foreground with sparse dim orange cracks",
+      "props": [
+        "a low black basalt boulder with a small glowing orange fissure",
+        "a cluster of sharp obsidian spires",
+        "a half-buried dragon rib and skull fragment",
+        "a broken basalt shrine pillar with an ember rune"
+      ],
+      "enemies": [
+        [
+          "lava-salamander",
+          "ラヴァサラマンダー",
+          "A",
+          "a small quadruped black and orange salamander lizard, lava dorsal fins"
+        ],
+        [
+          "obsidian-soldier",
+          "黒曜兵",
+          "B",
+          "a humanoid soldier in black obsidian armor, one single-bladed axe, dim gold seams in armor"
+        ],
+        [
+          "young-fire-dragon",
+          "幼火竜",
+          "C",
+          "a small red winged quadruped dragon, orange wing membranes, short horns and small tail"
+        ],
+        [
+          "magma-salamander",
+          "マグマサラマンダー",
+          "A+",
+          "a huge thick quadruped salamander, cracked black armor with lava-orange interior, thick orange tail and broad head, no wings"
+        ],
+        [
+          "obsidian-executioner",
+          "黒曜の処刑者",
+          "B+",
+          "a towering black obsidian executioner, fully enclosed pointed helmet, broad angular shoulders, massive double-bladed axe"
+        ],
+        [
+          "dragon-girl",
+          "ドラゴンガール",
+          "C+",
+          "an adult female dragon humanoid, mature woman face, red horns and wings, long dragon tail, fitted fully clothed black-and-red scale armor, dragon-clawed legs and hands, no handheld weapon"
+        ],
+        [
+          "red-dragon",
+          "ドラゴン",
+          "D",
+          "a colossal red-black four-legged winged dragon, long neck, two large backward horns, wide orange wing membranes, lava-lit chest, full long tail, regal fearsome face"
+        ]
+      ],
+      "drops": [
+        [
+          "fire-lizard-hide",
+          "火蜥蜴の皮",
+          "A",
+          "a small folded black reptile hide with orange glowing scale seams"
+        ],
+        [
+          "obsidian-blade-shard",
+          "黒曜の刃片",
+          "B",
+          "an angular chipped black obsidian axe blade fragment with gold edge"
+        ],
+        [
+          "fire-dragon-scale",
+          "火竜の鱗",
+          "C",
+          "three overlapping dark red dragon scales with orange rim"
+        ],
+        [
+          "volcano-crystal",
+          "火山の結晶",
+          "結晶",
+          "a bright upright orange-red faceted crystal with black basalt base"
+        ],
+        [
+          "dragon-furnace-heart",
+          "ドラゴンの炉心",
+          "レア",
+          "a round fiery orange dragon heart core wrapped in black-red curved scale plates"
+        ]
+      ]
+    },
+    {
+      "id": "demon-castle",
+      "name": "魔王城",
+      "title": "宵闇の玉座",
+      "levels": "91–100",
+      "palette": "#b396df",
+      "scene": "grand demonic castle throne hall, black-purple stone arches, distant gold-trimmed throne and enormous moonlit gothic window, deep crimson carpet in the distance, purple braziers along far sides, wide flat dark slate arena in foreground",
+      "props": [
+        "a low black-purple stone rubble pile with gold ornament",
+        "a gothic black brazier holding a small violet flame",
+        "a broken gold-trimmed demon statue bust",
+        "a tall black-and-gold pillar segment with a crimson hanging banner"
+      ],
+      "enemies": [
+        [
+          "demon-armor-soldier",
+          "魔鎧兵",
+          "A",
+          "a black armored humanoid soldier, red eyes, rectangular shield and straight sword"
+        ],
+        [
+          "imp",
+          "インプ",
+          "B",
+          "a small purple imp devil, pointed ears, short horns and tiny bat wings, squat creature proportions"
+        ],
+        [
+          "dream-demon",
+          "夢魔",
+          "C",
+          "a petite but clearly adult female dream demon, pale violet hair, fully clothed black-purple tunic, small bat wings, no childlike features"
+        ],
+        [
+          "black-knight",
+          "黒騎士",
+          "A+",
+          "a towering black knight, large two-handed sword, crimson cloak, fully closed horned helmet, gold armor trim"
+        ],
+        [
+          "arch-demon",
+          "アークデーモン",
+          "B+",
+          "a hulking demon with two thick horns, massive arms, violet wings, red glowing abdominal core, dark armored hide"
+        ],
+        [
+          "lilith",
+          "リリス",
+          "C+",
+          "an adult female demon queen Lilith, large curved horns, wide black-purple wings, long silver-violet hair, ruby crown, fully clothed elegant black and deep crimson royal outfit, mature dangerous face"
+        ],
+        [
+          "demon-god",
+          "魔神",
+          "D",
+          "a colossal six-armed demon god with exactly six visible arms in three symmetric pairs, black-and-gold armor, six crown horns, violet-red chest core, two armored legs, one large floating dark halo behind, no handheld weapons"
+        ]
+      ],
+      "drops": [
+        [
+          "demon-armor-fragment",
+          "魔鎧の破片",
+          "A",
+          "a jagged black armored plate fragment with gold trim and red scar"
+        ],
+        [
+          "demon-horn",
+          "悪魔の角",
+          "B",
+          "one short curved purple-black devil horn"
+        ],
+        [
+          "dream-demon-feather",
+          "夢魔の羽",
+          "C",
+          "one soft curved silver-violet magical feather with dark base"
+        ],
+        [
+          "castle-crystal",
+          "魔城の結晶",
+          "結晶",
+          "a tall violet and crimson faceted mineral crystal with black base"
+        ],
+        [
+          "demon-god-heart",
+          "魔神の心核",
+          "レア",
+          "a purple-red spherical divine demon core in an ornate black-gold six-point cage"
+        ]
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "desert-background",
+      "region": "desert",
+      "kind": "background",
+      "transparent": false,
+      "file": "desert/background.png",
+      "prompt": "Use case: stylized-concept\nAsset type: static 16:9 battle-map background PNG, landscape, ideally 1536x864.\nPrimary request: amber dunes surrounding an ancient partially buried sandstone mortuary temple, turquoise inset stones, distant pyramid-like mausoleums, a pale hot sky, calm spacious sandy arena.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: side-view RPG battlefield with mild 3/4 depth, horizon at 55 percent of image height. Keep x=10..90 percent and y=56..89 percent a broad unobstructed flat walking surface. All tall architecture is behind the horizon, not blocking characters. Foreground decoration only at extreme bottom corners. Calm lower contrast floor and vivid detailed distant scenery. No characters, enemies, UI, attack effects, grid or lettering. Entire rectangle painted; opaque backdrop. Pixel-art background, not a poster.",
+      "currentFile": "desert/background.png"
+    },
+    {
+      "id": "desert-props",
+      "region": "desert",
+      "kind": "props",
+      "transparent": true,
+      "file": "desert/props.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG environment-prop atlas, square, 2 columns by 2 rows, four STATIC separate objects, not animation.\nPrimary request: 砂漠 environment props: top-left a low broken sandstone obelisk with turquoise inset; top-right a cluster of small ochre rocks and dry cactus; bottom-left a partly buried ornate golden sarcophagus; bottom-right a ruined sandstone arch with turquoise stone.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each object fully contained in its exact equal quadrant with 12 percent clear padding on all sides, bottom of object at 86 percent of its cell height. Side-view with mild 3/4 depth matching a RPG battlefield. Separate four complete objects, no contact between cells. Background truly transparent alpha, no ground slab, no cast shadow beyond the object, no borders, checkerboard, text or labels. Restrained highlights. These are background decoration objects, not drop items.",
+      "currentFile": "desert/props.png"
+    },
+    {
+      "id": "desert-drops",
+      "region": "desert",
+      "kind": "drops",
+      "transparent": true,
+      "file": "desert/drops.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG inventory-material atlas, wide 3:2, exact 3 columns by 2 rows, five STATIC isolated inventory icons, not animation.\nPrimary request: top row left one curved amber and black scorpion pincer, top row center a small rolled ancient ivory bandage with frayed ends, top row right three overlapping pale gold snake scales with turquoise edges; bottom row left a sharp upright amber crystal cluster, turquoise mineral center, bottom row center one huge curved ivory behemoth horn with dark rocky base; bottom right EMPTY fully transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each icon centered in its exact equal grid cell, isolated with at least 18 percent transparent padding to every cell boundary. Simple strong silhouettes, chunky pixels, no floor, no shadow plate, no surrounding particle cloud. All five icons similar visual size, vivid highlights. Actual transparent alpha background, no frames, checkerboard, words, numerals, rarity badges, coins or extra icons. All icons fully visible.",
+      "currentFile": "desert/drops.png"
+    },
+    {
+      "id": "desert-monsters",
+      "region": "desert",
+      "kind": "monsters",
+      "transparent": true,
+      "file": "desert/monsters.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG static monster DESIGN atlas, square high-resolution ideally 1536x1536, EXACT 3 columns by 3 equal rows. Seven DISTINCT creatures; not animation.\nPrimary request: 砂漠 monsters. TOP ROW, left cell a small amber scorpion, black pincers, one green venom stinger; center cell a standing ancient mummy soldier, dry beige bandages, one curved bronze sword, turquoise glowing eyes; right cell a small sandy pale snake, turquoise dorsal fins, coiled serpentine body, no arms. MIDDLE ROW, left cell a massive obsidian-black scorpion, huge asymmetric pincers, gold joints, thick arched green-tipped tail; center cell a male undead pharaoh, elaborate gold funerary mask and tall royal crown, turquoise staff, dark bandage robes; right cell an adult female lamia, gold serpentine lower body with a single long coiled tail, turquoise fitted ceremonial clothing, gold jeweled crown, long dark hair, elegant dangerous face, fully clothed upper body. BOTTOM ROW only CENTER cell a colossal stocky quadruped behemoth, rock-armored back, two enormous forward-curving horns, sandy mane, muscular bull-like limbs, no wings, no serpent tail; bottom-left and bottom-right cells completely EMPTY and transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: exact equally spaced 3x3 grid. One complete creature per occupied cell, all facing LEFT in mild 3/4 side view, a single calm neutral standing or hovering pose. Show entire head, every limb, full wings and tails, all weapons. Keep at least 10 percent clear padding to EVERY cell boundary, no object extends outside its own cell. Normal creatures in top row occupy about 55-65 percent of cell; bosses occupy about 75 percent. Female bosses are adults with mature faces, fully clothed or armored. Bottom-center creature has enough space to show its full silhouette. Do not add any creature to empty cells. True transparent background alpha, no floors, scenery, cast shadow plates, frames, checkerboard, labels, text, attack VFX or multiple poses. Preserve distinct species and colors, no duplicate enemies.",
+      "currentFile": "desert/monsters.png"
+    },
+    {
+      "id": "highland-background",
+      "region": "highland",
+      "kind": "background",
+      "transparent": false,
+      "file": "highland/background.png",
+      "prompt": "Use case: stylized-concept\nAsset type: static 16:9 battle-map background PNG, landscape, ideally 1536x864.\nPrimary request: windswept highland meadow on tall cliffs, layered green hills and gray rock terraces, distant storm clouds with gentle sunlight breaks, open grassy arena.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: side-view RPG battlefield with mild 3/4 depth, horizon at 55 percent of image height. Keep x=10..90 percent and y=56..89 percent a broad unobstructed flat walking surface. All tall architecture is behind the horizon, not blocking characters. Foreground decoration only at extreme bottom corners. Calm lower contrast floor and vivid detailed distant scenery. No characters, enemies, UI, attack effects, grid or lettering. Entire rectangle painted; opaque backdrop. Pixel-art background, not a poster.",
+      "currentFile": "highland/background.png"
+    },
+    {
+      "id": "highland-props",
+      "region": "highland",
+      "kind": "props",
+      "transparent": true,
+      "file": "highland/props.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG environment-prop atlas, square, 2 columns by 2 rows, four STATIC separate objects, not animation.\nPrimary request: 高原 environment props: top-left a low gray rock and tall wind-bent grass cluster; top-right an old standing stone with a spiral wind rune; bottom-left a weathered dead tree bent by wind; bottom-right a broken cliff-edge rock ledge with hanging grass.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each object fully contained in its exact equal quadrant with 12 percent clear padding on all sides, bottom of object at 86 percent of its cell height. Side-view with mild 3/4 depth matching a RPG battlefield. Separate four complete objects, no contact between cells. Background truly transparent alpha, no ground slab, no cast shadow beyond the object, no borders, checkerboard, text or labels. Restrained highlights. These are background decoration objects, not drop items.",
+      "currentFile": "highland/props.png"
+    },
+    {
+      "id": "highland-drops",
+      "region": "highland",
+      "kind": "drops",
+      "transparent": true,
+      "file": "highland/drops.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG inventory-material atlas, wide 3:2, exact 3 columns by 2 rows, five STATIC isolated inventory icons, not animation.\nPrimary request: top row left a pair of slender ivory beast fangs with brown root, top row center a curved chipped gray stone horn segment, top row right one long pale teal feather with a curved cyan tip; bottom row left a faceted upright green-cyan crystal with a silver mineral base, bottom row center a curved purple armored scorpion tail section with an emerald venom stinger; bottom right EMPTY fully transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each icon centered in its exact equal grid cell, isolated with at least 18 percent transparent padding to every cell boundary. Simple strong silhouettes, chunky pixels, no floor, no shadow plate, no surrounding particle cloud. All five icons similar visual size, vivid highlights. Actual transparent alpha background, no frames, checkerboard, words, numerals, rarity badges, coins or extra icons. All icons fully visible.",
+      "currentFile": "highland/drops.png"
+    },
+    {
+      "id": "highland-monsters",
+      "region": "highland",
+      "kind": "monsters",
+      "transparent": true,
+      "file": "highland/monsters.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG static monster DESIGN atlas, square high-resolution ideally 1536x1536, EXACT 3 columns by 3 equal rows. Seven DISTINCT creatures; not animation.\nPrimary request: 高原 monsters. TOP ROW, left cell a slender brown jackal beast with two small backward horns and long legs; center cell a stocky gray-brown mountain goat with rounded stone spiral horns; right cell a small floating green-cyan wind spirit with a visible face, swirling lower body and leaf crown. MIDDLE ROW, left cell a tall slender jackal beast, blue-white flowing mane, two large lightning-shaped horns, dark teal fur and long legs; center cell an immense heavy mountain ram, massive black iron spiral horns, rock plates on chest and shoulders, thick sturdy legs; right cell an adult female harpy queen, elegant woman face and clothed torso, white and violet-blue feathered wing arms, bird talons, jeweled crown, wide clear wing silhouette. BOTTOM ROW only CENTER cell a giant red-brown lion-bodied manticore, fearsome mature humanoid face, purple bat wings, articulated scorpion tail with a green venom tip, four powerful paws; bottom-left and bottom-right cells completely EMPTY and transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: exact equally spaced 3x3 grid. One complete creature per occupied cell, all facing LEFT in mild 3/4 side view, a single calm neutral standing or hovering pose. Show entire head, every limb, full wings and tails, all weapons. Keep at least 10 percent clear padding to EVERY cell boundary, no object extends outside its own cell. Normal creatures in top row occupy about 55-65 percent of cell; bosses occupy about 75 percent. Female bosses are adults with mature faces, fully clothed or armored. Bottom-center creature has enough space to show its full silhouette. Do not add any creature to empty cells. True transparent background alpha, no floors, scenery, cast shadow plates, frames, checkerboard, labels, text, attack VFX or multiple poses. Preserve distinct species and colors, no duplicate enemies.",
+      "currentFile": "highland/monsters.png"
+    },
+    {
+      "id": "glacier-background",
+      "region": "glacier",
+      "kind": "background",
+      "transparent": false,
+      "file": "glacier/background.png",
+      "prompt": "Use case: stylized-concept\nAsset type: static 16:9 battle-map background PNG, landscape, ideally 1536x864.\nPrimary request: deep blue glacial sanctuary, towering layered ice walls and snow mountains, faint mint aurora in a twilight blue sky, a spacious flat blue-white snow and ice arena, distant icy temple silhouette.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: side-view RPG battlefield with mild 3/4 depth, horizon at 55 percent of image height. Keep x=10..90 percent and y=56..89 percent a broad unobstructed flat walking surface. All tall architecture is behind the horizon, not blocking characters. Foreground decoration only at extreme bottom corners. Calm lower contrast floor and vivid detailed distant scenery. No characters, enemies, UI, attack effects, grid or lettering. Entire rectangle painted; opaque backdrop. Pixel-art background, not a poster.",
+      "currentFile": "glacier/background.png"
+    },
+    {
+      "id": "glacier-props",
+      "region": "glacier",
+      "kind": "props",
+      "transparent": true,
+      "file": "glacier/props.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG environment-prop atlas, square, 2 columns by 2 rows, four STATIC separate objects, not animation.\nPrimary request: 氷河 environment props: top-left a low dark-blue ice boulder capped with snow; top-right a translucent blue ice crystal cluster; bottom-left a frozen bare tree with icicles; bottom-right a broken frost-covered stone pillar with blue runes.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each object fully contained in its exact equal quadrant with 12 percent clear padding on all sides, bottom of object at 86 percent of its cell height. Side-view with mild 3/4 depth matching a RPG battlefield. Separate four complete objects, no contact between cells. Background truly transparent alpha, no ground slab, no cast shadow beyond the object, no borders, checkerboard, text or labels. Restrained highlights. These are background decoration objects, not drop items.",
+      "currentFile": "glacier/props.png"
+    },
+    {
+      "id": "glacier-drops",
+      "region": "glacier",
+      "kind": "drops",
+      "transparent": true,
+      "file": "glacier/drops.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG inventory-material atlas, wide 3:2, exact 3 columns by 2 rows, five STATIC isolated inventory icons, not animation.\nPrimary request: top row left two white wolf fangs with blue frosted roots, top row center a chunky dull blue ice shell fragment with snow edge, top row right one six-petal crystalline white and blue snow flower; bottom row left a tall clear azure faceted crystal cluster with violet center, bottom row center one thick curved mammoth tusk, ivory-white root with a few silver wool strands, translucent azure crystalline shell and a luminous icy-white tip; bottom right EMPTY fully transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each icon centered in its exact equal grid cell, isolated with at least 18 percent transparent padding to every cell boundary. Simple strong silhouettes, chunky pixels, no floor, no shadow plate, no surrounding particle cloud. All five icons similar visual size, vivid highlights. Actual transparent alpha background, no frames, checkerboard, words, numerals, rarity badges, coins or extra icons. All icons fully visible.",
+      "currentFile": "glacier/drops-v2.png"
+    },
+    {
+      "id": "glacier-monsters",
+      "region": "glacier",
+      "kind": "monsters",
+      "transparent": true,
+      "file": "glacier/monsters.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG static monster DESIGN atlas, square high-resolution ideally 1536x1536, EXACT 3 columns by 3 equal rows. Seven DISTINCT creatures; not animation.\nPrimary request: 氷河 monsters. TOP ROW, left cell a white wolf with a navy blue back, small icy blue fangs and dark outlined fur; center cell a stocky snow-covered dull blue ice golem with thick round arms and a small recessed face; right cell a small floating blue-eyed snow spirit surrounded by six simple snow-crystal points. MIDDLE ROW, left cell an enormous white and dark-navy wolf, huge navy mane, icy fangs, luminous blue runes on shoulders, imposing quadruped stance; center cell a giant angular transparent blue ice-crystal golem, large faceted chest core with violet inner light, huge faceted forearms; right cell an adult female snow spirit, long white hair, elegant white and deep indigo kimono, crystalline snow crown, floating lower hem, pale face with visible dark outline, no wings or tail. BOTTOM ROW only CENTER cell a colossal woolly mammoth, huge domed shoulders, exactly four thick elephant legs, long flexible trunk, two enormous curved translucent azure ice tusks with ivory roots, silver-white shaggy wool with navy shadows, small round ears, three broad glacial crystal slabs on the back, cyan eyes, left-facing three-quarter grounded stance; bottom-left and bottom-right cells completely EMPTY and transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: exact equally spaced 3x3 grid. One complete creature per occupied cell, all facing LEFT in mild 3/4 side view, a single calm neutral standing or hovering pose. Show entire head, every limb, full wings and tails, all weapons. Keep at least 10 percent clear padding to EVERY cell boundary, no object extends outside its own cell. Normal creatures in top row occupy about 55-65 percent of cell; bosses occupy about 75 percent. Female bosses are adults with mature faces, fully clothed or armored. Bottom-center creature has enough space to show its full silhouette. Do not add any creature to empty cells. True transparent background alpha, no floors, scenery, cast shadow plates, frames, checkerboard, labels, text, attack VFX or multiple poses. Preserve distinct species and colors, no duplicate enemies.",
+      "currentFile": "glacier/monsters-v3.png"
+    },
+    {
+      "id": "volcano-background",
+      "region": "volcano",
+      "kind": "background",
+      "transparent": false,
+      "file": "volcano/background.png",
+      "prompt": "Use case: stylized-concept\nAsset type: static 16:9 battle-map background PNG, landscape, ideally 1536x864.\nPrimary request: black basalt volcanic valley, distant erupting mountain and dragon nesting spires, orange lava rivers along the far edges, smoky red-gray sky, wide calm dark charcoal rock arena in foreground with sparse dim orange cracks.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: side-view RPG battlefield with mild 3/4 depth, horizon at 55 percent of image height. Keep x=10..90 percent and y=56..89 percent a broad unobstructed flat walking surface. All tall architecture is behind the horizon, not blocking characters. Foreground decoration only at extreme bottom corners. Calm lower contrast floor and vivid detailed distant scenery. No characters, enemies, UI, attack effects, grid or lettering. Entire rectangle painted; opaque backdrop. Pixel-art background, not a poster.",
+      "currentFile": "volcano/background.png"
+    },
+    {
+      "id": "volcano-props",
+      "region": "volcano",
+      "kind": "props",
+      "transparent": true,
+      "file": "volcano/props.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG environment-prop atlas, square, 2 columns by 2 rows, four STATIC separate objects, not animation.\nPrimary request: 火山 environment props: top-left a low black basalt boulder with a small glowing orange fissure; top-right a cluster of sharp obsidian spires; bottom-left a half-buried dragon rib and skull fragment; bottom-right a broken basalt shrine pillar with an ember rune.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each object fully contained in its exact equal quadrant with 12 percent clear padding on all sides, bottom of object at 86 percent of its cell height. Side-view with mild 3/4 depth matching a RPG battlefield. Separate four complete objects, no contact between cells. Background truly transparent alpha, no ground slab, no cast shadow beyond the object, no borders, checkerboard, text or labels. Restrained highlights. These are background decoration objects, not drop items.",
+      "currentFile": "volcano/props.png"
+    },
+    {
+      "id": "volcano-drops",
+      "region": "volcano",
+      "kind": "drops",
+      "transparent": true,
+      "file": "volcano/drops.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG inventory-material atlas, wide 3:2, exact 3 columns by 2 rows, five STATIC isolated inventory icons, not animation.\nPrimary request: top row left a small folded black reptile hide with orange glowing scale seams, top row center an angular chipped black obsidian axe blade fragment with gold edge, top row right three overlapping dark red dragon scales with orange rim; bottom row left a bright upright orange-red faceted crystal with black basalt base, bottom row center a round fiery orange dragon heart core wrapped in black-red curved scale plates; bottom right EMPTY fully transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each icon centered in its exact equal grid cell, isolated with at least 18 percent transparent padding to every cell boundary. Simple strong silhouettes, chunky pixels, no floor, no shadow plate, no surrounding particle cloud. All five icons similar visual size, vivid highlights. Actual transparent alpha background, no frames, checkerboard, words, numerals, rarity badges, coins or extra icons. All icons fully visible.",
+      "currentFile": "volcano/drops.png"
+    },
+    {
+      "id": "volcano-monsters",
+      "region": "volcano",
+      "kind": "monsters",
+      "transparent": true,
+      "file": "volcano/monsters.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG static monster DESIGN atlas, square high-resolution ideally 1536x1536, EXACT 3 columns by 3 equal rows. Seven DISTINCT creatures; not animation.\nPrimary request: 火山 monsters. TOP ROW, left cell a small quadruped black and orange salamander lizard, lava dorsal fins; center cell a humanoid soldier in black obsidian armor, one single-bladed axe, dim gold seams in armor; right cell a small red winged quadruped dragon, orange wing membranes, short horns and small tail. MIDDLE ROW, left cell a huge thick quadruped salamander, cracked black armor with lava-orange interior, thick orange tail and broad head, no wings; center cell a towering black obsidian executioner, fully enclosed pointed helmet, broad angular shoulders, massive double-bladed axe; right cell an adult female dragon humanoid, mature woman face, red horns and wings, long dragon tail, fitted fully clothed black-and-red scale armor, dragon-clawed legs and hands, no handheld weapon. BOTTOM ROW only CENTER cell a colossal red-black four-legged winged dragon, long neck, two large backward horns, wide orange wing membranes, lava-lit chest, full long tail, regal fearsome face; bottom-left and bottom-right cells completely EMPTY and transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: exact equally spaced 3x3 grid. One complete creature per occupied cell, all facing LEFT in mild 3/4 side view, a single calm neutral standing or hovering pose. Show entire head, every limb, full wings and tails, all weapons. Keep at least 10 percent clear padding to EVERY cell boundary, no object extends outside its own cell. Normal creatures in top row occupy about 55-65 percent of cell; bosses occupy about 75 percent. Female bosses are adults with mature faces, fully clothed or armored. Bottom-center creature has enough space to show its full silhouette. Do not add any creature to empty cells. True transparent background alpha, no floors, scenery, cast shadow plates, frames, checkerboard, labels, text, attack VFX or multiple poses. Preserve distinct species and colors, no duplicate enemies.",
+      "currentFile": "volcano/monsters.png"
+    },
+    {
+      "id": "demon-castle-background",
+      "region": "demon-castle",
+      "kind": "background",
+      "transparent": false,
+      "file": "demon-castle/background.png",
+      "prompt": "Use case: stylized-concept\nAsset type: static 16:9 battle-map background PNG, landscape, ideally 1536x864.\nPrimary request: grand demonic castle throne hall, black-purple stone arches, distant gold-trimmed throne and enormous moonlit gothic window, deep crimson carpet in the distance, purple braziers along far sides, wide flat dark slate arena in foreground.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: side-view RPG battlefield with mild 3/4 depth, horizon at 55 percent of image height. Keep x=10..90 percent and y=56..89 percent a broad unobstructed flat walking surface. All tall architecture is behind the horizon, not blocking characters. Foreground decoration only at extreme bottom corners. Calm lower contrast floor and vivid detailed distant scenery. No characters, enemies, UI, attack effects, grid or lettering. Entire rectangle painted; opaque backdrop. Pixel-art background, not a poster.",
+      "currentFile": "demon-castle/background.png"
+    },
+    {
+      "id": "demon-castle-props",
+      "region": "demon-castle",
+      "kind": "props",
+      "transparent": true,
+      "file": "demon-castle/props.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG environment-prop atlas, square, 2 columns by 2 rows, four STATIC separate objects, not animation.\nPrimary request: 魔王城 environment props: top-left a low black-purple stone rubble pile with gold ornament; top-right a gothic black brazier holding a small violet flame; bottom-left a broken gold-trimmed demon statue bust; bottom-right a tall black-and-gold pillar segment with a crimson hanging banner.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each object fully contained in its exact equal quadrant with 12 percent clear padding on all sides, bottom of object at 86 percent of its cell height. Side-view with mild 3/4 depth matching a RPG battlefield. Separate four complete objects, no contact between cells. Background truly transparent alpha, no ground slab, no cast shadow beyond the object, no borders, checkerboard, text or labels. Restrained highlights. These are background decoration objects, not drop items.",
+      "currentFile": "demon-castle/props.png"
+    },
+    {
+      "id": "demon-castle-drops",
+      "region": "demon-castle",
+      "kind": "drops",
+      "transparent": true,
+      "file": "demon-castle/drops.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG inventory-material atlas, wide 3:2, exact 3 columns by 2 rows, five STATIC isolated inventory icons, not animation.\nPrimary request: top row left a jagged black armored plate fragment with gold trim and red scar, top row center one short curved purple-black devil horn, top row right one soft curved silver-violet magical feather with dark base; bottom row left a tall violet and crimson faceted mineral crystal with black base, bottom row center a purple-red spherical divine demon core in an ornate black-gold six-point cage; bottom right EMPTY fully transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: each icon centered in its exact equal grid cell, isolated with at least 18 percent transparent padding to every cell boundary. Simple strong silhouettes, chunky pixels, no floor, no shadow plate, no surrounding particle cloud. All five icons similar visual size, vivid highlights. Actual transparent alpha background, no frames, checkerboard, words, numerals, rarity badges, coins or extra icons. All icons fully visible.",
+      "currentFile": "demon-castle/drops.png"
+    },
+    {
+      "id": "demon-castle-monsters",
+      "region": "demon-castle",
+      "kind": "monsters",
+      "transparent": true,
+      "file": "demon-castle/monsters.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent PNG static monster DESIGN atlas, square high-resolution ideally 1536x1536, EXACT 3 columns by 3 equal rows. Seven DISTINCT creatures; not animation.\nPrimary request: 魔王城 monsters. TOP ROW, left cell a black armored humanoid soldier, red eyes, rectangular shield and straight sword; center cell a small purple imp devil, pointed ears, short horns and tiny bat wings, squat creature proportions; right cell a petite but clearly adult female dream demon, pale violet hair, fully clothed black-purple tunic, small bat wings, no childlike features. MIDDLE ROW, left cell a towering black knight, large two-handed sword, crimson cloak, fully closed horned helmet, gold armor trim; center cell a hulking demon with two thick horns, massive arms, violet wings, red glowing abdominal core, dark armored hide; right cell an adult female demon queen Lilith, large curved horns, wide black-purple wings, long silver-violet hair, ruby crown, fully clothed elegant black and deep crimson royal outfit, mature dangerous face. BOTTOM ROW only CENTER cell a colossal six-armed demon god with exactly six visible arms in three symmetric pairs, black-and-gold armor, six crown horns, violet-red chest core, two armored legs, one large floating dark halo behind, no handheld weapons; bottom-left and bottom-right cells completely EMPTY and transparent.\nStyle: Refined fantasy JRPG pixel-art taste, crisp deliberate pixel clusters and stepped edges, detailed readable silhouettes, rich limited palettes, dark outline, no watercolor, no smooth airbrush, no photographic texture, no 3D render. A consistent late-1990s high-detail sprite aesthetic. No text, no labels, no watermark.\nComposition: exact equally spaced 3x3 grid. One complete creature per occupied cell, all facing LEFT in mild 3/4 side view, a single calm neutral standing or hovering pose. Show entire head, every limb, full wings and tails, all weapons. Keep at least 10 percent clear padding to EVERY cell boundary, no object extends outside its own cell. Normal creatures in top row occupy about 55-65 percent of cell; bosses occupy about 75 percent. Female bosses are adults with mature faces, fully clothed or armored. Bottom-center creature has enough space to show its full silhouette. Do not add any creature to empty cells. True transparent background alpha, no floors, scenery, cast shadow plates, frames, checkerboard, labels, text, attack VFX or multiple poses. Preserve distinct species and colors, no duplicate enemies.",
+      "currentFile": "demon-castle/monsters.png"
+    }
+  ]
+}

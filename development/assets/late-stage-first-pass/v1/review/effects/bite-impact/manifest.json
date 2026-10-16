@@ -1,0 +1,101 @@
+{
+  "id": "effects/bite-impact",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "灼牙の衝撃",
+  "kind": "target",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/bite-impact-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 64,
+        "top": 125,
+        "right": 733,
+        "bottom": 354
+      },
+      "sourceWidth": 783,
+      "sourceHeight": 453,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 247459,
+      "transparentFraction": 0.6976591419767183
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 47,
+        "top": 53,
+        "right": 692,
+        "bottom": 436
+      },
+      "sourceWidth": 753,
+      "sourceHeight": 453,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 177208,
+      "transparentFraction": 0.5195054953108831
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 21,
+        "top": 15,
+        "right": 761,
+        "bottom": 530
+      },
+      "sourceWidth": 788,
+      "sourceHeight": 571,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 143078,
+      "transparentFraction": 0.3179878563745144
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 27,
+        "top": 114,
+        "right": 709,
+        "bottom": 445
+      },
+      "sourceWidth": 748,
+      "sourceHeight": 571,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 248793,
+      "transparentFraction": 0.5825060640400086
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/bite-impact-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

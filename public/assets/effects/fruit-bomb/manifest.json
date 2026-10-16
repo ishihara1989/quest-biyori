@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "effect": "fruit-bomb",
+  "label": "樹の実爆弾",
+  "sheet": "fruit-bomb.png",
+  "preview": "../../../../development/assets/effects/fruit-bomb/fruit-bomb-preview.gif",
+  "prompt": "../../../../development/assets/effects/fruit-bomb/PROMPT.md",
+  "width": 64,
+  "height": 64,
+  "columns": 1,
+  "rows": 1,
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "frameCount": 1,
+  "pivot": {
+    "x": 32,
+    "y": 32
+  },
+  "frameSequence": [
+    0
+  ],
+  "durationMs": 400,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/fruit-bomb/source/fruit-bomb-generated-v1.png",
+  "sourceScale": 0.05,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "fruit-bomb-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 64,
+      "durationMs": 400,
+      "phase": "樹の実・投射物",
+      "bounds": {
+        "left": 14,
+        "top": 13,
+        "right": 50,
+        "bottom": 51
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1185,
+        "height": 1327
+      },
+      "sourceAnchor": {
+        "x": 660,
+        "y": 719
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

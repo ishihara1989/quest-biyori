@@ -1,0 +1,38 @@
+{
+  "source": "../../source/spirit-impact-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 672,
+      "height": 724
+    },
+    {
+      "x": 672,
+      "y": 0,
+      "width": 730,
+      "height": 724
+    },
+    {
+      "x": 1402,
+      "y": 0,
+      "width": 770,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.5020242914979757
+}

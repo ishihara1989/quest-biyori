@@ -1,0 +1,28 @@
+{
+  "id": "dragon-girl/move-2",
+  "source": "sources/dragon-girl/move-frame-4-v3.png",
+  "selected": false,
+  "prompt": "ONE WALKING pose, frame4. Canonical character image1, image2 is approved raised-near-leg pose5 for body registration. Keep body, face, wings, hair, hands and tail of image2 exactly, but lower the lifted SCREEN-RIGHT near knee and extend its lower leg BACKWARD RIGHT: near boot toes just touch floor at far-right of its hip, heel raised, preparing forward swing in frame5. SCREEN-LEFT far leg stays straight and planted FORWARD LEFT supporting the body, sole at original baseline. Exactly TWO connected legs, no duplicate foot. No weapon/shield. LEFT-facing 3/4 same immutable reference identity and palette, crisp JRPG pixel edges. Entire silhouette inside canvas with clear padding, true transparent alpha, no aura/floor/shadow/VFX/text.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    },
+    {
+      "file": "sources/dragon-girl/move-frame-5-v3.png",
+      "sha256": "9675909bfbaeeaf5ca344fa2a8484ddee68c04588de636228b6f560ca387753d"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "afcf5ab224ee82c04200c05667da37f7413fa9fdfe8f61b2907d878dd749750a",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/move-2-generated.png",
+  "issues": [
+    "両半分とも画面左の脚を上げる構図が強く、前半・後半の左右交代が弱い。膝と足先の所属を確定して修正する。",
+    "3→4・6→1で支持足・尾先・体格がつながるか確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

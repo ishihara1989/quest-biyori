@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "treant",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "treant-down.png",
+  "preview": "../../../../../../development/assets/enemies/treant/motions/down/treant-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/treant/PROMPT.md",
+  "width": 1792,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1400,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/treant/source/treant-down-generated-v1.png",
+  "sourceScale": 0.45,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "幹が割れ・力が抜ける",
+      "bounds": {
+        "left": 112,
+        "top": 72,
+        "right": 334,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 714,
+        "height": 609
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 544
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "左へ崩れる",
+      "bounds": {
+        "left": 74,
+        "top": 95,
+        "right": 373,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 714,
+        "y": 0,
+        "width": 822,
+        "height": 609
+      },
+      "sourceAnchor": {
+        "x": 382,
+        "y": 560
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 280,
+      "phase": "幹が倒れる",
+      "bounds": {
+        "left": 58,
+        "top": 172,
+        "right": 389,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 609,
+        "width": 768,
+        "height": 415
+      },
+      "sourceAnchor": {
+        "x": 383,
+        "y": 359
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 700,
+      "phase": "倒木・静止",
+      "bounds": {
+        "left": 55,
+        "top": 211,
+        "right": 392,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 609,
+        "width": 768,
+        "height": 415
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 365
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

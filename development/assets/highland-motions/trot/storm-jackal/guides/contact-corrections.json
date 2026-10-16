@@ -1,0 +1,152 @@
+[
+  {
+    "frame": 2,
+    "source": "frame-2-contact.png",
+    "legs": [
+      {
+        "id": "LH",
+        "color": "#ff799c",
+        "root": [
+          745,
+          835
+        ],
+        "joint": [
+          825,
+          930
+        ],
+        "ankle": [
+          785,
+          1025
+        ],
+        "paw": [
+          790,
+          1080
+        ],
+        "state": "LIFT"
+      }
+    ]
+  },
+  {
+    "frame": 3,
+    "source": "frame-3-contact.png",
+    "legs": [
+      {
+        "id": "RF",
+        "color": "#66c6ff",
+        "root": [
+          305,
+          800
+        ],
+        "joint": [
+          325,
+          990
+        ],
+        "ankle": [
+          325,
+          1100
+        ],
+        "paw": [
+          325,
+          1175
+        ],
+        "state": "GROUND"
+      }
+    ]
+  },
+  {
+    "frame": 4,
+    "source": "frame-4-single.png",
+    "legs": [
+      {
+        "id": "LF",
+        "color": "#ffca4c",
+        "root": [
+          405,
+          720
+        ],
+        "joint": [
+          450,
+          900
+        ],
+        "ankle": [
+          385,
+          1010
+        ],
+        "paw": [
+          385,
+          1080
+        ],
+        "state": "LIFT"
+      },
+      {
+        "id": "RF",
+        "color": "#66c6ff",
+        "root": [
+          305,
+          800
+        ],
+        "joint": [
+          335,
+          990
+        ],
+        "ankle": [
+          345,
+          1100
+        ],
+        "paw": [
+          345,
+          1175
+        ],
+        "state": "GROUND"
+      }
+    ]
+  },
+  {
+    "frame": 5,
+    "source": "frame-5-single.png",
+    "legs": [
+      {
+        "id": "LF",
+        "color": "#ffca4c",
+        "root": [
+          405,
+          720
+        ],
+        "joint": [
+          450,
+          900
+        ],
+        "ankle": [
+          360,
+          1010
+        ],
+        "paw": [
+          360,
+          1080
+        ],
+        "state": "LIFT"
+      },
+      {
+        "id": "RF",
+        "color": "#66c6ff",
+        "root": [
+          305,
+          800
+        ],
+        "joint": [
+          355,
+          990
+        ],
+        "ankle": [
+          370,
+          1100
+        ],
+        "paw": [
+          370,
+          1175
+        ],
+        "state": "GROUND"
+      }
+    ]
+  }
+]

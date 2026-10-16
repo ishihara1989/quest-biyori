@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-11 JST",
+  "regions": [
+    {
+      "dropCount": 5,
+      "enemyCount": 7,
+      "monsterImage": "desert/monsters-v2.png",
+      "region": "desert"
+    },
+    {
+      "dropCount": 5,
+      "enemyCount": 7,
+      "monsterImage": "highland/monsters-v2.png",
+      "region": "highland"
+    },
+    {
+      "dropCount": 5,
+      "enemyCount": 7,
+      "monsterImage": "glacier/monsters-v2.png",
+      "region": "glacier"
+    },
+    {
+      "dropCount": 5,
+      "enemyCount": 7,
+      "monsterImage": "volcano/monsters-v2.png",
+      "region": "volcano"
+    },
+    {
+      "dropCount": 5,
+      "enemyCount": 7,
+      "monsterImage": "demon-castle/monsters-v2.png",
+      "region": "demon-castle"
+    }
+  ],
+  "backingToggle": "verified",
+  "screenshot": "review-proof.png"
+}

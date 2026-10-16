@@ -1,0 +1,26 @@
+{
+  "id": "magma-salamander/reaction",
+  "source": "sources/magma-salamander/reaction-v1-reused.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of マグマサラマンダー. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: all four knees bend, torso sinks 90px, tail and wings settle. Bottom-right TERMINAL DEFEAT: same whole creature lying low on its side, exactly four anatomically connected legs, no gore. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "selected": true,
+  "reusedFirstPass": true,
+  "reason": "First-pass alpha composite and full poses reviewed; preserve original art and resolve registration/playback checks in final packing",
+  "tool": "built-in image_gen",
+  "sha256": "1204c3db9dd3da88f95cbeafc94b606bf7138520ceae42f695e47acf5ee49a32",
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "firstPass": "sources/magma-salamander/reaction-generated.png",
+  "issues": [
+    "赤い背景光が混入。",
+    "被弾の姿勢差が小さい。重い本体の怯みと復帰をもう少し明確にする。",
+    "撃破時も溶岩の光が残り、最終コマの隠れた4脚の接続も検収が必要。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/magma-salamander.png",
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

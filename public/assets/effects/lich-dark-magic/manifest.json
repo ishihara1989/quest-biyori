@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "lich-dark-magic",
+  "label": "闇の大魔法",
+  "sheet": "lich-dark-magic.png",
+  "preview": "../../../../development/assets/effects/lich-dark-magic/lich-dark-magic-preview.gif",
+  "prompt": "../../../../development/assets/effects/lich-dark-magic/PROMPT.md",
+  "width": 1792,
+  "height": 384,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 384,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 372
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/lich-dark-magic/source-generated.png",
+  "sourceScale": 0.6394316163410302,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "lich-dark-magic-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 384,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 66,
+        "top": 178,
+        "right": 382,
+        "bottom": 372
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 634,
+        "height": 613
+      },
+      "sourceAnchor": {
+        "x": 324,
+        "y": 586
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "lich-dark-magic-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 384,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 69,
+        "top": 33,
+        "right": 379,
+        "bottom": 372
+      },
+      "sourceCell": {
+        "x": 634,
+        "y": 0,
+        "width": 620,
+        "height": 613
+      },
+      "sourceAnchor": {
+        "x": 304,
+        "y": 588
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "lich-dark-magic-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 384,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 46,
+        "top": 13,
+        "right": 402,
+        "bottom": 372
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 613,
+        "width": 644,
+        "height": 641
+      },
+      "sourceAnchor": {
+        "x": 333,
+        "y": 586
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "lich-dark-magic-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 384,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 54,
+        "top": 40,
+        "right": 394,
+        "bottom": 371
+      },
+      "sourceCell": {
+        "x": 644,
+        "y": 613,
+        "width": 610,
+        "height": 641
+      },
+      "sourceAnchor": {
+        "x": 297,
+        "y": 578
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

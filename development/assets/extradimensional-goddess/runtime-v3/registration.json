@@ -1,0 +1,928 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen",
+  "prompt": "snap-prompt.txt",
+  "newSource": "source/p1-snap.png",
+  "newSourceSha256": "0389072cb012ec968955044d69091d4f356bbeb7e6637ddcfc9e09f6d320c961",
+  "processing": "Fixed nearest-neighbor scales per segment; measured alpha-center and baseline translations; no paint, anatomy edits or pixel removal. Broken first-pass animations are excluded. Idle breathing, phase change, recovery, star mirrors and convergence are Canvas animations using registered poses.",
+  "registrations": [
+    {
+      "clip": "idle",
+      "frame": 1,
+      "source": "../repair-v2/review/motions/p1-shot/frame-01.png",
+      "sha256": "fd54cd7b484007e336729c52477c123d6bd1f98a61168128b39a87dd03a011b4",
+      "scale": 0.48,
+      "translation": [
+        100,
+        173
+      ],
+      "bounds": [
+        100,
+        116,
+        551,
+        556
+      ]
+    },
+    {
+      "clip": "shot",
+      "frame": 1,
+      "source": "../repair-v2/review/motions/p1-shot/frame-01.png",
+      "sha256": "fd54cd7b484007e336729c52477c123d6bd1f98a61168128b39a87dd03a011b4",
+      "scale": 0.48,
+      "translation": [
+        100,
+        173
+      ],
+      "bounds": [
+        100,
+        116,
+        551,
+        556
+      ]
+    },
+    {
+      "clip": "shot",
+      "frame": 2,
+      "source": "../repair-v2/review/motions/p1-shot/frame-02.png",
+      "sha256": "3d86430455fd4f8a330e24e3aa71f77028d379103298dcfb111b57ee3517583b",
+      "scale": 0.48,
+      "translation": [
+        100,
+        173
+      ],
+      "bounds": [
+        100,
+        116,
+        551,
+        556
+      ]
+    },
+    {
+      "clip": "shot",
+      "frame": 3,
+      "source": "../repair-v2/review/motions/p1-shot/frame-03.png",
+      "sha256": "aedf1df7051e1617d8d7ea78bda2f09b0e294c50ee329fb36742520734516f91",
+      "scale": 0.48,
+      "translation": [
+        98,
+        173
+      ],
+      "bounds": [
+        100,
+        114,
+        559,
+        556
+      ]
+    },
+    {
+      "clip": "shot",
+      "frame": 4,
+      "source": "../repair-v2/review/motions/p1-shot/frame-04.png",
+      "sha256": "73ea48187cd6b6e972d5c7ee7dfad9beb9b45b7a296f0f04042009db73ddcfcd",
+      "scale": 0.48,
+      "translation": [
+        100,
+        173
+      ],
+      "bounds": [
+        100,
+        115,
+        551,
+        556
+      ]
+    },
+    {
+      "clip": "snap",
+      "frame": 1,
+      "source": "source/snap-cell-1.png",
+      "sha256": "a331cfa011b718a32603a2b57da937866b841f962056a642f3c57e222c2afbd2",
+      "scale": 0.335,
+      "translation": [
+        132,
+        214
+      ],
+      "bounds": [
+        41,
+        45,
+        697,
+        676
+      ]
+    },
+    {
+      "clip": "snap",
+      "frame": 2,
+      "source": "source/snap-cell-2.png",
+      "sha256": "8ded3d0ea1923342cffe65754bb60294f5875a9a666eae9f4b1ce03df80e1ca0",
+      "scale": 0.335,
+      "translation": [
+        132,
+        214
+      ],
+      "bounds": [
+        41,
+        45,
+        698,
+        676
+      ]
+    },
+    {
+      "clip": "snap",
+      "frame": 3,
+      "source": "source/snap-cell-3.png",
+      "sha256": "7ad3a502d44dddfaac8d9b7379a1207e45a9c4aaef82ff188d0fa1826e698f9c",
+      "scale": 0.335,
+      "translation": [
+        133,
+        214
+      ],
+      "bounds": [
+        41,
+        46,
+        694,
+        676
+      ]
+    },
+    {
+      "clip": "floating",
+      "frame": 1,
+      "source": "../repair-v2/review/motions/p2-cast/frame-06.png",
+      "sha256": "429900149ff1fdfee2d8ae81f2c4dd4cdcc21a754fad1b69af7eb56800f0f17f",
+      "scale": 0.575,
+      "translation": [
+        104,
+        157
+      ],
+      "bounds": [
+        58,
+        79,
+        470,
+        492
+      ]
+    },
+    {
+      "clip": "cast",
+      "frame": 1,
+      "source": "../repair-v2/review/motions/p2-cast/frame-01.png",
+      "sha256": "506e6a4d34ce13ba9ec066580cc4a06b21f53619576164222e546671726f1098",
+      "scale": 0.43,
+      "translation": [
+        75,
+        159
+      ],
+      "bounds": [
+        135,
+        100,
+        706,
+        654
+      ]
+    },
+    {
+      "clip": "cast",
+      "frame": 2,
+      "source": "../repair-v2/review/motions/p2-cast/frame-02.png",
+      "sha256": "6310e1e4f101f5cf5f824217d196ec3a5836f99254bb5b4d0440278024063a23",
+      "scale": 0.43,
+      "translation": [
+        92,
+        159
+      ],
+      "bounds": [
+        106,
+        100,
+        656,
+        654
+      ]
+    },
+    {
+      "clip": "cast",
+      "frame": 3,
+      "source": "../repair-v2/review/motions/p2-cast/frame-03.png",
+      "sha256": "5ac1da95d28764b6217c0460e53ceba80a24648355f9a074316f3b149eac412f",
+      "scale": 0.43,
+      "translation": [
+        110,
+        159
+      ],
+      "bounds": [
+        70,
+        101,
+        611,
+        654
+      ]
+    },
+    {
+      "clip": "cast",
+      "frame": 4,
+      "source": "../repair-v2/review/motions/p2-cast/frame-04.png",
+      "sha256": "352fdfd91fe3897cc75da31def2466f9fad59b5597a297d65302f3e5085e65fd",
+      "scale": 0.575,
+      "translation": [
+        92,
+        157
+      ],
+      "bounds": [
+        71,
+        79,
+        500,
+        493
+      ]
+    },
+    {
+      "clip": "cast",
+      "frame": 5,
+      "source": "../repair-v2/review/motions/p2-cast/frame-05.png",
+      "sha256": "2c9701f60cf26b54853e14e1e3c3634e96a7defb8545054b427e512288a8d9f6",
+      "scale": 0.575,
+      "translation": [
+        99,
+        157
+      ],
+      "bounds": [
+        70,
+        79,
+        476,
+        493
+      ]
+    },
+    {
+      "clip": "cast",
+      "frame": 6,
+      "source": "../repair-v2/review/motions/p2-cast/frame-06.png",
+      "sha256": "429900149ff1fdfee2d8ae81f2c4dd4cdcc21a754fad1b69af7eb56800f0f17f",
+      "scale": 0.575,
+      "translation": [
+        104,
+        157
+      ],
+      "bounds": [
+        58,
+        79,
+        470,
+        492
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 1,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-01.png",
+      "sha256": "1ae6f6ac95df3aefd6bd35a9d22db84c09284f9100b3324c46d73a02d22eec51",
+      "scale": 0.35,
+      "translation": [
+        128,
+        194
+      ],
+      "bounds": [
+        26,
+        20,
+        706,
+        704
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 2,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-02.png",
+      "sha256": "d02ab7e2b2ea9206f2fad6ce2b3d0eedccb2c67fa66dc8c0981449174b7677c7",
+      "scale": 0.35,
+      "translation": [
+        128,
+        194
+      ],
+      "bounds": [
+        27,
+        21,
+        706,
+        704
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 3,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-03.png",
+      "sha256": "87e1a4ae8f65fd9bc47f233397f6fe0493bd1a1c94c23d16f3bb72e0a6f8dab0",
+      "scale": 0.35,
+      "translation": [
+        128,
+        194
+      ],
+      "bounds": [
+        26,
+        20,
+        706,
+        703
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 4,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-04.png",
+      "sha256": "ba26a94823dcffb49416a9b92714f7764cbbfa5da8c242d84e6572bcb269e739",
+      "scale": 0.35,
+      "translation": [
+        130,
+        191
+      ],
+      "bounds": [
+        35,
+        45,
+        687,
+        711
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 5,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-05.png",
+      "sha256": "6bb21b5144ab9d48bc7375eb6552dcf03ece0c895d3ac8341f31c58c75affe71",
+      "scale": 0.35,
+      "translation": [
+        128,
+        191
+      ],
+      "bounds": [
+        35,
+        42,
+        696,
+        712
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 6,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-06.png",
+      "sha256": "f037b15057f72dccb801b969065dbf9a28127a63e0f7c424e46359b1a375aff2",
+      "scale": 0.35,
+      "translation": [
+        130,
+        191
+      ],
+      "bounds": [
+        33,
+        10,
+        688,
+        712
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 7,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-07.png",
+      "sha256": "5ff6d710698e5233d585fb91d0bbd803c504a5e999c37e4c5c7ecfae66e3762e",
+      "scale": 0.35,
+      "translation": [
+        124,
+        193
+      ],
+      "bounds": [
+        47,
+        24,
+        707,
+        706
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 8,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-08.png",
+      "sha256": "7c737bfdc926ddccb1b3e63a8efc0749af231eb48850d05441fe12c50240fa27",
+      "scale": 0.35,
+      "translation": [
+        124,
+        193
+      ],
+      "bounds": [
+        63,
+        24,
+        691,
+        706
+      ]
+    },
+    {
+      "clip": "ultimate",
+      "frame": 9,
+      "source": "../repair-v2/review/motions/p2-ultimate/frame-09.png",
+      "sha256": "8167c5312e5263cd84555bc12b57ae8396c0bd42a15d726c57f010b3a65cb101",
+      "scale": 0.35,
+      "translation": [
+        124,
+        193
+      ],
+      "bounds": [
+        63,
+        24,
+        690,
+        706
+      ]
+    },
+    {
+      "clip": "down",
+      "frame": 1,
+      "source": "../repair-v2/review/motions/down/frame-01.png",
+      "sha256": "f8260ede6e5cd3658d72b31561263070e66ab0a20aad8ffd9e28048e86cf8272",
+      "scale": 0.47,
+      "translation": [
+        104,
+        160
+      ],
+      "bounds": [
+        64,
+        87,
+        582,
+        596
+      ]
+    },
+    {
+      "clip": "down",
+      "frame": 2,
+      "source": "../repair-v2/review/motions/down/frame-02.png",
+      "sha256": "ed65331a1fa10ec97e85814424c47cca25b21deee9233fe8a45201caa344bd7e",
+      "scale": 0.47,
+      "translation": [
+        108,
+        160
+      ],
+      "bounds": [
+        56,
+        88,
+        572,
+        597
+      ]
+    },
+    {
+      "clip": "down",
+      "frame": 3,
+      "source": "../repair-v2/review/motions/down/frame-03.png",
+      "sha256": "1c824dc2abfba9ea78086cc5b33848870c0cd014383e3c75161fd158724451b2",
+      "scale": 0.47,
+      "translation": [
+        105,
+        160
+      ],
+      "bounds": [
+        69,
+        81,
+        574,
+        584
+      ]
+    },
+    {
+      "clip": "down",
+      "frame": 4,
+      "source": "../repair-v2/review/motions/down/frame-04.png",
+      "sha256": "8228cd3b799649f7c7640e5142726dffe22c609f6d584cc53b6e9a58028ff8bc",
+      "scale": 0.47,
+      "translation": [
+        107,
+        160
+      ],
+      "bounds": [
+        66,
+        55,
+        569,
+        551
+      ]
+    },
+    {
+      "clip": "return",
+      "frame": 1,
+      "source": "../repair-v2/review/effects/goddess-return/frame-01.png",
+      "sha256": "1260540cce46d1d65f773309c945b974dd4fd2302f98301f4fd25afaf6eb3323",
+      "scale": 0.46,
+      "translation": [
+        89,
+        94
+      ],
+      "bounds": [
+        276,
+        149,
+        452,
+        554
+      ]
+    },
+    {
+      "clip": "return",
+      "frame": 2,
+      "source": "../repair-v2/review/effects/goddess-return/frame-02.png",
+      "sha256": "09ffef4c1cab9030bdf11323816847eb8b03ce57461941565f22edda8d74b365",
+      "scale": 0.46,
+      "translation": [
+        90,
+        94
+      ],
+      "bounds": [
+        191,
+        123,
+        532,
+        582
+      ]
+    },
+    {
+      "clip": "return",
+      "frame": 3,
+      "source": "../repair-v2/review/effects/goddess-return/frame-03.png",
+      "sha256": "73bd4e2c3f6cc0d1ec883b5b134b1cce86c4dfa9b83715a25b58e97984cb1d4c",
+      "scale": 0.46,
+      "translation": [
+        91,
+        94
+      ],
+      "bounds": [
+        145,
+        108,
+        573,
+        598
+      ]
+    },
+    {
+      "clip": "return",
+      "frame": 4,
+      "source": "../repair-v2/review/effects/goddess-return/frame-04.png",
+      "sha256": "df943ec49a68227823ced48260e51e687fa314c31c487e8bac9d41c96d0f5959",
+      "scale": 0.46,
+      "translation": [
+        61,
+        90
+      ],
+      "bounds": [
+        216,
+        133,
+        634,
+        588
+      ]
+    },
+    {
+      "clip": "return",
+      "frame": 5,
+      "source": "../repair-v2/review/effects/goddess-return/frame-05.png",
+      "sha256": "9c0130df9bce811c705f121517a2b7201f0f786b30e55e8ff4c5874a2be8af15",
+      "scale": 0.46,
+      "translation": [
+        89,
+        90
+      ],
+      "bounds": [
+        254,
+        149,
+        474,
+        571
+      ]
+    },
+    {
+      "clip": "return",
+      "frame": 6,
+      "source": "../repair-v2/review/effects/goddess-return/frame-06.png",
+      "sha256": "4eb478c71765d94917aa74d864036aa628c25ec0e4b0e736a8aaad06f4c00b47",
+      "scale": 0.46,
+      "translation": [
+        104,
+        88
+      ],
+      "bounds": [
+        273,
+        244,
+        387,
+        488
+      ]
+    },
+    {
+      "clip": "throne",
+      "frame": 1,
+      "source": "../repair-v2/review/parts/throne/frame-01.png",
+      "sha256": "7b671aebb6484fb1c8457fba8a87e5d56013483d483d55037bb5165b752a8333",
+      "scale": 0.37,
+      "translation": [
+        24,
+        47
+      ],
+      "bounds": [
+        308,
+        322,
+        946,
+        996
+      ]
+    },
+    {
+      "clip": "halo",
+      "frame": 1,
+      "source": "../repair-v2/review/parts/halo/frame-01.png",
+      "sha256": "c2039f9b6edd225044de7bfc5432ec386a79dbb2f112a44c9103b6139962ced8",
+      "scale": 0.27,
+      "translation": [
+        87,
+        88
+      ],
+      "bounds": [
+        178,
+        195,
+        1076,
+        1048
+      ]
+    },
+    {
+      "clip": "star-impact",
+      "frame": 1,
+      "source": "../first-pass-v1/review/effects/star-impact/frame-01.png",
+      "sha256": "d8f2701302598ce3fdb2e9794b99a563cb743cb8872f765d82a59dcdb2e67ad8",
+      "scale": 0.22,
+      "translation": [
+        178,
+        177
+      ],
+      "bounds": [
+        245,
+        258,
+        465,
+        456
+      ]
+    },
+    {
+      "clip": "star-impact",
+      "frame": 2,
+      "source": "../first-pass-v1/review/effects/star-impact/frame-02.png",
+      "sha256": "f43b420a1255dc110d99acadd2d2e3f0f88e00badbb7c4d5f6674afd7ea1de76",
+      "scale": 0.22,
+      "translation": [
+        176,
+        175
+      ],
+      "bounds": [
+        55,
+        63,
+        668,
+        670
+      ]
+    },
+    {
+      "clip": "star-impact",
+      "frame": 3,
+      "source": "../first-pass-v1/review/effects/star-impact/frame-03.png",
+      "sha256": "1dcf76300576d65caca16c56d511d1e272f838e60ae8e3b780a3ddb86e00d76e",
+      "scale": 0.22,
+      "translation": [
+        176,
+        176
+      ],
+      "bounds": [
+        185,
+        154,
+        546,
+        570
+      ]
+    },
+    {
+      "clip": "snap-glint",
+      "frame": 1,
+      "source": "../first-pass-v1/review/effects/snap-glint/frame-01.png",
+      "sha256": "bbb19cd2c58f1b2e60d604cc049cf74cc4cdb61510e494d9167e269d79fd6ccc",
+      "scale": 0.12,
+      "translation": [
+        212,
+        214
+      ],
+      "bounds": [
+        305,
+        282,
+        433,
+        418
+      ]
+    },
+    {
+      "clip": "snap-glint",
+      "frame": 2,
+      "source": "../first-pass-v1/review/effects/snap-glint/frame-02.png",
+      "sha256": "43b593d2d98a7a55d709c834b48cff3c5d661342ebae951a5069b10b0792aaa7",
+      "scale": 0.12,
+      "translation": [
+        212,
+        213
+      ],
+      "bounds": [
+        139,
+        137,
+        587,
+        580
+      ]
+    },
+    {
+      "clip": "snap-glint",
+      "frame": 3,
+      "source": "../first-pass-v1/review/effects/snap-glint/frame-03.png",
+      "sha256": "c01e6a3514283346f5eebb71d140bb98f4b59d31d53e62c5876de67dafc54e1f",
+      "scale": 0.12,
+      "translation": [
+        213,
+        213
+      ],
+      "bounds": [
+        273,
+        256,
+        439,
+        454
+      ]
+    },
+    {
+      "clip": "homing-meteor",
+      "frame": 1,
+      "source": "../first-pass-v1/review/effects/homing-meteor/frame-01.png",
+      "sha256": "d5ddbf6458f48cf134ceb8eec0d34e26821f6800cac6f0d4a2f8ae125a140e5a",
+      "scale": 0.16,
+      "translation": [
+        194,
+        207
+      ],
+      "bounds": [
+        318,
+        42,
+        458,
+        567
+      ]
+    },
+    {
+      "clip": "homing-meteor",
+      "frame": 2,
+      "source": "../first-pass-v1/review/effects/homing-meteor/frame-02.png",
+      "sha256": "a7653effdad3e1ef7b7746dbea4c30fe1107bc7a67cc0976205a4f97d5eed0d2",
+      "scale": 0.16,
+      "translation": [
+        194,
+        208
+      ],
+      "bounds": [
+        239,
+        12,
+        530,
+        594
+      ]
+    },
+    {
+      "clip": "homing-meteor",
+      "frame": 3,
+      "source": "../first-pass-v1/review/effects/homing-meteor/frame-03.png",
+      "sha256": "4d8a7fc601b6ac0f0a0c8d6742a5a9348f27eba1617fb6616e0cc6d66d2b94cb",
+      "scale": 0.16,
+      "translation": [
+        194,
+        204
+      ],
+      "bounds": [
+        133,
+        9,
+        645,
+        641
+      ]
+    },
+    {
+      "clip": "meteor-impact",
+      "frame": 1,
+      "source": "../first-pass-v1/review/effects/meteor-impact/frame-01.png",
+      "sha256": "1b713ece16c8e7bd2326ad5449fcb2bfd58c9ffd48aa074f492f952d5200a836",
+      "scale": 0.22,
+      "translation": [
+        176,
+        309
+      ],
+      "bounds": [
+        251,
+        315,
+        478,
+        596
+      ]
+    },
+    {
+      "clip": "meteor-impact",
+      "frame": 2,
+      "source": "../first-pass-v1/review/effects/meteor-impact/frame-02.png",
+      "sha256": "c8507a9aedd84e80fca6d8c277e5d27fc74d1f5be07ced4c4feadc95e6ece294",
+      "scale": 0.22,
+      "translation": [
+        177,
+        310
+      ],
+      "bounds": [
+        44,
+        196,
+        678,
+        593
+      ]
+    },
+    {
+      "clip": "meteor-impact",
+      "frame": 3,
+      "source": "../first-pass-v1/review/effects/meteor-impact/frame-03.png",
+      "sha256": "49cf8aaf12677a864b99cca8308289bf2db1ec0da8fe963a74b34155e38817a3",
+      "scale": 0.22,
+      "translation": [
+        171,
+        312
+      ],
+      "bounds": [
+        96,
+        251,
+        674,
+        584
+      ]
+    },
+    {
+      "clip": "rift-cut",
+      "frame": 1,
+      "source": "../first-pass-v1/review/effects/rift-cut/frame-01.png",
+      "sha256": "b81dc64771f7b0807e60a06e4d3cbc68e1d54e065bc4cffb9e2081146926671b",
+      "scale": 0.4,
+      "translation": [
+        112,
+        110
+      ],
+      "bounds": [
+        21,
+        334,
+        697,
+        398
+      ]
+    },
+    {
+      "clip": "rift-cut",
+      "frame": 2,
+      "source": "../first-pass-v1/review/effects/rift-cut/frame-02.png",
+      "sha256": "78b2365bfb85dd3d47ea10287d90362785dcea362aa77f3f14145858034edf29",
+      "scale": 0.4,
+      "translation": [
+        111,
+        111
+      ],
+      "bounds": [
+        14,
+        266,
+        711,
+        461
+      ]
+    },
+    {
+      "clip": "rift-cut",
+      "frame": 3,
+      "source": "../first-pass-v1/review/effects/rift-cut/frame-03.png",
+      "sha256": "9455224b881b2b0442e8a43099b34a1846fe25e7ff73cc3cad46f15ce7e0f677",
+      "scale": 0.4,
+      "translation": [
+        110,
+        111
+      ],
+      "bounds": [
+        41,
+        322,
+        687,
+        404
+      ]
+    },
+    {
+      "clip": "celestial-wave",
+      "frame": 1,
+      "source": "../first-pass-v1/review/effects/celestial-wave/frame-01.png",
+      "sha256": "7f211feb2ffea9e44afd81222221c408b13156c0e7c8786ba482d36baa3050d2",
+      "scale": 0.4,
+      "translation": [
+        111,
+        114
+      ],
+      "bounds": [
+        92,
+        90,
+        632,
+        619
+      ]
+    },
+    {
+      "clip": "celestial-wave",
+      "frame": 2,
+      "source": "../first-pass-v1/review/effects/celestial-wave/frame-02.png",
+      "sha256": "cc725942078e75c03a60c69e1f2472ef7848e8033221baeb20692acfb826fb99",
+      "scale": 0.4,
+      "translation": [
+        111,
+        115
+      ],
+      "bounds": [
+        28,
+        29,
+        699,
+        678
+      ]
+    },
+    {
+      "clip": "celestial-wave",
+      "frame": 3,
+      "source": "../first-pass-v1/review/effects/celestial-wave/frame-03.png",
+      "sha256": "382454b05e3bbe058436433544aefadd03aa97287df9decf13c62842676bc1a2",
+      "scale": 0.4,
+      "translation": [
+        111,
+        115
+      ],
+      "bounds": [
+        69,
+        57,
+        656,
+        649
+      ]
+    }
+  ]
+}

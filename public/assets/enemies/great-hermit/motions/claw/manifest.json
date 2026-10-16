@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "great-hermit",
+  "motion": "claw",
+  "facing": "left",
+  "label": "ハサミ攻撃",
+  "sheet": "great-hermit-claw.png",
+  "preview": "../../../../../../development/assets/enemies/great-hermit/motions/claw/great-hermit-claw-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/great-hermit/PROMPT.md",
+  "width": 2304,
+  "height": 416,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 740,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/great-hermit/source/claw-registered.png",
+  "sourceScale": 0.5376344086021505,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 140,
+      "phase": "開始",
+      "bounds": {
+        "left": 118,
+        "top": 200,
+        "right": 471,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 798,
+        "height": 404
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 387
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "claw-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 200,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 146,
+        "top": 201,
+        "right": 470,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 798,
+        "y": 0,
+        "width": 798,
+        "height": 404
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 385
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "claw-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 58,
+        "top": 201,
+        "right": 469,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 404,
+        "width": 798,
+        "height": 404
+      },
+      "sourceAnchor": {
+        "x": 530,
+        "y": 385
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "claw-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 220,
+      "phase": "復帰",
+      "bounds": {
+        "left": 119,
+        "top": 201,
+        "right": 472,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 798,
+        "y": 404,
+        "width": 798,
+        "height": 404
+      },
+      "sourceAnchor": {
+        "x": 416,
+        "y": 385
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/great-hermit/source/claw-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 151877,
+        "left": 104,
+        "top": 108,
+        "right": 762,
+        "bottom": 479,
+        "cx": 451.731545922029,
+        "cy": 297.6599221738644
+      },
+      {
+        "id": 2,
+        "count": 144285,
+        "left": 922,
+        "top": 110,
+        "right": 1527,
+        "bottom": 479,
+        "cx": 1233.0197387115777,
+        "cy": 291.0155109678761
+      },
+      {
+        "id": 4,
+        "count": 155708,
+        "left": 16,
+        "top": 588,
+        "right": 781,
+        "bottom": 957,
+        "cx": 452.13565134739383,
+        "cy": 764.3476764199655
+      },
+      {
+        "id": 5,
+        "count": 151255,
+        "left": 868,
+        "top": 588,
+        "right": 1526,
+        "bottom": 957,
+        "cx": 1215.3226802419754,
+        "cy": 776.1798948795081
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

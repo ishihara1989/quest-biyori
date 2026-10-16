@@ -1,0 +1,23 @@
+{
+  "id": "obsidian-soldier/reaction",
+  "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. 黒曜兵. Pose1 hit recoil RIGHT 15px with supporting feet planted; pose2 canonical neutral recovery; pose3 connected knees buckle and body sinks; pose4 TERMINAL collapsed prone creature/character, all original limbs still connected, head low, original equipment remains. Terminal lava core, scales, fins, eyes and wing light darken to dull red without yellow-white heat. No detached body parts. This is not a looping idle. Four distinct ordered poses. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/obsidian-soldier/reaction-v2.png",
+  "sha256": "836f4cf422b689bc663b59b6e844eadb404c2dfa5eb5283caff80dd233b97cb5",
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-soldier/reaction-generated.png",
+  "issues": [
+    "被弾時の頭部が右上へ大きく回り、兜の形が変化する。",
+    "倒れた最終コマでも斧・鎧が明るい。終端の消灯と輪郭を基準絵に合わせる。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-soldier.png",
+      "sha256": "e32e29dd7943525d5656d13a9973bdfae81bed56d7a98fac3038447efce39a57"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

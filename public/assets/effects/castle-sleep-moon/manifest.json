@@ -1,0 +1,186 @@
+{
+  "id": "castle-sleep-moon",
+  "label": "眠りの月・状態ループ",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "status",
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "状態1",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/sleep-moon-v2.png",
+      "sourceSha256": "8bf0c9202998e506df42eeb391d082fcbba0d0b64785f993afa64804d9d5a022",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        415,
+        410
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "45cff8a19130534ff7a95739b42b5c320b33fa571b7b0b6de2f0d74f1bd3f4fc",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9259567260742188,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 80,
+        "top": 216,
+        "right": 431,
+        "bottom": 461
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "状態2",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/sleep-moon-v2.png",
+      "sourceSha256": "8bf0c9202998e506df42eeb391d082fcbba0d0b64785f993afa64804d9d5a022",
+      "sourceRect": {
+        "left": 768,
+        "top": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        355,
+        410
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "39e1b0fad148ae391de78e18cfd24cb1fae978984f68a2ea95f60376764a23ea",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9233894348144531,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 83,
+        "top": 218,
+        "right": 453,
+        "bottom": 461
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "状態3",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/sleep-moon-v2.png",
+      "sourceSha256": "8bf0c9202998e506df42eeb391d082fcbba0d0b64785f993afa64804d9d5a022",
+      "sourceRect": {
+        "left": 0,
+        "top": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        415,
+        401
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "6e273060982be66794f79f08576f126dbed30b6057d3ae3d6c3482b9bfdb50a1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9221382141113281,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 62,
+        "top": 210,
+        "right": 426,
+        "bottom": 454
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "状態4",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/sleep-moon-v2.png",
+      "sourceSha256": "8bf0c9202998e506df42eeb391d082fcbba0d0b64785f993afa64804d9d5a022",
+      "sourceRect": {
+        "left": 768,
+        "top": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": [
+        355,
+        401
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "f9af8adffcba0acac45b3b021c90242fa668c77163e8cfc9eb4f40e9a8e94fa6",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9192466735839844,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 99,
+        "top": 210,
+        "right": 431,
+        "bottom": 466
+      }
+    }
+  ],
+  "fingerprint": "1f494c423b7fa16d3978308a881ea10c09ed3332903ba3a7f4b114a6de2c09c3",
+  "events": [],
+  "pivot": {
+    "x": 256,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/sleep-moon/manifest.json",
+  "sourceFingerprint": "1f494c423b7fa16d3978308a881ea10c09ed3332903ba3a7f4b114a6de2c09c3",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

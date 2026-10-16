@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "stone-tortoise-idle",
+  "character": "miko",
+  "subject": "stone-tortoise",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "stone-tortoise-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.09451476793248945,
+  "frames": [
+    {
+      "index": 0,
+      "file": "stone-tortoise-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 32,
+        "t": 68,
+        "r": 107,
+        "b": 116,
+        "n": 2639,
+        "width": 76,
+        "height": 49
+      }
+    },
+    {
+      "index": 1,
+      "file": "stone-tortoise-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 32,
+        "t": 66,
+        "r": 107,
+        "b": 116,
+        "n": 2778,
+        "width": 76,
+        "height": 51
+      }
+    },
+    {
+      "index": 2,
+      "file": "stone-tortoise-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 32,
+        "t": 68,
+        "r": 107,
+        "b": 116,
+        "n": 2639,
+        "width": 76,
+        "height": 49
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/stone-tortoise-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "development/assets/skills/miko/source/ember-fox-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

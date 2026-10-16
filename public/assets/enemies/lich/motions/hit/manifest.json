@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lich",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "lich-hit.png",
+  "preview": "../../../../../../development/assets/enemies/lich/motions/hit/lich-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lich/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 460,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/lich/source/hit-registered.png",
+  "sourceScale": 0.47703180212014135,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 80,
+      "phase": "待機から",
+      "bounds": {
+        "left": 180,
+        "top": 162,
+        "right": 447,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 604,
+        "height": 594
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 577
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/lich/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 100,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 161,
+        "top": 178,
+        "right": 442,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 607,
+        "y": 0,
+        "width": 639,
+        "height": 598
+      },
+      "sourceAnchor": {
+        "x": 396,
+        "y": 546
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "hit-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 120,
+      "phase": "作用",
+      "bounds": {
+        "left": 182,
+        "top": 169,
+        "right": 451,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 598,
+        "width": 611,
+        "height": 598
+      },
+      "sourceAnchor": {
+        "x": 335,
+        "y": 565
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "hit-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 160,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 180,
+        "top": 162,
+        "right": 447,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 604,
+        "height": 594
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 577
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/lich/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/lich/source/hit-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 173882,
+      "left": 67,
+      "top": 61,
+      "right": 625,
+      "bottom": 626,
+      "cx": 322.4061720017023,
+      "cy": 353.680708756513
+    },
+    {
+      "id": 2,
+      "count": 174700,
+      "left": 638,
+      "top": 89,
+      "right": 1228,
+      "bottom": 619,
+      "cx": 943.8448654836864,
+      "cy": 359.7037435603892
+    },
+    {
+      "id": 6,
+      "count": 174567,
+      "left": 65,
+      "top": 655,
+      "right": 630,
+      "bottom": 1204,
+      "cx": 326.31796387633403,
+      "cy": 937.0653273528216
+    },
+    {
+      "id": 7,
+      "count": 171694,
+      "left": 670,
+      "top": 655,
+      "right": 1234,
+      "bottom": 1217,
+      "cx": 925.613644041143,
+      "cy": 945.2987349587056
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

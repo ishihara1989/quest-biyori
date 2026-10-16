@@ -1,0 +1,17 @@
+# Adopted runtime images only. JSON manifests remain ordinary Git files.
+/public/assets/**/*.[pP][nN][gG] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[aA][pP][nN][gG] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[jJ][pP][gG] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[jJ][pP][eE][gG] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[gG][iI][fF] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[wW][eE][bB][pP] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[aA][vV][iI][fF] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[sS][vV][gG] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[iI][cC][oO] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[bB][mM][pP] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[tT][iI][fF] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[tT][iI][fF][fF] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[pP][sS][dD] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[aA][sS][eE] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[aA][sS][eE][pP][rR][iI][tT][eE] filter=lfs diff=lfs merge=lfs -text
+/public/assets/**/*.[kK][rR][aA] filter=lfs diff=lfs merge=lfs -text

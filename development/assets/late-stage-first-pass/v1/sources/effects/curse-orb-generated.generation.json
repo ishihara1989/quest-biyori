@@ -1,0 +1,28 @@
+{
+  "id": "effects/curse-orb",
+  "effect": "curse-orb",
+  "region": "demon-castle",
+  "label": "呪弾",
+  "kind": "projectile",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/curse-orb-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. single LEFT-travelling purple-black orb, bright magenta core, short broken violet rune trail to RIGHT. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-d9db1c27-2ee0-4033-903c-6c59ce446e2f.png",
+  "sha256": "83bba23df9dc4d3817a1c60cff1804d20ae75ec8cf31c44494039189f65451f4",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "左に紫の球、右に断片の尾が伸びる。"
+    ],
+    "issues": [
+      "紫赤の背景光が混入。",
+      "最終コマで球が小さい光と半輪に変わる。飛行の反復と着弾を分離する。",
+      "共通VFXの最大衝撃・収束指定を飛翔の脈動へ修正する。"
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1513">
+  <title>FORESTBOUND — 始まりの森</title>
+  <link rel="stylesheet" href="css/forest-game.css">
+  <link rel="stylesheet" href="css/forest-progression.css"><link rel="stylesheet" href="css/gem-system.css">
+  <link rel="stylesheet" href="css/warrior-skills.css">
+  <link rel="stylesheet" href="css/forest-loot.css">
+  <link rel="stylesheet" href="css/forest-balance.css">
+  <link rel="stylesheet" href="css/forest-conversion.css">
+  <link rel="stylesheet" href="css/swamp-game.css">
+  <link rel="stylesheet" href="css/ruins-game.css">
+  <link rel="stylesheet" href="css/desert-game.css"><link rel="stylesheet" href="css/highland-game.css"><link rel="stylesheet" href="css/glacier-game.css"><link rel="stylesheet" href="css/volcano-game.css">
+  <link rel="stylesheet" href="css/demon-castle-game.css">
+  <link rel="stylesheet" href="css/party-sidebar.css">
+  <link rel="stylesheet" href="css/forest-unlocks.css">
+  <link rel="stylesheet" href="css/dimensional-rift.css">
+  <link rel="stylesheet" href="css/goddess.css">
+  <link rel="stylesheet" href="css/museum.css">
+  <style>.curse-status-focus{position:absolute;inset:0;pointer-events:none;z-index:4}.curse-status-focus button{position:absolute;padding:0;border:0;background:transparent;pointer-events:none}.curse-status-focus button:focus-visible{outline:2px solid #d7aeff;outline-offset:2px}</style>
+  <script defer src="/js/data/interference-reference.js"></script>
+  <script defer src="/js/combat/action-interference.js"></script>
+  <script defer src="/js/render/image-effects.js"></script>
+  <script defer src="/js/render/interference-renderer.js"></script>
+  <script defer src="/js/render/glacier-renderer.js"></script>
+  <script defer src="/js/render/volcano-renderer.js"></script>
+  <script defer src="/js/render/demon-castle-renderer.js"></script>
+  <script defer src="/js/core/motion-playback.js"></script>
+  <script defer src="/js/skills/mage-motions.js"></script>
+  <script defer src="/js/skills/mage-skills.js"></script>
+  <script defer src="/js/render/mage-skill-renderer.js"></script>
+  <script defer src="/js/skills/warrior-skills.js"></script>
+  <script defer src="/js/render/warrior-skill-renderer.js"></script>
+  <script defer src="/js/skills/paladin-motions.js"></script>
+  <script defer src="/js/skills/paladin-skills.js"></script>
+  <script defer src="/js/render/paladin-skill-renderer.js"></script>
+  <script defer src="/js/skills/ninja-skills.js"></script>
+  <script defer src="/js/combat/enemy-control.js"></script>
+  <script defer src="/js/combat/ninja-combat.js"></script>
+  <script defer src="/js/render/ninja-skill-renderer.js"></script>
+  <script defer src="/js/skills/shaman-skills.js"></script>
+  <script defer src="/js/combat/shaman-combat.js"></script>
+  <script defer src="/js/render/shaman-skill-renderer.js"></script>
+  <script defer src="/js/skills/miko-skills.js"></script>
+  <script defer src="/js/ui/equipment-visuals.js"></script>
+  <script defer src="/js/data/epic-gems.js"></script><script defer src="/js/core/gem-system.js"></script><script defer src="/js/core/forest-progression.js"></script>
+  <script defer src="/js/data/expansion-data.js"></script>
+  <script defer src="/js/core/forest-auto-gear.js"></script>
+  <script defer src="/js/ui/forest-auto-gear-ui.js"></script>
+  <script defer src="/js/data/ruins-data.js"></script>
+  <script defer src="/js/data/desert-data.js"></script>
+  <script defer src="/js/data/highland-data.js"></script>
+  <script defer src="/js/data/glacier-data.js"></script>
+  <script defer src="/js/data/volcano-data.js"></script>
+  <script defer src="/js/data/demon-castle-data.js"></script>
+  <script defer src="/js/data/special-stages.js"></script><script defer src="/js/data/goddess-data.js"></script><script defer src="/js/data/forest-data.js"></script>
+  <script defer src="/js/core/forest-run-rewards.js"></script>
+  <script defer src="/js/core/forest-gem-inventory.js"></script>
+  <script defer src="/js/combat/status-resistance.js"></script>
+  <script defer src="/js/combat/goddess-combat.js"></script><script defer src="/js/render/goddess-renderer.js"></script>
+  <script defer src="/js/combat/swamp-combat.js"></script>
+  <script defer src="/js/combat/expansion-combat.js"></script>
+  <script defer src="/js/combat/miko-combat.js"></script>
+  <script defer src="/js/combat/ruins-combat.js"></script>
+  <script defer src="/js/combat/desert-combat.js"></script>
+  <script defer src="/js/combat/highland-combat.js"></script>
+  <script defer src="/js/combat/glacier-combat.js"></script>
+  <script defer src="/js/combat/volcano-combat.js"></script>
+  <script defer src="/js/combat/demon-castle-combat.js"></script>
+  <script defer src="/js/combat/epic-gem-combat.js"></script><script defer src="/js/combat/forest-simulation.js"></script>
+  <script defer src="/js/ui/gem-workshop-ui.js"></script><script defer src="/js/ui/forest-progression-ui.js"></script>
+  <script defer src="/js/ui/gem-dismantle-ui.js"></script>
+  <script defer src="/js/core/forest-loot.js"></script>
+  <script defer src="/js/ui/forest-loot-ui.js"></script>
+  <script defer src="/js/core/forest-conversion.js"></script>
+  <script defer src="/js/ui/forest-conversion-ui.js"></script>
+  <script defer src="/js/ui/forest-unlocks.js"></script>
+  <script defer src="/js/render/miko-skill-renderer.js"></script>
+  <script defer src="/js/render/rift-renderer.js"></script>
+  <script defer src="/js/core/museum-library.js"></script>
+  <script defer src="/js/ui/museum-ui.js"></script>
+  <script defer src="/js/ui/forest-game.js"></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C10 2 3 7 5 15s15 4 15-12Z"/><path d="m4 21 12-13M9 16v-5m0 5h5"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-3a8 8 0 0 1 16 0v3"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 6h12l3 15H3L6 6Zm3 0V4a3 3 0 0 1 6 0v2m-7 5h8"/></symbol>
+    <symbol id="i-sword" viewBox="0 0 24 24"><path d="m4 20 4-4m-4-4 8 8m-6-6L17 3h4v4L10 18m2-10 4 4"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5c-3-3-6-1-8 1-2-2-5-4-8-1s-2 7 1 10l7 6 7-6c3-3 4-7 1-10Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6l9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="m3 8 4-5h10l4 5-9 13L3 8Zm0 0h18M7 3l2 5 3 13 3-13 2-5M9 8h6"/></symbol>
+    <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4M3 10V6h18M7 22l-4-4 4-4m14 0v4H3"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m7 3 14 9-14 9V3Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 4v16M16 4v16"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 4v3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h18m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1v15M5 8h4m6 0h4M5 12h4m6 0h4"/></symbol>
+  </svg>
+  <div class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="./"><span class="brand-emblem"><svg><use href="#i-leaf"/></svg></span><span>FORESTBOUND<small>IDLE CHRONICLES</small></span></a>
+      <nav class="main-nav" aria-label="メインメニュー">
+        <button data-open="stages" data-tip="冒険" aria-label="冒険"><svg><use href="#i-map"/></svg><span>冒険</span></button>
+        <button data-open="character" data-tip="能力" aria-label="能力"><svg><use href="#i-user"/></svg><span>能力</span></button>
+        <button data-open="skills" data-tip="スキル" aria-label="スキル"><svg><use href="#i-spark"/></svg><span>スキル</span></button>
+        <button data-open="forge" data-tip="鍛冶" aria-label="鍛冶"><svg><use href="#i-sword"/></svg><span>鍛冶</span></button>
+        <button data-open="gems" data-tip="ジェム" aria-label="ジェム"><svg><use href="#i-gem"/></svg><span>ジェム</span></button>
+        <button data-open="inventory" data-tip="アイテム" aria-label="アイテム"><svg><use href="#i-bag"/></svg><span>アイテム</span><b id="nav-item-count">7</b></button>
+        <button data-open="museum" data-tip="資料館" aria-label="資料館"><svg><use href="#i-book"/></svg><span>資料館</span></button>
+        <button data-open="options" data-tip="設定" aria-label="設定"><span class="settings-icon" aria-hidden="true">⚙</span><span>設定</span></button>
+      </nav>
+      <div class="resources"><span data-tip="ゴールド"><img src="assets/ui/items/gold.png" alt="ゴールド"><b id="gold-count">0</b></span></div>
+    </header>
+    <main>
+      <div class="adventure-heading">
+        <div><p class="eyebrow"><span></span>CHAPTER 01 <i>/</i> THE FIRST WOODLAND</p><h1>始まりの森 <span class="chapter-badge">01</span></h1></div>
+        <button class="map-button" data-open="stages"><svg><use href="#i-map"/></svg>冒険 <span>↗</span></button>
+      </div>
+      <div class="play-layout">
+        <section class="battle-panel" aria-label="自動戦闘">
+          <div class="battle-heading"><div><span class="live-dot"></span><b id="stage-number">1 — 1</b><span id="stage-name">木漏れ日の小道</span></div><span id="battle-state">READY</span></div>
+          <div class="arena">
+            <canvas id="game-canvas" width="1024" height="576" role="img" aria-label="始まりの森の自動戦闘"></canvas>
+            <div class="arena-vignette"></div>
+            <div class="arena-hud"><div class="wave-hud"><span>WAVE <b id="wave-number">01</b><i>/ 03</i></span><div id="wave-dots"><span class="active"></span><span></span><span></span></div></div><span class="arena-clock"><svg><use href="#i-clock"/></svg><b id="elapsed">00:00</b></span></div>
+            <div id="boss-hud" class="boss-hud" hidden><span id="boss-name"></span><div><i id="boss-hp-fill"></i></div></div>
+            <div id="wave-toast" class="wave-toast" aria-live="polite"></div>
+            <div id="start-overlay" class="start-overlay"><div class="start-seal"><svg><use href="#i-leaf"/></svg></div><span class="eyebrow">ADVENTURE</span><h2>始まりの森</h2><button id="start-button" class="primary-button" disabled><svg><use href="#i-sword"/></svg><span>読込中</span></button></div>
+            <div id="result-overlay" class="result-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="result-title">
+              <div id="loot-flash" class="loot-flash" aria-hidden="true"></div>
+              <section id="recruit-intro" class="recruit-intro" hidden>
+                <div class="recruit-radiance" aria-hidden="true"></div>
+                <div class="recruit-shockwave" aria-hidden="true"></div>
+                <div id="recruit-particles" class="recruit-particles" aria-hidden="true"></div>
+                <p class="recruit-kicker">NEW COMPANION</p>
+                <div class="recruit-portrait"><div class="recruit-sigil" aria-hidden="true">✦</div><img id="recruit-portrait" src="assets/mage/idle-01.png" alt="魔法使い"></div>
+                <div class="recruit-nameplate"><span id="recruit-class"></span><h2 id="recruit-title"></h2><p>✦ 仲間加入 ✦</p></div>
+                <button id="recruit-continue" class="secondary-button">報酬 <svg><use href="#i-arrow"/></svg></button>
+                <div class="recruit-progress" aria-hidden="true"><i></i></div>
+              </section>
+              <section id="unlock-intro" class="unlock-intro" hidden>
+                <div class="unlock-rays" aria-hidden="true"></div><div class="unlock-ring" aria-hidden="true"></div>
+                <div id="unlock-particles" class="unlock-particles" aria-hidden="true"></div>
+                <p class="unlock-kicker">UNLOCKED</p><div class="unlock-emblem" aria-hidden="true">✦</div>
+                <h2 id="unlock-title">新規解放</h2><div id="unlock-cards" class="unlock-cards"></div>
+                <button id="unlock-continue" class="secondary-button">報酬 <svg><use href="#i-arrow"/></svg></button>
+                <div class="unlock-progress" aria-hidden="true"><i></i></div>
+              </section>
+              <div class="result-panel">
+                <header class="result-heading"><span class="result-crown" aria-hidden="true">✦</span><p id="result-kicker" class="eyebrow">STAGE CLEAR</p><h2 id="result-title">勝利</h2><p id="result-stage"></p><div id="result-run-stats" class="result-run-stats"></div></header>
+                <div class="result-body">
+                  <div class="result-treasure"><div id="chest-stage" class="chest-stage"><div class="chest-rays"></div><div class="chest-ring"></div><div id="result-chest" class="result-chest" role="img" aria-label="開く宝箱"></div><i class="treasure-spark s1">✦</i><i class="treasure-spark s2">✧</i><i class="treasure-spark s3">✦</i></div><span class="treasure-caption">REWARDS</span><div class="result-gold-wrap"><img src="assets/ui/items/gold.png" alt="ゴールド"><b id="result-gold"></b><small id="result-gold-note"></small></div><div id="result-recruit" class="result-recruit" hidden><img src="assets/mage/idle-01.png" alt="魔法使い"><span>仲間加入<strong>魔法使い</strong></span></div></div>
+                  <div class="result-loot"><div class="result-loot-heading"><span>獲得品</span><small id="result-count"></small></div><div id="result-rewards" class="result-rewards"></div></div>
+                </div>
+                <div id="result-unlocks" class="result-unlocks" hidden></div>
+                <footer class="result-footer"><div class="result-status"><span id="loot-status" role="status"></span><button id="result-skip" class="result-skip">スキップ ↗</button></div><div class="result-actions"><button id="retry-button" class="primary-button"><svg><use href="#i-repeat"/></svg><span>再戦</span></button><button id="next-button" class="secondary-button">次へ <svg><use href="#i-arrow"/></svg></button><button id="result-stages" class="secondary-button" data-tip="ステージ選択中は自動周回の待ち時間を停止"><svg><use href="#i-map"/></svg>冒険</button><button id="result-auto" class="result-auto" aria-pressed="true">自動周回 ON</button></div><span id="repeat-countdown"></span></footer>
+              </div>
+            </div>
+          </div>
+          <div class="battle-controls"><div class="transport"><button id="pause-button" class="icon-button" aria-label="一時停止" data-tip="一時停止 / 再開 · Space" disabled><svg><use href="#i-pause"/></svg></button><button id="speed-button" class="speed-button" data-tip="戦闘速度">1×</button><span class="control-divider"></span><button id="repeat-button" class="auto-button" aria-pressed="true" data-tip="クリア後、同じステージを自動で周回"><svg><use href="#i-repeat"/></svg>AUTO <i></i></button></div><div class="skills"><div id="skill-cooldowns" class="skill-cooldowns" role="group" aria-label="スキルの再使用時間"></div><button id="potion-button" class="skill-slot potion-slot" data-tip="回復薬 · HP回復 126" disabled><img src="assets/ui/items/potion.png" alt="回復薬"><b id="potion-count">3</b></button></div></div>
+        </section>
+        <aside class="journey-sidebar">
+          <section class="hero-card" aria-label="パーティの状況">
+            <div class="section-caption"><span>PARTY</span><span id="party-count">1 / 6</span></div>
+            <div id="party-status" class="party-status-grid" role="group" aria-label="詳細を表示するキャラクターを選択"></div>
+            <div class="hero-summary"><span class="hero-avatar"><img src="assets/warrior/idle-01.png" alt="戦士"></span><span><small>WARRIOR</small><strong>戦士</strong><em>Lv. 1</em></span></div>
+            <div class="health-label"><svg><use href="#i-heart"/></svg><b id="hero-hp">420 <span>/ 420</span></b></div><div class="health-track"><i id="hero-hp-fill"></i></div>
+            <div class="quick-stats"><span data-tip="攻撃力" tabindex="0"><svg><use href="#i-sword"/></svg><b>34</b></span><span data-tip="防御力" tabindex="0"><svg><use href="#i-shield"/></svg><b>4</b></span><span data-tip="クリティカル率" tabindex="0"><svg><use href="#i-spark"/></svg><b>18<small>%</small></b></span></div>
+            <div id="growth-sidebar"></div>
+          </section>
+          <section class="encounter-card"><div class="section-caption"><span>ENCOUNTERS</span><span id="kill-count">0 / 12</span></div><div id="encounter-list" class="encounter-list"></div><div class="progress-track"><i id="stage-progress"></i></div></section>
+        </aside>
+      </div>
+      <section class="forest-route" aria-label="始まりの森の進行状況"><div class="route-caption"><svg><use href="#i-leaf"/></svg><span>FOREST PATH</span><b id="clear-count">0 / 10</b></div><div id="route-nodes" class="route-nodes"></div></section>
+    </main>
+    <footer><span><i></i>自動保存 <b id="save-state">READY</b></span><button data-open="museum" data-tip="資料館">資料館</button><span>FORESTBOUND <small>PROTOTYPE 01</small></span></footer>
+  </div>
+  <dialog id="menu-dialog" class="menu-dialog" aria-labelledby="menu-title"><div class="dialog-heading"><div><p id="menu-kicker" class="eyebrow"></p><h2 id="menu-title"></h2></div><button id="close-menu" class="icon-button" aria-label="閉じる"><svg><use href="#i-close"/></svg></button></div><div id="menu-content"></div></dialog>
+  <dialog id="reset-dialog" class="reset-dialog" aria-labelledby="reset-title" aria-describedby="reset-description"><h2 id="reset-title">初期化確認</h2><p id="reset-description">育成・所持アイテム・ステージ進行がすべて初期化されます。この操作は元に戻せません。</p><div><button id="reset-cancel" class="secondary-button" autofocus>戻る</button><button id="reset-confirm" class="reset-save-button">初期化</button></div></dialog>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+  <div id="notification" class="notification" role="status"></div>
+</body>
+</html>

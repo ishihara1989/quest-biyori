@@ -1,0 +1,104 @@
+{
+  "id": "dream-demon/attack",
+  "enemy": "dream-demon",
+  "region": "demon-castle",
+  "motion": "attack",
+  "label": "魔弾",
+  "effects": [
+    "curse-orb",
+    "curse-impact"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/dream-demon/attack-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "夢魔",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 114,
+        "top": 94,
+        "right": 646,
+        "bottom": 596
+      },
+      "sourceWidth": 679,
+      "sourceHeight": 616,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 248155,
+      "transparentFraction": 0.5932975345714668
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 31,
+        "top": 31,
+        "right": 573,
+        "bottom": 596
+      },
+      "sourceWidth": 626,
+      "sourceHeight": 616,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 202454,
+      "transparentFraction": 0.525014522218995
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 36,
+        "top": 34,
+        "right": 705,
+        "bottom": 515
+      },
+      "sourceWidth": 717,
+      "sourceHeight": 590,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 231274,
+      "transparentFraction": 0.5467082712809966
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 11,
+        "top": 18,
+        "right": 516,
+        "bottom": 522
+      },
+      "sourceWidth": 588,
+      "sourceHeight": 590,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 172750,
+      "transparentFraction": 0.49795341865559783
+    }
+  ],
+  "reference": "../../../references/dream-demon.png",
+  "originalSources": [
+    "../../../sources/dream-demon/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

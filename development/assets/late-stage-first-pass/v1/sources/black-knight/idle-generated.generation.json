@@ -1,0 +1,25 @@
+{
+  "id": "black-knight/idle",
+  "enemy": "black-knight",
+  "region": "demon-castle",
+  "motion": "idle",
+  "label": "待機",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/black-knight.png",
+  "guide": null,
+  "source": "sources/black-knight/idle-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame IDLE breathing sheet EXACT 2x2, order top-left, top-right, bottom-left, bottom-right. 黒騎士. Frame1 canonical neutral; frame2 chest rises 8px, hair/tail/cape/wing tip moves 12px; frame3 neutral; frame4 chest settles 5px, secondary parts return. Feet stay planted, body does not translate, subtle distinct redraws, smooth 4->1 loop. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-e5ebdc48-d724-48b2-8e5e-d166bc0cf5af.png",
+  "sha256": "12c33b6d6192cf782e3fb4caf2604578807e24f85a9d3ce9b9e37eb8677d4a5c",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "剣先とマントがセル境界に近く、12%の指定余白が足りない。原画の四辺を検収する。",
+      "マントの面積と剣の傾きがコマ間で変わる。待機の揺れとして調整する。"
+    ]
+  }
+}

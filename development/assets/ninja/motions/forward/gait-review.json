@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "forward",
+  "source": "source/ninja-forward-generated-v9.png",
+  "measurement": "manual estimate of ankle center in 256x224 output, tolerance ±3px; occluded R in frame3 inferred from exposed thigh/shin/boot. This is advisory visual QA, not an automated landmark detector.",
+  "leftIdentity": "fishnet thigh + gold square buckle, always camera near",
+  "rightIdentity": "bare thigh + black band, always camera far",
+  "frame7Review": "Near mesh boot partially overlaps in front of far bare supporting boot. About 12px ankle-center separation accepted by root visual audit given boot width.",
+  "frames": [
+    {
+      "frame": 1,
+      "L": {
+        "x": 156,
+        "y": 195
+      },
+      "R": {
+        "x": 83,
+        "y": 195
+      }
+    },
+    {
+      "frame": 2,
+      "L": {
+        "x": 143,
+        "y": 194
+      },
+      "R": {
+        "x": 85,
+        "y": 194
+      }
+    },
+    {
+      "frame": 3,
+      "L": {
+        "x": 117,
+        "y": 194
+      },
+      "R": {
+        "x": 113,
+        "y": 192,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 4,
+      "L": {
+        "x": 88,
+        "y": 194
+      },
+      "R": {
+        "x": 159,
+        "y": 195
+      }
+    },
+    {
+      "frame": 5,
+      "L": {
+        "x": 82,
+        "y": 197
+      },
+      "R": {
+        "x": 156,
+        "y": 198
+      }
+    },
+    {
+      "frame": 6,
+      "L": {
+        "x": 85,
+        "y": 195
+      },
+      "R": {
+        "x": 153,
+        "y": 199
+      }
+    },
+    {
+      "frame": 7,
+      "L": {
+        "x": 117,
+        "y": 195
+      },
+      "R": {
+        "x": 129,
+        "y": 201,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 8,
+      "L": {
+        "x": 161,
+        "y": 196
+      },
+      "R": {
+        "x": 88,
+        "y": 195
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "enemy": "floating-magic-core",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "floating-magic-core-down.png",
+  "preview": "../../../../../../development/assets/enemies/floating-magic-core/motions/down/floating-magic-core-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/floating-magic-core/PROMPT.md",
+  "width": 768,
+  "height": 320,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 2,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1100,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/floating-magic-core/source/down-registered.png",
+  "sourceScale": 0.33925049309664695,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 300,
+      "phase": "崩落",
+      "bounds": {
+        "left": 97,
+        "top": 142,
+        "right": 298,
+        "bottom": 286
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 620,
+        "width": 808,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 516,
+        "y": 457
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 800,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 95,
+        "top": 194,
+        "right": 322,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 808,
+        "y": 620,
+        "width": 808,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 433,
+        "y": 405
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/floating-magic-core/source/reaction-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/floating-magic-core/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid-per-column",
+      "width": 1536,
+      "height": 1024,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 776,
+          "height": 525
+        },
+        {
+          "x": 776,
+          "y": 0,
+          "width": 760,
+          "height": 588
+        },
+        {
+          "x": 0,
+          "y": 525,
+          "width": 776,
+          "height": 499
+        },
+        {
+          "x": 776,
+          "y": 588,
+          "width": 760,
+          "height": 436
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "fall": {
+    "fromHoverHeight": 32,
+    "landingFrame": 1,
+    "groundY": 302
+  }
+}

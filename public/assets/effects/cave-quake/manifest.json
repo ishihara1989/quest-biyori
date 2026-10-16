@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "cave-quake",
+  "label": "地震衝撃",
+  "sheet": "cave-quake.png",
+  "preview": "../../../../development/assets/effects/cave-quake/cave-quake-preview.gif",
+  "prompt": "../../../../development/assets/effects/cave-quake/PROMPT.md",
+  "width": 1792,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 210
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/cave-quake/source-generated.png",
+  "sourceScale": 0.4792176039119804,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "cave-quake-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 158,
+        "top": 76,
+        "right": 289,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 397,
+        "y": 403
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "cave-quake-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 79,
+        "top": 65,
+        "right": 383,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 431
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "cave-quake-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 56,
+        "top": 16,
+        "right": 392,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 393,
+        "y": 447
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "cave-quake-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 59,
+        "top": 57,
+        "right": 389,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 448
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

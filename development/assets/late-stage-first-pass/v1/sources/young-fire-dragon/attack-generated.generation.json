@@ -1,0 +1,32 @@
+{
+  "id": "young-fire-dragon/attack",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "motion": "attack",
+  "label": "爪撃",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/young-fire-dragon.png",
+  "guide": null,
+  "source": "sources/young-fire-dragon/attack-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame NORMAL ATTACK 爪撃 by 幼火竜 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: near claw (360,680) pulls to (500,470), coils at (520,420), rakes left to (190,650), returns (360,680). Other limbs support the body; wings remain attached. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "claw-arc"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-13dea7a3-7b61-4cb5-a506-b203035b49e6.png",
+  "sha256": "54ccddc095b82c264867880d5de707cab82f07210ac58e7c405c1b065399e5af",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "前爪を上げ、左へ大きく払い、元の姿勢へ戻る。"
+    ],
+    "issues": [
+      "3コマ目の爪が大きく伸びる。基準の足先寸法・爪の所属・見切れを確認する。",
+      "溜めで後脚に体重をかけて立つ。隠れた前脚の接続と荷重を確認する。"
+    ]
+  }
+}

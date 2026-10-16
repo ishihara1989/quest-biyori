@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "great-bat",
+  "motion": "bite",
+  "facing": "left",
+  "label": "噛みつき",
+  "sheet": "great-bat-bite.png",
+  "preview": "../../../../../../development/assets/enemies/great-bat/motions/bite/great-bat-bite-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/great-bat/PROMPT.md",
+  "width": 2304,
+  "height": 416,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 740,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/great-bat/source/bite-registered.png",
+  "sourceScale": 0.5149051490514905,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "bite-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 140,
+      "phase": "開始",
+      "bounds": {
+        "left": 160,
+        "top": 210,
+        "right": 507,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 708,
+        "height": 479
+      },
+      "sourceAnchor": {
+        "x": 354,
+        "y": 384
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "bite-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 200,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 196,
+        "top": 170,
+        "right": 472,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 708,
+        "y": 0,
+        "width": 708,
+        "height": 479
+      },
+      "sourceAnchor": {
+        "x": 285,
+        "y": 462
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "bite-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 180,
+        "top": 219,
+        "right": 488,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 479,
+        "width": 708,
+        "height": 479
+      },
+      "sourceAnchor": {
+        "x": 316,
+        "y": 367
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "bite-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 240,
+      "phase": "復帰",
+      "bounds": {
+        "left": 165,
+        "top": 220,
+        "right": 503,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 708,
+        "y": 479,
+        "width": 708,
+        "height": 479
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 364
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/great-bat/source/bite-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 105769,
+        "left": 94,
+        "top": 107,
+        "right": 769,
+        "bottom": 475,
+        "cx": 429.04226191038964,
+        "cy": 256.9060027040059
+      },
+      {
+        "id": 1,
+        "count": 111097,
+        "left": 913,
+        "top": 31,
+        "right": 1450,
+        "bottom": 477,
+        "cx": 1183.3098463504866,
+        "cy": 230.20453297568793
+      },
+      {
+        "id": 3,
+        "count": 104315,
+        "left": 149,
+        "top": 576,
+        "right": 749,
+        "bottom": 927,
+        "cx": 422.26154436083016,
+        "cy": 741.7294828164694
+      },
+      {
+        "id": 4,
+        "count": 101366,
+        "left": 824,
+        "top": 583,
+        "right": 1480,
+        "bottom": 931,
+        "cx": 1150.9497760590336,
+        "cy": 722.459335477379
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

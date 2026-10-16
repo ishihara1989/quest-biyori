@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-13 JST",
+  "status": "adopted; foot motion accepted by user; anatomy connection repaired",
+  "directionApproved": true,
+  "activeVersion": "V2 with frame1 connection repair",
+  "backup": "../backups/manticore-trot-v1-20261013/backup-info.json",
+  "selectedFrames": [
+    {
+      "frame": 1,
+      "pass": "anatomical-connection-only-repair"
+    },
+    {
+      "frame": 2,
+      "pass": "hind-only-refinement"
+    },
+    {
+      "frame": 3,
+      "pass": "initial-guide-generation"
+    },
+    {
+      "frame": 4,
+      "pass": "initial-guide-generation"
+    },
+    {
+      "frame": 5,
+      "pass": "initial-guide-generation"
+    },
+    {
+      "frame": 6,
+      "pass": "initial-guide-generation"
+    }
+  ],
+  "model": {
+    "checks": 4,
+    "status": "passed",
+    "rightHindFrame1To2TargetPx": 35.807,
+    "leftFrontFrame3To4TargetPx": 56.966,
+    "leftFrontFrame4To5TargetPx": 56.966,
+    "projection": "orthographic art guide: yaw20 pitch13, not recovered 3D camera"
+  },
+  "assets": "asset-qa.json",
+  "browser": "browser-qa.json",
+  "configImportRoundTrip": "passed",
+  "sourceSha256": "Initial 15 generated outputs retained; both anatomical repair outputs verified against recorded SHA256.",
+  "visualReview": {
+    "reviewed": [
+      "canonical reference",
+      "six pose sources",
+      "correction overlays",
+      "six final contact poses"
+    ],
+    "outcome": "hind-only refinement retained overlap/occlusion at frame2; other simultaneous corrections rejected for leg/support instability",
+    "positionAccuracy": "partial; generated paws do not equal target coordinates",
+    "measurement": "initial measurements are approximate; hidden hind paw cannot be measured from a visible claw glimpse",
+    "remaining": [],
+    "userClarification": "Frame1 far hind thigh is disconnected from paw; fore/aft motion is acceptable.",
+    "connectionRepair": "Selected four-leg revision; rejected first revision adding a fifth foot.",
+    "runtime": "Both facings and all six frames, 6 to 1 wrap, idle/hit/attack transitions checked in game."
+  },
+  "prompts": "PROMPTS.md",
+  "guides": "guide.json",
+  "standard": "../../../../docs/policies/quadruped-trot-production.md"
+}

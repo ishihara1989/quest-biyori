@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boss-slime",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "boss-slime-move.png",
+  "preview": "../../../../../../development/assets/enemies/boss-slime/motions/move/boss-slime-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boss-slime/PROMPT.md",
+  "width": 2304,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 288,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 680,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/boss-slime/source/boss-slime-move-generated-v1.png",
+  "sourceScale": 0.511,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 160,
+      "phase": "接地",
+      "bounds": {
+        "left": 147,
+        "top": 147,
+        "right": 429,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/boss-slime/source/boss-slime-idle-generated-v1.png",
+      "sourceScale": 0.5,
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 140,
+      "phase": "ためる",
+      "bounds": {
+        "left": 144,
+        "top": 194,
+        "right": 432,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 306,
+        "y": 606
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 200,
+      "phase": "跳ねる",
+      "bounds": {
+        "left": 157,
+        "top": 96,
+        "right": 418,
+        "bottom": 287
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 335,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "着地",
+      "bounds": {
+        "left": 145,
+        "top": 172,
+        "right": 431,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 307,
+        "y": 527
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

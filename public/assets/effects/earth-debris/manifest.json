@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "earth-debris",
+  "label": "飛ぶ土塊",
+  "sheet": "earth-debris.png",
+  "preview": "../../../../development/assets/effects/earth-debris/earth-debris-preview.gif",
+  "prompt": "../../../../development/assets/effects/earth-debris/PROMPT.md",
+  "width": 1152,
+  "height": 192,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 288,
+  "frameHeight": 192,
+  "frameCount": 4,
+  "pivot": {
+    "x": 144,
+    "y": 96
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/earth-debris/source-generated.png",
+  "sourceScale": 0.39938556067588327,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "earth-debris-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 288,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 17,
+        "top": 36,
+        "right": 271,
+        "bottom": 156
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 383,
+        "y": 287
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "earth-debris-02.png",
+      "x": 288,
+      "y": 0,
+      "width": 288,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 14,
+        "top": 46,
+        "right": 273,
+        "bottom": 146
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 399,
+        "y": 293
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "earth-debris-03.png",
+      "x": 576,
+      "y": 0,
+      "width": 288,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 25,
+        "top": 46,
+        "right": 263,
+        "bottom": 146
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 399,
+        "y": 269
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "earth-debris-04.png",
+      "x": 864,
+      "y": 0,
+      "width": 288,
+      "height": 192,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 24,
+        "top": 52,
+        "right": 264,
+        "bottom": 140
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 409,
+        "y": 274
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "source": "source/shaman-forward-generated-v9.png",
+  "columns": 4,
+  "rows": 2,
+  "rowSplit": 438,
+  "frames": [
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 239
+      }
+    },
+    {
+      "anchor": {
+        "x": 239
+      }
+    }
+  ]
+}

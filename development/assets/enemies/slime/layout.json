@@ -1,0 +1,173 @@
+{
+  "source": "source/slime-generated-v1.png",
+  "columns": 4,
+  "rowEdges": [
+    0,
+    320,
+    600,
+    860,
+    1110,
+    1374
+  ],
+  "scale": 0.5,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "motions": [
+    {
+      "id": "idle",
+      "label": "待機",
+      "loop": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 320,
+          "phase": "基準姿勢"
+        },
+        {
+          "cell": 1,
+          "durationMs": 320,
+          "phase": "ふくらむ"
+        },
+        {
+          "cell": 2,
+          "durationMs": 320,
+          "phase": "ゆるむ"
+        },
+        {
+          "cell": 3,
+          "durationMs": 320,
+          "phase": "基準姿勢へ"
+        }
+      ]
+    },
+    {
+      "id": "move",
+      "label": "移動",
+      "loop": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 140,
+          "phase": "接地・基準姿勢"
+        },
+        {
+          "cell": 5,
+          "durationMs": 120,
+          "phase": "ためる"
+        },
+        {
+          "cell": 6,
+          "durationMs": 180,
+          "phase": "小さく跳ねる",
+          "offset": {
+            "x": 0,
+            "y": -8
+          }
+        },
+        {
+          "cell": 7,
+          "durationMs": 140,
+          "phase": "着地"
+        }
+      ]
+    },
+    {
+      "id": "hit",
+      "label": "被攻撃",
+      "frames": [
+        {
+          "cell": 8,
+          "durationMs": 100,
+          "phase": "のけぞる",
+          "offset": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "cell": 9,
+          "durationMs": 140,
+          "phase": "立て直す",
+          "offset": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "cell": 0,
+          "durationMs": 160,
+          "phase": "待機の基準姿勢"
+        }
+      ]
+    },
+    {
+      "id": "down",
+      "label": "撃破",
+      "terminal": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 140,
+          "phase": "崩れはじめ"
+        },
+        {
+          "cell": 13,
+          "durationMs": 220,
+          "phase": "つぶれる"
+        },
+        {
+          "cell": 14,
+          "durationMs": 240,
+          "phase": "溶ける"
+        },
+        {
+          "cell": 15,
+          "durationMs": 500,
+          "phase": "水たまり・静止"
+        }
+      ]
+    },
+    {
+      "id": "attack",
+      "label": "攻撃",
+      "frames": [
+        {
+          "cell": 16,
+          "durationMs": 160,
+          "phase": "右に引いてためる",
+          "offset": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        {
+          "cell": 17,
+          "durationMs": 100,
+          "phase": "左へ体当たり",
+          "offset": {
+            "x": -24,
+            "y": 0
+          }
+        },
+        {
+          "cell": 18,
+          "durationMs": 160,
+          "phase": "反動を戻す",
+          "offset": {
+            "x": -5,
+            "y": 0
+          }
+        },
+        {
+          "cell": 0,
+          "durationMs": 200,
+          "phase": "待機の基準姿勢"
+        }
+      ]
+    }
+  ]
+}

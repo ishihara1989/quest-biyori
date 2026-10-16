@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-14 JST",
+  "records": [
+    {
+      "id": "effects/fireball",
+      "coordinateSpace": "actual exported 512x512 PNG; approximate +/-7px",
+      "points": [
+        [
+          173,
+          275
+        ],
+        [
+          161,
+          255
+        ],
+        [
+          169,
+          239
+        ],
+        [
+          162,
+          254
+        ]
+      ],
+      "sourceAnchors": [
+        {
+          "x": 238.14000000000001,
+          "y": 268.98
+        },
+        {
+          "x": 211.60000000000002,
+          "y": 267.08
+        },
+        {
+          "x": 237.96,
+          "y": 238.86
+        },
+        {
+          "x": 205.52,
+          "y": 235.66
+        }
+      ],
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "basis": "Constrained white core centroid, visually checked against sphere outline"
+    },
+    {
+      "id": "effects/lava-bomb",
+      "coordinateSpace": "actual exported 512x512 PNG; approximate +/-7px",
+      "points": [
+        [
+          170,
+          312
+        ],
+        [
+          171,
+          307
+        ],
+        [
+          168,
+          312
+        ],
+        [
+          172,
+          314
+        ]
+      ],
+      "sourceAnchors": [
+        {
+          "x": 230.5,
+          "y": 370.5
+        },
+        {
+          "x": 214,
+          "y": 369.5
+        },
+        {
+          "x": 250,
+          "y": 367
+        },
+        {
+          "x": 199.5,
+          "y": 368.5
+        }
+      ],
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "basis": "Approximate basalt sphere center, excluding the diagonal flame tail"
+    },
+    {
+      "id": "effects/fire-fan",
+      "coordinateSpace": "actual exported 512x512 PNG; approximate +/-7px",
+      "points": [
+        [
+          467,
+          258
+        ],
+        [
+          467,
+          261
+        ],
+        [
+          468,
+          269
+        ],
+        [
+          467,
+          256
+        ]
+      ],
+      "sourceAnchors": [
+        {
+          "x": 493.53125,
+          "y": 335.6875
+        },
+        {
+          "x": 474.53125,
+          "y": 333.46875
+        },
+        {
+          "x": 555.625,
+          "y": 378.21875
+        },
+        {
+          "x": 430.53125,
+          "y": 374
+        }
+      ],
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "basis": "Round mouth emitter, not the outer flame or sparse sparks"
+    },
+    {
+      "id": "effects/fire-beam",
+      "coordinateSpace": "actual exported 512x512 PNG; approximate +/-7px",
+      "points": [
+        [
+          418,
+          262
+        ],
+        [
+          420,
+          261
+        ],
+        [
+          446,
+          265
+        ],
+        [
+          437,
+          262
+        ]
+      ],
+      "sourceAnchors": [
+        {
+          "x": 650.8125,
+          "y": 284.6875
+        },
+        {
+          "x": 616.375,
+          "y": 284.90625
+        },
+        {
+          "x": 709.6875,
+          "y": 277.53125
+        },
+        {
+          "x": 663.65625,
+          "y": 278.6875
+        }
+      ],
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "basis": "Round mouth emitter; final sparse phase retains planned source location"
+    },
+    {
+      "id": "effects/fissure",
+      "coordinateSpace": "actual exported 512x512 PNG; approximate +/-7px",
+      "points": [
+        [
+          292,
+          318
+        ],
+        [
+          349,
+          313
+        ],
+        [
+          391,
+          307
+        ],
+        [
+          391,
+          307
+        ]
+      ],
+      "sourceAnchors": [
+        {
+          "x": 696.0241935483871,
+          "y": 395.1532258064516
+        },
+        {
+          "x": 600.1875,
+          "y": 393.6915322580645
+        },
+        {
+          "x": 695.9657258064517,
+          "y": 334.9375
+        },
+        {
+          "x": 683.4657258064517,
+          "y": 306.9375
+        }
+      ],
+      "pivot": {
+        "x": 384,
+        "y": 338
+      },
+      "basis": "Right-hand fissure onset at axe contact, not the center of growing crack"
+    }
+  ]
+}

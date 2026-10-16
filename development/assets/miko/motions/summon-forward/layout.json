@@ -1,0 +1,38 @@
+{
+  "source": "../../../skills/miko/source/summon-forward-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 723,
+      "height": 724
+    },
+    {
+      "x": 723,
+      "y": 0,
+      "width": 777,
+      "height": 724
+    },
+    {
+      "x": 1500,
+      "y": 0,
+      "width": 672,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 951
+    },
+    {
+      "x": 512,
+      "y": 949
+    },
+    {
+      "x": 512,
+      "y": 949
+    }
+  ],
+  "scale": 0.218
+}

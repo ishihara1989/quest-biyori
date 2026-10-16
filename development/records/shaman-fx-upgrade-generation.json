@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cast-wraith",
+    "reference": "development/assets/skills/shaman/effects/hundred-ghosts/source/hundred-ghosts-generated-v1.png",
+    "count": 4,
+    "loop": false,
+    "prompt": "Use case: precise-object-edit. Derive a new TRANSPARENT pixel-art RPG VFX spritesheet from the attached spectral skull magic reference. Preserve its ivory skulls, brilliant mint-teal edges, violet spirit smoke and crisp pixel clusters; replace the circular composition with UPRISING WRAITHS around a caster's whole body. Exactly FOUR frames, one row, four equal square cells. No character is drawn; keep the entire central 30% wide column mostly transparent so the caster remains readable. Shared scale and ground baseline at local y=.85 in EVERY cell; 12% empty transparent margins on all sides, nothing clipped. Frame1 two small spectral ivory faces at (.25,.68),(.75,.68), long thin tapering tails attached to ground at (.25,.85),(.75,.85). Frame2 faces rise to (.24,.49),(.76,.42), elongated wispy spirit bodies reaching back to same ground. Frame3 faces rise to (.24,.27),(.76,.21), open mouths, arms as curved spirit ribbons up the two sides, strong ivory/mint edge highlights with translucent violet interiors. Frame4 faces drift to (.23,.19),(.77,.15) and dissolve into upward streaks, tails still terminate near ground. Maintain recognizable skulls and two side wraiths, no huge opaque clouds. It should form a tall U shape of spirits with empty center, for a shaman casting an early spell at 190 px body height. No text, border, labels, grid, floor or painted checkerboard. Actual alpha transparency.",
+    "source": "development/assets/skills/shaman/effects/cast-wraith/source/cast-wraith-generated-v1.png",
+    "alignX": true
+  },
+  {
+    "id": "dot-wraith",
+    "reference": "development/assets/skills/shaman/effects/cast-wraith/source/cast-wraith-generated-v1.png",
+    "count": 3,
+    "loop": true,
+    "alignX": true,
+    "xCuts": [
+      0,
+      830,
+      1380,
+      2172
+    ],
+    "prompt": "Use case: precise-object-edit. Take ONE of the upright individual skull-wraiths in this reference and create its THREE-frame loop as a transparent pixel-art spritesheet. Remove every other face and every other wraith: exactly ONE skull face and ONE tapered upright spirit body in each frame. Not a circular swarm. Preserve the brilliant mint edges, ivory skull and violet flame pixel-art style. Exactly THREE equal-width square horizontal cells, one row, shared scale and ground baseline local (.50,.84). The entire specter fits inside x=.20..80 and y=.18..84 in every frame, including all smoke tips. Leave at least 15% empty transparent margin above the tallest tip and generous transparent space left/right. Frame1 skull (.50,.38), tail anchored (.50,.84), arms curl at (.26,.52)/(.74,.52). Frame2 skull (.50,.31), tail samepoint, arms open to (.23,.47)/(.77,.47), head rising slightly. Frame3 skull (.50,.35), tail samepoint, arms return toward firstpose. Skull mouth open, hollow mostly transparent midbody, thin bright outer ribbons, readable silhouette. No secondary skulls, ring of heads, character/enemy, weapons, floor, labels, text, grid, shadows or checkerboard painting. Actual alpha background.",
+    "source": "development/assets/skills/shaman/effects/dot-wraith/source/dot-wraith-generated-v1.png"
+  }
+]

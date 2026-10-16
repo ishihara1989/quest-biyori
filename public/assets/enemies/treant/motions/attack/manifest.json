@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "enemy": "treant",
+  "motion": "attack",
+  "facing": "left",
+  "label": "枝腕の攻撃",
+  "sheet": "treant-attack.png",
+  "preview": "../../../../../../development/assets/enemies/treant/motions/attack/treant-attack-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/treant/PROMPT.md",
+  "width": 1792,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 680,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/treant/source/treant-attack-generated-v1.png",
+  "sourceScale": 0.5,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "name": "melee-impact",
+      "frame": 2,
+      "timeMs": 340
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "振りかぶり",
+      "bounds": {
+        "left": 72,
+        "top": 83,
+        "right": 336,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 494,
+        "y": 487
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "attack-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 160,
+      "phase": "枝腕を高く上げる",
+      "bounds": {
+        "left": 88,
+        "top": 66,
+        "right": 360,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 384,
+        "y": 487
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "attack-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 100,
+      "phase": "左下へ叩きつけ",
+      "bounds": {
+        "left": 50,
+        "top": 96,
+        "right": 389,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 518,
+        "width": 768,
+        "height": 506
+      },
+      "sourceAnchor": {
+        "x": 401,
+        "y": 448
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "attack-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "低い位置で振り抜き",
+      "bounds": {
+        "left": 13,
+        "top": 94,
+        "right": 336,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 518,
+        "width": 768,
+        "height": 506
+      },
+      "sourceAnchor": {
+        "x": 463,
+        "y": 448
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

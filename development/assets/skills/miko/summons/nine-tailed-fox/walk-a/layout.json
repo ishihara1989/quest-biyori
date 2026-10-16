@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/nine-tailed-fox-walk-a-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 726,
+      "height": 724
+    },
+    {
+      "x": 726,
+      "y": 0,
+      "width": 730,
+      "height": 724
+    },
+    {
+      "x": 1456,
+      "y": 0,
+      "width": 716,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 667,
+      "y": 917
+    },
+    {
+      "x": 726.5,
+      "y": 916
+    },
+    {
+      "x": 719,
+      "y": 920
+    }
+  ],
+  "scale": 0.07577807848443843
+}

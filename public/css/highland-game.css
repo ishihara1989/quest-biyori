@@ -1,0 +1,7 @@
+body[data-region="7"]{--gold:#e5d394;--green:#9bb8a5;--mint:#a3e8eb;--line:#3f5653;--muted:#a6bbb5;background:radial-gradient(ellipse at 50% 0,#395d6855,transparent 65%),#141d20}
+body[data-region="7"] .battle-panel{border-color:#93bfb755;box-shadow:0 12px 60px #385e6f29}
+body[data-region="7"] .arena{background:#6f8c88}
+.stage-map[data-region="7"]{background:linear-gradient(#203d4433,#24363ed9),url('/assets/stages/storm-highland/distant.png') center/cover}
+body[data-region="7"] .route-node.current>span{border-color:#c9f8ed;box-shadow:0 0 24px #72d3e344}
+body[data-region="7"] #wave-dots .active{background:#c3f7e7;box-shadow:0 0 14px #84e4e888}
+body[data-region="7"] .forest-route{border-color:#93bfb744;background:linear-gradient(90deg,#28454466,#202f3655)}

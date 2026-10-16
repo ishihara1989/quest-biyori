@@ -1,0 +1,234 @@
+{
+  "id": "lava-salamander/attack",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "label": "噛みつき",
+  "kind": null,
+  "motion": "attack",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/lava-salamander.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/attack-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "transparentFraction": 0.8785591125488281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 116,
+        "top": 61,
+        "right": 442,
+        "bottom": 395
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 165,
+        "right": 425,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/attack-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 651,
+        "height": 670
+      },
+      "sourceScale": 0.5194805194805194,
+      "sourceAnchor": {
+        "x": 376,
+        "y": 560
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.870849609375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 131,
+        "top": 56,
+        "right": 428,
+        "bottom": 393
+      },
+      "visibleBounds": {
+        "left": 147,
+        "top": 157,
+        "right": 426,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/attack-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 651,
+        "y": 0,
+        "width": 603,
+        "height": 670
+      },
+      "sourceScale": 0.5194805194805194,
+      "sourceAnchor": {
+        "x": 326,
+        "y": 563
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8531379699707031,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 114,
+        "top": 112,
+        "right": 468,
+        "bottom": 414
+      },
+      "visibleBounds": {
+        "left": 131,
+        "top": 166,
+        "right": 460,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/attack-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 670,
+        "width": 683,
+        "height": 584
+      },
+      "sourceScale": 0.5194805194805194,
+      "sourceAnchor": {
+        "x": 358,
+        "y": 436
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8752098083496094,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 144,
+        "top": 107,
+        "right": 440,
+        "bottom": 409
+      },
+      "visibleBounds": {
+        "left": 152,
+        "top": 164,
+        "right": 426,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/attack-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 683,
+        "y": 670,
+        "width": 571,
+        "height": 584
+      },
+      "sourceScale": 0.5194805194805194,
+      "sourceAnchor": {
+        "x": 300,
+        "y": 445
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "bite-impact",
+      "timeMs": 280,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "bite-impact"
+  ],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/lava-salamander/attack/preview.gif",
+  "action": {
+    "name": "通常攻撃",
+    "motion": "attack",
+    "warn": 0,
+    "times": [
+      280
+    ],
+    "kind": "melee",
+    "radius": 165,
+    "effect": "bite-impact",
+    "rest": 1800,
+    "status": null,
+    "duration": 700
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-bite-impact",
+        "manifest": "../../../../effects/volcano-bite-impact/manifest.json"
+      }
+    ]
+  }
+}

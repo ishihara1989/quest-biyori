@@ -1,0 +1,11 @@
+{
+  "id": "bear-shield",
+  "source": "development/assets/skills/miko/source/bear-shield-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-33d2cc9f-eac3-41a0-860c-d4a83d96c3d6.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 3 chronological frames in ONE horizontal row of equal square cells. Large dramatic shrine VFX. ONE enormous ivory/amber bear paw-shaped shield with five clear paw pads, thick golden edge and central red-gold sacred crest, hollow semi-transparent interior. Frame1 paw shield forming; frame2 full shield expands to width .72; frame3 crest ripple spreads with gold fragments. No bear body or person. All frames same scale and common center/ground. Subject fills .14..86 without touching cell margins. Keep all anatomy and motion effects entirely within each cell with clear 10% empty margins.",
+  "refs": [],
+  "receivedAt": "2026-10-10T15:14:35.325Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

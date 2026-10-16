@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-15",
+  "staticIcons": true,
+  "assets": [
+    {
+      "id": "epic-warrior-weapon",
+      "runtime": "public/assets/ui/gems/epic-warrior-weapon.png",
+      "pixels": 7296,
+      "bounds": [
+        14,
+        8,
+        114,
+        119
+      ]
+    },
+    {
+      "id": "epic-warrior-armor",
+      "runtime": "public/assets/ui/gems/epic-warrior-armor.png",
+      "pixels": 6978,
+      "bounds": [
+        13,
+        8,
+        115,
+        119
+      ]
+    },
+    {
+      "id": "goddess-residue",
+      "runtime": "public/assets/ui/gems/goddess-residue.png",
+      "pixels": 6542,
+      "bounds": [
+        15,
+        8,
+        113,
+        119
+      ]
+    },
+    {
+      "id": "epic-mage-weapon",
+      "runtime": "public/assets/ui/gems/epic-mage-weapon.png",
+      "pixels": 8010,
+      "bounds": [
+        10,
+        8,
+        117,
+        119
+      ]
+    },
+    {
+      "id": "epic-mage-armor",
+      "runtime": "public/assets/ui/gems/epic-mage-armor.png",
+      "pixels": 7067,
+      "bounds": [
+        11,
+        8,
+        117,
+        119
+      ]
+    },
+    {
+      "id": "epic-paladin-weapon",
+      "runtime": "public/assets/ui/gems/epic-paladin-weapon.png",
+      "pixels": 6525,
+      "bounds": [
+        14,
+        8,
+        113,
+        119
+      ]
+    },
+    {
+      "id": "epic-paladin-armor",
+      "runtime": "public/assets/ui/gems/epic-paladin-armor.png",
+      "pixels": 7024,
+      "bounds": [
+        15,
+        8,
+        113,
+        119
+      ]
+    },
+    {
+      "id": "epic-ninja-weapon",
+      "runtime": "public/assets/ui/gems/epic-ninja-weapon.png",
+      "pixels": 6560,
+      "bounds": [
+        8,
+        10,
+        119,
+        117
+      ]
+    },
+    {
+      "id": "epic-ninja-armor",
+      "runtime": "public/assets/ui/gems/epic-ninja-armor.png",
+      "pixels": 8784,
+      "bounds": [
+        9,
+        8,
+        119,
+        119
+      ]
+    },
+    {
+      "id": "goddess-page",
+      "runtime": "public/assets/ui/gems/goddess-page.png",
+      "pixels": 7834,
+      "bounds": [
+        11,
+        8,
+        117,
+        119
+      ]
+    },
+    {
+      "id": "epic-shaman-weapon",
+      "runtime": "public/assets/ui/gems/epic-shaman-weapon.png",
+      "pixels": 5465,
+      "bounds": [
+        21,
+        8,
+        106,
+        119
+      ]
+    },
+    {
+      "id": "epic-shaman-armor",
+      "runtime": "public/assets/ui/gems/epic-shaman-armor.png",
+      "pixels": 7983,
+      "bounds": [
+        8,
+        11,
+        119,
+        117
+      ]
+    },
+    {
+      "id": "epic-miko-weapon",
+      "runtime": "public/assets/ui/gems/epic-miko-weapon.png",
+      "pixels": 7435,
+      "bounds": [
+        10,
+        8,
+        118,
+        119
+      ]
+    },
+    {
+      "id": "epic-miko-armor",
+      "runtime": "public/assets/ui/gems/epic-miko-armor.png",
+      "pixels": 8173,
+      "bounds": [
+        8,
+        9,
+        119,
+        118
+      ]
+    },
+    {
+      "id": "legendary-reprisal",
+      "runtime": "public/assets/ui/gems/legendary-reprisal.png",
+      "pixels": 6876,
+      "bounds": [
+        17,
+        8,
+        110,
+        119
+      ]
+    },
+    {
+      "id": "legendary-timeshift",
+      "runtime": "public/assets/ui/gems/legendary-timeshift.png",
+      "pixels": 6552,
+      "bounds": [
+        17,
+        8,
+        110,
+        119
+      ]
+    },
+    {
+      "id": "shard-epic",
+      "runtime": "public/assets/ui/gems/shard-epic.png",
+      "pixels": 8736,
+      "bounds": [
+        9,
+        8,
+        119,
+        119
+      ]
+    }
+  ]
+}

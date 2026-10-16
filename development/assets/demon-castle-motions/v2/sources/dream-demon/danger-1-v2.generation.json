@@ -1,0 +1,18 @@
+{
+  "id": "dream-demon/danger-1",
+  "source": "danger-1-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame body-only casting animation \"sleep moon\" for the adult dream demon from the fixed canonical reference.\nExact same adult woman, lavender hair, red horns, pointed ears, black-and-gold dress, attached purple bat wings, one arrow-tip tail, two arms and exactly two booted legs. Refined crisp JRPG pixel art and unchanged reference palette, face, body proportions and LEFT-facing mild three-quarter camera.\nFOUR complete separate small poses in a 2x2 sprite sheet. Each fits inside the central 60% of its cell with 20% transparent border. No silhouette crosses into another cell. All horns fully visible with plenty of space ABOVE them; wing tips, tail and two boots also have broad margin. SAME body scale throughout.\nMovement plan normalized to each cell 0..1000: pelvis (520,580), head (480,300), both feet FLOAT with toes around y=830; no planted wide-legged stance. Wing roots stay attached near (520,380).\nFrame 1 PREPARE: two relaxed hands rise from (430,570),(550,570) toward chest; wings slightly drawn inward.\nFrame 2 HELD WINDUP: wings fold closer to her back, palms face each other at (460,440),(520,440), a TINY pale lavender glow of radius 15 between palms. Face looks left with quiet concentration. Horns remain identical and fully inside cell.\nFrame 3 RELEASE: both forearms reach together toward LEFT, palms at (310,500),(360,520), fingers distinct and attached to the two wrists. Torso leans only 6 degrees left, floating pelvis stays (510,580). Wings open modestly, hair and tail trail right. ONLY hands, NO drawn moon, projectile, beam, magic circle, clouds or external spell effect.\nFrame 4 RECOVERY: hands lower, wings and hair settle back to reference floating neutral pose; feet stay together and airborne.\nThe moon/status effect is a separate asset and MUST NOT be drawn on the body sheet. No extra hands, legs, boots or tail. No glow behind character, no floor or shadow, no stars, hit flashes, text, labels, grid, watermark or painted checkerboard. True transparent PNG alpha.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-6bfbd45f-cd15-4e44-8f2e-e6ae2227ea2e.png",
+  "sha256": "83581e07e1f5a6e4af0099e0445c85849262741fe0e709e3513e8ed9769ae14c",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/dream-demon.png",
+      "sha256": "c4e940abf1b2623984fd52a7044c6fb287dd4543191f03ac4fcb13d5e4cd5637"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "danger-1-v2.prompt.txt"
+}

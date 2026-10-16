@@ -1,0 +1,32 @@
+{
+  "id": "obsidian-soldier/attack",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "motion": "attack",
+  "label": "斧撃",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "source": "sources/obsidian-soldier/attack-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame NORMAL ATTACK 斧撃 by 黒曜兵 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: axe tip (260,660) pulls to (640,350), rises to (470,200), sweeps left-down to (160,760), returns (260,660). Both hands stay attached to the SAME haft. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "axe-arc"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-5dac8bc5-7917-4bbf-9b55-6125f32bb605.png",
+  "sha256": "2134d429ca85a13c8cea8b15f2cfeb274b5a6f6ba259dffacfaedf06f2148082",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "低い構え→頭上の斧→左下への斧撃→復帰の順序が明瞭。"
+    ],
+    "issues": [
+      "頭上に振り上げた斧が原画の上端に近い。刃の見切れと余白を確認する。",
+      "復帰が低い構えのため、直立待機への切り替えを確認する。"
+    ]
+  }
+}

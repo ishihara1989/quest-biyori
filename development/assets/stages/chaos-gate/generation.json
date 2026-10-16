@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-15",
+  "generator": "built-in image_gen",
+  "source": [
+    "sources/background.png",
+    "sources/gate.png"
+  ],
+  "prompts": "sources/prompts.json",
+  "runtime": [
+    "../../../../public/assets/stages/chaos-gate/background.png",
+    "../../../../public/assets/stages/chaos-gate/gate.png"
+  ],
+  "processing": "Nearest-neighbor resize; transparent gate padding preserved and extended. No palette edits."
+}

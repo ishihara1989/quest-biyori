@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boss-slime",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "boss-slime-idle.png",
+  "preview": "../../../../../../development/assets/enemies/boss-slime/motions/idle/boss-slime-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boss-slime/PROMPT.md",
+  "width": 2304,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 288,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1280,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/boss-slime/source/boss-slime-idle-generated-v1.png",
+  "sourceScale": 0.5,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "基準姿勢",
+      "bounds": {
+        "left": 147,
+        "top": 147,
+        "right": 429,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "膨らむ",
+      "bounds": {
+        "left": 157,
+        "top": 122,
+        "right": 419,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 608
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "ゆるむ",
+      "bounds": {
+        "left": 147,
+        "top": 190,
+        "right": 429,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 326,
+        "y": 533
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "基準姿勢へ",
+      "bounds": {
+        "left": 153,
+        "top": 163,
+        "right": 422,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 319,
+        "y": 533
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

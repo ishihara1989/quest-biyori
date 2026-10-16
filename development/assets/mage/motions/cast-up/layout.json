@@ -1,0 +1,44 @@
+{
+  "source": "source/mage-cast-up-generated-v1.png",
+  "columns": 4,
+  "rows": 1,
+  "scale": 0.3,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 725
+      },
+      "connectionSource": {
+        "motion": "chant",
+        "frame": 0
+      }
+    },
+    {
+      "rect": {
+        "x": 543,
+        "y": 0,
+        "width": 542,
+        "height": 725
+      }
+    },
+    {
+      "rect": {
+        "x": 1085,
+        "y": 0,
+        "width": 543,
+        "height": 725
+      }
+    },
+    {
+      "rect": {
+        "x": 1628,
+        "y": 0,
+        "width": 542,
+        "height": 725
+      }
+    }
+  ]
+}

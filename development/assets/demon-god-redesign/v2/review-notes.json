@@ -1,0 +1,191 @@
+{
+  "idle": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "14530a94425eed4ac4d046c319c8ac57de3e7cdcdd1c05399738ef2c6d1c9ba9",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "二腕と脱力した膝を維持。4→1の高さの移りは浮遊の下降→中立としてつながる。冠・輪・腰布・足先の余白を確認。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "move": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "8c978da996c70c10b8d98faf3a7840abb77d6a06aa5d26ddfd6fce3f0350acb4",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "脚は地面に触れず、腰布と脚が後方へ流れる。4→1は滑空姿勢のままつながる。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "attack": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "a570c05d9a789ecb7567da7c08bbb854b2920f6b5ca33c193be565d526109a65",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "両拳を引く流用コマから同じ腕を左へ伸ばす。復帰で待機姿勢へ戻る。対象の衝撃は短時間で収束する。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "danger-1": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "d586c99e8878aeef868e1ce8adc5722854f44818afa0fdb4ff137dd33d610c44",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "一方の腕による上段→下段の二打、他方は胸前の構え。腕の所属を変更せず、衝撃は0.9秒差で一打ずつ再生。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "danger-2": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "d095893b285345eb19f05a8897c5b96eacc4bf17c440e4295096ac82111bcae8",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "胸元→両掌を上げる→開く→復帰。二腕・五指の所属と顔のない頭を確認。単柱3位置の0.9秒差と胸・顔の視認性を確認。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "danger-3": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "105f9efcafbffcbc6689a8a67a2af46e606238311c98609ca518832c9e2cc41e",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "顔や口へ手を向けず、胸元から掌を左へ押し出す。対象の頭上に既存の封印を表示。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "danger-4": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "fc73e0d563f88e3bd1b831f2cd5da818a9d8c25abd3ccf69f500ed176211d8b1",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "二腕を胸前で交差し左上／左下へ開く。既存の単独光線は1秒差で一帯ずつ。回転しても頭・胸・輪の輪郭が追える。最後の低い輪を確認。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "hit": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "6a4014c8f4e9f19a6d09e5f3bcb95c3d9fff431478ba8c902a82ab3588a9ba43",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "浮遊姿勢のまま右へ反動、基準姿勢へ復帰。二本の腕と脚、頭部装飾を維持。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  },
+  "down": {
+    "date": "2026-10-14 JST",
+    "fingerprint": "07857a07347ec8e11f84db04d4e762a95b191bbbb4daaab8d1870eccec2454d6",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+    "checked": [
+      "左向き",
+      "筋肉質な二腕と二脚の接続",
+      "目・口・鼻・耳のない頭と金の装飾",
+      "基準絵との色調・体格",
+      "透過・冠・輪・拳・腰布・足先の見切れ",
+      "動く順序・復帰・ループまたは終端停止"
+    ],
+    "observations": [
+      "浮力を失った膝の折れと低い姿勢への崩れを確認。最終コマで停止し、時間が経過しても先頭へ戻らない。"
+    ],
+    "issues": [],
+    "runtimeChecked": false,
+    "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+  }
+}

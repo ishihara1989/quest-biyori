@@ -1,0 +1,12 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame normal sword attack sprite sheet of the exact referenced demon armored soldier.
+Fixed reference identity: black-and-gold full plate armor, pointed closed helmet with red slit visor, one straight steel sword, ONE tall black rectangular kite shield with gold frame and red vertical emblem, dark crimson ragged cape. Two arms, two hands, two legs. Refined crisp JRPG pixel art, reference proportions, colors, scale and LEFT-facing mild three-quarter angle.
+Critical anatomy correction: SWORD is ALWAYS wielded in ONLY the sword-side hand (screen LEFT in neutral). The OTHER forearm (screen RIGHT in neutral) stays inside and behind the shield, gripping its central back handle. The shield is NEVER abandoned or floating. The shield arm NEVER joins the sword hilt. Do not add a third hand. Keep the shield in front of torso at screen-right in every frame.
+Exactly four complete small sprites in equal 2x2 arrangement, upper-left to lower-right. Wide transparent gutters, each entire silhouette including sword tip, shield and cape must fit inside the central 60% of its own cell. Same character scale in every frame.
+Per-cell normalized positions: pelvis (550,600), feet baseline y=835, head (535,360), shield center (650,565) in all four frames.
+Frame 1 READY: sword hand (410,620), blade tip (200,780), shield held firm (650,565), head and shoulders neutral.
+Frame 2 WINDUP: ONLY sword-side upper arm rises, sword hand (400,420), blade extends upper-left to tip (200,195). Elbow bends clearly from the left shoulder to the raised hand. Sword passes to LEFT of helmet. Shield-side upper arm, elbow, wrist remain attached behind the shield at (650,565), no hand at sword hilt.
+Frame 3 LEFT-DOWN SLASH: only sword arm swings down, hand (390,650), tip (170,820). Torso inclines 8 degrees left, two boots planted, shield remains on its own forearm on screen-right. Cape lags to right.
+Frame 4 RECOVERY: return sword, shield, torso, legs to frame-1 neutral. Cape settles.
+The one-handed sword stays the exact same sword, same blade width, length and gold hilt in all cells. Shield maintains its exact tall straight frame and red emblem.
+Body and held equipment only. No slash trails, impact, extra hands, floating shield, colored haze, aura, floor or ground shadow, labels, text, grid, watermark, checkerboard. True native transparent alpha around every silhouette.

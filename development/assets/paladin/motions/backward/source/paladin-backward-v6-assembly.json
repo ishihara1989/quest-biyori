@@ -1,0 +1,141 @@
+{
+  "mode": "crop, proportional nearest-neighbor resize and source-cell positioning only; no drawn/interpolated pose pixels",
+  "cells": [
+    {
+      "source": "paladin-backward-generated-v5.png",
+      "rect": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "scale": 1,
+      "waistX": 280,
+      "target": {
+        "left": 20,
+        "top": 29,
+        "width": 444,
+        "height": 444
+      }
+    },
+    {
+      "source": "paladin-backward-generated-v5.png",
+      "rect": [
+        444,
+        0,
+        443,
+        444
+      ],
+      "scale": 1,
+      "waistX": 280,
+      "target": {
+        "left": 20,
+        "top": 29,
+        "width": 443,
+        "height": 444
+      }
+    },
+    {
+      "source": "paladin-backward-generated-v5.png",
+      "rect": [
+        887,
+        0,
+        444,
+        444
+      ],
+      "scale": 1,
+      "waistX": 280,
+      "target": {
+        "left": 20,
+        "top": 29,
+        "width": 444,
+        "height": 444
+      }
+    },
+    {
+      "source": "paladin-backward-generated-v5.png",
+      "rect": [
+        1331,
+        0,
+        443,
+        444
+      ],
+      "scale": 1,
+      "waistX": 287,
+      "target": {
+        "left": 13,
+        "top": 29,
+        "width": 443,
+        "height": 444
+      }
+    },
+    {
+      "source": "paladin-backward-frames5-6-generated-v1.png",
+      "rect": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "scale": 0.45180722891566266,
+      "waistX": 631,
+      "target": {
+        "left": 15,
+        "top": 50,
+        "width": 401,
+        "height": 401
+      }
+    },
+    {
+      "source": "paladin-backward-frames5-6-generated-v1.png",
+      "rect": [
+        887,
+        0,
+        887,
+        887
+      ],
+      "scale": 0.45180722891566266,
+      "waistX": 631,
+      "target": {
+        "left": 15,
+        "top": 50,
+        "width": 401,
+        "height": 401
+      }
+    },
+    {
+      "source": "paladin-backward-generated-v5.png",
+      "rect": [
+        887,
+        444,
+        444,
+        443
+      ],
+      "scale": 1,
+      "waistX": 287,
+      "target": {
+        "left": 13,
+        "top": 31,
+        "width": 444,
+        "height": 443
+      }
+    },
+    {
+      "source": "paladin-backward-generated-v5.png",
+      "rect": [
+        1331,
+        444,
+        443,
+        443
+      ],
+      "scale": 1,
+      "waistX": 287,
+      "target": {
+        "left": 13,
+        "top": 31,
+        "width": 443,
+        "height": 443
+      }
+    }
+  ]
+}

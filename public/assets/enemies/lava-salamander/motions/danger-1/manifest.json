@@ -1,0 +1,244 @@
+{
+  "id": "lava-salamander/danger-1",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "label": "灼熱噴き",
+  "kind": null,
+  "motion": "danger-1",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 3300,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/lava-salamander.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/danger-1-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8862838745117188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 144,
+        "top": 55,
+        "right": 447,
+        "bottom": 372
+      },
+      "visibleBounds": {
+        "left": 148,
+        "top": 170,
+        "right": 427,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/danger-1-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 664,
+        "height": 652
+      },
+      "sourceScale": 0.5026929982046678,
+      "sourceAnchor": {
+        "x": 359,
+        "y": 581
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 2220,
+      "transparentFraction": 0.8892631530761719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 136,
+        "top": 101,
+        "right": 425,
+        "bottom": 372
+      },
+      "visibleBounds": {
+        "left": 160,
+        "top": 172,
+        "right": 422,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/danger-1-v3.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 664,
+        "y": 0,
+        "width": 590,
+        "height": 652
+      },
+      "sourceScale": 0.5026929982046678,
+      "sourceAnchor": {
+        "x": 329,
+        "y": 582
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "transparentFraction": 0.8737106323242188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 131,
+        "top": 142,
+        "right": 438,
+        "bottom": 424
+      },
+      "visibleBounds": {
+        "left": 139,
+        "top": 171,
+        "right": 434,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/danger-1-v3.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 652,
+        "width": 645,
+        "height": 602
+      },
+      "sourceScale": 0.5026929982046678,
+      "sourceAnchor": {
+        "x": 361,
+        "y": 402
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.88165283203125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 145,
+        "top": 134,
+        "right": 431,
+        "bottom": 427
+      },
+      "visibleBounds": {
+        "left": 146,
+        "top": 169,
+        "right": 428,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/danger-1-v3.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 645,
+        "y": 652,
+        "width": 609,
+        "height": 602
+      },
+      "sourceScale": 0.5026929982046678,
+      "sourceAnchor": {
+        "x": 321,
+        "y": 406
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "fire-fan",
+      "timeMs": 2400,
+      "slot": 0,
+      "placement": "origin",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "fire-fan",
+    "burn"
+  ],
+  "repeatRelease": false,
+  "releaseOrigin": {
+    "x": 155,
+    "y": 261
+  },
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/lava-salamander/danger-1/preview.gif",
+  "action": {
+    "name": "灼熱噴き",
+    "motion": "danger-1",
+    "warn": 2400,
+    "times": [
+      2400
+    ],
+    "kind": "sector",
+    "radius": 150,
+    "effect": "fire-fan",
+    "rest": 5000,
+    "status": "burn",
+    "duration": 3300,
+    "angle": 80
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-fire-fan",
+        "manifest": "../../../../effects/volcano-fire-fan/manifest.json"
+      },
+      {
+        "id": "volcano-burn",
+        "manifest": "../../../../effects/volcano-burn/manifest.json"
+      }
+    ]
+  }
+}

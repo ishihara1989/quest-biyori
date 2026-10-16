@@ -1,0 +1,15 @@
+'use strict';
+const { writeAssetJson } = require('../lib/project-paths.cjs');
+const fs=require('node:fs'),path=require('../lib/project-paths.cjs').assetPaths,crypto=require('node:crypto'),assert=require('node:assert/strict'),{PNG}=require('pngjs');
+const root=path.resolve(__dirname,'../../public/assets/highland-motions'),ids=['horn-jackal','rock-horn-goat','storm-jackal','iron-horn'];
+function main(){const report={date:'2026-10-13 JST',standard:'docs/policies/quadruped-trot-production.md',coordinateAccuracy:'Projected coordinates are targets, not measured sprite feet. Visual support/ownership review is separate from asset QA.',enemies:[]};
+ for(const id of ids){const recipe=JSON.parse(fs.readFileSync(path.join(root,'trot',id,'recipe.json'),'utf8')),backup=path.join(root,'backups',id+'-walk-before-trot-20261013');const files=JSON.parse(fs.readFileSync(path.join(backup,'backup-info.json'),'utf8'));
+  for(const f of files)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(backup,f.file))).digest('hex'),f.sha256);
+  const generation=JSON.parse(fs.readFileSync(path.join(root,'trot/generation.json'),'utf8'));
+  const sources=recipe.frames.map((f,i)=>{const bytes=fs.readFileSync(path.join(root,f.source)),hash=crypto.createHash('sha256').update(bytes).digest('hex'),record=generation.records.find(r=>r.source===f.source),png=PNG.sync.read(bytes),alpha=(x,y)=>png.data[(y*png.width+x)*4+3];assert.equal(hash,record.sha256);assert.equal(record.status,'selected');for(let x=0;x<png.width;x++){assert.ok(alpha(x,0)<192);assert.ok(alpha(x,png.height-1)<192);}for(let y=0;y<png.height;y++){assert.ok(alpha(0,y)<192);assert.ok(alpha(png.width-1,y)<192);}return{frame:i+1,source:f.source,sha256:hash,originalEdge:'unclipped at alpha >=192'};});
+  const review={id,status:'adopted',unresolved:[],frames:recipe.frames.length,gait:'trot',durationMs:720,sourceSelection:sources,checks:{referenceAndPalette:'reviewed against canonical reference',fourConnectedLegs:'reviewed including occluded thigh/shin/ankle',diagonalContact:'reviewed per frame, failed contact revisions retained as rejected',bodyAndHeadRegistration:'common scale and fixed eye, no per-frame foot alignment',frameTransitions:'contact sheet reviewed; browser stepping and replay exercised',splitBoundary:'3 to 4 reviewed',loop:'6 to 1 reviewed and runtime frame wrap checked',alphaAndClipping:'selected originals and packed cells checked separately',gameRendering:'both facings, all six frames, loop wrap, idle/hit/attack transitions checked'},backup:{path:path.relative(root,backup).replaceAll('\\','/'),files:files.length,sha256:'verified'},guides:'trot/'+id+'/guide.json',contact:'trot/'+id+'/contact.png',browser:'output/highland-implementation/browser-qa.json'};
+  writeAssetJson(path.join(root,'trot',id,'review.json'), review);report.enemies.push(review);
+ }
+ writeAssetJson(path.join(root,'trot/review.json'), report);console.log(JSON.stringify({reviews:report.enemies.length,backupHashChecks:report.enemies.reduce((n,e)=>n+e.backup.files,0)}));
+}
+if(require.main===module)main();module.exports={main};

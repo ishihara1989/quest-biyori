@@ -1,0 +1,19 @@
+{
+  "id": "effects/heavy-axe-arc",
+  "source": "sources/effects/heavy-axe-arc-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. spectacular huge 150-degree molten-orange double-edged axe crescent sweeping left, dark inner edge and white-hot rim. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "4d3f0dec813b3bdf3796852d7ada53edeb5f3c0aa63174e6c12cd061257f53a3",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/heavy-axe-arc-generated.png",
+  "issues": [
+    "最大コマの余白が少なく、等分セルを越える部分がある。",
+    "4コマ目は小さくなるが強い円弧が残る。消失へつなぐ必要がある。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

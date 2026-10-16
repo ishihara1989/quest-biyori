@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "enemy": "bandage-soldier",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "bandage-soldier-move.png",
+  "preview": "../../../../../../development/assets/enemies/bandage-soldier/motions/move/bandage-soldier-move-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 2880,
+  "height": 320,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 320,
+  "frameCount": 6,
+  "pivot": {
+    "x": 278,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/bandage-soldier/source/move-registered.png",
+  "sourceScale": 0.44468546637744033,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 157,
+        "top": 97,
+        "right": 363,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 580,
+        "height": 568
+      },
+      "sourceAnchor": {
+        "x": 336,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 155,
+        "top": 97,
+        "right": 362,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 580,
+        "y": 0,
+        "width": 580,
+        "height": 568
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 151,
+        "top": 98,
+        "right": 352,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 568,
+        "width": 580,
+        "height": 568
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 162,
+        "top": 95,
+        "right": 371,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 580,
+        "y": 568,
+        "width": 580,
+        "height": 568
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 507
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1920,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 158,
+        "top": 93,
+        "right": 364,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1136,
+        "width": 580,
+        "height": 568
+      },
+      "sourceAnchor": {
+        "x": 305,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2400,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 160,
+        "top": 95,
+        "right": 361,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 580,
+        "y": 1136,
+        "width": 580,
+        "height": 568
+      },
+      "sourceAnchor": {
+        "x": 312,
+        "y": 507
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/bandage-soldier-move-1-generated.png",
+    "../../../../../../development/assets/desert-motions/bandage-soldier-move-2-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/bandage-soldier.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 739,
+          "height": 724
+        },
+        {
+          "x": 739,
+          "y": 0,
+          "width": 725,
+          "height": 724
+        },
+        {
+          "x": 1464,
+          "y": 0,
+          "width": 708,
+          "height": 724
+        }
+      ]
+    },
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 740,
+          "height": 724
+        },
+        {
+          "x": 740,
+          "y": 0,
+          "width": 698,
+          "height": 724
+        },
+        {
+          "x": 1438,
+          "y": 0,
+          "width": 734,
+          "height": 724
+        }
+      ]
+    }
+  ],
+  "walkCycle": {
+    "parts": 2,
+    "framesPerPart": 3,
+    "phases": [
+      "left-contact",
+      "right-pass",
+      "right-approach",
+      "right-contact",
+      "left-pass",
+      "left-approach"
+    ]
+  }
+}

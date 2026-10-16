@@ -1,0 +1,103 @@
+{
+  "id": "dragon-girl/attack",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "motion": "attack",
+  "label": "爪撃",
+  "effects": [
+    "claw-arc"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon-girl/attack-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "ドラゴンガール",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 87,
+        "top": 70,
+        "right": 678,
+        "bottom": 555
+      },
+      "sourceWidth": 698,
+      "sourceHeight": 589,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 211056,
+      "transparentFraction": 0.5133658622014876
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 19,
+        "top": 24,
+        "right": 615,
+        "bottom": 573
+      },
+      "sourceWidth": 657,
+      "sourceHeight": 589,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 169734,
+      "transparentFraction": 0.43861974866463554
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 21,
+        "top": 14,
+        "right": 726,
+        "bottom": 514
+      },
+      "sourceWidth": 750,
+      "sourceHeight": 571,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 214251,
+      "transparentFraction": 0.5002942206654991
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 23,
+        "top": 21,
+        "right": 578,
+        "bottom": 523
+      },
+      "sourceWidth": 605,
+      "sourceHeight": 571,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 145101,
+      "transparentFraction": 0.42002865785702914
+    }
+  ],
+  "reference": "../../../references/dragon-girl.png",
+  "originalSources": [
+    "../../../sources/dragon-girl/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

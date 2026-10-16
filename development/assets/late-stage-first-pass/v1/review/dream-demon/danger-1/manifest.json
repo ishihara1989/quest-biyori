@@ -1,0 +1,103 @@
+{
+  "id": "dream-demon/danger-1",
+  "enemy": "dream-demon",
+  "region": "demon-castle",
+  "motion": "danger-1",
+  "label": "眠りの月",
+  "effects": [
+    "sleep-moon"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/dream-demon/danger-1-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "夢魔",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 54,
+        "top": 9,
+        "right": 638,
+        "bottom": 579
+      },
+      "sourceWidth": 718,
+      "sourceHeight": 591,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 244365,
+      "transparentFraction": 0.5758734782178357
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 78,
+        "top": 2,
+        "right": 526,
+        "bottom": 575
+      },
+      "sourceWidth": 582,
+      "sourceHeight": 591,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 184254,
+      "transparentFraction": 0.5356812671167164
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 29,
+        "top": 24,
+        "right": 686,
+        "bottom": 579
+      },
+      "sourceWidth": 707,
+      "sourceHeight": 619,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 216916,
+      "transparentFraction": 0.4956573201746669
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 20,
+        "top": 10,
+        "right": 556,
+        "bottom": 577
+      },
+      "sourceWidth": 593,
+      "sourceHeight": 619,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 198611,
+      "transparentFraction": 0.541075607450411
+    }
+  ],
+  "reference": "../../../references/dream-demon.png",
+  "originalSources": [
+    "../../../sources/dream-demon/danger-1-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

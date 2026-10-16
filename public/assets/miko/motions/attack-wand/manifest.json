@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "miko",
+  "motion": "attack-wand",
+  "label": "棒・通常攻撃",
+  "facing": "right",
+  "sheet": "miko-attack-wand.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 540,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.262,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/miko/motions/attack-wand/source/miko-attack-wand-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-wand-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "棒を引く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 672,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 406,
+        "y": 655
+      },
+      "sourceBounds": {
+        "left": 101,
+        "top": 95,
+        "right": 553,
+        "bottom": 655
+      },
+      "bounds": {
+        "left": 80,
+        "top": 93,
+        "right": 198,
+        "bottom": 239
+      },
+      "visiblePixels": 9636,
+      "transparentPixels": 70620
+    },
+    {
+      "index": 1,
+      "file": "attack-wand-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 120,
+      "phase": "前へ振る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 672,
+        "y": 0,
+        "width": 829,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 381,
+        "y": 658
+      },
+      "sourceBounds": {
+        "left": 117,
+        "top": 155,
+        "right": 765,
+        "bottom": 658
+      },
+      "bounds": {
+        "left": 91,
+        "top": 108,
+        "right": 260,
+        "bottom": 239
+      },
+      "visiblePixels": 10618,
+      "transparentPixels": 68507
+    },
+    {
+      "index": 2,
+      "file": "attack-wand-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "振り抜く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1501,
+        "y": 0,
+        "width": 671,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 660
+      },
+      "sourceBounds": {
+        "left": 63,
+        "top": 160,
+        "right": 614,
+        "bottom": 660
+      },
+      "bounds": {
+        "left": 94,
+        "top": 108,
+        "right": 238,
+        "bottom": 239
+      },
+      "visiblePixels": 9608,
+      "transparentPixels": 70540
+    }
+  ]
+}

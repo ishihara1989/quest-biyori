@@ -1,0 +1,37 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "attack",
+    "label": "枝腕の攻撃",
+    "manifest": "attack/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "throw-fruit",
+    "label": "樹の実・投げ上げ",
+    "manifest": "throw-fruit/manifest.json"
+  },
+  {
+    "id": "root-bury",
+    "label": "根・地面へ差し込む",
+    "manifest": "root-bury/manifest.json"
+  }
+]

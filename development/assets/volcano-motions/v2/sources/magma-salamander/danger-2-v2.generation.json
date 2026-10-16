@@ -1,0 +1,23 @@
+{
+  "id": "magma-salamander/danger-2",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. マグマサラマンダー. Neck retracts RIGHT and DOWN slightly, dorsal fins and chest brighten; jaw releases LEFT with torso remaining low; neutral recovery. Four planted legs. Mouth emitter only; fan separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/magma-salamander/danger-2-v2.png",
+  "sha256": "0392c915c5103a6d1e94377188f3c81c598846258ade202c29ed3f713de7563f",
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "firstPass": "sources/magma-salamander/danger-2-generated.png",
+  "issues": [
+    "溜めで胸が大きく伸び、首を引く動きより上体を起こす動きが強い。基準体格と専用の首の軌道を合わせる。",
+    "広い火炎扇の発射点を口に合わせる。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/magma-salamander.png",
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

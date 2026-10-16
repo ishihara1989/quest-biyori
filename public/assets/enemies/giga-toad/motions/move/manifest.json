@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "enemy": "giga-toad",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "giga-toad-move.png",
+  "preview": "../../../../../../development/assets/enemies/giga-toad/motions/move/giga-toad-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/giga-toad/PROMPT.md",
+  "width": 1536,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 239
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/giga-toad/source/move-registered.png",
+  "sourceScale": 0.35470085470085466,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 150,
+      "phase": "開始",
+      "bounds": {
+        "left": 121,
+        "top": 118,
+        "right": 326,
+        "bottom": 239
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 633,
+        "height": 517
+      },
+      "sourceAnchor": {
+        "x": 304,
+        "y": 357
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 140,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 139,
+        "top": 50,
+        "right": 343,
+        "bottom": 221
+      },
+      "sourceCell": {
+        "x": 633,
+        "y": 0,
+        "width": 673,
+        "height": 517
+      },
+      "sourceAnchor": {
+        "x": 275,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -18
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 170,
+      "phase": "作用",
+      "bounds": {
+        "left": 135,
+        "top": 31,
+        "right": 354,
+        "bottom": 197
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 517,
+        "width": 653,
+        "height": 517
+      },
+      "sourceAnchor": {
+        "x": 266,
+        "y": 486
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -42
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 127,
+        "top": 117,
+        "right": 332,
+        "bottom": 239
+      },
+      "sourceCell": {
+        "x": 653,
+        "y": 517,
+        "width": 653,
+        "height": 517
+      },
+      "sourceAnchor": {
+        "x": 288,
+        "y": 361
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/giga-toad/source/move-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 2,
+      "count": 133700,
+      "left": 25,
+      "top": 221,
+      "right": 604,
+      "bottom": 562,
+      "cx": 326.3628272251309,
+      "cy": 402.5914285714286
+    },
+    {
+      "id": 1,
+      "count": 163694,
+      "left": 661,
+      "top": 89,
+      "right": 1238,
+      "bottom": 573,
+      "cx": 932.3334453309224,
+      "cy": 320.18844917956676
+    },
+    {
+      "id": 3,
+      "count": 151048,
+      "left": 24,
+      "top": 655,
+      "right": 644,
+      "bottom": 1125,
+      "cx": 314.86632063979664,
+      "cy": 860.0760950161538
+    },
+    {
+      "id": 4,
+      "count": 135382,
+      "left": 645,
+      "top": 849,
+      "right": 1224,
+      "bottom": 1194,
+      "cx": 934.7342852077825,
+      "cy": 1030.8587626124595
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

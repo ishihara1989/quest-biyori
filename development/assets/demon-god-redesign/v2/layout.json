@@ -1,0 +1,15 @@
+{
+  "sources": {
+    "danger-1": "danger-1-generated.png",
+    "reaction": "reaction-generated.png"
+  },
+  "frames": {
+    "attack": [
+      {"source": "attack-generated.png", "cell": 0},
+      {"source": "danger-1-generated.png", "cell": 0},
+      {"source": "attack-generated.png", "cell": 2},
+      {"source": "attack-generated.png", "cell": 3}
+    ]
+  },
+  "note": "拳撃の溜めは両拳を引く断界1コマ目を再利用し、構えから発動へ腕の所属が変わる初回2コマ目を除外する。断界は一方の腕による上段から下段の二打、もう一方は胸前で構える。交互の腕を狙った再生成は達成しなかったため選択しない。原画と不採用コマは保持。画像は切り出し・同じ原画内で統一した縮尺・位置合わせのみ。"
+}

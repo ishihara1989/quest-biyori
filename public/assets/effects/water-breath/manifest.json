@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "water-breath",
+  "label": "水流ブレス",
+  "sheet": "water-breath.png",
+  "preview": "../../../../development/assets/effects/water-breath/water-breath-preview.gif",
+  "prompt": "../../../../development/assets/effects/water-breath/PROMPT.md",
+  "width": 2304,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 562,
+    "y": 144
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/water-breath/source-generated.png",
+  "sourceScale": 0.48872180451127817,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "water-breath-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 296,
+        "top": 111,
+        "right": 562,
+        "bottom": 177
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 784,
+        "height": 400
+      },
+      "sourceAnchor": {
+        "x": 748,
+        "y": 227.5
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "water-breath-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 222,
+        "top": 85,
+        "right": 562,
+        "bottom": 203
+      },
+      "sourceCell": {
+        "x": 784,
+        "y": 0,
+        "width": 752,
+        "height": 400
+      },
+      "sourceAnchor": {
+        "x": 731,
+        "y": 229
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "water-breath-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 203,
+        "top": 14,
+        "right": 562,
+        "bottom": 273
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 400,
+        "width": 784,
+        "height": 624
+      },
+      "sourceAnchor": {
+        "x": 748,
+        "y": 316.5
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "water-breath-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 217,
+        "top": 46,
+        "right": 562,
+        "bottom": 242
+      },
+      "sourceCell": {
+        "x": 784,
+        "y": 400,
+        "width": 752,
+        "height": 624
+      },
+      "sourceAnchor": {
+        "x": 731,
+        "y": 343
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      784,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      400,
+      1024
+    ]
+  }
+}

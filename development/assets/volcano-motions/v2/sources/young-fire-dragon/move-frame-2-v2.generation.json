@@ -1,0 +1,30 @@
+{
+  "id": "young-fire-dragon/move-2",
+  "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 2 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (448,845), hip (417,633), knee (533,687); RF LIFTED SWING paw (355,813), hip (381,611), knee (475,700); LH LIFTED SWING paw (671,811), hip (699,610), knee (578,675); RH GROUND SUPPORT paw (681,801), hip (663,588), knee (569,691). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. Explicit contact pair: BRIGHT near FRONT paw under chest and DARK far REAR paw under belly rest flat on the ground. Explicit lifted pair: DARK far FRONT paw at far LEFT under chin and BRIGHT near REAR paw below right hip CLEARLY raised above their ground levels; bent knees, paws intact, no planted near rear foot. Head/torso fixed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/young-fire-dragon/move-frame-2-v2.png",
+  "sha256": "d31174fd80a9501b7d84fd5653a7c0a69e27867a4e6ef3cf3ba0a9529c9e589a",
+  "reference": "references/young-fire-dragon.png",
+  "guide": "guides/young-fire-dragon/frame-2.png",
+  "firstPass": "sources/young-fire-dragon/move-1-generated.png",
+  "issues": [
+    "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+    "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。",
+    "浮いた前足の爪が丸まり、前半から足首・足先の形が変わる。",
+    "6コマ目で口が開き、頭の表情と輪郭が変わる。6→1の体格・表情・支持足を確認する。",
+    "奥後脚が隠れるコマの接続、3→4の脚の所属を検収する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/young-fire-dragon.png",
+      "sha256": "a13d12a29ea3a0e80223d22a3e1c2e492a9a434845dbc11a1578f0296c4406c8"
+    },
+    {
+      "file": "guides/young-fire-dragon/frame-2.png",
+      "sha256": "fe23dd85aae7ff73c0ddd73ae4a58b40948a6a96d48dfb5c7ee22cb9008dd9ad"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

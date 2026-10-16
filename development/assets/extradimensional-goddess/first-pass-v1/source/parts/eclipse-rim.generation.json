@@ -1,0 +1,10 @@
+{
+  "id": "parts/eclipse-rim",
+  "source": "source/parts/eclipse-rim.png",
+  "sha256": "ccd96329eec6630e52130ebbbd4baa8c61f99805c1385aac769e02d6220149ae",
+  "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/eclipse-rim.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,256). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Background pulse overlay, quiet thin rim with radius 175, avoid attack-like filled glow.\nFrames:\n1. One thin cyan-pale-gold eclipse edge ring, transparent inside and outside, no opaque sky.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+  "transparent_background": true,
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-a99168e1-8049-4a4e-9728-4530bb7f68ed.png",
+  "references": [],
+  "attempt": 1
+}

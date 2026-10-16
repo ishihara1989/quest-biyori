@@ -1,0 +1,301 @@
+{
+  "id": "magma-salamander/move",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "label": "移動",
+  "kind": null,
+  "motion": "move",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/magma-salamander.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-1-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-2-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-3-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-4-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-5-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-6-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8851585388183594,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 145,
+        "top": 117,
+        "right": 432,
+        "bottom": 383
+      },
+      "visibleBounds": {
+        "left": 147,
+        "top": 167,
+        "right": 426,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1358,
+        "height": 1158
+      },
+      "sourceScale": 0.2594995366079703,
+      "sourceAnchor": {
+        "x": 792,
+        "y": 944
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8941116333007812,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 132,
+        "top": 169,
+        "right": 412,
+        "bottom": 379
+      },
+      "visibleBounds": {
+        "left": 147,
+        "top": 170,
+        "right": 411,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1358,
+        "height": 1158
+      },
+      "sourceScale": 0.2401372212692967,
+      "sourceAnchor": {
+        "x": 820.0142857142857,
+        "y": 966
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8766708374023438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 106,
+        "top": 115,
+        "right": 432,
+        "bottom": 385
+      },
+      "visibleBounds": {
+        "left": 146,
+        "top": 167,
+        "right": 431,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-3-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1358,
+        "height": 1158
+      },
+      "sourceScale": 0.24866343404202412,
+      "sourceAnchor": {
+        "x": 779.9267142857143,
+        "y": 949
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8724212646484375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 112,
+        "top": 105,
+        "right": 444,
+        "bottom": 385
+      },
+      "visibleBounds": {
+        "left": 148,
+        "top": 162,
+        "right": 442,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-4-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1358,
+        "height": 1158
+      },
+      "sourceScale": 0.25945144551519644,
+      "sourceAnchor": {
+        "x": 747.6171428571429,
+        "y": 949
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8767776489257812,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 107,
+        "top": 103,
+        "right": 434,
+        "bottom": 379
+      },
+      "visibleBounds": {
+        "left": 144,
+        "top": 163,
+        "right": 429,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-5-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1358,
+        "height": 1158
+      },
+      "sourceScale": 0.2493143854400399,
+      "sourceAnchor": {
+        "x": 775.8497142857143,
+        "y": 964
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2048,
+      "y": 0,
+      "index": 4
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8851242065429688,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 116,
+        "top": 102,
+        "right": 423,
+        "bottom": 369
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 165,
+        "right": 422,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/move-frame-6-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1358,
+        "height": 1158
+      },
+      "sourceScale": 0.2394021785598249,
+      "sourceAnchor": {
+        "x": 808.3997142857143,
+        "y": 1004
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2560,
+      "y": 0,
+      "index": 5
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "walkCycle": {
+    "gait": "trot",
+    "nearLeg": "left",
+    "farLeg": "right",
+    "swingPairs": [
+      "A",
+      "A",
+      "B",
+      "B",
+      "B",
+      "A"
+    ]
+  },
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/magma-salamander/move/preview.gif",
+  "action": null
+}

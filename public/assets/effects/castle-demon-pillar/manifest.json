@@ -1,0 +1,186 @@
+{
+  "id": "castle-demon-pillar",
+  "label": "単独の魔柱",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "ground",
+  "origin": "first-pass",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 80,
+      "phase": "発生",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-pillar-generated.png",
+      "sourceSha256": "0bd4284a91070cb6428383c2b0f658d0ac89fd0509035365a3c7b835ef6f4372",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 616,
+        "height": 551
+      },
+      "sourceAnchor": [
+        338,
+        503.2
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "ce67c8316f4e3e22d36215c81233ce8b82f2534a5803802a8e029c9ac9f1c174",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9274864196777344,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 98,
+        "top": 168,
+        "right": 395,
+        "bottom": 434
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "phase": "展開",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-pillar-generated.png",
+      "sourceSha256": "0bd4284a91070cb6428383c2b0f658d0ac89fd0509035365a3c7b835ef6f4372",
+      "sourceRect": {
+        "left": 616,
+        "top": 0,
+        "width": 696,
+        "height": 551
+      },
+      "sourceAnchor": [
+        365.5,
+        505.81
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "805ec23bec148c172f8d6c12ad53b02caf620c7f0fe5bbc1e4eb4aca3a451aaa",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8464813232421875,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 86,
+        "top": 160,
+        "right": 413,
+        "bottom": 433
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "最大",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-pillar-generated.png",
+      "sourceSha256": "0bd4284a91070cb6428383c2b0f658d0ac89fd0509035365a3c7b835ef6f4372",
+      "sourceRect": {
+        "left": 0,
+        "top": 551,
+        "width": 700,
+        "height": 648
+      },
+      "sourceAnchor": [
+        353,
+        594.52
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "4a5bb13474e066e7681ac025f1d084eaacd6145778bfabcf5e22f21f7f486b56",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.7466316223144531,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 88,
+        "top": 113,
+        "right": 430,
+        "bottom": 437
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "収束",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/demon-pillar-generated.png",
+      "sourceSha256": "0bd4284a91070cb6428383c2b0f658d0ac89fd0509035365a3c7b835ef6f4372",
+      "sourceRect": {
+        "left": 700,
+        "top": 551,
+        "width": 612,
+        "height": 648
+      },
+      "sourceAnchor": [
+        298.5,
+        601.17
+      ],
+      "scale": 0.5,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "b71434f5937c1a4a4ef208ee263c1559fb03eb016401072807cd113c0d77dd84",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8421363830566406,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 107,
+        "top": 109,
+        "right": 410,
+        "bottom": 433
+      }
+    }
+  ],
+  "fingerprint": "e1c478c273ce761145f3da37ac7b76aa8d4561ed9da0e6d5984749f99b4df2a6",
+  "events": [],
+  "pivot": {
+    "x": 256,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 520,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/demon-pillar/manifest.json",
+  "sourceFingerprint": "e1c478c273ce761145f3da37ac7b76aa8d4561ed9da0e6d5984749f99b4df2a6",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

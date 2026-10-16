@@ -1,0 +1,48 @@
+{
+  "source": "source/ninja-backward-generated-v11.png",
+  "columns": 4,
+  "rows": 2,
+  "rowSplit": 444,
+  "frames": [
+    {
+      "anchor": {
+        "x": 244
+      }
+    },
+    {
+      "anchor": {
+        "x": 247
+      }
+    },
+    {
+      "anchor": {
+        "x": 247
+      }
+    },
+    {
+      "anchor": {
+        "x": 245
+      }
+    },
+    {
+      "anchor": {
+        "x": 244
+      }
+    },
+    {
+      "anchor": {
+        "x": 247
+      }
+    },
+    {
+      "anchor": {
+        "x": 247
+      }
+    },
+    {
+      "anchor": {
+        "x": 245
+      }
+    }
+  ]
+}

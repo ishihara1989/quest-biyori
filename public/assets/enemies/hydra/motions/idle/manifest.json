@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hydra",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "hydra-idle.png",
+  "preview": "../../../../../../development/assets/enemies/hydra/motions/idle/hydra-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hydra/PROMPT.md",
+  "width": 2816,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/hydra/source/idle-registered.png",
+  "sourceScale": 0.659919028340081,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 114,
+        "top": 106,
+        "right": 577,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 749,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 462,
+        "y": 509
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 155,
+        "top": 106,
+        "right": 635,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 749,
+        "y": 0,
+        "width": 773,
+        "height": 528
+      },
+      "sourceAnchor": {
+        "x": 412,
+        "y": 508
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 113,
+        "top": 103,
+        "right": 571,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 528,
+        "width": 745,
+        "height": 532
+      },
+      "sourceAnchor": {
+        "x": 463,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "終端",
+      "bounds": {
+        "left": 109,
+        "top": 103,
+        "right": 581,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 745,
+        "y": 528,
+        "width": 777,
+        "height": 532
+      },
+      "sourceAnchor": {
+        "x": 488,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/hydra/source/idle-facing-left-generated-v2.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 163692,
+      "left": 49,
+      "top": 8,
+      "right": 752,
+      "bottom": 501,
+      "cx": 388.7757068152384,
+      "cy": 303.0748295579503
+    },
+    {
+      "id": 2,
+      "count": 168220,
+      "left": 773,
+      "top": 9,
+      "right": 1501,
+      "bottom": 501,
+      "cx": 1126.0686244204019,
+      "cy": 306.15584353822373
+    },
+    {
+      "id": 36,
+      "count": 166448,
+      "left": 56,
+      "top": 515,
+      "right": 751,
+      "bottom": 1012,
+      "cx": 414.1369196385658,
+      "cy": 806.5787573296165
+    },
+    {
+      "id": 37,
+      "count": 169372,
+      "left": 790,
+      "top": 515,
+      "right": 1508,
+      "bottom": 1012,
+      "cx": 1135.8469640790686,
+      "cy": 812.7915712160216
+    }
+  ],
+  "anatomyRevision": {
+    "heads": 5,
+    "facing": "left",
+    "prompt": "../../source/idle-facing-left-generated-v2-prompt.txt",
+    "previousSource": "../../../../../../development/assets/enemies/hydra/source/idle-generated.png"
+  },
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

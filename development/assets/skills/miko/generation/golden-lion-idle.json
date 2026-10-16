@@ -1,0 +1,11 @@
+{
+  "id": "golden-lion-idle",
+  "source": "development/assets/skills/miko/source/golden-lion-idle-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-083d1021-9b5e-414b-8d56-eccdfd2d6c92.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Create exactly 3 frames in ONE horizontal row of equally sized square cells. Subject: ONE ivory/gold sacred lion, thick golden shimenawa-like mane with vermilion knot, amber eyes, TWO round ears, FOUR paws, ONE tail, white muzzle and gold claws. ONE creature per cell, facing RIGHT, no effects baked into body. Position: head (.65,.38), mane (.58,.42), four paws on .82. Idle loop: 1 exhale/relaxed; 2 chest/head rise one logical pixel and wings/tail lift two; 3 ease halfway back. Feet stay planted for ground creatures, hover center stays fixed for flying.",
+  "refs": [],
+  "receivedAt": "2026-10-10T14:00:12.353Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

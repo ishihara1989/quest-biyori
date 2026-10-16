@@ -1,0 +1,133 @@
+{
+  "id": "demon-armored-soldier/idle",
+  "label": "魔鎧兵・待機",
+  "enemy": "demon-armored-soldier",
+  "motion": "idle",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "剣先と盾の左右位置がコマ間で動く。手元の呼吸と剣・盾の位置を合わせて検収する。",
+    "下段で体格と接地点が変わるため、基準位置合わせが必要。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "待機1",
+      "source": "../../../../../late-stage-first-pass/v1/sources/demon-armored-soldier/idle-generated.png",
+      "sourceSha256": "3644fd51b0d77b775322be186c2eb8b4d4be4e636778455b7d9da29d81b0926d",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 643,
+        "height": 583
+      },
+      "sourceAnchor": [
+        396,
+        568
+      ],
+      "scale": 0.4612546125461255,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "ef3862f5c20d1c6d895fbb310eb76423853a2a9a64e693024ee0977606806450",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8747749328613281
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "待機2",
+      "source": "../../../../../late-stage-first-pass/v1/sources/demon-armored-soldier/idle-generated.png",
+      "sourceSha256": "3644fd51b0d77b775322be186c2eb8b4d4be4e636778455b7d9da29d81b0926d",
+      "sourceRect": {
+        "left": 643,
+        "top": 0,
+        "width": 687,
+        "height": 583
+      },
+      "sourceAnchor": [
+        388,
+        567
+      ],
+      "scale": 0.4612546125461255,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "9ba14562df9aa320495ce0a55a4615f735d4d309bb2680574226062c450bd2f1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8689689636230469
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "待機3",
+      "source": "../../../../../late-stage-first-pass/v1/sources/demon-armored-soldier/idle-generated.png",
+      "sourceSha256": "3644fd51b0d77b775322be186c2eb8b4d4be4e636778455b7d9da29d81b0926d",
+      "sourceRect": {
+        "left": 0,
+        "top": 583,
+        "width": 646,
+        "height": 600
+      },
+      "sourceAnchor": [
+        398,
+        554
+      ],
+      "scale": 0.4612546125461255,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "04bbc7ced01c129f888c9b8d778d9ca8303da1b004b1362c6930501ecf39caac",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8731613159179688
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "待機4",
+      "source": "../../../../../late-stage-first-pass/v1/sources/demon-armored-soldier/idle-generated.png",
+      "sourceSha256": "3644fd51b0d77b775322be186c2eb8b4d4be4e636778455b7d9da29d81b0926d",
+      "sourceRect": {
+        "left": 646,
+        "top": 583,
+        "width": 684,
+        "height": 600
+      },
+      "sourceAnchor": [
+        388,
+        555
+      ],
+      "scale": 0.4612546125461255,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c58eb1bfd84481b2e71de1c48c65cfa55a556db2a8ac6be18277103b49d8c9e9",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.869049072265625
+    }
+  ],
+  "fingerprint": "5bf44b61023d114792c85e716c4938bed20af988e7c022718d5fbc9e7cad6864",
+  "events": [],
+  "effects": []
+}

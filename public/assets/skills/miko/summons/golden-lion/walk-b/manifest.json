@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "golden-lion-walk-b",
+  "character": "miko",
+  "subject": "golden-lion",
+  "group": "summon",
+  "motion": "walk-b",
+  "sheet": "golden-lion-walk-b.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 330,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.08005718370264475,
+  "frames": [
+    {
+      "index": 0,
+      "file": "golden-lion-walk-b-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-b",
+      "bounds": {
+        "l": 31,
+        "t": 56,
+        "r": 107,
+        "b": 116,
+        "n": 3219,
+        "width": 77,
+        "height": 61
+      }
+    },
+    {
+      "index": 1,
+      "file": "golden-lion-walk-b-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-b",
+      "bounds": {
+        "l": 44,
+        "t": 53,
+        "r": 115,
+        "b": 116,
+        "n": 3050,
+        "width": 72,
+        "height": 64
+      }
+    },
+    {
+      "index": 2,
+      "file": "golden-lion-walk-b-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 110,
+      "phase": "walk-b",
+      "bounds": {
+        "l": 26,
+        "t": 56,
+        "r": 99,
+        "b": 116,
+        "n": 3106,
+        "width": 74,
+        "height": 61
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/golden-lion-walk-b-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/golden-lion-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

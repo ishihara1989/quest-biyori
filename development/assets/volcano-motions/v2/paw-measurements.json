@@ -1,0 +1,569 @@
+{
+  "date": "2026-10-15 JST",
+  "coordinateSpace": "Actual exported 512x512 PNG pixels; independent from planning guides",
+  "method": "Manual paw-bottom positions from final 20px grid crops. Trace hip/thigh/knee/ankle/paw separately from trajectory.",
+  "uncertaintyPx": 8,
+  "accepted": true,
+  "records": [
+    {
+      "enemy": "lava-salamander",
+      "fingerprint": "bf4a5c6e55a05208ff5731b0125ae910742c0798ed6b99c9cde673f7ad7d1f11",
+      "guide": "guides/lava-salamander/coordinates.json",
+      "frames": [
+        {
+          "frame": 1,
+          "points": {
+            "LF": [
+              220,
+              337
+            ],
+            "RF": [
+              179,
+              311
+            ],
+            "LH": [
+              316,
+              328
+            ],
+            "RH": [
+              269,
+              329
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 2,
+          "points": {
+            "LF": [
+              231,
+              337
+            ],
+            "RF": [
+              182,
+              318
+            ],
+            "LH": [
+              321,
+              325
+            ],
+            "RH": [
+              290,
+              327
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 3,
+          "points": {
+            "LF": [
+              238,
+              320
+            ],
+            "RF": [
+              180,
+              330
+            ],
+            "LH": [
+              334,
+              337
+            ],
+            "RH": [
+              280,
+              320
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 4,
+          "points": {
+            "LF": [
+              225,
+              324
+            ],
+            "RF": [
+              180,
+              336
+            ],
+            "LH": [
+              338,
+              337
+            ],
+            "RH": [
+              269,
+              322
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 5,
+          "points": {
+            "LF": [
+              237,
+              320
+            ],
+            "RF": [
+              181,
+              334
+            ],
+            "LH": [
+              333,
+              337
+            ],
+            "RH": [
+              275,
+              323
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 6,
+          "points": {
+            "LF": [
+              223,
+              337
+            ],
+            "RF": [
+              188,
+              303
+            ],
+            "LH": [
+              329,
+              320
+            ],
+            "RH": [
+              281,
+              332
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        }
+      ],
+      "review": "All four connected limbs traced; no extra feet; near/far perspective retained. Pairs alternate; planted paws and end-of-swing contacts reviewed at 3→4 and 6→1. Whole-image alignment only."
+    },
+    {
+      "enemy": "young-fire-dragon",
+      "fingerprint": "ea5747765aeeb7b207867ed3bf4cb9437b2b4297300b521c7e4a099f2af66e1b",
+      "guide": "guides/young-fire-dragon/coordinates.json",
+      "frames": [
+        {
+          "frame": 1,
+          "points": {
+            "LF": [
+              223,
+              337
+            ],
+            "RF": [
+              178,
+              312
+            ],
+            "LH": [
+              328,
+              321
+            ],
+            "RH": [
+              271,
+              327
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 2,
+          "points": {
+            "LF": [
+              235,
+              338
+            ],
+            "RF": [
+              192,
+              303
+            ],
+            "LH": [
+              331,
+              320
+            ],
+            "RH": [
+              282,
+              326
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 3,
+          "points": {
+            "LF": [
+              236,
+              333
+            ],
+            "RF": [
+              191,
+              325
+            ],
+            "LH": [
+              338,
+              337
+            ],
+            "RH": [
+              286,
+              319
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 4,
+          "points": {
+            "LF": [
+              219,
+              322
+            ],
+            "RF": [
+              178,
+              334
+            ],
+            "LH": [
+              333,
+              337
+            ],
+            "RH": [
+              269,
+              320
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 5,
+          "points": {
+            "LF": [
+              235,
+              319
+            ],
+            "RF": [
+              185,
+              333
+            ],
+            "LH": [
+              343,
+              337
+            ],
+            "RH": [
+              274,
+              321
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 6,
+          "points": {
+            "LF": [
+              221,
+              337
+            ],
+            "RF": [
+              177,
+              307
+            ],
+            "LH": [
+              328,
+              328
+            ],
+            "RH": [
+              280,
+              331
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        }
+      ],
+      "review": "All four connected limbs traced; no extra feet; near/far perspective retained. Pairs alternate; planted paws and end-of-swing contacts reviewed at 3→4 and 6→1. Whole-image alignment only."
+    },
+    {
+      "enemy": "magma-salamander",
+      "fingerprint": "4e3d6e4ad60905ec9f49b03a6ed40f02dc921acfab382089c6e0d9253061312c",
+      "guide": "guides/magma-salamander/coordinates.json",
+      "frames": [
+        {
+          "frame": 1,
+          "points": {
+            "LF": [
+              229,
+              337
+            ],
+            "RF": [
+              175,
+              315
+            ],
+            "LH": [
+              340,
+              316
+            ],
+            "RH": [
+              289,
+              327
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 2,
+          "points": {
+            "LF": [
+              238,
+              337
+            ],
+            "RF": [
+              190,
+              301
+            ],
+            "LH": [
+              332,
+              320
+            ],
+            "RH": [
+              286,
+              327
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 3,
+          "points": {
+            "LF": [
+              235,
+              314
+            ],
+            "RF": [
+              181,
+              330
+            ],
+            "LH": [
+              344,
+              337
+            ],
+            "RH": [
+              289,
+              322
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 4,
+          "points": {
+            "LF": [
+              209,
+              318
+            ],
+            "RF": [
+              174,
+              329
+            ],
+            "LH": [
+              339,
+              337
+            ],
+            "RH": [
+              291,
+              321
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 5,
+          "points": {
+            "LF": [
+              229,
+              317
+            ],
+            "RF": [
+              182,
+              329
+            ],
+            "LH": [
+              337,
+              337
+            ],
+            "RH": [
+              285,
+              323
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 6,
+          "points": {
+            "LF": [
+              219,
+              337
+            ],
+            "RF": [
+              171,
+              312
+            ],
+            "LH": [
+              337,
+              326
+            ],
+            "RH": [
+              286,
+              327
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        }
+      ],
+      "review": "All four connected limbs traced; no extra feet; near/far perspective retained. Pairs alternate; planted paws and end-of-swing contacts reviewed at 3→4 and 6→1. Whole-image alignment only."
+    },
+    {
+      "enemy": "dragon",
+      "fingerprint": "d4e4bc413411dd1c1a4f9124740c7a18ba60d52098b4af26a40a356ab2449763",
+      "guide": "guides/dragon/coordinates.json",
+      "frames": [
+        {
+          "frame": 1,
+          "points": {
+            "LF": [
+              231,
+              337
+            ],
+            "RF": [
+              191,
+              309
+            ],
+            "LH": [
+              327,
+              316
+            ],
+            "RH": [
+              282,
+              326
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 2,
+          "points": {
+            "LF": [
+              233,
+              337
+            ],
+            "RF": [
+              192,
+              308
+            ],
+            "LH": [
+              327,
+              315
+            ],
+            "RH": [
+              285,
+              330
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        },
+        {
+          "frame": 3,
+          "points": {
+            "LF": [
+              240,
+              318
+            ],
+            "RF": [
+              194,
+              331
+            ],
+            "LH": [
+              336,
+              337
+            ],
+            "RH": [
+              281,
+              320
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 4,
+          "points": {
+            "LF": [
+              241,
+              324
+            ],
+            "RF": [
+              193,
+              332
+            ],
+            "LH": [
+              345,
+              337
+            ],
+            "RH": [
+              283,
+              322
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 5,
+          "points": {
+            "LF": [
+              229,
+              324
+            ],
+            "RF": [
+              189,
+              328
+            ],
+            "LH": [
+              336,
+              338
+            ],
+            "RH": [
+              292,
+              327
+            ]
+          },
+          "plannedSwingPair": "B (LF+RH)"
+        },
+        {
+          "frame": 6,
+          "points": {
+            "LF": [
+              232,
+              337
+            ],
+            "RF": [
+              190,
+              311
+            ],
+            "LH": [
+              337,
+              319
+            ],
+            "RH": [
+              287,
+              333
+            ]
+          },
+          "plannedSwingPair": "A (LH+RF)"
+        }
+      ],
+      "review": "All four connected limbs traced; no extra feet; near/far perspective retained. Pairs alternate; planted paws and end-of-swing contacts reviewed at 3→4 and 6→1. Whole-image alignment only."
+    }
+  ]
+}

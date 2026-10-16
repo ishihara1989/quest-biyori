@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "effect": "desert-sand-burst",
+  "label": "砂の衝撃",
+  "sheet": "desert-sand-burst.png",
+  "preview": "../../../../development/assets/effects/desert-sand-burst/desert-sand-burst-preview.gif",
+  "prompt": "../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1680,
+  "height": 300,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 420,
+  "frameHeight": 300,
+  "frameCount": 4,
+  "pivot": {
+    "x": 210,
+    "y": 278
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 650,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/desert-sand-burst/source-registered.png",
+  "sourceScale": 0.43015521064301554,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "desert-sand-burst-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 300,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 149,
+        "top": 173,
+        "right": 310,
+        "bottom": 264
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 934,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 378,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "desert-sand-burst-02.png",
+      "x": 420,
+      "y": 0,
+      "width": 420,
+      "height": 300,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 92,
+        "top": 90,
+        "right": 316,
+        "bottom": 269
+      },
+      "sourceCell": {
+        "x": 934,
+        "y": 0,
+        "width": 934,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 419,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "desert-sand-burst-03.png",
+      "x": 840,
+      "y": 0,
+      "width": 420,
+      "height": 300,
+      "durationMs": 230,
+      "phase": "最大",
+      "bounds": {
+        "left": 37,
+        "top": 56,
+        "right": 402,
+        "bottom": 255
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 569,
+        "width": 934,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 467,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "desert-sand-burst-04.png",
+      "x": 1260,
+      "y": 0,
+      "width": 420,
+      "height": 300,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 74,
+        "top": 91,
+        "right": 326,
+        "bottom": 255
+      },
+      "sourceCell": {
+        "x": 934,
+        "y": 569,
+        "width": 934,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 333,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../development/assets/desert-motions/desert-sand-burst-generated.png"
+}

@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-troll",
+  "motion": "stomp",
+  "facing": "left",
+  "label": "地震",
+  "sheet": "cave-troll-stomp.png",
+  "preview": "../../../../../../development/assets/enemies/cave-troll/motions/stomp/cave-troll-stomp-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-troll/PROMPT.md",
+  "width": 2816,
+  "height": 512,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/cave-troll/source/stomp-registered.png",
+  "sourceScale": 0.7075471698113207,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "cave-troll-stomp-quake",
+      "type": "spawn-effect",
+      "effect": "cave-quake",
+      "frame": 2,
+      "timeMs": 500,
+      "power": 1.3
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "stomp-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 240,
+      "phase": "開始",
+      "bounds": {
+        "left": 76,
+        "top": 196,
+        "right": 485,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 676,
+        "height": 486
+      },
+      "sourceAnchor": {
+        "x": 486,
+        "y": 439
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "stomp-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 260,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 58,
+        "top": 175,
+        "right": 502,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 0,
+        "width": 676,
+        "height": 486
+      },
+      "sourceAnchor": {
+        "x": 511,
+        "y": 469
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "stomp-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 260,
+      "phase": "作用",
+      "bounds": {
+        "left": 39,
+        "top": 217,
+        "right": 493,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 486,
+        "width": 676,
+        "height": 486
+      },
+      "sourceAnchor": {
+        "x": 538,
+        "y": 409
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "stomp-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 76,
+        "top": 199,
+        "right": 492,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 486,
+        "width": 676,
+        "height": 486
+      },
+      "sourceAnchor": {
+        "x": 486,
+        "y": 434
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-troll/source/stomp-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 123141,
+        "left": 70,
+        "top": 71,
+        "right": 649,
+        "bottom": 494,
+        "cx": 416.57778481578026,
+        "cy": 291.10365353537816
+      },
+      {
+        "id": 1,
+        "count": 128931,
+        "left": 814,
+        "top": 41,
+        "right": 1442,
+        "bottom": 494,
+        "cx": 1185.597335008648,
+        "cy": 267.6402028992252
+      },
+      {
+        "id": 13,
+        "count": 128294,
+        "left": 64,
+        "top": 573,
+        "right": 707,
+        "bottom": 966,
+        "cx": 435.5529876689479,
+        "cy": 769.9782920479523
+      },
+      {
+        "id": 12,
+        "count": 123199,
+        "left": 819,
+        "top": 554,
+        "right": 1408,
+        "bottom": 972,
+        "cx": 1168.013961152282,
+        "cy": 773.1903262201804
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 495
+    },
+    "origin": {
+      "x": 294,
+      "y": 345
+    },
+    "assets": [
+      {
+        "id": "cave-quake",
+        "manifest": "../../../../effects/cave-quake/manifest.json"
+      }
+    ]
+  }
+}

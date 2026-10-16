@@ -1,0 +1,20 @@
+[
+  {
+    "enemy": "storm-jackal",
+    "frame": 2,
+    "prompt": "Edit this EXACT image in place, transparent 1254x1254 canvas. Change ONLY the TWO REAR LEGS below the haunch. Preserve both front legs, head, mane, horns, torso, tail, exact colors, body position and scale. Currently the BRIGHT BLUE near hind paw at about (800,1170) is down and the DARK far hind paw at about (660,1060) is up: this is wrong. Swap ONLY their lift/contact: raise the bright BLUE near hind paw to (790,1070), bend its knee naturally; lower the dark far hind paw to (685,1150), extending its connected shin behind the bright haunch. Leave the paw X positions almost unchanged, stride short. Keep their own gold anklets and exact four legs. The bright NEAR FRONT paw remains down; DARK FAR FRONT remains curled up. Final TROT diagonal support: bright near front + dark far hind DOWN; dark far front + bright near hind UP. This correction is rear-leg contact only, do not alter the accepted front legs or body. No extra fifth paw, all ankles continuously connect to knees/hips. No guide, shadows or opaque background.",
+    "source": "trot/storm-jackal/sources/frame-2-contact.png",
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13090-86c2-7f71-8c3e-886a539df52e\\exec-c3b30299-ad57-42a1-99ee-075ddb5e8e40.png",
+    "status": "superseded",
+    "selectionReason": "Retained intermediate source; selected revision corrects contact, excessive far-leg reach, or clipped tail tips."
+  },
+  {
+    "enemy": "storm-jackal",
+    "frame": 3,
+    "prompt": "Edit this EXACT sprite in place, transparent 1254x1254 canvas. Change ONLY the TWO FRONT LEGS below the shoulders. Preserve both rear legs, face, horns, mane, body, tail, colors and pixel texture, same size/location. The bright BLUE near front leg with the gold cuff, at approximately x380, currently has its paw DOWN at y1200: this is wrong. Curl this near FRONT paw UP to approximately (385,1080), still connected to its big bright shoulder via a bent knee/shin. The small DARK FAR FRONT leg, currently curled UP at x240,y1080, must extend down with paw bottom at (260,1170). Its thigh/shin stay behind the bright near foreleg. Do not delete its foot or create a fifth. Rear legs must remain EXACTLY unchanged: bright near hind grounded, dark far hind lifted. Final diagonal support: DARK FAR FRONT + BRIGHT NEAR HIND DOWN, BRIGHT NEAR FRONT + DARK FAR HIND UP. Change front-leg CONTACT HEIGHT only, small X corrections specified; no full-body redraw, no attack pose. All four anatomical legs continuous, true alpha, no shadow/floor/diagram.",
+    "source": "trot/storm-jackal/sources/frame-3-contact.png",
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13090-86c2-7f71-8c3e-886a539df52e\\exec-4ee01fbd-e4c2-4de6-8e83-333196744bc7.png",
+    "status": "superseded",
+    "selectionReason": "Retained intermediate source; selected revision corrects contact, excessive far-leg reach, or clipped tail tips."
+  }
+]

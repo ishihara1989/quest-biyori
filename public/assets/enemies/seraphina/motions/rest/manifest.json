@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "seraphina",
+  "motion": "rest",
+  "facing": "left",
+  "label": "魔導再調整",
+  "sheet": "seraphina-rest.png",
+  "preview": "../../../../../../development/assets/enemies/seraphina/motions/rest/seraphina-rest-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/seraphina/PROMPT.md",
+  "width": 2048,
+  "height": 432,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 512,
+  "frameHeight": 432,
+  "frameCount": 4,
+  "pivot": {
+    "x": 297,
+    "y": 414
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1520,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/seraphina/source/rest-registered.png",
+  "sourceScale": 0.445993031358885,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "seraphina-rest-1-0",
+      "type": "spawn-effect",
+      "effect": "ruins-recharge",
+      "frame": 1,
+      "timeMs": 340,
+      "durationMs": 1100,
+      "placement": "origin"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "rest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 340,
+      "phase": "開始",
+      "bounds": {
+        "left": 209,
+        "top": 159,
+        "right": 413,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 732,
+        "height": 630
+      },
+      "sourceAnchor": {
+        "x": 357,
+        "y": 591
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "rest-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 420,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 200,
+        "top": 175,
+        "right": 405,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 732,
+        "y": 0,
+        "width": 732,
+        "height": 630
+      },
+      "sourceAnchor": {
+        "x": 323,
+        "y": 590
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "rest-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 420,
+      "phase": "作用",
+      "bounds": {
+        "left": 207,
+        "top": 165,
+        "right": 402,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 630,
+        "width": 732,
+        "height": 630
+      },
+      "sourceAnchor": {
+        "x": 388,
+        "y": 591
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "rest-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 340,
+      "phase": "復帰",
+      "bounds": {
+        "left": 204,
+        "top": 160,
+        "right": 413,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 732,
+        "y": 630,
+        "width": 732,
+        "height": 630
+      },
+      "sourceAnchor": {
+        "x": 317,
+        "y": 595
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/seraphina/source/rest-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/seraphina/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1329,
+      "height": 1183,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 692,
+          "height": 585
+        },
+        {
+          "x": 692,
+          "y": 0,
+          "width": 637,
+          "height": 585
+        },
+        {
+          "x": 0,
+          "y": 585,
+          "width": 700,
+          "height": 598
+        },
+        {
+          "x": 700,
+          "y": 585,
+          "width": 629,
+          "height": 598
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 115,
+      "y": 414
+    },
+    "origin": {
+      "x": 233,
+      "y": 291.12
+    },
+    "assets": [
+      {
+        "id": "ruins-recharge",
+        "manifest": "../../../../effects/ruins-recharge/manifest.json"
+      }
+    ]
+  }
+}

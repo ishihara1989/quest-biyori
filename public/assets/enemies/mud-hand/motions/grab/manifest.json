@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "enemy": "mud-hand",
+  "motion": "grab",
+  "facing": "left",
+  "label": "掴む",
+  "sheet": "mud-hand-grab.png",
+  "preview": "../../../../../../development/assets/enemies/mud-hand/motions/grab/mud-hand-grab-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/mud-hand/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 780,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 2200
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/mud-hand/source/grab-registered.png",
+  "sourceScale": 0.36007827788649704,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "mud-hand-grab-2",
+      "type": "apply-status",
+      "effect": "mud-bind",
+      "frame": 2,
+      "timeMs": 340,
+      "status": "root",
+      "durationMs": 2200,
+      "range": 125
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "grab-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "待機から",
+      "bounds": {
+        "left": 60,
+        "top": 88,
+        "right": 292,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 616,
+        "height": 541
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/mud-hand/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "grab-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 35,
+        "top": 109,
+        "right": 284,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 660,
+        "y": 0,
+        "width": 794,
+        "height": 543
+      },
+      "sourceAnchor": {
+        "x": 607,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "grab-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 106,
+        "top": 103,
+        "right": 288,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 543,
+        "width": 641,
+        "height": 543
+      },
+      "sourceAnchor": {
+        "x": 343,
+        "y": 484
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "grab-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 260,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 60,
+        "top": 88,
+        "right": 292,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 616,
+        "height": 541
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/mud-hand/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/mud-hand/source/grab-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 135054,
+      "left": 61,
+      "top": 76,
+      "right": 621,
+      "bottom": 586,
+      "cx": 336.82252284271476,
+      "cy": 330.7486486886727
+    },
+    {
+      "id": 2,
+      "count": 136080,
+      "left": 545,
+      "top": 135,
+      "right": 1239,
+      "bottom": 585,
+      "cx": 898.6291519694297,
+      "cy": 361.4592886537331
+    },
+    {
+      "id": 4,
+      "count": 122186,
+      "left": 128,
+      "top": 719,
+      "right": 636,
+      "bottom": 1187,
+      "cx": 372.2080598431899,
+      "cy": 954.8485669389291
+    },
+    {
+      "id": 3,
+      "count": 134279,
+      "left": 687,
+      "top": 682,
+      "right": 1243,
+      "bottom": 1187,
+      "cx": 962.7573931888084,
+      "cy": 934.8383217033193
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 180,
+    "defaultZoom": 1,
+    "target": {
+      "x": 306,
+      "y": 271
+    },
+    "assets": [
+      {
+        "id": "mud-bind",
+        "manifest": "../../../../effects/mud-bind/manifest.json"
+      }
+    ],
+    "origin": {
+      "x": 153.07999999999998,
+      "y": 175.32
+    },
+    "targetRange": 162
+  }
+}

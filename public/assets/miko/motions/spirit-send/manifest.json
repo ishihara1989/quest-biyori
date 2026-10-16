@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "id": "spirit-send",
+  "character": "miko",
+  "subject": "spirit-send",
+  "group": "miko",
+  "motion": "motion",
+  "sheet": "spirit-send-motion.png",
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 330,
+  "loop": false,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.218,
+  "frames": [
+    {
+      "index": 0,
+      "file": "spirit-send-motion-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 110,
+      "phase": "motion",
+      "bounds": {
+        "l": 81,
+        "t": 88,
+        "r": 256,
+        "b": 239,
+        "n": 13608,
+        "width": 176,
+        "height": 152
+      }
+    },
+    {
+      "index": 1,
+      "file": "spirit-send-motion-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 110,
+      "phase": "motion",
+      "bounds": {
+        "l": 63,
+        "t": 71,
+        "r": 250,
+        "b": 239,
+        "n": 14518,
+        "width": 188,
+        "height": 169
+      }
+    },
+    {
+      "index": 2,
+      "file": "spirit-send-motion-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 110,
+      "phase": "motion",
+      "bounds": {
+        "l": 82,
+        "t": 89,
+        "r": 235,
+        "b": 239,
+        "n": 12678,
+        "width": 154,
+        "height": 151
+      }
+    }
+  ],
+  "source": "../../../../../development/assets/skills/miko/source/spirit-send-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/idle-01.png",
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/miko/motions/prayer/prayer-04.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

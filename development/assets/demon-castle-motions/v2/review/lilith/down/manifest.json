@@ -1,0 +1,79 @@
+{
+  "id": "lilith/down",
+  "label": "リリス・撃破",
+  "enemy": "lilith",
+  "motion": "down",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "被弾の上体と衣装が大きく傾くため、翼根・髪・手の所属を検収する。",
+    "復帰で裾・翼が横に広い。倒れた姿勢の両膝・ブーツと手の接地位置を確定する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": true,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/lilith.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "phase": "崩れる",
+      "source": "../../../../../late-stage-first-pass/v1/sources/lilith/reaction-generated.png",
+      "sourceSha256": "4efe0afed3fb32941083c127cdc69b25a61a301de5f9755c9ed1ff5108bf2c19",
+      "sourceRect": {
+        "left": 0,
+        "top": 640,
+        "width": 683,
+        "height": 482
+      },
+      "sourceAnchor": [
+        379,
+        445
+      ],
+      "scale": 0.4084967320261438,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "539072d796bf5b75d82da5be56ec7724e14315b03b4dc52c72f2ad56593dac23",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8997344970703125
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "phase": "終端保持",
+      "source": "../../../../../late-stage-first-pass/v1/sources/lilith/reaction-generated.png",
+      "sourceSha256": "4efe0afed3fb32941083c127cdc69b25a61a301de5f9755c9ed1ff5108bf2c19",
+      "sourceRect": {
+        "left": 683,
+        "top": 640,
+        "width": 719,
+        "height": 482
+      },
+      "sourceAnchor": [
+        372,
+        440
+      ],
+      "scale": 0.4084967320261438,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "50c066db680cabb19b3543dc1e583b4767c88f1f38b6efd2beb154c06a7d6f4f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9178047180175781
+    }
+  ],
+  "fingerprint": "4c124209b4a4ab48c7ad4bfc81e79c773cdc041940e1c0a158dadce94f4459da",
+  "events": [],
+  "effects": []
+}

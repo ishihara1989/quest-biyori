@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-11 JST",
+  "review": "http://127.0.0.1:4191/assets/mid-late-design/v1/review.html",
+  "checks": [
+    {
+      "region": "desert",
+      "src": "desert/monsters-v3.png",
+      "loaded": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "region": "volcano",
+      "src": "volcano/monsters-v3.png",
+      "loaded": true,
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "proof": "cute-bosses-v3-proof.png",
+  "motionProduction": "not-started"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dragon-girl/attack",
+  "source": "sources/dragon-girl/attack-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴンガール. The same short original claws, NEVER elongated. One near front limb retracts, coils, rakes LEFT and returns. Other original limbs support body and stay connected; wing roots and torso size unchanged. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. TL right near hand retracts to shoulder; TR near elbow coils, same small red clawed fingers open; BL near arm extends LEFT in short rake at chest height, same unchanged short claws; BR stands upright exactly like canonical reference. Two planted feet, no crouch in final pose. Wide clear gutters, 15% padding including wings and tail.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    }
+  ],
+  "remainingIssue": "Release frame includes detached claw VFX, remove by edit before integration.",
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "4b7bc3b2860defa3eaa6584e2b349d91e0e2521f9b93f833d1bd544c496de856",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/attack-generated.png",
+  "issues": [
+    "爪が待機より大きく伸びる。指・爪の数と寸法、腕から手の接続を合わせる。",
+    "復帰が低い構えのため直立待機へのつながりを確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

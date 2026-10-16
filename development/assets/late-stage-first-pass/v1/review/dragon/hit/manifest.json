@@ -1,0 +1,67 @@
+{
+  "id": "dragon/hit",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "hit",
+  "label": "被弾",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon/reaction-generated.png"
+  ],
+  "durations": [
+    180,
+    220
+  ],
+  "phases": [
+    "被弾",
+    "復帰"
+  ],
+  "enemyLabel": "ドラゴン",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 69,
+        "top": 68,
+        "right": 674,
+        "bottom": 505
+      },
+      "sourceWidth": 713,
+      "sourceHeight": 602,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 259030,
+      "transparentFraction": 0.6034816157455513
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 37,
+        "top": 87,
+        "right": 648,
+        "bottom": 512
+      },
+      "sourceWidth": 689,
+      "sourceHeight": 602,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 230502,
+      "transparentFraction": 0.5557237847716128
+    }
+  ],
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../../skills/miko/source/blessing-up-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 747,
+      "height": 793
+    },
+    {
+      "x": 747,
+      "y": 0,
+      "width": 523,
+      "height": 793
+    },
+    {
+      "x": 1270,
+      "y": 0,
+      "width": 713,
+      "height": 793
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 968
+    },
+    {
+      "x": 512,
+      "y": 968
+    },
+    {
+      "x": 512,
+      "y": 968
+    }
+  ],
+  "scale": 0.218
+}

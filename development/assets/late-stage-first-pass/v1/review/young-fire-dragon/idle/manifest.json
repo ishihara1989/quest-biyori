@@ -1,0 +1,101 @@
+{
+  "id": "young-fire-dragon/idle",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/young-fire-dragon/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "幼火竜",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 57,
+        "top": 152,
+        "right": 608,
+        "bottom": 561
+      },
+      "sourceWidth": 639,
+      "sourceHeight": 640,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 251502,
+      "transparentFraction": 0.6149794600938967
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 29,
+        "top": 140,
+        "right": 594,
+        "bottom": 561
+      },
+      "sourceWidth": 638,
+      "sourceHeight": 640,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 244255,
+      "transparentFraction": 0.5981950431034483
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 58,
+        "top": 79,
+        "right": 611,
+        "bottom": 487
+      },
+      "sourceWidth": 642,
+      "sourceHeight": 591,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 219694,
+      "transparentFraction": 0.5790228294616548
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 29,
+        "top": 77,
+        "right": 574,
+        "bottom": 487
+      },
+      "sourceWidth": 635,
+      "sourceHeight": 591,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 217715,
+      "transparentFraction": 0.5801324326844931
+    }
+  ],
+  "reference": "../../../references/young-fire-dragon.png",
+  "originalSources": [
+    "../../../sources/young-fire-dragon/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

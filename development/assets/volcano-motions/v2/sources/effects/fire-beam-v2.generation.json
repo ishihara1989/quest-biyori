@@ -1,0 +1,20 @@
+{
+  "id": "effects/fire-beam",
+  "source": "sources/effects/fire-beam-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. spectacular long horizontal LEFT-directed dragon breath, white-hot narrow core, layered gold-orange flame, clear red-black outer contour, embers trail right. ONE-SHOT LEFTward breath. FIXED narrow round emitter at RIGHT (860,512) in all frames, open broad flame front pushed LEFT. NO right-pointing arrow tip. Phase1 short flame, phase2 stretches LEFT, phase3 full horizontal white-gold core, phase4 very sparse dying tongues. Clear red-black outline. Emitter never shifts. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else. Equal2x2cells, TL SHORT small flame plume only 25% of max length; TR grows toward LEFT to65%; BL peak breath extends LEFT nearly full inner cell width, blunt round narrow emitter on RIGHT (never arrow); BR ONLY6-8 very tiny fading sparks with NO long white core and NO bright emitter. Flame front on LEFT is broad and open. All4 remain clear of cell edges.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "1cac84251ce67fae2eb084b20536834b67d44504564c9556c66c247fc9091e23",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/fire-beam-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "右端が矢印状に尖り、右向きの弾にも見える。右の放射口から左へ押し寄せる炎として発射方向を明確にする。",
+    "最大コマで放射口と左端の位置が変わるため、口の基準点を固定する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

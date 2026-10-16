@@ -1,0 +1,26 @@
+{
+  "columnSplit": 768,
+  "rowSplit": 512,
+  "frames": [
+    {
+      "anchor": {
+        "x": 473
+      }
+    },
+    {
+      "anchor": {
+        "x": 405
+      }
+    },
+    {
+      "anchor": {
+        "x": 408
+      }
+    },
+    {
+      "anchor": {
+        "x": 362
+      }
+    }
+  ]
+}

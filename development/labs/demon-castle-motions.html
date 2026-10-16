@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>魔王城・素材検収</title>
+<link rel="stylesheet" href="/development/labs/css/demon-castle-motions.css">
+<script src="/development/labs/js/demon-castle-motions.js" defer></script>
+</head>
+<body>
+<header><h1>魔王城・素材検収</h1><select id="filter" aria-label="素材の種類"></select><nav><a href="/development/labs/late-stage-first-pass.html">初稿</a><a href="/development/labs/demon-god-redesign.html">左向き魔神</a></nav></header>
+<main><section id="clips" aria-label="修正版"></section>
+<section class="viewer"><h2 id="name">読み込み中</h2><canvas id="canvas" width="960" height="540" aria-label="モーション再生"></canvas>
+<div class="controls"><button id="replay" title="先頭から再生">↻</button><button id="play" title="再生・停止">⏯</button><button id="next" title="次のコマ">▷|</button><label>速度<select id="speed"><option value="1">1×</option><option value="0.5">0.5×</option><option value="0.25">0.25×</option></select></label><label><input type="checkbox" id="loop">反復</label><label>背景<select id="background"><option value="castle">魔王城</option><option value="light">明</option><option value="dark">暗</option></select></label><label><input type="checkbox" id="effects" checked>エフェクト</label><label><input type="checkbox" id="flip">反転</label></div>
+<div id="frames" aria-label="コマ送り"></div><p id="status" aria-live="polite"></p><div id="links"></div>
+</section></main></body></html>

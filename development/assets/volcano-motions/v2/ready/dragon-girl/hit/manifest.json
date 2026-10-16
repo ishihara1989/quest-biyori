@@ -1,0 +1,112 @@
+{
+  "id": "dragon-girl/hit",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "label": "被弾",
+  "kind": null,
+  "motion": "hit",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon-girl.png",
+  "originalSources": [
+    "../../../sources/dragon-girl/reaction-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon-girl/hit/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8681907653808594,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 149,
+        "top": 95,
+        "right": 397,
+        "bottom": 362
+      },
+      "visibleBounds": {
+        "left": 166,
+        "top": 110,
+        "right": 387,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/reaction-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 637,
+        "height": 687
+      },
+      "sourceScale": 0.4094076655052265,
+      "sourceAnchor": {
+        "x": 370,
+        "y": 627
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8593559265136719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 175,
+        "top": 91,
+        "right": 412,
+        "bottom": 357
+      },
+      "visibleBounds": {
+        "left": 179,
+        "top": 102,
+        "right": 410,
+        "bottom": 336
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/reaction-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 637,
+        "y": 0,
+        "width": 617,
+        "height": 687
+      },
+      "sourceScale": 0.4094076655052265,
+      "sourceAnchor": {
+        "x": 302,
+        "y": 631
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

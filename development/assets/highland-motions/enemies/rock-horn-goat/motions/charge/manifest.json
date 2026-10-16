@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rock-horn-goat",
+  "motion": "charge",
+  "facing": "left",
+  "label": "短突進",
+  "sheet": "rock-horn-goat-charge.png",
+  "preview": "rock-horn-goat-charge-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 1920,
+  "height": 350,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 350,
+  "frameCount": 4,
+  "pivot": {
+    "x": 274,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../registered/charge.png",
+  "sourceScale": 0.3665338645418327,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "charge-impact",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "charge-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 132,
+        "top": 123,
+        "right": 422,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1043,
+        "height": 920
+      },
+      "sourceAnchor": {
+        "x": 489,
+        "y": 822
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "charge-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 129,
+        "top": 140,
+        "right": 432,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 1043,
+        "y": 0,
+        "width": 1043,
+        "height": 920
+      },
+      "sourceAnchor": {
+        "x": 466,
+        "y": 823
+      },
+      "bakedOffset": {
+        "x": 12,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "charge-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 21,
+        "top": 145,
+        "right": 368,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 920,
+        "width": 1043,
+        "height": 920
+      },
+      "sourceAnchor": {
+        "x": 547,
+        "y": 742
+      },
+      "bakedOffset": {
+        "x": -70,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "charge-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 142,
+        "top": 86,
+        "right": 390,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 1043,
+        "y": 920,
+        "width": 1043,
+        "height": 920
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 733
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/rock-horn-goat.png",
+  "originalSources": [
+    "../../../../sources/rock-horn-goat/charge-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 643,
+          "height": 620
+        },
+        {
+          "x": 643,
+          "y": 0,
+          "width": 611,
+          "height": 620
+        },
+        {
+          "x": 0,
+          "y": 620,
+          "width": 722,
+          "height": 634
+        },
+        {
+          "x": 722,
+          "y": 620,
+          "width": 532,
+          "height": 634
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.4005037783375316,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [
+    {
+      "id": "charge-impact",
+      "manifest": "../../../../effects/charge-impact/manifest.json"
+    }
+  ]
+}

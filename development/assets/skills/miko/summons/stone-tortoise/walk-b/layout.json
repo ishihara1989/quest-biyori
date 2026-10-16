@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/stone-tortoise-walk-b-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 725,
+      "height": 724
+    },
+    {
+      "x": 725,
+      "y": 0,
+      "width": 719,
+      "height": 724
+    },
+    {
+      "x": 1444,
+      "y": 0,
+      "width": 728,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 495,
+      "y": 801
+    },
+    {
+      "x": 563.5,
+      "y": 801
+    },
+    {
+      "x": 688.5,
+      "y": 801
+    }
+  ],
+  "scale": 0.09451476793248945
+}

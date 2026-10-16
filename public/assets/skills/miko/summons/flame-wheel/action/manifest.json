@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "flame-wheel-action",
+  "character": "miko",
+  "subject": "flame-wheel",
+  "group": "summon",
+  "motion": "action",
+  "sheet": "flame-wheel-action.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 390,
+  "loop": false,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.12147505422993492,
+  "frames": [
+    {
+      "index": 0,
+      "file": "flame-wheel-action-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 19,
+        "t": 31,
+        "r": 98,
+        "b": 116,
+        "n": 4124,
+        "width": 80,
+        "height": 86
+      }
+    },
+    {
+      "index": 1,
+      "file": "flame-wheel-action-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 15,
+        "t": 20,
+        "r": 106,
+        "b": 116,
+        "n": 4837,
+        "width": 92,
+        "height": 97
+      }
+    },
+    {
+      "index": 2,
+      "file": "flame-wheel-action-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 19,
+        "t": 19,
+        "r": 115,
+        "b": 116,
+        "n": 5169,
+        "width": 97,
+        "height": 98
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/flame-wheel-action-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/flame-wheel-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

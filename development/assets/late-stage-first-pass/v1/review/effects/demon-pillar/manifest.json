@@ -1,0 +1,101 @@
+{
+  "id": "effects/demon-pillar",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "魔炎柱",
+  "kind": "ground",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/demon-pillar-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 118,
+        "top": 124,
+        "right": 558,
+        "bottom": 534
+      },
+      "sourceWidth": 616,
+      "sourceHeight": 551,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 263210,
+      "transparentFraction": 0.7754790581469347
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 57,
+        "top": 8,
+        "right": 674,
+        "bottom": 549
+      },
+      "sourceWidth": 696,
+      "sourceHeight": 551,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 222523,
+      "transparentFraction": 0.5802485553956235
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 21,
+        "top": 1,
+        "right": 685,
+        "bottom": 641
+      },
+      "sourceWidth": 700,
+      "sourceHeight": 648,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 189939,
+      "transparentFraction": 0.4187367724867725
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 14,
+        "top": 29,
+        "right": 583,
+        "bottom": 641
+      },
+      "sourceWidth": 612,
+      "sourceHeight": 648,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 233668,
+      "transparentFraction": 0.5892136690066974
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/demon-pillar-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

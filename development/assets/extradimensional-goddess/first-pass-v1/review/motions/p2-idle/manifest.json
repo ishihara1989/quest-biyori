@@ -1,0 +1,127 @@
+{
+  "id": "motions/p2-idle",
+  "kind": "motion",
+  "loop": true,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-idle/review/motions/p2-idle/frame-01.png",
+      "index": 1,
+      "durationMs": 400,
+      "source": "source/motions/p2-idle.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=0, hair/sleeve tips dy=2.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.4377621594947206,
+      "lowAlphaPixels": 18819,
+      "edgePixels": 0,
+      "bounds": [
+        34,
+        15,
+        624,
+        608
+      ],
+      "marginFraction": 0.003189792663476874
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-idle/review/motions/p2-idle/frame-02.png",
+      "index": 2,
+      "durationMs": 400,
+      "source": "source/motions/p2-idle.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=-3, hair/sleeve tips dy=0.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.4220599345253085,
+      "lowAlphaPixels": 18130,
+      "edgePixels": 0,
+      "bounds": [
+        23,
+        8,
+        618,
+        608
+      ],
+      "marginFraction": 0.012759170653907496
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-idle/review/motions/p2-idle/frame-03.png",
+      "index": 3,
+      "durationMs": 400,
+      "source": "source/motions/p2-idle.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=0, hair/sleeve tips dy=-2.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.415588776203231,
+      "lowAlphaPixels": 18996,
+      "edgePixels": 84,
+      "bounds": [
+        24,
+        7,
+        626,
+        595
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-idle/review/motions/p2-idle/frame-04.png",
+      "index": 4,
+      "durationMs": 400,
+      "source": "source/motions/p2-idle.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=3, hair/sleeve tips dy=0.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.4384896560670925,
+      "lowAlphaPixels": 18075,
+      "edgePixels": 67,
+      "bounds": [
+        0,
+        9,
+        613,
+        595
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/motions/p2-idle.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p2-idle/contact.png",
+  "gif": "review/motions/p2-idle/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

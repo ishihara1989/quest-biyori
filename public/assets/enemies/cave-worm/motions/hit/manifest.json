@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-worm",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "cave-worm-hit.png",
+  "preview": "../../../../../../development/assets/enemies/cave-worm/motions/hit/cave-worm-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-worm/PROMPT.md",
+  "width": 768,
+  "height": 288,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 2,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 460,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/cave-worm/source/hit-registered.png",
+  "sourceScale": 0.3133514986376022,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "のけぞり",
+      "bounds": {
+        "left": 135,
+        "top": 164,
+        "right": 285,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 699,
+        "height": 399
+      },
+      "sourceAnchor": {
+        "x": 299,
+        "y": 359
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 112,
+        "top": 157,
+        "right": 299,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 699,
+        "y": 0,
+        "width": 699,
+        "height": 399
+      },
+      "sourceAnchor": {
+        "x": 370,
+        "y": 382
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-worm/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 97654,
+        "left": 183,
+        "top": 108,
+        "right": 664,
+        "bottom": 451,
+        "cx": 412.4256456468757,
+        "cy": 297.35902267188237
+      },
+      {
+        "id": 1,
+        "count": 116180,
+        "left": 859,
+        "top": 85,
+        "right": 1456,
+        "bottom": 451,
+        "cx": 1134.0381735238423,
+        "cy": 295.55063694267517
+      },
+      {
+        "id": 3,
+        "count": 123419,
+        "left": 98,
+        "top": 603,
+        "right": 747,
+        "bottom": 930,
+        "cx": 393.652970774354,
+        "cy": 796.3320477398131
+      },
+      {
+        "id": 4,
+        "count": 99548,
+        "left": 814,
+        "top": 702,
+        "right": 1480,
+        "bottom": 932,
+        "cx": 1118.5759231727409,
+        "cy": 842.1306103588219
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

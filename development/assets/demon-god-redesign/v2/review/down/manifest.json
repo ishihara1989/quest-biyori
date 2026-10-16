@@ -1,0 +1,122 @@
+{
+  "id": "down",
+  "label": "撃破",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../references/demon-god.png",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "loop": false,
+  "terminal": true,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 440,
+      "phase": "墜落",
+      "originalSource": "../../sources/reaction-generated.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 701,
+        "width": 709,
+        "height": 553
+      },
+      "sourceChestCore": {
+        "x": 341,
+        "y": 253
+      },
+      "plannedRoot": [
+        560,
+        680
+      ],
+      "exportChestCore": {
+        "x": 195.9,
+        "y": 183.75
+      },
+      "sourceScale": 0.4409448818897638,
+      "transparentFraction": 0.8351915147569444,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 153,
+        "top": 94,
+        "right": 340,
+        "bottom": 306
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1200,
+      "phase": "終端保持",
+      "originalSource": "../../sources/reaction-generated.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 709,
+        "y": 701,
+        "width": 545,
+        "height": 553
+      },
+      "sourceChestCore": {
+        "x": 217,
+        "y": 356
+      },
+      "plannedRoot": [
+        545,
+        780
+      ],
+      "exportChestCore": {
+        "x": 190.05,
+        "y": 222.75
+      },
+      "sourceScale": 0.4409448818897638,
+      "transparentFraction": 0.8475409613715278,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 111,
+        "top": 126,
+        "right": 324,
+        "bottom": 295
+      }
+    }
+  ],
+  "events": [],
+  "effects": {
+    "demon-impact": {
+      "manifest": "/development/assets/late-stage-first-pass/v1/review/effects/demon-impact/manifest.json",
+      "status": "first-pass reusable in review",
+      "use": "拳撃・断界。小さく短く表示",
+      "scale": 0.55
+    },
+    "demon-pillar": {
+      "manifest": "/development/assets/late-stage-first-pass/v1/review/effects/demon-pillar/manifest.json",
+      "status": "first-pass reusable in review",
+      "use": "三界魔柱。単柱を0.9秒差で3回",
+      "scale": 0.7
+    },
+    "curse": {
+      "manifest": "/assets/skills/shaman/effects/mark/manifest.json",
+      "status": "runtime asset reused",
+      "use": "胸前ではなく対象へ呪印",
+      "scale": 1
+    },
+    "silence-seal": {
+      "manifest": "/assets/skills/ninja/effects/seal/manifest.json",
+      "status": "runtime asset reused",
+      "use": "初回封声の印に背景・見切れの課題があるため封印を流用",
+      "scale": 1
+    },
+    "end-cross": {
+      "manifest": "/assets/effects/ruins-furnace-beam/manifest.json",
+      "status": "runtime asset reused",
+      "use": "単独の炉心光線を±28°で1秒差。現行の青白い色はそのまま保持",
+      "scale": 1
+    },
+    "end-ring": {
+      "manifest": "/assets/skills/ninja/effects/final-ring/manifest.json",
+      "status": "runtime asset reused",
+      "use": "終撃の輪を低い楕円配置で流用",
+      "scale": 2
+    }
+  },
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "magma-salamander/idle",
+  "prompt": "Use case: stylized-concept. FOUR distinct poses in EXACT equal 2x2 cells, order TL TR BL BR. マグマサラマンダー. Neutral -> small inhale -> neutral -> small exhale; do not spread cape or wings abruptly. Feet planted; head/torso position stable. Secondary tips move at most 8px in 1024 local coordinates. Same proportions in both rows. Smooth 4->1 loop. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/magma-salamander/idle-v2.png",
+  "sha256": "fc1fbe70a5508e09714299b6ae1b55ac308da24cb9a0f8e1a3514fa5e7976804",
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "firstPass": "sources/magma-salamander/idle-generated.png",
+  "issues": [
+    "赤い背景光が広範囲に混入。原画の透過と背景分離を修正する。",
+    "2コマ目で胸・頭が大きく持ち上がり、呼吸としては体格変化が強い。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/magma-salamander.png",
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

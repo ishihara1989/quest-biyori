@@ -1,0 +1,490 @@
+{
+  "scope": "actual selected runtime original sources; rejected originals retained separately",
+  "count": 69,
+  "bad": [],
+  "rows": [
+    {
+      "source": "sources/frost-wolf/idle-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1012054
+    },
+    {
+      "source": "sources/frost-wolf/move-frame-1-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1135189
+    },
+    {
+      "source": "sources/frost-wolf/move-frame-2-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1139758
+    },
+    {
+      "source": "sources/frost-wolf/move-frame-3-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1238901
+    },
+    {
+      "source": "sources/frost-wolf/move-frame-4-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1238536
+    },
+    {
+      "source": "sources/frost-wolf/move-frame-5-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1219336
+    },
+    {
+      "source": "sources/frost-wolf/move-frame-6-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1151632
+    },
+    {
+      "source": "sources/frost-wolf/reaction-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1045733
+    },
+    {
+      "source": "sources/frost-wolf/bite-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 999012
+    },
+    {
+      "source": "sources/frost-wolf/leap-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1019487
+    },
+    {
+      "source": "sources/ice-shell-golem/idle-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 788430
+    },
+    {
+      "source": "sources/ice-shell-golem/move-1-generated.png",
+      "width": 2172,
+      "height": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 841283
+    },
+    {
+      "source": "sources/ice-shell-golem/move-2-generated.png",
+      "width": 2172,
+      "height": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 888303
+    },
+    {
+      "source": "sources/ice-shell-golem/reaction-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 922361
+    },
+    {
+      "source": "sources/ice-shell-golem/punch-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 916462
+    },
+    {
+      "source": "sources/ice-shell-golem/smash-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 899383
+    },
+    {
+      "source": "sources/snow-spirit/idle-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 970573
+    },
+    {
+      "source": "sources/snow-spirit/move-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 878233
+    },
+    {
+      "source": "sources/snow-spirit/reaction-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 999843
+    },
+    {
+      "source": "sources/snow-spirit/bolt-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 939740
+    },
+    {
+      "source": "sources/snow-spirit/ring-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1068138
+    },
+    {
+      "source": "sources/fenrir/idle-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 641004
+    },
+    {
+      "source": "sources/fenrir/move-frame-1-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 890260
+    },
+    {
+      "source": "sources/fenrir/move-frame-2-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 897572
+    },
+    {
+      "source": "sources/fenrir/move-frame-3-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 836445
+    },
+    {
+      "source": "sources/fenrir/move-frame-4-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 945234
+    },
+    {
+      "source": "sources/fenrir/move-frame-5-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 885131
+    },
+    {
+      "source": "sources/fenrir/move-frame-6-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 868599
+    },
+    {
+      "source": "sources/fenrir/reaction-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 856551
+    },
+    {
+      "source": "sources/fenrir/bite-generated.png",
+      "width": 1402,
+      "height": 1122,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 809220
+    },
+    {
+      "source": "sources/fenrir/leap-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 792141
+    },
+    {
+      "source": "sources/fenrir/howl-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 734459
+    },
+    {
+      "source": "sources/crystal-golem/idle-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 636103
+    },
+    {
+      "source": "sources/crystal-golem/move-1-generated.png",
+      "width": 2172,
+      "height": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 782058
+    },
+    {
+      "source": "sources/crystal-golem/move-2-generated.png",
+      "width": 2172,
+      "height": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 821685
+    },
+    {
+      "source": "sources/crystal-golem/reaction-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 814503
+    },
+    {
+      "source": "sources/crystal-golem/punch-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 721515
+    },
+    {
+      "source": "sources/crystal-golem/fan-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 820025
+    },
+    {
+      "source": "sources/crystal-golem/armor-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 750247
+    },
+    {
+      "source": "sources/yuki-onna/idle-generated.png",
+      "width": 1309,
+      "height": 1202,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 662462
+    },
+    {
+      "source": "sources/yuki-onna/move-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 662197
+    },
+    {
+      "source": "sources/yuki-onna/reaction-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 778685
+    },
+    {
+      "source": "sources/yuki-onna/bolt-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 772476
+    },
+    {
+      "source": "sources/yuki-onna/pillars-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 713214
+    },
+    {
+      "source": "sources/yuki-onna/seal-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 677285
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/idle-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1054943
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/move-frame-1-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 817806
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/move-frame-2-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 784974
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/move-frame-3-generated-v3.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1121400
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/move-frame-4-generated-v3.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1247454
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/move-frame-5-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 775112
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/move-frame-6-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 810739
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/reaction-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 751948
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/trunk-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1052802
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/sweep-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 882329
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/quake-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 1074002
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/boulder-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 695899
+    },
+    {
+      "source": "sources/ice-tusk-mammoth/crown-generated-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 977735
+    },
+    {
+      "source": "sources/effects/bite-generated.png",
+      "width": 1536,
+      "height": 1024,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 465521
+    },
+    {
+      "source": "sources/effects/punch-generated.png",
+      "width": 1536,
+      "height": 1024,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 760606
+    },
+    {
+      "source": "sources/effects/cold-generated.png",
+      "width": 1536,
+      "height": 1024,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 852110
+    },
+    {
+      "source": "sources/effects/ring-generated.png",
+      "width": 1536,
+      "height": 1024,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 784622
+    },
+    {
+      "source": "sources/effects/pillar-generated.png",
+      "width": 1536,
+      "height": 1024,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 815698
+    },
+    {
+      "source": "sources/effects/armor-generated.png",
+      "width": 1402,
+      "height": 1122,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 574936
+    },
+    {
+      "source": "sources/effects/seal-generated.png",
+      "width": 1536,
+      "height": 1024,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 697909
+    },
+    {
+      "source": "sources/effects/sweep-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 907908
+    },
+    {
+      "source": "sources/effects/quake-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 907165
+    },
+    {
+      "source": "sources/effects/boulder-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 801802
+    },
+    {
+      "source": "sources/effects/crown-generated.png",
+      "width": 1254,
+      "height": 1254,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 633312
+    }
+  ]
+}

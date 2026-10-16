@@ -1,0 +1,101 @@
+{
+  "id": "obsidian-executioner/idle",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-executioner/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "黒曜の処刑者",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 67,
+        "top": 32,
+        "right": 591,
+        "bottom": 554
+      },
+      "sourceWidth": 669,
+      "sourceHeight": 571,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 222409,
+      "transparentFraction": 0.5822240372356996
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 77,
+        "top": 31,
+        "right": 636,
+        "bottom": 554
+      },
+      "sourceWidth": 704,
+      "sourceHeight": 571,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 235854,
+      "transparentFraction": 0.5867248447699411
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 67,
+        "top": 16,
+        "right": 587,
+        "bottom": 540
+      },
+      "sourceWidth": 669,
+      "sourceHeight": 574,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 223725,
+      "transparentFraction": 0.5826080842486836
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 81,
+        "top": 18,
+        "right": 597,
+        "bottom": 540
+      },
+      "sourceWidth": 704,
+      "sourceHeight": 574,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 243325,
+      "transparentFraction": 0.6021465196388976
+    }
+  ],
+  "reference": "../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../sources/obsidian-executioner/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,137 @@
+{
+  "id": "magma-salamander/move",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/magma-salamander/move-1-generated.png",
+    "sources/magma-salamander/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "マグマサラマンダー",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 55,
+        "top": 178,
+        "right": 715,
+        "bottom": 581
+      },
+      "sourceWidth": 744,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 369772,
+      "transparentFraction": 0.6864715142874116
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 27,
+        "top": 175,
+        "right": 685,
+        "bottom": 582
+      },
+      "sourceWidth": 709,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 342949,
+      "transparentFraction": 0.668105026922987
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 24,
+        "top": 172,
+        "right": 673,
+        "bottom": 582
+      },
+      "sourceWidth": 719,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 350394,
+      "transparentFraction": 0.6731149002220702
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 17,
+        "top": 150,
+        "right": 712,
+        "bottom": 587
+      },
+      "sourceWidth": 728,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 324956,
+      "transparentFraction": 0.6165305688786352
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 14,
+        "top": 138,
+        "right": 704,
+        "bottom": 586
+      },
+      "sourceWidth": 720,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 316912,
+      "transparentFraction": 0.6079496623695518
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 15,
+        "top": 144,
+        "right": 703,
+        "bottom": 583
+      },
+      "sourceWidth": 724,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 320704,
+      "transparentFraction": 0.611825035865816
+    }
+  ],
+  "reference": "../../../references/magma-salamander.png",
+  "originalSources": [
+    "../../../sources/magma-salamander/move-1-generated.png",
+    "../../../sources/magma-salamander/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

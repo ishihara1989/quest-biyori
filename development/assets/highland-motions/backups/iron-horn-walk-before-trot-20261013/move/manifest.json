@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "enemy": "iron-horn",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "iron-horn-move.png",
+  "preview": "iron-horn-move-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 3840,
+  "height": 460,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 460,
+  "frameCount": 6,
+  "pivot": {
+    "x": 365,
+    "y": 436
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/move.png",
+  "sourceScale": 0.5825242718446602,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 194,
+        "top": 137,
+        "right": 517,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 645,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 560
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 213,
+        "top": 140,
+        "right": 506,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 645,
+        "y": 0,
+        "width": 645,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 305,
+        "y": 554
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 191,
+        "top": 139,
+        "right": 526,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 620,
+        "width": 645,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 332,
+        "y": 559
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 186,
+        "top": 140,
+        "right": 515,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 645,
+        "y": 620,
+        "width": 645,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 558
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2560,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 209,
+        "top": 139,
+        "right": 516,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1240,
+        "width": 645,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 559
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 3200,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 196,
+        "top": 138,
+        "right": 513,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 645,
+        "y": 1240,
+        "width": 645,
+        "height": 620
+      },
+      "sourceAnchor": {
+        "x": 316,
+        "y": 558
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/iron-horn.png",
+  "originalSources": [
+    "../../../../sources/iron-horn/move-1-generated.png",
+    "../../../../sources/iron-horn/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 755,
+          "height": 724
+        },
+        {
+          "x": 755,
+          "y": 0,
+          "width": 677,
+          "height": 724
+        },
+        {
+          "x": 1432,
+          "y": 0,
+          "width": 740,
+          "height": 724
+        }
+      ]
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 760,
+          "height": 724
+        },
+        {
+          "x": 760,
+          "y": 0,
+          "width": 705,
+          "height": 724
+        },
+        {
+          "x": 1465,
+          "y": 0,
+          "width": 707,
+          "height": 724
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.8123028391167192,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "walkCycle": {
+    "parts": 2,
+    "framesPerPart": 3,
+    "phases": [
+      "左接地",
+      "右遊脚",
+      "右前進",
+      "右接地",
+      "左遊脚",
+      "左前進"
+    ]
+  },
+  "effectAssets": []
+}

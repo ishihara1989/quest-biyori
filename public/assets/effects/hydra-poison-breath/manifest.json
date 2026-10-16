@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "hydra-poison-breath",
+  "label": "毒ガスブレス",
+  "sheet": "hydra-poison-breath.png",
+  "preview": "../../../../development/assets/effects/hydra-poison-breath/hydra-poison-breath-preview.gif",
+  "prompt": "../../../../development/assets/effects/hydra-poison-breath/PROMPT.md",
+  "width": 2304,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 564,
+    "y": 144
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/hydra-poison-breath/source-generated.png",
+  "sourceScale": 0.5866666666666667,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hydra-poison-breath-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 304,
+        "top": 97,
+        "right": 564,
+        "bottom": 191
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 495
+      },
+      "sourceAnchor": {
+        "x": 741,
+        "y": 286
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hydra-poison-breath-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 185,
+        "top": 42,
+        "right": 564,
+        "bottom": 246
+      },
+      "sourceCell": {
+        "x": 785,
+        "y": 0,
+        "width": 751,
+        "height": 495
+      },
+      "sourceAnchor": {
+        "x": 689,
+        "y": 279
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "hydra-poison-breath-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 133,
+        "top": 12,
+        "right": 564,
+        "bottom": 275
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 495,
+        "width": 779,
+        "height": 529
+      },
+      "sourceAnchor": {
+        "x": 752,
+        "y": 266
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "hydra-poison-breath-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 169,
+        "top": 28,
+        "right": 564,
+        "bottom": 259
+      },
+      "sourceCell": {
+        "x": 779,
+        "y": 495,
+        "width": 757,
+        "height": 529
+      },
+      "sourceAnchor": {
+        "x": 698,
+        "y": 274
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

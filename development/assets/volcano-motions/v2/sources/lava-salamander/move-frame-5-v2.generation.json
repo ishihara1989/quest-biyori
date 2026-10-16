@@ -1,0 +1,29 @@
+{
+  "id": "lava-salamander/move-5",
+  "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 5 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (358,835), hip (389,689), knee (460,761); RF GROUND SUPPORT paw (379,826), hip (353,667), knee (450,695); LH GROUND SUPPORT paw (736,821), hip (708,663), knee (638,748); RH LIFTED SWING paw (655,791), hip (673,641), knee (575,683). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. Explicit contact pair: DARK far FRONT paw at far LEFT under chin and BRIGHT near REAR paw below right hip rest flat on ground. Explicit lifted pair: BRIGHT near FRONT paw directly below orange chest CLEARLY raised 45px above its ground level, bent knee and intact paw, and DARK far REAR paw under belly raised 30px. NO grounded bright front paw. Head/torso fixed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/lava-salamander/move-frame-5-v2.png",
+  "sha256": "8e6eb58a098f622cd6f21b775a9c4ba5c9ed6bedcba7f7ac915ed87e6f901dd5",
+  "reference": "references/lava-salamander.png",
+  "guide": "guides/lava-salamander/frame-5.png",
+  "firstPass": "sources/lava-salamander/move-2-generated.png",
+  "issues": [
+    "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+    "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+    "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+    "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    },
+    {
+      "file": "guides/lava-salamander/frame-5.png",
+      "sha256": "7eeac94f743406618715da27472ef137e79a916dfc8d7f724db61ba25f3fb857"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

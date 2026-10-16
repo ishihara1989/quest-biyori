@@ -1,0 +1,77 @@
+{
+  "id": "motions/p1-hit",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-hit/review/motions/p1-hit/frame-01.png",
+      "index": 1,
+      "durationMs": 90,
+      "source": "source/motions/p1-hit.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 887,
+        "height": 887
+      },
+      "description": "Face dx=2,dy=1; chest dx=2, mild shoulder recoil, maintain cheek contact.",
+      "width": 887,
+      "height": 887,
+      "transparentFraction": 0.41632804546188273,
+      "lowAlphaPixels": 19780,
+      "edgePixels": 0,
+      "bounds": [
+        15,
+        31,
+        885,
+        843
+      ],
+      "marginFraction": 0.0011273957158962795
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p1-hit/review/motions/p1-hit/frame-02.png",
+      "index": 2,
+      "durationMs": 90,
+      "source": "source/motions/p1-hit.png",
+      "sourceRect": {
+        "left": 887,
+        "top": 0,
+        "width": 887,
+        "height": 887
+      },
+      "description": "Face/chest return to neutral, hand still supporting cheek.",
+      "width": 887,
+      "height": 887,
+      "transparentFraction": 0.42273272078589774,
+      "lowAlphaPixels": 19192,
+      "edgePixels": 0,
+      "bounds": [
+        15,
+        31,
+        883,
+        845
+      ],
+      "marginFraction": 0.0033821871476888386
+    }
+  ],
+  "sources": [
+    "source/motions/p1-hit.png"
+  ],
+  "expectedFrames": 2,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p1-hit/contact.png",
+  "gif": "review/motions/p1-hit/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

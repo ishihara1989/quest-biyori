@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-16",
+  "status": "pass",
+  "mode": "built-in image_gen",
+  "assetHashes": {
+    "aura": "d697a075dc3ad8569710940beeb7d73d112b65469798575a1adacf1c143bb4b6",
+    "ring": "cac37a843db7712aa7c44f8628abb182bf98e3613cbd66767a9cc09a4d05f3ee",
+    "mote": "0f722178df3d8edc604c74cfd4e466047fbd9e4c724a81db5eab79e43201d309",
+    "streak": "b9706cac910c0350b184c0c7ff5d1792abee7027bfe2637846f9bc67953099f1",
+    "lightning": "a2f1805873ec89117078066a590fea2e686ed629a085d3d914cc6ab21ac1aa65",
+    "portal": "c49dcc2640e36b8828475b3e148914cf8c25293c98c52f3626558476088d79e6"
+  },
+  "newFrames": 24,
+  "framesPerAsset": 4,
+  "playbackSpeeds": [
+    1,
+    0.25
+  ],
+  "staticBackgrounds": [
+    "dark",
+    "light"
+  ],
+  "unitTests": {
+    "imageEffectsPlaybackRenderer": 11,
+    "related": 105,
+    "total": 116
+  },
+  "browser": {
+    "normalRegions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "specialStages": [
+      "dimensional-gate",
+      "chaos-gate",
+      "extradimensional-goddess"
+    ],
+    "phantoms": 20,
+    "gateScenes": 32,
+    "skillLabs": {
+      "warrior": 21,
+      "mage": 21,
+      "paladin": 21,
+      "ninja": 21,
+      "shaman": 21
+    },
+    "commonStatusAndGems": true,
+    "museumBrowsing": "pass",
+    "mobileReducedMotion": "pass"
+  },
+  "inspection": {
+    "allFrames": "review.png",
+    "lab": "../../../labs/common-effects.html",
+    "coverage": "../../../../docs/implementation/procedural-effects-inventory.md"
+  },
+  "notes": [
+    "Runtime PNG pixels unchanged when adding development-only GIF previews.",
+    "Successful sections retained; only failed fixture-dependent sections resumed."
+  ]
+}

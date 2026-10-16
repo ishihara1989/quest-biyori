@@ -1,0 +1,20 @@
+{
+  "id": "effects/fissure",
+  "source": "sources/effects/fissure-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. long LEFT-directed jagged black-red ground fissure opening in sequential segments with molten orange jets and scattered rock; low side-view perspective. ONE-SHOT directional progression with FIXED right origin (860,700): frame1 short crack x740..860, frame2 grows LEFT to x530, frame3 reaches x150, frame4 dies into small dark fragments. Low jagged crack, height under 180px, no giant rocks. Not full-length in all frames. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else. TL only a VERY SHORT crack located at far-right of cell; TR medium crack extending toward LEFT from same fixed right endpoint; BL long crack extends far-left from same right endpoint; BR only tiny fading dark chips, no continuous glowing fissure. Keep ground line stable across all4 cells.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "e4f9344c9a9543d5d49b4a801334947dfa1349b9f470c34bd62684d0c2013dd9",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/fissure-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "全コマで地割れが横帯の全長に出ており、奥へ走る進行が弱い。発動点から先端へ移る順序を修正する。",
+    "最大コマの岩片が高く、細い帯の判定に対して占有範囲が広い。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "lava-salamander/danger-1",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "danger-1",
+  "label": "灼熱噴き",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "source": "sources/lava-salamander/danger-1-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 灼熱噴き by ラヴァサラマンダー EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: head (300,520) pulls (340,500), orange dorsal fins brighten, jaw thrusts left (230,550), returns. Four planted legs. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "fire-fan",
+    "burn"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-d99c07da-dd72-4ebd-a947-ad43fdd0a1c3.png",
+  "sha256": "c16ba25fa3a73703beb606c000929a3e7111c1443f125af60dd8edb90591cb2f",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "通常の噛みつきと構え・発動が近く、危険技の胸・背びれの溜めが弱い。専用の溜め差を付ける。",
+      "火炎エフェクトの放射位置を口の先端に合わせる必要がある。"
+    ]
+  }
+}

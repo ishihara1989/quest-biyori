@@ -1,0 +1,1423 @@
+{
+  "date": "2026-10-15 JST",
+  "status": "production-review-complete",
+  "runtimeRegistered": false,
+  "canonicalDemonGod": "../../demon-god-redesign/v2/references/demon-god.png",
+  "preservedDemonGodReview": "../../demon-god-redesign/v2/review-notes.json",
+  "policy": "Preserve originals and canonical references; rectangle crop, whole-image translation and nearest sampling only. No body-part assembly, repainting or alpha masking. New and modified clips need every-frame and normal/slow playback review.",
+  "jobs": [
+    {
+      "id": "demon-armored-soldier/idle",
+      "enemy": "demon-armored-soldier",
+      "region": "demon-castle",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/idle-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "長方形盾・直剣・赤い目を保持。"
+        ],
+        "issues": [
+          "剣先と盾の左右位置がコマ間で動く。手元の呼吸と剣・盾の位置を合わせて検収する。",
+          "下段で体格と接地点が変わるため、基準位置合わせが必要。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "demon-armored-soldier/idle"
+      ]
+    },
+    {
+      "id": "demon-armored-soldier/reaction",
+      "enemy": "demon-armored-soldier",
+      "region": "demon-castle",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/reaction-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "被弾で身体が傾き、復帰。撃破で膝を折り低く崩れる。"
+        ],
+        "issues": [
+          "倒れた状態で盾が腕と脚を隠す。盾の持ち手・手・2脚の接続を確認する。",
+          "被弾の頭・盾の傾きと待機への戻りを検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "demon-armored-soldier/hit",
+        "demon-armored-soldier/down"
+      ]
+    },
+    {
+      "id": "demon-armored-soldier/move-1",
+      "enemy": "demon-armored-soldier",
+      "region": "demon-castle",
+      "motion": "move-1",
+      "label": "移動 1〜3",
+      "cols": 3,
+      "rows": 1,
+      "reference": "../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/move-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "片脚を持ち上げ、剣と盾を保持する。"
+        ],
+        "issues": [
+          "盾の奥の脚の膝・足首と持ち手が隠れる。2脚の支持と武器の接続を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "demon-armored-soldier/move"
+      ]
+    },
+    {
+      "id": "demon-armored-soldier/move-2",
+      "enemy": "demon-armored-soldier",
+      "region": "demon-castle",
+      "motion": "move-2",
+      "label": "移動 4〜6",
+      "cols": 3,
+      "rows": 1,
+      "reference": "../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/move-2-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "前半と反対の奥側の足が持ち上がる。"
+        ],
+        "issues": [
+          "3→4・6→1の支持足と剣先・盾の位置を検収する。",
+          "待機から移動への胴体位置合わせが必要。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "demon-armored-soldier/move"
+      ]
+    },
+    {
+      "id": "demon-armored-soldier/attack",
+      "enemy": "demon-armored-soldier",
+      "region": "demon-castle",
+      "motion": "attack",
+      "label": "剣撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+      "guide": null,
+      "effects": [
+        "dark-slash"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/attack-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "溜めで剣を両手で持つように見える一方、盾が低い位置に残る。盾を持つ腕と2腕の接続を修正・確認する。",
+          "頭上の剣先と発動の左下先端の見切れを検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "demon-armored-soldier/attack"
+      ]
+    },
+    {
+      "id": "demon-armored-soldier/danger-1",
+      "enemy": "demon-armored-soldier",
+      "region": "demon-castle",
+      "motion": "danger-1",
+      "label": "鎧崩し",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/demon-armored-soldier.png",
+      "guide": null,
+      "effects": [
+        "dark-slash",
+        "armor-break"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/danger-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "盾を前へ固め、剣を引いて左へ突き出す。通常の振り下ろしとの姿勢差がある。"
+        ],
+        "issues": [
+          "突き出した剣先がセル境界に近い。余白と剣の同一形状を確認する。",
+          "盾の持ち手と腕が隠れるため接続を検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "demon-armored-soldier/danger-1"
+      ]
+    },
+    {
+      "id": "imp/idle",
+      "enemy": "imp",
+      "region": "demon-castle",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/imp.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/imp/idle-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "紫の肌・短い角・小翼・矢尻尾を保持。"
+        ],
+        "issues": [
+          "上段と下段で体の傾きが変わる。呼吸・浮遊の待機として4→1の揺れを確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "imp/idle"
+      ]
+    },
+    {
+      "id": "imp/reaction",
+      "enemy": "imp",
+      "region": "demon-castle",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/imp.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/imp/reaction-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "被弾・復帰と、浮遊から落ちて伏せる撃破が読める。"
+        ],
+        "issues": [
+          "被弾に大きな衝撃星が直接描かれている。共通被弾演出との重複とセル余白を確認する。",
+          "撃破時の翼・尾・手足の重なりを検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "imp/hit",
+        "imp/down"
+      ]
+    },
+    {
+      "id": "imp/move",
+      "enemy": "imp",
+      "region": "demon-castle",
+      "motion": "move",
+      "label": "移動",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/imp.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/imp/move-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "紫の背景光が混入。",
+          "翼の広さと耳・角の形がコマ間で変わる。浮遊の4→1で頭・翼根の形と寸法を合わせる。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "imp/move"
+      ]
+    },
+    {
+      "id": "imp/attack",
+      "enemy": "imp",
+      "region": "demon-castle",
+      "motion": "attack",
+      "label": "爪撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/imp.png",
+      "guide": null,
+      "effects": [
+        "claw-arc"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/imp/attack-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "爪を頭上へ引き、左へ払い、復帰する。"
+        ],
+        "issues": [
+          "発動の腕と指が長く伸びる。指の数・腕との接続・元の体格を確認する。",
+          "翼と尾の形が大きく変わる。復帰→待機を検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "imp/attack"
+      ]
+    },
+    {
+      "id": "imp/danger-1",
+      "enemy": "imp",
+      "region": "demon-castle",
+      "motion": "danger-1",
+      "label": "呪弾",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/imp.png",
+      "guide": null,
+      "effects": [
+        "curse-orb",
+        "curse-impact",
+        "curse"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "胸の前に紫光を集め、両手を左へ出して発射する。"
+        ],
+        "issues": [
+          "発動で両手の指が重なる。手首・指の所属を確認する。",
+          "別の呪弾へ両手の発射点を合わせる。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "imp/danger-1"
+      ]
+    },
+    {
+      "id": "dream-demon/idle",
+      "enemy": "dream-demon",
+      "region": "demon-castle",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/dream-demon.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/dream-demon/idle-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "紫髪・小翼・衣装と成人の顔を保持。"
+        ],
+        "issues": [
+          "2コマ目の髪が強く右へ流れる。待機4→1の連続性と翼端の揺れを確認する。",
+          "顔と身体が正面寄り。攻撃方向の左向きと揃える。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "dream-demon/idle"
+      ]
+    },
+    {
+      "id": "dream-demon/reaction",
+      "enemy": "dream-demon",
+      "region": "demon-castle",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/dream-demon.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/dream-demon/reaction-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "被弾1コマ目に靴が3足見える。余分な脚・足を除き、正しく2脚へ修正する。",
+          "撃破姿勢の膝・靴・裾・尾の所属を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "dream-demon/hit",
+        "dream-demon/down"
+      ]
+    },
+    {
+      "id": "dream-demon/move",
+      "enemy": "dream-demon",
+      "region": "demon-castle",
+      "motion": "move",
+      "label": "移動",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/dream-demon.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/dream-demon/move-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "翼を上下させ、髪・裾・尾が追従する浮遊4ポーズ。"
+        ],
+        "issues": [
+          "翼端と尾先の余白が少ない。見切れと4→1の大きさ・髪の連続性を検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "dream-demon/move"
+      ]
+    },
+    {
+      "id": "dream-demon/attack",
+      "enemy": "dream-demon",
+      "region": "demon-castle",
+      "motion": "attack",
+      "label": "魔弾",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/dream-demon.png",
+      "guide": null,
+      "effects": [
+        "curse-orb",
+        "curse-impact"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/dream-demon/attack-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "魔弾を手元へ集め、頭上へ持ち上げ、左へ掌を出す。"
+        ],
+        "issues": [
+          "発動の手の光が大きい。飛行エフェクトとの二重描画と指の接続を確認する。",
+          "裾・髪・尾の広がりが大きい。身体の縮尺と復帰を合わせる。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "dream-demon/attack"
+      ]
+    },
+    {
+      "id": "dream-demon/danger-1",
+      "enemy": "dream-demon",
+      "region": "demon-castle",
+      "motion": "danger-1",
+      "label": "眠りの月",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/dream-demon.png",
+      "guide": null,
+      "effects": [
+        "sleep-moon"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/dream-demon/danger-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "上段の角が原画上端に接して見切れている。余白を確保して修正する。",
+          "発動コマに大きい月印が直接描かれる。本体と別の眠りの月エフェクトを分離し、二重表示を避ける。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "dream-demon/danger-1"
+      ]
+    },
+    {
+      "id": "black-knight/idle",
+      "enemy": "black-knight",
+      "region": "demon-castle",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/black-knight.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/black-knight/idle-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "剣先とマントがセル境界に近く、12%の指定余白が足りない。原画の四辺を検収する。",
+          "マントの面積と剣の傾きがコマ間で変わる。待機の揺れとして調整する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "black-knight/idle"
+      ]
+    },
+    {
+      "id": "black-knight/reaction",
+      "enemy": "black-knight",
+      "region": "demon-castle",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/black-knight.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/black-knight/reaction-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "被弾・復帰、膝をつく・崩れるの順序が明瞭。"
+        ],
+        "issues": [
+          "大剣が等分セルの境界に近く、撃破時にも長く左へ伸びる。剣先の見切れと柄の手を確認する。",
+          "角・肩・マントの基準体格を待機と比較する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "black-knight/hit",
+        "black-knight/down"
+      ]
+    },
+    {
+      "id": "black-knight/move-1",
+      "enemy": "black-knight",
+      "region": "demon-castle",
+      "motion": "move-1",
+      "label": "移動 1〜3",
+      "cols": 3,
+      "rows": 1,
+      "reference": "../../late-stage-first-pass/v1/references/black-knight.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/black-knight/move-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "剣を保持し、片脚が上がる。大きな余分な手足は目視で特定していない。"
+        ],
+        "issues": [
+          "剣先とマントがセル境界に近い。余白・握り手と奥脚の接続を検収する。",
+          "後半との3→4・6→1の連続性は未確認。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "black-knight/move"
+      ]
+    },
+    {
+      "id": "black-knight/move-2",
+      "enemy": "black-knight",
+      "region": "demon-castle",
+      "motion": "move-2",
+      "label": "移動 4〜6",
+      "cols": 3,
+      "rows": 1,
+      "reference": "../../late-stage-first-pass/v1/references/black-knight.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/black-knight/move-2-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "反対の奥側の脚を持ち上げる姿勢がある。"
+        ],
+        "issues": [
+          "前半との靴・膝の形と支持足、剣・マントの位置を合わせる。",
+          "待機→移動の胴体位置と同一縮尺を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "black-knight/move"
+      ]
+    },
+    {
+      "id": "black-knight/attack",
+      "enemy": "black-knight",
+      "region": "demon-castle",
+      "motion": "attack",
+      "label": "剣撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/black-knight.png",
+      "guide": null,
+      "effects": [
+        "dark-slash"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/black-knight/attack-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "頭上の剣が原画上端で切れている。武器全体と余白を再制作する。",
+          "大剣の長さ・幅と握り手、発動時の左下先端を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "black-knight/attack"
+      ]
+    },
+    {
+      "id": "black-knight/danger-1",
+      "enemy": "black-knight",
+      "region": "demon-castle",
+      "motion": "danger-1",
+      "label": "王断の大剣",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/black-knight.png",
+      "guide": null,
+      "effects": [
+        "royal-cleave",
+        "armor-break"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/black-knight/danger-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "頭上に引いた大剣の先端が原画の右端に接し、見切れがある。",
+          "通常の大剣撃と構えが近い。危険技の長い溜めと強い振り下ろしを明確にする。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "black-knight/danger-1"
+      ]
+    },
+    {
+      "id": "black-knight/danger-2",
+      "enemy": "black-knight",
+      "region": "demon-castle",
+      "motion": "danger-2",
+      "label": "黒環薙ぎ",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/black-knight.png",
+      "guide": null,
+      "effects": [
+        "black-ring-slash"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/black-knight/danger-2-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "右へ大剣を引き、左へ水平に大きく薙ぐ姿勢。"
+        ],
+        "issues": [
+          "構えの剣先が等分セル境界を越える。原画の矩形切り出しと余白を確定する。",
+          "腰・肩の回転と2手の柄への接続、円弧エフェクトの原点を合わせる。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "black-knight/danger-2"
+      ]
+    },
+    {
+      "id": "arch-demon/idle",
+      "enemy": "arch-demon",
+      "region": "demon-castle",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/arch-demon.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/arch-demon/idle-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "2腕・2脚・2角・翼・赤い腹核を保持。"
+        ],
+        "issues": [
+          "上段と下段で翼・肩の占有面積が変わる。胴体縮尺と接地の揺れを確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "arch-demon/idle"
+      ]
+    },
+    {
+      "id": "arch-demon/reaction",
+      "enemy": "arch-demon",
+      "region": "demon-castle",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/arch-demon.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/arch-demon/reaction-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "被弾で上体が傾き、撃破で膝と手をついて低く崩れる。"
+        ],
+        "issues": [
+          "翼と尾がセル境界に近い。2腕・2脚・翼根を倒れた姿勢でも追って検収する。",
+          "撃破後の腹核・目の明るさを整える。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "arch-demon/hit",
+        "arch-demon/down"
+      ]
+    },
+    {
+      "id": "arch-demon/move-1",
+      "enemy": "arch-demon",
+      "region": "demon-castle",
+      "motion": "move-1",
+      "label": "移動 1〜3",
+      "cols": 3,
+      "rows": 1,
+      "reference": "../../late-stage-first-pass/v1/references/arch-demon.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/arch-demon/move-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "大きい翼・手・尾がセル境界に近い。",
+          "持ち上げ脚と奥脚の付け根を確定し、後半の支持交代を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "arch-demon/move"
+      ]
+    },
+    {
+      "id": "arch-demon/move-2",
+      "enemy": "arch-demon",
+      "region": "demon-castle",
+      "motion": "move-2",
+      "label": "移動 4〜6",
+      "cols": 3,
+      "rows": 1,
+      "reference": "../../late-stage-first-pass/v1/references/arch-demon.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/arch-demon/move-2-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "前半と同じ画面左の脚を持ち上げる構図が強い。左右の支持交代と足の所属を修正・確認する。",
+          "前半から手足の大きさ・翼の広さ・腰の形が変わる。3→4・6→1で比較する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "arch-demon/move"
+      ]
+    },
+    {
+      "id": "arch-demon/attack",
+      "enemy": "arch-demon",
+      "region": "demon-castle",
+      "motion": "attack",
+      "label": "拳撃",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/arch-demon.png",
+      "guide": null,
+      "effects": [
+        "demon-impact"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/arch-demon/attack-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "紫と金の背景光が混入。",
+          "構え・溜め・発動で主に動かす腕が入れ替わって見える。2腕の所属を追い、同じ腕のパンチとして揃える。",
+          "拳と翼の見切れを確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "arch-demon/attack"
+      ]
+    },
+    {
+      "id": "arch-demon/danger-1",
+      "enemy": "arch-demon",
+      "region": "demon-castle",
+      "motion": "danger-1",
+      "label": "魔炎双柱",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/arch-demon.png",
+      "guide": null,
+      "effects": [
+        "demon-pillar",
+        "burn"
+      ],
+      "repeat": 2,
+      "originalSource": "../../late-stage-first-pass/v1/sources/arch-demon/danger-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "腹核と両掌を点灯し、両手を高く上げて魔柱を放つ姿勢。"
+        ],
+        "issues": [
+          "高く上げた掌と翼端がセル境界に近い。指と腕の接続・余白を検収する。",
+          "2柱の0.9秒差は別エフェクトの時刻と配置で組む必要がある。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "arch-demon/danger-1"
+      ]
+    },
+    {
+      "id": "arch-demon/danger-2",
+      "enemy": "arch-demon",
+      "region": "demon-castle",
+      "motion": "danger-2",
+      "label": "悪魔の援軍",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/arch-demon.png",
+      "guide": null,
+      "effects": [
+        "summon-gate"
+      ],
+      "repeat": 2,
+      "originalSource": "../../late-stage-first-pass/v1/sources/arch-demon/danger-2-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "腹核に手を集め、両掌を外へ開き召喚する。"
+        ],
+        "issues": [
+          "大きく開いた翼・尾がセル境界に近い。矩形切り出しと余白を確定する。",
+          "開いた掌の指・肘の接続と復帰時の手の大きさを合わせる。召喚門とインプは別素材で配置する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "arch-demon/danger-2"
+      ]
+    },
+    {
+      "id": "lilith/idle",
+      "enemy": "lilith",
+      "region": "demon-castle",
+      "motion": "idle",
+      "label": "待機",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/lilith.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/lilith/idle-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "角の上端・翼端・衣装の裾がセル境界に近い。原画の見切れと余白を確認する。",
+          "2コマ目の髪の広がりが大きい。4→1で不連続に戻らないか確認する。",
+          "顔は正面寄り。個別行動との向きを揃える。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "lilith/idle"
+      ]
+    },
+    {
+      "id": "lilith/reaction",
+      "enemy": "lilith",
+      "region": "demon-castle",
+      "motion": "reaction",
+      "label": "被弾・撃破",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/lilith.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/lilith/reaction-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "被弾から復帰し、膝をつき両手で床を支える撃破姿勢。"
+        ],
+        "issues": [
+          "被弾の上体と衣装が大きく傾くため、翼根・髪・手の所属を検収する。",
+          "復帰で裾・翼が横に広い。倒れた姿勢の両膝・ブーツと手の接地位置を確定する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "lilith/hit",
+        "lilith/down"
+      ]
+    },
+    {
+      "id": "lilith/move",
+      "enemy": "lilith",
+      "region": "demon-castle",
+      "motion": "move",
+      "label": "移動",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/lilith.png",
+      "guide": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/lilith/move-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "翼を上げ下げし、髪と裾が追従する浮遊4コマ。"
+        ],
+        "issues": [
+          "翼の幅と髪の量がコマ間で変わる。胴体と翼根を固定し4→1を合わせる。",
+          "翼端と裾の余白が少ない。移動の傾き・浮遊上下と待機の姿勢差を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "lilith/move"
+      ]
+    },
+    {
+      "id": "lilith/attack",
+      "enemy": "lilith",
+      "region": "demon-castle",
+      "motion": "attack",
+      "label": "魔弾",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/lilith.png",
+      "guide": null,
+      "effects": [
+        "curse-orb",
+        "curse-impact"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/lilith/attack-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "手元の魔弾を頭上へ上げ、左へ掌を出して発射する。"
+        ],
+        "issues": [
+          "魔弾が本体シートに大きく描かれている。別の呪弾との二重描画と左端の光の見切れを確認する。",
+          "発動で脚を大きく開き、浮遊が地上の踏み込みへ変わる。待機への復帰と腰の基準位置を合わせる。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "lilith/attack"
+      ]
+    },
+    {
+      "id": "lilith/danger-1",
+      "enemy": "lilith",
+      "region": "demon-castle",
+      "motion": "danger-1",
+      "label": "宵闇の花冠",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/lilith.png",
+      "guide": null,
+      "effects": [
+        "dark-flower",
+        "curse"
+      ],
+      "repeat": 3,
+      "originalSource": "../../late-stage-first-pass/v1/sources/lilith/danger-1-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "冠から点灯し、翼と両掌を開く大きい発動姿勢。"
+        ],
+        "issues": [
+          "発動の翼・髪・赤い光が等分セルの境界を越え、原画左端にも接する。見切れと矩形の余白を修正する。",
+          "発動で本体が小さく低く見える。翼を含む外接寸法と胴体縮尺を分けて比較する。",
+          "3地点の花冠は別素材の配置で組む。掌の光と別素材の重複を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "lilith/danger-1"
+      ]
+    },
+    {
+      "id": "lilith/danger-2",
+      "enemy": "lilith",
+      "region": "demon-castle",
+      "motion": "danger-2",
+      "label": "静寂の封印",
+      "cols": 2,
+      "rows": 2,
+      "reference": "../../late-stage-first-pass/v1/references/lilith.png",
+      "guide": null,
+      "effects": [
+        "silence-seal"
+      ],
+      "repeat": 1,
+      "originalSource": "../../late-stage-first-pass/v1/sources/lilith/danger-2-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "指を口元へ上げ、片手を左へ伸ばして封印を放つ。"
+        ],
+        "issues": [
+          "伸ばす腕と口元の腕が入れ替わって見える。どちらの腕を動かすかと指の接続を確定する。",
+          "発動の翼・髪・裾がセル境界を越える。浮遊中の両脚、同一縮尺と復帰を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "lilith/danger-2"
+      ]
+    },
+    {
+      "id": "effects/claw-arc",
+      "effect": "claw-arc",
+      "region": "volcano",
+      "label": "紅爪の軌跡",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/claw-arc-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "3本の爪の軌跡と左向きの白い先端が読み取れる。"
+        ],
+        "issues": [
+          "橙の光がセル全体へ広がる。背景透過と重ね合わせの視認性を修正する。",
+          "最大コマの軌跡が広く、指定のセル余白が足りない。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/claw-arc"
+      ]
+    },
+    {
+      "id": "effects/burn",
+      "effect": "burn",
+      "region": "volcano",
+      "label": "火傷",
+      "kind": "status",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/burn-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "issues": [
+          "火傷の小さな状態表示に対して炎の輪が大きく、攻撃エフェクトに近い。小粒の火種へ縮小・整理する。",
+          "最大コマが原画の端に近い。見切れと反復の寸法差を確認する。",
+          "輪の内側に赤い点が残る。キャラクター中心の透過を検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/burn"
+      ]
+    },
+    {
+      "id": "effects/dark-slash",
+      "effect": "dark-slash",
+      "region": "demon-castle",
+      "label": "魔剣の斬撃",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/dark-slash-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "銀の刃先が左向きに明瞭。"
+        ],
+        "issues": [
+          "紫赤の背景光が混入。",
+          "最大コマで追加の輪が現れ、通常の短い剣撃として占有範囲が広い。",
+          "最後の白い先端が残る。消失を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/dark-slash"
+      ]
+    },
+    {
+      "id": "effects/royal-cleave",
+      "effect": "royal-cleave",
+      "region": "demon-castle",
+      "label": "王断の大剣",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/royal-cleave-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "銀白の大きな左下斬撃、赤紫の残像と金の閃光を表現。"
+        ],
+        "issues": [
+          "最大コマの斬撃と岩片がセル境界に近い。",
+          "発動方向の左下と原点の位置を、剣を振り下ろす本体に合わせる。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/royal-cleave"
+      ]
+    },
+    {
+      "id": "effects/black-ring-slash",
+      "effect": "black-ring-slash",
+      "region": "demon-castle",
+      "label": "黒環薙ぎ",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/black-ring-slash-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "銀縁の紫黒円弧と赤い破片、透明な内側の形が見える。"
+        ],
+        "issues": [
+          "紫赤の背景光が混入。",
+          "円弧の中心位置と大きさが変わるため、薙ぎの原点と150度の扇範囲を実装時に照合する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/black-ring-slash"
+      ]
+    },
+    {
+      "id": "effects/curse-orb",
+      "effect": "curse-orb",
+      "region": "demon-castle",
+      "label": "呪弾",
+      "kind": "projectile",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/curse-orb-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "左に紫の球、右に断片の尾が伸びる。"
+        ],
+        "issues": [
+          "紫赤の背景光が混入。",
+          "最終コマで球が小さい光と半輪に変わる。飛行の反復と着弾を分離する。",
+          "共通VFXの最大衝撃・収束指定を飛翔の脈動へ修正する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/curse-orb"
+      ]
+    },
+    {
+      "id": "effects/curse-impact",
+      "effect": "curse-impact",
+      "region": "demon-castle",
+      "label": "呪弾着弾",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/curse-impact-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "紫黒の割れた輪と赤白の衝撃を表現。"
+        ],
+        "issues": [
+          "衝撃の白い核が輪の右側にあり、対象中心からずれる。着弾点の基準を決める。",
+          "最大コマと終端の輪郭が強い。消失と対象の視認性を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/curse-impact"
+      ]
+    },
+    {
+      "id": "effects/sleep-moon",
+      "effect": "sleep-moon",
+      "region": "demon-castle",
+      "label": "眠りの月",
+      "kind": "status",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/sleep-moon-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "三日月と低い月印で無被害の睡眠術を表現。"
+        ],
+        "issues": [
+          "月の内側と魔法陣中央に灰色の塗りが見える。中心が透明かを検収する。",
+          "最大コマの紫の渦と飛沫が広い。穏やかな状態表示として占有範囲を整理する。",
+          "反復時に月・陣の寸法が急に変わらないか確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/sleep-moon"
+      ]
+    },
+    {
+      "id": "effects/demon-pillar",
+      "effect": "demon-pillar",
+      "region": "demon-castle",
+      "label": "魔炎柱",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/demon-pillar-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "縦の白赤の柱、紫黒の外縁、低い魔法陣で高い魔柱を表現。"
+        ],
+        "issues": [
+          "2コマ目の柱先端が原画の上端に近い。余白と見切れを確認する。",
+          "最大時の陣と柱が広い。判定円の外側でキャラクターを覆う範囲を検収する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/demon-pillar"
+      ]
+    },
+    {
+      "id": "effects/summon-gate",
+      "effect": "summon-gate",
+      "region": "demon-castle",
+      "label": "悪魔の門",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/summon-gate-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "黒金の門と紫赤の縁、空の開口部。召喚キャラクターは含まない。"
+        ],
+        "issues": [
+          "門枠全体の大きさが変わる。門の固定縮尺と開口の拡大を分ける。",
+          "最大コマの門先端と陣がセル境界に近い。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/summon-gate"
+      ]
+    },
+    {
+      "id": "effects/dark-flower",
+      "effect": "dark-flower",
+      "region": "demon-castle",
+      "label": "宵闇の花冠",
+      "kind": "ground",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/dark-flower-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "黒赤紫の花弁が開き、白い核と金の粒子で派手な闇花を表現。"
+        ],
+        "issues": [
+          "発生コマから花が大きく開いている。花弁の開く順序を整理する。",
+          "最大コマの上向きの噴出が高い。花と魔柱の形の差を維持する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/dark-flower"
+      ]
+    },
+    {
+      "id": "effects/silence-seal",
+      "effect": "silence-seal",
+      "region": "demon-castle",
+      "label": "封声の印",
+      "kind": "status",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/silence-seal-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "閉じた口と交差線、金紫の菱形で沈黙の意味が読み取れる。"
+        ],
+        "issues": [
+          "菱形の中央に茶灰色の面が塗られている。記号の周囲を透明にする。",
+          "紫赤の背景光が混入。",
+          "最大コマの破片が広く、無被害の状態表示として範囲を整理する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/silence-seal"
+      ]
+    },
+    {
+      "id": "effects/demon-impact",
+      "effect": "demon-impact",
+      "region": "demon-castle",
+      "label": "魔拳の衝撃",
+      "kind": "target",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/demon-impact-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "赤白の衝撃星、紫の破片、割れた金の輪を表現。"
+        ],
+        "issues": [
+          "紫赤の背景光が混入。",
+          "最大時の白い核と長い突起が大きい。単発の衝撃として対象を覆う時間と範囲を確認する。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/demon-impact"
+      ]
+    },
+    {
+      "id": "effects/curse",
+      "effect": "curse",
+      "region": "demon-castle",
+      "label": "呪い",
+      "kind": "status",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/curse-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "割れた紫の輪と赤い裂け目で呪いを表現。"
+        ],
+        "issues": [
+          "紫の背景光が混入。",
+          "最大コマの突起と横の光が強い。状態表示として縮尺と4→1の外形を揃える。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/curse"
+      ]
+    },
+    {
+      "id": "effects/armor-break",
+      "effect": "armor-break",
+      "region": "shared",
+      "label": "破甲",
+      "kind": "status",
+      "cols": 2,
+      "rows": 2,
+      "reference": null,
+      "originalSource": "../../late-stage-first-pass/v1/sources/effects/armor-break-generated.png",
+      "priorReview": {
+        "framesChecked": true,
+        "observations": [
+          "金銀の盾と赤いひび、割れる金属片で破甲を表現。"
+        ],
+        "issues": [
+          "最終コマで盾の印が消えて粒子だけになる。破甲の付与演出と状態維持のアイコンを分ける。",
+          "反復で盾が毎回復元される構成になる。状態表示には割れた盾の保持コマが必要。"
+        ]
+      },
+      "status": "resolved-by-selected-reviewed-clips",
+      "reviewedClips": [
+        "effects/armor-break"
+      ]
+    }
+  ],
+  "completedDate": "2026-10-15 JST",
+  "expectedClipIds": [
+    "demon-armored-soldier/idle",
+    "demon-armored-soldier/move",
+    "demon-armored-soldier/hit",
+    "demon-armored-soldier/down",
+    "demon-armored-soldier/attack",
+    "demon-armored-soldier/danger-1",
+    "imp/idle",
+    "imp/move",
+    "imp/hit",
+    "imp/down",
+    "imp/attack",
+    "imp/danger-1",
+    "dream-demon/idle",
+    "dream-demon/move",
+    "dream-demon/hit",
+    "dream-demon/down",
+    "dream-demon/attack",
+    "dream-demon/danger-1",
+    "black-knight/idle",
+    "black-knight/move",
+    "black-knight/hit",
+    "black-knight/down",
+    "black-knight/attack",
+    "black-knight/danger-1",
+    "black-knight/danger-2",
+    "arch-demon/idle",
+    "arch-demon/move",
+    "arch-demon/hit",
+    "arch-demon/down",
+    "arch-demon/attack",
+    "arch-demon/danger-1",
+    "arch-demon/danger-2",
+    "lilith/idle",
+    "lilith/move",
+    "lilith/hit",
+    "lilith/down",
+    "lilith/attack",
+    "lilith/danger-1",
+    "lilith/danger-2",
+    "effects/dark-slash",
+    "effects/royal-cleave",
+    "effects/black-ring-slash",
+    "effects/curse-orb",
+    "effects/curse-impact",
+    "effects/sleep-moon",
+    "effects/demon-pillar",
+    "effects/summon-gate",
+    "effects/dark-flower",
+    "effects/silence-seal",
+    "effects/demon-impact",
+    "effects/end-cross",
+    "effects/end-ring",
+    "effects/curse",
+    "effects/armor-break",
+    "effects/burn",
+    "effects/claw-arc"
+  ],
+  "pendingJobs": []
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit\nAsset type: production transparent JRPG pixel-art sprite sheet, finger snap animation.\nInput 1 is the exact body-only seated frame to match for body scale, colors, camera, hair, opaque ivory/navy/gold costume, silver-lavender hair, and small crown. Input 2 is the original identity reference only; do not include its throne or large ring.\nExactly THREE equal square cells in ONE horizontal row. Each cell has its own virtual 512x512 coordinates. Complete figure in x=60..452,y=65..450 of EVERY cell with wide empty transparent gutters. True transparent alpha. No background, text, panels or effects. SAME body, face, hair silhouette, seated crossed legs and left cheek-supporting arm fixed across all three frames. Exactly two arms, attached to the same shoulders.\nAnimate only the free SCREEN-RIGHT forearm and hand: F1 hand raised near (354,210), middle fingertip touching thumb in a clear snapping gesture. F2 wrist stays (348,218), middle finger visibly releases down toward palm, index finger relaxed, no pointing. F3 the same right hand relaxes back down near (362,272), matching input1. Keep left cheek arm and all lower body pixels stable. This is a tiny confident finger snap while seated, no extended extra arm, no magic light, no chair, no large halo, no new accessories. Pixel-art clusters and dark violet outline matching reference. Do not crop shoes, crown or hair.\n",
+  "output": "source/p1-snap.png",
+  "sha256": "0389072cb012ec968955044d69091d4f356bbeb7e6637ddcfc9e09f6d320c961",
+  "references": [
+    {
+      "file": "../repair-v2/review/motions/p1-shot/frame-01.png",
+      "sha256": "fd54cd7b484007e336729c52477c123d6bd1f98a61168128b39a87dd03a011b4"
+    },
+    {
+      "file": "../v1/references/phase-1-seated.png",
+      "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+    }
+  ],
+  "layout": "three equal 724x724 cells in one row; no visible pixels on cell boundaries"
+}

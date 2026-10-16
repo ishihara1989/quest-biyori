@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "thunder-crows-guardian",
+  "character": "miko",
+  "subject": "thunder-crows",
+  "group": "guardian",
+  "motion": "manifest",
+  "sheet": "thunder-crows-manifest.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.4775510204081633,
+  "frames": [
+    {
+      "index": 0,
+      "file": "thunder-crows-manifest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 48,
+        "t": 72,
+        "r": 465,
+        "b": 476,
+        "n": 100397,
+        "width": 418,
+        "height": 405
+      }
+    },
+    {
+      "index": 1,
+      "file": "thunder-crows-manifest-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 40,
+        "t": 40,
+        "r": 466,
+        "b": 474,
+        "n": 116174,
+        "width": 427,
+        "height": 435
+      }
+    },
+    {
+      "index": 2,
+      "file": "thunder-crows-manifest-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 24,
+        "t": 8,
+        "r": 480,
+        "b": 467,
+        "n": 133666,
+        "width": 457,
+        "height": 460
+      }
+    },
+    {
+      "index": 3,
+      "file": "thunder-crows-manifest-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 38,
+        "t": 55,
+        "r": 460,
+        "b": 464,
+        "n": 103621,
+        "width": 423,
+        "height": 410
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/thunder-crows-guardian-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/thunder-crows-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

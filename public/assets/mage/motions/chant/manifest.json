@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "character": "mage",
+  "motion": "chant",
+  "label": "詠唱",
+  "facing": "right",
+  "sheet": "mage-chant.png",
+  "width": 1024,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.3134160090191657,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/mage/motions/chant/source/mage-chant-generated-v1.png",
+  "sourceWidth": 1536,
+  "sourceHeight": 1024,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "columnSplit": 768,
+  "rowSplit": 529,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Draw at the shared ground pivot. Independent wind PNG effects live under assets/effects; connectionSource marks identical boundary poses.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "chant-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "閉眼・髪が浮く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 453,
+        "y": 497
+      },
+      "sourceBounds": {
+        "left": 235,
+        "top": 51,
+        "right": 639,
+        "bottom": 497
+      },
+      "bounds": {
+        "left": 60,
+        "top": 68,
+        "right": 186,
+        "bottom": 207
+      },
+      "visiblePixels": 9372,
+      "transparentPixels": 46331
+    },
+    {
+      "index": 1,
+      "file": "chant-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "髪が上へ揺れる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 357,
+        "y": 497
+      },
+      "sourceBounds": {
+        "left": 128,
+        "top": 51,
+        "right": 543,
+        "bottom": 497
+      },
+      "bounds": {
+        "left": 57,
+        "top": 68,
+        "right": 186,
+        "bottom": 207
+      },
+      "visiblePixels": 9421,
+      "transparentPixels": 46167
+    },
+    {
+      "index": 2,
+      "file": "chant-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "髪が外へ揺れる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 453,
+        "y": 493
+      },
+      "sourceBounds": {
+        "left": 206,
+        "top": 48,
+        "right": 639,
+        "bottom": 493
+      },
+      "bounds": {
+        "left": 51,
+        "top": 68,
+        "right": 186,
+        "bottom": 207
+      },
+      "visiblePixels": 9517,
+      "transparentPixels": 46055
+    },
+    {
+      "index": 3,
+      "file": "chant-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "髪が戻る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 357,
+        "y": 493
+      },
+      "sourceBounds": {
+        "left": 138,
+        "top": 49,
+        "right": 543,
+        "bottom": 493
+      },
+      "bounds": {
+        "left": 60,
+        "top": 68,
+        "right": 186,
+        "bottom": 207
+      },
+      "visiblePixels": 9322,
+      "transparentPixels": 46328
+    }
+  ]
+}

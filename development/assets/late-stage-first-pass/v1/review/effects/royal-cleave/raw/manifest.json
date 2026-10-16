@@ -1,0 +1,49 @@
+{
+  "id": "effects/royal-cleave/raw",
+  "region": "demon-castle",
+  "motion": "raw-sheet",
+  "label": "王断の大剣（原画のみ）",
+  "kind": "raw-sheet",
+  "sources": [
+    "sources/effects/royal-cleave-generated.png"
+  ],
+  "durations": [
+    1000
+  ],
+  "phases": [
+    "切り出し不可・原画"
+  ],
+  "extractionError": "生成された透過・粒子を保持するため、画素マスク方式の切り出しは使わない。矩形の手動切り出しが必要",
+  "enemyLabel": null,
+  "expectedFrames": 1,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 16,
+        "top": 10,
+        "right": 1256,
+        "bottom": 1230
+      },
+      "sourceWidth": 1265,
+      "sourceHeight": 1244,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 795118,
+      "transparentFraction": 0.5052667030997802
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../../sources/effects/royal-cleave-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

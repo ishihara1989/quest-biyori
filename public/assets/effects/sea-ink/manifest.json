@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "sea-ink",
+  "label": "墨・目潰し",
+  "sheet": "sea-ink.png",
+  "preview": "../../../../development/assets/effects/sea-ink/sea-ink-preview.gif",
+  "prompt": "../../../../development/assets/effects/sea-ink/PROMPT.md",
+  "width": 1280,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 112
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/sea-ink/source-generated.png",
+  "sourceScale": 0.4143763213530655,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "sea-ink-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 84,
+        "top": 44,
+        "right": 236,
+        "bottom": 179
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 399,
+        "y": 277
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "sea-ink-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 26,
+        "top": 16,
+        "right": 294,
+        "bottom": 208
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 259
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "sea-ink-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 19,
+        "top": 15,
+        "right": 301,
+        "bottom": 209
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 398,
+        "y": 245
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "sea-ink-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 26,
+        "top": 17,
+        "right": 294,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 249
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

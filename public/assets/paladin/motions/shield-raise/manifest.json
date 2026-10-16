@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "label": "盾を掲げる",
+  "motion": "shield-raise",
+  "sheet": "shield-raise.png",
+  "width": 768,
+  "height": 256,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 520,
+  "loop": false,
+  "terminal": false,
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 239
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "shield-raise-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 160,
+      "bounds": {
+        "l": 52,
+        "t": 106,
+        "r": 165,
+        "b": 239
+      },
+      "phase": "構え",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 1,
+      "file": "shield-raise-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 160,
+      "bounds": {
+        "l": 52,
+        "t": 103,
+        "r": 176,
+        "b": 239
+      },
+      "phase": "持ち上げる",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 2,
+      "file": "shield-raise-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 200,
+      "bounds": {
+        "l": 51,
+        "t": 57,
+        "r": 183,
+        "b": 239
+      },
+      "phase": "頭上に掲げる",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    }
+  ],
+  "source": "../../../../../development/assets/paladin/motions/shield-raise/source/shield-raise-generated-v1.png",
+  "generation": "built-in image_gen; generated RGBA preserved",
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  }
+}

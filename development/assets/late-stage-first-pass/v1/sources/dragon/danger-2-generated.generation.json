@@ -1,0 +1,34 @@
+{
+  "id": "dragon/danger-2",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "danger-2",
+  "label": "双脈ブレス",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/dragon.png",
+  "guide": null,
+  "source": "sources/dragon/danger-2-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 双脈ブレス by ドラゴン EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: neck retracts right 50px, molten glow travels chest to throat, jaw extends left 70px at release and wings brace, returns. Four feet planted. Held release can emit two waves. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "fire-beam",
+    "burn"
+  ],
+  "repeat": 2,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-f728b887-01f4-4cb9-a30d-105485ceaf23.png",
+  "sha256": "729ae9a6e078e0e2c98645529dc586230870890442ad2511add8b6c4e889c5b9",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "胸から喉を明るくし、首を左へ伸ばして口を開く。"
+    ],
+    "issues": [
+      "赤橙の背景光が混入。",
+      "発動で首・翼・胸の形が伸びる。基準体格と口の固定発射点を合わせる。",
+      "2波のブレスと逆側帯は別エフェクトの配置・時刻として実装する必要がある。"
+    ]
+  }
+}

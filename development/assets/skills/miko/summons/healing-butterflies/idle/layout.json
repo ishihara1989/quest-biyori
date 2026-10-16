@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/healing-butterflies-idle-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 739,
+      "height": 724
+    },
+    {
+      "x": 739,
+      "y": 0,
+      "width": 727,
+      "height": 724
+    },
+    {
+      "x": 1466,
+      "y": 0,
+      "width": 706,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.1308411214953271
+}

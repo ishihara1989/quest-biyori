@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rock-horn-goat",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "rock-horn-goat-idle.png",
+  "preview": "../../../../../../development/assets/enemies/rock-horn-goat/motions/idle/rock-horn-goat-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1920,
+  "height": 350,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 350,
+  "frameCount": 4,
+  "pivot": {
+    "x": 274,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/highland-motions/enemies/rock-horn-goat/registered/idle.png",
+  "sourceScale": 0.3776978417266187,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 178,
+        "top": 117,
+        "right": 374,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 699,
+        "height": 676
+      },
+      "sourceAnchor": {
+        "x": 365,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 175,
+        "top": 114,
+        "right": 372,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 699,
+        "y": 0,
+        "width": 699,
+        "height": 676
+      },
+      "sourceAnchor": {
+        "x": 326,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 177,
+        "top": 124,
+        "right": 374,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 676,
+        "width": 699,
+        "height": 676
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 590
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 177,
+        "top": 120,
+        "right": 372,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 699,
+        "y": 676,
+        "width": 699,
+        "height": 676
+      },
+      "sourceAnchor": {
+        "x": 324,
+        "y": 592
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/rock-horn-goat.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/rock-horn-goat/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 664,
+          "height": 644
+        },
+        {
+          "x": 664,
+          "y": 0,
+          "width": 590,
+          "height": 644
+        },
+        {
+          "x": 0,
+          "y": 644,
+          "width": 667,
+          "height": 610
+        },
+        {
+          "x": 667,
+          "y": 644,
+          "width": 587,
+          "height": 610
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [],
+  "action": null
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head><base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111317">
+  <title>Idle RPG — 6人のスプライト検証</title>
+  <link rel="stylesheet" href="/development/labs/css/sprite-lab.css">
+  <script defer src="/js/core/motion-playback.js"></script>
+  <script defer src="/development/labs/js/sprite-lab.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Idle RPG Sprite Lab ホーム"><span class="brand-mark" aria-hidden="true">✦</span><span>IDLE RPG <b>SPRITE LAB</b></span></a>
+      <span class="study-number"><a href="/game.html">冒険へ ↗</a>　<a href="/development/labs/shaman-skill-lab.html">呪術師の呪法 ↗</a>　<a href="/development/labs/ritual-lab.html">忍者・呪術師・巫女 ↗</a>　<a href="/development/labs/paladin-skill-lab.html">パラディンの聖技 ↗</a>　<a href="/development/labs/mage-skill-lab.html">魔法使いの魔法 ↗</a>　<a href="/development/labs/mage-lab.html">杖モーション ↗</a>　<a href="/development/labs/skill-lab.html">戦士の剣技 ↗</a>　<a href="/development/labs/battle.html">戦闘シーン ↗</a>　<a href="/development/labs/stages.html">バトルステージ ↗</a>　<a href="/development/labs/enemies.html">敵キャラクターを見る ↗</a></span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow" id="character-eyebrow">CHARACTERS / WARRIOR</p><h1 id="page-title"><span id="character-title">戦士の待機モーション</span><span class="version">試作 02</span></h1>
+          <p class="intro-copy">6人の共通モーションと、個別の攻撃・詠唱・祈りを確認。</p></div>
+        <div class="asset-status"><span class="status-dot"></span>素材検証<span class="status-divider">/</span><span>06 of 06</span></div>
+      </section>
+
+      <div id="character-tabs" class="character-tabs" role="group" aria-label="キャラクターを選択"></div>
+
+      <div class="motion-tabs" role="group" aria-label="モーションを選択">
+        <button type="button" data-motion="idle" aria-pressed="true">待機<small>4 FRAMES / LOOP</small></button>
+        <button type="button" data-motion="forward" aria-pressed="false">前進<small>8 FRAMES / LOOP</small></button>
+        <button type="button" data-motion="backward" aria-pressed="false">後退<small>8 FRAMES / LOOP</small></button>
+        <button type="button" data-motion="jump" aria-pressed="false">ジャンプ<small>3 FRAMES</small></button>
+        <button type="button" data-motion="hit" aria-pressed="false">被撃<small>2 FRAMES</small></button>
+        <button type="button" data-motion="down" aria-pressed="false">ダウン<small>4 FRAMES / HOLD</small></button>
+      </div>
+      <div class="workspace">
+        <section class="preview-panel" aria-label="アニメーションプレビュー">
+          <div class="panel-heading"><h2><span class="small-dot"></span>ライブプレビュー</h2><span id="play-state" class="state-label">読み込み中</span></div>
+          <div id="stage" class="stage" data-background="ruins" style="--sprite-size:512px;--sprite-height:448px;--ground-offset:88px">
+            <div class="stage-architecture" aria-hidden="true"><div class="arch"></div><div class="pillar left"></div><div class="pillar right"></div></div>
+            <div class="stage-floor" aria-hidden="true"></div>
+            <div class="stage-caption"><span id="stage-character">WARRIOR</span><span id="stage-motion">IDLE / SIDE VIEW</span></div>
+            <div class="ground-guide" aria-hidden="true"><span>GROUND</span></div>
+            <div class="sprite-shadow" aria-hidden="true"></div>
+            <canvas id="sprite" width="256" height="224" role="img" aria-label="右向きの戦士の待機アニメーション" tabindex="0"></canvas>
+            <p id="load-status" class="load-status" role="status">スプライトを読み込んでいます…</p>
+            <span class="stage-scale" id="stage-scale">256 × 224 px / 2×</span>
+          </div>
+          <div class="playback-bar">
+            <div class="transport"><button id="play-toggle" class="play-button" type="button" disabled><span id="play-icon" aria-hidden="true">Ⅱ</span><span id="play-label">一時停止</span></button><button id="previous-frame" class="step-button" type="button" aria-label="前のコマへ" title="前のコマ（←）" disabled>‹</button><button id="next-frame" class="step-button" type="button" aria-label="次のコマへ" title="次のコマ（→）" disabled>›</button><button id="restart" class="restart-button" type="button" disabled>最初から</button></div>
+            <div class="playback-meta"><span class="keyboard-tip">SPACE で再生 / 停止</span><span class="frame-counter"><b id="current-frame">01</b><span> / <span id="total-frames">04</span></span></span></div>
+          </div>
+          <div class="sequence-row"><span id="sequence-status">待機</span><label class="checkbox-label"><input id="bridge-idle" type="checkbox"><span>待機を挟んで再生</span></label></div>
+          <div class="filmstrip-heading"><h3 id="filmstrip-title">4コマのループ</h3><span>コマを選んで静止表示</span></div>
+          <div id="filmstrip" class="filmstrip" role="group" aria-label="コマを選択"></div>
+        </section>
+
+        <aside class="sidebar" aria-label="表示設定と素材情報">
+          <section class="settings-panel"><div class="panel-heading"><h2>表示設定</h2><span class="panel-index">01 — 04</span></div>
+            <fieldset id="settings" disabled>
+              <div class="control"><span class="control-label" id="zoom-label">表示倍率</span><div class="segments" role="group" aria-labelledby="zoom-label"><button type="button" data-zoom="1" aria-pressed="false">1×</button><button type="button" data-zoom="2" aria-pressed="true">2×</button><button type="button" data-zoom="3" aria-pressed="false">3×</button></div></div>
+              <div class="control"><span class="control-label" id="direction-label">向き</span><div class="segments" role="group" aria-labelledby="direction-label"><button type="button" data-direction="right" aria-pressed="true">右向き →</button><button type="button" data-direction="left" aria-pressed="false">← 左右反転</button></div></div>
+              <div class="control"><span class="control-label" id="background-label">背景</span><div class="background-buttons" role="group" aria-labelledby="background-label"><button type="button" data-background="ruins" aria-pressed="true"><span class="swatch ruins"></span>遺跡</button><button type="button" data-background="dark" aria-pressed="false"><span class="swatch dark"></span>暗色</button><button type="button" data-background="light" aria-pressed="false"><span class="swatch light"></span>明色</button><button type="button" data-background="transparent" aria-pressed="false"><span class="swatch transparent"></span>透過</button></div></div>
+              <div class="control"><label class="control-label speed-label" for="speed">再生速度<output id="speed-value" for="speed">1.00×</output></label><input id="speed" type="range" min="0.5" max="2" step="0.25" value="1"><div class="range-labels"><span>0.5×</span><span>2×</span></div></div>
+              <label class="checkbox-label"><input id="show-ground" type="checkbox"><span>接地ラインを表示</span></label>
+            </fieldset>
+          </section>
+          <section class="spec-panel"><p class="eyebrow">ASSET SPECIFICATION</p><h2 id="asset-title">Warrior / Idle</h2><dl><div><dt>フレーム</dt><dd id="spec-frames">4 コマ</dd></div><div><dt>1コマのサイズ</dt><dd id="spec-size">160 × 160 px</dd></div><div><dt>モーション時間</dt><dd id="cycle-duration">1.60 秒</dd></div><div><dt>再生後</dt><dd id="spec-loop">ループ</dd></div><div><dt>ファイル</dt><dd>PNG / 透過</dd></div></dl><a id="download-sheet" class="download-button" href="assets/warrior/warrior-idle.png" download="warrior-idle.png"><span>↓</span>スプライトシートを保存<span class="download-extension">PNG</span></a><a id="download-gif" class="manifest-link" href="/development/assets/warrior/warrior-idle-preview.gif" download="warrior-idle-preview.gif">プレビューをGIFで保存 <span>↗</span></a><a id="download-manifest" class="manifest-link" href="assets/warrior/manifest.json" download="warrior-idle.json">フレーム情報を保存 <span>↗</span></a><a id="generation-prompt" class="manifest-link" href="/development/assets/warrior/PROMPT.md">生成プロンプトを見る <span>↗</span></a></section>
+          <p class="preview-note">攻撃・詠唱終了は待機へ戻り、ダウンは最後で静止します。<a href="/development/labs/ritual-lab.html">印・詠唱・祈りの連続再生 ↗</a></p>
+        </aside>
+      </div>
+
+      <section class="comparison" aria-labelledby="comparison-title"><div class="section-title"><div><p class="eyebrow">DESIGN REFERENCE</p><h2 id="comparison-title">デザインから、ゲームの中へ。</h2></div><p id="design-summary">茶色のポニーテール、革鎧、両手剣を引き継いだ試作。</p></div><div class="comparison-grid"><div class="comparison-card"><div class="reference-image"><img id="reference-image" src="/development/assets/references/warrior-original.png" alt="戦士の元デザイン" loading="lazy" width="1254" height="1254"></div><div class="comparison-text"><span class="eyebrow">ORIGINAL DESIGN</span><h3>元のキャラクターデザイン</h3><p id="reference-label">既存の戦士イラストを参照</p></div></div><div class="comparison-card"><div class="pixel-reference"><canvas id="comparison-sprite" width="160" height="160" role="img" aria-label="ドット絵にした戦士の1コマ目"></canvas></div><div class="comparison-text"><span class="eyebrow">PIXEL ART ADAPTATION</span><h3>横向きのドット絵</h3><p>1コマ 160 × 160 px</p></div></div></div></section>
+
+      <section class="roster" aria-labelledby="roster-title"><div class="section-title"><div><p class="eyebrow">PARTY LINEUP</p><h2 id="roster-title">6人の冒険者</h2></div><p id="roster-motion">同じ時刻・接地位置で比較。キャラを選ぶと詳細を表示。</p></div><ol id="party-lineup" class="roster-list"></ol></section>
+    </main>
+    <footer><span><span class="footer-star">✦</span> IDLE RPG / SPRITE LAB</span><span>CHARACTER ASSET STUDY — 01 / 06</span></footer>
+  </div>
+</body>
+</html>
+

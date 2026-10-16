@@ -1,0 +1,52 @@
+{
+  "id": "parts/target-star",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/target-star/review/parts/target-star/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/target-star.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "One small hollow four-point gold/cyan target star, clear transparent center.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.9373627994882087,
+      "lowAlphaPixels": 17860,
+      "edgePixels": 0,
+      "bounds": [
+        331,
+        346,
+        922,
+        926
+      ],
+      "marginFraction": 0.2607655502392344
+    }
+  ],
+  "sources": [
+    "source/parts/target-star.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/target-star/contact.png",
+  "gif": "review/parts/target-star/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

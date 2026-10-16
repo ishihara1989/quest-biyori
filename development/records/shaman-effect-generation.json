@@ -1,0 +1,230 @@
+[
+  {
+    "id": "skull-bolt",
+    "count": 3,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A small bone-colored skull projectile facing right, teal core and tapered violet trailing tail. Three loop poses: compact tail; stretched flame tail with mouth open; compact tail closing mouth. Stable skull center.",
+    "source": "development/assets/skills/shaman/effects/skull-bolt/source/skull-bolt-generated-v1.png",
+    "xCuts": [
+      0,
+      630,
+      1490,
+      2172
+    ]
+  },
+  {
+    "id": "mark",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A small ominous circular curse rune and bone skull central glyph. Appearance: thin broken purple strokes; almost closed ring with teal notches; closed violet ring and bone skull. Keep center fixed.",
+    "source": "development/assets/skills/shaman/effects/mark/source/mark-generated-v1.png"
+  },
+  {
+    "id": "mark-pulse",
+    "count": 3,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. One curse ring with small skull: contract inward; brilliant bone-white central flash with teal sparks and purple rim; return to quiet purple ring. Stable center. Not a fireball.",
+    "source": "development/assets/skills/shaman/effects/mark-pulse/source/mark-pulse-generated-v1.png"
+  },
+  {
+    "id": "mark-fade",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A curse ring dissolving: violet ring cracks into bone fragments; fragments drift outward; sparse fading teal sparks. No smoke blanket.",
+    "source": "development/assets/skills/shaman/effects/mark-fade/source/mark-fade-generated-v1.png"
+  },
+  {
+    "id": "armor-crack",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A bone-colored armor/shield glyph being fractured by purple curse: intact narrow cracks; cracks erupt; separated small armor fragments. Fixed center.",
+    "source": "development/assets/skills/shaman/effects/armor-crack/source/armor-crack-generated-v1.png"
+  },
+  {
+    "id": "frailty",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. Thin spectral purple exhalation falling downward around a tiny bone charm: emerge upper center; stretched falling wisps; dissipating teal dust. Recognizable weakening curse.",
+    "source": "development/assets/skills/shaman/effects/frailty/source/frailty-generated-v1.png"
+  },
+  {
+    "id": "reaction-ring",
+    "count": 3,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A hook-shaped violet curse ring for hit reactions: quiet open ring with bone barbs; close ring; bright inward pulse. Teal core, fixed center.",
+    "source": "development/assets/skills/shaman/effects/reaction-ring/source/reaction-ring-generated-v1.png"
+  },
+  {
+    "id": "curse-spike",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A barbed purple and bone spectral thorn striking inward: narrow spear growth from left; long sharp bone core with violet hooks; shattered small fragments. Bright magical impact.",
+    "source": "development/assets/skills/shaman/effects/curse-spike/source/curse-spike-generated-v1.png",
+    "xCuts": [
+      0,
+      750,
+      1455,
+      2172
+    ]
+  },
+  {
+    "id": "grudge-flame",
+    "count": 3,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A cold malicious violet flame with small bone skull, teal inner fire. Three looping poses of curling flame rising; skull never obscured. No ordinary red fire.",
+    "source": "development/assets/skills/shaman/effects/grudge-flame/source/grudge-flame-generated-v1.png"
+  },
+  {
+    "id": "ramp-skull",
+    "count": 3,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A spectral bone skull floating within black-violet angular curse halo. Three pulse loop frames: quiet; angular horns flare; flare contracts. Ominous teal eye sparks.",
+    "source": "development/assets/skills/shaman/effects/ramp-skull/source/ramp-skull-generated-v1.png"
+  },
+  {
+    "id": "life-vines",
+    "count": 3,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. Slender black-violet spectral vines wrapping a hollow silhouette-sized circular opening. Teal veins, bone flakes fall. Loop stages curl clockwise; tightened loop; loosening again. Empty transparent center so character visible.",
+    "source": "development/assets/skills/shaman/effects/life-vines/source/life-vines-generated-v1.png",
+    "xCuts": [
+      0,
+      760,
+      1435,
+      2172
+    ]
+  },
+  {
+    "id": "curse-chain",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A horizontal magical chain made of bone rune links and violet energy. Three frames: links materialize; bright connecting chain; links unravel into teal flecks. No characters.",
+    "source": "development/assets/skills/shaman/effects/curse-chain/source/curse-chain-generated-v1.png"
+  },
+  {
+    "id": "curse-moth",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A small ghostly moth made of purple curse smoke with teal bone-like thorax. Three flap poses: wings lifted; wide wings; folded wings. No body characters.",
+    "source": "development/assets/skills/shaman/effects/curse-moth/source/curse-moth-generated-v1.png",
+    "xCuts": [
+      0,
+      670,
+      1650,
+      2172
+    ]
+  },
+  {
+    "id": "field-open",
+    "count": 4,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 4 animation frames. An elaborate ground magic circle opening, viewed from above as an oval, hollow transparent center. Bone outer ring, violet runes, teal counterrotating inner ring. Four frames: broken arcs; partial circle; nearly closed; full rune circle. Fine lattice with empty gaps.",
+    "source": "development/assets/skills/shaman/effects/field-open/source/field-open-generated-v1.png"
+  },
+  {
+    "id": "field-pulse",
+    "count": 4,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 4 animation frames. An elaborate hollow oval ground curse circle, bone outer ring purple runes teal inner circle. Four looping pulse frames: quiet rings; concentric waves move inward; white-teal core flash but transparent gaps; dim return. Ground effect no solid disc.",
+    "source": "development/assets/skills/shaman/effects/field-pulse/source/field-pulse-generated-v1.png"
+  },
+  {
+    "id": "field-fade",
+    "count": 4,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 4 animation frames. A hollow oval ground curse circle breaks apart. Four frames: fine cracks in bone ring; rings split; shards rising; sparse violet teal embers. Transparent center always.",
+    "source": "development/assets/skills/shaman/effects/field-fade/source/field-fade-generated-v1.png",
+    "xCuts": [
+      0,
+      560,
+      1110,
+      1640,
+      2172
+    ]
+  },
+  {
+    "id": "bone-stake",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A tall jagged bone curse stake erupting vertically out of the ground. Three frames: short emerging bone tip; half height with purple rune cracks; full tall carved ivory spire teal inner energy and violet sparks. Complete tip/base inside each cell.",
+    "source": "development/assets/skills/shaman/effects/bone-stake/source/bone-stake-generated-v1.png"
+  },
+  {
+    "id": "healing-seal",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A small emerald-green life ring with a diagonal violet bone seal shutting it: green ring; purple slash crosses; sealed ring flares with bone fragments. Simple readable curse graphic.",
+    "source": "development/assets/skills/shaman/effects/healing-seal/source/healing-seal-generated-v1.png"
+  },
+  {
+    "id": "amplify-ring",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. Two angular violet rings closing around a hollow center, fine bone notches and teal tiny sparks. Three frames: separated arcs; rings close; intensified concentric glow. Empty center.",
+    "source": "development/assets/skills/shaman/effects/amplify-ring/source/amplify-ring-generated-v1.png"
+  },
+  {
+    "id": "curse-collapse",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. Spectacular purple black curse implosion gathering inward, transparent hollow center. Three frames: broad hooked rune petals; petals draw inward along teal threads; tiny brilliant ivory core with tight violet spiral. Keep envelope 80% cell.",
+    "source": "development/assets/skills/shaman/effects/curse-collapse/source/curse-collapse-generated-v1.png"
+  },
+  {
+    "id": "curse-burst",
+    "count": 4,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 4 animation frames. Spectacular high-level bone/violet magical rupture, four frames: tight ivory nucleus; huge jagged violet flower-shaped blast with ivory core; expanding angular purple shock ring with flying skull/bone shards; scattered teal embers. Brilliant but holes/transparency so enemies readable.",
+    "source": "development/assets/skills/shaman/effects/curse-burst/source/curse-burst-generated-v1.png",
+    "xCuts": [
+      0,
+      460,
+      1080,
+      1700,
+      2172
+    ]
+  },
+  {
+    "id": "soul-lance",
+    "count": 3,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 3 animation frames. A rightward bone-white spectral lance with teal core piercing a cracked skull rune. Three frames: thin ghost lance; brilliant needle plus fractured violet skull halo; dissipating ivory fragments. No weapon held by human.",
+    "source": "development/assets/skills/shaman/effects/soul-lance/source/soul-lance-generated-v1.png"
+  },
+  {
+    "id": "hundred-ghosts",
+    "count": 4,
+    "loop": true,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 4 animation frames. Ultimate ritual spectral ghost skull swarm as one animated VFX asset, transparent. Four frames: a crescent of small ivory skull-shaped spirits orbit clockwise; broad orbit with violet tails; spirits thrust inward; orbit reset with teal sparks. Hollow middle; many small distinguishable spirits, no solid smoke cloud.",
+    "source": "development/assets/skills/shaman/effects/hundred-ghosts/source/hundred-ghosts-generated-v1.png"
+  },
+  {
+    "id": "soul-pillar",
+    "count": 4,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 4 animation frames. Extremely spectacular ultimate ritual upward column of bone-white and teal soul energy with purple filaments and rising skull fragments. Four frames: thin rising pillar; tall radiant split column; widest branching column with ivory shards; dissipating overhead fragments. Full top/base margin. Pixel-art bright impact.\n\nRevision: # Soul pillar revision\n\nBuilt-in image_gen. Original source retained as v1; v2 restores the column tips and transparent margins.\n\nEdit this transparent RPG pixel-art four-frame soul-pillar spritesheet. Retain the exact ivory skull fragments, teal core, violet filaments and detailed pixel-art style. Restore the complete TOP/TIPS of the second and third tall rising columns, which must not touch the image edge. Recompose into exactly FOUR equal-width horizontal cells in one row, fixed bottom baseline (.5,.82) per cell, generous 15% transparent margins left/right and at least 15% transparent space ABOVE the tallest energy tip. Same common scale across frames. The maximum full-height pillar is only 65% of the cell height. Frame 1 thin emerging pillar, frame 2 tall column, frame 3 branching peak, frame 4 dissipating fragments. No text, labels, grid, characters, shadows or opaque/checkerboard background. Actual transparent RGBA.\n",
+    "source": "development/assets/skills/shaman/effects/soul-pillar/source/soul-pillar-generated-v2.png",
+    "xCuts": [
+      0,
+      450,
+      950,
+      1660,
+      2078
+    ],
+    "version": 2
+  },
+  {
+    "id": "grand-shatter",
+    "count": 4,
+    "loop": false,
+    "prompt": "Use case: stylized-concept. Asset type: RPG game VFX spritesheet. Crisp detailed pixel art with hard pixel clusters, teal source magic, black violet curses and luminous ivory bone impacts. Genuine transparent RGBA background, no checkerboard painted, no text, labels, grid, ground, character or borders. Equal-width horizontal cells in ONE row. Each frame centered in its own cell with at least 8% empty margin all sides. Same framing/scale across frames. Exactly 4 animation frames. Ultimate giant hollow curse rune, oval ground projection, dramatically shattering into flying bone rune shards and teal-violet lightning. Four frames: intact multi-ring glyph; bright cracked rings; jagged explosion outward; scattered fragments. Empty center, no opaque background.",
+    "source": "development/assets/skills/shaman/effects/grand-shatter/source/grand-shatter-generated-v1.png",
+    "xCuts": [
+      0,
+      542,
+      1084,
+      1658,
+      2172
+    ]
+  }
+]

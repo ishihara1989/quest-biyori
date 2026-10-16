@@ -1,0 +1,101 @@
+{
+  "id": "effects/dark-flower",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "宵闇の花冠",
+  "kind": "ground",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/dark-flower-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 95,
+        "top": 208,
+        "right": 606,
+        "bottom": 484
+      },
+      "sourceWidth": 662,
+      "sourceHeight": 523,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 253504,
+      "transparentFraction": 0.7321922674784678
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 56,
+        "top": 98,
+        "right": 654,
+        "bottom": 500
+      },
+      "sourceWidth": 691,
+      "sourceHeight": 523,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 197367,
+      "transparentFraction": 0.5461284529584137
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 12,
+        "top": 21,
+        "right": 718,
+        "bottom": 556
+      },
+      "sourceWidth": 736,
+      "sourceHeight": 639,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 192871,
+      "transparentFraction": 0.41009857453902154
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 15,
+        "top": 114,
+        "right": 596,
+        "bottom": 582
+      },
+      "sourceWidth": 617,
+      "sourceHeight": 639,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 203655,
+      "transparentFraction": 0.516546061892696
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/dark-flower-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

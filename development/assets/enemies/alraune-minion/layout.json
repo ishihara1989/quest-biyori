@@ -1,0 +1,328 @@
+{
+  "assets": [
+    {
+      "enemy": "alraune-minion",
+      "id": "idle",
+      "label": "待機",
+      "directory": "assets/enemies/alraune-minion/motions/idle",
+      "source": "../../source/alraune-minion-idle-generated-v2.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "root",
+      "scale": 0.375,
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "loop": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 300,
+          "phase": "基準姿勢"
+        },
+        {
+          "cell": 1,
+          "durationMs": 300,
+          "phase": "花と葉がわずかに上がる"
+        },
+        {
+          "cell": 2,
+          "durationMs": 300,
+          "phase": "花と葉がわずかに下がる"
+        },
+        {
+          "cell": 3,
+          "durationMs": 300,
+          "phase": "基準姿勢へ"
+        }
+      ]
+    },
+    {
+      "enemy": "alraune-minion",
+      "id": "move",
+      "label": "移動",
+      "directory": "assets/enemies/alraune-minion/motions/move",
+      "source": "../../source/alraune-minion-move-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "root",
+      "scale": 0.35,
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "loop": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 180,
+          "phase": "手前の根を前へ",
+          "anchor": {
+            "x": 444,
+            "y": 486
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 180,
+          "phase": "奥の根を持ち上げる",
+          "anchor": {
+            "x": 410,
+            "y": 495
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 180,
+          "phase": "奥の根を前へ",
+          "anchor": {
+            "x": 454,
+            "y": 457
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 180,
+          "phase": "手前の根を持ち上げる",
+          "anchor": {
+            "x": 406,
+            "y": 469
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "alraune-minion",
+      "id": "hit",
+      "label": "被弾",
+      "directory": "assets/enemies/alraune-minion/motions/hit",
+      "source": "../../source/alraune-minion-hit-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "root",
+      "scale": 0.365,
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "reuseIdle": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 100,
+          "phase": "衝撃でのけぞる"
+        },
+        {
+          "cell": 1,
+          "durationMs": 140,
+          "phase": "茎が後ろへ大きくしなる"
+        },
+        {
+          "cell": 2,
+          "durationMs": 180,
+          "phase": "姿勢を立て直す"
+        },
+        {
+          "cell": 3,
+          "durationMs": 180,
+          "phase": "待機へ復帰"
+        }
+      ]
+    },
+    {
+      "enemy": "alraune-minion",
+      "id": "down",
+      "label": "撃破",
+      "directory": "assets/enemies/alraune-minion/motions/down",
+      "source": "../../source/alraune-minion-down-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "root",
+      "scale": 0.35,
+      "rowEdges": [
+        0,
+        680,
+        1024
+      ],
+      "terminal": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 220,
+          "phase": "花と葉が萎れる",
+          "anchor": {
+            "x": 490,
+            "y": 575
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 280,
+          "phase": "茎が折れ曲がる",
+          "anchor": {
+            "x": 435,
+            "y": 575
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 320,
+          "phase": "花が地面に伏せる",
+          "anchor": {
+            "x": 465,
+            "y": 281
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 600,
+          "phase": "倒れた姿で保持",
+          "anchor": {
+            "x": 475,
+            "y": 281
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "alraune-minion",
+      "id": "attack",
+      "label": "種の発射",
+      "directory": "assets/enemies/alraune-minion/motions/attack",
+      "source": "../../source/alraune-minion-attack-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "root",
+      "scale": 0.36,
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "reuseIdle": true,
+      "events": [
+        {
+          "id": "seed-stream",
+          "frame": 1,
+          "timeMs": 200,
+          "type": "spawn-projectile",
+          "effect": "alraune-seed-stream",
+          "origin": {
+            "x": 50,
+            "y": 108
+          }
+        }
+      ],
+      "projectilePreview": {
+        "effect": "alraune-seed-stream",
+        "manifest": "../../../../effects/alraune-seed-stream/manifest.json",
+        "velocity": {
+          "x": -480,
+          "y": 0
+        },
+        "lifetimeMs": 1200,
+        "scale": 1,
+        "leadInPx": 12,
+        "paddingLeft": 240,
+        "defaultZoom": 1,
+        "streams": [
+          {
+            "sourceY": 0,
+            "sourceHeight": 64,
+            "sourceCenterY": 42,
+            "muzzle": {
+              "x": 50,
+              "y": 108
+            }
+          }
+        ]
+      },
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 200,
+          "phase": "花を引いてためる"
+        },
+        {
+          "cell": 1,
+          "durationMs": 100,
+          "phase": "頭の花から左へ種を発射"
+        },
+        {
+          "cell": 2,
+          "durationMs": 140,
+          "phase": "発射の反動"
+        },
+        {
+          "cell": 3,
+          "durationMs": 200,
+          "phase": "待機へ復帰"
+        }
+      ]
+    },
+    {
+      "id": "alraune-seed-stream",
+      "label": "アルラウネの手下の種・1列",
+      "directory": "assets/effects/alraune-seed-stream",
+      "source": "source/alraune-seed-volley-top-stream.png",
+      "prompt": "PROMPT.md",
+      "frameWidth": 320,
+      "frameHeight": 64,
+      "pivot": {
+        "x": 160,
+        "y": 32
+      },
+      "scale": 1,
+      "columns": 1,
+      "columnEdges": [
+        0,
+        320
+      ],
+      "rowEdges": [
+        0,
+        50
+      ],
+      "loop": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 1000,
+          "phase": "左へ飛ぶ種8粒・1列",
+          "anchor": {
+            "x": 160,
+            "y": 25
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "base": "../../../../../development/assets/mage/motions/backward/source/mage-backward-generated-v6.png",
+  "output": "../../../../../development/assets/mage/motions/backward/source/mage-backward-generated-v7.png",
+  "frames": [
+    {
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 423,
+        "height": 483
+      },
+      "waistX": 237.84
+    },
+    {
+      "rect": {
+        "left": 423,
+        "top": 0,
+        "width": 408,
+        "height": 483
+      },
+      "waistX": 208.94
+    },
+    {
+      "rect": {
+        "left": 831,
+        "top": 0,
+        "width": 407,
+        "height": 483
+      },
+      "waistX": 219.51
+    },
+    {
+      "file": "../../../../../development/assets/mage/motions/backward/source/mage-backward-frames4-7-generated-v1.png",
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 674,
+        "height": 583
+      },
+      "waistX": 396.52,
+      "height": 443
+    },
+    {
+      "file": "../../../../../development/assets/mage/motions/backward/source/mage-backward-frames4-7-generated-v1.png",
+      "rect": {
+        "left": 674,
+        "top": 0,
+        "width": 675,
+        "height": 583
+      },
+      "waistX": 381.51,
+      "height": 443
+    },
+    {
+      "file": "../../../../../development/assets/mage/motions/backward/source/mage-backward-frames4-7-generated-v1.png",
+      "rect": {
+        "left": 0,
+        "top": 583,
+        "width": 674,
+        "height": 583
+      },
+      "waistX": 398.09,
+      "height": 442
+    },
+    {
+      "file": "../../../../../development/assets/mage/motions/backward/source/mage-backward-frames4-7-generated-v1.png",
+      "rect": {
+        "left": 674,
+        "top": 583,
+        "width": 675,
+        "height": 583
+      },
+      "waistX": 384.93,
+      "height": 442
+    },
+    {
+      "rect": {
+        "left": 1238,
+        "top": 483,
+        "width": 390,
+        "height": 483
+      },
+      "waistX": 222.64,
+      "height": 443
+    }
+  ]
+}

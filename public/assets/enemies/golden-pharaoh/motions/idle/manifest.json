@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "golden-pharaoh",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "golden-pharaoh-idle.png",
+  "preview": "../../../../../../development/assets/enemies/golden-pharaoh/motions/idle/golden-pharaoh-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 2160,
+  "height": 430,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 430,
+  "frameCount": 4,
+  "pivot": {
+    "x": 313,
+    "y": 412
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/golden-pharaoh/source/idle-registered.png",
+  "sourceScale": 0.5221238938053098,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 220,
+      "phase": "呼吸1",
+      "bounds": {
+        "left": 180,
+        "top": 101,
+        "right": 420,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 695,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 399,
+        "y": 626
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 220,
+      "phase": "呼吸2",
+      "bounds": {
+        "left": 179,
+        "top": 94,
+        "right": 428,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 695,
+        "y": 0,
+        "width": 695,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 626
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -20
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1080,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 220,
+      "phase": "呼吸3",
+      "bounds": {
+        "left": 177,
+        "top": 104,
+        "right": 420,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 669,
+        "width": 695,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1620,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 220,
+      "phase": "呼吸4",
+      "bounds": {
+        "left": 176,
+        "top": 108,
+        "right": 421,
+        "bottom": 400
+      },
+      "sourceCell": {
+        "x": 695,
+        "y": 669,
+        "width": 695,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -12
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/golden-pharaoh-idle-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/golden-pharaoh.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 663,
+          "height": 637
+        },
+        {
+          "x": 663,
+          "y": 0,
+          "width": 591,
+          "height": 637
+        },
+        {
+          "x": 0,
+          "y": 637,
+          "width": 661,
+          "height": 617
+        },
+        {
+          "x": 661,
+          "y": 637,
+          "width": 593,
+          "height": 617
+        }
+      ]
+    }
+  ]
+}

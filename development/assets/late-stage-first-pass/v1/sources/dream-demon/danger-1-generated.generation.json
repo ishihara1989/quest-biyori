@@ -1,0 +1,29 @@
+{
+  "id": "dream-demon/danger-1",
+  "enemy": "dream-demon",
+  "region": "demon-castle",
+  "motion": "danger-1",
+  "label": "眠りの月",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/dream-demon.png",
+  "guide": null,
+  "source": "sources/dream-demon/danger-1-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 眠りの月 by 夢魔 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: small wings fold toward shoulders, hands meet chest (490,420) with tiny crescent glint, palms lower left (300,560), return. Calm adult face, no full attack projectile. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "sleep-moon"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-8223e337-e3aa-4096-8e8f-9f15ff6f8a00.png",
+  "sha256": "4b0864ed88257d0f7daf3debefb1b7cb7c7c910424e4c0ca3acbd9441e913a28",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "上段の角が原画上端に接して見切れている。余白を確保して修正する。",
+      "発動コマに大きい月印が直接描かれる。本体と別の眠りの月エフェクトを分離し、二重表示を避ける。"
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "id": "owl-halo",
+  "character": "miko",
+  "subject": "owl-halo",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "owl-halo-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.505091649694501,
+  "frames": [
+    {
+      "index": 0,
+      "file": "owl-halo-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 37,
+        "t": 42,
+        "r": 493,
+        "b": 487,
+        "n": 83024,
+        "width": 457,
+        "height": 446
+      }
+    },
+    {
+      "index": 1,
+      "file": "owl-halo-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 22,
+        "t": 42,
+        "r": 475,
+        "b": 487,
+        "n": 88235,
+        "width": 454,
+        "height": 446
+      }
+    },
+    {
+      "index": 2,
+      "file": "owl-halo-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 36,
+        "t": 8,
+        "r": 494,
+        "b": 481,
+        "n": 91048,
+        "width": 459,
+        "height": 474
+      }
+    },
+    {
+      "index": 3,
+      "file": "owl-halo-effect-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 19,
+        "t": 38,
+        "r": 477,
+        "b": 483,
+        "n": 88791,
+        "width": 459,
+        "height": 446
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/owl-halo-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

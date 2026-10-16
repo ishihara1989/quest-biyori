@@ -1,0 +1,32 @@
+{
+  "source": "source/miko-attack-wand-generated-v1.png",
+  "columns": 3,
+  "rows": 1,
+  "scale": 0.262,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 672,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 672,
+        "y": 0,
+        "width": 829,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1501,
+        "y": 0,
+        "width": 671,
+        "height": 724
+      }
+    }
+  ]
+}

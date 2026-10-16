@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "label": "rampart",
+  "motion": "rampart",
+  "sheet": "rampart.png",
+  "width": 1024,
+  "height": 256,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "loop": true,
+  "terminal": false,
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 224
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "rampart-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 43,
+        "t": 53,
+        "r": 230,
+        "b": 217
+      },
+      "phase": "1",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 1,
+      "file": "rampart-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 22,
+        "t": 56,
+        "r": 223,
+        "b": 225
+      },
+      "phase": "2",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 2,
+      "file": "rampart-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 31,
+        "t": 29,
+        "r": 236,
+        "b": 213
+      },
+      "phase": "3",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 3,
+      "file": "rampart-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 22,
+        "t": 34,
+        "r": 226,
+        "b": 210
+      },
+      "phase": "4",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/paladin/source/rampart-generated-v1.png",
+  "generation": "built-in image_gen; generated RGBA preserved",
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  }
+}

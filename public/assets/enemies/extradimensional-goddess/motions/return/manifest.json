@@ -1,0 +1,74 @@
+{
+  "id": "return",
+  "motion": "return",
+  "label": "異次元への扉",
+  "loop": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "durationMs": 1800,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "file": "frame-1.png"
+    },
+    {
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 250,
+      "file": "frame-2.png"
+    },
+    {
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 400,
+      "file": "frame-3.png"
+    },
+    {
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 650,
+      "file": "frame-4.png"
+    },
+    {
+      "x": 2048,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "file": "frame-5.png"
+    },
+    {
+      "x": 2560,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "file": "frame-6.png"
+    }
+  ]
+}

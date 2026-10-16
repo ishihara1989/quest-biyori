@@ -1,0 +1,101 @@
+{
+  "id": "magma-salamander/idle",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/magma-salamander/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "マグマサラマンダー",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 112,
+        "top": 111,
+        "right": 773,
+        "bottom": 500
+      },
+      "sourceWidth": 783,
+      "sourceHeight": 535,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 237612,
+      "transparentFraction": 0.567221685107602
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 9,
+        "top": 83,
+        "right": 700,
+        "bottom": 500
+      },
+      "sourceWidth": 753,
+      "sourceHeight": 535,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 195795,
+      "transparentFraction": 0.4860185426518226
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 112,
+        "top": 34,
+        "right": 771,
+        "bottom": 418
+      },
+      "sourceWidth": 785,
+      "sourceHeight": 489,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 205507,
+      "transparentFraction": 0.5353626926132885
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 13,
+        "top": 39,
+        "right": 679,
+        "bottom": 418
+      },
+      "sourceWidth": 751,
+      "sourceHeight": 489,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 189443,
+      "transparentFraction": 0.5158575205792413
+    }
+  ],
+  "reference": "../../../references/magma-salamander.png",
+  "originalSources": [
+    "../../../sources/magma-salamander/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

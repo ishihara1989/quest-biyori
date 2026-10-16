@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-tusk-mammoth",
+  "motion": "trunk",
+  "facing": "left",
+  "label": "鼻打ち",
+  "sheet": "ice-tusk-mammoth-trunk.png",
+  "preview": "../../../../../../development/assets/enemies/ice-tusk-mammoth/motions/trunk/ice-tusk-mammoth-trunk-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2720,
+  "height": 450,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 680,
+  "frameHeight": 450,
+  "frameCount": 4,
+  "pivot": {
+    "x": 381,
+    "y": 428
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-tusk-mammoth/trunk.png",
+  "sourceScale": 0.6852791878172588,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-quake",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "trunk-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 213,
+        "top": 159,
+        "right": 543,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 684,
+        "height": 681
+      },
+      "sourceAnchor": {
+        "x": 387.5,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "trunk-02.png",
+      "x": 680,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 201,
+        "top": 159,
+        "right": 553,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 684,
+        "y": 0,
+        "width": 684,
+        "height": 681
+      },
+      "sourceAnchor": {
+        "x": 303.24335409387817,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "trunk-03.png",
+      "x": 1360,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 216,
+        "top": 158,
+        "right": 539,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 681,
+        "width": 684,
+        "height": 681
+      },
+      "sourceAnchor": {
+        "x": 392.5,
+        "y": 485
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "trunk-04.png",
+      "x": 2040,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 214,
+        "top": 159,
+        "right": 542,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 684,
+        "y": 681,
+        "width": 684,
+        "height": 681
+      },
+      "sourceAnchor": {
+        "x": 303,
+        "y": 485
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/trunk-generated-v2.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 634,
+          "height": 649
+        },
+        {
+          "x": 634,
+          "y": 0,
+          "width": 620,
+          "height": 649
+        },
+        {
+          "x": 0,
+          "y": 649,
+          "width": 652,
+          "height": 605
+        },
+        {
+          "x": 652,
+          "y": 649,
+          "width": 602,
+          "height": 605
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "trunk",
+    "warn": 0,
+    "times": [
+      420
+    ],
+    "kind": "melee",
+    "radius": 290,
+    "effect": "quake",
+    "rest": 1800,
+    "status": null,
+    "duration": 900,
+    "power": 1
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

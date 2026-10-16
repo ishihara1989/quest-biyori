@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "enemy": "armored-golem",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "armored-golem-down.png",
+  "preview": "../../../../../../development/assets/enemies/armored-golem/motions/down/armored-golem-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/armored-golem/PROMPT.md",
+  "width": 1024,
+  "height": 400,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 512,
+  "frameHeight": 400,
+  "frameCount": 2,
+  "pivot": {
+    "x": 297,
+    "y": 382
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1100,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/armored-golem/source/down-registered.png",
+  "sourceScale": 0.47513812154696133,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 300,
+      "phase": "崩落",
+      "bounds": {
+        "left": 113,
+        "top": 158,
+        "right": 386,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 697,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 419,
+        "y": 505
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 800,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 102,
+        "top": 244,
+        "right": 402,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 697,
+        "y": 627,
+        "width": 697,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 443,
+        "y": 322
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/armored-golem/source/reaction-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/armored-golem/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 71,
+          "y": 79,
+          "width": 573,
+          "height": 563,
+          "mainComponent": 2
+        },
+        {
+          "x": 650,
+          "y": 95,
+          "width": 558,
+          "height": 543,
+          "mainComponent": 3
+        },
+        {
+          "x": 31,
+          "y": 717,
+          "width": 575,
+          "height": 474,
+          "mainComponent": 11
+        },
+        {
+          "x": 603,
+          "y": 900,
+          "width": 633,
+          "height": 291,
+          "mainComponent": 12
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ]
+}

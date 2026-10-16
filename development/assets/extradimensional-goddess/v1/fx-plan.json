@@ -1,0 +1,888 @@
+{
+  "status": "planned-not-generated",
+  "coordinateSystem": "cell pixels; top-left origin; x right; y down",
+  "defaultFacing": "left",
+  "assets": [
+    {
+      "id": "star-bolt",
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "loop": false,
+      "frames": [
+        {
+          "f": 1,
+          "ms": 70,
+          "center": [
+            128,
+            128
+          ],
+          "diamondSize": [
+            24,
+            16
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 90,
+          "center": [
+            128,
+            128
+          ],
+          "diamondSize": [
+            80,
+            28
+          ],
+          "tailEnd": [
+            206,
+            128
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 3,
+          "ms": 80,
+          "center": [
+            128,
+            128
+          ],
+          "diamondSize": [
+            110,
+            14
+          ],
+          "tailEnd": [
+            223,
+            128
+          ],
+          "alpha": 0.55
+        }
+      ]
+    },
+    {
+      "id": "star-impact",
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "loop": false,
+      "frames": [
+        {
+          "f": 1,
+          "ms": 60,
+          "radius": 10,
+          "alpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 90,
+          "radius": 38,
+          "alpha": 1
+        },
+        {
+          "f": 3,
+          "ms": 130,
+          "radius": 28,
+          "alpha": 0
+        }
+      ]
+    },
+    {
+      "id": "snap-glint",
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "loop": false,
+      "worldAnchor": "p1-snap frame 3 right fingertips",
+      "frames": [
+        {
+          "f": 1,
+          "ms": 40,
+          "center": [
+            128,
+            128
+          ],
+          "radius": 4,
+          "alpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 40,
+          "center": [
+            128,
+            128
+          ],
+          "crossSize": [
+            44,
+            44
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 3,
+          "ms": 40,
+          "center": [
+            128,
+            128
+          ],
+          "crossSize": [
+            28,
+            28
+          ],
+          "alpha": 0
+        }
+      ]
+    },
+    {
+      "id": "star-mirror-open",
+      "cell": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        448
+      ],
+      "loop": false,
+      "holdFrame": 4,
+      "worldAnchor": [
+        632,
+        464
+      ],
+      "startDelayMs": 120,
+      "variants": {
+        "female": {
+          "openingSize": [
+            180,
+            300
+          ],
+          "rimCount": 1
+        },
+        "majorBoss": {
+          "openingSize": [
+            300,
+            360
+          ],
+          "rimCount": 2
+        }
+      },
+      "frames": [
+        {
+          "f": 1,
+          "ms": 80,
+          "center": [
+            256,
+            252
+          ],
+          "openingSize": [
+            4,
+            300
+          ]
+        },
+        {
+          "f": 2,
+          "ms": 80,
+          "center": [
+            256,
+            252
+          ],
+          "openingSize": [
+            60,
+            300
+          ]
+        },
+        {
+          "f": 3,
+          "ms": 90,
+          "center": [
+            256,
+            252
+          ],
+          "openingSize": [
+            140,
+            300
+          ]
+        },
+        {
+          "f": 4,
+          "ms": 80,
+          "center": [
+            256,
+            252
+          ],
+          "openingSize": [
+            180,
+            300
+          ]
+        }
+      ],
+      "phantomReveal": {
+        "startMs": 250,
+        "endMs": 600,
+        "direction": "ground to head",
+        "method": "clip original sprite; preserve proportions and palette"
+      },
+      "note": "Render-only phantom; no HP, collision, targeting, AI or rewards. Scale mirror rim independently for major bosses."
+    },
+    {
+      "id": "phantom-recall",
+      "cell": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        448
+      ],
+      "loop": false,
+      "startEvent": "last projectile release or last direct impact",
+      "frames": [
+        {
+          "f": 1,
+          "ms": 50,
+          "center": [
+            256,
+            252
+          ],
+          "crackAnglesDeg": [
+            45,
+            160,
+            280
+          ],
+          "phantomAlpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 60,
+          "fragmentCenters": [
+            [
+              168,
+              160
+            ],
+            [
+              344,
+              184
+            ],
+            [
+              186,
+              340
+            ],
+            [
+              326,
+              348
+            ]
+          ],
+          "phantomAlpha": 0.55
+        },
+        {
+          "f": 3,
+          "ms": 60,
+          "fragmentCenters": [
+            [
+              232,
+              230
+            ],
+            [
+              280,
+              236
+            ],
+            [
+              238,
+              278
+            ],
+            [
+              274,
+              284
+            ]
+          ],
+          "phantomAlpha": 0.15
+        },
+        {
+          "f": 4,
+          "ms": 60,
+          "center": [
+            256,
+            252
+          ],
+          "openingSize": [
+            4,
+            300
+          ],
+          "phantomAlpha": 0
+        }
+      ],
+      "afterglowMs": 150,
+      "note": "Clip dissolve phantom with these shared fragments. Released attacks remain owned by goddess action; disappearance does not cancel their damage."
+    },
+    {
+      "id": "homing-meteor",
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "loop": false,
+      "holdFrame": 3,
+      "worldAnchor": "moving projectile head; target ID fixed on selection",
+      "flightMs": 750,
+      "releaseDelayMs": 450,
+      "releaseStaggerMs": 150,
+      "selection": {
+        "pool": "living party characters; exclude summons",
+        "count": 3,
+        "unique": true,
+        "fewerThanThree": "use living count without duplicate targets",
+        "targetDeath": "discard meteor; do not retarget"
+      },
+      "frames": [
+        {
+          "f": 1,
+          "ms": 80,
+          "center": [
+            128,
+            128
+          ],
+          "diamondSize": [
+            22,
+            22
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 100,
+          "center": [
+            128,
+            128
+          ],
+          "diamondSize": [
+            48,
+            24
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 3,
+          "ms": 80,
+          "center": [
+            128,
+            128
+          ],
+          "diamondSize": [
+            60,
+            24
+          ],
+          "alpha": 1
+        }
+      ],
+      "note": "Rotate head to flight tangent; draw curved gold trail from sampled world positions. Each target takes one hit with no splash or status effect. Use same target ID for marker, trajectory, impact and defense forecast."
+    },
+    {
+      "id": "meteor-impact",
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        160
+      ],
+      "loop": false,
+      "worldAnchor": "selected target current position at impact",
+      "frames": [
+        {
+          "f": 1,
+          "ms": 70,
+          "center": [
+            128,
+            160
+          ],
+          "radius": 10,
+          "alpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 90,
+          "center": [
+            128,
+            160
+          ],
+          "crownSize": [
+            104,
+            72
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 3,
+          "ms": 140,
+          "center": [
+            128,
+            160
+          ],
+          "radius": 64,
+          "alpha": 0
+        }
+      ],
+      "note": "Large visual star crown has no splash damage; no independent damage on fragments."
+    },
+    {
+      "id": "rift-open",
+      "cell": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        256
+      ],
+      "loop": false,
+      "holdFrame": 4,
+      "frames": [
+        {
+          "f": 1,
+          "ms": 80,
+          "center": [
+            256,
+            256
+          ],
+          "openingSize": [
+            6,
+            6
+          ]
+        },
+        {
+          "f": 2,
+          "ms": 100,
+          "center": [
+            256,
+            256
+          ],
+          "openingSize": [
+            8,
+            190
+          ]
+        },
+        {
+          "f": 3,
+          "ms": 110,
+          "center": [
+            256,
+            256
+          ],
+          "openingSize": [
+            44,
+            280
+          ]
+        },
+        {
+          "f": 4,
+          "ms": 140,
+          "center": [
+            256,
+            256
+          ],
+          "openingSize": [
+            84,
+            350
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rift-cut",
+      "cell": [
+        1024,
+        256
+      ],
+      "anchor": [
+        512,
+        128
+      ],
+      "loop": false,
+      "frames": [
+        {
+          "f": 1,
+          "ms": 60,
+          "center": [
+            512,
+            128
+          ],
+          "bandSize": [
+            820,
+            4
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 100,
+          "center": [
+            512,
+            128
+          ],
+          "bandSize": [
+            820,
+            80
+          ],
+          "alpha": 1
+        },
+        {
+          "f": 3,
+          "ms": 180,
+          "center": [
+            512,
+            128
+          ],
+          "bandSize": [
+            780,
+            30
+          ],
+          "alpha": 0
+        }
+      ]
+    },
+    {
+      "id": "celestial-wave",
+      "cell": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        256
+      ],
+      "loop": false,
+      "worldRadii": [
+        160,
+        280,
+        400
+      ],
+      "worldDelayMs": 1000,
+      "frames": [
+        {
+          "f": 1,
+          "ms": 100,
+          "center": [
+            256,
+            256
+          ],
+          "radius": 170,
+          "thickness": 4,
+          "alpha": 1
+        },
+        {
+          "f": 2,
+          "ms": 160,
+          "center": [
+            256,
+            256
+          ],
+          "radius": 205,
+          "thickness": 12,
+          "alpha": 1
+        },
+        {
+          "f": 3,
+          "ms": 240,
+          "center": [
+            256,
+            256
+          ],
+          "radius": 220,
+          "thickness": 5,
+          "alpha": 0
+        }
+      ],
+      "note": "Scale ring to the fixed world radius of each impact; do not derive hit geometry from art."
+    },
+    {
+      "id": "zero-converge",
+      "cell": [
+        512,
+        768
+      ],
+      "loop": false,
+      "parts": [
+        {
+          "id": "gather",
+          "anchor": [
+            256,
+            156
+          ],
+          "frames": [
+            1,
+            2
+          ],
+          "worldAnchor": "midpoint of goddess palms"
+        },
+        {
+          "id": "pillar",
+          "anchor": [
+            256,
+            614
+          ],
+          "frames": [
+            3,
+            4
+          ],
+          "worldAnchor": "fixed forecast center"
+        }
+      ],
+      "frames": [
+        {
+          "f": 1,
+          "ms": 160,
+          "center": [
+            256,
+            156
+          ],
+          "radius": 24
+        },
+        {
+          "f": 2,
+          "ms": 220,
+          "center": [
+            256,
+            156
+          ],
+          "radius": 100,
+          "hold": true
+        },
+        {
+          "f": 3,
+          "ms": 100,
+          "pillarTop": [
+            256,
+            160
+          ],
+          "pillarBottom": [
+            256,
+            614
+          ],
+          "width": 80
+        },
+        {
+          "f": 4,
+          "ms": 300,
+          "pillarTop": [
+            256,
+            160
+          ],
+          "pillarBottom": [
+            256,
+            614
+          ],
+          "width": 160,
+          "fragmentMaxX": 416,
+          "alpha": 0
+        }
+      ],
+      "note": "Gather and pillar are independent parts with separate origins, not one projectile."
+    },
+    {
+      "id": "phase-awaken",
+      "cell": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        448
+      ],
+      "loop": false,
+      "frames": [
+        {
+          "f": 1,
+          "ms": 180,
+          "ringCenter": [
+            256,
+            410
+          ],
+          "ellipseSize": [
+            140,
+            30
+          ]
+        },
+        {
+          "f": 2,
+          "ms": 240,
+          "particlesCenters": [
+            [
+              230,
+              380
+            ],
+            [
+              256,
+              330
+            ],
+            [
+              284,
+              270
+            ]
+          ],
+          "radius": 6
+        },
+        {
+          "f": 3,
+          "ms": 220,
+          "nodeCenters": [
+            [
+              126,
+              166
+            ],
+            [
+              256,
+              100
+            ],
+            [
+              386,
+              166
+            ]
+          ],
+          "radius": 8
+        }
+      ]
+    },
+    {
+      "id": "goddess-defeat",
+      "cell": [
+        512,
+        512
+      ],
+      "anchor": [
+        256,
+        240
+      ],
+      "loop": false,
+      "generationGroups": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "frames": [
+        {
+          "f": 1,
+          "ms": 160,
+          "ringCenter": [
+            268,
+            156
+          ],
+          "radius": 110,
+          "crackAnglesDeg": [
+            45,
+            180,
+            290
+          ]
+        },
+        {
+          "f": 2,
+          "ms": 180,
+          "fragmentCenters": [
+            [
+              150,
+              110
+            ],
+            [
+              386,
+              130
+            ],
+            [
+              155,
+              275
+            ],
+            [
+              371,
+              290
+            ]
+          ]
+        },
+        {
+          "f": 3,
+          "ms": 200,
+          "center": [
+            256,
+            240
+          ],
+          "radius": 70
+        },
+        {
+          "f": 4,
+          "ms": 180,
+          "center": [
+            256,
+            240
+          ],
+          "diamondSize": [
+            36,
+            52
+          ]
+        },
+        {
+          "f": 5,
+          "ms": 260,
+          "center": [
+            256,
+            240
+          ],
+          "radius": 140,
+          "alpha": 0.4
+        },
+        {
+          "f": 6,
+          "ms": 200,
+          "center": [
+            256,
+            240
+          ],
+          "radius": 140,
+          "alpha": 0
+        }
+      ],
+      "note": "Reward emission once near frame 4. Frame 6 denotes fully ended effect; do not generate visible new content."
+    }
+  ],
+  "staticParts": [
+    "empty-throne",
+    "halo-inner",
+    "halo-outer-arcs",
+    "halo-cyan-node",
+    "distant-column-fragment",
+    "target-star"
+  ],
+  "verification": [
+    "Compare every frame to original master references",
+    "Inspect alpha on both dark and light backgrounds",
+    "Check every split boundary and loop",
+    "Confirm forecast and damage geometry share world coordinates",
+    "Review full sequence and final registered in-game scale",
+    "Review every phantom signature release and immediate recall; verify already released attacks remain visible",
+    "Verify homing meteor marker, trail, current-position impact and defense forecast share selected target ID; no duplicate hits or retarget on death"
+  ],
+  "revision": "2026-10-14-phase-roles",
+  "designDocument": "../../../../docs/design/extradimensional-goddess-design.md"
+}

@@ -1,0 +1,188 @@
+{
+  "id": "dragon/idle",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "待機",
+  "kind": null,
+  "motion": "idle",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/idle-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon/idle/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8492774963378906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 131,
+        "top": 142,
+        "right": 471,
+        "bottom": 349
+      },
+      "visibleBounds": {
+        "left": 171,
+        "top": 149,
+        "right": 451,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/idle-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 516
+      },
+      "sourceScale": 0.4560260586319218,
+      "sourceAnchor": {
+        "x": 394,
+        "y": 478
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8376579284667969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 163,
+        "top": 134,
+        "right": 460,
+        "bottom": 354
+      },
+      "visibleBounds": {
+        "left": 167,
+        "top": 137,
+        "right": 455,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/idle-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 785,
+        "y": 0,
+        "width": 751,
+        "height": 516
+      },
+      "sourceScale": 0.4560260586319218,
+      "sourceAnchor": {
+        "x": 351,
+        "y": 479
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8493766784667969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 116,
+        "top": 132,
+        "right": 475,
+        "bottom": 346
+      },
+      "visibleBounds": {
+        "left": 166,
+        "top": 148,
+        "right": 446,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/idle-v1-reused.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 516,
+        "width": 790,
+        "height": 508
+      },
+      "sourceScale": 0.4560260586319218,
+      "sourceAnchor": {
+        "x": 403,
+        "y": 451
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8508110046386719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 149,
+        "top": 132,
+        "right": 471,
+        "bottom": 349
+      },
+      "visibleBounds": {
+        "left": 168,
+        "top": 152,
+        "right": 449,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/idle-v1-reused.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 790,
+        "y": 516,
+        "width": 746,
+        "height": 508
+      },
+      "sourceScale": 0.4560260586319218,
+      "sourceAnchor": {
+        "x": 352,
+        "y": 451
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

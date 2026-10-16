@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-infantry-bolt",
+  "label": "古代弩矢",
+  "sheet": "ruins-infantry-bolt.png",
+  "preview": "../../../../development/assets/effects/ruins-infantry-bolt/ruins-infantry-bolt-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-infantry-bolt/PROMPT.md",
+  "width": 1024,
+  "height": 112,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 112,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 56
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/ruins-infantry-bolt/source-registered.png",
+  "sourceScale": 0.28368794326241137,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-infantry-bolt-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 112,
+      "durationMs": 120,
+      "phase": "発生",
+      "bounds": {
+        "left": 38,
+        "top": 40,
+        "right": 218,
+        "bottom": 72
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 818,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 415,
+        "y": 280
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-infantry-bolt-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 112,
+      "durationMs": 120,
+      "phase": "展開",
+      "bounds": {
+        "left": 39,
+        "top": 27,
+        "right": 218,
+        "bottom": 85
+      },
+      "sourceCell": {
+        "x": 818,
+        "y": 0,
+        "width": 818,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 398,
+        "y": 284
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-infantry-bolt-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 112,
+      "durationMs": 120,
+      "phase": "最大",
+      "bounds": {
+        "left": 36,
+        "top": 22,
+        "right": 219,
+        "bottom": 90
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 552,
+        "width": 818,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 419,
+        "y": 273
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-infantry-bolt-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 112,
+      "durationMs": 120,
+      "phase": "収束",
+      "bounds": {
+        "left": 35,
+        "top": 16,
+        "right": 221,
+        "bottom": 95
+      },
+      "sourceCell": {
+        "x": 818,
+        "y": 552,
+        "width": 818,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 403,
+        "y": 271
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "projectile",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-infantry-bolt/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 782,
+        "height": 504
+      },
+      {
+        "x": 782,
+        "y": 0,
+        "width": 754,
+        "height": 504
+      },
+      {
+        "x": 0,
+        "y": 504,
+        "width": 786,
+        "height": 520
+      },
+      {
+        "x": 786,
+        "y": 504,
+        "width": 750,
+        "height": 520
+      }
+    ]
+  }
+}

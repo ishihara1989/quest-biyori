@@ -1,0 +1,224 @@
+{
+  "id": "dragon/danger-3",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "噴火の三巣",
+  "kind": null,
+  "motion": "danger-3",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 7900,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/danger-3-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon/danger-3/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8990821838378906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 91,
+        "top": 119,
+        "right": 457,
+        "bottom": 338
+      },
+      "visibleBounds": {
+        "left": 198,
+        "top": 160,
+        "right": 423,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-3-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 807,
+        "height": 534
+      },
+      "sourceScale": 0.4755244755244755,
+      "sourceAnchor": {
+        "x": 473,
+        "y": 479
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 5020,
+      "transparentFraction": 0.8989028930664062,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 164,
+        "top": 70,
+        "right": 496,
+        "bottom": 296
+      },
+      "visibleBounds": {
+        "left": 198,
+        "top": 86,
+        "right": 429,
+        "bottom": 257
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-3-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 807,
+        "y": 0,
+        "width": 729,
+        "height": 534
+      },
+      "sourceScale": 0.4755244755244755,
+      "sourceAnchor": {
+        "x": 286,
+        "y": 605.2352941176471
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 2400,
+      "transparentFraction": 0.8897361755371094,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 89,
+        "top": 86,
+        "right": 473,
+        "bottom": 307
+      },
+      "visibleBounds": {
+        "left": 158,
+        "top": 111,
+        "right": 454,
+        "bottom": 257
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-3-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 534,
+        "width": 838,
+        "height": 490
+      },
+      "sourceScale": 0.4755244755244755,
+      "sourceAnchor": {
+        "x": 453,
+        "y": 529.2352941176471
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8958549499511719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 179,
+        "top": 147,
+        "right": 488,
+        "bottom": 358
+      },
+      "visibleBounds": {
+        "left": 195,
+        "top": 161,
+        "right": 425,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/danger-3-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 838,
+        "y": 534,
+        "width": 698,
+        "height": 490
+      },
+      "sourceScale": 0.4755244755244755,
+      "sourceAnchor": {
+        "x": 279,
+        "y": 423
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "lava-bomb",
+      "timeMs": 5200,
+      "slot": 0,
+      "placement": "projectile",
+      "impact": "lava-impact",
+      "residue": "lava-pool",
+      "originFrame": 2
+    },
+    {
+      "id": "lava-bomb",
+      "timeMs": 6100,
+      "slot": 1,
+      "placement": "projectile",
+      "impact": "lava-impact",
+      "residue": "lava-pool",
+      "originFrame": 2
+    },
+    {
+      "id": "lava-bomb",
+      "timeMs": 7000,
+      "slot": 2,
+      "placement": "projectile",
+      "impact": "lava-impact",
+      "residue": "lava-pool",
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "lava-bomb",
+    "lava-impact",
+    "lava-pool"
+  ],
+  "repeatRelease": true,
+  "releaseOrigin": {
+    "x": 216,
+    "y": 232
+  }
+}

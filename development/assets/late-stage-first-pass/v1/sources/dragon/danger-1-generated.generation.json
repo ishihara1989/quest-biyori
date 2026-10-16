@@ -1,0 +1,33 @@
+{
+  "id": "dragon/danger-1",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "danger-1",
+  "label": "翼震着地",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/dragon.png",
+  "guide": null,
+  "source": "sources/dragon/danger-1-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 翼震着地 by ドラゴン EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: chest rises 25px, wing tips rise to (240,170),(840,180) and all four feet tuck as body lifts 80px, wings drive down and FOUR feet land at y=850, returns. Distinguish flying lift from walking. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "landing-shock"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-2c70dc78-c188-4394-9444-8e92457a595c.png",
+  "sha256": "6a78132411baa2c273dfca62dfe9fdfd936e6a5231ff9325b8b69bdcf11804b1",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "翼を上げ全脚を浮かせ、翼を広げて地面へ戻る。飛翔と着地の順序が明瞭。"
+    ],
+    "issues": [
+      "赤橙の背景光が混入。",
+      "飛翔→着地で翼の大きさと尾の巻き方が大きく変わる。翼根・尾根と4脚の接続を検収する。",
+      "着地フレームの接地点を衝撃輪の中心へ合わせる。"
+    ]
+  }
+}

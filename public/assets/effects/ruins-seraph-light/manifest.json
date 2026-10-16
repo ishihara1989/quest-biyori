@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-seraph-light",
+  "label": "セラフィナ光弾",
+  "sheet": "ruins-seraph-light.png",
+  "preview": "../../../../development/assets/effects/ruins-seraph-light/ruins-seraph-light-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-seraph-light/PROMPT.md",
+  "width": 896,
+  "height": 160,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 224,
+  "frameHeight": 160,
+  "frameCount": 4,
+  "pivot": {
+    "x": 112,
+    "y": 80
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/ruins-seraph-light/source-registered.png",
+  "sourceScale": 0.26666666666666666,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-seraph-light-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 224,
+      "height": 160,
+      "durationMs": 120,
+      "phase": "発生",
+      "bounds": {
+        "left": 36,
+        "top": 39,
+        "right": 187,
+        "bottom": 121
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 840,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 313
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-seraph-light-02.png",
+      "x": 224,
+      "y": 0,
+      "width": 224,
+      "height": 160,
+      "durationMs": 120,
+      "phase": "展開",
+      "bounds": {
+        "left": 21,
+        "top": 41,
+        "right": 206,
+        "bottom": 119
+      },
+      "sourceCell": {
+        "x": 840,
+        "y": 0,
+        "width": 840,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 420,
+        "y": 333
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-seraph-light-03.png",
+      "x": 448,
+      "y": 0,
+      "width": 224,
+      "height": 160,
+      "durationMs": 120,
+      "phase": "最大",
+      "bounds": {
+        "left": 16,
+        "top": 28,
+        "right": 207,
+        "bottom": 132
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 550,
+        "width": 840,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 411,
+        "y": 253
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-seraph-light-04.png",
+      "x": 672,
+      "y": 0,
+      "width": 224,
+      "height": 160,
+      "durationMs": 120,
+      "phase": "収束",
+      "bounds": {
+        "left": 18,
+        "top": 33,
+        "right": 205,
+        "bottom": 127
+      },
+      "sourceCell": {
+        "x": 840,
+        "y": 550,
+        "width": 840,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 264
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "projectile",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-seraph-light/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 728,
+        "height": 506
+      },
+      {
+        "x": 728,
+        "y": 0,
+        "width": 808,
+        "height": 506
+      },
+      {
+        "x": 0,
+        "y": 506,
+        "width": 772,
+        "height": 518
+      },
+      {
+        "x": 772,
+        "y": 506,
+        "width": 764,
+        "height": 518
+      }
+    ]
+  }
+}

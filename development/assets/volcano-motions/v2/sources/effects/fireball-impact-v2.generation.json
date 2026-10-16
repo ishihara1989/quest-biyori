@@ -1,0 +1,19 @@
+{
+  "id": "effects/fireball-impact",
+  "source": "sources/effects/fireball-impact-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. one explosive orange-white fireburst with low black-red elliptical boundary, radial sparks, no full opaque smoke disk. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else. TL tiny onset burst only 30% peak width; TR medium growing explosion; BL full strong peak; BR only five to eight sparse tiny dim embers, NO main core or full flame. Four clear gutters.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "4c08d0b442d98efceca905dc00b12cb4fe75db076ee5e6154d8a6ca279fbb1df",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/fireball-impact-generated.png",
+  "issues": [
+    "最大コマがセル境界に近く、白い核が広い。味方・敵の輪郭を覆う範囲を検収する。",
+    "終端の残留炎が強い。残留床と混同しない消失を整える。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

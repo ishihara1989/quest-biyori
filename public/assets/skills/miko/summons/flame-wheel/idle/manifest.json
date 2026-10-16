@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "flame-wheel-idle",
+  "character": "miko",
+  "subject": "flame-wheel",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "flame-wheel-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.12147505422993492,
+  "frames": [
+    {
+      "index": 0,
+      "file": "flame-wheel-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 12,
+        "t": 30,
+        "r": 91,
+        "b": 116,
+        "n": 3869,
+        "width": 80,
+        "height": 87
+      }
+    },
+    {
+      "index": 1,
+      "file": "flame-wheel-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 11,
+        "t": 19,
+        "r": 92,
+        "b": 116,
+        "n": 4135,
+        "width": 82,
+        "height": 98
+      }
+    },
+    {
+      "index": 2,
+      "file": "flame-wheel-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 12,
+        "t": 25,
+        "r": 92,
+        "b": 116,
+        "n": 4002,
+        "width": 81,
+        "height": 92
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/flame-wheel-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

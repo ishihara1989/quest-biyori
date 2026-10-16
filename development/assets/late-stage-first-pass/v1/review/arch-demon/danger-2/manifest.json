@@ -1,0 +1,103 @@
+{
+  "id": "arch-demon/danger-2",
+  "enemy": "arch-demon",
+  "region": "demon-castle",
+  "motion": "danger-2",
+  "label": "悪魔の援軍",
+  "effects": [
+    "summon-gate"
+  ],
+  "repeat": 2,
+  "sources": [
+    "sources/arch-demon/danger-2-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "アークデーモン",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 26,
+        "top": 38,
+        "right": 620,
+        "bottom": 568
+      },
+      "sourceWidth": 632,
+      "sourceHeight": 591,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 162152,
+      "transparentFraction": 0.43412795305103985
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 11,
+        "top": 32,
+        "right": 642,
+        "bottom": 570
+      },
+      "sourceWidth": 645,
+      "sourceHeight": 591,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 155219,
+      "transparentFraction": 0.4071905455213211
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 7,
+        "top": 18,
+        "right": 683,
+        "bottom": 568
+      },
+      "sourceWidth": 690,
+      "sourceHeight": 641,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 201323,
+      "transparentFraction": 0.4551832508082932
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 4,
+        "top": 40,
+        "right": 572,
+        "bottom": 576
+      },
+      "sourceWidth": 587,
+      "sourceHeight": 641,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 149197,
+      "transparentFraction": 0.396518961269524
+    }
+  ],
+  "reference": "../../../references/arch-demon.png",
+  "originalSources": [
+    "../../../sources/arch-demon/danger-2-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

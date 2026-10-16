@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/ember-fox-walk-b-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 718,
+      "height": 724
+    },
+    {
+      "x": 718,
+      "y": 0,
+      "width": 741,
+      "height": 724
+    },
+    {
+      "x": 1459,
+      "y": 0,
+      "width": 713,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 581,
+      "y": 880
+    },
+    {
+      "x": 600.5,
+      "y": 886
+    },
+    {
+      "x": 783.5,
+      "y": 891
+    }
+  ],
+  "scale": 0.08743169398907104
+}

@@ -1,0 +1,17 @@
+'use strict';
+(async()=>{
+const base='/development/assets/extradimensional-goddess/first-pass-v1/',el=id=>document.getElementById(id);
+const catalog=await fetch(base+'review-index.json').then(r=>r.json());
+const notes=await fetch(base+'review-notes.json').then(r=>r.ok?r.json():{}).catch(()=>({}));
+let page=0,running=true,time=0,last=performance.now(),cards=[];
+const imgs=new Map();
+await Promise.all(catalog.flatMap(c=>c.frames.map(f=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>{imgs.set(f.file,im);resolve();};im.onerror=()=>reject(Error(f.file));im.src=base+f.file;}))));
+el('status').textContent=`${catalog.length}素材 / ${catalog.reduce((n,c)=>n+c.frames.length,0)}コマ — 初回検収用・採用判定は未実施`;
+for(const c of catalog){const o=document.createElement('option');o.value=c.id;o.textContent=c.id;el('clip').append(o);}
+function inspect(id){const c=catalog.find(c=>c.id===id);el('clip').value=id;el('contact').src=base+c.contact;el('source').href=base+c.sources[0];el('gif').href=base+c.gif;el('description').textContent=c.frames.length+'/'+c.expectedFrames+'コマ'+(c.complete?'':' / 欠落 F'+c.missingFrames.join(', F'))+' / '+c.frames.map(f=>f.durationMs+'ms').join(' → ');const n=notes[id];el('issues').textContent=n?n.issues.map(t=>'・'+t).join('\n'):'検収記録の読込待ち';}
+function render(){const list=catalog.filter(c=>c.kind===el('kind').value),count=Math.ceil(list.length/6);page=Math.max(0,Math.min(page,count-1));el('page').textContent=(page+1)+' / '+count;el('gallery').replaceChildren();cards=[];
+ for(const c of list.slice(page*6,page*6+6)){const card=document.createElement('article');card.className='card';const h=document.createElement('h2');h.textContent=c.id+(c.complete?'':'（欠落あり）');const canvas=document.createElement('canvas');canvas.width=512;canvas.height=384;const footer=document.createElement('footer'),counter=document.createElement('span'),button=document.createElement('button');button.textContent='全コマ・課題';button.onclick=()=>inspect(c.id);footer.append(counter,button);card.append(h,canvas,footer);el('gallery').append(card);cards.push({c,canvas,counter});}time=0;}
+el('kind').onchange=()=>{page=0;render();};el('prev').onclick=()=>{page--;render();};el('next').onclick=()=>{page++;render();};el('clip').onchange=()=>inspect(el('clip').value);el('restart').onclick=()=>{time=0;};el('play').onclick=()=>{running=!running;el('play').textContent=running?'一時停止':'再生';};el('background').onchange=()=>{document.body.className=el('background').value;};
+function tick(now){if(running)time+=(now-last)*Number(el('speed').value);last=now;for(const {c,canvas,counter}of cards){const total=c.frames.reduce((n,f)=>n+f.durationMs,0),t=time%(total+(c.loop?0:500));let sum=0,index=c.frames.length-1;for(let i=0;i<c.frames.length;i++){sum+=c.frames[i].durationMs;if(t<sum){index=i;break;}}const im=imgs.get(c.frames[index].file),ctx=canvas.getContext('2d');ctx.clearRect(0,0,canvas.width,canvas.height);ctx.imageSmoothingEnabled=false;const s=Math.min(canvas.width/im.width,canvas.height/im.height);ctx.drawImage(im,(canvas.width-im.width*s)/2,(canvas.height-im.height*s)/2,im.width*s,im.height*s);counter.textContent='F'+c.frames[index].index+' / '+c.expectedFrames+(c.complete?'':'・欠落省略');}el('clock').textContent=(time/1000).toFixed(2)+'s';requestAnimationFrame(tick);}
+render();inspect(catalog.find(c=>c.kind==='motion')?.id||catalog[0].id);requestAnimationFrame(tick);
+})().catch(e=>{document.getElementById('status').textContent='読込失敗: '+e.message;console.error(e);});

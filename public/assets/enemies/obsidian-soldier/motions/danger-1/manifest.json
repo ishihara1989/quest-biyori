@@ -1,0 +1,240 @@
+{
+  "id": "obsidian-soldier/danger-1",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "label": "破甲の斧",
+  "kind": null,
+  "motion": "danger-1",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 3500,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/danger-1-v4.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8853492736816406,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 61,
+        "top": 82,
+        "right": 456,
+        "bottom": 345
+      },
+      "visibleBounds": {
+        "left": 158,
+        "top": 120,
+        "right": 425,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/danger-1-v4.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 787,
+        "height": 502
+      },
+      "sourceScale": 0.5587467362924282,
+      "sourceAnchor": {
+        "x": 451,
+        "y": 482
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 2420,
+      "transparentFraction": 0.8745689392089844,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 106,
+        "top": 99,
+        "right": 483,
+        "bottom": 342
+      },
+      "visibleBounds": {
+        "left": 150,
+        "top": 101,
+        "right": 404,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/danger-1-v4.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 787,
+        "y": 0,
+        "width": 749,
+        "height": 502
+      },
+      "sourceScale": 0.5587467362924282,
+      "sourceAnchor": {
+        "x": 343,
+        "y": 493
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "transparentFraction": 0.8814506530761719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 56,
+        "top": 98,
+        "right": 469,
+        "bottom": 388
+      },
+      "visibleBounds": {
+        "left": 131,
+        "top": 119,
+        "right": 428,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/danger-1-v4.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 502,
+        "width": 804,
+        "height": 522
+      },
+      "sourceScale": 0.5587467362924282,
+      "sourceAnchor": {
+        "x": 477,
+        "y": 430
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8801727294921875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 132,
+        "top": 93,
+        "right": 503,
+        "bottom": 384
+      },
+      "visibleBounds": {
+        "left": 173,
+        "top": 97,
+        "right": 418,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-soldier/danger-1-v4.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 804,
+        "y": 502,
+        "width": 732,
+        "height": 522
+      },
+      "sourceScale": 0.5587467362924282,
+      "sourceAnchor": {
+        "x": 285,
+        "y": 438
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "axe-arc",
+      "timeMs": 2600,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "axe-arc",
+    "armor-break"
+  ],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/obsidian-soldier/danger-1/preview.gif",
+  "action": {
+    "name": "破甲の斧",
+    "motion": "danger-1",
+    "warn": 2600,
+    "times": [
+      2600
+    ],
+    "kind": "sector",
+    "radius": 140,
+    "effect": "axe-arc",
+    "rest": 5000,
+    "status": "armor-break",
+    "duration": 3500,
+    "angle": 70
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-axe-arc",
+        "manifest": "../../../../effects/volcano-axe-arc/manifest.json"
+      },
+      {
+        "id": "volcano-armor-break",
+        "manifest": "../../../../effects/volcano-armor-break/manifest.json"
+      }
+    ]
+  }
+}

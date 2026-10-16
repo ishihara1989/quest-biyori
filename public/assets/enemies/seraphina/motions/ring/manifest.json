@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "enemy": "seraphina",
+  "motion": "ring",
+  "facing": "left",
+  "label": "環刃",
+  "sheet": "seraphina-ring.png",
+  "preview": "../../../../../../development/assets/enemies/seraphina/motions/ring/seraphina-ring-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/seraphina/PROMPT.md",
+  "width": 2048,
+  "height": 432,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 512,
+  "frameHeight": 432,
+  "frameCount": 4,
+  "pivot": {
+    "x": 297,
+    "y": 414
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 980,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/seraphina/source/ring-registered.png",
+  "sourceScale": 0.3544973544973545,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "seraphina-ring-2-0",
+      "type": "spawn-effect",
+      "effect": "ruins-ring-blade",
+      "frame": 2,
+      "timeMs": 480,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "ring-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 220,
+      "phase": "開始",
+      "bounds": {
+        "left": 281,
+        "top": 171,
+        "right": 497,
+        "bottom": 413
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 798,
+        "height": 751
+      },
+      "sourceAnchor": {
+        "x": 79,
+        "y": 718
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ring-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 260,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 159,
+        "top": 214,
+        "right": 366,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 798,
+        "y": 0,
+        "width": 798,
+        "height": 751
+      },
+      "sourceAnchor": {
+        "x": 421,
+        "y": 596
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ring-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 181,
+        "top": 240,
+        "right": 440,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 751,
+        "width": 798,
+        "height": 751
+      },
+      "sourceAnchor": {
+        "x": 360,
+        "y": 523
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ring-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 432,
+      "durationMs": 320,
+      "phase": "復帰",
+      "bounds": {
+        "left": 209,
+        "top": 222,
+        "right": 381,
+        "bottom": 414
+      },
+      "sourceCell": {
+        "x": 798,
+        "y": 751,
+        "width": 798,
+        "height": 751
+      },
+      "sourceAnchor": {
+        "x": 280,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/seraphina/source/ring-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/seraphina/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 95,
+          "y": 46,
+          "width": 614,
+          "height": 687,
+          "mainComponent": 1
+        },
+        {
+          "x": 657,
+          "y": 52,
+          "width": 586,
+          "height": 565,
+          "mainComponent": 4
+        },
+        {
+          "x": 20,
+          "y": 706,
+          "width": 734,
+          "height": 492,
+          "mainComponent": 39
+        },
+        {
+          "x": 731,
+          "y": 670,
+          "width": 488,
+          "height": 544,
+          "mainComponent": 30
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 372.2,
+      "y": 414
+    },
+    "origin": {
+      "x": 233,
+      "y": 291.12
+    },
+    "assets": [
+      {
+        "id": "ruins-ring-blade",
+        "manifest": "../../../../effects/ruins-ring-blade/manifest.json"
+      }
+    ]
+  }
+}

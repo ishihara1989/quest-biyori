@@ -1,0 +1,1022 @@
+{
+  "generator": "built-in image_gen",
+  "sampling": "nearest-neighbor",
+  "size": 128,
+  "padding": 6,
+  "sheets": [
+    {
+      "character": "warrior",
+      "source": "../../../../development/assets/ui/equipment/source/warrior-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7bc0ee54e3bf5cc21e2abd0adca9941ef5e0fcb9c467ff80e2523459b447cd3f",
+      "icons": [
+        {
+          "id": "weapon-forest",
+          "file": "warrior/weapon-forest.png",
+          "crop": {
+            "left": 29,
+            "top": 38,
+            "width": 274,
+            "height": 277
+          }
+        },
+        {
+          "id": "weapon-swamp",
+          "file": "warrior/weapon-swamp.png",
+          "crop": {
+            "left": 343,
+            "top": 38,
+            "width": 272,
+            "height": 277
+          }
+        },
+        {
+          "id": "weapon-cave",
+          "file": "warrior/weapon-cave.png",
+          "crop": {
+            "left": 656,
+            "top": 38,
+            "width": 273,
+            "height": 277
+          }
+        },
+        {
+          "id": "weapon-coast",
+          "file": "warrior/weapon-coast.png",
+          "crop": {
+            "left": 970,
+            "top": 38,
+            "width": 272,
+            "height": 277
+          }
+        },
+        {
+          "id": "armor-forest",
+          "file": "warrior/armor-forest.png",
+          "crop": {
+            "left": 36,
+            "top": 362,
+            "width": 243,
+            "height": 247
+          }
+        },
+        {
+          "id": "armor-swamp",
+          "file": "warrior/armor-swamp.png",
+          "crop": {
+            "left": 332,
+            "top": 348,
+            "width": 277,
+            "height": 261
+          }
+        },
+        {
+          "id": "armor-cave",
+          "file": "warrior/armor-cave.png",
+          "crop": {
+            "left": 637,
+            "top": 347,
+            "width": 294,
+            "height": 263
+          }
+        },
+        {
+          "id": "armor-coast",
+          "file": "warrior/armor-coast.png",
+          "crop": {
+            "left": 953,
+            "top": 350,
+            "width": 289,
+            "height": 259
+          }
+        },
+        {
+          "id": "weapon-ruins",
+          "file": "warrior/weapon-ruins.png",
+          "crop": {
+            "left": 29,
+            "top": 654,
+            "width": 274,
+            "height": 277
+          }
+        },
+        {
+          "id": "armor-ruins",
+          "file": "warrior/armor-ruins.png",
+          "crop": {
+            "left": 327,
+            "top": 659,
+            "width": 292,
+            "height": 262
+          }
+        },
+        {
+          "id": "power",
+          "file": "warrior/power.png",
+          "crop": {
+            "left": 670,
+            "top": 666,
+            "width": 239,
+            "height": 255
+          }
+        },
+        {
+          "id": "tempo",
+          "file": "warrior/tempo.png",
+          "crop": {
+            "left": 972,
+            "top": 686,
+            "width": 255,
+            "height": 235
+          }
+        },
+        {
+          "id": "vitality",
+          "file": "warrior/vitality.png",
+          "crop": {
+            "left": 29,
+            "top": 995,
+            "width": 280,
+            "height": 182
+          }
+        },
+        {
+          "id": "guard",
+          "file": "warrior/guard.png",
+          "crop": {
+            "left": 359,
+            "top": 955,
+            "width": 243,
+            "height": 261
+          }
+        },
+        {
+          "id": "skill",
+          "file": "warrior/skill.png",
+          "crop": {
+            "left": 656,
+            "top": 942,
+            "width": 253,
+            "height": 275
+          }
+        },
+        {
+          "id": "recovery",
+          "file": "warrior/recovery.png",
+          "crop": {
+            "left": 968,
+            "top": 948,
+            "width": 255,
+            "height": 256
+          }
+        }
+      ]
+    },
+    {
+      "character": "mage",
+      "source": "../../../../development/assets/ui/equipment/source/mage-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "25037400e525dda2e2aa67bf2997ee37401bf88fce946a61865f1a013ca9bbed",
+      "icons": [
+        {
+          "id": "weapon-forest",
+          "file": "mage/weapon-forest.png",
+          "crop": {
+            "left": 45,
+            "top": 59,
+            "width": 270,
+            "height": 264
+          }
+        },
+        {
+          "id": "weapon-swamp",
+          "file": "mage/weapon-swamp.png",
+          "crop": {
+            "left": 356,
+            "top": 61,
+            "width": 268,
+            "height": 263
+          }
+        },
+        {
+          "id": "weapon-cave",
+          "file": "mage/weapon-cave.png",
+          "crop": {
+            "left": 666,
+            "top": 59,
+            "width": 271,
+            "height": 264
+          }
+        },
+        {
+          "id": "weapon-coast",
+          "file": "mage/weapon-coast.png",
+          "crop": {
+            "left": 977,
+            "top": 61,
+            "width": 258,
+            "height": 263
+          }
+        },
+        {
+          "id": "armor-forest",
+          "file": "mage/armor-forest.png",
+          "crop": {
+            "left": 32,
+            "top": 347,
+            "width": 265,
+            "height": 269
+          }
+        },
+        {
+          "id": "armor-swamp",
+          "file": "mage/armor-swamp.png",
+          "crop": {
+            "left": 340,
+            "top": 347,
+            "width": 267,
+            "height": 269
+          }
+        },
+        {
+          "id": "armor-cave",
+          "file": "mage/armor-cave.png",
+          "crop": {
+            "left": 649,
+            "top": 346,
+            "width": 269,
+            "height": 270
+          }
+        },
+        {
+          "id": "armor-coast",
+          "file": "mage/armor-coast.png",
+          "crop": {
+            "left": 946,
+            "top": 346,
+            "width": 289,
+            "height": 270
+          }
+        },
+        {
+          "id": "weapon-ruins",
+          "file": "mage/weapon-ruins.png",
+          "crop": {
+            "left": 41,
+            "top": 646,
+            "width": 275,
+            "height": 275
+          }
+        },
+        {
+          "id": "armor-ruins",
+          "file": "mage/armor-ruins.png",
+          "crop": {
+            "left": 338,
+            "top": 655,
+            "width": 278,
+            "height": 269
+          }
+        },
+        {
+          "id": "power",
+          "file": "mage/power.png",
+          "crop": {
+            "left": 703,
+            "top": 653,
+            "width": 190,
+            "height": 269
+          }
+        },
+        {
+          "id": "tempo",
+          "file": "mage/tempo.png",
+          "crop": {
+            "left": 1013,
+            "top": 653,
+            "width": 214,
+            "height": 273
+          }
+        },
+        {
+          "id": "vitality",
+          "file": "mage/vitality.png",
+          "crop": {
+            "left": 35,
+            "top": 992,
+            "width": 283,
+            "height": 228
+          }
+        },
+        {
+          "id": "guard",
+          "file": "mage/guard.png",
+          "crop": {
+            "left": 361,
+            "top": 946,
+            "width": 244,
+            "height": 270
+          }
+        },
+        {
+          "id": "skill",
+          "file": "mage/skill.png",
+          "crop": {
+            "left": 635,
+            "top": 941,
+            "width": 295,
+            "height": 275
+          }
+        },
+        {
+          "id": "recovery",
+          "file": "mage/recovery.png",
+          "crop": {
+            "left": 989,
+            "top": 952,
+            "width": 203,
+            "height": 268
+          }
+        }
+      ]
+    },
+    {
+      "character": "paladin",
+      "source": "../../../../development/assets/ui/equipment/source/paladin-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4b4bfa8c20e5b298471f06743f88044a5bbf475f88727bbe92966e555123028b",
+      "icons": [
+        {
+          "id": "weapon-forest",
+          "file": "paladin/weapon-forest.png",
+          "crop": {
+            "left": 39,
+            "top": 55,
+            "width": 278,
+            "height": 250
+          }
+        },
+        {
+          "id": "weapon-swamp",
+          "file": "paladin/weapon-swamp.png",
+          "crop": {
+            "left": 361,
+            "top": 57,
+            "width": 275,
+            "height": 248
+          }
+        },
+        {
+          "id": "weapon-cave",
+          "file": "paladin/weapon-cave.png",
+          "crop": {
+            "left": 663,
+            "top": 56,
+            "width": 271,
+            "height": 249
+          }
+        },
+        {
+          "id": "weapon-coast",
+          "file": "paladin/weapon-coast.png",
+          "crop": {
+            "left": 960,
+            "top": 57,
+            "width": 270,
+            "height": 249
+          }
+        },
+        {
+          "id": "armor-forest",
+          "file": "paladin/armor-forest.png",
+          "crop": {
+            "left": 47,
+            "top": 318,
+            "width": 229,
+            "height": 283
+          }
+        },
+        {
+          "id": "armor-swamp",
+          "file": "paladin/armor-swamp.png",
+          "crop": {
+            "left": 358,
+            "top": 318,
+            "width": 229,
+            "height": 283
+          }
+        },
+        {
+          "id": "armor-cave",
+          "file": "paladin/armor-cave.png",
+          "crop": {
+            "left": 664,
+            "top": 318,
+            "width": 229,
+            "height": 283
+          }
+        },
+        {
+          "id": "armor-coast",
+          "file": "paladin/armor-coast.png",
+          "crop": {
+            "left": 977,
+            "top": 318,
+            "width": 229,
+            "height": 283
+          }
+        },
+        {
+          "id": "weapon-ruins",
+          "file": "paladin/weapon-ruins.png",
+          "crop": {
+            "left": 40,
+            "top": 629,
+            "width": 285,
+            "height": 266
+          }
+        },
+        {
+          "id": "armor-ruins",
+          "file": "paladin/armor-ruins.png",
+          "crop": {
+            "left": 354,
+            "top": 616,
+            "width": 248,
+            "height": 293
+          }
+        },
+        {
+          "id": "power",
+          "file": "paladin/power.png",
+          "crop": {
+            "left": 664,
+            "top": 651,
+            "width": 255,
+            "height": 251
+          }
+        },
+        {
+          "id": "tempo",
+          "file": "paladin/tempo.png",
+          "crop": {
+            "left": 977,
+            "top": 638,
+            "width": 199,
+            "height": 248
+          }
+        },
+        {
+          "id": "vitality",
+          "file": "paladin/vitality.png",
+          "crop": {
+            "left": 37,
+            "top": 972,
+            "width": 271,
+            "height": 189
+          }
+        },
+        {
+          "id": "guard",
+          "file": "paladin/guard.png",
+          "crop": {
+            "left": 348,
+            "top": 930,
+            "width": 278,
+            "height": 269
+          }
+        },
+        {
+          "id": "skill",
+          "file": "paladin/skill.png",
+          "crop": {
+            "left": 670,
+            "top": 914,
+            "width": 247,
+            "height": 285
+          }
+        },
+        {
+          "id": "recovery",
+          "file": "paladin/recovery.png",
+          "crop": {
+            "left": 1000,
+            "top": 937,
+            "width": 209,
+            "height": 262
+          }
+        }
+      ]
+    },
+    {
+      "character": "ninja",
+      "source": "../../../../development/assets/ui/equipment/source/ninja-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e3db741ae714a39c6b8eea660f099cb5e31c095283eae6e6d654efdd416d7bea",
+      "icons": [
+        {
+          "id": "weapon-forest",
+          "file": "ninja/weapon-forest.png",
+          "crop": {
+            "left": 20,
+            "top": 29,
+            "width": 283,
+            "height": 274
+          }
+        },
+        {
+          "id": "weapon-swamp",
+          "file": "ninja/weapon-swamp.png",
+          "crop": {
+            "left": 333,
+            "top": 29,
+            "width": 283,
+            "height": 274
+          }
+        },
+        {
+          "id": "weapon-cave",
+          "file": "ninja/weapon-cave.png",
+          "crop": {
+            "left": 647,
+            "top": 29,
+            "width": 283,
+            "height": 274
+          }
+        },
+        {
+          "id": "weapon-coast",
+          "file": "ninja/weapon-coast.png",
+          "crop": {
+            "left": 960,
+            "top": 29,
+            "width": 282,
+            "height": 274
+          }
+        },
+        {
+          "id": "armor-forest",
+          "file": "ninja/armor-forest.png",
+          "crop": {
+            "left": 42,
+            "top": 326,
+            "width": 235,
+            "height": 286
+          }
+        },
+        {
+          "id": "armor-swamp",
+          "file": "ninja/armor-swamp.png",
+          "crop": {
+            "left": 349,
+            "top": 326,
+            "width": 247,
+            "height": 286
+          }
+        },
+        {
+          "id": "armor-cave",
+          "file": "ninja/armor-cave.png",
+          "crop": {
+            "left": 654,
+            "top": 326,
+            "width": 261,
+            "height": 286
+          }
+        },
+        {
+          "id": "armor-coast",
+          "file": "ninja/armor-coast.png",
+          "crop": {
+            "left": 961,
+            "top": 326,
+            "width": 272,
+            "height": 286
+          }
+        },
+        {
+          "id": "weapon-ruins",
+          "file": "ninja/weapon-ruins.png",
+          "crop": {
+            "left": 20,
+            "top": 642,
+            "width": 283,
+            "height": 275
+          }
+        },
+        {
+          "id": "armor-ruins",
+          "file": "ninja/armor-ruins.png",
+          "crop": {
+            "left": 328,
+            "top": 635,
+            "width": 288,
+            "height": 287
+          }
+        },
+        {
+          "id": "power",
+          "file": "ninja/power.png",
+          "crop": {
+            "left": 655,
+            "top": 639,
+            "width": 275,
+            "height": 283
+          }
+        },
+        {
+          "id": "tempo",
+          "file": "ninja/tempo.png",
+          "crop": {
+            "left": 949,
+            "top": 661,
+            "width": 280,
+            "height": 256
+          }
+        },
+        {
+          "id": "vitality",
+          "file": "ninja/vitality.png",
+          "crop": {
+            "left": 16,
+            "top": 992,
+            "width": 291,
+            "height": 182
+          }
+        },
+        {
+          "id": "guard",
+          "file": "ninja/guard.png",
+          "crop": {
+            "left": 335,
+            "top": 938,
+            "width": 272,
+            "height": 279
+          }
+        },
+        {
+          "id": "skill",
+          "file": "ninja/skill.png",
+          "crop": {
+            "left": 655,
+            "top": 943,
+            "width": 274,
+            "height": 274
+          }
+        },
+        {
+          "id": "recovery",
+          "file": "ninja/recovery.png",
+          "crop": {
+            "left": 993,
+            "top": 946,
+            "width": 240,
+            "height": 262
+          }
+        }
+      ]
+    },
+    {
+      "character": "shaman",
+      "source": "../../../../development/assets/ui/equipment/source/shaman-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5aff015a3a5b01985a02c2ac3f7c8700c3c05a6d0de0c1f48413184d6eea95f7",
+      "icons": [
+        {
+          "id": "weapon-forest",
+          "file": "shaman/weapon-forest.png",
+          "crop": {
+            "left": 38,
+            "top": 37,
+            "width": 290,
+            "height": 281
+          }
+        },
+        {
+          "id": "weapon-swamp",
+          "file": "shaman/weapon-swamp.png",
+          "crop": {
+            "left": 349,
+            "top": 37,
+            "width": 280,
+            "height": 281
+          }
+        },
+        {
+          "id": "weapon-cave",
+          "file": "shaman/weapon-cave.png",
+          "crop": {
+            "left": 663,
+            "top": 37,
+            "width": 288,
+            "height": 281
+          }
+        },
+        {
+          "id": "weapon-coast",
+          "file": "shaman/weapon-coast.png",
+          "crop": {
+            "left": 977,
+            "top": 37,
+            "width": 277,
+            "height": 281
+          }
+        },
+        {
+          "id": "armor-forest",
+          "file": "shaman/armor-forest.png",
+          "crop": {
+            "left": 9,
+            "top": 340,
+            "width": 297,
+            "height": 274
+          }
+        },
+        {
+          "id": "armor-swamp",
+          "file": "shaman/armor-swamp.png",
+          "crop": {
+            "left": 322,
+            "top": 340,
+            "width": 297,
+            "height": 274
+          }
+        },
+        {
+          "id": "armor-cave",
+          "file": "shaman/armor-cave.png",
+          "crop": {
+            "left": 635,
+            "top": 340,
+            "width": 298,
+            "height": 274
+          }
+        },
+        {
+          "id": "armor-coast",
+          "file": "shaman/armor-coast.png",
+          "crop": {
+            "left": 948,
+            "top": 340,
+            "width": 297,
+            "height": 274
+          }
+        },
+        {
+          "id": "weapon-ruins",
+          "file": "shaman/weapon-ruins.png",
+          "crop": {
+            "left": 36,
+            "top": 638,
+            "width": 291,
+            "height": 285
+          }
+        },
+        {
+          "id": "armor-ruins",
+          "file": "shaman/armor-ruins.png",
+          "crop": {
+            "left": 321,
+            "top": 648,
+            "width": 298,
+            "height": 268
+          }
+        },
+        {
+          "id": "power",
+          "file": "shaman/power.png",
+          "crop": {
+            "left": 663,
+            "top": 652,
+            "width": 251,
+            "height": 271
+          }
+        },
+        {
+          "id": "tempo",
+          "file": "shaman/tempo.png",
+          "crop": {
+            "left": 959,
+            "top": 645,
+            "width": 271,
+            "height": 267
+          }
+        },
+        {
+          "id": "vitality",
+          "file": "shaman/vitality.png",
+          "crop": {
+            "left": 23,
+            "top": 1000,
+            "width": 278,
+            "height": 170
+          }
+        },
+        {
+          "id": "guard",
+          "file": "shaman/guard.png",
+          "crop": {
+            "left": 353,
+            "top": 944,
+            "width": 249,
+            "height": 274
+          }
+        },
+        {
+          "id": "skill",
+          "file": "shaman/skill.png",
+          "crop": {
+            "left": 638,
+            "top": 928,
+            "width": 292,
+            "height": 285
+          }
+        },
+        {
+          "id": "recovery",
+          "file": "shaman/recovery.png",
+          "crop": {
+            "left": 968,
+            "top": 923,
+            "width": 258,
+            "height": 290
+          }
+        }
+      ]
+    },
+    {
+      "character": "miko",
+      "source": "../../../../development/assets/ui/equipment/source/miko-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "16ed96761c65b2e789a221b089ce057e52e7a3516a6c22b2055d8a8090d4b60d",
+      "icons": [
+        {
+          "id": "weapon-forest",
+          "file": "miko/weapon-forest.png",
+          "crop": {
+            "left": 60,
+            "top": 35,
+            "width": 257,
+            "height": 284
+          }
+        },
+        {
+          "id": "weapon-swamp",
+          "file": "miko/weapon-swamp.png",
+          "crop": {
+            "left": 358,
+            "top": 35,
+            "width": 263,
+            "height": 283
+          }
+        },
+        {
+          "id": "weapon-cave",
+          "file": "miko/weapon-cave.png",
+          "crop": {
+            "left": 672,
+            "top": 35,
+            "width": 262,
+            "height": 284
+          }
+        },
+        {
+          "id": "weapon-coast",
+          "file": "miko/weapon-coast.png",
+          "crop": {
+            "left": 986,
+            "top": 34,
+            "width": 256,
+            "height": 285
+          }
+        },
+        {
+          "id": "armor-forest",
+          "file": "miko/armor-forest.png",
+          "crop": {
+            "left": 27,
+            "top": 332,
+            "width": 287,
+            "height": 285
+          }
+        },
+        {
+          "id": "armor-swamp",
+          "file": "miko/armor-swamp.png",
+          "crop": {
+            "left": 334,
+            "top": 330,
+            "width": 294,
+            "height": 287
+          }
+        },
+        {
+          "id": "armor-cave",
+          "file": "miko/armor-cave.png",
+          "crop": {
+            "left": 638,
+            "top": 329,
+            "width": 292,
+            "height": 287
+          }
+        },
+        {
+          "id": "armor-coast",
+          "file": "miko/armor-coast.png",
+          "crop": {
+            "left": 950,
+            "top": 331,
+            "width": 291,
+            "height": 285
+          }
+        },
+        {
+          "id": "weapon-ruins",
+          "file": "miko/weapon-ruins.png",
+          "crop": {
+            "left": 45,
+            "top": 637,
+            "width": 271,
+            "height": 296
+          }
+        },
+        {
+          "id": "armor-ruins",
+          "file": "miko/armor-ruins.png",
+          "crop": {
+            "left": 335,
+            "top": 646,
+            "width": 302,
+            "height": 287
+          }
+        },
+        {
+          "id": "power",
+          "file": "miko/power.png",
+          "crop": {
+            "left": 664,
+            "top": 662,
+            "width": 262,
+            "height": 248
+          }
+        },
+        {
+          "id": "tempo",
+          "file": "miko/tempo.png",
+          "crop": {
+            "left": 964,
+            "top": 637,
+            "width": 270,
+            "height": 290
+          }
+        },
+        {
+          "id": "vitality",
+          "file": "miko/vitality.png",
+          "crop": {
+            "left": 27,
+            "top": 995,
+            "width": 283,
+            "height": 198
+          }
+        },
+        {
+          "id": "guard",
+          "file": "miko/guard.png",
+          "crop": {
+            "left": 357,
+            "top": 945,
+            "width": 274,
+            "height": 267
+          }
+        },
+        {
+          "id": "skill",
+          "file": "miko/skill.png",
+          "crop": {
+            "left": 649,
+            "top": 931,
+            "width": 272,
+            "height": 279
+          }
+        },
+        {
+          "id": "recovery",
+          "file": "miko/recovery.png",
+          "crop": {
+            "left": 959,
+            "top": 945,
+            "width": 271,
+            "height": 275
+          }
+        }
+      ]
+    }
+  ]
+}

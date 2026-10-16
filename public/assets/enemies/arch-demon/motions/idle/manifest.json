@@ -1,0 +1,188 @@
+{
+  "id": "arch-demon/idle",
+  "label": "アークデーモン・待機",
+  "enemy": "arch-demon",
+  "motion": "idle",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "上段と下段で翼・肩の占有面積が変わる。胴体縮尺と接地の揺れを確認する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "待機1",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/arch-demon/idle-generated.png",
+      "sourceSha256": "0d0b524ce0419018a4e056203b5f74b29f4a13bd1b9c31f1a6d71e1959c634fe",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 624,
+        "height": 617
+      },
+      "sourceAnchor": [
+        299,
+        573
+      ],
+      "scale": 0.4664179104477612,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "723bf5981ad505c7c48ab519cbee82301c9314dd12d6dd4641e188ff9ffed425",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8144073486328125,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 175,
+        "top": 144,
+        "right": 448,
+        "bottom": 431
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "待機2",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/arch-demon/idle-generated.png",
+      "sourceSha256": "0d0b524ce0419018a4e056203b5f74b29f4a13bd1b9c31f1a6d71e1959c634fe",
+      "sourceRect": {
+        "left": 624,
+        "top": 0,
+        "width": 653,
+        "height": 617
+      },
+      "sourceAnchor": [
+        295,
+        574
+      ],
+      "scale": 0.4664179104477612,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "01b652695362014571419a1dc2bf3d089ab4e6d728ae980eeb654023f6084f95",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8043251037597656,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 165,
+        "top": 156,
+        "right": 456,
+        "bottom": 430
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "待機3",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/arch-demon/idle-generated.png",
+      "sourceSha256": "0d0b524ce0419018a4e056203b5f74b29f4a13bd1b9c31f1a6d71e1959c634fe",
+      "sourceRect": {
+        "left": 0,
+        "top": 617,
+        "width": 631,
+        "height": 615
+      },
+      "sourceAnchor": [
+        300,
+        572
+      ],
+      "scale": 0.4664179104477612,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "349114dbe0f3ce2070abe40cbb26045b70092335d675602cc66edecd0e355a6d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8143653869628906,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 174,
+        "top": 146,
+        "right": 447,
+        "bottom": 416
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "待機4",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/arch-demon/idle-generated.png",
+      "sourceSha256": "0d0b524ce0419018a4e056203b5f74b29f4a13bd1b9c31f1a6d71e1959c634fe",
+      "sourceRect": {
+        "left": 631,
+        "top": 617,
+        "width": 646,
+        "height": 615
+      },
+      "sourceAnchor": [
+        285,
+        573
+      ],
+      "scale": 0.4664179104477612,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "ce0e151d823e86900085cb34cf0b43037f8e60af85b60b319d794380d5d17c99",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8119163513183594,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 173,
+        "top": 143,
+        "right": 447,
+        "bottom": 414
+      }
+    }
+  ],
+  "fingerprint": "02889d5ed9203e79a81fc6a82dc3da3b0b926e1ed8014531e63edf87548bd16f",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/arch-demon/idle/manifest.json",
+  "sourceFingerprint": "02889d5ed9203e79a81fc6a82dc3da3b0b926e1ed8014531e63edf87548bd16f",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

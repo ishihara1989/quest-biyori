@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "label": "sword",
+  "motion": "sword",
+  "sheet": "sword.png",
+  "width": 1024,
+  "height": 256,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "loop": false,
+  "terminal": false,
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 128
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "sword-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 75,
+        "t": 26,
+        "r": 187,
+        "b": 225
+      },
+      "phase": "1",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 1,
+      "file": "sword-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 79,
+        "t": 24,
+        "r": 173,
+        "b": 230
+      },
+      "phase": "2",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 2,
+      "file": "sword-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 73,
+        "t": 23,
+        "r": 195,
+        "b": 227
+      },
+      "phase": "3",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 3,
+      "file": "sword-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 21,
+        "t": 21,
+        "r": 230,
+        "b": 232
+      },
+      "phase": "4",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/paladin/source/sword-generated-v1.png",
+  "generation": "built-in image_gen; generated RGBA preserved",
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  }
+}

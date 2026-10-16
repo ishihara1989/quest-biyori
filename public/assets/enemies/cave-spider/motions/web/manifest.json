@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-spider",
+  "motion": "web",
+  "facing": "left",
+  "label": "クモ糸",
+  "sheet": "cave-spider-web.png",
+  "preview": "../../../../../../development/assets/enemies/cave-spider/motions/web/cave-spider-web-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-spider/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 800,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/cave-spider/source/web-registered.png",
+  "sourceScale": 0.3848797250859107,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "cave-spider-web-web-bolt",
+      "type": "spawn-projectile",
+      "effect": "spider-web-bolt",
+      "frame": 2,
+      "timeMs": 380,
+      "power": 0.45
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "web-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 134,
+        "top": 160,
+        "right": 332,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 678,
+        "height": 347
+      },
+      "sourceAnchor": {
+        "x": 248,
+        "y": 306
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "web-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 100,
+        "top": 150,
+        "right": 324,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 678,
+        "y": 0,
+        "width": 678,
+        "height": 347
+      },
+      "sourceAnchor": {
+        "x": 337,
+        "y": 330
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "web-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 77,
+        "top": 158,
+        "right": 324,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 347,
+        "width": 678,
+        "height": 347
+      },
+      "sourceAnchor": {
+        "x": 398,
+        "y": 310
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "web-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 240,
+      "phase": "復帰",
+      "bounds": {
+        "left": 121,
+        "top": 154,
+        "right": 335,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 678,
+        "y": 347,
+        "width": 678,
+        "height": 347
+      },
+      "sourceAnchor": {
+        "x": 282,
+        "y": 322
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-spider/source/web-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 86444,
+        "left": 153,
+        "top": 167,
+        "right": 670,
+        "bottom": 457,
+        "cx": 446.7398315672574,
+        "cy": 305.7194368608579
+      },
+      {
+        "id": 1,
+        "count": 94469,
+        "left": 816,
+        "top": 146,
+        "right": 1400,
+        "bottom": 460,
+        "cx": 1166.6788787856333,
+        "cy": 293.76295927764664
+      },
+      {
+        "id": 4,
+        "count": 90304,
+        "left": 38,
+        "top": 638,
+        "right": 683,
+        "bottom": 932,
+        "cx": 454.63548680014173,
+        "cy": 768.7065246279235
+      },
+      {
+        "id": 3,
+        "count": 95933,
+        "left": 860,
+        "top": 630,
+        "right": 1418,
+        "bottom": 936,
+        "cx": 1180.715843349004,
+        "cy": 776.7320213065368
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 271
+    },
+    "origin": {
+      "x": 180.44,
+      "y": 215
+    },
+    "assets": [
+      {
+        "id": "spider-web-bolt",
+        "manifest": "../../../../effects/spider-web-bolt/manifest.json"
+      }
+    ]
+  }
+}

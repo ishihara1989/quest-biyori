@@ -1,0 +1,92 @@
+'use strict';
+const characters = ['warrior', 'mage', 'paladin', 'ninja', 'shaman', 'miko'];
+const specs = {
+  forward: { label: '前進', frameCount: 8, columns: 4, rows: 2, loop: true,
+    durations: Array(8).fill(80), phases: ['左足が前・接地', '左足を体下へ', '右足が奥で通過', '右足を前へ', '右足が前・接地', '右足を体下へ', '左足が手前で通過', '左足を前へ'],
+    movementDirection: 1, sizingFactor: 1 },
+  backward: { label: '後退', frameCount: 8, columns: 4, rows: 2, loop: true,
+    durations: Array(8).fill(90), phases: ['警戒・左足が前', '左足を体下へ', '右足が奥で通過', '右足を前へ', '警戒・右足が前', '右足を体下へ', '左足が手前で通過', '左足を前へ'],
+    movementDirection: -1, sizingFactor: 1 },
+  jump: { label: 'ジャンプ', frameCount: 3, columns: 2, rows: 2, loop: false,
+    durations: [160, 360, 200], phases: ['しゃがみ・踏切', '飛び上がり・滞空', '着地'],
+    airborneFrames: [1], previewLift: [0, 38, 0], sizingFactor: .9 },
+  hit: { label: '被撃', frameCount: 2, columns: 2, rows: 1, loop: false,
+    durations: [160, 220], phases: ['のけぞり', '立て直し'], sizingFactor: .94 },
+  down: { label: 'ダウン', frameCount: 4, columns: 2, rows: 2, loop: false,
+    durations: [150, 180, 220, 700], phases: ['のけぞり', '崩れる', '倒れ込む', '倒れて静止'],
+    terminal: true, sizingFactor: .95 },
+};
+const characterSpecs = {
+  ninja: {
+    'throw-combo': {label:'連続投擲',frameCount:6,columns:3,rows:2,loop:false,durations:[180,60,60,120,60,120],phases:['右手を引く','右手・投擲','左手を構える','左手を引く','左手・投擲','復帰'],sizingFactor:1},
+    'throw-tool': {label:'道具投擲',frameCount:3,columns:3,rows:1,loop:false,durations:[220,180,160],phases:['腰から取る','上へ放る','復帰'],sizingFactor:1},
+    'cast-release': {label:'印の解放',frameCount:3,columns:3,rows:1,loop:false,durations:[130,130,260],phases:['胸元の印','両手を開く','復帰'],sizingFactor:1,transitions:{from:'seal',to:'idle'}},
+    'air-throw': {label:'空中投擲',frameCount:3,columns:3,rows:1,loop:false,durations:[200,160,160],phases:['空中で構える','前下方へ投げる','着地へ脚を伸ばす'],sizingFactor:.94},
+    'lay-trap': {label:'地面への散布',frameCount:3,columns:3,rows:1,loop:false,durations:[240,160,160],phases:['沈み込む','地面へ散布','立ち直る'],sizingFactor:1},
+    'low-dash': {label:'低い抜け動作',frameCount:6,columns:3,rows:2,loop:false,durations:[80,80,100,80,80,180],phases:['低く構える','後ろ脚で蹴る','低く抜ける','前脚で受ける','腰を上げる','投擲の構え'],sizingFactor:1},
+    seal: { label: '印を結ぶ', frameCount: 3, columns: 3, rows: 1, loop: true,
+      durations: [240, 240, 240], phases: ['胸元で印', '印を高く結ぶ', '印を保つ'], sizingFactor: 1 },
+    'attack-shuriken': { label: '手裏剣・通常攻撃', frameCount: 3, columns: 3, rows: 1, loop: false,
+      durations: [180, 100, 240], phases: ['手裏剣を引く', '投げる', '振り抜く'], sizingFactor: 1 },
+  },
+  shaman: {
+    'hex-weave':{label:'呪紋編み',frameCount:3,columns:3,rows:1,loop:false,durations:[240,240,240],phases:['掌を開く','円を編む','指を閉じる'],sizingFactor:1},
+    'staff-plant':{label:'杖の接地',frameCount:3,columns:3,rows:1,loop:false,durations:[540,240,120],phases:['杖を上げる','地へ打つ','復帰'],sizingFactor:1},
+    'curse-pull':{label:'呪いの引き絞り',frameCount:3,columns:3,rows:1,loop:false,durations:[300,300,300],phases:['掌を伸ばす','拳を握る','引き絞る'],sizingFactor:1},
+    'ritual-raise':{label:'大儀式',frameCount:6,columns:3,rows:2,loop:false,durations:[240,240,420,300,300,300],phases:['儀式の構え','杖を上げる','掲げてためる','振り下ろし','接地・大呪法','復帰'],sizingFactor:1},
+    'attack-staff': { label: '杖・通常攻撃', frameCount: 3, columns: 3, rows: 1, loop: false,
+      durations: [180, 120, 240], phases: ['杖を引く', '前へ振る', '振り抜く'], sizingFactor: 1 },
+    chant: { label: '詠唱', frameCount: 3, columns: 3, rows: 1, loop: true,
+      durations: [240, 240, 240], phases: ['閉眼・詠唱', '杖に力を集める', '呼吸を戻す'], sizingFactor: 1 },
+    'cast-forward': { label: '詠唱終了・杖を前へ', frameCount: 3, columns: 3, rows: 1, loop: false,
+      durations: [140, 140, 260], phases: ['詠唱の構え', '杖を押し出す', '前方へ構える'], sizingFactor: 1,
+      transitions: { from: 'chant', to: 'idle' } },
+  },
+  miko: {
+    'attack-wand': { label: '棒・通常攻撃', frameCount: 3, columns: 3, rows: 1, loop: false,
+      durations: [180, 120, 240], phases: ['棒を引く', '前へ振る', '振り抜く'], sizingFactor: 1 },
+    prayer: { label: '祈り・左右に振る', frameCount: 4, columns: 2, rows: 2, loop: true,
+      durations: [180, 180, 180, 180], phases: ['左へ振る', '中央へ上げる', '右へ振る', '中央へ戻す'], sizingFactor: 1 },
+    'prayer-release': { label: '祈り終了・一回転', frameCount: 6, columns: 3, rows: 2, loop: false,
+      durations: [140, 100, 100, 100, 100, 260], phases: ['棒を掲げる', '背面へ回る', '背を向ける', '反対側へ回る', '正面を通る', '一回転・棒を前へ'], sizingFactor: 1,
+      transitions: { from: 'prayer', to: 'idle' } },
+  },
+  paladin: {
+    'attack-mace': { label:'メイス・通常攻撃', frameCount:3, columns:3, rows:1, loop:false, durations:[180,100,240], phases:['振りかぶる','横打ち','振り抜く'], sizingFactor:1 },
+    'mace-raise': { label:'メイスを掲げる', frameCount:3, columns:3, rows:1, loop:false, durations:[160,160,200], phases:['構え','持ち上げる','頭上に掲げる'], sizingFactor:1, transitions:{from:'idle',to:'mace-slam'} },
+    'mace-slam': { label:'メイスを叩きつける', frameCount:3, columns:3, rows:1, loop:false, durations:[140,100,280], phases:['頭上の構え','振り下ろす','叩きつける'], sizingFactor:1 },
+    'shield-raise': { label:'盾を掲げる', frameCount:3, columns:3, rows:1, loop:false, durations:[160,160,200], phases:['構え','持ち上げる','頭上に掲げる'], sizingFactor:1 },
+    'shield-plant': { label:'盾を突き立てる', frameCount:3, columns:3, rows:1, loop:false, durations:[160,160,200], phases:['引き上げる','押し下げる','突き立てる'], sizingFactor:1 },
+    'shield-advance': { label:'盾を構えて前進', frameCount:6, columns:3, rows:2, loop:true, durations:Array(6).fill(110), phases:['手前脚・接地','奥脚・浮上','奥脚・踏み出し','奥脚・接地','手前脚・浮上','手前脚・踏み出し'], sizingFactor:1 },
+    'break-strike': { label:'断行槌', frameCount:4, columns:4, rows:1, loop:false, durations:[150,90,100,320], phases:['構え','振り出し','命中','戻し'], sizingFactor:1 },
+  },
+  mage: {
+    'attack-staff': { label: '杖・通常攻撃', frameCount: 4, columns: 2, rows: 2, loop: false,
+      durations: [180, 160, 100, 240], phases: ['構える', '振りかぶる', '前へ振る・発射', '振り抜く'], sizingFactor: 1 },
+    chant: { label: '詠唱', frameCount: 4, columns: 2, rows: 2, loop: true,
+      durations: [160, 160, 160, 160], phases: ['閉眼・髪が浮く', '髪が上へ揺れる', '髪が外へ揺れる', '髪が戻る'], sizingFactor: 1 },
+    'cast-forward': { label: '杖を前へ', frameCount: 4, columns: 2, rows: 2, loop: false,
+      durations: [100, 100, 100, 100], phases: ['詠唱の構え', '肘を前へ', '腕を伸ばす', '前方へ構える'], sizingFactor: 1,
+      transitions: { from: 'chant', to: 'cast-forward-hold' } },
+    'cast-forward-hold': { label: '前方・維持', frameCount: 4, columns: 2, rows: 2, loop: true,
+      durations: [160, 160, 160, 160], phases: ['前方へ構える', '髪が上へ揺れる', '髪が外へ揺れる', '髪が戻る'], sizingFactor: 1 },
+    'cast-up': { label: '杖を振り上げる', frameCount: 4, columns: 2, rows: 2, loop: false,
+      durations: [100, 100, 100, 100], phases: ['詠唱の構え', '肘を持ち上げる', '頭上へ振り上げる', '上方へ構える'], sizingFactor: 1,
+      transitions: { from: 'chant', to: 'cast-up-hold' } },
+    'cast-up-hold': { label: '上方・維持', frameCount: 4, columns: 2, rows: 2, loop: true,
+      durations: [160, 160, 160, 160], phases: ['上方へ構える', '髪が上へ揺れる', '髪が外へ揺れる', '髪が戻る'], sizingFactor: 1 },
+  },
+  warrior: {
+    'attack-overhead': { label: '大剣・振り下ろし', frameCount: 4, columns: 2, rows: 2, loop: false,
+      durations: [180, 160, 100, 240], phases: ['振りかぶる', '真上やや右・短い残像', '残像を伴う振り下ろし', '低く振り抜く'], sizingFactor: 1 },
+    'attack-far-to-near': { label: '大剣・奥 → 手前', frameCount: 4, columns: 2, rows: 2, loop: false,
+      durations: [180, 100, 100, 240], phases: ['奥を向いて構える', '奥から払い始める', '手前へ払う・残像', '手前から左へ振り切る'], sizingFactor: 1 },
+    'attack-near-to-far': { label: '大剣・手前 → 奥', frameCount: 4, columns: 2, rows: 2, loop: false,
+      durations: [180, 100, 100, 240], phases: ['手前で構える', '手前から払う・残像', '奥へ体を回す', '奥を向いて左へ振り切る'], sizingFactor: 1 },
+  },
+};
+Object.values(characterSpecs.paladin).forEach(s=>Object.assign(s,{frameHeight:256,pivot:{x:128,y:239}}));
+for (const id of ['ninja', 'shaman', 'miko']) Object.values(characterSpecs[id]).forEach(spec =>
+  Object.assign(spec, { frameWidth: 320, frameHeight: 256, pivot: { x: 160, y: 239 } }));
+const getMotionSpecs = character => ({ ...specs, ...characterSpecs[character] });
+module.exports = { characters, specs, characterSpecs, getMotionSpecs };

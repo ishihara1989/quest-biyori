@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "character": "warrior",
+  "motion": "attack-overhead",
+  "label": "大剣・振り下ろし",
+  "facing": "right",
+  "sheet": "warrior-attack-overhead.png",
+  "width": 1024,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 680,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.32,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "feet",
+  "source": "../../../../../development/assets/warrior/motions/attack-overhead/source/warrior-attack-overhead-assembled-v3.png",
+  "sourceWidth": 2048,
+  "sourceHeight": 1536,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "columnSplit": 1024,
+  "rowSplit": 768,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Sword afterimages and depth turns are included in PNG frames. Draw at the common ground pivot without additional rotation or effects.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-overhead-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "振りかぶる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 283,
+        "top": 176,
+        "right": 686,
+        "bottom": 720
+      },
+      "bounds": {
+        "left": 55,
+        "top": 33,
+        "right": 183,
+        "bottom": 207
+      },
+      "visiblePixels": 8573,
+      "transparentPixels": 47197
+    },
+    {
+      "index": 1,
+      "file": "attack-overhead-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "真上やや右・短い残像",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1024,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 317,
+        "top": 112,
+        "right": 687,
+        "bottom": 720
+      },
+      "bounds": {
+        "left": 66,
+        "top": 13,
+        "right": 184,
+        "bottom": 207
+      },
+      "visiblePixels": 9338,
+      "transparentPixels": 46326
+    },
+    {
+      "index": 2,
+      "file": "attack-overhead-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "残像を伴う振り下ろし",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 768,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 333,
+        "top": 264,
+        "right": 892,
+        "bottom": 720
+      },
+      "bounds": {
+        "left": 71,
+        "top": 61,
+        "right": 249,
+        "bottom": 207
+      },
+      "visiblePixels": 15131,
+      "transparentPixels": 38255
+    },
+    {
+      "index": 3,
+      "file": "attack-overhead-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 240,
+      "phase": "低く振り抜く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1024,
+        "y": 768,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 334,
+        "top": 365,
+        "right": 862,
+        "bottom": 730
+      },
+      "bounds": {
+        "left": 71,
+        "top": 94,
+        "right": 240,
+        "bottom": 210
+      },
+      "visiblePixels": 9967,
+      "transparentPixels": 45021
+    }
+  ]
+}

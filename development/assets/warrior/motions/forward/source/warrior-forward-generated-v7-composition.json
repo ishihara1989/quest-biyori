@@ -1,0 +1,205 @@
+{
+  "operation": "crop/nearest resize/compose only, generated pose pixels unchanged",
+  "cells": [
+    {
+      "file": "warrior-forward-frame1-generated-v2.png",
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 1286,
+        "height": 1223
+      },
+      "anchor": 615,
+      "packaging": {
+        "alphaBounds": {
+          "left": 125,
+          "top": 48,
+          "width": 1088,
+          "height": 1105
+        },
+        "scale": 0.36199095022624433,
+        "placed": {
+          "left": 73,
+          "top": 60,
+          "width": 394,
+          "height": 400
+        }
+      }
+    },
+    {
+      "file": "warrior-forward-frames2-8-generated-v1.png",
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 909,
+        "height": 865
+      },
+      "anchor": 456,
+      "packaging": {
+        "alphaBounds": {
+          "left": 92,
+          "top": 43,
+          "width": 806,
+          "height": 790
+        },
+        "scale": 0.5063291139240507,
+        "placed": {
+          "left": 66,
+          "top": 60,
+          "width": 408,
+          "height": 400
+        }
+      }
+    },
+    {
+      "file": "warrior-forward-generated-v5.png",
+      "rect": {
+        "left": 906,
+        "top": 0,
+        "width": 429,
+        "height": 443
+      },
+      "anchor": 176,
+      "packaging": {
+        "alphaBounds": {
+          "left": 18,
+          "top": 24,
+          "width": 396,
+          "height": 398
+        },
+        "scale": 1.0050251256281406,
+        "placed": {
+          "left": 91,
+          "top": 60,
+          "width": 398,
+          "height": 400
+        }
+      }
+    },
+    {
+      "file": "warrior-forward-generated-v5.png",
+      "rect": {
+        "left": 1335,
+        "top": 0,
+        "width": 439,
+        "height": 443
+      },
+      "anchor": 180,
+      "packaging": {
+        "alphaBounds": {
+          "left": 9,
+          "top": 24,
+          "width": 412,
+          "height": 398
+        },
+        "scale": 1.0050251256281406,
+        "placed": {
+          "left": 78,
+          "top": 60,
+          "width": 414,
+          "height": 400
+        }
+      }
+    },
+    {
+      "file": "warrior-forward-generated-v5.png",
+      "rect": {
+        "left": 0,
+        "top": 443,
+        "width": 466,
+        "height": 444
+      },
+      "anchor": 219,
+      "packaging": {
+        "alphaBounds": {
+          "left": 34,
+          "top": 13,
+          "width": 406,
+          "height": 392
+        },
+        "scale": 1.0204081632653061,
+        "placed": {
+          "left": 61,
+          "top": 60,
+          "width": 414,
+          "height": 400
+        }
+      }
+    },
+    {
+      "file": "warrior-forward-generated-v5.png",
+      "rect": {
+        "left": 466,
+        "top": 443,
+        "width": 440,
+        "height": 444
+      },
+      "anchor": 194,
+      "packaging": {
+        "alphaBounds": {
+          "left": 12,
+          "top": 7,
+          "width": 405,
+          "height": 401
+        },
+        "scale": 0.9975062344139651,
+        "placed": {
+          "left": 68,
+          "top": 60,
+          "width": 404,
+          "height": 400
+        }
+      }
+    },
+    {
+      "file": "warrior-forward-frame7-generated-v1.png",
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 1233,
+        "height": 1276
+      },
+      "anchor": 570,
+      "packaging": {
+        "alphaBounds": {
+          "left": 43,
+          "top": 35,
+          "width": 1162,
+          "height": 1135
+        },
+        "scale": 0.3524229074889868,
+        "placed": {
+          "left": 64,
+          "top": 60,
+          "width": 410,
+          "height": 400
+        }
+      }
+    },
+    {
+      "file": "warrior-forward-frames2-8-generated-v1.png",
+      "rect": {
+        "left": 909,
+        "top": 0,
+        "width": 909,
+        "height": 865
+      },
+      "anchor": 460,
+      "packaging": {
+        "alphaBounds": {
+          "left": 59,
+          "top": 43,
+          "width": 818,
+          "height": 779
+        },
+        "scale": 0.5134788189987163,
+        "placed": {
+          "left": 44,
+          "top": 60,
+          "width": 420,
+          "height": 400
+        }
+      }
+    }
+  ]
+}

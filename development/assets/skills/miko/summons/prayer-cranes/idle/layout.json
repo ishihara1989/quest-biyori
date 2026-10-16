@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/prayer-cranes-idle-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 732,
+      "height": 724
+    },
+    {
+      "x": 732,
+      "y": 0,
+      "width": 718,
+      "height": 724
+    },
+    {
+      "x": 1450,
+      "y": 0,
+      "width": 722,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.11023622047244094
+}

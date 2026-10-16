@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "enemy": "treant",
+  "motion": "root-bury",
+  "facing": "left",
+  "label": "根・地面へ差し込む",
+  "sheet": "treant-root-bury.png",
+  "preview": "../../../../../../development/assets/enemies/treant/motions/root-bury/treant-root-bury-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/treant/PROMPT.md",
+  "width": 1792,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 900,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/treant/source/treant-root-bury-generated-v1.png",
+  "sourceScale": 0.5,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "name": "roots-inserted",
+      "frame": 2,
+      "timeMs": 340,
+      "notes": "対象の地面にroot-eruptionを1回再生。伸長2コマ目と最大突出3コマ目を攻撃判定の候補にする。"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "root-bury-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "指根を下へ向ける",
+      "bounds": {
+        "left": 107,
+        "top": 61,
+        "right": 348,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 523
+      },
+      "sourceAnchor": {
+        "x": 442,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "root-bury-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 160,
+      "phase": "地面へ突き込む",
+      "bounds": {
+        "left": 15,
+        "top": 85,
+        "right": 298,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 523
+      },
+      "sourceAnchor": {
+        "x": 444,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "root-bury-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 260,
+      "phase": "根を地中へ押し込む",
+      "bounds": {
+        "left": 22,
+        "top": 88,
+        "right": 319,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 523,
+        "width": 768,
+        "height": 501
+      },
+      "sourceAnchor": {
+        "x": 536,
+        "y": 438
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "root-bury-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 300,
+      "phase": "地中へ根を送り続ける",
+      "bounds": {
+        "left": 44,
+        "top": 88,
+        "right": 325,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 523,
+        "width": 768,
+        "height": 501
+      },
+      "sourceAnchor": {
+        "x": 435,
+        "y": 438
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

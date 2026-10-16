@@ -1,0 +1,130 @@
+{
+  "id": "effects/dark-flower",
+  "label": "宵闇の花冠・開花",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "ground",
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 646,
+        "height": 634
+      },
+      "sourceAnchor": [
+        375,
+        567
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "deaa59674d934759bfdc9bebe477327662015e9e97aea4d335abd6bb101b2ea7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9571685791015625
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "phase": "溜め",
+      "source": "../../../sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 646,
+        "top": 0,
+        "width": 707,
+        "height": 634
+      },
+      "sourceAnchor": [
+        365,
+        573
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "e52a8f1ee9a275621f88754da497b53ac1de9fe759a21177164d9d300d625dc2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8968429565429688
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "発動",
+      "source": "../../../sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 0,
+        "top": 634,
+        "width": 734,
+        "height": 528
+      },
+      "sourceAnchor": [
+        375,
+        421
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "9fd089bed8aa23b2760150e43f83c69500fb80b039a1972860abf9afa008656b",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8437309265136719
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "phase": "復帰",
+      "source": "../../../sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 734,
+        "top": 634,
+        "width": 619,
+        "height": 528
+      },
+      "sourceAnchor": [
+        290,
+        434
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "c80378bb8c8dc2d7ab14d9238c92cc24f057234b3b4e94004b4e999e8d69b5f8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9020462036132812
+    }
+  ],
+  "fingerprint": "4bad9d45cebd6310b0e6df01915819a2adb8402f50758b4ba5a1ca9b5023a114",
+  "events": [],
+  "effects": []
+}

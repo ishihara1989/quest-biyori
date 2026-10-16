@@ -1,0 +1,28 @@
+{
+  "id": "demon-armored-soldier/move-2",
+  "enemy": "demon-armored-soldier",
+  "region": "demon-castle",
+  "motion": "move-2",
+  "label": "移動 4〜6",
+  "cols": 3,
+  "rows": 1,
+  "reference": "references/demon-armored-soldier.png",
+  "guide": null,
+  "source": "sources/demon-armored-soldier/move-2-generated.png",
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 魔鎧兵 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 4-6: far foot x=650,610,590; near foot x=430,470,500; far foot lifts 30px at frame5. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-0ea1f3c5-5182-44a2-8247-60a51d30428c.png",
+  "sha256": "8a21cab19823686871b47c7de856c0957b95c79ef8f7dc6951f2afbac09b104f",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "前半と反対の奥側の足が持ち上がる。"
+    ],
+    "issues": [
+      "3→4・6→1の支持足と剣先・盾の位置を検収する。",
+      "待機から移動への胴体位置合わせが必要。"
+    ]
+  }
+}

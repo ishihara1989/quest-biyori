@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "golden-pharaoh",
+  "motion": "summon",
+  "facing": "left",
+  "label": "summon",
+  "sheet": "golden-pharaoh-summon.png",
+  "preview": "../../../../../../development/assets/enemies/golden-pharaoh/motions/summon/golden-pharaoh-summon-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 2160,
+  "height": 430,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 430,
+  "frameCount": 4,
+  "pivot": {
+    "x": 313,
+    "y": 412
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1550,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/golden-pharaoh/source/summon-registered.png",
+  "sourceScale": 0.5221238938053098,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "summon-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 390,
+      "phase": "構え",
+      "bounds": {
+        "left": 180,
+        "top": 101,
+        "right": 426,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1036,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 593,
+        "y": 619
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 1,
+      "file": "summon-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 710,
+      "phase": "予告",
+      "bounds": {
+        "left": 148,
+        "top": 87,
+        "right": 429,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 1036,
+        "y": 0,
+        "width": 1036,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 460,
+        "y": 619
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 2,
+      "file": "summon-03.png",
+      "x": 1080,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 200,
+      "phase": "発動",
+      "bounds": {
+        "left": 48,
+        "top": 113,
+        "right": 450,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 643,
+        "width": 1036,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 651,
+        "y": 574
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    },
+    {
+      "index": 3,
+      "file": "summon-04.png",
+      "x": 1620,
+      "y": 0,
+      "width": 540,
+      "height": 430,
+      "durationMs": 250,
+      "phase": "復帰",
+      "bounds": {
+        "left": 178,
+        "top": 104,
+        "right": 427,
+        "bottom": 396
+      },
+      "sourceCell": {
+        "x": 1036,
+        "y": 643,
+        "width": 1036,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 378,
+        "y": 583
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -16
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/golden-pharaoh-attack-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/golden-pharaoh.png",
+  "action": {
+    "motion": "summon",
+    "warn": 1100,
+    "times": [
+      1100
+    ],
+    "power": 0,
+    "radius": 0,
+    "kind": "summon",
+    "status": null,
+    "duration": 1550
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 787,
+          "height": 522
+        },
+        {
+          "x": 787,
+          "y": 0,
+          "width": 749,
+          "height": 522
+        },
+        {
+          "x": 0,
+          "y": 522,
+          "width": 858,
+          "height": 502
+        },
+        {
+          "x": 858,
+          "y": 522,
+          "width": 678,
+          "height": 502
+        }
+      ]
+    }
+  ]
+}

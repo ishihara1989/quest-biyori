@@ -1,0 +1,24 @@
+{
+  "id": "young-fire-dragon/attack",
+  "source": "sources/young-fire-dragon/attack-v3.png",
+  "prompt": "Use case: precise-object-edit. Image1 is the FOUR-POSE sprite sheet edit target. Remove ONLY the curved orange/yellow claw-slash EFFECT and its sparks next to the bottom-left pose. Leave exactly FOUR COMPLETE young dragons and no external attack trail at all. Preserve all four dragon poses, red scale colors, anatomy, limb segment lengths, head sizes, horns, wings, tail, pixel clusters, positions, layout and transparent background. Claws remain the SAME short golden claws. Do NOT redraw another slash trail, no glowing particles outside dragons. This is a body-only animation. Equal 2x2 cell spacing and all complete silhouettes inside cells.",
+  "selected": true,
+  "reason": "Visual/source separation correction",
+  "tool": "built-in image_gen",
+  "sha256": "bf753bad5a3fc793af6ca644281b2454e2b834feb79c596d8ab26a0c0b3e963a",
+  "reference": "references/young-fire-dragon.png",
+  "guide": null,
+  "firstPass": "sources/young-fire-dragon/attack-generated.png",
+  "issues": [
+    "3コマ目の爪が大きく伸びる。基準の足先寸法・爪の所属・見切れを確認する。",
+    "溜めで後脚に体重をかけて立つ。隠れた前脚の接続と荷重を確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "sources/young-fire-dragon/attack-v2.png",
+      "sha256": "84bc5ca07d208c8341a9fa324ab08fcf62394b1113a22b9b3c067968f7342ce7"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

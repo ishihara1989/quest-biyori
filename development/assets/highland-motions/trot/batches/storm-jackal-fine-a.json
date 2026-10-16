@@ -1,0 +1,20 @@
+[
+  {
+    "enemy": "storm-jackal",
+    "frame": 2,
+    "source": "trot/storm-jackal/sources/frame-2-focused.png",
+    "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13090-86c2-7f71-8c3e-886a539df52e/exec-4c7292de-5e30-4efb-9672-514c5403b204.png",
+    "status": "superseded",
+    "prompt": "Change ONLY the BRIGHT BLUE NEAR LEFT HIND leg. Image1 is the fixed original sprite. Image2 overlays the desired leg centerline and target paw bottom in the SAME 1254x1254 coordinates. Move this lifted blue rear paw from approximately (630,1080) BACK toward its visible rear haunch to bottom-center (790,1080), following the PINK target ellipse. Keep the paw LIFTED; keep the DARK FAR HIND grounded paw at about (815,1170) EXACTLY unchanged. Near hind knee around (825,930), ankle around (785,1025); its upper thigh remains attached to existing haunch. This eliminates an excessive long forward swing and makes the far hind paw mostly overlap behind the near hind leg. Do NOT swap feet, delete a foot, or add a fifth. Keep both front legs, face, torso, horns, mane, tail, fur colors, armor and canvas completely unchanged. Retain true alpha; DO NOT copy the guide tint, colors, labels, lines or ellipse. Exact four continuously connected legs.",
+    "selectionReason": "Retained intermediate source; selected revision corrects contact, excessive far-leg reach, or clipped tail tips."
+  },
+  {
+    "enemy": "storm-jackal",
+    "frame": 3,
+    "source": "trot/storm-jackal/sources/frame-3-focused.png",
+    "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13090-86c2-7f71-8c3e-886a539df52e/exec-8792e65b-9fa7-4385-9c21-08069d464162.png",
+    "status": "selected",
+    "prompt": "Change ONLY the small DARK FAR RIGHT FRONT leg. Image1 is the fixed sprite; Image2 shows its desired centerline/paw bottom in the SAME 1254x1254 coordinates. Its existing grounded paw reaches too far toward the muzzle at x170. Retract that existing dark paw to bottom-center (325,1175), BLUE target ellipse, shortening the forward reach. Keep it GROUNDED. Thigh root (305,800), knee (325,990), ankle (325,1100). The bright BLUE NEAR FRONT stays curled LIFTED, EXACTLY unchanged. Both rear legs and all body/face/mane/horns/tail/colors also stay unchanged. A far planted forepaw should be behind the lifted near forepaw, mostly overlapped by the near leg, not stretched beyond the muzzle. Exactly four existing feet; move its OWN paw, erase old footprint, never add a fifth. Native transparent canvas, no guide art or labels in output.",
+    "selectionReason": "Four connected legs and alternating diagonal support reviewed; canonical appearance retained."
+  }
+]

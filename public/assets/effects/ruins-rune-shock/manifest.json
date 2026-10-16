@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-rune-shock",
+  "label": "ルーン衝撃",
+  "sheet": "ruins-rune-shock.png",
+  "preview": "../../../../development/assets/effects/ruins-rune-shock/ruins-rune-shock-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-rune-shock/PROMPT.md",
+  "width": 1280,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 208
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-rune-shock/source-registered.png",
+  "sourceScale": 0.35910224438902744,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-rune-shock-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 87,
+        "top": 81,
+        "right": 231,
+        "bottom": 208
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 872,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 410,
+        "y": 457
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-rune-shock-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 35,
+        "top": 44,
+        "right": 285,
+        "bottom": 208
+      },
+      "sourceCell": {
+        "x": 872,
+        "y": 0,
+        "width": 872,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 465,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-rune-shock-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 16,
+        "top": 45,
+        "right": 303,
+        "bottom": 208
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 546,
+        "width": 872,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 437,
+        "y": 490
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-rune-shock-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 42,
+        "top": 83,
+        "right": 277,
+        "bottom": 208
+      },
+      "sourceCell": {
+        "x": 872,
+        "y": 546,
+        "width": 872,
+        "height": 546
+      },
+      "sourceAnchor": {
+        "x": 363,
+        "y": 444
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "ground",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-rune-shock/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 697,
+        "height": 514
+      },
+      {
+        "x": 697,
+        "y": 0,
+        "width": 839,
+        "height": 514
+      },
+      {
+        "x": 0,
+        "y": 514,
+        "width": 840,
+        "height": 510
+      },
+      {
+        "x": 840,
+        "y": 514,
+        "width": 696,
+        "height": 510
+      }
+    ]
+  }
+}

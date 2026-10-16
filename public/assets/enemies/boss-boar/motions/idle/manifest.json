@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boss-boar",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "boss-boar-idle.png",
+  "preview": "../../../../../../development/assets/enemies/boss-boar/motions/idle/boss-boar-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boss-boar/PROMPT.md",
+  "width": 1920,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 240,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1280,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-idle-generated-v1.png",
+  "sourceScale": 0.58,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "力強い四足の待機姿勢",
+      "bounds": {
+        "left": 69,
+        "top": 31,
+        "right": 411,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 638,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 330,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "息を吸い・耳が揺れる",
+      "bounds": {
+        "left": 67,
+        "top": 26,
+        "right": 412,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 638,
+        "y": 0,
+        "width": 616,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 312,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "息を吐き・尾を下げる",
+      "bounds": {
+        "left": 69,
+        "top": 34,
+        "right": 411,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 638,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 330,
+        "y": 565
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 320,
+      "phase": "呼吸を戻し・尾を上げる",
+      "bounds": {
+        "left": 69,
+        "top": 35,
+        "right": 411,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 638,
+        "y": 627,
+        "width": 616,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 564
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

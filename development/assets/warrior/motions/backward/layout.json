@@ -1,0 +1,48 @@
+{
+  "source": "source/warrior-backward-generated-v6.png",
+  "columns": 4,
+  "rows": 2,
+  "rowSplit": 500,
+  "frames": [
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    },
+    {
+      "anchor": {
+        "x": 250
+      }
+    }
+  ]
+}

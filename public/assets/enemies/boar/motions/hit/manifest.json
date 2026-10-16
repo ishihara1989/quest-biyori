@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boar",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "boar-hit.png",
+  "preview": "../../../../../../development/assets/enemies/boar/motions/hit/boar-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boar/PROMPT.md",
+  "width": 1280,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 540,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/boar/source/boar-hit-generated-v2.png",
+  "sourceScale": 0.35,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "衝撃でのけぞる",
+      "bounds": {
+        "left": 72,
+        "top": 43,
+        "right": 259,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 349,
+        "y": 591
+      },
+      "bakedOffset": {
+        "x": 6,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 140,
+      "phase": "頭を上げて反動を受ける",
+      "bounds": {
+        "left": 74,
+        "top": 38,
+        "right": 265,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 333,
+        "y": 594
+      },
+      "bakedOffset": {
+        "x": 10,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "hit-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 140,
+      "phase": "体勢を立て直す",
+      "bounds": {
+        "left": 61,
+        "top": 46,
+        "right": 265,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 327,
+        "y": 532
+      },
+      "bakedOffset": {
+        "x": 3,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "hit-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "待機の基準姿勢へ",
+      "bounds": {
+        "left": 63,
+        "top": 53,
+        "right": 257,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 325,
+        "y": 566
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/boar/source/boar-idle-generated-v1.png",
+      "sourceScale": 0.35,
+      "reusedPose": "idle/0"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "dragon-girl/move-2",
+  "source": "sources/dragon-girl/move-2-v2-rejected.png",
+  "selected": false,
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames4-6 of the exact adult dragon girl in image1, horizontal equal 3-cell sheet. Same LEFT-facing three-quarter head, red hair/horns, black/gold armor, bare hands with original short claws, folded wings at original span, attached red tail, same scale, fixed hips/head. Absolutely no sword/shield. The darker far leg at SCREEN-LEFT is the planted support in this SECOND HALF; the bright near leg at SCREEN-RIGHT swings. Frame4: SCREEN-RIGHT near knee flexes slightly, near heel raises, far foot flat; frame5: SCREEN-RIGHT near knee lifts and its foot is 50 local pixels off floor while SCREEN-LEFT far foot stays firmly planted; frame6 SCREEN-RIGHT near foot reaches forward LEFT and touches floor, dark far foot trails to right. Ground y820 in each 1024 local cell. Modest opposite arm swing 15px, hair/tail tips drift under10px. Exactly two legs, same hip/knee/ankle connections. Entire horns/wings/tail/feet inside central70% of each equal cell, wide fully transparent gutters. Crisp JRPG pixel clusters and dark outlines, original red and gold colors. Transparent alpha everywhere outside outlined silhouette. No aura/glow background, floor, shadow, text or labels. This is the opposite half of the attached first-half sheet image2: the near SCREEN-RIGHT foot must lift, never repeat the SCREEN-LEFT lift. Keep exactly same face, wings, colors and proportions as image1. Image2 is sequence continuity only.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    },
+    {
+      "file": "sources/dragon-girl/move-1-v2.png",
+      "sha256": "a41cb1d28ec62fd05729b93b145ecce2be4283336edaed0783e0271e4ba6838a"
+    }
+  ],
+  "reason": "Frame5 repeats far leg lift. Individual frame generation needed.",
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "0ac6953720f4468ffbde66bebc485dd2e73b6480800a94adf1983b0840beaa4f",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/move-2-generated.png",
+  "issues": [
+    "両半分とも画面左の脚を上げる構図が強く、前半・後半の左右交代が弱い。膝と足先の所属を確定して修正する。",
+    "3→4・6→1で支持足・尾先・体格がつながるか確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

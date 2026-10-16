@@ -1,0 +1,11 @@
+{
+  "id": "spirit-impact",
+  "source": "development/assets/skills/miko/source/spirit-impact-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-38fe7a18-1b68-44cd-8b0d-96f5ed96d5a7.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 3 chronological frames in ONE horizontal row of equal square cells. Large dramatic shrine VFX. A large white-gold sacred animal-free crest impact: frame1 compressed gold star at center (.50,.50); frame2 broad crimson-white circular shimenawa burst width .70; frame3 large broken crest and shide fragments expand to width .80 then disperse. Center retains transparent cuts. All frames same scale and common center/ground. Subject fills .14..86 without touching cell margins. Keep all anatomy and motion effects entirely within each cell with clear 10% empty margins.",
+  "refs": [],
+  "receivedAt": "2026-10-10T14:55:37.094Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

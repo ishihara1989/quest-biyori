@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-sweep",
+  "label": "氷牙大薙ぎ",
+  "sheet": "glacier-sweep.png",
+  "preview": "../../../../development/assets/effects/glacier-sweep/glacier-sweep-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2440,
+  "height": 380,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 610,
+  "frameHeight": 380,
+  "frameCount": 4,
+  "pivot": {
+    "x": 305,
+    "y": 190
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/sweep.png",
+  "sourceScale": 0.599647266313933,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-sweep/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-sweep-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 610,
+      "height": 380,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 203,
+        "top": 78,
+        "right": 407,
+        "bottom": 301
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 691,
+        "height": 666
+      },
+      "sourceAnchor": {
+        "x": 364,
+        "y": 374
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-sweep-02.png",
+      "x": 610,
+      "y": 0,
+      "width": 610,
+      "height": 380,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 145,
+        "top": 47,
+        "right": 465,
+        "bottom": 333
+      },
+      "sourceCell": {
+        "x": 691,
+        "y": 0,
+        "width": 691,
+        "height": 666
+      },
+      "sourceAnchor": {
+        "x": 356,
+        "y": 369
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-sweep-03.png",
+      "x": 1220,
+      "y": 0,
+      "width": 610,
+      "height": 380,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 119,
+        "top": 20,
+        "right": 491,
+        "bottom": 359
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 666,
+        "width": 691,
+        "height": 666
+      },
+      "sourceAnchor": {
+        "x": 358,
+        "y": 325
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-sweep-04.png",
+      "x": 1830,
+      "y": 0,
+      "width": 610,
+      "height": 380,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 134,
+        "top": 31,
+        "right": 476,
+        "bottom": 349
+      },
+      "sourceCell": {
+        "x": 691,
+        "y": 666,
+        "width": 691,
+        "height": 666
+      },
+      "sourceAnchor": {
+        "x": 301,
+        "y": 329
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "target",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/sweep-generated.png"
+}

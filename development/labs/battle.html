@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head><base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111317">
+  <title>Idle RPG — 戦闘シーンの試作</title>
+  <link rel="stylesheet" href="/development/labs/css/sprite-lab.css">
+  <link rel="stylesheet" href="/development/labs/css/battle-lab.css">
+  <script defer src="/js/core/motion-playback.js"></script>
+  <script defer src="/development/labs/js/battle-simulation.js"></script>
+  <script defer src="/development/labs/js/battle-lab.js"></script>
+</head>
+<body>
+  <div class="shell battle-shell">
+    <header class="topbar">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✦</span><span>IDLE RPG <b>BATTLE LAB</b></span></a>
+      <nav class="battle-nav" aria-label="試作ページ"><a href="/development/labs/index.html">キャラクター</a><a href="/development/labs/enemies.html">敵キャラクター</a><a href="/development/labs/stages.html">ステージ</a></nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div><p class="eyebrow">BATTLE PROTOTYPE / STARTING FOREST</p><h1>はじめての戦闘<span class="version">試作 01</span></h1>
+          <p class="intro-copy">戦士の大剣と、小さなスライム。<br>ランダムな位置から近づいて、自動で攻撃し合います。</p></div>
+        <div class="asset-status"><span class="status-dot"></span>1 対 1<span class="status-divider">/</span><span>AUTO BATTLE</span></div>
+      </section>
+
+      <section class="battle-panel" aria-label="戦士とスライムの自動戦闘">
+        <div class="panel-heading"><h2><span class="small-dot"></span>始まりの森</h2><div class="battle-clock"><span id="battle-state" class="state-label">読み込み中</span><span id="battle-time">00:00.0</span></div></div>
+        <div class="battle-viewport">
+          <canvas id="battle-canvas" width="1024" height="576" tabindex="0" role="img" aria-label="左側の戦士と右側のスライムが、森で近づいて攻撃し合う戦闘シーン"></canvas>
+          <div class="battle-hud">
+            <div class="fighter-hud warrior-hud"><p><span class="fighter-tag">WARRIOR</span><b>戦士</b><span id="warrior-action">待機</span></p><div class="hp-track"><div id="warrior-hp-fill" class="hp-fill"></div></div><span id="warrior-hp" class="hp-value">HP —</span></div>
+            <span class="battle-versus" aria-hidden="true">VS</span>
+            <div class="fighter-hud slime-hud"><p><span class="fighter-tag">SLIME</span><b>スライム</b><span id="slime-action">待機</span></p><div class="hp-track"><div id="slime-hp-fill" class="hp-fill"></div></div><span id="slime-hp" class="hp-value">HP —</span></div>
+          </div>
+          <p id="battle-load-status" class="battle-load-status" role="status">背景とモーションを読み込んでいます…</p>
+          <div class="battle-stage-caption" aria-hidden="true"><span>STARTING FOREST</span><span>WARRIOR × SLIME</span></div>
+        </div>
+        <div id="battle-result" class="battle-result" hidden role="status"><span class="eyebrow">BATTLE FINISHED</span><strong id="battle-result-title"></strong><span>「ランダム配置で再戦」で、もう一度。</span></div>
+        <fieldset id="battle-controls" disabled>
+          <div class="battle-transport">
+            <button id="battle-play" type="button" class="play-button">一時停止</button>
+            <button id="battle-restart" type="button" class="restart-button">ランダム配置で再戦 <span aria-hidden="true">↻</span></button>
+            <div class="battle-options"><label for="battle-speed">速度 <select id="battle-speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label><label><input id="battle-ranges" type="checkbox">攻撃範囲を表示</label></div>
+          </div>
+        </fieldset>
+        <p class="battle-help">Spaceで一時停止・再開。再戦するたびに、左側の戦士と右側のスライムの出現位置が変わります。</p>
+      </section>
+
+      <div class="battle-details">
+        <section class="battle-stats" aria-labelledby="battle-stats-title">
+          <div class="battle-section-heading"><div><p class="eyebrow">PROVISIONAL STATS</p><h2 id="battle-stats-title">今回の仮ステータス</h2></div><span class="version">調整前</span></div>
+          <div class="battle-table-wrap"><table><thead><tr><th scope="col">キャラクター</th><th scope="col">体力</th><th scope="col">攻撃力</th><th scope="col">攻撃範囲</th><th scope="col">攻撃間隔</th></tr></thead><tbody id="battle-stat-rows"></tbody></table></div>
+          <p class="battle-stat-note">攻撃範囲は足元の座標間の距離。戦士は大剣の振り下ろし、スライムは体当たりで攻撃します。</p>
+        </section>
+        <section class="battle-log-panel" aria-labelledby="battle-log-title"><div class="battle-section-heading"><div><p class="eyebrow">COMBAT LOG</p><h2 id="battle-log-title">戦闘の記録</h2></div><span id="battle-round">ROUND 01</span></div><ol id="battle-log" class="battle-log"></ol></section>
+      </div>
+    </main>
+    <footer><span><span class="footer-star">✦</span> IDLE RPG / BATTLE LAB</span><span>WARRIOR VS SLIME — 01</span></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "enemy": "iron-horn",
+  "motion": "charge",
+  "facing": "left",
+  "label": "長突進",
+  "sheet": "iron-horn-charge.png",
+  "preview": "iron-horn-charge-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 2560,
+  "height": 460,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 460,
+  "frameCount": 4,
+  "pivot": {
+    "x": 365,
+    "y": 436
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../registered/charge.png",
+  "sourceScale": 0.4893238434163701,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "charge-impact",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "charge-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 92,
+        "top": 185,
+        "right": 556,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1141,
+        "height": 716
+      },
+      "sourceAnchor": {
+        "x": 596,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "charge-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 108,
+        "top": 123,
+        "right": 588,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 1141,
+        "y": 0,
+        "width": 1141,
+        "height": 716
+      },
+      "sourceAnchor": {
+        "x": 589,
+        "y": 678
+      },
+      "bakedOffset": {
+        "x": 12,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "charge-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 21,
+        "top": 187,
+        "right": 541,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 716,
+        "width": 1141,
+        "height": 716
+      },
+      "sourceAnchor": {
+        "x": 599,
+        "y": 548
+      },
+      "bakedOffset": {
+        "x": -70,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "charge-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 93,
+        "top": 131,
+        "right": 562,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 1141,
+        "y": 716,
+        "width": 1141,
+        "height": 716
+      },
+      "sourceAnchor": {
+        "x": 595,
+        "y": 662
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/iron-horn.png",
+  "originalSources": [
+    "../../../../sources/iron-horn/charge-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 40,
+          "y": 110,
+          "width": 706,
+          "height": 383,
+          "mainComponent": 2
+        },
+        {
+          "x": 779,
+          "y": 19,
+          "width": 731,
+          "height": 477,
+          "mainComponent": 1
+        },
+        {
+          "x": 31,
+          "y": 549,
+          "width": 793,
+          "height": 380,
+          "mainComponent": 4
+        },
+        {
+          "x": 799,
+          "y": 510,
+          "width": 716,
+          "height": 465,
+          "mainComponent": 3
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.3446475195822454,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [
+    {
+      "id": "charge-impact",
+      "manifest": "../../../../effects/charge-impact/manifest.json"
+    }
+  ]
+}

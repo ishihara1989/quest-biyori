@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "arachne",
+  "motion": "claw",
+  "facing": "left",
+  "label": "通常攻撃",
+  "sheet": "arachne-claw.png",
+  "preview": "../../../../../../development/assets/enemies/arachne/motions/claw/arachne-claw-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/arachne/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 740,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/arachne/source/claw-registered.png",
+  "sourceScale": 0.5383022774327122,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 140,
+      "phase": "開始",
+      "bounds": {
+        "left": 214,
+        "top": 172,
+        "right": 550,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 795,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 240,
+        "y": 498
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "claw-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 200,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 216,
+        "top": 171,
+        "right": 549,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 795,
+        "y": 0,
+        "width": 795,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 236,
+        "y": 499
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "claw-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 144,
+        "top": 177,
+        "right": 554,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 516,
+        "width": 795,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 369,
+        "y": 488
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "claw-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "復帰",
+      "bounds": {
+        "left": 217,
+        "top": 173,
+        "right": 549,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 795,
+        "y": 516,
+        "width": 795,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 234,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/arachne/source/claw-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 158175,
+        "left": 122,
+        "top": 19,
+        "right": 747,
+        "bottom": 501,
+        "cx": 442.64676465939624,
+        "cy": 276.70409356725145
+      },
+      {
+        "id": 1,
+        "count": 159199,
+        "left": 878,
+        "top": 18,
+        "right": 1497,
+        "bottom": 501,
+        "cx": 1195.702705419004,
+        "cy": 273.96819075496705
+      },
+      {
+        "id": 4,
+        "count": 170460,
+        "left": 18,
+        "top": 521,
+        "right": 780,
+        "bottom": 993,
+        "cx": 458.0397981931245,
+        "cy": 757.3414818725801
+      },
+      {
+        "id": 3,
+        "count": 156415,
+        "left": 885,
+        "top": 518,
+        "right": 1502,
+        "bottom": 997,
+        "cx": 1200.423571908065,
+        "cy": 773.9144583320015
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

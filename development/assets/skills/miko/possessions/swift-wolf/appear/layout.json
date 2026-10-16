@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/swift-wolf-appear-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 731,
+      "height": 724
+    },
+    {
+      "x": 731,
+      "y": 0,
+      "width": 711,
+      "height": 724
+    },
+    {
+      "x": 1442,
+      "y": 0,
+      "width": 730,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 924
+    },
+    {
+      "x": 512,
+      "y": 924
+    },
+    {
+      "x": 512,
+      "y": 924
+    }
+  ],
+  "scale": 0.49206349206349204
+}

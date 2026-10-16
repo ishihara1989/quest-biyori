@@ -1,0 +1,188 @@
+{
+  "id": "lava-salamander/idle",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "label": "待機",
+  "kind": null,
+  "motion": "idle",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/lava-salamander.png",
+  "originalSources": [
+    "../../../sources/lava-salamander/idle-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/lava-salamander/idle/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8802986145019531,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 138,
+        "top": 108,
+        "right": 445,
+        "bottom": 380
+      },
+      "visibleBounds": {
+        "left": 148,
+        "top": 167,
+        "right": 428,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/lava-salamander/idle-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 636,
+        "height": 663
+      },
+      "sourceScale": 0.5109489051094891,
+      "sourceAnchor": {
+        "x": 348,
+        "y": 579
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8774757385253906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 134,
+        "top": 67,
+        "right": 429,
+        "bottom": 380
+      },
+      "visibleBounds": {
+        "left": 148,
+        "top": 162,
+        "right": 427,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/lava-salamander/idle-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 636,
+        "y": 0,
+        "width": 618,
+        "height": 663
+      },
+      "sourceScale": 0.5109489051094891,
+      "sourceAnchor": {
+        "x": 330,
+        "y": 579
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8779449462890625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 145,
+        "top": 125,
+        "right": 434,
+        "bottom": 425
+      },
+      "visibleBounds": {
+        "left": 148,
+        "top": 166,
+        "right": 427,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/lava-salamander/idle-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 663,
+        "width": 635,
+        "height": 591
+      },
+      "sourceScale": 0.5109489051094891,
+      "sourceAnchor": {
+        "x": 348,
+        "y": 418
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8814849853515625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 148,
+        "top": 124,
+        "right": 448,
+        "bottom": 416
+      },
+      "visibleBounds": {
+        "left": 151,
+        "top": 172,
+        "right": 428,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/lava-salamander/idle-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 635,
+        "y": 663,
+        "width": 619,
+        "height": 591
+      },
+      "sourceScale": 0.5109489051094891,
+      "sourceAnchor": {
+        "x": 327,
+        "y": 418
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

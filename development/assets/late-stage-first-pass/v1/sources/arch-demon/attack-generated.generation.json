@@ -1,0 +1,30 @@
+{
+  "id": "arch-demon/attack",
+  "enemy": "arch-demon",
+  "region": "demon-castle",
+  "motion": "attack",
+  "label": "拳撃",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/arch-demon.png",
+  "guide": null,
+  "source": "sources/arch-demon/attack-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame NORMAL ATTACK 拳撃 by アークデーモン EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: near fist (350,620) pulls (580,500), winds at (600,440), punches left (180,590), returns (350,620). Other arms remain visibly connected and in place. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "demon-impact"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-9972f40f-04ca-45ab-9d37-a2a3bdf8eb17.png",
+  "sha256": "b7798b729a77fcaf2a6bcf66669893796e979304a70ed1857f64197b8508d678",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "紫と金の背景光が混入。",
+      "構え・溜め・発動で主に動かす腕が入れ替わって見える。2腕の所属を追い、同じ腕のパンチとして揃える。",
+      "拳と翼の見切れを確認する。"
+    ]
+  }
+}

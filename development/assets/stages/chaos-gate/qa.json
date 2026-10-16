@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-15",
+  "adopted": true,
+  "assets": [
+    "../../../../public/assets/stages/chaos-gate/background.png",
+    "../../../../public/assets/stages/chaos-gate/gate.png"
+  ],
+  "checks": {
+    "transparentMargins": true,
+    "noClipping": true,
+    "pixelArtStyle": true,
+    "threeGateSizes": true,
+    "openingClosingSummoningShatter": true,
+    "frameSamplesPerTier": 51,
+    "continuousPreview": "../../../../output/chaos-gate/gate-tier-0-preview.gif",
+    "normalAnd390px": true,
+    "reducedMotion": true,
+    "unlockEffect": true,
+    "saveReload": true,
+    "repeatAndDefeatFallback": true,
+    "originalGateRegression": true
+  },
+  "automatedTests": {
+    "chaosGate": 8,
+    "existingAffected": 89,
+    "dimensionalGate": 10,
+    "failures": 0
+  },
+  "balance": {
+    "level": 100,
+    "samplesPerBuild": 30,
+    "region5Wins": 0,
+    "region8Wins": 30,
+    "region8MedianSeconds": 58.2
+  },
+  "notes": "Original images, all phase contact sheets and 100ms frame sequences inspected; renderer playback verified in browser. No generated animation sprite frames; static PNGs use the shared gate renderer."
+}

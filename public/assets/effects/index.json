@@ -1,0 +1,542 @@
+[
+  {
+    "id": "fruit-bomb",
+    "label": "樹の実爆弾",
+    "manifest": "fruit-bomb/manifest.json"
+  },
+  {
+    "id": "explosion",
+    "label": "汎用爆発",
+    "manifest": "explosion/manifest.json"
+  },
+  {
+    "id": "root-eruption",
+    "label": "根っこ攻撃",
+    "manifest": "root-eruption/manifest.json"
+  },
+  {
+    "id": "alraune-seed-volley",
+    "label": "アルラウネの種・弾群",
+    "manifest": "alraune-seed-volley/manifest.json"
+  },
+  {
+    "id": "alraune-seed-stream",
+    "label": "アルラウネの手下の種・1列",
+    "manifest": "alraune-seed-stream/manifest.json"
+  },
+  {
+    "id": "mage-wind-bolt",
+    "label": "魔法使い・風の弾",
+    "manifest": "mage-wind-bolt/manifest.json"
+  },
+  {
+    "id": "mage-chant-aura",
+    "label": "魔法使い・詠唱",
+    "manifest": "mage-chant-aura/manifest.json"
+  },
+  {
+    "id": "mage-wind-impact",
+    "label": "魔法使い・風の衝撃",
+    "manifest": "mage-wind-impact/manifest.json"
+  },
+  {
+    "id": "toad-poison-bolt",
+    "label": "毒液弾",
+    "manifest": "toad-poison-bolt/manifest.json"
+  },
+  {
+    "id": "toad-poison-impact",
+    "label": "毒液の飛沫",
+    "manifest": "toad-poison-impact/manifest.json"
+  },
+  {
+    "id": "mud-bind",
+    "label": "泥の拘束",
+    "manifest": "mud-bind/manifest.json"
+  },
+  {
+    "id": "mud-slam-impact",
+    "label": "泥の衝撃波",
+    "manifest": "mud-slam-impact/manifest.json"
+  },
+  {
+    "id": "lich-energy-bolt",
+    "label": "闇のエネルギー弾",
+    "manifest": "lich-energy-bolt/manifest.json"
+  },
+  {
+    "id": "lich-energy-impact",
+    "label": "闇の弾の衝撃",
+    "manifest": "lich-energy-impact/manifest.json"
+  },
+  {
+    "id": "lich-dark-magic",
+    "label": "闇の大魔法",
+    "manifest": "lich-dark-magic/manifest.json"
+  },
+  {
+    "id": "hydra-poison-aura",
+    "label": "毒ガスの溜め",
+    "manifest": "hydra-poison-aura/manifest.json"
+  },
+  {
+    "id": "hydra-poison-breath",
+    "label": "毒ガスブレス",
+    "manifest": "hydra-poison-breath/manifest.json"
+  },
+  {
+    "id": "bat-sonic",
+    "label": "超音波",
+    "manifest": "bat-sonic/manifest.json"
+  },
+  {
+    "id": "vampire-drain",
+    "label": "吸血",
+    "manifest": "vampire-drain/manifest.json"
+  },
+  {
+    "id": "spider-web-bolt",
+    "label": "クモ糸弾",
+    "manifest": "spider-web-bolt/manifest.json"
+  },
+  {
+    "id": "spider-web-slow",
+    "label": "クモ糸・攻撃移動低下",
+    "manifest": "spider-web-slow/manifest.json"
+  },
+  {
+    "id": "arachne-claw-bolt",
+    "label": "飛爪",
+    "manifest": "arachne-claw-bolt/manifest.json"
+  },
+  {
+    "id": "rock-bolt",
+    "label": "岩石",
+    "manifest": "rock-bolt/manifest.json"
+  },
+  {
+    "id": "earth-debris",
+    "label": "飛ぶ土塊",
+    "manifest": "earth-debris/manifest.json"
+  },
+  {
+    "id": "cave-quake",
+    "label": "地震衝撃",
+    "manifest": "cave-quake/manifest.json"
+  },
+  {
+    "id": "worm-tail",
+    "label": "地中から出る尻尾",
+    "manifest": "worm-tail/manifest.json"
+  },
+  {
+    "id": "sea-ink",
+    "label": "墨・目潰し",
+    "manifest": "sea-ink/manifest.json"
+  },
+  {
+    "id": "ink-blind",
+    "label": "目潰し状態",
+    "manifest": "ink-blind/manifest.json"
+  },
+  {
+    "id": "sea-bubble-bolt",
+    "label": "泡弾",
+    "manifest": "sea-bubble-bolt/manifest.json"
+  },
+  {
+    "id": "bubble-prison",
+    "label": "泡・行動不能",
+    "manifest": "bubble-prison/manifest.json"
+  },
+  {
+    "id": "kraken-tentacle",
+    "label": "地中から出る触手",
+    "manifest": "kraken-tentacle/manifest.json"
+  },
+  {
+    "id": "sea-slam",
+    "label": "触手衝撃",
+    "manifest": "sea-slam/manifest.json"
+  },
+  {
+    "id": "water-breath",
+    "label": "水流ブレス",
+    "manifest": "water-breath/manifest.json"
+  },
+  {
+    "id": "ruins-stone-slash",
+    "label": "石剣斬撃",
+    "manifest": "ruins-stone-slash/manifest.json"
+  },
+  {
+    "id": "ruins-rune-claw",
+    "label": "ルーン爪撃",
+    "manifest": "ruins-rune-claw/manifest.json"
+  },
+  {
+    "id": "ruins-rune-shock",
+    "label": "ルーン衝撃",
+    "manifest": "ruins-rune-shock/manifest.json"
+  },
+  {
+    "id": "ruins-infantry-bolt",
+    "label": "古代弩矢",
+    "manifest": "ruins-infantry-bolt/manifest.json"
+  },
+  {
+    "id": "ruins-heavy-bolt",
+    "label": "弩砲大矢",
+    "manifest": "ruins-heavy-bolt/manifest.json"
+  },
+  {
+    "id": "ruins-bronze-impact",
+    "label": "機兵衝突",
+    "manifest": "ruins-bronze-impact/manifest.json"
+  },
+  {
+    "id": "ruins-magic-bolt",
+    "label": "魔導弾",
+    "manifest": "ruins-magic-bolt/manifest.json"
+  },
+  {
+    "id": "ruins-magic-burst",
+    "label": "魔力炸裂",
+    "manifest": "ruins-magic-burst/manifest.json"
+  },
+  {
+    "id": "ruins-stone-impact",
+    "label": "石腕衝撃",
+    "manifest": "ruins-stone-impact/manifest.json"
+  },
+  {
+    "id": "ruins-golem-sweep",
+    "label": "重腕薙ぎ",
+    "manifest": "ruins-golem-sweep/manifest.json"
+  },
+  {
+    "id": "ruins-seraph-light",
+    "label": "セラフィナ光弾",
+    "manifest": "ruins-seraph-light/manifest.json"
+  },
+  {
+    "id": "ruins-ring-blade",
+    "label": "魔導環刃",
+    "manifest": "ruins-ring-blade/manifest.json"
+  },
+  {
+    "id": "ruins-light-pillar",
+    "label": "魔導光柱",
+    "manifest": "ruins-light-pillar/manifest.json"
+  },
+  {
+    "id": "ruins-recharge",
+    "label": "魔導再調整光",
+    "manifest": "ruins-recharge/manifest.json"
+  },
+  {
+    "id": "ruins-cannon-shell",
+    "label": "古代砲弾",
+    "manifest": "ruins-cannon-shell/manifest.json"
+  },
+  {
+    "id": "ruins-furnace-beam",
+    "label": "炉心光線",
+    "manifest": "ruins-furnace-beam/manifest.json"
+  },
+  {
+    "id": "ruins-magic-quake",
+    "label": "魔導踏撃波",
+    "manifest": "ruins-magic-quake/manifest.json"
+  },
+  {
+    "id": "ruins-vent-steam",
+    "label": "機兵排熱",
+    "manifest": "ruins-vent-steam/manifest.json"
+  },
+  {
+    "id": "desert-sand-burst",
+    "label": "砂の衝撃",
+    "manifest": "desert-sand-burst/manifest.json"
+  },
+  {
+    "id": "desert-venom",
+    "label": "毒針・毒液",
+    "manifest": "desert-venom/manifest.json"
+  },
+  {
+    "id": "desert-royal-wave",
+    "label": "王墓の砂魔法",
+    "manifest": "desert-royal-wave/manifest.json"
+  },
+  {
+    "id": "desert-fissure",
+    "label": "ベヒモスの地割れ",
+    "manifest": "desert-fissure/manifest.json"
+  },
+  {
+    "id": "highland-wind-blade",
+    "label": "風刃",
+    "manifest": "highland-wind-blade/manifest.json"
+  },
+  {
+    "id": "highland-feather",
+    "label": "羽根射撃",
+    "manifest": "highland-feather/manifest.json"
+  },
+  {
+    "id": "highland-wind-ring",
+    "label": "風の円",
+    "manifest": "highland-wind-ring/manifest.json"
+  },
+  {
+    "id": "highland-wind-gust",
+    "label": "翼の突風",
+    "manifest": "highland-wind-gust/manifest.json"
+  },
+  {
+    "id": "highland-venom",
+    "label": "毒尾の毒針",
+    "manifest": "highland-venom/manifest.json"
+  },
+  {
+    "id": "highland-claw",
+    "label": "爪・近接斬撃",
+    "manifest": "highland-claw/manifest.json"
+  },
+  {
+    "id": "highland-charge-impact",
+    "label": "突進の衝撃",
+    "manifest": "highland-charge-impact/manifest.json"
+  },
+  {
+    "id": "highland-rock-shards",
+    "label": "岩片",
+    "manifest": "highland-rock-shards/manifest.json"
+  },
+  {
+    "id": "highland-bite-impact",
+    "label": "噛みつきの衝撃",
+    "manifest": "highland-bite-impact/manifest.json"
+  },
+  {
+    "id": "highland-horn-sweep",
+    "label": "角の薙ぎ",
+    "manifest": "highland-horn-sweep/manifest.json"
+  },
+  {
+    "id": "glacier-bite",
+    "label": "霜牙の衝撃",
+    "manifest": "glacier-bite/manifest.json"
+  },
+  {
+    "id": "glacier-punch",
+    "label": "晶拳の衝撃",
+    "manifest": "glacier-punch/manifest.json"
+  },
+  {
+    "id": "glacier-cold",
+    "label": "冷気弾",
+    "manifest": "glacier-cold/manifest.json"
+  },
+  {
+    "id": "glacier-ring",
+    "label": "冷気輪",
+    "manifest": "glacier-ring/manifest.json"
+  },
+  {
+    "id": "glacier-pillar",
+    "label": "氷柱",
+    "manifest": "glacier-pillar/manifest.json"
+  },
+  {
+    "id": "glacier-armor",
+    "label": "結晶装甲",
+    "manifest": "glacier-armor/manifest.json"
+  },
+  {
+    "id": "glacier-seal",
+    "label": "薄氷の封輪",
+    "manifest": "glacier-seal/manifest.json"
+  },
+  {
+    "id": "glacier-sweep",
+    "label": "氷牙大薙ぎ",
+    "manifest": "glacier-sweep/manifest.json"
+  },
+  {
+    "id": "glacier-quake",
+    "label": "氷震踏砕",
+    "manifest": "glacier-quake/manifest.json"
+  },
+  {
+    "id": "glacier-boulder",
+    "label": "氷塊天落",
+    "manifest": "glacier-boulder/manifest.json"
+  },
+  {
+    "id": "glacier-crown",
+    "label": "白夜の氷冠",
+    "manifest": "glacier-crown/manifest.json"
+  },
+  {
+    "id": "volcano-bite-impact",
+    "label": "灼牙の衝撃",
+    "manifest": "volcano-bite-impact/manifest.json"
+  },
+  {
+    "id": "volcano-claw-arc",
+    "label": "紅爪の軌跡",
+    "manifest": "volcano-claw-arc/manifest.json"
+  },
+  {
+    "id": "volcano-axe-arc",
+    "label": "黒曜斧の軌跡",
+    "manifest": "volcano-axe-arc/manifest.json"
+  },
+  {
+    "id": "volcano-heavy-axe-arc",
+    "label": "断罪大薙ぎ",
+    "manifest": "volcano-heavy-axe-arc/manifest.json"
+  },
+  {
+    "id": "volcano-fire-fan",
+    "label": "灼熱の扇",
+    "manifest": "volcano-fire-fan/manifest.json"
+  },
+  {
+    "id": "volcano-fireball",
+    "label": "灼熱火球",
+    "manifest": "volcano-fireball/manifest.json"
+  },
+  {
+    "id": "volcano-fireball-impact",
+    "label": "火球爆発",
+    "manifest": "volcano-fireball-impact/manifest.json"
+  },
+  {
+    "id": "volcano-lava-bomb",
+    "label": "落下溶岩弾",
+    "manifest": "volcano-lava-bomb/manifest.json"
+  },
+  {
+    "id": "volcano-lava-impact",
+    "label": "溶岩着弾",
+    "manifest": "volcano-lava-impact/manifest.json"
+  },
+  {
+    "id": "volcano-lava-pool",
+    "label": "残留溶岩床",
+    "manifest": "volcano-lava-pool/manifest.json"
+  },
+  {
+    "id": "volcano-fissure",
+    "label": "断層斬の地割れ",
+    "manifest": "volcano-fissure/manifest.json"
+  },
+  {
+    "id": "volcano-fire-beam",
+    "label": "双脈竜息",
+    "manifest": "volcano-fire-beam/manifest.json"
+  },
+  {
+    "id": "volcano-landing-shock",
+    "label": "翼震の着地衝撃",
+    "manifest": "volcano-landing-shock/manifest.json"
+  },
+  {
+    "id": "volcano-burn",
+    "label": "火傷",
+    "manifest": "volcano-burn/manifest.json"
+  },
+  {
+    "id": "volcano-armor-break",
+    "label": "破甲",
+    "manifest": "volcano-armor-break/manifest.json"
+  },
+  {
+    "id": "castle-curse-orb",
+    "label": "呪弾・飛行ループ",
+    "manifest": "castle-curse-orb/manifest.json"
+  },
+  {
+    "id": "castle-dark-slash",
+    "label": "闇の剣撃",
+    "manifest": "castle-dark-slash/manifest.json"
+  },
+  {
+    "id": "castle-sleep-moon",
+    "label": "眠りの月・状態ループ",
+    "manifest": "castle-sleep-moon/manifest.json"
+  },
+  {
+    "id": "castle-dark-flower",
+    "label": "宵闇の花冠・開花",
+    "manifest": "castle-dark-flower/manifest.json"
+  },
+  {
+    "id": "castle-royal-cleave",
+    "label": "王断の大剣・斬撃",
+    "manifest": "castle-royal-cleave/manifest.json"
+  },
+  {
+    "id": "castle-black-ring",
+    "label": "黒環薙ぎ・円弧",
+    "manifest": "castle-black-ring/manifest.json"
+  },
+  {
+    "id": "castle-curse-impact",
+    "label": "呪弾・着弾",
+    "manifest": "castle-curse-impact/manifest.json"
+  },
+  {
+    "id": "castle-demon-pillar",
+    "label": "単独の魔柱",
+    "manifest": "castle-demon-pillar/manifest.json"
+  },
+  {
+    "id": "castle-demon-impact",
+    "label": "魔拳・衝撃",
+    "manifest": "castle-demon-impact/manifest.json"
+  },
+  {
+    "id": "castle-silence-seal",
+    "label": "沈黙・封印",
+    "manifest": "castle-silence-seal/manifest.json"
+  },
+  {
+    "id": "castle-curse-mark",
+    "label": "呪い・付与",
+    "manifest": "castle-curse-mark/manifest.json"
+  },
+  {
+    "id": "castle-cross-beam",
+    "label": "交差用の単帯",
+    "manifest": "castle-cross-beam/manifest.json"
+  },
+  {
+    "id": "castle-end-ring",
+    "label": "終撃の輪",
+    "manifest": "castle-end-ring/manifest.json"
+  },
+  {
+    "id": "castle-armor-break",
+    "label": "破甲・状態ループ",
+    "manifest": "castle-armor-break/manifest.json"
+  },
+  {
+    "id": "castle-burn",
+    "label": "火傷・状態ループ",
+    "manifest": "castle-burn/manifest.json"
+  },
+  {
+    "id": "castle-claw",
+    "label": "爪撃・軌跡",
+    "manifest": "castle-claw/manifest.json"
+  },
+  {
+    "id": "castle-summon-gate",
+    "label": "悪魔の援軍・召喚門",
+    "manifest": "castle-summon-gate/manifest.json"
+  }
+]

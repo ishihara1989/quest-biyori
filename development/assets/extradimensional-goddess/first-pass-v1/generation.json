@@ -1,0 +1,768 @@
+{
+  "date": "2026-10-15",
+  "timezone": "Asia/Tokyo",
+  "tool": "built-in image_gen",
+  "status": "first-pass-only-not-registered",
+  "records": [
+    {
+      "id": "parts/body-seated",
+      "source": "source/parts/body-seated.png",
+      "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/body-seated.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Separate master body for phase 1. Target face (246,157), chest (256,224), hips (268,294), hands (219,199)/(392,288), shoes (222,418)/(304,448).\nFrames:\n1. Same cheek-supported, crossed-leg sitting pose, far hand relaxed. No throne or large ring.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-33477475-281f-424d-b550-6b87dd1b6f0f.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "parts/body-floating",
+      "source": "source/parts/body-floating.png",
+      "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/body-floating.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Separate phase 2 master body. Face (252,128), hips (268,265), hands (170,244)/(352,260), shoes (232,391)/(276,416). Keep the same body scale as phase 1.\nFrames:\n1. Upright hovering, palms low and open, stern cyan eyes. No large rings.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-85bd0465-045f-43f5-99ae-e42ba7ef75bd.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "parts/throne",
+      "source": "source/parts/throne.png",
+      "sha256": "d217114e14e892ea59c913fa83c3526f16d818c4be23c2f7034e4a1fd6998807",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/throne.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Isolate the original phase 1 throne, shallow left three-quarter view. Front feet (170,448)/(382,448). Complete crescent tips and armrests.\nFrames:\n1. EMPTY ivory-gold crescent throne with navy cushions. No woman, hair, dress, small crown or large circular halo.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-91130292-1b89-47bd-819e-865db20aff74.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "parts/halo",
+      "source": "source/parts/halo.png",
+      "sha256": "0f2fa17230bd701489b75b8ccd293166c3b03937017130bf2eb2994dc671f8c0",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/halo.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (268,156). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Isolate phase 2 celestial halo. Center (268,156); radius about 110, outer arcs within x=70..442,y=52..300. Keep original geometric motif.\nFrames:\n1. Three rigid broken gold celestial rings with cyan nodes, no feathers, no body or chair.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-d2e2c838-1233-4751-914d-25a26e30def3.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "parts/ground-shadow",
+      "source": "source/parts/ground-shadow.png",
+      "sha256": "ee991b09d050c3712dacc07d270709118aa6bbbd46bbfefc783e07d47bb00001",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/ground-shadow.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Ground shadow at (256,448), ellipse 170x28, contained in safe margins.\nFrames:\n1. One soft low elliptical contact shadow, dark violet, transparent center-to-edge falloff; no hard floor slab.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-a22fea8e-ccee-4445-a7f1-e04f51f1e6bd.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "parts/halo-node",
+      "source": "source/parts/halo-node.png",
+      "sha256": "230bde663e8632dd3339d51b7405577e14049b34709041800fc04e325f20bcec",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/halo-node.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Independent celestial halo diamond node, 36x52 maximum silhouette centered (128,128).\nFrames:\n1. One cyan diamond gemstone with gold frame, thin dark-violet edge.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-3a46cbe1-66db-41b3-9e61-a2a61ff41e4b.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "parts/debris",
+      "source": "source/parts/debris.png",
+      "sha256": "bd48286bff83fdff3684d949cd58e5f592c4426d329bb6b2531b74083c603142",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/debris.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,256). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Background layer prop, NOT battle-floor rubble. Fragment within x=150..360,y=120..390, same pixel-art style as goddess sanctuary.\nFrames:\n1. One floating broken ivory marble column fragment with antique gold trim, subtly cool shading.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-640fe282-257b-4f7e-a0ec-14cb148e9def.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "parts/target-star",
+      "source": "source/parts/target-star.png",
+      "sha256": "835e36c2d46ea759893d0c1c5411bc223a1b8b4c6954d07667d2af98066647eb",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/target-star.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Overhead homing meteor target marker. Maximum 48x48, not a circular ground telegraph.\nFrames:\n1. One small hollow four-point gold/cyan target star, clear transparent center.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-3809f825-5983-403f-a671-4898d1df6c10.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "parts/eclipse-rim",
+      "source": "source/parts/eclipse-rim.png",
+      "sha256": "ccd96329eec6630e52130ebbbd4baa8c61f99805c1385aac769e02d6220149ae",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/eclipse-rim.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,256). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Background pulse overlay, quiet thin rim with radius 175, avoid attack-like filled glow.\nFrames:\n1. One thin cyan-pale-gold eclipse edge ring, transparent inside and outside, no opaque sky.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-a99168e1-8049-4a4e-9728-4530bb7f68ed.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p1-idle",
+      "source": "source/motions/p1-idle.png",
+      "sha256": "7269ccb51608ccb46daa54caf0cbd5877979fad129f66a3e8102eb61763e9650",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p1-idle.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 1 seated pose. Face (246,157), hips (268,294), left-on-screen hand (219,199) supporting cheek, crossed shoes (222,418)/(304,448). Sitting body only, chair stays absent. Subtle breathing only. Hands, hips and shoes fixed.\nFrames:\n1. Chest/face dy=0, sleeve tip dy=0.\n2. Chest/face dy=-1, sleeve tip dy=1.\n3. Chest/face dy=0, half blink, sleeve tip dy=0.\n4. Chest/face dy=1, sleeve tip dy=-1; close loop to frame 1.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-5971abfa-9f22-4d3e-8d16-2a7fecb14579.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p1-shot",
+      "source": "source/motions/p1-shot.png",
+      "sha256": "663bcd7a42fc3dc5632a7b0f0bca98b1f3b6355e4f55b05d471c7a85e0d785f4",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p1-shot.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 1 seated pose. Face (246,157), hips (268,294), left-on-screen hand (219,199) supporting cheek, crossed shoes (222,418)/(304,448). Sitting body only, chair stays absent. Keep cheek support and crossed legs absolutely unchanged.\nFrames:\n1. Right-on-screen hand (392,288), neutral.\n2. R=(367,270), prepare finger flick.\n3. R=(344,260), flick toward LEFT, emission pose; no drawn projectile.\n4. R=(392,288), original neutral.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-d30299ec-fd33-4cc4-bfb2-57ec6cc3e521.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p1-snap",
+      "source": "source/motions/p1-snap.png",
+      "sha256": "b1e510602e0932b7e3527837a10f7eb821f8ccddfca675532c591f3e5849931f",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p1-snap.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 1 seated pose. Face (246,157), hips (268,294), left-on-screen hand (219,199) supporting cheek, crossed shoes (222,418)/(304,448). Sitting body only, chair stays absent. Only far hand performs a readable finger snap; maintain exactly one connected hand.\nFrames:\n1. R=(392,288), relaxed.\n2. R=(354,246), thumb and middle fingertip TOUCH.\n3. R=(348,243), middle finger folds into palm after SNAP, thumb separates, no drawn glint.\n4. R=(392,288), return.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-9a44e9a5-78a4-479d-8045-148fee83f79c.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p1-hit",
+      "source": "source/motions/p1-hit.png",
+      "sha256": "59e06a341d86fddc07534ee6193c8dc1a44ff7ad4aa759cfc9d4513d6db4f583",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p1-hit.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 2 equal cells in a strict 2 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 1 seated pose. Face (246,157), hips (268,294), left-on-screen hand (219,199) supporting cheek, crossed shoes (222,418)/(304,448). Sitting body only, chair stays absent. Small hit reaction, not an interruption.\nFrames:\n1. Face dx=2,dy=1; chest dx=2, mild shoulder recoil, maintain cheek contact.\n2. Face/chest return to neutral, hand still supporting cheek.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-7cfb70d4-8473-4981-b2e2-168581105c84.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/phase-rise-1",
+      "source": "source/motions/phase-rise-1.png",
+      "sha256": "4996476f8ffebca9a3c3357fe5048a7162dbc05004fd4be8a21e5b59ed1c4d3d",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/phase-rise-1.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Continuous 9-frame seated-to-floating transition, segment 1. Same body scale; leg anatomy stays connected, no chair. \nFrames:\n1. F1 face(246,157),hips(268,294),L(219,199),R(392,288),shoes(222,418)/(304,448): seated, crossed legs, half-closed eyes.\n2. F2 face(248,154),hips(268,294),L(225,214),R(387,282),shoes(223,421)/(303,448): release cheek, open eyes.\n3. F3 face(251,151),hips(268,294),L(224,240),R(374,276),shoes(230,432)/(297,448): straighten shoulders, begin UNcrossing legs.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-4ab295a0-aeca-457c-afd9-351482815602.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/phase-rise-2",
+      "source": "source/motions/phase-rise-2.png",
+      "sha256": "b72fd1fb268457ff401ecdecc23f34dd6ea3250138e8ff6a4708aceadc607ba2",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/phase-rise-2.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Continuous 9-frame seated-to-floating transition, segment 2. Same body scale; leg anatomy stays connected, no chair. Continue immediately after previous segment without pose reset.\nFrames:\n1. F4 face(252,148),hips(266,289),L(217,267),R(368,273),BOTH shoes(242,448)/(286,448) planted: lean forward to stand.\n2. F5 face(252,140),hips(266,281),L(207,268),R(357,269),BOTH shoes(242,448)/(286,448): rise upright, feet still grounded.\n3. F6 face(252,132),hips(267,273),L(196,261),R(349,264),shoes(240,428)/(282,436): lift off, hair still hangs downward.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-4f59788c-9179-460c-9c67-d0c24186dadb.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        },
+        {
+          "file": "source/motions/phase-rise-1.png",
+          "sha256": "4996476f8ffebca9a3c3357fe5048a7162dbc05004fd4be8a21e5b59ed1c4d3d"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-idle",
+      "source": "source/motions/p2-idle.png",
+      "sha256": "2723b24e8bcebe41d94cfa2e1d68624904fb8088255f59187bb5c007357d9a03",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-idle.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Hands (170,244)/(352,260). Smooth small hover; floor anchor fixed.\nFrames:\n1. Body dy=0, hair/sleeve tips dy=2.\n2. Body dy=-3, hair/sleeve tips dy=0.\n3. Body dy=0, hair/sleeve tips dy=-2.\n4. Body dy=3, hair/sleeve tips dy=0.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-33e2f22d-5d3e-4081-8c71-3fcde718ade0.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-drift",
+      "source": "source/motions/p2-drift.png",
+      "sha256": "3ee3329ed6bc513b83e30c9a4c6b60c2fb6d031aa6ab4f89f687ce06a069417a",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-drift.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Move toward LEFT: hair/sleeves lag to RIGHT. Body does not translate horizontally inside the cell. Keep left-facing camera.\nFrames:\n1. Body dy=0; hair tips dx=8.\n2. Body dy=-1; hair tips dx=12.\n3. Body dy=0; hair tips dx=8.\n4. Body dy=1; hair tips dx=4.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-3ebb4e14-9a7b-4c26-a87b-caa723e1a394.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-meteor-1",
+      "source": "source/motions/p2-meteor-1.png",
+      "sha256": "445acd9d5adcd74d793bcf0eb0961d9bac609b5ab008b1dc11ee08c9fcebc5c9",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-meteor-1.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Continuous p2-meteor 6-frame animation, segment 1. Stars fall from ABOVE, not direct hand beams.\nFrames:\n1. L/R=(170,244)/(352,260), neutral.\n2. L/R=(174,211)/(347,218), lift palms.\n3. L/R=(186,168)/(336,174), palms raised; 3 stars will be separate FX, DO NOT draw them.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-3fa77146-8cc3-4ee9-a89a-caffd13a51e1.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/phase-rise-3",
+      "source": "source/motions/phase-rise-3.png",
+      "sha256": "ab8c757ac9875c42601543aadae5b526e7adae5f6a63eba4130f7545b8896ce8",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/phase-rise-3.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Continuous 9-frame seated-to-floating transition, segment 3. Same body scale; leg anatomy stays connected, no chair. Continue immediately after previous segment without pose reset.\nFrames:\n1. F7 face(252,128),hips(268,265),L(184,252),R(348,259),shoes(236,405)/(279,423): arms open, hair begins lifting with delay.\n2. F8 face(252,127),hips(268,264),L(175,245),R(351,259),shoes(233,393)/(276,417): sleeves expand, no halo baked in.\n3. F9 face(252,128),hips(268,265),L(170,244),R(352,260),shoes(232,391)/(276,416): match floating master.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-20f8ab61-b667-48b7-9efc-a3c2bb9e1a89.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        },
+        {
+          "file": "source/motions/phase-rise-2.png",
+          "sha256": "b72fd1fb268457ff401ecdecc23f34dd6ea3250138e8ff6a4708aceadc607ba2"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-meteor-2",
+      "source": "source/motions/p2-meteor-2.png",
+      "sha256": "2a407015deaa0092a3a79195269999d323b05979ec813946c694407196335eb0",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-meteor-2.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Continuous p2-meteor 6-frame animation, segment 2. Stars fall from ABOVE, not direct hand beams.\nFrames:\n1. L/R=(166,209)/(359,218), sweep DOWN to release first overhead meteor.\n2. L/R=(158,257)/(366,267), follow-through downward.\n3. L/R=(170,244)/(352,260), return to idle.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-1fe7cb85-747f-4d46-bf0c-24399e31112b.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        },
+        {
+          "file": "source/motions/p2-meteor-1.png",
+          "sha256": "445acd9d5adcd74d793bcf0eb0961d9bac609b5ab008b1dc11ee08c9fcebc5c9"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-cast-1",
+      "source": "source/motions/p2-cast-1.png",
+      "sha256": "ba98fd660735a8dffcc4a03d187c40a2dc7406f2fb740e3bfe6906b0d0dd74c2",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-cast-1.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Continuous p2-cast 6-frame animation, segment 1. No effect baked into hands.\nFrames:\n1. L/R=(170,244)/(352,260), neutral.\n2. L/R=(216,222)/(309,222), gather palms inward.\n3. L/R=(238,209)/(286,209), palms close before chest, HOLD-ready.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-aae0d89e-f2b9-4f0e-95a9-ad60bd592f0e.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-ultimate-1",
+      "source": "source/motions/p2-ultimate-1.png",
+      "sha256": "68a57a0bdedcf4e390e10b9cbfa51edab45ba8c174e9bc5d8239064219b1ceca",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-ultimate-1.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Zero-world convergence, continuous 9-frame motion segment 1. Keep face readable between arms; no orb/beam.\nFrames:\n1. L/R=(170,244)/(352,260), neutral.\n2. L/R=(216,211)/(310,211), draw toward chest.\n3. L/R=(238,195)/(286,195), palms close at chest.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-b4125ef0-3d85-4a91-9c0e-53b37db62486.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-hit",
+      "source": "source/motions/p2-hit.png",
+      "sha256": "757ac5fd8be46eb74dc90bfc1ddba626a377a8473d81a652a5d0744bf35177ea",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-hit.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 2 equal cells in a strict 2 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Small hit reaction; large halo remains separate and stationary.\nFrames:\n1. Chest dx=3, face dx=2,dy=-1; hips fixed.\n2. Chest and face return to neutral.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-be556c1b-89eb-429f-93d4-60e7787609bc.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-break",
+      "source": "source/motions/p2-break.png",
+      "sha256": "85220737fc91ba10e4c501a78f0dc41da1622952e90ed4e735cfe26deeecd994",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-break.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Interruption followed by rest, not defeat.\nFrames:\n1. L/R=(238,209)/(286,209), interrupted chest-level hold.\n2. L/R=(215,276)/(313,278), palms DROP, shoulders lose tension.\n3. L/R=(185,270)/(335,275), tired rest pose, connected arms.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-52cc8999-8aee-492d-8981-ab78fb186289.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-break-overhead",
+      "source": "source/motions/p2-break-overhead.png",
+      "sha256": "4237af55a6bac061905f0b22a638d220316aaeee5ed782e047a148ac2e72085d",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-break-overhead.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. ADDITIONAL transition entry from ultimate frame 6 to break frame 2. Do not teleport hands to chest.\nFrames:\n1. Hands lower continuously from above-head (236,104)/(288,104) toward (220,184)/(302,184), elbows bending, shoulders slack.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-4975856f-6491-477e-9645-e5791e3b3c16.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/down",
+      "source": "source/motions/down.png",
+      "sha256": "c9b82925e15b8354cefc64cb5e034d98c84dbefd6d2eb7e555133862bdeb68f1",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/down.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Final defeat: lose strength, sink, dissolve. No large halo or ring; separate defeat FX supplies those.\nFrames:\n1. Body dy=0, eyes close, L/R=(170,244)/(352,260).\n2. Body dy=8, shoulders slump, L/R=(202,274)/(327,285).\n3. Body dy=20, L/R=(220,298)/(312,309), silhouette begins dissolving into sparse gold/cyan pixels, keep anatomy.\n4. Body dy=28, L/R=(226,313)/(307,322), faint whole-body afterimage, no reward gem.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-38dfe025-93f1-408c-9f7e-6dfb80e5c4da.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "effects/star-bolt",
+      "source": "source/effects/star-bolt.png",
+      "sha256": "82f07f0fa9610d77813aef8ff533346461a1d65ecbccdd5be1cbfd2b3ebcacaf",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/star-bolt.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Small left-facing star projectile. White/cyan core, slender gold tail trailing RIGHT; head remains anchored, changes shape rather than moving across cell.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":70,\"center\":[128,128],\"diamondSize\":[24,16],\"alpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":90,\"center\":[128,128],\"diamondSize\":[80,28],\"tailEnd\":[206,128],\"alpha\":1}. \n3. Global F3: {\"f\":3,\"ms\":80,\"center\":[128,128],\"diamondSize\":[110,14],\"tailEnd\":[223,128],\"alpha\":0.55}. \nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-5892118d-ef76-40ba-a3e8-0382ec473d5f.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/star-impact",
+      "source": "source/effects/star-impact.png",
+      "sha256": "914ea3009133f0ac083d6693c4ee3ec43c047b0ec025817e42365f07661e5c38",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/star-impact.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Small ordinary hit: point, crisp four-point flash, fading fine rays. Center fixed.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":60,\"radius\":10,\"alpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":90,\"radius\":38,\"alpha\":1}. \n3. Global F3: {\"f\":3,\"ms\":130,\"radius\":28,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-98c5bb8a-6d11-42b1-94d0-66b48d2b7156.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/snap-glint",
+      "source": "source/effects/snap-glint.png",
+      "sha256": "71decb06902d6f166ce44edae24220308f119e5077804cd879c99d04941334f7",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/snap-glint.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Tiny fingertip snap flash: dot, small cross, fine gold afterglow. Must not hide goddess face.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":40,\"center\":[128,128],\"radius\":4,\"alpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":40,\"center\":[128,128],\"crossSize\":[44,44],\"alpha\":1}. \n3. Global F3: {\"f\":3,\"ms\":40,\"center\":[128,128],\"crossSize\":[28,28],\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-26afb54c-4ca0-4226-b9f7-a35ed173b931.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/star-mirror-open",
+      "source": "source/effects/star-mirror-open.png",
+      "sha256": "82bb46a118d1845e917713866c01575f32f7bec5219ee10df61e1b5474f7afb8",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/star-mirror-open.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Shared star mirror: upright narrow gold/cyan rim, star-filled dark purple opening. NO boss or human. Thin slit opens to female-sized portal; final opening width180 height300 centered(256,252). Separate rim/inner opening readable.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":80,\"center\":[256,252],\"openingSize\":[4,300]}. \n2. Global F2: {\"f\":2,\"ms\":80,\"center\":[256,252],\"openingSize\":[60,300]}. \n3. Global F3: {\"f\":3,\"ms\":90,\"center\":[256,252],\"openingSize\":[140,300]}. \n4. Global F4: {\"f\":4,\"ms\":80,\"center\":[256,252],\"openingSize\":[180,300]}. \nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-c1de9ccd-ba1d-47c7-92c6-f37095af2d41.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/phantom-recall",
+      "source": "source/effects/phantom-recall.png",
+      "sha256": "6e6eb356539a4a834fe39d3d4a8d38bcd8f5542a1c0bf81eed16c6ed3369f742",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/phantom-recall.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Shared phantom recall OVERLAY ONLY: thin gold cracks, diamond shards, shards contract toward center, then one vertical slit. No humanoid rendered; phantom will be separately clipped. Not a death explosion.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":50,\"center\":[256,252],\"crackAnglesDeg\":[45,160,280],\"phantomAlpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":60,\"fragmentCenters\":[[168,160],[344,184],[186,340],[326,348]],\"phantomAlpha\":0.55}. \n3. Global F3: {\"f\":3,\"ms\":60,\"fragmentCenters\":[[232,230],[280,236],[238,278],[274,284]],\"phantomAlpha\":0.15}. \n4. Global F4: {\"f\":4,\"ms\":60,\"center\":[256,252],\"openingSize\":[4,300],\"phantomAlpha\":0}. \nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-195e4127-6390-49ff-a849-89009d3979dd.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/homing-meteor",
+      "source": "source/effects/homing-meteor.png",
+      "sha256": "96589cdd19103cdca93340059473f359d4340edbe7bcc1d81946c879b17a50f4",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/homing-meteor.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Downward traveling star meteor head. Gold long tail upward, white/cyan sharp head at anchor(128,128). One meteor per frame; no ground crater. Curve will be rendered later.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":80,\"center\":[128,128],\"diamondSize\":[22,22],\"alpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":100,\"center\":[128,128],\"diamondSize\":[48,24],\"alpha\":1}. \n3. Global F3: {\"f\":3,\"ms\":80,\"center\":[128,128],\"diamondSize\":[60,24],\"alpha\":1}. \nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-ce1e2aa8-4d23-4b54-b791-fbc1262ab063.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/meteor-impact",
+      "source": "source/effects/meteor-impact.png",
+      "sha256": "46f45059aa1b39ce348d2dd46a1b124577c467d73a02b48c9f5bec53ff1bb1d6",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/meteor-impact.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 256x256; floor/registration anchor is (128,160). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Single target star contact, LOW gold/cyan star crown at ground, fading sparks. No wide splash ring or crater.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":70,\"center\":[128,160],\"radius\":10,\"alpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":90,\"center\":[128,160],\"crownSize\":[104,72],\"alpha\":1}. \n3. Global F3: {\"f\":3,\"ms\":140,\"center\":[128,160],\"radius\":64,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-c1fee056-19d0-4358-9d44-cc5a871b515a.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/rift-open",
+      "source": "source/effects/rift-open.png",
+      "sha256": "ba92af9f725a692e8e75398a2fa8e1f6f8b4f66e4bc8dcc5af117f270c24f277",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/rift-open.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,256). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Black-purple void mouth with thin gold/cyan torn outline: point, vertical fine slit, oval, tall narrow open rift. Fixed center.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":80,\"center\":[256,256],\"openingSize\":[6,6]}. \n2. Global F2: {\"f\":2,\"ms\":100,\"center\":[256,256],\"openingSize\":[8,190]}. \n3. Global F3: {\"f\":3,\"ms\":110,\"center\":[256,256],\"openingSize\":[44,280]}. \n4. Global F4: {\"f\":4,\"ms\":140,\"center\":[256,256],\"openingSize\":[84,350]}. \nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-7ca44a1a-193d-46c2-a145-0114bb7da251.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/rift-cut",
+      "source": "source/effects/rift-cut.png",
+      "sha256": "852a1957092d4586f6a4d798e4cb5ad44be840f879ccc24e7f9f0f3e5d10fa06",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/rift-cut.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 1024x256; floor/registration anchor is (512,128). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: HORIZONTAL wide torn slash band. White thin core, then gold/cyan ragged strip, then dim shards. Max width820 height80 in virtual1024x256 cell, centered(512,128). No character or portal.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":60,\"center\":[512,128],\"bandSize\":[820,4],\"alpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":100,\"center\":[512,128],\"bandSize\":[820,80],\"alpha\":1}. \n3. Global F3: {\"f\":3,\"ms\":180,\"center\":[512,128],\"bandSize\":[780,30],\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-499ab94b-f46d-4b6d-8a16-92619e50e0fc.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/celestial-wave",
+      "source": "source/effects/celestial-wave.png",
+      "sha256": "dbdc1d448f5588ba0acef9e959ca2922577eeef59005f6178394bc4e7a297af2",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/celestial-wave.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,256). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Thin complete circular shock ring, brighter thick ring, broken fading arc. Transparent interior. Radius grows170->205->220 with fixed center; no filled disc.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":100,\"center\":[256,256],\"radius\":170,\"thickness\":4,\"alpha\":1}. \n2. Global F2: {\"f\":2,\"ms\":160,\"center\":[256,256],\"radius\":205,\"thickness\":12,\"alpha\":1}. \n3. Global F3: {\"f\":3,\"ms\":240,\"center\":[256,256],\"radius\":220,\"thickness\":5,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-c39c048d-c119-4059-a0b7-541c6039d1d9.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/phase-awaken",
+      "source": "source/effects/phase-awaken.png",
+      "sha256": "87cfc91971d079b53593b6d3246a99ea321d8f002f5e0d1bb6e8ebc6ddcab6c2",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/phase-awaken.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Awakening overlay only: low ellipse beneath shoes, sparse ascending diamond particles, then three halo nodes light. No body/halo shape baked in.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":180,\"ringCenter\":[256,410],\"ellipseSize\":[140,30]}. \n2. Global F2: {\"f\":2,\"ms\":240,\"particlesCenters\":[[230,380],[256,330],[284,270]],\"radius\":6}. \n3. Global F3: {\"f\":3,\"ms\":220,\"nodeCenters\":[[126,166],[256,100],[386,166]],\"radius\":8}. \nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-1003f94f-916a-43d1-b109-018226b7a5ce.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/zero-converge",
+      "source": "source/effects/zero-converge.png",
+      "sha256": "72296a853aed789091f21aaa7fa630df5f7f5cb30684aa431ce27d22c5f889f3",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/zero-converge.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 4 equal cells in a strict 2 columns by 2 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x768; floor/registration anchor is (undefined). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Zero-world convergence. F1/F2 are an elevated gathering ORB, centered(256,156); F3/F4 are a SEPARATE vertical beam from(256,160) to(256,614). Orb and ground pillar are different assets conceptually: do not connect them as one projectile. Strict equal cells tall512x768.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":160,\"center\":[256,156],\"radius\":24}. \n2. Global F2: {\"f\":2,\"ms\":220,\"center\":[256,156],\"radius\":100,\"hold\":true}. \n3. Global F3: {\"f\":3,\"ms\":100,\"pillarTop\":[256,160],\"pillarBottom\":[256,614],\"width\":80}. \n4. Global F4: {\"f\":4,\"ms\":300,\"pillarTop\":[256,160],\"pillarBottom\":[256,614],\"width\":160,\"fragmentMaxX\":416,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-d2b017c8-3ca9-4b7b-a1ed-82519560f23b.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/goddess-defeat-1",
+      "source": "source/effects/goddess-defeat-1.png",
+      "sha256": "3f72295b081421a40888d151abf68d89e4a534825f118556d75c60c86ee76906",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/goddess-defeat-1.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,240). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Final goddess defeat overlay: halo cracks, ring shards, convergence point, ONE jewel-shaped reward light, fading scatter, near-empty end. No goddess body, no multiple rewards.\nFrames:\n1. Global F1: {\"f\":1,\"ms\":160,\"ringCenter\":[268,156],\"radius\":110,\"crackAnglesDeg\":[45,180,290]}. \n2. Global F2: {\"f\":2,\"ms\":180,\"fragmentCenters\":[[150,110],[386,130],[155,275],[371,290]]}. \n3. Global F3: {\"f\":3,\"ms\":200,\"center\":[256,240],\"radius\":70}. \nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-a633738f-6e8d-466a-892e-b11eda96a048.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/goddess-defeat-2",
+      "source": "source/effects/goddess-defeat-2.png",
+      "sha256": "f54e6b5554fc2f79696a17deec25c45bc9c35115a51f9ca8bd3d2a2e3868bd41",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production effect, transparent pixel-art PNG sprite sheet, asset ID effects/goddess-defeat-2.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,240). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Final goddess defeat overlay: halo cracks, ring shards, convergence point, ONE jewel-shaped reward light, fading scatter, near-empty end. No goddess body, no multiple rewards.\nFrames:\n1. Global F4: {\"f\":4,\"ms\":180,\"center\":[256,240],\"diamondSize\":[36,52]}. \n2. Global F5: {\"f\":5,\"ms\":260,\"center\":[256,240],\"radius\":140,\"alpha\":0.4}. \n3. Global F6: {\"f\":6,\"ms\":200,\"center\":[256,240],\"radius\":140,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-885a61f8-077c-4e61-8c3f-59765653ddff.png",
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-ultimate-3",
+      "source": "source/motions/p2-ultimate-3.png",
+      "sha256": "487479112ad663a4613fdc554f17a2e137916b020d343b27d478aa4ff765a6dc",
+      "prompt": "Use case: stylized-concept\nAsset type: first-pass production motion, transparent pixel-art PNG sprite sheet, asset ID motions/p2-ultimate-3.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: 3 equal cells in a strict 3 columns by 1 rows grid, chronological row-major order. Every cell has exactly the same virtual camera, scale and coordinate origin. No panels or visible separators. Never combine phases into one cell. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the goddess body, hair, sleeves, dress, shoes and her SMALL crown. OMIT the chair, large celestial halo, floor shadow and ALL attack lights: these are separate layers. Preserve unsupported sitting pose for phase 1.\nPrimary request: Phase 2 floating pose. Face (252,128), hips (268,265), shoes (232,391)/(276,416). No large halo. Zero-world convergence, continuous 9-frame motion segment 3. Keep face readable between arms; no orb/beam.\nFrames:\n1. L/R=(169,167)/(353,167), powerful outward release.\n2. L/R=(145,220)/(378,220), arms down/out, impact pose.\n3. L/R=(170,244)/(352,260), return to idle.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+      "transparent_background": true,
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-d17ac1b6-e164-45c6-93db-0ea74a4b2b02.png",
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        },
+        {
+          "file": "source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "unavailableReferences": [
+        "source/motions/p2-ultimate-2.png"
+      ],
+      "attempt": 1
+    }
+  ]
+}

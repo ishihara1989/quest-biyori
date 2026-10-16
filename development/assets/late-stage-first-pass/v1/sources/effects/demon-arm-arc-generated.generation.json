@@ -1,0 +1,28 @@
+{
+  "id": "effects/demon-arm-arc",
+  "effect": "demon-arm-arc",
+  "region": "demon-castle",
+  "label": "魔腕の断界",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/demon-arm-arc-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. two enormous staggered red-violet fist-like energy arcs sweeping left, white-gold leading edges, no actual detached anatomical arm. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-b0f73941-0d65-49ff-9f5c-972df68c3625.png",
+  "sha256": "d48833e08c81950d79014336f2dfeb3c1f7f6f28a0adf79ea511b96820b257b9",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "左向きの2つのエネルギー拳と白金の先端を表現。実体の腕はない。"
+    ],
+    "issues": [
+      "二打の時間差用なのに、各コマで2拳が同時に描かれる。1打ずつ出せる素材と再生時刻へ分ける。",
+      "最大コマの拳と尾がセル境界に近い。",
+      "終端で拳の輪郭が強く残る。消失を整える。"
+    ]
+  }
+}

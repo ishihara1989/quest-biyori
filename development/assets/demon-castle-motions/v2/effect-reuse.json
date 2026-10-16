@@ -1,0 +1,270 @@
+{
+  "date": "2026-10-15 JST",
+  "runtimeRegistered": false,
+  "records": [
+    {
+      "id": "black-ring-slash",
+      "original": "../../late-stage-first-pass/v1/sources/effects/black-ring-slash-generated.png",
+      "sha256": "e8a1835f803b07064e7e8a278f0de222ed704b7ce13dea886ee404c47db8fb53",
+      "extraction": "transparent-grid",
+      "anchors": [
+        [
+          377.24,
+          218.5
+        ],
+        [
+          552.5999999999999,
+          231.5
+        ],
+        [
+          583.72,
+          274
+        ],
+        [
+          461,
+          295.5
+        ]
+      ],
+      "scale": 0.43
+    },
+    {
+      "id": "curse-impact",
+      "original": "../../late-stage-first-pass/v1/sources/effects/curse-impact-generated.png",
+      "sha256": "8404526ada9d53539607e9ebc1d77bd40cd4333593decd26dbf737451874006e",
+      "extraction": "transparent-grid",
+      "anchors": [
+        [
+          383,
+          302
+        ],
+        [
+          372,
+          300
+        ],
+        [
+          414,
+          344
+        ],
+        [
+          310,
+          350
+        ]
+      ],
+      "scale": 0.36
+    },
+    {
+      "id": "demon-pillar",
+      "original": "../../late-stage-first-pass/v1/sources/effects/demon-pillar-generated.png",
+      "sha256": "0bd4284a91070cb6428383c2b0f658d0ac89fd0509035365a3c7b835ef6f4372",
+      "extraction": "transparent-grid",
+      "anchors": [
+        [
+          338,
+          503.2
+        ],
+        [
+          365.5,
+          505.81
+        ],
+        [
+          353,
+          594.52
+        ],
+        [
+          298.5,
+          601.17
+        ]
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "demon-impact",
+      "original": "../../late-stage-first-pass/v1/sources/effects/demon-impact-generated.png",
+      "sha256": "154a5681fb8a43565cb1bd122c06f2f054fa5c57be9135b740b767595a24a38e",
+      "extraction": "transparent-grid",
+      "anchors": [
+        [
+          384,
+          256
+        ],
+        [
+          382,
+          256
+        ],
+        [
+          384,
+          312
+        ],
+        [
+          295,
+          312
+        ]
+      ],
+      "scale": 0.34
+    },
+    {
+      "id": "silence-seal",
+      "manifest": "../../../../public/assets/skills/ninja/effects/seal/manifest.json",
+      "manifestSha256": "dd1b3302472e0ded096ab975a752fc526ac474faca56fb8d8596791835dbb8c2",
+      "frames": [
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/seal/seal-01.png",
+          "sha256": "3d0a9f3e01d9f059a7273848db290994ad8e1eaf58bffd697501f84d144aa970"
+        },
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/seal/seal-02.png",
+          "sha256": "a41b279e72cbcf3c1c49f917c68dc33c5a7eafc3fb61b9e35ba23a9f436cf9a2"
+        },
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/seal/seal-03.png",
+          "sha256": "37f49ab8fc3914fd7ca5144dceb9868fc31d1adbaf8cc5d0ca5f8a27f368ecc0"
+        },
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/seal/seal-04.png",
+          "sha256": "c36307af71272544d53f3c60df3935c995e51b0c948c05d146b99adc08feaa91"
+        }
+      ]
+    },
+    {
+      "id": "curse",
+      "manifest": "../../../../public/assets/skills/shaman/effects/mark/manifest.json",
+      "manifestSha256": "e63381ad88621e3b3f7cbf65b7d443781cc00cc4ea6e3b4de220b6f02a0ed159",
+      "frames": [
+        {
+          "file": "../../../../public/assets/skills/shaman/effects/mark/mark-01.png",
+          "sha256": "bfd02234ea3096e03ce989f17563d72a8ce559c57e9ea240d9abcb0df286457b"
+        },
+        {
+          "file": "../../../../public/assets/skills/shaman/effects/mark/mark-02.png",
+          "sha256": "0ebecf1b9af3c83ddcba3b0de714025fbfc51a945909f96afccccdce376bf757"
+        },
+        {
+          "file": "../../../../public/assets/skills/shaman/effects/mark/mark-03.png",
+          "sha256": "31b84aa5988d180ce0cac4c765b925883c25096698eb72ef275a3a613e099ece"
+        }
+      ]
+    },
+    {
+      "id": "end-cross",
+      "manifest": "../../../../public/assets/effects/ruins-furnace-beam/manifest.json",
+      "manifestSha256": "36d60b9cb79553fc53e949566a41c61ae9f7a5c19c468a5197a2d1d1ce26dcb1",
+      "frames": [
+        {
+          "file": "../../../../public/assets/effects/ruins-furnace-beam/ruins-furnace-beam-01.png",
+          "sha256": "fd695929c96a74eb432957908adb2a8d345f7170dbf264f3b56a3b910063a1b0"
+        },
+        {
+          "file": "../../../../public/assets/effects/ruins-furnace-beam/ruins-furnace-beam-02.png",
+          "sha256": "80b8fe1e88a6f6b2c16f79b94ef1c3b3cccbda89f3ad7bcc0667a8403a6f50c3"
+        },
+        {
+          "file": "../../../../public/assets/effects/ruins-furnace-beam/ruins-furnace-beam-03.png",
+          "sha256": "f51a6a822e132b5c69444b2ad17c8fa3e83b46bd2d9b5ff36d959595229891e3"
+        },
+        {
+          "file": "../../../../public/assets/effects/ruins-furnace-beam/ruins-furnace-beam-04.png",
+          "sha256": "795dd4a117914373bea14b47fa52025d81563460eabc7e6fcf5cec7786646a06"
+        }
+      ]
+    },
+    {
+      "id": "end-ring",
+      "manifest": "../../../../public/assets/skills/ninja/effects/final-ring/manifest.json",
+      "manifestSha256": "9fa3b74baf503848289eb3c20a1cb6ba9dd2df163de0736c5f7b6feee4e3054a",
+      "frames": [
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/final-ring/final-ring-01.png",
+          "sha256": "6691180ca1a97e2c4ff15bd71352b2a88ff59351b5386c9aee84a385b52401f6"
+        },
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/final-ring/final-ring-02.png",
+          "sha256": "d61ec4239384f08b167ae08c6a7e4416395f7b8eb540fdaacf83541ab70e1d67"
+        },
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/final-ring/final-ring-03.png",
+          "sha256": "2f2bec4d75d3da5827995a63c5102b627e654bd78a312404516778e2b486979e"
+        },
+        {
+          "file": "../../../../public/assets/skills/ninja/effects/final-ring/final-ring-04.png",
+          "sha256": "2cfdb0d0d361784a0e85d339b4f9acd435c8fc7fca0f0c9337bd1d9ffa510d0d"
+        }
+      ]
+    },
+    {
+      "id": "armor-break",
+      "manifest": "../../volcano-motions/v2/ready/effects/armor-break/manifest.json",
+      "manifestSha256": "6185bb715ea244881583b1f4725292fc8e2682d46419977fff4a72e062c5ebd1",
+      "frames": [
+        {
+          "file": "../../volcano-motions/v2/ready/effects/armor-break/frame-1.png",
+          "sha256": "87648c2b1b22f352d81fdc4210e5e460f62b7f7ab3167c1c91778d783499a972"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/armor-break/frame-2.png",
+          "sha256": "64389f1c52ea0d6cc333d85d793f4ae0e1c4ca46dd7ad0d609465edcac9b9e5d"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/armor-break/frame-3.png",
+          "sha256": "e8b72ea1e03657a41aad48d1153ec42bb42f12a47994fec9a982ae7397ee80c0"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/armor-break/frame-4.png",
+          "sha256": "3c8e9690b913a7bcffdbd4949c2ef4b112e0ef048ab0c53bc265ae2185924eb7"
+        }
+      ]
+    },
+    {
+      "id": "burn",
+      "manifest": "../../volcano-motions/v2/ready/effects/burn/manifest.json",
+      "manifestSha256": "7eeb232014d5bb50c151b57cc517898690762d62a6b9b57b5a53287377c05add",
+      "frames": [
+        {
+          "file": "../../volcano-motions/v2/ready/effects/burn/frame-1.png",
+          "sha256": "599cfc81e886b7f22c76a77bbe615f2edfec31bfd5bac83a4fe81d56d3e9386e"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/burn/frame-2.png",
+          "sha256": "a5091d47008e334dee268f9af8645f34deecde82d0e15af2a477a2730a9e9e97"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/burn/frame-3.png",
+          "sha256": "c67c2bb1d7cc1ee073886a7b55a4f6b2f272a7c26ebd420adc59555b436fbefd"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/burn/frame-4.png",
+          "sha256": "ada84dd16e837c4b38c14824fe373fae48e3c9a286be6c77504b9a46ac4020e6"
+        }
+      ]
+    },
+    {
+      "id": "claw-arc",
+      "manifest": "../../volcano-motions/v2/ready/effects/claw-arc/manifest.json",
+      "manifestSha256": "0a22837e0c80c554e1165af1a05945ae1f8ae64dfeef54c3977a8a62c8b6a6ad",
+      "frames": [
+        {
+          "file": "../../volcano-motions/v2/ready/effects/claw-arc/frame-1.png",
+          "sha256": "b69fbc2051a153332aa247b242412c42f1287a818f68298bf428439d7488f478"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/claw-arc/frame-2.png",
+          "sha256": "905b066d206f50fa0b32025f3830d958ad4e7d2dc3c43b549fa836c3b9f43ca0"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/claw-arc/frame-3.png",
+          "sha256": "4f89e15665bf66b845c40ad262aa24251410259fb6355b6afc7e6ccbfc772ed5"
+        },
+        {
+          "file": "../../volcano-motions/v2/ready/effects/claw-arc/frame-4.png",
+          "sha256": "01c04dbae67d386738d34a9d43da39df9e91abe72529137cfc7534a6b2a284b8"
+        }
+      ]
+    }
+  ],
+  "unusedFirstPassEffects": [
+    "demon-arm-arc",
+    "silence-seal",
+    "end-cross",
+    "end-ring",
+    "curse"
+  ]
+}

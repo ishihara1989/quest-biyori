@@ -1,0 +1,112 @@
+{
+  "id": "obsidian-executioner/down",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "label": "撃破",
+  "kind": null,
+  "motion": "down",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1400,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": true,
+  "endBehavior": "hold",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../sources/obsidian-executioner/reaction-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/obsidian-executioner/down/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "transparentFraction": 0.9038810729980469,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 156,
+        "top": 151,
+        "right": 418,
+        "bottom": 374
+      },
+      "visibleBounds": {
+        "left": 159,
+        "top": 178,
+        "right": 411,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/reaction-v1-reused.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 679,
+        "width": 670,
+        "height": 532
+      },
+      "sourceScale": 0.42190305206463197,
+      "sourceAnchor": {
+        "x": 365,
+        "y": 444
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "transparentFraction": 0.9216194152832031,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 171,
+        "top": 136,
+        "right": 428,
+        "bottom": 342
+      },
+      "visibleBounds": {
+        "left": 178,
+        "top": 198,
+        "right": 420,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/reaction-v1-reused.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 670,
+        "y": 679,
+        "width": 629,
+        "height": 532
+      },
+      "sourceScale": 0.42190305206463197,
+      "sourceAnchor": {
+        "x": 282,
+        "y": 480
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

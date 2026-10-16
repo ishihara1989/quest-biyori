@@ -1,0 +1,95 @@
+{
+  "source": "../../../../development/assets/ui/ruins/source/inventory-atlas-v1.png",
+  "sourceWidth": 1254,
+  "sourceHeight": 1254,
+  "sourceSha256": "63f32eeab129af963b955355d2b260aef86c8e9ee7ecd5dc7d81b7f63c50c146",
+  "sampling": "nearest-neighbor",
+  "transparent": true,
+  "padding": 6,
+  "icons": [
+    {
+      "id": "ancient-stone",
+      "file": "icons/ancient-stone.png",
+      "width": 128,
+      "height": 128,
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "width": 312,
+        "height": 627
+      }
+    },
+    {
+      "id": "bronze-gear",
+      "file": "icons/bronze-gear.png",
+      "width": 128,
+      "height": 128,
+      "crop": {
+        "left": 312,
+        "top": 0,
+        "width": 362,
+        "height": 627
+      }
+    },
+    {
+      "id": "magic-shard",
+      "file": "icons/magic-shard.png",
+      "width": 128,
+      "height": 128,
+      "crop": {
+        "left": 674,
+        "top": 0,
+        "width": 262,
+        "height": 627
+      }
+    },
+    {
+      "id": "ruins-crystal",
+      "file": "icons/ruins-crystal.png",
+      "width": 128,
+      "height": 128,
+      "crop": {
+        "left": 936,
+        "top": 0,
+        "width": 318,
+        "height": 627
+      }
+    },
+    {
+      "id": "ancient-core",
+      "file": "icons/ancient-core.png",
+      "width": 128,
+      "height": 128,
+      "crop": {
+        "left": 0,
+        "top": 627,
+        "width": 329,
+        "height": 627
+      }
+    },
+    {
+      "id": "miko-gohei",
+      "file": "icons/miko-gohei.png",
+      "width": 128,
+      "height": 128,
+      "crop": {
+        "left": 329,
+        "top": 627,
+        "width": 293,
+        "height": 627
+      }
+    },
+    {
+      "id": "miko-robe",
+      "file": "icons/miko-robe.png",
+      "width": 128,
+      "height": 128,
+      "crop": {
+        "left": 622,
+        "top": 627,
+        "width": 357,
+        "height": 627
+      }
+    }
+  ]
+}

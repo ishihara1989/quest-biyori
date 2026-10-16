@@ -1,0 +1,47 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "charge",
+    "label": "charge",
+    "manifest": "charge/manifest.json"
+  },
+  {
+    "id": "quake",
+    "label": "quake",
+    "manifest": "quake/manifest.json"
+  },
+  {
+    "id": "roar",
+    "label": "roar",
+    "manifest": "roar/manifest.json"
+  },
+  {
+    "id": "burrow",
+    "label": "burrow",
+    "manifest": "burrow/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "rest",
+    "manifest": "rest/manifest.json"
+  }
+]

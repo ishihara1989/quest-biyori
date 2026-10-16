@@ -1,0 +1,37 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "charge",
+    "label": "直線突進",
+    "manifest": "charge/manifest.json"
+  },
+  {
+    "id": "claw",
+    "label": "出血爪",
+    "manifest": "claw/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "休息",
+    "manifest": "rest/manifest.json"
+  }
+]

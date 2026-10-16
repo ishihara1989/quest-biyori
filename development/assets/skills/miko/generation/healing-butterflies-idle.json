@@ -1,0 +1,11 @@
+{
+  "id": "healing-butterflies-idle",
+  "source": "development/assets/skills/miko/source/healing-butterflies-idle-generated-v2.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-d2652e4f-2d86-4c4f-ac5e-006940568d8c.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Create exactly 3 frames in ONE horizontal row of equally sized square cells. Subject: ONE sacred butterfly, symmetrical two pairs of ivory and jade-green wings with gold veins and vermilion teardrop markings, slender charcoal body, exactly TWO antennae. ONE creature per cell, facing RIGHT, no effects baked into body. Position: body (.50,.48), wing tips (.22,.32)/(.78,.32). Idle loop: 1 exhale/relaxed; 2 chest/head rise one logical pixel and wings/tail lift two; 3 ease halfway back. Feet stay planted for ground creatures, hover center stays fixed for flying.",
+  "refs": [],
+  "receivedAt": "2026-10-10T14:00:03.876Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

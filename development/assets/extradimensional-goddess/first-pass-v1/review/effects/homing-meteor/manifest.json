@@ -1,0 +1,102 @@
+{
+  "id": "effects/homing-meteor",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/homing-meteor/review/effects/homing-meteor/frame-01.png",
+      "index": 1,
+      "durationMs": 80,
+      "source": "source/effects/homing-meteor.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":80,\"center\":[128,128],\"diamondSize\":[22,22],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9235657489087634,
+      "lowAlphaPixels": 16810,
+      "edgePixels": 0,
+      "bounds": [
+        318,
+        42,
+        458,
+        567
+      ],
+      "marginFraction": 0.058011049723756904
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/homing-meteor/review/effects/homing-meteor/frame-02.png",
+      "index": 2,
+      "durationMs": 100,
+      "source": "source/effects/homing-meteor.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":100,\"center\":[128,128],\"diamondSize\":[48,24],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.8658236928054699,
+      "lowAlphaPixels": 24179,
+      "edgePixels": 0,
+      "bounds": [
+        239,
+        12,
+        530,
+        594
+      ],
+      "marginFraction": 0.016574585635359115
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/homing-meteor/review/effects/homing-meteor/frame-03.png",
+      "index": 3,
+      "durationMs": 80,
+      "source": "source/effects/homing-meteor.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":80,\"center\":[128,128],\"diamondSize\":[60,24],\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.7730991117487256,
+      "lowAlphaPixels": 34755,
+      "edgePixels": 0,
+      "bounds": [
+        133,
+        9,
+        645,
+        641
+      ],
+      "marginFraction": 0.012430939226519336
+    }
+  ],
+  "sources": [
+    "source/effects/homing-meteor.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/homing-meteor/contact.png",
+  "gif": "review/effects/homing-meteor/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

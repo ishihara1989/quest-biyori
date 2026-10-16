@@ -1,0 +1,65 @@
+{
+  "id": "rock-horn-goat",
+  "status": "adopted",
+  "unresolved": [],
+  "frames": 6,
+  "gait": "trot",
+  "durationMs": 720,
+  "sourceSelection": [
+    {
+      "frame": 1,
+      "source": "trot/rock-horn-goat/sources/frame-1-single.png",
+      "sha256": "ac74b4b9f6cc632f16c2354331fd3c9a07c36957da26ab4238c14f4bc991545b",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 2,
+      "source": "trot/rock-horn-goat/sources/frame-2-single.png",
+      "sha256": "e5b84d87d340084a1955c21708e995e0e24b44a63c148e1188a0b0da0c9d6920",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 3,
+      "source": "trot/rock-horn-goat/sources/frame-3-single.png",
+      "sha256": "0702de9524128f4235456b2ff539305aa2dd89b68ab4b677011929f039b6f378",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 4,
+      "source": "trot/rock-horn-goat/sources/frame-4-single.png",
+      "sha256": "aec1241e2df86efd98b8945d09cf647b7b9b37e329250852f1d1e1a60ff144f6",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 5,
+      "source": "trot/rock-horn-goat/sources/frame-5-single.png",
+      "sha256": "47e66465a8c6fb70f484b99e480076450fcd242a5e84bc7c4a073c726a4e21dc",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 6,
+      "source": "trot/rock-horn-goat/sources/frame-6-single.png",
+      "sha256": "97dfb5e37276a7e4d79f1397945080f94dbf2a6a25bb3a58e516d551ad23c701",
+      "originalEdge": "unclipped at alpha >=192"
+    }
+  ],
+  "checks": {
+    "referenceAndPalette": "reviewed against canonical reference",
+    "fourConnectedLegs": "reviewed including occluded thigh/shin/ankle",
+    "diagonalContact": "reviewed per frame, failed contact revisions retained as rejected",
+    "bodyAndHeadRegistration": "common scale and fixed eye, no per-frame foot alignment",
+    "frameTransitions": "contact sheet reviewed; browser stepping and replay exercised",
+    "splitBoundary": "3 to 4 reviewed",
+    "loop": "6 to 1 reviewed and runtime frame wrap checked",
+    "alphaAndClipping": "selected originals and packed cells checked separately",
+    "gameRendering": "both facings, all six frames, loop wrap, idle/hit/attack transitions checked"
+  },
+  "backup": {
+    "path": "backups/rock-horn-goat-walk-before-trot-20261013",
+    "files": 9,
+    "sha256": "verified"
+  },
+  "guides": "trot/rock-horn-goat/guide.json",
+  "contact": "trot/rock-horn-goat/contact.png",
+  "browser": "output/highland-implementation/browser-qa.json"
+}

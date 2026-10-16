@@ -1,0 +1,81 @@
+TAP version 13
+# Subtest: named special stages unlock on ruins 10 and stay outside numbered routes
+ok 1 - named special stages unlock on ruins 10 and stay outside numbered routes
+  ---
+  duration_ms: 3.3809
+  type: 'test'
+  ...
+# Subtest: all families and five regions appear in exact 30/15/5 summon budgets
+ok 2 - all families and five regions appear in exact 30/15/5 summon budgets
+  ---
+  duration_ms: 0.5567
+  type: 'test'
+  ...
+# Subtest: gates resist attacks, wait for every summon, reopen and shatter once per wave
+ok 3 - gates resist attacks, wait for every summon, reopen and shatter once per wave
+  ---
+  duration_ms: 73.8179
+  type: 'test'
+  ...
+# Subtest: early monsters use ruins-10 class stats while retaining their regional behavior
+ok 4 - early monsters use ruins-10 class stats while retaining their regional behavior
+  ---
+  duration_ms: 1.4246
+  type: 'test'
+  ...
+# Subtest: gems have twice the exclusive drop chance, combine treasure hunt and always drop at Lv.5
+not ok 5 - gems have twice the exclusive drop chance, combine treasure hunt and always drop at Lv.5
+  ---
+  duration_ms: 1.5418
+  type: 'test'
+  location: 'C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\tools\\dimensional-rift.test.cjs:48:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 0.13999999999999999
+    - 0.14
+         ^
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0.14
+  actual: 0.13999999999999999
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\ashit\src\idle_rpgs\idle_rpg_poc\tools\dimensional-rift.test.cjs:50:47)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: special completion gives no first-clear bonus and survives save restoration
+ok 6 - special completion gives no first-clear bonus and survives save restoration
+  ---
+  duration_ms: 1456.997
+  type: 'test'
+  ...
+# Subtest: main-only ruins completion loses, complete gear through every unique wins without gems or potions
+ok 7 - main-only ruins completion loses, complete gear through every unique wins without gems or potions
+  ---
+  duration_ms: 17232.2069
+  type: 'test'
+  ...
+# Subtest: gate PNG preserves transparent margins and the background is a usable wide image
+ok 8 - gate PNG preserves transparent margins and the background is a usable wide image
+  ---
+  duration_ms: 251.0612
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 7
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 19238.59

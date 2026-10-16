@@ -1,0 +1,23 @@
+{
+  "id": "young-fire-dragon/danger-1",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 幼火竜. Neck retracts RIGHT, tiny ember attached inside open mouth, mouth faces LEFT at release, neutral recovery. NO detached fireball in any body cell. Wings retain canonical dimensions. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/young-fire-dragon/danger-1-v2.png",
+  "sha256": "9e2151b59e253df1b8aac98d2a039ceb8cc27182b8ebc065b03b8fb6ecc968fd",
+  "reference": "references/young-fire-dragon.png",
+  "guide": null,
+  "firstPass": "sources/young-fire-dragon/danger-1-generated.png",
+  "issues": [
+    "溜めで描かれた火球と別の飛行エフェクトの二重表示を避けるよう発射位置と時刻を決める。",
+    "翼・首・胸の形が発動で伸びる。復帰から待機への体格を揃える。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/young-fire-dragon.png",
+      "sha256": "a13d12a29ea3a0e80223d22a3e1c2e492a9a434845dbc11a1578f0296c4406c8"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

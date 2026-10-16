@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "enemy": "alraune-minion",
+  "motion": "attack",
+  "facing": "left",
+  "label": "種の発射",
+  "sheet": "alraune-minion-attack.png",
+  "preview": "../../../../../../development/assets/enemies/alraune-minion/motions/attack/alraune-minion-attack-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/alraune-minion/PROMPT.md",
+  "width": 1280,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/alraune-minion/source/alraune-minion-attack-generated-v1.png",
+  "sourceScale": 0.36,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "seed-stream",
+      "frame": 1,
+      "timeMs": 200,
+      "type": "spawn-projectile",
+      "effect": "alraune-seed-stream",
+      "origin": {
+        "x": 50,
+        "y": 108
+      }
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 200,
+      "phase": "花を引いてためる",
+      "bounds": {
+        "left": 87,
+        "top": 55,
+        "right": 223,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 500,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "attack-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "頭の花から左へ種を発射",
+      "bounds": {
+        "left": 19,
+        "top": 68,
+        "right": 223,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 443,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "attack-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 140,
+      "phase": "発射の反動",
+      "bounds": {
+        "left": 92,
+        "top": 56,
+        "right": 232,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 505,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "attack-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 200,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 65,
+        "top": 54,
+        "right": 218,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 501,
+        "y": 492
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/alraune-minion/source/alraune-minion-idle-generated-v2.png",
+      "sourceScale": 0.375,
+      "reusedPose": "idle/0"
+    }
+  ],
+  "projectilePreview": {
+    "effect": "alraune-seed-stream",
+    "manifest": "../../../../effects/alraune-seed-stream/manifest.json",
+    "velocity": {
+      "x": -480,
+      "y": 0
+    },
+    "lifetimeMs": 1200,
+    "scale": 1,
+    "leadInPx": 12,
+    "paddingLeft": 240,
+    "defaultZoom": 1,
+    "streams": [
+      {
+        "sourceY": 0,
+        "sourceHeight": 64,
+        "sourceCenterY": 42,
+        "muzzle": {
+          "x": 50,
+          "y": 108
+        }
+      }
+    ]
+  }
+}

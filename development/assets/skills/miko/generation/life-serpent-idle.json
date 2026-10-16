@@ -1,0 +1,13 @@
+{
+  "id": "life-serpent-idle",
+  "source": "development/assets/skills/miko/source/life-serpent-idle-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-e8b8a685-14d1-43dd-85c4-e952877342b8.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Create exactly 4 frames in a TWO BY TWO grid of equal square cells, ordered top-left, top-right, bottom-left, bottom-right. Subject: ONE translucent ivory/jade sacred serpent with ONE head, TWO gold whiskers and no legs or wings, gold forehead jewel and vermilion neck ribbon; exactly THREE open spiral coils forming a tall enclosure, empty transparent central channel for host. Full-body guardian spirit drawn without a human; keep central host channel transparent. Position: head (.60,.18), coils centered (.50,.40)/(.50,.60)/(.50,.78), tail on .88. Idle loop: 1 exhale/relaxed; 2 chest/head rise one logical pixel and wings/tail lift two; 3 ease halfway back; 4 settle just before frame1. Feet stay planted for ground creatures, hover center stays fixed for flying. SAME SUBJECT reference: retain this adult creature identity, but rebuild the atlas as a spacious SQUARE TWO-BY-TWO layout. Exactly two frames per row, two rows. Fully shrink/recompose to fit each square; all flames, ribbons, tail tips and whiskers stop at least 12% before EVERY cell edge. No cropped anatomy or stray edge pixels.",
+  "refs": [
+    "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-9ecf1b6b-6f36-42a9-94cb-694ae14e6f8d.png"
+  ],
+  "receivedAt": "2026-10-10T14:04:24.951Z",
+  "width": 1254,
+  "height": 1254,
+  "status": "generated"
+}

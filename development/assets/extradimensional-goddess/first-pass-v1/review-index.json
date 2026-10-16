@@ -1,0 +1,3758 @@
+[
+  {
+    "id": "parts/body-seated",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/parts/body-seated/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/body-seated.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "Same cheek-supported, crossed-leg sitting pose, far hand relaxed. No throne or large ring.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.4620328187439746,
+        "lowAlphaPixels": 27590,
+        "edgePixels": 0,
+        "bounds": [
+          30,
+          40,
+          1229,
+          1196
+        ],
+        "marginFraction": 0.019138755980861243
+      }
+    ],
+    "sources": [
+      "source/parts/body-seated.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/body-seated/contact.png",
+    "gif": "review/parts/body-seated/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/body-floating",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/parts/body-floating/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/body-floating.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "Upright hovering, palms low and open, stern cyan eyes. No large rings.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.4517880899145064,
+        "lowAlphaPixels": 52477,
+        "edgePixels": 0,
+        "bounds": [
+          22,
+          25,
+          1238,
+          1218
+        ],
+        "marginFraction": 0.011961722488038277
+      }
+    ],
+    "sources": [
+      "source/parts/body-floating.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/body-floating/contact.png",
+    "gif": "review/parts/body-floating/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/throne",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/parts/throne/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/throne.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "EMPTY ivory-gold crescent throne with navy cushions. No woman, hair, dress, small crown or large circular halo.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.5310699541371916,
+        "lowAlphaPixels": 45758,
+        "edgePixels": 0,
+        "bounds": [
+          137,
+          39,
+          1171,
+          1183
+        ],
+        "marginFraction": 0.03110047846889952
+      }
+    ],
+    "sources": [
+      "source/parts/throne.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/throne/contact.png",
+    "gif": "review/parts/throne/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/halo",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      268,
+      156
+    ],
+    "frames": [
+      {
+        "file": "review/parts/halo/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/halo.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "Three rigid broken gold celestial rings with cyan nodes, no feathers, no body or chair.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.7530346273106283,
+        "lowAlphaPixels": 75796,
+        "edgePixels": 0,
+        "bounds": [
+          8,
+          117,
+          1246,
+          1093
+        ],
+        "marginFraction": 0.005582137161084529
+      }
+    ],
+    "sources": [
+      "source/parts/halo.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/halo/contact.png",
+    "gif": "review/parts/halo/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/ground-shadow",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/parts/ground-shadow/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/ground-shadow.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "One soft low elliptical contact shadow, dark violet, transparent center-to-edge falloff; no hard floor slab.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.9653968544676175,
+        "lowAlphaPixels": 20597,
+        "edgePixels": 0,
+        "bounds": [
+          363,
+          1075,
+          895,
+          1158
+        ],
+        "marginFraction": 0.07575757575757576
+      }
+    ],
+    "sources": [
+      "source/parts/ground-shadow.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/ground-shadow/contact.png",
+    "gif": "review/parts/ground-shadow/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/halo-node",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      256,
+      256
+    ],
+    "anchor": [
+      128,
+      128
+    ],
+    "frames": [
+      {
+        "file": "review/parts/halo-node/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/halo-node.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "One cyan diamond gemstone with gold frame, thin dark-violet edge.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.9564157057861414,
+        "lowAlphaPixels": 6161,
+        "edgePixels": 0,
+        "bounds": [
+          450,
+          350,
+          803,
+          904
+        ],
+        "marginFraction": 0.2783094098883573
+      }
+    ],
+    "sources": [
+      "source/parts/halo-node.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/halo-node/contact.png",
+    "gif": "review/parts/halo-node/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/debris",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      256
+    ],
+    "frames": [
+      {
+        "file": "review/parts/debris/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/debris.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "One floating broken ivory marble column fragment with antique gold trim, subtly cool shading.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.816515698409428,
+        "lowAlphaPixels": 25169,
+        "edgePixels": 0,
+        "bounds": [
+          358,
+          193,
+          1034,
+          1056
+        ],
+        "marginFraction": 0.15390749601275916
+      }
+    ],
+    "sources": [
+      "source/parts/debris.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/debris/contact.png",
+    "gif": "review/parts/debris/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/target-star",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      256,
+      256
+    ],
+    "anchor": [
+      128,
+      128
+    ],
+    "frames": [
+      {
+        "file": "review/parts/target-star/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/target-star.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "One small hollow four-point gold/cyan target star, clear transparent center.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.9373627994882087,
+        "lowAlphaPixels": 17860,
+        "edgePixels": 0,
+        "bounds": [
+          331,
+          346,
+          922,
+          926
+        ],
+        "marginFraction": 0.2607655502392344
+      }
+    ],
+    "sources": [
+      "source/parts/target-star.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/target-star/contact.png",
+    "gif": "review/parts/target-star/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "parts/eclipse-rim",
+    "kind": "component",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      256
+    ],
+    "frames": [
+      {
+        "file": "review/parts/eclipse-rim/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/parts/eclipse-rim.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "One thin cyan-pale-gold eclipse edge ring, transparent inside and outside, no opaque sky.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.8491939032734802,
+        "lowAlphaPixels": 110298,
+        "edgePixels": 0,
+        "bounds": [
+          47,
+          45,
+          1211,
+          1203
+        ],
+        "marginFraction": 0.03349282296650718
+      }
+    ],
+    "sources": [
+      "source/parts/eclipse-rim.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/parts/eclipse-rim/contact.png",
+    "gif": "review/parts/eclipse-rim/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p1-idle",
+    "kind": "motion",
+    "loop": true,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p1-idle/frame-01.png",
+        "index": 1,
+        "durationMs": 450,
+        "source": "source/motions/p1-idle.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 713,
+          "height": 551
+        },
+        "description": "Chest/face dy=0, sleeve tip dy=0.",
+        "width": 713,
+        "height": 551,
+        "transparentFraction": 0.4658570544948239,
+        "lowAlphaPixels": 11632,
+        "edgePixels": 10,
+        "bounds": [
+          70,
+          7,
+          700,
+          550
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p1-idle/frame-02.png",
+        "index": 2,
+        "durationMs": 450,
+        "source": "source/motions/p1-idle.png",
+        "sourceRect": {
+          "left": 713,
+          "top": 0,
+          "width": 714,
+          "height": 551
+        },
+        "description": "Chest/face dy=-1, sleeve tip dy=1.",
+        "width": 714,
+        "height": 551,
+        "transparentFraction": 0.45236824312302054,
+        "lowAlphaPixels": 12573,
+        "edgePixels": 8,
+        "bounds": [
+          61,
+          2,
+          688,
+          550
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p1-idle/frame-03.png",
+        "index": 3,
+        "durationMs": 450,
+        "source": "source/motions/p1-idle.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 551,
+          "width": 713,
+          "height": 551
+        },
+        "description": "Chest/face dy=0, half blink, sleeve tip dy=0.",
+        "width": 713,
+        "height": 551,
+        "transparentFraction": 0.4564364676744819,
+        "lowAlphaPixels": 12513,
+        "edgePixels": 11,
+        "bounds": [
+          70,
+          0,
+          701,
+          532
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p1-idle/frame-04.png",
+        "index": 4,
+        "durationMs": 450,
+        "source": "source/motions/p1-idle.png",
+        "sourceRect": {
+          "left": 713,
+          "top": 551,
+          "width": 714,
+          "height": 551
+        },
+        "description": "Chest/face dy=1, sleeve tip dy=-1; close loop to frame 1.",
+        "width": 714,
+        "height": 551,
+        "transparentFraction": 0.4593634186887096,
+        "lowAlphaPixels": 12299,
+        "edgePixels": 9,
+        "bounds": [
+          57,
+          0,
+          686,
+          534
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/p1-idle.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p1-idle/contact.png",
+    "gif": "review/motions/p1-idle/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p1-shot",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p1-shot/frame-01.png",
+        "index": 1,
+        "durationMs": 100,
+        "source": "source/motions/p1-shot.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 631,
+          "height": 623
+        },
+        "description": "Right-on-screen hand (392,288), neutral.",
+        "width": 631,
+        "height": 623,
+        "transparentFraction": 0.37636506551551335,
+        "lowAlphaPixels": 10100,
+        "edgePixels": 34,
+        "bounds": [
+          12,
+          12,
+          630,
+          622
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p1-shot/frame-02.png",
+        "index": 2,
+        "durationMs": 120,
+        "source": "source/motions/p1-shot.png",
+        "sourceRect": {
+          "left": 631,
+          "top": 0,
+          "width": 631,
+          "height": 623
+        },
+        "description": "R=(367,270), prepare finger flick.",
+        "width": 631,
+        "height": 623,
+        "transparentFraction": 0.3729258508367823,
+        "lowAlphaPixels": 9375,
+        "edgePixels": 43,
+        "bounds": [
+          0,
+          12,
+          619,
+          622
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p1-shot/frame-03.png",
+        "index": 3,
+        "durationMs": 100,
+        "source": "source/motions/p1-shot.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 623,
+          "width": 631,
+          "height": 623
+        },
+        "description": "R=(344,260), flick toward LEFT, emission pose; no drawn projectile.",
+        "width": 631,
+        "height": 623,
+        "transparentFraction": 0.350677794934281,
+        "lowAlphaPixels": 9185,
+        "edgePixels": 82,
+        "bounds": [
+          11,
+          0,
+          630,
+          594
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p1-shot/frame-04.png",
+        "index": 4,
+        "durationMs": 160,
+        "source": "source/motions/p1-shot.png",
+        "sourceRect": {
+          "left": 631,
+          "top": 623,
+          "width": 631,
+          "height": 623
+        },
+        "description": "R=(392,288), original neutral.",
+        "width": 631,
+        "height": 623,
+        "transparentFraction": 0.37140465972888204,
+        "lowAlphaPixels": 9859,
+        "edgePixels": 75,
+        "bounds": [
+          0,
+          0,
+          617,
+          595
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/p1-shot.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p1-shot/contact.png",
+    "gif": "review/motions/p1-shot/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p1-snap",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p1-snap/frame-01.png",
+        "index": 1,
+        "durationMs": 100,
+        "source": "source/motions/p1-snap.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "R=(392,288), relaxed.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.4046814150062702,
+        "lowAlphaPixels": 13757,
+        "edgePixels": 0,
+        "bounds": [
+          9,
+          11,
+          619,
+          592
+        ],
+        "marginFraction": 0.011164274322169059
+      },
+      {
+        "file": "review/motions/p1-snap/frame-02.png",
+        "index": 2,
+        "durationMs": 120,
+        "source": "source/motions/p1-snap.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "R=(354,246), thumb and middle fingertip TOUCH.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.39701217666465716,
+        "lowAlphaPixels": 13193,
+        "edgePixels": 0,
+        "bounds": [
+          8,
+          11,
+          618,
+          592
+        ],
+        "marginFraction": 0.012759170653907496
+      },
+      {
+        "file": "review/motions/p1-snap/frame-03.png",
+        "index": 3,
+        "durationMs": 100,
+        "source": "source/motions/p1-snap.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "R=(348,243), middle finger folds into palm after SNAP, thumb separates, no drawn glint.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.3889868211197851,
+        "lowAlphaPixels": 15571,
+        "edgePixels": 0,
+        "bounds": [
+          9,
+          3,
+          622,
+          584
+        ],
+        "marginFraction": 0.004784688995215311
+      },
+      {
+        "file": "review/motions/p1-snap/frame-04.png",
+        "index": 4,
+        "durationMs": 160,
+        "source": "source/motions/p1-snap.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "R=(392,288), return.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.4046814150062702,
+        "lowAlphaPixels": 14128,
+        "edgePixels": 0,
+        "bounds": [
+          11,
+          3,
+          619,
+          584
+        ],
+        "marginFraction": 0.004784688995215311
+      }
+    ],
+    "sources": [
+      "source/motions/p1-snap.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p1-snap/contact.png",
+    "gif": "review/motions/p1-snap/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p1-hit",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p1-hit/frame-01.png",
+        "index": 1,
+        "durationMs": 90,
+        "source": "source/motions/p1-hit.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 887,
+          "height": 887
+        },
+        "description": "Face dx=2,dy=1; chest dx=2, mild shoulder recoil, maintain cheek contact.",
+        "width": 887,
+        "height": 887,
+        "transparentFraction": 0.41632804546188273,
+        "lowAlphaPixels": 19780,
+        "edgePixels": 0,
+        "bounds": [
+          15,
+          31,
+          885,
+          843
+        ],
+        "marginFraction": 0.0011273957158962795
+      },
+      {
+        "file": "review/motions/p1-hit/frame-02.png",
+        "index": 2,
+        "durationMs": 90,
+        "source": "source/motions/p1-hit.png",
+        "sourceRect": {
+          "left": 887,
+          "top": 0,
+          "width": 887,
+          "height": 887
+        },
+        "description": "Face/chest return to neutral, hand still supporting cheek.",
+        "width": 887,
+        "height": 887,
+        "transparentFraction": 0.42273272078589774,
+        "lowAlphaPixels": 19192,
+        "edgePixels": 0,
+        "bounds": [
+          15,
+          31,
+          883,
+          845
+        ],
+        "marginFraction": 0.0033821871476888386
+      }
+    ],
+    "sources": [
+      "source/motions/p1-hit.png"
+    ],
+    "expectedFrames": 2,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p1-hit/contact.png",
+    "gif": "review/motions/p1-hit/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/phase-rise",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/phase-rise/frame-01.png",
+        "index": 1,
+        "durationMs": 250,
+        "source": "source/motions/phase-rise-1.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F1 face(246,157),hips(268,294),L(219,199),R(392,288),shoes(222,418)/(304,448): seated, crossed legs, half-closed eyes.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4413460364457739,
+        "lowAlphaPixels": 13354,
+        "edgePixels": 55,
+        "bounds": [
+          23,
+          41,
+          723,
+          693
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-02.png",
+        "index": 2,
+        "durationMs": 250,
+        "source": "source/motions/phase-rise-1.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F2 face(248,154),hips(268,294),L(225,214),R(387,282),shoes(223,421)/(303,448): release cheek, open eyes.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3936330545465645,
+        "lowAlphaPixels": 14346,
+        "edgePixels": 60,
+        "bounds": [
+          0,
+          35,
+          723,
+          708
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-03.png",
+        "index": 3,
+        "durationMs": 300,
+        "source": "source/motions/phase-rise-1.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F3 face(251,151),hips(268,294),L(224,240),R(374,276),shoes(230,432)/(297,448): straighten shoulders, begin UNcrossing legs.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3642421629376393,
+        "lowAlphaPixels": 17777,
+        "edgePixels": 16,
+        "bounds": [
+          0,
+          14,
+          707,
+          713
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-04.png",
+        "index": 4,
+        "durationMs": 300,
+        "source": "source/motions/phase-rise-2.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F4 face(252,148),hips(266,289),L(217,267),R(368,273),BOTH shoes(242,448)/(286,448) planted: lean forward to stand.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.5308903879612954,
+        "lowAlphaPixels": 11601,
+        "edgePixels": 137,
+        "bounds": [
+          29,
+          123,
+          723,
+          705
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-05.png",
+        "index": 5,
+        "durationMs": 300,
+        "source": "source/motions/phase-rise-2.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F5 face(252,140),hips(266,281),L(207,268),R(357,269),BOTH shoes(242,448)/(286,448): rise upright, feet still grounded.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.46089099844327097,
+        "lowAlphaPixels": 15458,
+        "edgePixels": 174,
+        "bounds": [
+          0,
+          36,
+          723,
+          714
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-06.png",
+        "index": 6,
+        "durationMs": 300,
+        "source": "source/motions/phase-rise-2.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F6 face(252,132),hips(267,273),L(196,261),R(349,264),shoes(240,428)/(282,436): lift off, hair still hangs downward.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.38366312078385884,
+        "lowAlphaPixels": 20451,
+        "edgePixels": 46,
+        "bounds": [
+          0,
+          2,
+          712,
+          705
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-07.png",
+        "index": 7,
+        "durationMs": 300,
+        "source": "source/motions/phase-rise-3.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F7 face(252,128),hips(268,265),L(184,252),R(348,259),shoes(236,405)/(279,423): arms open, hair begins lifting with delay.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.41032782882085406,
+        "lowAlphaPixels": 15111,
+        "edgePixels": 108,
+        "bounds": [
+          11,
+          49,
+          723,
+          702
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-08.png",
+        "index": 8,
+        "durationMs": 400,
+        "source": "source/motions/phase-rise-3.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F8 face(252,127),hips(268,264),L(175,245),R(351,259),shoes(233,393)/(276,417): sleeves expand, no halo baked in.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.39841579927352644,
+        "lowAlphaPixels": 22759,
+        "edgePixels": 90,
+        "bounds": [
+          0,
+          34,
+          722,
+          697
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/phase-rise/frame-09.png",
+        "index": 9,
+        "durationMs": 300,
+        "source": "source/motions/phase-rise-3.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "F9 face(252,128),hips(268,265),L(170,244),R(352,260),shoes(232,391)/(276,416): match floating master.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.34517604773969046,
+        "lowAlphaPixels": 19303,
+        "edgePixels": 0,
+        "bounds": [
+          3,
+          4,
+          718,
+          712
+        ],
+        "marginFraction": 0.004143646408839779
+      }
+    ],
+    "sources": [
+      "source/motions/phase-rise-1.png",
+      "source/motions/phase-rise-2.png",
+      "source/motions/phase-rise-3.png"
+    ],
+    "expectedFrames": 9,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/phase-rise/contact.png",
+    "gif": "review/motions/phase-rise/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-idle",
+    "kind": "motion",
+    "loop": true,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-idle/frame-01.png",
+        "index": 1,
+        "durationMs": 400,
+        "source": "source/motions/p2-idle.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=0, hair/sleeve tips dy=2.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.4377621594947206,
+        "lowAlphaPixels": 18819,
+        "edgePixels": 0,
+        "bounds": [
+          34,
+          15,
+          624,
+          608
+        ],
+        "marginFraction": 0.003189792663476874
+      },
+      {
+        "file": "review/motions/p2-idle/frame-02.png",
+        "index": 2,
+        "durationMs": 400,
+        "source": "source/motions/p2-idle.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=-3, hair/sleeve tips dy=0.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.4220599345253085,
+        "lowAlphaPixels": 18130,
+        "edgePixels": 0,
+        "bounds": [
+          23,
+          8,
+          618,
+          608
+        ],
+        "marginFraction": 0.012759170653907496
+      },
+      {
+        "file": "review/motions/p2-idle/frame-03.png",
+        "index": 3,
+        "durationMs": 400,
+        "source": "source/motions/p2-idle.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=0, hair/sleeve tips dy=-2.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.415588776203231,
+        "lowAlphaPixels": 18996,
+        "edgePixels": 84,
+        "bounds": [
+          24,
+          7,
+          626,
+          595
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-idle/frame-04.png",
+        "index": 4,
+        "durationMs": 400,
+        "source": "source/motions/p2-idle.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=3, hair/sleeve tips dy=0.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.4384896560670925,
+        "lowAlphaPixels": 18075,
+        "edgePixels": 67,
+        "bounds": [
+          0,
+          9,
+          613,
+          595
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/p2-idle.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-idle/contact.png",
+    "gif": "review/motions/p2-idle/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-drift",
+    "kind": "motion",
+    "loop": true,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-drift/frame-01.png",
+        "index": 1,
+        "durationMs": 170,
+        "source": "source/motions/p2-drift.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=0; hair tips dx=8.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.446698157602212,
+        "lowAlphaPixels": 16540,
+        "edgePixels": 97,
+        "bounds": [
+          60,
+          10,
+          626,
+          608
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-drift/frame-02.png",
+        "index": 2,
+        "durationMs": 180,
+        "source": "source/motions/p2-drift.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=-1; hair tips dx=12.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.40886324845025424,
+        "lowAlphaPixels": 18300,
+        "edgePixels": 96,
+        "bounds": [
+          0,
+          6,
+          623,
+          626
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-drift/frame-03.png",
+        "index": 3,
+        "durationMs": 170,
+        "source": "source/motions/p2-drift.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=0; hair tips dx=8.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.4277145669741993,
+        "lowAlphaPixels": 16206,
+        "edgePixels": 110,
+        "bounds": [
+          64,
+          2,
+          626,
+          597
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-drift/frame-04.png",
+        "index": 4,
+        "durationMs": 180,
+        "source": "source/motions/p2-drift.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=1; hair tips dx=4.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.43402801624911924,
+        "lowAlphaPixels": 15514,
+        "edgePixels": 101,
+        "bounds": [
+          0,
+          0,
+          603,
+          604
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/p2-drift.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-drift/contact.png",
+    "gif": "review/motions/p2-drift/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-meteor",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-meteor/frame-01.png",
+        "index": 1,
+        "durationMs": 150,
+        "source": "source/motions/p2-meteor-1.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(170,244)/(352,260), neutral.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.44525312108909987,
+        "lowAlphaPixels": 22359,
+        "edgePixels": 0,
+        "bounds": [
+          23,
+          22,
+          707,
+          694
+        ],
+        "marginFraction": 0.022099447513812154
+      },
+      {
+        "file": "review/motions/p2-meteor/frame-02.png",
+        "index": 2,
+        "durationMs": 150,
+        "source": "source/motions/p2-meteor-1.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(174,211)/(347,218), lift palms.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4365804615243735,
+        "lowAlphaPixels": 23080,
+        "edgePixels": 0,
+        "bounds": [
+          38,
+          22,
+          707,
+          694
+        ],
+        "marginFraction": 0.022099447513812154
+      },
+      {
+        "file": "review/motions/p2-meteor/frame-03.png",
+        "index": 3,
+        "durationMs": 150,
+        "source": "source/motions/p2-meteor-1.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(186,168)/(336,174), palms raised; 3 stars will be separate FX, DO NOT draw them.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4088226091999634,
+        "lowAlphaPixels": 22581,
+        "edgePixels": 0,
+        "bounds": [
+          17,
+          22,
+          701,
+          694
+        ],
+        "marginFraction": 0.023480662983425413
+      },
+      {
+        "file": "review/motions/p2-meteor/frame-04.png",
+        "index": 4,
+        "durationMs": 150,
+        "source": "source/motions/p2-meteor-2.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(166,209)/(359,218), sweep DOWN to release first overhead meteor.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3933507066328867,
+        "lowAlphaPixels": 19775,
+        "edgePixels": 207,
+        "bounds": [
+          10,
+          8,
+          723,
+          668
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-meteor/frame-05.png",
+        "index": 5,
+        "durationMs": 150,
+        "source": "source/motions/p2-meteor-2.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(158,257)/(366,267), follow-through downward.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4029200115991575,
+        "lowAlphaPixels": 21610,
+        "edgePixels": 208,
+        "bounds": [
+          0,
+          9,
+          723,
+          689
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-meteor/frame-06.png",
+        "index": 6,
+        "durationMs": 150,
+        "source": "source/motions/p2-meteor-2.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(170,244)/(352,260), return to idle.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.40249648972864077,
+        "lowAlphaPixels": 20445,
+        "edgePixels": 10,
+        "bounds": [
+          0,
+          6,
+          711,
+          686
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/p2-meteor-1.png",
+      "source/motions/p2-meteor-2.png"
+    ],
+    "expectedFrames": 6,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-meteor/contact.png",
+    "gif": "review/motions/p2-meteor/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-cast",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-cast/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/motions/p2-cast-1.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(170,244)/(352,260), neutral.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.357252144317939,
+        "lowAlphaPixels": 20040,
+        "edgePixels": 176,
+        "bounds": [
+          11,
+          12,
+          723,
+          708
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-cast/frame-02.png",
+        "index": 2,
+        "durationMs": 160,
+        "source": "source/motions/p2-cast-1.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(216,222)/(309,222), gather palms inward.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.41630292115625284,
+        "lowAlphaPixels": 20936,
+        "edgePixels": 153,
+        "bounds": [
+          0,
+          12,
+          712,
+          707
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-cast/frame-03.png",
+        "index": 3,
+        "durationMs": 180,
+        "source": "source/motions/p2-cast-1.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(238,209)/(286,209), palms close before chest, HOLD-ready.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4108620005494338,
+        "lowAlphaPixels": 18517,
+        "edgePixels": 0,
+        "bounds": [
+          12,
+          11,
+          712,
+          710
+        ],
+        "marginFraction": 0.015193370165745856
+      }
+    ],
+    "sources": [
+      "source/motions/p2-cast-1.png"
+    ],
+    "expectedFrames": 6,
+    "complete": false,
+    "missingFrames": [
+      4,
+      5,
+      6
+    ],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-cast/contact.png",
+    "gif": "review/motions/p2-cast/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-ultimate",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-ultimate/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/motions/p2-ultimate-1.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(170,244)/(352,260), neutral.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.43346318793687616,
+        "lowAlphaPixels": 19888,
+        "edgePixels": 242,
+        "bounds": [
+          24,
+          23,
+          723,
+          692
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-ultimate/frame-02.png",
+        "index": 2,
+        "durationMs": 180,
+        "source": "source/motions/p2-ultimate-1.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(216,211)/(310,211), draw toward chest.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4322861023778273,
+        "lowAlphaPixels": 20105,
+        "edgePixels": 506,
+        "bounds": [
+          0,
+          23,
+          723,
+          692
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-ultimate/frame-03.png",
+        "index": 3,
+        "durationMs": 180,
+        "source": "source/motions/p2-ultimate-1.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(238,195)/(286,195), palms close at chest.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4613984615854217,
+        "lowAlphaPixels": 20142,
+        "edgePixels": 273,
+        "bounds": [
+          0,
+          23,
+          705,
+          692
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-ultimate/frame-07.png",
+        "index": 7,
+        "durationMs": 180,
+        "source": "source/motions/p2-ultimate-3.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(169,167)/(353,167), powerful outward release.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3436879979243613,
+        "lowAlphaPixels": 20946,
+        "edgePixels": 362,
+        "bounds": [
+          10,
+          17,
+          723,
+          702
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-ultimate/frame-08.png",
+        "index": 8,
+        "durationMs": 180,
+        "source": "source/motions/p2-ultimate-3.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(145,220)/(378,220), arms down/out, impact pose.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3839626385030982,
+        "lowAlphaPixels": 23737,
+        "edgePixels": 478,
+        "bounds": [
+          0,
+          18,
+          723,
+          695
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-ultimate/frame-09.png",
+        "index": 9,
+        "durationMs": 180,
+        "source": "source/motions/p2-ultimate-3.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(170,244)/(352,260), return to idle.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.4092747474130826,
+        "lowAlphaPixels": 19293,
+        "edgePixels": 121,
+        "bounds": [
+          0,
+          24,
+          710,
+          691
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/p2-ultimate-1.png",
+      "source/motions/p2-ultimate-3.png"
+    ],
+    "expectedFrames": 9,
+    "complete": false,
+    "missingFrames": [
+      4,
+      5,
+      6
+    ],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-ultimate/contact.png",
+    "gif": "review/motions/p2-ultimate/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-hit",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-hit/frame-01.png",
+        "index": 1,
+        "durationMs": 90,
+        "source": "source/motions/p2-hit.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 887,
+          "height": 887
+        },
+        "description": "Chest dx=3, face dx=2,dy=-1; hips fixed.",
+        "width": 887,
+        "height": 887,
+        "transparentFraction": 0.38662809541301196,
+        "lowAlphaPixels": 34204,
+        "edgePixels": 149,
+        "bounds": [
+          13,
+          19,
+          886,
+          860
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/p2-hit/frame-02.png",
+        "index": 2,
+        "durationMs": 90,
+        "source": "source/motions/p2-hit.png",
+        "sourceRect": {
+          "left": 887,
+          "top": 0,
+          "width": 887,
+          "height": 887
+        },
+        "description": "Chest and face return to neutral.",
+        "width": 887,
+        "height": 887,
+        "transparentFraction": 0.3872991945539288,
+        "lowAlphaPixels": 29182,
+        "edgePixels": 146,
+        "bounds": [
+          0,
+          18,
+          874,
+          860
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/p2-hit.png"
+    ],
+    "expectedFrames": 2,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-hit/contact.png",
+    "gif": "review/motions/p2-hit/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-break",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-break/frame-01.png",
+        "index": 1,
+        "durationMs": 60,
+        "source": "source/motions/p2-break.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(238,209)/(286,209), interrupted chest-level hold.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3748626415555081,
+        "lowAlphaPixels": 20151,
+        "edgePixels": 0,
+        "bounds": [
+          14,
+          6,
+          712,
+          704
+        ],
+        "marginFraction": 0.008287292817679558
+      },
+      {
+        "file": "review/motions/p2-break/frame-02.png",
+        "index": 2,
+        "durationMs": 70,
+        "source": "source/motions/p2-break.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(215,276)/(313,278), palms DROP, shoulders lose tension.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3732048014407375,
+        "lowAlphaPixels": 22150,
+        "edgePixels": 0,
+        "bounds": [
+          4,
+          6,
+          722,
+          707
+        ],
+        "marginFraction": 0.0013812154696132596
+      },
+      {
+        "file": "review/motions/p2-break/frame-03.png",
+        "index": 3,
+        "durationMs": 70,
+        "source": "source/motions/p2-break.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "L/R=(185,270)/(335,275), tired rest pose, connected arms.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3794794114953756,
+        "lowAlphaPixels": 18084,
+        "edgePixels": 0,
+        "bounds": [
+          28,
+          14,
+          700,
+          698
+        ],
+        "marginFraction": 0.019337016574585635
+      }
+    ],
+    "sources": [
+      "source/motions/p2-break.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-break/contact.png",
+    "gif": "review/motions/p2-break/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/p2-break-overhead",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/p2-break-overhead/frame-01.png",
+        "index": 1,
+        "durationMs": 100,
+        "source": "source/motions/p2-break-overhead.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 1254,
+          "height": 1254
+        },
+        "description": "Hands lower continuously from above-head (236,104)/(288,104) toward (220,184)/(302,184), elbows bending, shoulders slack.",
+        "width": 1254,
+        "height": 1254,
+        "transparentFraction": 0.4420838961256992,
+        "lowAlphaPixels": 42154,
+        "edgePixels": 0,
+        "bounds": [
+          15,
+          56,
+          1240,
+          1199
+        ],
+        "marginFraction": 0.01036682615629984
+      }
+    ],
+    "sources": [
+      "source/motions/p2-break-overhead.png"
+    ],
+    "expectedFrames": 1,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/p2-break-overhead/contact.png",
+    "gif": "review/motions/p2-break-overhead/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "motions/down",
+    "kind": "motion",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/motions/down/frame-01.png",
+        "index": 1,
+        "durationMs": 200,
+        "source": "source/motions/down.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=0, eyes close, L/R=(170,244)/(352,260).",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.3663403106868229,
+        "lowAlphaPixels": 12678,
+        "edgePixels": 119,
+        "bounds": [
+          20,
+          9,
+          626,
+          601
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/down/frame-02.png",
+        "index": 2,
+        "durationMs": 250,
+        "source": "source/motions/down.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 0,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=8, shoulders slump, L/R=(202,274)/(327,285).",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.39798641158500137,
+        "lowAlphaPixels": 16407,
+        "edgePixels": 157,
+        "bounds": [
+          0,
+          51,
+          606,
+          626
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/down/frame-03.png",
+        "index": 3,
+        "durationMs": 300,
+        "source": "source/motions/down.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=20, L/R=(220,298)/(312,309), silhouette begins dissolving into sparse gold/cyan pixels, keep anatomy.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.3757087368268431,
+        "lowAlphaPixels": 44979,
+        "edgePixels": 2,
+        "bounds": [
+          25,
+          34,
+          626,
+          603
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/motions/down/frame-04.png",
+        "index": 4,
+        "durationMs": 350,
+        "source": "source/motions/down.png",
+        "sourceRect": {
+          "left": 627,
+          "top": 627,
+          "width": 627,
+          "height": 627
+        },
+        "description": "Body dy=28, L/R=(226,313)/(307,322), faint whole-body afterimage, no reward gem.",
+        "width": 627,
+        "height": 627,
+        "transparentFraction": 0.37257999282678206,
+        "lowAlphaPixels": 47633,
+        "edgePixels": 54,
+        "bounds": [
+          0,
+          0,
+          597,
+          596
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/motions/down.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/motions/down/contact.png",
+    "gif": "review/motions/down/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/star-bolt",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      256,
+      256
+    ],
+    "anchor": [
+      128,
+      128
+    ],
+    "frames": [
+      {
+        "file": "review/effects/star-bolt/frame-01.png",
+        "index": 1,
+        "durationMs": 70,
+        "source": "source/effects/star-bolt.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":70,\"center\":[128,128],\"diamondSize\":[24,16],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9231212417203382,
+        "lowAlphaPixels": 17044,
+        "edgePixels": 130,
+        "bounds": [
+          174,
+          258,
+          723,
+          478
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/star-bolt/frame-02.png",
+        "index": 2,
+        "durationMs": 90,
+        "source": "source/effects/star-bolt.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":90,\"center\":[128,128],\"diamondSize\":[80,28],\"tailEnd\":[206,128],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.8519638442049998,
+        "lowAlphaPixels": 28864,
+        "edgePixels": 256,
+        "bounds": [
+          0,
+          237,
+          723,
+          509
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/star-bolt/frame-03.png",
+        "index": 3,
+        "durationMs": 80,
+        "source": "source/effects/star-bolt.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":80,\"center\":[128,128],\"diamondSize\":[110,14],\"tailEnd\":[223,128],\"alpha\":0.55}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.8770279448124294,
+        "lowAlphaPixels": 26185,
+        "edgePixels": 127,
+        "bounds": [
+          0,
+          258,
+          673,
+          480
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/effects/star-bolt.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/star-bolt/contact.png",
+    "gif": "review/effects/star-bolt/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/star-impact",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      256,
+      256
+    ],
+    "anchor": [
+      128,
+      128
+    ],
+    "frames": [
+      {
+        "file": "review/effects/star-impact/frame-01.png",
+        "index": 1,
+        "durationMs": 60,
+        "source": "source/effects/star-impact.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":60,\"radius\":10,\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.953332468483868,
+        "lowAlphaPixels": 12558,
+        "edgePixels": 0,
+        "bounds": [
+          245,
+          258,
+          465,
+          456
+        ],
+        "marginFraction": 0.3383977900552486
+      },
+      {
+        "file": "review/effects/star-impact/frame-02.png",
+        "index": 2,
+        "durationMs": 90,
+        "source": "source/effects/star-impact.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":90,\"radius\":38,\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.7116293000824151,
+        "lowAlphaPixels": 70653,
+        "edgePixels": 0,
+        "bounds": [
+          55,
+          63,
+          668,
+          670
+        ],
+        "marginFraction": 0.07320441988950276
+      },
+      {
+        "file": "review/effects/star-impact/frame-03.png",
+        "index": 3,
+        "durationMs": 130,
+        "source": "source/effects/star-impact.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":130,\"radius\":28,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9023972864076188,
+        "lowAlphaPixels": 36212,
+        "edgePixels": 0,
+        "bounds": [
+          185,
+          154,
+          546,
+          570
+        ],
+        "marginFraction": 0.21132596685082872
+      }
+    ],
+    "sources": [
+      "source/effects/star-impact.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/star-impact/contact.png",
+    "gif": "review/effects/star-impact/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/snap-glint",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      256,
+      256
+    ],
+    "anchor": [
+      128,
+      128
+    ],
+    "frames": [
+      {
+        "file": "review/effects/snap-glint/frame-01.png",
+        "index": 1,
+        "durationMs": 40,
+        "source": "source/effects/snap-glint.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":40,\"center\":[128,128],\"radius\":4,\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.985100424284973,
+        "lowAlphaPixels": 3912,
+        "edgePixels": 0,
+        "bounds": [
+          305,
+          282,
+          433,
+          418
+        ],
+        "marginFraction": 0.38950276243093923
+      },
+      {
+        "file": "review/effects/snap-glint/frame-02.png",
+        "index": 2,
+        "durationMs": 40,
+        "source": "source/effects/snap-glint.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":40,\"center\":[128,128],\"crossSize\":[44,44],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9057377674674155,
+        "lowAlphaPixels": 21621,
+        "edgePixels": 0,
+        "bounds": [
+          139,
+          137,
+          587,
+          580
+        ],
+        "marginFraction": 0.1878453038674033
+      },
+      {
+        "file": "review/effects/snap-glint/frame-03.png",
+        "index": 3,
+        "durationMs": 40,
+        "source": "source/effects/snap-glint.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":40,\"center\":[128,128],\"crossSize\":[28,28],\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9800181618387717,
+        "lowAlphaPixels": 6877,
+        "edgePixels": 0,
+        "bounds": [
+          273,
+          256,
+          439,
+          454
+        ],
+        "marginFraction": 0.35359116022099446
+      }
+    ],
+    "sources": [
+      "source/effects/snap-glint.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/snap-glint/contact.png",
+    "gif": "review/effects/snap-glint/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/star-mirror-open",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/effects/star-mirror-open/frame-01.png",
+        "index": 1,
+        "durationMs": 80,
+        "source": "source/effects/star-mirror-open.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 717,
+          "height": 548
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":80,\"center\":[256,252],\"openingSize\":[4,300]}. ",
+        "width": 717,
+        "height": 548,
+        "transparentFraction": 0.8345982347371957,
+        "lowAlphaPixels": 11678,
+        "edgePixels": 26,
+        "bounds": [
+          267,
+          7,
+          498,
+          547
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/star-mirror-open/frame-02.png",
+        "index": 2,
+        "durationMs": 80,
+        "source": "source/effects/star-mirror-open.png",
+        "sourceRect": {
+          "left": 717,
+          "top": 0,
+          "width": 717,
+          "height": 548
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":80,\"center\":[256,252],\"openingSize\":[60,300]}. ",
+        "width": 717,
+        "height": 548,
+        "transparentFraction": 0.7805586944792271,
+        "lowAlphaPixels": 12514,
+        "edgePixels": 29,
+        "bounds": [
+          181,
+          7,
+          479,
+          547
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/star-mirror-open/frame-03.png",
+        "index": 3,
+        "durationMs": 90,
+        "source": "source/effects/star-mirror-open.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 548,
+          "width": 717,
+          "height": 549
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":90,\"center\":[256,252],\"openingSize\":[140,300]}. ",
+        "width": 717,
+        "height": 549,
+        "transparentFraction": 0.6657648113852243,
+        "lowAlphaPixels": 15443,
+        "edgePixels": 28,
+        "bounds": [
+          165,
+          0,
+          583,
+          514
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/star-mirror-open/frame-04.png",
+        "index": 4,
+        "durationMs": 80,
+        "source": "source/effects/star-mirror-open.png",
+        "sourceRect": {
+          "left": 717,
+          "top": 548,
+          "width": 717,
+          "height": 549
+        },
+        "description": "Global F4: {\"f\":4,\"ms\":80,\"center\":[256,252],\"openingSize\":[180,300]}. ",
+        "width": 717,
+        "height": 549,
+        "transparentFraction": 0.5300698874332183,
+        "lowAlphaPixels": 17537,
+        "edgePixels": 29,
+        "bounds": [
+          62,
+          0,
+          624,
+          518
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/effects/star-mirror-open.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/star-mirror-open/contact.png",
+    "gif": "review/effects/star-mirror-open/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/phantom-recall",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/effects/phantom-recall/frame-01.png",
+        "index": 1,
+        "durationMs": 50,
+        "source": "source/effects/phantom-recall.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 661,
+          "height": 595
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":50,\"center\":[256,252],\"crackAnglesDeg\":[45,160,280],\"phantomAlpha\":1}. ",
+        "width": 661,
+        "height": 595,
+        "transparentFraction": 0.6501582781372761,
+        "lowAlphaPixels": 86914,
+        "edgePixels": 0,
+        "bounds": [
+          64,
+          14,
+          658,
+          571
+        ],
+        "marginFraction": 0.0030257186081694403
+      },
+      {
+        "file": "review/effects/phantom-recall/frame-02.png",
+        "index": 2,
+        "durationMs": 60,
+        "source": "source/effects/phantom-recall.png",
+        "sourceRect": {
+          "left": 661,
+          "top": 0,
+          "width": 661,
+          "height": 595
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":60,\"fragmentCenters\":[[168,160],[344,184],[186,340],[326,348]],\"phantomAlpha\":0.55}. ",
+        "width": 661,
+        "height": 595,
+        "transparentFraction": 0.7376752819130677,
+        "lowAlphaPixels": 71228,
+        "edgePixels": 2,
+        "bounds": [
+          112,
+          91,
+          547,
+          594
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/phantom-recall/frame-03.png",
+        "index": 3,
+        "durationMs": 60,
+        "source": "source/effects/phantom-recall.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 595,
+          "width": 661,
+          "height": 595
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":60,\"fragmentCenters\":[[232,230],[280,236],[238,278],[274,284]],\"phantomAlpha\":0.15}. ",
+        "width": 661,
+        "height": 595,
+        "transparentFraction": 0.8556808502523551,
+        "lowAlphaPixels": 39115,
+        "edgePixels": 0,
+        "bounds": [
+          240,
+          133,
+          513,
+          441
+        ],
+        "marginFraction": 0.22239031770045387
+      },
+      {
+        "file": "review/effects/phantom-recall/frame-04.png",
+        "index": 4,
+        "durationMs": 60,
+        "source": "source/effects/phantom-recall.png",
+        "sourceRect": {
+          "left": 661,
+          "top": 595,
+          "width": 661,
+          "height": 595
+        },
+        "description": "Global F4: {\"f\":4,\"ms\":60,\"center\":[256,252],\"openingSize\":[4,300],\"phantomAlpha\":0}. ",
+        "width": 661,
+        "height": 595,
+        "transparentFraction": 0.8624772753276803,
+        "lowAlphaPixels": 29698,
+        "edgePixels": 4,
+        "bounds": [
+          251,
+          0,
+          400,
+          552
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/effects/phantom-recall.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/phantom-recall/contact.png",
+    "gif": "review/effects/phantom-recall/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/homing-meteor",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      256,
+      256
+    ],
+    "anchor": [
+      128,
+      128
+    ],
+    "frames": [
+      {
+        "file": "review/effects/homing-meteor/frame-01.png",
+        "index": 1,
+        "durationMs": 80,
+        "source": "source/effects/homing-meteor.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":80,\"center\":[128,128],\"diamondSize\":[22,22],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9235657489087634,
+        "lowAlphaPixels": 16810,
+        "edgePixels": 0,
+        "bounds": [
+          318,
+          42,
+          458,
+          567
+        ],
+        "marginFraction": 0.058011049723756904
+      },
+      {
+        "file": "review/effects/homing-meteor/frame-02.png",
+        "index": 2,
+        "durationMs": 100,
+        "source": "source/effects/homing-meteor.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":100,\"center\":[128,128],\"diamondSize\":[48,24],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.8658236928054699,
+        "lowAlphaPixels": 24179,
+        "edgePixels": 0,
+        "bounds": [
+          239,
+          12,
+          530,
+          594
+        ],
+        "marginFraction": 0.016574585635359115
+      },
+      {
+        "file": "review/effects/homing-meteor/frame-03.png",
+        "index": 3,
+        "durationMs": 80,
+        "source": "source/effects/homing-meteor.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":80,\"center\":[128,128],\"diamondSize\":[60,24],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.7730991117487256,
+        "lowAlphaPixels": 34755,
+        "edgePixels": 0,
+        "bounds": [
+          133,
+          9,
+          645,
+          641
+        ],
+        "marginFraction": 0.012430939226519336
+      }
+    ],
+    "sources": [
+      "source/effects/homing-meteor.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/homing-meteor/contact.png",
+    "gif": "review/effects/homing-meteor/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/meteor-impact",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      256,
+      256
+    ],
+    "anchor": [
+      128,
+      160
+    ],
+    "frames": [
+      {
+        "file": "review/effects/meteor-impact/frame-01.png",
+        "index": 1,
+        "durationMs": 70,
+        "source": "source/effects/meteor-impact.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":70,\"center\":[128,160],\"radius\":10,\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.950533790177345,
+        "lowAlphaPixels": 13435,
+        "edgePixels": 0,
+        "bounds": [
+          251,
+          315,
+          478,
+          596
+        ],
+        "marginFraction": 0.17541436464088397
+      },
+      {
+        "file": "review/effects/meteor-impact/frame-02.png",
+        "index": 2,
+        "durationMs": 90,
+        "source": "source/effects/meteor-impact.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":90,\"center\":[128,160],\"crownSize\":[104,72],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.732210173682122,
+        "lowAlphaPixels": 64439,
+        "edgePixels": 0,
+        "bounds": [
+          44,
+          196,
+          678,
+          593
+        ],
+        "marginFraction": 0.06077348066298342
+      },
+      {
+        "file": "review/effects/meteor-impact/frame-03.png",
+        "index": 3,
+        "durationMs": 140,
+        "source": "source/effects/meteor-impact.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":140,\"center\":[128,160],\"radius\":64,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9102877659412106,
+        "lowAlphaPixels": 37516,
+        "edgePixels": 0,
+        "bounds": [
+          96,
+          251,
+          674,
+          584
+        ],
+        "marginFraction": 0.06767955801104972
+      }
+    ],
+    "sources": [
+      "source/effects/meteor-impact.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/meteor-impact/contact.png",
+    "gif": "review/effects/meteor-impact/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/rift-open",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      256
+    ],
+    "frames": [
+      {
+        "file": "review/effects/rift-open/frame-01.png",
+        "index": 1,
+        "durationMs": 80,
+        "source": "source/effects/rift-open.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 644,
+          "height": 610
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":80,\"center\":[256,256],\"openingSize\":[6,6]}. ",
+        "width": 644,
+        "height": 610,
+        "transparentFraction": 0.9688219122288972,
+        "lowAlphaPixels": 9378,
+        "edgePixels": 8,
+        "bounds": [
+          289,
+          210,
+          378,
+          609
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/rift-open/frame-02.png",
+        "index": 2,
+        "durationMs": 100,
+        "source": "source/effects/rift-open.png",
+        "sourceRect": {
+          "left": 644,
+          "top": 0,
+          "width": 644,
+          "height": 610
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":100,\"center\":[256,256],\"openingSize\":[8,190]}. ",
+        "width": 644,
+        "height": 610,
+        "transparentFraction": 0.8551114957743611,
+        "lowAlphaPixels": 31835,
+        "edgePixels": 74,
+        "bounds": [
+          181,
+          39,
+          422,
+          609
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/rift-open/frame-03.png",
+        "index": 3,
+        "durationMs": 110,
+        "source": "source/effects/rift-open.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 610,
+          "width": 644,
+          "height": 611
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":110,\"center\":[256,256],\"openingSize\":[44,280]}. ",
+        "width": 644,
+        "height": 611,
+        "transparentFraction": 0.7348176800073193,
+        "lowAlphaPixels": 49215,
+        "edgePixels": 7,
+        "bounds": [
+          211,
+          0,
+          468,
+          549
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/rift-open/frame-04.png",
+        "index": 4,
+        "durationMs": 140,
+        "source": "source/effects/rift-open.png",
+        "sourceRect": {
+          "left": 644,
+          "top": 610,
+          "width": 644,
+          "height": 611
+        },
+        "description": "Global F4: {\"f\":4,\"ms\":140,\"center\":[256,256],\"openingSize\":[84,350]}. ",
+        "width": 644,
+        "height": 611,
+        "transparentFraction": 0.5495140844354536,
+        "lowAlphaPixels": 63741,
+        "edgePixels": 74,
+        "bounds": [
+          105,
+          0,
+          515,
+          588
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/effects/rift-open.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/rift-open/contact.png",
+    "gif": "review/effects/rift-open/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/rift-cut",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      1024,
+      256
+    ],
+    "anchor": [
+      512,
+      128
+    ],
+    "frames": [
+      {
+        "file": "review/effects/rift-cut/frame-01.png",
+        "index": 1,
+        "durationMs": 60,
+        "source": "source/effects/rift-cut.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":60,\"center\":[512,128],\"bandSize\":[820,4],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9467736027593785,
+        "lowAlphaPixels": 13615,
+        "edgePixels": 0,
+        "bounds": [
+          21,
+          334,
+          697,
+          398
+        ],
+        "marginFraction": 0.029005524861878452
+      },
+      {
+        "file": "review/effects/rift-cut/frame-02.png",
+        "index": 2,
+        "durationMs": 100,
+        "source": "source/effects/rift-cut.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":100,\"center\":[512,128],\"bandSize\":[820,80],\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.8442889411190134,
+        "lowAlphaPixels": 31137,
+        "edgePixels": 0,
+        "bounds": [
+          14,
+          266,
+          711,
+          461
+        ],
+        "marginFraction": 0.016574585635359115
+      },
+      {
+        "file": "review/effects/rift-cut/frame-03.png",
+        "index": 3,
+        "durationMs": 180,
+        "source": "source/effects/rift-cut.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":180,\"center\":[512,128],\"bandSize\":[780,30],\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9288597722902231,
+        "lowAlphaPixels": 19713,
+        "edgePixels": 0,
+        "bounds": [
+          41,
+          322,
+          687,
+          404
+        ],
+        "marginFraction": 0.049723756906077346
+      }
+    ],
+    "sources": [
+      "source/effects/rift-cut.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/rift-cut/contact.png",
+    "gif": "review/effects/rift-cut/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/celestial-wave",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      256
+    ],
+    "frames": [
+      {
+        "file": "review/effects/celestial-wave/frame-01.png",
+        "index": 1,
+        "durationMs": 100,
+        "source": "source/effects/celestial-wave.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":100,\"center\":[256,256],\"radius\":170,\"thickness\":4,\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.7873366960715484,
+        "lowAlphaPixels": 52020,
+        "edgePixels": 0,
+        "bounds": [
+          92,
+          90,
+          632,
+          619
+        ],
+        "marginFraction": 0.12430939226519337
+      },
+      {
+        "file": "review/effects/celestial-wave/frame-02.png",
+        "index": 2,
+        "durationMs": 160,
+        "source": "source/effects/celestial-wave.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":160,\"center\":[256,256],\"radius\":205,\"thickness\":12,\"alpha\":1}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.5965152925734868,
+        "lowAlphaPixels": 64973,
+        "edgePixels": 0,
+        "bounds": [
+          28,
+          29,
+          699,
+          678
+        ],
+        "marginFraction": 0.03314917127071823
+      },
+      {
+        "file": "review/effects/celestial-wave/frame-03.png",
+        "index": 3,
+        "durationMs": 240,
+        "source": "source/effects/celestial-wave.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":240,\"center\":[256,256],\"radius\":220,\"thickness\":5,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.7703595738835811,
+        "lowAlphaPixels": 91430,
+        "edgePixels": 0,
+        "bounds": [
+          69,
+          57,
+          656,
+          649
+        ],
+        "marginFraction": 0.0787292817679558
+      }
+    ],
+    "sources": [
+      "source/effects/celestial-wave.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/celestial-wave/contact.png",
+    "gif": "review/effects/celestial-wave/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/zero-converge",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      512,
+      768
+    ],
+    "frames": [
+      {
+        "file": "review/effects/zero-converge/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/effects/zero-converge.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 512,
+          "height": 768
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":160,\"center\":[256,156],\"radius\":24}. ",
+        "width": 512,
+        "height": 768,
+        "transparentFraction": 0.8012339274088541,
+        "lowAlphaPixels": 56436,
+        "edgePixels": 159,
+        "bounds": [
+          122,
+          130,
+          511,
+          767
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/zero-converge/frame-02.png",
+        "index": 2,
+        "durationMs": 220,
+        "source": "source/effects/zero-converge.png",
+        "sourceRect": {
+          "left": 512,
+          "top": 0,
+          "width": 512,
+          "height": 768
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":220,\"center\":[256,156],\"radius\":100,\"hold\":true}. ",
+        "width": 512,
+        "height": 768,
+        "transparentFraction": 0.4613393147786458,
+        "lowAlphaPixels": 102810,
+        "edgePixels": 146,
+        "bounds": [
+          0,
+          27,
+          501,
+          767
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/zero-converge/frame-03.png",
+        "index": 3,
+        "durationMs": 100,
+        "source": "source/effects/zero-converge.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 768,
+          "width": 512,
+          "height": 768
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":100,\"pillarTop\":[256,160],\"pillarBottom\":[256,614],\"width\":80}. ",
+        "width": 512,
+        "height": 768,
+        "transparentFraction": 0.611053466796875,
+        "lowAlphaPixels": 58216,
+        "edgePixels": 85,
+        "bounds": [
+          73,
+          0,
+          442,
+          704
+        ],
+        "marginFraction": 0
+      },
+      {
+        "file": "review/effects/zero-converge/frame-04.png",
+        "index": 4,
+        "durationMs": 300,
+        "source": "source/effects/zero-converge.png",
+        "sourceRect": {
+          "left": 512,
+          "top": 768,
+          "width": 512,
+          "height": 768
+        },
+        "description": "Global F4: {\"f\":4,\"ms\":300,\"pillarTop\":[256,160],\"pillarBottom\":[256,614],\"width\":160,\"fragmentMaxX\":416,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+        "width": 512,
+        "height": 768,
+        "transparentFraction": 0.4223836263020833,
+        "lowAlphaPixels": 117980,
+        "edgePixels": 54,
+        "bounds": [
+          7,
+          0,
+          462,
+          716
+        ],
+        "marginFraction": 0
+      }
+    ],
+    "sources": [
+      "source/effects/zero-converge.png"
+    ],
+    "expectedFrames": 4,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/zero-converge/contact.png",
+    "gif": "review/effects/zero-converge/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/phase-awaken",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      448
+    ],
+    "frames": [
+      {
+        "file": "review/effects/phase-awaken/frame-01.png",
+        "index": 1,
+        "durationMs": 180,
+        "source": "source/effects/phase-awaken.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":180,\"ringCenter\":[256,410],\"ellipseSize\":[140,30]}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.899232318915784,
+        "lowAlphaPixels": 14257,
+        "edgePixels": 0,
+        "bounds": [
+          106,
+          526,
+          630,
+          677
+        ],
+        "marginFraction": 0.06353591160220995
+      },
+      {
+        "file": "review/effects/phase-awaken/frame-02.png",
+        "index": 2,
+        "durationMs": 240,
+        "source": "source/effects/phase-awaken.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":240,\"particlesCenters\":[[230,380],[256,330],[284,270]],\"radius\":6}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.9358078202741064,
+        "lowAlphaPixels": 17828,
+        "edgePixels": 0,
+        "bounds": [
+          262,
+          173,
+          448,
+          639
+        ],
+        "marginFraction": 0.11602209944751381
+      },
+      {
+        "file": "review/effects/phase-awaken/frame-03.png",
+        "index": 3,
+        "durationMs": 220,
+        "source": "source/effects/phase-awaken.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":220,\"nodeCenters\":[[126,166],[256,100],[386,166]],\"radius\":8}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.877722368059583,
+        "lowAlphaPixels": 27172,
+        "edgePixels": 0,
+        "bounds": [
+          26,
+          74,
+          653,
+          359
+        ],
+        "marginFraction": 0.03591160220994475
+      }
+    ],
+    "sources": [
+      "source/effects/phase-awaken.png"
+    ],
+    "expectedFrames": 3,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/phase-awaken/contact.png",
+    "gif": "review/effects/phase-awaken/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  },
+  {
+    "id": "effects/goddess-defeat",
+    "kind": "effect",
+    "loop": false,
+    "cell": [
+      512,
+      512
+    ],
+    "anchor": [
+      256,
+      240
+    ],
+    "frames": [
+      {
+        "file": "review/effects/goddess-defeat/frame-01.png",
+        "index": 1,
+        "durationMs": 160,
+        "source": "source/effects/goddess-defeat-1.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F1: {\"f\":1,\"ms\":160,\"ringCenter\":[268,156],\"radius\":110,\"crackAnglesDeg\":[45,180,290]}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.48278059277799823,
+        "lowAlphaPixels": 137891,
+        "edgePixels": 0,
+        "bounds": [
+          46,
+          15,
+          694,
+          669
+        ],
+        "marginFraction": 0.020718232044198894
+      },
+      {
+        "file": "review/effects/goddess-defeat/frame-02.png",
+        "index": 2,
+        "durationMs": 180,
+        "source": "source/effects/goddess-defeat-1.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F2: {\"f\":2,\"ms\":180,\"fragmentCenters\":[[150,110],[386,130],[155,275],[371,290]]}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.46521397393241964,
+        "lowAlphaPixels": 174849,
+        "edgePixels": 0,
+        "bounds": [
+          93,
+          41,
+          661,
+          629
+        ],
+        "marginFraction": 0.05662983425414365
+      },
+      {
+        "file": "review/effects/goddess-defeat/frame-03.png",
+        "index": 3,
+        "durationMs": 200,
+        "source": "source/effects/goddess-defeat-1.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F3: {\"f\":3,\"ms\":200,\"center\":[256,240],\"radius\":70}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.6924391807331889,
+        "lowAlphaPixels": 108162,
+        "edgePixels": 0,
+        "bounds": [
+          173,
+          121,
+          584,
+          573
+        ],
+        "marginFraction": 0.1671270718232044
+      },
+      {
+        "file": "review/effects/goddess-defeat/frame-04.png",
+        "index": 4,
+        "durationMs": 180,
+        "source": "source/effects/goddess-defeat-2.png",
+        "sourceRect": {
+          "left": 0,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F4: {\"f\":4,\"ms\":180,\"center\":[256,240],\"diamondSize\":[36,52]}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.3229411495375599,
+        "lowAlphaPixels": 171284,
+        "edgePixels": 0,
+        "bounds": [
+          23,
+          40,
+          722,
+          689
+        ],
+        "marginFraction": 0.0013812154696132596
+      },
+      {
+        "file": "review/effects/goddess-defeat/frame-05.png",
+        "index": 5,
+        "durationMs": 260,
+        "source": "source/effects/goddess-defeat-2.png",
+        "sourceRect": {
+          "left": 724,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F5: {\"f\":5,\"ms\":260,\"center\":[256,240],\"radius\":140,\"alpha\":0.4}. ",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.46318412136381676,
+        "lowAlphaPixels": 185764,
+        "edgePixels": 0,
+        "bounds": [
+          54,
+          56,
+          697,
+          641
+        ],
+        "marginFraction": 0.03591160220994475
+      },
+      {
+        "file": "review/effects/goddess-defeat/frame-06.png",
+        "index": 6,
+        "durationMs": 200,
+        "source": "source/effects/goddess-defeat-2.png",
+        "sourceRect": {
+          "left": 1448,
+          "top": 0,
+          "width": 724,
+          "height": 724
+        },
+        "description": "Global F6: {\"f\":6,\"ms\":200,\"center\":[256,240],\"radius\":140,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+        "width": 724,
+        "height": 724,
+        "transparentFraction": 0.7495001678825433,
+        "lowAlphaPixels": 115255,
+        "edgePixels": 0,
+        "bounds": [
+          74,
+          129,
+          674,
+          585
+        ],
+        "marginFraction": 0.06767955801104972
+      }
+    ],
+    "sources": [
+      "source/effects/goddess-defeat-1.png",
+      "source/effects/goddess-defeat-2.png"
+    ],
+    "expectedFrames": 6,
+    "complete": true,
+    "missingFrames": [],
+    "accepted": false,
+    "previewOnly": true,
+    "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+    "contact": "review/effects/goddess-defeat/contact.png",
+    "gif": "review/effects/goddess-defeat/preview.gif",
+    "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+  }
+]

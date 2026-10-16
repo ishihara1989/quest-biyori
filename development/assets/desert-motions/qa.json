@@ -1,0 +1,609 @@
+{
+  "date": "2026-10-11 JST",
+  "generation": "built-in image_gen",
+  "originals": 37,
+  "enemies": [
+    {
+      "id": "sand-scorpion",
+      "motions": [
+        {
+          "id": "idle",
+          "frames": 4,
+          "durationMs": 880,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-scorpion-idle-generated.png"
+          ]
+        },
+        {
+          "id": "move",
+          "frames": 4,
+          "durationMs": 480,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-scorpion-move-generated.png"
+          ]
+        },
+        {
+          "id": "hit",
+          "frames": 2,
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-scorpion-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "down",
+          "frames": 2,
+          "durationMs": 1100,
+          "loop": false,
+          "terminal": true,
+          "source": [
+            "../../../../desert-motions/sand-scorpion-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "pincer",
+          "frames": 4,
+          "durationMs": 800,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-scorpion-attack-generated.png"
+          ]
+        },
+        {
+          "id": "sting",
+          "frames": 4,
+          "durationMs": 1050,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-scorpion-tail-generated.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bandage-soldier",
+      "motions": [
+        {
+          "id": "idle",
+          "frames": 4,
+          "durationMs": 880,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/bandage-soldier-idle-generated.png"
+          ]
+        },
+        {
+          "id": "move",
+          "frames": 6,
+          "durationMs": 720,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/bandage-soldier-move-1-generated.png",
+            "../../../../desert-motions/bandage-soldier-move-2-generated.png"
+          ]
+        },
+        {
+          "id": "hit",
+          "frames": 2,
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/bandage-soldier-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "down",
+          "frames": 2,
+          "durationMs": 1100,
+          "loop": false,
+          "terminal": true,
+          "source": [
+            "../../../../desert-motions/bandage-soldier-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "slash",
+          "frames": 4,
+          "durationMs": 850,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/bandage-soldier-attack-generated.png"
+          ]
+        },
+        {
+          "id": "bind",
+          "frames": 4,
+          "durationMs": 1050,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/bandage-soldier-attack-generated.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sand-snake",
+      "motions": [
+        {
+          "id": "idle",
+          "frames": 4,
+          "durationMs": 880,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-snake-idle-generated.png"
+          ]
+        },
+        {
+          "id": "move",
+          "frames": 4,
+          "durationMs": 480,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-snake-move-generated.png"
+          ]
+        },
+        {
+          "id": "hit",
+          "frames": 2,
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-snake-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "down",
+          "frames": 2,
+          "durationMs": 1100,
+          "loop": false,
+          "terminal": true,
+          "source": [
+            "../../../../desert-motions/sand-snake-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "bolt",
+          "frames": 4,
+          "durationMs": 900,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-snake-attack-generated.png"
+          ]
+        },
+        {
+          "id": "sidestep",
+          "frames": 4,
+          "durationMs": 850,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-snake-attack-generated.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obsidian-scorpion",
+      "motions": [
+        {
+          "id": "idle",
+          "frames": 4,
+          "durationMs": 880,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-idle-generated.png"
+          ]
+        },
+        {
+          "id": "move",
+          "frames": 4,
+          "durationMs": 480,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-move-generated.png"
+          ]
+        },
+        {
+          "id": "hit",
+          "frames": 2,
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "down",
+          "frames": 2,
+          "durationMs": 1100,
+          "loop": false,
+          "terminal": true,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "sweep",
+          "frames": 4,
+          "durationMs": 1450,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-attack-generated.png"
+          ]
+        },
+        {
+          "id": "stingers",
+          "frames": 4,
+          "durationMs": 2150,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-tail-generated.png"
+          ]
+        },
+        {
+          "id": "volley",
+          "frames": 4,
+          "durationMs": 1750,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-tail-generated.png"
+          ]
+        },
+        {
+          "id": "rest",
+          "frames": 2,
+          "durationMs": 1950,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/obsidian-scorpion-idle-generated.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "golden-pharaoh",
+      "motions": [
+        {
+          "id": "idle",
+          "frames": 4,
+          "durationMs": 880,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-idle-generated.png"
+          ]
+        },
+        {
+          "id": "move",
+          "frames": 4,
+          "durationMs": 480,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-move-generated.png"
+          ]
+        },
+        {
+          "id": "hit",
+          "frames": 2,
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "down",
+          "frames": 2,
+          "durationMs": 1100,
+          "loop": false,
+          "terminal": true,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "wave",
+          "frames": 4,
+          "durationMs": 1550,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-attack-generated.png"
+          ]
+        },
+        {
+          "id": "binds",
+          "frames": 4,
+          "durationMs": 1550,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-attack-generated.png"
+          ]
+        },
+        {
+          "id": "summon",
+          "frames": 4,
+          "durationMs": 1550,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-attack-generated.png"
+          ]
+        },
+        {
+          "id": "rest",
+          "frames": 2,
+          "durationMs": 2450,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/golden-pharaoh-idle-generated.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lamia",
+      "motions": [
+        {
+          "id": "idle",
+          "frames": 4,
+          "durationMs": 880,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/lamia-idle-generated.png"
+          ]
+        },
+        {
+          "id": "move",
+          "frames": 4,
+          "durationMs": 480,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/lamia-move-generated.png"
+          ]
+        },
+        {
+          "id": "hit",
+          "frames": 2,
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/lamia-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "down",
+          "frames": 2,
+          "durationMs": 1100,
+          "loop": false,
+          "terminal": true,
+          "source": [
+            "../../../../desert-motions/lamia-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "volley",
+          "frames": 4,
+          "durationMs": 1750,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/lamia-attack-generated.png"
+          ]
+        },
+        {
+          "id": "sweep",
+          "frames": 4,
+          "durationMs": 1450,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/lamia-attack-generated.png"
+          ]
+        },
+        {
+          "id": "binds",
+          "frames": 4,
+          "durationMs": 1650,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/lamia-attack-generated.png"
+          ]
+        },
+        {
+          "id": "rest",
+          "frames": 2,
+          "durationMs": 2450,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/lamia-idle-generated.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sand-behemoth",
+      "motions": [
+        {
+          "id": "idle",
+          "frames": 4,
+          "durationMs": 880,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-idle-generated.png"
+          ]
+        },
+        {
+          "id": "move",
+          "frames": 6,
+          "durationMs": 720,
+          "loop": true,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-move-1-generated.png",
+            "../../../../desert-motions/sand-behemoth-move-2-generated.png"
+          ]
+        },
+        {
+          "id": "hit",
+          "frames": 2,
+          "durationMs": 380,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "down",
+          "frames": 2,
+          "durationMs": 1100,
+          "loop": false,
+          "terminal": true,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-reaction-generated.png"
+          ]
+        },
+        {
+          "id": "charge",
+          "frames": 4,
+          "durationMs": 2090,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-attack-generated.png"
+          ]
+        },
+        {
+          "id": "quake",
+          "frames": 4,
+          "durationMs": 1950,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-slam-generated.png"
+          ]
+        },
+        {
+          "id": "roar",
+          "frames": 4,
+          "durationMs": 1650,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-slam-generated.png"
+          ]
+        },
+        {
+          "id": "burrow",
+          "frames": 4,
+          "durationMs": 3950,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-attack-generated.png"
+          ]
+        },
+        {
+          "id": "rest",
+          "frames": 2,
+          "durationMs": 2950,
+          "loop": false,
+          "terminal": false,
+          "source": [
+            "../../../../desert-motions/sand-behemoth-idle-generated.png"
+          ]
+        }
+      ]
+    }
+  ],
+  "commonStates": [
+    "idle",
+    "move",
+    "hit",
+    "down"
+  ],
+  "motionCount": 51,
+  "enemyFrames": 172,
+  "effectCount": 4,
+  "effectFrames": 16,
+  "balance": {
+    "layouts": 30,
+    "referenceWins": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "firstWins": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "majorBoss": {
+      "firstWins": 30,
+      "lag5Wins": 2,
+      "lag5Defeats": 28,
+      "lag5Timeouts": 0
+    }
+  },
+  "checks": [
+    "Source and output clipping",
+    "Transparent corners",
+    "PNG/sheet consistency",
+    "Exact GIF timing",
+    "Reference/whole prompt paths",
+    "Common state frame stepping and animated preview",
+    "All 23 game actions complete",
+    "Fixed aiming and no pre-warning damage",
+    "Root and sanctuary",
+    "390px viewport and no broken images"
+  ]
+}

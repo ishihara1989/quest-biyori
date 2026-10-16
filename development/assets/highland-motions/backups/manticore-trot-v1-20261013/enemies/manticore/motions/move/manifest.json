@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "enemy": "manticore",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "manticore-move.png",
+  "preview": "manticore-move-preview.gif",
+  "prompt": "../../../../MANTICORE-TROT-PROMPTS.md",
+  "width": 4800,
+  "height": 580,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 800,
+  "frameHeight": 580,
+  "frameCount": 6,
+  "pivot": {
+    "x": 456,
+    "y": 556
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/move.png",
+  "sourceScale": 0.339,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in MANTICORE-TROT-PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 120,
+      "phase": "中立・A遊脚",
+      "bounds": {
+        "left": 265,
+        "top": 203,
+        "right": 710,
+        "bottom": 549
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1407,
+        "height": 1176
+      },
+      "sourceAnchor": {
+        "x": 622.6784660766962,
+        "y": 1099.6165191740413
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.339
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 800,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・A遊脚",
+      "bounds": {
+        "left": 265,
+        "top": 203,
+        "right": 709,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 1407,
+        "y": 0,
+        "width": 1407,
+        "height": 1176
+      },
+      "sourceAnchor": {
+        "x": 619.6784660766962,
+        "y": 1095.6165191740413
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.339
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1600,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・B遊脚",
+      "bounds": {
+        "left": 265,
+        "top": 203,
+        "right": 709,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1176,
+        "width": 1407,
+        "height": 1176
+      },
+      "sourceAnchor": {
+        "x": 619.6784660766962,
+        "y": 1095.6165191740413
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.339
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 2400,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 120,
+      "phase": "中立・B遊脚",
+      "bounds": {
+        "left": 265,
+        "top": 203,
+        "right": 709,
+        "bottom": 550
+      },
+      "sourceCell": {
+        "x": 1407,
+        "y": 1176,
+        "width": 1407,
+        "height": 1176
+      },
+      "sourceAnchor": {
+        "x": 622.6784660766962,
+        "y": 1099.6165191740413
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.339
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 3200,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・B遊脚",
+      "bounds": {
+        "left": 265,
+        "top": 203,
+        "right": 713,
+        "bottom": 549
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 2352,
+        "width": 1407,
+        "height": 1176
+      },
+      "sourceAnchor": {
+        "x": 619.6784660766962,
+        "y": 1095.6165191740413
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.339
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 4000,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・A遊脚",
+      "bounds": {
+        "left": 265,
+        "top": 202,
+        "right": 713,
+        "bottom": 561
+      },
+      "sourceCell": {
+        "x": 1407,
+        "y": 2352,
+        "width": 1407,
+        "height": 1176
+      },
+      "sourceAnchor": {
+        "x": 619.6784660766962,
+        "y": 1095.6165191740413
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.339
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/manticore.png",
+  "originalSources": [
+    "../../../../sources/manticore/move-trot-frame-1-generated.png",
+    "../../../../sources/manticore/move-trot-frame-2-generated.png",
+    "../../../../sources/manticore/move-trot-frame-3-generated.png",
+    "../../../../sources/manticore/move-trot-frame-4-generated.png",
+    "../../../../sources/manticore/move-trot-frame-5-generated.png",
+    "../../../../sources/manticore/move-trot-frame-6-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "source": "sources/manticore/move-trot-frame-1-generated.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "sources/manticore/move-trot-frame-2-generated.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "sources/manticore/move-trot-frame-3-generated.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "sources/manticore/move-trot-frame-4-generated.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "sources/manticore/move-trot-frame-5-generated.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "sources/manticore/move-trot-frame-6-generated.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    }
+  ],
+  "registration": {
+    "method": "fixed-eye-landmark",
+    "outputEye": {
+      "x": 310,
+      "y": 329
+    },
+    "recipe": "../../../../manticore-trot.json"
+  },
+  "walkCycle": {
+    "gait": "trot",
+    "status": "trial",
+    "parts": 2,
+    "framesPerPart": 3,
+    "nearSide": "left",
+    "farSide": "right",
+    "diagonalPairs": {
+      "A": [
+        "left-hind",
+        "right-front"
+      ],
+      "B": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    "phases": [
+      "中立・A遊脚",
+      "手前閉／奥開・A遊脚",
+      "手前閉／奥開・B遊脚",
+      "中立・B遊脚",
+      "手前開／奥閉・B遊脚",
+      "手前開／奥閉・A遊脚"
+    ],
+    "contacts": [
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "open",
+        "far": "closed"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "open",
+        "far": "closed"
+      }
+    ]
+  },
+  "effectAssets": []
+}

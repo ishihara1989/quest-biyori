@@ -1,0 +1,32 @@
+{
+  "source": "source/ninja-attack-shuriken-generated-v1.png",
+  "columns": 3,
+  "rows": 1,
+  "scale": 0.23728813559322035,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 698,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 698,
+        "y": 0,
+        "width": 898,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1596,
+        "y": 0,
+        "width": 576,
+        "height": 724
+      }
+    }
+  ]
+}

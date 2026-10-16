@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "label": "shield",
+  "motion": "shield",
+  "sheet": "shield.png",
+  "width": 1024,
+  "height": 256,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "loop": true,
+  "terminal": false,
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 128
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "shield-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 60,
+        "t": 31,
+        "r": 202,
+        "b": 224
+      },
+      "phase": "1",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 1,
+      "file": "shield-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 50,
+        "t": 24,
+        "r": 198,
+        "b": 227
+      },
+      "phase": "2",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 2,
+      "file": "shield-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 45,
+        "t": 16,
+        "r": 219,
+        "b": 233
+      },
+      "phase": "3",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 3,
+      "file": "shield-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 51,
+        "t": 26,
+        "r": 208,
+        "b": 215
+      },
+      "phase": "4",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/paladin/source/shield-generated-v1.png",
+  "generation": "built-in image_gen; generated RGBA preserved",
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  }
+}

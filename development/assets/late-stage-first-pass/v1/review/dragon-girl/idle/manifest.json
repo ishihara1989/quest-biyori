@@ -1,0 +1,101 @@
+{
+  "id": "dragon-girl/idle",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon-girl/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "ドラゴンガール",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 81,
+        "top": 42,
+        "right": 601,
+        "bottom": 582
+      },
+      "sourceWidth": 653,
+      "sourceHeight": 600,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 205810,
+      "transparentFraction": 0.5252935171005615
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 51,
+        "top": 40,
+        "right": 605,
+        "bottom": 583
+      },
+      "sourceWidth": 663,
+      "sourceHeight": 600,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 202216,
+      "transparentFraction": 0.5083358471593765
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 77,
+        "top": 17,
+        "right": 601,
+        "bottom": 558
+      },
+      "sourceWidth": 655,
+      "sourceHeight": 595,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 200296,
+      "transparentFraction": 0.51394188209635
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 52,
+        "top": 15,
+        "right": 602,
+        "bottom": 558
+      },
+      "sourceWidth": 661,
+      "sourceHeight": 595,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 198812,
+      "transparentFraction": 0.5055035024599855
+    }
+  ],
+  "reference": "../../../references/dragon-girl.png",
+  "originalSources": [
+    "../../../sources/dragon-girl/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,55 @@
+{
+  "source": "source/ninja-low-dash-generated-v2.png",
+  "columns": 3,
+  "rows": 2,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 840,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 840,
+        "y": 0,
+        "width": 840,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1680,
+        "y": 0,
+        "width": 840,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 0,
+        "y": 724,
+        "width": 840,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 840,
+        "y": 724,
+        "width": 840,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1680,
+        "y": 724,
+        "width": 840,
+        "height": 724
+      }
+    }
+  ]
+}

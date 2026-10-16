@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "effect": "alraune-seed-volley",
+  "label": "アルラウネの種・弾群",
+  "sheet": "alraune-seed-volley.png",
+  "preview": "../../../../development/assets/effects/alraune-seed-volley/alraune-seed-volley-preview.gif",
+  "prompt": "../../../../development/assets/effects/alraune-seed-volley/PROMPT.md",
+  "width": 320,
+  "height": 128,
+  "columns": 1,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 128,
+  "frameCount": 1,
+  "pivot": {
+    "x": 160,
+    "y": 64
+  },
+  "frameSequence": [
+    0
+  ],
+  "durationMs": 1000,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/alraune-seed-volley/source/alraune-seed-volley-generated-v1.png",
+  "sourceScale": 0.2,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "alraune-seed-volley-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 128,
+      "durationMs": 1000,
+      "phase": "左へ飛ぶ種の弾群・3段25粒",
+      "bounds": {
+        "left": 19,
+        "top": 24,
+        "right": 297,
+        "bottom": 104
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceAnchor": {
+        "x": 772,
+        "y": 536
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "facing": "left",
+  "projectileGroup": {
+    "seedCount": 25,
+    "streams": 3,
+    "seedsPerStream": [
+      8,
+      9,
+      8
+    ],
+    "independentAsset": true,
+    "direction": {
+      "x": -1,
+      "y": 0
+    },
+    "movement": "Translate the entire PNG in world coordinates; no per-seed sprites required."
+  }
+}

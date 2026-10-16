@@ -1,0 +1,25 @@
+{
+  "id": "obsidian-soldier/move-1",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "motion": "move-1",
+  "label": "移動 1〜3",
+  "cols": 3,
+  "rows": 1,
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "source": "sources/obsidian-soldier/move-1-generated.png",
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 黒曜兵 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 1-3: near foot x=470,430,410; far foot x=620,650,680; near foot lifts 30px at frame2. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-54a49d95-2dd5-4df5-bf7d-85c7867ce838.png",
+  "sha256": "fa35364ec551727543c2bc8d6858b7b18d15d3fa89c3cd0d1ae125b423af5d92",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "歩行2コマ目の持ち上げ足と膝の接続、3コマ目の支持足切り替えを確認する。",
+      "斧先・手・マントの位置も歩行に伴って変わる。後半との寸法・接地を揃える。"
+    ]
+  }
+}

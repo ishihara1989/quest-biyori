@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-bat",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "cave-bat-move.png",
+  "preview": "../../../../../../development/assets/enemies/cave-bat/motions/move/cave-bat-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-bat/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/cave-bat/source/move-registered.png",
+  "sourceScale": 0.2824858757062147,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 135,
+        "top": 172,
+        "right": 310,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 678,
+        "height": 510
+      },
+      "sourceAnchor": {
+        "x": 328,
+        "y": 369
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 143,
+        "top": 137,
+        "right": 303,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 678,
+        "y": 0,
+        "width": 678,
+        "height": 510
+      },
+      "sourceAnchor": {
+        "x": 299,
+        "y": 493
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 141,
+        "top": 152,
+        "right": 304,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 510,
+        "width": 678,
+        "height": 510
+      },
+      "sourceAnchor": {
+        "x": 306,
+        "y": 438
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "復帰",
+      "bounds": {
+        "left": 132,
+        "top": 176,
+        "right": 314,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 678,
+        "y": 510,
+        "width": 678,
+        "height": 510
+      },
+      "sourceAnchor": {
+        "x": 339,
+        "y": 355
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-bat/source/move-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 98472,
+        "left": 107,
+        "top": 129,
+        "right": 730,
+        "bottom": 482,
+        "cx": 411.27638313429196,
+        "cy": 270.9829900885531
+      },
+      {
+        "id": 1,
+        "count": 116318,
+        "left": 862,
+        "top": 8,
+        "right": 1428,
+        "bottom": 485,
+        "cx": 1170.441651335133,
+        "cy": 218.97945287917605
+      },
+      {
+        "id": 3,
+        "count": 105547,
+        "left": 151,
+        "top": 580,
+        "right": 730,
+        "bottom": 1002,
+        "cx": 411.25216254370093,
+        "cy": 794.697812349001
+      },
+      {
+        "id": 4,
+        "count": 100676,
+        "left": 820,
+        "top": 594,
+        "right": 1465,
+        "bottom": 933,
+        "cx": 1139.6618061901545,
+        "cy": 730.5121180817672
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

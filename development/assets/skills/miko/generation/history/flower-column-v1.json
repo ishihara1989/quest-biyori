@@ -1,0 +1,11 @@
+{
+  "id": "flower-column",
+  "source": "development/assets/skills/miko/source/flower-column-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-dbc27ede-f023-4bc2-b05a-ab001c2d9020.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 3 chronological frames in ONE horizontal row of equal square cells. Large dramatic shrine VFX. A tall ivory/jade column of sacred flowers and curling antler-like branches, anchored (.50,.86), crown at .16. Frame1 petals gather from ground; frame2 enormous flowering column cups around empty center; frame3 petals rise as column opens outward. No deer or person. All frames same scale and common center/ground. Subject fills .14..86 without touching cell margins. Keep all anatomy and motion effects entirely within each cell with clear 10% empty margins.",
+  "refs": [],
+  "receivedAt": "2026-10-10T14:59:44.820Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

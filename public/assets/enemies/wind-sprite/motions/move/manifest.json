@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "enemy": "wind-sprite",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "wind-sprite-move.png",
+  "preview": "../../../../../../development/assets/enemies/wind-sprite/motions/move/wind-sprite-move-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1760,
+  "height": 350,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 440,
+  "frameHeight": 350,
+  "frameCount": 4,
+  "pivot": {
+    "x": 251,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/highland-motions/enemies/wind-sprite/registered/move.png",
+  "sourceScale": 0.36231884057971014,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 160,
+      "phase": "移動1",
+      "bounds": {
+        "left": 144,
+        "top": 87,
+        "right": 357,
+        "bottom": 286
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 741,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 378,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -40
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 440,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 160,
+      "phase": "移動2",
+      "bounds": {
+        "left": 157,
+        "top": 76,
+        "right": 354,
+        "bottom": 283
+      },
+      "sourceCell": {
+        "x": 741,
+        "y": 0,
+        "width": 741,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 328,
+        "y": 620
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -43
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 880,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 160,
+      "phase": "移動3",
+      "bounds": {
+        "left": 148,
+        "top": 90,
+        "right": 344,
+        "bottom": 286
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 655,
+        "width": 741,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 579
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -40
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1320,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 160,
+      "phase": "移動4",
+      "bounds": {
+        "left": 155,
+        "top": 89,
+        "right": 356,
+        "bottom": 289
+      },
+      "sourceCell": {
+        "x": 741,
+        "y": 655,
+        "width": 741,
+        "height": 655
+      },
+      "sourceAnchor": {
+        "x": 354,
+        "y": 588
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -37
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/wind-sprite.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/wind-sprite/move-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 695,
+          "height": 611
+        },
+        {
+          "x": 695,
+          "y": 0,
+          "width": 617,
+          "height": 611
+        },
+        {
+          "x": 0,
+          "y": 611,
+          "width": 668,
+          "height": 588
+        },
+        {
+          "x": 668,
+          "y": 611,
+          "width": 644,
+          "height": 588
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.0203327171903882,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 40,
+    "groundY": 326,
+    "legsTucked": false
+  },
+  "effectAssets": [],
+  "action": null
+}

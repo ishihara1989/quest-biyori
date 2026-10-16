@@ -1,0 +1,11 @@
+{
+  "id": "bell-owl-guardian",
+  "index": 0,
+  "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-a400a64e-cc34-4003-b4f0-e0acd5d6eecf.png",
+  "prompt": "Use case: stylized-concept. Create EXACTLY ONE ISOLATED PIXEL-ART SPRITE on a SQUARE transparent canvas, ONE pose only. NO sprite sheet, no rows, no panels, no duplicates. Reference is SAME SUBJECT identity and palette; reference contains multiple poses but output ONLY ONE subject. Clean deliberate square pixel clusters, colored dark outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; NO smooth painted illustration or blur. TRUE TRANSPARENT RGBA background. Entire visible artwork, INCLUDING EVERY ray, tail, wing, ribbon, spark and detached particle, MUST be bounded in central x=.20..80,y=.16..84. Huge EMPTY TRANSPARENT margin on every side. Camera, body size and proportions locked for this animation sequence. ONE round sacred owl, golden-brown and ivory feathers, two golden eyes, ONE tiny gold bell tied with vermilion cord on chest, exactly TWO wings. This is the SAME immensely ornate divine guardian form from the reference, bright thick ivory/red/gold contour. Facing right, center x=.50, full feet ground y=.82. Keyframe 1 of 4. Neutral complete guardian at rest, ornate ivory/red/gold outer contour. No floor, shadows, text or grid. Preserve exact character identity, anatomy and colors of the approved reference.",
+  "refs": [
+    "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\public\\assets\\skills\\miko\\source\\bell-owl-guardian-generated-v2.png"
+  ],
+  "adopted": false,
+  "purpose": "Additional individually generated reference, preserved after usage limit prevented completion of its sequence."
+}

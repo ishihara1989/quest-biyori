@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "bandage-soldier",
+  "motion": "bind",
+  "facing": "left",
+  "label": "bind",
+  "sheet": "bandage-soldier-bind.png",
+  "preview": "../../../../../../development/assets/enemies/bandage-soldier/motions/bind/bandage-soldier-bind-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1920,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 278,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1050,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/bandage-soldier/source/bind-registered.png",
+  "sourceScale": 0.44468546637744033,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "bind-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 210,
+      "phase": "構え",
+      "bounds": {
+        "left": 147,
+        "top": 97,
+        "right": 372,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 968,
+        "height": 629
+      },
+      "sourceAnchor": {
+        "x": 572,
+        "y": 577
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "bind-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 390,
+      "phase": "予告",
+      "bounds": {
+        "left": 132,
+        "top": 59,
+        "right": 377,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 968,
+        "y": 0,
+        "width": 968,
+        "height": 629
+      },
+      "sourceAnchor": {
+        "x": 447,
+        "y": 577
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "bind-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 200,
+      "phase": "発動",
+      "bounds": {
+        "left": 91,
+        "top": 108,
+        "right": 447,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 629,
+        "width": 968,
+        "height": 629
+      },
+      "sourceAnchor": {
+        "x": 506,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "bind-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 250,
+      "phase": "復帰",
+      "bounds": {
+        "left": 147,
+        "top": 98,
+        "right": 372,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 968,
+        "y": 629,
+        "width": 968,
+        "height": 629
+      },
+      "sourceAnchor": {
+        "x": 377,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/bandage-soldier-attack-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/bandage-soldier.png",
+  "action": {
+    "motion": "bind",
+    "warn": 600,
+    "times": [
+      600
+    ],
+    "power": 0.65,
+    "radius": 0,
+    "kind": "projectile",
+    "status": "sand",
+    "duration": 1050
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 791,
+          "height": 541
+        },
+        {
+          "x": 791,
+          "y": 0,
+          "width": 745,
+          "height": 541
+        },
+        {
+          "x": 0,
+          "y": 541,
+          "width": 849,
+          "height": 483
+        },
+        {
+          "x": 849,
+          "y": 541,
+          "width": 687,
+          "height": 483
+        }
+      ]
+    }
+  ]
+}

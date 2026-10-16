@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-12 JST",
+  "url": "http://127.0.0.1:4191/assets/mid-late-design/v1/glacier/mammoth-review.html",
+  "method": "Codex in-app browser; rendered screenshot, DOM image loading and control checks",
+  "allSixVisibleImagesLoaded": true,
+  "fourActionSelectionsAndParameters": "passed",
+  "pauseRestartAndInterruptToRest": "passed",
+  "footBaseline": {
+    "referenceY": 1127,
+    "referenceCanvasHeight": 1254,
+    "previewFloorY": 432
+  },
+  "characterAndTargetMarkersAboveEffects": true,
+  "screenshot": "review-proof.png",
+  "status": "static-design-and-effect-preview; combat-AI-and-production-motions-not-implemented"
+}

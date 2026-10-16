@@ -1,0 +1,44 @@
+{
+  "source": "source/mage-cast-forward-generated-v1.png",
+  "columns": 2,
+  "rows": 2,
+  "scale": 0.30957683741648107,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "connectionSource": {
+        "motion": "chant",
+        "frame": 0
+      }
+    },
+    {
+      "rect": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      }
+    },
+    {
+      "rect": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      }
+    },
+    {
+      "rect": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      }
+    }
+  ]
+}

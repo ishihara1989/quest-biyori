@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "enemies/iron-horn/motions/idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "enemies/iron-horn/motions/move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "enemies/iron-horn/motions/hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "enemies/iron-horn/motions/down/manifest.json"
+  },
+  {
+    "id": "sweep",
+    "label": "角の薙ぎ",
+    "manifest": "enemies/iron-horn/motions/sweep/manifest.json"
+  },
+  {
+    "id": "charge",
+    "label": "長突進",
+    "manifest": "enemies/iron-horn/motions/charge/manifest.json"
+  },
+  {
+    "id": "rocks",
+    "label": "岩片三発",
+    "manifest": "enemies/iron-horn/motions/rocks/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "休息",
+    "manifest": "enemies/iron-horn/motions/rest/manifest.json"
+  }
+]

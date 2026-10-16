@@ -1,0 +1,18 @@
+{
+  "id": "lilith/danger-1",
+  "source": "danger-1-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame body-only \"crown of twilight flowers\" casting animation of Lilith, exact canonical adult demon queen from reference.\nPreserve adult face, lavender long hair, two curved dark-red horns, small gold-red crown, black/crimson long dress with gold trim, two attached large bat wings, two arms, two legs and same palette. LEFT-facing mild three-quarter view, refined crisp JRPG pixel art.\nFour small COMPLETE separate figures in equal 2x2 cells, reading row-major. Each silhouette including wings, dress, hair and fingertips stays inside its cell's central 60%, with broad transparent margins. No cape, wings, sparks or hair may cross a cell boundary or touch any image edge. Keep SAME body scale in all frames; leave extra space and make figures smaller to fit open wings.\nPer-cell normalized plan: pelvis (520,585), head (490,300), horns no higher than y=175, two boot tips at y=835 while floating, dress hem y=850. Wing roots fixed to upper back near (535,390); wings may spread only inside x=200..800. No widening of body.\nFrame 1: both hands approach crown, fingertips at (450,295),(535,295); wings relaxed, fully visible; tiny red crown pinpoints only.\nFrame 2: held windup, palms part to (380,410),(620,410), wings lift outward 15 degrees but tips stay inside x=200..800; gold crown edge glints, no floating spell.\nFrame 3: release, same two arms open with palms at (330,490),(685,490), wrists and elbows clearly connected; torso faces left, stays upright, pelvis at (520,585), same two close floating legs. Hair follows right only 30 units. Crown and wing ribs tiny attached red pinpoints, NO lightning or external petals.\nFrame 4: hands lower and wings fold to canonical neutral, same head height, body scale and floating foot position. Dress and hair settle.\nThree separate dark-flower ground effects will be added externally with time offsets, so DO NOT draw flowers, bursts, magic circles, giant hand lights, lightning branches or projectiles onto this body sheet.\nCrisp controlled pixel clusters, reference restrained crimson, gold, black and lavender. Native transparent alpha around each figure, no background haze, floor, ground shadow, text, grid, labels, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-73f73682-c2f5-4bc5-9418-acf8df140aa5.png",
+  "sha256": "3193e58a2987c09d1f9fe1779adf56195eeded5ef72a81806b6a28976d4e9c95",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/lilith.png",
+      "sha256": "e3a3568e04dea574614081bfc5302c5815f5d0a55d181d7d0b2728f26dfdd66f"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "danger-1-v2.prompt.txt"
+}

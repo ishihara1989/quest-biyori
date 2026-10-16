@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "great-bat",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "great-bat-move.png",
+  "preview": "../../../../../../development/assets/enemies/great-bat/motions/move/great-bat-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/great-bat/PROMPT.md",
+  "width": 2304,
+  "height": 416,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/great-bat/source/move-registered.png",
+  "sourceScale": 0.56047197640118,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 156,
+        "top": 210,
+        "right": 511,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 668,
+        "height": 490
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 354
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 160,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 177,
+        "top": 143,
+        "right": 491,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 668,
+        "y": 0,
+        "width": 668,
+        "height": 490
+      },
+      "sourceAnchor": {
+        "x": 297,
+        "y": 473
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 171,
+        "top": 183,
+        "right": 497,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 490,
+        "width": 668,
+        "height": 490
+      },
+      "sourceAnchor": {
+        "x": 308,
+        "y": 402
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 160,
+      "phase": "復帰",
+      "bounds": {
+        "left": 159,
+        "top": 225,
+        "right": 509,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 668,
+        "y": 490,
+        "width": 668,
+        "height": 490
+      },
+      "sourceAnchor": {
+        "x": 329,
+        "y": 326
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/great-bat/source/move-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 91281,
+        "left": 115,
+        "top": 132,
+        "right": 750,
+        "bottom": 470,
+        "cx": 426.359406667324,
+        "cy": 268.27345230661365
+      },
+      {
+        "id": 1,
+        "count": 109444,
+        "left": 839,
+        "top": 13,
+        "right": 1400,
+        "bottom": 470,
+        "cx": 1141.342321187091,
+        "cy": 212.48025474215123
+      },
+      {
+        "id": 3,
+        "count": 94849,
+        "left": 137,
+        "top": 606,
+        "right": 721,
+        "bottom": 992,
+        "cx": 409.76454153443893,
+        "cy": 794.6662379150017
+      },
+      {
+        "id": 4,
+        "count": 87948,
+        "left": 818,
+        "top": 614,
+        "right": 1443,
+        "bottom": 924,
+        "cx": 1120.9999545185792,
+        "cy": 735.5879496975485
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

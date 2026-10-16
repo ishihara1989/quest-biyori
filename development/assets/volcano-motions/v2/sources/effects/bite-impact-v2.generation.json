@@ -1,0 +1,19 @@
+{
+  "id": "effects/bite-impact",
+  "source": "sources/effects/bite-impact-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. two jagged incandescent fang streaks converge into a bright orange-white impact, basalt chips and embers. ONE-SHOT: small onset, energetic expansion, powerful maximum, final sparse tiny dying fragments (under 15% peak area), connect to complete disappearance. No lingering solid ground or bright main arc at end. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "482e30509e1f058953df0bef56b5ab2c667d493f8a48c24820fe59933ae60f87",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/bite-impact-generated.png",
+  "issues": [
+    "赤橙の背景光が広範囲に混入。透明な空隙を含めて背景分離する。",
+    "最終コマが左右に開いた大きな光のまま。収束・消失への接続を確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

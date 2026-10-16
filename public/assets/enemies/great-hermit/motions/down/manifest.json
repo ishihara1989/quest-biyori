@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "great-hermit",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "great-hermit-down.png",
+  "preview": "../../../../../../development/assets/enemies/great-hermit/motions/down/great-hermit-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/great-hermit/PROMPT.md",
+  "width": 1152,
+  "height": 416,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 2,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/great-hermit/source/down-registered.png",
+  "sourceScale": 0.5617977528089888,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 280,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 151,
+        "top": 217,
+        "right": 512,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 398,
+        "width": 699,
+        "height": 398
+      },
+      "sourceAnchor": {
+        "x": 342,
+        "y": 341
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 600,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 92,
+        "top": 236,
+        "right": 465,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 699,
+        "y": 398,
+        "width": 699,
+        "height": 398
+      },
+      "sourceAnchor": {
+        "x": 448,
+        "y": 307
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/great-hermit/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 133298,
+        "left": 113,
+        "top": 125,
+        "right": 719,
+        "bottom": 490,
+        "cx": 439.5126633557893,
+        "cy": 305.438753769749
+      },
+      {
+        "id": 2,
+        "count": 140318,
+        "left": 815,
+        "top": 136,
+        "right": 1456,
+        "bottom": 491,
+        "cx": 1156.7214113656123,
+        "cy": 320.18074658988866
+      },
+      {
+        "id": 7,
+        "count": 133199,
+        "left": 76,
+        "top": 622,
+        "right": 720,
+        "bottom": 947,
+        "cx": 434.0897754487646,
+        "cy": 804.9959909608931
+      },
+      {
+        "id": 8,
+        "count": 121750,
+        "left": 802,
+        "top": 656,
+        "right": 1468,
+        "bottom": 947,
+        "cx": 1157.6155071868584,
+        "cy": 822.3846406570842
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

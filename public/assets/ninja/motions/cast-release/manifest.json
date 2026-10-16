@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "cast-release",
+  "label": "印の解放",
+  "facing": "right",
+  "sheet": "ninja-cast-release.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 520,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "seal",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.2190923317683881,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/ninja/motions/cast-release/source/ninja-cast-release-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; complete skill sequences in ninja-skill-lab.html. Separate swept projectiles own flight and damage.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "cast-release-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 130,
+      "phase": "胸元の印",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 406,
+        "y": 689
+      },
+      "sourceBounds": {
+        "left": 129,
+        "top": 51,
+        "right": 626,
+        "bottom": 689
+      },
+      "bounds": {
+        "left": 100,
+        "top": 100,
+        "right": 208,
+        "bottom": 239
+      },
+      "visiblePixels": 6341,
+      "transparentPixels": 74469
+    },
+    {
+      "index": 1,
+      "file": "cast-release-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 130,
+      "phase": "両手を開く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 689
+      },
+      "sourceBounds": {
+        "left": 124,
+        "top": 50,
+        "right": 645,
+        "bottom": 689
+      },
+      "bounds": {
+        "left": 99,
+        "top": 99,
+        "right": 213,
+        "bottom": 239
+      },
+      "visiblePixels": 6826,
+      "transparentPixels": 73680
+    },
+    {
+      "index": 2,
+      "file": "cast-release-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 260,
+      "phase": "復帰",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 405,
+        "y": 689
+      },
+      "sourceBounds": {
+        "left": 129,
+        "top": 50,
+        "right": 626,
+        "bottom": 689
+      },
+      "bounds": {
+        "left": 100,
+        "top": 99,
+        "right": 208,
+        "bottom": 239
+      },
+      "visiblePixels": 6503,
+      "transparentPixels": 74253
+    }
+  ]
+}

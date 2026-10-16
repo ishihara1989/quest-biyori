@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "effect": "explosion",
+  "label": "汎用爆発",
+  "sheet": "explosion.png",
+  "preview": "../../../../development/assets/effects/explosion/explosion-preview.gif",
+  "prompt": "../../../../development/assets/effects/explosion/PROMPT.md",
+  "width": 1024,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 128
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 490,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/explosion/source/explosion-generated-v1.png",
+  "sourceScale": 0.4,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "explosion-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "点火・閃光",
+      "bounds": {
+        "left": 60,
+        "top": 67,
+        "right": 196,
+        "bottom": 188
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 531
+      },
+      "sourceAnchor": {
+        "x": 450,
+        "y": 277
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "explosion-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "爆発・最大火球",
+      "bounds": {
+        "left": 14,
+        "top": 27,
+        "right": 242,
+        "bottom": 228
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 531
+      },
+      "sourceAnchor": {
+        "x": 326,
+        "y": 275
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "explosion-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 130,
+      "phase": "火と煙が分かれる",
+      "bounds": {
+        "left": 28,
+        "top": 39,
+        "right": 228,
+        "bottom": 217
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 531,
+        "width": 768,
+        "height": 493
+      },
+      "sourceAnchor": {
+        "x": 456,
+        "y": 226
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "explosion-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "煙・火の粉の消散",
+      "bounds": {
+        "left": 55,
+        "top": 63,
+        "right": 200,
+        "bottom": 192
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 531,
+        "width": 768,
+        "height": 493
+      },
+      "sourceAnchor": {
+        "x": 309,
+        "y": 267
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

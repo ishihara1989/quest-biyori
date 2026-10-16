@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/swift-wolf-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 693,
+      "height": 724
+    },
+    {
+      "x": 693,
+      "y": 0,
+      "width": 779,
+      "height": 724
+    },
+    {
+      "x": 1472,
+      "y": 0,
+      "width": 700,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 878
+    },
+    {
+      "x": 512,
+      "y": 878
+    },
+    {
+      "x": 512,
+      "y": 878
+    }
+  ],
+  "scale": 0.49206349206349204
+}

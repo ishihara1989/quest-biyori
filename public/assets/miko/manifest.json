@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "character": "miko",
+  "label": "巫女",
+  "motion": "idle",
+  "facing": "right",
+  "sheet": "miko-idle.png",
+  "width": 640,
+  "height": 160,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 160,
+  "frameHeight": 160,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "pivot": {
+    "x": 76,
+    "y": 151
+  },
+  "sampling": "nearest-neighbor",
+  "source": "../../../development/assets/miko/source/miko-idle-generated-v1.png",
+  "sourceWidth": 1278,
+  "sourceHeight": 1230,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "rowSplit": 615,
+  "scale": 0.336322869955157,
+  "generation": "built-in image_gen; character design and approved warrior style references; prompt in PROMPT.md",
+  "notes": "Generated RGBA samples preserved. Feet registered at a shared pivot; one common scale per animation. Minor generated contour variation remains.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 160,
+      "height": 160,
+      "durationMs": 400,
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 639,
+        "height": 615
+      },
+      "sourceAnchor": {
+        "x": 345,
+        "y": 520
+      },
+      "sourceBounds": {
+        "left": 163,
+        "top": 130,
+        "right": 568,
+        "bottom": 520
+      },
+      "visiblePixels": 8995,
+      "transparentPixels": 15294
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 160,
+      "y": 0,
+      "width": 160,
+      "height": 160,
+      "durationMs": 400,
+      "sourceCell": {
+        "x": 639,
+        "y": 0,
+        "width": 639,
+        "height": 615
+      },
+      "sourceAnchor": {
+        "x": 300,
+        "y": 520
+      },
+      "sourceBounds": {
+        "left": 118,
+        "top": 123,
+        "right": 512,
+        "bottom": 520
+      },
+      "visiblePixels": 9269,
+      "transparentPixels": 15018
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 320,
+      "y": 0,
+      "width": 160,
+      "height": 160,
+      "durationMs": 400,
+      "sourceCell": {
+        "x": 0,
+        "y": 615,
+        "width": 639,
+        "height": 615
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 510
+      },
+      "sourceBounds": {
+        "left": 162,
+        "top": 107,
+        "right": 569,
+        "bottom": 510
+      },
+      "visiblePixels": 9509,
+      "transparentPixels": 14659
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 480,
+      "y": 0,
+      "width": 160,
+      "height": 160,
+      "durationMs": 400,
+      "sourceCell": {
+        "x": 639,
+        "y": 615,
+        "width": 639,
+        "height": 615
+      },
+      "sourceAnchor": {
+        "x": 300,
+        "y": 513
+      },
+      "sourceBounds": {
+        "left": 115,
+        "top": 116,
+        "right": 514,
+        "bottom": 513
+      },
+      "visiblePixels": 9325,
+      "transparentPixels": 14882
+    }
+  ]
+}

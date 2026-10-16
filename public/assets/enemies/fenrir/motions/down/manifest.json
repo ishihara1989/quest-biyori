@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "enemy": "fenrir",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "fenrir-down.png",
+  "preview": "../../../../../../development/assets/enemies/fenrir/motions/down/fenrir-down-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1120,
+  "height": 400,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 560,
+  "frameHeight": 400,
+  "frameCount": 2,
+  "pivot": {
+    "x": 314,
+    "y": 378
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1250,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/glacier-motions/registered/fenrir/down.png",
+  "sourceScale": 0.4400749063670412,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 350,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 187,
+        "top": 204,
+        "right": 436,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 743,
+        "width": 707,
+        "height": 743
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 468
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 560,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 182,
+        "top": 262,
+        "right": 441,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 707,
+        "y": 743,
+        "width": 707,
+        "height": 743
+      },
+      "sourceAnchor": {
+        "x": 327,
+        "y": 473
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/fenrir.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 675,
+          "height": 711
+        },
+        {
+          "x": 675,
+          "y": 0,
+          "width": 579,
+          "height": 711
+        },
+        {
+          "x": 0,
+          "y": 711,
+          "width": 639,
+          "height": 543
+        },
+        {
+          "x": 639,
+          "y": 711,
+          "width": 615,
+          "height": 543
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lion-claws",
+  "source": "development/assets/skills/miko/source/lion-claws-generated-v2.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-1d0b6c5e-9965-4731-b690-645e3b01e688.png",
+  "prompt": "FINAL OUTPUT: VFX ONLY, WITHOUT ANY PERSON. EDIT the referenced atlas: REMOVE EVERY human character completely, including all faces, skin, hair, bows, hands, feet and kimono/hakama clothing. Replace each removed character with REAL TRANSPARENT pixels; leave no human silhouette. Keep and complete only the magical objects, adapting their geometry to the following exact description.  NO PEOPLE, NO CASTER, NO HUMAN FIGURES anywhere. VFX ONLY: an isolated spell overlay, absolutely NO human, shrine maiden, person, caster, human face, human silhouette, hair, human limbs or dressed character in any frame. The center is EMPTY TRANSPARENT space for a character drawn separately by the game. Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas of Japanese shrine magic in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 3 chronological frames in ONE horizontal row of equal square cells. Large dramatic shrine VFX. Exactly THREE parallel immense gold-white claw slash arcs moving upper-left to lower-right, vermilion sparks. Frame1 three bright starting claw points at .25,.22; frame2 three broad sweeps across center; frame3 three long lower-right arcs and ground shock crest. Maintain exactly three traces. All frames same scale and common center/ground. Subject fills .18..82 without touching cell margins. Only the described magical objects are drawn; no people anywhere. Keep EVERY piece including beam tips and trails inside x=.20..80,y=.12..88 of each cell with wide EMPTY gutters; no fragments touch any cell edge. Exactly THREE separated frames in one row.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/lion-claws-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T16:38:55.602Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

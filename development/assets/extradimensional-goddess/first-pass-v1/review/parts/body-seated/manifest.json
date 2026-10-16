@@ -1,0 +1,52 @@
+{
+  "id": "parts/body-seated",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/body-seated/review/parts/body-seated/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/body-seated.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "Same cheek-supported, crossed-leg sitting pose, far hand relaxed. No throne or large ring.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.4620328187439746,
+      "lowAlphaPixels": 27590,
+      "edgePixels": 0,
+      "bounds": [
+        30,
+        40,
+        1229,
+        1196
+      ],
+      "marginFraction": 0.019138755980861243
+    }
+  ],
+  "sources": [
+    "source/parts/body-seated.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/body-seated/contact.png",
+  "gif": "review/parts/body-seated/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

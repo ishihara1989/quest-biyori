@@ -1,0 +1,11 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame "seal of silence" BODY casting animation of the exact canonical adult Lilith.
+Same adult demon queen, lavender hair, red curved horns, gold-red crown, black/crimson gold-trimmed long dress, two attached bat wings, exactly two arms and two booted legs. LEFT-facing mild three-quarter angle, same refined crisp JRPG pixel art and reference palette.
+Exactly four complete SMALL separate poses in equal 2x2 cells with broad transparent margins. All horns, wings, fingers, hair and dress fit comfortably inside the central 60% of each cell. Never overlap cells. Same body scale throughout; maintain floating feet close together.
+Per-cell root: pelvis (520,585), head (485,300), boot tips (490,830),(560,835). Wing roots fixed behind shoulder blades.
+Identify TWO arms and keep identity: FAR ARM originates at shoulder on SCREEN LEFT (around 435,400). It will point LEFT. NEAR ARM originates at shoulder on SCREEN RIGHT (around 570,405). Its index finger stays near her lips in windup and release.
+Frame 1: both hands relaxed near waist, far at (420,565), near at (565,565), wings relaxed.
+Frame 2: NEAR/right-origin elbow bends and NEAR index finger rises to lips (465,345); FAR/left-origin arm folds across lower chest with hand (440,490). Wings fold closer to back. Tiny attached crown glint only.
+Frame 3: SAME NEAR index finger remains at lips (465,345), connected through same elbow to right-origin shoulder. SAME FAR shoulder (435,400) extends its short forearm left with elbow (360,425), open palm (280,455). Two hands only, one near mouth and one pointing left. Torso stays upright and airborne, feet close together, no ground lunge.
+Frame 4: pointing far arm lowers and near index finger leaves lips, both return to canonical neutral hands. Wings, hair and dress settle to frame 1.
+Silence emblem is separate VFX, so no floating rune, spell circle, cloud, beam, large hand glow or mouth symbol on this body sheet. Native transparent alpha, no floor, background haze, shadow, text, labels, grid, checkerboard or watermark.

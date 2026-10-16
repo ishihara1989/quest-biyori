@@ -1,0 +1,22 @@
+{
+  "id": "dream-demon/reaction",
+  "source": "reaction-v3.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: background-extraction.\nInput image 1 is the EDIT TARGET: four-frame dream-demon hit-and-defeat sprite sheet. Input image 2 is the FIXED CANONICAL REFERENCE, for matching colors.\nChange ONLY the background: remove EVERY patch of purple, pink, brown and grey backlight, halo, haze, atmosphere and vignette surrounding the four figures and between their limbs, wings and hair. Replace ALL those background regions with true fully transparent alpha=0, not black and not a checkerboard. No background light is allowed anywhere.\nPreserve the four existing character poses and their two-leg anatomy exactly. Keep original hair, horns, skin, black and gold costume, crimson/purple wing membranes, boots and tail colors. Do not cut holes in solid wing membranes or costume. Preserve pixel clusters and sharp sprite edges. Do not crop, resize, shift, add or remove body parts. Keep exactly four separate complete sprites in the existing 2x2 order, same body size and face identity.\nThe only opaque or partially opaque pixels should belong directly to a character silhouette; clear space outside each silhouette must have alpha zero. Absolutely NO glow or shadow around subjects, NO floor, NO effects, NO text. Export a genuinely transparent PNG.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-a9c53e06-b591-4ca9-9760-c1f92d5573b3.png",
+  "sha256": "8542d250ca4b5849ab7f52096061835e5a17c2b05c3f1cf32c828d2903ead79a",
+  "references": [
+    {
+      "file": "reaction-v2.png",
+      "sha256": "cecd32767441b1a42001118cfdc77e530b41de12a148e1480b81064255948418"
+    },
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/dream-demon.png",
+      "sha256": "c4e940abf1b2623984fd52a7044c6fb287dd4543191f03ac4fcb13d5e4cd5637"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "reaction-v3.prompt.txt"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "demon-god/move",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/demon-god/move-generated.png"
+  ],
+  "durations": [
+    150,
+    150,
+    150,
+    150
+  ],
+  "phases": [
+    "上",
+    "中立",
+    "下",
+    "中立"
+  ],
+  "enemyLabel": "魔神",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 123,
+        "top": 4,
+        "right": 721,
+        "bottom": 495
+      },
+      "sourceWidth": 790,
+      "sourceHeight": 510,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 216192,
+      "transparentFraction": 0.536589724497394
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 68,
+        "top": 18,
+        "right": 643,
+        "bottom": 503
+      },
+      "sourceWidth": 746,
+      "sourceHeight": 510,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 206656,
+      "transparentFraction": 0.5431740524628081
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 142,
+        "top": 23,
+        "right": 682,
+        "bottom": 488
+      },
+      "sourceWidth": 776,
+      "sourceHeight": 514,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 232464,
+      "transparentFraction": 0.5828151951542381
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 92,
+        "top": 5,
+        "right": 658,
+        "bottom": 488
+      },
+      "sourceWidth": 760,
+      "sourceHeight": 514,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 212762,
+      "transparentFraction": 0.5446498054474708
+    }
+  ],
+  "reference": "../../../references/demon-god.png",
+  "originalSources": [
+    "../../../sources/demon-god/move-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

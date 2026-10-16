@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-scorpion",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "sand-scorpion-hit.png",
+  "preview": "../../../../../../development/assets/enemies/sand-scorpion/motions/hit/sand-scorpion-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 720,
+  "height": 280,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 360,
+  "frameHeight": 280,
+  "frameCount": 2,
+  "pivot": {
+    "x": 209,
+    "y": 262
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/sand-scorpion/source/hit-registered.png",
+  "sourceScale": 0.36281179138321995,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 170,
+      "phase": "被弾",
+      "bounds": {
+        "left": 105,
+        "top": 106,
+        "right": 316,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 822,
+        "height": 582
+      },
+      "sourceAnchor": {
+        "x": 450,
+        "y": 494
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 360,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 210,
+      "phase": "復帰",
+      "bounds": {
+        "left": 104,
+        "top": 102,
+        "right": 311,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 822,
+        "y": 0,
+        "width": 822,
+        "height": 582
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-scorpion-reaction-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-scorpion.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 779,
+          "height": 543
+        },
+        {
+          "x": 779,
+          "y": 0,
+          "width": 757,
+          "height": 543
+        },
+        {
+          "x": 0,
+          "y": 543,
+          "width": 763,
+          "height": 481
+        },
+        {
+          "x": 763,
+          "y": 543,
+          "width": 773,
+          "height": 481
+        }
+      ]
+    }
+  ]
+}

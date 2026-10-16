@@ -1,0 +1,67 @@
+{
+  "id": "obsidian-soldier/hit",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "motion": "hit",
+  "label": "被弾",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-soldier/reaction-generated.png"
+  ],
+  "durations": [
+    180,
+    220
+  ],
+  "phases": [
+    "被弾",
+    "復帰"
+  ],
+  "enemyLabel": "黒曜兵",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 99,
+        "top": 131,
+        "right": 664,
+        "bottom": 628
+      },
+      "sourceWidth": 691,
+      "sourceHeight": 674,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 310229,
+      "transparentFraction": 0.6661076923737584
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 27,
+        "top": 83,
+        "right": 556,
+        "bottom": 630
+      },
+      "sourceWidth": 640,
+      "sourceHeight": 674,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 277173,
+      "transparentFraction": 0.6425561016320475
+    }
+  ],
+  "reference": "../../../references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../sources/obsidian-soldier/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "dragon/danger-3",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "danger-3",
+  "label": "噴火の三巣",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/dragon.png",
+  "guide": null,
+  "source": "sources/dragon/danger-3-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 噴火の三巣 by ドラゴン EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: wings raise above body, all four legs tuck as torso lifts 100px and wing rims brighten, wings beat down in release and mouth fires downward-left, four feet return. Full wings within cell. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "lava-bomb",
+    "lava-impact",
+    "lava-pool"
+  ],
+  "repeat": 3,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-27ca997c-aae8-4a47-87b8-97d3dc517675.png",
+  "sha256": "ac070ee86f190a7641fae41f514b79011f8051c49f82924d131355b67e77f350",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "全脚をたたんで飛翔し、左下へ口を向ける攻撃、復帰を表現。"
+    ],
+    "issues": [
+      "赤橙の背景光が混入。",
+      "飛翔で4脚の膝と爪が重なる。脚数・所属と翼の付け根を検収する。",
+      "3地点への時間差の溶岩落下は、この本体1ポーズと別素材・配置・時刻で組む必要がある。"
+    ]
+  }
+}

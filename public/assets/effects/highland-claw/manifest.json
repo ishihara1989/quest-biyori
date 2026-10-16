@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "claw",
+  "label": "爪・近接斬撃",
+  "sheet": "claw.png",
+  "preview": "../../../../development/assets/effects/highland-claw/claw-preview.gif",
+  "prompt": "../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1360,
+  "height": 280,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 280,
+  "frameCount": 4,
+  "pivot": {
+    "x": 170,
+    "y": 140
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/highland-motions/effects/claw/registered.png",
+  "sourceScale": 0.379746835443038,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 155,
+        "top": 75,
+        "right": 244,
+        "bottom": 164
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 739,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 363,
+        "y": 307
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "claw-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 111,
+        "top": 74,
+        "right": 251,
+        "bottom": 218
+      },
+      "sourceCell": {
+        "x": 739,
+        "y": 0,
+        "width": 739,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 320,
+        "y": 311
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "claw-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 75,
+        "top": 50,
+        "right": 268,
+        "bottom": 236
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 664,
+        "width": 739,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 369,
+        "y": 332
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "claw-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 113,
+        "top": 73,
+        "right": 235,
+        "bottom": 214
+      },
+      "sourceCell": {
+        "x": 739,
+        "y": 664,
+        "width": 739,
+        "height": 664
+      },
+      "sourceAnchor": {
+        "x": 309,
+        "y": 332
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": false,
+  "originalSource": "../../../../development/assets/highland-motions/sources/effects/claw-generated.png",
+  "kind": "target",
+  "id": "highland-claw"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "obsidian-soldier/move-2",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "motion": "move-2",
+  "label": "移動 4〜6",
+  "cols": 3,
+  "rows": 1,
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "source": "sources/obsidian-soldier/move-2-generated.png",
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 黒曜兵 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 4-6: far foot x=650,610,590; near foot x=430,470,500; far foot lifts 30px at frame5. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-f4fdab72-4cc4-422f-a969-4fc359360935.png",
+  "sha256": "7fdcf0e6f58530ff6d17dba67f8688b4b2069c35a4b35ef802bc1bdc9091fc5a",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "前半より鎧の線と足の形が変わる。3→4の寸法・色調・支持足を合わせる。",
+      "5〜6コマ目の奥足が手前脚に隠れる。膝から足先まで同じ脚への接続を検収する。"
+    ]
+  }
+}

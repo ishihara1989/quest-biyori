@@ -1,0 +1,103 @@
+{
+  "id": "dragon/attack",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "attack",
+  "label": "爪撃",
+  "effects": [
+    "claw-arc"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon/attack-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "ドラゴン",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 208,
+        "top": 62,
+        "right": 756,
+        "bottom": 449
+      },
+      "sourceWidth": 817,
+      "sourceHeight": 511,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 274725,
+      "transparentFraction": 0.6580444421023888
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 60,
+        "top": 56,
+        "right": 687,
+        "bottom": 449
+      },
+      "sourceWidth": 719,
+      "sourceHeight": 511,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 220048,
+      "transparentFraction": 0.598918371623994
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 48,
+        "top": 58,
+        "right": 835,
+        "bottom": 425
+      },
+      "sourceWidth": 868,
+      "sourceHeight": 513,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 282272,
+      "transparentFraction": 0.633914535442549
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 32,
+        "top": 61,
+        "right": 632,
+        "bottom": 427
+      },
+      "sourceWidth": 668,
+      "sourceHeight": 513,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 194295,
+      "transparentFraction": 0.5669800749378436
+    }
+  ],
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

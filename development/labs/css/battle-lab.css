@@ -1,0 +1,57 @@
+.battle-shell{max-width:1160px}
+.battle-nav{display:flex;gap:24px;font-size:11px;color:var(--muted)}
+.battle-nav a:hover{color:var(--gold)}
+.battle-panel{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:7px}
+.battle-clock{display:flex;gap:18px;align-items:center}
+#battle-time{font:11px monospace;color:var(--muted);font-variant-numeric:tabular-nums;min-width:56px}
+.battle-viewport{position:relative;background:#182d27;line-height:0;isolation:isolate}
+#battle-canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;image-rendering:pixelated;outline-offset:-3px}
+.battle-hud{position:absolute;inset:22px 26px auto;display:grid;grid-template-columns:1fr 42px 1fr;gap:20px;align-items:start;pointer-events:none;line-height:1.5}
+.fighter-hud{max-width:260px;background:#101916df;border:1px solid #d6b78645;border-radius:5px;padding:12px 15px 9px;box-shadow:0 3px 15px #0003}
+.fighter-hud p{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.fighter-hud b{font-size:13px;font-weight:600;color:#faf0dd}
+.fighter-tag{font:9px monospace;letter-spacing:1px;color:#d6b786}
+.fighter-hud p>span:last-child{margin-left:auto;font-size:10px;color:#c3c7b8}
+.slime-hud{justify-self:end;width:100%;border-color:#8fcedd55}
+.slime-hud .fighter-tag{color:#8fcedd}
+.hp-track{height:6px;background:#ffffff18;border-radius:1px;overflow:hidden}
+.hp-fill{width:100%;height:100%;background:#d6b786}
+.slime-hud .hp-fill{background:#83ccda}
+.hp-value{display:block;margin-top:5px;font:10px monospace;color:#ebe8d9;letter-spacing:.3px}
+.battle-versus{align-self:center;text-align:center;color:#f0ebd7aa;font:12px monospace;letter-spacing:2px;text-shadow:0 1px 4px #000}
+.battle-load-status{position:absolute;inset:44% 10% auto;text-align:center;line-height:1.7;color:#f4e5c8;font-size:13px;background:#13211fea;border:1px solid #d6b78655;border-radius:5px;padding:17px}
+.battle-load-status:empty{display:none}
+.battle-result{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:7px 18px;text-align:center;padding:12px 22px;background:#20291f;border-top:1px solid #d6b78655;line-height:1.6}
+.battle-result[hidden]{display:none}
+.battle-result strong{font-size:19px;font-weight:600;color:#f1dab2}
+.battle-result>span:last-child{font-size:10px;color:#b8baac}
+.battle-stage-caption{position:absolute;inset:auto 24px 17px;display:flex;justify-content:space-between;color:#f0e6c9b0;line-height:1;font:9px monospace;letter-spacing:2px;pointer-events:none;text-shadow:0 1px 3px #231609}
+#battle-controls{margin:0;padding:0;border:0;min-width:0}
+.battle-transport{display:flex;align-items:center;gap:12px;padding:18px 22px;border-top:1px solid var(--line)}
+.battle-transport .restart-button{height:33px}
+.battle-options{display:flex;align-items:center;gap:22px;margin-left:auto;font-size:11px;color:var(--muted)}
+.battle-options label{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.battle-options select{font:11px monospace;color:var(--gold);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:5px 8px}
+.battle-options input{margin:0;accent-color:var(--gold)}
+.battle-help{padding:0 22px 18px;color:var(--muted);font-size:11px;line-height:1.8}
+.battle-details{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;margin-top:24px;align-items:start}
+.battle-stats,.battle-log-panel{background:var(--panel);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.battle-section-heading{display:flex;align-items:center;justify-content:space-between;padding:20px 22px 15px;gap:12px}
+.battle-section-heading .eyebrow{font-size:9px;letter-spacing:1.5px;margin-bottom:5px}
+.battle-section-heading h2{font-size:15px}
+#battle-round{font:10px monospace;color:var(--muted);white-space:nowrap}
+.battle-table-wrap{overflow-x:auto;margin:0 22px}
+.battle-stats table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
+.battle-stats th{font-size:10px;font-weight:400;color:var(--muted);padding:9px 10px 9px 0;border-bottom:1px solid var(--line)}
+.battle-stats td{font-size:11px;padding:13px 10px 13px 0;border-bottom:1px solid #30323988;font-variant-numeric:tabular-nums}
+.battle-stats tbody th{font-size:12px;color:var(--text)}
+.battle-stats td:last-child,.battle-stats th:last-child{padding-right:0}
+.battle-stat-note{margin:15px 22px 20px;font-size:11px;line-height:1.8;color:var(--muted)}
+.battle-log{list-style:none;padding:0 22px 18px;margin:0;min-height:139px;max-height:180px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#545448 transparent}
+.battle-log li{display:flex;align-items:baseline;gap:12px;padding:7px 0;border-bottom:1px solid #30323988;font-size:11px;line-height:1.6;color:#c3c2bb}
+.battle-log time{font:10px monospace;color:#858b85;white-space:nowrap}
+.battle-log li[data-kind=warrior] span{color:#dec59e}
+.battle-log li[data-kind=slime] span{color:#9bd3df}
+.battle-log li[data-kind=result] span{color:#f1dab2;font-weight:600}
+@media(max-width:850px){.battle-details{grid-template-columns:1fr}.battle-hud{inset:16px 18px auto;gap:12px}.fighter-hud{padding:9px 12px 7px}.battle-nav{gap:14px;font-size:10px}}
+@media(max-width:600px){.battle-nav{gap:10px}.battle-nav a:first-child{display:none}.battle-hud{inset:10px 10px auto;grid-template-columns:1fr 20px 1fr;gap:7px}.fighter-hud{padding:7px 9px 5px}.fighter-tag{display:none}.fighter-hud b{font-size:11px}.fighter-hud p>span:last-child{font-size:8px}.hp-value{font-size:9px}.battle-versus{font-size:9px}.battle-result{padding:10px 13px;gap:3px 12px}.battle-result strong{font-size:16px}.battle-result .eyebrow{font-size:8px}.battle-result>span:last-child{font-size:9px}.battle-stage-caption{inset:auto 12px 9px;font-size:7px;letter-spacing:1px}.battle-transport{flex-wrap:wrap;padding:15px}.battle-options{margin-left:0;width:100%;justify-content:space-between;gap:10px}.battle-help{padding:0 15px 15px;font-size:10px}.battle-section-heading{padding:17px 16px 12px}.battle-table-wrap{margin:0 16px}.battle-stats th{font-size:9px}.battle-stats td{font-size:10px;padding-right:9px}.battle-stat-note{margin:13px 16px 17px}.battle-log{padding:0 16px 16px}.battle-clock{gap:10px}.battle-details{gap:18px;margin-top:18px}}

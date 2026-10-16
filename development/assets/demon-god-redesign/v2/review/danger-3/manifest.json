@@ -1,0 +1,197 @@
+{
+  "id": "danger-3",
+  "label": "封声",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../references/demon-god.png",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "loop": false,
+  "terminal": false,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 280,
+      "phase": "胸前で封印",
+      "originalSource": "../../sources/danger-3-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 677,
+        "height": 629
+      },
+      "sourceChestCore": {
+        "x": 299,
+        "y": 202
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.79412841796875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 140,
+        "top": 51,
+        "right": 323,
+        "bottom": 330
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 500,
+      "phase": "掌を立てる",
+      "originalSource": "../../sources/danger-3-generated.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 677,
+        "y": 0,
+        "width": 577,
+        "height": 629
+      },
+      "sourceChestCore": {
+        "x": 223,
+        "y": 217
+      },
+      "plannedRoot": [
+        550,
+        550
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 133.05
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.7813585069444444,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 136,
+        "top": 41,
+        "right": 340,
+        "bottom": 320
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 360,
+      "phase": "封声を放つ",
+      "originalSource": "../../sources/danger-3-generated.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 629,
+        "width": 685,
+        "height": 625
+      },
+      "sourceChestCore": {
+        "x": 294,
+        "y": 200
+      },
+      "plannedRoot": [
+        535,
+        545
+      ],
+      "exportChestCore": {
+        "x": 186.15,
+        "y": 131.1
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.7877061631944444,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 86,
+        "top": 43,
+        "right": 326,
+        "bottom": 314
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 360,
+      "phase": "復帰",
+      "originalSource": "../../sources/danger-3-generated.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 685,
+        "y": 629,
+        "width": 569,
+        "height": 625
+      },
+      "sourceChestCore": {
+        "x": 206,
+        "y": 200
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.7789984809027778,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 137,
+        "top": 47,
+        "right": 339,
+        "bottom": 323
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "silence-seal",
+      "frame": 2,
+      "placement": "status",
+      "timeMs": 780
+    }
+  ],
+  "effects": {
+    "demon-impact": {
+      "manifest": "/development/assets/late-stage-first-pass/v1/review/effects/demon-impact/manifest.json",
+      "status": "first-pass reusable in review",
+      "use": "拳撃・断界。小さく短く表示",
+      "scale": 0.55
+    },
+    "demon-pillar": {
+      "manifest": "/development/assets/late-stage-first-pass/v1/review/effects/demon-pillar/manifest.json",
+      "status": "first-pass reusable in review",
+      "use": "三界魔柱。単柱を0.9秒差で3回",
+      "scale": 0.7
+    },
+    "curse": {
+      "manifest": "/assets/skills/shaman/effects/mark/manifest.json",
+      "status": "runtime asset reused",
+      "use": "胸前ではなく対象へ呪印",
+      "scale": 1
+    },
+    "silence-seal": {
+      "manifest": "/assets/skills/ninja/effects/seal/manifest.json",
+      "status": "runtime asset reused",
+      "use": "初回封声の印に背景・見切れの課題があるため封印を流用",
+      "scale": 1
+    },
+    "end-cross": {
+      "manifest": "/assets/effects/ruins-furnace-beam/manifest.json",
+      "status": "runtime asset reused",
+      "use": "単独の炉心光線を±28°で1秒差。現行の青白い色はそのまま保持",
+      "scale": 1
+    },
+    "end-ring": {
+      "manifest": "/assets/skills/ninja/effects/final-ring/manifest.json",
+      "status": "runtime asset reused",
+      "use": "終撃の輪を低い楕円配置で流用",
+      "scale": 2
+    }
+  },
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact"
+}

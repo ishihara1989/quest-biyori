@@ -1,0 +1,30 @@
+{
+  "id": "lava-salamander/move-6",
+  "source": "sources/lava-salamander/move-frame-6-v3.png",
+  "selected": true,
+  "prompt": "Use case: precise-object-edit. ONE TROT frame6 only. Image1 immutable canonical reference, image2 selected frame6 edit target. Preserve head, torso, fins/wings/tail, colors, scale, camera and the other THREE legs EXACTLY. Keep contact pair LF+RH and lifted pair LH+RF. Change ONLY the anatomical LEFT FRONT foreground leg: move its grounded paw farther FORWARD LEFT by approximately 107 pixels in the original source, keeping same hip and original thigh/shin lengths and connected knee/ankle, same short claws and grounded height. This corrects measured backward return from frame6 to frame1; compare against frame1 before approval. Never stretch or disconnect the limb, no fifth paw, do not change approved other-leg swing/contact. Exact canonical pixel clusters, entire silhouette and transparent alpha preserved, no background/VFX.",
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    },
+    {
+      "file": "sources/lava-salamander/move-frame-6-v2.png",
+      "sha256": "873c4ca378acae898b53ce086f45c9f9f29118ecba4a9041645dbe96790d10a8"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "52f40b86785e5d003937cb024dca3376626fa3293a343eca967c4c36ab4e99f0",
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "firstPass": "sources/lava-salamander/move-2-generated.png",
+  "issues": [
+    "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+    "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+    "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+    "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

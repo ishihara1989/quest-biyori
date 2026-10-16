@@ -1,0 +1,38 @@
+[
+  {
+    "file": "move/manifest.json",
+    "sha256": "4e75354e2bfcb80800a17ad424a3813e7e52589affe6dcb0550130697cb070e0"
+  },
+  {
+    "file": "move/move-01.png",
+    "sha256": "6db848880cd364a3dbd1bb872840d315539d57dfc8fdae1da72c697e96d3b41b"
+  },
+  {
+    "file": "move/move-02.png",
+    "sha256": "4587927793b8a6268ae4148b02eafddecd86439a5ce5670c0bbc72009ffa79ff"
+  },
+  {
+    "file": "move/move-03.png",
+    "sha256": "f979ce605f2d15bc48875052f6d970a9a88b3daaa13bd2d63f54fbd1240b6cd1"
+  },
+  {
+    "file": "move/move-04.png",
+    "sha256": "3eccc4a160fb5f707caf8cd7a46e4ff1ce079f629017cd3ea689278d8d62c3da"
+  },
+  {
+    "file": "move/move-05.png",
+    "sha256": "cb9c34d6dcebe55bbd7abf609678c0b59dcc41b90f8a05559fc6ad0ac86c3af4"
+  },
+  {
+    "file": "move/move-06.png",
+    "sha256": "2491730045302416d5354e1dbdd523909cf361f7670f0291608a55a041ec368f"
+  },
+  {
+    "file": "move/rock-horn-goat-move-preview.gif",
+    "sha256": "5b513fe0884a59fb6ca3ad8464fbc7c8b75e4f5fd4c9f99f45aa03f351dd3ebb"
+  },
+  {
+    "file": "move/rock-horn-goat-move.png",
+    "sha256": "dd1f2e99c2262043c5316b4aeac389e3e0a72ced85e5c23684c6c09e4aeb9943"
+  }
+]

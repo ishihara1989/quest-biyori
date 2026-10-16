@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "enemy": "snow-spirit",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "snow-spirit-down.png",
+  "preview": "../../../../../../development/assets/enemies/snow-spirit/motions/down/snow-spirit-down-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 760,
+  "height": 310,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 380,
+  "frameHeight": 310,
+  "frameCount": 2,
+  "pivot": {
+    "x": 213,
+    "y": 288
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1250,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/glacier-motions/registered/snow-spirit/down.png",
+  "sourceScale": 0.3020833333333333,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 350,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 147,
+        "top": 165,
+        "right": 276,
+        "bottom": 288
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 703,
+        "width": 694,
+        "height": 703
+      },
+      "sourceAnchor": {
+        "x": 365.4649884010654,
+        "y": 511
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 380,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 154,
+        "top": 205,
+        "right": 279,
+        "bottom": 288
+      },
+      "sourceCell": {
+        "x": 694,
+        "y": 703,
+        "width": 694,
+        "height": 703
+      },
+      "sourceAnchor": {
+        "x": 301.92627468994027,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/snow-spirit.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/snow-spirit/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 662,
+          "height": 671
+        },
+        {
+          "x": 662,
+          "y": 0,
+          "width": 592,
+          "height": 671
+        },
+        {
+          "x": 0,
+          "y": 671,
+          "width": 650,
+          "height": 583
+        },
+        {
+          "x": 650,
+          "y": 671,
+          "width": 604,
+          "height": 583
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

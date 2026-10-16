@@ -1,0 +1,38 @@
+[
+  {
+    "file": "move/manifest.json",
+    "sha256": "f66796422a86fad830a402f2cd5e4b4059983dfa677144dfb7370dcf595424ed"
+  },
+  {
+    "file": "move/move-01.png",
+    "sha256": "cf73c0933deff03ea0c15a907df02c2dc4378402db9c5c92d325533cea241e65"
+  },
+  {
+    "file": "move/move-02.png",
+    "sha256": "dd57787d4e18071147c4eae305007b8a1fe5efde40f3c4e99cc73a209310dba8"
+  },
+  {
+    "file": "move/move-03.png",
+    "sha256": "2b570a3bc7d1466dba4004cf8038a9203a557c473c6419e4b6ef7d77d39497a3"
+  },
+  {
+    "file": "move/move-04.png",
+    "sha256": "a7abe5a5f32a48d2fb2ac669d5f23d0a4ed581b4e221e51d659220aeb48ad1d5"
+  },
+  {
+    "file": "move/move-05.png",
+    "sha256": "91eb1e187647a4d52d1827b86b0e5a3a03421c699b9226f38b4356f05eb6c733"
+  },
+  {
+    "file": "move/move-06.png",
+    "sha256": "9fd9d1e122eb27d32454c318f975abc6d8c0419847aca8afbdc3243d19757fe8"
+  },
+  {
+    "file": "move/storm-jackal-move-preview.gif",
+    "sha256": "ef68695e02a8a11882d55d530ad8c5b6d31a3610f7d973335d7ce35e91402e4c"
+  },
+  {
+    "file": "move/storm-jackal-move.png",
+    "sha256": "313d1bfd085f2ffa9d0c6a612cc4d435e79be922066dce34491216e403387882"
+  }
+]

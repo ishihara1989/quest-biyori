@@ -1,0 +1,27 @@
+{
+  "id": "motions/p2-cast-2",
+  "source": "source/motions/p2-cast-2-r2.png",
+  "sha256": "b467cf76d5d5d10808d046cfcd42b526ec3ddd79614472188f8d64939667326f",
+  "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-cast-2.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(157,183)/(367,190), open both arms apart.\nL/R=(136,215)/(386,222), press forward/outward, release.\nL/R=(170,244)/(352,260), recover idle.\nHands do not touch or clasp; there is a small empty space between inward-facing palms in F3. F6 must match the floating low-open-palms starting pose.\nInput image 3 is the preceding F1-F3 strip: match its SMALLER body scale and head/hip/shoe positions exactly. Input image 4 is the edit target F4-F6 strip. Repair these THREE target cells. LEFT/F4: spread BOTH hands apart at shoulder height. MIDDLE/F5: press BOTH open palms forward at chest height. RIGHT/F6: lower BOTH hands all the way to WAIST HEIGHT, spread apart, PALMS UP, identical to the first pose of input image 3. The rightmost cell is a low open-handed REST pose, NOT a chest-level guard. Apply the same 65-percent composition scale to all three cells. Keep broad transparent margins.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-223abeca-763d-4fe3-8973-258ff2d2754a.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    },
+    {
+      "file": "../first-pass-v1/source/parts/body-floating.png",
+      "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+    },
+    {
+      "file": "source/motions/p2-cast-1.png",
+      "sha256": "c24a194dbb9fb1341091095b3855309e7ac036cdc529be9c40111b73aa6ea207"
+    },
+    {
+      "file": "source/motions/p2-cast-2.png",
+      "sha256": "0663d39702a3b41ed0ef429269aba9b1d1d50bba585436c59f3161f178b25fab"
+    }
+  ],
+  "attempt": 2
+}

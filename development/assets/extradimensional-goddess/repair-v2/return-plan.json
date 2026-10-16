@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "status": "production-direction-user-requested-not-runtime-registered",
+  "body": {
+    "id": "motions/down",
+    "frames": 4,
+    "durationMs": [300, 350, 350, 800],
+    "mood": "満足げな微笑み、軽い会釈、別れの手振り、浮上して異次元へ帰還",
+    "bodyDyTargets": [0, 0, 0, -12],
+    "fade": { "startMs": 1000, "endMs": 1450 },
+    "oneBodyOnly": true,
+    "targetsAreMeasuredCoordinates": false
+  },
+  "portal": {
+    "id": "effects/goddess-return",
+    "frames": 6,
+    "durationMs": [150, 250, 400, 650, 200, 150],
+    "narrowAfterBodyGoneMs": 1450,
+    "fade": { "startMs": 1650, "endMs": 1800 },
+    "noShatteredHalo": true
+  },
+  "rewardPreview": { "startMs": 1800, "endMs": 2200, "count": 1, "grantsInventory": false },
+  "fullyClearMs": 2200,
+  "reviewCycleMs": 2600,
+  "runtimeRequirements": ["HP0を勝利条件として扱い、帰還で撃破報酬を1回だけ処理する", "勝利・中断・画面離脱時に幻影、攻撃予約、印、一時FXを清掃する", "第1フェーズ中にHP0へ達した場合の帰還開始姿も本編取り込み時に検証する"]
+}

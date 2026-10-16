@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "tentacle",
+    "label": "触手叩きつけ",
+    "manifest": "tentacle/manifest.json"
+  },
+  {
+    "id": "ink",
+    "label": "墨",
+    "manifest": "ink/manifest.json"
+  },
+  {
+    "id": "bury",
+    "label": "触手を地面に刺す",
+    "manifest": "bury/manifest.json"
+  },
+  {
+    "id": "breath",
+    "label": "水流ブレス",
+    "manifest": "breath/manifest.json"
+  }
+]

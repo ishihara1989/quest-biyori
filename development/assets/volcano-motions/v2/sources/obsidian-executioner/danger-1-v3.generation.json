@@ -1,0 +1,24 @@
+{
+  "id": "obsidian-executioner/danger-1",
+  "source": "sources/obsidian-executioner/danger-1-v3.png",
+  "selected": true,
+  "prompt": "FOUR SMALL isolated pixel-art sprites in equal 2x2 cells. Each complete body and original double axe within central 60% of cell, huge empty gutters. Dangerous HORIZONTAL great sweep: same double axe pulled RIGHT beside shoulder, held RIGHT with hands at chest and waist twist15deg, waist-height LEFT horizontal sweep, upright canonical recovery. Not overhead chop. Fixed blade/haft size, exactly two connected grips, same helmet/armor/cape/color. Actual transparent alpha, no external VFX/floor/shadow/labels/background. TL=axe drawn toward screen-right shoulder behind helmet but below crown; TR=hold that same shoulder preparation with slight gold edge light; BL=both hands sweep axe horizontally to screen-left at waist height; BR=canonical neutral. Keep body silhouette outside pixels alpha=0, including any RGB glow; ample margins at every cell edge.",
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-executioner.png",
+      "sha256": "f3e9668fb5b632ea2ad16a0d6f0ca6c5eb1fa5c53eee22a445fef708ec7d9aa3"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "fee88e398a104e595cfa2fa66ade0c2b5e7e6bfed8396517812c0f3312b858f0",
+  "reference": "references/obsidian-executioner.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-executioner/danger-1-generated.png",
+  "issues": [
+    "溜めが肩へ引く姿勢より頭上姿勢になり、断層斬と区別しにくい。大薙ぎ専用の肩・腰の回転を整理する。",
+    "頭上の刃と発動の左先端、マントの見切れを検収する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

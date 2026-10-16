@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "volley",
+    "label": "三重光弾",
+    "manifest": "volley/manifest.json"
+  },
+  {
+    "id": "ring",
+    "label": "環刃",
+    "manifest": "ring/manifest.json"
+  },
+  {
+    "id": "pillars",
+    "label": "光柱",
+    "manifest": "pillars/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "魔導再調整",
+    "manifest": "rest/manifest.json"
+  }
+]

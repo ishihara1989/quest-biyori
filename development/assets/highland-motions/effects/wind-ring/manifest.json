@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "effect": "wind-ring",
+  "label": "風の円",
+  "sheet": "wind-ring.png",
+  "preview": "wind-ring-preview.gif",
+  "prompt": "../../PROMPTS.md",
+  "width": 2080,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 520,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 260,
+    "y": 160
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "registered.png",
+  "sourceScale": 0.5405405405405406,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "wind-ring-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 520,
+      "height": 320,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 167,
+        "top": 129,
+        "right": 378,
+        "bottom": 200
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 834,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 383,
+        "y": 277
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "wind-ring-02.png",
+      "x": 520,
+      "y": 0,
+      "width": 520,
+      "height": 320,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 122,
+        "top": 114,
+        "right": 418,
+        "bottom": 216
+      },
+      "sourceCell": {
+        "x": 834,
+        "y": 0,
+        "width": 834,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 278
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "wind-ring-03.png",
+      "x": 1040,
+      "y": 0,
+      "width": 520,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 62,
+        "top": 82,
+        "right": 444,
+        "bottom": 245
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 550,
+        "width": 834,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 422,
+        "y": 275
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "wind-ring-04.png",
+      "x": 1560,
+      "y": 0,
+      "width": 520,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 83,
+        "top": 86,
+        "right": 441,
+        "bottom": 234
+      },
+      "sourceCell": {
+        "x": 834,
+        "y": 550,
+        "width": 834,
+        "height": 550
+      },
+      "sourceAnchor": {
+        "x": 388,
+        "y": 275
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": true,
+  "originalSource": "../../sources/effects/wind-ring-generated.png",
+  "kind": "origin"
+}

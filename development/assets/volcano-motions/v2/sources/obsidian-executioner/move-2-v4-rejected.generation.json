@@ -1,0 +1,29 @@
+{
+  "id": "obsidian-executioner/move-2",
+  "source": "sources/obsidian-executioner/move-2-v4-rejected.png",
+  "selected": false,
+  "prompt": "Use case: precise-object-edit. Correct the FOOT WORK in this THREE horizontal equal-cell sprite sheet (image2), canonical identity image1. In ALL three frames, the boot at SCREEN-LEFT must be the supporting grounded boot, and the boot at SCREEN-RIGHT is the moving boot. Image2 is WRONG: it raises the SCREEN-LEFT boot again; switch leg roles. Frame4: SCREEN-LEFT boot flat at ground y620, SCREEN-RIGHT heel up and toes near ground, knee starts moving forward. Frame5: SCREEN-LEFT boot remains flat at y620; SCREEN-RIGHT knee bends strongly and the SCREEN-RIGHT boot is clearly raised 75 pixels above the ground, NO contact with floor. Frame6: SCREEN-RIGHT boot extends forward to land toward screen-left, with a connected bent knee; SCREEN-LEFT support foot moves backward relative to hips. This must visibly show the OTHER leg walking compared to image2. Keep helmet, head, torso, cape, axe shape/length, both hands, pixel colors and outline identical to the reference, do not mirror whole character. Exactly two knees and two boots, no extra foot. Entire axe and cape inside cell. 3 equal horizontal cells, wide clear gutters and padding, true transparent alpha, no floor or shadow.",
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-executioner.png",
+      "sha256": "f3e9668fb5b632ea2ad16a0d6f0ca6c5eb1fa5c53eee22a445fef708ec7d9aa3"
+    },
+    {
+      "file": "sources/obsidian-executioner/move-2-v3-rejected.png",
+      "sha256": "bd65c10c67a2fc6e7925f510b5f82ac7a250bc14b08a0f77dbf5a28640c653f1"
+    }
+  ],
+  "reason": "Pose5 still lifts the same screen-left leg as the first half; will generate individual frames.",
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "b23cd90f967fae897bbaccdd190dd5de88a692f22ce411e71d6928ed602db95b",
+  "reference": "references/obsidian-executioner.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-executioner/move-2-generated.png",
+  "issues": [
+    "前半と後半で足の甲・膝の向きが変わる。3→4・6→1の支持とマントの接続を確認する。",
+    "待機・移動間の胴体の基準位置合わせが必要。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

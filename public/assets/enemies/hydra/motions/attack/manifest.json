@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hydra",
+  "motion": "attack",
+  "facing": "left",
+  "label": "連続攻撃",
+  "sheet": "hydra-attack.png",
+  "preview": "../../../../../../development/assets/enemies/hydra/motions/attack/hydra-attack-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hydra/PROMPT.md",
+  "width": 2816,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 740,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/hydra/source/attack-registered.png",
+  "sourceScale": 0.6626016260162602,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "hydra-attack-0",
+      "type": "melee",
+      "effect": "bite",
+      "frame": 0,
+      "timeMs": 0,
+      "power": 0.6
+    },
+    {
+      "id": "hydra-attack-1",
+      "type": "melee",
+      "effect": "bite",
+      "frame": 1,
+      "timeMs": 140,
+      "power": 0.6
+    },
+    {
+      "id": "hydra-attack-2",
+      "type": "melee",
+      "effect": "bite",
+      "frame": 2,
+      "timeMs": 360,
+      "power": 0.6
+    },
+    {
+      "id": "hydra-attack-3",
+      "type": "melee",
+      "effect": "bite",
+      "frame": 3,
+      "timeMs": 500,
+      "power": 0.6
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 140,
+      "phase": "開始",
+      "bounds": {
+        "left": 131,
+        "top": 112,
+        "right": 622,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 779,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 438,
+        "y": 498
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "attack-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 116,
+        "top": 120,
+        "right": 600,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 779,
+        "y": 0,
+        "width": 781,
+        "height": 518
+      },
+      "sourceAnchor": {
+        "x": 458,
+        "y": 486
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "attack-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 140,
+      "phase": "作用",
+      "bounds": {
+        "left": 73,
+        "top": 108,
+        "right": 568,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 518,
+        "width": 780,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 522,
+        "y": 505
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "attack-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "終端",
+      "bounds": {
+        "left": 68,
+        "top": 109,
+        "right": 558,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 780,
+        "y": 518,
+        "width": 780,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 529,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/hydra/source/attack-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 161569,
+      "left": 50,
+      "top": 16,
+      "right": 795,
+      "bottom": 498,
+      "cx": 418.9775885225507,
+      "cy": 294.2476527056552
+    },
+    {
+      "id": 2,
+      "count": 162503,
+      "left": 796,
+      "top": 30,
+      "right": 1527,
+      "bottom": 500,
+      "cx": 1193.523602641182,
+      "cy": 300.0266272007286
+    },
+    {
+      "id": 24,
+      "count": 159784,
+      "left": 23,
+      "top": 521,
+      "right": 770,
+      "bottom": 1008,
+      "cx": 432.4329720122165,
+      "cy": 805.0183372552947
+    },
+    {
+      "id": 25,
+      "count": 170612,
+      "left": 786,
+      "top": 524,
+      "right": 1525,
+      "bottom": 1010,
+      "cx": 1185.7566056314913,
+      "cy": 805.4847314374135
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 300,
+    "defaultZoom": 1,
+    "target": {
+      "x": 140,
+      "y": 431
+    },
+    "assets": [],
+    "origin": {
+      "x": 222.28000000000003,
+      "y": 261.48
+    },
+    "targetRange": 233
+  }
+}

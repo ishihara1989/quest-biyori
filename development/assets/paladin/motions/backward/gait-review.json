@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "motion": "backward",
+  "source": "source/paladin-backward-generated-v7.png",
+  "measurement": "Manual ankle-center estimates from final 256x224 output and enlarged QA, tolerance ±3px. Frame3 R / frame7 R partially occluded; inferred using continuous hip-knee-shin and exposed boot. Advisory visual QA, not an automated landmark detector.",
+  "leftIdentity": "LEFT L = exposed ornate foreground silver/gold hip and knee plates, always camera near.",
+  "rightIdentity": "RIGHT R = leg behind white tabard, always camera far, partly hidden by L at passing.",
+  "frame7Review": "Near L low boot overlaps in front of far R grounded boot. Ankle centers separated within boot width; natural low passing and fixed depth accepted by root independent visual audit.",
+  "frames": [
+    {
+      "frame": 1,
+      "L": {
+        "x": 129,
+        "y": 195
+      },
+      "R": {
+        "x": 92,
+        "y": 193
+      }
+    },
+    {
+      "frame": 2,
+      "L": {
+        "x": 119,
+        "y": 196
+      },
+      "R": {
+        "x": 105,
+        "y": 187
+      }
+    },
+    {
+      "frame": 3,
+      "L": {
+        "x": 112,
+        "y": 195
+      },
+      "R": {
+        "x": 104,
+        "y": 192,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 4,
+      "L": {
+        "x": 89,
+        "y": 190
+      },
+      "R": {
+        "x": 139,
+        "y": 195
+      }
+    },
+    {
+      "frame": 5,
+      "L": {
+        "x": 93,
+        "y": 191
+      },
+      "R": {
+        "x": 142,
+        "y": 195
+      }
+    },
+    {
+      "frame": 6,
+      "L": {
+        "x": 95,
+        "y": 182
+      },
+      "R": {
+        "x": 130,
+        "y": 196
+      }
+    },
+    {
+      "frame": 7,
+      "L": {
+        "x": 104,
+        "y": 188
+      },
+      "R": {
+        "x": 112,
+        "y": 201,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 8,
+      "L": {
+        "x": 134,
+        "y": 195
+      },
+      "R": {
+        "x": 90,
+        "y": 192
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "id": "dragon-girl/idle",
+  "enemy": "dragon-girl",
+  "region": "volcano",
+  "label": "待機",
+  "kind": null,
+  "motion": "idle",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon-girl.png",
+  "originalSources": [
+    "../../../sources/dragon-girl/idle-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon-girl/idle/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8659172058105469,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 179,
+        "top": 102,
+        "right": 409,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 181,
+        "top": 104,
+        "right": 406,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/idle-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 653,
+        "height": 600
+      },
+      "sourceScale": 0.4343807763401109,
+      "sourceAnchor": {
+        "x": 333,
+        "y": 582
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8596382141113281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 167,
+        "top": 100,
+        "right": 415,
+        "bottom": 340
+      },
+      "visibleBounds": {
+        "left": 170,
+        "top": 103,
+        "right": 410,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/idle-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 653,
+        "y": 0,
+        "width": 663,
+        "height": 600
+      },
+      "sourceScale": 0.4343807763401109,
+      "sourceAnchor": {
+        "x": 327,
+        "y": 583
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8632965087890625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 175,
+        "top": 101,
+        "right": 428,
+        "bottom": 343
+      },
+      "visibleBounds": {
+        "left": 178,
+        "top": 103,
+        "right": 405,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/idle-v1-reused.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 600,
+        "width": 655,
+        "height": 595
+      },
+      "sourceScale": 0.4343807763401109,
+      "sourceAnchor": {
+        "x": 337,
+        "y": 558
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8604164123535156,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 153,
+        "top": 96,
+        "right": 415,
+        "bottom": 340
+      },
+      "visibleBounds": {
+        "left": 173,
+        "top": 102,
+        "right": 411,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon-girl/idle-v1-reused.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 655,
+        "y": 600,
+        "width": 661,
+        "height": 595
+      },
+      "sourceScale": 0.4343807763401109,
+      "sourceAnchor": {
+        "x": 322,
+        "y": 558
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

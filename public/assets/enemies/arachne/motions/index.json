@@ -1,0 +1,37 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "claw",
+    "label": "通常攻撃",
+    "manifest": "claw/manifest.json"
+  },
+  {
+    "id": "web",
+    "label": "クモ糸",
+    "manifest": "web/manifest.json"
+  },
+  {
+    "id": "volley",
+    "label": "爪を飛ばす",
+    "manifest": "volley/manifest.json"
+  }
+]

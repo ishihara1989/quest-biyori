@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rock-horn-goat",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "rock-horn-goat-hit.png",
+  "preview": "../../../../../../development/assets/enemies/rock-horn-goat/motions/hit/rock-horn-goat-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 960,
+  "height": 350,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 350,
+  "frameCount": 2,
+  "pivot": {
+    "x": 274,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/highland-motions/enemies/rock-horn-goat/registered/hit.png",
+  "sourceScale": 0.3776978417266187,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "被弾",
+      "bounds": {
+        "left": 216,
+        "top": 99,
+        "right": 393,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 684,
+        "height": 745
+      },
+      "sourceAnchor": {
+        "x": 357,
+        "y": 685
+      },
+      "bakedOffset": {
+        "x": 20,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 220,
+      "phase": "復帰",
+      "bounds": {
+        "left": 168,
+        "top": 117,
+        "right": 366,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 684,
+        "y": 0,
+        "width": 684,
+        "height": 745
+      },
+      "sourceAnchor": {
+        "x": 343,
+        "y": 686
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/rock-horn-goat.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/rock-horn-goat/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 703
+        },
+        {
+          "x": 640,
+          "y": 0,
+          "width": 614,
+          "height": 703
+        },
+        {
+          "x": 0,
+          "y": 703,
+          "width": 611,
+          "height": 551
+        },
+        {
+          "x": 611,
+          "y": 703,
+          "width": 643,
+          "height": 551
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.0145985401459854,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [],
+  "action": null
+}

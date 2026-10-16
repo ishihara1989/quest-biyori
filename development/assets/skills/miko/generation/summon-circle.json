@@ -1,0 +1,13 @@
+{
+  "id": "summon-circle",
+  "source": "development/assets/skills/miko/source/summon-circle-generated-v2.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-eb559cb9-01e2-44ab-ad7b-6acbbd4c2890.png",
+  "prompt": "FINAL OUTPUT: VFX ONLY, WITHOUT ANY PERSON. EDIT the referenced atlas: REMOVE EVERY human character completely, including all faces, skin, hair, bows, hands, feet and kimono/hakama clothing. Replace each removed character with REAL TRANSPARENT pixels; leave no human silhouette. Keep and complete only the magical objects, adapting their geometry to the following exact description.  NO PEOPLE, NO CASTER, NO HUMAN FIGURES anywhere. VFX ONLY: an isolated spell overlay, absolutely NO human, shrine maiden, person, caster, human face, human silhouette, hair, human limbs or dressed character in any frame. The center is EMPTY TRANSPARENT space for a character drawn separately by the game. Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas of Japanese shrine magic in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 4 chronological frames in a TWO BY TWO grid of equal square cells, ordered top-left, top-right, bottom-left, bottom-right. Large dramatic shrine VFX. A large flat golden sacred shimenawa circle with thick crimson/ivory edge, four shide paper clusters. Entire circle centered (.50,.55), width .74, height .45. Pulse gold crests while keeping geometry fixed. All frames same scale and common center/ground. Subject fills .18..82 without touching cell margins. Only the described magical objects are drawn; no people anywhere. Keep EVERY piece including beam tips and trails inside x=.20..80,y=.12..88 of each cell with wide EMPTY gutters; no fragments touch any cell edge. Square canvas, exactly TWO BY TWO frames, ordered TL,TR,BL,BR.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/summon-circle-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T15:50:09.223Z",
+  "width": 1254,
+  "height": 1254,
+  "status": "generated"
+}

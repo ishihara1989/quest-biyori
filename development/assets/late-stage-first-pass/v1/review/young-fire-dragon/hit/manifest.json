@@ -1,0 +1,67 @@
+{
+  "id": "young-fire-dragon/hit",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "motion": "hit",
+  "label": "被弾",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/young-fire-dragon/reaction-generated.png"
+  ],
+  "durations": [
+    180,
+    220
+  ],
+  "phases": [
+    "被弾",
+    "復帰"
+  ],
+  "enemyLabel": "幼火竜",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 70,
+        "top": 173,
+        "right": 631,
+        "bottom": 598
+      },
+      "sourceWidth": 653,
+      "sourceHeight": 682,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 285194,
+      "transparentFraction": 0.6403874740089728
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 21,
+        "top": 176,
+        "right": 587,
+        "bottom": 607
+      },
+      "sourceWidth": 624,
+      "sourceHeight": 682,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 254079,
+      "transparentFraction": 0.5970350214301827
+    }
+  ],
+  "reference": "../../../references/young-fire-dragon.png",
+  "originalSources": [
+    "../../../sources/young-fire-dragon/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

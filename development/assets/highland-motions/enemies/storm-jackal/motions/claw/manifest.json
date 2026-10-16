@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "enemy": "storm-jackal",
+  "motion": "claw",
+  "facing": "left",
+  "label": "出血爪",
+  "sheet": "storm-jackal-claw.png",
+  "preview": "storm-jackal-claw-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 2320,
+  "height": 430,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 580,
+  "frameHeight": 430,
+  "frameCount": 4,
+  "pivot": {
+    "x": 331,
+    "y": 406
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../registered/claw.png",
+  "sourceScale": 0.4693140794223827,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "claw",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 212,
+        "top": 147,
+        "right": 464,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 705,
+        "height": 675
+      },
+      "sourceAnchor": {
+        "x": 349,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "claw-02.png",
+      "x": 580,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 183,
+        "top": 148,
+        "right": 468,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 705,
+        "y": 0,
+        "width": 705,
+        "height": 675
+      },
+      "sourceAnchor": {
+        "x": 352,
+        "y": 618
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "claw-03.png",
+      "x": 1160,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 175,
+        "top": 159,
+        "right": 467,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 675,
+        "width": 705,
+        "height": 675
+      },
+      "sourceAnchor": {
+        "x": 364,
+        "y": 593
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "claw-04.png",
+      "x": 1740,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 197,
+        "top": 149,
+        "right": 459,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 705,
+        "y": 675,
+        "width": 705,
+        "height": 675
+      },
+      "sourceAnchor": {
+        "x": 336,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/storm-jackal.png",
+  "originalSources": [
+    "../../../../sources/storm-jackal/claw-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 624,
+          "height": 625
+        },
+        {
+          "x": 624,
+          "y": 0,
+          "width": 630,
+          "height": 625
+        },
+        {
+          "x": 0,
+          "y": 625,
+          "width": 658,
+          "height": 629
+        },
+        {
+          "x": 658,
+          "y": 625,
+          "width": 596,
+          "height": 629
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.022140221402214,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [
+    {
+      "id": "claw",
+      "manifest": "../../../../effects/claw/manifest.json"
+    }
+  ]
+}

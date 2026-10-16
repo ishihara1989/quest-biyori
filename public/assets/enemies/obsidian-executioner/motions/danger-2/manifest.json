@@ -1,0 +1,240 @@
+{
+  "id": "obsidian-executioner/danger-2",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "label": "断層斬",
+  "kind": null,
+  "motion": "danger-2",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 5700,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/danger-2-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.9110641479492188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 51,
+        "top": 74,
+        "right": 456,
+        "bottom": 357
+      },
+      "visibleBounds": {
+        "left": 192,
+        "top": 105,
+        "right": 380,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/danger-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 806,
+        "height": 569
+      },
+      "sourceScale": 0.5194174757281553,
+      "sourceAnchor": {
+        "x": 485,
+        "y": 531
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4620,
+      "transparentFraction": 0.9070892333984375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 136,
+        "top": 61,
+        "right": 502,
+        "bottom": 352
+      },
+      "visibleBounds": {
+        "left": 212,
+        "top": 65,
+        "right": 375,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/danger-2-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 806,
+        "y": 0,
+        "width": 730,
+        "height": 569
+      },
+      "sourceScale": 0.5194174757281553,
+      "sourceAnchor": {
+        "x": 298,
+        "y": 539
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "transparentFraction": 0.9074935913085938,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 55,
+        "top": 134,
+        "right": 489,
+        "bottom": 361
+      },
+      "visibleBounds": {
+        "left": 158,
+        "top": 182,
+        "right": 445,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/danger-2-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 569,
+        "width": 838,
+        "height": 455
+      },
+      "sourceScale": 0.5194174757281553,
+      "sourceAnchor": {
+        "x": 453,
+        "y": 393
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.904205322265625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 128,
+        "top": 123,
+        "right": 475,
+        "bottom": 358
+      },
+      "visibleBounds": {
+        "left": 171,
+        "top": 137,
+        "right": 368,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/obsidian-executioner/danger-2-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 838,
+        "y": 569,
+        "width": 698,
+        "height": 455
+      },
+      "sourceScale": 0.5194174757281553,
+      "sourceAnchor": {
+        "x": 313,
+        "y": 414
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [
+    {
+      "id": "fissure",
+      "timeMs": 4800,
+      "slot": 0,
+      "placement": "self-ground",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "fissure",
+    "armor-break"
+  ],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/obsidian-executioner/danger-2/preview.gif",
+  "action": {
+    "name": "断層斬",
+    "motion": "danger-2",
+    "warn": 4800,
+    "times": [
+      4800
+    ],
+    "kind": "lane",
+    "radius": 60,
+    "effect": "fissure",
+    "rest": 9000,
+    "status": "armor-break",
+    "duration": 5700,
+    "length": 520
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "volcano-fissure",
+        "manifest": "../../../../effects/volcano-fissure/manifest.json"
+      },
+      {
+        "id": "volcano-armor-break",
+        "manifest": "../../../../effects/volcano-armor-break/manifest.json"
+      }
+    ]
+  }
+}

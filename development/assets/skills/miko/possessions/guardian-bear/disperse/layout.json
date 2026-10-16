@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/guardian-bear-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 694,
+      "height": 724
+    },
+    {
+      "x": 694,
+      "y": 0,
+      "width": 774,
+      "height": 724
+    },
+    {
+      "x": 1468,
+      "y": 0,
+      "width": 704,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 882
+    },
+    {
+      "x": 512,
+      "y": 882
+    },
+    {
+      "x": 512,
+      "y": 882
+    }
+  ],
+  "scale": 0.5188284518828452
+}

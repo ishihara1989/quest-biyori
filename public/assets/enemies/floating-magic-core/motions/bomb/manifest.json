@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "enemy": "floating-magic-core",
+  "motion": "bomb",
+  "facing": "left",
+  "label": "魔力炸裂",
+  "sheet": "floating-magic-core-bomb.png",
+  "preview": "../../../../../../development/assets/enemies/floating-magic-core/motions/bomb/floating-magic-core-bomb-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/floating-magic-core/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1020,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/floating-magic-core/source/bomb-registered.png",
+  "sourceScale": 0.35537190082644626,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "floating-magic-core-bomb-2-0",
+      "type": "spawn-effect",
+      "effect": "ruins-magic-burst",
+      "frame": 2,
+      "timeMs": 540,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "bomb-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "開始",
+      "bounds": {
+        "left": 115,
+        "top": 99,
+        "right": 307,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 782,
+        "height": 597
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 557
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 1,
+      "file": "bomb-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 300,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 118,
+        "top": 98,
+        "right": 309,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 782,
+        "y": 0,
+        "width": 782,
+        "height": 597
+      },
+      "sourceAnchor": {
+        "x": 377,
+        "y": 558
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 2,
+      "file": "bomb-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 98,
+        "top": 92,
+        "right": 331,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 597,
+        "width": 782,
+        "height": 597
+      },
+      "sourceAnchor": {
+        "x": 443,
+        "y": 530
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 3,
+      "file": "bomb-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 113,
+        "top": 100,
+        "right": 307,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 782,
+        "y": 597,
+        "width": 782,
+        "height": 597
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 533
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/floating-magic-core/source/bomb-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/floating-magic-core/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1402,
+      "height": 1122,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 703,
+          "height": 557
+        },
+        {
+          "x": 703,
+          "y": 0,
+          "width": 699,
+          "height": 557
+        },
+        {
+          "x": 0,
+          "y": 557,
+          "width": 750,
+          "height": 565
+        },
+        {
+          "x": 750,
+          "y": 557,
+          "width": 652,
+          "height": 565
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 32,
+    "legsTucked": false,
+    "groundY": 302,
+    "horizontalAnchor": "central cyan core"
+  },
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 156,
+      "y": 302
+    },
+    "origin": {
+      "x": 108,
+      "y": 184
+    },
+    "assets": [
+      {
+        "id": "ruins-magic-burst",
+        "manifest": "../../../../effects/ruins-magic-burst/manifest.json"
+      }
+    ]
+  }
+}

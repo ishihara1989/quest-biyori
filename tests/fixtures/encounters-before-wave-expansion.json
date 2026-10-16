@@ -1,0 +1,1568 @@
+[
+  {
+    "id": 1,
+    "waves": [
+      [
+        "slime",
+        "slime",
+        "slime"
+      ],
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime"
+      ],
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime"
+      ]
+    ],
+    "enemyHp": 1,
+    "enemyDamage": 1,
+    "reward": 20
+  },
+  {
+    "id": 2,
+    "waves": [
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime"
+      ],
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime"
+      ],
+      [
+        "boss-slime"
+      ]
+    ],
+    "enemyHp": 1.44,
+    "enemyDamage": 0.595,
+    "reward": 40
+  },
+  {
+    "id": 3,
+    "waves": [
+      [
+        "boar",
+        "boar",
+        "boar"
+      ],
+      [
+        "boar",
+        "boar",
+        "boar"
+      ],
+      [
+        "boss-boar",
+        "boar",
+        "boar"
+      ]
+    ],
+    "enemyHp": 1.44,
+    "enemyDamage": 0.44,
+    "reward": 60
+  },
+  {
+    "id": 4,
+    "waves": [
+      [
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion"
+      ],
+      [
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion"
+      ],
+      [
+        "alraune"
+      ]
+    ],
+    "enemyHp": 1.44,
+    "enemyDamage": 0.4,
+    "reward": 80
+  },
+  {
+    "id": 5,
+    "waves": [
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion"
+      ],
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion"
+      ],
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion"
+      ]
+    ],
+    "enemyHp": 1.15,
+    "enemyDamage": 2,
+    "reward": 100
+  },
+  {
+    "id": 6,
+    "waves": [
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime"
+      ],
+      [
+        "boss-slime"
+      ],
+      [
+        "boss-boar"
+      ]
+    ],
+    "enemyHp": 5.76,
+    "enemyDamage": 0.525,
+    "reward": 120
+  },
+  {
+    "id": 7,
+    "waves": [
+      [
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "slime",
+        "slime",
+        "slime",
+        "slime",
+        "slime"
+      ],
+      [
+        "boss-slime"
+      ],
+      [
+        "alraune"
+      ]
+    ],
+    "enemyHp": 4.8,
+    "enemyDamage": 0.525,
+    "reward": 140
+  },
+  {
+    "id": 8,
+    "waves": [
+      [
+        "boar",
+        "boar",
+        "boar",
+        "boar",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "boar",
+        "boar",
+        "boar",
+        "boar"
+      ],
+      [
+        "boss-boar"
+      ],
+      [
+        "alraune"
+      ]
+    ],
+    "enemyHp": 4.5,
+    "enemyDamage": 0.5,
+    "reward": 160
+  },
+  {
+    "id": 9,
+    "waves": [
+      [
+        "slime",
+        "boar",
+        "alraune-minion",
+        "slime",
+        "slime",
+        "slime",
+        "alraune-minion",
+        "alraune-minion",
+        "alraune-minion",
+        "slime",
+        "boar",
+        "alraune-minion"
+      ],
+      [
+        "boss-slime",
+        "boss-boar"
+      ],
+      [
+        "alraune"
+      ]
+    ],
+    "enemyHp": 4.8,
+    "enemyDamage": 0.42,
+    "reward": 180
+  },
+  {
+    "id": 10,
+    "waves": [
+      [
+        "slime",
+        "boar",
+        "alraune-minion",
+        "boar",
+        "boar",
+        "boar",
+        "alraune-minion",
+        "slime",
+        "boar",
+        "alraune-minion"
+      ],
+      [
+        "boss-slime",
+        "boss-boar",
+        "alraune"
+      ],
+      [
+        "treant"
+      ]
+    ],
+    "enemyHp": 6,
+    "enemyDamage": 0.375,
+    "reward": 200
+  },
+  {
+    "id": 11,
+    "waves": [
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad"
+      ],
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad"
+      ],
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad"
+      ]
+    ],
+    "enemyHp": 1,
+    "enemyDamage": 1,
+    "reward": 220
+  },
+  {
+    "id": 12,
+    "waves": [
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad"
+      ],
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad"
+      ],
+      [
+        "king-toad"
+      ]
+    ],
+    "enemyHp": 19.2,
+    "enemyDamage": 0.63,
+    "reward": 240
+  },
+  {
+    "id": 13,
+    "waves": [
+      [
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand"
+      ],
+      [
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand"
+      ],
+      [
+        "mud-giant"
+      ]
+    ],
+    "enemyHp": 14.4,
+    "enemyDamage": 0.75,
+    "reward": 260
+  },
+  {
+    "id": 14,
+    "waves": [
+      [
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton"
+      ],
+      [
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton"
+      ],
+      [
+        "lich"
+      ]
+    ],
+    "enemyHp": 14.4,
+    "enemyDamage": 0.4,
+    "reward": 280
+  },
+  {
+    "id": 15,
+    "waves": [
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton"
+      ],
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton"
+      ],
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton"
+      ]
+    ],
+    "enemyHp": 1,
+    "enemyDamage": 1,
+    "reward": 300
+  },
+  {
+    "id": 16,
+    "waves": [
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad"
+      ],
+      [
+        "king-toad"
+      ],
+      [
+        "mud-giant"
+      ]
+    ],
+    "enemyHp": 14.4,
+    "enemyDamage": 0.75,
+    "reward": 320
+  },
+  {
+    "id": 17,
+    "waves": [
+      [
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad"
+      ],
+      [
+        "king-toad"
+      ],
+      [
+        "lich"
+      ]
+    ],
+    "enemyHp": 14.4,
+    "enemyDamage": 0.7,
+    "reward": 340
+  },
+  {
+    "id": 18,
+    "waves": [
+      [
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand"
+      ],
+      [
+        "mud-giant"
+      ],
+      [
+        "lich"
+      ]
+    ],
+    "enemyHp": 12.8,
+    "enemyDamage": 0.8,
+    "reward": 360
+  },
+  {
+    "id": 19,
+    "waves": [
+      [
+        "giga-toad",
+        "mud-hand",
+        "skeleton",
+        "giga-toad",
+        "giga-toad",
+        "giga-toad",
+        "skeleton",
+        "skeleton",
+        "skeleton",
+        "giga-toad",
+        "mud-hand",
+        "skeleton"
+      ],
+      [
+        "king-toad",
+        "mud-giant"
+      ],
+      [
+        "lich"
+      ]
+    ],
+    "enemyHp": 14.4,
+    "enemyDamage": 0.45,
+    "reward": 380
+  },
+  {
+    "id": 20,
+    "waves": [
+      [
+        "giga-toad",
+        "mud-hand",
+        "skeleton",
+        "mud-hand",
+        "mud-hand",
+        "mud-hand",
+        "skeleton",
+        "giga-toad",
+        "mud-hand",
+        "skeleton"
+      ],
+      [
+        "king-toad",
+        "mud-giant",
+        "lich"
+      ],
+      [
+        "hydra"
+      ]
+    ],
+    "enemyHp": 9.6,
+    "enemyDamage": 0.6,
+    "reward": 400
+  },
+  {
+    "id": 21,
+    "waves": [
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat"
+      ],
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat"
+      ],
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat"
+      ]
+    ],
+    "enemyHp": 1,
+    "enemyDamage": 1,
+    "reward": 420
+  },
+  {
+    "id": 22,
+    "waves": [
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat"
+      ],
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat"
+      ],
+      [
+        "great-bat"
+      ]
+    ],
+    "enemyHp": 32,
+    "enemyDamage": 1.2,
+    "reward": 440
+  },
+  {
+    "id": 23,
+    "waves": [
+      [
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm"
+      ],
+      [
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm"
+      ],
+      [
+        "large-worm"
+      ]
+    ],
+    "enemyHp": 28.8,
+    "enemyDamage": 1.3,
+    "reward": 460
+  },
+  {
+    "id": 24,
+    "waves": [
+      [
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider"
+      ],
+      [
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider"
+      ],
+      [
+        "arachne"
+      ]
+    ],
+    "enemyHp": 23.04,
+    "enemyDamage": 2.4,
+    "reward": 480
+  },
+  {
+    "id": 25,
+    "waves": [
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider"
+      ],
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider"
+      ],
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider"
+      ]
+    ],
+    "enemyHp": 1,
+    "enemyDamage": 1,
+    "reward": 500
+  },
+  {
+    "id": 26,
+    "waves": [
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat"
+      ],
+      [
+        "great-bat"
+      ],
+      [
+        "large-worm"
+      ]
+    ],
+    "enemyHp": 19.2,
+    "enemyDamage": 1.55,
+    "reward": 520
+  },
+  {
+    "id": 27,
+    "waves": [
+      [
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat"
+      ],
+      [
+        "great-bat"
+      ],
+      [
+        "arachne"
+      ]
+    ],
+    "enemyHp": 23.04,
+    "enemyDamage": 1.12,
+    "reward": 540
+  },
+  {
+    "id": 28,
+    "waves": [
+      [
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm"
+      ],
+      [
+        "large-worm"
+      ],
+      [
+        "arachne"
+      ]
+    ],
+    "enemyHp": 20,
+    "enemyDamage": 1.6,
+    "reward": 560
+  },
+  {
+    "id": 29,
+    "waves": [
+      [
+        "cave-bat",
+        "cave-worm",
+        "cave-spider",
+        "cave-bat",
+        "cave-bat",
+        "cave-bat",
+        "cave-spider",
+        "cave-spider",
+        "cave-spider",
+        "cave-bat",
+        "cave-worm",
+        "cave-spider"
+      ],
+      [
+        "great-bat",
+        "large-worm"
+      ],
+      [
+        "arachne"
+      ]
+    ],
+    "enemyHp": 19.2,
+    "enemyDamage": 1.68,
+    "reward": 580
+  },
+  {
+    "id": 30,
+    "waves": [
+      [
+        "cave-bat",
+        "cave-worm",
+        "cave-spider",
+        "cave-worm",
+        "cave-worm",
+        "cave-worm",
+        "cave-spider",
+        "cave-bat",
+        "cave-worm",
+        "cave-spider"
+      ],
+      [
+        "great-bat",
+        "large-worm",
+        "arachne"
+      ],
+      [
+        "cave-troll"
+      ]
+    ],
+    "enemyHp": 12,
+    "enemyDamage": 2.1,
+    "reward": 600
+  },
+  {
+    "id": 31,
+    "waves": [
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab"
+      ],
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab"
+      ],
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab"
+      ]
+    ],
+    "enemyHp": 1,
+    "enemyDamage": 1,
+    "reward": 620
+  },
+  {
+    "id": 32,
+    "waves": [
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab"
+      ],
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab"
+      ],
+      [
+        "great-hermit"
+      ]
+    ],
+    "enemyHp": 28.8,
+    "enemyDamage": 3.36,
+    "reward": 640
+  },
+  {
+    "id": 33,
+    "waves": [
+      [
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman"
+      ],
+      [
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman"
+      ],
+      [
+        "lizard-chief"
+      ]
+    ],
+    "enemyHp": 38.4,
+    "enemyDamage": 1.68,
+    "reward": 660
+  },
+  {
+    "id": 34,
+    "waves": [
+      [
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus"
+      ],
+      [
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus"
+      ],
+      [
+        "scylla"
+      ]
+    ],
+    "enemyHp": 28.8,
+    "enemyDamage": 3.36,
+    "reward": 680
+  },
+  {
+    "id": 35,
+    "waves": [
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus"
+      ],
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus"
+      ],
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus"
+      ]
+    ],
+    "enemyHp": 1,
+    "enemyDamage": 1,
+    "reward": 700
+  },
+  {
+    "id": 36,
+    "waves": [
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab"
+      ],
+      [
+        "great-hermit"
+      ],
+      [
+        "lizard-chief"
+      ]
+    ],
+    "enemyHp": 19.2,
+    "enemyDamage": 2.4,
+    "reward": 720
+  },
+  {
+    "id": 37,
+    "waves": [
+      [
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab"
+      ],
+      [
+        "great-hermit"
+      ],
+      [
+        "scylla"
+      ]
+    ],
+    "enemyHp": 18,
+    "enemyDamage": 3.5,
+    "reward": 740
+  },
+  {
+    "id": 38,
+    "waves": [
+      [
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "octopus",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "lizardman"
+      ],
+      [
+        "lizard-chief"
+      ],
+      [
+        "scylla"
+      ]
+    ],
+    "enemyHp": 23.04,
+    "enemyDamage": 2.4,
+    "reward": 760
+  },
+  {
+    "id": 39,
+    "waves": [
+      [
+        "hermit-crab",
+        "lizardman",
+        "octopus",
+        "hermit-crab",
+        "hermit-crab",
+        "hermit-crab",
+        "octopus",
+        "octopus",
+        "octopus",
+        "hermit-crab",
+        "lizardman",
+        "octopus"
+      ],
+      [
+        "great-hermit",
+        "lizard-chief"
+      ],
+      [
+        "scylla"
+      ]
+    ],
+    "enemyHp": 16,
+    "enemyDamage": 2.8,
+    "reward": 780
+  },
+  {
+    "id": 40,
+    "waves": [
+      [
+        "hermit-crab",
+        "lizardman",
+        "octopus",
+        "lizardman",
+        "lizardman",
+        "lizardman",
+        "octopus",
+        "hermit-crab",
+        "lizardman",
+        "octopus"
+      ],
+      [
+        "great-hermit",
+        "lizard-chief",
+        "scylla"
+      ],
+      [
+        "kraken"
+      ]
+    ],
+    "enemyHp": 12,
+    "enemyDamage": 2.8,
+    "reward": 800
+  },
+  {
+    "id": 41,
+    "waves": [
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "ancient-crossbowman"
+      ],
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "ancient-crossbowman"
+      ],
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "ancient-crossbowman",
+        "ancient-crossbowman"
+      ]
+    ],
+    "enemyHp": 15,
+    "enemyDamage": 3,
+    "reward": 820
+  },
+  {
+    "id": 42,
+    "waves": [
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman"
+      ],
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman"
+      ],
+      [
+        "armored-golem"
+      ]
+    ],
+    "enemyHp": 45,
+    "enemyDamage": 8,
+    "reward": 840
+  },
+  {
+    "id": 43,
+    "waves": [
+      [
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "ancient-ballista"
+      ]
+    ],
+    "enemyHp": 52,
+    "enemyDamage": 8,
+    "reward": 860
+  },
+  {
+    "id": 44,
+    "waves": [
+      [
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "seraphina"
+      ]
+    ],
+    "enemyHp": 50,
+    "enemyDamage": 8,
+    "reward": 880
+  },
+  {
+    "id": 45,
+    "waves": [
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ]
+    ],
+    "enemyHp": 5,
+    "enemyDamage": 1,
+    "reward": 900
+  },
+  {
+    "id": 46,
+    "waves": [
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman"
+      ],
+      [
+        "armored-golem"
+      ],
+      [
+        "ancient-ballista"
+      ]
+    ],
+    "enemyHp": 35,
+    "enemyDamage": 10,
+    "reward": 920
+  },
+  {
+    "id": 47,
+    "waves": [
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "armored-golem"
+      ],
+      [
+        "seraphina"
+      ]
+    ],
+    "enemyHp": 35,
+    "enemyDamage": 8,
+    "reward": 940
+  },
+  {
+    "id": 48,
+    "waves": [
+      [
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "ancient-ballista"
+      ],
+      [
+        "seraphina"
+      ]
+    ],
+    "enemyHp": 35,
+    "enemyDamage": 8,
+    "reward": 960
+  },
+  {
+    "id": 49,
+    "waves": [
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "armored-golem",
+        "ancient-ballista"
+      ],
+      [
+        "seraphina"
+      ]
+    ],
+    "enemyHp": 28,
+    "enemyDamage": 8,
+    "reward": 980
+  },
+  {
+    "id": 50,
+    "waves": [
+      [
+        "stone-guard",
+        "stone-guard",
+        "stone-guard",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "rune-gargoyle",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "ancient-crossbowman",
+        "floating-magic-core",
+        "floating-magic-core",
+        "floating-magic-core"
+      ],
+      [
+        "armored-golem",
+        "ancient-ballista",
+        "seraphina"
+      ],
+      [
+        "ancient-titan"
+      ]
+    ],
+    "enemyHp": 22,
+    "enemyDamage": 10,
+    "reward": 1000
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "source": "../../../skills/miko/source/kagura-finish-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 816,
+      "height": 724
+    },
+    {
+      "x": 816,
+      "y": 0,
+      "width": 561,
+      "height": 724
+    },
+    {
+      "x": 1377,
+      "y": 0,
+      "width": 795,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 917
+    },
+    {
+      "x": 512,
+      "y": 923
+    },
+    {
+      "x": 512,
+      "y": 923
+    }
+  ],
+  "scale": 0.218
+}

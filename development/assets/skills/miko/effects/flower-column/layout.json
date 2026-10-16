@@ -1,0 +1,38 @@
+{
+  "source": "../../source/flower-column-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 710,
+      "height": 724
+    },
+    {
+      "x": 710,
+      "y": 0,
+      "width": 715,
+      "height": 724
+    },
+    {
+      "x": 1425,
+      "y": 0,
+      "width": 747,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.5061224489795918
+}

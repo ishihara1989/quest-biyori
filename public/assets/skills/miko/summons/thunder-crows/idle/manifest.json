@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "thunder-crows-idle",
+  "character": "miko",
+  "subject": "thunder-crows",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "thunder-crows-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 64
+  },
+  "scale": 0.11313131313131314,
+  "frames": [
+    {
+      "index": 0,
+      "file": "thunder-crows-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 21,
+        "t": 33,
+        "r": 108,
+        "b": 107,
+        "n": 3662,
+        "width": 88,
+        "height": 75
+      }
+    },
+    {
+      "index": 1,
+      "file": "thunder-crows-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 21,
+        "t": 28,
+        "r": 105,
+        "b": 107,
+        "n": 3990,
+        "width": 85,
+        "height": 80
+      }
+    },
+    {
+      "index": 2,
+      "file": "thunder-crows-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 23,
+        "t": 33,
+        "r": 108,
+        "b": 107,
+        "n": 3705,
+        "width": 86,
+        "height": 75
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/thunder-crows-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "development/assets/skills/miko/source/ember-fox-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

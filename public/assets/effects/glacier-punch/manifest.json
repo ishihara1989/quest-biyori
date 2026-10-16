@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-punch",
+  "label": "晶拳の衝撃",
+  "sheet": "glacier-punch.png",
+  "preview": "../../../../development/assets/effects/glacier-punch/glacier-punch-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1360,
+  "height": 270,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 270,
+  "frameCount": 4,
+  "pivot": {
+    "x": 170,
+    "y": 248
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/punch.png",
+  "sourceScale": 0.38961038961038963,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-punch/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-punch-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 270,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 92,
+        "top": 138,
+        "right": 249,
+        "bottom": 248
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 869,
+        "height": 599
+      },
+      "sourceAnchor": {
+        "x": 409,
+        "y": 449
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-punch-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 270,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 34,
+        "top": 97,
+        "right": 306,
+        "bottom": 248
+      },
+      "sourceCell": {
+        "x": 869,
+        "y": 0,
+        "width": 869,
+        "height": 599
+      },
+      "sourceAnchor": {
+        "x": 473,
+        "y": 464
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-punch-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 270,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 20,
+        "top": 48,
+        "right": 319,
+        "bottom": 247
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 599,
+        "width": 869,
+        "height": 599
+      },
+      "sourceAnchor": {
+        "x": 420,
+        "y": 539
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-punch-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 270,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 48,
+        "top": 93,
+        "right": 292,
+        "bottom": 248
+      },
+      "sourceCell": {
+        "x": 869,
+        "y": 599,
+        "width": 869,
+        "height": 599
+      },
+      "sourceAnchor": {
+        "x": 357,
+        "y": 539
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "ground",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/punch-generated.png"
+}

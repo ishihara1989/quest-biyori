@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lamia",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "lamia-hit.png",
+  "preview": "../../../../../../development/assets/enemies/lamia/motions/hit/lamia-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1200,
+  "height": 440,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 600,
+  "frameHeight": 440,
+  "frameCount": 2,
+  "pivot": {
+    "x": 348,
+    "y": 422
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/lamia/source/hit-registered.png",
+  "sourceScale": 0.5296229802513465,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 440,
+      "durationMs": 170,
+      "phase": "被弾",
+      "bounds": {
+        "left": 228,
+        "top": 129,
+        "right": 481,
+        "bottom": 422
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 700,
+        "height": 636
+      },
+      "sourceAnchor": {
+        "x": 373,
+        "y": 585
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 600,
+      "y": 0,
+      "width": 600,
+      "height": 440,
+      "durationMs": 210,
+      "phase": "復帰",
+      "bounds": {
+        "left": 225,
+        "top": 127,
+        "right": 491,
+        "bottom": 422
+      },
+      "sourceCell": {
+        "x": 700,
+        "y": 0,
+        "width": 700,
+        "height": 636
+      },
+      "sourceAnchor": {
+        "x": 306,
+        "y": 591
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/lamia-reaction-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/lamia.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 710,
+          "height": 642
+        },
+        {
+          "x": 710,
+          "y": 0,
+          "width": 664,
+          "height": 642
+        },
+        {
+          "x": 0,
+          "y": 642,
+          "width": 689,
+          "height": 503
+        },
+        {
+          "x": 689,
+          "y": 642,
+          "width": 685,
+          "height": 503
+        }
+      ]
+    }
+  ]
+}

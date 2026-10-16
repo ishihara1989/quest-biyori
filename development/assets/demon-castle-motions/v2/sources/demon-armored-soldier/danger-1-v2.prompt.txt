@@ -1,0 +1,11 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame "armor-break thrust" dangerous sword action, body-only, exact demon armored soldier in canonical reference.
+Same black/gold plate armor, pointed helmet with red slit visor, red ragged cape, one straight steel sword, one tall black-and-gold shield with red central emblem, two arms and two legs. LEFT-facing mild three-quarter view, same proportions and refined crisp JRPG pixel art.
+Critical: sword is wielded by ONE sword-side hand on SCREEN LEFT in neutral. OTHER arm stays attached behind shield on SCREEN RIGHT, holding its back grip all four frames. Never add a third hand, grip sword with shield arm, abandon or float shield.
+Exactly four complete small poses in equal 2x2 cells, row-major. Whole body, sword, shield, cape and boots fit within normalized x=160..840,y=160..850 of EACH cell, with broad clear transparent borders. Same body and sword scale throughout.
+Root pelvis (550,600), head (530,350), two boots planted at y=835; shield center remains (650,565).
+Frame 1: shield firmly forward on its forearm, sword hand (410,620), tip (210,750), ready stance.
+Frame 2: windup for a THRUST, sword hand draws to (570,565), same straight blade points left-up toward tip (350,485), sword elbow stays connected to left-origin shoulder. Shield remains held center (650,565) by the OTHER arm. A tiny white highlight on sword edge only.
+Frame 3: thrust HORIZONTALLY LEFT, sword hand (380,565), straight blade extends to tip (150,565). Same sword length and width, no growing blade. Torso leans 7 degrees left, pelvis shifts only 10 units left, shield and arm remain together at screen-right, two boots support stance.
+Frame 4: retract sword and return shield, hands and body to frame-1 neutral.
+Separate slash and armor-break VFX will be displayed externally. No external white streak, shards, spell symbols, aura, floor, shadow, colored background, labels, text, grid, checkerboard or watermark. Genuine transparent alpha.

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "enemy": "frost-wolf",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "frost-wolf-hit.png",
+  "preview": "../../../../../../development/assets/enemies/frost-wolf/motions/hit/frost-wolf-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 800,
+  "height": 300,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 400,
+  "frameHeight": 300,
+  "frameCount": 2,
+  "pivot": {
+    "x": 224,
+    "y": 278
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/frost-wolf/hit.png",
+  "sourceScale": 0.3480278422273782,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 180,
+      "phase": "被弾",
+      "bounds": {
+        "left": 133,
+        "top": 117,
+        "right": 311,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 695,
+        "height": 731
+      },
+      "sourceAnchor": {
+        "x": 397,
+        "y": 634
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 400,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "durationMs": 220,
+      "phase": "復帰",
+      "bounds": {
+        "left": 131,
+        "top": 129,
+        "right": 314,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 695,
+        "y": 0,
+        "width": 695,
+        "height": 731
+      },
+      "sourceAnchor": {
+        "x": 314.4651162790698,
+        "y": 634
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/frost-wolf.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/frost-wolf/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 663,
+          "height": 699
+        },
+        {
+          "x": 663,
+          "y": 0,
+          "width": 591,
+          "height": 699
+        },
+        {
+          "x": 0,
+          "y": 699,
+          "width": 623,
+          "height": 555
+        },
+        {
+          "x": 623,
+          "y": 699,
+          "width": 631,
+          "height": 555
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

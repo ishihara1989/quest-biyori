@@ -1,0 +1,52 @@
+{
+  "id": "motions/p2-break-overhead",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-break-overhead/review/motions/p2-break-overhead/frame-01.png",
+      "index": 1,
+      "durationMs": 100,
+      "source": "source/motions/p2-break-overhead.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "Hands lower continuously from above-head (236,104)/(288,104) toward (220,184)/(302,184), elbows bending, shoulders slack.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.4420838961256992,
+      "lowAlphaPixels": 42154,
+      "edgePixels": 0,
+      "bounds": [
+        15,
+        56,
+        1240,
+        1199
+      ],
+      "marginFraction": 0.01036682615629984
+    }
+  ],
+  "sources": [
+    "source/motions/p2-break-overhead.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p2-break-overhead/contact.png",
+  "gif": "review/motions/p2-break-overhead/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

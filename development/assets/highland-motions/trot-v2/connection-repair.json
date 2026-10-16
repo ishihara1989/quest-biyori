@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-13 JST",
+  "tool": "built-in image_gen",
+  "records": [
+    {
+      "frame": 1,
+      "prompt": "Use case: precise-object-edit. Repair ONLY the anatomical connection of the RIGHT/FAR/BACKGROUND HIND leg in this existing LEFT-facing manticore animation frame. Output the same single full-body transparent sprite, same 1375x1144 framing/scale/colors. All FOUR PAW POSITIONS and shapes must remain EXACTLY UNCHANGED. The forward/backward gait is already approved; do not change it.\nThe smaller dark far/right hind paw is the paw immediately LEFT of the big bright foreground hind paw, under the rear belly. Its bottom is around (830,960), and its gold ankle armor is around (830,850). The big foreground hind paw at roughly (950,950) is the LEFT/NEAR leg; leave that entire leg untouched.\nCurrently the small far hind paw/ankle is not visibly connected to its upper THIGH: the dark red thigh under the belly ends near (735,790), then the ankle/paw appears as a separate piece. Repair the missing THIGH→KNEE→SHIN connection. Create one coherent continuous dark red fur-covered anatomical leg from the far-side pelvis/thigh under the belly, through a bent knee around (785,815), down to the EXISTING ankle around (830,850), and into the EXISTING small planted paw. The far leg belongs BEHIND the foreground haunch; retain occlusion while leaving a clear connected fur silhouette in the gap. Fill only this missing short connector, not a new leg. No transparent break between thigh and shin.\nDo not move or redraw the four feet, do not alter their ground/lift states, and do not change stride, body, mane, face, horns, wings, tail, ankle armor, camera or palette. Exactly four anatomical legs, no fifth limb, no floating detached paw. Real transparent RGBA; no text/guide/shadow/background/effects.",
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13090-86c2-7f71-8c3e-886a539df52e/exec-62c2577f-f796-49be-9d8e-10b1f6954119.png",
+      "source": "trot-v2/sources/frame-1-connection-rejected-extra-foot.png",
+      "status": "rejected-fifth-foot",
+      "sha256": "4c6ed694b5044a8eded9392e0bd5558eee0580d4068b733fb5dbbbe1a0ccd6a8"
+    },
+    {
+      "frame": 1,
+      "prompt": "Edit the attached sprite in-place. There are EXACTLY FOUR existing paws: front at (307,890), front at (345,1040), far hind at (830,920), near hind at (950,890). Preserve these four paws in their exact existing locations. DO NOT DRAW ANY NEW PAW OR ANKLET. Preserve all opaque artwork, facial/body landmarks, wings and tail. Repair ONLY the detached far hind leg: the dark red thigh currently terminates at (735,790), while its EXISTING gold cuff at (830,850) and EXISTING dark paw below it are detached from that thigh. Add a short, narrow continuous dark red knee/shin bridge from the EXISTING thigh tip (735,790) diagonally down-right to the EXISTING cuff (830,850). The connecting shin is largely occluded behind the big foreground haunch at (900,760), with only its left edge exposed. No limb ending at x650: that would be a WRONG fifth foot. Do not alter stride, foot placement, ground contact, anatomy elsewhere or colors. Exactly four total legs. Full transparent canvas, original 1375x1144 composition. Pixel game sprite style matching source.",
+      "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13090-86c2-7f71-8c3e-886a539df52e/exec-8afd71e3-d6c4-4376-81f1-ad10c1434033.png",
+      "source": "trot-v2/sources/frame-1-connected.png",
+      "status": "selected-connection-only",
+      "sha256": "b7ceb7f15557de0993082297d42144fd077c0aaf09c08a07125b88144055f3aa"
+    }
+  ]
+}

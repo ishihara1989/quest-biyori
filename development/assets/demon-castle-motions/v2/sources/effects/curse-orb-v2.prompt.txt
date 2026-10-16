@@ -1,0 +1,10 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame seamless looping LEFT-FLYING CURSE ORB projectile for a refined pixel-art JRPG. This is a flight cycle ONLY. Input image is palette and motif reference, not the animation sequence to copy.
+Exactly four complete separate sprites arranged in equal 2x2 cells with broad transparent gutters. Equal scale in every cell. Every cell has one intact round black-violet orb with bright magenta core, thin violet rotating energy and four small restrained golden diamond points. A short thin trail extends to the RIGHT, making travel direction LEFT obvious.
+Per-cell normalized plan: projectile center locked (440,500), round core radius 110, thin energy shell radius 160. Four gold accents lie around radius 150. Trail extends from x=580 to x=800, within y=420..580, with only 3-5 small violet diamond particles. Entire effect stays inside x=200..820 y=300..700 leaving very generous transparent margins.
+Frame 1: shell energy at phase 0 degrees, medium core brightness, all gold diamond points present.
+Frame 2: energy curls rotate 90 degrees, core brightens slightly, round orb SAME size, same center, same gold accents.
+Frame 3: curls rotate 180 degrees, brightness back to medium, orb SAME size, no explosion or extra ring, no expansion.
+Frame 4: curls rotate 270 degrees, slight low pulse that connects smoothly back to frame 1. Orb and four accents remain intact.
+CRITICAL: all four frames show the SAME full round projectile; NO shrinking, splitting, impact burst, dissolution, half-orb, expanding shockwave, extra sphere or disappearing core. Fly loop seamlessly 4 to 1. Impact is a separate asset and is not drawn here.
+Style: crisp deliberate pixel clusters, stepped edges, dark outline, magenta/purple with tiny gold details; match reference motifs. Native transparent alpha outside actual projectile and sparse trail pixels. No background glow sheet, no floor, text, labels, cell borders, checkerboard or watermark.

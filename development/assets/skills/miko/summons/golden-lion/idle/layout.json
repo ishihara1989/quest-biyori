@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/golden-lion-idle-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 718,
+      "height": 724
+    },
+    {
+      "x": 718,
+      "y": 0,
+      "width": 720,
+      "height": 724
+    },
+    {
+      "x": 1438,
+      "y": 0,
+      "width": 734,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 575,
+      "y": 921
+    },
+    {
+      "x": 506,
+      "y": 922
+    },
+    {
+      "x": 501,
+      "y": 922
+    }
+  ],
+  "scale": 0.08005718370264475
+}

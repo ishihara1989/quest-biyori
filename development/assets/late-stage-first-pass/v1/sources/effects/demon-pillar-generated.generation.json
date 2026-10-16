@@ -1,0 +1,27 @@
+{
+  "id": "effects/demon-pillar",
+  "effect": "demon-pillar",
+  "region": "demon-castle",
+  "label": "魔炎柱",
+  "kind": "ground",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/demon-pillar-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. one towering vertical crimson-white magic flame pillar, black-violet outer tongues, sharp low runic circle rim, spectacular height with readable edges. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed ground center (512,850), expand upward/outward; elliptical side-view base. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-e20391d3-ffd4-4fcd-be0d-5dae6f0c9d9e.png",
+  "sha256": "0bd4284a91070cb6428383c2b0f658d0ac89fd0509035365a3c7b835ef6f4372",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "縦の白赤の柱、紫黒の外縁、低い魔法陣で高い魔柱を表現。"
+    ],
+    "issues": [
+      "2コマ目の柱先端が原画の上端に近い。余白と見切れを確認する。",
+      "最大時の陣と柱が広い。判定円の外側でキャラクターを覆う範囲を検収する。"
+    ]
+  }
+}

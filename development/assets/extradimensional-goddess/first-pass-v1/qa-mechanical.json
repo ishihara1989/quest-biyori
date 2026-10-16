@@ -1,0 +1,3116 @@
+{
+  "status": "mechanical-only-not-art-acceptance",
+  "date": "2026-10-15",
+  "sources": [
+    {
+      "id": "parts/body-seated",
+      "source": "source/parts/body-seated.png",
+      "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.4620328187439746,
+      "lowAlphaPixels": 27590,
+      "edgePixels": 0,
+      "bounds": [
+        30,
+        40,
+        1229,
+        1196
+      ],
+      "marginFraction": 0.019138755980861243,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.4620328187439746,
+          "lowAlphaPixels": 27590,
+          "edgePixels": 0,
+          "bounds": [
+            30,
+            40,
+            1229,
+            1196
+          ],
+          "marginFraction": 0.019138755980861243
+        }
+      ]
+    },
+    {
+      "id": "parts/body-floating",
+      "source": "source/parts/body-floating.png",
+      "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.4517880899145064,
+      "lowAlphaPixels": 52477,
+      "edgePixels": 0,
+      "bounds": [
+        22,
+        25,
+        1238,
+        1218
+      ],
+      "marginFraction": 0.011961722488038277,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.4517880899145064,
+          "lowAlphaPixels": 52477,
+          "edgePixels": 0,
+          "bounds": [
+            22,
+            25,
+            1238,
+            1218
+          ],
+          "marginFraction": 0.011961722488038277
+        }
+      ]
+    },
+    {
+      "id": "parts/throne",
+      "source": "source/parts/throne.png",
+      "sha256": "d217114e14e892ea59c913fa83c3526f16d818c4be23c2f7034e4a1fd6998807",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.5310699541371916,
+      "lowAlphaPixels": 45758,
+      "edgePixels": 0,
+      "bounds": [
+        137,
+        39,
+        1171,
+        1183
+      ],
+      "marginFraction": 0.03110047846889952,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.5310699541371916,
+          "lowAlphaPixels": 45758,
+          "edgePixels": 0,
+          "bounds": [
+            137,
+            39,
+            1171,
+            1183
+          ],
+          "marginFraction": 0.03110047846889952
+        }
+      ]
+    },
+    {
+      "id": "parts/halo",
+      "source": "source/parts/halo.png",
+      "sha256": "0f2fa17230bd701489b75b8ccd293166c3b03937017130bf2eb2994dc671f8c0",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.7530346273106283,
+      "lowAlphaPixels": 75796,
+      "edgePixels": 0,
+      "bounds": [
+        8,
+        117,
+        1246,
+        1093
+      ],
+      "marginFraction": 0.005582137161084529,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.7530346273106283,
+          "lowAlphaPixels": 75796,
+          "edgePixels": 0,
+          "bounds": [
+            8,
+            117,
+            1246,
+            1093
+          ],
+          "marginFraction": 0.005582137161084529
+        }
+      ]
+    },
+    {
+      "id": "parts/ground-shadow",
+      "source": "source/parts/ground-shadow.png",
+      "sha256": "ee991b09d050c3712dacc07d270709118aa6bbbd46bbfefc783e07d47bb00001",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.9653968544676175,
+      "lowAlphaPixels": 20597,
+      "edgePixels": 0,
+      "bounds": [
+        363,
+        1075,
+        895,
+        1158
+      ],
+      "marginFraction": 0.07575757575757576,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.9653968544676175,
+          "lowAlphaPixels": 20597,
+          "edgePixels": 0,
+          "bounds": [
+            363,
+            1075,
+            895,
+            1158
+          ],
+          "marginFraction": 0.07575757575757576
+        }
+      ]
+    },
+    {
+      "id": "parts/halo-node",
+      "source": "source/parts/halo-node.png",
+      "sha256": "230bde663e8632dd3339d51b7405577e14049b34709041800fc04e325f20bcec",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.9564157057861414,
+      "lowAlphaPixels": 6161,
+      "edgePixels": 0,
+      "bounds": [
+        450,
+        350,
+        803,
+        904
+      ],
+      "marginFraction": 0.2783094098883573,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.9564157057861414,
+          "lowAlphaPixels": 6161,
+          "edgePixels": 0,
+          "bounds": [
+            450,
+            350,
+            803,
+            904
+          ],
+          "marginFraction": 0.2783094098883573
+        }
+      ]
+    },
+    {
+      "id": "parts/debris",
+      "source": "source/parts/debris.png",
+      "sha256": "bd48286bff83fdff3684d949cd58e5f592c4426d329bb6b2531b74083c603142",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.816515698409428,
+      "lowAlphaPixels": 25169,
+      "edgePixels": 0,
+      "bounds": [
+        358,
+        193,
+        1034,
+        1056
+      ],
+      "marginFraction": 0.15390749601275916,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.816515698409428,
+          "lowAlphaPixels": 25169,
+          "edgePixels": 0,
+          "bounds": [
+            358,
+            193,
+            1034,
+            1056
+          ],
+          "marginFraction": 0.15390749601275916
+        }
+      ]
+    },
+    {
+      "id": "parts/target-star",
+      "source": "source/parts/target-star.png",
+      "sha256": "835e36c2d46ea759893d0c1c5411bc223a1b8b4c6954d07667d2af98066647eb",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.9373627994882087,
+      "lowAlphaPixels": 17860,
+      "edgePixels": 0,
+      "bounds": [
+        331,
+        346,
+        922,
+        926
+      ],
+      "marginFraction": 0.2607655502392344,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.9373627994882087,
+          "lowAlphaPixels": 17860,
+          "edgePixels": 0,
+          "bounds": [
+            331,
+            346,
+            922,
+            926
+          ],
+          "marginFraction": 0.2607655502392344
+        }
+      ]
+    },
+    {
+      "id": "parts/eclipse-rim",
+      "source": "source/parts/eclipse-rim.png",
+      "sha256": "ccd96329eec6630e52130ebbbd4baa8c61f99805c1385aac769e02d6220149ae",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.8491939032734802,
+      "lowAlphaPixels": 110298,
+      "edgePixels": 0,
+      "bounds": [
+        47,
+        45,
+        1211,
+        1203
+      ],
+      "marginFraction": 0.03349282296650718,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.8491939032734802,
+          "lowAlphaPixels": 110298,
+          "edgePixels": 0,
+          "bounds": [
+            47,
+            45,
+            1211,
+            1203
+          ],
+          "marginFraction": 0.03349282296650718
+        }
+      ]
+    },
+    {
+      "id": "motions/p1-idle",
+      "source": "source/motions/p1-idle.png",
+      "sha256": "7269ccb51608ccb46daa54caf0cbd5877979fad129f66a3e8102eb61763e9650",
+      "width": 1427,
+      "height": 1102,
+      "transparentFraction": 0.4585044456342994,
+      "lowAlphaPixels": 49017,
+      "edgePixels": 0,
+      "bounds": [
+        70,
+        2,
+        1401,
+        1085
+      ],
+      "marginFraction": 0.0018148820326678765,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 713,
+            "height": 551
+          },
+          "width": 713,
+          "height": 551,
+          "transparentFraction": 0.4658570544948239,
+          "lowAlphaPixels": 11632,
+          "edgePixels": 10,
+          "bounds": [
+            70,
+            7,
+            700,
+            550
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 713,
+            "top": 0,
+            "width": 714,
+            "height": 551
+          },
+          "width": 714,
+          "height": 551,
+          "transparentFraction": 0.45236824312302054,
+          "lowAlphaPixels": 12573,
+          "edgePixels": 8,
+          "bounds": [
+            61,
+            2,
+            688,
+            550
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 551,
+            "width": 713,
+            "height": 551
+          },
+          "width": 713,
+          "height": 551,
+          "transparentFraction": 0.4564364676744819,
+          "lowAlphaPixels": 12513,
+          "edgePixels": 11,
+          "bounds": [
+            70,
+            0,
+            701,
+            532
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 713,
+            "top": 551,
+            "width": 714,
+            "height": 551
+          },
+          "width": 714,
+          "height": 551,
+          "transparentFraction": 0.4593634186887096,
+          "lowAlphaPixels": 12299,
+          "edgePixels": 9,
+          "bounds": [
+            57,
+            0,
+            686,
+            534
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p1-shot",
+      "source": "source/motions/p1-shot.png",
+      "sha256": "663bcd7a42fc3dc5632a7b0f0bca98b1f3b6355e4f55b05d471c7a85e0d785f4",
+      "width": 1262,
+      "height": 1246,
+      "transparentFraction": 0.36784334275386465,
+      "lowAlphaPixels": 38519,
+      "edgePixels": 0,
+      "bounds": [
+        11,
+        12,
+        1250,
+        1218
+      ],
+      "marginFraction": 0.008716323296354992,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 631,
+            "height": 623
+          },
+          "width": 631,
+          "height": 623,
+          "transparentFraction": 0.37636506551551335,
+          "lowAlphaPixels": 10100,
+          "edgePixels": 34,
+          "bounds": [
+            12,
+            12,
+            630,
+            622
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 631,
+            "top": 0,
+            "width": 631,
+            "height": 623
+          },
+          "width": 631,
+          "height": 623,
+          "transparentFraction": 0.3729258508367823,
+          "lowAlphaPixels": 9375,
+          "edgePixels": 43,
+          "bounds": [
+            0,
+            12,
+            619,
+            622
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 623,
+            "width": 631,
+            "height": 623
+          },
+          "width": 631,
+          "height": 623,
+          "transparentFraction": 0.350677794934281,
+          "lowAlphaPixels": 9185,
+          "edgePixels": 82,
+          "bounds": [
+            11,
+            0,
+            630,
+            594
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 631,
+            "top": 623,
+            "width": 631,
+            "height": 623
+          },
+          "width": 631,
+          "height": 623,
+          "transparentFraction": 0.37140465972888204,
+          "lowAlphaPixels": 9859,
+          "edgePixels": 75,
+          "bounds": [
+            0,
+            0,
+            617,
+            595
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p1-snap",
+      "source": "source/motions/p1-snap.png",
+      "sha256": "b1e510602e0932b7e3527837a10f7eb821f8ccddfca675532c591f3e5849931f",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.3988404569492457,
+      "lowAlphaPixels": 56649,
+      "edgePixels": 0,
+      "bounds": [
+        9,
+        11,
+        1246,
+        1211
+      ],
+      "marginFraction": 0.005582137161084529,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.4046814150062702,
+          "lowAlphaPixels": 13757,
+          "edgePixels": 0,
+          "bounds": [
+            9,
+            11,
+            619,
+            592
+          ],
+          "marginFraction": 0.011164274322169059
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 627,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.39701217666465716,
+          "lowAlphaPixels": 13193,
+          "edgePixels": 0,
+          "bounds": [
+            8,
+            11,
+            618,
+            592
+          ],
+          "marginFraction": 0.012759170653907496
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.3889868211197851,
+          "lowAlphaPixels": 15571,
+          "edgePixels": 0,
+          "bounds": [
+            9,
+            3,
+            622,
+            584
+          ],
+          "marginFraction": 0.004784688995215311
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 627,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.4046814150062702,
+          "lowAlphaPixels": 14128,
+          "edgePixels": 0,
+          "bounds": [
+            11,
+            3,
+            619,
+            584
+          ],
+          "marginFraction": 0.004784688995215311
+        }
+      ]
+    },
+    {
+      "id": "motions/p1-hit",
+      "source": "source/motions/p1-hit.png",
+      "sha256": "59e06a341d86fddc07534ee6193c8dc1a44ff7ad4aa759cfc9d4513d6db4f583",
+      "width": 1774,
+      "height": 887,
+      "transparentFraction": 0.41953038312389024,
+      "lowAlphaPixels": 38972,
+      "edgePixels": 0,
+      "bounds": [
+        15,
+        31,
+        1770,
+        845
+      ],
+      "marginFraction": 0.0016910935738444193,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 887,
+            "height": 887
+          },
+          "width": 887,
+          "height": 887,
+          "transparentFraction": 0.41632804546188273,
+          "lowAlphaPixels": 19780,
+          "edgePixels": 0,
+          "bounds": [
+            15,
+            31,
+            885,
+            843
+          ],
+          "marginFraction": 0.0011273957158962795
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 887,
+            "top": 0,
+            "width": 887,
+            "height": 887
+          },
+          "width": 887,
+          "height": 887,
+          "transparentFraction": 0.42273272078589774,
+          "lowAlphaPixels": 19192,
+          "edgePixels": 0,
+          "bounds": [
+            15,
+            31,
+            883,
+            845
+          ],
+          "marginFraction": 0.0033821871476888386
+        }
+      ]
+    },
+    {
+      "id": "motions/phase-rise-1",
+      "source": "source/motions/phase-rise-1.png",
+      "sha256": "4996476f8ffebca9a3c3357fe5048a7162dbc05004fd4be8a21e5b59ed1c4d3d",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.3997404179766592,
+      "lowAlphaPixels": 45477,
+      "edgePixels": 0,
+      "bounds": [
+        23,
+        14,
+        2155,
+        713
+      ],
+      "marginFraction": 0.007366482504604052,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4413460364457739,
+          "lowAlphaPixels": 13354,
+          "edgePixels": 55,
+          "bounds": [
+            23,
+            41,
+            723,
+            693
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3936330545465645,
+          "lowAlphaPixels": 14346,
+          "edgePixels": 60,
+          "bounds": [
+            0,
+            35,
+            723,
+            708
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3642421629376393,
+          "lowAlphaPixels": 17777,
+          "edgePixels": 16,
+          "bounds": [
+            0,
+            14,
+            707,
+            713
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/phase-rise-2",
+      "source": "source/motions/phase-rise-2.png",
+      "sha256": "b72fd1fb268457ff401ecdecc23f34dd6ea3250138e8ff6a4708aceadc607ba2",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.45848150239614177,
+      "lowAlphaPixels": 47510,
+      "edgePixels": 0,
+      "bounds": [
+        29,
+        2,
+        2160,
+        714
+      ],
+      "marginFraction": 0.0027624309392265192,
+      "cells": [
+        {
+          "frame": 4,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.5308903879612954,
+          "lowAlphaPixels": 11601,
+          "edgePixels": 137,
+          "bounds": [
+            29,
+            123,
+            723,
+            705
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 5,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.46089099844327097,
+          "lowAlphaPixels": 15458,
+          "edgePixels": 174,
+          "bounds": [
+            0,
+            36,
+            723,
+            714
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 6,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.38366312078385884,
+          "lowAlphaPixels": 20451,
+          "edgePixels": 46,
+          "bounds": [
+            0,
+            2,
+            712,
+            705
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/phase-rise-3",
+      "source": "source/motions/phase-rise-3.png",
+      "sha256": "ab8c757ac9875c42601543aadae5b526e7adae5f6a63eba4130f7545b8896ce8",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.38463989194469034,
+      "lowAlphaPixels": 57173,
+      "edgePixels": 0,
+      "bounds": [
+        11,
+        4,
+        2166,
+        712
+      ],
+      "marginFraction": 0.0023020257826887663,
+      "cells": [
+        {
+          "frame": 7,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.41032782882085406,
+          "lowAlphaPixels": 15111,
+          "edgePixels": 108,
+          "bounds": [
+            11,
+            49,
+            723,
+            702
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 8,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.39841579927352644,
+          "lowAlphaPixels": 22759,
+          "edgePixels": 90,
+          "bounds": [
+            0,
+            34,
+            722,
+            697
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 9,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.34517604773969046,
+          "lowAlphaPixels": 19303,
+          "edgePixels": 0,
+          "bounds": [
+            3,
+            4,
+            718,
+            712
+          ],
+          "marginFraction": 0.004143646408839779
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-idle",
+      "source": "source/motions/p2-idle.png",
+      "sha256": "2723b24e8bcebe41d94cfa2e1d68624904fb8088255f59187bb5c007357d9a03",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.42847513157258815,
+      "lowAlphaPixels": 74020,
+      "edgePixels": 0,
+      "bounds": [
+        24,
+        8,
+        1245,
+        1222
+      ],
+      "marginFraction": 0.006379585326953748,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.4377621594947206,
+          "lowAlphaPixels": 18819,
+          "edgePixels": 0,
+          "bounds": [
+            34,
+            15,
+            624,
+            608
+          ],
+          "marginFraction": 0.003189792663476874
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 627,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.4220599345253085,
+          "lowAlphaPixels": 18130,
+          "edgePixels": 0,
+          "bounds": [
+            23,
+            8,
+            618,
+            608
+          ],
+          "marginFraction": 0.012759170653907496
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.415588776203231,
+          "lowAlphaPixels": 18996,
+          "edgePixels": 84,
+          "bounds": [
+            24,
+            7,
+            626,
+            595
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 627,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.4384896560670925,
+          "lowAlphaPixels": 18075,
+          "edgePixels": 67,
+          "bounds": [
+            0,
+            9,
+            613,
+            595
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-drift",
+      "source": "source/motions/p2-drift.png",
+      "sha256": "3ee3329ed6bc513b83e30c9a4c6b60c2fb6d031aa6ab4f89f687ce06a069417a",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.4293259973189462,
+      "lowAlphaPixels": 66560,
+      "edgePixels": 0,
+      "bounds": [
+        60,
+        6,
+        1250,
+        1231
+      ],
+      "marginFraction": 0.0023923444976076554,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.446698157602212,
+          "lowAlphaPixels": 16540,
+          "edgePixels": 97,
+          "bounds": [
+            60,
+            10,
+            626,
+            608
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 627,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.40886324845025424,
+          "lowAlphaPixels": 18300,
+          "edgePixels": 96,
+          "bounds": [
+            0,
+            6,
+            623,
+            626
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.4277145669741993,
+          "lowAlphaPixels": 16206,
+          "edgePixels": 110,
+          "bounds": [
+            64,
+            2,
+            626,
+            597
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 627,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.43402801624911924,
+          "lowAlphaPixels": 15514,
+          "edgePixels": 101,
+          "bounds": [
+            0,
+            0,
+            603,
+            604
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-meteor-1",
+      "source": "source/motions/p2-meteor-1.png",
+      "sha256": "445acd9d5adcd74d793bcf0eb0961d9bac609b5ab008b1dc11ee08c9fcebc5c9",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.4302187306044789,
+      "lowAlphaPixels": 68020,
+      "edgePixels": 0,
+      "bounds": [
+        23,
+        22,
+        2149,
+        694
+      ],
+      "marginFraction": 0.010128913443830571,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.44525312108909987,
+          "lowAlphaPixels": 22359,
+          "edgePixels": 0,
+          "bounds": [
+            23,
+            22,
+            707,
+            694
+          ],
+          "marginFraction": 0.022099447513812154
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4365804615243735,
+          "lowAlphaPixels": 23080,
+          "edgePixels": 0,
+          "bounds": [
+            38,
+            22,
+            707,
+            694
+          ],
+          "marginFraction": 0.022099447513812154
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4088226091999634,
+          "lowAlphaPixels": 22581,
+          "edgePixels": 0,
+          "bounds": [
+            17,
+            22,
+            701,
+            694
+          ],
+          "marginFraction": 0.023480662983425413
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-meteor-2",
+      "source": "source/motions/p2-meteor-2.png",
+      "sha256": "2a407015deaa0092a3a79195269999d323b05979ec813946c694407196335eb0",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.3995890693202283,
+      "lowAlphaPixels": 61830,
+      "edgePixels": 0,
+      "bounds": [
+        10,
+        6,
+        2159,
+        689
+      ],
+      "marginFraction": 0.004604051565377533,
+      "cells": [
+        {
+          "frame": 4,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3933507066328867,
+          "lowAlphaPixels": 19775,
+          "edgePixels": 207,
+          "bounds": [
+            10,
+            8,
+            723,
+            668
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 5,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4029200115991575,
+          "lowAlphaPixels": 21610,
+          "edgePixels": 208,
+          "bounds": [
+            0,
+            9,
+            723,
+            689
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 6,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.40249648972864077,
+          "lowAlphaPixels": 20445,
+          "edgePixels": 10,
+          "bounds": [
+            0,
+            6,
+            711,
+            686
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-cast-1",
+      "source": "source/motions/p2-cast-1.png",
+      "sha256": "ba98fd660735a8dffcc4a03d187c40a2dc7406f2fb740e3bfe6906b0d0dd74c2",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.3948056886745419,
+      "lowAlphaPixels": 59493,
+      "edgePixels": 0,
+      "bounds": [
+        11,
+        11,
+        2160,
+        710
+      ],
+      "marginFraction": 0.0050644567219152855,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.357252144317939,
+          "lowAlphaPixels": 20040,
+          "edgePixels": 176,
+          "bounds": [
+            11,
+            12,
+            723,
+            708
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.41630292115625284,
+          "lowAlphaPixels": 20936,
+          "edgePixels": 153,
+          "bounds": [
+            0,
+            12,
+            712,
+            707
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4108620005494338,
+          "lowAlphaPixels": 18517,
+          "edgePixels": 0,
+          "bounds": [
+            12,
+            11,
+            712,
+            710
+          ],
+          "marginFraction": 0.015193370165745856
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-ultimate-1",
+      "source": "source/motions/p2-ultimate-1.png",
+      "sha256": "68a57a0bdedcf4e390e10b9cbfa51edab45ba8c174e9bc5d8239064219b1ceca",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.4423825839667084,
+      "lowAlphaPixels": 60135,
+      "edgePixels": 0,
+      "bounds": [
+        24,
+        23,
+        2153,
+        692
+      ],
+      "marginFraction": 0.008287292817679558,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.43346318793687616,
+          "lowAlphaPixels": 19888,
+          "edgePixels": 242,
+          "bounds": [
+            24,
+            23,
+            723,
+            692
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4322861023778273,
+          "lowAlphaPixels": 20105,
+          "edgePixels": 506,
+          "bounds": [
+            0,
+            23,
+            723,
+            692
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4613984615854217,
+          "lowAlphaPixels": 20142,
+          "edgePixels": 273,
+          "bounds": [
+            0,
+            23,
+            705,
+            692
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-ultimate-3",
+      "source": "source/motions/p2-ultimate-3.png",
+      "sha256": "487479112ad663a4613fdc554f17a2e137916b020d343b27d478aa4ff765a6dc",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.37897512794684735,
+      "lowAlphaPixels": 63976,
+      "edgePixels": 0,
+      "bounds": [
+        10,
+        17,
+        2158,
+        702
+      ],
+      "marginFraction": 0.004604051565377533,
+      "cells": [
+        {
+          "frame": 7,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3436879979243613,
+          "lowAlphaPixels": 20946,
+          "edgePixels": 362,
+          "bounds": [
+            10,
+            17,
+            723,
+            702
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 8,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3839626385030982,
+          "lowAlphaPixels": 23737,
+          "edgePixels": 478,
+          "bounds": [
+            0,
+            18,
+            723,
+            695
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 9,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.4092747474130826,
+          "lowAlphaPixels": 19293,
+          "edgePixels": 121,
+          "bounds": [
+            0,
+            24,
+            710,
+            691
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-hit",
+      "source": "source/motions/p2-hit.png",
+      "sha256": "757ac5fd8be46eb74dc90bfc1ddba626a377a8473d81a652a5d0744bf35177ea",
+      "width": 1774,
+      "height": 887,
+      "transparentFraction": 0.38696364498347036,
+      "lowAlphaPixels": 63386,
+      "edgePixels": 0,
+      "bounds": [
+        13,
+        18,
+        1761,
+        860
+      ],
+      "marginFraction": 0.006764374295377677,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 887,
+            "height": 887
+          },
+          "width": 887,
+          "height": 887,
+          "transparentFraction": 0.38662809541301196,
+          "lowAlphaPixels": 34204,
+          "edgePixels": 149,
+          "bounds": [
+            13,
+            19,
+            886,
+            860
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 887,
+            "top": 0,
+            "width": 887,
+            "height": 887
+          },
+          "width": 887,
+          "height": 887,
+          "transparentFraction": 0.3872991945539288,
+          "lowAlphaPixels": 29182,
+          "edgePixels": 146,
+          "bounds": [
+            0,
+            18,
+            874,
+            860
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-break",
+      "source": "source/motions/p2-break.png",
+      "sha256": "85220737fc91ba10e4c501a78f0dc41da1622952e90ed4e735cfe26deeecd994",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.37584895149720704,
+      "lowAlphaPixels": 60385,
+      "edgePixels": 0,
+      "bounds": [
+        14,
+        6,
+        2148,
+        707
+      ],
+      "marginFraction": 0.006445672191528545,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3748626415555081,
+          "lowAlphaPixels": 20151,
+          "edgePixels": 0,
+          "bounds": [
+            14,
+            6,
+            712,
+            704
+          ],
+          "marginFraction": 0.008287292817679558
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3732048014407375,
+          "lowAlphaPixels": 22150,
+          "edgePixels": 0,
+          "bounds": [
+            4,
+            6,
+            722,
+            707
+          ],
+          "marginFraction": 0.0013812154696132596
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3794794114953756,
+          "lowAlphaPixels": 18084,
+          "edgePixels": 0,
+          "bounds": [
+            28,
+            14,
+            700,
+            698
+          ],
+          "marginFraction": 0.019337016574585635
+        }
+      ]
+    },
+    {
+      "id": "motions/p2-break-overhead",
+      "source": "source/motions/p2-break-overhead.png",
+      "sha256": "4237af55a6bac061905f0b22a638d220316aaeee5ed782e047a148ac2e72085d",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.4420838961256992,
+      "lowAlphaPixels": 42154,
+      "edgePixels": 0,
+      "bounds": [
+        15,
+        56,
+        1240,
+        1199
+      ],
+      "marginFraction": 0.01036682615629984,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 1254,
+            "height": 1254
+          },
+          "width": 1254,
+          "height": 1254,
+          "transparentFraction": 0.4420838961256992,
+          "lowAlphaPixels": 42154,
+          "edgePixels": 0,
+          "bounds": [
+            15,
+            56,
+            1240,
+            1199
+          ],
+          "marginFraction": 0.01036682615629984
+        }
+      ]
+    },
+    {
+      "id": "motions/down",
+      "source": "source/motions/down.png",
+      "sha256": "c9b82925e15b8354cefc64cb5e034d98c84dbefd6d2eb7e555133862bdeb68f1",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.37815386298136233,
+      "lowAlphaPixels": 121697,
+      "edgePixels": 0,
+      "bounds": [
+        20,
+        9,
+        1233,
+        1230
+      ],
+      "marginFraction": 0.007177033492822967,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.3663403106868229,
+          "lowAlphaPixels": 12678,
+          "edgePixels": 119,
+          "bounds": [
+            20,
+            9,
+            626,
+            601
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 627,
+            "top": 0,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.39798641158500137,
+          "lowAlphaPixels": 16407,
+          "edgePixels": 157,
+          "bounds": [
+            0,
+            51,
+            606,
+            626
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.3757087368268431,
+          "lowAlphaPixels": 44979,
+          "edgePixels": 2,
+          "bounds": [
+            25,
+            34,
+            626,
+            603
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 627,
+            "top": 627,
+            "width": 627,
+            "height": 627
+          },
+          "width": 627,
+          "height": 627,
+          "transparentFraction": 0.37257999282678206,
+          "lowAlphaPixels": 47633,
+          "edgePixels": 54,
+          "bounds": [
+            0,
+            0,
+            597,
+            596
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "effects/star-bolt",
+      "source": "source/effects/star-bolt.png",
+      "sha256": "82f07f0fa9610d77813aef8ff533346461a1d65ecbccdd5be1cbfd2b3ebcacaf",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.8840376769125892,
+      "lowAlphaPixels": 72093,
+      "edgePixels": 0,
+      "bounds": [
+        174,
+        237,
+        2121,
+        509
+      ],
+      "marginFraction": 0.02302025782688766,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9231212417203382,
+          "lowAlphaPixels": 17044,
+          "edgePixels": 130,
+          "bounds": [
+            174,
+            258,
+            723,
+            478
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.8519638442049998,
+          "lowAlphaPixels": 28864,
+          "edgePixels": 256,
+          "bounds": [
+            0,
+            237,
+            723,
+            509
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.8770279448124294,
+          "lowAlphaPixels": 26185,
+          "edgePixels": 127,
+          "bounds": [
+            0,
+            258,
+            673,
+            480
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "effects/star-impact",
+      "source": "source/effects/star-impact.png",
+      "sha256": "914ea3009133f0ac083d6693c4ee3ec43c047b0ec025817e42365f07661e5c38",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.8557863516579673,
+      "lowAlphaPixels": 119423,
+      "edgePixels": 0,
+      "bounds": [
+        245,
+        63,
+        1994,
+        670
+      ],
+      "marginFraction": 0.07320441988950276,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.953332468483868,
+          "lowAlphaPixels": 12558,
+          "edgePixels": 0,
+          "bounds": [
+            245,
+            258,
+            465,
+            456
+          ],
+          "marginFraction": 0.3383977900552486
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.7116293000824151,
+          "lowAlphaPixels": 70653,
+          "edgePixels": 0,
+          "bounds": [
+            55,
+            63,
+            668,
+            670
+          ],
+          "marginFraction": 0.07320441988950276
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9023972864076188,
+          "lowAlphaPixels": 36212,
+          "edgePixels": 0,
+          "bounds": [
+            185,
+            154,
+            546,
+            570
+          ],
+          "marginFraction": 0.21132596685082872
+        }
+      ]
+    },
+    {
+      "id": "effects/snap-glint",
+      "source": "source/effects/snap-glint.png",
+      "sha256": "71decb06902d6f166ce44edae24220308f119e5077804cd879c99d04941334f7",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.95695211786372,
+      "lowAlphaPixels": 32410,
+      "edgePixels": 0,
+      "bounds": [
+        305,
+        137,
+        1887,
+        580
+      ],
+      "marginFraction": 0.13075506445672191,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.985100424284973,
+          "lowAlphaPixels": 3912,
+          "edgePixels": 0,
+          "bounds": [
+            305,
+            282,
+            433,
+            418
+          ],
+          "marginFraction": 0.38950276243093923
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9057377674674155,
+          "lowAlphaPixels": 21621,
+          "edgePixels": 0,
+          "bounds": [
+            139,
+            137,
+            587,
+            580
+          ],
+          "marginFraction": 0.1878453038674033
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9800181618387717,
+          "lowAlphaPixels": 6877,
+          "edgePixels": 0,
+          "bounds": [
+            273,
+            256,
+            439,
+            454
+          ],
+          "marginFraction": 0.35359116022099446
+        }
+      ]
+    },
+    {
+      "id": "effects/star-mirror-open",
+      "source": "source/effects/star-mirror-open.png",
+      "sha256": "82bb46a118d1845e917713866c01575f32f7bec5219ee10df61e1b5474f7afb8",
+      "width": 1434,
+      "height": 1097,
+      "transparentFraction": 0.702652345880549,
+      "lowAlphaPixels": 57172,
+      "edgePixels": 0,
+      "bounds": [
+        165,
+        7,
+        1341,
+        1066
+      ],
+      "marginFraction": 0.006381039197812215,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 717,
+            "height": 548
+          },
+          "width": 717,
+          "height": 548,
+          "transparentFraction": 0.8345982347371957,
+          "lowAlphaPixels": 11678,
+          "edgePixels": 26,
+          "bounds": [
+            267,
+            7,
+            498,
+            547
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 717,
+            "top": 0,
+            "width": 717,
+            "height": 548
+          },
+          "width": 717,
+          "height": 548,
+          "transparentFraction": 0.7805586944792271,
+          "lowAlphaPixels": 12514,
+          "edgePixels": 29,
+          "bounds": [
+            181,
+            7,
+            479,
+            547
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 548,
+            "width": 717,
+            "height": 549
+          },
+          "width": 717,
+          "height": 549,
+          "transparentFraction": 0.6657648113852243,
+          "lowAlphaPixels": 15443,
+          "edgePixels": 28,
+          "bounds": [
+            165,
+            0,
+            583,
+            514
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 717,
+            "top": 548,
+            "width": 717,
+            "height": 549
+          },
+          "width": 717,
+          "height": 549,
+          "transparentFraction": 0.5300698874332183,
+          "lowAlphaPixels": 17537,
+          "edgePixels": 29,
+          "bounds": [
+            62,
+            0,
+            624,
+            518
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "effects/phantom-recall",
+      "source": "source/effects/phantom-recall.png",
+      "sha256": "6e6eb356539a4a834fe39d3d4a8d38bcd8f5542a1c0bf81eed16c6ed3369f742",
+      "width": 1322,
+      "height": 1190,
+      "transparentFraction": 0.7764979214075948,
+      "lowAlphaPixels": 226955,
+      "edgePixels": 0,
+      "bounds": [
+        64,
+        14,
+        1208,
+        1147
+      ],
+      "marginFraction": 0.011764705882352941,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 661,
+            "height": 595
+          },
+          "width": 661,
+          "height": 595,
+          "transparentFraction": 0.6501582781372761,
+          "lowAlphaPixels": 86914,
+          "edgePixels": 0,
+          "bounds": [
+            64,
+            14,
+            658,
+            571
+          ],
+          "marginFraction": 0.0030257186081694403
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 661,
+            "top": 0,
+            "width": 661,
+            "height": 595
+          },
+          "width": 661,
+          "height": 595,
+          "transparentFraction": 0.7376752819130677,
+          "lowAlphaPixels": 71228,
+          "edgePixels": 2,
+          "bounds": [
+            112,
+            91,
+            547,
+            594
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 595,
+            "width": 661,
+            "height": 595
+          },
+          "width": 661,
+          "height": 595,
+          "transparentFraction": 0.8556808502523551,
+          "lowAlphaPixels": 39115,
+          "edgePixels": 0,
+          "bounds": [
+            240,
+            133,
+            513,
+            441
+          ],
+          "marginFraction": 0.22239031770045387
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 661,
+            "top": 595,
+            "width": 661,
+            "height": 595
+          },
+          "width": 661,
+          "height": 595,
+          "transparentFraction": 0.8624772753276803,
+          "lowAlphaPixels": 29698,
+          "edgePixels": 4,
+          "bounds": [
+            251,
+            0,
+            400,
+            552
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "effects/homing-meteor",
+      "source": "source/effects/homing-meteor.png",
+      "sha256": "96589cdd19103cdca93340059473f359d4340edbe7bcc1d81946c879b17a50f4",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.8541628511543197,
+      "lowAlphaPixels": 75744,
+      "edgePixels": 0,
+      "bounds": [
+        318,
+        9,
+        2093,
+        641
+      ],
+      "marginFraction": 0.012430939226519336,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9235657489087634,
+          "lowAlphaPixels": 16810,
+          "edgePixels": 0,
+          "bounds": [
+            318,
+            42,
+            458,
+            567
+          ],
+          "marginFraction": 0.058011049723756904
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.8658236928054699,
+          "lowAlphaPixels": 24179,
+          "edgePixels": 0,
+          "bounds": [
+            239,
+            12,
+            530,
+            594
+          ],
+          "marginFraction": 0.016574585635359115
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.7730991117487256,
+          "lowAlphaPixels": 34755,
+          "edgePixels": 0,
+          "bounds": [
+            133,
+            9,
+            645,
+            641
+          ],
+          "marginFraction": 0.012430939226519336
+        }
+      ]
+    },
+    {
+      "id": "effects/meteor-impact",
+      "source": "source/effects/meteor-impact.png",
+      "sha256": "46f45059aa1b39ce348d2dd46a1b124577c467d73a02b48c9f5bec53ff1bb1d6",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.8643439099335593,
+      "lowAlphaPixels": 115390,
+      "edgePixels": 0,
+      "bounds": [
+        251,
+        196,
+        2122,
+        596
+      ],
+      "marginFraction": 0.02255985267034991,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.950533790177345,
+          "lowAlphaPixels": 13435,
+          "edgePixels": 0,
+          "bounds": [
+            251,
+            315,
+            478,
+            596
+          ],
+          "marginFraction": 0.17541436464088397
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.732210173682122,
+          "lowAlphaPixels": 64439,
+          "edgePixels": 0,
+          "bounds": [
+            44,
+            196,
+            678,
+            593
+          ],
+          "marginFraction": 0.06077348066298342
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9102877659412106,
+          "lowAlphaPixels": 37516,
+          "edgePixels": 0,
+          "bounds": [
+            96,
+            251,
+            674,
+            584
+          ],
+          "marginFraction": 0.06767955801104972
+        }
+      ]
+    },
+    {
+      "id": "effects/rift-open",
+      "source": "source/effects/rift-open.png",
+      "sha256": "ba92af9f725a692e8e75398a2fa8e1f6f8b4f66e4bc8dcc5af117f270c24f277",
+      "width": 1288,
+      "height": 1221,
+      "transparentFraction": 0.7769558095645052,
+      "lowAlphaPixels": 154169,
+      "edgePixels": 0,
+      "bounds": [
+        211,
+        39,
+        1159,
+        1198
+      ],
+      "marginFraction": 0.018018018018018018,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 644,
+            "height": 610
+          },
+          "width": 644,
+          "height": 610,
+          "transparentFraction": 0.9688219122288972,
+          "lowAlphaPixels": 9378,
+          "edgePixels": 8,
+          "bounds": [
+            289,
+            210,
+            378,
+            609
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 644,
+            "top": 0,
+            "width": 644,
+            "height": 610
+          },
+          "width": 644,
+          "height": 610,
+          "transparentFraction": 0.8551114957743611,
+          "lowAlphaPixels": 31835,
+          "edgePixels": 74,
+          "bounds": [
+            181,
+            39,
+            422,
+            609
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 610,
+            "width": 644,
+            "height": 611
+          },
+          "width": 644,
+          "height": 611,
+          "transparentFraction": 0.7348176800073193,
+          "lowAlphaPixels": 49215,
+          "edgePixels": 7,
+          "bounds": [
+            211,
+            0,
+            468,
+            549
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 644,
+            "top": 610,
+            "width": 644,
+            "height": 611
+          },
+          "width": 644,
+          "height": 611,
+          "transparentFraction": 0.5495140844354536,
+          "lowAlphaPixels": 63741,
+          "edgePixels": 74,
+          "bounds": [
+            105,
+            0,
+            515,
+            588
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "effects/rift-cut",
+      "source": "source/effects/rift-cut.png",
+      "sha256": "852a1957092d4586f6a4d798e4cb5ad44be840f879ccc24e7f9f0f3e5d10fa06",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.9066407720562051,
+      "lowAlphaPixels": 64465,
+      "edgePixels": 0,
+      "bounds": [
+        21,
+        266,
+        2135,
+        461
+      ],
+      "marginFraction": 0.009668508287292817,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9467736027593785,
+          "lowAlphaPixels": 13615,
+          "edgePixels": 0,
+          "bounds": [
+            21,
+            334,
+            697,
+            398
+          ],
+          "marginFraction": 0.029005524861878452
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.8442889411190134,
+          "lowAlphaPixels": 31137,
+          "edgePixels": 0,
+          "bounds": [
+            14,
+            266,
+            711,
+            461
+          ],
+          "marginFraction": 0.016574585635359115
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9288597722902231,
+          "lowAlphaPixels": 19713,
+          "edgePixels": 0,
+          "bounds": [
+            41,
+            322,
+            687,
+            404
+          ],
+          "marginFraction": 0.049723756906077346
+        }
+      ]
+    },
+    {
+      "id": "effects/celestial-wave",
+      "source": "source/effects/celestial-wave.png",
+      "sha256": "dbdc1d448f5588ba0acef9e959ca2922577eeef59005f6178394bc4e7a297af2",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.7180705208428722,
+      "lowAlphaPixels": 208423,
+      "edgePixels": 0,
+      "bounds": [
+        92,
+        29,
+        2104,
+        678
+      ],
+      "marginFraction": 0.030847145488029467,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.7873366960715484,
+          "lowAlphaPixels": 52020,
+          "edgePixels": 0,
+          "bounds": [
+            92,
+            90,
+            632,
+            619
+          ],
+          "marginFraction": 0.12430939226519337
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.5965152925734868,
+          "lowAlphaPixels": 64973,
+          "edgePixels": 0,
+          "bounds": [
+            28,
+            29,
+            699,
+            678
+          ],
+          "marginFraction": 0.03314917127071823
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.7703595738835811,
+          "lowAlphaPixels": 91430,
+          "edgePixels": 0,
+          "bounds": [
+            69,
+            57,
+            656,
+            649
+          ],
+          "marginFraction": 0.0787292817679558
+        }
+      ]
+    },
+    {
+      "id": "effects/zero-converge",
+      "source": "source/effects/zero-converge.png",
+      "sha256": "72296a853aed789091f21aaa7fa630df5f7f5cb30684aa431ce27d22c5f889f3",
+      "width": 1024,
+      "height": 1536,
+      "transparentFraction": 0.5740025838216146,
+      "lowAlphaPixels": 335442,
+      "edgePixels": 0,
+      "bounds": [
+        73,
+        27,
+        1013,
+        1484
+      ],
+      "marginFraction": 0.009765625,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "width": 512,
+          "height": 768,
+          "transparentFraction": 0.8012339274088541,
+          "lowAlphaPixels": 56436,
+          "edgePixels": 159,
+          "bounds": [
+            122,
+            130,
+            511,
+            767
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 768
+          },
+          "width": 512,
+          "height": 768,
+          "transparentFraction": 0.4613393147786458,
+          "lowAlphaPixels": 102810,
+          "edgePixels": 146,
+          "bounds": [
+            0,
+            27,
+            501,
+            767
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 0,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "width": 512,
+          "height": 768,
+          "transparentFraction": 0.611053466796875,
+          "lowAlphaPixels": 58216,
+          "edgePixels": 85,
+          "bounds": [
+            73,
+            0,
+            442,
+            704
+          ],
+          "marginFraction": 0
+        },
+        {
+          "frame": 4,
+          "rect": {
+            "left": 512,
+            "top": 768,
+            "width": 512,
+            "height": 768
+          },
+          "width": 512,
+          "height": 768,
+          "transparentFraction": 0.4223836263020833,
+          "lowAlphaPixels": 117980,
+          "edgePixels": 54,
+          "bounds": [
+            7,
+            0,
+            462,
+            716
+          ],
+          "marginFraction": 0
+        }
+      ]
+    },
+    {
+      "id": "effects/phase-awaken",
+      "source": "source/effects/phase-awaken.png",
+      "sha256": "87cfc91971d079b53593b6d3246a99ea321d8f002f5e0d1bb6e8ebc6ddcab6c2",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.9042541690831578,
+      "lowAlphaPixels": 59257,
+      "edgePixels": 0,
+      "bounds": [
+        106,
+        74,
+        2101,
+        677
+      ],
+      "marginFraction": 0.03222836095764273,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.899232318915784,
+          "lowAlphaPixels": 14257,
+          "edgePixels": 0,
+          "bounds": [
+            106,
+            526,
+            630,
+            677
+          ],
+          "marginFraction": 0.06353591160220995
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.9358078202741064,
+          "lowAlphaPixels": 17828,
+          "edgePixels": 0,
+          "bounds": [
+            262,
+            173,
+            448,
+            639
+          ],
+          "marginFraction": 0.11602209944751381
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.877722368059583,
+          "lowAlphaPixels": 27172,
+          "edgePixels": 0,
+          "bounds": [
+            26,
+            74,
+            653,
+            359
+          ],
+          "marginFraction": 0.03591160220994475
+        }
+      ]
+    },
+    {
+      "id": "effects/goddess-defeat-1",
+      "source": "source/effects/goddess-defeat-1.png",
+      "sha256": "3f72295b081421a40888d151abf68d89e4a534825f118556d75c60c86ee76906",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.5468112491478689,
+      "lowAlphaPixels": 420902,
+      "edgePixels": 0,
+      "bounds": [
+        46,
+        15,
+        2032,
+        669
+      ],
+      "marginFraction": 0.020718232044198894,
+      "cells": [
+        {
+          "frame": 1,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.48278059277799823,
+          "lowAlphaPixels": 137891,
+          "edgePixels": 0,
+          "bounds": [
+            46,
+            15,
+            694,
+            669
+          ],
+          "marginFraction": 0.020718232044198894
+        },
+        {
+          "frame": 2,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.46521397393241964,
+          "lowAlphaPixels": 174849,
+          "edgePixels": 0,
+          "bounds": [
+            93,
+            41,
+            661,
+            629
+          ],
+          "marginFraction": 0.05662983425414365
+        },
+        {
+          "frame": 3,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.6924391807331889,
+          "lowAlphaPixels": 108162,
+          "edgePixels": 0,
+          "bounds": [
+            173,
+            121,
+            584,
+            573
+          ],
+          "marginFraction": 0.1671270718232044
+        }
+      ]
+    },
+    {
+      "id": "effects/goddess-defeat-2",
+      "source": "source/effects/goddess-defeat-2.png",
+      "sha256": "f54e6b5554fc2f79696a17deec25c45bc9c35115a51f9ca8bd3d2a2e3868bd41",
+      "width": 2172,
+      "height": 724,
+      "transparentFraction": 0.5118751462613066,
+      "lowAlphaPixels": 472303,
+      "edgePixels": 0,
+      "bounds": [
+        23,
+        40,
+        2122,
+        689
+      ],
+      "marginFraction": 0.010589318600368325,
+      "cells": [
+        {
+          "frame": 4,
+          "rect": {
+            "left": 0,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.3229411495375599,
+          "lowAlphaPixels": 171284,
+          "edgePixels": 0,
+          "bounds": [
+            23,
+            40,
+            722,
+            689
+          ],
+          "marginFraction": 0.0013812154696132596
+        },
+        {
+          "frame": 5,
+          "rect": {
+            "left": 724,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.46318412136381676,
+          "lowAlphaPixels": 185764,
+          "edgePixels": 0,
+          "bounds": [
+            54,
+            56,
+            697,
+            641
+          ],
+          "marginFraction": 0.03591160220994475
+        },
+        {
+          "frame": 6,
+          "rect": {
+            "left": 1448,
+            "top": 0,
+            "width": 724,
+            "height": 724
+          },
+          "width": 724,
+          "height": 724,
+          "transparentFraction": 0.7495001678825433,
+          "lowAlphaPixels": 115255,
+          "edgePixels": 0,
+          "bounds": [
+            74,
+            129,
+            674,
+            585
+          ],
+          "marginFraction": 0.06767955801104972
+        }
+      ]
+    }
+  ]
+}

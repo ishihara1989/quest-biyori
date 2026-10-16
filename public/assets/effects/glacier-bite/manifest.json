@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-bite",
+  "label": "霜牙の衝撃",
+  "sheet": "glacier-bite.png",
+  "preview": "../../../../development/assets/effects/glacier-bite/glacier-bite-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1120,
+  "height": 220,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 280,
+  "frameHeight": 220,
+  "frameCount": 4,
+  "pivot": {
+    "x": 140,
+    "y": 110
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/bite.png",
+  "sourceScale": 0.3385049365303244,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-bite/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-bite-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 280,
+      "height": 220,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 42,
+        "top": 55,
+        "right": 237,
+        "bottom": 164
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 832,
+        "height": 577
+      },
+      "sourceAnchor": {
+        "x": 401,
+        "y": 277
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-bite-02.png",
+      "x": 280,
+      "y": 0,
+      "width": 280,
+      "height": 220,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 24,
+        "top": 49,
+        "right": 256,
+        "bottom": 171
+      },
+      "sourceCell": {
+        "x": 832,
+        "y": 0,
+        "width": 832,
+        "height": 577
+      },
+      "sourceAnchor": {
+        "x": 425,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-bite-03.png",
+      "x": 560,
+      "y": 0,
+      "width": 280,
+      "height": 220,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 20,
+        "top": 32,
+        "right": 259,
+        "bottom": 188
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 577,
+        "width": 832,
+        "height": 577
+      },
+      "sourceAnchor": {
+        "x": 414,
+        "y": 287
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-bite-04.png",
+      "x": 840,
+      "y": 0,
+      "width": 280,
+      "height": 220,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 36,
+        "top": 42,
+        "right": 244,
+        "bottom": 178
+      },
+      "sourceCell": {
+        "x": 832,
+        "y": 577,
+        "width": 832,
+        "height": 577
+      },
+      "sourceAnchor": {
+        "x": 371,
+        "y": 301
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "target",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/bite-generated.png"
+}

@@ -1,0 +1,491 @@
+[
+  {
+    "id": "black-knight/attack",
+    "label": "黒騎士・剣撃",
+    "enemy": "black-knight",
+    "motion": "attack",
+    "manifest": "review/black-knight/attack/manifest.json",
+    "contact": "review/black-knight/attack/contact.png",
+    "gif": "review/black-knight/attack/preview.gif"
+  },
+  {
+    "id": "dream-demon/hit",
+    "label": "夢魔・被弾",
+    "enemy": "dream-demon",
+    "motion": "hit",
+    "manifest": "review/dream-demon/hit/manifest.json",
+    "contact": "review/dream-demon/hit/contact.png",
+    "gif": "review/dream-demon/hit/preview.gif"
+  },
+  {
+    "id": "dream-demon/down",
+    "label": "夢魔・撃破",
+    "enemy": "dream-demon",
+    "motion": "down",
+    "manifest": "review/dream-demon/down/manifest.json",
+    "contact": "review/dream-demon/down/contact.png",
+    "gif": "review/dream-demon/down/preview.gif"
+  },
+  {
+    "id": "demon-armored-soldier/attack",
+    "label": "魔鎧兵・剣撃",
+    "enemy": "demon-armored-soldier",
+    "motion": "attack",
+    "manifest": "review/demon-armored-soldier/attack/manifest.json",
+    "contact": "review/demon-armored-soldier/attack/contact.png",
+    "gif": "review/demon-armored-soldier/attack/preview.gif"
+  },
+  {
+    "id": "effects/curse-orb",
+    "label": "呪弾・飛行ループ",
+    "motion": "effect",
+    "manifest": "review/effects/curse-orb/manifest.json",
+    "contact": "review/effects/curse-orb/contact.png",
+    "gif": "review/effects/curse-orb/preview.gif"
+  },
+  {
+    "id": "effects/dark-slash",
+    "label": "闇の剣撃",
+    "motion": "effect",
+    "manifest": "review/effects/dark-slash/manifest.json",
+    "contact": "review/effects/dark-slash/contact.png",
+    "gif": "review/effects/dark-slash/preview.gif"
+  },
+  {
+    "id": "dream-demon/danger-1",
+    "label": "夢魔・眠りの月",
+    "enemy": "dream-demon",
+    "motion": "danger-1",
+    "manifest": "review/dream-demon/danger-1/manifest.json",
+    "contact": "review/dream-demon/danger-1/contact.png",
+    "gif": "review/dream-demon/danger-1/preview.gif"
+  },
+  {
+    "id": "lilith/danger-1",
+    "label": "リリス・宵闇の花冠",
+    "enemy": "lilith",
+    "motion": "danger-1",
+    "manifest": "review/lilith/danger-1/manifest.json",
+    "contact": "review/lilith/danger-1/contact.png",
+    "gif": "review/lilith/danger-1/preview.gif"
+  },
+  {
+    "id": "effects/sleep-moon",
+    "label": "眠りの月・状態ループ",
+    "motion": "effect",
+    "manifest": "review/effects/sleep-moon/manifest.json",
+    "contact": "review/effects/sleep-moon/contact.png",
+    "gif": "review/effects/sleep-moon/preview.gif"
+  },
+  {
+    "id": "effects/dark-flower",
+    "label": "宵闇の花冠・開花",
+    "enemy": null,
+    "motion": "effect",
+    "manifest": "review/effects/dark-flower/manifest.json",
+    "contact": "review/effects/dark-flower/contact.png",
+    "gif": "review/effects/dark-flower/preview.gif"
+  },
+  {
+    "id": "arch-demon/attack",
+    "label": "アークデーモン・拳撃",
+    "enemy": "arch-demon",
+    "motion": "attack",
+    "manifest": "review/arch-demon/attack/manifest.json",
+    "contact": "review/arch-demon/attack/contact.png",
+    "gif": "review/arch-demon/attack/preview.gif"
+  },
+  {
+    "id": "imp/attack",
+    "label": "インプ・爪撃",
+    "enemy": "imp",
+    "motion": "attack",
+    "manifest": "review/imp/attack/manifest.json",
+    "contact": "review/imp/attack/contact.png",
+    "gif": "review/imp/attack/preview.gif"
+  },
+  {
+    "id": "lilith/attack",
+    "label": "リリス・魔弾",
+    "enemy": "lilith",
+    "motion": "attack",
+    "manifest": "review/lilith/attack/manifest.json",
+    "contact": "review/lilith/attack/contact.png",
+    "gif": "review/lilith/attack/preview.gif"
+  },
+  {
+    "id": "demon-armored-soldier/idle",
+    "label": "魔鎧兵・待機",
+    "enemy": "demon-armored-soldier",
+    "motion": "idle",
+    "manifest": "review/demon-armored-soldier/idle/manifest.json",
+    "contact": "review/demon-armored-soldier/idle/contact.png",
+    "gif": "review/demon-armored-soldier/idle/preview.gif"
+  },
+  {
+    "id": "demon-armored-soldier/hit",
+    "label": "魔鎧兵・被弾",
+    "enemy": "demon-armored-soldier",
+    "motion": "hit",
+    "manifest": "review/demon-armored-soldier/hit/manifest.json",
+    "contact": "review/demon-armored-soldier/hit/contact.png",
+    "gif": "review/demon-armored-soldier/hit/preview.gif"
+  },
+  {
+    "id": "demon-armored-soldier/down",
+    "label": "魔鎧兵・撃破",
+    "enemy": "demon-armored-soldier",
+    "motion": "down",
+    "manifest": "review/demon-armored-soldier/down/manifest.json",
+    "contact": "review/demon-armored-soldier/down/contact.png",
+    "gif": "review/demon-armored-soldier/down/preview.gif"
+  },
+  {
+    "id": "demon-armored-soldier/move",
+    "label": "魔鎧兵・移動",
+    "enemy": "demon-armored-soldier",
+    "motion": "move",
+    "manifest": "review/demon-armored-soldier/move/manifest.json",
+    "contact": "review/demon-armored-soldier/move/contact.png",
+    "gif": "review/demon-armored-soldier/move/preview.gif"
+  },
+  {
+    "id": "imp/idle",
+    "label": "インプ・待機",
+    "enemy": "imp",
+    "motion": "idle",
+    "manifest": "review/imp/idle/manifest.json",
+    "contact": "review/imp/idle/contact.png",
+    "gif": "review/imp/idle/preview.gif"
+  },
+  {
+    "id": "imp/hit",
+    "label": "インプ・被弾",
+    "enemy": "imp",
+    "motion": "hit",
+    "manifest": "review/imp/hit/manifest.json",
+    "contact": "review/imp/hit/contact.png",
+    "gif": "review/imp/hit/preview.gif"
+  },
+  {
+    "id": "imp/down",
+    "label": "インプ・撃破",
+    "enemy": "imp",
+    "motion": "down",
+    "manifest": "review/imp/down/manifest.json",
+    "contact": "review/imp/down/contact.png",
+    "gif": "review/imp/down/preview.gif"
+  },
+  {
+    "id": "imp/move",
+    "label": "インプ・移動",
+    "enemy": "imp",
+    "motion": "move",
+    "manifest": "review/imp/move/manifest.json",
+    "contact": "review/imp/move/contact.png",
+    "gif": "review/imp/move/preview.gif"
+  },
+  {
+    "id": "imp/danger-1",
+    "label": "インプ・呪弾",
+    "enemy": "imp",
+    "motion": "danger-1",
+    "manifest": "review/imp/danger-1/manifest.json",
+    "contact": "review/imp/danger-1/contact.png",
+    "gif": "review/imp/danger-1/preview.gif"
+  },
+  {
+    "id": "dream-demon/idle",
+    "label": "夢魔・待機",
+    "enemy": "dream-demon",
+    "motion": "idle",
+    "manifest": "review/dream-demon/idle/manifest.json",
+    "contact": "review/dream-demon/idle/contact.png",
+    "gif": "review/dream-demon/idle/preview.gif"
+  },
+  {
+    "id": "dream-demon/move",
+    "label": "夢魔・移動",
+    "enemy": "dream-demon",
+    "motion": "move",
+    "manifest": "review/dream-demon/move/manifest.json",
+    "contact": "review/dream-demon/move/contact.png",
+    "gif": "review/dream-demon/move/preview.gif"
+  },
+  {
+    "id": "dream-demon/attack",
+    "label": "夢魔・魔弾",
+    "enemy": "dream-demon",
+    "motion": "attack",
+    "manifest": "review/dream-demon/attack/manifest.json",
+    "contact": "review/dream-demon/attack/contact.png",
+    "gif": "review/dream-demon/attack/preview.gif"
+  },
+  {
+    "id": "black-knight/idle",
+    "label": "黒騎士・待機",
+    "enemy": "black-knight",
+    "motion": "idle",
+    "manifest": "review/black-knight/idle/manifest.json",
+    "contact": "review/black-knight/idle/contact.png",
+    "gif": "review/black-knight/idle/preview.gif"
+  },
+  {
+    "id": "arch-demon/idle",
+    "label": "アークデーモン・待機",
+    "enemy": "arch-demon",
+    "motion": "idle",
+    "manifest": "review/arch-demon/idle/manifest.json",
+    "contact": "review/arch-demon/idle/contact.png",
+    "gif": "review/arch-demon/idle/preview.gif"
+  },
+  {
+    "id": "arch-demon/hit",
+    "label": "アークデーモン・被弾",
+    "enemy": "arch-demon",
+    "motion": "hit",
+    "manifest": "review/arch-demon/hit/manifest.json",
+    "contact": "review/arch-demon/hit/contact.png",
+    "gif": "review/arch-demon/hit/preview.gif"
+  },
+  {
+    "id": "arch-demon/down",
+    "label": "アークデーモン・撃破",
+    "enemy": "arch-demon",
+    "motion": "down",
+    "manifest": "review/arch-demon/down/manifest.json",
+    "contact": "review/arch-demon/down/contact.png",
+    "gif": "review/arch-demon/down/preview.gif"
+  },
+  {
+    "id": "arch-demon/move",
+    "label": "アークデーモン・歩行",
+    "enemy": "arch-demon",
+    "motion": "move",
+    "manifest": "review/arch-demon/move/manifest.json",
+    "contact": "review/arch-demon/move/contact.png",
+    "gif": "review/arch-demon/move/preview.gif"
+  },
+  {
+    "id": "arch-demon/danger-1",
+    "label": "アークデーモン・魔炎双柱",
+    "enemy": "arch-demon",
+    "motion": "danger-1",
+    "manifest": "review/arch-demon/danger-1/manifest.json",
+    "contact": "review/arch-demon/danger-1/contact.png",
+    "gif": "review/arch-demon/danger-1/preview.gif"
+  },
+  {
+    "id": "arch-demon/danger-2",
+    "label": "アークデーモン・悪魔の援軍",
+    "enemy": "arch-demon",
+    "motion": "danger-2",
+    "manifest": "review/arch-demon/danger-2/manifest.json",
+    "contact": "review/arch-demon/danger-2/contact.png",
+    "gif": "review/arch-demon/danger-2/preview.gif"
+  },
+  {
+    "id": "lilith/hit",
+    "label": "リリス・被弾",
+    "enemy": "lilith",
+    "motion": "hit",
+    "manifest": "review/lilith/hit/manifest.json",
+    "contact": "review/lilith/hit/contact.png",
+    "gif": "review/lilith/hit/preview.gif"
+  },
+  {
+    "id": "lilith/down",
+    "label": "リリス・撃破",
+    "enemy": "lilith",
+    "motion": "down",
+    "manifest": "review/lilith/down/manifest.json",
+    "contact": "review/lilith/down/contact.png",
+    "gif": "review/lilith/down/preview.gif"
+  },
+  {
+    "id": "lilith/move",
+    "label": "リリス・移動",
+    "enemy": "lilith",
+    "motion": "move",
+    "manifest": "review/lilith/move/manifest.json",
+    "contact": "review/lilith/move/contact.png",
+    "gif": "review/lilith/move/preview.gif"
+  },
+  {
+    "id": "lilith/danger-2",
+    "label": "リリス・静寂の封印",
+    "enemy": "lilith",
+    "motion": "danger-2",
+    "manifest": "review/lilith/danger-2/manifest.json",
+    "contact": "review/lilith/danger-2/contact.png",
+    "gif": "review/lilith/danger-2/preview.gif"
+  },
+  {
+    "id": "effects/royal-cleave",
+    "label": "王断の大剣・斬撃",
+    "enemy": null,
+    "motion": "effect",
+    "manifest": "review/effects/royal-cleave/manifest.json",
+    "contact": "review/effects/royal-cleave/contact.png",
+    "gif": "review/effects/royal-cleave/preview.gif"
+  },
+  {
+    "id": "lilith/idle",
+    "label": "リリス・待機",
+    "enemy": "lilith",
+    "motion": "idle",
+    "manifest": "review/lilith/idle/manifest.json",
+    "contact": "review/lilith/idle/contact.png",
+    "gif": "review/lilith/idle/preview.gif"
+  },
+  {
+    "id": "demon-armored-soldier/danger-1",
+    "label": "魔鎧兵・鎧崩し",
+    "enemy": "demon-armored-soldier",
+    "motion": "danger-1",
+    "manifest": "review/demon-armored-soldier/danger-1/manifest.json",
+    "contact": "review/demon-armored-soldier/danger-1/contact.png",
+    "gif": "review/demon-armored-soldier/danger-1/preview.gif"
+  },
+  {
+    "id": "black-knight/danger-1",
+    "label": "黒騎士・王断の大剣",
+    "enemy": "black-knight",
+    "motion": "danger-1",
+    "manifest": "review/black-knight/danger-1/manifest.json",
+    "contact": "review/black-knight/danger-1/contact.png",
+    "gif": "review/black-knight/danger-1/preview.gif"
+  },
+  {
+    "id": "black-knight/hit",
+    "label": "黒騎士・被弾",
+    "enemy": "black-knight",
+    "motion": "hit",
+    "manifest": "review/black-knight/hit/manifest.json",
+    "contact": "review/black-knight/hit/contact.png",
+    "gif": "review/black-knight/hit/preview.gif"
+  },
+  {
+    "id": "black-knight/down",
+    "label": "黒騎士・撃破",
+    "enemy": "black-knight",
+    "motion": "down",
+    "manifest": "review/black-knight/down/manifest.json",
+    "contact": "review/black-knight/down/contact.png",
+    "gif": "review/black-knight/down/preview.gif"
+  },
+  {
+    "id": "black-knight/danger-2",
+    "label": "黒騎士・黒環薙ぎ",
+    "enemy": "black-knight",
+    "motion": "danger-2",
+    "manifest": "review/black-knight/danger-2/manifest.json",
+    "contact": "review/black-knight/danger-2/contact.png",
+    "gif": "review/black-knight/danger-2/preview.gif"
+  },
+  {
+    "id": "black-knight/move",
+    "label": "黒騎士・歩行",
+    "enemy": "black-knight",
+    "motion": "move",
+    "manifest": "review/black-knight/move/manifest.json",
+    "contact": "review/black-knight/move/contact.png",
+    "gif": "review/black-knight/move/preview.gif"
+  },
+  {
+    "id": "effects/black-ring-slash",
+    "label": "黒環薙ぎ・円弧",
+    "motion": "effect",
+    "manifest": "review/effects/black-ring-slash/manifest.json",
+    "contact": "review/effects/black-ring-slash/contact.png",
+    "gif": "review/effects/black-ring-slash/preview.gif"
+  },
+  {
+    "id": "effects/curse-impact",
+    "label": "呪弾・着弾",
+    "motion": "effect",
+    "manifest": "review/effects/curse-impact/manifest.json",
+    "contact": "review/effects/curse-impact/contact.png",
+    "gif": "review/effects/curse-impact/preview.gif"
+  },
+  {
+    "id": "effects/demon-pillar",
+    "label": "単独の魔柱",
+    "motion": "effect",
+    "manifest": "review/effects/demon-pillar/manifest.json",
+    "contact": "review/effects/demon-pillar/contact.png",
+    "gif": "review/effects/demon-pillar/preview.gif"
+  },
+  {
+    "id": "effects/demon-impact",
+    "label": "魔拳・衝撃",
+    "motion": "effect",
+    "manifest": "review/effects/demon-impact/manifest.json",
+    "contact": "review/effects/demon-impact/contact.png",
+    "gif": "review/effects/demon-impact/preview.gif"
+  },
+  {
+    "id": "effects/silence-seal",
+    "label": "沈黙・封印",
+    "motion": "effect",
+    "manifest": "review/effects/silence-seal/manifest.json",
+    "contact": "review/effects/silence-seal/contact.png",
+    "gif": "review/effects/silence-seal/preview.gif"
+  },
+  {
+    "id": "effects/curse",
+    "label": "呪い・付与",
+    "motion": "effect",
+    "manifest": "review/effects/curse/manifest.json",
+    "contact": "review/effects/curse/contact.png",
+    "gif": "review/effects/curse/preview.gif"
+  },
+  {
+    "id": "effects/end-cross",
+    "label": "交差用の単帯",
+    "motion": "effect",
+    "manifest": "review/effects/end-cross/manifest.json",
+    "contact": "review/effects/end-cross/contact.png",
+    "gif": "review/effects/end-cross/preview.gif"
+  },
+  {
+    "id": "effects/end-ring",
+    "label": "終撃の輪",
+    "motion": "effect",
+    "manifest": "review/effects/end-ring/manifest.json",
+    "contact": "review/effects/end-ring/contact.png",
+    "gif": "review/effects/end-ring/preview.gif"
+  },
+  {
+    "id": "effects/armor-break",
+    "label": "破甲・状態ループ",
+    "motion": "effect",
+    "manifest": "review/effects/armor-break/manifest.json",
+    "contact": "review/effects/armor-break/contact.png",
+    "gif": "review/effects/armor-break/preview.gif"
+  },
+  {
+    "id": "effects/burn",
+    "label": "火傷・状態ループ",
+    "motion": "effect",
+    "manifest": "review/effects/burn/manifest.json",
+    "contact": "review/effects/burn/contact.png",
+    "gif": "review/effects/burn/preview.gif"
+  },
+  {
+    "id": "effects/claw-arc",
+    "label": "爪撃・軌跡",
+    "motion": "effect",
+    "manifest": "review/effects/claw-arc/manifest.json",
+    "contact": "review/effects/claw-arc/contact.png",
+    "gif": "review/effects/claw-arc/preview.gif"
+  },
+  {
+    "id": "effects/summon-gate",
+    "label": "悪魔の援軍・召喚門",
+    "motion": "effect",
+    "manifest": "review/effects/summon-gate/manifest.json",
+    "contact": "review/effects/summon-gate/contact.png",
+    "gif": "review/effects/summon-gate/preview.gif"
+  }
+]

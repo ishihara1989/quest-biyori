@@ -1,0 +1,20 @@
+{
+  "id": "effects/fire-fan",
+  "source": "sources/effects/fire-fan-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. huge leftward fan of layered yellow-white flame tongues, red-black outer rim and orange sparks; wide angular fan silhouette. ONE-SHOT fan. FIXED RIGHT mouth origin (850,512); flame grows LEFTward as wide fan. White-gold tongues and red-black outline; final phase sparse dying sparks, almost gone. No backdrop haze. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "remainingIssue": "Phases are reversed in onset/peak and final emitter remains bright; needs corrected one-shot timing or regeneration. Check left source border.",
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "56e785e1720dd3f51506ff92314966e4bf7e5ebd198818a88dd8967749a720ad",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/fire-fan-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。背景透過と黒い外縁を検収する。",
+    "最大コマの左端がセル・原画の四辺に近い。発射点固定と見切れを確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

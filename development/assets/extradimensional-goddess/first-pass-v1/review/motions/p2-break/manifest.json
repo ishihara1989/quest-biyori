@@ -1,0 +1,102 @@
+{
+  "id": "motions/p2-break",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-break/review/motions/p2-break/frame-01.png",
+      "index": 1,
+      "durationMs": 60,
+      "source": "source/motions/p2-break.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(238,209)/(286,209), interrupted chest-level hold.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3748626415555081,
+      "lowAlphaPixels": 20151,
+      "edgePixels": 0,
+      "bounds": [
+        14,
+        6,
+        712,
+        704
+      ],
+      "marginFraction": 0.008287292817679558
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-break/review/motions/p2-break/frame-02.png",
+      "index": 2,
+      "durationMs": 70,
+      "source": "source/motions/p2-break.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(215,276)/(313,278), palms DROP, shoulders lose tension.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3732048014407375,
+      "lowAlphaPixels": 22150,
+      "edgePixels": 0,
+      "bounds": [
+        4,
+        6,
+        722,
+        707
+      ],
+      "marginFraction": 0.0013812154696132596
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-break/review/motions/p2-break/frame-03.png",
+      "index": 3,
+      "durationMs": 70,
+      "source": "source/motions/p2-break.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(185,270)/(335,275), tired rest pose, connected arms.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3794794114953756,
+      "lowAlphaPixels": 18084,
+      "edgePixels": 0,
+      "bounds": [
+        28,
+        14,
+        700,
+        698
+      ],
+      "marginFraction": 0.019337016574585635
+    }
+  ],
+  "sources": [
+    "source/motions/p2-break.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p2-break/contact.png",
+  "gif": "review/motions/p2-break/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

@@ -1,0 +1,476 @@
+{
+  "method": "manual approximate lower-paw-center measurements from final runtime 2-column contact grids",
+  "units": "runtime frame pixels; x/y start at the frame upper left",
+  "coordinateTargets": "../guides/<enemy>/coordinates.json; targets use original 1024 production-guide space, not this runtime measurement space",
+  "rows": [
+    {
+      "enemy": "frost-wolf",
+      "estimatedErrorPixels": 6,
+      "frames": [
+        {
+          "frame": 1,
+          "paws": {
+            "LF": [
+              166,
+              276
+            ],
+            "RF": [
+              150,
+              256
+            ],
+            "LH": [
+              286,
+              259
+            ],
+            "RH": [
+              219,
+              274
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        },
+        {
+          "frame": 2,
+          "paws": {
+            "LF": [
+              168,
+              276
+            ],
+            "RF": [
+              124,
+              260
+            ],
+            "LH": [
+              286,
+              257
+            ],
+            "RH": [
+              233,
+              272
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        },
+        {
+          "frame": 3,
+          "paws": {
+            "LF": [
+              188,
+              266
+            ],
+            "RF": [
+              128,
+              276
+            ],
+            "LH": [
+              260,
+              277
+            ],
+            "RH": [
+              223,
+              266
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 4,
+          "paws": {
+            "LF": [
+              178,
+              258
+            ],
+            "RF": [
+              145,
+              276
+            ],
+            "LH": [
+              272,
+              276
+            ],
+            "RH": [
+              220,
+              264
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 5,
+          "paws": {
+            "LF": [
+              173,
+              271
+            ],
+            "RF": [
+              145,
+              277
+            ],
+            "LH": [
+              273,
+              277
+            ],
+            "RH": [
+              212,
+              266
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 6,
+          "paws": {
+            "LF": [
+              168,
+              276
+            ],
+            "RF": [
+              146,
+              257
+            ],
+            "LH": [
+              288,
+              266
+            ],
+            "RH": [
+              219,
+              274
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        }
+      ]
+    },
+    {
+      "enemy": "fenrir",
+      "estimatedErrorPixels": 8,
+      "frames": [
+        {
+          "frame": 1,
+          "paws": {
+            "LF": [
+              253,
+              377
+            ],
+            "RF": [
+              204,
+              353
+            ],
+            "LH": [
+              403,
+              348
+            ],
+            "RH": [
+              312,
+              367
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        },
+        {
+          "frame": 2,
+          "paws": {
+            "LF": [
+              249,
+              376
+            ],
+            "RF": [
+              188,
+              347
+            ],
+            "LH": [
+              405,
+              355
+            ],
+            "RH": [
+              321,
+              371
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        },
+        {
+          "frame": 3,
+          "paws": {
+            "LF": [
+              262,
+              349
+            ],
+            "RF": [
+              207,
+              375
+            ],
+            "LH": [
+              398,
+              375
+            ],
+            "RH": [
+              320,
+              351
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 4,
+          "paws": {
+            "LF": [
+              260,
+              340
+            ],
+            "RF": [
+              209,
+              371
+            ],
+            "LH": [
+              401,
+              373
+            ],
+            "RH": [
+              307,
+              351
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 5,
+          "paws": {
+            "LF": [
+              233,
+              348
+            ],
+            "RF": [
+              211,
+              372
+            ],
+            "LH": [
+              399,
+              376
+            ],
+            "RH": [
+              300,
+              350
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 6,
+          "paws": {
+            "LF": [
+              252,
+              377
+            ],
+            "RF": [
+              220,
+              346
+            ],
+            "LH": [
+              410,
+              364
+            ],
+            "RH": [
+              305,
+              370
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        }
+      ]
+    },
+    {
+      "enemy": "ice-tusk-mammoth",
+      "estimatedErrorPixels": 8,
+      "frames": [
+        {
+          "frame": 1,
+          "paws": {
+            "LF": [
+              395,
+              427
+            ],
+            "RF": [
+              330,
+              413
+            ],
+            "LH": [
+              506,
+              405
+            ],
+            "RH": [
+              448,
+              421
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        },
+        {
+          "frame": 2,
+          "paws": {
+            "LF": [
+              392,
+              426
+            ],
+            "RF": [
+              332,
+              420
+            ],
+            "LH": [
+              507,
+              412
+            ],
+            "RH": [
+              449,
+              420
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        },
+        {
+          "frame": 3,
+          "paws": {
+            "LF": [
+              388,
+              415
+            ],
+            "RF": [
+              307,
+              427
+            ],
+            "LH": [
+              513,
+              428
+            ],
+            "RH": [
+              442,
+              412
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 4,
+          "paws": {
+            "LF": [
+              392,
+              411
+            ],
+            "RF": [
+              319,
+              428
+            ],
+            "LH": [
+              514,
+              428
+            ],
+            "RH": [
+              443,
+              412
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 5,
+          "paws": {
+            "LF": [
+              388,
+              417
+            ],
+            "RF": [
+              322,
+              428
+            ],
+            "LH": [
+              514,
+              428
+            ],
+            "RH": [
+              440,
+              413
+            ]
+          },
+          "observedSwingPair": [
+            "LF",
+            "RH"
+          ]
+        },
+        {
+          "frame": 6,
+          "paws": {
+            "LF": [
+              396,
+              428
+            ],
+            "RF": [
+              334,
+              418
+            ],
+            "LH": [
+              508,
+              411
+            ],
+            "RH": [
+              448,
+              425
+            ]
+          },
+          "observedSwingPair": [
+            "LH",
+            "RF"
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Support inferred from connected limb flexion and sole orientation together with relative toe height; hidden hip/knee coordinates were not measured."
+}

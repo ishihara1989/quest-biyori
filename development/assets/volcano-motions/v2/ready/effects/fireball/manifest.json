@@ -1,0 +1,188 @@
+{
+  "id": "effects/fireball",
+  "enemy": null,
+  "region": "volcano",
+  "label": "灼熱火球",
+  "kind": "projectile",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/fireball-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/effects/fireball/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9043693542480469,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 162,
+        "top": 142,
+        "right": 494,
+        "bottom": 365
+      },
+      "visibleBounds": {
+        "left": 198,
+        "top": 158,
+        "right": 459,
+        "bottom": 320
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/fireball-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 766,
+        "height": 512
+      },
+      "sourceScale": 0.45381349729175813,
+      "sourceAnchor": {
+        "x": 238.14000000000001,
+        "y": 268.98
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9100074768066406,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 161,
+        "top": 138,
+        "right": 494,
+        "bottom": 366
+      },
+      "visibleBounds": {
+        "left": 195,
+        "top": 192,
+        "right": 481,
+        "bottom": 321
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/fireball-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 766,
+        "y": 0,
+        "width": 770,
+        "height": 512
+      },
+      "sourceScale": 0.45381349729175813,
+      "sourceAnchor": {
+        "x": 211.60000000000002,
+        "y": 267.08
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9082832336425781,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 163,
+        "top": 148,
+        "right": 499,
+        "bottom": 379
+      },
+      "visibleBounds": {
+        "left": 198,
+        "top": 192,
+        "right": 466,
+        "bottom": 349
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/fireball-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 512,
+        "width": 774,
+        "height": 512
+      },
+      "sourceScale": 0.45381349729175813,
+      "sourceAnchor": {
+        "x": 237.96,
+        "y": 238.86
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9086227416992188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 163,
+        "top": 149,
+        "right": 498,
+        "bottom": 376
+      },
+      "visibleBounds": {
+        "left": 195,
+        "top": 193,
+        "right": 481,
+        "bottom": 321
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/fireball-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 774,
+        "y": 512,
+        "width": 762,
+        "height": 512
+      },
+      "sourceScale": 0.45381349729175813,
+      "sourceAnchor": {
+        "x": 205.52,
+        "y": 235.66
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

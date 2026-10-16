@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/ember-fox-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 719,
+      "height": 724
+    },
+    {
+      "x": 719,
+      "y": 0,
+      "width": 692,
+      "height": 724
+    },
+    {
+      "x": 1411,
+      "y": 0,
+      "width": 761,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 681,
+      "y": 880
+    },
+    {
+      "x": 704.5,
+      "y": 880
+    },
+    {
+      "x": 694,
+      "y": 880
+    }
+  ],
+  "scale": 0.08743169398907104
+}

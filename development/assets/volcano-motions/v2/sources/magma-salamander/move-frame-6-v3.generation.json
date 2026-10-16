@@ -1,0 +1,30 @@
+{
+  "id": "magma-salamander/move-6",
+  "source": "sources/magma-salamander/move-frame-6-v3.png",
+  "selected": true,
+  "prompt": "Use case: precise-object-edit. ONE TROT frame6 only. Image1 immutable canonical reference, image2 selected frame6 edit target. Preserve head, torso, fins/wings/tail, colors, scale, camera and the other THREE legs EXACTLY. Keep contact pair LF+RH and lifted pair LH+RF. Change ONLY the anatomical LEFT FRONT foreground leg: move its grounded paw farther FORWARD LEFT by approximately 99 pixels in the original source, keeping same hip and original thigh/shin lengths and connected knee/ankle, same short claws and grounded height. This corrects measured backward return from frame6 to frame1; compare against frame1 before approval. Never stretch or disconnect the limb, no fifth paw, do not change approved other-leg swing/contact. Exact canonical pixel clusters, entire silhouette and transparent alpha preserved, no background/VFX.",
+  "actualInputImages": [
+    {
+      "file": "references/magma-salamander.png",
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    },
+    {
+      "file": "sources/magma-salamander/move-frame-6-v2.png",
+      "sha256": "062b8a9fa4aadf051b513cc9c2611d8e128811353213c3f1d78adf3c81ba39be"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "4c5088af2a98191c887615348ed458b9c1d114615a67aa366cc3c1918fbe748e",
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "firstPass": "sources/magma-salamander/move-2-generated.png",
+  "issues": [
+    "腹の下の奥脚の足先が孤立して見える箇所がある。付け根から足首まで接続を追う。",
+    "対角接地と脚数は未確定。足先の実測と目標座標を別に記録する。",
+    "4〜5コマ目の浮いた前足が丸まる。前半と足首・爪の形を揃える。",
+    "奥後脚の足先と手前脚の重なりを検収。3→4・6→1の支持足と寸法を確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

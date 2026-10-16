@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "alraune",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "alraune-down.png",
+  "preview": "../../../../../../development/assets/enemies/alraune/motions/down/alraune-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/alraune/PROMPT.md",
+  "width": 2560,
+  "height": 384,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 384,
+  "frameCount": 4,
+  "pivot": {
+    "x": 360,
+    "y": 367
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1500,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/alraune/source/alraune-down-generated-v1.png",
+  "sourceScale": 0.54,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 250,
+      "phase": "萎れ始める",
+      "bounds": {
+        "left": 191,
+        "top": 122,
+        "right": 548,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 535
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 300,
+      "phase": "花の中へ崩れる",
+      "bounds": {
+        "left": 162,
+        "top": 195,
+        "right": 557,
+        "bottom": 366
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 632
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 542
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 350,
+      "phase": "花とツルが倒れる",
+      "bounds": {
+        "left": 150,
+        "top": 245,
+        "right": 545,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 632,
+        "width": 758,
+        "height": 392
+      },
+      "sourceAnchor": {
+        "x": 411,
+        "y": 321
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 600,
+      "phase": "低く倒れた姿で保持",
+      "bounds": {
+        "left": 152,
+        "top": 272,
+        "right": 563,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 758,
+        "y": 632,
+        "width": 778,
+        "height": 392
+      },
+      "sourceAnchor": {
+        "x": 389,
+        "y": 324
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "prayer-cranes-guardian-disperse",
+  "character": "miko",
+  "subject": "prayer-cranes",
+  "group": "guardian",
+  "motion": "disperse",
+  "sheet": "prayer-cranes-disperse.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 510,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5254237288135594,
+  "frames": [
+    {
+      "index": 0,
+      "file": "prayer-cranes-disperse-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "disperse",
+      "bounds": {
+        "l": 60,
+        "t": 89,
+        "r": 487,
+        "b": 476,
+        "n": 92838,
+        "width": 428,
+        "height": 388
+      }
+    },
+    {
+      "index": 1,
+      "file": "prayer-cranes-disperse-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "disperse",
+      "bounds": {
+        "l": 13,
+        "t": 72,
+        "r": 494,
+        "b": 498,
+        "n": 131488,
+        "width": 482,
+        "height": 427
+      }
+    },
+    {
+      "index": 2,
+      "file": "prayer-cranes-disperse-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "disperse",
+      "bounds": {
+        "l": 25,
+        "t": 80,
+        "r": 490,
+        "b": 500,
+        "n": 91748,
+        "width": 466,
+        "height": 421
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/prayer-cranes-guardian-disperse-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/prayer-cranes-guardian-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

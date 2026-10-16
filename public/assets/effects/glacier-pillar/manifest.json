@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-pillar",
+  "label": "氷柱",
+  "sheet": "glacier-pillar.png",
+  "preview": "../../../../development/assets/effects/glacier-pillar/glacier-pillar-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1280,
+  "height": 430,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 430,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 408
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/pillar.png",
+  "sourceScale": 0.42748091603053434,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-pillar/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-pillar-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 430,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 90,
+        "top": 279,
+        "right": 230,
+        "bottom": 408
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 853,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 412,
+        "y": 484
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-pillar-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 430,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 57,
+        "top": 209,
+        "right": 262,
+        "bottom": 408
+      },
+      "sourceCell": {
+        "x": 853,
+        "y": 0,
+        "width": 853,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 348,
+        "y": 501
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-pillar-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 430,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 20,
+        "top": 186,
+        "right": 299,
+        "bottom": 408
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 579,
+        "width": 853,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 544
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-pillar-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 430,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 51,
+        "top": 220,
+        "right": 268,
+        "bottom": 408
+      },
+      "sourceCell": {
+        "x": 853,
+        "y": 579,
+        "width": 853,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 358,
+        "y": 491
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "ground",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/pillar-generated.png"
+}

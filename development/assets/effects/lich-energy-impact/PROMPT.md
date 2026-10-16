@@ -1,0 +1,5 @@
+# 闇の弾の衝撃
+
+Built-in image_gen / transparent PNG
+
+Use case: stylized-concept. Asset type: transparent pixel-art visual effect sprite sheet. ONLY the visual effect; NO characters, bodies, faces, hands, weapons, monsters, scenery or terrain. Polished 16-bit fantasy RPG pixel clusters with sharp pixel edges and restrained shading. Exactly FOUR chronological effect frames in a square 2x2 equal-cell grid, read top-left, top-right, bottom-left, bottom-right. Violet dark magic bolt impact: 1 pale lavender central star flash; 2 sharp purple energy shards expand; 3 plum smoke and violet sparks scatter; 4 tiny fading purple motes. Center registered, no victim. Each frame has at least 12% transparent margins, stays fully inside its cell, and uses the same palette, pixel scale and fixed origin. Actual transparent alpha, including gaps inside clouds. No lettering, labels, borders, black backdrop, checkerboard or ambient background haze. This asset is composited separately over characters, so any character silhouette is forbidden.

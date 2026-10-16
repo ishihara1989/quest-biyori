@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "id": "reaction-ring",
+  "sheet": "reaction-ring.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frames": [
+    {
+      "index": 0,
+      "file": "reaction-ring-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    },
+    {
+      "index": 1,
+      "file": "reaction-ring-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    },
+    {
+      "index": 2,
+      "file": "reaction-ring-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 180
+    }
+  ],
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "pivot": {
+    "x": 64,
+    "y": 64
+  },
+  "durationMs": 540,
+  "loop": true,
+  "source": "../../../../../../development/assets/skills/shaman/effects/reaction-ring/source/reaction-ring-generated-v1.png",
+  "generation": "built-in image_gen; see PROMPT.md"
+}

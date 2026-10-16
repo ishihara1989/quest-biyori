@@ -1,0 +1,13 @@
+{
+  "id": "nine-tailed-fox-action",
+  "source": "development/assets/skills/miko/source/nine-tailed-fox-action-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-a637de03-0207-416f-a2dd-29044d59f097.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Reference is SAME SUBJECT identity. Exactly THREE frames in ONE horizontal row of equal square cells. Subject: ONE majestic ivory/gold sacred fox with exactly NINE distinct bushy tails in a fan behind body, vermilion ear tips, amber eyes, golden forehead crest and red-gold neck knot; count NINE tails consistently, no extra foxes. Preserve identity, camera, scale and local ground/hover anchor. Position fox head (.62,.45), feet on .84; nine tail tips left-to-right (.15,.54),(.15,.38),(.21,.25),(.33,.15),(.48,.11),(.63,.15),(.76,.25),(.84,.38),(.85,.54). Ordered motion: frame1 nine tails fold closer while all nine remain visible; frame2  all nine tails fan wide in fixed order; frame3  tail tips brighten in three groups of three for foxfire release. No projectiles or recipient human baked into atlas; effect is composed separately. Keep EVERY piece including beam tips and trails inside x=.20..80,y=.12..88 of each cell with wide EMPTY gutters; no fragments touch any cell edge. Exactly THREE separated frames in one row.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/nine-tailed-fox-idle-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T16:54:11.836Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

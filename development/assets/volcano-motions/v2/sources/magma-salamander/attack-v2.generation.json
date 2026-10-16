@@ -1,0 +1,23 @@
+{
+  "id": "magma-salamander/attack",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. マグマサラマンダー. Keep head aligned forward; no upward gaze. Jaw pulls right 25px, opens, lunges LEFT 35px, returns neutral. Neck NEVER stretches or changes thickness. All four legs support body. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/magma-salamander/attack-v2.png",
+  "sha256": "7251e44c8e632e13d47d0af43a55e60daca12bf2412c25d35cd4e2799d02c84a",
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "firstPass": "sources/magma-salamander/attack-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "溜めで頭が大きく上を向き、発動で首と胴体が伸びる。噛みつきの前方軌道と体格を整理する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/magma-salamander.png",
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

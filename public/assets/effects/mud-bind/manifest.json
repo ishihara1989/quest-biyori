@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "mud-bind",
+  "label": "泥の拘束",
+  "sheet": "mud-bind.png",
+  "preview": "../../../../development/assets/effects/mud-bind/mud-bind-preview.gif",
+  "prompt": "../../../../development/assets/effects/mud-bind/PROMPT.md",
+  "width": 896,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 224,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 112,
+    "y": 244
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/mud-bind/source-generated.png",
+  "sourceScale": 0.351493848857645,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "mud-bind-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "発生",
+      "bounds": {
+        "left": 13,
+        "top": 89,
+        "right": 211,
+        "bottom": 244
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 628,
+        "height": 644
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "mud-bind-02.png",
+      "x": 224,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "展開",
+      "bounds": {
+        "left": 13,
+        "top": 57,
+        "right": 211,
+        "bottom": 244
+      },
+      "sourceCell": {
+        "x": 628,
+        "y": 0,
+        "width": 626,
+        "height": 644
+      },
+      "sourceAnchor": {
+        "x": 312,
+        "y": 590
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "mud-bind-03.png",
+      "x": 448,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "最大",
+      "bounds": {
+        "left": 12,
+        "top": 71,
+        "right": 211,
+        "bottom": 244
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 644,
+        "width": 635,
+        "height": 610
+      },
+      "sourceAnchor": {
+        "x": 323,
+        "y": 545
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "mud-bind-04.png",
+      "x": 672,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 160,
+      "phase": "収束",
+      "bounds": {
+        "left": 14,
+        "top": 82,
+        "right": 210,
+        "bottom": 244
+      },
+      "sourceCell": {
+        "x": 635,
+        "y": 644,
+        "width": 619,
+        "height": 610
+      },
+      "sourceAnchor": {
+        "x": 308,
+        "y": 556
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

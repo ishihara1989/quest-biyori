@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "enemies/harpy-queen/motions/idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "enemies/harpy-queen/motions/move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "enemies/harpy-queen/motions/hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "enemies/harpy-queen/motions/down/manifest.json"
+  },
+  {
+    "id": "feathers",
+    "label": "三方向の羽根",
+    "manifest": "enemies/harpy-queen/motions/feathers/manifest.json"
+  },
+  {
+    "id": "ring",
+    "label": "風の円",
+    "manifest": "enemies/harpy-queen/motions/ring/manifest.json"
+  },
+  {
+    "id": "dive",
+    "label": "急降下",
+    "manifest": "enemies/harpy-queen/motions/dive/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "飛行休息",
+    "manifest": "enemies/harpy-queen/motions/rest/manifest.json"
+  }
+]

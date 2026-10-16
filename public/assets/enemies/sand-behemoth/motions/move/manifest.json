@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-behemoth",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "sand-behemoth-move.png",
+  "preview": "../../../../../../development/assets/enemies/sand-behemoth/motions/move/sand-behemoth-move-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 4920,
+  "height": 680,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 820,
+  "frameHeight": 680,
+  "frameCount": 6,
+  "pivot": {
+    "x": 476,
+    "y": 662
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/sand-behemoth/source/move-registered.png",
+  "sourceScale": 0.8660508083140878,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 168,
+        "top": 288,
+        "right": 731,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 749
+      },
+      "sourceAnchor": {
+        "x": 411,
+        "y": 588
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 820,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 172,
+        "top": 282,
+        "right": 734,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 761,
+        "y": 0,
+        "width": 761,
+        "height": 749
+      },
+      "sourceAnchor": {
+        "x": 397,
+        "y": 592
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1640,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 170,
+        "top": 278,
+        "right": 735,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 749,
+        "width": 761,
+        "height": 749
+      },
+      "sourceAnchor": {
+        "x": 398,
+        "y": 596
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 2460,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 168,
+        "top": 278,
+        "right": 724,
+        "bottom": 664
+      },
+      "sourceCell": {
+        "x": 761,
+        "y": 749,
+        "width": 761,
+        "height": 749
+      },
+      "sourceAnchor": {
+        "x": 422,
+        "y": 606
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 3280,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 161,
+        "top": 274,
+        "right": 721,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1498,
+        "width": 761,
+        "height": 749
+      },
+      "sourceAnchor": {
+        "x": 415,
+        "y": 606
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 4100,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 163,
+        "top": 278,
+        "right": 722,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 761,
+        "y": 1498,
+        "width": 761,
+        "height": 749
+      },
+      "sourceAnchor": {
+        "x": 411,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-behemoth-move-1-generated.png",
+    "../../../../../../development/assets/desert-motions/sand-behemoth-move-2-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-behemoth.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 729,
+          "height": 724
+        },
+        {
+          "x": 729,
+          "y": 0,
+          "width": 718,
+          "height": 724
+        },
+        {
+          "x": 1447,
+          "y": 0,
+          "width": 725,
+          "height": 724
+        }
+      ]
+    },
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 736,
+          "height": 724
+        },
+        {
+          "x": 736,
+          "y": 0,
+          "width": 724,
+          "height": 724
+        },
+        {
+          "x": 1460,
+          "y": 0,
+          "width": 712,
+          "height": 724
+        }
+      ]
+    }
+  ],
+  "walkCycle": {
+    "parts": 2,
+    "framesPerPart": 3,
+    "phases": [
+      "left-contact",
+      "right-pass",
+      "right-approach",
+      "right-contact",
+      "left-pass",
+      "left-approach"
+    ]
+  }
+}

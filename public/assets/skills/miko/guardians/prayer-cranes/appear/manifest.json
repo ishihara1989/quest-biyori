@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "prayer-cranes-guardian-appear",
+  "character": "miko",
+  "subject": "prayer-cranes",
+  "group": "guardian",
+  "motion": "appear",
+  "sheet": "prayer-cranes-appear.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 450,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5254237288135594,
+  "frames": [
+    {
+      "index": 0,
+      "file": "prayer-cranes-appear-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 25,
+        "t": 16,
+        "r": 503,
+        "b": 476,
+        "n": 97997,
+        "width": 479,
+        "height": 461
+      }
+    },
+    {
+      "index": 1,
+      "file": "prayer-cranes-appear-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 14,
+        "t": 18,
+        "r": 496,
+        "b": 480,
+        "n": 129463,
+        "width": 483,
+        "height": 463
+      }
+    },
+    {
+      "index": 2,
+      "file": "prayer-cranes-appear-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 20,
+        "t": 20,
+        "r": 499,
+        "b": 476,
+        "n": 124773,
+        "width": 480,
+        "height": 457
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/prayer-cranes-guardian-appear-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/prayer-cranes-guardian-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

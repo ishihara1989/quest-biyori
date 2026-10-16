@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-light-pillar",
+  "label": "魔導光柱",
+  "sheet": "ruins-light-pillar.png",
+  "preview": "../../../../development/assets/effects/ruins-light-pillar/ruins-light-pillar-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-light-pillar/PROMPT.md",
+  "width": 1536,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 192,
+    "y": 432
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-light-pillar/source-registered.png",
+  "sourceScale": 0.6089965397923875,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-light-pillar-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 122,
+        "top": 145,
+        "right": 261,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 771,
+        "height": 636
+      },
+      "sourceAnchor": {
+        "x": 373,
+        "y": 579
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-light-pillar-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 75,
+        "top": 106,
+        "right": 309,
+        "bottom": 432
+      },
+      "sourceCell": {
+        "x": 771,
+        "y": 0,
+        "width": 771,
+        "height": 636
+      },
+      "sourceAnchor": {
+        "x": 345,
+        "y": 601
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-light-pillar-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 16,
+        "top": 109,
+        "right": 367,
+        "bottom": 432
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 636,
+        "width": 771,
+        "height": 636
+      },
+      "sourceAnchor": {
+        "x": 390,
+        "y": 569
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-light-pillar-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 109,
+        "top": 134,
+        "right": 276,
+        "bottom": 432
+      },
+      "sourceCell": {
+        "x": 771,
+        "y": 636,
+        "width": 771,
+        "height": 636
+      },
+      "sourceAnchor": {
+        "x": 245,
+        "y": 558
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "ground",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-light-pillar/source-generated-v2.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 635,
+        "height": 604
+      },
+      {
+        "x": 635,
+        "y": 0,
+        "width": 677,
+        "height": 604
+      },
+      {
+        "x": 0,
+        "y": 604,
+        "width": 739,
+        "height": 595
+      },
+      {
+        "x": 739,
+        "y": 604,
+        "width": 573,
+        "height": 595
+      }
+    ]
+  }
+}

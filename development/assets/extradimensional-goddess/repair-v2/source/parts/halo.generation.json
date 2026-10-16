@@ -1,0 +1,15 @@
+{
+  "id": "parts/halo",
+  "source": "source/parts/halo.png",
+  "sha256": "05d2bdf1de096c53b6fb5a2f47bc2f0fcce01ed9ff4174e241b593c034e926e5",
+  "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, parts/halo.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 1 equal square cells, 1 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nONE isolated rigid gold celestial ring assembly matching the large rings behind the original floating goddess, with cyan diamond nodes. Remove the SMALL floating elliptical crown above her head: that crown belongs to the body layer. No person, face, hair, clothes, chair or ground. Keep the large circular ring motif with clean transparent interior. Complete assembly within central safe area.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-a7fbfba5-60ca-4430-bb49-061ec54aea4e.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    }
+  ],
+  "attempt": 1
+}

@@ -1,0 +1,79 @@
+{
+  "id": "arch-demon/hit",
+  "label": "アークデーモン・被弾",
+  "enemy": "arch-demon",
+  "motion": "hit",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "翼と尾がセル境界に近い。2腕・2脚・翼根を倒れた姿勢でも追って検収する。",
+    "撃破後の腹核・目の明るさを整える。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "被弾",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/reaction-generated.png",
+      "sourceSha256": "2325de9d697359336554fa7a4c75d99f454ef4dba71ad6081a4ec3735e4c4659",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 641,
+        "height": 653
+      },
+      "sourceAnchor": [
+        317,
+        628
+      ],
+      "scale": 0.4570383912248629,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "caa28aa71e3276ea91d28806474820fd5a0dee60982b7c8678f839a2a2dc0bd6",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8190803527832031
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/reaction-generated.png",
+      "sourceSha256": "2325de9d697359336554fa7a4c75d99f454ef4dba71ad6081a4ec3735e4c4659",
+      "sourceRect": {
+        "left": 641,
+        "top": 0,
+        "width": 636,
+        "height": 653
+      },
+      "sourceAnchor": [
+        282,
+        627
+      ],
+      "scale": 0.4570383912248629,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "42c74077ea990d661ed3f08f211f664daecd635e8cc2cfbe81128fbea371659a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8026237487792969
+    }
+  ],
+  "fingerprint": "66eb6a4b2b4da53b4911034ac826421d79980ffdf2bbbddc6dd1d5ad1e0bc283",
+  "events": [],
+  "effects": []
+}

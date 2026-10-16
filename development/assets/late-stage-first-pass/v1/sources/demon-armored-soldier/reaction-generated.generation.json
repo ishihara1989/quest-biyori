@@ -1,0 +1,28 @@
+{
+  "id": "demon-armored-soldier/reaction",
+  "enemy": "demon-armored-soldier",
+  "region": "demon-castle",
+  "motion": "reaction",
+  "label": "被弾・撃破",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/demon-armored-soldier.png",
+  "guide": null,
+  "source": "sources/demon-armored-soldier/reaction-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of 魔鎧兵. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: knees fold and torso falls right-down 100px. Bottom-right TERMINAL DEFEAT: recognizable whole character collapsed/kneeling low, original equipment and wings on body, no gore. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-c47a6ce5-88fe-4755-8de5-2711b517a89b.png",
+  "sha256": "18923a01764ff08b3687dbc3c704b81cd788c57f8960134b56c502b925754d11",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "被弾で身体が傾き、復帰。撃破で膝を折り低く崩れる。"
+    ],
+    "issues": [
+      "倒れた状態で盾が腕と脚を隠す。盾の持ち手・手・2脚の接続を確認する。",
+      "被弾の頭・盾の傾きと待機への戻りを検収する。"
+    ]
+  }
+}

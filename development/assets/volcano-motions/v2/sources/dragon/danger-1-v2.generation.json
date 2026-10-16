@@ -1,0 +1,25 @@
+{
+  "id": "dragon/danger-1",
+  "source": "sources/dragon/danger-1-v2.png",
+  "selected": true,
+  "prompt": "BODY ONLY WITHOUT ANY EXTERNAL VFX. Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. Four-legged dragon. Chest rises slightly, next pose lifts whole body 70px with ALL four connected feet tucked and both wings raised, release lands ALL four feet with knees bent at fixed ground baseline, neutral recovery. Wings stay SAME size and attached; tail uncoils only slightly. Shock VFX separate. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. TL crouch prepare with wings raised; TR whole body floats70px above sole plane, FOUR connected bent legs tuck under belly, wings high but SAME dimensions; BL land FOUR feet, knees bent, head/chest low; BR exactly canonical neutral. Very small sprites centrally in each cell with 20% padding above wings and under feet, wide clear gutters.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon.png",
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "fdff97062b1081f7017b7a16e7c782bc1a52c453c985e0b73ec8f500807ac63d",
+  "reference": "references/dragon.png",
+  "guide": null,
+  "firstPass": "sources/dragon/danger-1-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "飛翔→着地で翼の大きさと尾の巻き方が大きく変わる。翼根・尾根と4脚の接続を検収する。",
+    "着地フレームの接地点を衝撃輪の中心へ合わせる。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

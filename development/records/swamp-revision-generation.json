@@ -1,0 +1,60 @@
+[
+  {
+    "id": "hydra-idle",
+    "destination": "development/assets/enemies/hydra/source/idle-facing-left-generated-v2.png",
+    "prompt": "Use case: stylized-concept. Edit target = image 1, a FOUR-frame 2x2 hydra animation sprite sheet. Image 2 is the canonical identity reference ONLY (one hydra pose). Preserve the target's 2x2 grid, all four distinct chronological poses, overall coiled body silhouette and tail, green/teal scales, lime belly and purple tongue colors, pixel scale, lighting, size, ground height and transparent background. This is a surgical anatomy/direction correction, not a redesign. EXACTLY FIVE attached snake heads in EACH pose, all five faces and snouts point LEFT, jaws and tongues extend to LEFT of their own neck. The tail is a curled pointed snake tail, never a sixth head. Head ownership must stay consistent between frames; top head A, upper-left B, upper-right C, lower-left D, lowest/front E. No heads face right. No new necks or detached heads. Preserve original body and paint unaffected areas identically. Keep full transparent padding around every cell, no haze or backdrop, no labels. Correction: in frame 3 (bottom-left) the top head A and upper-right head C currently point RIGHT. Turn ONLY these two heads to face LEFT, smoothly reconnect to their original necks, keeping their locations and head size. Frames 1,2,4 already have five left-facing heads; preserve them. Do not introduce motion by turning heads right.",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/enemies/hydra/source/idle-generated.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/enemies/hydra/motions/idle/idle-01.png"
+    ],
+    "transparent": true
+  },
+  {
+    "id": "hydra-move",
+    "destination": "development/assets/enemies/hydra/source/move-facing-left-generated-v2.png",
+    "prompt": "Use case: stylized-concept. Edit target = image 1, a FOUR-frame 2x2 hydra animation sprite sheet. Image 2 is the canonical identity reference ONLY (one hydra pose). Preserve the target's 2x2 grid, all four distinct chronological poses, overall coiled body silhouette and tail, green/teal scales, lime belly and purple tongue colors, pixel scale, lighting, size, ground height and transparent background. This is a surgical anatomy/direction correction, not a redesign. EXACTLY FIVE attached snake heads in EACH pose, all five faces and snouts point LEFT, jaws and tongues extend to LEFT of their own neck. The tail is a curled pointed snake tail, never a sixth head. Head ownership must stay consistent between frames; top head A, upper-left B, upper-right C, lower-left D, lowest/front E. No heads face right. No new necks or detached heads. Preserve original body and paint unaffected areas identically. Keep full transparent padding around every cell, no haze or backdrop, no labels. Correction: in frame 3 (bottom-left) the top head A and upper-right head C currently point RIGHT. Turn these two to LEFT while keeping the original slithering pose and neck bends. Preserve all five left-facing heads in frames1,2,4. Retain four actual different movement poses and the existing return-to-frame1 loop.",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/enemies/hydra/source/move-generated.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/enemies/hydra/motions/idle/idle-01.png"
+    ],
+    "transparent": true
+  },
+  {
+    "id": "hydra-hit",
+    "destination": "development/assets/enemies/hydra/source/hit-five-left-generated-v2.png",
+    "prompt": "Use case: stylized-concept. Edit target = image 1, a FOUR-frame 2x2 hydra animation sprite sheet. Image 2 is the canonical identity reference ONLY (one hydra pose). Preserve the target's 2x2 grid, all four distinct chronological poses, overall coiled body silhouette and tail, green/teal scales, lime belly and purple tongue colors, pixel scale, lighting, size, ground height and transparent background. This is a surgical anatomy/direction correction, not a redesign. EXACTLY FIVE attached snake heads in EACH pose, all five faces and snouts point LEFT, jaws and tongues extend to LEFT of their own neck. The tail is a curled pointed snake tail, never a sixth head. Head ownership must stay consistent between frames; top head A, upper-left B, upper-right C, lower-left D, lowest/front E. No heads face right. No new necks or detached heads. Preserve original body and paint unaffected areas identically. Keep full transparent padding around every cell, no haze or backdrop, no labels. Correction: frame 2 (top-right) has SIX heads and some point RIGHT. Redraw this frame with precisely FIVE heads: A highest, B upper-left, C upper-right, D lower-left, E lowest/front. Remove the EXTRA middle-left head around local cell x36%,y43%, including its neck. Turn top A and upper-right C to LEFT. All five necks recoil RIGHT together but faces continue to look LEFT. Keep five visibly separable skulls and jaws; no overlapping phantom sixth jaw. Other frames already have five heads facing LEFT: preserve them, and preserve the neutral-to-recoil-to-recover-to-neutral chronology.",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/enemies/hydra/source/hit-generated.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/enemies/hydra/motions/idle/idle-01.png"
+    ],
+    "transparent": true
+  },
+  {
+    "id": "swamp-distant",
+    "destination": "development/assets/stages/poison-swamp/source/swamp-distant-generated-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: one production DISTANT BACKGROUND PNG for a side-scrolling belt-action idle RPG, wide 16:9, opaque throughout. Image 1 is a STYLE/COMPOSITION REFERENCE (the existing beginner forest distant layer), not an edit target. Create the new POISON SWAMP environment with the same finely clustered 1990s arcade/JRPG pixel art, colored outlines and side-on slightly elevated camera. Distant stagnant marsh, receding crooked dark willow silhouettes and dead wet trees, hanging moss, muted olive/teal foliage and thin desaturated pale green poison mist. Small gloomy light openings in canopy, somber toxic swamp atmosphere. Keep distant layers low contrast and dim compared with green hydra and bright attack effects. Restrained dark olive, moss, cold teal, gray-green and dark brown palette. Crisp square pixel clusters and stepped shapes, no photographic texture or smooth painterly blur. Background forest base around 50% height; the lower half is quiet dark swamp understory because a separate muddy battlefield covers it. Horizontal landscape, no central vanishing point or centered destination, no endcap/vignette or huge trees framing both edges. Designed to repeat horizontally via alternating mirror tiles with even light and compatible edge vegetation. No near ground plane, no near foreground bushes, no characters, heads, monsters, skulls, buildings, bridges, UI, text, lettering, borders or watermark. Deliver ONE complete opaque distant scenery layer, no split-sheet.",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/stages/starting-forest/forest-distant.png"
+    ],
+    "transparent": false
+  },
+  {
+    "id": "swamp-ground-near",
+    "destination": "development/assets/stages/poison-swamp/source/swamp-ground-near-generated-v1.png",
+    "prompt": "Use case: stylized-concept. Asset type: ONE production GROUND + NEAR SCENERY layer, wide 16:9 RGBA PNG with true transparency. Image 1 is a STYLE/PLAYFIELD LAYOUT REFERENCE (the existing forest near layer), not an edit target. Create a new POISON SWAMP layer keeping exactly the same battlefield depth and perspective: rear nearly horizontal ground verge at 47% height; continuous solid muddy plane fills all x from 49% to the bottom. The entire character contact lane y56.1% through y88.9% (Y323-512 in 1024x576) is flat and unobstructed. Only quiet shallow swamp water stains, small olive puddles and wet earth pixel textures in this lane; no deep holes, reeds, rocks, trunks, roots or tall bushes there. Brown/gray-olive firm muddy ground with shallow stagnant green water patches, stepped small pixel ripples and subtle wet highlights, sparse tiny bubbles. Tall thin twisted dark swamp trees, dead willow trunks, moss, low bog foliage and hanging vines root ONLY at the rear edge y44-49%, never inside the battle lane. Transparent gaps between these trees in the upper region reveal a separate distant layer; do not paint distant forest, sky or ambient fog into transparent spaces. Low reeds and mushrooms may grow ONLY in bottommost5% and rear verge. Fine detailed 1990s arcade/JRPG pixel art to match the reference sprites, crisp clustered square pixels and dark colored outlines, no photographic texture, painting or smooth anti-aliased halos. Low saturation moss/olive/teal and damp dark brown; enough ground contrast to show green monsters and pale characters. Keep first and last8% free of large trunks, roots, rocks and reeds. Even lighting from left to right, no giant edge framing trees or vignette, no convergent center path. Horizontal looping via alternating mirror tiles. Ground solid opaque across the full contact lane, every x; upper spaces actual alpha0, no black or checkerboard matte. No characters, monsters, severed heads, bones, equipment, buildings, bridges, text, UI, frames or watermark. Deliver ONLY this one ground+near transparent layer.",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/stages/starting-forest/forest-ground-near.png"
+    ],
+    "transparent": true
+  },
+  {
+    "id": "hydra-move-v3",
+    "destination": "development/assets/enemies/hydra/source/move-facing-left-generated-v3.png",
+    "prompt": "Use case: stylized-concept. Edit ONLY ONE HEAD in image 1, which is a 2x2 four-frame hydra movement sprite sheet. Image 2 is the canonical LEFT-facing head/identity reference. In frame 3 (BOTTOM LEFT), the HIGHEST head still points RIGHT. Flip/redraw this highest skull to point LEFT: its narrow snout and open jaw must be at local cell x29%, y10%, with the back of the skull at x45%, y10%, and neck connecting below/back around x48%,y20%. Its tongue and fangs must be to the LEFT of the neck, not to the right. Reconnect this one head smoothly to the same existing top neck. Keep the other FOUR heads in that frame exactly as they are (all already face left). Result is EXACTLY FIVE heads facing LEFT in frame3. Do not add or remove any head or neck. Frames1,2,4 must remain IDENTICAL to image1. Preserve entire coiled body, tail, colors, lighting, pixel texture, grid, size and all pose locations. Maintain real transparency. This is a single highest-head direction fix in bottom-left cell only; do not redesign the sheet.",
+    "references": [
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/enemies/hydra/source/move-facing-left-generated-v2.png",
+      "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/public/assets/enemies/hydra/motions/idle/idle-01.png"
+    ],
+    "transparent": true
+  }
+]

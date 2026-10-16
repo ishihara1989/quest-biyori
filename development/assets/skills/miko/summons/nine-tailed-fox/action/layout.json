@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/nine-tailed-fox-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 707,
+      "height": 724
+    },
+    {
+      "x": 707,
+      "y": 0,
+      "width": 738,
+      "height": 724
+    },
+    {
+      "x": 1445,
+      "y": 0,
+      "width": 727,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 580,
+      "y": 927
+    },
+    {
+      "x": 639,
+      "y": 923
+    },
+    {
+      "x": 624,
+      "y": 927
+    }
+  ],
+  "scale": 0.07577807848443843
+}

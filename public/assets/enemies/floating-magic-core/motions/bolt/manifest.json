@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "enemy": "floating-magic-core",
+  "motion": "bolt",
+  "facing": "left",
+  "label": "魔弾",
+  "sheet": "floating-magic-core-bolt.png",
+  "preview": "../../../../../../development/assets/enemies/floating-magic-core/motions/bolt/floating-magic-core-bolt-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/floating-magic-core/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 900,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/floating-magic-core/source/bolt-registered.png",
+  "sourceScale": 0.3233082706766917,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "floating-magic-core-bolt-2-0",
+      "type": "spawn-projectile",
+      "effect": "ruins-magic-bolt",
+      "frame": 2,
+      "timeMs": 500,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "bolt-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "開始",
+      "bounds": {
+        "left": 116,
+        "top": 99,
+        "right": 308,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 682,
+        "height": 660
+      },
+      "sourceAnchor": {
+        "x": 386,
+        "y": 605
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 1,
+      "file": "bolt-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 280,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 123,
+        "top": 119,
+        "right": 295,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 682,
+        "y": 0,
+        "width": 682,
+        "height": 660
+      },
+      "sourceAnchor": {
+        "x": 340,
+        "y": 571
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 2,
+      "file": "bolt-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "作用",
+      "bounds": {
+        "left": 116,
+        "top": 112,
+        "right": 305,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 660,
+        "width": 682,
+        "height": 660
+      },
+      "sourceAnchor": {
+        "x": 381,
+        "y": 568
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 3,
+      "file": "bolt-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 117,
+        "top": 99,
+        "right": 306,
+        "bottom": 270
+      },
+      "sourceCell": {
+        "x": 682,
+        "y": 660,
+        "width": 682,
+        "height": 660
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 584
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/floating-magic-core/source/bolt-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/floating-magic-core/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 650,
+          "height": 628
+        },
+        {
+          "x": 650,
+          "y": 0,
+          "width": 604,
+          "height": 628
+        },
+        {
+          "x": 0,
+          "y": 628,
+          "width": 636,
+          "height": 626
+        },
+        {
+          "x": 636,
+          "y": 628,
+          "width": 618,
+          "height": 626
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 32,
+    "legsTucked": false,
+    "groundY": 302,
+    "horizontalAnchor": "central cyan core"
+  },
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 115,
+      "y": 302
+    },
+    "origin": {
+      "x": 127,
+      "y": 188
+    },
+    "assets": [
+      {
+        "id": "ruins-magic-bolt",
+        "manifest": "../../../../effects/ruins-magic-bolt/manifest.json"
+      }
+    ]
+  }
+}

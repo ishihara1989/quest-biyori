@@ -1,0 +1,22 @@
+{
+  "id": "black-knight/move-2",
+  "source": "move-2-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: THREE-frame complementary HALF of a six-frame black-knight WALK cycle.\nInput image 1 is fixed canonical character reference. Input image 2 is the ALREADY GENERATED opposite walking half; use it to match scale, sword, horns, armor, palette and rendering, but MOVE THE OPPOSITE LEG. The middle pose of image 2 lifts the boot on SCREEN RIGHT. Do NOT repeat that lifted boot.\nExactly THREE complete small poses in ONE HORIZONTAL ROW of equal square cells, broad transparent gutters. Whole sword, cape, horns, hands and boots inside central 60% of each cell; genuine transparent alpha. Same LEFT-facing mild three-quarter view and same body scale as input 2. Carry the same broad greatsword low toward left in the canonical sword hand, other arm relaxed, unchanged across all cells.\nTHIS HALF must lift the FAR/SMALLER boot that is on SCREEN LEFT in neutral. The NEAR/LARGER boot under the large viewer-right shoulder supports the body all three poses. Track far leg from its hip on viewer-left through its OWN knee, ankle and smaller boot; do not lift the near/right-origin leg.\nPer-cell normalized body root (550,590), head (530,350), ground y=840. Sword hilt (480,625), tip (210,780), cape stays within x=360..800.\nLEFT CELL: near/larger leg stretches FORWARD toward left, near boot at (400,840) planted; far/smaller leg trails back-right, far boot (650,840) about to lift. Far leg visibly connects behind near leg to viewer-left hip.\nMIDDLE CELL: near/larger supporting boot at (480,840) remains on ground. FAR/SMALLER knee rises in front of abdomen toward SCREEN LEFT (470,680); its smaller boot is lifted at (420,750), clearly above ground. The big near boot must NOT lift. Knee and foot visibly belong to the FAR smaller leg, not a third leg.\nRIGHT CELL: near/larger supporting boot slides to (570,840); far/smaller boot reaches forward-left toward (360,800) to prepare landing. Far knee remains connected to left-origin hip. Keep two legs and exactly two boots.\nThis must visibly differ from image 2's middle raised SCREEN-RIGHT boot. Upper body, near shoulder, sword-holding hand and cape do not swap sides. No weapon animation, VFX, background, floor, shadow, text, labels, grid, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-7802b815-d7a8-4760-a22e-ee05eabd5869.png",
+  "sha256": "dfd4ca60bd96382ccb3bf85ba401e6461eca37458372642221c18623ecf2ae84",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/black-knight.png",
+      "sha256": "960272c41473b518701eeb9f49bb35c9d06273070244ac4f956e2196937d2c59"
+    },
+    {
+      "file": "move-1-v2.png",
+      "sha256": "9b8a1597dda21b95676ada441f0f1cfa7e6e1c19aa65f8aa77bf7b7f8e22c719"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "move-2-v2.prompt.txt"
+}

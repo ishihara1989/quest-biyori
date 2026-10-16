@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-golem-sweep",
+  "label": "重腕薙ぎ",
+  "sheet": "ruins-golem-sweep.png",
+  "preview": "../../../../development/assets/effects/ruins-golem-sweep/ruins-golem-sweep-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-golem-sweep/PROMPT.md",
+  "width": 1280,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 112
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-golem-sweep/source-registered.png",
+  "sourceScale": 0.3972413793103448,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-golem-sweep-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 44,
+        "top": 59,
+        "right": 276,
+        "bottom": 165
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 842,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 397,
+        "y": 294
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-golem-sweep-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 16,
+        "top": 37,
+        "right": 303,
+        "bottom": 187
+      },
+      "sourceCell": {
+        "x": 842,
+        "y": 0,
+        "width": 842,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 429,
+        "y": 283
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-golem-sweep-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 18,
+        "top": 32,
+        "right": 302,
+        "bottom": 192
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 554,
+        "width": 842,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 263
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-golem-sweep-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 31,
+        "top": 50,
+        "right": 290,
+        "bottom": 174
+      },
+      "sourceCell": {
+        "x": 842,
+        "y": 554,
+        "width": 842,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 378,
+        "y": 307
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "arc",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-golem-sweep/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 726,
+        "height": 502
+      },
+      {
+        "x": 726,
+        "y": 0,
+        "width": 810,
+        "height": 502
+      },
+      {
+        "x": 0,
+        "y": 502,
+        "width": 788,
+        "height": 522
+      },
+      {
+        "x": 788,
+        "y": 502,
+        "width": 748,
+        "height": 522
+      }
+    ]
+  }
+}

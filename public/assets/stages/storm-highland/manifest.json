@@ -1,0 +1,19 @@
+{
+  "id": "storm-highland",
+  "width": 1672,
+  "height": 941,
+  "logicalWidth": 1024,
+  "logicalHeight": 576,
+  "ground": {
+    "minY": 334,
+    "maxY": 501
+  },
+  "layers": [
+    {
+      "file": "distant.png",
+      "role": "distant"
+    }
+  ],
+  "source": "../../../../development/assets/mid-late-design/v1/highland/background.png",
+  "sampling": "nearest-neighbor"
+}

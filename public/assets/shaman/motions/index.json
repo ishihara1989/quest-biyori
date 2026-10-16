@@ -1,0 +1,18 @@
+{
+  "character": "shaman",
+  "idle": "../manifest.json",
+  "motions": {
+    "forward": "forward/manifest.json",
+    "backward": "backward/manifest.json",
+    "jump": "jump/manifest.json",
+    "hit": "hit/manifest.json",
+    "down": "down/manifest.json",
+    "hex-weave": "hex-weave/manifest.json",
+    "staff-plant": "staff-plant/manifest.json",
+    "curse-pull": "curse-pull/manifest.json",
+    "ritual-raise": "ritual-raise/manifest.json",
+    "attack-staff": "attack-staff/manifest.json",
+    "chant": "chant/manifest.json",
+    "cast-forward": "cast-forward/manifest.json"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "enemy": "yuki-onna",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "yuki-onna-down.png",
+  "preview": "../../../../../../development/assets/enemies/yuki-onna/motions/down/yuki-onna-down-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1000,
+  "height": 410,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 500,
+  "frameHeight": 410,
+  "frameCount": 2,
+  "pivot": {
+    "x": 280,
+    "y": 388
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1250,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/glacier-motions/registered/yuki-onna/down.png",
+  "sourceScale": 0.3993610223642173,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 500,
+      "height": 410,
+      "durationMs": 350,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 151,
+        "top": 233,
+        "right": 404,
+        "bottom": 388
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 690,
+        "width": 702,
+        "height": 690
+      },
+      "sourceAnchor": {
+        "x": 357,
+        "y": 422
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 500,
+      "y": 0,
+      "width": 500,
+      "height": 410,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 158,
+        "top": 267,
+        "right": 398,
+        "bottom": 388
+      },
+      "sourceCell": {
+        "x": 702,
+        "y": 690,
+        "width": 702,
+        "height": 690
+      },
+      "sourceAnchor": {
+        "x": 338.5424066390041,
+        "y": 337
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/yuki-onna.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/yuki-onna/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 52,
+          "y": 61,
+          "width": 582,
+          "height": 607,
+          "mainComponent": 1
+        },
+        {
+          "x": 693,
+          "y": 61,
+          "width": 538,
+          "height": 626,
+          "mainComponent": 2
+        },
+        {
+          "x": 12,
+          "y": 794,
+          "width": 638,
+          "height": 391,
+          "mainComponent": 7
+        },
+        {
+          "x": 637,
+          "y": 889,
+          "width": 604,
+          "height": 306,
+          "mainComponent": 8
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

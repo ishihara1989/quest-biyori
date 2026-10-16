@@ -1,0 +1,19 @@
+{
+  "id": "parts/body-floating",
+  "source": "source/parts/body-floating.png",
+  "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4",
+  "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/body-floating.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,448). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Separate phase 2 master body. Face (252,128), hips (268,265), hands (170,244)/(352,260), shoes (232,391)/(276,416). Keep the same body scale as phase 1.\nFrames:\n1. Upright hovering, palms low and open, stern cyan eyes. No large rings.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+  "transparent_background": true,
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-85bd0465-045f-43f5-99ae-e42ba7ef75bd.png",
+  "references": [
+    {
+      "file": "../v1/references/phase-1-seated.png",
+      "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+    },
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    }
+  ],
+  "attempt": 1
+}

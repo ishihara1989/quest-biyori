@@ -1,0 +1,38 @@
+{
+  "source": "../../source/purification-bolt-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 725,
+      "height": 724
+    },
+    {
+      "x": 725,
+      "y": 0,
+      "width": 720,
+      "height": 724
+    },
+    {
+      "x": 1445,
+      "y": 0,
+      "width": 727,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.5403050108932462
+}

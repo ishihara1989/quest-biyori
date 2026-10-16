@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lich",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "lich-idle.png",
+  "preview": "../../../../../../development/assets/enemies/lich/motions/idle/lich-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lich/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/lich/source/idle-registered.png",
+  "sourceScale": 0.4804270462633452,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 180,
+        "top": 162,
+        "right": 447,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 604,
+        "height": 594
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 577
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 173,
+        "top": 163,
+        "right": 448,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 604,
+        "y": 0,
+        "width": 632,
+        "height": 594
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 169,
+        "top": 168,
+        "right": 449,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 594,
+        "width": 618,
+        "height": 594
+      },
+      "sourceAnchor": {
+        "x": 361,
+        "y": 564
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "終端",
+      "bounds": {
+        "left": 184,
+        "top": 163,
+        "right": 444,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 618,
+        "y": 594,
+        "width": 618,
+        "height": 594
+      },
+      "sourceAnchor": {
+        "x": 329,
+        "y": 574
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/lich/source/idle-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 164429,
+      "left": 66,
+      "top": 65,
+      "right": 623,
+      "bottom": 626,
+      "cx": 322.0446150010035,
+      "cy": 353.7740118835485
+    },
+    {
+      "id": 2,
+      "count": 167715,
+      "left": 638,
+      "top": 67,
+      "right": 1212,
+      "bottom": 626,
+      "cx": 903.603547685061,
+      "cy": 352.2075962197776
+    },
+    {
+      "id": 24,
+      "count": 169113,
+      "left": 45,
+      "top": 655,
+      "right": 630,
+      "bottom": 1203,
+      "cx": 322.4457315522757,
+      "cy": 935.0330903005682
+    },
+    {
+      "id": 25,
+      "count": 156288,
+      "left": 668,
+      "top": 656,
+      "right": 1211,
+      "bottom": 1214,
+      "cx": 912.8558750511876,
+      "cy": 944.564835432023
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/stone-tortoise-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 724
+    },
+    {
+      "x": 680,
+      "y": 0,
+      "width": 763,
+      "height": 724
+    },
+    {
+      "x": 1443,
+      "y": 0,
+      "width": 729,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 862
+    },
+    {
+      "x": 512,
+      "y": 862
+    },
+    {
+      "x": 512,
+      "y": 862
+    }
+  ],
+  "scale": 0.5030425963488844
+}

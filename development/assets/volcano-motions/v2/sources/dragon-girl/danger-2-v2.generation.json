@@ -1,0 +1,24 @@
+{
+  "id": "dragon-girl/danger-2",
+  "source": "sources/dragon-girl/danger-2-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴンガール. Adult dragon girl. Wings open modestly maintaining SAME span and shape; chest then throat light; torso leans LEFT and mouth opens LEFT at release; upright neutral return. Both feet planted, tail counterbalances, complete wing tips. NO beam in body sheet. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. TL chest retracts slightly; TR throat/chest show attached orange inner light with mouth closed, wings slightly raised; BL head turns fully LEFT and mouth opens toward LEFT (no external flame whatsoever); BR exact upright neutral pose. All wings and tail have 15% padding, wide gutters. Face oriented toward left throughout.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "15c961ee681d5cc2f21ab79d573c851134517f9563067f0f5fcfee975c85c7bd",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/danger-2-generated.png",
+  "issues": [
+    "翼端がセル境界に近く、発動で翼の形と広さが大きく変わる。付け根・見切れを確認する。",
+    "口の発射点を横長ブレスへ合わせ、逆向きの矢印に見えないか背景上で検収する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

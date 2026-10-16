@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hermit-crab",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "hermit-crab-move.png",
+  "preview": "../../../../../../development/assets/enemies/hermit-crab/motions/move/hermit-crab-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hermit-crab/PROMPT.md",
+  "width": 2304,
+  "height": 288,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 6,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/hermit-crab/source/move-registered.png",
+  "sourceScale": 0.25,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "左接地",
+      "bounds": {
+        "left": 123,
+        "top": 172,
+        "right": 284,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 684,
+        "height": 446
+      },
+      "sourceAnchor": {
+        "x": 416,
+        "y": 415
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "右遊脚",
+      "bounds": {
+        "left": 157,
+        "top": 172,
+        "right": 313,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 684,
+        "y": 0,
+        "width": 684,
+        "height": 446
+      },
+      "sourceAnchor": {
+        "x": 282,
+        "y": 415
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "右前進",
+      "bounds": {
+        "left": 116,
+        "top": 168,
+        "right": 278,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 1368,
+        "y": 0,
+        "width": 684,
+        "height": 446
+      },
+      "sourceAnchor": {
+        "x": 446,
+        "y": 429
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "右接地",
+      "bounds": {
+        "left": 106,
+        "top": 171,
+        "right": 268,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 446,
+        "width": 684,
+        "height": 446
+      },
+      "sourceAnchor": {
+        "x": 486,
+        "y": 418
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1536,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "左遊脚",
+      "bounds": {
+        "left": 87,
+        "top": 168,
+        "right": 246,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 684,
+        "y": 446,
+        "width": 684,
+        "height": 446
+      },
+      "sourceAnchor": {
+        "x": 563,
+        "y": 429
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 1920,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "左前進",
+      "bounds": {
+        "left": 106,
+        "top": 169,
+        "right": 268,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 1368,
+        "y": 446,
+        "width": 684,
+        "height": 446
+      },
+      "sourceAnchor": {
+        "x": 484,
+        "y": 424
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/hermit-crab/source/move-1-generated.png",
+    "../../../../../../development/assets/enemies/hermit-crab/source/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 3,
+        "count": 163210,
+        "left": 37,
+        "top": 187,
+        "right": 683,
+        "bottom": 586,
+        "cx": 372.5269284970284,
+        "cy": 390.7947429691808
+      },
+      {
+        "id": 2,
+        "count": 156596,
+        "left": 771,
+        "top": 181,
+        "right": 1398,
+        "bottom": 580,
+        "cx": 1089.690049554267,
+        "cy": 385.63053973281563
+      },
+      {
+        "id": 1,
+        "count": 168360,
+        "left": 1478,
+        "top": 173,
+        "right": 2128,
+        "bottom": 586,
+        "cx": 1814.7477666904254,
+        "cy": 384.27748871465906
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "count": 165545,
+        "left": 37,
+        "top": 168,
+        "right": 687,
+        "bottom": 570,
+        "cx": 377.28835664018845,
+        "cy": 370.9675798121357
+      },
+      {
+        "id": 1,
+        "count": 159089,
+        "left": 762,
+        "top": 157,
+        "right": 1403,
+        "bottom": 570,
+        "cx": 1090.8139971965377,
+        "cy": 363.2105236691412
+      },
+      {
+        "id": 2,
+        "count": 168014,
+        "left": 1462,
+        "top": 165,
+        "right": 2113,
+        "bottom": 573,
+        "cx": 1799.2720666134965,
+        "cy": 374.64731510469363
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1,
+  "walkCycle": {
+    "nearLeg": "left",
+    "farLeg": "right",
+    "parts": [
+      "../../../../../../development/assets/enemies/hermit-crab/source/move-1-generated.png",
+      "../../../../../../development/assets/enemies/hermit-crab/source/move-2-generated.png"
+    ],
+    "phases": [
+      "left-contact",
+      "right-passing",
+      "right-approach",
+      "right-contact",
+      "left-passing",
+      "left-approach"
+    ]
+  }
+}

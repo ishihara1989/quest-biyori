@@ -1,0 +1,8 @@
+body[data-region="5"]{--gold:#ddc593;--accent:#a5d9e6;background:radial-gradient(ellipse at 50% 0,#29404a66,transparent 65%),#10191d}
+body[data-region="5"] .forest-route{border-color:#7e776044;background:linear-gradient(90deg,#27353899,#26363955)}
+.stage-map[data-region="5"]{background:linear-gradient(#112a3288,#172629dd),url('/assets/stages/ancient-ruins/distant.png') center/cover}
+.region-tabs{flex-wrap:wrap}
+.character-tabs{flex-wrap:wrap}
+.party-mini{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}
+.party-mini button{width:100%;min-width:0}
+@media(max-width:580px){.party-mini{grid-template-columns:repeat(3,minmax(0,1fr))}.journey-sidebar{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "enemies/horn-jackal/motions/idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "enemies/horn-jackal/motions/move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "enemies/horn-jackal/motions/hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "enemies/horn-jackal/motions/down/manifest.json"
+  },
+  {
+    "id": "bite",
+    "label": "噛みつき",
+    "manifest": "enemies/horn-jackal/motions/bite/manifest.json"
+  }
+]

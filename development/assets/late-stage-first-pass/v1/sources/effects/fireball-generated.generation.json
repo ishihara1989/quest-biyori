@@ -1,0 +1,28 @@
+{
+  "id": "effects/fireball",
+  "effect": "fireball",
+  "region": "volcano",
+  "label": "灼熱火球",
+  "kind": "projectile",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/fireball-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. single LEFT-travelling spherical yellow-white fireball, orange-red shell, fiery tail extends RIGHT; no ground impact. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-886ffc85-50ea-4e29-b901-4d79e37ac462.png",
+  "sha256": "18a9152542ed5d65b4548b29aa50ad9257d74d54b1aa9dd0785f904dae739071",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "左向きの白熱火球・右へ伸びる尾が明瞭。"
+    ],
+    "issues": [
+      "背景光が混入。透明な周囲を保つように修正する。",
+      "飛行用シートの最終コマが球の消失・爆散になっている。飛行ループと着弾を分離する。",
+      "発生→最大衝撃→収束という共通VFX指定が飛翔用に適さなかった。次の修正では飛翔の脈動として指定する。"
+    ]
+  }
+}

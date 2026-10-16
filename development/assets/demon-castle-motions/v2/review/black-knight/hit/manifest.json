@@ -1,0 +1,76 @@
+{
+  "id": "black-knight/hit",
+  "label": "黒騎士・被弾",
+  "enemy": "black-knight",
+  "motion": "hit",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/black-knight.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "被弾",
+      "source": "../../../sources/black-knight/reaction-v2.png",
+      "sourceSha256": "fc77a0ed4b50bef7d332bfb159e1abf3a8a0d37d0b6bad7b64c5dd89bc9b69ef",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 792,
+        "height": 572
+      },
+      "sourceAnchor": [
+        445,
+        503
+      ],
+      "scale": 0.52,
+      "pivot": [
+        295,
+        410
+      ],
+      "sha256": "7d6e1dce99442679f69567c49dc5f02c826bc50463f19ba6072a5ecd04f5043f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8647575378417969
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../sources/black-knight/reaction-v2.png",
+      "sourceSha256": "fc77a0ed4b50bef7d332bfb159e1abf3a8a0d37d0b6bad7b64c5dd89bc9b69ef",
+      "sourceRect": {
+        "left": 792,
+        "top": 0,
+        "width": 744,
+        "height": 572
+      },
+      "sourceAnchor": [
+        335,
+        511
+      ],
+      "scale": 0.52,
+      "pivot": [
+        295,
+        410
+      ],
+      "sha256": "da30afa3a54e6549f5467d56a089d7b160bb67ff6d9abbe79e03895c4612e264",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8596038818359375
+    }
+  ],
+  "fingerprint": "07332744e885d42d34a36449aa5e512f971372dd687d6b3b764c574e292cf52b",
+  "events": [],
+  "effects": []
+}

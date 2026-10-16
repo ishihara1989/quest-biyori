@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "flame-wheel-guardian",
+  "character": "miko",
+  "subject": "flame-wheel",
+  "group": "guardian",
+  "motion": "manifest",
+  "sheet": "flame-wheel-manifest.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5134575569358178,
+  "frames": [
+    {
+      "index": 0,
+      "file": "flame-wheel-manifest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 92,
+        "t": 81,
+        "r": 435,
+        "b": 476,
+        "n": 86164,
+        "width": 344,
+        "height": 396
+      }
+    },
+    {
+      "index": 1,
+      "file": "flame-wheel-manifest-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 70,
+        "t": 65,
+        "r": 441,
+        "b": 482,
+        "n": 99784,
+        "width": 372,
+        "height": 418
+      }
+    },
+    {
+      "index": 2,
+      "file": "flame-wheel-manifest-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 39,
+        "t": 13,
+        "r": 485,
+        "b": 465,
+        "n": 129123,
+        "width": 447,
+        "height": 453
+      }
+    },
+    {
+      "index": 3,
+      "file": "flame-wheel-manifest-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 61,
+        "t": 61,
+        "r": 417,
+        "b": 458,
+        "n": 90516,
+        "width": 357,
+        "height": 398
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/flame-wheel-guardian-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/flame-wheel-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

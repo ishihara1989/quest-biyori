@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "V1 V2 guide displayed",
+    "six frame stepping",
+    "per-leg independent amplitude editing",
+    "reset",
+    "target overlay",
+    "manual source-pixel measurement",
+    "replay",
+    "six-frame JSON export with measurements",
+    "390px layout",
+    "no page errors"
+  ],
+  "errors": []
+}

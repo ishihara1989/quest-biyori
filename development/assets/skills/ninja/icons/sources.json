@@ -1,0 +1,23 @@
+{
+  "shuriken": "public/assets/ninja/motions/attack-shuriken/shuriken-projectile.png",
+  "star-burst": "public/assets/ninja/motions/throw-combo/throw-combo-02.png",
+  "flash-bomb": "public/assets/skills/ninja/effects/flash/flash-02.png",
+  "shadow-clone": "public/assets/ninja/motions/cast-release/cast-release-02.png",
+  "caltrop-field": "public/assets/skills/ninja/effects/caltrop-scatter/caltrop-scatter-03.png",
+  "shadow-pin": "public/assets/skills/ninja/effects/shadow-pin/shadow-pin-03.png",
+  "air-fan": "public/assets/ninja/motions/air-throw/air-throw-02.png",
+  "shadow-echo": "public/assets/ninja/motions/throw-combo/throw-combo-05.png",
+  "seal-tags": "public/assets/skills/ninja/effects/seal/seal-02.png",
+  "fuma-return": "public/assets/skills/ninja/effects/fuma/fuma-01.png",
+  "mist-clones": "public/assets/skills/ninja/effects/smoke-in/smoke-in-02.png",
+  "thread-field": "public/assets/skills/ninja/effects/thread/thread-02.png",
+  "shadow-cross": "public/assets/ninja/motions/low-dash/low-dash-03.png",
+  "paralysis-needles": "public/assets/skills/ninja/effects/lightning/lightning-02.png",
+  "fuma-orbit": "public/assets/skills/ninja/effects/fuma/fuma-03.png",
+  "haze-screen": "public/assets/skills/ninja/effects/haze/haze-02.png",
+  "shadow-double": "public/assets/ninja/motions/cast-release/cast-release-01.png",
+  "shadow-prison": "public/assets/skills/ninja/effects/prison/prison-03.png",
+  "eight-way-clones": "public/assets/skills/ninja/effects/smoke-in/smoke-in-03.png",
+  "unseen-volley": "public/assets/ninja/motions/air-throw/air-throw-01.png",
+  "thousand-shadow": "public/assets/skills/ninja/effects/final-ring/final-ring-02.png"
+}

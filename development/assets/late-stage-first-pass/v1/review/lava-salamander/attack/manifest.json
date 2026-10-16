@@ -1,0 +1,103 @@
+{
+  "id": "lava-salamander/attack",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "attack",
+  "label": "噛みつき",
+  "effects": [
+    "bite-impact"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/lava-salamander/attack-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "ラヴァサラマンダー",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 67,
+        "top": 232,
+        "right": 686,
+        "bottom": 578
+      },
+      "sourceWidth": 720,
+      "sourceHeight": 646,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 328899,
+      "transparentFraction": 0.7071271929824562
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 33,
+        "top": 211,
+        "right": 617,
+        "bottom": 581
+      },
+      "sourceWidth": 638,
+      "sourceHeight": 646,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 269567,
+      "transparentFraction": 0.6540538835563924
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 31,
+        "top": 64,
+        "right": 686,
+        "bottom": 408
+      },
+      "sourceWidth": 702,
+      "sourceHeight": 513,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 216758,
+      "transparentFraction": 0.6018948923432355
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 15,
+        "top": 68,
+        "right": 636,
+        "bottom": 414
+      },
+      "sourceWidth": 656,
+      "sourceHeight": 513,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 200265,
+      "transparentFraction": 0.5950916417058908
+    }
+  ],
+  "reference": "../../../references/lava-salamander.png",
+  "originalSources": [
+    "../../../sources/lava-salamander/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

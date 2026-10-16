@@ -1,0 +1,28 @@
+{
+  "id": "effects/silence-seal",
+  "effect": "silence-seal",
+  "region": "demon-castle",
+  "label": "封声の印",
+  "kind": "status",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/silence-seal-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. hollow violet-gold diamond seal with a small clear stylized closed-mouth icon and crossing bars, magenta fragments; non-damaging, transparent center around icon. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Also design frame4->1 as a smooth subtle pulse for status/residue loop. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-e21cfffd-5d95-4153-9735-f4dc4f17dc9e.png",
+  "sha256": "8cec91ac20de4d68e80602850b8ba2b5c5a51c59fa51b5004c53d8f80a9529df",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "閉じた口と交差線、金紫の菱形で沈黙の意味が読み取れる。"
+    ],
+    "issues": [
+      "菱形の中央に茶灰色の面が塗られている。記号の周囲を透明にする。",
+      "紫赤の背景光が混入。",
+      "最大コマの破片が広く、無被害の状態表示として範囲を整理する。"
+    ]
+  }
+}

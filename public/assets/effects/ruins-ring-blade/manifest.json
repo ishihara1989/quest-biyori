@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-ring-blade",
+  "label": "魔導環刃",
+  "sheet": "ruins-ring-blade.png",
+  "preview": "../../../../development/assets/effects/ruins-ring-blade/ruins-ring-blade-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-ring-blade/PROMPT.md",
+  "width": 1024,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 112
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-ring-blade/source-registered.png",
+  "sourceScale": 0.3085399449035813,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-ring-blade-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 21,
+        "top": 46,
+        "right": 235,
+        "bottom": 177
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 821,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 406,
+        "y": 265
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-ring-blade-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 19,
+        "top": 44,
+        "right": 237,
+        "bottom": 179
+      },
+      "sourceCell": {
+        "x": 821,
+        "y": 0,
+        "width": 821,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 400,
+        "y": 262
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-ring-blade-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 16,
+        "top": 39,
+        "right": 239,
+        "bottom": 186
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 575,
+        "width": 821,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 406,
+        "y": 273
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-ring-blade-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 24,
+        "top": 41,
+        "right": 232,
+        "bottom": 183
+      },
+      "sourceCell": {
+        "x": 821,
+        "y": 575,
+        "width": 821,
+        "height": 575
+      },
+      "sourceAnchor": {
+        "x": 390,
+        "y": 291
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "arc",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-ring-blade/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 771,
+        "height": 481
+      },
+      {
+        "x": 771,
+        "y": 0,
+        "width": 765,
+        "height": 481
+      },
+      {
+        "x": 0,
+        "y": 481,
+        "width": 789,
+        "height": 543
+      },
+      {
+        "x": 789,
+        "y": 481,
+        "width": 747,
+        "height": 543
+      }
+    ]
+  }
+}

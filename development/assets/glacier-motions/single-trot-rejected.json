@@ -1,0 +1,110 @@
+[
+  {
+    "id": "frost-wolf/move/frame-1",
+    "enemy": "frost-wolf",
+    "frame": 1,
+    "pair": "A",
+    "guide": "guides/frost-wolf/frame-1.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-1-generated.png",
+    "prompt": "Generate ONE full-body in-place trot sprite of frost-wolf on an actual alpha-transparent 1024x1024 canvas. This is a single frame, NOT a sheet. First reference is canonical identity, second is precise skeleton guide for this one pose. Same left-facing 3/4 angle, exact face, body proportions, navy/white/azure colors, crisp fantasy pixel art, same mane and fluffy tail. Pose FRAME 1 of a six-frame DIAGONAL TROT. The near LEFT hind and far RIGHT fore legs are visibly RAISED off their own ground plane, with connected bent knees and ankles. The near LEFT fore and far RIGHT hind legs are PLANTED and bear the body weight. Crucial: do not lift both far-side legs together; do not plant both near-side legs together. The near white HIND paw must clearly leave its ground plane. Follow ONLY this single pose, no other phases. Skeleton coordinates in 1024 space: LF 左前脚 PLANTED, hip (440,606), knee (556,694), ankle (440,802), paw bottom (440,849); RF 右前脚 RAISED, hip (399,580), knee (526,652), ankle (399,744), paw bottom (399,791); LH 左後脚 RAISED, hip (721,583), knee (593,673), ankle (721,743), paw bottom (721,790); RH 右後脚 PLANTED, hip (680,557), knee (564,665), ankle (680,754), paw bottom (680,801). Near legs are anatomical LEFT, far legs anatomical RIGHT. Preserve natural occlusion of the far hind limb, never spread it sideways; trace each hip to knee to ankle to its OWN foot. Exactly four connected legs, no disconnected or extra paws. Keep head and body center fixed at (560,500), head around (330,460). Use at least 15% transparent empty canvas margin all around the complete subject including ears, tail, tusks and crystals; uniform subject scale, no clipping. No effect, floor, shadow plate, scenery, guide lines/colors, text, extra creature, blur or smooth painted haze.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-1-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/frost-wolf.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/frost-wolf/frame-1.png"
+    ],
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-02b15531-37d4-49c4-87ad-b2fb7affc7a9.png",
+    "reason": "Rejected: incorrect diagonal support or held neutral near foreleg",
+    "sha256": "6bfba86bfd3864a939756ecc2299233c665fdedd284d89e44b2f9cc4e9a133de"
+  },
+  {
+    "id": "frost-wolf/move/frame-4",
+    "enemy": "frost-wolf",
+    "frame": 4,
+    "pair": "B",
+    "guide": "guides/frost-wolf/frame-4.png",
+    "reference": "references/frost-wolf.png",
+    "source": "sources/frost-wolf/move-frame-4-generated.png",
+    "prompt": "Generate ONE full-body in-place trot sprite of frost-wolf on an actual alpha-transparent 1024x1024 canvas. This is a single frame, NOT a sheet. First reference is canonical identity, second is precise skeleton guide for this one pose. Same left-facing 3/4 angle, exact face, body proportions, navy/white/azure colors, crisp fantasy pixel art, same mane and fluffy tail. Pose FRAME 4 of a six-frame DIAGONAL TROT. The near LEFT fore and far RIGHT hind legs are visibly RAISED off their own ground plane, with connected bent knees and ankles. The near LEFT hind and far RIGHT fore legs are PLANTED and bear the body weight. Crucial: do not lift both far-side legs together; do not plant both near-side legs together. The near white FORE paw must clearly leave its ground plane. Follow ONLY this single pose, no other phases. Skeleton coordinates in 1024 space: LF 左前脚 RAISED, hip (440,606), knee (570,673), ankle (440,762), paw bottom (440,808); RF 右前脚 PLANTED, hip (399,580), knee (515,669), ankle (399,777), paw bottom (399,824); LH 左後脚 PLANTED, hip (721,583), knee (605,691), ankle (721,779), paw bottom (721,826); RH 右後脚 RAISED, hip (680,557), knee (554,652), ankle (680,727), paw bottom (680,773). Near legs are anatomical LEFT, far legs anatomical RIGHT. Preserve natural occlusion of the far hind limb, never spread it sideways; trace each hip to knee to ankle to its OWN foot. Exactly four connected legs, no disconnected or extra paws. Keep head and body center fixed at (560,500), head around (330,460). Use at least 15% transparent empty canvas margin all around the complete subject including ears, tail, tusks and crystals; uniform subject scale, no clipping. No effect, floor, shadow plate, scenery, guide lines/colors, text, extra creature, blur or smooth painted haze.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/frost-wolf/move-frame-4-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/frost-wolf.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/frost-wolf/frame-4.png"
+    ],
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-2b6ab548-5487-4117-87f4-6c4c5d670898.png",
+    "reason": "Rejected: incorrect diagonal support or held neutral near foreleg",
+    "sha256": "dbfc092354ab31017977c98e6b32c774be4e17e13ab033d0061d268d2d2ddea1"
+  },
+  {
+    "id": "fenrir/move/frame-1",
+    "enemy": "fenrir",
+    "frame": 1,
+    "pair": "A",
+    "guide": "guides/fenrir/frame-1.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-1-generated.png",
+    "prompt": "Generate ONE full-body in-place trot sprite of fenrir on an actual alpha-transparent 1024x1024 canvas. This is a single frame, NOT a sheet. First reference is canonical identity, second is precise skeleton guide for this one pose. Same left-facing 3/4 angle, exact face, body proportions, navy/white/azure colors, crisp fantasy pixel art, same blue rune markings and crystalline mane. Pose FRAME 1 of a six-frame DIAGONAL TROT. The near LEFT hind and far RIGHT fore legs are visibly RAISED off their own ground plane, with connected bent knees and ankles. The near LEFT fore and far RIGHT hind legs are PLANTED and bear the body weight. Crucial: do not lift both far-side legs together; do not plant both near-side legs together. The near white HIND paw must clearly leave its ground plane. Follow ONLY this single pose, no other phases. Skeleton coordinates in 1024 space: LF 左前脚 PLANTED, hip (440,606), knee (556,694), ankle (440,802), paw bottom (440,849); RF 右前脚 RAISED, hip (399,580), knee (526,652), ankle (399,744), paw bottom (399,791); LH 左後脚 RAISED, hip (721,583), knee (593,673), ankle (721,743), paw bottom (721,790); RH 右後脚 PLANTED, hip (680,557), knee (564,665), ankle (680,754), paw bottom (680,801). Near legs are anatomical LEFT, far legs anatomical RIGHT. Preserve natural occlusion of the far hind limb, never spread it sideways; trace each hip to knee to ankle to its OWN foot. Exactly four connected legs, no disconnected or extra paws. Keep head and body center fixed at (560,500), head around (330,460). Use at least 15% transparent empty canvas margin all around the complete subject including ears, tail, tusks and crystals; uniform subject scale, no clipping. No effect, floor, shadow plate, scenery, guide lines/colors, text, extra creature, blur or smooth painted haze.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-1-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/fenrir.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/fenrir/frame-1.png"
+    ],
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-0512b82a-7503-499e-9b9b-3ba02166960b.png",
+    "reason": "Rejected: incorrect diagonal support or held neutral near foreleg",
+    "sha256": "6f189517508900804587a3c9c470b1666d135a78f29c39a0d2b36a59d7f3818d"
+  },
+  {
+    "id": "fenrir/move/frame-4",
+    "enemy": "fenrir",
+    "frame": 4,
+    "pair": "B",
+    "guide": "guides/fenrir/frame-4.png",
+    "reference": "references/fenrir.png",
+    "source": "sources/fenrir/move-frame-4-generated.png",
+    "prompt": "Generate ONE full-body in-place trot sprite of fenrir on an actual alpha-transparent 1024x1024 canvas. This is a single frame, NOT a sheet. First reference is canonical identity, second is precise skeleton guide for this one pose. Same left-facing 3/4 angle, exact face, body proportions, navy/white/azure colors, crisp fantasy pixel art, same blue rune markings and crystalline mane. Pose FRAME 4 of a six-frame DIAGONAL TROT. The near LEFT fore and far RIGHT hind legs are visibly RAISED off their own ground plane, with connected bent knees and ankles. The near LEFT hind and far RIGHT fore legs are PLANTED and bear the body weight. Crucial: do not lift both far-side legs together; do not plant both near-side legs together. The near white FORE paw must clearly leave its ground plane. Follow ONLY this single pose, no other phases. Skeleton coordinates in 1024 space: LF 左前脚 RAISED, hip (440,606), knee (570,673), ankle (440,762), paw bottom (440,808); RF 右前脚 PLANTED, hip (399,580), knee (515,669), ankle (399,777), paw bottom (399,824); LH 左後脚 PLANTED, hip (721,583), knee (605,691), ankle (721,779), paw bottom (721,826); RH 右後脚 RAISED, hip (680,557), knee (554,652), ankle (680,727), paw bottom (680,773). Near legs are anatomical LEFT, far legs anatomical RIGHT. Preserve natural occlusion of the far hind limb, never spread it sideways; trace each hip to knee to ankle to its OWN foot. Exactly four connected legs, no disconnected or extra paws. Keep head and body center fixed at (560,500), head around (330,460). Use at least 15% transparent empty canvas margin all around the complete subject including ears, tail, tusks and crystals; uniform subject scale, no clipping. No effect, floor, shadow plate, scenery, guide lines/colors, text, extra creature, blur or smooth painted haze.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/fenrir/move-frame-4-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/fenrir.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/fenrir/frame-4.png"
+    ],
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-3f4ade6f-4ea3-4c9c-8235-52a941ada91b.png",
+    "reason": "Rejected: incorrect diagonal support or held neutral near foreleg",
+    "sha256": "e1c463128f9537b5cd744ac870ed61b04817b6fa09c9c6958ceee551f5d98614"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-1",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 1,
+    "pair": "A",
+    "guide": "guides/ice-tusk-mammoth/frame-1.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-1-generated.png",
+    "prompt": "Generate ONE full-body in-place trot sprite of ice-tusk-mammoth on an actual alpha-transparent 1024x1024 canvas. This is a single frame, NOT a sheet. First reference is canonical identity, second is precise skeleton guide for this one pose. Same left-facing 3/4 angle, exact face, body proportions, navy/white/azure colors, crisp fantasy pixel art, exactly two curled blue tusks, one trunk and three back crystal slabs. Pose FRAME 1 of a six-frame DIAGONAL TROT. The near LEFT hind and far RIGHT fore legs are visibly RAISED off their own ground plane, with connected bent knees and ankles. The near LEFT fore and far RIGHT hind legs are PLANTED and bear the body weight. Crucial: do not lift both far-side legs together; do not plant both near-side legs together. The near white HIND paw must clearly leave its ground plane. Follow ONLY this single pose, no other phases. Skeleton coordinates in 1024 space: LF 左前脚 PLANTED, hip (440,586), knee (548,685), ankle (440,802), paw bottom (440,849); RF 右前脚 RAISED, hip (399,561), knee (515,650), ankle (399,759), paw bottom (399,806); LH 左後脚 RAISED, hip (721,563), knee (605,671), ankle (721,760), paw bottom (721,806); RH 右後脚 PLANTED, hip (680,538), knee (572,655), ankle (680,754), paw bottom (680,801). Near legs are anatomical LEFT, far legs anatomical RIGHT. Preserve natural occlusion of the far hind limb, never spread it sideways; trace each hip to knee to ankle to its OWN foot. Exactly four connected legs, no disconnected or extra paws. Keep head and body center fixed at (560,500), head around (330,460). Use at least 15% transparent empty canvas margin all around the complete subject including ears, tail, tusks and crystals; uniform subject scale, no clipping. No effect, floor, shadow plate, scenery, guide lines/colors, text, extra creature, blur or smooth painted haze.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-1-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/ice-tusk-mammoth.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/ice-tusk-mammoth/frame-1.png"
+    ],
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-1709da9a-e275-42ca-98e9-fd6aa8157893.png",
+    "reason": "Rejected: incorrect diagonal support or held neutral near foreleg",
+    "sha256": "f63bb8cd2a7f59db403646a79129d4836daf2db578bfb4fd25a6dbbf8dbb094e"
+  },
+  {
+    "id": "ice-tusk-mammoth/move/frame-4",
+    "enemy": "ice-tusk-mammoth",
+    "frame": 4,
+    "pair": "B",
+    "guide": "guides/ice-tusk-mammoth/frame-4.png",
+    "reference": "references/ice-tusk-mammoth.png",
+    "source": "sources/ice-tusk-mammoth/move-frame-4-generated.png",
+    "prompt": "Generate ONE full-body in-place trot sprite of ice-tusk-mammoth on an actual alpha-transparent 1024x1024 canvas. This is a single frame, NOT a sheet. First reference is canonical identity, second is precise skeleton guide for this one pose. Same left-facing 3/4 angle, exact face, body proportions, navy/white/azure colors, crisp fantasy pixel art, exactly two curled blue tusks, one trunk and three back crystal slabs. Pose FRAME 4 of a six-frame DIAGONAL TROT. The near LEFT fore and far RIGHT hind legs are visibly RAISED off their own ground plane, with connected bent knees and ankles. The near LEFT hind and far RIGHT fore legs are PLANTED and bear the body weight. Crucial: do not lift both far-side legs together; do not plant both near-side legs together. The near white FORE paw must clearly leave its ground plane. Follow ONLY this single pose, no other phases. Skeleton coordinates in 1024 space: LF 左前脚 RAISED, hip (440,586), knee (557,673), ankle (440,780), paw bottom (440,827); RF 右前脚 PLANTED, hip (399,561), knee (507,660), ankle (399,777), paw bottom (399,824); LH 左後脚 PLANTED, hip (721,563), knee (613,680), ankle (721,779), paw bottom (721,826); RH 右後脚 RAISED, hip (680,538), knee (566,648), ankle (680,739), paw bottom (680,786). Near legs are anatomical LEFT, far legs anatomical RIGHT. Preserve natural occlusion of the far hind limb, never spread it sideways; trace each hip to knee to ankle to its OWN foot. Exactly four connected legs, no disconnected or extra paws. Keep head and body center fixed at (560,500), head around (330,460). Use at least 15% transparent empty canvas margin all around the complete subject including ears, tail, tusks and crystals; uniform subject scale, no clipping. No effect, floor, shadow plate, scenery, guide lines/colors, text, extra creature, blur or smooth painted haze.",
+    "promptFile": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/sources/ice-tusk-mammoth/move-frame-4-prompt.txt",
+    "references": [
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/references/ice-tusk-mammoth.png",
+      "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\development\\assets\\glacier-motions/guides/ice-tusk-mammoth/frame-4.png"
+    ],
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-ee393859-1ad3-4967-9acb-f09a9ea24313.png",
+    "reason": "Rejected: incorrect diagonal support or held neutral near foreleg",
+    "sha256": "e3bffcb7668c14d1554840e0062ed1b6a6e9a11dd500fd632ca89caa65ee980a"
+  }
+]

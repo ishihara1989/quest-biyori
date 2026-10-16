@@ -1,0 +1,150 @@
+{
+  "id": "motions/p1-shot",
+  "kind": "motion",
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "loop": false,
+  "frames": [
+    {
+      "index": 1,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p1-shot/review/motions/p1-shot/frame-01.png",
+      "source": "source/motions/p1-shot.png",
+      "cellRect": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "extractionWindow": null,
+      "durationMs": 100,
+      "description": "Right-on-screen hand (392,288), neutral.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.6748599060359323,
+      "edgePixels": 0,
+      "bounds": [
+        100,
+        116,
+        551,
+        556
+      ],
+      "marginFraction": 0.11164274322169059
+    },
+    {
+      "index": 2,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p1-shot/review/motions/p1-shot/frame-02.png",
+      "source": "source/motions/p1-shot.png",
+      "cellRect": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceRect": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "extractionWindow": null,
+      "durationMs": 120,
+      "description": "R=(367,270), prepare finger flick.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.6740815355773805,
+      "edgePixels": 0,
+      "bounds": [
+        100,
+        116,
+        551,
+        556
+      ],
+      "marginFraction": 0.11164274322169059
+    },
+    {
+      "index": 3,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p1-shot/review/motions/p1-shot/frame-03.png",
+      "source": "source/motions/p1-shot.png",
+      "cellRect": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "extractionWindow": null,
+      "durationMs": 100,
+      "description": "R=(344,260), flick toward LEFT, emission pose; no drawn projectile.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.6549783913168451,
+      "edgePixels": 0,
+      "bounds": [
+        100,
+        114,
+        559,
+        556
+      ],
+      "marginFraction": 0.10685805422647528
+    },
+    {
+      "index": 4,
+      "file": "../../../../../../../public/assets/extradimensional-goddess/repair-v2/review/motions/p1-shot/review/motions/p1-shot/frame-04.png",
+      "source": "source/motions/p1-shot.png",
+      "cellRect": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceRect": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "extractionWindow": null,
+      "durationMs": 160,
+      "description": "R=(392,288), original neutral.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.6572219296973767,
+      "edgePixels": 0,
+      "bounds": [
+        100,
+        115,
+        551,
+        556
+      ],
+      "marginFraction": 0.11164274322169059
+    }
+  ],
+  "sources": [
+    "source/motions/p1-shot.png"
+  ],
+  "expectedFrames": 4,
+  "missingFrames": [],
+  "complete": true,
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed rectangular cells; explicit common segment window where recorded; original RGB/alpha, no anatomy edits, individual scaling or origin correction",
+  "contact": "review/motions/p1-shot/contact.png",
+  "gif": "review/motions/p1-shot/preview.gif"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "magma-salamander/danger-1",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "motion": "danger-1",
+  "label": "双溶岩弾",
+  "effects": [
+    "lava-bomb",
+    "lava-impact",
+    "lava-pool"
+  ],
+  "repeat": 2,
+  "sources": [
+    "sources/magma-salamander/danger-1-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "マグマサラマンダー",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 58,
+        "top": 101,
+        "right": 758,
+        "bottom": 494
+      },
+      "sourceWidth": 780,
+      "sourceHeight": 528,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 227750,
+      "transparentFraction": 0.5530060217560218
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 21,
+        "top": 70,
+        "right": 724,
+        "bottom": 496
+      },
+      "sourceWidth": 756,
+      "sourceHeight": 528,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 192632,
+      "transparentFraction": 0.4825837742504409
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 46,
+        "top": 30,
+        "right": 758,
+        "bottom": 439
+      },
+      "sourceWidth": 775,
+      "sourceHeight": 496,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 174391,
+      "transparentFraction": 0.4536706555671176
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 17,
+        "top": 56,
+        "right": 729,
+        "bottom": 439
+      },
+      "sourceWidth": 761,
+      "sourceHeight": 496,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 197760,
+      "transparentFraction": 0.5239286168454071
+    }
+  ],
+  "reference": "../../../references/magma-salamander.png",
+  "originalSources": [
+    "../../../sources/magma-salamander/danger-1-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

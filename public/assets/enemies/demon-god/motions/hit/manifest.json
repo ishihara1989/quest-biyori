@@ -1,0 +1,127 @@
+{
+  "id": "demon-god/hit",
+  "label": "被弾",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../../../../../development/assets/demon-god-redesign/v2/references/demon-god.png",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "loop": false,
+  "terminal": false,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 200,
+      "phase": "浮遊被弾",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/reaction-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 678,
+        "height": 701
+      },
+      "sourceChestCore": {
+        "x": 310,
+        "y": 204
+      },
+      "plannedRoot": [
+        580,
+        550
+      ],
+      "exportChestCore": {
+        "x": 203.7,
+        "y": 133.05
+      },
+      "sourceScale": 0.4409448818897638,
+      "transparentFraction": 0.8008761935763888,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 153,
+        "top": 46,
+        "right": 332,
+        "bottom": 325
+      },
+      "width": 384,
+      "height": 384,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 153,
+        "top": 46,
+        "right": 333,
+        "bottom": 326
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 280,
+      "phase": "浮遊復帰",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/reaction-generated.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 678,
+        "y": 0,
+        "width": 576,
+        "height": 701
+      },
+      "sourceChestCore": {
+        "x": 180,
+        "y": 209
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.4409448818897638,
+      "transparentFraction": 0.7942843967013888,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 145,
+        "top": 45,
+        "right": 324,
+        "bottom": 328
+      },
+      "width": 384,
+      "height": 384,
+      "index": 1,
+      "x": 384,
+      "y": 0,
+      "visibleBounds": {
+        "left": 145,
+        "top": 45,
+        "right": 325,
+        "bottom": 329
+      }
+    }
+  ],
+  "events": [],
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact",
+  "pivot": {
+    "x": 192,
+    "y": 330
+  },
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 480,
+  "sheet": "sheet.png",
+  "motion": "hit",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-god-redesign/v2/review/hit/manifest.json",
+  "sourceFingerprint": "6a4014c8f4e9f19a6d09e5f3bcb95c3d9fff431478ba8c902a82ab3588a9ba43",
+  "acceptedForIntegration": true,
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

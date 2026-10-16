@@ -1,0 +1,19 @@
+{
+  "id": "effects/armor-break",
+  "source": "sources/effects/armor-break-v2.png",
+  "selected": true,
+  "prompt": "Four IDENTICAL SMALL CRACKED SHIELD ICONS in equal2x2cells, a looping status indicator, TRUE transparent PNG. Gold border and silver face, a thin red vertical fissure through center. SAME COMPLETE SHIELD SHAPE in every frame, shield stays assembled, not shattering. NO flying fragments, NO flame trail, NO destruction sequence. Four subtle light phases: TL fissure dim red, TR brighter orange, BL dim red, BR medium orange. Outer shield silhouette, size, orientation and position stay EXACTLY same in all4 cells. Refined JRPG pixel-art crisp steps, black outline, compact gold/silver/red palette. 20% clear padding around each icon, wide transparent gutters. Outside crisp silhouette alpha0, no aura/haze/gradient, floor, shadow, text, labels or watermark. The BR icon is also a COMPLETE shield matching TL, so4->1 loops smoothly.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "21ddb98672182a7f026788dee2fc7c10da46fac8531c77b5030fb97b02a61bd4",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/armor-break-generated.png",
+  "issues": [
+    "最終コマで盾の印が消えて粒子だけになる。破甲の付与演出と状態維持のアイコンを分ける。",
+    "反復で盾が毎回復元される構成になる。状態表示には割れた盾の保持コマが必要。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

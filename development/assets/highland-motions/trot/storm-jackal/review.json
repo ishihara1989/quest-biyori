@@ -1,0 +1,65 @@
+{
+  "id": "storm-jackal",
+  "status": "adopted",
+  "unresolved": [],
+  "frames": 6,
+  "gait": "trot",
+  "durationMs": 720,
+  "sourceSelection": [
+    {
+      "frame": 1,
+      "source": "trot/storm-jackal/sources/frame-1-tail.png",
+      "sha256": "75121ff3712b80aeeb7a70c339d50c87dd3fc12a82deb585030ca3d2e5e91414",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 2,
+      "source": "trot/storm-jackal/sources/frame-2-tail.png",
+      "sha256": "0b2e4b70a24fd51bbc034a3a4404d0a3a5805148858b54a3799b3a3e55946386",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 3,
+      "source": "trot/storm-jackal/sources/frame-3-focused.png",
+      "sha256": "384841c575724a4ea8cfab86bc5fa3448c0e14ad3d206e49541c3f365e40527d",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 4,
+      "source": "trot/storm-jackal/sources/frame-4-tail.png",
+      "sha256": "de450ada73ab7cd36102736dba6a59e4b6bac4c1ad0879dd7b0662e05107d777",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 5,
+      "source": "trot/storm-jackal/sources/frame-5-tail.png",
+      "sha256": "cc5f7511262a99fdc7d81829903234eb4a169f97e07738b0a076fcfe7e021743",
+      "originalEdge": "unclipped at alpha >=192"
+    },
+    {
+      "frame": 6,
+      "source": "trot/storm-jackal/sources/frame-6-tail.png",
+      "sha256": "708e98bb884915be4685a6635a8f14098f249aa59095db3feabb2bec4537806e",
+      "originalEdge": "unclipped at alpha >=192"
+    }
+  ],
+  "checks": {
+    "referenceAndPalette": "reviewed against canonical reference",
+    "fourConnectedLegs": "reviewed including occluded thigh/shin/ankle",
+    "diagonalContact": "reviewed per frame, failed contact revisions retained as rejected",
+    "bodyAndHeadRegistration": "common scale and fixed eye, no per-frame foot alignment",
+    "frameTransitions": "contact sheet reviewed; browser stepping and replay exercised",
+    "splitBoundary": "3 to 4 reviewed",
+    "loop": "6 to 1 reviewed and runtime frame wrap checked",
+    "alphaAndClipping": "selected originals and packed cells checked separately",
+    "gameRendering": "both facings, all six frames, loop wrap, idle/hit/attack transitions checked"
+  },
+  "backup": {
+    "path": "backups/storm-jackal-walk-before-trot-20261013",
+    "files": 9,
+    "sha256": "verified"
+  },
+  "guides": "trot/storm-jackal/guide.json",
+  "contact": "trot/storm-jackal/contact.png",
+  "browser": "output/highland-implementation/browser-qa.json"
+}

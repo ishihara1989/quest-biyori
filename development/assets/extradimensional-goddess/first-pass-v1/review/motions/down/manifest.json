@@ -1,0 +1,127 @@
+{
+  "id": "motions/down",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/down/review/motions/down/frame-01.png",
+      "index": 1,
+      "durationMs": 200,
+      "source": "source/motions/down.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=0, eyes close, L/R=(170,244)/(352,260).",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.3663403106868229,
+      "lowAlphaPixels": 12678,
+      "edgePixels": 119,
+      "bounds": [
+        20,
+        9,
+        626,
+        601
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/down/review/motions/down/frame-02.png",
+      "index": 2,
+      "durationMs": 250,
+      "source": "source/motions/down.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=8, shoulders slump, L/R=(202,274)/(327,285).",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.39798641158500137,
+      "lowAlphaPixels": 16407,
+      "edgePixels": 157,
+      "bounds": [
+        0,
+        51,
+        606,
+        626
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/down/review/motions/down/frame-03.png",
+      "index": 3,
+      "durationMs": 300,
+      "source": "source/motions/down.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=20, L/R=(220,298)/(312,309), silhouette begins dissolving into sparse gold/cyan pixels, keep anatomy.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.3757087368268431,
+      "lowAlphaPixels": 44979,
+      "edgePixels": 2,
+      "bounds": [
+        25,
+        34,
+        626,
+        603
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/down/review/motions/down/frame-04.png",
+      "index": 4,
+      "durationMs": 350,
+      "source": "source/motions/down.png",
+      "sourceRect": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "description": "Body dy=28, L/R=(226,313)/(307,322), faint whole-body afterimage, no reward gem.",
+      "width": 627,
+      "height": 627,
+      "transparentFraction": 0.37257999282678206,
+      "lowAlphaPixels": 47633,
+      "edgePixels": 54,
+      "bounds": [
+        0,
+        0,
+        597,
+        596
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/motions/down.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/down/contact.png",
+  "gif": "review/motions/down/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

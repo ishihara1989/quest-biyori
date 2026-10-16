@@ -1,0 +1,123 @@
+{
+  "id": "effects/zero-converge",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    512,
+    768
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/zero-converge/review/effects/zero-converge/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/effects/zero-converge.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 768
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":160,\"center\":[256,156],\"radius\":24}. ",
+      "width": 512,
+      "height": 768,
+      "transparentFraction": 0.8012339274088541,
+      "lowAlphaPixels": 56436,
+      "edgePixels": 159,
+      "bounds": [
+        122,
+        130,
+        511,
+        767
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/zero-converge/review/effects/zero-converge/frame-02.png",
+      "index": 2,
+      "durationMs": 220,
+      "source": "source/effects/zero-converge.png",
+      "sourceRect": {
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 768
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":220,\"center\":[256,156],\"radius\":100,\"hold\":true}. ",
+      "width": 512,
+      "height": 768,
+      "transparentFraction": 0.4613393147786458,
+      "lowAlphaPixels": 102810,
+      "edgePixels": 146,
+      "bounds": [
+        0,
+        27,
+        501,
+        767
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/zero-converge/review/effects/zero-converge/frame-03.png",
+      "index": 3,
+      "durationMs": 100,
+      "source": "source/effects/zero-converge.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 768,
+        "width": 512,
+        "height": 768
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":100,\"pillarTop\":[256,160],\"pillarBottom\":[256,614],\"width\":80}. ",
+      "width": 512,
+      "height": 768,
+      "transparentFraction": 0.611053466796875,
+      "lowAlphaPixels": 58216,
+      "edgePixels": 85,
+      "bounds": [
+        73,
+        0,
+        442,
+        704
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/zero-converge/review/effects/zero-converge/frame-04.png",
+      "index": 4,
+      "durationMs": 300,
+      "source": "source/effects/zero-converge.png",
+      "sourceRect": {
+        "left": 512,
+        "top": 768,
+        "width": 512,
+        "height": 768
+      },
+      "description": "Global F4: {\"f\":4,\"ms\":300,\"pillarTop\":[256,160],\"pillarBottom\":[256,614],\"width\":160,\"fragmentMaxX\":416,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+      "width": 512,
+      "height": 768,
+      "transparentFraction": 0.4223836263020833,
+      "lowAlphaPixels": 117980,
+      "edgePixels": 54,
+      "bounds": [
+        7,
+        0,
+        462,
+        716
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/effects/zero-converge.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/zero-converge/contact.png",
+  "gif": "review/effects/zero-converge/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

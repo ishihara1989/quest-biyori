@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ancient-titan",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "ancient-titan-move.png",
+  "preview": "../../../../../../development/assets/enemies/ancient-titan/motions/move/ancient-titan-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/ancient-titan/PROMPT.md",
+  "width": 3840,
+  "height": 496,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 496,
+  "frameCount": 6,
+  "pivot": {
+    "x": 371,
+    "y": 478
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/ancient-titan/source/move-registered.png",
+  "sourceScale": 0.4780058651026393,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 120,
+      "phase": "左接地",
+      "bounds": {
+        "left": 185,
+        "top": 153,
+        "right": 501,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 776,
+        "height": 759
+      },
+      "sourceAnchor": {
+        "x": 421.16564417177915,
+        "y": 706
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 120,
+      "phase": "右遊脚",
+      "bounds": {
+        "left": 184,
+        "top": 152,
+        "right": 494,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 776,
+        "y": 0,
+        "width": 776,
+        "height": 759
+      },
+      "sourceAnchor": {
+        "x": 447.16564417177915,
+        "y": 704
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 120,
+      "phase": "右前進",
+      "bounds": {
+        "left": 184,
+        "top": 151,
+        "right": 501,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 1552,
+        "y": 0,
+        "width": 776,
+        "height": 759
+      },
+      "sourceAnchor": {
+        "x": 451.16564417177915,
+        "y": 706
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 120,
+      "phase": "右接地",
+      "bounds": {
+        "left": 174,
+        "top": 152,
+        "right": 495,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 759,
+        "width": 776,
+        "height": 759
+      },
+      "sourceAnchor": {
+        "x": 471.16564417177915,
+        "y": 710
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2560,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 120,
+      "phase": "左遊脚",
+      "bounds": {
+        "left": 178,
+        "top": 153,
+        "right": 512,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 776,
+        "y": 759,
+        "width": 776,
+        "height": 759
+      },
+      "sourceAnchor": {
+        "x": 445.16564417177915,
+        "y": 708
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 3200,
+      "y": 0,
+      "width": 640,
+      "height": 496,
+      "durationMs": 120,
+      "phase": "左前進",
+      "bounds": {
+        "left": 180,
+        "top": 152,
+        "right": 495,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 1552,
+        "y": 759,
+        "width": 776,
+        "height": 759
+      },
+      "sourceAnchor": {
+        "x": 434.16564417177915,
+        "y": 710
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/ancient-titan/source/move-1-generated.png",
+    "../../../../../../development/assets/enemies/ancient-titan/source/move-2-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/ancient-titan/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 2172,
+      "height": 724,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 718,
+          "height": 724
+        },
+        {
+          "x": 718,
+          "y": 0,
+          "width": 734,
+          "height": 724
+        },
+        {
+          "x": 1452,
+          "y": 0,
+          "width": 720,
+          "height": 724
+        }
+      ],
+      "normalizeScale": 1
+    },
+    {
+      "method": "transparent-grid",
+      "width": 2172,
+      "height": 724,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 738,
+          "height": 724
+        },
+        {
+          "x": 738,
+          "y": 0,
+          "width": 741,
+          "height": 724
+        },
+        {
+          "x": 1479,
+          "y": 0,
+          "width": 693,
+          "height": 724
+        }
+      ],
+      "normalizeScale": 1.0039138943248531
+    }
+  ],
+  "walkCycle": {
+    "nearLeg": "left",
+    "farLeg": "right",
+    "horizontalAnchor": "torso registered to idle",
+    "parts": [
+      "../../../../../../development/assets/enemies/ancient-titan/source/move-1-generated.png",
+      "../../../../../../development/assets/enemies/ancient-titan/source/move-2-generated.png"
+    ],
+    "phases": [
+      "left-contact",
+      "right-passing",
+      "right-approach",
+      "right-contact",
+      "left-passing",
+      "left-approach"
+    ]
+  }
+}

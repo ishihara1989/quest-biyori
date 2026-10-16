@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "octopus",
+  "motion": "ink",
+  "facing": "left",
+  "label": "墨",
+  "sheet": "octopus-ink.png",
+  "preview": "../../../../../../development/assets/enemies/octopus/motions/ink/octopus-ink-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/octopus/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 840,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/octopus/source/ink-registered.png",
+  "sourceScale": 0.32432432432432434,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "octopus-ink-ink-bolt",
+      "type": "spawn-projectile",
+      "effect": "sea-ink",
+      "frame": 2,
+      "timeMs": 380,
+      "power": 0.35
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "ink-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 150,
+        "top": 152,
+        "right": 354,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 688,
+        "height": 444
+      },
+      "sourceAnchor": {
+        "x": 243,
+        "y": 385
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ink-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 118,
+        "top": 138,
+        "right": 330,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 688,
+        "y": 0,
+        "width": 688,
+        "height": 444
+      },
+      "sourceAnchor": {
+        "x": 340,
+        "y": 427
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ink-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 200,
+      "phase": "作用",
+      "bounds": {
+        "left": 143,
+        "top": 148,
+        "right": 352,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 444,
+        "width": 688,
+        "height": 444
+      },
+      "sourceAnchor": {
+        "x": 263,
+        "y": 397
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ink-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 260,
+      "phase": "復帰",
+      "bounds": {
+        "left": 119,
+        "top": 147,
+        "right": 325,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 688,
+        "y": 444,
+        "width": 688,
+        "height": 444
+      },
+      "sourceAnchor": {
+        "x": 338,
+        "y": 400
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/octopus/source/ink-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 143047,
+        "left": 71,
+        "top": 107,
+        "right": 703,
+        "bottom": 476,
+        "cx": 382.2418505805784,
+        "cy": 325.78137954658257
+      },
+      {
+        "id": 1,
+        "count": 171664,
+        "left": 818,
+        "top": 73,
+        "right": 1473,
+        "bottom": 484,
+        "cx": 1147.516858514307,
+        "cy": 309.96896262466214
+      },
+      {
+        "id": 3,
+        "count": 151083,
+        "left": 71,
+        "top": 585,
+        "right": 716,
+        "bottom": 966,
+        "cx": 394.66160322471757,
+        "cy": 807.7574975344678
+      },
+      {
+        "id": 4,
+        "count": 148373,
+        "left": 834,
+        "top": 585,
+        "right": 1473,
+        "bottom": 969,
+        "cx": 1144.4856611378082,
+        "cy": 810.6529287673633
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 271
+    },
+    "origin": {
+      "x": 177.4,
+      "y": 211
+    },
+    "assets": [
+      {
+        "id": "sea-ink",
+        "manifest": "../../../../effects/sea-ink/manifest.json"
+      }
+    ]
+  }
+}

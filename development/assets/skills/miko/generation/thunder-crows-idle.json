@@ -1,0 +1,13 @@
+{
+  "id": "thunder-crows-idle",
+  "source": "development/assets/skills/miko/source/thunder-crows-idle-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-b574ae8a-c82c-4fdb-9246-2c60e82ac0fc.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Create exactly 3 frames in ONE horizontal row of equally sized square cells. Subject: ONE sacred raven with navy-violet feathers, ivory wing edge feathers, golden beak and eyes, vermilion knot around neck, exactly TWO wings and ONE tail. ONE creature per cell, facing RIGHT, no effects baked into body. Position: body (.50,.50), head (.66,.34), wing tips (.22,.27)/(.77,.29). Idle loop: 1 exhale/relaxed; 2 chest/head rise one logical pixel and wings/tail lift two; 3 ease halfway back. Feet stay planted for ground creatures, hover center stays fixed for flying.",
+  "receivedAt": "2026-10-10T13:48:34.969Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated",
+  "refs": [
+    "development/assets/skills/miko/source/ember-fox-idle-generated-v1.png"
+  ]
+}

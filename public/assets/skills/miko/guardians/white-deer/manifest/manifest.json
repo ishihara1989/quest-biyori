@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "white-deer-guardian",
+  "character": "miko",
+  "subject": "white-deer",
+  "group": "guardian",
+  "motion": "manifest",
+  "sheet": "white-deer-manifest.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5092402464065708,
+  "frames": [
+    {
+      "index": 0,
+      "file": "white-deer-manifest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 41,
+        "t": 26,
+        "r": 474,
+        "b": 476,
+        "n": 85108,
+        "width": 434,
+        "height": 451
+      }
+    },
+    {
+      "index": 1,
+      "file": "white-deer-manifest-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 36,
+        "t": 24,
+        "r": 476,
+        "b": 477,
+        "n": 104212,
+        "width": 441,
+        "height": 454
+      }
+    },
+    {
+      "index": 2,
+      "file": "white-deer-manifest-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 18,
+        "t": 10,
+        "r": 504,
+        "b": 475,
+        "n": 138392,
+        "width": 487,
+        "height": 466
+      }
+    },
+    {
+      "index": 3,
+      "file": "white-deer-manifest-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "phase": "manifest",
+      "bounds": {
+        "l": 41,
+        "t": 32,
+        "r": 459,
+        "b": 475,
+        "n": 90938,
+        "width": 419,
+        "height": 444
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/white-deer-guardian-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/white-deer-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

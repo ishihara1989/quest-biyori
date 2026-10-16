@@ -1,0 +1,27 @@
+{
+  "id": "effects/royal-cleave",
+  "effect": "royal-cleave",
+  "region": "demon-castle",
+  "label": "王断の大剣",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/royal-cleave-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. enormous tall diagonal down-left silver-crimson cleave, gold flash at leading edge, black-violet afterimage. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-26d46800-5d15-46bb-8413-34ffc73da860.png",
+  "sha256": "6a89062adb0dbe8ff6abc08c90ba27177158ba49dfa709391ce600e8c2db16f2",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "銀白の大きな左下斬撃、赤紫の残像と金の閃光を表現。"
+    ],
+    "issues": [
+      "最大コマの斬撃と岩片がセル境界に近い。",
+      "発動方向の左下と原点の位置を、剣を振り下ろす本体に合わせる。"
+    ]
+  }
+}

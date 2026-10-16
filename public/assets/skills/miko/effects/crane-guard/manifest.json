@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "id": "crane-guard",
+  "character": "miko",
+  "subject": "crane-guard",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "crane-guard-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5299145299145299,
+  "frames": [
+    {
+      "index": 0,
+      "file": "crane-guard-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 17,
+        "t": 62,
+        "r": 504,
+        "b": 489,
+        "n": 100873,
+        "width": 488,
+        "height": 428
+      }
+    },
+    {
+      "index": 1,
+      "file": "crane-guard-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 22,
+        "t": 30,
+        "r": 480,
+        "b": 490,
+        "n": 83880,
+        "width": 459,
+        "height": 461
+      }
+    },
+    {
+      "index": 2,
+      "file": "crane-guard-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 30,
+        "t": 19,
+        "r": 494,
+        "b": 480,
+        "n": 89137,
+        "width": 465,
+        "height": 462
+      }
+    },
+    {
+      "index": 3,
+      "file": "crane-guard-effect-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 52,
+        "t": 30,
+        "r": 459,
+        "b": 480,
+        "n": 87572,
+        "width": 408,
+        "height": 451
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/crane-guard-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

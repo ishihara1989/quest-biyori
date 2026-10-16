@@ -1,0 +1,31 @@
+{
+  "source": "source/ninja-air-throw-generated-v2.png",
+  "columns": 3,
+  "rows": 1,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      }
+    },
+    {
+      "rect": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      }
+    }
+  ]
+}

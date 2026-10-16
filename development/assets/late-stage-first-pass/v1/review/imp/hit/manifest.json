@@ -1,0 +1,67 @@
+{
+  "id": "imp/hit",
+  "enemy": "imp",
+  "region": "demon-castle",
+  "motion": "hit",
+  "label": "被弾",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/imp/reaction-generated.png"
+  ],
+  "durations": [
+    180,
+    220
+  ],
+  "phases": [
+    "被弾",
+    "復帰"
+  ],
+  "enemyLabel": "インプ",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 137,
+        "top": 104,
+        "right": 636,
+        "bottom": 592
+      },
+      "sourceWidth": 671,
+      "sourceHeight": 646,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 293172,
+      "transparentFraction": 0.6763437040044663
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 33,
+        "top": 124,
+        "right": 518,
+        "bottom": 596
+      },
+      "sourceWidth": 598,
+      "sourceHeight": 646,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 249276,
+      "transparentFraction": 0.6452778611884817
+    }
+  ],
+  "reference": "../../../references/imp.png",
+  "originalSources": [
+    "../../../sources/imp/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "effects/lava-impact",
+  "effect": "lava-impact",
+  "region": "volcano",
+  "label": "溶岩着弾",
+  "kind": "ground",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/lava-impact-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. violent low volcanic impact, black basalt chunks fly outward, orange lava splashes upward, elliptical red-black ground rim. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed ground center (512,850), expand upward/outward; elliptical side-view base. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-0ac9e42d-9b7e-4145-b772-7a5e3831b471.png",
+  "sha256": "d17e339674c2b2ada94f3461948f39e44f95d15334c0cfeb3743b0cf185fd3e0",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "岩片と溶岩の噴き上がり、低い地面の輪郭が明瞭。"
+    ],
+    "issues": [
+      "最大コマで岩片がセル境界へ迫る。原画の余白を確認する。",
+      "低い岩床が全コマに残る。着弾の消失と別の残留床への切り替えを検収する。"
+    ]
+  }
+}

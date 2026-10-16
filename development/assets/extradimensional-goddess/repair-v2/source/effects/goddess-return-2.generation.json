@@ -1,0 +1,15 @@
+{
+  "id": "effects/goddess-return-2",
+  "source": "source/effects/goddess-return-2.png",
+  "sha256": "d12d9dac740acaab7037f33fb6165419b276bab468ad5d68fc85ecfe4ba410d7",
+  "prompt": "Use case: stylized-concept\nAsset type: transparent JRPG pixel-art dimensional-return OVERLAY, effects/goddess-return-2.\nExactly THREE equal square cells in ONE horizontal row. Every cell is virtual 512x512, portal center fixed at (256,256). Strict safe bounds x=60..452,y=52..460 in EACH cell, wide transparent gutters. Crisp stepped pixels, thin pale gold rim, cyan stars, dark-violet transparent aperture. Same camera and palette across all frames.\nPrimary request: a calm welcoming doorway to another dimension for a satisfied goddess leaving after battle. ONLY portal overlay, no goddess, person, humanoid outline, chair, body halo, small crown, shattering ring, explosion, reward jewel, text or background. True transparent alpha; see-through interior with sparse tiny stars.\nFrames:\nF4: same oval remains fully open width300 height380, rim softens slightly; the separate body is departing.\nF5: AFTER the separate body is gone, oval narrows to width90 height340, smooth rim draws inward. No cracking or shards.\nF6: one dim thin vertical seam, width6 height90, almost gone. Only this seam, no gems or extra glowing objects. Playback fades it to zero.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.\nInput image 1 is the fixed opening interval F1-F3. Continue with F4-F6, keep the SAME gold/cyan ring design, sparsity of stars and exact F3 opening size in F4. F4 matches the rightmost input frame; F5 is much narrower; F6 is only a DIM hairline slit. No extra ring or new motif.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-c1d96e58-4e6f-4b58-8b74-42697ab43373.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "source/effects/goddess-return-1.png",
+      "sha256": "be8466c63cbb547e027c17b4825f98b7701f54f4817a8ca9654b59059eb40bbd"
+    }
+  ],
+  "attempt": 1
+}

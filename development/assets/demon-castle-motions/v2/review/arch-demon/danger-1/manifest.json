@@ -1,0 +1,186 @@
+{
+  "id": "arch-demon/danger-1",
+  "label": "アークデーモン・魔炎双柱",
+  "enemy": "arch-demon",
+  "motion": "danger-1",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "高く上げた掌と翼端がセル境界に近い。指と腕の接続・余白を検収する。",
+    "2柱の0.9秒差は別エフェクトの時刻と配置で組む必要がある。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-1-generated.png",
+      "sourceSha256": "64c6483e5dc6bd54c5f0895962f01fdbd3e19b8ce99806d956ebba46a5a33fac",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 640,
+        "height": 587
+      },
+      "sourceAnchor": [
+        312,
+        568
+      ],
+      "scale": 0.5165289256198347,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "1b082ee9b867d419533e9908b17bbc983c991bef99b5f615e916efeb9d415121",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8115386962890625
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4620,
+      "phase": "溜め",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-1-generated.png",
+      "sourceSha256": "64c6483e5dc6bd54c5f0895962f01fdbd3e19b8ce99806d956ebba46a5a33fac",
+      "sourceRect": {
+        "left": 640,
+        "top": 0,
+        "width": 637,
+        "height": 587
+      },
+      "sourceAnchor": [
+        309,
+        565
+      ],
+      "scale": 0.5165289256198347,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "f9c86e1b4461dd116927f73fe12574101b85684fe04e13ea1691f289dd8a3ccb",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.793792724609375
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 2300,
+      "phase": "発動",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-1-generated.png",
+      "sourceSha256": "64c6483e5dc6bd54c5f0895962f01fdbd3e19b8ce99806d956ebba46a5a33fac",
+      "sourceRect": {
+        "left": 0,
+        "top": 587,
+        "width": 677,
+        "height": 645
+      },
+      "sourceAnchor": [
+        334,
+        566
+      ],
+      "scale": 0.5165289256198347,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "cdfdc4c5e5517ed4716e6b05417ec0b35f6e92ec6bc45ca7a028b9e9d513caa3",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.7398109436035156
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/danger-1-generated.png",
+      "sourceSha256": "64c6483e5dc6bd54c5f0895962f01fdbd3e19b8ce99806d956ebba46a5a33fac",
+      "sourceRect": {
+        "left": 677,
+        "top": 587,
+        "width": 600,
+        "height": 645
+      },
+      "sourceAnchor": [
+        273,
+        567
+      ],
+      "scale": 0.5165289256198347,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "0b9abe86e5e5df565666a4be14d93f6541f1f0c7bae56039cd625fbb019294f6",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.7829360961914062
+    }
+  ],
+  "fingerprint": "386c7798c42682bdbd34eca2d76b69e7caf1e8fbdf9988a79571614ff5b6e684",
+  "events": [
+    {
+      "id": "effects/demon-pillar",
+      "timeMs": 4800,
+      "durationMs": 520,
+      "x": 350,
+      "y": 410,
+      "scale": 0.7,
+      "anchor": [
+        256,
+        410
+      ],
+      "slot": 0
+    },
+    {
+      "id": "effects/burn",
+      "timeMs": 5060,
+      "durationMs": 1000,
+      "x": 350,
+      "y": 330,
+      "scale": 0.35,
+      "anchor": [
+        256,
+        256
+      ],
+      "slot": 0
+    },
+    {
+      "id": "effects/demon-pillar",
+      "timeMs": 5700,
+      "durationMs": 520,
+      "x": 520,
+      "y": 410,
+      "scale": 0.7,
+      "anchor": [
+        256,
+        410
+      ],
+      "slot": 1
+    },
+    {
+      "id": "effects/burn",
+      "timeMs": 5960,
+      "durationMs": 1000,
+      "x": 520,
+      "y": 330,
+      "scale": 0.35,
+      "anchor": [
+        256,
+        256
+      ],
+      "slot": 1
+    }
+  ],
+  "effects": []
+}

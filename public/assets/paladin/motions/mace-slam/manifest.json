@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "character": "paladin",
+  "label": "メイスを叩きつける",
+  "motion": "mace-slam",
+  "sheet": "mace-slam.png",
+  "width": 768,
+  "height": 256,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 520,
+  "loop": false,
+  "terminal": false,
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 239
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "mace-slam-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 140,
+      "bounds": {
+        "l": 72,
+        "t": 25,
+        "r": 180,
+        "b": 239
+      },
+      "phase": "頭上の構え",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 1,
+      "file": "mace-slam-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 100,
+      "bounds": {
+        "l": 42,
+        "t": 106,
+        "r": 191,
+        "b": 239
+      },
+      "phase": "振り下ろす",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    },
+    {
+      "index": 2,
+      "file": "mace-slam-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 280,
+      "bounds": {
+        "l": 55,
+        "t": 119,
+        "r": 190,
+        "b": 245
+      },
+      "phase": "叩きつける",
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "airborne": false
+    }
+  ],
+  "source": "../../../../../development/assets/paladin/motions/mace-slam/source/mace-slam-generated-v1.png",
+  "generation": "built-in image_gen; generated RGBA preserved",
+  "transitions": {
+    "from": "mace-raise",
+    "to": "idle"
+  }
+}

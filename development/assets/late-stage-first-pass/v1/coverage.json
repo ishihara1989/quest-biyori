@@ -1,0 +1,411 @@
+{
+  "status": "first-pass candidates, not accepted or registered",
+  "date": "2026-10-13 JST",
+  "enemies": [
+    {
+      "region": "volcano",
+      "id": "lava-salamander",
+      "label": "ラヴァサラマンダー",
+      "cell": 0,
+      "gait": "trot",
+      "normal": "bite",
+      "actions": [
+        "灼熱噴き"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "obsidian-soldier",
+      "label": "黒曜兵",
+      "cell": 1,
+      "gait": "walk",
+      "normal": "axe",
+      "actions": [
+        "破甲の斧"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "young-fire-dragon",
+      "label": "幼火竜",
+      "cell": 2,
+      "gait": "trot",
+      "normal": "claw",
+      "actions": [
+        "灼球"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "magma-salamander",
+      "label": "マグマサラマンダー",
+      "cell": 3,
+      "gait": "trot",
+      "normal": "bite",
+      "actions": [
+        "双溶岩弾",
+        "灼熱大扇"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "obsidian-executioner",
+      "label": "黒曜の処刑者",
+      "cell": 4,
+      "gait": "walk",
+      "normal": "axe",
+      "actions": [
+        "断罪大薙ぎ",
+        "断層斬"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "dragon-girl",
+      "label": "ドラゴンガール",
+      "cell": 5,
+      "gait": "walk",
+      "normal": "claw",
+      "actions": [
+        "紅蓮三連球",
+        "紅翼竜息"
+      ]
+    },
+    {
+      "region": "volcano",
+      "id": "dragon",
+      "label": "ドラゴン",
+      "cell": 7,
+      "gait": "trot",
+      "normal": "claw",
+      "actions": [
+        "翼震着地",
+        "双脈ブレス",
+        "噴火の三巣"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "id": "demon-armored-soldier",
+      "label": "魔鎧兵",
+      "cell": 0,
+      "gait": "walk",
+      "normal": "sword",
+      "actions": [
+        "鎧崩し"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "id": "imp",
+      "label": "インプ",
+      "cell": 1,
+      "gait": "hover",
+      "normal": "claw",
+      "actions": [
+        "呪弾"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "id": "dream-demon",
+      "label": "夢魔",
+      "cell": 2,
+      "gait": "hover",
+      "normal": "cast",
+      "actions": [
+        "眠りの月"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "id": "black-knight",
+      "label": "黒騎士",
+      "cell": 3,
+      "gait": "walk",
+      "normal": "sword",
+      "actions": [
+        "王断の大剣",
+        "黒環薙ぎ"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "id": "arch-demon",
+      "label": "アークデーモン",
+      "cell": 4,
+      "gait": "walk",
+      "normal": "punch",
+      "actions": [
+        "魔炎双柱",
+        "悪魔の援軍"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "id": "lilith",
+      "label": "リリス",
+      "cell": 5,
+      "gait": "hover",
+      "normal": "cast",
+      "actions": [
+        "宵闇の花冠",
+        "静寂の封印"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "id": "demon-god",
+      "label": "魔神",
+      "cell": 7,
+      "gait": "hover",
+      "normal": "punch",
+      "actions": [
+        "魔腕の断界",
+        "三界魔柱",
+        "封声",
+        "終焉の交差"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "region": "volcano",
+      "id": "bite-impact",
+      "label": "灼牙の衝撃",
+      "kind": "target",
+      "description": "two jagged incandescent fang streaks converge into a bright orange-white impact, basalt chips and embers"
+    },
+    {
+      "region": "volcano",
+      "id": "claw-arc",
+      "label": "紅爪の軌跡",
+      "kind": "target",
+      "description": "three curved red-gold claw trails sweeping LEFT with crisp white-hot tips and sparse ember fragments"
+    },
+    {
+      "region": "volcano",
+      "id": "axe-arc",
+      "label": "黒曜斧の軌跡",
+      "kind": "target",
+      "description": "broad short orange-white axe slash crescent sweeping left-down with black obsidian chips"
+    },
+    {
+      "region": "volcano",
+      "id": "heavy-axe-arc",
+      "label": "断罪大薙ぎ",
+      "kind": "target",
+      "description": "spectacular huge 150-degree molten-orange double-edged axe crescent sweeping left, dark inner edge and white-hot rim"
+    },
+    {
+      "region": "volcano",
+      "id": "fire-fan",
+      "label": "灼熱の扇",
+      "kind": "origin",
+      "description": "huge leftward fan of layered yellow-white flame tongues, red-black outer rim and orange sparks; wide angular fan silhouette"
+    },
+    {
+      "region": "volcano",
+      "id": "fireball",
+      "label": "灼熱火球",
+      "kind": "projectile",
+      "description": "single LEFT-travelling spherical yellow-white fireball, orange-red shell, fiery tail extends RIGHT; no ground impact"
+    },
+    {
+      "region": "volcano",
+      "id": "fireball-impact",
+      "label": "火球爆発",
+      "kind": "ground",
+      "description": "one explosive orange-white fireburst with low black-red elliptical boundary, radial sparks, no full opaque smoke disk"
+    },
+    {
+      "region": "volcano",
+      "id": "lava-bomb",
+      "label": "落下溶岩弾",
+      "kind": "projectile",
+      "description": "one falling diagonal down-left black basalt lava bomb with glowing cracks, white-hot core, long tail toward upper-right"
+    },
+    {
+      "region": "volcano",
+      "id": "lava-impact",
+      "label": "溶岩着弾",
+      "kind": "ground",
+      "description": "violent low volcanic impact, black basalt chunks fly outward, orange lava splashes upward, elliptical red-black ground rim"
+    },
+    {
+      "region": "volcano",
+      "id": "lava-pool",
+      "label": "残留溶岩床",
+      "kind": "ground",
+      "description": "short-lived low elliptical molten pool, dark basalt perimeter clearly visible, internal orange bubbles and sparse sparks, readable open edges"
+    },
+    {
+      "region": "volcano",
+      "id": "fissure",
+      "label": "断層斬の地割れ",
+      "kind": "ground",
+      "description": "long LEFT-directed jagged black-red ground fissure opening in sequential segments with molten orange jets and scattered rock; low side-view perspective"
+    },
+    {
+      "region": "volcano",
+      "id": "fire-beam",
+      "label": "双脈竜息",
+      "kind": "origin",
+      "description": "spectacular long horizontal LEFT-directed dragon breath, white-hot narrow core, layered gold-orange flame, clear red-black outer contour, embers trail right"
+    },
+    {
+      "region": "volcano",
+      "id": "landing-shock",
+      "label": "翼震の着地衝撃",
+      "kind": "ground",
+      "description": "huge LOW hollow elliptical orange-white shock ring expanding from center with basalt fragments and short flame spires on rim; transparent center"
+    },
+    {
+      "region": "volcano",
+      "id": "burn",
+      "label": "火傷",
+      "kind": "status",
+      "description": "compact orange-red ember aura forming a hollow ring around a transparent character-shaped empty center"
+    },
+    {
+      "region": "demon-castle",
+      "id": "dark-slash",
+      "label": "魔剣の斬撃",
+      "kind": "target",
+      "description": "sharp silver-white sword slash travelling left, violet-black rim and crimson sparks, clear narrow attack direction"
+    },
+    {
+      "region": "demon-castle",
+      "id": "royal-cleave",
+      "label": "王断の大剣",
+      "kind": "target",
+      "description": "enormous tall diagonal down-left silver-crimson cleave, gold flash at leading edge, black-violet afterimage"
+    },
+    {
+      "region": "demon-castle",
+      "id": "black-ring-slash",
+      "label": "黒環薙ぎ",
+      "kind": "target",
+      "description": "wide 150-degree black-violet crescent sweep left, silver rim and sparse crimson fragments, hollow inner arc"
+    },
+    {
+      "region": "demon-castle",
+      "id": "curse-orb",
+      "label": "呪弾",
+      "kind": "projectile",
+      "description": "single LEFT-travelling purple-black orb, bright magenta core, short broken violet rune trail to RIGHT"
+    },
+    {
+      "region": "demon-castle",
+      "id": "curse-impact",
+      "label": "呪弾着弾",
+      "kind": "target",
+      "description": "compact crimson-violet starburst with broken black ring shards, transparent central gaps, no whole screen fog"
+    },
+    {
+      "region": "demon-castle",
+      "id": "sleep-moon",
+      "label": "眠りの月",
+      "kind": "status",
+      "description": "clear gold-violet crescent hovering above a low hollow moon seal, sparse downward lavender motes; peaceful NON-damaging spell, no explosion"
+    },
+    {
+      "region": "demon-castle",
+      "id": "demon-pillar",
+      "label": "魔炎柱",
+      "kind": "ground",
+      "description": "one towering vertical crimson-white magic flame pillar, black-violet outer tongues, sharp low runic circle rim, spectacular height with readable edges"
+    },
+    {
+      "region": "demon-castle",
+      "id": "summon-gate",
+      "label": "悪魔の門",
+      "kind": "ground",
+      "description": "one black-gold gothic hollow portal with violet-red rim, low runic summoning circle, transparent empty opening; no creature"
+    },
+    {
+      "region": "demon-castle",
+      "id": "dark-flower",
+      "label": "宵闇の花冠",
+      "kind": "ground",
+      "description": "one huge dark crimson-violet lotus eruption, sharp petals open from low circle with white-magenta core and sparse gold flecks"
+    },
+    {
+      "region": "demon-castle",
+      "id": "silence-seal",
+      "label": "封声の印",
+      "kind": "status",
+      "description": "hollow violet-gold diamond seal with a small clear stylized closed-mouth icon and crossing bars, magenta fragments; non-damaging, transparent center around icon"
+    },
+    {
+      "region": "demon-castle",
+      "id": "demon-arm-arc",
+      "label": "魔腕の断界",
+      "kind": "target",
+      "description": "two enormous staggered red-violet fist-like energy arcs sweeping left, white-gold leading edges, no actual detached anatomical arm"
+    },
+    {
+      "region": "demon-castle",
+      "id": "demon-impact",
+      "label": "魔拳の衝撃",
+      "kind": "target",
+      "description": "powerful compact red-white impact star with angular purple shards, broken shock ring and transparent gaps"
+    },
+    {
+      "region": "demon-castle",
+      "id": "end-cross",
+      "label": "終焉の交差帯",
+      "kind": "origin",
+      "description": "one long diagonal crimson-white energy band from upper-right to lower-left, black-violet outer contour and gold lightning shards; reuse rotated 90 degrees for second crossing band"
+    },
+    {
+      "region": "demon-castle",
+      "id": "end-ring",
+      "label": "終焉の衝撃輪",
+      "kind": "ground",
+      "description": "spectacular enormous THIN hollow low elliptical gold-white ring with violet-black outer boundary and sparse crimson sparks, FULLY transparent center"
+    },
+    {
+      "region": "demon-castle",
+      "id": "curse",
+      "label": "呪い",
+      "kind": "status",
+      "description": "small broken violet ring with crimson cracks, subtle magenta pulse and a few dark motes, transparent character center"
+    },
+    {
+      "region": "shared",
+      "id": "armor-break",
+      "label": "破甲",
+      "kind": "status",
+      "description": "recognizable small gold-silver shield emblem splits with a crimson crack and sparse orange-metal shards, clean isolated icon, no text"
+    }
+  ],
+  "counts": {
+    "enemies": 14,
+    "commonMotions": 56,
+    "normalAttacks": 14,
+    "dangerActions": 25,
+    "effects": 30,
+    "generationJobs": 121
+  },
+  "priorStaticAssets": [
+    {
+      "region": "volcano",
+      "source": "../mid-late-design/v1/volcano",
+      "assets": [
+        "../../../../public/assets/late-stage-first-pass/v1/background.png",
+        "../../../../public/assets/late-stage-first-pass/v1/props.png",
+        "../../../../public/assets/late-stage-first-pass/v1/drops.png"
+      ]
+    },
+    {
+      "region": "demon-castle",
+      "source": "../mid-late-design/v1/demon-castle",
+      "assets": [
+        "../../../../public/assets/late-stage-first-pass/v1/background.png",
+        "../../../../public/assets/late-stage-first-pass/v1/props.png",
+        "../../../../public/assets/late-stage-first-pass/v1/drops.png"
+      ]
+    }
+  ]
+}

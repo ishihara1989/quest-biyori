@@ -1,0 +1,827 @@
+{
+  "date": "2026-10-14 JST",
+  "sources": [
+    {
+      "file": "sources/idle-generated.png",
+      "sha256": "617f034fe62e2902f86ae8b2eae8108431e02e2589a724e1ee7bfafbb712f3ad",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6740580064050222,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 180,
+        "top": 19,
+        "right": 1162,
+        "bottom": 1237
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 665,
+          "height": 627
+        },
+        {
+          "x": 665,
+          "y": 0,
+          "width": 589,
+          "height": 627
+        },
+        {
+          "x": 0,
+          "y": 627,
+          "width": 665,
+          "height": 627
+        },
+        {
+          "x": 665,
+          "y": 627,
+          "width": 589,
+          "height": 627
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 282,
+          "y": 195
+        },
+        {
+          "x": 212,
+          "y": 197
+        },
+        {
+          "x": 282,
+          "y": 209
+        },
+        {
+          "x": 213,
+          "y": 226
+        }
+      ],
+      "scale": 0.48695652173913045
+    },
+    {
+      "file": "sources/move-generated.png",
+      "sha256": "c587a0145236723f950cb643215e36d5220de4d7e2a7abc02d2cd9b65e807676",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6589586369868414,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 138,
+        "top": 10,
+        "right": 1210,
+        "bottom": 1236
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 665,
+          "height": 622
+        },
+        {
+          "x": 665,
+          "y": 0,
+          "width": 589,
+          "height": 622
+        },
+        {
+          "x": 0,
+          "y": 622,
+          "width": 676,
+          "height": 632
+        },
+        {
+          "x": 676,
+          "y": 622,
+          "width": 578,
+          "height": 632
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 237,
+          "y": 205
+        },
+        {
+          "x": 200,
+          "y": 201
+        },
+        {
+          "x": 236,
+          "y": 207
+        },
+        {
+          "x": 190,
+          "y": 222
+        }
+      ],
+      "scale": 0.47377326565143824
+    },
+    {
+      "file": "sources/attack-generated.png",
+      "sha256": "44b65328d444e4b79386b6f70b64f7a909624ac8c36eed785df6b45f72ea73ff",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6429047462792111,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 81,
+        "top": 17,
+        "right": 1187,
+        "bottom": 1237
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 677,
+          "height": 631
+        },
+        {
+          "x": 677,
+          "y": 0,
+          "width": 577,
+          "height": 631
+        },
+        {
+          "x": 0,
+          "y": 631,
+          "width": 717,
+          "height": 623
+        },
+        {
+          "x": 717,
+          "y": 631,
+          "width": 537,
+          "height": 623
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 301,
+          "y": 207
+        },
+        {
+          "x": 206,
+          "y": 233
+        },
+        {
+          "x": 317,
+          "y": 224
+        },
+        {
+          "x": 176,
+          "y": 200
+        }
+      ],
+      "scale": 0.46901172529313234
+    },
+    {
+      "file": "sources/danger-1-generated.png",
+      "sha256": "fdf17fb324c759b22111aba098ec859a567d4f440387e44cb9553e9b4dce6200",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6444716619735507,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 70,
+        "top": 36,
+        "right": 1234,
+        "bottom": 1230
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 637,
+          "height": 640
+        },
+        {
+          "x": 637,
+          "y": 0,
+          "width": 617,
+          "height": 640
+        },
+        {
+          "x": 0,
+          "y": 640,
+          "width": 705,
+          "height": 614
+        },
+        {
+          "x": 705,
+          "y": 640,
+          "width": 549,
+          "height": 614
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 309,
+          "y": 230
+        },
+        {
+          "x": 273,
+          "y": 235
+        },
+        {
+          "x": 356,
+          "y": 204
+        },
+        {
+          "x": 194,
+          "y": 206
+        }
+      ],
+      "scale": 0.47700170357751276
+    },
+    {
+      "file": "sources/danger-2-generated.png",
+      "sha256": "7c2d929837ed1591ce7a7fdbc17554f7021a20212be3832a92ae7ea386e132f2",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6543456473574831,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 123,
+        "top": 10,
+        "right": 1182,
+        "bottom": 1242
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 670,
+          "height": 625
+        },
+        {
+          "x": 670,
+          "y": 0,
+          "width": 584,
+          "height": 625
+        },
+        {
+          "x": 0,
+          "y": 625,
+          "width": 679,
+          "height": 629
+        },
+        {
+          "x": 679,
+          "y": 625,
+          "width": 575,
+          "height": 629
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 290,
+          "y": 206
+        },
+        {
+          "x": 222,
+          "y": 206
+        },
+        {
+          "x": 294,
+          "y": 197
+        },
+        {
+          "x": 210,
+          "y": 211
+        }
+      ],
+      "scale": 0.4682274247491639
+    },
+    {
+      "file": "sources/danger-3-generated.png",
+      "sha256": "1c44402b049c87fab48f4f3499cfce4d5478654e90293dc52030a0f398a50241",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6410573882873052,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 84,
+        "top": 24,
+        "right": 1212,
+        "bottom": 1225
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 677,
+          "height": 629
+        },
+        {
+          "x": 677,
+          "y": 0,
+          "width": 577,
+          "height": 629
+        },
+        {
+          "x": 0,
+          "y": 629,
+          "width": 685,
+          "height": 625
+        },
+        {
+          "x": 685,
+          "y": 629,
+          "width": 569,
+          "height": 625
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 299,
+          "y": 202
+        },
+        {
+          "x": 223,
+          "y": 217
+        },
+        {
+          "x": 294,
+          "y": 200
+        },
+        {
+          "x": 206,
+          "y": 200
+        }
+      ],
+      "scale": 0.4745762711864407
+    },
+    {
+      "file": "sources/danger-4-generated.png",
+      "sha256": "8de9216b04d74ee84503fb7e7ea266ad2d4cb23eccdd0cd43aa1385ae4158b2b",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6418325791279708,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 80,
+        "top": 26,
+        "right": 1200,
+        "bottom": 1226
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 652,
+          "height": 631
+        },
+        {
+          "x": 652,
+          "y": 0,
+          "width": 602,
+          "height": 631
+        },
+        {
+          "x": 0,
+          "y": 631,
+          "width": 694,
+          "height": 623
+        },
+        {
+          "x": 694,
+          "y": 631,
+          "width": 560,
+          "height": 623
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 303,
+          "y": 210
+        },
+        {
+          "x": 265,
+          "y": 217
+        },
+        {
+          "x": 308,
+          "y": 196
+        },
+        {
+          "x": 206,
+          "y": 201
+        }
+      ],
+      "scale": 0.4713804713804714
+    },
+    {
+      "file": "sources/reaction-generated.png",
+      "sha256": "b55583ebafb5c9ba22d994a04f146ce2a6524631ed89ab5f7dc4e3504a405acc",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.6513784279460432,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 196,
+        "top": 4,
+        "right": 1232,
+        "bottom": 1232
+      },
+      "extraction": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 678,
+          "height": 701
+        },
+        {
+          "x": 678,
+          "y": 0,
+          "width": 576,
+          "height": 701
+        },
+        {
+          "x": 0,
+          "y": 701,
+          "width": 709,
+          "height": 553
+        },
+        {
+          "x": 709,
+          "y": 701,
+          "width": 545,
+          "height": 553
+        }
+      ],
+      "chestCoreMeasurements": [
+        {
+          "x": 310,
+          "y": 204
+        },
+        {
+          "x": 180,
+          "y": 209
+        },
+        {
+          "x": 341,
+          "y": 253
+        },
+        {
+          "x": 217,
+          "y": 356
+        }
+      ],
+      "scale": 0.4409448818897638
+    }
+  ],
+  "motions": [
+    {
+      "id": "idle",
+      "frames": 4,
+      "frameHashes": [
+        "132706528041fe9307c61eadcb190afc519bb5ab0bdeb80ac8dcca5181c58ebb",
+        "c7e890804a3fa9e4552b69847c0bfaf1f169cf4b089902a09059f790893c717f",
+        "c27342822c04ec3994e0eef8ca985affec4c106363aab84a5d5149741c6f9090",
+        "f824f53d55f61f2d46899afd7a248517829694d9faa34d4c95610020478c5f33"
+      ],
+      "fingerprint": "14530a94425eed4ac4d046c319c8ac57de3e7cdcdd1c05399738ef2c6d1c9ba9",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "14530a94425eed4ac4d046c319c8ac57de3e7cdcdd1c05399738ef2c6d1c9ba9",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "二腕と脱力した膝を維持。4→1の高さの移りは浮遊の下降→中立としてつながる。冠・輪・腰布・足先の余白を確認。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "move",
+      "frames": 4,
+      "frameHashes": [
+        "32b302781c9ecba9f454ce59ef9cd5771510edb0f5601bcee328fa3a6f276371",
+        "842f33fb2a0e69d42d30b7ba30a1df2ed193263bc352bcec2bc40fffb31ddc9f",
+        "3132076afe4412afba1ec4af93965724231e18652b768a6e1c4149f46347f865",
+        "a1430e95e8594aad8f70f25c8eaeff169ee1b08570ac1f5d4ac92f0cc5d7c264"
+      ],
+      "fingerprint": "8c978da996c70c10b8d98faf3a7840abb77d6a06aa5d26ddfd6fce3f0350acb4",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "8c978da996c70c10b8d98faf3a7840abb77d6a06aa5d26ddfd6fce3f0350acb4",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "脚は地面に触れず、腰布と脚が後方へ流れる。4→1は滑空姿勢のままつながる。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "attack",
+      "frames": 4,
+      "frameHashes": [
+        "dec6adeda7e72fe50c12ca55377de91aae3f3a4eaf34e9451e3046704ee3283f",
+        "a852eaa2641cd79c1852ed18cdf1ffa832b0cc1b9cb2cce4b9d0f360bd5f4666",
+        "c0d7a544aa90a8d50baf1e6f63c907487166abe18f935ad086f08deccebf1128",
+        "68034d4b9efc35c991df75e66646c76abf44ba12f9c4c65beec2caa7ed9d9507"
+      ],
+      "fingerprint": "a570c05d9a789ecb7567da7c08bbb854b2920f6b5ca33c193be565d526109a65",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "a570c05d9a789ecb7567da7c08bbb854b2920f6b5ca33c193be565d526109a65",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "両拳を引く流用コマから同じ腕を左へ伸ばす。復帰で待機姿勢へ戻る。対象の衝撃は短時間で収束する。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "danger-1",
+      "frames": 4,
+      "frameHashes": [
+        "3495402d7f3353cc43e52b906b18ae24d856f6bd5381f4a6a839d1ca8a743d72",
+        "44ef8088ba6cdc6eb51fe3276bb35d7437ac7416b4a8fcdb8414813880501be3",
+        "4c772b1a81703d3723a615df9617e167a14a8a325710b887af77aed9d7f1fcba",
+        "87a34cf067a4e8a3c41ba5b89fccd25fa389b60be26a514aa96b650eb4e295b9"
+      ],
+      "fingerprint": "d586c99e8878aeef868e1ce8adc5722854f44818afa0fdb4ff137dd33d610c44",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "d586c99e8878aeef868e1ce8adc5722854f44818afa0fdb4ff137dd33d610c44",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "一方の腕による上段→下段の二打、他方は胸前の構え。腕の所属を変更せず、衝撃は0.9秒差で一打ずつ再生。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "danger-2",
+      "frames": 4,
+      "frameHashes": [
+        "4b6a6da0c21133e9f57bc1fbd06dc809db0b514aacc12cef01f08c3887ca875c",
+        "c377de96872fbb527fa60b3d6efa5acdcf8e127bf708d56b8d2592e3b79c9915",
+        "e7948a5653b897d048e66d1c4408227ee5f19932fdd45e0eba26beda7629107c",
+        "a70c6b4c1cacfb7f154ed58934cfd31266bbcd7e9122decda78c4e4c419bf401"
+      ],
+      "fingerprint": "d095893b285345eb19f05a8897c5b96eacc4bf17c440e4295096ac82111bcae8",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "d095893b285345eb19f05a8897c5b96eacc4bf17c440e4295096ac82111bcae8",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "胸元→両掌を上げる→開く→復帰。二腕・五指の所属と顔のない頭を確認。単柱3位置の0.9秒差と胸・顔の視認性を確認。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "danger-3",
+      "frames": 4,
+      "frameHashes": [
+        "55437025d305a4e16d10751ea709e2391495b274e81e3ad7c82cd0f976af4643",
+        "b5962460b46e979cf30b941c0ee1c6e0548d9c263e3f7e15641484f29c20b48d",
+        "05451d4ab454852514eb2e1ad5a85a0dfcb7a76c48b30eb3bbbc7c5a8df2ba6e",
+        "3422aa16e779fa1c17bf6e1f3d997e55f58b0f8bb45d92603a79cb47f7852d3d"
+      ],
+      "fingerprint": "105f9efcafbffcbc6689a8a67a2af46e606238311c98609ca518832c9e2cc41e",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "105f9efcafbffcbc6689a8a67a2af46e606238311c98609ca518832c9e2cc41e",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "顔や口へ手を向けず、胸元から掌を左へ押し出す。対象の頭上に既存の封印を表示。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "danger-4",
+      "frames": 4,
+      "frameHashes": [
+        "f69e4d67a51de36898ccb47914c581fe94459068ecba7933ddedc02916ba1ed3",
+        "f522f45e8c8b0f4b0cfbc49ece2b3d08301dac4a812ee8f44fe2eea54243b30b",
+        "5553854578b5ea12f858f238ff2d254489b287e42ea3245dc44bfaf71e53a576",
+        "127b01ec781c52b1ed4da40b5ece8e5708fecf1cf35f308d62707e2a8ed11c37"
+      ],
+      "fingerprint": "fc73e0d563f88e3bd1b831f2cd5da818a9d8c25abd3ccf69f500ed176211d8b1",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "fc73e0d563f88e3bd1b831f2cd5da818a9d8c25abd3ccf69f500ed176211d8b1",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "二腕を胸前で交差し左上／左下へ開く。既存の単独光線は1秒差で一帯ずつ。回転しても頭・胸・輪の輪郭が追える。最後の低い輪を確認。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "hit",
+      "frames": 2,
+      "frameHashes": [
+        "ceb7d5a7a224e9b54e98b7043d422fca730f09e967b34b11408d226b33403010",
+        "989803c5507a8f77137c2686cec505b99dcfdb54a348b3eb7156fc54b2f76908"
+      ],
+      "fingerprint": "6a4014c8f4e9f19a6d09e5f3bcb95c3d9fff431478ba8c902a82ab3588a9ba43",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "6a4014c8f4e9f19a6d09e5f3bcb95c3d9fff431478ba8c902a82ab3588a9ba43",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "浮遊姿勢のまま右へ反動、基準姿勢へ復帰。二本の腕と脚、頭部装飾を維持。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    },
+    {
+      "id": "down",
+      "frames": 2,
+      "frameHashes": [
+        "83fda51c46f6e8d6e2203f216d774484e38261141810ddec30ccdbac8964bec2",
+        "fc67f29cb9d4e3d519b0354e09b6f45430d4593f70a10c2f4eab7e1358882681"
+      ],
+      "fingerprint": "07857a07347ec8e11f84db04d4e762a95b191bbbb4daaab8d1870eccec2454d6",
+      "edgeOpaquePixels": 0,
+      "playbackChecked": true,
+      "framesChecked": true,
+      "review": {
+        "date": "2026-10-14 JST",
+        "fingerprint": "07857a07347ec8e11f84db04d4e762a95b191bbbb4daaab8d1870eccec2454d6",
+        "framesChecked": true,
+        "playbackChecked": true,
+        "method": "全フレームPNG・原画と基準絵を目視。headless Chromeで通常/0.25倍のCanvas連続再生を行い、各9時点のキャプチャと時刻ログを検収。",
+        "checked": [
+          "左向き",
+          "筋肉質な二腕と二脚の接続",
+          "目・口・鼻・耳のない頭と金の装飾",
+          "基準絵との色調・体格",
+          "透過・冠・輪・拳・腰布・足先の見切れ",
+          "動く順序・復帰・ループまたは終端停止"
+        ],
+        "observations": [
+          "浮力を失った膝の折れと低い姿勢への崩れを確認。最終コマで停止し、時間が経過しても先頭へ戻らない。"
+        ],
+        "issues": [],
+        "runtimeChecked": false,
+        "runtimeAcceptance": "魔王城本編の組み込み時に発動点・判定・縮尺を照合"
+      }
+    }
+  ],
+  "runtimeRegistered": false,
+  "reference": {
+    "file": "references/demon-god.png",
+    "sha256": "e1f6aaf4c387e9c307867da945b9ff297cf866f1238bf5c4686328aef86f3e64",
+    "transparentFraction": 0.6981092720201257,
+    "edgeOpaquePixels": 0,
+    "bounds": {
+      "left": 327,
+      "top": 1,
+      "right": 1076,
+      "bottom": 1213
+    }
+  },
+  "status": "asset review passed; runtime integration pending",
+  "browserVerification": {
+    "passed": true,
+    "frames": 32,
+    "motions": 9,
+    "normalAndQuarterSpeed": true,
+    "terminalHold": true,
+    "eventBoundaries": true,
+    "widths": [
+      1440,
+      390
+    ],
+    "consoleAndLoadErrors": [],
+    "method": "headless Chrome continuous Canvas playback with clock-controlled captures",
+    "report": "../../../../output/demon-god-redesign/playback.json"
+  }
+}

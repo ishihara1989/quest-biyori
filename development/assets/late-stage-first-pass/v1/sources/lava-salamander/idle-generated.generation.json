@@ -1,0 +1,26 @@
+{
+  "id": "lava-salamander/idle",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "source": "sources/lava-salamander/idle-generated.png",
+  "prompt": "Use case: stylized-concept. Create a FOUR frame IDLE animation sprite sheet of the SAME lava salamander in the canonical reference. EXACT 2x2 equal square cells, read top-left, top-right, bottom-left, bottom-right. Preserve black basalt scales, orange lava cracks, bright dorsal flame fins, four short connected lizard legs, long curled tail, eye and face, refined crisp JRPG pixel art clusters, stepped edges, dark outline, left-facing mild 3/4 view. Each cell local 0..1024: torso center (520,590), head (270,580), foot contact y=850, full silhouette inside x=100..920,y=180..880. Same size and ground contacts in all cells. Frame1 neutral; frame2 chest rises 8px, fins flare 15px and tail tip flexes 12px; frame3 neutral; frame4 chest settles 5px and tail tip returns. Actual subtly different drawings, smooth frame4->1 loop. Truly transparent alpha background. No floor, shadow plate, VFX outside body, text, labels, borders, grid, checkerboard or other creatures. No clipped tail, fins or feet. Intended late-game idle RPG enemy, menacing warm glow.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-8d40673d-8733-48bb-98b4-1aa544b0413a.png",
+  "sha256": "c41bdbb83fcc559ac4fef09c15382da7ad1fa0d8bb0abba2311d351cf30c6406",
+  "status": "generated-unaccepted",
+  "issues": [
+    "背びれの呼吸変化は見える。コマ間で体格・接地位置に差があるため位置合わせと寸法確認が必要。"
+  ],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "背びれの呼吸変化は見える。体格・接地位置の差を採用前に揃える。"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "motions/down",
+  "source": "source/motions/down.png",
+  "sha256": "5cb95f095462c03a545f19ac018ab11321a55cdb3e33e08e7930ca0ea86e80d7",
+  "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/down.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 4 equal square cells, 2 columns and 2 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nF1: upright hovering neutral body, gentle satisfied smile, eyes softly open. L/R=(170,244)/(352,260).\nF2: head nods politely by five degrees, eyes gently close, warm contented smile. Torso stays upright, hands relax. No loss of strength.\nF3: head upright again, contented smile, screen-right hand rises to shoulder R=(342,190), palm outward in a restrained farewell; L=(180,250).\nF4: the SAME one figure rises 12 virtual pixels, maintains farewell hand and smile, hair/sleeves trail slightly downward. Full opaque body ONLY. Playback will fade this single sprite to zero; do not draw transparency, afterimages, particles or a portal.\nMood: pleased with a worthy encounter, serene and voluntary departure. Keep posture dignified and vertical. No injury, collapse, slumping, grief, death, explosion, extra bodies, ghost trail, reward object or portal.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-42009512-3961-49ff-853e-a5ca550e00f0.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    },
+    {
+      "file": "../first-pass-v1/source/parts/body-floating.png",
+      "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+    }
+  ],
+  "attempt": 1
+}

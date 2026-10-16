@@ -1,0 +1,29 @@
+{
+  "id": "lava-salamander/move-3",
+  "source": "sources/lava-salamander/move-frame-3-v3.png",
+  "prompt": "Use case: precise-object-edit. ONE TROT frame only. Image1 is fixed canonical identity, image2 is the edit target last walking pose. Preserve image2 head, torso, dorsal fins, tail, scale colors and location EXACTLY. Change ONLY the four legs to switch diagonal support: the BRIGHT large foreground FRONT leg directly below the orange chest must be clearly RAISED, bent at knee, paw lifted about 50px above ground and pulled BACK under chest (not touching ground). The DARK far REAR paw visible beneath the belly must also be raised 35px. The DARK far FRONT leg on the far LEFT beneath chin extends forward and DOWN with toes resting on ground. The BRIGHT foreground REAR leg below right hip extends down and BACK with toes resting on ground. Exactly FOUR connected legs, each connected hip/thigh/knee/shin/ankle/paw, only 3 original short claws each. No floating disconnected foot. Rear near support and front far support are the diagonally opposed contact pair. Keep far legs naturally behind, no widening. No change to head or fin or tail, no scaling. Pixel art, actual alpha=0 outside creature, no background glow, no shadow, no checkerboard. Entire silhouette clear of every canvas edge.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "sha256": "cafdca97b590488e359d5ccbdeb16fa13b735c2b9ad7ee5ae594ab39665920fb",
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "firstPass": "sources/lava-salamander/move-1-generated.png",
+  "issues": [
+    "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+    "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+    "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+    "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    },
+    {
+      "file": "sources/lava-salamander/move-frame-2-v2.png",
+      "sha256": "e224040181e193583d513108d5369dbc8421f7c562a632d4ee72973c34840652"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

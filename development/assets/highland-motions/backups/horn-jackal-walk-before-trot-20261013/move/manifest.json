@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "enemy": "horn-jackal",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "horn-jackal-move.png",
+  "preview": "horn-jackal-move-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 2880,
+  "height": 340,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 340,
+  "frameCount": 6,
+  "pivot": {
+    "x": 274,
+    "y": 316
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/move.png",
+  "sourceScale": 0.3663003663003663,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 151,
+        "top": 117,
+        "right": 391,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 777,
+        "height": 730
+      },
+      "sourceAnchor": {
+        "x": 396,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 155,
+        "top": 117,
+        "right": 379,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 777,
+        "y": 0,
+        "width": 777,
+        "height": 730
+      },
+      "sourceAnchor": {
+        "x": 365,
+        "y": 615
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 149,
+        "top": 117,
+        "right": 377,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 730,
+        "width": 777,
+        "height": 730
+      },
+      "sourceAnchor": {
+        "x": 389,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 145,
+        "top": 118,
+        "right": 392,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 777,
+        "y": 730,
+        "width": 777,
+        "height": 730
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1920,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 155,
+        "top": 117,
+        "right": 376,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1460,
+        "width": 777,
+        "height": 730
+      },
+      "sourceAnchor": {
+        "x": 368,
+        "y": 617
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2400,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 156,
+        "top": 117,
+        "right": 379,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 777,
+        "y": 1460,
+        "width": 777,
+        "height": 730
+      },
+      "sourceAnchor": {
+        "x": 376,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/horn-jackal.png",
+  "originalSources": [
+    "../../../../sources/horn-jackal/move-1-generated.png",
+    "../../../../sources/horn-jackal/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 750,
+          "height": 724
+        },
+        {
+          "x": 750,
+          "y": 0,
+          "width": 693,
+          "height": 724
+        },
+        {
+          "x": 1443,
+          "y": 0,
+          "width": 729,
+          "height": 724
+        }
+      ]
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 772,
+          "height": 724
+        },
+        {
+          "x": 772,
+          "y": 0,
+          "width": 694,
+          "height": 724
+        },
+        {
+          "x": 1466,
+          "y": 0,
+          "width": 706,
+          "height": 724
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.9646643109540636,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "walkCycle": {
+    "parts": 2,
+    "framesPerPart": 3,
+    "phases": [
+      "左接地",
+      "右遊脚",
+      "右前進",
+      "右接地",
+      "左遊脚",
+      "左前進"
+    ]
+  },
+  "effectAssets": []
+}

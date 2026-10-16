@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-armor",
+  "label": "結晶装甲",
+  "sheet": "glacier-armor.png",
+  "preview": "../../../../development/assets/effects/glacier-armor/glacier-armor-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1520,
+  "height": 370,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 380,
+  "frameHeight": 370,
+  "frameCount": 4,
+  "pivot": {
+    "x": 190,
+    "y": 185
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/armor.png",
+  "sourceScale": 0.5044510385756676,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-armor/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-armor-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 370,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 113,
+        "top": 104,
+        "right": 266,
+        "bottom": 266
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 786,
+        "height": 654
+      },
+      "sourceAnchor": {
+        "x": 370,
+        "y": 307
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-armor-02.png",
+      "x": 380,
+      "y": 0,
+      "width": 380,
+      "height": 370,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 50,
+        "top": 74,
+        "right": 330,
+        "bottom": 296
+      },
+      "sourceCell": {
+        "x": 786,
+        "y": 0,
+        "width": 786,
+        "height": 654
+      },
+      "sourceAnchor": {
+        "x": 409,
+        "y": 271
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-armor-03.png",
+      "x": 760,
+      "y": 0,
+      "width": 380,
+      "height": 370,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 20,
+        "top": 44,
+        "right": 359,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 654,
+        "width": 786,
+        "height": 654
+      },
+      "sourceAnchor": {
+        "x": 373,
+        "y": 318
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-armor-04.png",
+      "x": 1140,
+      "y": 0,
+      "width": 380,
+      "height": 370,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 32,
+        "top": 52,
+        "right": 348,
+        "bottom": 317
+      },
+      "sourceCell": {
+        "x": 786,
+        "y": 654,
+        "width": 786,
+        "height": 654
+      },
+      "sourceAnchor": {
+        "x": 353,
+        "y": 337
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "target",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/armor-generated.png"
+}

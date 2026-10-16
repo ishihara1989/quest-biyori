@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-15",
+  "timezone": "Asia/Tokyo",
+  "tool": "built-in image_gen",
+  "status": "repair-candidates-not-registered",
+  "records": [
+    {
+      "id": "motions/p2-cast-2",
+      "source": "source/motions/p2-cast-2.png",
+      "sha256": "0663d39702a3b41ed0ef429269aba9b1d1d50bba585436c59f3161f178b25fab",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-cast-2.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(157,183)/(367,190), open both arms apart.\nL/R=(136,215)/(386,222), press forward/outward, release.\nL/R=(170,244)/(352,260), recover idle.\nHands do not touch or clasp; there is a small empty space between inward-facing palms in F3. F6 must match the floating low-open-palms starting pose.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-b4d2aa74-53a6-4567-997d-83a137cc50ab.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-ultimate-2",
+      "source": "source/motions/p2-ultimate-2.png",
+      "sha256": "cdbec4e0b70a83e914b9787b5de7d87eca1f70311173087a0e4e90fe4493f73f",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-ultimate-2.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(240,155)/(284,155), raise together before face.\nL/R=(238,121)/(286,121), raise above brow.\nL/R=(236,104)/(288,104), palms above head, HOLD-ready.\nThe final release returns to low open palms and upright hovering; never return to cheek support. Above-head pose is a calm formal spell gesture. Garments remain fully opaque and draped throughout.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-c3367854-2223-4a0b-bcb4-5a0418b3b56e.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/down",
+      "source": "source/motions/down.png",
+      "sha256": "5cb95f095462c03a545f19ac018ab11321a55cdb3e33e08e7930ca0ea86e80d7",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/down.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 4 equal square cells, 2 columns and 2 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nF1: upright hovering neutral body, gentle satisfied smile, eyes softly open. L/R=(170,244)/(352,260).\nF2: head nods politely by five degrees, eyes gently close, warm contented smile. Torso stays upright, hands relax. No loss of strength.\nF3: head upright again, contented smile, screen-right hand rises to shoulder R=(342,190), palm outward in a restrained farewell; L=(180,250).\nF4: the SAME one figure rises 12 virtual pixels, maintains farewell hand and smile, hair/sleeves trail slightly downward. Full opaque body ONLY. Playback will fade this single sprite to zero; do not draw transparency, afterimages, particles or a portal.\nMood: pleased with a worthy encounter, serene and voluntary departure. Keep posture dignified and vertical. No injury, collapse, slumping, grief, death, explosion, extra bodies, ghost trail, reward object or portal.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-42009512-3961-49ff-853e-a5ca550e00f0.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "parts/throne",
+      "source": "source/parts/throne.png",
+      "sha256": "85ef1442ccc4e8e0a8f58acf8b31899465369f904ef8ead736d810c0874a97bc",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, parts/throne.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 1 equal square cells, 1 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nONE empty ivory/navy/gold throne matching the original. Preserve the chair silhouette, crescent back, cushions, legs and armrests. Remove the entire LARGE circular celestial ring behind the chair. No rings floating behind or above it, no woman, body, hair, dress, small crown or gems detached as extra objects. Complete chair within central safe area.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-579ecfb4-4929-4d11-a25f-d3ed364aa43b.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-cast-1",
+      "source": "source/motions/p2-cast-1.png",
+      "sha256": "c24a194dbb9fb1341091095b3855309e7ac036cdc529be9c40111b73aa6ea207",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-cast-1.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(170,244)/(352,260), neutral.\nL/R=(216,222)/(309,222), gather palms inward.\nL/R=(238,209)/(286,209), palms close before chest, HOLD-ready.\nHands do not touch or clasp; there is a small empty space between inward-facing palms in F3. F6 must match the floating low-open-palms starting pose.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-effdfe46-9ecc-4e5f-9570-4b58bfac17a6.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-cast-2",
+      "source": "source/motions/p2-cast-2-r2.png",
+      "sha256": "b467cf76d5d5d10808d046cfcd42b526ec3ddd79614472188f8d64939667326f",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-cast-2.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(157,183)/(367,190), open both arms apart.\nL/R=(136,215)/(386,222), press forward/outward, release.\nL/R=(170,244)/(352,260), recover idle.\nHands do not touch or clasp; there is a small empty space between inward-facing palms in F3. F6 must match the floating low-open-palms starting pose.\nInput image 3 is the preceding F1-F3 strip: match its SMALLER body scale and head/hip/shoe positions exactly. Input image 4 is the edit target F4-F6 strip. Repair these THREE target cells. LEFT/F4: spread BOTH hands apart at shoulder height. MIDDLE/F5: press BOTH open palms forward at chest height. RIGHT/F6: lower BOTH hands all the way to WAIST HEIGHT, spread apart, PALMS UP, identical to the first pose of input image 3. The rightmost cell is a low open-handed REST pose, NOT a chest-level guard. Apply the same 65-percent composition scale to all three cells. Keep broad transparent margins.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-223abeca-763d-4fe3-8973-258ff2d2754a.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        },
+        {
+          "file": "source/motions/p2-cast-1.png",
+          "sha256": "c24a194dbb9fb1341091095b3855309e7ac036cdc529be9c40111b73aa6ea207"
+        },
+        {
+          "file": "source/motions/p2-cast-2.png",
+          "sha256": "0663d39702a3b41ed0ef429269aba9b1d1d50bba585436c59f3161f178b25fab"
+        }
+      ],
+      "attempt": 2
+    },
+    {
+      "id": "effects/goddess-return-1",
+      "source": "source/effects/goddess-return-1.png",
+      "sha256": "be8466c63cbb547e027c17b4825f98b7701f54f4817a8ca9654b59059eb40bbd",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent JRPG pixel-art dimensional-return OVERLAY, effects/goddess-return-1.\nExactly THREE equal square cells in ONE horizontal row. Every cell is virtual 512x512, portal center fixed at (256,256). Strict safe bounds x=60..452,y=52..460 in EACH cell, wide transparent gutters. Crisp stepped pixels, thin pale gold rim, cyan stars, dark-violet transparent aperture. Same camera and palette across all frames.\nPrimary request: a calm welcoming doorway to another dimension for a satisfied goddess leaving after battle. ONLY portal overlay, no goddess, person, humanoid outline, chair, body halo, small crown, shattering ring, explosion, reward jewel, text or background. True transparent alpha; see-through interior with sparse tiny stars.\nFrames:\nF1: a quiet thin vertical gold/cyan oval outline, width130 height300, transparent star-specked interior.\nF2: oval opens to width270 height360, a welcoming deep-violet transparent aperture with sparse cyan stars.\nF3: oval fully open width300 height380, thin luminous gold rim, stable and peaceful.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-77df7846-7b59-4707-a669-a4319720d24a.png",
+      "transparent_background": true,
+      "references": [],
+      "attempt": 1
+    },
+    {
+      "id": "effects/goddess-return-2",
+      "source": "source/effects/goddess-return-2.png",
+      "sha256": "d12d9dac740acaab7037f33fb6165419b276bab468ad5d68fc85ecfe4ba410d7",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent JRPG pixel-art dimensional-return OVERLAY, effects/goddess-return-2.\nExactly THREE equal square cells in ONE horizontal row. Every cell is virtual 512x512, portal center fixed at (256,256). Strict safe bounds x=60..452,y=52..460 in EACH cell, wide transparent gutters. Crisp stepped pixels, thin pale gold rim, cyan stars, dark-violet transparent aperture. Same camera and palette across all frames.\nPrimary request: a calm welcoming doorway to another dimension for a satisfied goddess leaving after battle. ONLY portal overlay, no goddess, person, humanoid outline, chair, body halo, small crown, shattering ring, explosion, reward jewel, text or background. True transparent alpha; see-through interior with sparse tiny stars.\nFrames:\nF4: same oval remains fully open width300 height380, rim softens slightly; the separate body is departing.\nF5: AFTER the separate body is gone, oval narrows to width90 height340, smooth rim draws inward. No cracking or shards.\nF6: one dim thin vertical seam, width6 height90, almost gone. Only this seam, no gems or extra glowing objects. Playback fades it to zero.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.\nInput image 1 is the fixed opening interval F1-F3. Continue with F4-F6, keep the SAME gold/cyan ring design, sparsity of stars and exact F3 opening size in F4. F4 matches the rightmost input frame; F5 is much narrower; F6 is only a DIM hairline slit. No extra ring or new motif.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-c1d96e58-4e6f-4b58-8b74-42697ab43373.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "source/effects/goddess-return-1.png",
+          "sha256": "be8466c63cbb547e027c17b4825f98b7701f54f4817a8ca9654b59059eb40bbd"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-ultimate-1",
+      "source": "source/motions/p2-ultimate-1.png",
+      "sha256": "3fa58551958887905485fdda7937460efb10b31eebc5ebbf928df594e7f02668",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-ultimate-1.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(170,244)/(352,260), neutral.\nL/R=(216,211)/(310,211), draw toward chest.\nL/R=(238,195)/(286,195), palms close at chest.\nThe final release returns to low open palms and upright hovering; never return to cheek support. Above-head pose is a calm formal spell gesture. Garments remain fully opaque and draped throughout.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.\nInput image 3 is the acquired F4-F6 overhead interval: preserve its exact identity, palette, body proportions and upright floating leg posture. Maintain consistent body size through the animation.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-ee52a5f1-7bde-4808-a14b-7657add71b0b.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        },
+        {
+          "file": "source/motions/p2-ultimate-2.png",
+          "sha256": "cdbec4e0b70a83e914b9787b5de7d87eca1f70311173087a0e4e90fe4493f73f"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-ultimate-3",
+      "source": "source/motions/p2-ultimate-3.png",
+      "sha256": "28983bcbd89b25ef30176675748cdd88b596e685ad2916e18382de57355edc0e",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-ultimate-3.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(169,167)/(353,167), powerful outward release.\nL/R=(145,220)/(378,220), arms down/out, impact pose.\nL/R=(170,244)/(352,260), return to idle.\nThe final release returns to low open palms and upright hovering; never return to cheek support. Above-head pose is a calm formal spell gesture. Garments remain fully opaque and draped throughout.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.\nInput image 3 is the acquired F4-F6 overhead interval: preserve its exact identity, palette, body proportions and upright floating leg posture. Maintain consistent body size through the animation.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-fb903f0c-0f65-452b-81ff-e3ddccd3405f.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        },
+        {
+          "file": "source/motions/p2-ultimate-2.png",
+          "sha256": "cdbec4e0b70a83e914b9787b5de7d87eca1f70311173087a0e4e90fe4493f73f"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-ultimate-3",
+      "source": "source/motions/p2-ultimate-3-r2.png",
+      "sha256": "c3582fa61d96155f744c16a129cfbde9c3be84278987b1b542ac15eda6943def",
+      "prompt": "Edit the supplied adult fantasy goddess into ONE transparent pixel-art animation strip of exactly THREE equal SQUARE cells in ONE HORIZONTAL ROW. Input 1 is the fixed original identity and palette; input 2 is the isolated floating body. Keep the same mature face, silver/lavender hair, ivory/navy/gold opaque costume, gold shoes and small crown. Body only: no large rings or throne. Full figure in each cell, upright hovering legs pointing downward as in the body reference. Identical head, hips, leg positions and character scale in all three cells. Broad empty transparent padding around EACH figure. Each figure is only 65 percent as tall as its cell. Read from LEFT to RIGHT:\nLEFT pose: both arms spread sideways at SHOULDER HEIGHT, palms outward, releasing energy (no energy drawn). MIDDLE pose: both arms lower diagonally, hands halfway between chest and waist. RIGHT pose: both arms relaxed low, spread to the sides at WAIST HEIGHT with palms up, exactly the low open-handed floating neutral pose. The motion is LOWERING arms across the strip. All hands stay below the head in ALL three cells.\nPrecisely two arms connected to their shoulders. Crisp pixel clusters, dark violet outlines, no text, no grid lines, no effects, no extra body or ghost trail. Preserve real transparent alpha.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-e516860a-0f2c-4b66-abea-a62a0d7c8fc3.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 2
+    },
+    {
+      "id": "motions/p2-ultimate-1",
+      "source": "source/motions/p2-ultimate-1-r2.png",
+      "sha256": "14d3bded97ce10036dfd14855f35bd65cc4ebae3d82d789f1da30baf5f7db05b",
+      "prompt": "Edit the supplied adult fantasy goddess into ONE transparent pixel-art animation strip of exactly THREE equal SQUARE cells in ONE HORIZONTAL ROW. Input 1 is the fixed original identity and palette; input 2 is the isolated floating body. Keep the same mature face, silver/lavender hair, ivory/navy/gold opaque costume, gold shoes and small crown. Body only: no large rings or throne. Full figure in each cell, upright hovering legs pointing downward as in the body reference. Identical head, hips, leg positions and character scale in all three cells. Broad empty transparent padding around EACH figure. Each figure is only 65 percent as tall as its cell. Read from LEFT to RIGHT:\nLEFT pose: both arms low, spread gently to the sides at waist height, palms up. MIDDLE pose: both elbows bend, hands move inward to the lower chest. RIGHT pose: hands hover close together in front of the upper chest, still BELOW THE CHIN, with a small gap between palms. All three poses keep hands below the chin. These are only the beginning of the spell, never draw raised arms.\nPrecisely two arms connected to their shoulders. Crisp pixel clusters, dark violet outlines, no text, no grid lines, no effects, no extra body or ghost trail. Preserve real transparent alpha.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-5bd946fc-1d94-467d-a265-39ac978d218c.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-floating.png",
+          "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+        }
+      ],
+      "attempt": 2
+    },
+    {
+      "id": "parts/halo",
+      "source": "source/parts/halo.png",
+      "sha256": "05d2bdf1de096c53b6fb5a2f47bc2f0fcce01ed9ff4174e241b593c034e926e5",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, parts/halo.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 1 equal square cells, 1 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nONE isolated rigid gold celestial ring assembly matching the large rings behind the original floating goddess, with cyan diamond nodes. Remove the SMALL floating elliptical crown above her head: that crown belongs to the body layer. No person, face, hair, clothes, chair or ground. Keep the large circular ring motif with clean transparent interior. Complete assembly within central safe area.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-a7fbfba5-60ca-4430-bb49-061ec54aea4e.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p1-shot",
+      "source": "source/motions/p1-shot.png",
+      "sha256": "c1d3f2a6bc01b52afb3b312e8affdb72a20f9c554bf752f872474673745c44a2",
+      "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p1-shot.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 4 equal square cells, 2 columns and 2 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nSeated body only, unsupported sitting pose, cheek supported by the SCREEN-LEFT arm, crossed legs unchanged. Move ONLY the SCREEN-RIGHT arm from its existing shoulder. EXACTLY TWO ARMS: the emitting hand is still on the screen-right side of the body, never add a hand to the left of the cheek-support arm. No throne, large ring, shadow, projectile or glow. \nFrames:\nRight-on-screen hand (392,288), neutral.\nR=(367,270), prepare finger flick.\nR=(344,260), flick toward LEFT, emission pose; no drawn projectile.\nR=(392,288), original neutral.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-2fe95953-d267-4e38-8630-996ff599f4e1.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "../v1/references/phase-1-seated.png",
+          "sha256": "f28359daea552bb59969fa5c9e6a0755d15d11ad650de31900a7e3aa145e0990"
+        },
+        {
+          "file": "../first-pass-v1/source/parts/body-seated.png",
+          "sha256": "5692d8ce2da221cea7a9ad1c97aea7ffd9239b185542311b586a8d925f5fd314"
+        }
+      ],
+      "attempt": 1
+    },
+    {
+      "id": "motions/p2-cast-2",
+      "source": "source/motions/p2-cast-2-r3.png",
+      "sha256": "232f76a08353bce5e3901b33d210d9b079d89694fa42d8939b7d95fa65e43b28",
+      "prompt": "Use case: precise-object-edit. Input 1 is the EDIT TARGET: a three-cell transparent pixel-art animation strip. Input 2 is the ORIGINAL identity and palette reference. Fix ONLY the composition of the three-cell strip: ZOOM OUT substantially, reduce EVERY complete figure to 70 percent of its current height and width, leave very broad empty TRANSPARENT borders around EACH figure. Maintain three equal square cells in one horizontal row. All hair, shoes, hands and sleeves must be fully isolated, no pixels touching or crossing cell boundaries. Keep the existing three poses and their LEFT-to-RIGHT order: 1 spread both palms at shoulder height; 2 press both palms forward; 3 low relaxed open palms at waist. Preserve exactly two arms, the same adult goddess, face, hair, clothing, colors, upright floating legs, and small crown. No background, grid, text, large halo, throne or effects. Do not redraw the pose sequence or add any object. Each sprite must visibly appear SMALL inside its cell. True transparent alpha.",
+      "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-16b4bd79-e379-4738-b4b9-df0b8e8ca539.png",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "source/motions/p2-cast-2-r2.png",
+          "sha256": "b467cf76d5d5d10808d046cfcd42b526ec3ddd79614472188f8d64939667326f"
+        },
+        {
+          "file": "../v1/references/phase-2-awakened.png",
+          "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+        }
+      ],
+      "attempt": 3
+    }
+  ],
+  "failures": []
+}

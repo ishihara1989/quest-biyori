@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "shaman",
+  "motion": "curse-pull",
+  "label": "呪いの引き絞り",
+  "facing": "right",
+  "sheet": "shaman-curse-pull.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 900,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.22749590834697217,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/shaman/motions/curse-pull/source/shaman-curse-pull-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "curse-pull-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 300,
+      "phase": "掌を伸ばす",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 359,
+        "y": 661
+      },
+      "sourceBounds": {
+        "left": 81,
+        "top": 50,
+        "right": 671,
+        "bottom": 661
+      },
+      "bounds": {
+        "left": 97,
+        "top": 100,
+        "right": 231,
+        "bottom": 239
+      },
+      "visiblePixels": 9871,
+      "transparentPixels": 69482
+    },
+    {
+      "index": 1,
+      "file": "curse-pull-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 300,
+      "phase": "拳を握る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 359,
+        "y": 661
+      },
+      "sourceBounds": {
+        "left": 81,
+        "top": 51,
+        "right": 671,
+        "bottom": 661
+      },
+      "bounds": {
+        "left": 97,
+        "top": 101,
+        "right": 231,
+        "bottom": 239
+      },
+      "visiblePixels": 9901,
+      "transparentPixels": 69417
+    },
+    {
+      "index": 2,
+      "file": "curse-pull-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 300,
+      "phase": "引き絞る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 374,
+        "y": 662
+      },
+      "sourceBounds": {
+        "left": 100,
+        "top": 52,
+        "right": 656,
+        "bottom": 662
+      },
+      "bounds": {
+        "left": 98,
+        "top": 101,
+        "right": 224,
+        "bottom": 239
+      },
+      "visiblePixels": 9735,
+      "transparentPixels": 69799
+    }
+  ]
+}

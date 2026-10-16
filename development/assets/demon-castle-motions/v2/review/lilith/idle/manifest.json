@@ -1,0 +1,130 @@
+{
+  "id": "lilith/idle",
+  "label": "リリス・待機",
+  "enemy": "lilith",
+  "motion": "idle",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/lilith.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "待機1",
+      "source": "../../../sources/lilith/idle-v2.png",
+      "sourceSha256": "374d6c1a1a7b42cfab26809e91441d09891e231d4df0a8d5fcfa32b77ab34b83",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 783,
+        "height": 504
+      },
+      "sourceAnchor": [
+        390,
+        477
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "e0b8f034959bf93addef160723d2ad74c82917eb2809de692bcce7191dd58f1d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8372611999511719
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "待機2",
+      "source": "../../../sources/lilith/idle-v2.png",
+      "sourceSha256": "374d6c1a1a7b42cfab26809e91441d09891e231d4df0a8d5fcfa32b77ab34b83",
+      "sourceRect": {
+        "left": 783,
+        "top": 0,
+        "width": 753,
+        "height": 504
+      },
+      "sourceAnchor": [
+        345,
+        466
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        407
+      ],
+      "sha256": "956ddf7c25df9a92234a74328bd47e8d10f7a3b733a4a57c014d8b3ea077a5da",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8334732055664062
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "待機3",
+      "source": "../../../sources/lilith/idle-v2.png",
+      "sourceSha256": "374d6c1a1a7b42cfab26809e91441d09891e231d4df0a8d5fcfa32b77ab34b83",
+      "sourceRect": {
+        "left": 0,
+        "top": 504,
+        "width": 781,
+        "height": 520
+      },
+      "sourceAnchor": [
+        390,
+        472
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "15bc2d26979aecb7b9b926707220c369bc1d3712006113801545a4a4a2fef27c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8363571166992188
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "待機4",
+      "source": "../../../sources/lilith/idle-v2.png",
+      "sourceSha256": "374d6c1a1a7b42cfab26809e91441d09891e231d4df0a8d5fcfa32b77ab34b83",
+      "sourceRect": {
+        "left": 781,
+        "top": 504,
+        "width": 755,
+        "height": 520
+      },
+      "sourceAnchor": [
+        345,
+        480
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        413
+      ],
+      "sha256": "095711649fef5cf0eea9ddce3a25a00739098a9e4ecdee00c79525276fd9e056",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8349037170410156
+    }
+  ],
+  "fingerprint": "144c1b82eca86690bc9e1c19b64b83cf19ed94caf9ddce4f23c8ad67bf29dd3f",
+  "events": [],
+  "effects": []
+}

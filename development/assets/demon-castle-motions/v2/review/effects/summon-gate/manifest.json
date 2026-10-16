@@ -1,0 +1,130 @@
+{
+  "id": "effects/summon-gate",
+  "label": "悪魔の援軍・召喚門",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "ground",
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "枠の出現",
+      "source": "../../../sources/effects/summon-gate-v2.png",
+      "sourceSha256": "699ef6f488ffa9fd1d397d137e48e10cdef40619833c1d9c666c4aa1476298bb",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 643,
+        "height": 615
+      },
+      "sourceAnchor": [
+        330,
+        540
+      ],
+      "scale": 0.59,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "5e40392f5154560565a8c83b97645771d1ee8926cb94fd5e56dce152580a4360",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8362007141113281
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "開く",
+      "source": "../../../sources/effects/summon-gate-v2.png",
+      "sourceSha256": "699ef6f488ffa9fd1d397d137e48e10cdef40619833c1d9c666c4aa1476298bb",
+      "sourceRect": {
+        "left": 643,
+        "top": 0,
+        "width": 652,
+        "height": 615
+      },
+      "sourceAnchor": [
+        315,
+        540
+      ],
+      "scale": 0.59,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "2bca85a8e7631f90f1f26e86e82198913502026eb92be475eb4362c6e6e9e395",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8167762756347656
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "phase": "保持",
+      "source": "../../../sources/effects/summon-gate-v2.png",
+      "sourceSha256": "699ef6f488ffa9fd1d397d137e48e10cdef40619833c1d9c666c4aa1476298bb",
+      "sourceRect": {
+        "left": 0,
+        "top": 615,
+        "width": 655,
+        "height": 600
+      },
+      "sourceAnchor": [
+        335,
+        499
+      ],
+      "scale": 0.59,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "d635cb50cdff273647fefba3252054d01c14f02dbd0f5b1fc59818a5eb86589c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.77685546875
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "消失",
+      "source": "../../../sources/effects/summon-gate-v2.png",
+      "sourceSha256": "699ef6f488ffa9fd1d397d137e48e10cdef40619833c1d9c666c4aa1476298bb",
+      "sourceRect": {
+        "left": 655,
+        "top": 615,
+        "width": 640,
+        "height": 600
+      },
+      "sourceAnchor": [
+        302,
+        499
+      ],
+      "scale": 0.59,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "8148c844e704652350e6b7a573fc8729b06808c9704b010dd6fac7a6fc33e29b",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.819915771484375
+    }
+  ],
+  "fingerprint": "ddc8052fa53f7760d7b329159636bf6b8b46495fb37c6e426781aae01e22df43",
+  "events": [],
+  "effects": []
+}

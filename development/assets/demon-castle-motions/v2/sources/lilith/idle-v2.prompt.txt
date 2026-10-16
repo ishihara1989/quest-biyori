@@ -1,0 +1,10 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame subtle floating IDLE LOOP of exact adult demon queen Lilith from canonical reference.
+Preserve identical adult face, lavender long hair, gold-red crown between two dark-red curved horns, black/crimson gold-trimmed long dress, two attached purple bat wings and two booted legs. Refined crisp JRPG pixel art, unchanged colors, proportions, body scale and LEFT-facing mild three-quarter camera.
+Four complete SMALL separate figures in equal 2x2 cells, row-major, with huge transparent gutters. Every horn, wingtip, hair curl, boot and hem must have at least 20% clear transparent border. Fit entire figure into central 60% of EACH cell. Never touch the canvas edges or overlap neighboring cells. Same character scale in every frame.
+Normalized per-cell base: pelvis (520,585), head (485,300), highest horn no higher than y=160, boot tips around y=830, dress hem y=845. Arms relaxed at sides with hands (425,565),(565,565). Wings calmly open behind body, roots fixed to upper back, tips within x=200..800. Both legs close together and floating, no walking or ground contact.
+Frame 1 NEUTRAL: canonical relaxed queen posture.
+Frame 2 FLOAT UP: move the entire body upward ONLY 8 units; tiny chest breath; hair and hem lag down 5 units. Wing tips lift only 8 units without changing wing size.
+Frame 3 NEUTRAL: return body to base height, hair and hem cross through neutral; no change in pose or proportions.
+Frame 4 FLOAT DOWN: whole body lowers 8 units, hair and hem lag upward 5 units. Wing tips lower 8 units. This gently connects back to frame 1 with no sudden hair fan or wing jump.
+No casting, new hand gesture, expression change, garment change, external glow, aura, magic, floor, shadow, background, text, labels, grid, checkerboard or watermark. Genuine transparent alpha around figures.

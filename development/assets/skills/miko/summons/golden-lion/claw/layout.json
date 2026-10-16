@@ -1,0 +1,56 @@
+{
+  "source": "../../../source/golden-lion-claw-generated-v1.png",
+  "sourceRects": [
+    {
+      "component": 2,
+      "sourceBounds": {
+        "l": 25,
+        "t": 104,
+        "r": 659,
+        "b": 640,
+        "n": 234472,
+        "width": 635,
+        "height": 537
+      }
+    },
+    {
+      "component": 1,
+      "sourceBounds": {
+        "l": 716,
+        "t": 99,
+        "r": 1460,
+        "b": 641,
+        "n": 248756,
+        "width": 745,
+        "height": 543
+      }
+    },
+    {
+      "component": 3,
+      "sourceBounds": {
+        "l": 1454,
+        "t": 113,
+        "r": 2094,
+        "b": 640,
+        "n": 245258,
+        "width": 641,
+        "height": 528
+      }
+    }
+  ],
+  "anchors": [
+    {
+      "x": 476,
+      "y": 983
+    },
+    {
+      "x": 431.5,
+      "y": 983
+    },
+    {
+      "x": 548.5,
+      "y": 983
+    }
+  ],
+  "scale": 0.08005718370264475
+}

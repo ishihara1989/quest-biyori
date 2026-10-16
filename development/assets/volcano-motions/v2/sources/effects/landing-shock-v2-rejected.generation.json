@@ -1,0 +1,20 @@
+{
+  "id": "effects/landing-shock",
+  "source": "sources/effects/landing-shock-v2-rejected.png",
+  "selected": false,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. huge LOW hollow elliptical orange-white shock ring expanding from center with basalt fragments and short flame spires on rim; transparent center. ONE-SHOT LOW hollow elliptical ring centered (512,760), FULLY empty transparent center. Small ring -> expands -> large thin ring -> sparse dying rim fragments. Never fill center with orange light. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else. TL small thin hollow ellipse; TR medium hollow ellipse; BL large THIN hollow ellipse with all center pixels alpha0; BR 5-8 very sparse tiny dim rim fragments, no complete ring, NO luminous disk. Same center and ground plane, every ring fits cell with15% padding.",
+  "actualInputImages": [],
+  "reason": "Peak ellipse touches original left border and is clipped. Regenerate with smaller sprites and wider margins.",
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "d0ceb8699201d0bb02cd9551a09519f5d111921a9c00d75e9ac2abb578c65c43",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/landing-shock-generated.png",
+  "issues": [
+    "輪の中央と周囲に橙の光が混入。中央が透明な衝撃輪として修正する。",
+    "最大コマの外周がセル境界に近い。原画の見切れを検収する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

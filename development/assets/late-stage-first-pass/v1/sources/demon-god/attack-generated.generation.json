@@ -1,0 +1,32 @@
+{
+  "id": "demon-god/attack",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "attack",
+  "label": "拳撃",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/demon-god.png",
+  "guide": null,
+  "source": "sources/demon-god/attack-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame NORMAL ATTACK 拳撃 by 魔神 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: near fist (350,620) pulls (580,500), winds at (600,440), punches left (180,590), returns (350,620). Other arms remain visibly connected and in place. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference. EXACTLY SIX arms in three pairs, each with its own shoulder, upper arm, elbow, forearm, wrist and hand. Preserve frontal readable arm spread and rotate gaze/torso only slightly LEFT 15 degrees; never hide an entire arm. Original dark halo and two legs.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "demon-impact"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-084d4277-8643-4c60-9021-0405ed46b0eb.png",
+  "sha256": "0def2836cb8a727db1a990f2317a381b0eed8db77a1f5e18f9f9b5b4b759a36f",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "上段の拳を頭上へ引き、左へ伸ばす強いパンチ。"
+    ],
+    "issues": [
+      "構え・溜め・発動で6腕の拳と肩が重なる。同じ1腕の軌道として追い、他の5腕を固定する。",
+      "発動の外套が等分セル境界を越える。拳先・角・輪の余白と胴体縮尺を確定する。"
+    ]
+  }
+}

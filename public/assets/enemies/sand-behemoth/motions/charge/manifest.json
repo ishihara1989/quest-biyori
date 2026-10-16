@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-behemoth",
+  "motion": "charge",
+  "facing": "left",
+  "label": "charge",
+  "sheet": "sand-behemoth-charge.png",
+  "preview": "../../../../../../development/assets/enemies/sand-behemoth/motions/charge/sand-behemoth-charge-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 3280,
+  "height": 680,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 820,
+  "frameHeight": 680,
+  "frameCount": 4,
+  "pivot": {
+    "x": 476,
+    "y": 662
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 2090,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/sand-behemoth/source/charge-registered.png",
+  "sourceScale": 0.8660508083140878,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "charge-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 490,
+      "phase": "構え",
+      "bounds": {
+        "left": 171,
+        "top": 286,
+        "right": 730,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 828,
+        "height": 563
+      },
+      "sourceAnchor": {
+        "x": 440,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "charge-02.png",
+      "x": 820,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 910,
+      "phase": "予告",
+      "bounds": {
+        "left": 165,
+        "top": 360,
+        "right": 775,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 828,
+        "y": 0,
+        "width": 828,
+        "height": 563
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "charge-03.png",
+      "x": 1640,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 440,
+      "phase": "発動",
+      "bounds": {
+        "left": 131,
+        "top": 318,
+        "right": 776,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 563,
+        "width": 828,
+        "height": 563
+      },
+      "sourceAnchor": {
+        "x": 438,
+        "y": 469
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "charge-04.png",
+      "x": 2460,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 250,
+      "phase": "復帰",
+      "bounds": {
+        "left": 162,
+        "top": 285,
+        "right": 725,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 828,
+        "y": 563,
+        "width": 828,
+        "height": 563
+      },
+      "sourceAnchor": {
+        "x": 408,
+        "y": 481
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-behemoth-attack-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-behemoth.png",
+  "action": {
+    "motion": "charge",
+    "warn": 1400,
+    "times": [
+      1640
+    ],
+    "power": 1.1,
+    "radius": 70,
+    "kind": "charge",
+    "status": null,
+    "duration": 2090
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 742,
+          "height": 519
+        },
+        {
+          "x": 742,
+          "y": 0,
+          "width": 757,
+          "height": 519
+        },
+        {
+          "x": 0,
+          "y": 519,
+          "width": 794,
+          "height": 530
+        },
+        {
+          "x": 794,
+          "y": 519,
+          "width": 705,
+          "height": 530
+        }
+      ]
+    }
+  ]
+}

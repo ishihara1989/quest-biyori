@@ -1,0 +1,23 @@
+{
+  "id": "obsidian-soldier/move-1",
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place WALK frames of 黒曜兵 in horizontal 3-cell sheet. Six-frame cycle at 120ms each. This is 1-3: near foot x=470,430,410; far foot x=620,650,680; near foot lifts 30px at frame2. Ground soles y=850, hips steady, connected knees and ankles, opposite arm swing 20px. Held weapon and shield move together with hand; cape trails. 3->4 and 6->1 continuous.  Keep exact same canonical armor/face/wing/tail proportions in both halves; anatomical left leg near, right leg far. Grounded sole y=820. Full neutral return across 3->4 and 6->1. No crouched foot becoming a hand. Adult girl face clearly LEFT. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/obsidian-soldier/move-1-v2.png",
+  "sha256": "a283e5bf57e07c2c92d4e5ec86c63f2fbfe2cd74f69191d04218c7b786590be8",
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-soldier/move-1-generated.png",
+  "issues": [
+    "歩行2コマ目の持ち上げ足と膝の接続、3コマ目の支持足切り替えを確認する。",
+    "斧先・手・マントの位置も歩行に伴って変わる。後半との寸法・接地を揃える。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-soldier.png",
+      "sha256": "e32e29dd7943525d5656d13a9973bdfae81bed56d7a98fac3038447efce39a57"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

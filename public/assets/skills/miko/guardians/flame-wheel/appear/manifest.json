@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "flame-wheel-guardian-appear",
+  "character": "miko",
+  "subject": "flame-wheel",
+  "group": "guardian",
+  "motion": "appear",
+  "sheet": "flame-wheel-appear.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 450,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5134575569358178,
+  "frames": [
+    {
+      "index": 0,
+      "file": "flame-wheel-appear-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 69,
+        "t": 60,
+        "r": 456,
+        "b": 472,
+        "n": 112184,
+        "width": 388,
+        "height": 413
+      }
+    },
+    {
+      "index": 1,
+      "file": "flame-wheel-appear-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 49,
+        "t": 54,
+        "r": 462,
+        "b": 476,
+        "n": 132688,
+        "width": 414,
+        "height": 423
+      }
+    },
+    {
+      "index": 2,
+      "file": "flame-wheel-appear-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 63,
+        "t": 55,
+        "r": 438,
+        "b": 476,
+        "n": 119004,
+        "width": 376,
+        "height": 422
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/flame-wheel-guardian-appear-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/flame-wheel-guardian-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

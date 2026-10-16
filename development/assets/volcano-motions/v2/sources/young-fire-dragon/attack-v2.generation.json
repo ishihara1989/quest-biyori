@@ -1,0 +1,23 @@
+{
+  "id": "young-fire-dragon/attack",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. 幼火竜. The same short original claws, NEVER elongated. One near front limb retracts, coils, rakes LEFT and returns. Other original limbs support body and stay connected; wing roots and torso size unchanged. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/young-fire-dragon/attack-v2.png",
+  "sha256": "84bc5ca07d208c8341a9fa324ab08fcf62394b1113a22b9b3c067968f7342ce7",
+  "reference": "references/young-fire-dragon.png",
+  "guide": null,
+  "firstPass": "sources/young-fire-dragon/attack-generated.png",
+  "issues": [
+    "3コマ目の爪が大きく伸びる。基準の足先寸法・爪の所属・見切れを確認する。",
+    "溜めで後脚に体重をかけて立つ。隠れた前脚の接続と荷重を確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/young-fire-dragon.png",
+      "sha256": "a13d12a29ea3a0e80223d22a3e1c2e492a9a434845dbc11a1578f0296c4406c8"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

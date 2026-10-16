@@ -1,0 +1,7 @@
+body[data-region="8"]{--gold:#dfd2fc;--green:#accfdc;--mint:#a9ecfb;--line:#3d5679;--muted:#aac6de;background:radial-gradient(ellipse at 50% 0,#35549166,transparent 65%),#111a2b}
+body[data-region="8"] .battle-panel{border-color:#9bddff55;box-shadow:0 12px 60px #417fb629}
+body[data-region="8"] .arena{background:#254b78}
+.stage-map[data-region="8"]{background:linear-gradient(#18366633,#182c55d9),url('/assets/stages/glacial-sanctuary/distant.png') center/cover}
+body[data-region="8"] .route-node.current>span{border-color:#d2fbff;box-shadow:0 0 24px #76d5ff55}
+body[data-region="8"] #wave-dots .active{background:#dcfaff;box-shadow:0 0 14px #7acffa88}
+body[data-region="8"] .forest-route{border-color:#93c8eb44;background:linear-gradient(90deg,#29457066,#1b2c4655)}

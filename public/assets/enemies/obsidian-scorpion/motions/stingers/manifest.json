@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "obsidian-scorpion",
+  "motion": "stingers",
+  "facing": "left",
+  "label": "stingers",
+  "sheet": "obsidian-scorpion-stingers.png",
+  "preview": "../../../../../../development/assets/enemies/obsidian-scorpion/motions/stingers/obsidian-scorpion-stingers-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 2400,
+  "height": 410,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 600,
+  "frameHeight": 410,
+  "frameCount": 4,
+  "pivot": {
+    "x": 348,
+    "y": 392
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 2150,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/obsidian-scorpion/source/stingers-registered.png",
+  "sourceScale": 0.5588822355289421,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "stingers-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 390,
+      "phase": "構え",
+      "bounds": {
+        "left": 182,
+        "top": 112,
+        "right": 512,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 753,
+        "height": 680
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 608
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "stingers-02.png",
+      "x": 600,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 710,
+      "phase": "予告",
+      "bounds": {
+        "left": 178,
+        "top": 106,
+        "right": 513,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 753,
+        "y": 0,
+        "width": 753,
+        "height": 680
+      },
+      "sourceAnchor": {
+        "x": 377,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "stingers-03.png",
+      "x": 1200,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 800,
+      "phase": "発動",
+      "bounds": {
+        "left": 176,
+        "top": 126,
+        "right": 516,
+        "bottom": 392
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 680,
+        "width": 753,
+        "height": 680
+      },
+      "sourceAnchor": {
+        "x": 388,
+        "y": 571
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "stingers-04.png",
+      "x": 1800,
+      "y": 0,
+      "width": 600,
+      "height": 410,
+      "durationMs": 250,
+      "phase": "復帰",
+      "bounds": {
+        "left": 179,
+        "top": 113,
+        "right": 513,
+        "bottom": 393
+      },
+      "sourceCell": {
+        "x": 753,
+        "y": 680,
+        "width": 753,
+        "height": 680
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 571
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/obsidian-scorpion-tail-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/obsidian-scorpion.png",
+  "action": {
+    "motion": "stingers",
+    "warn": 1100,
+    "times": [
+      1100,
+      1400,
+      1700
+    ],
+    "power": 0.34,
+    "radius": 205,
+    "kind": "melee",
+    "status": "poison",
+    "duration": 2150
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 675,
+          "height": 614
+        },
+        {
+          "x": 675,
+          "y": 0,
+          "width": 655,
+          "height": 614
+        },
+        {
+          "x": 0,
+          "y": 614,
+          "width": 684,
+          "height": 568
+        },
+        {
+          "x": 684,
+          "y": 614,
+          "width": 646,
+          "height": 568
+        }
+      ]
+    }
+  ]
+}

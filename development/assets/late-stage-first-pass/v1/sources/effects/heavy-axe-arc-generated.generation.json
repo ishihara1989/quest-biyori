@@ -1,0 +1,27 @@
+{
+  "id": "effects/heavy-axe-arc",
+  "effect": "heavy-axe-arc",
+  "region": "volcano",
+  "label": "断罪大薙ぎ",
+  "kind": "target",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/heavy-axe-arc-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. spectacular huge 150-degree molten-orange double-edged axe crescent sweeping left, dark inner edge and white-hot rim. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed center (512,512), trail points RIGHT for left-moving projectiles. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-9f8b0fa6-7777-4549-b3cc-c030e5e5679e.png",
+  "sha256": "4009731236305bd9c6d748f739d035ff2418bc04f5453404089e0cd7c29bb454",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "大きな白熱円弧と黒い内縁で通常斧との差が見える。"
+    ],
+    "issues": [
+      "最大コマの余白が少なく、等分セルを越える部分がある。",
+      "4コマ目は小さくなるが強い円弧が残る。消失へつなぐ必要がある。"
+    ]
+  }
+}

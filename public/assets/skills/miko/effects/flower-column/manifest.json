@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "flower-column",
+  "character": "miko",
+  "subject": "flower-column",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "flower-column-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 480,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5061224489795918,
+  "frames": [
+    {
+      "index": 0,
+      "file": "flower-column-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 61,
+        "t": 48,
+        "r": 464,
+        "b": 473,
+        "n": 94992,
+        "width": 404,
+        "height": 426
+      }
+    },
+    {
+      "index": 1,
+      "file": "flower-column-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 47,
+        "t": 25,
+        "r": 492,
+        "b": 475,
+        "n": 139723,
+        "width": 446,
+        "height": 451
+      }
+    },
+    {
+      "index": 2,
+      "file": "flower-column-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 8,
+        "t": 23,
+        "r": 463,
+        "b": 473,
+        "n": 134833,
+        "width": 456,
+        "height": 451
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/flower-column-generated-v2.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/flower-column-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

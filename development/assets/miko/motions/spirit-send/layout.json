@@ -1,0 +1,38 @@
+{
+  "source": "../../../skills/miko/source/spirit-send-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 745,
+      "height": 724
+    },
+    {
+      "x": 745,
+      "y": 0,
+      "width": 752,
+      "height": 724
+    },
+    {
+      "x": 1497,
+      "y": 0,
+      "width": 675,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 915
+    },
+    {
+      "x": 512,
+      "y": 915
+    },
+    {
+      "x": 512,
+      "y": 915
+    }
+  ],
+  "scale": 0.218
+}

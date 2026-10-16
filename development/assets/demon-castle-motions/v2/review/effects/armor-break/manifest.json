@@ -1,0 +1,130 @@
+{
+  "id": "effects/armor-break",
+  "label": "破甲・状態ループ",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "status",
+  "origin": "reuse",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "既存1",
+      "source": "../../../../../volcano-motions/v2/ready/effects/armor-break/frame-1.png",
+      "sourceSha256": "87648c2b1b22f352d81fdc4210e5e460f62b7f7ab3167c1c91778d783499a972",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "16344c0085be54250ec9fb5ba681d5dfc94db2ce34be5b697dd0a12964f2c9b0",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8993415832519531
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "既存2",
+      "source": "../../../../../volcano-motions/v2/ready/effects/armor-break/frame-2.png",
+      "sourceSha256": "64389f1c52ea0d6cc333d85d793f4ae0e1c4ca46dd7ad0d609465edcac9b9e5d",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "4b900e2af995ba5af017a9148507e4e7f3b151ca74bc5925afb10420f4263cf8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8994598388671875
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "既存3",
+      "source": "../../../../../volcano-motions/v2/ready/effects/armor-break/frame-3.png",
+      "sourceSha256": "e8b72ea1e03657a41aad48d1153ec42bb42f12a47994fec9a982ae7397ee80c0",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "f81e737e12f3644970cbec7053a79ba4341aa99ba895fd21ea4cbd1e89c1951d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9001846313476562
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "既存4",
+      "source": "../../../../../volcano-motions/v2/ready/effects/armor-break/frame-4.png",
+      "sourceSha256": "3c8e9690b913a7bcffdbd4949c2ef4b112e0ef048ab0c53bc265ae2185924eb7",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "a62b9813aeadd927501f6887d11e8110b9a099b2ddffcbda2dfe00a5b959928d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.90087890625
+    }
+  ],
+  "fingerprint": "7ba1630ef8b04aaa03934570716ea6149fcf4c68aae37dbbfb6695e14437f1ce",
+  "events": [],
+  "effects": []
+}

@@ -1,0 +1,18 @@
+{
+  "character": "paladin",
+  "idle": "../manifest.json",
+  "motions": {
+    "forward": "forward/manifest.json",
+    "backward": "backward/manifest.json",
+    "jump": "jump/manifest.json",
+    "hit": "hit/manifest.json",
+    "down": "down/manifest.json",
+    "attack-mace": "attack-mace/manifest.json",
+    "mace-raise": "mace-raise/manifest.json",
+    "mace-slam": "mace-slam/manifest.json",
+    "shield-raise": "shield-raise/manifest.json",
+    "shield-plant": "shield-plant/manifest.json",
+    "shield-advance": "shield-advance/manifest.json",
+    "break-strike": "break-strike/manifest.json"
+  }
+}

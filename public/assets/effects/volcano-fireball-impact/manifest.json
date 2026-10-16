@@ -1,0 +1,201 @@
+{
+  "id": "volcano-fireball-impact",
+  "enemy": null,
+  "region": "volcano",
+  "label": "火球爆発",
+  "kind": "ground",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "pivot": {
+    "x": 256,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/fireball-impact-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9561920166015625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 63,
+        "top": 124,
+        "right": 436,
+        "bottom": 380
+      },
+      "visibleBounds": {
+        "left": 177,
+        "top": 226,
+        "right": 335,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fireball-impact-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 739,
+        "height": 472
+      },
+      "sourceScale": 0.555431131019037,
+      "sourceAnchor": {
+        "x": 404.5,
+        "y": 394
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "transparentFraction": 0.86151123046875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 20,
+        "top": 112,
+        "right": 438,
+        "bottom": 356
+      },
+      "visibleBounds": {
+        "left": 105,
+        "top": 134,
+        "right": 406,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fireball-impact-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 739,
+        "y": 0,
+        "width": 797,
+        "height": 472
+      },
+      "sourceScale": 0.555431131019037,
+      "sourceAnchor": {
+        "x": 425.5,
+        "y": 436
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.7420578002929688,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 42,
+        "top": 52,
+        "right": 503,
+        "bottom": 357
+      },
+      "visibleBounds": {
+        "left": 58,
+        "top": 71,
+        "right": 454,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fireball-impact-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 472,
+        "width": 865,
+        "height": 552
+      },
+      "sourceScale": 0.555431131019037,
+      "sourceAnchor": {
+        "x": 418.5,
+        "y": 516
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9893722534179688,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 89,
+        "top": 96,
+        "right": 428,
+        "bottom": 400
+      },
+      "visibleBounds": {
+        "left": 184,
+        "top": 246,
+        "right": 325,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fireball-impact-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 865,
+        "y": 472,
+        "width": 671,
+        "height": 552
+      },
+      "sourceScale": 0.555431131019037,
+      "sourceAnchor": {
+        "x": 300,
+        "y": 439
+      },
+      "pivot": {
+        "x": 256,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/fireball-impact/preview.gif",
+  "action": null
+}

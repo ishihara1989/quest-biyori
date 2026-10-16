@@ -1,0 +1,36 @@
+name: Deploy to Cloudflare Pages
+
+# Enable push deployment after the first manual release has been verified.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-pages-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: true
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Check repository and package the game
+        run: |
+          npm run check:structure
+          node --test tests/repository-structure.test.cjs tests/pages-build.test.cjs
+          npm run build:pages
+      - name: Deploy game files
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy output/pages --project-name=${{ vars.CLOUDFLARE_PAGES_PROJECT }} --branch=main

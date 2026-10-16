@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-tusk-mammoth",
+  "motion": "quake",
+  "facing": "left",
+  "label": "氷震踏砕き",
+  "sheet": "ice-tusk-mammoth-quake.png",
+  "preview": "../../../../../../development/assets/enemies/ice-tusk-mammoth/motions/quake/ice-tusk-mammoth-quake-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2720,
+  "height": 450,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 680,
+  "frameHeight": 450,
+  "frameCount": 4,
+  "pivot": {
+    "x": 381,
+    "y": 428
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-tusk-mammoth/quake.png",
+  "sourceScale": 0.7049608355091384,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-quake",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "quake-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 212,
+        "top": 156,
+        "right": 543,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 685,
+        "height": 720
+      },
+      "sourceAnchor": {
+        "x": 383.5,
+        "y": 611
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "quake-02.png",
+      "x": 680,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 210,
+        "top": 152,
+        "right": 545,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 685,
+        "y": 0,
+        "width": 685,
+        "height": 720
+      },
+      "sourceAnchor": {
+        "x": 305.5,
+        "y": 613
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "quake-03.png",
+      "x": 1360,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 205,
+        "top": 196,
+        "right": 551,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 720,
+        "width": 685,
+        "height": 720
+      },
+      "sourceAnchor": {
+        "x": 387.5,
+        "y": 489
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "quake-04.png",
+      "x": 2040,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 205,
+        "top": 159,
+        "right": 550,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 685,
+        "y": 720,
+        "width": 685,
+        "height": 720
+      },
+      "sourceAnchor": {
+        "x": 305.5,
+        "y": 491
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/quake-generated-v2.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 646,
+          "height": 688
+        },
+        {
+          "x": 646,
+          "y": 0,
+          "width": 608,
+          "height": 688
+        },
+        {
+          "x": 0,
+          "y": 688,
+          "width": 653,
+          "height": 566
+        },
+        {
+          "x": 653,
+          "y": 688,
+          "width": 601,
+          "height": 566
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "quake",
+    "warn": 4600,
+    "times": [
+      4600,
+      5500
+    ],
+    "kind": "bands",
+    "radius": 330,
+    "effect": "quake",
+    "rest": 3000,
+    "status": "chill",
+    "duration": 5900,
+    "radii": [
+      160,
+      330
+    ]
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "demon-god/hit",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "hit",
+  "label": "被弾",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/demon-god/reaction-generated.png"
+  ],
+  "durations": [
+    180,
+    220
+  ],
+  "phases": [
+    "被弾",
+    "復帰"
+  ],
+  "enemyLabel": "魔神",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 151,
+        "top": 51,
+        "right": 692,
+        "bottom": 544
+      },
+      "sourceWidth": 731,
+      "sourceHeight": 580,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 245096,
+      "transparentFraction": 0.5780838718807491
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 38,
+        "top": 34,
+        "right": 596,
+        "bottom": 536
+      },
+      "sourceWidth": 707,
+      "sourceHeight": 580,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 216101,
+      "transparentFraction": 0.5269984880261425
+    }
+  ],
+  "reference": "../../../references/demon-god.png",
+  "originalSources": [
+    "../../../sources/demon-god/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

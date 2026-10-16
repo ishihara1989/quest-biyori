@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "enemy": "horn-jackal",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "horn-jackal-idle.png",
+  "preview": "../../../../../../development/assets/enemies/horn-jackal/motions/idle/horn-jackal-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1920,
+  "height": 340,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 340,
+  "frameCount": 4,
+  "pivot": {
+    "x": 274,
+    "y": 316
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/highland-motions/enemies/horn-jackal/registered/idle.png",
+  "sourceScale": 0.3663003663003663,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 176,
+        "top": 117,
+        "right": 378,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 693,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 358,
+        "y": 611
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 168,
+        "top": 115,
+        "right": 371,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 693,
+        "y": 0,
+        "width": 693,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 331,
+        "y": 611
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 172,
+        "top": 131,
+        "right": 377,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 663,
+        "width": 693,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 573
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 340,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 172,
+        "top": 125,
+        "right": 370,
+        "bottom": 316
+      },
+      "sourceCell": {
+        "x": 693,
+        "y": 663,
+        "width": 693,
+        "height": 663
+      },
+      "sourceAnchor": {
+        "x": 327,
+        "y": 573
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/horn-jackal.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/horn-jackal/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 654,
+          "height": 631
+        },
+        {
+          "x": 654,
+          "y": 0,
+          "width": 600,
+          "height": 631
+        },
+        {
+          "x": 0,
+          "y": 631,
+          "width": 661,
+          "height": 623
+        },
+        {
+          "x": 661,
+          "y": 631,
+          "width": 593,
+          "height": 623
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [],
+  "action": null
+}

@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "nine-tailed-fox-idle",
+  "character": "miko",
+  "subject": "nine-tailed-fox",
+  "group": "summon",
+  "motion": "idle",
+  "sheet": "nine-tailed-fox-idle.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 660,
+  "loop": true,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.07577807848443843,
+  "frames": [
+    {
+      "index": 0,
+      "file": "nine-tailed-fox-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 23,
+        "t": 54,
+        "r": 88,
+        "b": 116,
+        "n": 2863,
+        "width": 66,
+        "height": 63
+      }
+    },
+    {
+      "index": 1,
+      "file": "nine-tailed-fox-idle-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 8,
+        "t": 50,
+        "r": 75,
+        "b": 116,
+        "n": 3080,
+        "width": 68,
+        "height": 67
+      }
+    },
+    {
+      "index": 2,
+      "file": "nine-tailed-fox-idle-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 220,
+      "phase": "idle",
+      "bounds": {
+        "l": 23,
+        "t": 53,
+        "r": 88,
+        "b": 116,
+        "n": 2899,
+        "width": 66,
+        "height": 64
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/nine-tailed-fox-idle-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

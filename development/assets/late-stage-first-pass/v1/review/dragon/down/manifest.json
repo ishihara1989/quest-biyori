@@ -1,0 +1,67 @@
+{
+  "id": "dragon/down",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "down",
+  "label": "撃破",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon/reaction-generated.png"
+  ],
+  "durations": [
+    400,
+    1000
+  ],
+  "phases": [
+    "崩れる",
+    "倒れた状態"
+  ],
+  "enemyLabel": "ドラゴン",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "sourceBounds": {
+        "left": 80,
+        "top": 88,
+        "right": 676,
+        "bottom": 404
+      },
+      "sourceWidth": 699,
+      "sourceHeight": 520,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 227815,
+      "transparentFraction": 0.626760757125564
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 21,
+        "top": 168,
+        "right": 652,
+        "bottom": 404
+      },
+      "sourceWidth": 703,
+      "sourceHeight": 520,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 250209,
+      "transparentFraction": 0.6844539884013568
+    }
+  ],
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": true,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

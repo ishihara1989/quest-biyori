@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "enemy": "alraune",
+  "motion": "seed-burst",
+  "projectilePreview": {
+    "effect": "alraune-seed-volley",
+    "manifest": "../../../../effects/alraune-seed-volley/manifest.json",
+    "velocity": {
+      "x": -480,
+      "y": 0
+    },
+    "lifetimeMs": 1600,
+    "scale": 1,
+    "leadInPx": 12,
+    "paddingLeft": 240,
+    "defaultZoom": 1,
+    "streams": [
+      {
+        "sourceY": 0,
+        "sourceHeight": 50,
+        "sourceCenterY": 35,
+        "muzzle": {
+          "x": 160,
+          "y": 202
+        }
+      },
+      {
+        "sourceY": 50,
+        "sourceHeight": 30,
+        "sourceCenterY": 66,
+        "muzzle": {
+          "x": 140,
+          "y": 252
+        }
+      },
+      {
+        "sourceY": 80,
+        "sourceHeight": 48,
+        "sourceCenterY": 96,
+        "muzzle": {
+          "x": 163,
+          "y": 305
+        }
+      }
+    ]
+  },
+  "facing": "left",
+  "label": "小花の種・連射",
+  "sheet": "alraune-seed-burst.png",
+  "preview": "../../../../../../development/assets/enemies/alraune/motions/seed-burst/alraune-seed-burst-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/alraune/PROMPT.md",
+  "width": 2560,
+  "height": 384,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 384,
+  "frameCount": 4,
+  "pivot": {
+    "x": 360,
+    "y": 367
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 400,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/alraune/source/alraune-seed-burst-generated-v1.png",
+  "sourceScale": 0.54,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "seed-volley-a",
+      "frame": 0,
+      "timeMs": 0,
+      "type": "spawn-projectile",
+      "effect": "alraune-seed-volley",
+      "origin": {
+        "x": 140,
+        "y": 260
+      }
+    },
+    {
+      "id": "seed-volley-b",
+      "frame": 2,
+      "timeMs": 200,
+      "type": "spawn-projectile",
+      "effect": "alraune-seed-volley",
+      "origin": {
+        "x": 140,
+        "y": 260
+      }
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "seed-burst-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 100,
+      "phase": "発射A・小花が左へ伸びる",
+      "bounds": {
+        "left": 124,
+        "top": 130,
+        "right": 511,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 470,
+        "y": 483
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "seed-burst-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 100,
+      "phase": "反動A・小花が戻る",
+      "bounds": {
+        "left": 180,
+        "top": 129,
+        "right": 524,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 445,
+        "y": 483
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "seed-burst-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 100,
+      "phase": "発射B・小花が左へ伸びる",
+      "bounds": {
+        "left": 123,
+        "top": 130,
+        "right": 514,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 466,
+        "y": 474
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "seed-burst-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 100,
+      "phase": "反動B・次の連射へ",
+      "bounds": {
+        "left": 186,
+        "top": 129,
+        "right": 528,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 440,
+        "y": 476
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

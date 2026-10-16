@@ -1,0 +1,24 @@
+{
+  "id": "magma-salamander/danger-1",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. マグマサラマンダー. Neck retracts RIGHT without torso/neck elongation; dorsal fins pulse low then bright in held windup; LEFT mouth release pose can be replayed twice, neutral recovery. Tiny mouth light ONLY, NO detached bomb. Separate events at 0.8 second spacing. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/magma-salamander/danger-1-v2.png",
+  "sha256": "7aa56534d33c29713c6b3c29c3dc7b458051cfd3dd5f6d90e59f85dde5a3c4e8",
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "firstPass": "sources/magma-salamander/danger-1-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "噛みつきに近い4ポーズで、背の2回点灯と2発の時間差を読むコマが足りない。専用の溜め・発射反復を設計する。",
+    "口の発射点を別の溶岩弾へ合わせる。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/magma-salamander.png",
+      "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

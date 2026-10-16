@@ -1,0 +1,182 @@
+[
+  {
+    "type": "effect",
+    "id": "arcane",
+    "path": "development/assets/skills/mage/source/effect-arcane-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "arcane-impact",
+    "path": "development/assets/skills/mage/source/effect-arcane-impact-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "fire",
+    "path": "development/assets/skills/mage/source/effect-fire-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "fire-impact",
+    "path": "development/assets/skills/mage/source/effect-fire-impact-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "ice",
+    "path": "development/assets/skills/mage/source/effect-ice-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "ice-impact",
+    "path": "development/assets/skills/mage/source/effect-ice-impact-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "lightning",
+    "path": "development/assets/skills/mage/source/effect-lightning-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "earth",
+    "path": "development/assets/skills/mage/source/effect-earth-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "meteor",
+    "path": "development/assets/skills/mage/source/effect-meteor-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "cosmos",
+    "path": "development/assets/skills/mage/source/effect-cosmos-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "four",
+    "path": "development/assets/skills/mage/source/effect-four-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "circle",
+    "path": "development/assets/skills/mage/source/effect-circle-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "cloud",
+    "path": "development/assets/skills/mage/source/effect-cloud-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "bolt",
+    "path": "development/assets/skills/mage/source/icon-bolt-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "wind",
+    "path": "development/assets/skills/mage/source/icon-wind-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "fireball",
+    "path": "development/assets/skills/mage/source/icon-fireball-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "ice",
+    "path": "development/assets/skills/mage/source/icon-ice-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "thunder",
+    "path": "development/assets/skills/mage/source/icon-thunder-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "frost",
+    "path": "development/assets/skills/mage/source/icon-frost-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "torrent",
+    "path": "development/assets/skills/mage/source/icon-torrent-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "vortex",
+    "path": "development/assets/skills/mage/source/icon-vortex-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "chain",
+    "path": "development/assets/skills/mage/source/icon-chain-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "rain",
+    "path": "development/assets/skills/mage/source/icon-rain-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "pillars",
+    "path": "development/assets/skills/mage/source/icon-pillars-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "earth",
+    "path": "development/assets/skills/mage/source/icon-earth-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "storm",
+    "path": "development/assets/skills/mage/source/icon-storm-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "crystal",
+    "path": "development/assets/skills/mage/source/icon-crystal-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "meteor",
+    "path": "development/assets/skills/mage/source/icon-meteor-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "tempest",
+    "path": "development/assets/skills/mage/source/icon-tempest-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "beam",
+    "path": "development/assets/skills/mage/source/icon-beam-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "avalanche",
+    "path": "development/assets/skills/mage/source/icon-avalanche-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "prison",
+    "path": "development/assets/skills/mage/source/icon-prison-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "four",
+    "path": "development/assets/skills/mage/source/icon-four-generated-v1.png"
+  },
+  {
+    "type": "icon",
+    "id": "cosmos",
+    "path": "development/assets/skills/mage/source/icon-cosmos-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "wind",
+    "path": "development/assets/skills/mage/source/effect-wind-generated-v1.png"
+  },
+  {
+    "type": "effect",
+    "id": "wind-impact",
+    "path": "development/assets/skills/mage/source/effect-wind-impact-generated-v1.png"
+  }
+]

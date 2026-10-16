@@ -1,0 +1,186 @@
+{
+  "id": "castle-dark-flower",
+  "label": "宵闇の花冠・開花",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "ground",
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 646,
+        "height": 634
+      },
+      "sourceAnchor": [
+        375,
+        567
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "deaa59674d934759bfdc9bebe477327662015e9e97aea4d335abd6bb101b2ea7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9571685791015625,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 94,
+        "top": 175,
+        "right": 384,
+        "bottom": 442
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "phase": "溜め",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 646,
+        "top": 0,
+        "width": 707,
+        "height": 634
+      },
+      "sourceAnchor": [
+        365,
+        573
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "e52a8f1ee9a275621f88754da497b53ac1de9fe759a21177164d9d300d625dc2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8968429565429688,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 83,
+        "top": 156,
+        "right": 420,
+        "bottom": 439
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "発動",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 0,
+        "top": 634,
+        "width": 734,
+        "height": 528
+      },
+      "sourceAnchor": [
+        375,
+        421
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "9fd089bed8aa23b2760150e43f83c69500fb80b039a1972860abf9afa008656b",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8437309265136719,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 92,
+        "top": 208,
+        "right": 428,
+        "bottom": 456
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "phase": "復帰",
+      "source": "../../../../development/assets/demon-castle-motions/v2/sources/effects/dark-flower-v2.png",
+      "sourceSha256": "8adb3fa78e26dfaaf3b5e9631852197b4725503d95c42bb33f0d86cc75d267e8",
+      "sourceRect": {
+        "left": 734,
+        "top": 634,
+        "width": 619,
+        "height": 528
+      },
+      "sourceAnchor": [
+        290,
+        434
+      ],
+      "scale": 0.48,
+      "pivot": [
+        256,
+        410
+      ],
+      "sha256": "c80378bb8c8dc2d7ab14d9238c92cc24f057234b3b4e94004b4e999e8d69b5f8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9020462036132812,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 117,
+        "top": 208,
+        "right": 394,
+        "bottom": 446
+      }
+    }
+  ],
+  "fingerprint": "4bad9d45cebd6310b0e6df01915819a2adb8402f50758b4ba5a1ca9b5023a114",
+  "events": [],
+  "pivot": {
+    "x": 256,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/dark-flower/manifest.json",
+  "sourceFingerprint": "4bad9d45cebd6310b0e6df01915819a2adb8402f50758b4ba5a1ca9b5023a114",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

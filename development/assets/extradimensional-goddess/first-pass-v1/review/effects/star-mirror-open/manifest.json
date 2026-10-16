@@ -1,0 +1,127 @@
+{
+  "id": "effects/star-mirror-open",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-mirror-open/review/effects/star-mirror-open/frame-01.png",
+      "index": 1,
+      "durationMs": 80,
+      "source": "source/effects/star-mirror-open.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 717,
+        "height": 548
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":80,\"center\":[256,252],\"openingSize\":[4,300]}. ",
+      "width": 717,
+      "height": 548,
+      "transparentFraction": 0.8345982347371957,
+      "lowAlphaPixels": 11678,
+      "edgePixels": 26,
+      "bounds": [
+        267,
+        7,
+        498,
+        547
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-mirror-open/review/effects/star-mirror-open/frame-02.png",
+      "index": 2,
+      "durationMs": 80,
+      "source": "source/effects/star-mirror-open.png",
+      "sourceRect": {
+        "left": 717,
+        "top": 0,
+        "width": 717,
+        "height": 548
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":80,\"center\":[256,252],\"openingSize\":[60,300]}. ",
+      "width": 717,
+      "height": 548,
+      "transparentFraction": 0.7805586944792271,
+      "lowAlphaPixels": 12514,
+      "edgePixels": 29,
+      "bounds": [
+        181,
+        7,
+        479,
+        547
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-mirror-open/review/effects/star-mirror-open/frame-03.png",
+      "index": 3,
+      "durationMs": 90,
+      "source": "source/effects/star-mirror-open.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 548,
+        "width": 717,
+        "height": 549
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":90,\"center\":[256,252],\"openingSize\":[140,300]}. ",
+      "width": 717,
+      "height": 549,
+      "transparentFraction": 0.6657648113852243,
+      "lowAlphaPixels": 15443,
+      "edgePixels": 28,
+      "bounds": [
+        165,
+        0,
+        583,
+        514
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-mirror-open/review/effects/star-mirror-open/frame-04.png",
+      "index": 4,
+      "durationMs": 80,
+      "source": "source/effects/star-mirror-open.png",
+      "sourceRect": {
+        "left": 717,
+        "top": 548,
+        "width": 717,
+        "height": 549
+      },
+      "description": "Global F4: {\"f\":4,\"ms\":80,\"center\":[256,252],\"openingSize\":[180,300]}. ",
+      "width": 717,
+      "height": 549,
+      "transparentFraction": 0.5300698874332183,
+      "lowAlphaPixels": 17537,
+      "edgePixels": 29,
+      "bounds": [
+        62,
+        0,
+        624,
+        518
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/effects/star-mirror-open.png"
+  ],
+  "expectedFrames": 4,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/star-mirror-open/contact.png",
+  "gif": "review/effects/star-mirror-open/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

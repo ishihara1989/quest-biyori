@@ -1,0 +1,47 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "enemies/manticore/motions/idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "enemies/manticore/motions/move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "enemies/manticore/motions/hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "enemies/manticore/motions/down/manifest.json"
+  },
+  {
+    "id": "double-claw",
+    "label": "爪の二連撃",
+    "manifest": "enemies/manticore/motions/double-claw/manifest.json"
+  },
+  {
+    "id": "venom",
+    "label": "毒尾の扇射",
+    "manifest": "enemies/manticore/motions/venom/manifest.json"
+  },
+  {
+    "id": "gust",
+    "label": "翼の突風",
+    "manifest": "enemies/manticore/motions/gust/manifest.json"
+  },
+  {
+    "id": "pounce",
+    "label": "飛び込み",
+    "manifest": "enemies/manticore/motions/pounce/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "休息",
+    "manifest": "enemies/manticore/motions/rest/manifest.json"
+  }
+]

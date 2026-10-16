@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "effect": "horn-sweep",
+  "label": "角の薙ぎ",
+  "sheet": "horn-sweep.png",
+  "preview": "horn-sweep-preview.gif",
+  "prompt": "../../PROMPTS.md",
+  "width": 1840,
+  "height": 310,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 460,
+  "frameHeight": 310,
+  "frameCount": 4,
+  "pivot": {
+    "x": 230,
+    "y": 155
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "registered.png",
+  "sourceScale": 0.4981549815498155,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "horn-sweep-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 239,
+        "top": 92,
+        "right": 328,
+        "bottom": 164
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 869,
+        "height": 574
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 262
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "horn-sweep-02.png",
+      "x": 460,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 118,
+        "top": 85,
+        "right": 358,
+        "bottom": 230
+      },
+      "sourceCell": {
+        "x": 869,
+        "y": 0,
+        "width": 869,
+        "height": 574
+      },
+      "sourceAnchor": {
+        "x": 394,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "horn-sweep-03.png",
+      "x": 920,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 62,
+        "top": 58,
+        "right": 373,
+        "bottom": 259
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 574,
+        "width": 869,
+        "height": 574
+      },
+      "sourceAnchor": {
+        "x": 449,
+        "y": 287
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "horn-sweep-04.png",
+      "x": 1380,
+      "y": 0,
+      "width": 460,
+      "height": 310,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 116,
+        "top": 80,
+        "right": 357,
+        "bottom": 241
+      },
+      "sourceCell": {
+        "x": 869,
+        "y": 574,
+        "width": 869,
+        "height": 574
+      },
+      "sourceAnchor": {
+        "x": 360,
+        "y": 287
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": true,
+  "originalSource": "../../sources/effects/horn-sweep-generated.png",
+  "kind": "target"
+}

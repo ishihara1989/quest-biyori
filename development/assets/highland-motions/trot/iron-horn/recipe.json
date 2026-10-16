@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "iron-horn",
+  "date": "2026-10-13 JST",
+  "gait": "trot",
+  "status": "adopted-coordinate-guided",
+  "standardAdopted": true,
+  "reference": "references/iron-horn.png",
+  "frameWidth": 640,
+  "frameHeight": 460,
+  "pivot": {
+    "x": 365,
+    "y": 436
+  },
+  "outputEye": {
+    "x": 259,
+    "y": 232
+  },
+  "coordinateGuide": "trot/iron-horn/guide.json",
+  "generationParts": 6,
+  "framesPerPart": 1,
+  "registration": "Fixed eye/body landmark; source pixels preserved",
+  "frames": [
+    {
+      "source": "trot/iron-horn/sources/frame-1-single.png",
+      "eye": {
+        "x": 263,
+        "y": 414
+      },
+      "scale": 0.2734584450402145,
+      "phase": "中立・A遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-2-single.png",
+      "eye": {
+        "x": 263,
+        "y": 414
+      },
+      "scale": 0.2734584450402145,
+      "phase": "手前閉／奥開・A遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-3-single.png",
+      "eye": {
+        "x": 263,
+        "y": 414
+      },
+      "scale": 0.2734584450402145,
+      "phase": "手前閉／奥開・B遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-4-single.png",
+      "eye": {
+        "x": 263,
+        "y": 414
+      },
+      "scale": 0.2734584450402145,
+      "phase": "中立・B遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-5-single.png",
+      "eye": {
+        "x": 263,
+        "y": 414
+      },
+      "scale": 0.2734584450402145,
+      "phase": "手前開／奥閉・B遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-6-single.png",
+      "eye": {
+        "x": 263,
+        "y": 414
+      },
+      "scale": 0.2734584450402145,
+      "phase": "手前開／奥閉・A遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    }
+  ]
+}

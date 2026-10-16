@@ -1,0 +1,48 @@
+{
+  "source": "../../../source/flame-wheel-guardian-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 617
+    },
+    {
+      "x": 620,
+      "y": 0,
+      "width": 634,
+      "height": 617
+    },
+    {
+      "x": 0,
+      "y": 617,
+      "width": 668,
+      "height": 637
+    },
+    {
+      "x": 668,
+      "y": 617,
+      "width": 586,
+      "height": 637
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 951
+    },
+    {
+      "x": 512,
+      "y": 951
+    },
+    {
+      "x": 512,
+      "y": 951
+    },
+    {
+      "x": 512,
+      "y": 951
+    }
+  ],
+  "scale": 0.5134575569358178
+}

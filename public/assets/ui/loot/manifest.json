@@ -1,0 +1,32 @@
+{
+  "source": "../../../../development/assets/ui/loot/source/chest-opening-v1.png",
+  "sheet": "chest-opening.png",
+  "columns": 2,
+  "rows": 2,
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameStartsMs": [
+    0,
+    350,
+    650,
+    1000
+  ],
+  "revealStartsMs": 1500,
+  "loop": false,
+  "gemSource": "../../../../development/assets/ui/loot/source/gem-atlas-v1.png",
+  "gemGrid": [
+    3,
+    3
+  ],
+  "icons": [
+    "edgegem",
+    "arcanegem",
+    "quickgem",
+    "heartgem",
+    "clockgem",
+    "twinflare",
+    "wardleaf",
+    "prism",
+    "bosscrystal"
+  ]
+}

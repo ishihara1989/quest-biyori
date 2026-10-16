@@ -1,0 +1,23 @@
+{
+  "id": "motions/p2-ultimate-1",
+  "source": "source/motions/p2-ultimate-1.png",
+  "sha256": "3fa58551958887905485fdda7937460efb10b31eebc5ebbf928df594e7f02668",
+  "prompt": "Use case: precise-object-edit\nAsset type: repaired transparent JRPG pixel-art sprite sheet, motions/p2-ultimate-1.\nInput image 1: ORIGINAL fixed identity/style reference. Input image 2 if present: body-only reference. Preserve the same adult fantasy goddess, mature face, silver-lavender hair, cyan eyes, ivory/navy/gold opaque ceremonial clothing, small crown and gold shoes. Nonsexual neutral game animation. Crisp discrete pixel clusters and dark violet outlines. No text, numbers, panels, watermarks or background. True transparent alpha.\nLayout: 3 equal square cells, 3 columns and 1 rows, chronological row-major order. Each cell has its own virtual 512x512 coordinates. Keep ALL visible pixels within x=60..452 and y=52..460 OF EACH CELL. Large empty transparent gutters separate the figures. Same camera, body scale, head and hip positions across frames. Never fill the sheet with oversized figures; never let hair, sleeves, crown or shoes cross a cell boundary.\nUpright FLOATING body only, torso vertical, legs extend DOWN naturally as in original floating master. No seated pose, raised seated knee, crossed seated legs, cheek support, throne or large halo. Keep clothing opaque; skirt lining covers the legs during arm raises. Hands remain attached through elbows to their own two shoulders. No attack effects or magic lights. \nFrames:\nL/R=(170,244)/(352,260), neutral.\nL/R=(216,211)/(310,211), draw toward chest.\nL/R=(238,195)/(286,195), palms close at chest.\nThe final release returns to low open palms and upright hovering; never return to cheek support. Above-head pose is a calm formal spell gesture. Garments remain fully opaque and draped throughout.\nComposition override: ZOOM OUT. Each sprite occupies only 65 percent of its cell height and width. Broad completely empty transparent border around EACH sprite, including between rows. Figures must appear SMALLER than the supplied full-canvas references. Preserve identical scale for every pose.\nInput image 3 is the acquired F4-F6 overhead interval: preserve its exact identity, palette, body proportions and upright floating leg posture. Maintain consistent body size through the animation.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-ee52a5f1-7bde-4808-a14b-7657add71b0b.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    },
+    {
+      "file": "../first-pass-v1/source/parts/body-floating.png",
+      "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+    },
+    {
+      "file": "source/motions/p2-ultimate-2.png",
+      "sha256": "cdbec4e0b70a83e914b9787b5de7d87eca1f70311173087a0e4e90fe4493f73f"
+    }
+  ],
+  "attempt": 1
+}

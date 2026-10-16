@@ -1,0 +1,119 @@
+{
+  "id": "magma-salamander/hit",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "label": "被弾",
+  "kind": null,
+  "motion": "hit",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/magma-salamander.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/reaction-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.880035400390625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 123,
+        "top": 161,
+        "right": 437,
+        "bottom": 360
+      },
+      "visibleBounds": {
+        "left": 151,
+        "top": 172,
+        "right": 422,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/reaction-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 555
+      },
+      "sourceScale": 0.426179604261796,
+      "sourceAnchor": {
+        "x": 455,
+        "y": 492
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8746757507324219,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 142,
+        "top": 154,
+        "right": 432,
+        "bottom": 364
+      },
+      "visibleBounds": {
+        "left": 150,
+        "top": 169,
+        "right": 429,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/magma-salamander/reaction-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 785,
+        "y": 0,
+        "width": 751,
+        "height": 555
+      },
+      "sourceScale": 0.426179604261796,
+      "sourceAnchor": {
+        "x": 393,
+        "y": 492
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/magma-salamander/hit/preview.gif",
+  "action": null
+}

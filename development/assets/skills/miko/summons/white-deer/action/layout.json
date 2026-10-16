@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/white-deer-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 761,
+      "height": 724
+    },
+    {
+      "x": 761,
+      "y": 0,
+      "width": 676,
+      "height": 724
+    },
+    {
+      "x": 1437,
+      "y": 0,
+      "width": 735,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 455.5,
+      "y": 956
+    },
+    {
+      "x": 408,
+      "y": 954
+    },
+    {
+      "x": 242,
+      "y": 957
+    }
+  ],
+  "scale": 0.08641975308641975
+}

@@ -1,0 +1,186 @@
+{
+  "id": "castle-cross-beam",
+  "label": "交差用の単帯",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "beam",
+  "origin": "reuse",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 60,
+      "phase": "既存1",
+      "source": "../ruins-furnace-beam/ruins-furnace-beam-01.png",
+      "sourceSha256": "fd695929c96a74eb432957908adb2a8d345f7170dbf264f3b56a3b910063a1b0",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 448,
+        "height": 192
+      },
+      "sourceAnchor": [
+        378,
+        96
+      ],
+      "scale": 1,
+      "pivot": [
+        400,
+        256
+      ],
+      "sha256": "e74af6c9147c56f81916d13212bcf8e594e9251a461b90235791197e354f733c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.979888916015625,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 205,
+        "top": 188,
+        "right": 450,
+        "bottom": 321
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "既存2",
+      "source": "../ruins-furnace-beam/ruins-furnace-beam-02.png",
+      "sourceSha256": "80b8fe1e88a6f6b2c16f79b94ef1c3b3cccbda89f3ad7bcc0667a8403a6f50c3",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 448,
+        "height": 192
+      },
+      "sourceAnchor": [
+        378,
+        96
+      ],
+      "scale": 1,
+      "pivot": [
+        400,
+        256
+      ],
+      "sha256": "0990ec6de68c699addfe4e14efe7f542227232f29157416369d782302ae3149d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9502754211425781,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 182,
+        "top": 187,
+        "right": 449,
+        "bottom": 322
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "phase": "既存3",
+      "source": "../ruins-furnace-beam/ruins-furnace-beam-03.png",
+      "sourceSha256": "f51a6a822e132b5c69444b2ad17c8fa3e83b46bd2d9b5ff36d959595229891e3",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 448,
+        "height": 192
+      },
+      "sourceAnchor": [
+        378,
+        96
+      ],
+      "scale": 1,
+      "pivot": [
+        400,
+        256
+      ],
+      "sha256": "b2b0b8104263ecd7df2b093bf41f359c352bef530c88e366a43b2c4a236d1ad5",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9224662780761719,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 195,
+        "top": 171,
+        "right": 455,
+        "bottom": 331
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 80,
+      "phase": "既存4",
+      "source": "../ruins-furnace-beam/ruins-furnace-beam-04.png",
+      "sourceSha256": "795dd4a117914373bea14b47fa52025d81563460eabc7e6fcf5cec7786646a06",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 448,
+        "height": 192
+      },
+      "sourceAnchor": [
+        378,
+        96
+      ],
+      "scale": 1,
+      "pivot": [
+        400,
+        256
+      ],
+      "sha256": "a5198bdd634a2a00bec71548b45cfdc25c4da9acd8951f9013125dad2ca972c5",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9796562194824219,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 187,
+        "top": 187,
+        "right": 441,
+        "bottom": 323
+      }
+    }
+  ],
+  "fingerprint": "ec08a326362c828ddf38bb7c082dbb77ec3d7b251ec49fa0ee9adecd08e1cc3b",
+  "events": [],
+  "pivot": {
+    "x": 400,
+    "y": 256
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 500,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/end-cross/manifest.json",
+  "sourceFingerprint": "ec08a326362c828ddf38bb7c082dbb77ec3d7b251ec49fa0ee9adecd08e1cc3b",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

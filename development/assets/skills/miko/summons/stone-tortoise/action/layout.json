@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/stone-tortoise-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 687,
+      "height": 724
+    },
+    {
+      "x": 687,
+      "y": 0,
+      "width": 736,
+      "height": 724
+    },
+    {
+      "x": 1423,
+      "y": 0,
+      "width": 749,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 489.5,
+      "y": 822
+    },
+    {
+      "x": 458,
+      "y": 822
+    },
+    {
+      "x": 467.5,
+      "y": 822
+    }
+  ],
+  "scale": 0.09451476793248945
+}

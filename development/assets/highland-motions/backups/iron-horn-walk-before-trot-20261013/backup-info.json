@@ -1,0 +1,38 @@
+[
+  {
+    "file": "move/iron-horn-move-preview.gif",
+    "sha256": "22d15983967374996ae57855c7a0b2c5c3a69209405f85f27a98af57e0c8ffdf"
+  },
+  {
+    "file": "move/iron-horn-move.png",
+    "sha256": "7a9bcc68719074b64719b70877162d94880c56786277ccbcb9b2b3bd9093bf68"
+  },
+  {
+    "file": "move/manifest.json",
+    "sha256": "3f1ea540425291ea8c28435bdb9b8697fc41ae0c18ab7a986b418c6dae3e9dcb"
+  },
+  {
+    "file": "move/move-01.png",
+    "sha256": "b1b5c0fcad062002a145a99a3609f4d044df9e28e01de37a51322de801979c59"
+  },
+  {
+    "file": "move/move-02.png",
+    "sha256": "3d9952508f3ba30c7350f00de2e5a5996d5ca3c613ea73ef8603474e1066e5b8"
+  },
+  {
+    "file": "move/move-03.png",
+    "sha256": "7d1216598519e97e01368cb5dda4dc96085140ee2c8612a114d96041d40e5f4c"
+  },
+  {
+    "file": "move/move-04.png",
+    "sha256": "621fc0720bc22c8544ac25089fd81acce509847dd21105c8c45a68f410f4109c"
+  },
+  {
+    "file": "move/move-05.png",
+    "sha256": "35acde51cbaad31f359375eb59b98f65cac06c67c08c7d15b6b7e6d17a5ea0d2"
+  },
+  {
+    "file": "move/move-06.png",
+    "sha256": "0a2d2df580c947b12a1410d33b81c0ade8419d8e344dc5ec04666ce62d636d95"
+  }
+]

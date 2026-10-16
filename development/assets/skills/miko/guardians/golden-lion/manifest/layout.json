@@ -1,0 +1,72 @@
+{
+  "source": "../../../source/golden-lion-guardian-generated-v2.png",
+  "sourceRects": [
+    {
+      "component": 4,
+      "sourceBounds": {
+        "l": 28,
+        "t": 62,
+        "r": 597,
+        "b": 558,
+        "n": 209317,
+        "width": 570,
+        "height": 497
+      }
+    },
+    {
+      "component": 1,
+      "sourceBounds": {
+        "l": 636,
+        "t": 53,
+        "r": 1229,
+        "b": 558,
+        "n": 231172,
+        "width": 594,
+        "height": 506
+      }
+    },
+    {
+      "component": 12,
+      "sourceBounds": {
+        "l": 17,
+        "t": 617,
+        "r": 645,
+        "b": 1188,
+        "n": 281865,
+        "width": 629,
+        "height": 572
+      }
+    },
+    {
+      "component": 17,
+      "sourceBounds": {
+        "l": 642,
+        "t": 688,
+        "r": 1224,
+        "b": 1186,
+        "n": 215026,
+        "width": 583,
+        "height": 499
+      }
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 976
+    },
+    {
+      "x": 512,
+      "y": 976
+    },
+    {
+      "x": 512,
+      "y": 976
+    },
+    {
+      "x": 512,
+      "y": 976
+    }
+  ],
+  "scale": 0.5265392781316348
+}

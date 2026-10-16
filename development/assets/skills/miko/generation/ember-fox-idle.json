@@ -1,0 +1,11 @@
+{
+  "id": "ember-fox-idle",
+  "source": "development/assets/skills/miko/source/ember-fox-idle-generated-v1.png",
+  "original": "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\public\\assets\\skills\\miko\\source\\ember-fox-idle-generated-v1.png",
+  "prompt": "# 火狐・基準モーション\n\nBuilt-in image_gen; genuine transparent RGBA. First locked creature reference.\n\nUse case: stylized-concept. Asset type: production TRANSPARENT pixel-art animation atlas for a polished Japanese shrine-maiden summoner in a side-scrolling idle RPG. Create exactly THREE unique animation frames, one horizontal row of three equally sized square cells. ONE SAME small sacred white fox in each cell, RIGHT-facing 3/4 side view, same scale, feet baseline at (.50,.82), head at (.64,.40), tail to left (.28,.43). Character design: cute fierce white fox, vermilion ear tips and tail tip, amber eyes, a tiny gold knotted collar and ONE red tassel, dark crimson-grey outlines, paws and fox muzzle visible, ONE bushy tail. No human character. Approved game style: crisp deliberate 96px-tall arcade/JRPG pixel clusters, dark clean colored outlines, white/ivory highlights and soft violet-grey shadows, vermilion/red and gold accents, nearest-neighbor pixel edges, no smooth painting, 3D or blur. Idle breathing loop: 1 grounded exhale, tail curved upward; 2 chest and head rise 1 logical pixel, tail tip lifts 2 pixels; 3 chest returns halfway, tail tip eases toward pose1. Feet remain fixed, same anatomy and palette. Whole fox plus tail inside x=.16..84,y=.20..82 in EACH cell; ample truly empty transparent margins, no crossing cell borders. Background genuinely transparent RGBA, not checkerboard, no floor, cast shadow, glow, effects, text, label, border or grid. This is an animation spritesheet, not three different fox designs.\n",
+  "receivedAt": "2026-10-10T13:41:07.333Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated",
+  "refs": []
+}

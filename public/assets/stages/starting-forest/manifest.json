@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "starting-forest",
+  "label": "始まりの森",
+  "generation": "built-in image_gen",
+  "sampling": "nearest-neighbor",
+  "coordinateSystem": {
+    "previewWidth": 1024,
+    "previewHeight": 576,
+    "groundY": {
+      "min": 323,
+      "max": 512
+    },
+    "units": "preview pixels",
+    "notes": "Y is the foot/contact point; these bounds are an unobstructed recommended lane, not a collision map."
+  },
+  "repeat": {
+    "axis": "x",
+    "mode": "alternate-mirror",
+    "tilesPerPeriod": 2,
+    "notes": "Alternate the source and its horizontal mirror. Identical edge columns meet at both joins. Direct same-orientation repetition has small generated edge differences."
+  },
+  "layers": [
+    {
+      "id": "distant",
+      "label": "遠景",
+      "file": "forest-distant.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "parallax": 0.28,
+      "source": "../../../../development/assets/stages/starting-forest/source/forest-distant-generated-v1.png"
+    },
+    {
+      "id": "ground-near",
+      "label": "地面＋近景",
+      "file": "forest-ground-near.png",
+      "width": 1672,
+      "height": 940,
+      "alpha": true,
+      "parallax": 1,
+      "source": "../../../../development/assets/stages/starting-forest/source/forest-ground-near-generated-v1.png"
+    }
+  ],
+  "notes": [
+    "Both layers cover the same stage rectangle; keep their horizontal repeat independent for parallax.",
+    "Draw distant, ground-near, then characters sorted by foot Y.",
+    "Generated RGBA is preserved, including slightly translucent ground (mostly alpha 251-252).",
+    "This version has no separate foreground occluder in front of characters."
+  ]
+}

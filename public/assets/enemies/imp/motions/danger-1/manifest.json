@@ -1,0 +1,221 @@
+{
+  "id": "imp/danger-1",
+  "label": "インプ・呪弾",
+  "enemy": "imp",
+  "motion": "danger-1",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "発動で両手の指が重なる。手首・指の所属を確認する。",
+    "別の呪弾へ両手の発射点を合わせる。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 719,
+        "height": 584
+      },
+      "sourceAnchor": [
+        381,
+        557
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "9dd5c82461dcab6a083cee0f60904d2460101ebf4539ec1a597527bbac236de0",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8792228698730469,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 142,
+        "top": 151,
+        "right": 451,
+        "bottom": 412
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 2420,
+      "phase": "溜め",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 719,
+        "top": 0,
+        "width": 610,
+        "height": 584
+      },
+      "sourceAnchor": [
+        249,
+        557
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "1d10a0ef9d36b691abf2467ab575e947592e252962003826683821353be42f52",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8903541564941406,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 188,
+        "top": 155,
+        "right": 438,
+        "bottom": 401
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 800,
+      "phase": "発動",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 0,
+        "top": 584,
+        "width": 712,
+        "height": 599
+      },
+      "sourceAnchor": [
+        374,
+        491
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "2e8941fdfc16b1c4a2116c3267d11c846d10f4c6abc36688ce85097ac4029622",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8750572204589844,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 150,
+        "top": 180,
+        "right": 451,
+        "bottom": 443
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 600,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 712,
+        "top": 584,
+        "width": 617,
+        "height": 599
+      },
+      "sourceAnchor": [
+        270,
+        500
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "44ae4780e077f6937f30a5ff1665fb7bfc51883fb517220cfbbff8eef419bc00",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8852729797363281,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 179,
+        "top": 181,
+        "right": 449,
+        "bottom": 440
+      }
+    }
+  ],
+  "fingerprint": "70ad43c4e1525d077cdebdf5f347c7fd5c970f1eec23b3809de7650cc47bf223",
+  "events": [
+    {
+      "timeMs": 2600,
+      "effect": "castle-curse-orb",
+      "kind": "projectile"
+    }
+  ],
+  "pivot": {
+    "x": 300,
+    "y": 400
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 4000,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/imp/danger-1/manifest.json",
+  "sourceFingerprint": "70ad43c4e1525d077cdebdf5f347c7fd5c970f1eec23b3809de7650cc47bf223",
+  "action": {
+    "name": "呪弾",
+    "motion": "danger-1",
+    "warn": 2600,
+    "times": [
+      2600
+    ],
+    "kind": "projectile",
+    "radius": 100,
+    "effect": "curse-orb",
+    "rest": 5000,
+    "status": "curse",
+    "duration": 4000
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-curse-orb",
+        "manifest": "../../../../effects/castle-curse-orb/manifest.json"
+      },
+      {
+        "id": "castle-curse-impact",
+        "manifest": "../../../../effects/castle-curse-impact/manifest.json"
+      },
+      {
+        "id": "castle-curse-mark",
+        "manifest": "../../../../effects/castle-curse-mark/manifest.json"
+      }
+    ]
+  }
+}

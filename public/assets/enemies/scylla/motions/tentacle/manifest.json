@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "scylla",
+  "motion": "tentacle",
+  "facing": "left",
+  "label": "触手叩きつけ",
+  "sheet": "scylla-tentacle.png",
+  "preview": "../../../../../../development/assets/enemies/scylla/motions/tentacle/scylla-tentacle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/scylla/PROMPT.md",
+  "width": 2560,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 371,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 960,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/scylla/source/tentacle-registered.png",
+  "sourceScale": 0.4895238095238095,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "scylla-tentacle-tentacle",
+      "type": "spawn-effect",
+      "effect": "sea-slam",
+      "frame": 2,
+      "timeMs": 440,
+      "power": 1.2
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "tentacle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 200,
+      "phase": "開始",
+      "bounds": {
+        "left": 299,
+        "top": 193,
+        "right": 627,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 741,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 163,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "tentacle-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 296,
+        "top": 192,
+        "right": 621,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 741,
+        "y": 0,
+        "width": 741,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 169,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "tentacle-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 220,
+      "phase": "作用",
+      "bounds": {
+        "left": 196,
+        "top": 199,
+        "right": 542,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 521,
+        "width": 741,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 374,
+        "y": 490
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "tentacle-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 287,
+        "top": 196,
+        "right": 613,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 741,
+        "y": 521,
+        "width": 741,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 188,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/scylla/source/tentacle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 163061,
+        "left": 53,
+        "top": 20,
+        "right": 724,
+        "bottom": 506,
+        "cx": 385.81071500849373,
+        "cy": 319.5619860052373
+      },
+      {
+        "id": 1,
+        "count": 180602,
+        "left": 845,
+        "top": 19,
+        "right": 1509,
+        "bottom": 507,
+        "cx": 1156.1855516550204,
+        "cy": 303.32498532685133
+      },
+      {
+        "id": 8,
+        "count": 162379,
+        "left": 38,
+        "top": 523,
+        "right": 746,
+        "bottom": 997,
+        "cx": 418.66508600250035,
+        "cy": 818.7203948786481
+      },
+      {
+        "id": 7,
+        "count": 162982,
+        "left": 842,
+        "top": 521,
+        "right": 1508,
+        "bottom": 1002,
+        "cx": 1174.133658931661,
+        "cy": 818.1951933342332
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 431
+    },
+    "origin": {
+      "x": 277.9,
+      "y": 308.5
+    },
+    "assets": [
+      {
+        "id": "sea-slam",
+        "manifest": "../../../../effects/sea-slam/manifest.json"
+      }
+    ]
+  }
+}

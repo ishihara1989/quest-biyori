@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boss-boar",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "boss-boar-move.png",
+  "preview": "../../../../../../development/assets/enemies/boss-boar/motions/move/boss-boar-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boss-boar/PROMPT.md",
+  "width": 2880,
+  "height": 320,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 320,
+  "frameCount": 6,
+  "pivot": {
+    "x": 240,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-move-combined-v2.png",
+  "sourceScale": 0.535,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "右前脚が前・待機姿勢",
+      "bounds": {
+        "left": 69,
+        "top": 31,
+        "right": 411,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 638,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 330,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-idle-generated-v1.png",
+      "sourceScale": 0.58,
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "左前脚と左後脚を持ち上げて通す",
+      "bounds": {
+        "left": 69,
+        "top": 48,
+        "right": 410,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 725
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 620
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "左前脚と左後脚を前へ伸ばす・接地直前",
+      "bounds": {
+        "left": 69,
+        "top": 69,
+        "right": 410,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 725
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 620
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "左前脚と左後脚を前に接地",
+      "bounds": {
+        "left": 69,
+        "top": 58,
+        "right": 410,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 725,
+        "width": 724,
+        "height": 725
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 620
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1920,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "右前脚と右後脚を持ち上げて通す",
+      "bounds": {
+        "left": 69,
+        "top": 49,
+        "right": 410,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 725,
+        "width": 724,
+        "height": 725
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 620
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2400,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "右前脚と右後脚を前へ伸ばす",
+      "bounds": {
+        "left": 69,
+        "top": 56,
+        "right": 410,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 725,
+        "width": 724,
+        "height": 725
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 620
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "generationSources": [
+    "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-move-01-03-generated-v3.png",
+    "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-move-04-06-generated-v1.png"
+  ],
+  "poseRefinementSources": [
+    "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-move-frame2-generated-v1.png",
+    "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-move-frame3-generated-v2.png",
+    "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-move-frame4-generated-v2.png"
+  ],
+  "registration": "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-move-registration-v1.json",
+  "halves": [
+    {
+      "file": "boss-boar-move-01-03.png",
+      "firstFrame": 0,
+      "frameCount": 3
+    },
+    {
+      "file": "boss-boar-move-04-06.png",
+      "firstFrame": 3,
+      "frameCount": 3
+    }
+  ]
+}

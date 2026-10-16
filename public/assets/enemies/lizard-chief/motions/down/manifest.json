@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lizard-chief",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "lizard-chief-down.png",
+  "preview": "../../../../../../development/assets/enemies/lizard-chief/motions/down/lizard-chief-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lizard-chief/PROMPT.md",
+  "width": 1280,
+  "height": 448,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 448,
+  "frameCount": 2,
+  "pivot": {
+    "x": 371,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/lizard-chief/source/down-registered.png",
+  "sourceScale": 0.5583126550868487,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 280,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 119,
+        "top": 263,
+        "right": 547,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 442,
+        "width": 816,
+        "height": 442
+      },
+      "sourceAnchor": {
+        "x": 467,
+        "y": 318
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 600,
+      "phase": "終端保持",
+      "bounds": {
+        "left": 160,
+        "top": 336,
+        "right": 572,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 816,
+        "y": 442,
+        "width": 816,
+        "height": 442
+      },
+      "sourceAnchor": {
+        "x": 395,
+        "y": 186
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/lizard-chief/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 87853,
+        "left": 8,
+        "top": 90,
+        "right": 791,
+        "bottom": 499,
+        "cx": 388.5732416650541,
+        "cy": 310.1503875792517
+      },
+      {
+        "id": 2,
+        "count": 86530,
+        "left": 774,
+        "top": 97,
+        "right": 1531,
+        "bottom": 499,
+        "cx": 1157.0581994683926,
+        "cy": 311.2773951230787
+      },
+      {
+        "id": 5,
+        "count": 76286,
+        "left": 8,
+        "top": 626,
+        "right": 774,
+        "bottom": 928,
+        "cx": 395.7018325774061,
+        "cy": 804.2040479249141
+      },
+      {
+        "id": 6,
+        "count": 60664,
+        "left": 784,
+        "top": 763,
+        "right": 1523,
+        "bottom": 933,
+        "cx": 1137.5179348542792,
+        "cy": 861.1903765000659
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

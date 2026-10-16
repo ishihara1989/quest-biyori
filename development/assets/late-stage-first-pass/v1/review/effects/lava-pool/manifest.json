@@ -1,0 +1,101 @@
+{
+  "id": "effects/lava-pool",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "残留溶岩床",
+  "kind": "ground",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/lava-pool-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 108,
+        "top": 248,
+        "right": 691,
+        "bottom": 435
+      },
+      "sourceWidth": 756,
+      "sourceHeight": 475,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 285990,
+      "transparentFraction": 0.7964076858813701
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 64,
+        "top": 98,
+        "right": 729,
+        "bottom": 451
+      },
+      "sourceWidth": 780,
+      "sourceHeight": 475,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 224171,
+      "transparentFraction": 0.6050499325236167
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 35,
+        "top": 22,
+        "right": 811,
+        "bottom": 498
+      },
+      "sourceWidth": 827,
+      "sourceHeight": 549,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 174263,
+      "transparentFraction": 0.3838197624349427
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 15,
+        "top": 163,
+        "right": 666,
+        "bottom": 484
+      },
+      "sourceWidth": 709,
+      "sourceHeight": 549,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 260672,
+      "transparentFraction": 0.6696930693323674
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/lava-pool-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

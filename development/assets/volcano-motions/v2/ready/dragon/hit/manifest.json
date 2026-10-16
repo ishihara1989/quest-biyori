@@ -1,0 +1,112 @@
+{
+  "id": "dragon/hit",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "被弾",
+  "kind": null,
+  "motion": "hit",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/reaction-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon/hit/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.864349365234375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 166,
+        "top": 117,
+        "right": 464,
+        "bottom": 381
+      },
+      "visibleBounds": {
+        "left": 174,
+        "top": 138,
+        "right": 450,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/reaction-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 713,
+        "height": 602
+      },
+      "sourceScale": 0.45751633986928103,
+      "sourceAnchor": {
+        "x": 345,
+        "y": 505
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8523063659667969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 165,
+        "top": 115,
+        "right": 457,
+        "bottom": 378
+      },
+      "visibleBounds": {
+        "left": 173,
+        "top": 143,
+        "right": 453,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/reaction-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 713,
+        "y": 0,
+        "width": 689,
+        "height": 602
+      },
+      "sourceScale": 0.45751633986928103,
+      "sourceAnchor": {
+        "x": 314,
+        "y": 512
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

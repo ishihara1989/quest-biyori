@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "id": "foxfire",
+  "character": "miko",
+  "subject": "foxfire",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "foxfire-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5254237288135594,
+  "frames": [
+    {
+      "index": 0,
+      "file": "foxfire-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 38,
+        "t": 129,
+        "r": 504,
+        "b": 380,
+        "n": 56849,
+        "width": 467,
+        "height": 252
+      }
+    },
+    {
+      "index": 1,
+      "file": "foxfire-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 11,
+        "t": 132,
+        "r": 492,
+        "b": 392,
+        "n": 55639,
+        "width": 482,
+        "height": 261
+      }
+    },
+    {
+      "index": 2,
+      "file": "foxfire-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 33,
+        "t": 107,
+        "r": 504,
+        "b": 358,
+        "n": 55912,
+        "width": 472,
+        "height": 252
+      }
+    },
+    {
+      "index": 3,
+      "file": "foxfire-effect-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 11,
+        "t": 100,
+        "r": 492,
+        "b": 359,
+        "n": 54370,
+        "width": 482,
+        "height": 260
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/foxfire-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

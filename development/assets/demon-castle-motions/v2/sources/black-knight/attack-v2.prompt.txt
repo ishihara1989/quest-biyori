@@ -1,0 +1,12 @@
+Use case: stylized-concept.
+Asset type: corrected production sprite animation for a pixel-art idle RPG, black knight NORMAL greatsword attack.
+Input image 1: FIXED CANONICAL CHARACTER REFERENCE. Match this exact horned black-and-gold armored knight, red visor, ragged crimson cape, broad black greatsword with silver edges and red center rune. Preserve body, helmet, armor, palette, weapon proportions and left-facing mild three-quarter view.
+Primary request: generate exactly FOUR separate complete poses in a clean equal 2x2 sprite sheet, reading upper-left, upper-right, lower-left, lower-right. Genuine transparent background.
+Correct the previous clipped overhead weapon: fit EVERY entire sword blade, horns, cape, boots and hands comfortably inside its own cell, at least 12% transparent margins on all four sides. Smaller consistent character scale is much better than clipped weapons. Nothing crosses cell boundaries.
+Motion plan using EACH CELL normalized coordinates 0..1000: pelvis stays around (550,600), feet on y=845. Head around (540,400). SAME sword in all four poses, two hands on the single hilt, with distinct elbows attached to their own shoulders. Sword blade approx 360 normalized units long throughout.
+Frame 1: compact ready stance, hands at (470,610), sword tip at (170,765), cape rests to right.
+Frame 2: windup with both hands at (620,380), sword tip at (790,145); sword fully above and to right of helmet, 12% transparent margin beyond tip. Knees flex slightly, body dimensions unchanged.
+Frame 3: powerful LEFT-DOWN chop, hands at (420,650), tip at (135,805); torso leans left about 10 degrees, both boots stay planted, cape trails to right. No drawn slash effect.
+Frame 4: recover to the same compact ready stance and sword position as frame 1, cape settles. Frame 4 must connect to canonical standing idle without a drastic body-size jump.
+Style: refined JRPG pixel art, crisp small pixel clusters, stepped outlines, controlled shading, exactly the reference colors and brightness. Consistent body scale and camera angle across frames. Two arms, two hands, two legs, two boots. Each hand grasps the same sword handle, no floating hands or extra weapons.
+Constraints: body and weapon only, no impact flashes, no external VFX, no aura, no colored backdrop, no floor, no ground shadow, no text, labels, borders, checkerboard or watermark. Keep native transparent alpha.

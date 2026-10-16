@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "festival-finale",
+  "character": "miko",
+  "subject": "festival-finale",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "festival-finale-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 480,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5265392781316348,
+  "frames": [
+    {
+      "index": 0,
+      "file": "festival-finale-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 51,
+        "t": 24,
+        "r": 463,
+        "b": 469,
+        "n": 84585,
+        "width": 413,
+        "height": 446
+      }
+    },
+    {
+      "index": 1,
+      "file": "festival-finale-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 16,
+        "t": 8,
+        "r": 502,
+        "b": 480,
+        "n": 194625,
+        "width": 487,
+        "height": 473
+      }
+    },
+    {
+      "index": 2,
+      "file": "festival-finale-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 42,
+        "t": 37,
+        "r": 462,
+        "b": 463,
+        "n": 106196,
+        "width": 421,
+        "height": 427
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/festival-finale-generated-v2.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/festival-finale-generated-v1.png"
+  ],
+  "edgeBehavior": "The upright spirit ray continues upward beyond the battle viewport. Align this peak above the viewport; do not use it as a floating enclosed halo.",
+  "extraction": "transparent-gutter crop"
+}

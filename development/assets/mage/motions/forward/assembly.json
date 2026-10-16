@@ -1,0 +1,78 @@
+{
+  "base": "../../../../../development/assets/mage/motions/forward/source/mage-forward-generated-v7.png",
+  "output": "../../../../../development/assets/mage/motions/forward/source/mage-forward-generated-v8.png",
+  "frames": [
+    {
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 397,
+        "height": 512
+      },
+      "waistX": 219
+    },
+    {
+      "rect": {
+        "left": 397,
+        "top": 0,
+        "width": 384,
+        "height": 512
+      },
+      "waistX": 211.05
+    },
+    {
+      "rect": {
+        "left": 781,
+        "top": 0,
+        "width": 380,
+        "height": 512
+      },
+      "waistX": 200.33
+    },
+    {
+      "file": "../../../../../development/assets/mage/motions/forward/source/mage-forward-frame4-generated-v1.png",
+      "waistX": 589.93,
+      "height": 430
+    },
+    {
+      "file": "../../../../../development/assets/mage/motions/forward/source/mage-forward-frames5-6-generated-v2.png",
+      "rect": {
+        "left": 0,
+        "top": 0,
+        "width": 836,
+        "height": 940
+      },
+      "waistX": 510,
+      "height": 423
+    },
+    {
+      "file": "../../../../../development/assets/mage/motions/forward/source/mage-forward-frames5-6-generated-v2.png",
+      "rect": {
+        "left": 836,
+        "top": 0,
+        "width": 836,
+        "height": 940
+      },
+      "waistX": 450,
+      "height": 421
+    },
+    {
+      "rect": {
+        "left": 781,
+        "top": 512,
+        "width": 380,
+        "height": 512
+      },
+      "waistX": 208.64
+    },
+    {
+      "rect": {
+        "left": 1161,
+        "top": 512,
+        "width": 375,
+        "height": 512
+      },
+      "waistX": 205.68
+    }
+  ]
+}

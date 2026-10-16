@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hex-weave",
+    "prompt": "Use case: stylized-concept. Asset type: transparent pixel-art RPG animation spritesheet. Use the attached original shaman idle as the locked character/style reference. Female dark brown skin, silver ponytail, teal and orange cloth, gold ornaments, bone necklace, one crooked skull-topped staff with horns and hanging teal beads/feathers. Right-facing three-quarter view. Exactly THREE poses in equal-width horizontal cells, one row, transparent background, ample transparent margins in EACH cell, no text, borders, shadows, ground or magic. Feet planted at local (.50,.91), head top (.47,.24), same body size, palette, staff length, clothing and near/far leg details across poses. The staff stays in the SAME hand as the reference. Empty hand moves separately. No duplicated anatomy. Motion: drawing and closing a curse seal with the free hand. F1 staff skull (.73,.23), free palm open (.53,.47); F2 free hand (.66,.40) drawing outward circle; F3 fingers close (.64,.48), shoulders relax. Staff and feet fixed. Only body motion, no rune.",
+    "character": "shaman",
+    "source": "development/assets/shaman/motions/hex-weave/source/shaman-hex-weave-generated-v1.png"
+  },
+  {
+    "id": "staff-plant",
+    "prompt": "Use case: stylized-concept. Asset type: transparent pixel-art RPG animation spritesheet. Use the attached original shaman idle as the locked character/style reference. Female dark brown skin, silver ponytail, teal and orange cloth, gold ornaments, bone necklace, one crooked skull-topped staff with horns and hanging teal beads/feathers. Right-facing three-quarter view. Exactly THREE poses in equal-width horizontal cells, one row, transparent background, ample transparent margins in EACH cell, no text, borders, shadows, ground or magic. Feet planted at local (.50,.91), head top (.47,.24), same body size, palette, staff length, clothing and near/far leg details across poses. The staff stays in the SAME hand as the reference. Empty hand moves separately. No duplicated anatomy. Motion: lift then strike staff butt into ground. F1 skull (.70,.16) with butt lifted slightly, upright body; F2 knees bent head (.48,.29), staff butt (.67,.91) at ground, skull lower as a rigid staff rotation; F3 waist rises head (.47,.24), butt still anchored at (.67,.91), return toward idle. Preserve rigid staff length and hand.",
+    "character": "shaman",
+    "source": "development/assets/shaman/motions/staff-plant/source/shaman-staff-plant-generated-v1.png"
+  },
+  {
+    "id": "curse-pull",
+    "prompt": "Use case: stylized-concept. Asset type: transparent pixel-art RPG animation spritesheet. Use the attached original shaman idle as the locked character/style reference. Female dark brown skin, silver ponytail, teal and orange cloth, gold ornaments, bone necklace, one crooked skull-topped staff with horns and hanging teal beads/feathers. Right-facing three-quarter view. Exactly THREE poses in equal-width horizontal cells, one row, transparent background, ample transparent margins in EACH cell, no text, borders, shadows, ground or magic. Feet planted at local (.50,.91), head top (.47,.24), same body size, palette, staff length, clothing and near/far leg details across poses. The staff stays in the SAME hand as the reference. Empty hand moves separately. No duplicated anatomy. Motion: extend open hand, clench, pull sharply back. Staff held upright unchanged. F1 empty hand (.73,.45), open palm extended; F2 hand (.61,.47) clenched, elbow retracting; F3 fist (.50,.51), shoulder pulled back, then idle. Both feet stay planted. No magical effects.",
+    "character": "shaman",
+    "source": "development/assets/shaman/motions/curse-pull/source/shaman-curse-pull-generated-v1.png"
+  },
+  {
+    "id": "ritual-raise-a",
+    "prompt": "Use case: stylized-concept. Asset type: transparent pixel-art RPG animation spritesheet. Use the attached original shaman idle as the locked character/style reference. Female dark brown skin, silver ponytail, teal and orange cloth, gold ornaments, bone necklace, one crooked skull-topped staff with horns and hanging teal beads/feathers. Right-facing three-quarter view. Exactly THREE poses in equal-width horizontal cells, one row, transparent background, ample transparent margins in EACH cell, no text, borders, shadows, ground or magic. Feet planted at local (.50,.91), head top (.47,.24), same body size, palette, staff length, clothing and near/far leg details across poses. The staff stays in the SAME hand as the reference. Empty hand moves separately. No duplicated anatomy. Great ritual FIRST HALF 3 frames. Use common full-body scale with extra vertical space for raised staff, never enlarge/squash staff. F1 skull (.73,.23), grip (.60,.58), like idle chant; F2 skull (.66,.12), grip (.53,.47), empty hand (.52,.38); F3 skull (.55,.10), grip (.42,.45), free palm spread (.72,.34), high raised staff. Staff is one rigid skull-headed crooked pole, preserve skull-to-grip vector (-.13,-.35) in F2/F3; keep feet at .91. This ends holding high for next sheet.",
+    "character": "shaman",
+    "source": "development/assets/shaman/motions/ritual-raise/source/ritual-raise-part-1.png"
+  },
+  {
+    "id": "ritual-raise-b",
+    "prompt": "Use case: stylized-concept. Asset type: transparent pixel-art RPG animation spritesheet. Use the attached original shaman idle as the locked character/style reference. Female dark brown skin, silver ponytail, teal and orange cloth, gold ornaments, bone necklace, one crooked skull-topped staff with horns and hanging teal beads/feathers. Right-facing three-quarter view. Exactly THREE poses in equal-width horizontal cells, one row, transparent background, ample transparent margins in EACH cell, no text, borders, shadows, ground or magic. Feet planted at local (.50,.91), head top (.47,.24), same body size, palette, staff length, clothing and near/far leg details across poses. The staff stays in the SAME hand as the reference. Empty hand moves separately. No duplicated anatomy. Great ritual SECOND HALF 3 frames. F1 begins from staff raised high: skull (.55,.10), grip (.42,.45), free palm (.72,.34), same raised posture as previous sequence. F2 knees bend head top (.48,.30), staff butt (.67,.91) strikes ground; F3 returns head top (.47,.24), staff and free hand idle. Maintain staff length, hand identity and common character scale. No magic.",
+    "character": "shaman",
+    "source": "development/assets/shaman/motions/ritual-raise/source/ritual-raise-part-2.png"
+  },
+  {
+    "id": "ritual-raise",
+    "character": "shaman",
+    "parts": [
+      "ritual-raise-a",
+      "ritual-raise-b"
+    ],
+    "scale": 0.295
+  }
+]

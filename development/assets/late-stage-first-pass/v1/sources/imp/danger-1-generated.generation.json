@@ -1,0 +1,34 @@
+{
+  "id": "imp/danger-1",
+  "enemy": "imp",
+  "region": "demon-castle",
+  "motion": "danger-1",
+  "label": "呪弾",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/imp.png",
+  "guide": null,
+  "source": "sources/imp/danger-1-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 呪弾 by インプ EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: tiny wings spread (300,420),(750,420), hands gather purple light (470,460), arms thrust left (250,490), return. Two arms and legs unchanged. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "curse-orb",
+    "curse-impact",
+    "curse"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-e53acaa6-ce18-41ba-866d-126c418bace6.png",
+  "sha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "胸の前に紫光を集め、両手を左へ出して発射する。"
+    ],
+    "issues": [
+      "発動で両手の指が重なる。手首・指の所属を確認する。",
+      "別の呪弾へ両手の発射点を合わせる。"
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-behemoth",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "sand-behemoth-idle.png",
+  "preview": "../../../../../../development/assets/enemies/sand-behemoth/motions/idle/sand-behemoth-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 3280,
+  "height": 680,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 820,
+  "frameHeight": 680,
+  "frameCount": 4,
+  "pivot": {
+    "x": 476,
+    "y": 662
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/sand-behemoth/source/idle-registered.png",
+  "sourceScale": 0.8660508083140878,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 220,
+      "phase": "呼吸1",
+      "bounds": {
+        "left": 163,
+        "top": 287,
+        "right": 731,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 831,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 476,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 820,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 220,
+      "phase": "呼吸2",
+      "bounds": {
+        "left": 165,
+        "top": 278,
+        "right": 732,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 831,
+        "y": 0,
+        "width": 831,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1640,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 220,
+      "phase": "呼吸3",
+      "bounds": {
+        "left": 164,
+        "top": 293,
+        "right": 737,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 547,
+        "width": 831,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 473,
+        "y": 468
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 2460,
+      "y": 0,
+      "width": 820,
+      "height": 680,
+      "durationMs": 220,
+      "phase": "呼吸4",
+      "bounds": {
+        "left": 166,
+        "top": 292,
+        "right": 735,
+        "bottom": 663
+      },
+      "sourceCell": {
+        "x": 831,
+        "y": 547,
+        "width": 831,
+        "height": 547
+      },
+      "sourceAnchor": {
+        "x": 414,
+        "y": 468
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-behemoth-idle-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-behemoth.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 799,
+          "height": 509
+        },
+        {
+          "x": 799,
+          "y": 0,
+          "width": 737,
+          "height": 509
+        },
+        {
+          "x": 0,
+          "y": 509,
+          "width": 799,
+          "height": 515
+        },
+        {
+          "x": 799,
+          "y": 509,
+          "width": 737,
+          "height": 515
+        }
+      ]
+    }
+  ]
+}

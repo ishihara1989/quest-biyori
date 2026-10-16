@@ -1,0 +1,32 @@
+{
+  "id": "magma-salamander/danger-1",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "motion": "danger-1",
+  "label": "双溶岩弾",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "source": "sources/magma-salamander/danger-1-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 双溶岩弾 by マグマサラマンダー EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: head (300,520) pulls (350,490), back fins pulse twice, jaw fires left (250,540) then second pulse in held release pose, returns. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "lava-bomb",
+    "lava-impact",
+    "lava-pool"
+  ],
+  "repeat": 2,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-511cfe1b-4ff0-4fbd-b9e4-c49ef01e4e94.png",
+  "sha256": "23337dac8d04fee1d53c8633ebd5f7d563b2366a59b7bd4fd29fd7155dd6ef47",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "赤橙の背景光が混入。",
+      "噛みつきに近い4ポーズで、背の2回点灯と2発の時間差を読むコマが足りない。専用の溜め・発射反復を設計する。",
+      "口の発射点を別の溶岩弾へ合わせる。"
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "id": "demon-god/danger-4",
+  "label": "終焉の交差",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../../../../../development/assets/demon-god-redesign/v2/references/demon-god.png",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "loop": false,
+  "terminal": false,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 360,
+      "phase": "交差して溜める",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-4-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 652,
+        "height": 631
+      },
+      "sourceChestCore": {
+        "x": 303,
+        "y": 210
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.4713804713804714,
+      "transparentFraction": 0.8039279513888888,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 149,
+        "top": 49,
+        "right": 319,
+        "bottom": 328
+      },
+      "width": 384,
+      "height": 384,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 149,
+        "top": 49,
+        "right": 320,
+        "bottom": 329
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 5240,
+      "phase": "斜め二方向へ",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-4-generated.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 652,
+        "y": 0,
+        "width": 602,
+        "height": 631
+      },
+      "sourceChestCore": {
+        "x": 265,
+        "y": 217
+      },
+      "plannedRoot": [
+        550,
+        530
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 125.25
+      },
+      "sourceScale": 0.4713804713804714,
+      "transparentFraction": 0.7814059787326388,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 103,
+        "top": 35,
+        "right": 325,
+        "bottom": 315
+      },
+      "width": 384,
+      "height": 384,
+      "index": 1,
+      "x": 384,
+      "y": 0,
+      "visibleBounds": {
+        "left": 103,
+        "top": 35,
+        "right": 326,
+        "bottom": 316
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 1200,
+      "phase": "二帯を放つ",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-4-generated.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 631,
+        "width": 694,
+        "height": 623
+      },
+      "sourceChestCore": {
+        "x": 308,
+        "y": 196
+      },
+      "plannedRoot": [
+        535,
+        520
+      ],
+      "exportChestCore": {
+        "x": 186.15,
+        "y": 121.35
+      },
+      "sourceScale": 0.4713804713804714,
+      "transparentFraction": 0.7798665364583334,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 79,
+        "top": 34,
+        "right": 328,
+        "bottom": 298
+      },
+      "width": 384,
+      "height": 384,
+      "index": 2,
+      "x": 768,
+      "y": 0,
+      "visibleBounds": {
+        "left": 79,
+        "top": 34,
+        "right": 329,
+        "bottom": 299
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 800,
+      "phase": "衝撃輪・復帰",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-4-generated.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 694,
+        "y": 631,
+        "width": 560,
+        "height": 623
+      },
+      "sourceChestCore": {
+        "x": 206,
+        "y": 201
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.4713804713804714,
+      "transparentFraction": 0.7884724934895834,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 137,
+        "top": 44,
+        "right": 333,
+        "bottom": 320
+      },
+      "width": 384,
+      "height": 384,
+      "index": 3,
+      "x": 1152,
+      "y": 0,
+      "visibleBounds": {
+        "left": 137,
+        "top": 44,
+        "right": 334,
+        "bottom": 321
+      }
+    }
+  ],
+  "events": [
+    {
+      "timeMs": 5600,
+      "effect": "castle-cross-beam",
+      "kind": "cross"
+    },
+    {
+      "timeMs": 6600,
+      "effect": "castle-cross-beam",
+      "kind": "cross"
+    },
+    {
+      "timeMs": 6800,
+      "effect": "castle-end-ring",
+      "kind": "cross"
+    }
+  ],
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact",
+  "pivot": {
+    "x": 192,
+    "y": 330
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 7600,
+  "sheet": "sheet.png",
+  "motion": "danger-4",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-god-redesign/v2/review/danger-4/manifest.json",
+  "sourceFingerprint": "fc73e0d563f88e3bd1b831f2cd5da818a9d8c25abd3ccf69f500ed176211d8b1",
+  "acceptedForIntegration": true,
+  "action": {
+    "name": "終焉の交差",
+    "motion": "danger-4",
+    "warn": 5600,
+    "times": [
+      5600,
+      6600,
+      6800
+    ],
+    "kind": "cross",
+    "radius": 70,
+    "effect": "cross-beam",
+    "rest": 4000,
+    "status": null,
+    "duration": 7600,
+    "length": 720
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-cross-beam",
+        "manifest": "../../../../effects/castle-cross-beam/manifest.json"
+      },
+      {
+        "id": "castle-end-ring",
+        "manifest": "../../../../effects/castle-end-ring/manifest.json"
+      }
+    ]
+  }
+}

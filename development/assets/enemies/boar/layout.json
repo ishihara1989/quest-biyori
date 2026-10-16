@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "walkSources": [
+    "source/boar-move-01-03-refined-color-v1.png",
+    "source/boar-move-04-06-refined-color-v1.png"
+  ],
+  "walkCombined": "source/boar-move-combined-v1.png",
+  "assets": [
+    {
+      "enemy": "boar",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "ground",
+      "prompt": "../../PROMPT.md",
+      "id": "idle",
+      "label": "待機",
+      "directory": "assets/enemies/boar/motions/idle",
+      "source": "../../source/boar-idle-generated-v1.png",
+      "columns": 2,
+      "columnEdges": [
+        0,
+        627,
+        1254
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "scale": 0.35,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "右前脚が前・基準姿勢",
+          "durationMs": 320
+        },
+        {
+          "cell": 1,
+          "phase": "息を吸う",
+          "durationMs": 320
+        },
+        {
+          "cell": 2,
+          "phase": "息を吐く",
+          "durationMs": 320
+        },
+        {
+          "cell": 3,
+          "phase": "基準姿勢へ",
+          "durationMs": 320
+        }
+      ],
+      "loop": true
+    },
+    {
+      "enemy": "boar",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "ground",
+      "prompt": "../../PROMPT.md",
+      "id": "move",
+      "label": "移動",
+      "directory": "assets/enemies/boar/motions/move",
+      "source": "../../source/boar-move-combined-v1.png",
+      "columns": 3,
+      "columnEdges": [
+        0,
+        512,
+        1024,
+        1536
+      ],
+      "rowEdges": [
+        0,
+        1024,
+        2048
+      ],
+      "scale": 0.4,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "右前脚が前・待機と共通・左後脚は後方",
+          "durationMs": 120,
+          "anchor": {
+            "x": 256,
+            "y": 700
+          }
+        },
+        {
+          "cell": 1,
+          "phase": "左前脚と左後脚を持ち上げて通す",
+          "durationMs": 120,
+          "anchor": {
+            "x": 256,
+            "y": 700
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "左前脚と左後脚を前へ・接地直前",
+          "durationMs": 120,
+          "anchor": {
+            "x": 256,
+            "y": 700
+          }
+        },
+        {
+          "cell": 3,
+          "phase": "左前脚と左後脚が前・接地",
+          "durationMs": 120,
+          "anchor": {
+            "x": 256,
+            "y": 700
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        {
+          "cell": 4,
+          "phase": "右前脚と右後脚を持ち上げて通す",
+          "durationMs": 120,
+          "anchor": {
+            "x": 256,
+            "y": 700
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        {
+          "cell": 5,
+          "phase": "右前脚と右後脚が前・左後脚は後方",
+          "durationMs": 120,
+          "anchor": {
+            "x": 256,
+            "y": 700
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          }
+        }
+      ],
+      "loop": true,
+      "reuseIdle": [
+        0
+      ],
+      "gait": {
+        "nearSide": "anatomical-left",
+        "farSide": "anatomical-right",
+        "nearOccludesFar": true,
+        "generationGroups": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "leadForeleg": [
+          "right",
+          "left-passing",
+          "left-approaching",
+          "left",
+          "right-passing",
+          "right-approaching"
+        ],
+        "wrap": "6 → 1: right forefoot finishes planting",
+        "hindlegSwing": "near left: back -> raised -> forward -> forward -> vertical -> back; far right reciprocal"
+      },
+      "rootMotion": {
+        "mode": "external",
+        "direction": "left"
+      }
+    },
+    {
+      "enemy": "boar",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "ground",
+      "prompt": "../../PROMPT.md",
+      "id": "attack",
+      "label": "突進",
+      "directory": "assets/enemies/boar/motions/attack",
+      "source": "../../source/boar-attack-refined-v1.png",
+      "columns": 2,
+      "columnEdges": [
+        0,
+        627,
+        1254
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "scale": 0.35,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "両前脚を少し持ち上げる・後脚は接地",
+          "durationMs": 100
+        },
+        {
+          "cell": 1,
+          "phase": "両前脚を前へ・両後脚を後方へ伸ばして跳び上がる",
+          "durationMs": 100,
+          "offset": {
+            "x": 0,
+            "y": -32
+          },
+          "anchor": {
+            "x": 299,
+            "y": 527
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "両前脚で着地・両後脚はまだ浮いている",
+          "durationMs": 90
+        },
+        {
+          "cell": 3,
+          "phase": "両後脚も着地・全脚を曲げてかがむ",
+          "durationMs": 110
+        }
+      ],
+      "loop": true,
+      "columnEdgesByRow": [
+        [
+          0,
+          621,
+          1254
+        ],
+        [
+          0,
+          627,
+          1254
+        ]
+      ],
+      "gait": {
+        "leftRightPhase": "synchronized",
+        "hindlegPushOff": "simultaneous",
+        "forelegLanding": "paired-frame-3",
+        "hindlegLanding": "paired-frame-4",
+        "phases": [
+          "front-feet-raised",
+          "airborne-legs-extended",
+          "front-feet-land",
+          "hind-feet-land-crouch"
+        ]
+      },
+      "rootMotion": {
+        "mode": "external",
+        "direction": "left"
+      }
+    },
+    {
+      "enemy": "boar",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "ground",
+      "prompt": "../../PROMPT.md",
+      "id": "hit",
+      "label": "被弾",
+      "directory": "assets/enemies/boar/motions/hit",
+      "source": "../../source/boar-hit-generated-v2.png",
+      "columns": 2,
+      "columnEdges": [
+        0,
+        627,
+        1254
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "scale": 0.35,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "衝撃でのけぞる",
+          "durationMs": 100,
+          "offset": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        {
+          "cell": 1,
+          "phase": "頭を上げて反動を受ける",
+          "durationMs": 140,
+          "offset": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "体勢を立て直す",
+          "durationMs": 140,
+          "offset": {
+            "x": 3,
+            "y": 0
+          }
+        },
+        {
+          "cell": 3,
+          "phase": "待機の基準姿勢へ",
+          "durationMs": 160
+        }
+      ],
+      "reuseIdle": [
+        3
+      ]
+    },
+    {
+      "enemy": "boar",
+      "frameWidth": 320,
+      "frameHeight": 224,
+      "pivot": {
+        "x": 160,
+        "y": 207
+      },
+      "anchorMode": "ground",
+      "prompt": "../../PROMPT.md",
+      "id": "down",
+      "label": "撃破",
+      "directory": "assets/enemies/boar/motions/down",
+      "source": "../../source/boar-down-generated-v2.png",
+      "columns": 2,
+      "columnEdges": [
+        0,
+        627,
+        1254
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "scale": 0.34,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "前脚が崩れる",
+          "durationMs": 140
+        },
+        {
+          "cell": 1,
+          "phase": "胸を地面へ落とす",
+          "durationMs": 220
+        },
+        {
+          "cell": 2,
+          "phase": "手前の左側へ倒れる",
+          "durationMs": 260
+        },
+        {
+          "cell": 3,
+          "phase": "横倒し・最終姿勢を保持",
+          "durationMs": 400
+        }
+      ],
+      "terminal": true
+    }
+  ],
+  "walkRefinementSources": [
+    "source/boar-move-frame2-generated-v1.png",
+    "source/boar-move-frame3-generated-v1.png",
+    "source/boar-move-frame4-generated-v1.png",
+    "source/boar-move-frame5-generated-v1.png"
+  ],
+  "chargeRefinement": {
+    "original": "source/boar-attack-generated-v4.png",
+    "edited": "source/boar-attack-generated-v5.png",
+    "output": "source/boar-attack-refined-v1.png",
+    "cell": {
+      "x": 621,
+      "y": 0,
+      "width": 633,
+      "height": 627
+    }
+  }
+}

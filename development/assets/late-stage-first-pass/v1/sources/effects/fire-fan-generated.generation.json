@@ -1,0 +1,27 @@
+{
+  "id": "effects/fire-fan",
+  "effect": "fire-fan",
+  "region": "volcano",
+  "label": "灼熱の扇",
+  "kind": "origin",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/fire-fan-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. huge leftward fan of layered yellow-white flame tongues, red-black outer rim and orange sparks; wide angular fan silhouette. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed emission point at (850,512), extend toward LEFT. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-71c9d84e-3eab-459a-ab45-1d57d4868242.png",
+  "sha256": "ede7a99b5ab1c8dc7ad751101b50e92d78b932ea36496bc698fad1cb887a6ec5",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "右の放射点から左へ扇状に拡大する。"
+    ],
+    "issues": [
+      "赤橙の背景光が混入。背景透過と黒い外縁を検収する。",
+      "最大コマの左端がセル・原画の四辺に近い。発射点固定と見切れを確認する。"
+    ]
+  }
+}

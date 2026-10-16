@@ -1,0 +1,101 @@
+{
+  "id": "effects/black-ring-slash",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "黒環薙ぎ",
+  "kind": "target",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/black-ring-slash-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 113,
+        "top": 43,
+        "right": 480,
+        "bottom": 394
+      },
+      "sourceWidth": 720,
+      "sourceHeight": 457,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 268022,
+      "transparentFraction": 0.8145575006078288
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 135,
+        "top": 14,
+        "right": 715,
+        "bottom": 449
+      },
+      "sourceWidth": 816,
+      "sourceHeight": 457,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 234914,
+      "transparentFraction": 0.6299448663491655
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 43,
+        "top": 5,
+        "right": 794,
+        "bottom": 543
+      },
+      "sourceWidth": 843,
+      "sourceHeight": 567,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 199619,
+      "transparentFraction": 0.4176295710498953
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 47,
+        "top": 79,
+        "right": 622,
+        "bottom": 512
+      },
+      "sourceWidth": 693,
+      "sourceHeight": 567,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 277499,
+      "transparentFraction": 0.7062283199849337
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/black-ring-slash-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

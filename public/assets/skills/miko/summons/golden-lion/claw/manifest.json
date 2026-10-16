@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "golden-lion-claw",
+  "character": "miko",
+  "subject": "golden-lion",
+  "group": "summon",
+  "motion": "claw",
+  "sheet": "golden-lion-claw.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 390,
+  "loop": false,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.08005718370264475,
+  "frames": [
+    {
+      "index": 0,
+      "file": "golden-lion-claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "claw",
+      "bounds": {
+        "l": 35,
+        "t": 62,
+        "r": 99,
+        "b": 116,
+        "n": 2407,
+        "width": 65,
+        "height": 55
+      }
+    },
+    {
+      "index": 1,
+      "file": "golden-lion-claw-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "claw",
+      "bounds": {
+        "l": 33,
+        "t": 62,
+        "r": 108,
+        "b": 116,
+        "n": 2555,
+        "width": 76,
+        "height": 55
+      }
+    },
+    {
+      "index": 2,
+      "file": "golden-lion-claw-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "claw",
+      "bounds": {
+        "l": 29,
+        "t": 63,
+        "r": 93,
+        "b": 116,
+        "n": 2508,
+        "width": 65,
+        "height": 54
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/golden-lion-claw-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/golden-lion-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "Whole alpha-connected source silhouettes and their nearest detached particles. No recoloring, drawing or interpolation."
+}

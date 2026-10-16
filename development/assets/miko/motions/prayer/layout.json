@@ -1,0 +1,40 @@
+{
+  "source": "source/miko-prayer-generated-v1.png",
+  "columns": 2,
+  "rows": 2,
+  "scale": 0.30465116279069765,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "rect": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "rect": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      }
+    },
+    {
+      "rect": {
+        "x": 627,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      }
+    }
+  ]
+}

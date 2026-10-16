@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "bandage-soldier",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "bandage-soldier-hit.png",
+  "preview": "../../../../../../development/assets/enemies/bandage-soldier/motions/hit/bandage-soldier-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 960,
+  "height": 320,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 320,
+  "frameCount": 2,
+  "pivot": {
+    "x": 278,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 380,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/bandage-soldier/source/hit-registered.png",
+  "sourceScale": 0.44468546637744033,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 170,
+      "phase": "被弾",
+      "bounds": {
+        "left": 148,
+        "top": 112,
+        "right": 370,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 668,
+        "height": 600
+      },
+      "sourceAnchor": {
+        "x": 400,
+        "y": 528
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 210,
+      "phase": "復帰",
+      "bounds": {
+        "left": 164,
+        "top": 97,
+        "right": 370,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 668,
+        "y": 0,
+        "width": 668,
+        "height": 600
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 545
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/bandage-soldier-reaction-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/bandage-soldier.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 731,
+          "height": 653
+        },
+        {
+          "x": 731,
+          "y": 0,
+          "width": 671,
+          "height": 653
+        },
+        {
+          "x": 0,
+          "y": 653,
+          "width": 707,
+          "height": 469
+        },
+        {
+          "x": 707,
+          "y": 653,
+          "width": 695,
+          "height": 469
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "status": "design-review",
+  "assets": [
+    {
+      "id": "distant",
+      "label": "遺跡・遠景",
+      "file": "distant.png",
+      "width": 1672,
+      "height": 941,
+      "transparentRatio": 0,
+      "partialAlphaPixels": 0,
+      "opaqueBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1671,
+        "bottom": 940
+      },
+      "edgeOpaquePixels": 5222,
+      "redOpaquePixels": 0,
+      "topBandVisible": 708928,
+      "hasTransparency": false,
+      "noClipping": true
+    },
+    {
+      "id": "ground-near",
+      "label": "遺跡・石床と近景",
+      "file": "ground-near.png",
+      "width": 1672,
+      "height": 941,
+      "transparentRatio": 0.5591,
+      "partialAlphaPixels": 693123,
+      "opaqueBounds": {
+        "left": 0,
+        "top": 508,
+        "right": 1671,
+        "bottom": 940
+      },
+      "edgeOpaquePixels": 2507,
+      "redOpaquePixels": 0,
+      "topBandVisible": 0,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "stone-guard",
+      "label": "石の衛兵",
+      "file": "stone-guard.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.6241,
+      "partialAlphaPixels": 590192,
+      "opaqueBounds": {
+        "left": 81,
+        "top": 88,
+        "right": 1147,
+        "bottom": 1132
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 191887,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "rune-gargoyle",
+      "label": "ルーンガーゴイル",
+      "file": "rune-gargoyle.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.6149,
+      "partialAlphaPixels": 604960,
+      "opaqueBounds": {
+        "left": 89,
+        "top": 88,
+        "right": 1230,
+        "bottom": 1200
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 229065,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "ancient-crossbowman",
+      "label": "古代の弩兵",
+      "file": "ancient-crossbowman.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7611,
+      "partialAlphaPixels": 375216,
+      "opaqueBounds": {
+        "left": 78,
+        "top": 59,
+        "right": 1087,
+        "bottom": 1182
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 186857,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "floating-magic-core",
+      "label": "浮遊魔導器",
+      "file": "floating-magic-core.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.5938,
+      "partialAlphaPixels": 638051,
+      "opaqueBounds": {
+        "left": 77,
+        "top": 90,
+        "right": 1177,
+        "bottom": 1118
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 257454,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "armored-golem",
+      "label": "重装ゴーレム",
+      "file": "armored-golem.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.6463,
+      "partialAlphaPixels": 555658,
+      "opaqueBounds": {
+        "left": 193,
+        "top": 199,
+        "right": 1092,
+        "bottom": 1085
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 184439,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "ancient-ballista",
+      "label": "古代弩砲兵",
+      "file": "ancient-ballista.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7889,
+      "partialAlphaPixels": 331073,
+      "opaqueBounds": {
+        "left": 183,
+        "top": 281,
+        "right": 1047,
+        "bottom": 1075
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 112175,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "seraphina",
+      "label": "魔導人形セラフィナ",
+      "file": "seraphina.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7585,
+      "partialAlphaPixels": 379187,
+      "opaqueBounds": {
+        "left": 284,
+        "top": 137,
+        "right": 1021,
+        "bottom": 1120
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 114683,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "ancient-titan",
+      "label": "古代機兵タイタン",
+      "file": "ancient-titan.png",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7001,
+      "partialAlphaPixels": 470894,
+      "opaqueBounds": {
+        "left": 266,
+        "top": 198,
+        "right": 1022,
+        "bottom": 1054
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 164554,
+      "hasTransparency": true,
+      "noClipping": true
+    }
+  ]
+}

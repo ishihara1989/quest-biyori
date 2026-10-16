@@ -1,0 +1,14 @@
+# mage-chant
+
+Built-in image_gen. Reference: mage idle and original design. RGBA preserved.
+
+Use case: identity-preserve. Asset type: RPG transparent pixel-art CASTING LOOP sprite atlas.
+Image 1 is the immutable pixel-art mage style/proportions/palette and neutral staff pose. Image 2 is character identity reference only.
+Exactly FOUR full-body poses in 2x2 equal cells, chronological top-left, top-right, bottom-left, bottom-right. All transparent RGBA; no labels, effects, floor, shadow or borders. Same young female mage with rich blue LONG hair flowing to the LEFT, indigo witch hat with golden edge and cyan jewel, indigo gold-trim robes with cream skirt, gold ornate single straight wooden staff with blue crystal on viewer RIGHT. Fine crisp pixel-art consistent with image1, same head/body size and equipment, right-facing 3/4 side view, fixed hat/head/feet. Eyes CLOSED in ALL four frames, calm focused expression. Exactly two arms, staff held in same hand as idle. Body and feet stay still.
+Position per cell normalized: feet center (.48,.91), head center (.48,.34), staff gripping hand (.67,.57), staff gem (.71,.22), staff bottom (.61,.86); whole character including hat about .75 cell height. Staff stays in idle upright pose for all frames. Head and outfit identical across frames; ONLY long hair tips and a few robe hems move.
+Hair floats outward/upward as if magic lifts it, distinct from gravity-hanging idle hair. Hair trajectory as a LOOP: frame1 neutral lifted hair curved left/up with tips around (.18,.47); frame2 lifted tips travel farther up around (.16,.43); frame3 tips sweep slightly down/out around (.12,.47); frame4 return close to frame1, tips (.16,.50). Roots stay attached under hat, locks preserve length, volume, saturation. Closed eyelids clearly visible. The hair must visibly sway; NOT four identical frames. Frame4->frame1 is small movement. No body levitation: boots touch same baseline. Keep each entire pose WITHIN its own cell with minimum 8% padding. No magic glow baked into character; casting aura generated separately. Match original reference colors, do not lighten/desaturate.
+
+## Transparency correction
+
+Use case: background-extraction. Asset type: transparent pixel-art RPG casting loop sprite atlas.
+EDIT ONLY image1. It is four closed-eye mage frames with blue hair floating. Remove EVERY blue/purple/gold haze, aura, bloom, vignette, glow and shadow around the four characters. Empty space must be fully transparent RGBA, alpha=0, crisp silhouettes. Keep all four characters, their poses, coordinates, same pixel scale, eye closure, hair motion, staff, equipment, colors and shape unchanged. Keep the 2x2 arrangement. Do not repaint or move the characters. Do not add any effects or gradients. Image2 is the immutable crisp pixel-art palette/style reference; preserve matching colors. Flat transparent cutouts, only character pixels including actual hair and staff. Four poses remain distinct and right-facing.

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head><base href="/">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>忍者・呪術師・巫女 — モーション</title>
+  <link rel="stylesheet" href="/development/labs/css/mage-lab.css"><link rel="stylesheet" href="/development/labs/css/ritual-lab.css">
+  <script defer src="/js/core/motion-playback.js"></script><script defer src="/development/labs/js/ritual-motions.js"></script><script defer src="/development/labs/js/ritual-lab.js"></script>
+</head>
+<body><main>
+  <header><div><small>SPRITE LAB / RITUAL</small><h1 id="title">忍者</h1></div><nav><a href="/game.html">冒険</a><a href="/development/labs/index.html" id="frames-link">コマ一覧</a></nav></header>
+  <div class="character-picker" id="characters" role="group" aria-label="職を選択"></div>
+  <div class="action-picker" id="actions" role="group" aria-label="動作を選択">
+    <button data-action="attack" aria-pressed="true" title="通常攻撃を再生">✦ <span>通常攻撃</span></button>
+    <button data-action="ritual" aria-pressed="false" title="印・詠唱・祈りから終了動作まで再生">◈ <span id="ritual-label">印 → 待機</span></button>
+    <button data-action="loop" aria-pressed="false" title="印・詠唱・祈りを繰り返し再生">∞ <span id="loop-label">印</span></button>
+  </div>
+  <section class="preview">
+    <canvas id="ritual-stage" width="1024" height="576" aria-label="職別モーションのプレビュー" role="img"></canvas>
+    <p id="status" role="status">素材を読み込んでいます…</p><span id="phase"></span>
+  </section>
+  <div class="transport">
+    <button id="play" title="再生・一時停止（Space）" aria-label="一時停止" disabled>Ⅱ</button>
+    <button id="previous" title="前のコマ（←）" aria-label="前のコマ" disabled>‹</button>
+    <button id="next" title="次のコマ（→）" aria-label="次のコマ" disabled>›</button>
+    <button id="restart" title="先頭から再生" aria-label="先頭から再生" disabled>↺</button>
+    <label>速度 <select id="speed"><option value=".25">¼×</option><option value=".5">½×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label>
+    <label><input type="checkbox" id="effects" checked>演出</label><label><input type="checkbox" id="flip">左向き</label>
+    <output id="time">0ms</output>
+  </div>
+  <input id="scrub" type="range" min="0" max="3200" step="1" value="0" aria-label="再生位置">
+  <div class="sequence" id="sequence" aria-label="動作の順序"></div>
+  <div class="asset-links" id="assets" aria-label="個別モーションのコマ一覧"></div>
+</main></body></html>

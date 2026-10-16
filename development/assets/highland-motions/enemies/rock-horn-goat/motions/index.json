@@ -1,0 +1,27 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "enemies/rock-horn-goat/motions/idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "enemies/rock-horn-goat/motions/move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "enemies/rock-horn-goat/motions/hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "enemies/rock-horn-goat/motions/down/manifest.json"
+  },
+  {
+    "id": "charge",
+    "label": "短突進",
+    "manifest": "enemies/rock-horn-goat/motions/charge/manifest.json"
+  }
+]

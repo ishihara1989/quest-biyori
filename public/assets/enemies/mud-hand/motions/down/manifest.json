@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "mud-hand",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "mud-hand-down.png",
+  "preview": "../../../../../../development/assets/enemies/mud-hand/motions/down/mud-hand-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/mud-hand/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/mud-hand/source/down-registered.png",
+  "sourceScale": 0.40350877192982454,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "待機から",
+      "bounds": {
+        "left": 60,
+        "top": 88,
+        "right": 292,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 616,
+        "height": 541
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/mud-hand/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 86,
+        "top": 131,
+        "right": 331,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 631,
+        "y": 0,
+        "width": 677,
+        "height": 488
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 364
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 220,
+      "phase": "作用",
+      "bounds": {
+        "left": 98,
+        "top": 158,
+        "right": 348,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 488,
+        "width": 654,
+        "height": 488
+      },
+      "sourceAnchor": {
+        "x": 327,
+        "y": 298
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 360,
+      "phase": "終端",
+      "bounds": {
+        "left": 107,
+        "top": 196,
+        "right": 347,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 654,
+        "y": 488,
+        "width": 654,
+        "height": 488
+      },
+      "sourceAnchor": {
+        "x": 305,
+        "y": 202
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/mud-hand/source/down-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 123885,
+      "left": 47,
+      "top": 130,
+      "right": 621,
+      "bottom": 585,
+      "cx": 338.09252128990596,
+      "cy": 354.3362796141583
+    },
+    {
+      "id": 2,
+      "count": 118654,
+      "left": 637,
+      "top": 273,
+      "right": 1245,
+      "bottom": 621,
+      "cx": 931.062762317326,
+      "cy": 458.3461998752676
+    },
+    {
+      "id": 9,
+      "count": 104027,
+      "left": 12,
+      "top": 891,
+      "right": 633,
+      "bottom": 1173,
+      "cx": 324.7502090803349,
+      "cy": 1061.3543983773443
+    },
+    {
+      "id": 12,
+      "count": 65282,
+      "left": 647,
+      "top": 994,
+      "right": 1245,
+      "bottom": 1180,
+      "cx": 943.0750283385926,
+      "cy": 1100.2479243895714
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "enemy": "harpy-queen",
+  "motion": "dive",
+  "facing": "left",
+  "label": "急降下",
+  "sheet": "harpy-queen-dive.png",
+  "preview": "../../../../../../development/assets/enemies/harpy-queen/motions/dive/harpy-queen-dive-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 2600,
+  "height": 530,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 650,
+  "frameHeight": 530,
+  "frameCount": 4,
+  "pivot": {
+    "x": 370,
+    "y": 506
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/highland-motions/enemies/harpy-queen/registered/dive.png",
+  "sourceScale": 0.5042016806722689,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "charge-impact",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "dive-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 163,
+        "top": 151,
+        "right": 557,
+        "bottom": 450
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 879,
+        "height": 813
+      },
+      "sourceAnchor": {
+        "x": 456,
+        "y": 631
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -56
+      }
+    },
+    {
+      "index": 1,
+      "file": "dive-02.png",
+      "x": 650,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 221,
+        "top": 156,
+        "right": 545,
+        "bottom": 418
+      },
+      "sourceCell": {
+        "x": 879,
+        "y": 0,
+        "width": 879,
+        "height": 813
+      },
+      "sourceAnchor": {
+        "x": 370,
+        "y": 682
+      },
+      "bakedOffset": {
+        "x": 12,
+        "y": -88
+      }
+    },
+    {
+      "index": 2,
+      "file": "dive-03.png",
+      "x": 1300,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 154,
+        "top": 149,
+        "right": 489,
+        "bottom": 476
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 813,
+        "width": 879,
+        "height": 813
+      },
+      "sourceAnchor": {
+        "x": 435,
+        "y": 708
+      },
+      "bakedOffset": {
+        "x": -70,
+        "y": -30
+      }
+    },
+    {
+      "index": 3,
+      "file": "dive-04.png",
+      "x": 1950,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 183,
+        "top": 117,
+        "right": 538,
+        "bottom": 450
+      },
+      "sourceCell": {
+        "x": 879,
+        "y": 813,
+        "width": 879,
+        "height": 813
+      },
+      "sourceAnchor": {
+        "x": 398,
+        "y": 691
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -56
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/harpy-queen.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/harpy-queen/dive-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 709,
+          "height": 571
+        },
+        {
+          "x": 709,
+          "y": 0,
+          "width": 575,
+          "height": 571
+        },
+        {
+          "x": 0,
+          "y": 571,
+          "width": 675,
+          "height": 654
+        },
+        {
+          "x": 675,
+          "y": 571,
+          "width": 609,
+          "height": 654
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.1947791164658634,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 56,
+    "groundY": 506,
+    "legsTucked": true
+  },
+  "effectAssets": [
+    {
+      "id": "highland-charge-impact",
+      "manifest": "../../../../effects/highland-charge-impact/manifest.json"
+    }
+  ],
+  "action": {
+    "motion": "dive",
+    "warn": 1400,
+    "times": [
+      1880
+    ],
+    "power": 1,
+    "radius": 60,
+    "kind": "charge",
+    "effect": "charge-impact",
+    "status": null,
+    "push": 0,
+    "duration": 2380
+  }
+}

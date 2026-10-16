@@ -1,0 +1,10 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame body-only casting animation "sleep moon" for the adult dream demon from the fixed canonical reference.
+Exact same adult woman, lavender hair, red horns, pointed ears, black-and-gold dress, attached purple bat wings, one arrow-tip tail, two arms and exactly two booted legs. Refined crisp JRPG pixel art and unchanged reference palette, face, body proportions and LEFT-facing mild three-quarter camera.
+FOUR complete separate small poses in a 2x2 sprite sheet. Each fits inside the central 60% of its cell with 20% transparent border. No silhouette crosses into another cell. All horns fully visible with plenty of space ABOVE them; wing tips, tail and two boots also have broad margin. SAME body scale throughout.
+Movement plan normalized to each cell 0..1000: pelvis (520,580), head (480,300), both feet FLOAT with toes around y=830; no planted wide-legged stance. Wing roots stay attached near (520,380).
+Frame 1 PREPARE: two relaxed hands rise from (430,570),(550,570) toward chest; wings slightly drawn inward.
+Frame 2 HELD WINDUP: wings fold closer to her back, palms face each other at (460,440),(520,440), a TINY pale lavender glow of radius 15 between palms. Face looks left with quiet concentration. Horns remain identical and fully inside cell.
+Frame 3 RELEASE: both forearms reach together toward LEFT, palms at (310,500),(360,520), fingers distinct and attached to the two wrists. Torso leans only 6 degrees left, floating pelvis stays (510,580). Wings open modestly, hair and tail trail right. ONLY hands, NO drawn moon, projectile, beam, magic circle, clouds or external spell effect.
+Frame 4 RECOVERY: hands lower, wings and hair settle back to reference floating neutral pose; feet stay together and airborne.
+The moon/status effect is a separate asset and MUST NOT be drawn on the body sheet. No extra hands, legs, boots or tail. No glow behind character, no floor or shadow, no stars, hit flashes, text, labels, grid, watermark or painted checkerboard. True transparent PNG alpha.

@@ -1,0 +1,201 @@
+{
+  "id": "volcano-fire-beam",
+  "enemy": null,
+  "region": "volcano",
+  "label": "双脈竜息",
+  "kind": "origin",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "pivot": {
+    "x": 384,
+    "y": 256
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/fire-beam-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9407768249511719,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 52,
+        "top": 109,
+        "right": 464,
+        "bottom": 377
+      },
+      "visibleBounds": {
+        "left": 252,
+        "top": 190,
+        "right": 434,
+        "bottom": 309
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-beam-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 805,
+        "height": 516
+      },
+      "sourceScale": 0.529810656098635,
+      "sourceAnchor": {
+        "x": 650.8125,
+        "y": 284.6875
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8830184936523438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 57,
+        "top": 105,
+        "right": 435,
+        "bottom": 377
+      },
+      "visibleBounds": {
+        "left": 88,
+        "top": 179,
+        "right": 432,
+        "bottom": 322
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-beam-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 805,
+        "y": 0,
+        "width": 731,
+        "height": 516
+      },
+      "sourceScale": 0.529810656098635,
+      "sourceAnchor": {
+        "x": 616.375,
+        "y": 284.90625
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8410530090332031,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 16,
+        "top": 109,
+        "right": 408,
+        "bottom": 372
+      },
+      "visibleBounds": {
+        "left": 23,
+        "top": 164,
+        "right": 408,
+        "bottom": 331
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-beam-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 516,
+        "width": 757,
+        "height": 508
+      },
+      "sourceScale": 0.529810656098635,
+      "sourceAnchor": {
+        "x": 709.6875,
+        "y": 277.53125
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9702949523925781,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 32,
+        "top": 108,
+        "right": 444,
+        "bottom": 376
+      },
+      "visibleBounds": {
+        "left": 32,
+        "top": 215,
+        "right": 416,
+        "bottom": 284
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-beam-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 757,
+        "y": 516,
+        "width": 779,
+        "height": 508
+      },
+      "sourceScale": 0.529810656098635,
+      "sourceAnchor": {
+        "x": 663.65625,
+        "y": 278.6875
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/fire-beam/preview.gif",
+  "action": null
+}

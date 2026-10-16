@@ -1,0 +1,14 @@
+{
+  "character": "warrior",
+  "idle": "../manifest.json",
+  "motions": {
+    "forward": "forward/manifest.json",
+    "backward": "backward/manifest.json",
+    "jump": "jump/manifest.json",
+    "hit": "hit/manifest.json",
+    "down": "down/manifest.json",
+    "attack-overhead": "attack-overhead/manifest.json",
+    "attack-far-to-near": "attack-far-to-near/manifest.json",
+    "attack-near-to-far": "attack-near-to-far/manifest.json"
+  }
+}

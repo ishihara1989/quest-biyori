@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12 JST",
+  "gait": "trot",
+  "status": "adopted",
+  "standardAdopted": true,
+  "reference": "references/manticore.png",
+  "pivot": {
+    "x": 456,
+    "y": 556
+  },
+  "outputEye": {
+    "x": 310,
+    "y": 329
+  },
+  "registration": "Manual eye landmark and common body scale for individual revisions. Preserve generated pixels; no synthesized limbs.",
+  "frames": [
+    {
+      "source": "trot-v2/sources/frame-1-connected.png",
+      "eye": {
+        "x": 176,
+        "y": 414
+      },
+      "scale": 0.339,
+      "phase": "中立・A遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot-v2/sources/frame-2-focused.png",
+      "eye": {
+        "x": 176,
+        "y": 414
+      },
+      "scale": 0.339,
+      "phase": "手前閉／奥開・A遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot-v2/sources/frame-3-generated.png",
+      "eye": {
+        "x": 176,
+        "y": 414
+      },
+      "scale": 0.339,
+      "phase": "手前閉／奥開・B遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot-v2/sources/frame-4-generated.png",
+      "eye": {
+        "x": 176,
+        "y": 414
+      },
+      "scale": 0.339,
+      "phase": "中立・B遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot-v2/sources/frame-5-generated.png",
+      "eye": {
+        "x": 176,
+        "y": 414
+      },
+      "scale": 0.339,
+      "phase": "手前開／奥閉・B遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot-v2/sources/frame-6-generated.png",
+      "eye": {
+        "x": 176,
+        "y": 414
+      },
+      "scale": 0.339,
+      "phase": "手前開／奥閉・A遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    }
+  ],
+  "completedDate": "2026-10-13 JST",
+  "coordinateGuide": "trot-v2/guide.json",
+  "generationParts": 6,
+  "framesPerPart": 1,
+  "migrationDecision": "User accepted V2 foot motion; frame1 far hind thigh connection repaired without changing gait",
+  "coordinateAdherence": "partial; computed targets are not measured generated positions"
+}

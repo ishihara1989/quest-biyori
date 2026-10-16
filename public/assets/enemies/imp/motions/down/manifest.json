@@ -1,0 +1,115 @@
+{
+  "id": "imp/down",
+  "label": "インプ・撃破",
+  "enemy": "imp",
+  "motion": "down",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "被弾に大きな衝撃星が直接描かれている。共通被弾演出との重複とセル余白を確認する。",
+    "撃破時の翼・尾・手足の重なりを検収する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": true,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "phase": "崩れる",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/reaction-generated.png",
+      "sourceSha256": "d8b98b14804b7a2a828650fd46f4e49fcc3414bec22bd168de8a70d921a067f5",
+      "sourceRect": {
+        "left": 0,
+        "top": 646,
+        "width": 624,
+        "height": 594
+      },
+      "sourceAnchor": [
+        383,
+        459
+      ],
+      "scale": 0.42283298097251587,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "81c3615f9fd5014a8704a421812a1d078c303c81e1b699e8223e2d8978cfdacd",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9262542724609375,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 144,
+        "top": 251,
+        "right": 394,
+        "bottom": 502
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "phase": "終端保持",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/reaction-generated.png",
+      "sourceSha256": "d8b98b14804b7a2a828650fd46f4e49fcc3414bec22bd168de8a70d921a067f5",
+      "sourceRect": {
+        "left": 624,
+        "top": 646,
+        "width": 645,
+        "height": 594
+      },
+      "sourceAnchor": [
+        262,
+        491
+      ],
+      "scale": 0.42283298097251587,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "eee8ccaf5b002f723f0804d1461287121a363661dd29012b8abaf2e5e3734409",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9378089904785156,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 189,
+        "top": 237,
+        "right": 446,
+        "bottom": 471
+      }
+    }
+  ],
+  "fingerprint": "5b859cf5e382e29342d7af13d37a163ebdd1931bcff36a362b82adeb02a7732c",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 445
+  },
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1400,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "hold",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/imp/down/manifest.json",
+  "sourceFingerprint": "5b859cf5e382e29342d7af13d37a163ebdd1931bcff36a362b82adeb02a7732c",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "obsidian-executioner/move-2",
+  "source": "sources/obsidian-executioner/move-frame-4-v5.png",
+  "selected": false,
+  "prompt": "ONE WALKING pose, frame4 of6. Immutable canonical image1, approved near-leg lifted pose5 image2. Preserve helmet/head/torso/axe/both hands/cape/armor/color/pixel clusters from image2. Change ONLY legs: lower the lifted SCREEN-RIGHT near knee, extend its lower leg BACKWARD RIGHT, near boot toes touch ground behind right hip with heel raised. SCREEN-LEFT far leg stays straight with boot firmly planted FORWARD LEFT, supporting body. Exactly2 connected legs and2 boots, no extra foot. Never raise left knee. Fixed upright torso facingLEFT3/4. Entire original double axe and cape with generous padding inside transparent canvas. True alpha, no floor/shadow/aura/VFX/text. Same original weapon blade shape and haft length, both hands continuously grip.",
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-executioner.png",
+      "sha256": "f3e9668fb5b632ea2ad16a0d6f0ca6c5eb1fa5c53eee22a445fef708ec7d9aa3"
+    },
+    {
+      "file": "sources/obsidian-executioner/move-frame-5-v5.png",
+      "sha256": "c99d68837c6c8cc99c3050327bf7f499bcbe42345795c52c4504ed11cfd52cdc"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "4f6e25464a9c3982bed0b221c2cece0773319ca8b6b30806d28962bc08302d56",
+  "reference": "references/obsidian-executioner.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-executioner/move-2-generated.png",
+  "issues": [
+    "前半と後半で足の甲・膝の向きが変わる。3→4・6→1の支持とマントの接続を確認する。",
+    "待機・移動間の胴体の基準位置合わせが必要。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

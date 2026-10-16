@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-12 JST",
+  "sixExistingEnemyPixelsUnchanged": true,
+  "fourExistingMaterialPixelsUnchanged": true,
+  "rareCell": {
+    "left": 512,
+    "top": 512,
+    "width": 512,
+    "height": 512
+  },
+  "mammothCell": {
+    "left": 454,
+    "top": 903,
+    "width": 347,
+    "height": 284
+  },
+  "references": [
+    {
+      "id": "glacier-ice-tusk-mammoth",
+      "bounds": {
+        "left": 30,
+        "top": 131,
+        "width": 1218,
+        "height": 997
+      }
+    },
+    {
+      "id": "glacier-mammoth-ice-tusk",
+      "bounds": {
+        "left": 127,
+        "top": 95,
+        "width": 1044,
+        "height": 1109
+      }
+    },
+    {
+      "id": "glacier-mammoth-effects",
+      "bounds": {
+        "left": 35,
+        "top": 114,
+        "width": 1206,
+        "height": 1096
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "tusk-sweep",
+      "name": "氷牙大薙ぎ",
+      "file": "glacier/effects/tusk-sweep.png",
+      "source": "glacier/effects.png",
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": {
+        "left": 35,
+        "top": 114,
+        "width": 587,
+        "height": 472
+      },
+      "status": "static-design-reference"
+    },
+    {
+      "id": "ice-quake",
+      "name": "氷震踏砕",
+      "file": "glacier/effects/ice-quake.png",
+      "source": "glacier/effects.png",
+      "crop": {
+        "left": 627,
+        "top": 0,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": {
+        "left": 8,
+        "top": 119,
+        "width": 606,
+        "height": 445
+      },
+      "status": "static-design-reference"
+    },
+    {
+      "id": "glacial-boulder",
+      "name": "氷塊天落",
+      "file": "glacier/effects/glacial-boulder.png",
+      "source": "glacier/effects.png",
+      "crop": {
+        "left": 0,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": {
+        "left": 78,
+        "top": 14,
+        "width": 495,
+        "height": 548
+      },
+      "status": "static-design-reference"
+    },
+    {
+      "id": "aurora-crown",
+      "name": "白夜の氷冠",
+      "file": "glacier/effects/aurora-crown.png",
+      "source": "glacier/effects.png",
+      "crop": {
+        "left": 627,
+        "top": 627,
+        "width": 627,
+        "height": 627
+      },
+      "bounds": {
+        "left": 7,
+        "top": 31,
+        "width": 607,
+        "height": 552
+      },
+      "status": "static-design-reference"
+    }
+  ]
+}

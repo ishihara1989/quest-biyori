@@ -1,0 +1,298 @@
+[
+  {
+    "id": "mace-raise",
+    "type": "motion",
+    "prompt": "Generate a compact PIXEL ART game sprite atlas: three frames in a single horizontal row, canvas 1536x1024, TRANSPARENT background. Use provided idle sprite as exact style and character reference. Female blonde ponytail paladin, white/silver armor golden trim, navy cloth and cape, white/gold shield in left hand, spiked short mace in right. Same 3/4 right facing throughout. IMPORTANT sprite size: each whole character is only 300 pixels tall excluding raised mace, never more than 360 pixels wide. All 3 characters centered at x=256,768,1280 with soles y=800 and head-top y=500. Leave LOTS of completely empty transparent space above and between characters. No background colors, shadows, gradients, aura, labels or lines. Only 3 small character sprites. Motion MACE RAISE: frame1 right mace is down to left, mace head local (150,630), shield guarding right; frame2 right elbow raised and mace head local (190,440); frame3 right arm fully overhead and mace head local (270,325), shaft pointing vertically upward. Raised mace head should remain above forehead, shield still guards chest. Stable planted feet, no size changes. Pixel clusters, same silver/gold/navy palette as reference; do not repaint reference in smooth style. Exact THREE full-body distinct frames each well inside its 512px cell.",
+    "label": "メイスを掲げる",
+    "durations": [
+      160,
+      160,
+      200
+    ],
+    "phases": [
+      "構え",
+      "持ち上げる",
+      "頭上に掲げる"
+    ],
+    "to": "mace-slam",
+    "source": "development/assets/paladin/motions/mace-raise/source/mace-raise-generated-v1.png"
+  },
+  {
+    "id": "mace-slam",
+    "type": "motion",
+    "prompt": "Create a game sprite sheet of THREE pixel-art female paladin MACE SLAM poses. Use original idle as immutable color/proportion reference and raised mace sheet as motion continuity reference: begin with LAST pose of raised sheet. Actual transparent RGBA background, no floor, haze, shadows, effects, text or grid. Canvas1536x1024 in3 equal512px cells. Each body only300-350px tall, centered x256,768,1280; soles y900, head top y550. Blonde ponytail, silver/gold armor navy cloth, white/gold kite shield on left forearm to screen right, short silver spiked mace on right hand. All 3 sprites face RIGHT 3/4. Frame1 exact overhead arm/mace silhouette of last reference pose, mace head local(270,330), upright shaft and shield guards chest. Frame2 right arm swings mace in a powerful downward arc toward front/right, head local(390,550), elbow extended. Frame3 knees bent torso forward, mace head near ground at local(430,870), shield stays visible on left arm. All feet centered at same localx256 andy900. Same body size, armor pieces and hairstyle in all frames. Whole sprite maximum440px width, 28px transparent padding within each cell. Sharp limited-palette pixels, no magical glows baked into sprites. Clearly THREE poses only.",
+    "label": "メイスを叩きつける",
+    "durations": [
+      140,
+      100,
+      280
+    ],
+    "phases": [
+      "頭上の構え",
+      "振り下ろす",
+      "叩きつける"
+    ],
+    "from": "mace-raise",
+    "source": "development/assets/paladin/motions/mace-slam/source/mace-slam-generated-v1.png",
+    "xCuts": [
+      0,
+      500,
+      1050,
+      1536
+    ],
+    "anchors": [
+      null,
+      null,
+      {
+        "x": 264,
+        "y": 873
+      }
+    ],
+    "connection": {
+      "motion": "mace-raise",
+      "frame": 2
+    }
+  },
+  {
+    "id": "attack-mace",
+    "label": "メイス・通常攻撃",
+    "columns": 2,
+    "rows": 2,
+    "durations": [
+      180,
+      100,
+      240
+    ],
+    "phases": [
+      "振りかぶる",
+      "横打ち",
+      "振り抜く"
+    ],
+    "prompt": "Create PIXEL ART paladin NORMAL MACE ATTACK atlas. True transparent RGBA, ONLY THREE full-body poses in TWO BY TWO grid, canvas1536x1536, each cell768x768. Top left frame1, top right frame2, bottom left frame3, bottom right COMPLETELY EMPTY TRANSPARENT. No labels/grid/glow/haze/shadow/ground. Exact blonde ponytail silver/gold armor navy cloth female paladin in idle reference. LEFT arm white gold kite shield guards chest on screenright, RIGHT hand wields SHORT silver spiked mace. All3 face RIGHT 3/4. Character body350px tall, soles localy680, headtoplocaly330. Whole silhouette max650px wide with50px transparent padding.1 windup right arm draws mace backward to left, mace head(localx120,y475);2 strong HORIZONTAL strike right arm extended to screenright, mace head(localx620,y470);3 follow-through mace head(localx635,y570), knees bend torso forward. Clearly visible three different mace angles. Same body size, equipment, pixel palette and direction throughout. Arms not swapped. Only3sprites, blank fourth quadrant.",
+    "source": "development/assets/paladin/motions/attack-mace/source/attack-mace-generated-v1.png",
+    "type": "motion",
+    "rects": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      {
+        "x": 0,
+        "y": 627,
+        "width": 700,
+        "height": 627
+      }
+    ]
+  },
+  {
+    "id": "shield-raise",
+    "label": "盾を掲げる",
+    "durations": [
+      160,
+      160,
+      200
+    ],
+    "phases": [
+      "構え",
+      "持ち上げる",
+      "頭上に掲げる"
+    ],
+    "prompt": "Production PIXEL ART RPG animation atlas. True transparent RGBA, ONLY three full character silhouettes; no text/grid/shadow/haze/ground/effects. Exactly same blonde ponytail female paladin, blue eyes, silver armor gold trim navy cloth, RIGHT hand short silver spiked mace and LEFT arm white/gold kite shield, 3/4 RIGHT facing in all frames. Use idle reference for exact proportions and palette. Canvas1536x1024, 3 equal512px cells in ONE row. Bodies350px tall at most, soles y880, head top y530, pelvis localx255. Whole sprite inside own cell with40px transparent margin. Identical body size, no horizontal travel inside cells. SHIELD RAISE:1 shield center(localx360,y690) guarding chest;2 shield center(x345,y500) lifted to face height;3 shield center(x325,y345) ABOVE her head with left arm raised. Shield is tall kite shield with pointed bottom, white silver face gold rim cross. Her face remains visible to LEFT of raised shield. Right hand keeps mace DOWN on screenleft throughout. Show shield moving upward in distinct steps and arm extending. Feet stationary.",
+    "source": "development/assets/paladin/motions/shield-raise/source/shield-raise-generated-v1.png",
+    "type": "motion"
+  },
+  {
+    "id": "shield-plant",
+    "label": "盾を突き立てる",
+    "durations": [
+      160,
+      160,
+      200
+    ],
+    "phases": [
+      "引き上げる",
+      "押し下げる",
+      "突き立てる"
+    ],
+    "prompt": "Production PIXEL ART RPG animation atlas. True transparent RGBA, ONLY three full character silhouettes; no text/grid/shadow/haze/ground/effects. Exactly same blonde ponytail female paladin, blue eyes, silver armor gold trim navy cloth, RIGHT hand short silver spiked mace and LEFT arm white/gold kite shield, 3/4 RIGHT facing in all frames. Use idle reference for exact proportions and palette. Canvas1536x1024, 3 equal512px cells in ONE row. Bodies350px tall at most, soles y880, head top y530, pelvis localx255. Whole sprite inside own cell with40px transparent margin. Identical body size, no horizontal travel inside cells. SHIELD PLANT into ground:1 left elbow lifts kite shield so bottom point at(localx355,y730), torso upright;2 she bends knees and FORCEFULLY drives shield downward, bottom at(x355,y820);3 crouched low with left hand pushing shield top, pointed shield bottom planted at(x355,y890) level of boot soles. Right hand holds short mace down on screenleft. Preserve shield pointed shape; show distinctly descending body and shield, no dirt or ground graphics.",
+    "source": "development/assets/paladin/motions/shield-plant/source/shield-plant-generated-v1.png",
+    "type": "motion"
+  },
+  {
+    "id": "shield-advance",
+    "type": "motion",
+    "source": "development/assets/paladin/motions/shield-advance/source/shield-advance-generated-v1.png",
+    "prompt": "Generate THREE new walk frames of the reference blonde female pixel art paladin facing RIGHT, guarding with white/gold kite SHIELD on her LEFT arm(screenright), short spiked MACE held back low on RIGHT hand(screenleft). Silver gold navy armor exact palette as idle. True transparent background, no text/grid/shadows/effects. One horizontal row of3 sprites, canvas1536x1024, leave generous transparent margins. IMPORTANT show the OTHER LEG stepping forward: the NEAR leg is the character's LEFT leg, visible large silver knee on screen LEFT side of body in idle. This foreground left leg must move ACROSS IN FRONT of the other shin to the RIGHT. Frame1 foreground LEFT thigh slopes diagonally DOWN RIGHT and foreground LEFT silver boot plants far FORWARD to screenright, while BACKGROUND right shin slopes downLEFT to rear boot on screenleft. Frame2 weight stays on foreground LEFT leg planted screenright below chest/shield; BACKGROUND RIGHT knee bends behind her and its boot lifts BEHIND on screenleft. Frame3 BACKGROUND RIGHT knee rises toward enemy behind the shield on screenright, its boot in AIR to screenright; foregroundLEFT foot planted atscreenleft under pelvis. Entire torso leaning forward, shield upright and fixed. This has to look like an alternating walking gait with crossed legs, not all frames with the same knee lifted. No direction flips. Each body roughly350px tall, centered in its cell, soles atlocaly870, clear empty30px margin, wholebody andweapons fit.\n\n## 奥脚の半周期\nProduction PIXEL ART RPG animation atlas. True transparent RGBA, ONLY three full character silhouettes; no text/grid/shadow/haze/ground/effects. Exactly same blonde ponytail female paladin, blue eyes, silver armor gold trim navy cloth, RIGHT hand short silver spiked mace and LEFT arm white/gold kite shield, 3/4 RIGHT facing in all frames. Use idle reference for exact proportions and palette. Canvas1536x1024, 3 equal512px cells in ONE row. Bodies350px tall at most, soles y880, head top y530, pelvis localx255. Whole sprite inside own cell with40px transparent margin. Identical body size, no horizontal travel inside cells. SHIELD ADVANCE WALK HALF CYCLE A, exact3poses. Shield firmly upright in front(screenright), center(x350,y690), torso leans forward, right hand holds mace tucked BACK at screenleft. 1 NEAR/foreground leg extended FORWARD(screenright boot x305,y880), FAR/background boot BACK(x205,y880). 2 weight on near leg underhip(x280,y880), FAR leg BENT lifted behind(body boot x225,y835). 3 FAR knee moving FORWARD, lifted boot(x300,y840), NEAR boot back(x220,y880). Both knees visibly alternate. Shield/arms fixed; hair gently swings. All face RIGHT. This is not direction variants. Three unique gait phases.",
+    "parts": [
+      {
+        "source": "development/assets/paladin/motions/shield-advance/source/shield-advance-part-1.png",
+        "columns": 3,
+        "count": 3
+      },
+      {
+        "source": "development/assets/paladin/motions/shield-advance/source/shield-advance-part-2.png",
+        "columns": 3,
+        "count": 3
+      }
+    ],
+    "label": "盾を構えて前進",
+    "loop": true,
+    "frameMs": 110,
+    "phases": [
+      "手前脚・接地",
+      "奥脚・浮上",
+      "奥脚・踏み出し",
+      "奥脚・接地",
+      "手前脚・浮上",
+      "手前脚・踏み出し"
+    ]
+  },
+  {
+    "id": "icons-1",
+    "type": "icons",
+    "columns": 4,
+    "rows": 3,
+    "ids": [
+      "mace",
+      "purify",
+      "hammer",
+      "wave",
+      "aegis",
+      "charge",
+      "spear",
+      "provoke",
+      "bash",
+      "sanctuary",
+      "judgment",
+      "reflect"
+    ],
+    "prompt": "Create a polished crisp PIXEL ART RPG skill ICON ATLAS on TRUE TRANSPARENT RGBA background. EXACT4 columns by3 rows,12 equal square cells in 1536x1152canvas, row-major order. Each cell contains ONE distinct readable centered standalone emblem, no tile backgrounds, text, numbers, borders or grid, at least50px empty margin around each emblem. White silver and warm gold palette with cyan highlights, navy outlines, high contrast at96px. Paladin holy magic/armor vocabulary. Order: 1: silver spiked short mace, blunt strike; 2: white luminous cleansing ring with blue droplet dispelling violet poison; 3: gold holy hammer impact; 4: fan-shaped gold shockwave pushing purple foes; 5: white gold kite shield shining; 6: shield with forward motion streaks; 7: straight luminous golden spear; 8: mace striking a shield with gold sound ripples; 9: shield striking ground cracked rubble; 10: holy circle with small green healing cross; 11: huge celestial gold hammer falling; 12: mirror shield reflecting violet bolt. All isolated emblems fully inside their own cells. No objects in empty gutters.",
+    "source": "development/assets/skills/paladin/source/icons-1-generated-v1.png"
+  },
+  {
+    "id": "icons-2",
+    "type": "icons",
+    "columns": 3,
+    "rows": 3,
+    "ids": [
+      "pillar",
+      "wall",
+      "fortress",
+      "crusade",
+      "ray",
+      "bastion",
+      "heavens",
+      "revenge",
+      "ultimate"
+    ],
+    "prompt": "Create a polished crisp PIXEL ART RPG skill ICON ATLAS on TRUE TRANSPARENT RGBA background. EXACT3 columns by3 rows,9 equal square cells in1536x1536canvas, row-major order. Each cell contains ONE distinct readable centered standalone emblem, no tile backgrounds, text, numbers, borders or grid, at least60px empty margin around each emblem. White silver and warm gold palette with cyan highlights, navy outlines, high contrast at96px. Paladin holy magic/armor vocabulary. Order: 1: gold pillars enclosing purple enemy silhouette; 2: moving wall of luminous shields; 3: shield-shaped protective dome; 4: three radiant armored knights charging with shields; 5: multiple rays from celestial gold sigil; 6: huge luminous bastion battlements surrounding hearts; 7: rain of light swords beneath great gold cross; 8: gold shield collecting purple energy and returning gold shockwave; 9: divine shield above colossal holy hammer with stars. All isolated emblems fully inside their own cells.",
+    "source": "development/assets/skills/paladin/source/icons-2-generated-v1.png"
+  },
+  {
+    "id": "impact",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": false,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: BLUNT MACE IMPACT: compact silver white burst with small gold sparks and pixel debris;1 small contact spark,2 radial blunt impact star,3 broad dust/debris burst,4 dissipating fragments. No mace/character. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/impact-generated-v1.png"
+  },
+  {
+    "id": "wave",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": false,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: HOLY SHOCKWAVE: gold white fan-shaped crescent moving from LEFT towardRIGHT, golden ground ripples behind;1 compact bright crescent,2 expanding fan wave,3 broad bright wave with jagged edge,4 dispersing golden shards. No background or floor. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/wave-generated-v1.png"
+  },
+  {
+    "id": "shield",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": true,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: HOLY AEGIS: upright giant translucent luminous white/cyan KITE SHIELD with gold border and stylized gold cross, fully visible whole silhouette;1 thin emerging shield outline,2 solid radiant shield,3 full shield shimmering bright,4 full shield softly fading. No character. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/shield-generated-v1.png"
+  },
+  {
+    "id": "circle",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": true,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: SANCTUARY RING: circular golden sacred ring viewed from top with cyan/white runes and small healing lights;1 small emerging luminous circle,2 circle expands,3 complete radiant circle with heal sparks,4 shimmering complete circle. No lettering or readable text. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/circle-generated-v1.png"
+  },
+  {
+    "id": "hammer",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": false,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: CELESTIAL HAMMER: enormous standalone two-sided rectangular ornate GOLD HAMMER with short luminous shaft, facing downward, white gold celestial glow;1 faint outline gathering,2 solid ornate radiant hammer,3 blazing hammer descending,4 hammer exploding into golden impact fragments. NO character. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/hammer-generated-v1.png"
+  },
+  {
+    "id": "pillar",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": true,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: HOLY LIGHT PILLAR: vertical white-gold column encircled by cyan magical rings and chains;1 pillar rises small,2 towering light column,3 brilliant thick pillar and rings,4 pillar shatters into motes. Full vertical column visible with margin. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/pillar-generated-v1.png"
+  },
+  {
+    "id": "sword",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": false,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: HEAVENLY LIGHT SWORD: luminous gold white long sword pointing DOWN, crossguard like a holy cross;1 gathering sword outline,2 fully formed divine sword,3 sword descending with golden trails,4 cross-shaped golden blast. No character. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/sword-generated-v1.png"
+  },
+  {
+    "id": "knight",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": true,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: RADIANT CRUSADER apparition: full-body pixel art armored KNIGHT with closed helmet and large kite shield, facing RIGHT, made of translucent white cyan and gold light, a spectral support summon.1 manifesting body with feet grounded,2 shield-first forward lunge,3 extended charging step with luminous wake,4 dispersing afterimage. All four consistent same knight, no horse, no background. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/knight-generated-v1.png"
+  },
+  {
+    "id": "rampart",
+    "type": "effect",
+    "columns": 2,
+    "rows": 2,
+    "count": 4,
+    "frameMs": 140,
+    "loop": true,
+    "prompt": "Generate a production PIXEL ART transparent RPG effect animation sheet. TRUE TRANSPARENT RGBA background. Exactly FOUR frames in TWO BY TWO grid, canvas1536x1536, eachcell768square. Equal spacing, all art at least80px inside cell edges. No text/grid/checkerboard/opaque background. Sharp pixel clusters with selective transparent luminous edges, white warmgold cyanpalette, high contrast. Row-major animation: LAST BASTION: a standalone connected line of3 HUGE translucent white gold shields joined into fortress battlements, stylized holy crosses;1 pale emerging three shields,2 joining gold borders,3 radiant completed wall,4 completed wall cracks with luminous fragments. No floor/background/characters. Eachframe isolated and centered in its own cell. Entire effect fits safely inside its cell. Transparent gaps.",
+    "source": "development/assets/skills/paladin/source/rampart-generated-v1.png"
+  }
+]

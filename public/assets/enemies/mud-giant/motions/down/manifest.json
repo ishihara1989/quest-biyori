@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "mud-giant",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "mud-giant-down.png",
+  "preview": "../../../../../../development/assets/enemies/mud-giant/motions/down/mud-giant-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/mud-giant/PROMPT.md",
+  "width": 2304,
+  "height": 416,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 416,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 399
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/mud-giant/source/down-registered.png",
+  "sourceScale": 0.5628517823639775,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 120,
+      "phase": "待機から",
+      "bounds": {
+        "left": 173,
+        "top": 100,
+        "right": 494,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 562,
+        "height": 514
+      },
+      "sourceAnchor": {
+        "x": 275,
+        "y": 497
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/mud-giant/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 139,
+        "top": 162,
+        "right": 529,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 718,
+        "y": 0,
+        "width": 820,
+        "height": 565
+      },
+      "sourceAnchor": {
+        "x": 413,
+        "y": 438
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 220,
+      "phase": "作用",
+      "bounds": {
+        "left": 133,
+        "top": 198,
+        "right": 543,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 565,
+        "width": 766,
+        "height": 565
+      },
+      "sourceAnchor": {
+        "x": 373,
+        "y": 373
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 416,
+      "durationMs": 360,
+      "phase": "終端",
+      "bounds": {
+        "left": 139,
+        "top": 263,
+        "right": 553,
+        "bottom": 399
+      },
+      "sourceCell": {
+        "x": 766,
+        "y": 565,
+        "width": 772,
+        "height": 565
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 258
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/mud-giant/source/down-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 196524,
+      "left": 94,
+      "top": 26,
+      "right": 727,
+      "bottom": 558,
+      "cx": 423.8514125501211,
+      "cy": 329.52703486597056
+    },
+    {
+      "id": 2,
+      "count": 173741,
+      "left": 785,
+      "top": 140,
+      "right": 1477,
+      "bottom": 562,
+      "cx": 1122.3189920628981,
+      "cy": 376.6078703357296
+    },
+    {
+      "id": 15,
+      "count": 159063,
+      "left": 26,
+      "top": 624,
+      "right": 755,
+      "bottom": 981,
+      "cx": 413.11863224005583,
+      "cy": 827.4632755574835
+    },
+    {
+      "id": 17,
+      "count": 107650,
+      "left": 776,
+      "top": 746,
+      "right": 1512,
+      "bottom": 988,
+      "cx": 1137.1376497909894,
+      "cy": 880.4450441244775
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

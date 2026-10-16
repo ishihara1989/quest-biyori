@@ -1,0 +1,11 @@
+{
+  "id": "purification-bolt",
+  "source": "development/assets/skills/miko/source/purification-bolt-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-c3438132-1ab7-4de9-87e9-e1ae4ed0aeea.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 3 chronological frames in ONE horizontal row of equal square cells. Large dramatic shrine VFX. ONE right-facing bundle of ivory zigzag paper strips with thick vermilion edge and gold knot, white-gold trailing rays point LEFT. Three frames paper streamers wave, same core at (.67,.50). No wand or character. All frames same scale and common center/ground. Subject fills .14..86 without touching cell margins. Keep all anatomy and motion effects entirely within each cell with clear 10% empty margins.",
+  "refs": [],
+  "receivedAt": "2026-10-10T15:18:44.334Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

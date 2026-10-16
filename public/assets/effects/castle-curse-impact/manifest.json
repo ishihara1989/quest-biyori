@@ -1,0 +1,186 @@
+{
+  "id": "castle-curse-impact",
+  "label": "呪弾・着弾",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "impact",
+  "origin": "first-pass",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 80,
+      "phase": "発生",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/curse-impact-generated.png",
+      "sourceSha256": "8404526ada9d53539607e9ebc1d77bd40cd4333593decd26dbf737451874006e",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 611,
+        "height": 535
+      },
+      "sourceAnchor": [
+        383,
+        302
+      ],
+      "scale": 0.36,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "b933d1b324eb023636e8d5e8026c9a0b19a13d67474f55042e9a9daf2c4f0e19",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9640121459960938,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 118,
+        "top": 161,
+        "right": 338,
+        "bottom": 333
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "phase": "展開",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/curse-impact-generated.png",
+      "sourceSha256": "8404526ada9d53539607e9ebc1d77bd40cd4333593decd26dbf737451874006e",
+      "sourceRect": {
+        "left": 611,
+        "top": 0,
+        "width": 684,
+        "height": 535
+      },
+      "sourceAnchor": [
+        372,
+        300
+      ],
+      "scale": 0.36,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "d3ad06056cef2a3d7477c4d98b56a39283f7361515b61a177a41ff690e9b9fa2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9321975708007812,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 122,
+        "top": 151,
+        "right": 358,
+        "bottom": 341
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "最大",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/curse-impact-generated.png",
+      "sourceSha256": "8404526ada9d53539607e9ebc1d77bd40cd4333593decd26dbf737451874006e",
+      "sourceRect": {
+        "left": 0,
+        "top": 535,
+        "width": 749,
+        "height": 679
+      },
+      "sourceAnchor": [
+        414,
+        344
+      ],
+      "scale": 0.36,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "4126b06b53e4f8d876f8363ca4de04c4d51c1279698e6116430a4282910ee525",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8735885620117188,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 112,
+        "top": 132,
+        "right": 377,
+        "bottom": 369
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "収束",
+      "source": "../../../../development/assets/late-stage-first-pass/v1/sources/effects/curse-impact-generated.png",
+      "sourceSha256": "8404526ada9d53539607e9ebc1d77bd40cd4333593decd26dbf737451874006e",
+      "sourceRect": {
+        "left": 749,
+        "top": 535,
+        "width": 546,
+        "height": 679
+      },
+      "sourceAnchor": [
+        310,
+        350
+      ],
+      "scale": 0.36,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "49a22d93594778c37ce8fc752029011bb31453678ebcc55cbfd6abfa04335a89",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9418411254882812,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 144,
+        "top": 131,
+        "right": 337,
+        "bottom": 368
+      }
+    }
+  ],
+  "fingerprint": "da8645c65f0e0c87059eb64e4bd6612aa525dd4c554882d9ae3e62aa945fe716",
+  "events": [],
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 520,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/curse-impact/manifest.json",
+  "sourceFingerprint": "da8645c65f0e0c87059eb64e4bd6612aa525dd4c554882d9ae3e62aa945fe716",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

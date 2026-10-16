@@ -1,0 +1,48 @@
+{
+  "source": "source/mage-forward-generated-v8.png",
+  "columns": 4,
+  "rows": 2,
+  "rowSplit": 576,
+  "frames": [
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    },
+    {
+      "anchor": {
+        "x": 256
+      }
+    }
+  ]
+}

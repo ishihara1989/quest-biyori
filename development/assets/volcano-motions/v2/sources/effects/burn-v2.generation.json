@@ -1,0 +1,20 @@
+{
+  "id": "effects/burn",
+  "source": "sources/effects/burn-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. compact orange-red ember aura forming a hollow ring around a transparent character-shaped empty center. SMALL STATUS LOOP: only 5-7 tiny orange ember clusters in a broken low hollow oval, empty transparent center. Same compact size in all 4 phases, not an attack flame ring. Smooth 4->1. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "ee102881ba864b92bc1ebac05de9be6ca3757ec836bbe5bb912b581aba4ab041",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/burn-generated.png",
+  "issues": [
+    "火傷の小さな状態表示に対して炎の輪が大きく、攻撃エフェクトに近い。小粒の火種へ縮小・整理する。",
+    "最大コマが原画の端に近い。見切れと反復の寸法差を確認する。",
+    "輪の内側に赤い点が残る。キャラクター中心の透過を検収する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

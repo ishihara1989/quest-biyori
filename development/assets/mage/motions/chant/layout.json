@@ -1,0 +1,40 @@
+{
+  "source": "source/mage-chant-generated-v1.png",
+  "columns": 2,
+  "rows": 2,
+  "scale": 0.3134160090191657,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      }
+    },
+    {
+      "rect": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      }
+    },
+    {
+      "rect": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      }
+    },
+    {
+      "rect": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      }
+    }
+  ]
+}

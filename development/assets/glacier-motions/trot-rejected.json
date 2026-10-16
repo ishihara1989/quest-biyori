@@ -1,0 +1,44 @@
+[
+  {
+    "id": "frost-wolf/move-1",
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-cfa5e452-3058-467c-a932-b493ca7b15c9.png",
+    "source": "sources/frost-wolf/move-1-generated-v2.png",
+    "reason": "Rejected: diagonal support sequence not consistent in all three cells or silhouette crosses a cell boundary",
+    "sha256": "c1e5355f892eeba48e1e7bf4bd2875bc605d845fb2fabcf05b599fdf55dfb567"
+  },
+  {
+    "id": "frost-wolf/move-2",
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-d0026bf3-6a04-4f29-a23f-e688140f39c5.png",
+    "source": "sources/frost-wolf/move-2-generated-v2.png",
+    "reason": "Rejected: diagonal support sequence not consistent in all three cells or silhouette crosses a cell boundary",
+    "sha256": "af721ba555235b236d15a229ed5a715e63c49a4e3d3e619b5156c7559ac874b4"
+  },
+  {
+    "id": "fenrir/move-1",
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-f6e13723-ad4b-40f5-89ea-cecf6681fe7e.png",
+    "source": "sources/fenrir/move-1-generated-v2.png",
+    "reason": "Rejected: diagonal support sequence not consistent in all three cells or silhouette crosses a cell boundary",
+    "sha256": "9d47d0344c70e2807fd921101dfd940a6fa35b6952b1f4f8203a35c0debdb9ef"
+  },
+  {
+    "id": "fenrir/move-2",
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-9b694c1b-92db-4e58-9ebf-aba0b450cee1.png",
+    "source": "sources/fenrir/move-2-generated-v2.png",
+    "reason": "Rejected: diagonal support sequence not consistent in all three cells or silhouette crosses a cell boundary",
+    "sha256": "589b0634b6d5da409bc2eec44e7acd19373e6fa7060f522087a4cfd22c2de67e"
+  },
+  {
+    "id": "ice-tusk-mammoth/move-1",
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-47fc6139-1994-4829-a37e-6fde5e722015.png",
+    "source": "sources/ice-tusk-mammoth/move-1-generated-v2.png",
+    "reason": "Rejected: diagonal support sequence not consistent in all three cells or silhouette crosses a cell boundary",
+    "sha256": "cf98d5111ebbf42f8d18c0efbf12102da6a80ac8044936f832c85adb9ab36a8e"
+  },
+  {
+    "id": "ice-tusk-mammoth/move-2",
+    "file": "C:\\Users\\ashit\\.codex\\generated_images\\01a133ad-9047-7bc3-80aa-272ac46635f5\\exec-a55cae13-319d-4c0c-b1d4-4ee62f05ae8d.png",
+    "source": "sources/ice-tusk-mammoth/move-2-generated-v2.png",
+    "reason": "Rejected: diagonal support sequence not consistent in all three cells or silhouette crosses a cell boundary",
+    "sha256": "942ae9b4b29f5a5559526e96a627d857517fdd909df303f35baac45748b5589d"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/blade-spirit-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 691,
+      "height": 724
+    },
+    {
+      "x": 691,
+      "y": 0,
+      "width": 755,
+      "height": 724
+    },
+    {
+      "x": 1446,
+      "y": 0,
+      "width": 725,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 958
+    },
+    {
+      "x": 512,
+      "y": 958
+    },
+    {
+      "x": 512,
+      "y": 958
+    }
+  ],
+  "scale": 0.49628844114528103
+}

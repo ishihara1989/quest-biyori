@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "spider-web-slow",
+  "label": "クモ糸・攻撃移動低下",
+  "sheet": "spider-web-slow.png",
+  "preview": "../../../../development/assets/effects/spider-web-slow/spider-web-slow-preview.gif",
+  "prompt": "../../../../development/assets/effects/spider-web-slow/PROMPT.md",
+  "width": 896,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 224,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 112,
+    "y": 210
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/spider-web-slow/source-generated.png",
+  "sourceScale": 0.41350210970464135,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "spider-web-slow-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 24,
+        "top": 16,
+        "right": 200,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 425,
+        "y": 488
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "spider-web-slow-02.png",
+      "x": 224,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 26,
+        "top": 18,
+        "right": 198,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 341,
+        "y": 482
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "spider-web-slow-03.png",
+      "x": 448,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 32,
+        "top": 15,
+        "right": 192,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 419,
+        "y": 487
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "spider-web-slow-04.png",
+      "x": 672,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 37,
+        "top": 18,
+        "right": 187,
+        "bottom": 210
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 482
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

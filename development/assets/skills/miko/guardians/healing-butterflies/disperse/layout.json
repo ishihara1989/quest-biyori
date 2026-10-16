@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/healing-butterflies-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 624,
+      "height": 724
+    },
+    {
+      "x": 624,
+      "y": 0,
+      "width": 862,
+      "height": 724
+    },
+    {
+      "x": 1486,
+      "y": 0,
+      "width": 686,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 826
+    },
+    {
+      "x": 512,
+      "y": 826
+    },
+    {
+      "x": 512,
+      "y": 826
+    }
+  ],
+  "scale": 0.4901185770750988
+}

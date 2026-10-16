@@ -1,0 +1,5 @@
+# haze
+
+Built-in image_gen; generated RGBA preserved; nearest-neighbor packaging.
+
+Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a VERY LOW indigo shadow mist loop blowing sideways: 1 compact dark blue wisps with transparent gaps, 2 shift curls to right slightly, 3 stretch thinner flowing strands further right, 4 strands ease back towards starting shape. Each frame's visible mist is a flat horizontal oval only in lower quarter of the cell. No wall of smoke, no solid fog.

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "enemy": "slime",
+  "motion": "down",
+  "label": "撃破",
+  "facing": "left",
+  "sheet": "slime-down.png",
+  "preview": "../../../../../../development/assets/enemies/slime/motions/down/slime-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/slime/PROMPT.md",
+  "width": 1024,
+  "height": 224,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1100,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "source": "../../../../../../development/assets/enemies/slime/source/slime-generated-v1.png",
+  "sourceScale": 0.5,
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 140,
+      "phase": "崩れはじめ",
+      "sourceCellIndex": 0,
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 286,
+        "height": 320
+      },
+      "sourceAnchor": {
+        "x": 157,
+        "y": 271
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "left": 87,
+        "top": 153,
+        "right": 169,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 220,
+      "phase": "つぶれる",
+      "sourceCellIndex": 13,
+      "sourceCell": {
+        "x": 286,
+        "y": 860,
+        "width": 287,
+        "height": 250
+      },
+      "sourceAnchor": {
+        "x": 153,
+        "y": 175
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "left": 79,
+        "top": 167,
+        "right": 177,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 240,
+      "phase": "溶ける",
+      "sourceCellIndex": 14,
+      "sourceCell": {
+        "x": 573,
+        "y": 860,
+        "width": 286,
+        "height": 250
+      },
+      "sourceAnchor": {
+        "x": 145,
+        "y": 177
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "left": 79,
+        "top": 163,
+        "right": 177,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 500,
+      "phase": "水たまり・静止",
+      "sourceCellIndex": 15,
+      "sourceCell": {
+        "x": 859,
+        "y": 860,
+        "width": 286,
+        "height": 250
+      },
+      "sourceAnchor": {
+        "x": 139,
+        "y": 177
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "left": 79,
+        "top": 180,
+        "right": 177,
+        "bottom": 207
+      }
+    }
+  ]
+}

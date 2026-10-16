@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "enemy": "manticore",
+  "motion": "double-claw",
+  "facing": "left",
+  "label": "爪の二連撃",
+  "sheet": "manticore-double-claw.png",
+  "preview": "manticore-double-claw-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 3200,
+  "height": 580,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 800,
+  "frameHeight": 580,
+  "frameCount": 4,
+  "pivot": {
+    "x": 456,
+    "y": 556
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../registered/double-claw.png",
+  "sourceScale": 0.7261410788381742,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "claw",
+      "frame": 1,
+      "timeMs": 220,
+      "placement": "target"
+    },
+    {
+      "effect": "claw",
+      "frame": 2,
+      "timeMs": 400,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "double-claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 220,
+      "phase": "構え",
+      "bounds": {
+        "left": 171,
+        "top": 207,
+        "right": 717,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 817,
+        "height": 576
+      },
+      "sourceAnchor": {
+        "x": 425,
+        "y": 514
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "double-claw-02.png",
+      "x": 800,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 180,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 171,
+        "top": 186,
+        "right": 687,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 817,
+        "y": 0,
+        "width": 817,
+        "height": 576
+      },
+      "sourceAnchor": {
+        "x": 426,
+        "y": 543
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "double-claw-03.png",
+      "x": 1600,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 180,
+      "phase": "発動",
+      "bounds": {
+        "left": 174,
+        "top": 206,
+        "right": 690,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 576,
+        "width": 817,
+        "height": 576
+      },
+      "sourceAnchor": {
+        "x": 422,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "double-claw-04.png",
+      "x": 2400,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 177,
+        "top": 195,
+        "right": 663,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 817,
+        "y": 576,
+        "width": 817,
+        "height": 576
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 530
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/manticore.png",
+  "originalSources": [
+    "../../../../sources/manticore/double-claw-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 15,
+          "y": 33,
+          "width": 730,
+          "height": 468,
+          "mainComponent": 1
+        },
+        {
+          "x": 730,
+          "y": 33,
+          "width": 691,
+          "height": 496,
+          "mainComponent": 2
+        },
+        {
+          "x": 19,
+          "y": 561,
+          "width": 691,
+          "height": 469,
+          "mainComponent": 62
+        },
+        {
+          "x": 770,
+          "y": 563,
+          "width": 651,
+          "height": 483,
+          "mainComponent": 63
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.0299145299145298,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [
+    {
+      "id": "claw",
+      "manifest": "../../../../effects/claw/manifest.json"
+    }
+  ]
+}

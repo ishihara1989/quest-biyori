@@ -1,0 +1,5 @@
+# shaman / hex-weave
+
+Built-in image_gen. Locked reference: idle-01.png and original character design. Generated RGBA preserved.
+
+Use case: stylized-concept. Asset type: transparent pixel-art RPG animation spritesheet. Use the attached original shaman idle as the locked character/style reference. Female dark brown skin, silver ponytail, teal and orange cloth, gold ornaments, bone necklace, one crooked skull-topped staff with horns and hanging teal beads/feathers. Right-facing three-quarter view. Exactly THREE poses in equal-width horizontal cells, one row, transparent background, ample transparent margins in EACH cell, no text, borders, shadows, ground or magic. Feet planted at local (.50,.91), head top (.47,.24), same body size, palette, staff length, clothing and near/far leg details across poses. The staff stays in the SAME hand as the reference. Empty hand moves separately. No duplicated anatomy. Motion: drawing and closing a curse seal with the free hand. F1 staff skull (.73,.23), free palm open (.53,.47); F2 free hand (.66,.40) drawing outward circle; F3 fingers close (.64,.48), shoulders relax. Staff and feet fixed. Only body motion, no rune.

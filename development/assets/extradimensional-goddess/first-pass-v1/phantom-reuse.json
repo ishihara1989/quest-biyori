@@ -1,0 +1,1243 @@
+{
+  "date": "2026-10-15",
+  "status": "inventory-not-motion-acceptance",
+  "catalog": [
+    {
+      "region": "森",
+      "id": "alraune",
+      "label": "アルラウネ",
+      "motion": "vine-slam",
+      "technique": "蔓叩き",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/alraune/motions/vine-slam/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 360,
+          "y": 367
+        },
+        "origin": null,
+        "events": [
+          {
+            "id": "vine-impact",
+            "frame": 2,
+            "timeMs": 370,
+            "type": "attack",
+            "description": "ツルが左の地面に接触する開始時刻"
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 370,
+        "filesPresent": true
+      },
+      "effects": [],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "蔓先の直接判定。掌起点に置換しない",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "森",
+      "id": "treant",
+      "label": "トレント",
+      "motion": "root-bury",
+      "technique": "根の突き上げ",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/treant/motions/root-bury/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 224,
+          "y": 303
+        },
+        "origin": null,
+        "events": [
+          {
+            "name": "roots-inserted",
+            "frame": 2,
+            "timeMs": 340,
+            "notes": "対象の地面にroot-eruptionを1回再生。伸長2コマ目と最大突出3コマ目を攻撃判定の候補にする。"
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 340,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "root-eruption",
+          "manifest": "../../../../public/assets/effects/root-eruption/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 128,
+            "y": 240
+          },
+          "origin": null,
+          "events": [
+            {
+              "name": "root-hit",
+              "frame": 1,
+              "timeMs": 80
+            },
+            {
+              "name": "max-extension",
+              "frame": 2,
+              "timeMs": 180
+            }
+          ],
+          "actionTimes": null,
+          "lastSourceEventMs": 180,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "根は対象の床起点。本体は地中へ差し込む構え",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "沼地",
+      "id": "lich",
+      "label": "リッチ",
+      "motion": "dark-cast",
+      "technique": "闇の大魔法",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/lich/motions/dark-cast/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 334,
+          "y": 431
+        },
+        "origin": {
+          "x": 231.4,
+          "y": 290.6
+        },
+        "events": [
+          {
+            "id": "lich-dark-cast-2",
+            "type": "spawn-effect",
+            "effect": "lich-dark-magic",
+            "frame": 2,
+            "timeMs": 420,
+            "power": 3
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 420,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "lich-dark-magic",
+          "manifest": "../../../../public/assets/effects/lich-dark-magic/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 224,
+            "y": 372
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "杖先／effectPreview.originを基準にする",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "沼地",
+      "id": "hydra",
+      "label": "ヒュドラ",
+      "motion": "breath",
+      "technique": "毒ブレス",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/hydra/motions/breath/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 408,
+          "y": 431
+        },
+        "origin": {
+          "x": 233.28000000000003,
+          "y": 261.48
+        },
+        "events": [
+          {
+            "id": "hydra-breath-1",
+            "type": "spawn-effect",
+            "effect": "hydra-poison-breath",
+            "frame": 1,
+            "timeMs": 180,
+            "power": 2
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 180,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "hydra-poison-breath",
+          "manifest": "../../../../public/assets/effects/hydra-poison-breath/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 564,
+            "y": 144
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "口起点。chargeからbreathへの接続は短縮時に調整",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "洞窟",
+      "id": "arachne",
+      "label": "アラクネ",
+      "motion": "web",
+      "technique": "糸の術",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/arachne/motions/web/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 334,
+          "y": 431
+        },
+        "origin": {
+          "x": 235.2,
+          "y": 301
+        },
+        "events": [
+          {
+            "id": "arachne-web-web-bolt",
+            "type": "spawn-projectile",
+            "effect": "spider-web-bolt",
+            "frame": 2,
+            "timeMs": 380,
+            "power": 0.55
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 380,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "spider-web-bolt",
+          "manifest": "../../../../public/assets/effects/spider-web-bolt/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 96,
+            "y": 64
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        },
+        {
+          "id": "spider-web-slow",
+          "manifest": "../../../../public/assets/effects/spider-web-slow/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 112,
+            "y": 210
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "口・糸の発射点。着弾後の糸は独立保持",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "洞窟",
+      "id": "cave-troll",
+      "label": "ケイブトロール",
+      "motion": "slam",
+      "technique": "三連叩きつけ",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/cave-troll/motions/slam/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 408,
+          "y": 495
+        },
+        "origin": {
+          "x": 294,
+          "y": 345
+        },
+        "events": [
+          {
+            "id": "cave-troll-slam-quake",
+            "type": "spawn-effect",
+            "effect": "cave-quake",
+            "frame": 2,
+            "timeMs": 500,
+            "power": 1.4
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 500,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "cave-quake",
+          "manifest": "../../../../public/assets/effects/cave-quake/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 224,
+            "y": 210
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "1回分slamを3連に編集する短縮シーケンスは未作成",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "海岸",
+      "id": "scylla",
+      "label": "スキュラ",
+      "motion": "tentacle",
+      "technique": "触手薙ぎ",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/scylla/motions/tentacle/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 371,
+          "y": 431
+        },
+        "origin": {
+          "x": 277.9,
+          "y": 308.5
+        },
+        "events": [
+          {
+            "id": "scylla-tentacle-tentacle",
+            "type": "spawn-effect",
+            "effect": "sea-slam",
+            "frame": 2,
+            "timeMs": 440,
+            "power": 1.2
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 440,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "sea-slam",
+          "manifest": "../../../../public/assets/effects/sea-slam/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 192,
+            "y": 210
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "既存は触手叩きつけ。円弧状の薙ぎとの形状差を要判断",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "海岸",
+      "id": "kraken",
+      "label": "クラーケン",
+      "motion": "breath",
+      "technique": "水ブレス",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/kraken/motions/breath/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 408,
+          "y": 495
+        },
+        "origin": {
+          "x": 294,
+          "y": 345
+        },
+        "events": [
+          {
+            "id": "kraken-breath-water-breath",
+            "type": "spawn-effect",
+            "effect": "water-breath",
+            "frame": 2,
+            "timeMs": 500,
+            "power": 1.4
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 500,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "water-breath",
+          "manifest": "../../../../public/assets/effects/water-breath/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 562,
+            "y": 144
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "口起点。水流を幻影消失後も独立保持",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "遺跡",
+      "id": "seraphina",
+      "label": "魔導人形セラフィナ",
+      "motion": "pillars",
+      "technique": "三連光柱",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/seraphina/motions/pillars/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 297,
+          "y": 414
+        },
+        "origin": {
+          "x": 233,
+          "y": 291.12
+        },
+        "events": [
+          {
+            "id": "seraphina-pillars-2--1",
+            "type": "spawn-effect",
+            "effect": "ruins-light-pillar",
+            "frame": 2,
+            "timeMs": 560,
+            "durationMs": 720,
+            "placement": "target",
+            "slot": -1,
+            "targetOffset": {
+              "x": -70,
+              "y": 0
+            },
+            "fixedTarget": true
+          },
+          {
+            "id": "seraphina-pillars-2-0",
+            "type": "spawn-effect",
+            "effect": "ruins-light-pillar",
+            "frame": 2,
+            "timeMs": 700,
+            "durationMs": 720,
+            "placement": "target",
+            "slot": 0,
+            "targetOffset": {
+              "x": 0,
+              "y": 0
+            },
+            "fixedTarget": true
+          },
+          {
+            "id": "seraphina-pillars-2-1",
+            "type": "spawn-effect",
+            "effect": "ruins-light-pillar",
+            "frame": 2,
+            "timeMs": 840,
+            "durationMs": 720,
+            "placement": "target",
+            "slot": 1,
+            "targetOffset": {
+              "x": 70,
+              "y": 0
+            },
+            "fixedTarget": true
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 840,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "ruins-light-pillar",
+          "manifest": "../../../../public/assets/effects/ruins-light-pillar/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 192,
+            "y": 432
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "3地点の柱は対象床起点。最後の柱配置後に回収",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "遺跡",
+      "id": "ancient-titan",
+      "label": "古代機兵タイタン",
+      "motion": "beam",
+      "technique": "炉心ビーム",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/ancient-titan/motions/beam/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 371,
+          "y": 478
+        },
+        "origin": {
+          "x": 301,
+          "y": 296
+        },
+        "events": [
+          {
+            "id": "ancient-titan-beam-2-0",
+            "type": "spawn-effect",
+            "effect": "ruins-furnace-beam",
+            "frame": 2,
+            "timeMs": 660,
+            "durationMs": 500,
+            "placement": "origin"
+          }
+        ],
+        "actionTimes": null,
+        "lastSourceEventMs": 660,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "ruins-furnace-beam",
+          "manifest": "../../../../public/assets/effects/ruins-furnace-beam/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 378,
+            "y": 96
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "炉心originを独立FXへ移す。消失でビームを消さない",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "砂漠",
+      "id": "lamia",
+      "label": "ラミア",
+      "motion": "binds",
+      "technique": "砂縛り",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/lamia/motions/binds/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 348,
+          "y": 422
+        },
+        "origin": null,
+        "events": [],
+        "actionTimes": [
+          1200
+        ],
+        "lastSourceEventMs": 1200,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "desert-sand-burst",
+          "manifest": "../../../../public/assets/effects/desert-sand-burst/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 210,
+            "y": 278
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "対象床起点。既存actionには発射点の座標がない。砂縛りの輪郭にはsand-burstを再利用候補とする",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "砂漠",
+      "id": "sand-behemoth",
+      "label": "砂喰いベヒモス",
+      "motion": "quake",
+      "technique": "地割れ",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/sand-behemoth/motions/quake/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 476,
+          "y": 662
+        },
+        "origin": null,
+        "events": [],
+        "actionTimes": [
+          1500
+        ],
+        "lastSourceEventMs": 1500,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "desert-fissure",
+          "manifest": "../../../../public/assets/effects/desert-fissure/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 320,
+            "y": 218
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "床起点。地割れの枝分かれと進行向き",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "高原",
+      "id": "harpy-queen",
+      "label": "ハーピークイーン",
+      "motion": "ring",
+      "technique": "風の円",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/harpy-queen/motions/ring/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 370,
+          "y": 506
+        },
+        "origin": null,
+        "events": [
+          {
+            "effect": "wind-ring",
+            "frame": 2,
+            "timeMs": 680,
+            "placement": "origin"
+          }
+        ],
+        "actionTimes": [
+          1200
+        ],
+        "lastSourceEventMs": 1200,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "highland-wind-ring",
+          "manifest": "../../../../public/assets/effects/highland-wind-ring/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 260,
+            "y": 160
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "元の中心固定。押出し判定との同期は後続",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "高原",
+      "id": "manticore",
+      "label": "マンティコア",
+      "motion": "venom",
+      "technique": "毒尾の扇射",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/manticore/motions/venom/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 456,
+          "y": 556
+        },
+        "origin": null,
+        "events": [
+          {
+            "effect": "venom",
+            "frame": 2,
+            "timeMs": 680,
+            "placement": "projectile",
+            "angleDeg": -18
+          },
+          {
+            "effect": "venom",
+            "frame": 2,
+            "timeMs": 680,
+            "placement": "projectile",
+            "angleDeg": 0
+          },
+          {
+            "effect": "venom",
+            "frame": 2,
+            "timeMs": 680,
+            "placement": "projectile",
+            "angleDeg": 18
+          }
+        ],
+        "actionTimes": [
+          1400
+        ],
+        "lastSourceEventMs": 1400,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "highland-venom",
+          "manifest": "../../../../public/assets/effects/highland-venom/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 170,
+            "y": 130
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "尾先起点。3方向-18/0/+18度の弾を独立保持",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "氷河",
+      "id": "yuki-onna",
+      "label": "雪女",
+      "motion": "seal",
+      "technique": "薄氷の封輪",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/yuki-onna/motions/seal/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 280,
+          "y": 388
+        },
+        "origin": null,
+        "events": [
+          {
+            "type": "effect",
+            "effect": "glacier-seal",
+            "frame": 2,
+            "timeMs": 540,
+            "placement": "target"
+          }
+        ],
+        "actionTimes": [
+          4600
+        ],
+        "lastSourceEventMs": 4600,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "glacier-seal",
+          "manifest": "../../../../public/assets/effects/glacier-seal/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 155,
+            "y": 318
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "対象床起点。元4.6秒予告の短縮は未編集",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "氷河",
+      "id": "ice-tusk-mammoth",
+      "label": "氷牙マンモス",
+      "motion": "crown",
+      "technique": "白夜の氷冠",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/ice-tusk-mammoth/motions/crown/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 381,
+          "y": 428
+        },
+        "origin": null,
+        "events": [
+          {
+            "type": "effect",
+            "effect": "glacier-crown",
+            "frame": 2,
+            "timeMs": 540,
+            "placement": "target"
+          }
+        ],
+        "actionTimes": [
+          5400,
+          6400,
+          7400
+        ],
+        "lastSourceEventMs": 7400,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "glacier-crown",
+          "manifest": "../../../../public/assets/effects/glacier-crown/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 370,
+            "y": 418
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "床の段階輪。3段の最後の直接判定後に回収",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "火山",
+      "id": "dragon-girl",
+      "label": "ドラゴンガール",
+      "motion": "danger-2",
+      "technique": "紅翼竜息",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/dragon-girl/motions/danger-2/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 290,
+          "y": 338
+        },
+        "origin": null,
+        "events": [
+          {
+            "id": "fire-beam",
+            "timeMs": 4800,
+            "slot": 0,
+            "placement": "origin",
+            "impact": null,
+            "residue": null,
+            "originFrame": 2
+          },
+          {
+            "id": "fire-beam",
+            "timeMs": 5700,
+            "slot": 1,
+            "placement": "origin",
+            "impact": null,
+            "residue": null,
+            "originFrame": 2
+          }
+        ],
+        "actionTimes": [
+          4800,
+          5700
+        ],
+        "lastSourceEventMs": 5700,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "volcano-fire-beam",
+          "manifest": "../../../../public/assets/effects/volcano-fire-beam/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 384,
+            "y": 256
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "口起点。2回のブレス。既存採用モーションあり",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "火山",
+      "id": "dragon",
+      "label": "ドラゴン",
+      "motion": "danger-2",
+      "technique": "双脈ブレス",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/dragon/motions/danger-2/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 300,
+          "y": 338
+        },
+        "origin": null,
+        "events": [
+          {
+            "id": "fire-beam",
+            "timeMs": 5000,
+            "slot": 0,
+            "placement": "origin",
+            "impact": null,
+            "residue": null,
+            "originFrame": 2
+          },
+          {
+            "id": "fire-beam",
+            "timeMs": 6000,
+            "slot": 1,
+            "placement": "origin",
+            "impact": null,
+            "residue": null,
+            "originFrame": 2
+          }
+        ],
+        "actionTimes": [
+          5000,
+          6000
+        ],
+        "lastSourceEventMs": 6000,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "volcano-fire-beam",
+          "manifest": "../../../../public/assets/effects/volcano-fire-beam/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 384,
+            "y": 256
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "口起点。2帯を独立FXとして残す",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "魔王城",
+      "id": "lilith",
+      "label": "リリス",
+      "motion": "danger-1",
+      "technique": "宵闇の花冠",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/lilith/motions/danger-1/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 270,
+          "y": 410
+        },
+        "origin": null,
+        "events": [
+          {
+            "timeMs": 5000,
+            "effect": "castle-dark-flower",
+            "kind": "circles"
+          },
+          {
+            "timeMs": 5800,
+            "effect": "castle-dark-flower",
+            "kind": "circles"
+          },
+          {
+            "timeMs": 6600,
+            "effect": "castle-dark-flower",
+            "kind": "circles"
+          }
+        ],
+        "actionTimes": [
+          5000,
+          5800,
+          6600
+        ],
+        "lastSourceEventMs": 6600,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "castle-dark-flower",
+          "manifest": "../../../../public/assets/effects/castle-dark-flower/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 256,
+            "y": 410
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "3地点の花冠。最終配置後すぐ回収",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    },
+    {
+      "region": "魔王城",
+      "id": "demon-god",
+      "label": "魔神",
+      "motion": "danger-4",
+      "technique": "終焉の交差",
+      "source": {
+        "manifest": "../../../../public/assets/enemies/demon-god/motions/danger-4/manifest.json",
+        "exists": true,
+        "frameCount": 4,
+        "pivot": {
+          "x": 192,
+          "y": 330
+        },
+        "origin": null,
+        "events": [
+          {
+            "timeMs": 5600,
+            "effect": "castle-cross-beam",
+            "kind": "cross"
+          },
+          {
+            "timeMs": 6600,
+            "effect": "castle-cross-beam",
+            "kind": "cross"
+          },
+          {
+            "timeMs": 6800,
+            "effect": "castle-end-ring",
+            "kind": "cross"
+          }
+        ],
+        "actionTimes": [
+          5600,
+          6600,
+          6800
+        ],
+        "lastSourceEventMs": 6800,
+        "filesPresent": true
+      },
+      "effects": [
+        {
+          "id": "castle-cross-beam",
+          "manifest": "../../../../public/assets/effects/castle-cross-beam/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 400,
+            "y": 256
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        },
+        {
+          "id": "castle-end-ring",
+          "manifest": "../../../../public/assets/effects/castle-end-ring/manifest.json",
+          "exists": true,
+          "frameCount": 4,
+          "pivot": {
+            "x": 256,
+            "y": 256
+          },
+          "origin": null,
+          "events": [],
+          "actionTimes": null,
+          "lastSourceEventMs": 0,
+          "filesPresent": true
+        }
+      ],
+      "connectionStatus": "source-inventory-only-not-connected",
+      "note": "交差二帯と薄輪は別FX、最後の直接判定後に回収",
+      "remaining": [
+        "元の接地点を星鏡P=(632,464)へ合わせる",
+        "女神戦専用の短い構えと発射時刻を編集",
+        "金縁・クリップ表示・回収を接続して縮尺確認",
+        "最後の発射／直接判定と回収0.20〜0.25秒を同期"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "motion": "idle",
+    "frame": 0,
+    "furMeanRGB": [
+      122,
+      68,
+      42
+    ],
+    "furMedianLuminance": 77
+  },
+  {
+    "motion": "idle",
+    "frame": 1,
+    "furMeanRGB": [
+      121,
+      68,
+      42
+    ],
+    "furMedianLuminance": 76
+  },
+  {
+    "motion": "idle",
+    "frame": 2,
+    "furMeanRGB": [
+      122,
+      68,
+      42
+    ],
+    "furMedianLuminance": 77
+  },
+  {
+    "motion": "idle",
+    "frame": 3,
+    "furMeanRGB": [
+      122,
+      68,
+      42
+    ],
+    "furMedianLuminance": 77
+  },
+  {
+    "motion": "move",
+    "frame": 0,
+    "furMeanRGB": [
+      122,
+      68,
+      42
+    ],
+    "furMedianLuminance": 77
+  },
+  {
+    "motion": "move",
+    "frame": 1,
+    "furMeanRGB": [
+      116,
+      64,
+      39
+    ],
+    "furMedianLuminance": 74
+  },
+  {
+    "motion": "move",
+    "frame": 2,
+    "furMeanRGB": [
+      115,
+      64,
+      40
+    ],
+    "furMedianLuminance": 73
+  },
+  {
+    "motion": "move",
+    "frame": 3,
+    "furMeanRGB": [
+      118,
+      66,
+      41
+    ],
+    "furMedianLuminance": 76
+  },
+  {
+    "motion": "move",
+    "frame": 4,
+    "furMeanRGB": [
+      116,
+      65,
+      40
+    ],
+    "furMedianLuminance": 74
+  },
+  {
+    "motion": "move",
+    "frame": 5,
+    "furMeanRGB": [
+      115,
+      64,
+      39
+    ],
+    "furMedianLuminance": 73
+  },
+  {
+    "motion": "attack",
+    "frame": 0,
+    "furMeanRGB": [
+      113,
+      66,
+      45
+    ],
+    "furMedianLuminance": 74
+  },
+  {
+    "motion": "attack",
+    "frame": 1,
+    "furMeanRGB": [
+      116,
+      68,
+      47
+    ],
+    "furMedianLuminance": 76
+  },
+  {
+    "motion": "attack",
+    "frame": 2,
+    "furMeanRGB": [
+      114,
+      67,
+      45
+    ],
+    "furMedianLuminance": 74
+  },
+  {
+    "motion": "attack",
+    "frame": 3,
+    "furMeanRGB": [
+      113,
+      66,
+      45
+    ],
+    "furMedianLuminance": 74
+  },
+  {
+    "motion": "hit",
+    "frame": 0,
+    "furMeanRGB": [
+      115,
+      64,
+      41
+    ],
+    "furMedianLuminance": 72
+  },
+  {
+    "motion": "hit",
+    "frame": 1,
+    "furMeanRGB": [
+      113,
+      63,
+      40
+    ],
+    "furMedianLuminance": 71
+  },
+  {
+    "motion": "hit",
+    "frame": 2,
+    "furMeanRGB": [
+      115,
+      64,
+      41
+    ],
+    "furMedianLuminance": 73
+  },
+  {
+    "motion": "hit",
+    "frame": 3,
+    "furMeanRGB": [
+      122,
+      68,
+      42
+    ],
+    "furMedianLuminance": 77
+  },
+  {
+    "motion": "down",
+    "frame": 0,
+    "furMeanRGB": [
+      116,
+      67,
+      44
+    ],
+    "furMedianLuminance": 75
+  },
+  {
+    "motion": "down",
+    "frame": 1,
+    "furMeanRGB": [
+      117,
+      68,
+      45
+    ],
+    "furMedianLuminance": 75
+  },
+  {
+    "motion": "down",
+    "frame": 2,
+    "furMeanRGB": [
+      116,
+      67,
+      44
+    ],
+    "furMedianLuminance": 75
+  },
+  {
+    "motion": "down",
+    "frame": 3,
+    "furMeanRGB": [
+      118,
+      68,
+      45
+    ],
+    "furMedianLuminance": 75
+  }
+]

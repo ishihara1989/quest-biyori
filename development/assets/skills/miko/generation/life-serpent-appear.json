@@ -1,0 +1,13 @@
+{
+  "id": "life-serpent-appear",
+  "source": "development/assets/skills/miko/source/life-serpent-appear-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-8c5cc3a6-2a84-4982-aa1d-b11969aa8d15.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Reference is SAME SUBJECT. Exactly THREE frames one row, fixed anchor .50,.86. ONE translucent ivory/jade sacred serpent with ONE head, TWO gold whiskers and no legs or wings, gold forehead jewel and vermilion neck ribbon; exactly THREE open spiral coils forming a tall enclosure, empty transparent central channel for host. Frame1 large ghost outline forming around empty central host column; frame2 full recognizable guardian wraps its arms/tail/coils around center; frame3 fully formed strong outer silhouette with translucent interior, joins idle first pose. Preserve anatomy and color. No person. Each whole guardian and ALL ribbons and particles remain within the central 70% of its cell, never touch an outer edge. Do not grow beyond cell gutters. The human host is composed separately.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/life-serpent-idle-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T15:18:14.843Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

@@ -1,0 +1,5 @@
+# fuma
+
+Built-in image_gen; generated RGBA preserved; nearest-neighbor packaging.
+
+Use case: illustration-story. Asset type: production 2D pixel-art ninja combat VFX sprite sheet. RGBA transparent PNG, no background, no text, no cell borders. ONE horizontal strip of equal square cells with ample transparent margin. Distinct animation frames ordered left to right. Crisp chunky pixel clusters, limited palette, high contrast, no smooth illustration, no characters, no floor, no cast shadow, no photographic blur. Crimson means ninja weapons, indigo/violet means shadow, white/gold means impact. Center each effect at (.5,.5) in its own cell, silhouette entirely inside [.12,.88]. Generate this effect sequence: FOUR frames of a large steel four-bladed curved fuma shuriken rotating clockwise at angles 0,22.5,45,67.5 degrees. Identical size and steel grey blades, crimson/gold blade edges, white center ring. Tiny red motion accents, no wide trail. Must loop smoothly as a rotationally symmetric star.

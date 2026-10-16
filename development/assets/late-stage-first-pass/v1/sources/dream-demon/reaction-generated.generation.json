@@ -1,0 +1,25 @@
+{
+  "id": "dream-demon/reaction",
+  "enemy": "dream-demon",
+  "region": "demon-castle",
+  "motion": "reaction",
+  "label": "被弾・撃破",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/dream-demon.png",
+  "guide": null,
+  "source": "sources/dream-demon/reaction-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of 夢魔. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: hovering body sinks 120px, wings close and knees fold. Bottom-right TERMINAL DEFEAT: recognizable whole character collapsed/kneeling low, original equipment and wings on body, no gore. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-c0ef1b17-dccf-41f6-88ff-4f9f3480ccf1.png",
+  "sha256": "8e7fde292c8542df9ccf3a7cf83a32bf098cd54b1424a6f9e713cc770cfe44f7",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "被弾1コマ目に靴が3足見える。余分な脚・足を除き、正しく2脚へ修正する。",
+      "撃破姿勢の膝・靴・裾・尾の所属を確認する。"
+    ]
+  }
+}

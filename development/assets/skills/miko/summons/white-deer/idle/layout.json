@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/white-deer-idle-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 739,
+      "height": 724
+    },
+    {
+      "x": 739,
+      "y": 0,
+      "width": 709,
+      "height": 724
+    },
+    {
+      "x": 1448,
+      "y": 0,
+      "width": 724,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 474,
+      "y": 964
+    },
+    {
+      "x": 433,
+      "y": 963
+    },
+    {
+      "x": 457.5,
+      "y": 964
+    }
+  ],
+  "scale": 0.08641975308641975
+}

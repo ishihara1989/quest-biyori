@@ -1,0 +1,17 @@
+{
+  "character": "mage",
+  "idle": "../manifest.json",
+  "motions": {
+    "forward": "forward/manifest.json",
+    "backward": "backward/manifest.json",
+    "jump": "jump/manifest.json",
+    "hit": "hit/manifest.json",
+    "down": "down/manifest.json",
+    "attack-staff": "attack-staff/manifest.json",
+    "chant": "chant/manifest.json",
+    "cast-forward": "cast-forward/manifest.json",
+    "cast-forward-hold": "cast-forward-hold/manifest.json",
+    "cast-up": "cast-up/manifest.json",
+    "cast-up-hold": "cast-up-hold/manifest.json"
+  }
+}

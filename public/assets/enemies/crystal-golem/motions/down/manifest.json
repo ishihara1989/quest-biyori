@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "enemy": "crystal-golem",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "crystal-golem-down.png",
+  "preview": "../../../../../../development/assets/enemies/crystal-golem/motions/down/crystal-golem-down-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1080,
+  "height": 420,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 420,
+  "frameCount": 2,
+  "pivot": {
+    "x": 302,
+    "y": 398
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1250,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/glacier-motions/registered/crystal-golem/down.png",
+  "sourceScale": 0.49625468164794007,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 350,
+      "phase": "崩れる",
+      "bounds": {
+        "left": 160,
+        "top": 189,
+        "right": 432,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 718,
+        "width": 667,
+        "height": 718
+      },
+      "sourceAnchor": {
+        "x": 358.75991358282806,
+        "y": 511
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 153,
+        "top": 245,
+        "right": 445,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 667,
+        "y": 718,
+        "width": 667,
+        "height": 718
+      },
+      "sourceAnchor": {
+        "x": 329.5,
+        "y": 522
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/crystal-golem.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/crystal-golem/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 629,
+          "height": 686
+        },
+        {
+          "x": 629,
+          "y": 0,
+          "width": 625,
+          "height": 686
+        },
+        {
+          "x": 0,
+          "y": 686,
+          "width": 619,
+          "height": 568
+        },
+        {
+          "x": 619,
+          "y": 686,
+          "width": 635,
+          "height": 568
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-scorpion",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "sand-scorpion-move.png",
+  "preview": "../../../../../../development/assets/enemies/sand-scorpion/motions/move/sand-scorpion-move-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1440,
+  "height": 280,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 360,
+  "frameHeight": 280,
+  "frameCount": 4,
+  "pivot": {
+    "x": 209,
+    "y": 262
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/sand-scorpion/source/move-registered.png",
+  "sourceScale": 0.36281179138321995,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 95,
+        "top": 102,
+        "right": 322,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 887,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 462,
+        "y": 514
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 360,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 102,
+        "top": 103,
+        "right": 319,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 887,
+        "y": 0,
+        "width": 887,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 406,
+        "y": 507
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 720,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 90,
+        "top": 106,
+        "right": 321,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 587,
+        "width": 887,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 475,
+        "y": 496
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1080,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 101,
+        "top": 104,
+        "right": 315,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 887,
+        "y": 587,
+        "width": 887,
+        "height": 587
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-scorpion-move-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-scorpion.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 793,
+          "height": 508
+        },
+        {
+          "x": 793,
+          "y": 0,
+          "width": 743,
+          "height": 508
+        },
+        {
+          "x": 0,
+          "y": 508,
+          "width": 795,
+          "height": 516
+        },
+        {
+          "x": 795,
+          "y": 508,
+          "width": 741,
+          "height": 516
+        }
+      ]
+    }
+  ]
+}

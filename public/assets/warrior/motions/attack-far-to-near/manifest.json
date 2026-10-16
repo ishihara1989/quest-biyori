@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "character": "warrior",
+  "motion": "attack-far-to-near",
+  "label": "大剣・奥 → 手前",
+  "facing": "right",
+  "sheet": "warrior-attack-far-to-near.png",
+  "width": 1024,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 620,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.28,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/warrior/motions/attack-far-to-near/source/warrior-attack-far-to-near-assembled-v2.png",
+  "sourceWidth": 2048,
+  "sourceHeight": 1536,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "columnSplit": 1024,
+  "rowSplit": 768,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Sword afterimages and depth turns are included in PNG frames. Draw at the common ground pivot without additional rotation or effects.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-far-to-near-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "奥を向いて構える",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 111,
+        "top": 238,
+        "right": 696,
+        "bottom": 720
+      },
+      "bounds": {
+        "left": 16,
+        "top": 72,
+        "right": 179,
+        "bottom": 207
+      },
+      "visiblePixels": 7278,
+      "transparentPixels": 48595
+    },
+    {
+      "index": 1,
+      "file": "attack-far-to-near-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "奥から払い始める",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1024,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 199,
+        "top": 236,
+        "right": 773,
+        "bottom": 720
+      },
+      "bounds": {
+        "left": 41,
+        "top": 72,
+        "right": 201,
+        "bottom": 207
+      },
+      "visiblePixels": 8753,
+      "transparentPixels": 45301
+    },
+    {
+      "index": 2,
+      "file": "attack-far-to-near-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "手前へ払う・残像",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 768,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 280,
+        "top": 242,
+        "right": 840,
+        "bottom": 720
+      },
+      "bounds": {
+        "left": 63,
+        "top": 74,
+        "right": 219,
+        "bottom": 207
+      },
+      "visiblePixels": 10114,
+      "transparentPixels": 44106
+    },
+    {
+      "index": 3,
+      "file": "attack-far-to-near-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 240,
+      "phase": "手前から左へ振り切る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1024,
+        "y": 768,
+        "width": 1024,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 512,
+        "y": 720
+      },
+      "sourceBounds": {
+        "left": 135,
+        "top": 260,
+        "right": 854,
+        "bottom": 720
+      },
+      "bounds": {
+        "left": 23,
+        "top": 79,
+        "right": 223,
+        "bottom": 207
+      },
+      "visiblePixels": 13203,
+      "transparentPixels": 42967
+    }
+  ]
+}

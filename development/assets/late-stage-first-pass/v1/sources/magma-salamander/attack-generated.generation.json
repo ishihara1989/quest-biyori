@@ -1,0 +1,29 @@
+{
+  "id": "magma-salamander/attack",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "motion": "attack",
+  "label": "噛みつき",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/magma-salamander.png",
+  "guide": null,
+  "source": "sources/magma-salamander/attack-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame NORMAL ATTACK 噛みつき by マグマサラマンダー EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: head (300,520) pulls to (350,500), jaw opens at (350,480), lunges to (230,540), returns (300,520). Four feet planted; tail follows 12px. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "bite-impact"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-39041c92-e78e-413c-820b-61127a770a29.png",
+  "sha256": "cf6e5294275663089780cfa0bdcd2bdab106cae659ad8836d27337ebeef2bac5",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "赤橙の背景光が混入。",
+      "溜めで頭が大きく上を向き、発動で首と胴体が伸びる。噛みつきの前方軌道と体格を整理する。"
+    ]
+  }
+}

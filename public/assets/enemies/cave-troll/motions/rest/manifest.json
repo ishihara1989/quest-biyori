@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-troll",
+  "motion": "rest",
+  "facing": "left",
+  "label": "休息",
+  "sheet": "cave-troll-rest.png",
+  "preview": "../../../../../../development/assets/enemies/cave-troll/motions/rest/cave-troll-rest-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-troll/PROMPT.md",
+  "width": 2816,
+  "height": 512,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/cave-troll/source/rest-registered.png",
+  "sourceScale": 0.585,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "rest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 98,
+        "top": 262,
+        "right": 467,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 672,
+        "height": 464
+      },
+      "sourceAnchor": {
+        "x": 547,
+        "y": 415
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "rest-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 106,
+        "top": 243,
+        "right": 467,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 672,
+        "y": 0,
+        "width": 672,
+        "height": 464
+      },
+      "sourceAnchor": {
+        "x": 532,
+        "y": 447
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "rest-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 96,
+        "top": 257,
+        "right": 469,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 464,
+        "width": 672,
+        "height": 464
+      },
+      "sourceAnchor": {
+        "x": 550,
+        "y": 424
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "rest-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 93,
+        "top": 263,
+        "right": 466,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 672,
+        "y": 464,
+        "width": 672,
+        "height": 464
+      },
+      "sourceAnchor": {
+        "x": 555,
+        "y": 413
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-troll/source/rest-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 5,
+        "count": 142805,
+        "left": 61,
+        "top": 93,
+        "right": 693,
+        "bottom": 492,
+        "cx": 432.34045726690243,
+        "cy": 311.5389587199328
+      },
+      {
+        "id": 1,
+        "count": 145295,
+        "left": 821,
+        "top": 61,
+        "right": 1439,
+        "bottom": 492,
+        "cx": 1177.9202519013043,
+        "cy": 305.1249320348257
+      },
+      {
+        "id": 11,
+        "count": 146075,
+        "left": 61,
+        "top": 566,
+        "right": 700,
+        "bottom": 974,
+        "cx": 433.28000684579837,
+        "cy": 791.1182543214103
+      },
+      {
+        "id": 13,
+        "count": 140092,
+        "left": 821,
+        "top": 577,
+        "right": 1460,
+        "bottom": 974,
+        "cx": 1194.5050609599407,
+        "cy": 797.3756317277218
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

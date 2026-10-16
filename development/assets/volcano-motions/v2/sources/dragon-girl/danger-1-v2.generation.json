@@ -1,0 +1,25 @@
+{
+  "id": "dragon-girl/danger-1",
+  "source": "sources/dragon-girl/danger-1-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴンガール. Adult dragon girl. Face turned LEFT consistently. Both hands gather at chest, palms spread with tiny attached ember light, both palms extend LEFT as repeatable release, upright neutral return. Fingers connected and original claw sizes. NO free fireball in body sheet. Separate three launch events 0.8 seconds apart. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. No round free-standing fireball or projectile at any time. Only hands move: TL together at chest, TR open palms 10cm apart at chest with tiny attached sparks, BL both open hands directed left in parallel, BR upright canonical idle. 15% clear margins, wide gutters.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon-girl.png",
+      "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "88d04e7218a32b86b2edef50cf34bf8c97674c30ee34e39560baee427f87ac3b",
+  "reference": "references/dragon-girl.png",
+  "guide": null,
+  "firstPass": "sources/dragon-girl/danger-1-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "発動コマに3つの大きな火球が直接描かれている。身体と飛行エフェクトを分離し、0.8秒差の三連球に対応させる。",
+    "別の火球素材を重ねると二重に描かれる。手の発射点と指の接続も検収する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

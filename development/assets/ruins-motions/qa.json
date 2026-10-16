@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-10",
+  "status": "passed",
+  "scope": "ruins animation assets and sprite review pages",
+  "enemies": 8,
+  "motions": 56,
+  "enemyFrames": 204,
+  "effects": 18,
+  "effectFrames": 72,
+  "generationJobs": 72,
+  "generator": "built-in image_gen",
+  "tests": {
+    "command": "node --test tools/ruins-assets.test.cjs tools/motion-playback.test.cjs tools/enemy-projectiles.test.cjs",
+    "passed": 14,
+    "failed": 0
+  },
+  "sourceReview": {
+    "allSelectedSheetsInspected": true,
+    "opaquePixelsAtOriginalImageEdges": 0,
+    "revisions": [
+      "ancient-ballista/burst",
+      "ruins-light-pillar"
+    ]
+  },
+  "browserReview": {
+    "commonMotions": [
+      "idle",
+      "move",
+      "hit",
+      "down"
+    ],
+    "gargoyleAirborne": true,
+    "gargoyleDeathLands": true,
+    "titanBeamEmitsFromFurnace": true,
+    "titanBeamHiddenAtClosingPose": true,
+    "pillarTargetPositionsFixed": true,
+    "composedTargetEffectsUnclipped": true,
+    "consoleErrorsOrWarnings": 0
+  },
+  "gameplayIntegration": "next step"
+}

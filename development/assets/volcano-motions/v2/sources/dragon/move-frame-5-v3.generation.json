@@ -1,0 +1,32 @@
+{
+  "id": "dragon/move-5",
+  "source": "sources/dragon/move-frame-5-v3.png",
+  "selected": true,
+  "prompt": "Precise object edit of ONE walking frame5. Image1 immutable canonical colors/identity, image2 exact frame5 to edit. Change ONLY TWO FRONT LEGS of image2, keep all nonleg pixels and BOTH rear legs in originalpositions. The dark FAR FRONT LEG at extreme screenLEFT under chin must STRAIGHTEN DOWN and place its paw FLAT on the floor, supporting the body. The bright NEAR FRONT leg directly under glowing chest must BEND KNEE UP, lift its paw CLEARLY60px above its old ground level, and move this lifted paw FORWARD LEFT about35px. Do NOT lift dark far front paw. Keep near REAR leg at screenRIGHT firmly grounded and far REAR leg under belly lifted. Required diagonal contact=far front+near rear; diagonal lift=near front+far rear. Preserve exactly4 connected legs, original thigh/shin lengths, short claws, original dragon body/head/horns/wings/tail/position/colors/scale. True transparent alpha, no floor/shadow/VFX/aura/labels. Do not redraw other features.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon.png",
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    },
+    {
+      "file": "sources/dragon/move-frame-5-v2.png",
+      "sha256": "433790f7d0c95c5180302d8c62758cd31cf24a56b9d52d4ca1e72db469478b49"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "4399f295de11dcd5ca7841ccfdbe9481d49327870aadebe612c8b71787ab381d",
+  "reference": "references/dragon.png",
+  "guide": null,
+  "firstPass": "sources/dragon/move-2-generated.png",
+  "issues": [
+    "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+    "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+    "足先実測とガイド座標の比較は未実施。",
+    "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+    "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+    "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

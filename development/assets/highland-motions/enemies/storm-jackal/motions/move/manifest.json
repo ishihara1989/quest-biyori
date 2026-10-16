@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "enemy": "storm-jackal",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "storm-jackal-move.png",
+  "preview": "storm-jackal-move-preview.gif",
+  "prompt": "../../../../trot/storm-jackal/PROMPTS.md",
+  "width": 3480,
+  "height": 430,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 580,
+  "frameHeight": 430,
+  "frameCount": 6,
+  "pivot": {
+    "x": 331,
+    "y": 406
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/move.png",
+  "sourceScale": 0.22550335570469798,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in trot/storm-jackal/PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "中立・A遊脚",
+      "bounds": {
+        "left": 209,
+        "top": 138,
+        "right": 473,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 606.7142857142858,
+        "y": 1247
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.22550335570469798
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 580,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・A遊脚",
+      "bounds": {
+        "left": 209,
+        "top": 136,
+        "right": 472,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 0,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 606.7142857142858,
+        "y": 1247
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.22550335570469798
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1160,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・B遊脚",
+      "bounds": {
+        "left": 209,
+        "top": 137,
+        "right": 480,
+        "bottom": 403
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1286,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 606.7142857142858,
+        "y": 1247
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.22550335570469798
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1740,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "中立・B遊脚",
+      "bounds": {
+        "left": 209,
+        "top": 138,
+        "right": 474,
+        "bottom": 397
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 1286,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 606.7142857142858,
+        "y": 1247
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.22550335570469798
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2320,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・B遊脚",
+      "bounds": {
+        "left": 209,
+        "top": 136,
+        "right": 473,
+        "bottom": 400
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 2572,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 606.7142857142858,
+        "y": 1247
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.22550335570469798
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2900,
+      "y": 0,
+      "width": 580,
+      "height": 430,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・A遊脚",
+      "bounds": {
+        "left": 209,
+        "top": 138,
+        "right": 474,
+        "bottom": 406
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 2572,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 606.7142857142858,
+        "y": 1247
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.22550335570469798
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/storm-jackal.png",
+  "originalSources": [
+    "../../../../trot/storm-jackal/sources/frame-1-tail.png",
+    "../../../../trot/storm-jackal/sources/frame-2-tail.png",
+    "../../../../trot/storm-jackal/sources/frame-3-focused.png",
+    "../../../../trot/storm-jackal/sources/frame-4-tail.png",
+    "../../../../trot/storm-jackal/sources/frame-5-tail.png",
+    "../../../../trot/storm-jackal/sources/frame-6-tail.png"
+  ],
+  "sourceExtraction": [
+    {
+      "source": "trot/storm-jackal/sources/frame-1-tail.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-2-tail.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-3-focused.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-4-tail.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-5-tail.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/storm-jackal/sources/frame-6-tail.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    }
+  ],
+  "registration": {
+    "method": "fixed-eye-landmark",
+    "outputEye": {
+      "x": 235,
+      "y": 238
+    },
+    "recipe": "../../../../trot/storm-jackal/recipe.json"
+  },
+  "walkCycle": {
+    "gait": "trot",
+    "status": "adopted-coordinate-guided",
+    "parts": 6,
+    "framesPerPart": 1,
+    "nearSide": "left",
+    "farSide": "right",
+    "diagonalPairs": {
+      "A": [
+        "left-hind",
+        "right-front"
+      ],
+      "B": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    "phases": [
+      "中立・A遊脚",
+      "手前閉／奥開・A遊脚",
+      "手前閉／奥開・B遊脚",
+      "中立・B遊脚",
+      "手前開／奥閉・B遊脚",
+      "手前開／奥閉・A遊脚"
+    ],
+    "contacts": [
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "open",
+        "far": "closed"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "open",
+        "far": "closed"
+      }
+    ]
+  },
+  "effectAssets": [],
+  "coordinateGuide": {
+    "file": "../../../../trot/storm-jackal/guide.json",
+    "targetsOnly": true
+  }
+}

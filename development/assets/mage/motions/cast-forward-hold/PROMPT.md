@@ -1,0 +1,9 @@
+# mage-cast-forward-hold
+
+Built-in image_gen. Reference: mage idle and original design. RGBA preserved.
+
+Use case: identity-preserve. Asset type: FOUR-frame transparent PIXEL ART RPG FORWARD STAFF HOLD LOOP, 2x2 grid.
+Input1 is exact preceding forward transition FINAL POSE, use it as geometry reference. Input2 is ORIGINAL pixel-art mage immutable palette/style reference. Make the SAME blue-haired witch. Copy exact pose of image1 into every cell: eyes OPEN, face/head/hat/body/boots unmoving; right arm extended forward right at chest height, single ornate wooden staff almost HORIZONTAL pointing RIGHT, crystal at staff tip. Staff grip/rod position and length fixed across all frames. No hand swapping, no additional limbs, no duplicate staves. Frame1 identical posture and floating hair to input1. ONLY long hair and tiny robe hem moves. Do not shift arm, head, or boots.
+Four full-body poses chronological top-left/top-right/bottom-left/bottom-right, equal scale, strict right-facing 3/4 view, isolated cell with 8% transparent padding all around including full staff. Use each cell horizontal space fully but no cutting tip off.
+Normalized cell geometry: feet center(.43,.91), head(.43,.32), right grip(.69,.50), crystal(.91,.47), staff tail(.32,.56). Hair floats left; frame1 tips(.15,.45), frame2 tips(.13,.40), frame3 tips(.10,.45), frame4 tips(.13,.49), roots fixed. Small natural cycle 4->1, long full locks remain same length. Make hair change clearly visible, four different silhouettes. Crisp saturated blue, indigo robes/hat, golden trims, cream underskirt exactly original palette. Pixel art without painterly blur.
+Scene: COMPLETELY EMPTY TRANSPARENT BACKGROUND; no glow or haze, no colored mist, NO aura, NO gradients or magic effects, no shadow, no floor, no text or borders. Render strictly opaque crisp character pixels on alpha0 empty space.

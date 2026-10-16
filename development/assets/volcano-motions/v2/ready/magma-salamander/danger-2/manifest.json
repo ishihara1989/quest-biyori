@@ -1,0 +1,205 @@
+{
+  "id": "magma-salamander/danger-2",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "label": "灼熱大扇",
+  "kind": null,
+  "motion": "danger-2",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 5100,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/magma-salamander.png",
+  "originalSources": [
+    "../../../sources/magma-salamander/danger-2-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/magma-salamander/danger-2/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8797035217285156,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 143,
+        "top": 178,
+        "right": 429,
+        "bottom": 340
+      },
+      "visibleBounds": {
+        "left": 146,
+        "top": 178,
+        "right": 425,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 789,
+        "height": 526
+      },
+      "sourceScale": 0.40114613180515757,
+      "sourceAnchor": {
+        "x": 444,
+        "y": 479
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4020,
+      "transparentFraction": 0.8818397521972656,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 152,
+        "top": 171,
+        "right": 434,
+        "bottom": 340
+      },
+      "visibleBounds": {
+        "left": 154,
+        "top": 178,
+        "right": 431,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-2-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 789,
+        "y": 0,
+        "width": 747,
+        "height": 526
+      },
+      "sourceScale": 0.40114613180515757,
+      "sourceAnchor": {
+        "x": 393,
+        "y": 480
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "transparentFraction": 0.8754196166992188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 136,
+        "top": 172,
+        "right": 432,
+        "bottom": 347
+      },
+      "visibleBounds": {
+        "left": 137,
+        "top": 182,
+        "right": 423,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-2-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 526,
+        "width": 803,
+        "height": 498
+      },
+      "sourceScale": 0.40114613180515757,
+      "sourceAnchor": {
+        "x": 469,
+        "y": 434
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8850173950195312,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 142,
+        "top": 165,
+        "right": 427,
+        "bottom": 345
+      },
+      "visibleBounds": {
+        "left": 150,
+        "top": 182,
+        "right": 423,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/danger-2-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 803,
+        "y": 526,
+        "width": 733,
+        "height": 498
+      },
+      "sourceScale": 0.40114613180515757,
+      "sourceAnchor": {
+        "x": 400,
+        "y": 438
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "fire-fan",
+      "timeMs": 4200,
+      "slot": 0,
+      "placement": "origin",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "fire-fan",
+    "burn"
+  ],
+  "repeatRelease": false,
+  "releaseOrigin": {
+    "x": 154,
+    "y": 276
+  }
+}

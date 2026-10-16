@@ -1,0 +1,210 @@
+{
+  "id": "lilith/danger-2",
+  "label": "リリス・静寂の封印",
+  "enemy": "lilith",
+  "motion": "danger-2",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/lilith.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/lilith/danger-2-v2.png",
+      "sourceSha256": "35d8e6bc12dc5faa1876820ab7d435fb571d8ac43957e502029ff88d4c814d66",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 700,
+        "height": 582
+      },
+      "sourceAnchor": [
+        360,
+        556
+      ],
+      "scale": 0.44,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "58004c45e47e255077f5c3596d9137289db0278d00d575282643ca9a570d8fce",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8424911499023438,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 148,
+        "top": 168,
+        "right": 396,
+        "bottom": 413
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4420,
+      "phase": "指を口元へ",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/lilith/danger-2-v2.png",
+      "sourceSha256": "35d8e6bc12dc5faa1876820ab7d435fb571d8ac43957e502029ff88d4c814d66",
+      "sourceRect": {
+        "left": 700,
+        "top": 0,
+        "width": 612,
+        "height": 582
+      },
+      "sourceAnchor": [
+        295,
+        567
+      ],
+      "scale": 0.44,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "93bf75eb98c361f245ae145d642cea86a4f710623dcb0a26e4b0d2f3a8d032ee",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.87969970703125,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 161,
+        "top": 166,
+        "right": 397,
+        "bottom": 412
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 1500,
+      "phase": "左へ掌を伸ばす",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/lilith/danger-2-v2.png",
+      "sourceSha256": "35d8e6bc12dc5faa1876820ab7d435fb571d8ac43957e502029ff88d4c814d66",
+      "sourceRect": {
+        "left": 0,
+        "top": 582,
+        "width": 689,
+        "height": 617
+      },
+      "sourceAnchor": [
+        350,
+        565
+      ],
+      "scale": 0.44,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "52c73f76af4bd4924e440e2afaea8d49f95ce0f480387fd323e7c8efdaf6e012",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8722305297851562,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 158,
+        "top": 166,
+        "right": 419,
+        "bottom": 411
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/lilith/danger-2-v2.png",
+      "sourceSha256": "35d8e6bc12dc5faa1876820ab7d435fb571d8ac43957e502029ff88d4c814d66",
+      "sourceRect": {
+        "left": 689,
+        "top": 582,
+        "width": 623,
+        "height": 617
+      },
+      "sourceAnchor": [
+        320,
+        562
+      ],
+      "scale": 0.44,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "b13c36ce20c9d1a00306eb56b28114fa5e060b67866da92c84e163239c18f6dd",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8407173156738281,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 149,
+        "top": 169,
+        "right": 397,
+        "bottom": 413
+      }
+    }
+  ],
+  "fingerprint": "2272f32984f59635bda79ff9556ad17929bba0496f210cb315458dc0a11e7bba",
+  "events": [
+    {
+      "timeMs": 4600,
+      "effect": "castle-silence-seal",
+      "kind": "control"
+    }
+  ],
+  "pivot": {
+    "x": 270,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 6400,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/lilith/danger-2/manifest.json",
+  "sourceFingerprint": "2272f32984f59635bda79ff9556ad17929bba0496f210cb315458dc0a11e7bba",
+  "action": {
+    "name": "静寂の封印",
+    "motion": "danger-2",
+    "warn": 4600,
+    "times": [
+      4600
+    ],
+    "kind": "control",
+    "radius": 65,
+    "effect": "silence-seal",
+    "rest": 9000,
+    "status": "silence",
+    "duration": 6400
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-silence-seal",
+        "manifest": "../../../../effects/castle-silence-seal/manifest.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-bat",
+  "motion": "hit",
+  "facing": "left",
+  "label": "被弾",
+  "sheet": "cave-bat-hit.png",
+  "preview": "../../../../../../development/assets/enemies/cave-bat/motions/hit/cave-bat-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-bat/PROMPT.md",
+  "width": 768,
+  "height": 288,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 2,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 460,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/cave-bat/source/hit-registered.png",
+  "sourceScale": 0.22371364653243847,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "のけぞり",
+      "bounds": {
+        "left": 159,
+        "top": 191,
+        "right": 287,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 611,
+        "height": 479
+      },
+      "sourceAnchor": {
+        "x": 305,
+        "y": 376
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 167,
+        "top": 172,
+        "right": 279,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 611,
+        "y": 0,
+        "width": 611,
+        "height": 479
+      },
+      "sourceAnchor": {
+        "x": 268,
+        "y": 462
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-bat/source/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 86161,
+        "left": 166,
+        "top": 128,
+        "right": 744,
+        "bottom": 488,
+        "cx": 444.37015587098574,
+        "cy": 276.1641113728949
+      },
+      {
+        "id": 1,
+        "count": 93999,
+        "left": 863,
+        "top": 31,
+        "right": 1367,
+        "bottom": 477,
+        "cx": 1137.3372908222427,
+        "cy": 239.36914222491728
+      },
+      {
+        "id": 3,
+        "count": 71783,
+        "left": 248,
+        "top": 631,
+        "right": 681,
+        "bottom": 946,
+        "cx": 434.759706337155,
+        "cy": 792.3311647604586
+      },
+      {
+        "id": 4,
+        "count": 57568,
+        "left": 831,
+        "top": 773,
+        "right": 1379,
+        "bottom": 948,
+        "cx": 1090.5317537520846,
+        "cy": 871.4929822123402
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

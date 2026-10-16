@@ -1,0 +1,112 @@
+{
+  "id": "dragon/down",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "撃破",
+  "kind": null,
+  "motion": "down",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1400,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": true,
+  "endBehavior": "hold",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/reaction-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/dragon/down/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "transparentFraction": 0.8916473388671875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 137,
+        "top": 153,
+        "right": 437,
+        "bottom": 386
+      },
+      "visibleBounds": {
+        "left": 163,
+        "top": 193,
+        "right": 435,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/reaction-v1-reused.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 602,
+        "width": 699,
+        "height": 520
+      },
+      "sourceScale": 0.45751633986928103,
+      "sourceAnchor": {
+        "x": 380,
+        "y": 404
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "transparentFraction": 0.9080276489257812,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 149,
+        "top": 153,
+        "right": 463,
+        "bottom": 382
+      },
+      "visibleBounds": {
+        "left": 153,
+        "top": 230,
+        "right": 442,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/dragon/reaction-v1-reused.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 699,
+        "y": 602,
+        "width": 703,
+        "height": 520
+      },
+      "sourceScale": 0.45751633986928103,
+      "sourceAnchor": {
+        "x": 341,
+        "y": 404
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

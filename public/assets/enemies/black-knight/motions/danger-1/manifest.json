@@ -1,0 +1,215 @@
+{
+  "id": "black-knight/danger-1",
+  "label": "黒騎士・王断の大剣",
+  "enemy": "black-knight",
+  "motion": "danger-1",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/black-knight.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/attack-v2.png",
+      "sourceSha256": "8455a149a648295a74faf84a7e7d6a664073c09ea71bb494a2cbb031c2edf572",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 750,
+        "height": 640
+      },
+      "sourceAnchor": [
+        394,
+        621
+      ],
+      "scale": 0.5,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "cd8d53ffc3e68ddbf62dacb8eed7f2e436e07719011e261eaac07bb0855f30ff",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8617973327636719,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 119,
+        "top": 177,
+        "right": 453,
+        "bottom": 416
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4420,
+      "phase": "振り上げ",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/attack-frame-2-v3.png",
+      "sourceSha256": "4f181f578da799fc89f7ccbd04d37d14e729aae7036316e2532fddbbd8b34ffe",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceAnchor": [
+        626,
+        1099
+      ],
+      "scale": 0.335,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "366b6be8450d2b9d23a6eee4dc8562de1b366101d00b8edc36d61cdca6349ed1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8529129028320312,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 112,
+        "top": 56,
+        "right": 491,
+        "bottom": 456
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "phase": "左下へ振り下ろし",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/attack-frame-3-v3.png",
+      "sourceSha256": "5e2f4dd36c7b036505c4ac2ae8e19796dba29e3fb93ea5d26ebaf158347b9fcb",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceAnchor": [
+        695,
+        1090
+      ],
+      "scale": 0.242,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c13598b2584051b4aa5dd18363882d9fc8c986ee8e5b84b2ada9a73fe85eb2a1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.883880615234375,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 145,
+        "top": 167,
+        "right": 431,
+        "bottom": 445
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/attack-v2.png",
+      "sourceSha256": "8455a149a648295a74faf84a7e7d6a664073c09ea71bb494a2cbb031c2edf572",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 750,
+        "height": 640
+      },
+      "sourceAnchor": [
+        394,
+        621
+      ],
+      "scale": 0.5,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "cd8d53ffc3e68ddbf62dacb8eed7f2e436e07719011e261eaac07bb0855f30ff",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8617973327636719,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 119,
+        "top": 177,
+        "right": 453,
+        "bottom": 416
+      }
+    }
+  ],
+  "fingerprint": "c6e0ebb86f3622cb3f3181bf0dde2c5c261227109c13dec0470348492949e501",
+  "events": [
+    {
+      "timeMs": 4600,
+      "effect": "castle-royal-cleave",
+      "kind": "lane"
+    }
+  ],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 5500,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/black-knight/danger-1/manifest.json",
+  "sourceFingerprint": "c6e0ebb86f3622cb3f3181bf0dde2c5c261227109c13dec0470348492949e501",
+  "action": {
+    "name": "王断の大剣",
+    "motion": "danger-1",
+    "warn": 4600,
+    "times": [
+      4600
+    ],
+    "kind": "lane",
+    "radius": 67.5,
+    "effect": "royal-cleave",
+    "rest": 9000,
+    "status": "armor-break",
+    "duration": 5500,
+    "length": 560
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-royal-cleave",
+        "manifest": "../../../../effects/castle-royal-cleave/manifest.json"
+      },
+      {
+        "id": "castle-armor-break",
+        "manifest": "../../../../effects/castle-armor-break/manifest.json"
+      }
+    ]
+  }
+}

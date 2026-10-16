@@ -1,0 +1,38 @@
+{
+  "source": "../../source/festival-finale-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 689,
+      "height": 724
+    },
+    {
+      "x": 689,
+      "y": 0,
+      "width": 787,
+      "height": 724
+    },
+    {
+      "x": 1476,
+      "y": 0,
+      "width": 696,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.5265392781316348
+}

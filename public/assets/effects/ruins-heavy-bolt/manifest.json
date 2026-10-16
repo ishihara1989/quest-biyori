@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-heavy-bolt",
+  "label": "弩砲大矢",
+  "sheet": "ruins-heavy-bolt.png",
+  "preview": "../../../../development/assets/effects/ruins-heavy-bolt/ruins-heavy-bolt-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-heavy-bolt/PROMPT.md",
+  "width": 1280,
+  "height": 144,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 144,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 72
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/ruins-heavy-bolt/source-registered.png",
+  "sourceScale": 0.24190064794816415,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-heavy-bolt-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 144,
+      "durationMs": 120,
+      "phase": "発生",
+      "bounds": {
+        "left": 75,
+        "top": 39,
+        "right": 244,
+        "bottom": 105
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 819,
+        "height": 584
+      },
+      "sourceAnchor": {
+        "x": 396,
+        "y": 279
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-heavy-bolt-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 144,
+      "durationMs": 120,
+      "phase": "展開",
+      "bounds": {
+        "left": 71,
+        "top": 32,
+        "right": 246,
+        "bottom": 112
+      },
+      "sourceCell": {
+        "x": 819,
+        "y": 0,
+        "width": 819,
+        "height": 584
+      },
+      "sourceAnchor": {
+        "x": 403,
+        "y": 294
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-heavy-bolt-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 144,
+      "durationMs": 120,
+      "phase": "最大",
+      "bounds": {
+        "left": 75,
+        "top": 16,
+        "right": 245,
+        "bottom": 127
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 584,
+        "width": 819,
+        "height": 584
+      },
+      "sourceAnchor": {
+        "x": 392,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-heavy-bolt-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 144,
+      "durationMs": 120,
+      "phase": "収束",
+      "bounds": {
+        "left": 70,
+        "top": 32,
+        "right": 249,
+        "bottom": 112
+      },
+      "sourceCell": {
+        "x": 819,
+        "y": 584,
+        "width": 819,
+        "height": 584
+      },
+      "sourceAnchor": {
+        "x": 407,
+        "y": 282
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "projectile",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-heavy-bolt/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 750,
+        "height": 472
+      },
+      {
+        "x": 750,
+        "y": 0,
+        "width": 786,
+        "height": 472
+      },
+      {
+        "x": 0,
+        "y": 472,
+        "width": 749,
+        "height": 552
+      },
+      {
+        "x": 749,
+        "y": 472,
+        "width": 787,
+        "height": 552
+      }
+    ]
+  }
+}

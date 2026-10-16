@@ -1,0 +1,30 @@
+{
+  "id": "lava-salamander/reaction",
+  "source": "sources/lava-salamander/reaction-v2-rejected-haze.png",
+  "prompt": "Use case: precise-object-edit. Game sprite sheet, 4 poses in EXACT equal 2x2 cells, order top-left hit recoil, top-right neutral recovery, bottom-left knees bend collapse, bottom-right terminal prone defeat. Image 1 is immutable canonical lava salamander identity, image 2 is the first-pass edit target. Recreate target preserving canonical basalt-black armor scales, orange lava fissures, dorsal fin shape, four connected legs, three claws per foot, left-facing 3/4 view, head and torso proportions. Fix first-pass defects: eliminate ALL red background haze; use actual transparent alpha, no shadows, no floor; in hit keep rear legs supporting body, front legs bent but attached; recovery is canonical neutral; collapse bends all four knees; terminal body fully prone with head down and fin/core orange light dim almost extinguished, tail rests. Do not elongate neck or mutate claws. Same scale and head size in all 4 cells. Entire silhouette including tail, all fins and feet inside each cell with 14% clear padding on every side; perfectly empty clear horizontal and vertical gutters. Crisp refined JRPG pixel clusters as canonical, no text, grid, checkerboard, or watermark. Only attached tiny light, no external VFX.",
+  "selected": false,
+  "reason": "Rejected: diffuse red haze retained",
+  "tool": "built-in image_gen",
+  "sha256": "4d25d03207cd17031be833423de4b86bc3eb21660bb745c051f00942ce8935dd",
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "firstPass": "sources/lava-salamander/reaction-generated.png",
+  "issues": [
+    "赤い光の背景が原画の広範囲に混入。透過PNGとしての再制作が必要。",
+    "撃破最終コマは低い伏せ姿勢になっているが背びれと溶岩光が残り、待機との状態差が弱い。",
+    "被弾1コマ目は前脚が浮くため、接地と荷重の対応を確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    },
+    {
+      "file": "../../late-stage-first-pass/v1/sources/lava-salamander/reaction-generated.png",
+      "sha256": "303d702ad3e12fa097afdecb3af54fc1ce2c1c85ea6493a59cd4998e9747b970"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2",
+  "reasonCorrection": "背景光の見え方は透明画素に残ったRGBの表示も含んでいたため、後でPNGの合成表示を根拠に判定し直した。元の判定と原画は履歴として保持する。"
+}

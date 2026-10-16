@@ -1,0 +1,25 @@
+{
+  "id": "effects/end-cross",
+  "effect": "end-cross",
+  "region": "demon-castle",
+  "label": "終焉の交差帯",
+  "kind": "origin",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/end-cross-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. one long diagonal crimson-white energy band from upper-right to lower-left, black-violet outer contour and gold lightning shards; reuse rotated 90 degrees for second crossing band. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed emission point at (850,512), extend toward LEFT. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-8d36278b-4b86-4cca-9564-58649169e9b2.png",
+  "sha256": "6251f55edf3575a8ae8c9699c99266cbb338993be0b4235f2b8452fee673fafb",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "単独の左下向き斜め帯という指定に対し、右端で三叉に交差する光が出ている。時間差の2帯に使える単帯へ再制作する。",
+      "紫赤の背景光が混入。",
+      "右の発射点の光が大きい。魔神の本体と重なる範囲を確認する。"
+    ]
+  }
+}

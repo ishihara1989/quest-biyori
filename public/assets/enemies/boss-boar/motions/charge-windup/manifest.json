@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boss-boar",
+  "motion": "charge-windup",
+  "facing": "left",
+  "label": "突進予告",
+  "sheet": "boss-boar-charge-windup.png",
+  "preview": "../../../../../../development/assets/enemies/boss-boar/motions/charge-windup/boss-boar-charge-windup-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boss-boar/PROMPT.md",
+  "width": 1920,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 240,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 800,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/boss-boar/source/boss-boar-charge-windup-generated-v4.png",
+  "sourceScale": 0.51,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "charge-windup-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "屈み・左後脚を前へ持ち上げる",
+      "bounds": {
+        "left": 69,
+        "top": 82,
+        "right": 412,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 750,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 340,
+        "y": 490
+      },
+      "bakedOffset": {
+        "x": -17,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "charge-windup-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 160,
+      "phase": "左後脚を前に接地する",
+      "bounds": {
+        "left": 66,
+        "top": 82,
+        "right": 424,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 750,
+        "y": 0,
+        "width": 786,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 343,
+        "y": 490
+      },
+      "bakedOffset": {
+        "x": -17,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "charge-windup-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "左後脚で地面を後ろへ蹴る",
+      "bounds": {
+        "left": 68,
+        "top": 84,
+        "right": 443,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 782,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 344,
+        "y": 457
+      },
+      "bakedOffset": {
+        "x": -17,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "charge-windup-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "左後脚を浮かせて引き戻す",
+      "bounds": {
+        "left": 67,
+        "top": 84,
+        "right": 418,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 782,
+        "y": 512,
+        "width": 754,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 313,
+        "y": 460
+      },
+      "bakedOffset": {
+        "x": -17,
+        "y": 0
+      }
+    }
+  ],
+  "chargeTelegraph": {
+    "nextMotion": "attack",
+    "repeatCount": "game-controlled",
+    "releaseBoundary": "cycle-end",
+    "rangeOverlay": "external-ground-layer",
+    "rootPosition": "locked",
+    "pawingFoot": "left-hind",
+    "supportFeet": [
+      "left-front",
+      "right-front",
+      "right-hind"
+    ]
+  }
+}

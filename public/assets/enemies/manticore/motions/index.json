@@ -1,0 +1,47 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "double-claw",
+    "label": "爪の二連撃",
+    "manifest": "double-claw/manifest.json"
+  },
+  {
+    "id": "venom",
+    "label": "毒尾の扇射",
+    "manifest": "venom/manifest.json"
+  },
+  {
+    "id": "gust",
+    "label": "翼の突風",
+    "manifest": "gust/manifest.json"
+  },
+  {
+    "id": "pounce",
+    "label": "飛び込み",
+    "manifest": "pounce/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "休息",
+    "manifest": "rest/manifest.json"
+  }
+]

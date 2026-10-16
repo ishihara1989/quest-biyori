@@ -1,0 +1,200 @@
+{
+  "id": "obsidian-executioner/attack",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "label": "斧撃",
+  "kind": null,
+  "motion": "attack",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../sources/obsidian-executioner/attack-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/obsidian-executioner/attack/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "transparentFraction": 0.8904914855957031,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 77,
+        "top": 122,
+        "right": 425,
+        "bottom": 343
+      },
+      "visibleBounds": {
+        "left": 142,
+        "top": 124,
+        "right": 395,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/attack-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 735,
+        "height": 492
+      },
+      "sourceScale": 0.528395061728395,
+      "sourceAnchor": {
+        "x": 459,
+        "y": 454
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8827743530273438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 121,
+        "top": 121,
+        "right": 499,
+        "bottom": 344
+      },
+      "visibleBounds": {
+        "left": 128,
+        "top": 141,
+        "right": 441,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/attack-v3.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 735,
+        "y": 0,
+        "width": 801,
+        "height": 492
+      },
+      "sourceScale": 0.528395061728395,
+      "sourceAnchor": {
+        "x": 382,
+        "y": 450
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8782081604003906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 103,
+        "top": 97,
+        "right": 499,
+        "bottom": 360
+      },
+      "visibleBounds": {
+        "left": 107,
+        "top": 138,
+        "right": 445,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/attack-v3.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 492,
+        "width": 843,
+        "height": 532
+      },
+      "sourceScale": 0.528395061728395,
+      "sourceAnchor": {
+        "x": 437,
+        "y": 466
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8902816772460938,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 122,
+        "top": 89,
+        "right": 456,
+        "bottom": 354
+      },
+      "visibleBounds": {
+        "left": 172,
+        "top": 105,
+        "right": 384,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/attack-v3.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 843,
+        "y": 492,
+        "width": 693,
+        "height": 532
+      },
+      "sourceScale": 0.528395061728395,
+      "sourceAnchor": {
+        "x": 334,
+        "y": 477
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "axe-arc",
+      "timeMs": 280,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "axe-arc"
+  ],
+  "repeatRelease": false
+}

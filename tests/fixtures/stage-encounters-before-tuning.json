@@ -1,0 +1,618 @@
+{
+  "protected": [
+    {
+      "id": 1,
+      "enemyHp": 1,
+      "enemyDamage": 1,
+      "reward": 20,
+      "waves": [
+        [
+          "slime",
+          "slime",
+          "slime"
+        ],
+        [
+          "slime",
+          "slime",
+          "slime",
+          "slime"
+        ],
+        [
+          "slime",
+          "slime",
+          "slime",
+          "slime",
+          "slime"
+        ]
+      ]
+    },
+    {
+      "id": 5,
+      "enemyHp": 1.15,
+      "enemyDamage": 2,
+      "reward": 100,
+      "waves": [
+        [
+          "slime",
+          "slime",
+          "slime",
+          "slime",
+          "boar",
+          "boar",
+          "boar",
+          "boar",
+          "alraune-minion",
+          "alraune-minion",
+          "alraune-minion",
+          "alraune-minion"
+        ],
+        [
+          "slime",
+          "slime",
+          "slime",
+          "slime",
+          "boar",
+          "boar",
+          "boar",
+          "boar",
+          "alraune-minion",
+          "alraune-minion",
+          "alraune-minion",
+          "alraune-minion"
+        ],
+        [
+          "slime",
+          "slime",
+          "slime",
+          "slime",
+          "boar",
+          "boar",
+          "boar",
+          "boar",
+          "alraune-minion",
+          "alraune-minion",
+          "alraune-minion",
+          "alraune-minion"
+        ]
+      ]
+    },
+    {
+      "id": 11,
+      "enemyHp": 1,
+      "enemyDamage": 1,
+      "reward": 220,
+      "waves": [
+        [
+          "giga-toad",
+          "giga-toad",
+          "giga-toad"
+        ],
+        [
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "giga-toad"
+        ],
+        [
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "giga-toad"
+        ]
+      ]
+    },
+    {
+      "id": 15,
+      "enemyHp": 1,
+      "enemyDamage": 1,
+      "reward": 300,
+      "waves": [
+        [
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "mud-hand",
+          "mud-hand",
+          "mud-hand",
+          "mud-hand",
+          "skeleton",
+          "skeleton",
+          "skeleton",
+          "skeleton"
+        ],
+        [
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "mud-hand",
+          "mud-hand",
+          "mud-hand",
+          "mud-hand",
+          "skeleton",
+          "skeleton",
+          "skeleton",
+          "skeleton"
+        ],
+        [
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "giga-toad",
+          "mud-hand",
+          "mud-hand",
+          "mud-hand",
+          "mud-hand",
+          "skeleton",
+          "skeleton",
+          "skeleton",
+          "skeleton"
+        ]
+      ]
+    },
+    {
+      "id": 21,
+      "enemyHp": 1,
+      "enemyDamage": 1,
+      "reward": 420,
+      "waves": [
+        [
+          "cave-bat",
+          "cave-bat",
+          "cave-bat"
+        ],
+        [
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-bat"
+        ],
+        [
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-bat"
+        ]
+      ]
+    },
+    {
+      "id": 25,
+      "enemyHp": 1,
+      "enemyDamage": 1,
+      "reward": 500,
+      "waves": [
+        [
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-worm",
+          "cave-worm",
+          "cave-worm",
+          "cave-worm",
+          "cave-spider",
+          "cave-spider",
+          "cave-spider",
+          "cave-spider"
+        ],
+        [
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-worm",
+          "cave-worm",
+          "cave-worm",
+          "cave-worm",
+          "cave-spider",
+          "cave-spider",
+          "cave-spider",
+          "cave-spider"
+        ],
+        [
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-bat",
+          "cave-worm",
+          "cave-worm",
+          "cave-worm",
+          "cave-worm",
+          "cave-spider",
+          "cave-spider",
+          "cave-spider",
+          "cave-spider"
+        ]
+      ]
+    },
+    {
+      "id": 31,
+      "enemyHp": 1,
+      "enemyDamage": 1,
+      "reward": 620,
+      "waves": [
+        [
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab"
+        ],
+        [
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab"
+        ],
+        [
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab"
+        ]
+      ]
+    },
+    {
+      "id": 35,
+      "enemyHp": 1,
+      "enemyDamage": 1,
+      "reward": 700,
+      "waves": [
+        [
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "lizardman",
+          "lizardman",
+          "lizardman",
+          "lizardman",
+          "octopus",
+          "octopus",
+          "octopus",
+          "octopus"
+        ],
+        [
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "lizardman",
+          "lizardman",
+          "lizardman",
+          "lizardman",
+          "octopus",
+          "octopus",
+          "octopus",
+          "octopus"
+        ],
+        [
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "hermit-crab",
+          "lizardman",
+          "lizardman",
+          "lizardman",
+          "lizardman",
+          "octopus",
+          "octopus",
+          "octopus",
+          "octopus"
+        ]
+      ]
+    }
+  ],
+  "encounters": [
+    {
+      "id": 2,
+      "reward": 40,
+      "counts": {
+        "slime": 14,
+        "boss-slime": 1
+      }
+    },
+    {
+      "id": 4,
+      "reward": 80,
+      "counts": {
+        "alraune-minion": 12,
+        "alraune": 1
+      }
+    },
+    {
+      "id": 6,
+      "reward": 120,
+      "counts": {
+        "slime": 9,
+        "boar": 7,
+        "boss-slime": 1,
+        "boss-boar": 1
+      }
+    },
+    {
+      "id": 7,
+      "reward": 140,
+      "counts": {
+        "slime": 9,
+        "alraune-minion": 7,
+        "boss-slime": 1,
+        "alraune": 1
+      }
+    },
+    {
+      "id": 8,
+      "reward": 160,
+      "counts": {
+        "boar": 8,
+        "alraune-minion": 7,
+        "boss-boar": 1,
+        "alraune": 1
+      }
+    },
+    {
+      "id": 9,
+      "reward": 180,
+      "counts": {
+        "slime": 5,
+        "boar": 2,
+        "alraune-minion": 5,
+        "boss-slime": 1,
+        "boss-boar": 1,
+        "alraune": 1
+      }
+    },
+    {
+      "id": 10,
+      "reward": 200,
+      "counts": {
+        "slime": 2,
+        "boar": 5,
+        "alraune-minion": 3,
+        "boss-slime": 1,
+        "boss-boar": 1,
+        "alraune": 1,
+        "treant": 1
+      }
+    },
+    {
+      "id": 12,
+      "reward": 240,
+      "counts": {
+        "giga-toad": 14,
+        "king-toad": 1
+      }
+    },
+    {
+      "id": 13,
+      "reward": 260,
+      "counts": {
+        "mud-hand": 12,
+        "mud-giant": 1
+      }
+    },
+    {
+      "id": 14,
+      "reward": 280,
+      "counts": {
+        "skeleton": 12,
+        "lich": 1
+      }
+    },
+    {
+      "id": 16,
+      "reward": 320,
+      "counts": {
+        "giga-toad": 9,
+        "mud-hand": 7,
+        "king-toad": 1,
+        "mud-giant": 1
+      }
+    },
+    {
+      "id": 17,
+      "reward": 340,
+      "counts": {
+        "giga-toad": 9,
+        "skeleton": 7,
+        "king-toad": 1,
+        "lich": 1
+      }
+    },
+    {
+      "id": 18,
+      "reward": 360,
+      "counts": {
+        "mud-hand": 8,
+        "skeleton": 7,
+        "mud-giant": 1,
+        "lich": 1
+      }
+    },
+    {
+      "id": 19,
+      "reward": 380,
+      "counts": {
+        "giga-toad": 5,
+        "mud-hand": 2,
+        "skeleton": 5,
+        "king-toad": 1,
+        "mud-giant": 1,
+        "lich": 1
+      }
+    },
+    {
+      "id": 20,
+      "reward": 400,
+      "counts": {
+        "giga-toad": 2,
+        "mud-hand": 5,
+        "skeleton": 3,
+        "king-toad": 1,
+        "mud-giant": 1,
+        "lich": 1,
+        "hydra": 1
+      }
+    },
+    {
+      "id": 22,
+      "reward": 440,
+      "counts": {
+        "cave-bat": 14,
+        "great-bat": 1
+      }
+    },
+    {
+      "id": 23,
+      "reward": 460,
+      "counts": {
+        "cave-worm": 12,
+        "large-worm": 1
+      }
+    },
+    {
+      "id": 24,
+      "reward": 480,
+      "counts": {
+        "cave-spider": 12,
+        "arachne": 1
+      }
+    },
+    {
+      "id": 26,
+      "reward": 520,
+      "counts": {
+        "cave-bat": 9,
+        "cave-worm": 7,
+        "great-bat": 1,
+        "large-worm": 1
+      }
+    },
+    {
+      "id": 27,
+      "reward": 540,
+      "counts": {
+        "cave-bat": 9,
+        "cave-spider": 7,
+        "great-bat": 1,
+        "arachne": 1
+      }
+    },
+    {
+      "id": 28,
+      "reward": 560,
+      "counts": {
+        "cave-worm": 8,
+        "cave-spider": 7,
+        "large-worm": 1,
+        "arachne": 1
+      }
+    },
+    {
+      "id": 29,
+      "reward": 580,
+      "counts": {
+        "cave-bat": 5,
+        "cave-worm": 2,
+        "cave-spider": 5,
+        "great-bat": 1,
+        "large-worm": 1,
+        "arachne": 1
+      }
+    },
+    {
+      "id": 30,
+      "reward": 600,
+      "counts": {
+        "cave-bat": 2,
+        "cave-worm": 5,
+        "cave-spider": 3,
+        "great-bat": 1,
+        "large-worm": 1,
+        "arachne": 1,
+        "cave-troll": 1
+      }
+    },
+    {
+      "id": 32,
+      "reward": 640,
+      "counts": {
+        "hermit-crab": 14,
+        "great-hermit": 1
+      }
+    },
+    {
+      "id": 33,
+      "reward": 660,
+      "counts": {
+        "lizardman": 12,
+        "lizard-chief": 1
+      }
+    },
+    {
+      "id": 34,
+      "reward": 680,
+      "counts": {
+        "octopus": 12,
+        "scylla": 1
+      }
+    },
+    {
+      "id": 36,
+      "reward": 720,
+      "counts": {
+        "hermit-crab": 9,
+        "lizardman": 7,
+        "great-hermit": 1,
+        "lizard-chief": 1
+      }
+    },
+    {
+      "id": 37,
+      "reward": 740,
+      "counts": {
+        "hermit-crab": 9,
+        "octopus": 7,
+        "great-hermit": 1,
+        "scylla": 1
+      }
+    },
+    {
+      "id": 38,
+      "reward": 760,
+      "counts": {
+        "lizardman": 8,
+        "octopus": 7,
+        "lizard-chief": 1,
+        "scylla": 1
+      }
+    },
+    {
+      "id": 39,
+      "reward": 780,
+      "counts": {
+        "hermit-crab": 5,
+        "lizardman": 2,
+        "octopus": 5,
+        "great-hermit": 1,
+        "lizard-chief": 1,
+        "scylla": 1
+      }
+    },
+    {
+      "id": 40,
+      "reward": 800,
+      "counts": {
+        "hermit-crab": 2,
+        "lizardman": 5,
+        "octopus": 3,
+        "great-hermit": 1,
+        "lizard-chief": 1,
+        "scylla": 1,
+        "kraken": 1
+      }
+    }
+  ]
+}

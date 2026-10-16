@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "enemy": "skeleton",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "skeleton-idle.png",
+  "preview": "../../../../../../development/assets/enemies/skeleton/motions/idle/skeleton-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/skeleton/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/skeleton/source/idle-registered.png",
+  "sourceScale": 0.4069097888675624,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 118,
+        "top": 92,
+        "right": 328,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 557,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 275,
+        "y": 536
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 120,
+        "top": 85,
+        "right": 335,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 557,
+        "y": 0,
+        "width": 569,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 276,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 122,
+        "top": 94,
+        "right": 335,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 569,
+        "width": 561,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 266,
+        "y": 531
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 400,
+      "phase": "終端",
+      "bounds": {
+        "left": 116,
+        "top": 94,
+        "right": 331,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 561,
+        "y": 569,
+        "width": 565,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 281,
+        "y": 531
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/skeleton/source/idle-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 2,
+      "count": 100287,
+      "left": 49,
+      "top": 82,
+      "right": 567,
+      "bottom": 602,
+      "cx": 347.8990497272827,
+      "cy": 334.2440595490941
+    },
+    {
+      "id": 1,
+      "count": 98987,
+      "left": 644,
+      "top": 66,
+      "right": 1174,
+      "bottom": 602,
+      "cx": 938.9811692444463,
+      "cy": 329.8604463212341
+    },
+    {
+      "id": 3,
+      "count": 100736,
+      "left": 57,
+      "top": 687,
+      "right": 582,
+      "bottom": 1202,
+      "cx": 350.1484176461245,
+      "cy": 935.430104431385
+    },
+    {
+      "id": 4,
+      "count": 100296,
+      "left": 645,
+      "top": 687,
+      "right": 1175,
+      "bottom": 1202,
+      "cx": 949.5740707505782,
+      "cy": 936.5003190555955
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1
+}

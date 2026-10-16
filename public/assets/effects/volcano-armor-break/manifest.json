@@ -1,0 +1,201 @@
+{
+  "id": "volcano-armor-break",
+  "enemy": null,
+  "region": "volcano",
+  "label": "破甲",
+  "kind": "status",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/armor-break-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8993415832519531,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 28,
+        "top": 147,
+        "right": 387,
+        "bottom": 381
+      },
+      "visibleBounds": {
+        "left": 165,
+        "top": 149,
+        "right": 347,
+        "bottom": 361
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/armor-break-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 507
+      },
+      "sourceScale": 0.4955044955044955,
+      "sourceAnchor": {
+        "x": 500.5,
+        "y": 252.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8994598388671875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 162,
+        "top": 147,
+        "right": 439,
+        "bottom": 381
+      },
+      "visibleBounds": {
+        "left": 165,
+        "top": 149,
+        "right": 346,
+        "bottom": 362
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/armor-break-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 507
+      },
+      "sourceScale": 0.4955044955044955,
+      "sourceAnchor": {
+        "x": 267,
+        "y": 252.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9001846313476562,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 89,
+        "top": 131,
+        "right": 353,
+        "bottom": 377
+      },
+      "visibleBounds": {
+        "left": 165,
+        "top": 150,
+        "right": 346,
+        "bottom": 361
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/armor-break-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 507,
+        "width": 768,
+        "height": 517
+      },
+      "sourceScale": 0.4955044955044955,
+      "sourceAnchor": {
+        "x": 500.5,
+        "y": 252.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.90087890625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 127,
+        "top": 131,
+        "right": 438,
+        "bottom": 381
+      },
+      "visibleBounds": {
+        "left": 165,
+        "top": 150,
+        "right": 346,
+        "bottom": 362
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/armor-break-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 768,
+        "y": 507,
+        "width": 768,
+        "height": 517
+      },
+      "sourceScale": 0.4955044955044955,
+      "sourceAnchor": {
+        "x": 266.5,
+        "y": 253
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/armor-break/preview.gif",
+  "action": null
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../../source/lion-claws-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 727,
+      "height": 724
+    },
+    {
+      "x": 727,
+      "y": 0,
+      "width": 707,
+      "height": 724
+    },
+    {
+      "x": 1434,
+      "y": 0,
+      "width": 738,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.5243128964059197
+}

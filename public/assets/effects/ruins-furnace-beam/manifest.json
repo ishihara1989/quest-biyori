@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-furnace-beam",
+  "label": "炉心光線",
+  "sheet": "ruins-furnace-beam.png",
+  "preview": "../../../../development/assets/effects/ruins-furnace-beam/ruins-furnace-beam-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-furnace-beam/PROMPT.md",
+  "width": 1792,
+  "height": 192,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 192,
+  "frameCount": 4,
+  "pivot": {
+    "x": 378,
+    "y": 96
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 500,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-furnace-beam/source-registered.png",
+  "sourceScale": 0.3611738148984199,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-furnace-beam-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 192,
+      "durationMs": 60,
+      "phase": "発生",
+      "bounds": {
+        "left": 183,
+        "top": 28,
+        "right": 427,
+        "bottom": 160
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 813,
+        "height": 560
+      },
+      "sourceAnchor": {
+        "x": 625,
+        "y": 287
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-furnace-beam-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 192,
+      "durationMs": 120,
+      "phase": "展開",
+      "bounds": {
+        "left": 160,
+        "top": 27,
+        "right": 426,
+        "bottom": 161
+      },
+      "sourceCell": {
+        "x": 813,
+        "y": 0,
+        "width": 813,
+        "height": 560
+      },
+      "sourceAnchor": {
+        "x": 639,
+        "y": 286
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-furnace-beam-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 192,
+      "durationMs": 240,
+      "phase": "最大",
+      "bounds": {
+        "left": 173,
+        "top": 11,
+        "right": 432,
+        "bottom": 170
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 560,
+        "width": 813,
+        "height": 560
+      },
+      "sourceAnchor": {
+        "x": 616,
+        "y": 293
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-furnace-beam-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 192,
+      "durationMs": 80,
+      "phase": "収束",
+      "bounds": {
+        "left": 165,
+        "top": 27,
+        "right": 418,
+        "bottom": 162
+      },
+      "sourceCell": {
+        "x": 813,
+        "y": 560,
+        "width": 813,
+        "height": 560
+      },
+      "sourceAnchor": {
+        "x": 636,
+        "y": 287
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "beam",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-furnace-beam/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 765,
+        "height": 496
+      },
+      {
+        "x": 765,
+        "y": 0,
+        "width": 771,
+        "height": 496
+      },
+      {
+        "x": 0,
+        "y": 496,
+        "width": 781,
+        "height": 528
+      },
+      {
+        "x": 781,
+        "y": 496,
+        "width": 755,
+        "height": 528
+      }
+    ]
+  }
+}

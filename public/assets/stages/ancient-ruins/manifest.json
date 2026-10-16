@@ -1,0 +1,23 @@
+{
+  "id": "ancient-ruins",
+  "width": 1672,
+  "height": 941,
+  "logicalWidth": 1024,
+  "logicalHeight": 576,
+  "ground": {
+    "minY": 323,
+    "maxY": 512
+  },
+  "layers": [
+    {
+      "file": "distant.png",
+      "role": "distant"
+    },
+    {
+      "file": "ground-near.png",
+      "role": "ground-near"
+    }
+  ],
+  "source": "../../ruins-design/v1",
+  "sampling": "nearest-neighbor"
+}

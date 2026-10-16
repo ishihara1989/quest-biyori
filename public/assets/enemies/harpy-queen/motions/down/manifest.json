@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "enemy": "harpy-queen",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "harpy-queen-down.png",
+  "preview": "../../../../../../development/assets/enemies/harpy-queen/motions/down/harpy-queen-down-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 1300,
+  "height": 530,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 650,
+  "frameHeight": 530,
+  "frameCount": 2,
+  "pivot": {
+    "x": 370,
+    "y": 506
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1220,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/highland-motions/enemies/harpy-queen/registered/down.png",
+  "sourceScale": 0.5042016806722689,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 320,
+      "phase": "落下・崩れる",
+      "bounds": {
+        "left": 191,
+        "top": 160,
+        "right": 548,
+        "bottom": 478
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 760,
+        "width": 845,
+        "height": 760
+      },
+      "sourceAnchor": {
+        "x": 441,
+        "y": 673
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -28
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 650,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 171,
+        "top": 376,
+        "right": 546,
+        "bottom": 506
+      },
+      "sourceCell": {
+        "x": 845,
+        "y": 760,
+        "width": 845,
+        "height": 760
+      },
+      "sourceAnchor": {
+        "x": 427,
+        "y": 667
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/harpy-queen.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/harpy-queen/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 676,
+          "height": 606
+        },
+        {
+          "x": 676,
+          "y": 0,
+          "width": 636,
+          "height": 606
+        },
+        {
+          "x": 0,
+          "y": 606,
+          "width": 661,
+          "height": 593
+        },
+        {
+          "x": 661,
+          "y": 606,
+          "width": 651,
+          "height": 593
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.202020202020202,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "fall": {
+    "landingFrame": 1,
+    "fromHoverHeight": 56
+  },
+  "effectAssets": [],
+  "action": null
+}

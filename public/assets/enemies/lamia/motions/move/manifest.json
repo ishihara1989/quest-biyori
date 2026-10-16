@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lamia",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "lamia-move.png",
+  "preview": "../../../../../../development/assets/enemies/lamia/motions/move/lamia-move-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 2400,
+  "height": 440,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 600,
+  "frameHeight": 440,
+  "frameCount": 4,
+  "pivot": {
+    "x": 348,
+    "y": 422
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/lamia/source/move-registered.png",
+  "sourceScale": 0.5296229802513465,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 440,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 227,
+        "top": 127,
+        "right": 490,
+        "bottom": 422
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 729,
+        "height": 641
+      },
+      "sourceAnchor": {
+        "x": 310,
+        "y": 595
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 600,
+      "y": 0,
+      "width": 600,
+      "height": 440,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 233,
+        "top": 125,
+        "right": 490,
+        "bottom": 423
+      },
+      "sourceCell": {
+        "x": 729,
+        "y": 0,
+        "width": 729,
+        "height": 641
+      },
+      "sourceAnchor": {
+        "x": 342,
+        "y": 599
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1200,
+      "y": 0,
+      "width": 600,
+      "height": 440,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 231,
+        "top": 128,
+        "right": 516,
+        "bottom": 422
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 641,
+        "width": 729,
+        "height": 641
+      },
+      "sourceAnchor": {
+        "x": 348,
+        "y": 592
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1800,
+      "y": 0,
+      "width": 600,
+      "height": 440,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 226,
+        "top": 127,
+        "right": 500,
+        "bottom": 422
+      },
+      "sourceCell": {
+        "x": 729,
+        "y": 641,
+        "width": 729,
+        "height": 641
+      },
+      "sourceAnchor": {
+        "x": 295,
+        "y": 594
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/lamia-move-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/lamia.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 666,
+          "height": 597
+        },
+        {
+          "x": 666,
+          "y": 0,
+          "width": 646,
+          "height": 597
+        },
+        {
+          "x": 0,
+          "y": 597,
+          "width": 689,
+          "height": 602
+        },
+        {
+          "x": 689,
+          "y": 597,
+          "width": 623,
+          "height": 602
+        }
+      ]
+    }
+  ]
+}

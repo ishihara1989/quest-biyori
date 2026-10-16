@@ -1,0 +1,211 @@
+{
+  "id": "black-knight/danger-2",
+  "label": "黒騎士・黒環薙ぎ",
+  "enemy": "black-knight",
+  "motion": "danger-2",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/black-knight.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 802,
+        "height": 521
+      },
+      "sourceAnchor": [
+        420,
+        484
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "af9042a742ab4fbd81959fa0b10af4ba1b3b31876d6e10af57e0c23f625fb767",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.903411865234375,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 123,
+        "top": 208,
+        "right": 449,
+        "bottom": 427
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4220,
+      "phase": "腰へ剣を引く",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 802,
+        "top": 0,
+        "width": 734,
+        "height": 521
+      },
+      "sourceAnchor": [
+        390,
+        475
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "94f8e3cf1d7b12dda87053e9b3f3e199cd05879bd9069747bfeaee6f8a1169c7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9047698974609375,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 103,
+        "top": 213,
+        "right": 439,
+        "bottom": 420
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "phase": "横薙ぎ",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 0,
+        "top": 521,
+        "width": 805,
+        "height": 503
+      },
+      "sourceAnchor": [
+        450,
+        466
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "0aa3660bd5d75d520454dbd8e2f382447c67228411dc192890c0082d8b3cb95e",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8991889953613281,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 88,
+        "top": 213,
+        "right": 443,
+        "bottom": 407
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/black-knight/danger-2-v2.png",
+      "sourceSha256": "0de382e8af7bd9badaa1d9af869f9cb387ef0f933810495d57e86c8ca5d9f6b4",
+      "sourceRect": {
+        "left": 805,
+        "top": 521,
+        "width": 731,
+        "height": 503
+      },
+      "sourceAnchor": [
+        375,
+        477
+      ],
+      "scale": 0.46,
+      "pivot": [
+        280,
+        410
+      ],
+      "sha256": "c5897bd2572cf5bdde66aee41e78abbdfc6d82936817f5cda915af9020f3724e",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9023323059082031,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 128,
+        "top": 207,
+        "right": 414,
+        "bottom": 408
+      }
+    }
+  ],
+  "fingerprint": "7888336d95f6dfdf29975789c04c19d814e1891a6a12bcf65be24bc56e090622",
+  "events": [
+    {
+      "timeMs": 4400,
+      "effect": "castle-black-ring",
+      "kind": "sector"
+    }
+  ],
+  "pivot": {
+    "x": 280,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 5300,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/black-knight/danger-2/manifest.json",
+  "sourceFingerprint": "7888336d95f6dfdf29975789c04c19d814e1891a6a12bcf65be24bc56e090622",
+  "action": {
+    "name": "黒環薙ぎ",
+    "motion": "danger-2",
+    "warn": 4400,
+    "times": [
+      4400
+    ],
+    "kind": "sector",
+    "radius": 310,
+    "effect": "black-ring",
+    "rest": 9000,
+    "status": null,
+    "duration": 5300,
+    "angle": 150
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-black-ring",
+        "manifest": "../../../../effects/castle-black-ring/manifest.json"
+      }
+    ]
+  }
+}

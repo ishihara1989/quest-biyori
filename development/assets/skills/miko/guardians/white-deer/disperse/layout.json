@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/white-deer-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 699,
+      "height": 724
+    },
+    {
+      "x": 699,
+      "y": 0,
+      "width": 753,
+      "height": 724
+    },
+    {
+      "x": 1452,
+      "y": 0,
+      "width": 720,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 944
+    },
+    {
+      "x": 512,
+      "y": 944
+    },
+    {
+      "x": 512,
+      "y": 944
+    }
+  ],
+  "scale": 0.5092402464065708
+}

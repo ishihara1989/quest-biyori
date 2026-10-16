@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "swift-wolf-appear",
+  "character": "miko",
+  "subject": "swift-wolf",
+  "group": "possession",
+  "motion": "appear",
+  "sheet": "swift-wolf-appear.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 450,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.49206349206349204,
+  "frames": [
+    {
+      "index": 0,
+      "file": "swift-wolf-appear-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 60,
+        "t": 77,
+        "r": 474,
+        "b": 476,
+        "n": 89548,
+        "width": 415,
+        "height": 400
+      }
+    },
+    {
+      "index": 1,
+      "file": "swift-wolf-appear-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 45,
+        "t": 75,
+        "r": 466,
+        "b": 476,
+        "n": 108250,
+        "width": 422,
+        "height": 402
+      }
+    },
+    {
+      "index": 2,
+      "file": "swift-wolf-appear-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 39,
+        "t": 77,
+        "r": 452,
+        "b": 476,
+        "n": 108414,
+        "width": 414,
+        "height": 400
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/swift-wolf-appear-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/swift-wolf-idle-generated-v2.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

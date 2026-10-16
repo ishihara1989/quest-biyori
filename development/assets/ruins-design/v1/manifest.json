@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "status": "awaiting-design-review",
+  "generation": "built-in image_gen",
+  "motionProduction": "not-started",
+  "coordinateSystem": {
+    "width": 1024,
+    "height": 576,
+    "contactY": {
+      "min": 323,
+      "max": 512
+    }
+  },
+  "background": {
+    "composite": "background-preview.png",
+    "layers": [
+      {
+        "file": "distant.png",
+        "alpha": false,
+        "parallax": 0.28
+      },
+      {
+        "file": "ground-near.png",
+        "alpha": true,
+        "parallax": 1
+      }
+    ]
+  },
+  "enemies": [
+    {
+      "id": "stone-guard",
+      "name": "石の衛兵",
+      "role": "近距離・物理",
+      "file": "stone-guard.png",
+      "reference": "source/stone-guard-v1.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "石の衛兵",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.6241,
+      "partialAlphaPixels": 590192,
+      "opaqueBounds": {
+        "left": 81,
+        "top": 88,
+        "right": 1147,
+        "bottom": 1132
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 191887,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "rune-gargoyle",
+      "name": "ルーンガーゴイル",
+      "role": "近距離・魔法",
+      "file": "rune-gargoyle.png",
+      "reference": "source/rune-gargoyle-v1.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "ルーンガーゴイル",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.6149,
+      "partialAlphaPixels": 604960,
+      "opaqueBounds": {
+        "left": 89,
+        "top": 88,
+        "right": 1230,
+        "bottom": 1200
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 229065,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "ancient-crossbowman",
+      "name": "古代の弩兵",
+      "role": "遠距離・物理",
+      "file": "ancient-crossbowman.png",
+      "reference": "source/ancient-crossbowman-v1.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "古代の弩兵",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7611,
+      "partialAlphaPixels": 375216,
+      "opaqueBounds": {
+        "left": 78,
+        "top": 59,
+        "right": 1087,
+        "bottom": 1182
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 186857,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "floating-magic-core",
+      "name": "浮遊魔導器",
+      "role": "遠距離・魔法",
+      "file": "floating-magic-core.png",
+      "reference": "source/floating-magic-core-v1.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "浮遊魔導器",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.5938,
+      "partialAlphaPixels": 638051,
+      "opaqueBounds": {
+        "left": 77,
+        "top": 90,
+        "right": 1177,
+        "bottom": 1118
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 257454,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "armored-golem",
+      "name": "重装ゴーレム",
+      "role": "ボス・近距離物理",
+      "file": "armored-golem.png",
+      "reference": "source/armored-golem-v2.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "重装ゴーレム",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.6463,
+      "partialAlphaPixels": 555658,
+      "opaqueBounds": {
+        "left": 193,
+        "top": 199,
+        "right": 1092,
+        "bottom": 1085
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 184439,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "ancient-ballista",
+      "name": "古代弩砲兵",
+      "role": "ボス・遠距離物理",
+      "file": "ancient-ballista.png",
+      "reference": "source/ancient-ballista-v2.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "古代弩砲兵",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7889,
+      "partialAlphaPixels": 331073,
+      "opaqueBounds": {
+        "left": 183,
+        "top": 281,
+        "right": 1047,
+        "bottom": 1075
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 112175,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "seraphina",
+      "name": "魔導人形セラフィナ",
+      "role": "女性型ボス・魔法",
+      "file": "seraphina.png",
+      "reference": "source/seraphina-v2.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "魔導人形セラフィナ",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7585,
+      "partialAlphaPixels": 379187,
+      "opaqueBounds": {
+        "left": 284,
+        "top": 137,
+        "right": 1021,
+        "bottom": 1120
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 114683,
+      "hasTransparency": true,
+      "noClipping": true
+    },
+    {
+      "id": "ancient-titan",
+      "name": "古代機兵タイタン",
+      "role": "大ボス・物理／魔法",
+      "file": "ancient-titan.png",
+      "reference": "source/ancient-titan-v2.png",
+      "facing": "left",
+      "pose": "single-neutral",
+      "label": "古代機兵タイタン",
+      "width": 1254,
+      "height": 1254,
+      "transparentRatio": 0.7001,
+      "partialAlphaPixels": 470894,
+      "opaqueBounds": {
+        "left": 266,
+        "top": 198,
+        "right": 1022,
+        "bottom": 1054
+      },
+      "edgeOpaquePixels": 0,
+      "redOpaquePixels": 0,
+      "topBandVisible": 164554,
+      "hasTransparency": true,
+      "noClipping": true
+    }
+  ],
+  "overview": "enemy-lineup.png",
+  "reviewPage": "review.html",
+  "prompts": "PROMPTS.md",
+  "provenance": "generation.json",
+  "qa": "qa.json",
+  "notes": [
+    "Canonical PNGs are copied from generated outputs without repainting or alpha modification.",
+    "Previews only place the generated artwork in layouts; enemy size on the overview is not final in-game size.",
+    "Background repeat and animation are not yet verified."
+  ]
+}

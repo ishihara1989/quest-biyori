@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/life-serpent-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 786,
+      "height": 724
+    },
+    {
+      "x": 786,
+      "y": 0,
+      "width": 675,
+      "height": 724
+    },
+    {
+      "x": 1461,
+      "y": 0,
+      "width": 711,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 927
+    },
+    {
+      "x": 512,
+      "y": 927
+    },
+    {
+      "x": 512,
+      "y": 927
+    }
+  ],
+  "scale": 0.5070422535211268
+}

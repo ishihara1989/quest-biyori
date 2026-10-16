@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/swift-wolf-action-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 706,
+      "height": 724
+    },
+    {
+      "x": 706,
+      "y": 0,
+      "width": 787,
+      "height": 724
+    },
+    {
+      "x": 1493,
+      "y": 0,
+      "width": 679,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 872
+    },
+    {
+      "x": 512,
+      "y": 872
+    },
+    {
+      "x": 512,
+      "y": 872
+    }
+  ],
+  "scale": 0.49206349206349204
+}

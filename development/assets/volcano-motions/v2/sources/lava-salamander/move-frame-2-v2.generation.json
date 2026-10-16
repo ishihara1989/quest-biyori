@@ -1,0 +1,29 @@
+{
+  "id": "lava-salamander/move-2",
+  "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 2 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF GROUND SUPPORT paw (420,847), hip (389,689), knee (487,714); RF LIFTED SWING paw (327,815), hip (353,667), knee (428,735); LH LIFTED SWING paw (680,810), hip (708,663), knee (607,694); RH GROUND SUPPORT paw (690,800), hip (673,641), knee (596,719). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/lava-salamander/move-frame-2-v2.png",
+  "sha256": "e224040181e193583d513108d5369dbc8421f7c562a632d4ee72973c34840652",
+  "reference": "references/lava-salamander.png",
+  "guide": "guides/lava-salamander/frame-2.png",
+  "firstPass": "sources/lava-salamander/move-1-generated.png",
+  "issues": [
+    "奥脚の足先と手前脚の重なりが読みづらい。全脚の付け根から足先までの所属・接続を再検収する。",
+    "計算した対角接地ペアへの遵守は確認できていない。足先を実測し、目標座標との差を記録する。",
+    "4〜5コマ目の浮いた前足が大きく丸まり、足首と爪の形が1〜3コマ目から変化している。",
+    "奥後脚が隠れるコマの接続・脚数を確認。3→4と6→1の継ぎ目、対角接地は再生と足先実測で判断する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    },
+    {
+      "file": "guides/lava-salamander/frame-2.png",
+      "sha256": "3504827e30b5665b237187cf8e1c8d7f94df179b9f70aefe9073c8c56978c1f5"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

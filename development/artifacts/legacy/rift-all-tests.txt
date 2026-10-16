@@ -1,0 +1,2384 @@
+
+> idle-rpg-sprite-lab@0.1.0 test
+> node --test tests/dimensional-rift.test.cjs tests/action-interference.test.cjs tests/motion-playback.test.cjs tests/enemy-assets.test.cjs tests/treant-assets.test.cjs tests/boss-slime-assets.test.cjs tests/boar-assets.test.cjs tests/boss-boar-assets.test.cjs tests/alraune-assets.test.cjs tests/alraune-minion-assets.test.cjs tests/enemy-projectiles.test.cjs tests/stage-assets.test.cjs tests/battle-simulation.test.cjs tests/forest-game.test.cjs tests/auto-gear.test.cjs tests/forest-balance.test.cjs tests/balance-model.test.cjs tests/stage-balance.test.cjs tests/forest-progression.test.cjs tests/forest-loot.test.cjs tests/forest-conversion.test.cjs tests/warrior-skills.test.cjs tests/mage-motions.test.cjs tests/mage-skills.test.cjs tests/swamp-assets.test.cjs tests/swamp-combat.test.cjs tests/swamp-stage-assets.test.cjs tests/swamp-game.test.cjs tests/paladin-motions.test.cjs tests/paladin-skills.test.cjs tests/ritual-motions.test.cjs tests/expansion-game.test.cjs tests/expansion-assets.test.cjs tests/ninja-skills.test.cjs tests/shaman-skills.test.cjs tests/expansion-passives.test.cjs tests/miko-combat.test.cjs tests/ruins-game.test.cjs tests/ruins-assets.test.cjs tests/miko-assets.test.cjs tests/ruins-ui-assets.test.cjs tests/desert-game.test.cjs tests/desert-assets.test.cjs tests/gem-system.test.cjs
+
+TAP version 13
+# Subtest: every hit subtracts resistance, allies share capacity, weak hits cannot scratch heavy attacks
+ok 1 - every hit subtracts resistance, allies share capacity, weak hits cannot scratch heavy attacks
+  ---
+  duration_ms: 4.6697
+  type: 'test'
+  ...
+# Subtest: successful interruptions increase only that enemy resistance and capacity across its actions
+ok 2 - successful interruptions increase only that enemy resistance and capacity across its actions
+  ---
+  duration_ms: 0.8454
+  type: 'test'
+  ...
+# Subtest: unique hit keys prevent multiple body parts multiplying one hit; separate impacts accumulate
+ok 3 - unique hit keys prevent multiple body parts multiplying one hit; separate impacts accumulate
+  ---
+  duration_ms: 0.5425
+  type: 'test'
+  ...
+# Subtest: the interruption window closes at execution, dead/invulnerable targets and missed hits do not contribute
+ok 4 - the interruption window closes at execution, dead/invulnerable targets and missed hits do not contribute
+  ---
+  duration_ms: 1.0807
+  type: 'test'
+  ...
+# Subtest: committed attacks cannot be paused indefinitely using ordinary stop controls
+ok 5 - committed attacks cannot be paused indefinitely using ordinary stop controls
+  ---
+  duration_ms: 0.7135
+  type: 'test'
+  ...
+# Subtest: resistance lowering uses the strongest active debuff and is capped at 35 percent
+ok 6 - resistance lowering uses the strongest active debuff and is capped at 35 percent
+  ---
+  duration_ms: 0.5686
+  type: 'test'
+  ...
+# Subtest: shaman resistance reduction requires a successful hit, and affects that same direct impact
+ok 7 - shaman resistance reduction requires a successful hit, and affects that same direct impact
+  ---
+  duration_ms: 2.4371
+  type: 'test'
+  ...
+# Subtest: multi-hit finishers and heavy primary targets keep their distinct power
+ok 8 - multi-hit finishers and heavy primary targets keep their distinct power
+  ---
+  duration_ms: 1.6867
+  type: 'test'
+  ...
+# Subtest: dangerous first hits deal half fixed appropriate-level main-gear HP before additional protection
+ok 9 - dangerous first hits deal half fixed appropriate-level main-gear HP before additional protection
+  ---
+  duration_ms: 2.3015
+  type: 'test'
+  ...
+# Subtest: all configured region actions expose nonempty fixed forecast shapes during extended preparation
+ok 10 - all configured region actions expose nonempty fixed forecast shapes during extended preparation
+  ---
+  duration_ms: 18.7167
+  type: 'test'
+  ...
+# Subtest: a heavy strike cancels an actual major boss before damage or projectiles are released
+ok 11 - a heavy strike cancels an actual major boss before damage or projectiles are released
+  ---
+  duration_ms: 15.0023
+  type: 'test'
+  ...
+# Subtest: projectile forecasts fix both the aim and actor, and include flight in guard timing
+ok 12 - projectile forecasts fix both the aim and actor, and include flight in guard timing
+  ---
+  duration_ms: 2.363
+  type: 'test'
+  ...
+# Subtest: guard waits until its active duration covers the projectile impact
+ok 13 - guard waits until its active duration covers the projectile impact
+  ---
+  duration_ms: 1.4281
+  type: 'test'
+  ...
+# Subtest: paladin selects a pair of available hits that jointly finishes a heavy interruption
+ok 14 - paladin selects a pair of available hits that jointly finishes a heavy interruption
+  ---
+  duration_ms: 1.4738
+  type: 'test'
+  ...
+# Subtest: paladin leaves hard simultaneous threats to its heavy strike instead of spending it on an easy cast
+ok 15 - paladin leaves hard simultaneous threats to its heavy strike instead of spending it on an easy cast
+  ---
+  duration_ms: 0.6304
+  type: 'test'
+  ...
+# Subtest: paladin waits for a multi-hit guard without starting a normal attack that would make it late
+ok 16 - paladin waits for a multi-hit guard without starting a normal attack that would make it late
+  ---
+  duration_ms: 0.6922
+  type: 'test'
+  ...
+# Subtest: major-boss followups keep each hit below half HP and distribute the sustained risk
+ok 17 - major-boss followups keep each hit below half HP and distribute the sustained risk
+  ---
+  duration_ms: 0.4281
+  type: 'test'
+  ...
+# Subtest: titan beam forecast and damage both cover the wider lane and exclude its outside
+ok 18 - titan beam forecast and damage both cover the wider lane and exclude its outside
+  ---
+  duration_ms: 1.1885
+  type: 'test'
+  ...
+# Subtest: paladin uses a reserved heavy skill to finish an armored boss when it can actually kill
+ok 19 - paladin uses a reserved heavy skill to finish an armored boss when it can actually kill
+  ---
+  duration_ms: 0.5536
+  type: 'test'
+  ...
+# Subtest: paladin preserves guard MP between major-boss warnings instead of exhausting it on optional attacks
+ok 20 - paladin preserves guard MP between major-boss warnings instead of exhausting it on optional attacks
+  ---
+  duration_ms: 0.578
+  type: 'test'
+  ...
+# Subtest: interruption prediction does not assume resistance lowering lasts until a later hit
+ok 21 - interruption prediction does not assume resistance lowering lasts until a later hit
+  ---
+  duration_ms: 2.4138
+  type: 'test'
+  ...
+# Subtest: optional healing fields also preserve MP for the next major-boss guard
+ok 22 - optional healing fields also preserve MP for the next major-boss guard
+  ---
+  duration_ms: 0.5707
+  type: 'test'
+  ...
+# Subtest: rear-targeting cannon and burrow attacks forecast their chosen positions without tracking later movement
+ok 23 - rear-targeting cannon and burrow attacks forecast their chosen positions without tracking later movement
+  ---
+  duration_ms: 1.1837
+  type: 'test'
+  ...
+# Subtest: paladin saves judgment for an upcoming heavy preparation and then uses its sufficient interruption power
+ok 24 - paladin saves judgment for an upcoming heavy preparation and then uses its sufficient interruption power
+  ---
+  duration_ms: 0.6406
+  type: 'test'
+  ...
+# Subtest: heavy skills may be used when their cooldown will finish within the next preparation window
+ok 25 - heavy skills may be used when their cooldown will finish within the next preparation window
+  ---
+  duration_ms: 0.4755
+  type: 'test'
+  ...
+# Subtest: late main upgrades improve interruption in later regions without changing early mains, node counts or other jobs
+ok 26 - late main upgrades improve interruption in later regions without changing early mains, node counts or other jobs
+  ---
+  duration_ms: 88.2895
+  type: 'test'
+  ...
+# Subtest: all 24 boss frames and one volley preserve source RGBA, transparent margins, sheet packing and GIF timing
+ok 27 - all 24 boss frames and one volley preserve source RGBA, transparent margins, sheet packing and GIF timing
+  ---
+  duration_ms: 3276.7025
+  type: 'test'
+  ...
+# Subtest: looping fire repeats events, recoveries share idle, death holds, and the whip keeps translucent trails
+ok 28 - looping fire repeats events, recoveries share idle, death holds, and the whip keeps translucent trails
+  ---
+  duration_ms: 141.707
+  type: 'test'
+  ...
+# Subtest: the separate volley really contains 25 disconnected seeds and remains registered in the effect catalog
+ok 29 - the separate volley really contains 25 disconnected seeds and remains registered in the effect catalog
+  ---
+  duration_ms: 9.3824
+  type: 'test'
+  ...
+# Subtest: 20 transparent minion poses retain source RGBA, agree with sheet exports and preserve GIF timing
+ok 30 - 20 transparent minion poses retain source RGBA, agree with sheet exports and preserve GIF timing
+  ---
+  duration_ms: 1574.4426
+  type: 'test'
+  ...
+# Subtest: idle and movement loop, recoil and attack recover, defeat stays collapsed and one stream fires from the head
+ok 31 - idle and movement loop, recoil and attack recover, defeat stays collapsed and one stream fires from the head
+  ---
+  duration_ms: 26.5086
+  type: 'test'
+  ...
+# Subtest: automatic acquisition is OFF initially and cannot spend before forest 10
+ok 32 - automatic acquisition is OFF initially and cannot spend before forest 10
+  ---
+  duration_ms: 4.1848
+  type: 'test'
+  ...
+# Subtest: node priority leads character priority; order can favor a different character
+ok 33 - node priority leads character priority; order can favor a different character
+  ---
+  duration_ms: 198.7413
+  type: 'test'
+  ...
+# Subtest: automatic spending matches manual purchases exactly and never repurchases nodes
+ok 34 - automatic spending matches manual purchases exactly and never repurchases nodes
+  ---
+  duration_ms: 281.303
+  type: 'test'
+  ...
+# Subtest: exclusions, stage gates, dependencies and locked characters remain effective
+ok 35 - exclusions, stage gates, dependencies and locked characters remain effective
+  ---
+  duration_ms: 52.3934
+  type: 'test'
+  ...
+# Subtest: unaffordable high priority nodes skip to an affordable candidate without going negative
+ok 36 - unaffordable high priority nodes skip to an affordable candidate without going negative
+  ---
+  duration_ms: 185.6501
+  type: 'test'
+  ...
+# Subtest: settings survive restoration; old and invalid settings receive safe defaults
+ok 37 - settings survive restoration; old and invalid settings receive safe defaults
+  ---
+  duration_ms: 106.4954
+  type: 'test'
+  ...
+# Subtest: regional first clears unlock forge pages; every region 10 reports actual new recipes
+ok 38 - regional first clears unlock forge pages; every region 10 reports actual new recipes
+  ---
+  duration_ms: 2.1014
+  type: 'test'
+  ...
+# Subtest: option unlocks, early recipes and repeat suppression follow availability rather than inventory
+ok 39 - option unlocks, early recipes and repeat suppression follow availability rather than inventory
+  ---
+  duration_ms: 0.6225
+  type: 'test'
+  ...
+# Subtest: reference wins a long fight, initial clear is possible, ten missing mains lose at 201 checkpoints
+ok 40 - reference wins a long fight, initial clear is possible, ten missing mains lose at 201 checkpoints
+  ---
+  duration_ms: 9.6355
+  type: 'test'
+  ...
+# Subtest: all old nodes plus even the infinite-region optional bound cannot skip twenty stages
+ok 41 - all old nodes plus even the infinite-region optional bound cannot skip twenty stages
+  ---
+  duration_ms: 0.4312
+  type: 'test'
+  ...
+# Subtest: audit detects parameter changes that destroy the optional-growth restriction
+ok 42 - audit detects parameter changes that destroy the optional-growth restriction
+  ---
+  duration_ms: 10.3595
+  type: 'test'
+  ...
+# Subtest: node strength is 1–3% at its next frontier and decays as additive old gear
+ok 43 - node strength is 1–3% at its next frontier and decays as additive old gear
+  ---
+  duration_ms: 0.7424
+  type: 'test'
+  ...
+# Subtest: huge-stage comparisons do not construct overflowing absolute power values
+ok 44 - huge-stage comparisons do not construct overflowing absolute power values
+  ---
+  duration_ms: 0.2108
+  type: 'test'
+  ...
+# Subtest: damage preserves mitigation across enormous ranges without a fixed defense scale
+ok 45 - damage preserves mitigation across enormous ranges without a fixed defense scale
+  ---
+  duration_ms: 0.3854
+  type: 'test'
+  ...
+# Subtest: safe range, area, penetration and control each reduce the offensive budget
+ok 46 - safe range, area, penetration and control each reduce the offensive budget
+  ---
+  duration_ms: 0.3281
+  type: 'test'
+  ...
+# Subtest: gems have diminishing returns on the combined final axis, regardless of capacity
+ok 47 - gems have diminishing returns on the combined final axis, regardless of capacity
+  ---
+  duration_ms: 0.158
+  type: 'test'
+  ...
+# Subtest: reference builds respect before-clear recruits and identical skills when only gear lags
+ok 48 - reference builds respect before-clear recruits and identical skills when only gear lags
+  ---
+  duration_ms: 4054.1462
+  type: 'test'
+  ...
+# Subtest: chain skill diagnostics count one hit per unique target rather than four hits to one
+ok 49 - chain skill diagnostics count one hit per unique target rather than four hits to one
+  ---
+  duration_ms: 5.644
+  type: 'test'
+  ...
+# Subtest: invalid model inputs fail before producing a plausible report
+ok 50 - invalid model inputs fail before producing a plausible report
+  ---
+  duration_ms: 1.3036
+  type: 'test'
+  ...
+# Subtest: random spawns stay on the assigned half of the forest with independent ground positions
+ok 51 - random spawns stay on the assigned half of the forest with independent ground positions
+  ---
+  duration_ms: 9.0298
+  type: 'test'
+  ...
+# Subtest: both fighters approach in two dimensions, stay in the lane and retain left/right order
+ok 52 - both fighters approach in two dimensions, stay in the lane and retain left/right order
+  ---
+  duration_ms: 7.3749
+  type: 'test'
+  ...
+# Subtest: damage lands once on the downswing/lunge frame and a committed swing survives a hit
+ok 53 - damage lands once on the downswing/lunge frame and a committed swing survives a hit
+  ---
+  duration_ms: 2.7101
+  type: 'test'
+  ...
+# Subtest: an attack that loses range during its windup does not damage its target
+ok 54 - an attack that loses range during its windup does not damage its target
+  ---
+  duration_ms: 0.2476
+  type: 'test'
+  ...
+# Subtest: lethal damage finishes the battle, clamps HP and leaves the defeated fighter down
+ok 55 - lethal damage finishes the battle, clamps HP and leaves the defeated fighter down
+  ---
+  duration_ms: 2.2803
+  type: 'test'
+  ...
+# Subtest: same-tick lethal attacks trade fairly and produce a draw
+ok 56 - same-tick lethal attacks trade fairly and produce a draw
+  ---
+  duration_ms: 0.3252
+  type: 'test'
+  ...
+# Subtest: the slime can win and a dead fighter cannot finish a pending attack
+ok 57 - the slime can win and a dead fighter cannot finish a pending attack
+  ---
+  duration_ms: 2.3922
+  type: 'test'
+  ...
+# Subtest: fixed steps give the same result with irregular render frames or one large update
+ok 58 - fixed steps give the same result with irregular render frames or one large update
+  ---
+  duration_ms: 6.3051
+  type: 'test'
+  ...
+# Subtest: 200 different starting positions all produce mutual attacks and a completed battle
+ok 59 - 200 different starting positions all produce mutual attacks and a completed battle
+  ---
+  duration_ms: 97.8243
+  type: 'test'
+  ...
+# Subtest: invalid elapsed time is rejected without modifying the battle
+ok 60 - invalid elapsed time is rejected without modifying the battle
+  ---
+  duration_ms: 1.7684
+  type: 'test'
+  ...
+# Subtest: 22 boar frames export complete transparent PNGs, matching sheets, GIF timings and source records
+ok 61 - 22 boar frames export complete transparent PNGs, matching sheets, GIF timings and source records
+  ---
+  duration_ms: 578.4228
+  type: 'test'
+  ...
+# Subtest: idle continuity is exact, move and charge repeat, hit recovers, and defeat holds frame four
+ok 62 - idle continuity is exact, move and charge repeat, hit recovers, and defeat holds frame four
+  ---
+  duration_ms: 23.6146
+  type: 'test'
+  ...
+# Subtest: the six walk frames do not brighten away from the idle fur tone
+ok 63 - the six walk frames do not brighten away from the idle fur tone
+  ---
+  duration_ms: 397.0295
+  type: 'test'
+  ...
+# Subtest: boss boar is registered with 26 transparent distinct frames, matching PNG sheets, GIF timings and sources
+ok 64 - boss boar is registered with 26 transparent distinct frames, matching PNG sheets, GIF timings and sources
+  ---
+  duration_ms: 1241.3543
+  type: 'test'
+  ...
+# Subtest: walk exports two three-frame halves with matching pixels and separate generated sources
+ok 65 - walk exports two three-frame halves with matching pixels and separate generated sources
+  ---
+  duration_ms: 137.2874
+  type: 'test'
+  ...
+# Subtest: four-frame windup crouches and loops on the spot independently of the charge release
+ok 66 - four-frame windup crouches and loops on the spot independently of the charge release
+  ---
+  duration_ms: 64.6418
+  type: 'test'
+  ...
+# Subtest: move and hit join the identical idle pose; charge bounds repeat and defeat holds the last pose
+ok 67 - move and hit join the identical idle pose; charge bounds repeat and defeat holds the last pose
+  ---
+  duration_ms: 42.5801
+  type: 'test'
+  ...
+# Subtest: all six motions contain four distinct unclipped RGBA poses, matching sheets, GIFs and provenance
+ok 68 - all six motions contain four distinct unclipped RGBA poses, matching sheets, GIFs and provenance
+  ---
+  duration_ms: 1018.9296
+  type: 'test'
+  ...
+# Subtest: idle, movement and splitting loop; hit and attack recover; defeat holds a low puddle
+ok 69 - idle, movement and splitting loop; hit and attack recover; defeat holds a low puddle
+  ---
+  duration_ms: 125.167
+  type: 'test'
+  ...
+# Subtest: bud stays attached in frames 1–3 and tears in frame 4 without halving the parent
+ok 70 - bud stays attached in frames 1–3 and tears in frame 4 without halving the parent
+  ---
+  duration_ms: 89.7297
+  type: 'test'
+  ...
+# Subtest: one normal slime appears after frame 4 each cycle; seeking and bridge playback preserve timing
+ok 71 - one normal slime appears after frame 4 each cycle; seeking and bridge playback preserve timing
+  ---
+  duration_ms: 1.2924
+  type: 'test'
+  ...
+# Subtest: all seven enemies have distinct generated idle, movement, hit and terminal defeat plus every AI attack
+ok 72 - all seven enemies have distinct generated idle, movement, hit and terminal defeat plus every AI attack
+  ---
+  duration_ms: 6008.1616
+  type: 'test'
+  ...
+# Subtest: four complete transparent effect sequences and desert background are available to the game
+ok 73 - four complete transparent effect sequences and desert background are available to the game
+  ---
+  duration_ms: 132.6566
+  type: 'test'
+  ...
+# Subtest: desert unlocks after ruins, saves all sixty stages and advances/repeats/falls back correctly
+ok 74 - desert unlocks after ruins, saves all sixty stages and advances/repeats/falls back correctly
+  ---
+  duration_ms: 137.6592
+  type: 'test'
+  ...
+# Subtest: ten routes isolate bosses and retain easy first/swarm routes
+ok 75 - ten routes isolate bosses and retain easy first/swarm routes
+  ---
+  duration_ms: 0.6815
+  type: 'test'
+  ...
+# Subtest: desert drops keep common/crystal/rare probabilities and absolute gem odds
+ok 76 - desert drops keep common/crystal/rare probabilities and absolute gem odds
+  ---
+  duration_ms: 1.966
+  type: 'test'
+  ...
+# Subtest: all six characters receive symmetric 100-node trees, affordable mains and a 300-clear rare budget
+ok 77 - all six characters receive symmetric 100-node trees, affordable mains and a 300-clear rare budget
+  ---
+  duration_ms: 19.801
+  type: 'test'
+  ...
+# Subtest: every desert action completes, fixes its aim and emits no damage before its forecast
+ok 78 - every desert action completes, fixes its aim and emits no damage before its forecast
+  ---
+  duration_ms: 262.9199
+  type: 'test'
+  ...
+# Subtest: poison refresh does not advance ticks; sand slows movement only and wave end cleans both
+ok 79 - poison refresh does not advance ticks; sand slows movement only and wave end cleans both
+  ---
+  duration_ms: 37.109
+  type: 'test'
+  ...
+# Subtest: summons are limited to two alive/two waves and fissure overlaps hit once per attack
+ok 80 - summons are limited to two alive/two waves and fissure overlaps hit once per attack
+  ---
+  duration_ms: 22.2398
+  type: 'test'
+  ...
+# Subtest: simulation outcomes remain identical at different render frame rates
+ok 81 - simulation outcomes remain identical at different render frame rates
+  ---
+  duration_ms: 5565.1864
+  type: 'test'
+  ...
+# Subtest: root holds the snake during retreat and sanctuary prevents desert statuses
+ok 82 - root holds the snake during retreat and sanctuary prevents desert statuses
+  ---
+  duration_ms: 3.5646
+  type: 'test'
+  ...
+# Subtest: named special stages unlock on ruins 10 and stay outside numbered routes
+ok 83 - named special stages unlock on ruins 10 and stay outside numbered routes
+  ---
+  duration_ms: 4.365
+  type: 'test'
+  ...
+# Subtest: all families and five regions appear in exact 30/15/5 summon budgets
+ok 84 - all families and five regions appear in exact 30/15/5 summon budgets
+  ---
+  duration_ms: 0.8371
+  type: 'test'
+  ...
+# Subtest: gates resist attacks, wait for every summon, reopen and shatter once per wave
+ok 85 - gates resist attacks, wait for every summon, reopen and shatter once per wave
+  ---
+  duration_ms: 212.6055
+  type: 'test'
+  ...
+# Subtest: early monsters use ruins-10 class stats while retaining their regional behavior
+ok 86 - early monsters use ruins-10 class stats while retaining their regional behavior
+  ---
+  duration_ms: 1.7445
+  type: 'test'
+  ...
+# Subtest: gems have twice the exclusive drop chance, combine treasure hunt and always drop at Lv.5
+ok 87 - gems have twice the exclusive drop chance, combine treasure hunt and always drop at Lv.5
+  ---
+  duration_ms: 7.3242
+  type: 'test'
+  ...
+# Subtest: special completion gives no first-clear bonus and survives save restoration
+ok 88 - special completion gives no first-clear bonus and survives save restoration
+  ---
+  duration_ms: 4049.8065
+  type: 'test'
+  ...
+# Subtest: main-only ruins completion loses, complete gear through every unique wins without gems or potions
+ok 89 - main-only ruins completion loses, complete gear through every unique wins without gems or potions
+  ---
+  duration_ms: 27820.9325
+  type: 'test'
+  ...
+# Subtest: gate PNG preserves transparent margins and the background is a usable wide image
+ok 90 - gate PNG preserves transparent margins and the background is a usable wide image
+  ---
+  duration_ms: 283.0559
+  type: 'test'
+  ...
+# Subtest: all 19 enemy poses have transparent margins, agree with their sheet and GIF, and retain source provenance
+ok 91 - all 19 enemy poses have transparent margins, agree with their sheet and GIF, and retain source provenance
+  ---
+  duration_ms: 341.0445
+  type: 'test'
+  ...
+# Subtest: recoveries and neutral starts use the identical idle pose, with a leftward attack and airborne hop
+ok 92 - recoveries and neutral starts use the identical idle pose, with a leftward attack and airborne hop
+  ---
+  duration_ms: 15.3358
+  type: 'test'
+  ...
+# Subtest: enemy motion timings loop, recover, and hold death with complete idle cycles between actions
+ok 93 - enemy motion timings loop, recover, and hold death with complete idle cycles between actions
+  ---
+  duration_ms: 2.6754
+  type: 'test'
+  ...
+# Subtest: playback supports additional motion ids and variable frame counts without a code-side list
+ok 94 - playback supports additional motion ids and variable frame counts without a code-side list
+  ---
+  duration_ms: 0.6514
+  type: 'test'
+  ...
+# Subtest: the 0/200ms firing events repeat without duplicate spawns when pausing or seeking
+ok 95 - the 0/200ms firing events repeat without duplicate spawns when pausing or seeking
+  ---
+  duration_ms: 2.8696
+  type: 'test'
+  ...
+# Subtest: idle lead-ins never fire, exactly two bridged cycles fire, and existing seeds continue into the lead-out
+ok 96 - idle lead-ins never fire, exactly two bridged cycles fire, and existing seeds continue into the lead-out
+  ---
+  duration_ms: 0.3969
+  type: 'test'
+  ...
+# Subtest: three image strips stay aligned to their flower mouths while moving horizontally ahead of the boss
+ok 97 - three image strips stay aligned to their flower mouths while moving horizontally ahead of the boss
+  ---
+  duration_ms: 0.7876
+  type: 'test'
+  ...
+# Subtest: troll excavation registers feet rather than grit and keeps its body at idle size
+ok 98 - troll excavation registers feet rather than grit and keeps its body at idle size
+  ---
+  duration_ms: 157.0105
+  type: 'test'
+  ...
+# Subtest: 14 enemies have all common and requested action motions, genuine alpha, packed sheets and GIF timing
+ok 99 - 14 enemies have all common and requested action motions, genuine alpha, packed sheets and GIF timing
+  ---
+  duration_ms: 11536.7865
+  type: 'test'
+  ...
+# Subtest: 16 separate generated effects include the attackable tail/tentacle and status overlays
+ok 100 - 16 separate generated effects include the attackable tail/tentacle and status overlays
+  ---
+  duration_ms: 599.9901
+  type: 'test'
+  ...
+# Subtest: cave has one enclosed layer; coast has distant ocean plus transparent ground, with unchanged battle lane
+ok 101 - cave has one enclosed layer; coast has distant ocean plus transparent ground, with unchanged battle lane
+  ---
+  duration_ms: 563.4287
+  type: 'test'
+  ...
+# Subtest: ten region loot icons are transparent 128px images with their own generated sources
+ok 102 - ten region loot icons are transparent 128px images with their own generated sources
+  ---
+  duration_ms: 19.8025
+  type: 'test'
+  ...
+# Subtest: two new ten-stage regions follow the existing three-family wave topology
+ok 103 - two new ten-stage regions follow the existing three-family wave topology
+  ---
+  duration_ms: 1.6096
+  type: 'test'
+  ...
+# Subtest: unlock, auto advance, defeat fallback and final farming extend through stage40
+ok 104 - unlock, auto advance, defeat fallback and final farming extend through stage40
+  ---
+  duration_ms: 219.5243
+  type: 'test'
+  ...
+# Subtest: new material and gem drops preserve all policy boundaries
+ok 105 - new material and gem drops preserve all policy boundaries
+  ---
+  duration_ms: 4.8622
+  type: 'test'
+  ...
+# Subtest: region finales retain normalized exponential experience without cumulative XP
+ok 106 - region finales retain normalized exponential experience without cumulative XP
+  ---
+  duration_ms: 2.7149
+  type: 'test'
+  ...
+# Subtest: regional trees preserve 100 nodes, dependency chain, 300-clear budgets and three-clear mains
+ok 107 - regional trees preserve 100 nodes, dependency chain, 300-clear budgets and three-clear mains
+  ---
+  duration_ms: 11958.1221
+  type: 'test'
+  ...
+# Subtest: emerging parts transfer damage once to owner, expire and never yield extra loot
+ok 108 - emerging parts transfer damage once to owner, expire and never yield extra loot
+  ---
+  duration_ms: 24.8059
+  type: 'test'
+  ...
+# Subtest: troll combo has three timed strikes then a genuine three-second rest
+ok 109 - troll combo has three timed strikes then a genuine three-second rest
+  ---
+  duration_ms: 11.4744
+  type: 'test'
+  ...
+# Subtest: drain heals only actual damage and shell defense reduces incoming damage
+ok 110 - drain heals only actual damage and shell defense reduces incoming damage
+  ---
+  duration_ms: 4.8372
+  type: 'test'
+  ...
+# Subtest: web slows motion and attack clocks; bubble prevents actions and blind can miss
+ok 111 - web slows motion and attack clocks; bubble prevents actions and blind can miss
+  ---
+  duration_ms: 3.1596
+  type: 'test'
+  ...
+# Subtest: all requested special attacks are reachable and fixed-step combat is deterministic
+ok 112 - all requested special attacks are reachable and fixed-step combat is deterministic
+  ---
+  duration_ms: 2172.6197
+  type: 'test'
+  ...
+# Subtest: all twenty stages clear at intended level with prior mains and top-first actives, without branches or gems
+ok 113 - all twenty stages clear at intended level with prior mains and top-first actives, without branches or gems
+  ---
+  duration_ms: 199309.6521
+  type: 'test'
+  ...
+# Subtest: later characters have 21 dedicated upgrades and 11 common passives with working icons and level gates
+ok 114 - later characters have 21 dedicated upgrades and 11 common passives with working icons and level gates
+  ---
+  duration_ms: 89.9262
+  type: 'test'
+  ...
+# Subtest: passive ranks change real stats, save independently, and refund with dependent upgrades
+ok 115 - passive ranks change real stats, save independently, and refund with dependent upgrades
+  ---
+  duration_ms: 1400.1115
+  type: 'test'
+  ...
+# Subtest: dedicated upgrades reach equipped builds, affect only their own skill and keep world limits
+ok 116 - dedicated upgrades reach equipped builds, affect only their own skill and keep world limits
+  ---
+  duration_ms: 124.9539
+  type: 'test'
+  ...
+# Subtest: normal upgrades increase actual projectile damage for all three characters
+ok 117 - normal upgrades increase actual projectile damage for all three characters
+  ---
+  duration_ms: 119.6791
+  type: 'test'
+  ...
+# Subtest: ninja clone and echo upgrades use their enhanced snapshots without increasing clone limits
+ok 118 - ninja clone and echo upgrades use their enhanced snapshots without increasing clone limits
+  ---
+  duration_ms: 67.5946
+  type: 'test'
+  ...
+# Subtest: shaman upgrades strengthen mark, deep and field damage while preserving curse caps and lifetimes
+ok 119 - shaman upgrades strengthen mark, deep and field damage while preserving curse caps and lifetimes
+  ---
+  duration_ms: 16.1935
+  type: 'test'
+  ...
+# Subtest: miko recovery and barrier passives affect live support while HP caps, contracts and periods hold
+ok 120 - miko recovery and barrier passives affect live support while HP caps, contracts and periods hold
+  ---
+  duration_ms: 78.0501
+  type: 'test'
+  ...
+# Subtest: forest 10 needs 1, 3, 9, 27, 81 and 243 clears for successive levels, with exact carry
+ok 121 - forest 10 needs 1, 3, 9, 27, 81 and 243 clears for successive levels, with exact carry
+  ---
+  duration_ms: 3.7265
+  type: 'test'
+  ...
+# Subtest: normalized XP works beyond level 100 without large powers and discards gains at 3^-20
+ok 122 - normalized XP works beyond level 100 without large powers and discards gains at 3^-20
+  ---
+  duration_ms: 0.6813
+  type: 'test'
+  ...
+# Subtest: material and gem drop boundaries enforce the requested absolute probabilities
+ok 123 - material and gem drop boundaries enforce the requested absolute probabilities
+  ---
+  duration_ms: 2.1475
+  type: 'test'
+  ...
+# Subtest: each gear tree has 10 main, 80 side, 10 end nodes, ten milestones and a 300-clear completion budget
+ok 124 - each gear tree has 10 main, 80 side, 10 end nodes, ten milestones and a 300-clear completion budget
+  ---
+  duration_ms: 16.6067
+  type: 'test'
+  ...
+# Subtest: all regional main paths require the same three-family combinations and finish with regional crystal
+ok 125 - all regional main paths require the same three-family combinations and finish with regional crystal
+  ---
+  duration_ms: 211.9029
+  type: 'test'
+  ...
+# Subtest: auto modes advance after wins, stay at the final stage, and retreat then farm after defeats
+ok 126 - auto modes advance after wins, stay at the final stage, and retreat then farm after defeats
+  ---
+  duration_ms: 0.6022
+  type: 'test'
+  ...
+# Subtest: every forest stage clears at its intended level using top-first actives and prior main nodes, without branches or gems
+ok 127 - every forest stage clears at its intended level using top-first actives and prior main nodes, without branches or gems
+  ---
+  duration_ms: 17630.5181
+  type: 'test'
+  ...
+# Subtest: older save versions reset instead of migrating
+ok 128 - older save versions reset instead of migrating
+  ---
+  duration_ms: 0.6028
+  type: 'test'
+  ...
+# Subtest: all six regions provide five conversion categories and nine concrete recipes
+ok 129 - all six regions provide five conversion categories and nine concrete recipes
+  ---
+  duration_ms: 3.2349
+  type: 'test'
+  ...
+# Subtest: 始まりの森: every recipe consumes exactly the requested items and produces only its chosen output
+ok 130 - 始まりの森: every recipe consumes exactly the requested items and produces only its chosen output
+  ---
+  duration_ms: 3.921
+  type: 'test'
+  ...
+# Subtest: 毒の沼地: every recipe consumes exactly the requested items and produces only its chosen output
+ok 131 - 毒の沼地: every recipe consumes exactly the requested items and produces only its chosen output
+  ---
+  duration_ms: 2.4267
+  type: 'test'
+  ...
+# Subtest: 洞窟: every recipe consumes exactly the requested items and produces only its chosen output
+ok 132 - 洞窟: every recipe consumes exactly the requested items and produces only its chosen output
+  ---
+  duration_ms: 2.155
+  type: 'test'
+  ...
+# Subtest: 海岸: every recipe consumes exactly the requested items and produces only its chosen output
+ok 133 - 海岸: every recipe consumes exactly the requested items and produces only its chosen output
+  ---
+  duration_ms: 27.4302
+  type: 'test'
+  ...
+# Subtest: 古代遺跡: every recipe consumes exactly the requested items and produces only its chosen output
+ok 134 - 古代遺跡: every recipe consumes exactly the requested items and produces only its chosen output
+  ---
+  duration_ms: 3.3386
+  type: 'test'
+  ...
+# Subtest: 金砂の墓域: every recipe consumes exactly the requested items and produces only its chosen output
+ok 135 - 金砂の墓域: every recipe consumes exactly the requested items and produces only its chosen output
+  ---
+  duration_ms: 2.348
+  type: 'test'
+  ...
+# Subtest: unlocking requires clearing every input/output source stage, regardless of inventory ownership or region access
+ok 136 - unlocking requires clearing every input/output source stage, regardless of inventory ownership or region access
+  ---
+  duration_ms: 10.5295
+  type: 'test'
+  ...
+# Subtest: partial region progress unlocks only corresponding material recipes
+ok 137 - partial region progress unlocks only corresponding material recipes
+  ---
+  duration_ms: 3.7693
+  type: 'test'
+  ...
+# Subtest: batch maximum is limited by the scarcest ingredient and empty inventory supports output insertion
+ok 138 - batch maximum is limited by the scarcest ingredient and empty inventory supports output insertion
+  ---
+  duration_ms: 0.8526
+  type: 'test'
+  ...
+# Subtest: missing ingredients never partially debit and unrelated region materials cannot pay
+ok 139 - missing ingredients never partially debit and unrelated region materials cannot pay
+  ---
+  duration_ms: 23.4791
+  type: 'test'
+  ...
+# Subtest: invalid IDs, quantities and inventory counts leave the entire save unchanged
+ok 140 - invalid IDs, quantities and inventory counts leave the entire save unchanged
+  ---
+  duration_ms: 2.4528
+  type: 'test'
+  ...
+# Subtest: output capacity limits MAX and refuses unsafe integer overflow without consumption
+ok 141 - output capacity limits MAX and refuses unsafe integer overflow without consumption
+  ---
+  duration_ms: 0.349
+  type: 'test'
+  ...
+# Subtest: conversion remains exact after saving and restoring; round trips cannot multiply crystals
+ok 142 - conversion remains exact after saving and restoring; round trips cannot multiply crystals
+  ---
+  duration_ms: 123.5211
+  type: 'test'
+  ...
+# Subtest: the ten stage lineups match the requested families and exclusions
+ok 143 - the ten stage lineups match the requested families and exclusions
+  ---
+  duration_ms: 3.0957
+  type: 'test'
+  ...
+# Subtest: initial equipment clears the first stage across 100 random layouts without potions
+ok 144 - initial equipment clears the first stage across 100 random layouts without potions
+  ---
+  duration_ms: 1959.7621
+  type: 'test'
+  ...
+# Subtest: fixed-step updates give identical results for different rendering frame intervals
+ok 145 - fixed-step updates give identical results for different rendering frame intervals
+  ---
+  duration_ms: 9.1196
+  type: 'test'
+  ...
+# Subtest: victory fires once and stops further damage, kills and gold awards
+ok 146 - victory fires once and stops further damage, kills and gold awards
+  ---
+  duration_ms: 33.2275
+  type: 'test'
+  ...
+# Subtest: boss slime splits once per completed split and the summoned enemy must also be defeated
+ok 147 - boss slime splits once per completed split and the summoned enemy must also be defeated
+  ---
+  duration_ms: 13.9969
+  type: 'test'
+  ...
+# Subtest: boss boar finishes its windup and charge instead of resetting the attack clock
+ok 148 - boss boar finishes its windup and charge instead of resetting the attack clock
+  ---
+  duration_ms: 9.8131
+  type: 'test'
+  ...
+# Subtest: plant and treant attacks launch delayed projectiles and ground impacts
+ok 149 - plant and treant attacks launch delayed projectiles and ground impacts
+  ---
+  duration_ms: 6.523
+  type: 'test'
+  ...
+# Subtest: potions heal only living, injured players in an active battle
+ok 150 - potions heal only living, injured players in an active battle
+  ---
+  duration_ms: 0.4666
+  type: 'test'
+  ...
+# Subtest: rewards unlock the next stage and first-clear items are awarded only once
+ok 151 - rewards unlock the next stage and first-clear items are awarded only once
+  ---
+  duration_ms: 1.1977
+  type: 'test'
+  ...
+# Subtest: save roundtrips retain progression, inventory and settings; corrupted saves recover
+ok 152 - save roundtrips retain progression, inventory and settings; corrupted saves recover
+  ---
+  duration_ms: 44.3056
+  type: 'test'
+  ...
+# Subtest: every combat motion and generated icon consumed by the game exists
+ok 153 - every combat motion and generated icon consumed by the game exists
+  ---
+  duration_ms: 457.7817
+  type: 'test'
+  ...
+# Subtest: only drops and gems are collectible; boss material rarities follow their sources
+ok 154 - only drops and gems are collectible; boss material rarities follow their sources
+  ---
+  duration_ms: 20.9122
+  type: 'test'
+  ...
+# Subtest: gem rolls use absolute rare, unique and desert legendary chances on bosses only
+ok 155 - gem rolls use absolute rare, unique and desert legendary chances on bosses only
+  ---
+  duration_ms: 2.43
+  type: 'test'
+  ...
+# Subtest: directional and shared capacity is charged per random gem instance
+ok 156 - directional and shared capacity is charged per random gem instance
+  ---
+  duration_ms: 71.1996
+  type: 'test'
+  ...
+# Subtest: numeric unique options have higher values and lower total capacity than rare equivalents
+ok 157 - numeric unique options have higher values and lower total capacity than rare equivalents
+  ---
+  duration_ms: 112.5973
+  type: 'test'
+  ...
+# Subtest: range gems extend actual skill parameters and keep utility magnitude independent of regional level
+ok 158 - range gems extend actual skill parameters and keep utility magnitude independent of regional level
+  ---
+  duration_ms: 1.2107
+  type: 'test'
+  ...
+# Subtest: reward reveal is sorted, four chest frames precede items, and auto repeat waits for all loot
+ok 159 - reward reveal is sorted, four chest frames precede items, and auto repeat waits for all loot
+  ---
+  duration_ms: 1.0755
+  type: 'test'
+  ...
+# Subtest: generated chest and new gem images exist and retain real alpha
+ok 160 - generated chest and new gem images exist and retain real alpha
+  ---
+  duration_ms: 254.954
+  type: 'test'
+  ...
+# Subtest: warrior normal attacks reach both plant enemies from the expanded range without MP
+ok 161 - warrior normal attacks reach both plant enemies from the expanded range without MP
+  ---
+  duration_ms: 33.8778
+  type: 'test'
+  ...
+# Subtest: warrior starts normal attacks at fractional range boundaries and continues attacking stationary plants
+ok 162 - warrior starts normal attacks at fractional range boundaries and continues attacking stationary plants
+  ---
+  duration_ms: 75.5092
+  type: 'test'
+  ...
+# Subtest: warrior closes diagonal gaps to stationary plants and still rejects targets outside the hit range
+ok 163 - warrior closes diagonal gaps to stationary plants and still rejects targets outside the hit range
+  ---
+  duration_ms: 83.2528
+  type: 'test'
+  ...
+# Subtest: mage joins only on forest 4 and persists through old-save migration
+ok 164 - mage joins only on forest 4 and persists through old-save migration
+  ---
+  duration_ms: 116.3238
+  type: 'test'
+  ...
+# Subtest: restoring a recruited mage guarantees the starting level SP and preserves spent points
+ok 165 - restoring a recruited mage guarantees the starting level SP and preserves spent points
+  ---
+  duration_ms: 78.4965
+  type: 'test'
+  ...
+# Subtest: each character has independent weapon and armor trees with ten stage gates and nonexclusive branches
+ok 166 - each character has independent weapon and armor trees with ten stage gates and nonexclusive branches
+  ---
+  duration_ms: 2460.8734
+  type: 'test'
+  ...
+# Subtest: purchases are atomic, reject duplicates, and require clear, prerequisites and exact costs
+ok 167 - purchases are atomic, reject duplicates, and require clear, prerequisites and exact costs
+  ---
+  duration_ms: 27.1095
+  type: 'test'
+  ...
+# Subtest: bulk gear acquisition spends exact totals and matches individual purchases for every character and slot
+ok 168 - bulk gear acquisition spends exact totals and matches individual purchases for every character and slot
+  ---
+  duration_ms: 1634.5605
+  type: 'test'
+  ...
+# Subtest: bulk gear acquisition skips owned nodes and unrelated branches, including paths across regions
+ok 169 - bulk gear acquisition skips owned nodes and unrelated branches, including paths across regions
+  ---
+  duration_ms: 178.5353
+  type: 'test'
+  ...
+# Subtest: bulk gear acquisition rejects any shortage, uncleared prerequisite stage and invalid targets without partial spending
+ok 170 - bulk gear acquisition rejects any shortage, uncleared prerequisite stage and invalid targets without partial spending
+  ---
+  duration_ms: 133.7215
+  type: 'test'
+  ...
+# Subtest: XP and skill points grow only for recruited characters; point budgets and dependencies hold
+ok 171 - XP and skill points grow only for recruited characters; point budgets and dependencies hold
+  ---
+  duration_ms: 17.6355
+  type: 'test'
+  ...
+# Subtest: decreasing a skill refunds one rank, then all orphaned enhancement ranks for either character
+ok 172 - decreasing a skill refunds one rank, then all orphaned enhancement ranks for either character
+  ---
+  duration_ms: 73.1546
+  type: 'test'
+  ...
+# Subtest: decreasing max-rank enhancements and passives preserves parents and updates live builds
+ok 173 - decreasing max-rank enhancements and passives preserves parents and updates live builds
+  ---
+  duration_ms: 110.1573
+  type: 'test'
+  ...
+# Subtest: refunds cascade through multiple prerequisites in any node order and respect individual point costs
+ok 174 - refunds cascade through multiple prerequisites in any node order and respect individual point costs
+  ---
+  duration_ms: 0.5939
+  type: 'test'
+  ...
+# Subtest: unlearned, unknown and locked skill refunds cannot change saves or create points
+ok 175 - unlearned, unknown and locked skill refunds cannot change saves or create points
+  ---
+  duration_ms: 0.6885
+  type: 'test'
+  ...
+# Subtest: refunds remove legacy skill-list entries so fallback ranks cannot revive reset skills
+ok 176 - refunds remove legacy skill-list entries so fallback ranks cannot revive reset skills
+  ---
+  duration_ms: 0.8096
+  type: 'test'
+  ...
+# Subtest: individual gems consume directional capacity and cannot be equipped twice across characters
+ok 177 - individual gems consume directional capacity and cannot be equipped twice across characters
+  ---
+  duration_ms: 108.8798
+  type: 'test'
+  ...
+# Subtest: copies of a gem have distinct identities, independent equipment and additive effects
+ok 178 - copies of a gem have distinct identities, independent equipment and additive effects
+  ---
+  duration_ms: 42.5169
+  type: 'test'
+  ...
+# Subtest: save validation rejects duplicate instance IDs and duplicate equipment, and discounts apply per copy
+ok 179 - save validation rejects duplicate instance IDs and duplicate equipment, and discounts apply per copy
+  ---
+  duration_ms: 667.2911
+  type: 'test'
+  ...
+# Subtest: save restoration retains valid builds and rejects invalid nodes, budgets, gem ownership and locked mage
+ok 180 - save restoration retains valid builds and rejects invalid nodes, budgets, gem ownership and locked mage
+  ---
+  duration_ms: 131.1151
+  type: 'test'
+  ...
+# Subtest: MP gates skills and regenerates; speed changes attack timing independently of cooldown
+ok 181 - MP gates skills and regenerates; speed changes attack timing independently of cooldown
+  ---
+  duration_ms: 42.2622
+  type: 'test'
+  ...
+# Subtest: live build changes preserve HP/MP ratios so toggles cannot heal
+ok 182 - live build changes preserve HP/MP ratios so toggles cannot heal
+  ---
+  duration_ms: 81.6234
+  type: 'test'
+  ...
+# Subtest: mage attacks alongside warrior and party survives when one member falls
+ok 183 - mage attacks alongside warrior and party survives when one member falls
+  ---
+  duration_ms: 104.6416
+  type: 'test'
+  ...
+# Subtest: mage projectiles produce the same battle results across rendering frame intervals
+ok 184 - mage projectiles produce the same battle results across rendering frame intervals
+  ---
+  duration_ms: 105.3156
+  type: 'test'
+  ...
+# Subtest: random gems always have a usable build, valid budget, correct tier and exact capacity
+ok 185 - random gems always have a usable build, valid budget, correct tier and exact capacity
+  ---
+  duration_ms: 253.1778
+  type: 'test'
+  ...
+# Subtest: fixed regional values grow while utility parameters and preserved rolls do not
+ok 186 - fixed regional values grow while utility parameters and preserved rolls do not
+  ---
+  duration_ms: 0.5446
+  type: 'test'
+  ...
+# Subtest: each equipment starts at 500 and a complete regional tree adds 200 directional plus 50 common
+ok 187 - each equipment starts at 500 and a complete regional tree adds 200 directional plus 50 common
+  ---
+  duration_ms: 569.2882
+  type: 'test'
+  ...
+# Subtest: equipped instance effects and shared capacity are applied and removed without lingering combat buffs
+ok 188 - equipped instance effects and shared capacity are applied and removed without lingering combat buffs
+  ---
+  duration_ms: 185.5448
+  type: 'test'
+  ...
+# Subtest: craft guarantees only the selected primary family and spends the visible recipe atomically
+ok 189 - craft guarantees only the selected primary family and spends the visible recipe atomically
+  ---
+  duration_ms: 8.3972
+  type: 'test'
+  ...
+# Subtest: upgrade retains ID, affixes, quality, lock and capacity; dismantling and conversions cannot duplicate gems
+ok 190 - upgrade retains ID, affixes, quality, lock and capacity; dismantling and conversions cannot duplicate gems
+  ---
+  duration_ms: 9.5845
+  type: 'test'
+  ...
+# Subtest: legacy reset clears only gem state and new save restores validated individual rolls and equipment
+ok 191 - legacy reset clears only gem state and new save restores validated individual rolls and equipment
+  ---
+  duration_ms: 289.0999
+  type: 'test'
+  ...
+# Subtest: treasure hunt is additive over items and multiplies the original exclusive rarity chances
+ok 192 - treasure hunt is additive over items and multiplies the original exclusive rarity chances
+  ---
+  duration_ms: 1.2383
+  type: 'test'
+  ...
+# Subtest: interference penetration affects real cancellation and the AI score without reducing permanent resistance
+ok 193 - interference penetration affects real cancellation and the AI score without reducing permanent resistance
+  ---
+  duration_ms: 1.3481
+  type: 'test'
+  ...
+# Subtest: legendary procs have cooldowns, cannot recursively trigger, and a proc kill awards exactly one drop
+ok 194 - legendary procs have cooldowns, cannot recursively trigger, and a proc kill awards exactly one drop
+  ---
+  duration_ms: 5.6219
+  type: 'test'
+  ...
+# Subtest: loot presentation keeps different random gem instances separate
+ok 195 - loot presentation keeps different random gem instances separate
+  ---
+  duration_ms: 1.3559
+  type: 'test'
+  ...
+# Subtest: generated gem assets have exact icon dimensions and real transparent margins
+ok 196 - generated gem assets have exact icon dimensions and real transparent margins
+  ---
+  duration_ms: 128.2515
+  type: 'test'
+  ...
+# Subtest: casting transitions use identical pixels at chant and hold boundaries
+ok 197 - casting transitions use identical pixels at chant and hold boundaries
+  ---
+  duration_ms: 142.8998
+  type: 'test'
+  ...
+# Subtest: full casting sequences include chant, extension, hold and recovery, then idle
+ok 198 - full casting sequences include chant, extension, hold and recovery, then idle
+  ---
+  duration_ms: 0.5663
+  type: 'test'
+  ...
+# Subtest: live casts use the existing reviewed transition and maintain loop at release for either facing
+ok 199 - live casts use the existing reviewed transition and maintain loop at release for either facing
+  ---
+  duration_ms: 429.998
+  type: 'test'
+  ...
+# Subtest: generated wind effects contain four distinct RGBA frames and real empty margins
+ok 200 - generated wind effects contain four distinct RGBA frames and real empty margins
+  ---
+  duration_ms: 252.3438
+  type: 'test'
+  ...
+# Subtest: 21 independent spells, dedicated upgrades and common passives share warrior level and point rules
+ok 201 - 21 independent spells, dedicated upgrades and common passives share warrior level and point rules
+  ---
+  duration_ms: 95.3421
+  type: 'test'
+  ...
+# Subtest: rank maps are authoritative and preserve XP, equipment and recruitment
+ok 202 - rank maps are authoritative and preserve XP, equipment and recruitment
+  ---
+  duration_ms: 30.3884
+  type: 'test'
+  ...
+# Subtest: all spells remain stationary, chant before release, maintain the matching staff loop and hit exactly once per scheduled strike
+ok 203 - all spells remain stationary, chant before release, maintain the matching staff loop and hit exactly once per scheduled strike
+  ---
+  duration_ms: 591.9519
+  type: 'test'
+  ...
+# Subtest: wind ranks expand angle and range while spear pierces only its actual strip
+ok 204 - wind ranks expand angle and range while spear pierces only its actual strip
+  ---
+  duration_ms: 0.9305
+  type: 'test'
+  ...
+# Subtest: lightning chain traverses neighbors, respects distance and never repeats an enemy
+ok 205 - lightning chain traverses neighbors, respects distance and never repeats an enemy
+  ---
+  duration_ms: 49.178
+  type: 'test'
+  ...
+# Subtest: fireball splashes at the tracked impact, frost and vortex control mobs while bosses remain fixed
+ok 206 - fireball splashes at the tracked impact, frost and vortex control mobs while bosses remain fixed
+  ---
+  duration_ms: 48.0192
+  type: 'test'
+  ...
+# Subtest: casting upgrades are isolated, speed and cooldown modifiers affect the intended parameters
+ok 207 - casting upgrades are isolated, speed and cooldown modifiers affect the intended parameters
+  ---
+  duration_ms: 9.1687
+  type: 'test'
+  ...
+# Subtest: MP and cooldowns gate actives independently; normal magic remains available without MP
+ok 208 - MP and cooldowns gate actives independently; normal magic remains available without MP
+  ---
+  duration_ms: 33.9306
+  type: 'test'
+  ...
+# Subtest: auto casting values a short spear against one enemy and an ultimate against a crowded field
+ok 209 - auto casting values a short spear against one enemy and an ultimate against a crowded field
+  ---
+  duration_ms: 0.8716
+  type: 'test'
+  ...
+# Subtest: dead tracking target cancels impact, caster death clears the cast, and frame rates produce identical outcomes
+ok 210 - dead tracking target cancels impact, caster death clears the cast, and frame rates produce identical outcomes
+  ---
+  duration_ms: 96.8577
+  type: 'test'
+  ...
+# Subtest: 21 generated icons and 15 four-frame effects retain transparency, margins and exact sheet packing
+ok 211 - 21 generated icons and 15 four-frame effects retain transparency, margins and exact sheet packing
+  ---
+  duration_ms: 564.2186
+  type: 'test'
+  ...
+# Subtest: complete independent and possession asset set, with only 3–4 poses per generation
+ok 212 - complete independent and possession asset set, with only 3–4 poses per generation
+  ---
+  duration_ms: 3.592
+  type: 'test'
+  ...
+# Subtest: every transparent PNG frame matches its sheet, fits its bounds, and has a valid clock
+ok 213 - every transparent PNG frame matches its sheet, fits its bounds, and has a valid clock
+  ---
+  duration_ms: 10024.6025
+  type: 'test'
+  ...
+# Subtest: all motions of one creature use a common scale and the walk preserves both halves
+ok 214 - all motions of one creature use a common scale and the walk preserves both halves
+  ---
+  duration_ms: 17.0422
+  type: 'test'
+  ...
+# Subtest: twenty skill handoffs resolve every asset and retain the planned release times
+ok 215 - twenty skill handoffs resolve every asset and retain the planned release times
+  ---
+  duration_ms: 80.0717
+  type: 'test'
+  ...
+# Subtest: recruit after coast10, skip its XP, preserve rank refunds and restore old saves
+ok 216 - recruit after coast10, skip its XP, preserve rank refunds and restore old saves
+  ---
+  duration_ms: 280.5364
+  type: 'test'
+  ...
+# Subtest: twenty actives interpolate attack power without changing lifespan or contract size
+ok 217 - twenty actives interpolate attack power without changing lifespan or contract size
+  ---
+  duration_ms: 2.2959
+  type: 'test'
+  ...
+# Subtest: contracts stay within two attack, one heal, one support and refresh without multiplying units
+ok 218 - contracts stay within two attack, one heal, one support and refresh without multiplying units
+  ---
+  duration_ms: 4110.2009
+  type: 'test'
+  ...
+# Subtest: barrier uses max remaining, heal never exceeds HP, disabled support leaves damage identical
+ok 219 - barrier uses max remaining, heal never exceeds HP, disabled support leaves damage identical
+  ---
+  duration_ms: 2914.3854
+  type: 'test'
+  ...
+# Subtest: possession unique per species and host; twin exception ends with its host; speed excludes summon periods
+ok 220 - possession unique per species and host; twin exception ends with its host; speed excludes summon periods
+  ---
+  duration_ms: 2414.1819
+  type: 'test'
+  ...
+# Subtest: blade followup is once per normal action and never recursively triggers itself
+ok 221 - blade followup is once per normal action and never recursively triggers itself
+  ---
+  duration_ms: 2312.9371
+  type: 'test'
+  ...
+# Subtest: festival cooperates once per living ally, max spirit applies once, no normal cooldown reset
+ok 222 - festival cooperates once per living ally, max spirit applies once, no normal cooldown reset
+  ---
+  duration_ms: 2181.4003
+  type: 'test'
+  ...
+# Subtest: all twenty skills release and finish, including commands, twins, channel and final festival
+ok 223 - all twenty skills release and finish, including commands, twins, channel and final festival
+  ---
+  duration_ms: 41156.9795
+  type: 'test'
+  ...
+# Subtest: caster death, wave clear and stopped unreleased action clean up every spirit clock
+ok 224 - caster death, wave clear and stopped unreleased action clean up every spirit clock
+  ---
+  duration_ms: 6181.7938
+  type: 'test'
+  ...
+# Subtest: command spacing preserves regular clocks; crow clocks are staggered by 180ms
+ok 225 - command spacing preserves regular clocks; crow clocks are staggered by 180ms
+  ---
+  duration_ms: 2038.1023
+  type: 'test'
+  ...
+# Subtest: festival cooldown is shared and only temporary filled contracts end with the ultimate
+ok 226 - festival cooldown is shared and only temporary filled contracts end with the ultimate
+  ---
+  duration_ms: 2004.5094
+  type: 'test'
+  ...
+# Subtest: dead twin host clears its robes and a paid summon replaces a temporary festival contract
+ok 227 - dead twin host clears its robes and a paid summon replaces a temporary festival contract
+  ---
+  duration_ms: 2014.197
+  type: 'test'
+  ...
+# Subtest: forward and backward keep looping at duration boundaries
+ok 228 - forward and backward keep looping at duration boundaries
+  ---
+  duration_ms: 1.9409
+  type: 'test'
+  ...
+# Subtest: jump and hit finish their final frame before returning to idle
+ok 229 - jump and hit finish their final frame before returning to idle
+  ---
+  duration_ms: 1.4247
+  type: 'test'
+  ...
+# Subtest: down remains prone indefinitely, both with and without an idle lead-in
+ok 230 - down remains prone indefinitely, both with and without an idle lead-in
+  ---
+  duration_ms: 1.4098
+  type: 'test'
+  ...
+# Subtest: connection review plays idle → two walking cycles → idle without skipping the end
+ok 231 - connection review plays idle → two walking cycles → idle without skipping the end
+  ---
+  duration_ms: 0.2732
+  type: 'test'
+  ...
+# Subtest: frame stepping resumes at the selected pose with the idle lead-in accounted for
+ok 232 - frame stepping resumes at the selected pose with the idle lead-in accounted for
+  ---
+  duration_ms: 0.2297
+  type: 'test'
+  ...
+# Subtest: each warrior attack plays all four poses once and returns to idle, including connection review
+ok 233 - each warrior attack plays all four poses once and returns to idle, including connection review
+  ---
+  duration_ms: 0.4988
+  type: 'test'
+  ...
+# Subtest: swamp10 recruits only after reward, with Lv20/0%, 20SP and 20 mains per slot; migration preserves trained ninja
+ok 234 - swamp10 recruits only after reward, with Lv20/0%, 20SP and 20 mains per slot; migration preserves trained ninja
+  ---
+  duration_ms: 189.7423
+  type: 'test'
+  ...
+# Subtest: 20 independent actives interpolate counts, distribute budgets and keep world clocks independent of attack speed
+ok 235 - 20 independent actives interpolate counts, distribute budgets and keep world clocks independent of attack speed
+  ---
+  duration_ms: 7.624
+  type: 'test'
+  ...
+# Subtest: all skills and all ranks hit through the actual fixed-step simulation in both facings and at high speed
+ok 236 - all skills and all ranks hit through the actual fixed-step simulation in both facings and at high speed
+  ---
+  duration_ms: 2656.8802
+  type: 'test'
+  ...
+# Subtest: normal flight sweeps nearest contact, survives dead aim, and returning/field attacks deduplicate owner parts
+ok 237 - normal flight sweeps nearest contact, survives dead aim, and returning/field attacks deduplicate owner parts
+  ---
+  duration_ms: 27.9176
+  type: 'test'
+  ...
+# Subtest: echo copies one action once, preserves critical snapshots, has its own fan cap, and cannot recurse or copy control
+ok 238 - echo copies one action once, preserves critical snapshots, has its own fan cap, and cannot recurse or copy control
+  ---
+  duration_ms: 8.9335
+  type: 'test'
+  ...
+# Subtest: clones cap at six, share an eight-second wait after expiry, keep world lifetime, and substitute only direct hits
+ok 239 - clones cap at six, share an eight-second wait after expiry, keep world lifetime, and substitute only direct hits
+  ---
+  duration_ms: 26.9409
+  type: 'test'
+  ...
+# Subtest: strong restrictions share a two-second cap and immunity across classes; root attacks, seal forbids specials, stop pauses clocks
+ok 240 - strong restrictions share a two-second cap and immunity across classes; root attacks, seal forbids specials, stop pauses clocks
+  ---
+  duration_ms: 4.308
+  type: 'test'
+  ...
+# Subtest: MP shortage, root, source death, interruption and wave cleanup do not leave extra emissions
+ok 241 - MP shortage, root, source death, interruption and wave cleanup do not leave extra emissions
+  ---
+  duration_ms: 5.64
+  type: 'test'
+  ...
+# Subtest: generated six motions, eighteen effects and twenty-one icons are local, transparent and reproducible
+ok 242 - generated six motions, eighteen effects and twenty-one icons are local, transparent and reproducible
+  ---
+  duration_ms: 634.558
+  type: 'test'
+  ...
+# Subtest: seven requested motions contain real RGBA frames, safe margins and matching clocks
+ok 243 - seven requested motions contain real RGBA frames, safe margins and matching clocks
+  ---
+  duration_ms: 391.3973
+  type: 'test'
+  ...
+# Subtest: raised mace joins the slam with identical position, palette and pixels
+ok 244 - raised mace joins the slam with identical position, palette and pixels
+  ---
+  duration_ms: 12.9383
+  type: 'test'
+  ...
+# Subtest: shield advance plays both three-frame halves and loops from frame six to one
+ok 245 - shield advance plays both three-frame halves and loops from frame six to one
+  ---
+  duration_ms: 1.2967
+  type: 'test'
+  ...
+# Subtest: paladin recruitment and old-save migration preserve normalized XP and existing characters
+ok 246 - paladin recruitment and old-save migration preserve normalized XP and existing characters
+  ---
+  duration_ms: 55.9494
+  type: 'test'
+  ...
+# Subtest: 21 skills and 53 nodes obey level, dependency, rank, refund and independent point budgets
+ok 247 - 21 skills and 53 nodes obey level, dependency, rank, refund and independent point budgets
+  ---
+  duration_ms: 63.3027
+  type: 'test'
+  ...
+# Subtest: normal mace contact and raised-to-slam timing produce one hit and charge travels only during its six-frame advance
+ok 248 - normal mace contact and raised-to-slam timing produce one hit and charge travels only during its six-frame advance
+  ---
+  duration_ms: 139.4111
+  type: 'test'
+  ...
+# Subtest: charge hits only when its shield reaches the enemy and knockback follows facing exactly once
+ok 249 - charge hits only when its shield reaches the enemy and knockback follows facing exactly once
+  ---
+  duration_ms: 69.5651
+  type: 'test'
+  ...
+# Subtest: cleanse is conditional, clears both statuses and prevents subsequent poison ticks
+ok 250 - cleanse is conditional, clears both statuses and prevents subsequent poison ticks
+  ---
+  duration_ms: 18.4561
+  type: 'test'
+  ...
+# Subtest: aegis guards the entire party only during the active field and strongest reductions do not multiply
+ok 251 - aegis guards the entire party only during the active field and strongest reductions do not multiply
+  ---
+  duration_ms: 32.6459
+  type: 'test'
+  ...
+# Subtest: automatic aegis recognizes hydra charge and remains active through its breath release
+ok 252 - automatic aegis recognizes hydra charge and remains active through its breath release
+  ---
+  duration_ms: 39.7906
+  type: 'test'
+  ...
+# Subtest: sanctuary heals only living allies in its area and blocks new status effects
+ok 253 - sanctuary heals only living allies in its area and blocks new status effects
+  ---
+  duration_ms: 17.8448
+  type: 'test'
+  ...
+# Subtest: hammer uses resistance/capacity to interrupt lich and mud giant but needs help against hydra; displacement and launch never move bosses
+ok 254 - hammer uses resistance/capacity to interrupt lich and mud giant but needs help against hydra; displacement and launch never move bosses
+  ---
+  duration_ms: 222.453
+  type: 'test'
+  ...
+# Subtest: bash and pillars launch or bind mobs, and taunt redirects the next committed attack then expires
+ok 255 - bash and pillars launch or bind mobs, and taunt redirects the next committed attack then expires
+  ---
+  duration_ms: 96.6226
+  type: 'test'
+  ...
+# Subtest: bastion saves each ally once, reflection cannot recurse, and revenge uses only guarded damage within its cap
+ok 256 - bastion saves each ally once, reflection cannot recurse, and revenge uses only guarded damage within its cap
+  ---
+  duration_ms: 87.2346
+  type: 'test'
+  ...
+# Subtest: all skills are deterministic across frame intervals, protect during ultimate windup, and clear transient fields between waves
+ok 257 - all skills are deterministic across frame intervals, protect during ultimate windup, and clear transient fields between waves
+  ---
+  duration_ms: 717.4188
+  type: 'test'
+  ...
+# Subtest: 21 generated icons and nine four-frame effects have real transparency and distinct animation frames
+ok 258 - 21 generated icons and nine four-frame effects have real transparency and distinct animation frames
+  ---
+  duration_ms: 337.6473
+  type: 'test'
+  ...
+# Subtest: the maiden prays twice, turns once in forward frame order, then returns to idle
+ok 259 - the maiden prays twice, turns once in forward frame order, then returns to idle
+  ---
+  duration_ms: 9.8862
+  type: 'test'
+  ...
+# Subtest: shaman chanting joins the released staff pose with no second chant during recovery
+ok 260 - shaman chanting joins the released staff pose with no second chant during recovery
+  ---
+  duration_ms: 3.6801
+  type: 'test'
+  ...
+# Subtest: the shuriken flight starts after the star leaves the sprite and continues during recovery
+ok 261 - the shuriken flight starts after the star leaves the sprite and continues during recovery
+  ---
+  duration_ms: 1.5365
+  type: 'test'
+  ...
+# Subtest: standalone seals, chants and prayers loop without advancing to a finishing motion
+ok 262 - standalone seals, chants and prayers loop without advancing to a finishing motion
+  ---
+  duration_ms: 5.5912
+  type: 'test'
+  ...
+# Subtest: 8 ruin enemies include all 56 common/action motions with alpha, PNG frames, sheets and GIF timing
+ok 263 - 8 ruin enemies include all 56 common/action motions with alpha, PNG frames, sheets and GIF timing
+  ---
+  duration_ms: 6483.8594
+  type: 'test'
+  ...
+# Subtest: 18 independently generated effects are transparent, unclipped and keep packed frame/GIF agreement
+ok 264 - 18 independently generated effects are transparent, unclipped and keep packed frame/GIF agreement
+  ---
+  duration_ms: 671.5446
+  type: 'test'
+  ...
+# Subtest: all generation jobs have durable source and full prompt provenance
+ok 265 - all generation jobs have durable source and full prompt provenance
+  ---
+  duration_ms: 28.4779
+  type: 'test'
+  ...
+# Subtest: multishot, pillars and cooling preserve separate beats/placement
+ok 266 - multishot, pillars and cooling preserve separate beats/placement
+  ---
+  duration_ms: 1.3792
+  type: 'test'
+  ...
+# Subtest: targeted impact effects stay inside the composed preview, including all pillar positions
+ok 267 - targeted impact effects stay inside the composed preview, including all pillar positions
+  ---
+  duration_ms: 12.6164
+  type: 'test'
+  ...
+# Subtest: ten ruins stages unlock after coast; isolated Titan, easy swarm and 50-stage save/auto roundtrip
+ok 268 - ten ruins stages unlock after coast; isolated Titan, easy swarm and 50-stage save/auto roundtrip
+  ---
+  duration_ms: 304.6985
+  type: 'test'
+  ...
+# Subtest: ruins drops and gem probabilities retain the policy; conversion uses actual source unlocks
+ok 269 - ruins drops and gem probabilities retain the policy; conversion uses actual source unlocks
+  ---
+  duration_ms: 1.1679
+  type: 'test'
+  ...
+# Subtest: all six characters have symmetric 100-node ruins trees and rare-limited 300-clear budgets
+ok 270 - all six characters have symmetric 100-node ruins trees and rare-limited 300-clear budgets
+  ---
+  duration_ms: 47.8775
+  type: 'test'
+  ...
+# Subtest: every supplied ruins action reaches its impacts and terminates, with fixed targeting
+ok 271 - every supplied ruins action reaches its impacts and terminates, with fixed targeting
+  ---
+  duration_ms: 263.1589
+  type: 'test'
+  ...
+# Subtest: all game-used supplied sprites, UI references and stage layers exist
+ok 272 - all game-used supplied sprites, UI references and stage layers exist
+  ---
+  duration_ms: 12.5541
+  type: 'test'
+  ...
+# Subtest: generated source and all seven crops preserve alpha and stay inside the native atlas
+ok 273 - generated source and all seven crops preserve alpha and stay inside the native atlas
+  ---
+  duration_ms: 35.7525
+  type: 'test'
+  ...
+# Subtest: inventory and equipment icons have visible artwork, transparent padding and unique pixels
+ok 274 - inventory and equipment icons have visible artwork, transparent padding and unique pixels
+  ---
+  duration_ms: 233.3888
+  type: 'test'
+  ...
+# Subtest: material and normal-attack routes use the generated PNGs
+ok 275 - material and normal-attack routes use the generated PNGs
+  ---
+  duration_ms: 19.1186
+  type: 'test'
+  ...
+# Subtest: cave10 joins after reward, skips joining clear XP, equips 30 mains and spends 30 SP; migration preserves trained data
+ok 276 - cave10 joins after reward, skips joining clear XP, equips 30 mains and spends 30 SP; migration preserves trained data
+  ---
+  duration_ms: 516.904
+  type: 'test'
+  ...
+# Subtest: 20 actives and integer rank tables, speed only scales action events; tooltips expose parameters
+ok 277 - 20 actives and integer rank tables, speed only scales action events; tooltips expose parameters
+  ---
+  duration_ms: 3.4652
+  type: 'test'
+  ...
+# Subtest: all skills, ranks and facings operate through the actual simulation including fields and finishers
+ok 278 - all skills, ranks and facings operate through the actual simulation including fields and finishers
+  ---
+  duration_ms: 4329.07
+  type: 'test'
+  ...
+# Subtest: five independent marks replace only the oldest, do not reset pulse, and include the expiry pulse
+ok 279 - five independent marks replace only the oldest, do not reset pulse, and include the expiry pulse
+  ---
+  duration_ms: 1.1538
+  type: 'test'
+  ...
+# Subtest: deep curses use one slot, preserve phase, compare remaining damage, ramp only on successful pulses
+ok 280 - deep curses use one slot, preserve phase, compare remaining damage, ramp only on successful pulses
+  ---
+  duration_ms: 0.5715
+  type: 'test'
+  ...
+# Subtest: debuff sources retain separate strength/expiry, boss attack cap and healing cap
+ok 281 - debuff sources retain separate strength/expiry, boss attack cap and healing cap
+  ---
+  duration_ms: 0.4548
+  type: 'test'
+  ...
+# Subtest: common defense and penetration apply once to all classes, with shell as separate mitigation
+ok 282 - common defense and penetration apply once to all classes, with shell as separate mitigation
+  ---
+  duration_ms: 5.9948
+  type: 'test'
+  ...
+# Subtest: DoT snapshots equipment once, never crits or rolls blind, and never triggers another curse
+ok 283 - DoT snapshots equipment once, never crits or rolls blind, and never triggers another curse
+  ---
+  duration_ms: 1.009
+  type: 'test'
+  ...
+# Subtest: hit reactions share .6 second, ten per ten seconds, eight per caster second and one per action
+ok 284 - hit reactions share .6 second, ten per ten seconds, eight per caster second and one per action
+  ---
+  duration_ms: 20.0063
+  type: 'test'
+  ...
+# Subtest: simultaneous reaction types choose the strongest once, and a queued dead target is harmless
+ok 285 - simultaneous reaction types choose the strongest once, and a queued dead target is harmless
+  ---
+  duration_ms: 1.1131
+  type: 'test'
+  ...
+# Subtest: parts deduplicate marks and reactions on owner, miss and invulnerability do not consume marks
+ok 286 - parts deduplicate marks and reactions on owner, miss and invulnerability do not consume marks
+  ---
+  duration_ms: 0.6103
+  type: 'test'
+  ...
+# Subtest: spread copies expiry and damage without resetting source, pull consumes only marks
+ok 287 - spread copies expiry and damage without resetting source, pull consumes only marks
+  ---
+  duration_ms: 2.1151
+  type: 'test'
+  ...
+# Subtest: source death keeps applied DoT/debuff, removes fields/extra/projectiles; wave clears every curse
+ok 288 - source death keeps applied DoT/debuff, removes fields/extra/projectiles; wave clears every curse
+  ---
+  duration_ms: 1.2133
+  type: 'test'
+  ...
+# Subtest: MP shortage and interruptions cancel unreleased effects; existing field persists through stop
+ok 289 - MP shortage and interruptions cancel unreleased effects; existing field persists through stop
+  ---
+  duration_ms: 7.3748
+  type: 'test'
+  ...
+# Subtest: generated 4 motions / 15 poses, 27 VFX / 89 poses and 21 icons are local transparent and unclipped
+ok 290 - generated 4 motions / 15 poses, 27 VFX / 89 poses and 21 icons are local transparent and unclipped
+  ---
+  duration_ms: 158.8129
+  type: 'test'
+  ...
+# Subtest: mirror repetition covers positive and negative cameras without gaps
+ok 291 - mirror repetition covers positive and negative cameras without gaps
+  ---
+  duration_ms: 3.0407
+  type: 'test'
+  ...
+# Subtest: saved layers preserve the generated PNGs and both mirrored joins match RGBA
+ok 292 - saved layers preserve the generated PNGs and both mirrored joins match RGBA
+  ---
+  duration_ms: 462.8877
+  type: 'test'
+  ...
+# Subtest: region 1/5 encounters keep their original waves, HP, damage and rewards
+ok 293 - region 1/5 encounters keep their original waves, HP, damage and rewards
+  ---
+  duration_ms: 6.6845
+  type: 'test'
+  ...
+# Subtest: encounter changes preserve species totals and reward budgets except the early forest 3 relief
+ok 294 - encounter changes preserve species totals and reward budgets except the early forest 3 relief
+  ---
+  duration_ms: 1.4747
+  type: 'test'
+  ...
+# Subtest: all regions have valid waves within their regional limit and consistent selection metadata
+ok 295 - all regions have valid waves within their regional limit and consistent selection metadata
+  ---
+  duration_ms: 1.2335
+  type: 'test'
+  ...
+# Subtest: forest/swamp and easy routes retain every value; expansion preserves species and rewards
+ok 296 - forest/swamp and easy routes retain every value; expansion preserves species and rewards
+  ---
+  duration_ms: 2.5368
+  type: 'test'
+  ...
+# Subtest: four/five-wave finales spawn their configured stats and award victory only once after the final wave
+ok 297 - four/five-wave finales spawn their configured stats and award victory only once after the final wave
+  ---
+  duration_ms: 6280.4554
+  type: 'test'
+  ...
+# Subtest: stage 2: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 298 - stage 2: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 1873.7616
+  type: 'test'
+  ...
+# Subtest: stage 3: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 299 - stage 3: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 1569.375
+  type: 'test'
+  ...
+# Subtest: stage 4: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 300 - stage 4: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 2107.8676
+  type: 'test'
+  ...
+# Subtest: stage 6: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 301 - stage 6: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 3681.9223
+  type: 'test'
+  ...
+# Subtest: stage 7: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 302 - stage 7: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 3077.8527
+  type: 'test'
+  ...
+# Subtest: stage 8: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 303 - stage 8: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 2837.8984
+  type: 'test'
+  ...
+# Subtest: stage 9: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 304 - stage 9: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 3210.8016
+  type: 'test'
+  ...
+# Subtest: stage 10: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 305 - stage 10: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 6373.3805
+  type: 'test'
+  ...
+# Subtest: stage 12: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 306 - stage 12: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 9480.9682
+  type: 'test'
+  ...
+# Subtest: stage 13: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 307 - stage 13: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 7323.1239
+  type: 'test'
+  ...
+# Subtest: stage 14: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 308 - stage 14: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 7474.7741
+  type: 'test'
+  ...
+# Subtest: stage 16: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 309 - stage 16: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 8506.9851
+  type: 'test'
+  ...
+# Subtest: stage 17: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 310 - stage 17: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 7307.2639
+  type: 'test'
+  ...
+# Subtest: stage 18: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 311 - stage 18: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 7298.0687
+  type: 'test'
+  ...
+# Subtest: stage 19: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 312 - stage 19: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 7893.5609
+  type: 'test'
+  ...
+# Subtest: stage 20: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 313 - stage 20: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 7486.7792
+  type: 'test'
+  ...
+# Subtest: stage 22: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 314 - stage 22: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 12420.4161
+  type: 'test'
+  ...
+# Subtest: stage 23: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 315 - stage 23: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 10202.4788
+  type: 'test'
+  ...
+# Subtest: stage 24: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 316 - stage 24: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 10751.6009
+  type: 'test'
+  ...
+# Subtest: stage 26: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 317 - stage 26: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 10222.696
+  type: 'test'
+  ...
+# Subtest: stage 27: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 318 - stage 27: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 12617.5375
+  type: 'test'
+  ...
+# Subtest: stage 28: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 319 - stage 28: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 10924.5965
+  type: 'test'
+  ...
+# Subtest: stage 29: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 320 - stage 29: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 13827.5297
+  type: 'test'
+  ...
+# Subtest: stage 30: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 321 - stage 30: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 16490.3034
+  type: 'test'
+  ...
+# Subtest: stage 32: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 322 - stage 32: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 14695.4577
+  type: 'test'
+  ...
+# Subtest: stage 33: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 323 - stage 33: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 13859.3644
+  type: 'test'
+  ...
+# Subtest: stage 34: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 324 - stage 34: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 10449.1043
+  type: 'test'
+  ...
+# Subtest: stage 36: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 325 - stage 36: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 12117.0391
+  type: 'test'
+  ...
+# Subtest: stage 37: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 326 - stage 37: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 13116.2337
+  type: 'test'
+  ...
+# Subtest: stage 38: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 327 - stage 38: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 10881.4649
+  type: 'test'
+  ...
+# Subtest: stage 39: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 328 - stage 39: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 11455.8195
+  type: 'test'
+  ...
+# Subtest: stage 40: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 329 - stage 40: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 17234.1232
+  type: 'test'
+  ...
+# Subtest: stage 42: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 330 - stage 42: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 19800.0486
+  type: 'test'
+  ...
+# Subtest: stage 43: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 331 - stage 43: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 16611.0012
+  type: 'test'
+  ...
+# Subtest: stage 44: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 332 - stage 44: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 17939.6484
+  type: 'test'
+  ...
+# Subtest: stage 46: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 333 - stage 46: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 15597.1949
+  type: 'test'
+  ...
+# Subtest: stage 47: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 334 - stage 47: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 17480.147
+  type: 'test'
+  ...
+# Subtest: stage 48: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 335 - stage 48: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 21021.8056
+  type: 'test'
+  ...
+# Subtest: stage 49: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 336 - stage 49: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 22820.9989
+  type: 'test'
+  ...
+# Subtest: stage 50: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 337 - stage 50: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 31989.4388
+  type: 'test'
+  ...
+# Subtest: stage 52: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 338 - stage 52: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 21895.6824
+  type: 'test'
+  ...
+# Subtest: stage 53: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 339 - stage 53: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 22875.2663
+  type: 'test'
+  ...
+# Subtest: stage 54: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 340 - stage 54: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 24888.7702
+  type: 'test'
+  ...
+# Subtest: stage 56: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 341 - stage 56: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 24855.2354
+  type: 'test'
+  ...
+# Subtest: stage 57: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 342 - stage 57: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 24775.4958
+  type: 'test'
+  ...
+# Subtest: stage 58: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 343 - stage 58: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 23440.3862
+  type: 'test'
+  ...
+# Subtest: stage 59: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 344 - stage 59: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 23045.6118
+  type: 'test'
+  ...
+# Subtest: stage 60: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+ok 345 - stage 60: 30 layouts check reference, first clear, stale gear and major-boss difficulty
+  ---
+  duration_ms: 49668.1499
+  type: 'test'
+  ...
+# Subtest: all seven swamp enemies expose common and requested special motions with complete sources
+ok 346 - all seven swamp enemies expose common and requested special motions with complete sources
+  ---
+  duration_ms: 5350.0136
+  type: 'test'
+  ...
+# Subtest: skeleton gait records both three-frame halves and frog hops have airborne frames
+ok 347 - skeleton gait records both three-frame halves and frog hops have airborne frames
+  ---
+  duration_ms: 4.9244
+  type: 'test'
+  ...
+# Subtest: nine transparent animated effects are catalogued, downloadable and use complete source provenance
+ok 348 - nine transparent animated effects are catalogued, downloadable and use complete source provenance
+  ---
+  duration_ms: 240.6703
+  type: 'test'
+  ...
+# Subtest: battle release times agree with actual sprite frame boundaries
+ok 349 - battle release times agree with actual sprite frame boundaries
+  ---
+  duration_ms: 7.8284
+  type: 'test'
+  ...
+# Subtest: mud grab stops movement at impact and releases at expiry; misses do not root
+ok 350 - mud grab stops movement at impact and releases at expiry; misses do not root
+  ---
+  duration_ms: 6.7619
+  type: 'test'
+  ...
+# Subtest: root refresh never changes the anchor and dead targets discard restraint
+ok 351 - root refresh never changes the anchor and dead targets discard restraint
+  ---
+  duration_ms: 0.4149
+  type: 'test'
+  ...
+# Subtest: giant heavy slam holds raised fists and delivers exactly triple damage at the release frame
+ok 352 - giant heavy slam holds raised fists and delivers exactly triple damage at the release frame
+  ---
+  duration_ms: 0.6115
+  type: 'test'
+  ...
+# Subtest: lich chants before dark magic; the release uses the original area and can miss
+ok 353 - lich chants before dark magic; the release uses the original area and can miss
+  ---
+  duration_ms: 1.7134
+  type: 'test'
+  ...
+# Subtest: hydra continuous attacks hit eight times in two loops and breath follows charging
+ok 354 - hydra continuous attacks hit eight times in two loops and breath follows charging
+  ---
+  duration_ms: 1.2679
+  type: 'test'
+  ...
+# Subtest: poison projectiles launch once, hit after flight and apply damage over time
+ok 355 - poison projectiles launch once, hit after flight and apply damage over time
+  ---
+  duration_ms: 0.7275
+  type: 'test'
+  ...
+# Subtest: fixed-step updates are deterministic across browser frame sizes
+ok 356 - fixed-step updates are deterministic across browser frame sizes
+  ---
+  duration_ms: 1.8103
+  type: 'test'
+  ...
+# Subtest: down animation remains terminal and dead enemies never attack again
+ok 357 - down animation remains terminal and dead enemies never attack again
+  ---
+  duration_ms: 0.978
+  type: 'test'
+  ...
+# Subtest: time-based restraint preview holds its target during pause/seek and releases after 2200ms
+ok 358 - time-based restraint preview holds its target during pause/seek and releases after 2200ms
+  ---
+  duration_ms: 0.9538
+  type: 'test'
+  ...
+# Subtest: invalid enemies, elapsed time and status ids are rejected
+ok 359 - invalid enemies, elapsed time and status ids are rejected
+  ---
+  duration_ms: 1.0181
+  type: 'test'
+  ...
+# Subtest: swamp has ten three-wave stages with requested families, Lv.11–20 and the hydra finale
+ok 360 - swamp has ten three-wave stages with requested families, Lv.11–20 and the hydra finale
+  ---
+  duration_ms: 2.9799
+  type: 'test'
+  ...
+# Subtest: forest-to-swamp unlock, final farming and defeat fallback survive save roundtrips
+ok 361 - forest-to-swamp unlock, final farming and defeat fallback survive save roundtrips
+  ---
+  duration_ms: 208.3414
+  type: 'test'
+  ...
+# Subtest: swamp common, regional crystal, rare boss material and gems follow policy boundaries
+ok 362 - swamp common, regional crystal, rare boss material and gems follow policy boundaries
+  ---
+  duration_ms: 2.9388
+  type: 'test'
+  ...
+# Subtest: swamp 10 normalized XP needs 1, 3, 9, 27, 81, 243 clears and displays only progress
+ok 363 - swamp 10 normalized XP needs 1, 3, 9, 27, 81, 243 clears and displays only progress
+  ---
+  duration_ms: 1.645
+  type: 'test'
+  ...
+# Subtest: regional gear trees keep independent milestones, 300-clear budgets and affordable mains
+ok 364 - regional gear trees keep independent milestones, 300-clear budgets and affordable mains
+  ---
+  duration_ms: 5455.0747
+  type: 'test'
+  ...
+# Subtest: lich chants twice then summons exactly four skeletons once, which block wave completion
+ok 365 - lich chants twice then summons exactly four skeletons once, which block wave completion
+  ---
+  duration_ms: 24.6604
+  type: 'test'
+  ...
+# Subtest: dead and interrupted lich casts do not release skeletons; the cap never produces a partial summon
+ok 366 - dead and interrupted lich casts do not release skeletons; the cap never produces a partial summon
+  ---
+  duration_ms: 26.274
+  type: 'test'
+  ...
+# Subtest: poison ticks four times and roots hold the hit coordinate, then clear at death or battle end
+ok 367 - poison ticks four times and roots hold the hit coordinate, then clear at death or battle end
+  ---
+  duration_ms: 8.1925
+  type: 'test'
+  ...
+# Subtest: hydra performs eight timed bites and the full charge-to-breath sequence
+ok 368 - hydra performs eight timed bites and the full charge-to-breath sequence
+  ---
+  duration_ms: 8.4286
+  type: 'test'
+  ...
+# Subtest: swamp simulation is deterministic across frame rates, including delayed attacks and summons
+ok 369 - swamp simulation is deterministic across frame rates, including delayed attacks and summons
+  ---
+  duration_ms: 807.607
+  type: 'test'
+  ...
+# Subtest: every swamp stage clears at the intended level with prior mains and top-first actives, without branches or gems
+ok 370 - every swamp stage clears at the intended level with prior mains and top-first actives, without branches or gems
+  ---
+  duration_ms: 111358.3759
+  type: 'test'
+  ...
+# Subtest: all swamp loot and enemy icons exist as readable transparent PNGs
+ok 371 - all swamp loot and enemy icons exist as readable transparent PNGs
+  ---
+  duration_ms: 40.462
+  type: 'test'
+  ...
+# Subtest: swamp layers use the exact forest stage rectangle, contact lane and parallax contract
+ok 372 - swamp layers use the exact forest stage rectangle, contact lane and parallax contract
+  ---
+  duration_ms: 3.8768
+  type: 'test'
+  ...
+# Subtest: swamp backgrounds preserve generated RGBA, expose transparent gaps and cover the whole contact lane
+ok 373 - swamp backgrounds preserve generated RGBA, expose transparent gaps and cover the whole contact lane
+  ---
+  duration_ms: 489.7937
+  type: 'test'
+  ...
+# Subtest: swamp movement shares the forest combat Y334–501 lane and stays inside the same ground rectangle
+ok 374 - swamp movement shares the forest combat Y334–501 lane and stays inside the same ground rectangle
+  ---
+  duration_ms: 4.7422
+  type: 'test'
+  ...
+# Subtest: 37 treant/projectile/effect frames are present, unclipped, distinct, transparent, and agree with sheets and GIF timing
+ok 375 - 37 treant/projectile/effect frames are present, unclipped, distinct, transparent, and agree with sheets and GIF timing
+  ---
+  duration_ms: 1197.8746
+  type: 'test'
+  ...
+# Subtest: idle loops, five actions recover or hold their corpse, and combat events match frame beginnings
+ok 376 - idle loops, five actions recover or hold their corpse, and combat events match frame beginnings
+  ---
+  duration_ms: 52.0447
+  type: 'test'
+  ...
+# Subtest: root eruption grows from below without changing scale, and reusable effects disappear after one playback
+ok 377 - root eruption grows from below without changing scale, and reusable effects disappear after one playback
+  ---
+  duration_ms: 0.9301
+  type: 'test'
+  ...
+# Subtest: warrior learns independent actives every five levels and only dedicated upgrades need prerequisites
+ok 378 - warrior learns independent actives every five levels and only dedicated upgrades need prerequisites
+  ---
+  duration_ms: 4.2997
+  type: 'test'
+  ...
+# Subtest: each rank costs one point, caps at five, and level gates still apply with spare SP
+ok 379 - each rank costs one point, caps at five, and level gates still apply with spare SP
+  ---
+  duration_ms: 21.5268
+  type: 'test'
+  ...
+# Subtest: ranks roundtrip; legacy builds refund; malformed ranks, orphan upgrades and overspending are rejected
+ok 380 - ranks roundtrip; legacy builds refund; malformed ranks, orphan upgrades and overspending are rejected
+  ---
+  duration_ms: 64.8352
+  type: 'test'
+  ...
+# Subtest: general passives scale with rank; dedicated enhancement affects only its own skill
+ok 381 - general passives scale with rank; dedicated enhancement affects only its own skill
+  ---
+  duration_ms: 65.3901
+  type: 'test'
+  ...
+# Subtest: all 21 motions produce exactly their designed impact count and damage stationary bosses
+ok 382 - all 21 motions produce exactly their designed impact count and damage stationary bosses
+  ---
+  duration_ms: 111.6606
+  type: 'test'
+  ...
+# Subtest: launch, gathering and knockback move mobs; return attacks finish at their original feet position
+ok 383 - launch, gathering and knockback move mobs; return attacks finish at their original feet position
+  ---
+  duration_ms: 27.2538
+  type: 'test'
+  ...
+# Subtest: world cross final impact is restricted to the intersection
+ok 384 - world cross final impact is restricted to the intersection
+  ---
+  duration_ms: 5.8183
+  type: 'test'
+  ...
+# Subtest: ultimate pauses in the air for 0.3 seconds before its heavy hit and delayed rupture
+ok 385 - ultimate pauses in the air for 0.3 seconds before its heavy hit and delayed rupture
+  ---
+  duration_ms: 5.7694
+  type: 'test'
+  ...
+# Subtest: skill cooldowns are independent; casts spend MP once and unlearned skills never fire
+ok 386 - skill cooldowns are independent; casts spend MP once and unlearned skills never fire
+  ---
+  duration_ms: 61.5131
+  type: 'test'
+  ...
+# Subtest: opening melee skills approach before casting and preserve MP and cooldown while out of reach
+ok 387 - opening melee skills approach before casting and preserve MP and cooldown while out of reach
+  ---
+  duration_ms: 14.216
+  type: 'test'
+  ...
+# Subtest: straight skills reject enemies outside their lane or beyond their actual length
+ok 388 - straight skills reject enemies outside their lane or beyond their actual length
+  ---
+  duration_ms: 11.3983
+  type: 'test'
+  ...
+# Subtest: skill selection checks arc angles and can aim past an unreachable nearest enemy
+ok 389 - skill selection checks arc angles and can aim past an unreachable nearest enemy
+  ---
+  duration_ms: 1.5203
+  type: 'test'
+  ...
+# Subtest: moving skills can cast beyond their stationary radius when their first strike reaches the enemy
+ok 390 - moving skills can cast beyond their stationary radius when their first strike reaches the enemy
+  ---
+  duration_ms: 16.8023
+  type: 'test'
+  ...
+# Subtest: renjin ranks control one through five simultaneous normal targets
+ok 391 - renjin ranks control one through five simultaneous normal targets
+  ---
+  duration_ms: 7.3758
+  type: 'test'
+  ...
+# Subtest: normal attack preview matches live damage and timing after speed and enhancement changes
+ok 392 - normal attack preview matches live damage and timing after speed and enhancement changes
+  ---
+  duration_ms: 4.947
+  type: 'test'
+  ...
+# Subtest: movement and multi-hit combat remain deterministic across render frame durations
+ok 393 - movement and multi-hit combat remain deterministic across render frame durations
+  ---
+  duration_ms: 29.1468
+  type: 'test'
+  ...
+# Subtest: packaged icons, effect frames and reused warrior sprites exist and support frame stepping
+ok 394 - packaged icons, effect frames and reused warrior sprites exist and support frame stepping
+  ---
+  duration_ms: 21.097
+  type: 'test'
+  ...
+# Subtest: generated PNGs retain real transparency, clear margins and exact effect sheet packing
+ok 395 - generated PNGs retain real transparency, clear margins and exact effect sheet packing
+  ---
+  duration_ms: 434.9557
+  type: 'test'
+  ...
+1..395
+# tests 395
+# suites 0
+# pass 395
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 680330.2897

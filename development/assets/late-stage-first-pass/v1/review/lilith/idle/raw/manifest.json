@@ -1,0 +1,50 @@
+{
+  "id": "lilith/idle/raw",
+  "enemy": "lilith",
+  "region": "demon-castle",
+  "motion": "raw-sheet",
+  "label": "待機（原画のみ）",
+  "kind": "raw-sheet",
+  "sources": [
+    "sources/lilith/idle-generated.png"
+  ],
+  "durations": [
+    1000
+  ],
+  "phases": [
+    "切り出し不可・原画"
+  ],
+  "extractionError": "Clipped generated body: C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/late-stage-first-pass/v1/sources/lilith/idle-generated.png",
+  "enemyLabel": "リリス",
+  "expectedFrames": 1,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 1000,
+      "sourceBounds": {
+        "left": 30,
+        "top": 0,
+        "right": 1281,
+        "bottom": 1186
+      },
+      "sourceWidth": 1292,
+      "sourceHeight": 1217,
+      "edgeOpaquePixels": 9,
+      "transparentPixels": 578915,
+      "transparentFraction": 0.3681812862670476
+    }
+  ],
+  "reference": "../../../../references/lilith.png",
+  "originalSources": [
+    "../../../../sources/lilith/idle-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

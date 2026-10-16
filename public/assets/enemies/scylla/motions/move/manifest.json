@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "scylla",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "scylla-move.png",
+  "preview": "../../../../../../development/assets/enemies/scylla/motions/move/scylla-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/scylla/PROMPT.md",
+  "width": 2560,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 371,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/scylla/source/move-registered.png",
+  "sourceScale": 0.4812734082397004,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 239,
+        "top": 199,
+        "right": 572,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 774,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 290,
+        "y": 499
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 160,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 249,
+        "top": 214,
+        "right": 605,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 774,
+        "y": 0,
+        "width": 774,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 270,
+        "y": 467
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 275,
+        "top": 201,
+        "right": 627,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 516,
+        "width": 774,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 216,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 160,
+      "phase": "復帰",
+      "bounds": {
+        "left": 227,
+        "top": 201,
+        "right": 563,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 774,
+        "y": 516,
+        "width": 774,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 495
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/scylla/source/move-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 167701,
+        "left": 40,
+        "top": 20,
+        "right": 732,
+        "bottom": 503,
+        "cx": 381.59247708719687,
+        "cy": 318.29035008735787
+      },
+      {
+        "id": 3,
+        "count": 174936,
+        "left": 776,
+        "top": 50,
+        "right": 1517,
+        "bottom": 501,
+        "cx": 1140.5346641057301,
+        "cy": 320.4234291397997
+      },
+      {
+        "id": 15,
+        "count": 189478,
+        "left": 63,
+        "top": 518,
+        "right": 796,
+        "bottom": 997,
+        "cx": 429.3468054338762,
+        "cy": 801.2147267756679
+      },
+      {
+        "id": 14,
+        "count": 171913,
+        "left": 819,
+        "top": 511,
+        "right": 1517,
+        "bottom": 990,
+        "cx": 1167.0559992554374,
+        "cy": 807.2579327915864
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

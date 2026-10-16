@@ -1,0 +1,5 @@
+# 泥の衝撃波
+
+Built-in image_gen / transparent PNG
+
+Use case: stylized-concept. Asset type: transparent pixel-art visual effect sprite sheet. ONLY the visual effect; NO characters, bodies, faces, hands, weapons, monsters, scenery or terrain. Polished 16-bit fantasy RPG pixel clusters with sharp pixel edges and restrained shading. Exactly FOUR chronological effect frames in a square 2x2 equal-cell grid, read top-left, top-right, bottom-left, bottom-right. Exploding wet earth radial ground shockwave: 1 golden-brown impact flash at ground center; 2 wide radial wet mud spikes and a glowing earth shock ring; 3 large mud clods scatter outward; 4 fragmented fading mud droplets. Ground anchored. Dramatic heavy impact. Each frame has at least 12% transparent margins, stays fully inside its cell, and uses the same palette, pixel scale and fixed origin. Actual transparent alpha, including gaps inside clouds. No lettering, labels, borders, black backdrop, checkerboard or ambient background haze. This asset is composited separately over characters, so any character silhouette is forbidden.

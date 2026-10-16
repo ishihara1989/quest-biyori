@@ -1,0 +1,25 @@
+{
+  "id": "dragon/attack",
+  "source": "sources/dragon/attack-v2.png",
+  "selected": true,
+  "prompt": "BODY ONLY, WITHOUT ANY EXTERNAL CLAW TRAIL OR SPARKS. Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. The same short original claws, NEVER elongated. One near front limb retracts, coils, rakes LEFT and returns. Other original limbs support body and stay connected; wing roots and torso size unchanged. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. TL foreground front paw retracts close to chest; TR elbow bends and claws remain short; BL foreground front paw rakes LEFT while other3 legs support, NO sparks/arc; BR exactly canonical upright quadruped stance. Keep horns, every wingtip and curled tail fully within each cell with wide clear margins/gutters.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon.png",
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "5c5a8b224887f562b39bac4adf2f0137f1603f7198ea3a90bc4a77108700ac6b",
+  "reference": "references/dragon.png",
+  "guide": null,
+  "firstPass": "sources/dragon/attack-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "爪を上げて払う動きで前脚が腕状に伸びる。4脚の所属・爪の寸法・荷重を確認する。",
+    "爪先と翼が大きく動き、頭・胴体の縮尺にも差がある。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-15 JST",
+  "status": "unreviewed; imported originals are not accepted",
+  "added": 23,
+  "provenance": [
+    {
+      "id": "demon-armored-soldier/idle",
+      "file": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/idle-generated.png",
+      "sha256": "3644fd51b0d77b775322be186c2eb8b4d4be4e636778455b7d9da29d81b0926d",
+      "extraction": "transparent-grid",
+      "scale": 0.4612546125461255
+    },
+    {
+      "id": "demon-armored-soldier/reaction",
+      "file": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/reaction-generated.png",
+      "sha256": "18923a01764ff08b3687dbc3c704b81cd788c57f8960134b56c502b925754d11",
+      "extraction": "transparent-grid",
+      "scale": 0.4921259842519685
+    },
+    {
+      "id": "demon-armored-soldier/move-1",
+      "file": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/move-1-generated.png",
+      "sha256": "cee987d033587efd2f8456427dd964067779bb39f3977cad08985e15576e3c29",
+      "extraction": "transparent-grid",
+      "scale": 0.41946308724832215
+    },
+    {
+      "id": "demon-armored-soldier/move-2",
+      "file": "../../late-stage-first-pass/v1/sources/demon-armored-soldier/move-2-generated.png",
+      "sha256": "8a21cab19823686871b47c7de856c0957b95c79ef8f7dc6951f2afbac09b104f",
+      "extraction": "transparent-grid",
+      "scale": 0.4078303425774878
+    },
+    {
+      "id": "imp/idle",
+      "file": "../../late-stage-first-pass/v1/sources/imp/idle-generated.png",
+      "sha256": "d97258525956c8e58d3e979fe2ed0c9305b83bc1d01f003f0724a86d58aafbd7",
+      "extraction": "transparent-grid",
+      "scale": 0.4329004329004329
+    },
+    {
+      "id": "imp/reaction",
+      "file": "../../late-stage-first-pass/v1/sources/imp/reaction-generated.png",
+      "sha256": "d8b98b14804b7a2a828650fd46f4e49fcc3414bec22bd168de8a70d921a067f5",
+      "extraction": "transparent-grid",
+      "scale": 0.42283298097251587
+    },
+    {
+      "id": "imp/move",
+      "file": "../../late-stage-first-pass/v1/sources/imp/move-generated.png",
+      "sha256": "8bb0b0bac2122a9184576843b2759cc5a02f7cae6a81d77a2bfa0b35b217d66f",
+      "extraction": "transparent-grid",
+      "scale": 0.4618937644341801
+    },
+    {
+      "id": "imp/danger-1",
+      "file": "../../late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "extraction": "transparent-grid",
+      "scale": 0.4484304932735426
+    },
+    {
+      "id": "dream-demon/idle",
+      "file": "../../late-stage-first-pass/v1/sources/dream-demon/idle-generated.png",
+      "sha256": "ce9b09251bd4935ade66e9a377cc592b059aa91702a04006a0f4e777387a933a",
+      "extraction": "transparent-grid",
+      "scale": 0.45936395759717313
+    },
+    {
+      "id": "dream-demon/move",
+      "file": "../../late-stage-first-pass/v1/sources/dream-demon/move-generated.png",
+      "sha256": "62325b89ba77e49b9bc5ed47db956a717739b49ba3a7fd12c153c655b59cee2a",
+      "extraction": "transparent-grid",
+      "scale": 0.5058365758754864
+    },
+    {
+      "id": "dream-demon/attack",
+      "file": "../../late-stage-first-pass/v1/sources/dream-demon/attack-generated.png",
+      "sha256": "fb598be081adfabe10712f598ad0d4d1a0fe806aed02ae5f45602b9912a71d4d",
+      "extraction": "transparent-grid",
+      "scale": 0.5168986083499006
+    },
+    {
+      "id": "black-knight/idle",
+      "file": "../../late-stage-first-pass/v1/sources/black-knight/idle-generated.png",
+      "sha256": "12c33b6d6192cf782e3fb4caf2604578807e24f85a9d3ce9b9e37eb8677d4a5c",
+      "extraction": "transparent-grid",
+      "scale": 0.4537205081669691
+    },
+    {
+      "id": "black-knight/move-2",
+      "file": "../../late-stage-first-pass/v1/sources/black-knight/move-2-generated.png",
+      "sha256": "08ae5bc0a3e442b54d5466c7eb981f2f31a3a76d20b9d39e8c669a4b3db06d21",
+      "extraction": "transparent-grid",
+      "scale": 0.4
+    },
+    {
+      "id": "arch-demon/idle",
+      "file": "../../late-stage-first-pass/v1/sources/arch-demon/idle-generated.png",
+      "sha256": "0d0b524ce0419018a4e056203b5f74b29f4a13bd1b9c31f1a6d71e1959c634fe",
+      "extraction": "transparent-grid",
+      "scale": 0.4664179104477612
+    },
+    {
+      "id": "arch-demon/reaction",
+      "file": "../../late-stage-first-pass/v1/sources/arch-demon/reaction-generated.png",
+      "sha256": "2325de9d697359336554fa7a4c75d99f454ef4dba71ad6081a4ec3735e4c4659",
+      "extraction": "transparent-grid",
+      "scale": 0.4570383912248629
+    },
+    {
+      "id": "arch-demon/move-1",
+      "file": "../../late-stage-first-pass/v1/sources/arch-demon/move-1-generated.png",
+      "sha256": "04519d2268e8dc6b2d2d809f72708b446c843113110a6d43d5743fd6ecc4ddd9",
+      "extraction": "transparent-grid",
+      "scale": 0.38402457757296465
+    },
+    {
+      "id": "arch-demon/move-2",
+      "file": "../../late-stage-first-pass/v1/sources/arch-demon/move-2-generated.png",
+      "sha256": "5fbeba89c4e49e6ce76ba5cec1cdccf371252e56e3e19366de92c7110be8894a",
+      "extraction": "transparent-grid",
+      "scale": 0.3980891719745223
+    },
+    {
+      "id": "arch-demon/danger-1",
+      "file": "../../late-stage-first-pass/v1/sources/arch-demon/danger-1-generated.png",
+      "sha256": "64c6483e5dc6bd54c5f0895962f01fdbd3e19b8ce99806d956ebba46a5a33fac",
+      "extraction": "transparent-grid",
+      "scale": 0.5165289256198347
+    },
+    {
+      "id": "arch-demon/danger-2",
+      "file": "../../late-stage-first-pass/v1/sources/arch-demon/danger-2-generated.png",
+      "sha256": "8b4662e0143a16cb1800e17c95bcc7eebea4bb18337c58a3e7c5ee33391342a9",
+      "extraction": "transparent-grid",
+      "scale": 0.4708097928436911
+    },
+    {
+      "id": "lilith/reaction",
+      "file": "../../late-stage-first-pass/v1/sources/lilith/reaction-generated.png",
+      "sha256": "4efe0afed3fb32941083c127cdc69b25a61a301de5f9755c9ed1ff5108bf2c19",
+      "extraction": "transparent-grid",
+      "scale": 0.4084967320261438
+    },
+    {
+      "id": "lilith/move",
+      "file": "../../late-stage-first-pass/v1/sources/lilith/move-generated.png",
+      "sha256": "61699acb2ba47c772619bf633de22d72f70b6428367976ab9d98404e50ac4c18",
+      "extraction": "transparent-grid",
+      "scale": 0.4646840148698885
+    },
+    {
+      "id": "lilith/danger-2",
+      "file": "../../late-stage-first-pass/v1/sources/lilith/danger-2-generated.png",
+      "sha256": "38e5ed611902fbf7a4257c040f0f7c872a5162e4691c1196357553040353aed0",
+      "extraction": "transparent-grid",
+      "scale": 0.4708097928436911
+    }
+  ],
+  "blocked": [
+    {
+      "id": "demon-armored-soldier/danger-1",
+      "clip": "demon-armored-soldier/danger-1",
+      "reason": "Unsafe rectangle extraction; no masks permitted",
+      "priorIssues": [
+        "突き出した剣先がセル境界に近い。余白と剣の同一形状を確認する。",
+        "盾の持ち手と腕が隠れるため接続を検収する。"
+      ],
+      "resolution": {
+        "status": "resolved",
+        "selectedClips": [
+          "demon-armored-soldier/danger-1"
+        ]
+      }
+    },
+    {
+      "id": "black-knight/reaction",
+      "clip": "black-knight/reaction",
+      "reason": "Unsafe rectangle extraction; no masks permitted",
+      "priorIssues": [
+        "大剣が等分セルの境界に近く、撃破時にも長く左へ伸びる。剣先の見切れと柄の手を確認する。",
+        "角・肩・マントの基準体格を待機と比較する。"
+      ],
+      "resolution": {
+        "status": "resolved",
+        "selectedClips": [
+          "black-knight/hit",
+          "black-knight/down"
+        ]
+      }
+    },
+    {
+      "id": "black-knight/move-1",
+      "clip": "black-knight/move",
+      "reason": "Unsafe rectangle extraction; no masks permitted",
+      "priorIssues": [
+        "剣先とマントがセル境界に近い。余白・握り手と奥脚の接続を検収する。",
+        "後半との3→4・6→1の連続性は未確認。"
+      ],
+      "resolution": {
+        "status": "resolved",
+        "selectedClips": [
+          "black-knight/move"
+        ]
+      }
+    },
+    {
+      "id": "black-knight/danger-1",
+      "clip": "black-knight/danger-1",
+      "reason": "Unsafe rectangle extraction; no masks permitted",
+      "priorIssues": [
+        "頭上に引いた大剣の先端が原画の右端に接し、見切れがある。",
+        "通常の大剣撃と構えが近い。危険技の長い溜めと強い振り下ろしを明確にする。"
+      ],
+      "resolution": {
+        "status": "resolved",
+        "selectedClips": [
+          "black-knight/danger-1"
+        ]
+      }
+    },
+    {
+      "id": "black-knight/danger-2",
+      "clip": "black-knight/danger-2",
+      "reason": "Unsafe rectangle extraction; no masks permitted",
+      "priorIssues": [
+        "構えの剣先が等分セル境界を越える。原画の矩形切り出しと余白を確定する。",
+        "腰・肩の回転と2手の柄への接続、円弧エフェクトの原点を合わせる。"
+      ],
+      "resolution": {
+        "status": "resolved",
+        "selectedClips": [
+          "black-knight/danger-2"
+        ]
+      }
+    },
+    {
+      "id": "lilith/idle",
+      "clip": "lilith/idle",
+      "reason": "Clipped generated body: C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/late-stage-first-pass/v1/sources/lilith/idle-generated.png",
+      "priorIssues": [
+        "角の上端・翼端・衣装の裾がセル境界に近い。原画の見切れと余白を確認する。",
+        "2コマ目の髪の広がりが大きい。4→1で不連続に戻らないか確認する。",
+        "顔は正面寄り。個別行動との向きを揃える。"
+      ],
+      "resolution": {
+        "status": "resolved",
+        "selectedClips": [
+          "lilith/idle"
+        ]
+      }
+    },
+    {
+      "id": "black-knight/move",
+      "reason": "Incomplete clip; expected 6 frames, got 3",
+      "resolution": {
+        "status": "resolved",
+        "selectedClips": [
+          "black-knight/move"
+        ]
+      }
+    }
+  ]
+}

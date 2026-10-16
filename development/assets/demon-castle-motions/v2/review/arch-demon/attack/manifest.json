@@ -1,0 +1,143 @@
+{
+  "id": "arch-demon/attack",
+  "label": "アークデーモン・拳撃",
+  "enemy": "arch-demon",
+  "motion": "attack",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 783,
+        "height": 502
+      },
+      "sourceAnchor": [
+        410,
+        492
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "4bb43879f701a34ff0805d5660d76ccc266e0bab7519e075f33cddc221e83000",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8294258117675781
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "溜め",
+      "source": "../../../sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 783,
+        "height": 502
+      },
+      "sourceAnchor": [
+        410,
+        492
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "4bb43879f701a34ff0805d5660d76ccc266e0bab7519e075f33cddc221e83000",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8294258117675781
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "phase": "発動",
+      "source": "../../../sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 0,
+        "top": 502,
+        "width": 794,
+        "height": 522
+      },
+      "sourceAnchor": [
+        420,
+        489
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "d0123110ea78488166dea087912727eb5624196ffdfe60580f6cb69be88d9f8a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8233261108398438
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 794,
+        "top": 502,
+        "width": 742,
+        "height": 522
+      },
+      "sourceAnchor": [
+        350,
+        491
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "de59ac0c68fb80d06ad0c48d61b5fe1c768d001da1e51d8570eb4abe681e52f8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8260993957519531
+    }
+  ],
+  "fingerprint": "30dfdf539df45b22a713211e839d53942f66ccb2575be9427cfea5b3bb71e839",
+  "events": [
+    {
+      "id": "effects/demon-impact",
+      "timeMs": 280,
+      "durationMs": 280,
+      "x": 470,
+      "y": 330,
+      "scale": 0.55,
+      "anchor": [
+        256,
+        256
+      ]
+    }
+  ],
+  "effects": []
+}

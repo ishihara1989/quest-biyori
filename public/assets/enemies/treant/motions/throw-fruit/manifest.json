@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "enemy": "treant",
+  "motion": "throw-fruit",
+  "facing": "left",
+  "label": "樹の実・投げ上げ",
+  "sheet": "treant-throw-fruit.png",
+  "preview": "../../../../../../development/assets/enemies/treant/motions/throw-fruit/treant-throw-fruit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/treant/PROMPT.md",
+  "width": 1792,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 700,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/treant/source/treant-throw-fruit-generated-v2.png",
+  "sourceScale": 0.5,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "name": "release-fruit",
+      "frame": 2,
+      "timeMs": 380,
+      "spawnOffset": {
+        "x": -106,
+        "y": -195
+      },
+      "suggestedVelocity": {
+        "x": -95,
+        "y": -320
+      },
+      "notes": "左向き・倍率1での仮設定。3コマ目から本体は空の手。樹の実は別スプライトを生成し、軌道と着地はゲーム側で制御。"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "throw-fruit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 180,
+      "phase": "樹の実を手に構える",
+      "bounds": {
+        "left": 102,
+        "top": 68,
+        "right": 347,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 501
+      },
+      "sourceAnchor": {
+        "x": 458,
+        "y": 482
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "throw-fruit-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 200,
+      "phase": "腕を下げてためる",
+      "bounds": {
+        "left": 118,
+        "top": 77,
+        "right": 338,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 501
+      },
+      "sourceAnchor": {
+        "x": 396,
+        "y": 483
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "throw-fruit-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 120,
+      "phase": "上へ放る・手を開く",
+      "bounds": {
+        "left": 95,
+        "top": 69,
+        "right": 348,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 501,
+        "width": 768,
+        "height": 523
+      },
+      "sourceAnchor": {
+        "x": 494,
+        "y": 490
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "throw-fruit-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 200,
+      "phase": "空の手で振り抜く",
+      "bounds": {
+        "left": 94,
+        "top": 68,
+        "right": 349,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 501,
+        "width": 768,
+        "height": 523
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 487
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

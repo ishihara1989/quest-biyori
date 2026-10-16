@@ -1,0 +1,15 @@
+.enemy-lab{--gold:#8fcbd5;--gold-dark:#213337}
+.enemy-lab .character-tabs{display:flex;flex-wrap:wrap}
+.enemy-lab .character-tab{min-width:160px;justify-content:flex-start}
+.enemy-lab .motion-tabs{display:flex;flex-wrap:wrap}
+.enemy-lab .motion-tabs button{flex:1;min-width:110px}
+.enemy-lab .character-tab[aria-pressed="true"],.enemy-lab .motion-tabs button[aria-pressed="true"],.enemy-lab .frame-card[aria-pressed="true"]{background:#203037;border-color:#5d949e}
+.enemy-lab .segments button[aria-pressed="true"],.enemy-lab .play-button,.enemy-lab .download-button{background:#213137;border-color:#4d7881;color:#a6d5dc}
+.enemy-lab .roster-list .current{background:#1c2c32;border-color:#4d7881}
+.enemy-lab .study-number a{letter-spacing:0;font:11px "Yu Gothic UI",sans-serif;color:#a6d5dc}
+.enemy-lab .character-tab img{width:64px;height:56px}
+.enemy-lab .frame-card canvas{aspect-ratio:auto;height:auto}
+.enemy-lab .party-canvas{height:auto;object-fit:contain}
+.enemy-lab .sequence-row{flex-wrap:wrap;gap:12px}
+.enemy-lab [hidden]{display:none!important}
+@media(max-width:640px){.enemy-lab .motion-tabs button{min-width:90px}.enemy-lab .party-canvas{height:auto}.enemy-lab .character-tab{flex-direction:row;min-height:64px}}

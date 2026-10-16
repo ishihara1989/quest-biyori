@@ -1,0 +1,7 @@
+'use strict';
+const { makeAssetDirectory } = require('../lib/project-paths.cjs');
+const fs=require('node:fs'),path=require('../lib/project-paths.cjs').assetPaths,sharp=require('sharp');
+const {enemies}=require('./highland-motion-specs.cjs');
+const root=path.resolve(__dirname,'../../public/assets/highland-motions');
+async function main(){for(const e of enemies.filter(e=>e.locomotion==='walk')){const dir=path.join(root,'enemies',e.id,'motions/move'),m=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json'),'utf8')),tiles=[];for(const [i,f]of m.frames.entries()){const label=Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="'+e.width+'" height="'+e.height+'"><text x="20" y="32" fill="#d4eadf" font-family="Segoe UI" font-size="23">'+(i+1)+'</text><path d="M 0 '+m.pivot.y+' H '+e.width+'" stroke="#84aa9d" stroke-dasharray="5 8"/></svg>');const input=await sharp({create:{width:e.width,height:e.height,channels:4,background:'#1b2c2a'}}).composite([{input:fs.readFileSync(path.join(dir,f.file))},{input:label}]).png().toBuffer();tiles.push({input,left:i%3*e.width,top:Math.floor(i/3)*e.height});}const out=path.join(root,'trot',e.id);makeAssetDirectory(out,{recursive:true});await sharp({create:{width:e.width*3,height:e.height*2,channels:4,background:'#1b2c2a'}}).composite(tiles).png().toFile(path.join(out,'contact.png'));fs.copyFileSync(path.join(dir,m.preview),path.join(out,'preview.gif'));}console.log('Five trot contact sheets and previews.');}
+main().catch(e=>{console.error(e);process.exitCode=1;});

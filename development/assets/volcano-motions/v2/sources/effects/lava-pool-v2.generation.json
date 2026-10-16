@@ -1,0 +1,20 @@
+{
+  "id": "effects/lava-pool",
+  "source": "sources/effects/lava-pool-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. short-lived low elliptical molten pool, dark basalt perimeter clearly visible, internal orange bubbles and sparse sparks, readable open edges. LOW GROUND LOOP ONLY: stable elliptical dark basalt perimeter centered (512,760), shallow molten surface height under 130px, tiny internal bubbles. Same perimeter all four frames. NO tall eruptions or big rocks. Smooth 4->1. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "bc2526beb97a9d0471d94678f57dc3be6aeac9eb9344c7aae385af906e8a6897",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/lava-pool-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "残留床の3コマ目で高い溶岩噴出と大きい岩片が出る。低い床の脈動へ抑え、着弾との役割を分ける。",
+    "4→1の反復で床の外形と飛沫が急に変わらないか確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

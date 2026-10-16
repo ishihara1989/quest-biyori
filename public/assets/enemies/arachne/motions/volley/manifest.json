@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "arachne",
+  "motion": "volley",
+  "facing": "left",
+  "label": "爪を飛ばす",
+  "sheet": "arachne-volley.png",
+  "preview": "../../../../../../development/assets/enemies/arachne/motions/volley/arachne-volley-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/arachne/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 840,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/arachne/source/volley-registered.png",
+  "sourceScale": 0.5450733752620545,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "arachne-volley-claw-bolt",
+      "type": "spawn-projectile",
+      "effect": "arachne-claw-bolt",
+      "frame": 2,
+      "timeMs": 420,
+      "power": 1.15
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "volley-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "開始",
+      "bounds": {
+        "left": 213,
+        "top": 172,
+        "right": 552,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 758,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 239,
+        "y": 492
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "volley-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 216,
+        "top": 171,
+        "right": 552,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 758,
+        "y": 0,
+        "width": 758,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 233,
+        "y": 493
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "volley-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 180,
+      "phase": "作用",
+      "bounds": {
+        "left": 160,
+        "top": 171,
+        "right": 555,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 516,
+        "width": 758,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 336,
+        "y": 493
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "volley-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "復帰",
+      "bounds": {
+        "left": 215,
+        "top": 168,
+        "right": 552,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 758,
+        "y": 516,
+        "width": 758,
+        "height": 516
+      },
+      "sourceAnchor": {
+        "x": 235,
+        "y": 499
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/arachne/source/volley-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 1,
+        "count": 156740,
+        "left": 123,
+        "top": 24,
+        "right": 746,
+        "bottom": 500,
+        "cx": 438.14603164476205,
+        "cy": 282.51486538216153
+      },
+      {
+        "id": 2,
+        "count": 160186,
+        "left": 886,
+        "top": 24,
+        "right": 1504,
+        "bottom": 501,
+        "cx": 1192.4709774886694,
+        "cy": 277.5097137078147
+      },
+      {
+        "id": 4,
+        "count": 170299,
+        "left": 28,
+        "top": 526,
+        "right": 753,
+        "bottom": 1003,
+        "cx": 431.80297594231325,
+        "cy": 770.4336196924233
+      },
+      {
+        "id": 5,
+        "count": 159208,
+        "left": 887,
+        "top": 526,
+        "right": 1507,
+        "bottom": 1009,
+        "cx": 1199.598405859002,
+        "cy": 787.9873750062811
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 220,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 431
+    },
+    "origin": {
+      "x": 235.2,
+      "y": 301
+    },
+    "assets": [
+      {
+        "id": "arachne-claw-bolt",
+        "manifest": "../../../../effects/arachne-claw-bolt/manifest.json"
+      }
+    ]
+  }
+}

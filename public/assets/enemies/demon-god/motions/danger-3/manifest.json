@@ -1,0 +1,243 @@
+{
+  "id": "demon-god/danger-3",
+  "label": "封声",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../../../../../development/assets/demon-god-redesign/v2/references/demon-god.png",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "loop": false,
+  "terminal": false,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 280,
+      "phase": "胸前で封印",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-3-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 677,
+        "height": 629
+      },
+      "sourceChestCore": {
+        "x": 299,
+        "y": 202
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.79412841796875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 140,
+        "top": 51,
+        "right": 323,
+        "bottom": 330
+      },
+      "width": 384,
+      "height": 384,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 140,
+        "top": 51,
+        "right": 324,
+        "bottom": 331
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4320,
+      "phase": "掌を立てる",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-3-generated.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 677,
+        "y": 0,
+        "width": 577,
+        "height": 629
+      },
+      "sourceChestCore": {
+        "x": 223,
+        "y": 217
+      },
+      "plannedRoot": [
+        550,
+        550
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 133.05
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.7813585069444444,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 136,
+        "top": 41,
+        "right": 340,
+        "bottom": 320
+      },
+      "width": 384,
+      "height": 384,
+      "index": 1,
+      "x": 384,
+      "y": 0,
+      "visibleBounds": {
+        "left": 136,
+        "top": 41,
+        "right": 341,
+        "bottom": 321
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 360,
+      "phase": "封声を放つ",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-3-generated.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 629,
+        "width": 685,
+        "height": 625
+      },
+      "sourceChestCore": {
+        "x": 294,
+        "y": 200
+      },
+      "plannedRoot": [
+        535,
+        545
+      ],
+      "exportChestCore": {
+        "x": 186.15,
+        "y": 131.1
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.7877061631944444,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 86,
+        "top": 43,
+        "right": 326,
+        "bottom": 314
+      },
+      "width": 384,
+      "height": 384,
+      "index": 2,
+      "x": 768,
+      "y": 0,
+      "visibleBounds": {
+        "left": 86,
+        "top": 43,
+        "right": 327,
+        "bottom": 315
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 360,
+      "phase": "復帰",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-3-generated.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 685,
+        "y": 629,
+        "width": 569,
+        "height": 625
+      },
+      "sourceChestCore": {
+        "x": 206,
+        "y": 200
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.4745762711864407,
+      "transparentFraction": 0.7789984809027778,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 137,
+        "top": 47,
+        "right": 339,
+        "bottom": 323
+      },
+      "width": 384,
+      "height": 384,
+      "index": 3,
+      "x": 1152,
+      "y": 0,
+      "visibleBounds": {
+        "left": 137,
+        "top": 47,
+        "right": 340,
+        "bottom": 324
+      }
+    }
+  ],
+  "events": [
+    {
+      "timeMs": 4600,
+      "effect": "castle-silence-seal",
+      "kind": "control"
+    }
+  ],
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact",
+  "pivot": {
+    "x": 192,
+    "y": 330
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 5320,
+  "sheet": "sheet.png",
+  "motion": "danger-3",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-god-redesign/v2/review/danger-3/manifest.json",
+  "sourceFingerprint": "105f9efcafbffcbc6689a8a67a2af46e606238311c98609ca518832c9e2cc41e",
+  "acceptedForIntegration": true,
+  "action": {
+    "name": "封声",
+    "motion": "danger-3",
+    "warn": 4600,
+    "times": [
+      4600
+    ],
+    "kind": "control",
+    "radius": 65,
+    "effect": "silence-seal",
+    "rest": 3000,
+    "status": "silence",
+    "duration": 5320
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-silence-seal",
+        "manifest": "../../../../effects/castle-silence-seal/manifest.json"
+      }
+    ]
+  }
+}

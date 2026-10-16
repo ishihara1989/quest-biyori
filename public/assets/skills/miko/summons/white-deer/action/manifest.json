@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "white-deer-action",
+  "character": "miko",
+  "subject": "white-deer",
+  "group": "summon",
+  "motion": "action",
+  "sheet": "white-deer-action.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 390,
+  "loop": false,
+  "pivot": {
+    "x": 64,
+    "y": 116
+  },
+  "scale": 0.08641975308641975,
+  "frames": [
+    {
+      "index": 0,
+      "file": "white-deer-action-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 45,
+        "t": 48,
+        "r": 102,
+        "b": 116,
+        "n": 1616,
+        "width": 58,
+        "height": 69
+      }
+    },
+    {
+      "index": 1,
+      "file": "white-deer-action-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 45,
+        "t": 40,
+        "r": 95,
+        "b": 116,
+        "n": 1670,
+        "width": 51,
+        "height": 77
+      }
+    },
+    {
+      "index": 2,
+      "file": "white-deer-action-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 60,
+        "t": 39,
+        "r": 119,
+        "b": 116,
+        "n": 1970,
+        "width": 60,
+        "height": 78
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/white-deer-action-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/white-deer-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

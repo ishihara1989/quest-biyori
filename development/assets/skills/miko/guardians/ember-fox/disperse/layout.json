@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/ember-fox-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 642,
+      "height": 793
+    },
+    {
+      "x": 642,
+      "y": 0,
+      "width": 672,
+      "height": 793
+    },
+    {
+      "x": 1314,
+      "y": 0,
+      "width": 669,
+      "height": 793
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 867
+    },
+    {
+      "x": 512,
+      "y": 867
+    },
+    {
+      "x": 512,
+      "y": 867
+    }
+  ],
+  "scale": 0.5134575569358178
+}

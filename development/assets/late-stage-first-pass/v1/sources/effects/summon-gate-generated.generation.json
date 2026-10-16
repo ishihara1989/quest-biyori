@@ -1,0 +1,27 @@
+{
+  "id": "effects/summon-gate",
+  "effect": "summon-gate",
+  "region": "demon-castle",
+  "label": "悪魔の門",
+  "kind": "ground",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/summon-gate-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. one black-gold gothic hollow portal with violet-red rim, low runic summoning circle, transparent empty opening; no creature. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed ground center (512,850), expand upward/outward; elliptical side-view base. Keep size consistent, only purposeful expansion varies. Palette black/violet/crimson with silver/gold accents.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-0d04bbe1-7fdc-443e-a495-2eb3e41f921e.png",
+  "sha256": "062a55c13b95e6ffcfe180972ed95eae79b52c91e77ed400089f404e571c3263",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "黒金の門と紫赤の縁、空の開口部。召喚キャラクターは含まない。"
+    ],
+    "issues": [
+      "門枠全体の大きさが変わる。門の固定縮尺と開口の拡大を分ける。",
+      "最大コマの門先端と陣がセル境界に近い。"
+    ]
+  }
+}

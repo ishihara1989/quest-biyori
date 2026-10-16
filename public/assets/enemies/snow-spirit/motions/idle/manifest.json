@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "enemy": "snow-spirit",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "snow-spirit-idle.png",
+  "preview": "../../../../../../development/assets/enemies/snow-spirit/motions/idle/snow-spirit-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1520,
+  "height": 310,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 380,
+  "frameHeight": 310,
+  "frameCount": 4,
+  "pivot": {
+    "x": 213,
+    "y": 288
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/snow-spirit/idle.png",
+  "sourceScale": 0.2923387096774194,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 143,
+        "top": 112,
+        "right": 281,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 676,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 366.1409748815473,
+        "y": 598
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 380,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 143,
+        "top": 110,
+        "right": 280,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 0,
+        "width": 676,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 314.35111954956136,
+        "y": 599
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 760,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 143,
+        "top": 113,
+        "right": 280,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 661,
+        "width": 676,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 366.91346406949197,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1140,
+      "y": 0,
+      "width": 380,
+      "height": 310,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 144,
+        "top": 113,
+        "right": 280,
+        "bottom": 256
+      },
+      "sourceCell": {
+        "x": 676,
+        "y": 661,
+        "width": 676,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 313.87485013986947,
+        "y": 553
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -32
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/snow-spirit.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/snow-spirit/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 643,
+          "height": 629
+        },
+        {
+          "x": 643,
+          "y": 0,
+          "width": 611,
+          "height": 629
+        },
+        {
+          "x": 0,
+          "y": 629,
+          "width": 644,
+          "height": 625
+        },
+        {
+          "x": 644,
+          "y": 629,
+          "width": 610,
+          "height": 625
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": null,
+  "animationPhases": null
+}

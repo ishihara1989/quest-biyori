@@ -1,0 +1,32 @@
+{
+  "id": "dragon/move-4",
+  "source": "sources/dragon/move-frame-4-v2.png",
+  "selected": true,
+  "prompt": "Use case: precise-object-edit. ONE single in-place TROT pose, frame 4 of 6, 120ms. Image1 immutable canonical creature, image2 mathematical joint guide ONLY; never paint its colored lines. Match identity from image1 exactly, change only legs into this pose. Canvas coordinates 0..1024. Fixed head, torso, wings, tail, body root (540,550), foot contact plane y~825. Anatomical LEFT legs LF/LH NEAR brighter; RIGHT legs RF/RH FAR darker. A=LH+RF, B=LF+RH. Exactly FOUR legs with same short clawed paws; trace every hip/thigh/knee/shin/ankle/foot, including hidden sections. Naturally occlude far legs, no widening to show them, no detached paws. Required targets: LF LIFTED SWING paw (417,812), hip (417,633), knee (532,690); RF GROUND SUPPORT paw (381,826), hip (381,611), knee (485,686); LH GROUND SUPPORT paw (699,824), hip (699,610), knee (595,702); RH LIFTED SWING paw (663,778), hip (663,588), knee (551,669). Smooth 3->4 and 6->1. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. Explicit contact pair: DARK far FRONT paw at far LEFT under chin and BRIGHT near REAR paw below right hip rest flat on ground. Explicit lifted pair: BRIGHT near FRONT paw directly below orange chest CLEARLY raised 45px above its ground level, bent knee and intact paw, and DARK far REAR paw under belly raised 30px. NO grounded bright front paw. Head/torso fixed.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon.png",
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    },
+    {
+      "file": "guides/dragon/frame-4.png",
+      "sha256": "3c61ddcb560e2b54ef5938a3b4588155ddcfd61c9bf812493b80475eaa17b109"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "96c3bb940b44d593b13381aba51c02847bdc1c776cc5c4a264e6041044ddba1d",
+  "reference": "references/dragon.png",
+  "guide": "guides/dragon/frame-4.png",
+  "firstPass": "sources/dragon/move-2-generated.png",
+  "issues": [
+    "浮いた前足が丸まり、爪と足首の形が待機から変わる。",
+    "腹の下の奥脚の接続が隠れる。見える足先の所属と対角接地ペアを確定する。",
+    "足先実測とガイド座標の比較は未実施。",
+    "4〜5コマ目の浮いた前足が大きく丸まる。足首・指の接続を検収する。",
+    "奥後脚の足先が腹下に隠れる。脚数・所属と3→4・6→1の連続性を確認する。",
+    "頭・翼・尾の形を固定基準と比較する。ガイド遵守は未確定。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

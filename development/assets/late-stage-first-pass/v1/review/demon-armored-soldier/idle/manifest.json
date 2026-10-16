@@ -1,0 +1,101 @@
+{
+  "id": "demon-armored-soldier/idle",
+  "enemy": "demon-armored-soldier",
+  "region": "demon-castle",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/demon-armored-soldier/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "魔鎧兵",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 59,
+        "top": 27,
+        "right": 600,
+        "bottom": 568
+      },
+      "sourceWidth": 643,
+      "sourceHeight": 583,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 221120,
+      "transparentFraction": 0.5898593908805476
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 41,
+        "top": 27,
+        "right": 628,
+        "bottom": 567
+      },
+      "sourceWidth": 687,
+      "sourceHeight": 583,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 238984,
+      "transparentFraction": 0.5966828206261344
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 60,
+        "top": 14,
+        "right": 606,
+        "bottom": 554
+      },
+      "sourceWidth": 646,
+      "sourceHeight": 600,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 231459,
+      "transparentFraction": 0.5971594427244582
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 39,
+        "top": 15,
+        "right": 622,
+        "bottom": 555
+      },
+      "sourceWidth": 684,
+      "sourceHeight": 600,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 249191,
+      "transparentFraction": 0.6071905458089668
+    }
+  ],
+  "reference": "../../../references/demon-armored-soldier.png",
+  "originalSources": [
+    "../../../sources/demon-armored-soldier/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,10 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame single dark-flower ground burst, separate Lilith spell VFX for refined pixel-art JRPG.
+Input image: exact palette and flower design reference. Preserve pointed black-violet petals with thin crimson/magenta and gold illuminated veins. Correct the timing: closed bud -> opening -> full low flower -> fading petals. No tall pillar.
+Exactly FOUR small separate effects in equal 2x2 cells, row-major. Native transparent alpha. Same fixed ground center (500,730) in normalized 0..1000 cell coordinates. All visible pixels must stay within x=200..800,y=300..800, with 20% clear transparent border and broad cell gutters.
+Frame 1: compact CLOSED pointed dark bud at (500,650), height 150, base only 170 wide. Only a tiny magenta line along seams, no already-open broad petals.
+Frame 2: outer petals open outward and slightly upward, width 400, height 270; dark center bud starts to separate. One thin gold rim at ground, no rays extending above y=400.
+Frame 3: fully OPEN LOW flower, width 560, height 300, pointed petals fan horizontally in a shallow cup. Bright magenta veins and a small white-pink central flash at (500,650), no vertical spire, no upward beam. Flower's ground center remains (500,730).
+Frame 4: petals fold/dissolve into 8-12 small dark crimson/violet petal fragments around same ground center, fading gold flecks. NO opaque broad glow or intact fully-lit flower remains. End and hide after frame 4.
+Only one flower per cell. Multiple locations and time offsets will be placed externally. Strong vivid magic at peak while leaving ground and nearby characters readable.
+Crisp deliberate pixel clusters, stepped outlines, reference colors. No background, floor platform, opaque shadow, vignette, tall flame, pillar, character, text, labels, grid, checkerboard or watermark.

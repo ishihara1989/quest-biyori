@@ -1,0 +1,28 @@
+{
+  "status": "review-only-not-runtime",
+  "source": "successful browser captures from tools/verify/verify-goddess-repair.cjs",
+  "timesMs": [
+    0,
+    450,
+    850,
+    1200,
+    1450,
+    1650,
+    1800,
+    2000,
+    2300
+  ],
+  "delayMs": [
+    450,
+    400,
+    350,
+    250,
+    200,
+    150,
+    200,
+    300,
+    300
+  ],
+  "loop": "review repeats; intended return is one shot",
+  "file": "preview.gif"
+}

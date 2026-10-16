@@ -1,0 +1,18 @@
+{
+  "character": "miko",
+  "idle": "../manifest.json",
+  "motions": {
+    "forward": "forward/manifest.json",
+    "backward": "backward/manifest.json",
+    "jump": "jump/manifest.json",
+    "hit": "hit/manifest.json",
+    "down": "down/manifest.json",
+    "attack-wand": "attack-wand/manifest.json",
+    "prayer": "prayer/manifest.json",
+    "prayer-release": "prayer-release/manifest.json",
+    "summon-forward": "summon-forward/manifest.json",
+    "spirit-send": "spirit-send/manifest.json",
+    "blessing-up": "blessing-up/manifest.json",
+    "kagura-finish": "kagura-finish/manifest.json"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-crown",
+  "label": "白夜の氷冠",
+  "sheet": "glacier-crown.png",
+  "preview": "../../../../development/assets/effects/glacier-crown/glacier-crown-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2960,
+  "height": 440,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 740,
+  "frameHeight": 440,
+  "frameCount": 4,
+  "pivot": {
+    "x": 370,
+    "y": 418
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/crown.png",
+  "sourceScale": 0.6814310051107325,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-crown/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-crown-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 740,
+      "height": 440,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 225,
+        "top": 163,
+        "right": 514,
+        "bottom": 418
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 701,
+        "height": 677
+      },
+      "sourceAnchor": {
+        "x": 335,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-crown-02.png",
+      "x": 740,
+      "y": 0,
+      "width": 740,
+      "height": 440,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 170,
+        "top": 71,
+        "right": 569,
+        "bottom": 418
+      },
+      "sourceCell": {
+        "x": 701,
+        "y": 0,
+        "width": 701,
+        "height": 677
+      },
+      "sourceAnchor": {
+        "x": 366,
+        "y": 612
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-crown-03.png",
+      "x": 1480,
+      "y": 0,
+      "width": 740,
+      "height": 440,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 153,
+        "top": 19,
+        "right": 586,
+        "bottom": 418
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 677,
+        "width": 701,
+        "height": 677
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 612
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-crown-04.png",
+      "x": 2220,
+      "y": 0,
+      "width": 740,
+      "height": 440,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 181,
+        "top": 67,
+        "right": 559,
+        "bottom": 418
+      },
+      "sourceCell": {
+        "x": 701,
+        "y": 677,
+        "width": 701,
+        "height": 677
+      },
+      "sourceAnchor": {
+        "x": 301,
+        "y": 604
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "ground",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/crown-generated.png"
+}

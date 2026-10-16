@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "effect": "feather",
+  "label": "羽根射撃",
+  "sheet": "feather.png",
+  "preview": "feather-preview.gif",
+  "prompt": "../../PROMPTS.md",
+  "width": 1360,
+  "height": 260,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 260,
+  "frameCount": 4,
+  "pivot": {
+    "x": 170,
+    "y": 130
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "registered.png",
+  "sourceScale": 0.3831417624521073,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "feather-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 117,
+        "top": 110,
+        "right": 239,
+        "bottom": 150
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 848,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 285
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "feather-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 89,
+        "top": 115,
+        "right": 267,
+        "bottom": 155
+      },
+      "sourceCell": {
+        "x": 848,
+        "y": 0,
+        "width": 848,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 383,
+        "y": 279
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "feather-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 55,
+        "top": 102,
+        "right": 283,
+        "bottom": 154
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 544,
+        "width": 848,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 438,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "feather-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 66,
+        "top": 88,
+        "right": 245,
+        "bottom": 163
+      },
+      "sourceCell": {
+        "x": 848,
+        "y": 544,
+        "width": 848,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 385,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": true,
+  "originalSource": "../../sources/effects/feather-generated.png",
+  "kind": "projectile"
+}

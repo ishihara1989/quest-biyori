@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "wind-sprite",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "wind-sprite-idle.png",
+  "preview": "wind-sprite-idle-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 1760,
+  "height": 350,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 440,
+  "frameHeight": 350,
+  "frameCount": 4,
+  "pivot": {
+    "x": 251,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/idle.png",
+  "sourceScale": 0.36231884057971014,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機1",
+      "bounds": {
+        "left": 160,
+        "top": 87,
+        "right": 345,
+        "bottom": 286
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 716,
+        "height": 631
+      },
+      "sourceAnchor": {
+        "x": 374,
+        "y": 600
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -40
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 440,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機2",
+      "bounds": {
+        "left": 155,
+        "top": 75,
+        "right": 339,
+        "bottom": 283
+      },
+      "sourceCell": {
+        "x": 716,
+        "y": 0,
+        "width": 716,
+        "height": 631
+      },
+      "sourceAnchor": {
+        "x": 347,
+        "y": 606
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -43
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 880,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機3",
+      "bounds": {
+        "left": 149,
+        "top": 92,
+        "right": 342,
+        "bottom": 286
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 631,
+        "width": 716,
+        "height": 631
+      },
+      "sourceAnchor": {
+        "x": 372,
+        "y": 575
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -40
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1320,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 180,
+      "phase": "待機4",
+      "bounds": {
+        "left": 155,
+        "top": 88,
+        "right": 340,
+        "bottom": 289
+      },
+      "sourceCell": {
+        "x": 716,
+        "y": 631,
+        "width": 716,
+        "height": 631
+      },
+      "sourceAnchor": {
+        "x": 354,
+        "y": 581
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -37
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/wind-sprite.png",
+  "originalSources": [
+    "../../../../sources/wind-sprite/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 684,
+          "height": 599
+        },
+        {
+          "x": 684,
+          "y": 0,
+          "width": 646,
+          "height": 599
+        },
+        {
+          "x": 0,
+          "y": 599,
+          "width": 681,
+          "height": 583
+        },
+        {
+          "x": 681,
+          "y": 599,
+          "width": 649,
+          "height": 583
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 40,
+    "groundY": 326,
+    "legsTucked": false
+  },
+  "effectAssets": []
+}

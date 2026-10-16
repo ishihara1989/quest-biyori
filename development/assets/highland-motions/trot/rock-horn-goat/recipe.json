@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rock-horn-goat",
+  "date": "2026-10-13 JST",
+  "gait": "trot",
+  "status": "adopted-coordinate-guided",
+  "standardAdopted": true,
+  "reference": "references/rock-horn-goat.png",
+  "frameWidth": 480,
+  "frameHeight": 350,
+  "pivot": {
+    "x": 274,
+    "y": 326
+  },
+  "outputEye": {
+    "x": 209,
+    "y": 176
+  },
+  "coordinateGuide": "trot/rock-horn-goat/guide.json",
+  "generationParts": 6,
+  "framesPerPart": 1,
+  "registration": "Fixed eye plus neutral grounded foot define a common scale; feet are not aligned per frame",
+  "frames": [
+    {
+      "source": "trot/rock-horn-goat/sources/frame-1-single.png",
+      "eye": {
+        "x": 326,
+        "y": 356
+      },
+      "scale": 0.189873417721519,
+      "phase": "中立・A遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/rock-horn-goat/sources/frame-2-single.png",
+      "eye": {
+        "x": 326,
+        "y": 356
+      },
+      "scale": 0.189873417721519,
+      "phase": "手前閉／奥開・A遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    {
+      "source": "trot/rock-horn-goat/sources/frame-3-single.png",
+      "eye": {
+        "x": 326,
+        "y": 356
+      },
+      "scale": 0.189873417721519,
+      "phase": "手前閉／奥開・B遊脚",
+      "near": "closed",
+      "far": "open",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/rock-horn-goat/sources/frame-4-single.png",
+      "eye": {
+        "x": 326,
+        "y": 356
+      },
+      "scale": 0.189873417721519,
+      "phase": "中立・B遊脚",
+      "near": "neutral",
+      "far": "neutral",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/rock-horn-goat/sources/frame-5-single.png",
+      "eye": {
+        "x": 326,
+        "y": 356
+      },
+      "scale": 0.189873417721519,
+      "phase": "手前開／奥閉・B遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-front",
+        "right-hind"
+      ],
+      "grounded": [
+        "left-hind",
+        "right-front"
+      ]
+    },
+    {
+      "source": "trot/rock-horn-goat/sources/frame-6-single.png",
+      "eye": {
+        "x": 326,
+        "y": 356
+      },
+      "scale": 0.189873417721519,
+      "phase": "手前開／奥閉・A遊脚",
+      "near": "open",
+      "far": "closed",
+      "lifted": [
+        "left-hind",
+        "right-front"
+      ],
+      "grounded": [
+        "left-front",
+        "right-hind"
+      ]
+    }
+  ]
+}

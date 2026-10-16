@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "thunder-bloom",
+  "sheet": "thunder-bloom.png",
+  "frameWidth": 192,
+  "frameHeight": 192,
+  "frameCount": 4,
+  "frames": [
+    {
+      "index": 0,
+      "file": "thunder-bloom-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 192,
+      "height": 192,
+      "durationMs": 120
+    },
+    {
+      "index": 1,
+      "file": "thunder-bloom-02.png",
+      "x": 192,
+      "y": 0,
+      "width": 192,
+      "height": 192,
+      "durationMs": 120
+    },
+    {
+      "index": 2,
+      "file": "thunder-bloom-03.png",
+      "x": 384,
+      "y": 0,
+      "width": 192,
+      "height": 192,
+      "durationMs": 120
+    },
+    {
+      "index": 3,
+      "file": "thunder-bloom-04.png",
+      "x": 576,
+      "y": 0,
+      "width": 192,
+      "height": 192,
+      "durationMs": 120
+    }
+  ],
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "pivot": {
+    "x": 96,
+    "y": 96
+  },
+  "durationMs": 480,
+  "loop": false,
+  "source": "../../../../../../development/assets/skills/ninja/effects/thunder-bloom/source/thunder-bloom-generated-v1.png",
+  "generation": "built-in image_gen; see PROMPT.md"
+}

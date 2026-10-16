@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "treant",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "treant-move.png",
+  "preview": "../../../../../../development/assets/enemies/treant/motions/move/treant-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/treant/motions/move/PROMPT.md",
+  "width": 1792,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 224,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/treant/source/treant-move-generated-v1.png",
+  "sourceScale": 0.5,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "前の根を低く伸ばして接地",
+      "bounds": {
+        "left": 111,
+        "top": 73,
+        "right": 337,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 503
+      },
+      "sourceAnchor": {
+        "x": 440,
+        "y": 475
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "前の根を巻き込み、後ろの根で支える",
+      "bounds": {
+        "left": 117,
+        "top": 74,
+        "right": 338,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 503
+      },
+      "sourceAnchor": {
+        "x": 354,
+        "y": 475
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "前の根を伸ばし、後ろの根が蠢く",
+      "bounds": {
+        "left": 104,
+        "top": 76,
+        "right": 338,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 503,
+        "width": 768,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 440,
+        "y": 480
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "後ろの根を戻して接地",
+      "bounds": {
+        "left": 116,
+        "top": 74,
+        "right": 338,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 503,
+        "width": 768,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 354,
+        "y": 484
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

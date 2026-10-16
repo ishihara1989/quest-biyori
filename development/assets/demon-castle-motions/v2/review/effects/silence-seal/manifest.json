@@ -1,0 +1,130 @@
+{
+  "id": "effects/silence-seal",
+  "label": "沈黙・封印",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "status",
+  "origin": "reuse",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "既存1",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/seal/seal-01.png",
+      "sourceSha256": "3d0a9f3e01d9f059a7273848db290994ad8e1eaf58bffd697501f84d144aa970",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "68e182df0b52f836aa9bf7a9511767d83c4b3dbf6c942d68141155af08405af2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9374542236328125
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "既存2",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/seal/seal-02.png",
+      "sourceSha256": "a41b279e72cbcf3c1c49f917c68dc33c5a7eafc3fb61b9e35ba23a9f436cf9a2",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "dee5111a7c00eef7f134f2d57080fbcf7fcf004b95450ae3a1d368119aac4590",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9156494140625
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "既存3",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/seal/seal-03.png",
+      "sourceSha256": "37f49ab8fc3914fd7ca5144dceb9868fc31d1adbaf8cc5d0ca5f8a27f368ecc0",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "7fcf4d46f4a8816012bc1da377b381ad107154d9fd726ed53052eb1e4190f9b7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.858856201171875
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "既存4",
+      "source": "../../../../../../../public/assets/skills/ninja/effects/seal/seal-04.png",
+      "sourceSha256": "c36307af71272544d53f3c60df3935c995e51b0c948c05d146b99adc08feaa91",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "13ee36f291d06c33024456380f154634230a117d783f37ac3c9652288be77153",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.94268798828125
+    }
+  ],
+  "fingerprint": "fea7c6d5f72f24bc39374f784e4cee19e67830c25dc945f771274f5d4bff1c7b",
+  "events": [],
+  "effects": []
+}

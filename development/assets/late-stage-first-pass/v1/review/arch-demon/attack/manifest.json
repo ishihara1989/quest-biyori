@@ -1,0 +1,103 @@
+{
+  "id": "arch-demon/attack",
+  "enemy": "arch-demon",
+  "region": "demon-castle",
+  "motion": "attack",
+  "label": "拳撃",
+  "effects": [
+    "demon-impact"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/arch-demon/attack-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "アークデーモン",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 189,
+        "top": 17,
+        "right": 764,
+        "bottom": 502
+      },
+      "sourceWidth": 778,
+      "sourceHeight": 506,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 191745,
+      "transparentFraction": 0.48707286342806627
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 13,
+        "top": 15,
+        "right": 661,
+        "bottom": 502
+      },
+      "sourceWidth": 758,
+      "sourceHeight": 506,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 173679,
+      "transparentFraction": 0.4528220718136974
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 50,
+        "top": 2,
+        "right": 885,
+        "bottom": 478
+      },
+      "sourceWidth": 888,
+      "sourceHeight": 518,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 240001,
+      "transparentFraction": 0.5217594525026957
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 2,
+        "top": 6,
+        "right": 592,
+        "bottom": 477
+      },
+      "sourceWidth": 648,
+      "sourceHeight": 518,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 141378,
+      "transparentFraction": 0.4211890461890462
+    }
+  ],
+  "reference": "../../../references/arch-demon.png",
+  "originalSources": [
+    "../../../sources/arch-demon/attack-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

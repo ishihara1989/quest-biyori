@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-recharge",
+  "label": "魔導再調整光",
+  "sheet": "ruins-recharge.png",
+  "preview": "../../../../development/assets/effects/ruins-recharge/ruins-recharge-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-recharge/PROMPT.md",
+  "width": 896,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 224,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 112,
+    "y": 128
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-recharge/source-registered.png",
+  "sourceScale": 0.3037974683544304,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-recharge-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 42,
+        "top": 72,
+        "right": 182,
+        "bottom": 186
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 809,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 436,
+        "y": 281
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-recharge-02.png",
+      "x": 224,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 35,
+        "top": 61,
+        "right": 188,
+        "bottom": 195
+      },
+      "sourceCell": {
+        "x": 809,
+        "y": 0,
+        "width": 809,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 376,
+        "y": 285
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-recharge-03.png",
+      "x": 448,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 18,
+        "top": 54,
+        "right": 207,
+        "bottom": 201
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 579,
+        "width": 809,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 456,
+        "y": 280
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-recharge-04.png",
+      "x": 672,
+      "y": 0,
+      "width": 224,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 18,
+        "top": 63,
+        "right": 206,
+        "bottom": 192
+      },
+      "sourceCell": {
+        "x": 809,
+        "y": 579,
+        "width": 809,
+        "height": 579
+      },
+      "sourceAnchor": {
+        "x": 330,
+        "y": 256
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "origin",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-recharge/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid-per-column",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 759,
+        "height": 477
+      },
+      {
+        "x": 759,
+        "y": 0,
+        "width": 777,
+        "height": 519
+      },
+      {
+        "x": 0,
+        "y": 477,
+        "width": 759,
+        "height": 547
+      },
+      {
+        "x": 759,
+        "y": 519,
+        "width": 777,
+        "height": 505
+      }
+    ]
+  }
+}

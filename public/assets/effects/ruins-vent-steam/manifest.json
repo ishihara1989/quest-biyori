@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-vent-steam",
+  "label": "機兵排熱",
+  "sheet": "ruins-vent-steam.png",
+  "preview": "../../../../development/assets/effects/ruins-vent-steam/ruins-vent-steam-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-vent-steam/PROMPT.md",
+  "width": 1280,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 272
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-vent-steam/source-registered.png",
+  "sourceScale": 0.48080133555926546,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-vent-steam-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 59,
+        "top": 116,
+        "right": 260,
+        "bottom": 272
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 788,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 401,
+        "y": 560
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-vent-steam-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 44,
+        "top": 25,
+        "right": 276,
+        "bottom": 272
+      },
+      "sourceCell": {
+        "x": 788,
+        "y": 0,
+        "width": 788,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 370,
+        "y": 560
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-vent-steam-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 16,
+        "top": 35,
+        "right": 303,
+        "bottom": 272
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 603,
+        "width": 788,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 391,
+        "y": 536
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-vent-steam-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 52,
+        "top": 62,
+        "right": 268,
+        "bottom": 272
+      },
+      "sourceCell": {
+        "x": 788,
+        "y": 603,
+        "width": 788,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 536
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "origin",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-vent-steam/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 709,
+        "height": 571
+      },
+      {
+        "x": 709,
+        "y": 0,
+        "width": 693,
+        "height": 571
+      },
+      {
+        "x": 0,
+        "y": 571,
+        "width": 756,
+        "height": 551
+      },
+      {
+        "x": 756,
+        "y": 571,
+        "width": 646,
+        "height": 551
+      }
+    ]
+  }
+}

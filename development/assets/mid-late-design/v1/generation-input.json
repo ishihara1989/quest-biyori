@@ -1,0 +1,131 @@
+[
+  {
+    "id": "desert-background",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-e3fd457b-5e43-40ce-b23b-225dd31f1bf6.png"
+  },
+  {
+    "id": "desert-props",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-25f24b58-718c-4abd-b004-ba4a3c86cb32.png"
+  },
+  {
+    "id": "desert-drops",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-d14ecd59-e199-4218-82d4-f4210dad5390.png"
+  },
+  {
+    "id": "desert-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-360e61ec-3553-4384-b8a9-12a10444b255.png"
+  },
+  {
+    "id": "highland-background",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-244a9553-4791-4f52-802c-d82ae81272f4.png"
+  },
+  {
+    "id": "highland-props",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-25992eb5-e4e9-49a4-9783-5b0e869936f2.png"
+  },
+  {
+    "id": "highland-drops",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-129c2067-7a58-4c59-b4ea-39fededf4888.png"
+  },
+  {
+    "id": "highland-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-4411c249-a210-4e18-80c7-012853c2db8c.png"
+  },
+  {
+    "id": "glacier-background",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-9b794f6f-a39e-48e0-bb13-e3d3c45ae703.png"
+  },
+  {
+    "id": "glacier-props",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-abb4c2b5-a5fb-41a3-a54c-d514f7faf5c8.png"
+  },
+  {
+    "id": "glacier-drops",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-33d8ef93-100c-4156-a29d-3090edf78fc1.png"
+  },
+  {
+    "id": "glacier-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-0f6061eb-a879-4b55-9b5a-857c0bded39b.png"
+  },
+  {
+    "id": "volcano-background",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-70c8f5d4-a14f-4dda-9424-966f2e1cf068.png"
+  },
+  {
+    "id": "volcano-props",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-217cbbbf-c59e-4fa4-b480-a64cb7617dcd.png"
+  },
+  {
+    "id": "volcano-drops",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-0612aba4-e7bf-4aa8-aa52-61da39b485a2.png"
+  },
+  {
+    "id": "volcano-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-9d871479-84d6-40ce-96d5-d8b0c5bd15a6.png"
+  },
+  {
+    "id": "demon-castle-background",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-a1466563-e3c6-4041-8e6a-271d72ab58f6.png"
+  },
+  {
+    "id": "demon-castle-props",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-f06331ec-a962-4771-89e8-2b2551b37f17.png"
+  },
+  {
+    "id": "demon-castle-drops",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-3766dd51-1899-4f3a-b2bd-324583db5638.png"
+  },
+  {
+    "id": "demon-castle-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-23c447a6-1481-4f13-a78c-87fc3a58ea4e.png"
+  },
+  {
+    "id": "desert-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-fe6a62ff-9e76-4f19-b0f8-6cdaa69c5a39.png",
+    "version": 2,
+    "prompt": "Use case: precise-object-edit\nEdit target: the supplied transparent monster atlas.\nKeep exactly these SAME seven character identities, designs, colors, pixel-art finish, clothing, species, poses, and left-facing direction. Change ONLY framing and spacing: each of the seven sprites must be scaled down to about 70% of its current size and placed on a spacious 3x3 equal-cell square canvas. TOP ROW A/B/C. MIDDLE ROW A+/B+/C+. BOTTOM ROW only D centered. Leave bottom-left and bottom-right empty. Each entire sprite including every wing tip, strand of hair, helmet point, tail, foot and weapon must be visible with 15% clear transparent padding INSIDE its own cell. Maintain a generous clear transparent outer margin on all four edges. Do not allow any sprite to touch another or a grid boundary. Repair any previously cropped tips using the existing design. Do not change lighting, palette or the character silhouettes. No text, grid lines, panels, effects or background. Actual transparent alpha. This is a static design comparison, not animation.",
+    "reference": "desert/monsters.png"
+  },
+  {
+    "id": "highland-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-4c9613b0-9f59-4048-88db-2eb16a4ae11c.png",
+    "version": 2,
+    "prompt": "Use case: precise-object-edit\nEdit target: the supplied transparent monster atlas.\nKeep exactly these SAME seven character identities, designs, colors, pixel-art finish, clothing, species, poses, and left-facing direction. Change ONLY framing and spacing: each of the seven sprites must be scaled down to about 70% of its current size and placed on a spacious 3x3 equal-cell square canvas. TOP ROW A/B/C. MIDDLE ROW A+/B+/C+. BOTTOM ROW only D centered. Leave bottom-left and bottom-right empty. Each entire sprite including every wing tip, strand of hair, helmet point, tail, foot and weapon must be visible with 15% clear transparent padding INSIDE its own cell. Maintain a generous clear transparent outer margin on all four edges. Do not allow any sprite to touch another or a grid boundary. Repair any previously cropped tips using the existing design. Do not change lighting, palette or the character silhouettes. No text, grid lines, panels, effects or background. Actual transparent alpha. This is a static design comparison, not animation.\nOne anatomy correction for the bottom manticore only: make the face a fearsome mature HUMAN face framed by its red lion mane, retaining lion body, violet bat wings and scorpion tail. The face must visibly have a human nose and mouth, not a lion muzzle.",
+    "reference": "highland/monsters.png"
+  },
+  {
+    "id": "glacier-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-2cb6aa09-c300-42b7-871c-057a24abd46f.png",
+    "version": 2,
+    "prompt": "Use case: precise-object-edit\nEdit target: the supplied transparent monster atlas.\nKeep exactly these SAME seven character identities, designs, colors, pixel-art finish, clothing, species, poses, and left-facing direction. Change ONLY framing and spacing: each of the seven sprites must be scaled down to about 70% of its current size and placed on a spacious 3x3 equal-cell square canvas. TOP ROW A/B/C. MIDDLE ROW A+/B+/C+. BOTTOM ROW only D centered. Leave bottom-left and bottom-right empty. Each entire sprite including every wing tip, strand of hair, helmet point, tail, foot and weapon must be visible with 15% clear transparent padding INSIDE its own cell. Maintain a generous clear transparent outer margin on all four edges. Do not allow any sprite to touch another or a grid boundary. Repair any previously cropped tips using the existing design. Do not change lighting, palette or the character silhouettes. No text, grid lines, panels, effects or background. Actual transparent alpha. This is a static design comparison, not animation.",
+    "reference": "glacier/monsters.png"
+  },
+  {
+    "id": "volcano-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-6673973e-eab6-406b-b844-e598335d2829.png",
+    "version": 2,
+    "prompt": "Use case: precise-object-edit\nEdit target: the supplied transparent monster atlas.\nKeep exactly these SAME seven character identities, designs, colors, pixel-art finish, clothing, species, poses, and left-facing direction. Change ONLY framing and spacing: each of the seven sprites must be scaled down to about 70% of its current size and placed on a spacious 3x3 equal-cell square canvas. TOP ROW A/B/C. MIDDLE ROW A+/B+/C+. BOTTOM ROW only D centered. Leave bottom-left and bottom-right empty. Each entire sprite including every wing tip, strand of hair, helmet point, tail, foot and weapon must be visible with 15% clear transparent padding INSIDE its own cell. Maintain a generous clear transparent outer margin on all four edges. Do not allow any sprite to touch another or a grid boundary. Repair any previously cropped tips using the existing design. Do not change lighting, palette or the character silhouettes. No text, grid lines, panels, effects or background. Actual transparent alpha. This is a static design comparison, not animation.",
+    "reference": "volcano/monsters.png"
+  },
+  {
+    "id": "demon-castle-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-f2a3140a-0338-4b17-b744-94d020949da1.png",
+    "version": 2,
+    "prompt": "Use case: precise-object-edit\nEdit target: supplied transparent demon-castle monster atlas. Preserve all seven SAME monster designs, colors, pixel-art style, armor, faces, poses and six arms of the bottom demon god. Only repair framing and spacing: shrink every complete sprite to about 70% current size, place them on an exact 3x3 equal-cell square canvas, top row three regular enemies, middle row three bosses, bottom center demon god; bottom left/right empty. Keep 15% clear transparent padding inside each occupied cell, including full swords, capes, wing tips, every hair strand, horns and feet. Reconstruct previously cropped wing tips in the same design. No sprite may touch another or any cell/image edge. Preserve the adult female dream demon and Lilith, and EXACTLY SIX visible arms on the demon god. Do not recolor, redesign, change species or add props. True transparent alpha, no text, checkerboard, grid lines, floor, backdrop or effects. Single static pose per character, no animation.",
+    "reference": "demon-castle/monsters.png"
+  },
+  {
+    "id": "desert-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-587c3daa-ce78-4a65-b0a4-27706d9a3166.png",
+    "version": 3,
+    "prompt": "Edit the provided transparent pixel-art RPG enemy design sheet. Change ONLY the adult female Lamia in the MIDDLE ROW, RIGHT COLUMN. Make her design moderately cuter and more charming, in a polished Japanese fantasy RPG character style: a gently rounded face and cheeks, slightly larger bright turquoise eyes with clear highlights, softer brows, a small playful warm smile, and soft face-framing locks of her existing long dark hair. Increase the head only slightly, about ten percent; retain clearly adult proportions and the mature elegant snake-woman identity, no childlike or chibi body. Keep her turquoise and gold Egyptian jewelry and costume, cobra crown, golden scales, ONE long coiled golden snake tail, visible pale belly scales, and left-facing three-quarter neutral standing pose. Let the cute face be readable at game viewing size. Preserve her basic silhouette, overall character size and position and the sheet's original crisp detailed pixel-art shading, outline treatment and palette. Preserve the other SIX enemies exactly as in the reference, the seven-character three-row layout, clear transparent gutters and outer margins. No new characters, no labels or text, no added background, no floor shadow. Actual transparent alpha PNG. One static pose only, no motion frames.",
+    "reference": "desert/monsters-v2.png"
+  },
+  {
+    "id": "volcano-monsters",
+    "source": "C:\\Users\\ashit\\.codex\\generated_images\\01a12a75-0e15-7890-91ce-8924e4fc99e2\\exec-0c0dff8e-0aff-4e62-9144-6dbfc43eb752.png",
+    "version": 3,
+    "prompt": "Edit the provided transparent pixel-art RPG enemy design sheet. Change ONLY the adult female Dragon Girl in the MIDDLE ROW, RIGHT COLUMN. Make her moderately cuter and more charming, like an appealing Japanese fantasy RPG heroine who is also a powerful dragon boss: gently rounded cheeks and a softer small jaw, slightly larger sparkling amber eyes, relaxed brows instead of a stern glare, and a small confident playful smile. Add soft face-framing strands and slightly rounder volume to her existing long red hair. Increase the head only slightly, about ten percent, keeping clearly adult proportions; no child or chibi body. Preserve red dragon horns, pointed ears, two large orange-red membranous wings, ONE long red scaled tail, clawed dragon feet, and black scale armor with warm gold/lava details; retain armor coverage and no weapon. Keep her left-facing three-quarter neutral standing pose, basic silhouette, overall size and location. Preserve the original crisp detailed pixel-art shading, outline treatment and palette. Preserve the other SIX enemies exactly as in the reference, the seven-character three-row layout, clear transparent gutters and outer margins. No new characters, labels or text, no added background or floor shadow. Actual transparent alpha PNG. One static pose only, no motion frames.",
+    "reference": "volcano/monsters-v2.png"
+  }
+]

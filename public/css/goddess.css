@@ -1,0 +1,28 @@
+body[data-special="extradimensional-goddess"] { --green:#b6dcf3; --gold:#ead092; }
+body[data-special="extradimensional-goddess"] .arena { border-color:#b9a366; box-shadow:0 0 38px #87bded35; }
+body[data-special="extradimensional-goddess"] .adventure-heading h1 { color:#f2e6c4; }
+body[data-special="extradimensional-goddess"] .boss-hud { border-color:#bca775; background:#1a1935eb; }
+body[data-special="extradimensional-goddess"] .boss-hud i { background:linear-gradient(90deg,#a4cde9,#ecd49e); }
+.arena-clock.time-limit { color:#ffe2a4; border:1px solid #d3c09580; border-radius:5px; padding:5px 9px; background:#17172bb0; }
+.special-node[data-stage="extradimensional-goddess"] > span { border-color:#e8c783; background:#20243fdd; box-shadow:0 0 24px #b8ddff70; }
+.special-node[data-stage="extradimensional-goddess"] small { color:#f7dfaa; }
+.goddess-stage-art { display:grid; place-items:center; background:radial-gradient(ellipse,#a2c8ef30,transparent 68%); }
+.goddess-stage-art img { width:160px; height:160px; object-fit:contain; image-rendering:pixelated; filter:drop-shadow(0 0 14px #c0c8ff55); }
+.goddess-unlocked { overflow:hidden; border:1px solid #ebcd8f; background:radial-gradient(ellipse at 50% 25%,#77a7f340,transparent 65%),linear-gradient(145deg,#15162ef2,#14101ff5); box-shadow:0 0 90px #b6d8f450,inset 0 0 45px #e6c58318; }
+.goddess-unlocked .unlock-kicker { color:#f1d79a; letter-spacing:5px; position:relative; z-index:2; }
+.goddess-unlocked .unlock-emblem { width:190px; height:190px; position:relative; z-index:2; margin:14px auto 0; background-image:url('/assets/ui/enemies/extradimensional-goddess.png'); filter:drop-shadow(0 0 20px #b7eaff); animation:goddess-reveal 2.4s ease-out both; image-rendering:pixelated; }
+.goddess-unlocked::before { width:114px; height:114px; top:24%; border-radius:50%; border:2px solid #ffe3a1; background:#0b1022; box-shadow:0 0 8px #fff1c6,0 0 32px #97dbff,inset 0 0 18px #333a64; animation:goddess-eclipse 2.5s ease-out both; }
+.goddess-unlocked::after { content:''; position:absolute; width:290px; height:290px; left:50%; top:37%; border:1px solid #f5dfaa88; outline:1px solid #9edfff55; outline-offset:12px; transform:translate(-50%,-50%) rotate(45deg); border-radius:30%; pointer-events:none; animation:goddess-orbit 12s linear infinite; }
+.goddess-unlocked .unlock-ring { border-color:#f7dfb0; box-shadow:0 0 24px #a8deff; }
+.goddess-unlocked .unlock-rays { background:repeating-conic-gradient(transparent 0deg 26deg,#c4e9ff30 27deg 29deg,transparent 30deg 45deg); }
+.goddess-unlocked h2 { color:#f5dfb0; text-shadow:0 0 24px #a2d4ff70; position:relative; z-index:2; }
+.goddess-unlocked .unlock-card { border-color:#b6cbd4; background:#20233bdc; position:relative; z-index:2; }
+.goddess-unlocked .unlock-card > span { background:url('/assets/ui/enemies/extradimensional-goddess.png') center/contain no-repeat; }
+.goddess-unlocked .unlock-card > span svg { opacity:0; }
+body[data-special="extradimensional-goddess"] .result-overlay,.result-overlay:has(.goddess-unlocked:not([hidden])) { background:linear-gradient(#10102cbb,#0b1024ef),url('/assets/stages/extradimensional-goddess/background.png') center/cover; }
+body[data-special="extradimensional-goddess"] .result-overlay::before,.result-overlay:has(.goddess-unlocked:not([hidden]))::before { background:radial-gradient(ellipse at 50% 35%,#9edfff20,transparent 65%); }
+@keyframes goddess-reveal { from { opacity:0; transform:translateY(24px) scale(.86); filter:brightness(2) drop-shadow(0 0 30px #9edfff); } 35% { opacity:0; } to { opacity:1; transform:none; } }
+@keyframes goddess-eclipse { from { opacity:0; transform:translate(-50%,-50%) scale(2.5); } 40% { opacity:1; } to { opacity:.85; transform:translate(-50%,-50%) scale(1); } }
+@keyframes goddess-orbit { to { transform:translate(-50%,-50%) rotate(405deg); } }
+@media(max-width:600px) { .goddess-unlocked .unlock-kicker { letter-spacing:2px; font-size:8px; }.goddess-unlocked .unlock-emblem { width:150px; height:150px; }.goddess-unlocked::after { width:240px; height:240px; }.goddess-unlocked h2 { font-size:24px; } }
+@media(prefers-reduced-motion:reduce) { .goddess-unlocked::before,.goddess-unlocked::after,.goddess-unlocked .unlock-emblem { animation:none; }.goddess-unlocked .unlock-emblem { opacity:1; } }

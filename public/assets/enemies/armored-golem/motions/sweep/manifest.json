@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "armored-golem",
+  "motion": "sweep",
+  "facing": "left",
+  "label": "大薙ぎ",
+  "sheet": "armored-golem-sweep.png",
+  "preview": "../../../../../../development/assets/enemies/armored-golem/motions/sweep/armored-golem-sweep-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/armored-golem/PROMPT.md",
+  "width": 2048,
+  "height": 400,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 512,
+  "frameHeight": 400,
+  "frameCount": 4,
+  "pivot": {
+    "x": 297,
+    "y": 382
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 840,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/armored-golem/source/sweep-registered.png",
+  "sourceScale": 0.4956217162872154,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "armored-golem-sweep-2-0",
+      "type": "spawn-effect",
+      "effect": "ruins-golem-sweep",
+      "frame": 2,
+      "timeMs": 420,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "sweep-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 180,
+      "phase": "開始",
+      "bounds": {
+        "left": 107,
+        "top": 127,
+        "right": 360,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 746,
+        "height": 689
+      },
+      "sourceAnchor": {
+        "x": 506,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "sweep-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 240,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 105,
+        "top": 120,
+        "right": 353,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 746,
+        "y": 0,
+        "width": 746,
+        "height": 689
+      },
+      "sourceAnchor": {
+        "x": 455,
+        "y": 627
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "sweep-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 15,
+        "top": 149,
+        "right": 353,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 689,
+        "width": 746,
+        "height": 689
+      },
+      "sourceAnchor": {
+        "x": 599,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "sweep-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 260,
+      "phase": "復帰",
+      "bounds": {
+        "left": 105,
+        "top": 129,
+        "right": 357,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 746,
+        "y": 689,
+        "width": 746,
+        "height": 689
+      },
+      "sourceAnchor": {
+        "x": 420,
+        "y": 571
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/armored-golem/source/sweep-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/armored-golem/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 672,
+          "height": 657
+        },
+        {
+          "x": 672,
+          "y": 0,
+          "width": 582,
+          "height": 657
+        },
+        {
+          "x": 0,
+          "y": 657,
+          "width": 714,
+          "height": 597
+        },
+        {
+          "x": 714,
+          "y": 657,
+          "width": 540,
+          "height": 597
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 341,
+    "defaultZoom": 1,
+    "target": {
+      "x": 156,
+      "y": 382
+    },
+    "origin": {
+      "x": 232.5,
+      "y": 258.16
+    },
+    "assets": [
+      {
+        "id": "ruins-golem-sweep",
+        "manifest": "../../../../effects/ruins-golem-sweep/manifest.json"
+      }
+    ]
+  }
+}

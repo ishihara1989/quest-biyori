@@ -1,0 +1,24 @@
+{
+  "id": "obsidian-executioner/move-2",
+  "source": "sources/obsidian-executioner/move-frame-5-v5.png",
+  "selected": false,
+  "prompt": "Create ONE WALKING pose of the exact armored axe knight in image1, frame5 of6. The NEAR leg at SCREEN-RIGHT (under the near right-side shoulder) bends KNEE UP strongly: thigh rises, lower leg folds down, SCREEN-RIGHT boot clearly LIFTED 70px ABOVE ground. The FAR leg at SCREEN-LEFT stays straight, boot planted FLAT supporting the body. NEVER lift the screen-left boot. Exactly TWO connected knees and TWO boots. Keep helmet/head/torso, double-headed axe shape/shaft/length, both connected hands gripping haft, red cape and palette exactly as fixed canonical. Face LEFT3/4, same upright torso and axe diagonal across waist. Complete weapon and cape within central70% of square canvas with clear padding. Crisp JRPG pixel clusters and black outlines, true transparent alpha. No floor/shadow/aura/VFX/labels.",
+  "actualInputImages": [
+    {
+      "file": "references/obsidian-executioner.png",
+      "sha256": "f3e9668fb5b632ea2ad16a0d6f0ca6c5eb1fa5c53eee22a445fef708ec7d9aa3"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "c99d68837c6c8cc99c3050327bf7f499bcbe42345795c52c4504ed11cfd52cdc",
+  "reference": "references/obsidian-executioner.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-executioner/move-2-generated.png",
+  "issues": [
+    "前半と後半で足の甲・膝の向きが変わる。3→4・6→1の支持とマントの接続を確認する。",
+    "待機・移動間の胴体の基準位置合わせが必要。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

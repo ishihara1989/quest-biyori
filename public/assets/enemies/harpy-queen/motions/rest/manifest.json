@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "enemy": "harpy-queen",
+  "motion": "rest",
+  "facing": "left",
+  "label": "飛行休息",
+  "sheet": "harpy-queen-rest.png",
+  "preview": "../../../../../../development/assets/enemies/harpy-queen/motions/rest/harpy-queen-rest-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 2600,
+  "height": 530,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 650,
+  "frameHeight": 530,
+  "frameCount": 4,
+  "pivot": {
+    "x": 370,
+    "y": 506
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 2000,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/highland-motions/enemies/harpy-queen/registered/rest.png",
+  "sourceScale": 0.5042016806722689,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "rest-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 500,
+      "phase": "待機1",
+      "bounds": {
+        "left": 208,
+        "top": 159,
+        "right": 505,
+        "bottom": 458
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 704,
+        "height": 659
+      },
+      "sourceAnchor": {
+        "x": 353,
+        "y": 626
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -48
+      }
+    },
+    {
+      "index": 1,
+      "file": "rest-02.png",
+      "x": 650,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 500,
+      "phase": "待機2",
+      "bounds": {
+        "left": 202,
+        "top": 193,
+        "right": 524,
+        "bottom": 424
+      },
+      "sourceCell": {
+        "x": 704,
+        "y": 0,
+        "width": 704,
+        "height": 659
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 490
+      },
+      "bakedOffset": {
+        "x": 1,
+        "y": -82
+      }
+    },
+    {
+      "index": 2,
+      "file": "rest-03.png",
+      "x": 1300,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 500,
+      "phase": "待機3",
+      "bounds": {
+        "left": 222,
+        "top": 195,
+        "right": 494,
+        "bottom": 447
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 659,
+        "width": 704,
+        "height": 659
+      },
+      "sourceAnchor": {
+        "x": 368,
+        "y": 532
+      },
+      "bakedOffset": {
+        "x": 21,
+        "y": -59
+      }
+    },
+    {
+      "index": 3,
+      "file": "rest-04.png",
+      "x": 1950,
+      "y": 0,
+      "width": 650,
+      "height": 530,
+      "durationMs": 500,
+      "phase": "待機4",
+      "bounds": {
+        "left": 213,
+        "top": 187,
+        "right": 510,
+        "bottom": 449
+      },
+      "sourceCell": {
+        "x": 704,
+        "y": 659,
+        "width": 704,
+        "height": 659
+      },
+      "sourceAnchor": {
+        "x": 354,
+        "y": 553
+      },
+      "bakedOffset": {
+        "x": 5,
+        "y": -57
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/harpy-queen.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/harpy-queen/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 33,
+          "y": 24,
+          "width": 591,
+          "height": 595,
+          "mainComponent": 1
+        },
+        {
+          "x": 604,
+          "y": 152,
+          "width": 640,
+          "height": 459,
+          "mainComponent": 3
+        },
+        {
+          "x": 63,
+          "y": 692,
+          "width": 542,
+          "height": 501,
+          "mainComponent": 9
+        },
+        {
+          "x": 629,
+          "y": 660,
+          "width": 591,
+          "height": 522,
+          "mainComponent": 8
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [
+    {
+      "x": 0,
+      "y": 8
+    },
+    {
+      "x": 1,
+      "y": -23
+    },
+    {
+      "x": 21,
+      "y": -3
+    },
+    {
+      "x": 5,
+      "y": -4
+    }
+  ],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 56,
+    "groundY": 506,
+    "legsTucked": true
+  },
+  "effectAssets": [],
+  "action": {
+    "motion": "rest",
+    "warn": 0,
+    "times": [],
+    "power": 0,
+    "radius": 0,
+    "kind": "rest",
+    "effect": null,
+    "status": null,
+    "push": 0,
+    "duration": 2000
+  }
+}

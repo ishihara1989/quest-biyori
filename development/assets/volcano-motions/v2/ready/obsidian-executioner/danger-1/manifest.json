@@ -1,0 +1,200 @@
+{
+  "id": "obsidian-executioner/danger-1",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "label": "断罪大薙ぎ",
+  "kind": null,
+  "motion": "danger-1",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 5300,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../sources/obsidian-executioner/danger-1-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/obsidian-executioner/danger-1/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.897064208984375,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 110,
+        "top": 102,
+        "right": 418,
+        "bottom": 344
+      },
+      "visibleBounds": {
+        "left": 188,
+        "top": 103,
+        "right": 380,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/danger-1-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 822,
+        "height": 517
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 504,
+        "y": 495
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4220,
+      "transparentFraction": 0.904693603515625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 104,
+        "top": 110,
+        "right": 376,
+        "bottom": 343
+      },
+      "visibleBounds": {
+        "left": 191,
+        "top": 111,
+        "right": 375,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/danger-1-v3.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 822,
+        "y": 0,
+        "width": 714,
+        "height": 517
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 391,
+        "y": 499
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 600,
+      "transparentFraction": 0.8779754638671875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 32,
+        "top": 121,
+        "right": 437,
+        "bottom": 345
+      },
+      "visibleBounds": {
+        "left": 59,
+        "top": 122,
+        "right": 397,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/danger-1-v3.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 517,
+        "width": 864,
+        "height": 507
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 560,
+        "y": 464
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "transparentFraction": 0.8925132751464844,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 124,
+        "top": 117,
+        "right": 428,
+        "bottom": 341
+      },
+      "visibleBounds": {
+        "left": 163,
+        "top": 118,
+        "right": 375,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-executioner/danger-1-v3.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 864,
+        "y": 517,
+        "width": 672,
+        "height": 507
+      },
+      "sourceScale": 0.4865424430641822,
+      "sourceAnchor": {
+        "x": 342,
+        "y": 469
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "heavy-axe-arc",
+      "timeMs": 4400,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "heavy-axe-arc"
+  ],
+  "repeatRelease": false
+}

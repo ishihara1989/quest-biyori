@@ -1,0 +1,28 @@
+{
+  "id": "arch-demon/reaction",
+  "enemy": "arch-demon",
+  "region": "demon-castle",
+  "motion": "reaction",
+  "label": "被弾・撃破",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/arch-demon.png",
+  "guide": null,
+  "source": "sources/arch-demon/reaction-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of アークデーモン. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: knees fold and torso falls right-down 100px. Bottom-right TERMINAL DEFEAT: recognizable whole character collapsed/kneeling low, original equipment and wings on body, no gore. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-75256dca-e0fd-425a-8c2c-5e5c4c2dec67.png",
+  "sha256": "2325de9d697359336554fa7a4c75d99f454ef4dba71ad6081a4ec3735e4c4659",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "被弾で上体が傾き、撃破で膝と手をついて低く崩れる。"
+    ],
+    "issues": [
+      "翼と尾がセル境界に近い。2腕・2脚・翼根を倒れた姿勢でも追って検収する。",
+      "撃破後の腹核・目の明るさを整える。"
+    ]
+  }
+}

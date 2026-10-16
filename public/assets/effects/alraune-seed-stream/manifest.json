@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "effect": "alraune-seed-stream",
+  "label": "アルラウネの手下の種・1列",
+  "sheet": "alraune-seed-stream.png",
+  "preview": "../../../../development/assets/effects/alraune-seed-stream/alraune-seed-stream-preview.gif",
+  "prompt": "../../../../development/assets/effects/alraune-seed-stream/PROMPT.md",
+  "width": 320,
+  "height": 64,
+  "columns": 1,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 64,
+  "frameCount": 1,
+  "pivot": {
+    "x": 160,
+    "y": 32
+  },
+  "frameSequence": [
+    0
+  ],
+  "durationMs": 1000,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/alraune-seed-stream/source/alraune-seed-volley-top-stream.png",
+  "sourceScale": 1,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "Exact RGBA extraction from the built-in image_gen Alraune seed volley; no repainting",
+  "frames": [
+    {
+      "index": 0,
+      "file": "alraune-seed-stream-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 64,
+      "durationMs": 1000,
+      "phase": "左へ飛ぶ種8粒・1列",
+      "bounds": {
+        "left": 21,
+        "top": 31,
+        "right": 286,
+        "bottom": 53
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 50
+      },
+      "sourceAnchor": {
+        "x": 160,
+        "y": 25
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "facing": "left",
+  "projectileGroup": {
+    "seedCount": 8,
+    "streams": 1,
+    "seedsPerStream": [
+      8
+    ],
+    "independentAsset": true,
+    "direction": {
+      "x": -1,
+      "y": 0
+    },
+    "movement": "Translate this single row of seeds horizontally left as one image."
+  },
+  "derivedFrom": {
+    "source": "../alraune-seed-volley/alraune-seed-volley.png",
+    "rectangle": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 50
+    }
+  },
+  "singleSeed": {
+    "file": "seed-single.png",
+    "width": 32,
+    "height": 24,
+    "bounds": {
+      "left": 4,
+      "top": 4,
+      "right": 31,
+      "bottom": 16
+    }
+  }
+}

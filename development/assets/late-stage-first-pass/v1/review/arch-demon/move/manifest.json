@@ -1,0 +1,137 @@
+{
+  "id": "arch-demon/move",
+  "enemy": "arch-demon",
+  "region": "demon-castle",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/arch-demon/move-1-generated.png",
+    "sources/arch-demon/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "アークデーモン",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 52,
+        "top": 31,
+        "right": 751,
+        "bottom": 681
+      },
+      "sourceWidth": 758,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 242629,
+      "transparentFraction": 0.44211468097202583
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 6,
+        "top": 24,
+        "right": 693,
+        "bottom": 685
+      },
+      "sourceWidth": 703,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 197404,
+      "transparentFraction": 0.3878484474587993
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 8,
+        "top": 28,
+        "right": 682,
+        "bottom": 681
+      },
+      "sourceWidth": 711,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 212327,
+      "transparentFraction": 0.4124744543130444
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 47,
+        "top": 49,
+        "right": 688,
+        "bottom": 676
+      },
+      "sourceWidth": 730,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 263470,
+      "transparentFraction": 0.49850525997124046
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 41,
+        "top": 53,
+        "right": 688,
+        "bottom": 678
+      },
+      "sourceWidth": 725,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 256748,
+      "transparentFraction": 0.4891369784720899
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 34,
+        "top": 53,
+        "right": 689,
+        "bottom": 675
+      },
+      "sourceWidth": 717,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 241065,
+      "transparentFraction": 0.46438313414549576
+    }
+  ],
+  "reference": "../../../references/arch-demon.png",
+  "originalSources": [
+    "../../../sources/arch-demon/move-1-generated.png",
+    "../../../sources/arch-demon/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

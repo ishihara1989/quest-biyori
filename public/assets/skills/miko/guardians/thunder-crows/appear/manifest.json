@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "thunder-crows-guardian-appear",
+  "character": "miko",
+  "subject": "thunder-crows",
+  "group": "guardian",
+  "motion": "appear",
+  "sheet": "thunder-crows-appear.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 450,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.4775510204081633,
+  "frames": [
+    {
+      "index": 0,
+      "file": "thunder-crows-appear-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 55,
+        "t": 80,
+        "r": 479,
+        "b": 476,
+        "n": 96998,
+        "width": 425,
+        "height": 397
+      }
+    },
+    {
+      "index": 1,
+      "file": "thunder-crows-appear-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 36,
+        "t": 79,
+        "r": 475,
+        "b": 475,
+        "n": 115645,
+        "width": 440,
+        "height": 397
+      }
+    },
+    {
+      "index": 2,
+      "file": "thunder-crows-appear-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 40,
+        "t": 80,
+        "r": 469,
+        "b": 476,
+        "n": 114772,
+        "width": 430,
+        "height": 397
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/thunder-crows-guardian-appear-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/thunder-crows-guardian-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

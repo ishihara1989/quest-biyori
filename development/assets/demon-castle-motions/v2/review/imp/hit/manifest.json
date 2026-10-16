@@ -1,0 +1,79 @@
+{
+  "id": "imp/hit",
+  "label": "インプ・被弾",
+  "enemy": "imp",
+  "motion": "hit",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "被弾に大きな衝撃星が直接描かれている。共通被弾演出との重複とセル余白を確認する。",
+    "撃破時の翼・尾・手足の重なりを検収する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "被弾",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/reaction-generated.png",
+      "sourceSha256": "d8b98b14804b7a2a828650fd46f4e49fcc3414bec22bd168de8a70d921a067f5",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 671,
+        "height": 646
+      },
+      "sourceAnchor": [
+        367,
+        592
+      ],
+      "scale": 0.42283298097251587,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "9b43574d69e5c559d5b891390997d86c6a21ca143e6ef399ef258ae374ffe2a2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9041938781738281
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/reaction-generated.png",
+      "sourceSha256": "d8b98b14804b7a2a828650fd46f4e49fcc3414bec22bd168de8a70d921a067f5",
+      "sourceRect": {
+        "left": 671,
+        "top": 0,
+        "width": 598,
+        "height": 646
+      },
+      "sourceAnchor": [
+        253,
+        596
+      ],
+      "scale": 0.42283298097251587,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "1110238fca3b5a1bb54b235d37a3099ea643b208ca6ad4d3e8486edaa20ea8e3",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9066123962402344
+    }
+  ],
+  "fingerprint": "7efc54739fda6a58e1d20d778c3d37383aca21736ec417637d84c21b98061ffd",
+  "events": [],
+  "effects": []
+}

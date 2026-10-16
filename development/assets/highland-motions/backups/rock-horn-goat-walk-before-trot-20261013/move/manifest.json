@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rock-horn-goat",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "rock-horn-goat-move.png",
+  "preview": "rock-horn-goat-move-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 2880,
+  "height": 350,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 350,
+  "frameCount": 6,
+  "pivot": {
+    "x": 274,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/move.png",
+  "sourceScale": 0.3776978417266187,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 159,
+        "top": 116,
+        "right": 376,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 687
+      },
+      "sourceAnchor": {
+        "x": 364,
+        "y": 604
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 171,
+        "top": 116,
+        "right": 376,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 687
+      },
+      "sourceAnchor": {
+        "x": 330,
+        "y": 604
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 152,
+        "top": 117,
+        "right": 381,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 687,
+        "width": 724,
+        "height": 687
+      },
+      "sourceAnchor": {
+        "x": 353,
+        "y": 603
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 151,
+        "top": 115,
+        "right": 378,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 687,
+        "width": 724,
+        "height": 687
+      },
+      "sourceAnchor": {
+        "x": 380,
+        "y": 607
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 1920,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 176,
+        "top": 117,
+        "right": 361,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1374,
+        "width": 724,
+        "height": 687
+      },
+      "sourceAnchor": {
+        "x": 326,
+        "y": 603
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2400,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 156,
+        "top": 118,
+        "right": 378,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 1374,
+        "width": 724,
+        "height": 687
+      },
+      "sourceAnchor": {
+        "x": 375,
+        "y": 602
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/rock-horn-goat.png",
+  "originalSources": [
+    "../../../../sources/rock-horn-goat/move-1-generated.png",
+    "../../../../sources/rock-horn-goat/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 757,
+          "height": 724
+        },
+        {
+          "x": 757,
+          "y": 0,
+          "width": 683,
+          "height": 724
+        },
+        {
+          "x": 1440,
+          "y": 0,
+          "width": 732,
+          "height": 724
+        }
+      ]
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 765,
+          "height": 724
+        },
+        {
+          "x": 765,
+          "y": 0,
+          "width": 652,
+          "height": 724
+        },
+        {
+          "x": 1417,
+          "y": 0,
+          "width": 755,
+          "height": 724
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.8755905511811024,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "walkCycle": {
+    "parts": 2,
+    "framesPerPart": 3,
+    "phases": [
+      "左接地",
+      "右遊脚",
+      "右前進",
+      "右接地",
+      "左遊脚",
+      "左前進"
+    ]
+  },
+  "effectAssets": []
+}

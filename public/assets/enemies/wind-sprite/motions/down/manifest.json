@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "enemy": "wind-sprite",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "wind-sprite-down.png",
+  "preview": "../../../../../../development/assets/enemies/wind-sprite/motions/down/wind-sprite-down-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 880,
+  "height": 350,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 440,
+  "frameHeight": 350,
+  "frameCount": 2,
+  "pivot": {
+    "x": 251,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1220,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/highland-motions/enemies/wind-sprite/registered/down.png",
+  "sourceScale": 0.36231884057971014,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 320,
+      "phase": "落下・崩れる",
+      "bounds": {
+        "left": 190,
+        "top": 148,
+        "right": 322,
+        "bottom": 306
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 665,
+        "width": 746,
+        "height": 665
+      },
+      "sourceAnchor": {
+        "x": 360,
+        "y": 469
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -20
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 440,
+      "y": 0,
+      "width": 440,
+      "height": 350,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 180,
+        "top": 214,
+        "right": 319,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 746,
+        "y": 665,
+        "width": 746,
+        "height": 665
+      },
+      "sourceAnchor": {
+        "x": 323,
+        "y": 460
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/wind-sprite.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/wind-sprite/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 744,
+          "height": 659
+        },
+        {
+          "x": 744,
+          "y": 0,
+          "width": 574,
+          "height": 659
+        },
+        {
+          "x": 0,
+          "y": 659,
+          "width": 679,
+          "height": 534
+        },
+        {
+          "x": 679,
+          "y": 659,
+          "width": 639,
+          "height": 534
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.96,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "fall": {
+    "landingFrame": 1,
+    "fromHoverHeight": 40
+  },
+  "effectAssets": [],
+  "action": null
+}

@@ -1,0 +1,94 @@
+[data-rarity=legendary]{--rarity:#ffc655}
+.item-cell[data-rarity=legendary],.gem-choice[data-rarity=legendary],.gem-craft-result[data-rarity=legendary]{border-color:#c79539;box-shadow:inset 0 0 16px #ffbc2220,0 0 14px #ffc65515}
+.rarity-legend [data-rarity=legendary],.loot-rarity-group[data-rarity=legendary] .loot-group-heading{color:#ffc655}
+.gem-item img,.gem-instance img,.gem-craft-art>img{mix-blend-mode:screen}
+.gem-item img[src*="/gems/"],.gem-instance img[src*="/gems/"],.gem-craft-art>img[src*="/gems/"]{mix-blend-mode:normal}
+.gem-item .gem-level{position:absolute;bottom:3px;left:5px;font:11px ui-monospace,Consolas,monospace;color:#f2e5bc;text-shadow:0 1px 3px #000}
+.gem-item .gem-protected{position:absolute;right:4px;top:4px;color:#f3d783;font-size:12px}
+.gem-wallet{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #67715c40;margin-bottom:14px}
+.gem-wallet>div{display:flex;gap:8px;align-items:center;flex:1;min-width:180px;flex-wrap:wrap}
+.gem-wallet img,.gem-costs img{width:38px;height:38px;object-fit:contain}
+.gem-wallet b{color:var(--rarity);font:14px ui-monospace,Consolas,monospace}
+.gem-wallet button{margin-left:auto;padding:6px 9px;gap:4px;font-size:11px}
+.gem-conversion-actions{display:flex;flex-basis:100%;gap:4px}
+.gem-conversion-actions button{flex:1;margin-left:0;min-height:36px;padding:6px 4px;white-space:nowrap}
+.gem-craft-layout{display:grid;grid-template-columns:minmax(170px,.8fr) minmax(0,1.7fr);gap:26px;align-items:center;padding:20px 8px}
+.gem-craft-art{display:grid;justify-items:center;gap:7px;color:var(--rarity);background:radial-gradient(ellipse,#ebba6920,transparent 65%)}
+.gem-craft-art>img{width:min(190px,100%);height:190px;object-fit:contain;filter:drop-shadow(0 0 12px #fac85335)}
+.gem-fields{display:flex;gap:10px;flex-wrap:wrap}
+.gem-fields label{display:grid;gap:7px;flex:1;min-width:110px;font-size:12px;color:#d0c9a9}
+.gem-fields select{width:100%;padding:9px 6px;border:1px solid #6a7158;background:#18241e;color:#e4d9ae;border-radius:5px;font:inherit}
+.gem-costs{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.gem-costs>span{display:flex;align-items:center;gap:5px;color:#ded7b4;font:13px ui-monospace,Consolas,monospace}
+.gem-costs .short{color:#e6a09a}.gem-costs small{color:#b5baa5;font-size:11px}
+.gem-craft-controls .primary-button{gap:8px;padding:9px 20px}.gem-craft-controls .primary-button img{width:30px;height:30px}
+.gem-craft-hint{display:inline-flex;align-items:center;gap:5px;margin-left:12px;color:#aab49b;font-size:12px}
+.gem-craft-hint svg{width:15px;height:15px}
+.gem-craft-result{display:flex;gap:12px;align-items:center;width:100%;padding:14px;border:1px solid #7e7853;border-radius:6px;background:#253126;color:#ece0b7;text-align:left}
+.gem-craft-result>img{width:65px;height:65px;object-fit:contain}.gem-craft-result>span{display:grid;gap:9px;min-width:0;flex:1}.gem-craft-result small{line-height:1.6;color:#c8d0b4}
+.gem-craft-result svg{width:20px;height:20px}
+.inventory-selection{flex-wrap:wrap}.gem-management{flex-basis:100%;display:flex;gap:8px;align-items:center;flex-wrap:wrap;border-top:1px solid #67715c40;padding-top:12px}
+.gem-management .secondary-button{font-size:12px;padding:7px 11px;gap:5px}.gem-management .secondary-button img{width:24px;height:24px}
+.gem-management [aria-pressed=true]{color:#ffe298;border-color:#bca052}
+.gem-upgrade{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-left:auto}.gem-upgrade .gem-costs{margin:0}.gem-upgrade .gem-costs img{width:27px;height:27px}
+.gem-upgrade-level{display:flex;gap:5px;align-items:center;color:#d0c9a9;font-size:12px}.gem-upgrade-level select{padding:5px;background:#18241e;color:#e4d9ae;border:1px solid #6a7158;border-radius:4px}
+.inventory-filters{flex-wrap:wrap}
+.gem-choice .gem-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.gem-choice img{object-fit:contain}
+.equipment-gems .capacity-row{grid-template-columns:repeat(2,minmax(0,1fr))}.equipment-gems .capacity{font-size:11px}.equipment-gems .capacity small{font-size:10px}
+.loot-flash[data-rarity=legendary]{background:radial-gradient(ellipse,#fff5b580,#ffd04b45 35%,transparent 75%)}
+.gem-workshop button:disabled{opacity:.4;cursor:default}
+.gem-loadout-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:20px 0 12px;color:#d9d5b2}
+.gem-loadout-heading strong{font-size:14px;font-weight:500}.gem-loadout-heading small{font:11px ui-monospace,Consolas,monospace;color:#a3b391}
+.inventory-gem-target{flex-wrap:wrap}.inventory-gem-target .gem-target-characters{flex-wrap:wrap}
+.inventory-selection>.gem-management{flex:0 0 100%;min-width:0}
+.inventory-selection>div:not(.gem-management){min-width:0;flex:1 1 160px}
+.inventory-selection strong{overflow-wrap:anywhere}
+.gem-dismantle-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0 16px}
+.gem-dismantle-heading h3{display:flex;align-items:center;gap:8px;font-size:15px;margin:0;color:#dfd6ac}
+.gem-dismantle-heading svg{width:18px;height:18px}.gem-dismantle-heading>span{display:flex;align-items:center;gap:5px;font-size:11px;color:#b6c8a4}
+.gem-bulk-dismantle fieldset,.gem-auto-dismantle fieldset{border:0;padding:0;margin:0;min-width:0}
+.gem-dismantle-fields label{min-width:130px}.gem-dismantle-fields label:last-child{flex:.8}
+.gem-dismantle-preview{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 0;color:#ddd3ac}
+.gem-dismantle-preview>strong{font-size:13px;font-weight:400}.gem-dismantle-preview>strong b{font-size:22px;color:#f2d78f}
+.gem-dismantle-preview .primary-button{margin-left:auto;gap:8px;padding:10px 16px}
+.gem-dismantle-preview .primary-button svg{width:18px;height:18px}
+.gem-dismantle-rewards{display:flex;gap:12px;flex-wrap:wrap}.gem-dismantle-rewards>span{display:flex;align-items:center;gap:5px;color:var(--rarity);font:14px ui-monospace,Consolas,monospace}
+.gem-dismantle-rewards img{width:32px;height:32px;object-fit:contain}.gem-dismantle-targets{border-top:1px solid #67715c40;padding-top:18px}
+.gem-auto-dismantle{border-block:1px solid #67715c40;margin:24px 0;padding:20px 0}
+.gem-auto-dismantle legend{font-size:11px;color:#aabc9e;margin-bottom:16px;padding:0}.gem-auto-dismantle .auto-gear-toggle{display:flex;gap:6px;align-items:center}
+.gem-dismantle-exclusions{margin-top:20px}.gem-dismantle-exclusions h4{display:flex;align-items:center;gap:6px;color:#c7d2b2;font-size:12px;font-weight:400;margin:0 0 9px}.gem-dismantle-exclusions h4 svg{width:13px;height:13px}
+.gem-dismantle-exclusions>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px}
+.gem-exclusion{display:flex;align-items:center;gap:7px;min-width:0;min-height:40px;padding:6px 9px;border:1px solid #58664f;border-radius:5px;background:#18241e;color:#aab6a0;font-family:inherit;font-size:12px;text-align:left}
+.gem-exclusion img{width:26px;height:26px;object-fit:contain;flex:none}.gem-exclusion span{flex:1}.gem-exclusion b{color:#86937b}
+.gem-exclusion[aria-pressed=true]{border-color:#baa268;background:#3b3c28;color:#f1dfaa;box-shadow:inset 0 0 14px #d5b65415}.gem-exclusion[aria-pressed=true] b{color:#efce72}
+.gem-exclusion:hover{border-color:#c8b882}.gem-auto-dismantle button:disabled,.gem-bulk-dismantle button:disabled,.gem-auto-dismantle fieldset:disabled,.gem-bulk-dismantle fieldset:disabled{opacity:.4;cursor:default}
+@media(max-width:640px){.gem-dismantle-fields label{min-width:120px}.gem-dismantle-fields label:last-child{flex:1 1 100%}.gem-dismantle-exclusions>div{grid-template-columns:repeat(2,minmax(0,1fr))}.gem-exclusion{font-size:11px;gap:4px;padding:6px}.gem-exclusion img{width:23px;height:23px}.gem-dismantle-preview{gap:10px}.gem-dismantle-preview .primary-button{width:100%;justify-content:center;margin-left:0}.gem-dismantle-heading h3{font-size:14px}}
+@media(max-width:640px){.gem-craft-layout{grid-template-columns:minmax(0,1fr);gap:15px;padding:8px 0}.gem-craft-art>img{height:125px;width:125px}.gem-craft-art{grid-template-columns:125px 1fr;text-align:left}.gem-craft-art>img{grid-row:span 2}.gem-craft-art strong,.gem-craft-art>span{justify-self:start}.gem-wallet>div{min-width:130px}.gem-wallet button span{display:none}.gem-upgrade{margin-left:0}.gem-fields label{min-width:120px}}
+@media(prefers-reduced-motion:no-preference){.gem-craft-result{animation:gem-reveal .35s ease-out}@keyframes gem-reveal{from{transform:translateY(10px);filter:brightness(1.7)}to{transform:translateY(0);filter:brightness(1)}}}
+/* Epic gems have unique art and no regional level badge. */
+[data-rarity="epic"]{--rarity:#c6eeff}
+.item-cell[data-rarity="epic"],.gem-craft-art[data-rarity="epic"]{border-color:#d0c6ff;background:radial-gradient(ellipse at center,#b8eaff27,#7061ac19 55%,#172431);box-shadow:inset 0 0 16px #b9c7ff25,0 0 14px #b8ddff35}
+.item-cell[data-rarity="epic"] img{filter:drop-shadow(0 0 5px #c9edff66)}
+.gem-wallet{grid-template-columns:repeat(4,minmax(0,1fr));flex-wrap:wrap}
+.epic-effect-parameters{font-size:12px;line-height:1.9;color:#d9e8fa;overflow-wrap:anywhere}
+.goddess-forge-tab{display:flex;align-items:center;gap:6px}
+.goddess-forge-tab img{width:30px;height:30px;object-fit:contain}
+.goddess-forge-tree{width:2240px!important;height:740px!important}
+.goddess-forge-viewport{max-height:520px;overflow:auto}
+.goddess-forge-tree .node-art img{object-fit:contain}
+.capacity-row,.inventory-capacities{flex-wrap:wrap}
+.gem-equipped-panel,.gem-bag-panel,.gem-other-loadouts{margin-top:18px;padding:16px;border:1px solid #596a4b66;border-radius:6px;background:#111d1777}
+.gem-equipped-panel{border-color:#bda96888;background:linear-gradient(110deg,#b7a46512,#111d1777)}
+.gem-equipped-panel h3,.gem-bag-panel h3,.gem-other-loadouts h3{display:flex;align-items:center;gap:9px;margin:0 0 14px;font-size:13px;font-weight:500;color:#e2d6ad}
+.gem-equipped-panel h3 small,.gem-bag-panel h3 small{margin-left:auto;font-size:11px;color:#9eae98}
+.gem-other-loadouts summary{cursor:pointer;color:#aab8a3;font-size:12px}.gem-other-loadouts section{padding-top:18px}.gem-other-loadouts h3 img{width:30px;height:30px}
+.gem-list-controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px;margin-bottom:16px}
+.gem-list-controls label{display:flex;flex-direction:column;gap:6px;min-width:95px;font-size:10px;color:#9cae9b}.gem-list-controls .gem-search{flex:1;min-width:160px}
+.gem-list-controls input[type=search],.gem-list-controls select{width:100%;min-width:0;min-height:36px;padding:7px 9px;border:1px solid #60715277;border-radius:4px;background:#19271f;color:#e3e8d9;font:inherit;font-size:11px}
+.gem-list-controls .gem-compatible{flex-direction:row;align-items:center;min-height:36px;font-size:11px;color:#d0dbbf}.gem-compatible input{accent-color:#b9cd91}
+.gem-sort-direction{height:36px;min-width:36px;border:1px solid #60715277;border-radius:4px;color:#dccc93}
+.gem-equipped-panel .inventory-grid,.gem-bag-panel .inventory-grid,.gem-other-loadouts .inventory-grid{margin:0}.gem-empty{grid-column:1/-1}
+@media(max-width:580px){.gem-equipped-panel,.gem-bag-panel,.gem-other-loadouts{padding:12px}.gem-list-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gem-list-controls label{min-width:0}.gem-list-controls .gem-search{grid-column:1/-1;min-width:0}.gem-sort-direction{grid-column:2}.gem-list-controls .gem-compatible{grid-column:1/-1}.gem-equipped-panel h3,.gem-bag-panel h3{font-size:12px}.gem-equipped-panel .inventory-grid,.gem-bag-panel .inventory-grid,.gem-other-loadouts .inventory-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:580px){.gem-wallet{grid-template-columns:repeat(2,minmax(0,1fr))}.epic-effect-parameters{font-size:10px}.goddess-forge-tab img{width:24px;height:24px}}
+.gem-sort-controls{display:flex;align-items:flex-end;gap:6px;min-width:155px}.gem-sort-controls label{flex:1;min-width:0}.gem-filter-reset{display:flex;align-items:center;gap:5px;min-height:36px;padding:0 8px;color:#b7c5a9;font-size:10px}.gem-filter-reset svg{width:14px;height:14px}
+@media(max-width:580px){.gem-sort-controls{min-width:0}.gem-sort-controls .gem-sort-direction{flex:0 0 34px}.gem-list-controls .gem-compatible{grid-column:auto}.gem-filter-reset{grid-column:1/-1;justify-content:flex-end}}

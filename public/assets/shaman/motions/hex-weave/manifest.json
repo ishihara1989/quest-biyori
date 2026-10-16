@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "shaman",
+  "motion": "hex-weave",
+  "label": "呪紋編み",
+  "facing": "right",
+  "sheet": "shaman-hex-weave.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.22063492063492063,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/shaman/motions/hex-weave/source/shaman-hex-weave-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "hex-weave-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "掌を開く",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 345,
+        "y": 670
+      },
+      "sourceBounds": {
+        "left": 67,
+        "top": 43,
+        "right": 641,
+        "bottom": 670
+      },
+      "bounds": {
+        "left": 99,
+        "top": 101,
+        "right": 225,
+        "bottom": 239
+      },
+      "visiblePixels": 9138,
+      "transparentPixels": 70427
+    },
+    {
+      "index": 1,
+      "file": "hex-weave-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "円を編む",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 345,
+        "y": 670
+      },
+      "sourceBounds": {
+        "left": 67,
+        "top": 40,
+        "right": 641,
+        "bottom": 670
+      },
+      "bounds": {
+        "left": 99,
+        "top": 101,
+        "right": 225,
+        "bottom": 239
+      },
+      "visiblePixels": 9186,
+      "transparentPixels": 70487
+    },
+    {
+      "index": 2,
+      "file": "hex-weave-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "指を閉じる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 345,
+        "y": 670
+      },
+      "sourceBounds": {
+        "left": 67,
+        "top": 42,
+        "right": 640,
+        "bottom": 670
+      },
+      "bounds": {
+        "left": 99,
+        "top": 101,
+        "right": 225,
+        "bottom": 239
+      },
+      "visiblePixels": 8998,
+      "transparentPixels": 70789
+    }
+  ]
+}

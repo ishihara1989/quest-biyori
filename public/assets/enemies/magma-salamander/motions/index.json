@@ -1,0 +1,37 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "attack",
+    "label": "噛みつき",
+    "manifest": "attack/manifest.json"
+  },
+  {
+    "id": "danger-1",
+    "label": "双溶岩弾",
+    "manifest": "danger-1/manifest.json"
+  },
+  {
+    "id": "danger-2",
+    "label": "灼熱大扇",
+    "manifest": "danger-2/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  }
+]

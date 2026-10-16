@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "id": "mage-wind-bolt",
+  "label": "魔法使い・風の弾",
+  "sheet": "mage-wind-bolt.png",
+  "preview": "../../../../development/assets/effects/mage-wind-bolt/preview.gif",
+  "width": 1024,
+  "height": 256,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "columns": 4,
+  "rows": 1,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 320,
+  "loop": true,
+  "pivot": {
+    "x": 190,
+    "y": 128
+  },
+  "sampling": "nearest-neighbor",
+  "source": "../../../../development/assets/effects/mage-wind-bolt/source/mage-wind-bolt-generated-v1.png",
+  "generation": "built-in image_gen; generated alpha preserved",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-1.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "風の弾"
+    },
+    {
+      "index": 1,
+      "file": "frame-2.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "尾が広がる"
+    },
+    {
+      "index": 2,
+      "file": "frame-3.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "風が巻く"
+    },
+    {
+      "index": 3,
+      "file": "frame-4.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "尾が戻る"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head><base href="/">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>戦士の剣技 — モーション確認</title>
+  <link rel="stylesheet" href="/development/labs/css/skill-lab.css">
+  <script defer src="/js/data/interference-reference.js"></script>
+  <script defer src="/js/combat/action-interference.js"></script>
+  <script defer src="/js/core/motion-playback.js"></script>
+  <script defer src="/js/skills/mage-motions.js"></script>
+  <script defer src="/js/skills/mage-skills.js"></script>
+  <script defer src="/js/skills/warrior-skills.js"></script>
+  <script defer src="/js/skills/paladin-skills.js"></script>
+  <script defer src="/js/skills/ninja-skills.js"></script>
+  <script defer src="/js/combat/enemy-control.js"></script>
+  <script defer src="/js/combat/ninja-combat.js"></script>
+  <script defer src="/js/skills/shaman-skills.js"></script><script defer src="/js/combat/shaman-combat.js"></script>
+  <script defer src="/js/skills/miko-skills.js"></script>
+  <script defer src="/js/ui/equipment-visuals.js"></script>
+  <script defer src="/js/data/epic-gems.js"></script><script defer src="/js/core/gem-system.js"></script><script defer src="/js/core/forest-progression.js"></script>
+  <script defer src="/js/data/ruins-data.js"></script>
+  <script defer src="/js/data/expansion-data.js"></script>
+  <script defer src="/js/data/desert-data.js"></script>
+  <script defer src="/js/core/forest-auto-gear.js"></script>
+  <script defer src="/js/data/special-stages.js"></script><script defer src="/js/data/highland-data.js"></script><script defer src="/js/data/goddess-data.js"></script><script defer src="/js/data/glacier-data.js"></script><script defer src="/js/data/volcano-data.js"></script><script defer src="/js/data/demon-castle-data.js"></script><script defer src="/js/data/forest-data.js"></script>
+  <script defer src="/js/combat/miko-combat.js"></script>
+  <script defer src="/js/combat/ruins-combat.js"></script>
+  <script defer src="/js/combat/status-resistance.js"></script>
+  <script defer src="/js/combat/swamp-combat.js"></script>
+  <script defer src="/js/combat/expansion-combat.js"></script>
+  <script defer src="/js/combat/desert-combat.js"></script>
+  <script defer src="/js/combat/highland-combat.js"></script><script defer src="/js/combat/goddess-combat.js"></script><script defer src="/js/combat/epic-gem-combat.js"></script><script defer src="/js/combat/glacier-combat.js"></script><script defer src="/js/combat/volcano-combat.js"></script><script defer src="/js/combat/demon-castle-combat.js"></script><script defer src="/js/combat/forest-simulation.js"></script>
+  <script defer src="/js/render/image-effects.js"></script>
+  <script defer src="/js/render/warrior-skill-renderer.js"></script>
+  <script defer src="/development/labs/js/skill-lab.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="/game.html">✦ FORESTBOUND</a><nav><a href="/game.html">冒険へ ↗</a><a href="/development/labs/index.html">素材ライブラリ ↗</a></nav></header>
+  <main>
+    <div class="heading"><div><p>WARRIOR / MOTION GALLERY</p><h1>戦士の剣技</h1></div><span>21 SKILLS <i>◆</i> Lv.1 — 100</span></div>
+    <div class="workspace">
+      <aside class="catalog"><div class="catalog-head">剣技を選ぶ <small>習得Lv順</small></div><div id="skill-list" aria-label="剣技一覧"></div></aside>
+      <section class="review">
+        <div class="skill-heading"><img id="skill-art" alt=""><div><p id="skill-unlock"></p><h2 id="skill-name"></h2></div><span id="hit-count"></span></div>
+        <div class="options"><label>スキルLv <select id="rank" aria-label="スキルレベル"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label><label title="専用パッシブのレベル">練磨 <select id="enhance" aria-label="専用パッシブレベル"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label><div class="enemy-toggle" role="group" aria-label="対象"><button data-enemy="mob" aria-pressed="true">雑魚群</button><button data-enemy="boss" aria-pressed="false">ボス</button></div><label class="switch"><input id="effects" type="checkbox" checked>エフェクト</label><label class="switch"><input id="guides" type="checkbox">軌道</label></div>
+        <div class="arena"><canvas id="preview" width="1024" height="576" aria-label="戦士スキルのモーションプレビュー"></canvas><span id="phase" class="phase">読み込み中</span><div id="skill-banner" class="skill-banner"></div><div id="load-error" role="alert" hidden></div></div>
+        <div class="transport"><button id="restart" title="最初から" aria-label="最初から">↺</button><button id="back" title="1コマ戻す · ←" aria-label="1コマ戻す">|◀</button><button id="play" title="再生・停止 · Space" aria-label="再生・停止">❚❚</button><button id="step" title="1コマ進める · →" aria-label="1コマ進める">▶|</button><select id="speed" aria-label="再生速度"><option value=".1">0.1×</option><option value=".25">0.25×</option><option value=".5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select><label><input id="loop" type="checkbox" checked> LOOP</label><output id="time">0 ms</output></div>
+        <input id="timeline" type="range" min="0" max="1000" step="1" value="0" aria-label="モーションの時間位置">
+        <div id="hit-markers" class="hit-markers" aria-label="命中タイミング"></div>
+        <div class="details"><p id="skill-note"></p><div><span id="skill-stats"></span><span id="target-rule"></span></div></div>
+        <div class="asset-strip"><span>SPRITES / REUSED</span><div id="motion-assets"></div><a id="effect-review" target="_blank">透過・コマ確認 ↗</a></div>
+      </section>
+    </div>
+  </main>
+  <footer>ホイール操作は本編のスキルツリーで確認できます。<span>Space 再生・停止　← → コマ送り</span></footer>
+</body>
+</html>

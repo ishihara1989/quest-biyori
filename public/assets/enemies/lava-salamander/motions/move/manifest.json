@@ -1,0 +1,301 @@
+{
+  "id": "lava-salamander/move",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "label": "移動",
+  "kind": null,
+  "motion": "move",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/lava-salamander.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-1-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-2-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-3-v3.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-4-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-5-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-6-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9086647033691406,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 91,
+        "top": 84,
+        "right": 456,
+        "bottom": 373
+      },
+      "visibleBounds": {
+        "left": 150,
+        "top": 174,
+        "right": 408,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1447,
+        "height": 1087
+      },
+      "sourceScale": 0.2746553552492047,
+      "sourceAnchor": {
+        "x": 861.2856177606177,
+        "y": 945
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8917961120605469,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 63,
+        "top": 29,
+        "right": 450,
+        "bottom": 412
+      },
+      "visibleBounds": {
+        "left": 140,
+        "top": 168,
+        "right": 426,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.318534961154273,
+      "sourceAnchor": {
+        "x": 764.7929442508711,
+        "y": 995
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8927192687988281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 74,
+        "top": 47,
+        "right": 452,
+        "bottom": 431
+      },
+      "visibleBounds": {
+        "left": 143,
+        "top": 167,
+        "right": 429,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-3-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.3188888888888889,
+      "sourceAnchor": {
+        "x": 747.1358885017421,
+        "y": 938
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8861274719238281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 99,
+        "top": 44,
+        "right": 441,
+        "bottom": 383
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 165,
+        "right": 430,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-4-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.2824302134646962,
+      "sourceAnchor": {
+        "x": 734.671511627907,
+        "y": 1078
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8924560546875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 108,
+        "top": 63,
+        "right": 432,
+        "bottom": 388
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 166,
+        "right": 427,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-5-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.27344992050874406,
+      "sourceAnchor": {
+        "x": 724.6651162790697,
+        "y": 1042
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2048,
+      "y": 0,
+      "index": 4
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8891258239746094,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 74,
+        "top": 10,
+        "right": 438,
+        "bottom": 404
+      },
+      "visibleBounds": {
+        "left": 143,
+        "top": 166,
+        "right": 429,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/lava-salamander/move-frame-6-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceScale": 0.3203125,
+      "sourceAnchor": {
+        "x": 752.9219512195123,
+        "y": 1045
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2560,
+      "y": 0,
+      "index": 5
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "walkCycle": {
+    "gait": "trot",
+    "nearLeg": "left",
+    "farLeg": "right",
+    "swingPairs": [
+      "A",
+      "A",
+      "B",
+      "B",
+      "B",
+      "A"
+    ]
+  },
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/lava-salamander/move/preview.gif",
+  "action": null
+}

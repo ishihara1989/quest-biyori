@@ -1,0 +1,210 @@
+{
+  "id": "dream-demon/danger-1",
+  "label": "夢魔・眠りの月",
+  "enemy": "dream-demon",
+  "motion": "danger-1",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/dream-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/dream-demon/danger-1-v2.png",
+      "sourceSha256": "83581e07e1f5a6e4af0099e0445c85849262741fe0e709e3513e8ed9769ae14c",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 691,
+        "height": 609
+      },
+      "sourceAnchor": [
+        345,
+        584
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "ace113b82f113491f171c4fb3208b2b4c9160b5cf64d95fa7f37a33dfe2915cd",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8906593322753906,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 159,
+        "top": 143,
+        "right": 466,
+        "bottom": 420
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 2620,
+      "phase": "溜め",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/dream-demon/danger-1-v2.png",
+      "sourceSha256": "83581e07e1f5a6e4af0099e0445c85849262741fe0e709e3513e8ed9769ae14c",
+      "sourceRect": {
+        "left": 691,
+        "top": 0,
+        "width": 609,
+        "height": 609
+      },
+      "sourceAnchor": [
+        245,
+        589
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "fa87ea4ef58e3ceaa7d767b7cb9aa7f364de5adb507e4db8421956dd092bc5a0",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8965682983398438,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 242,
+        "top": 145,
+        "right": 462,
+        "bottom": 413
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 1500,
+      "phase": "発動",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/dream-demon/danger-1-v2.png",
+      "sourceSha256": "83581e07e1f5a6e4af0099e0445c85849262741fe0e709e3513e8ed9769ae14c",
+      "sourceRect": {
+        "left": 0,
+        "top": 609,
+        "width": 683,
+        "height": 601
+      },
+      "sourceAnchor": [
+        368,
+        552
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "60767aa91a95c6f4d3f369f25074059b49d4c2a238e2898650d95022bd82c7c5",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8726692199707031,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 123,
+        "top": 148,
+        "right": 431,
+        "bottom": 433
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/dream-demon/danger-1-v2.png",
+      "sourceSha256": "83581e07e1f5a6e4af0099e0445c85849262741fe0e709e3513e8ed9769ae14c",
+      "sourceRect": {
+        "left": 683,
+        "top": 609,
+        "width": 617,
+        "height": 601
+      },
+      "sourceAnchor": [
+        230,
+        557
+      ],
+      "scale": 0.48,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "e43b3ad821663968995024b42ea5dd3e851895da86b39dc24e9127161b99097e",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8752098083496094,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 196,
+        "top": 151,
+        "right": 440,
+        "bottom": 423
+      }
+    }
+  ],
+  "fingerprint": "193cc1067db6a5f03a07adf5ac2ec55dec24477c62eec2d9ad04d5a73b832fd6",
+  "events": [
+    {
+      "timeMs": 2800,
+      "effect": "castle-sleep-moon",
+      "kind": "control"
+    }
+  ],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 4600,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/dream-demon/danger-1/manifest.json",
+  "sourceFingerprint": "193cc1067db6a5f03a07adf5ac2ec55dec24477c62eec2d9ad04d5a73b832fd6",
+  "action": {
+    "name": "眠りの月",
+    "motion": "danger-1",
+    "warn": 2800,
+    "times": [
+      2800
+    ],
+    "kind": "control",
+    "radius": 65,
+    "effect": "sleep-moon",
+    "rest": 5000,
+    "status": "sleep",
+    "duration": 4600
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-sleep-moon",
+        "manifest": "../../../../effects/castle-sleep-moon/manifest.json"
+      }
+    ]
+  }
+}

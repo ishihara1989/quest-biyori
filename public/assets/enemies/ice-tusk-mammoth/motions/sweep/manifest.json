@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ice-tusk-mammoth",
+  "motion": "sweep",
+  "facing": "left",
+  "label": "氷牙大薙ぎ",
+  "sheet": "ice-tusk-mammoth-sweep.png",
+  "preview": "../../../../../../development/assets/enemies/ice-tusk-mammoth/motions/sweep/ice-tusk-mammoth-sweep-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2720,
+  "height": 450,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 680,
+  "frameHeight": 450,
+  "frameCount": 4,
+  "pivot": {
+    "x": 381,
+    "y": 428
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/ice-tusk-mammoth/sweep.png",
+  "sourceScale": 0.5960264900662252,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-sweep",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "sweep-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 207,
+        "top": 159,
+        "right": 547,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 692,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 374.5,
+        "y": 588
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "sweep-02.png",
+      "x": 680,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 216,
+        "top": 159,
+        "right": 540,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 692,
+        "y": 0,
+        "width": 692,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "sweep-03.png",
+      "x": 1360,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 198,
+        "top": 160,
+        "right": 557,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 679,
+        "width": 692,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 539
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "sweep-04.png",
+      "x": 2040,
+      "y": 0,
+      "width": 680,
+      "height": 450,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 209,
+        "top": 159,
+        "right": 546,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 692,
+        "y": 679,
+        "width": 692,
+        "height": 679
+      },
+      "sourceAnchor": {
+        "x": 314.5,
+        "y": 541
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/ice-tusk-mammoth.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/ice-tusk-mammoth/sweep-generated-v2.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 660,
+          "height": 647
+        },
+        {
+          "x": 660,
+          "y": 0,
+          "width": 594,
+          "height": 647
+        },
+        {
+          "x": 0,
+          "y": 647,
+          "width": 658,
+          "height": 607
+        },
+        {
+          "x": 658,
+          "y": 647,
+          "width": 596,
+          "height": 607
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "sweep",
+    "warn": 4000,
+    "times": [
+      4000
+    ],
+    "kind": "sector",
+    "radius": 300,
+    "effect": "sweep",
+    "rest": 3000,
+    "status": null,
+    "duration": 4500,
+    "angle": 140
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

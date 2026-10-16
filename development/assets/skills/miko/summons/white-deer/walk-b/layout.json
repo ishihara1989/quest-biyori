@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/white-deer-walk-b-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 724,
+      "height": 724
+    },
+    {
+      "x": 724,
+      "y": 0,
+      "width": 706,
+      "height": 724
+    },
+    {
+      "x": 1430,
+      "y": 0,
+      "width": 742,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 539.5,
+      "y": 958
+    },
+    {
+      "x": 435,
+      "y": 961
+    },
+    {
+      "x": 487,
+      "y": 961
+    }
+  ],
+  "scale": 0.08641975308641975
+}

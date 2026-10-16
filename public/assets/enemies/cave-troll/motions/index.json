@@ -1,0 +1,47 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "slam",
+    "label": "棍棒振り下ろし",
+    "manifest": "slam/manifest.json"
+  },
+  {
+    "id": "throw",
+    "label": "岩石投げ",
+    "manifest": "throw/manifest.json"
+  },
+  {
+    "id": "excavate",
+    "label": "地面をえぐる",
+    "manifest": "excavate/manifest.json"
+  },
+  {
+    "id": "stomp",
+    "label": "地震",
+    "manifest": "stomp/manifest.json"
+  },
+  {
+    "id": "rest",
+    "label": "休息",
+    "manifest": "rest/manifest.json"
+  }
+]

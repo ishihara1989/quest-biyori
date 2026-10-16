@@ -1,0 +1,188 @@
+{
+  "id": "effects/axe-arc",
+  "enemy": null,
+  "region": "volcano",
+  "label": "黒曜斧の軌跡",
+  "kind": "target",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/axe-arc-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/effects/axe-arc/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9647102355957031,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 71,
+        "top": 146,
+        "right": 404,
+        "bottom": 360
+      },
+      "visibleBounds": {
+        "left": 191,
+        "top": 196,
+        "right": 320,
+        "bottom": 316
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/axe-arc-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 451
+      },
+      "sourceScale": 0.4901185770750988,
+      "sourceAnchor": {
+        "x": 457,
+        "y": 235.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9241065979003906,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 64,
+        "top": 151,
+        "right": 443,
+        "bottom": 356
+      },
+      "visibleBounds": {
+        "left": 147,
+        "top": 168,
+        "right": 365,
+        "bottom": 344
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/axe-arc-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 761,
+        "y": 0,
+        "width": 775,
+        "height": 451
+      },
+      "sourceScale": 0.4901185770750988,
+      "sourceAnchor": {
+        "x": 392.5,
+        "y": 242
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8328933715820312,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 17,
+        "top": 124,
+        "right": 447,
+        "bottom": 395
+      },
+      "visibleBounds": {
+        "left": 92,
+        "top": 137,
+        "right": 420,
+        "bottom": 375
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/axe-arc-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 451,
+        "width": 897,
+        "height": 573
+      },
+      "sourceScale": 0.4901185770750988,
+      "sourceAnchor": {
+        "x": 506,
+        "y": 270
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "transparentFraction": 0.97271728515625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 102,
+        "top": 102,
+        "right": 403,
+        "bottom": 375
+      },
+      "visibleBounds": {
+        "left": 175,
+        "top": 175,
+        "right": 336,
+        "bottom": 336
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/effects/axe-arc-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 897,
+        "y": 451,
+        "width": 639,
+        "height": 573
+      },
+      "sourceScale": 0.4901185770750988,
+      "sourceAnchor": {
+        "x": 314.5,
+        "y": 316
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

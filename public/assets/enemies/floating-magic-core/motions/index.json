@@ -1,0 +1,32 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "bolt",
+    "label": "魔弾",
+    "manifest": "bolt/manifest.json"
+  },
+  {
+    "id": "bomb",
+    "label": "魔力炸裂",
+    "manifest": "bomb/manifest.json"
+  }
+]

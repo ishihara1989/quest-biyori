@@ -1,0 +1,32 @@
+{
+  "id": "black-knight/danger-2",
+  "enemy": "black-knight",
+  "region": "demon-castle",
+  "motion": "danger-2",
+  "label": "黒環薙ぎ",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/black-knight.png",
+  "guide": null,
+  "source": "sources/black-knight/danger-2-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame DANGEROUS ACTION 黒環薙ぎ by 黒騎士 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: greatsword pulls right (800,490), blade holds beside waist (740,540), torso turns and sweeps left (120,610), returns. Full blade stays visible. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "black-ring-slash"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-6fee3685-e46d-4fd0-95fd-9cff5d10f0ce.png",
+  "sha256": "75377fdc7d6e07147537ade5c8637152354aaa2ad6255050768827e345ba8c5d",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "右へ大剣を引き、左へ水平に大きく薙ぐ姿勢。"
+    ],
+    "issues": [
+      "構えの剣先が等分セル境界を越える。原画の矩形切り出しと余白を確定する。",
+      "腰・肩の回転と2手の柄への接続、円弧エフェクトの原点を合わせる。"
+    ]
+  }
+}

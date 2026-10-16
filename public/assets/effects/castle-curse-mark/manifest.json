@@ -1,0 +1,149 @@
+{
+  "id": "castle-curse-mark",
+  "label": "呪い・付与",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "status",
+  "origin": "reuse",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "既存1",
+      "source": "../../skills/shaman/effects/mark/mark-01.png",
+      "sourceSha256": "bfd02234ea3096e03ce989f17563d72a8ce559c57e9ea240d9abcb0df286457b",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "a5d526adb255fb79feefff49bfb65f118b8888fff029106483510ce0f9abda35",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.92852783203125,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 156,
+        "top": 146,
+        "right": 376,
+        "bottom": 374
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "既存2",
+      "source": "../../skills/shaman/effects/mark/mark-02.png",
+      "sourceSha256": "0ebecf1b9af3c83ddcba3b0de714025fbfc51a945909f96afccccdce376bf757",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "bbc707527720bd6559df1e0442f7a69b167ceed8d051740d345800005ff49902",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.898651123046875,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 146,
+        "top": 146,
+        "right": 372,
+        "bottom": 370
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "既存3",
+      "source": "../../skills/shaman/effects/mark/mark-03.png",
+      "sourceSha256": "31b84aa5988d180ce0cac4c765b925883c25096698eb72ef275a3a613e099ece",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 128,
+        "height": 128
+      },
+      "sourceAnchor": [
+        64,
+        64
+      ],
+      "scale": 2,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "bccbee1dc262143732391d24d422557ceabe65f44cfd18d0663755e63ab63875",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8768463134765625,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 144,
+        "top": 142,
+        "right": 366,
+        "bottom": 368
+      }
+    }
+  ],
+  "fingerprint": "ee4864536cf192be3716c0aeb16fa9ac39787909ef3c50405f80af9cea73bd68",
+  "events": [],
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 540,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../development/assets/demon-castle-motions/v2/review/effects/curse/manifest.json",
+  "sourceFingerprint": "ee4864536cf192be3716c0aeb16fa9ac39787909ef3c50405f80af9cea73bd68",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

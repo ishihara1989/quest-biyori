@@ -1,0 +1,210 @@
+{
+  "id": "arch-demon/attack",
+  "label": "アークデーモン・拳撃",
+  "enemy": "arch-demon",
+  "motion": "attack",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 783,
+        "height": 502
+      },
+      "sourceAnchor": [
+        410,
+        492
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "4bb43879f701a34ff0805d5660d76ccc266e0bab7519e075f33cddc221e83000",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8294258117675781,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 115,
+        "top": 169,
+        "right": 483,
+        "bottom": 415
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "溜め",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 783,
+        "height": 502
+      },
+      "sourceAnchor": [
+        410,
+        492
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "4bb43879f701a34ff0805d5660d76ccc266e0bab7519e075f33cddc221e83000",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8294258117675781,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 115,
+        "top": 169,
+        "right": 483,
+        "bottom": 415
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "phase": "発動",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 0,
+        "top": 502,
+        "width": 794,
+        "height": 522
+      },
+      "sourceAnchor": [
+        420,
+        489
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "d0123110ea78488166dea087912727eb5624196ffdfe60580f6cb69be88d9f8a",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8233261108398438,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 125,
+        "top": 170,
+        "right": 466,
+        "bottom": 411
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/arch-demon/attack-v2.png",
+      "sourceSha256": "cd71dde56af1eaedf33cd91c4affc1537b8d5c88057e997affbdb4d8df459690",
+      "sourceRect": {
+        "left": 794,
+        "top": 502,
+        "width": 742,
+        "height": 522
+      },
+      "sourceAnchor": [
+        350,
+        491
+      ],
+      "scale": 0.49,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "de59ac0c68fb80d06ad0c48d61b5fe1c768d001da1e51d8570eb4abe681e52f8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8260993957519531,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 129,
+        "top": 173,
+        "right": 447,
+        "bottom": 412
+      }
+    }
+  ],
+  "fingerprint": "30dfdf539df45b22a713211e839d53942f66ccb2575be9427cfea5b3bb71e839",
+  "events": [
+    {
+      "timeMs": 280,
+      "effect": "castle-demon-impact",
+      "kind": "melee"
+    }
+  ],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/arch-demon/attack/manifest.json",
+  "sourceFingerprint": "30dfdf539df45b22a713211e839d53942f66ccb2575be9427cfea5b3bb71e839",
+  "action": {
+    "name": "通常攻撃",
+    "motion": "attack",
+    "warn": 0,
+    "times": [
+      280
+    ],
+    "kind": "melee",
+    "radius": 260,
+    "effect": "demon-impact",
+    "rest": 1800,
+    "status": null,
+    "duration": 640
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-demon-impact",
+        "manifest": "../../../../effects/castle-demon-impact/manifest.json"
+      }
+    ]
+  }
+}

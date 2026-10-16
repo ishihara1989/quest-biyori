@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "guardian-bear-idle",
+  "character": "miko",
+  "subject": "guardian-bear",
+  "group": "possession",
+  "motion": "idle",
+  "sheet": "guardian-bear-idle.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 680,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5188284518828452,
+  "frames": [
+    {
+      "index": 0,
+      "file": "guardian-bear-idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 65,
+        "t": 58,
+        "r": 473,
+        "b": 476,
+        "n": 118037,
+        "width": 409,
+        "height": 419
+      }
+    },
+    {
+      "index": 1,
+      "file": "guardian-bear-idle-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 39,
+        "t": 18,
+        "r": 474,
+        "b": 476,
+        "n": 133817,
+        "width": 436,
+        "height": 459
+      }
+    },
+    {
+      "index": 2,
+      "file": "guardian-bear-idle-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 47,
+        "t": 18,
+        "r": 474,
+        "b": 460,
+        "n": 129366,
+        "width": 428,
+        "height": 443
+      }
+    },
+    {
+      "index": 3,
+      "file": "guardian-bear-idle-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 170,
+      "phase": "idle",
+      "bounds": {
+        "l": 50,
+        "t": 35,
+        "r": 465,
+        "b": 460,
+        "n": 121416,
+        "width": 416,
+        "height": 426
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/guardian-bear-idle-generated-v2.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/guardian-bear-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

@@ -1,0 +1,133 @@
+{
+  "id": "imp/move",
+  "label": "インプ・移動",
+  "enemy": "imp",
+  "motion": "move",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "紫の背景光が混入。",
+    "翼の広さと耳・角の形がコマ間で変わる。浮遊の4→1で頭・翼根の形と寸法を合わせる。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "移動1",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/move-generated.png",
+      "sourceSha256": "8bb0b0bac2122a9184576843b2759cc5a02f7cae6a81d77a2bfa0b35b217d66f",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 812,
+        "height": 531
+      },
+      "sourceAnchor": [
+        399,
+        482
+      ],
+      "scale": 0.4618937644341801,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "97314537422fa919ec5e49bd55e437cc27a84e0216d56d0be17a3e2b59aada17",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8907051086425781
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "移動2",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/move-generated.png",
+      "sourceSha256": "8bb0b0bac2122a9184576843b2759cc5a02f7cae6a81d77a2bfa0b35b217d66f",
+      "sourceRect": {
+        "left": 812,
+        "top": 0,
+        "width": 724,
+        "height": 531
+      },
+      "sourceAnchor": [
+        297,
+        485
+      ],
+      "scale": 0.4618937644341801,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "8a7e9a0fe99e1f5c50459bd1b65c9897b1b8675a2e6946ef790f769e7822fa66",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9009170532226562
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "移動3",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/move-generated.png",
+      "sourceSha256": "8bb0b0bac2122a9184576843b2759cc5a02f7cae6a81d77a2bfa0b35b217d66f",
+      "sourceRect": {
+        "left": 0,
+        "top": 531,
+        "width": 797,
+        "height": 493
+      },
+      "sourceAnchor": [
+        431,
+        455
+      ],
+      "scale": 0.4618937644341801,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "e4d7ba65b30847f4f4ef1365f8ba416308883582e6ebecf89ed8d05cd9626563",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8977775573730469
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "移動4",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/move-generated.png",
+      "sourceSha256": "8bb0b0bac2122a9184576843b2759cc5a02f7cae6a81d77a2bfa0b35b217d66f",
+      "sourceRect": {
+        "left": 797,
+        "top": 531,
+        "width": 739,
+        "height": 493
+      },
+      "sourceAnchor": [
+        326,
+        455
+      ],
+      "scale": 0.4618937644341801,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "6d0b55ce954da70dbc8b436c4728a74effb87676d5d39e29fde8fde6972c0ed8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8978691101074219
+    }
+  ],
+  "fingerprint": "e0e93289347e625547e660cbe45243a6aea83775026e5a7f00a8713cbc3ac60a",
+  "events": [],
+  "effects": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "celestial-wave",
+  "motion": "celestial-wave",
+  "label": "天環の波",
+  "loop": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "durationMs": 500,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 100,
+      "file": "frame-1.png"
+    },
+    {
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "file": "frame-2.png"
+    },
+    {
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 240,
+      "file": "frame-3.png"
+    }
+  ]
+}

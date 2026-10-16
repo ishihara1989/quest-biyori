@@ -1,0 +1,101 @@
+{
+  "id": "effects/summon-gate",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "悪魔の門",
+  "kind": "ground",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/summon-gate-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 95,
+        "top": 89,
+        "right": 569,
+        "bottom": 550
+      },
+      "sourceWidth": 638,
+      "sourceHeight": 551,
+      "edgeOpaquePixels": 3,
+      "transparentPixels": 232264,
+      "transparentFraction": 0.6607080884570089
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 66,
+        "top": 12,
+        "right": 628,
+        "bottom": 550
+      },
+      "sourceWidth": 657,
+      "sourceHeight": 551,
+      "edgeOpaquePixels": 3,
+      "transparentPixels": 176097,
+      "transparentFraction": 0.48644639468297574
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 31,
+        "top": 0,
+        "right": 728,
+        "bottom": 656
+      },
+      "sourceWidth": 756,
+      "sourceHeight": 663,
+      "edgeOpaquePixels": 4,
+      "transparentPixels": 189184,
+      "transparentFraction": 0.3774410048919853
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 26,
+        "top": 0,
+        "right": 504,
+        "bottom": 648
+      },
+      "sourceWidth": 539,
+      "sourceHeight": 663,
+      "edgeOpaquePixels": 2,
+      "transparentPixels": 193581,
+      "transparentFraction": 0.5417019954835081
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/summon-gate-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

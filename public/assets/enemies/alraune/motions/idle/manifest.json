@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "alraune",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "alraune-idle.png",
+  "preview": "../../../../../../development/assets/enemies/alraune/motions/idle/alraune-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/alraune/PROMPT.md",
+  "width": 2560,
+  "height": 384,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 384,
+  "frameCount": 4,
+  "pivot": {
+    "x": 360,
+    "y": 367
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/alraune/source/alraune-idle-generated-v1.png",
+  "sourceScale": 0.5,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 400,
+      "phase": "基準姿勢",
+      "bounds": {
+        "left": 183,
+        "top": 127,
+        "right": 531,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 400,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 400,
+      "phase": "息を吸う",
+      "bounds": {
+        "left": 177,
+        "top": 124,
+        "right": 530,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 403,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 400,
+      "phase": "花と髪が揺れる",
+      "bounds": {
+        "left": 175,
+        "top": 132,
+        "right": 532,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 399,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 400,
+      "phase": "基準姿勢へ",
+      "bounds": {
+        "left": 182,
+        "top": 129,
+        "right": 531,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,862 @@
+{
+  "generator": "built-in image_gen",
+  "sampling": "nearest-neighbor",
+  "size": 128,
+  "padding": 6,
+  "regions": [
+    "desert",
+    "highland",
+    "glacier",
+    "volcano",
+    "castle",
+    "goddess"
+  ],
+  "sheets": [
+    {
+      "character": "warrior",
+      "source": "../../../../development/assets/ui/equipment/source/warrior-late-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "69885d37cccf5ea3ee5120deddb29df2a7cba67fd717de78be019bd331281b86",
+      "icons": [
+        {
+          "region": "desert",
+          "slot": "weapon",
+          "file": "warrior/weapon-desert.png",
+          "crop": {
+            "left": 38,
+            "top": 56,
+            "width": 282,
+            "height": 335
+          }
+        },
+        {
+          "region": "desert",
+          "slot": "armor",
+          "file": "warrior/armor-desert.png",
+          "crop": {
+            "left": 346,
+            "top": 111,
+            "width": 269,
+            "height": 305
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "weapon",
+          "file": "warrior/weapon-highland.png",
+          "crop": {
+            "left": 651,
+            "top": 60,
+            "width": 286,
+            "height": 339
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "armor",
+          "file": "warrior/armor-highland.png",
+          "crop": {
+            "left": 964,
+            "top": 108,
+            "width": 261,
+            "height": 297
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "weapon",
+          "file": "warrior/weapon-glacier.png",
+          "crop": {
+            "left": 38,
+            "top": 446,
+            "width": 282,
+            "height": 348
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "armor",
+          "file": "warrior/armor-glacier.png",
+          "crop": {
+            "left": 343,
+            "top": 498,
+            "width": 281,
+            "height": 300
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "weapon",
+          "file": "warrior/weapon-volcano.png",
+          "crop": {
+            "left": 651,
+            "top": 438,
+            "width": 285,
+            "height": 356
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "armor",
+          "file": "warrior/armor-volcano.png",
+          "crop": {
+            "left": 951,
+            "top": 496,
+            "width": 283,
+            "height": 299
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "weapon",
+          "file": "warrior/weapon-castle.png",
+          "crop": {
+            "left": 38,
+            "top": 827,
+            "width": 281,
+            "height": 356
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "armor",
+          "file": "warrior/armor-castle.png",
+          "crop": {
+            "left": 341,
+            "top": 855,
+            "width": 283,
+            "height": 339
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "weapon",
+          "file": "warrior/weapon-goddess.png",
+          "crop": {
+            "left": 654,
+            "top": 827,
+            "width": 285,
+            "height": 353
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "armor",
+          "file": "warrior/armor-goddess.png",
+          "crop": {
+            "left": 951,
+            "top": 892,
+            "width": 287,
+            "height": 302
+          }
+        }
+      ]
+    },
+    {
+      "character": "mage",
+      "source": "../../../../development/assets/ui/equipment/source/mage-late-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b822d12b0efee8842c3a323f47d1524332be146d5f9dba5ff2db279224a01d1c",
+      "icons": [
+        {
+          "region": "desert",
+          "slot": "weapon",
+          "file": "mage/weapon-desert.png",
+          "crop": {
+            "left": 46,
+            "top": 51,
+            "width": 275,
+            "height": 360
+          }
+        },
+        {
+          "region": "desert",
+          "slot": "armor",
+          "file": "mage/armor-desert.png",
+          "crop": {
+            "left": 353,
+            "top": 88,
+            "width": 259,
+            "height": 319
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "weapon",
+          "file": "mage/weapon-highland.png",
+          "crop": {
+            "left": 654,
+            "top": 48,
+            "width": 272,
+            "height": 365
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "armor",
+          "file": "mage/armor-highland.png",
+          "crop": {
+            "left": 969,
+            "top": 89,
+            "width": 252,
+            "height": 313
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "weapon",
+          "file": "mage/weapon-glacier.png",
+          "crop": {
+            "left": 42,
+            "top": 448,
+            "width": 295,
+            "height": 372
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "armor",
+          "file": "mage/armor-glacier.png",
+          "crop": {
+            "left": 348,
+            "top": 485,
+            "width": 264,
+            "height": 333
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "weapon",
+          "file": "mage/weapon-volcano.png",
+          "crop": {
+            "left": 655,
+            "top": 445,
+            "width": 278,
+            "height": 376
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "armor",
+          "file": "mage/armor-volcano.png",
+          "crop": {
+            "left": 970,
+            "top": 489,
+            "width": 254,
+            "height": 323
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "weapon",
+          "file": "mage/weapon-castle.png",
+          "crop": {
+            "left": 44,
+            "top": 839,
+            "width": 281,
+            "height": 384
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "armor",
+          "file": "mage/armor-castle.png",
+          "crop": {
+            "left": 353,
+            "top": 873,
+            "width": 261,
+            "height": 335
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "weapon",
+          "file": "mage/weapon-goddess.png",
+          "crop": {
+            "left": 657,
+            "top": 836,
+            "width": 292,
+            "height": 388
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "armor",
+          "file": "mage/armor-goddess.png",
+          "crop": {
+            "left": 963,
+            "top": 887,
+            "width": 270,
+            "height": 321
+          }
+        }
+      ]
+    },
+    {
+      "character": "paladin",
+      "source": "../../../../development/assets/ui/equipment/source/paladin-late-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "dba8a89b799e1a1ece9802d4d5d55e4041ccf2d091e19ceb10d26f6e9687f8ab",
+      "icons": [
+        {
+          "region": "desert",
+          "slot": "weapon",
+          "file": "paladin/weapon-desert.png",
+          "crop": {
+            "left": 44,
+            "top": 78,
+            "width": 272,
+            "height": 321
+          }
+        },
+        {
+          "region": "desert",
+          "slot": "armor",
+          "file": "paladin/armor-desert.png",
+          "crop": {
+            "left": 337,
+            "top": 50,
+            "width": 247,
+            "height": 355
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "weapon",
+          "file": "paladin/weapon-highland.png",
+          "crop": {
+            "left": 664,
+            "top": 73,
+            "width": 271,
+            "height": 329
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "armor",
+          "file": "paladin/armor-highland.png",
+          "crop": {
+            "left": 960,
+            "top": 50,
+            "width": 260,
+            "height": 355
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "weapon",
+          "file": "paladin/weapon-glacier.png",
+          "crop": {
+            "left": 39,
+            "top": 471,
+            "width": 277,
+            "height": 331
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "armor",
+          "file": "paladin/armor-glacier.png",
+          "crop": {
+            "left": 329,
+            "top": 447,
+            "width": 266,
+            "height": 353
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "weapon",
+          "file": "paladin/weapon-volcano.png",
+          "crop": {
+            "left": 665,
+            "top": 477,
+            "width": 280,
+            "height": 323
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "armor",
+          "file": "paladin/armor-volcano.png",
+          "crop": {
+            "left": 962,
+            "top": 446,
+            "width": 256,
+            "height": 354
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "weapon",
+          "file": "paladin/weapon-castle.png",
+          "crop": {
+            "left": 37,
+            "top": 853,
+            "width": 285,
+            "height": 353
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "armor",
+          "file": "paladin/armor-castle.png",
+          "crop": {
+            "left": 336,
+            "top": 845,
+            "width": 265,
+            "height": 356
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "weapon",
+          "file": "paladin/weapon-goddess.png",
+          "crop": {
+            "left": 656,
+            "top": 857,
+            "width": 290,
+            "height": 352
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "armor",
+          "file": "paladin/armor-goddess.png",
+          "crop": {
+            "left": 945,
+            "top": 842,
+            "width": 289,
+            "height": 359
+          }
+        }
+      ]
+    },
+    {
+      "character": "ninja",
+      "source": "../../../../development/assets/ui/equipment/source/ninja-late-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c624dfdda3e6dea7222ea171f9e1298ea58448bc5b06ff047d62bd6f1bae2e14",
+      "icons": [
+        {
+          "region": "desert",
+          "slot": "weapon",
+          "file": "ninja/weapon-desert.png",
+          "crop": {
+            "left": 33,
+            "top": 94,
+            "width": 284,
+            "height": 288
+          }
+        },
+        {
+          "region": "desert",
+          "slot": "armor",
+          "file": "ninja/armor-desert.png",
+          "crop": {
+            "left": 349,
+            "top": 99,
+            "width": 257,
+            "height": 312
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "weapon",
+          "file": "ninja/weapon-highland.png",
+          "crop": {
+            "left": 644,
+            "top": 90,
+            "width": 297,
+            "height": 297
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "armor",
+          "file": "ninja/armor-highland.png",
+          "crop": {
+            "left": 967,
+            "top": 97,
+            "width": 260,
+            "height": 321
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "weapon",
+          "file": "ninja/weapon-glacier.png",
+          "crop": {
+            "left": 26,
+            "top": 485,
+            "width": 292,
+            "height": 297
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "armor",
+          "file": "ninja/armor-glacier.png",
+          "crop": {
+            "left": 353,
+            "top": 485,
+            "width": 265,
+            "height": 322
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "weapon",
+          "file": "ninja/weapon-volcano.png",
+          "crop": {
+            "left": 649,
+            "top": 482,
+            "width": 292,
+            "height": 301
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "armor",
+          "file": "ninja/armor-volcano.png",
+          "crop": {
+            "left": 967,
+            "top": 481,
+            "width": 263,
+            "height": 331
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "weapon",
+          "file": "ninja/weapon-castle.png",
+          "crop": {
+            "left": 21,
+            "top": 863,
+            "width": 302,
+            "height": 334
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "armor",
+          "file": "ninja/armor-castle.png",
+          "crop": {
+            "left": 342,
+            "top": 880,
+            "width": 265,
+            "height": 316
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "weapon",
+          "file": "ninja/weapon-goddess.png",
+          "crop": {
+            "left": 644,
+            "top": 877,
+            "width": 294,
+            "height": 305
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "armor",
+          "file": "ninja/armor-goddess.png",
+          "crop": {
+            "left": 958,
+            "top": 886,
+            "width": 281,
+            "height": 316
+          }
+        }
+      ]
+    },
+    {
+      "character": "shaman",
+      "source": "../../../../development/assets/ui/equipment/source/shaman-late-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "458041f7ca59c384775b00c3f97e333d2fe99bacfc00b99e56ffc601dc61db46",
+      "icons": [
+        {
+          "region": "desert",
+          "slot": "weapon",
+          "file": "shaman/weapon-desert.png",
+          "crop": {
+            "left": 28,
+            "top": 32,
+            "width": 301,
+            "height": 378
+          }
+        },
+        {
+          "region": "desert",
+          "slot": "armor",
+          "file": "shaman/armor-desert.png",
+          "crop": {
+            "left": 325,
+            "top": 89,
+            "width": 295,
+            "height": 322
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "weapon",
+          "file": "shaman/weapon-highland.png",
+          "crop": {
+            "left": 646,
+            "top": 28,
+            "width": 295,
+            "height": 382
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "armor",
+          "file": "shaman/armor-highland.png",
+          "crop": {
+            "left": 952,
+            "top": 86,
+            "width": 291,
+            "height": 325
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "weapon",
+          "file": "shaman/weapon-glacier.png",
+          "crop": {
+            "left": 28,
+            "top": 445,
+            "width": 308,
+            "height": 381
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "armor",
+          "file": "shaman/armor-glacier.png",
+          "crop": {
+            "left": 326,
+            "top": 488,
+            "width": 297,
+            "height": 342
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "weapon",
+          "file": "shaman/weapon-volcano.png",
+          "crop": {
+            "left": 647,
+            "top": 434,
+            "width": 306,
+            "height": 396
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "armor",
+          "file": "shaman/armor-volcano.png",
+          "crop": {
+            "left": 952,
+            "top": 487,
+            "width": 295,
+            "height": 339
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "weapon",
+          "file": "shaman/weapon-castle.png",
+          "crop": {
+            "left": 28,
+            "top": 839,
+            "width": 286,
+            "height": 386
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "armor",
+          "file": "shaman/armor-castle.png",
+          "crop": {
+            "left": 326,
+            "top": 880,
+            "width": 295,
+            "height": 348
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "weapon",
+          "file": "shaman/weapon-goddess.png",
+          "crop": {
+            "left": 645,
+            "top": 826,
+            "width": 296,
+            "height": 405
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "armor",
+          "file": "shaman/armor-goddess.png",
+          "crop": {
+            "left": 952,
+            "top": 875,
+            "width": 294,
+            "height": 356
+          }
+        }
+      ]
+    },
+    {
+      "character": "miko",
+      "source": "../../../../development/assets/ui/equipment/source/miko-late-atlas-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c41300049a737e254fe2b41f36033ab985eaf50a85bad90d94119e6a6aa347e4",
+      "icons": [
+        {
+          "region": "desert",
+          "slot": "weapon",
+          "file": "miko/weapon-desert.png",
+          "crop": {
+            "left": 18,
+            "top": 44,
+            "width": 298,
+            "height": 334
+          }
+        },
+        {
+          "region": "desert",
+          "slot": "armor",
+          "file": "miko/armor-desert.png",
+          "crop": {
+            "left": 317,
+            "top": 101,
+            "width": 309,
+            "height": 290
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "weapon",
+          "file": "miko/weapon-highland.png",
+          "crop": {
+            "left": 633,
+            "top": 44,
+            "width": 320,
+            "height": 339
+          }
+        },
+        {
+          "region": "highland",
+          "slot": "armor",
+          "file": "miko/armor-highland.png",
+          "crop": {
+            "left": 939,
+            "top": 94,
+            "width": 307,
+            "height": 300
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "weapon",
+          "file": "miko/weapon-glacier.png",
+          "crop": {
+            "left": 21,
+            "top": 437,
+            "width": 304,
+            "height": 349
+          }
+        },
+        {
+          "region": "glacier",
+          "slot": "armor",
+          "file": "miko/armor-glacier.png",
+          "crop": {
+            "left": 318,
+            "top": 501,
+            "width": 316,
+            "height": 292
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "weapon",
+          "file": "miko/weapon-volcano.png",
+          "crop": {
+            "left": 637,
+            "top": 437,
+            "width": 323,
+            "height": 351
+          }
+        },
+        {
+          "region": "volcano",
+          "slot": "armor",
+          "file": "miko/armor-volcano.png",
+          "crop": {
+            "left": 944,
+            "top": 501,
+            "width": 304,
+            "height": 291
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "weapon",
+          "file": "miko/weapon-castle.png",
+          "crop": {
+            "left": 18,
+            "top": 840,
+            "width": 312,
+            "height": 363
+          }
+        },
+        {
+          "region": "castle",
+          "slot": "armor",
+          "file": "miko/armor-castle.png",
+          "crop": {
+            "left": 323,
+            "top": 888,
+            "width": 306,
+            "height": 319
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "weapon",
+          "file": "miko/weapon-goddess.png",
+          "crop": {
+            "left": 637,
+            "top": 836,
+            "width": 309,
+            "height": 370
+          }
+        },
+        {
+          "region": "goddess",
+          "slot": "armor",
+          "file": "miko/armor-goddess.png",
+          "crop": {
+            "left": 938,
+            "top": 895,
+            "width": 312,
+            "height": 316
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "effects/sleep-moon",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "眠りの月",
+  "kind": "status",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/sleep-moon-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 115,
+        "top": 69,
+        "right": 599,
+        "bottom": 558
+      },
+      "sourceWidth": 638,
+      "sourceHeight": 583,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 251226,
+      "transparentFraction": 0.6754222296305458
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 51,
+        "top": 17,
+        "right": 671,
+        "bottom": 577
+      },
+      "sourceWidth": 692,
+      "sourceHeight": 583,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 182438,
+      "transparentFraction": 0.4522105117044587
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 19,
+        "top": 3,
+        "right": 679,
+        "bottom": 588
+      },
+      "sourceWidth": 704,
+      "sourceHeight": 599,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 94808,
+      "transparentFraction": 0.22482546668690243
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 23,
+        "top": 61,
+        "right": 597,
+        "bottom": 565
+      },
+      "sourceWidth": 626,
+      "sourceHeight": 599,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 191235,
+      "transparentFraction": 0.509995359678271
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/sleep-moon-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

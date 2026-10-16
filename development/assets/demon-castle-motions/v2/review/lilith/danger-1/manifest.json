@@ -1,0 +1,170 @@
+{
+  "id": "lilith/danger-1",
+  "label": "リリス・宵闇の花冠",
+  "enemy": "lilith",
+  "motion": "danger-1",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/lilith.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../sources/lilith/danger-1-v2.png",
+      "sourceSha256": "3193e58a2987c09d1f9fe1779adf56195eeded5ef72a81806b6a28976d4e9c95",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 758,
+        "height": 512
+      },
+      "sourceAnchor": [
+        390,
+        484
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "1d428caf099f0e1fb0702ca723f392605452247c9cc4ecb53c8fcdb08ebf7af9",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8395271301269531
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 4820,
+      "phase": "溜め",
+      "source": "../../../sources/lilith/danger-1-v2.png",
+      "sourceSha256": "3193e58a2987c09d1f9fe1779adf56195eeded5ef72a81806b6a28976d4e9c95",
+      "sourceRect": {
+        "left": 758,
+        "top": 0,
+        "width": 778,
+        "height": 512
+      },
+      "sourceAnchor": [
+        420,
+        484
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "c0a8b32c346e047d84950defa31ba71f3b89186f0dfbef7f3fbb67349dc04100",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8148536682128906
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 2300,
+      "phase": "発動",
+      "source": "../../../sources/lilith/danger-1-v2.png",
+      "sourceSha256": "3193e58a2987c09d1f9fe1779adf56195eeded5ef72a81806b6a28976d4e9c95",
+      "sourceRect": {
+        "left": 0,
+        "top": 512,
+        "width": 854,
+        "height": 512
+      },
+      "sourceAnchor": [
+        390,
+        476
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "b50ff18a77bf95dfce146c213d7cd7d42564d37b70eab07f16b01a828eaa9d8d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.798858642578125
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 300,
+      "phase": "復帰",
+      "source": "../../../sources/lilith/danger-1-v2.png",
+      "sourceSha256": "3193e58a2987c09d1f9fe1779adf56195eeded5ef72a81806b6a28976d4e9c95",
+      "sourceRect": {
+        "left": 854,
+        "top": 512,
+        "width": 682,
+        "height": 512
+      },
+      "sourceAnchor": [
+        300,
+        475
+      ],
+      "scale": 0.52,
+      "pivot": [
+        270,
+        410
+      ],
+      "sha256": "08f6502c268eaa3f6bc24f2fe2e3ef342965a37e61c090778a1b1287f6a1581e",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8358421325683594
+    }
+  ],
+  "fingerprint": "04cf502d3b44afa3b54294f860730e12a5ce700638bf4d419b294e94a055c30d",
+  "events": [
+    {
+      "id": "effects/dark-flower",
+      "timeMs": 5000,
+      "durationMs": 560,
+      "x": 310,
+      "y": 410,
+      "scale": 0.6,
+      "anchor": [
+        256,
+        410
+      ],
+      "slot": 0
+    },
+    {
+      "id": "effects/dark-flower",
+      "timeMs": 5800,
+      "durationMs": 560,
+      "x": 440,
+      "y": 410,
+      "scale": 0.6,
+      "anchor": [
+        256,
+        410
+      ],
+      "slot": 1
+    },
+    {
+      "id": "effects/dark-flower",
+      "timeMs": 6600,
+      "durationMs": 560,
+      "x": 570,
+      "y": 410,
+      "scale": 0.6,
+      "anchor": [
+        256,
+        410
+      ],
+      "slot": 2
+    }
+  ],
+  "effects": []
+}

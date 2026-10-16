@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rune-gargoyle",
+  "motion": "claw",
+  "facing": "left",
+  "label": "飛行爪撃",
+  "sheet": "rune-gargoyle-claw.png",
+  "preview": "../../../../../../development/assets/enemies/rune-gargoyle/motions/claw/rune-gargoyle-claw-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/rune-gargoyle/PROMPT.md",
+  "width": 1792,
+  "height": 352,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 352,
+  "frameCount": 4,
+  "pivot": {
+    "x": 260,
+    "y": 334
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 700,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/rune-gargoyle/source/claw-registered.png",
+  "sourceScale": 0.44715447154471544,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "rune-gargoyle-claw-2-0",
+      "type": "spawn-effect",
+      "effect": "ruins-rune-claw",
+      "frame": 2,
+      "timeMs": 340,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "claw-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 180,
+      "phase": "開始",
+      "bounds": {
+        "left": 147,
+        "top": 77,
+        "right": 403,
+        "bottom": 296
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 832,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 383,
+        "y": 524
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -38
+      }
+    },
+    {
+      "index": 1,
+      "file": "claw-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 160,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 144,
+        "top": 74,
+        "right": 415,
+        "bottom": 296
+      },
+      "sourceCell": {
+        "x": 832,
+        "y": 0,
+        "width": 832,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 351,
+        "y": 542
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -38
+      }
+    },
+    {
+      "index": 2,
+      "file": "claw-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 130,
+      "phase": "作用",
+      "bounds": {
+        "left": 105,
+        "top": 82,
+        "right": 414,
+        "bottom": 296
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 573,
+        "width": 832,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 416,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -38
+      }
+    },
+    {
+      "index": 3,
+      "file": "claw-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 230,
+      "phase": "復帰",
+      "bounds": {
+        "left": 149,
+        "top": 74,
+        "right": 405,
+        "bottom": 296
+      },
+      "sourceCell": {
+        "x": 832,
+        "y": 573,
+        "width": 832,
+        "height": 573
+      },
+      "sourceAnchor": {
+        "x": 316,
+        "y": 527
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": -38
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/rune-gargoyle/source/claw-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/rune-gargoyle/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1470,
+      "height": 1070,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 763,
+          "height": 541
+        },
+        {
+          "x": 763,
+          "y": 0,
+          "width": 707,
+          "height": 541
+        },
+        {
+          "x": 0,
+          "y": 541,
+          "width": 800,
+          "height": 529
+        },
+        {
+          "x": 800,
+          "y": 541,
+          "width": 670,
+          "height": 529
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "flight": {
+    "airborne": true,
+    "hoverHeight": 38,
+    "legsTucked": true,
+    "groundY": 334,
+    "horizontalAnchor": "central cyan core"
+  },
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 129,
+      "y": 334
+    },
+    "origin": {
+      "x": 205,
+      "y": 190.4
+    },
+    "assets": [
+      {
+        "id": "ruins-rune-claw",
+        "manifest": "../../../../effects/ruins-rune-claw/manifest.json"
+      }
+    ]
+  }
+}

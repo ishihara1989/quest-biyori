@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "worm-tail",
+  "label": "地中から出る尻尾",
+  "sheet": "worm-tail.png",
+  "preview": "../../../../development/assets/effects/worm-tail/worm-tail-preview.gif",
+  "prompt": "../../../../development/assets/effects/worm-tail/PROMPT.md",
+  "width": 1024,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 274
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/worm-tail/source-generated.png",
+  "sourceScale": 0.46530612244897956,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "worm-tail-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 14,
+        "top": 114,
+        "right": 241,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 393,
+        "y": 480
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "worm-tail-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 23,
+        "top": 64,
+        "right": 233,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 343,
+        "y": 480
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "worm-tail-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 21,
+        "top": 73,
+        "right": 235,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 364,
+        "y": 470
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "worm-tail-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 288,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 31,
+        "top": 69,
+        "right": 225,
+        "bottom": 274
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 469
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "black-knight/attack",
+  "label": "黒騎士・剣撃",
+  "enemy": "black-knight",
+  "motion": "attack",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/black-knight.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../sources/black-knight/attack-v2.png",
+      "sourceSha256": "8455a149a648295a74faf84a7e7d6a664073c09ea71bb494a2cbb031c2edf572",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 750,
+        "height": 640
+      },
+      "sourceAnchor": [
+        394,
+        621
+      ],
+      "scale": 0.5,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "cd8d53ffc3e68ddbf62dacb8eed7f2e436e07719011e261eaac07bb0855f30ff",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8617973327636719
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "振り上げ",
+      "source": "../../../sources/black-knight/attack-frame-2-v3.png",
+      "sourceSha256": "4f181f578da799fc89f7ccbd04d37d14e729aae7036316e2532fddbbd8b34ffe",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceAnchor": [
+        626,
+        1099
+      ],
+      "scale": 0.335,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "366b6be8450d2b9d23a6eee4dc8562de1b366101d00b8edc36d61cdca6349ed1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8529129028320312
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "phase": "左下へ振り下ろし",
+      "source": "../../../sources/black-knight/attack-frame-3-v3.png",
+      "sourceSha256": "5e2f4dd36c7b036505c4ac2ae8e19796dba29e3fb93ea5d26ebaf158347b9fcb",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "sourceAnchor": [
+        695,
+        1090
+      ],
+      "scale": 0.242,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c13598b2584051b4aa5dd18363882d9fc8c986ee8e5b84b2ada9a73fe85eb2a1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.883880615234375
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../sources/black-knight/attack-v2.png",
+      "sourceSha256": "8455a149a648295a74faf84a7e7d6a664073c09ea71bb494a2cbb031c2edf572",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 750,
+        "height": 640
+      },
+      "sourceAnchor": [
+        394,
+        621
+      ],
+      "scale": 0.5,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "cd8d53ffc3e68ddbf62dacb8eed7f2e436e07719011e261eaac07bb0855f30ff",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8617973327636719
+    }
+  ],
+  "fingerprint": "a4ff9606a165b32088ba4e7184240d66bca22a1d64a1d6ff001230fe93f8a879",
+  "events": [],
+  "effects": []
+}

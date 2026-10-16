@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "enemy": "skeleton",
+  "motion": "attack",
+  "facing": "left",
+  "label": "剣の振り下ろし",
+  "sheet": "skeleton-attack.png",
+  "preview": "../../../../../../development/assets/enemies/skeleton/motions/attack/skeleton-attack-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/skeleton/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 303
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 740,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/skeleton/source/attack-registered.png",
+  "sourceScale": 0.4463157894736842,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "skeleton-attack-2",
+      "type": "melee",
+      "effect": "sword",
+      "frame": 2,
+      "timeMs": 360,
+      "power": 1
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 140,
+      "phase": "待機から",
+      "bounds": {
+        "left": 118,
+        "top": 92,
+        "right": 328,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 557,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 275,
+        "y": 536
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/skeleton/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "attack-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 171,
+        "top": 39,
+        "right": 358,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 534,
+        "y": 0,
+        "width": 580,
+        "height": 626
+      },
+      "sourceAnchor": {
+        "x": 156,
+        "y": 609
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "attack-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 140,
+      "phase": "作用",
+      "bounds": {
+        "left": 92,
+        "top": 103,
+        "right": 325,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 626,
+        "width": 557,
+        "height": 626
+      },
+      "sourceAnchor": {
+        "x": 310,
+        "y": 465
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "attack-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 118,
+        "top": 92,
+        "right": 328,
+        "bottom": 303
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 557,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 275,
+        "y": 536
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/skeleton/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/skeleton/source/attack-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 2,
+      "count": 87344,
+      "left": 83,
+      "top": 147,
+      "right": 561,
+      "bottom": 621,
+      "cx": 353.9636609269097,
+      "cy": 381.0419490749222
+    },
+    {
+      "id": 1,
+      "count": 81039,
+      "left": 771,
+      "top": 33,
+      "right": 1191,
+      "bottom": 626,
+      "cx": 960.4566813509545,
+      "cy": 354.06870765927516
+    },
+    {
+      "id": 4,
+      "count": 82707,
+      "left": 69,
+      "top": 740,
+      "right": 593,
+      "bottom": 1189,
+      "cx": 358.03107354879273,
+      "cy": 969.9536798578113
+    },
+    {
+      "id": 3,
+      "count": 87587,
+      "left": 685,
+      "top": 730,
+      "right": 1165,
+      "bottom": 1192,
+      "cx": 956.5401144005389,
+      "cy": 960.126422870974
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 180,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 303
+    },
+    "assets": [],
+    "origin": {
+      "x": 142.44,
+      "y": 192.76
+    },
+    "targetRange": 176
+  }
+}

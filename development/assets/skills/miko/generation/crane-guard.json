@@ -1,0 +1,11 @@
+{
+  "id": "crane-guard",
+  "source": "development/assets/skills/miko/source/crane-guard-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-3db515db-7cff-4a0c-bed1-1561dddbfcb0.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 4 chronological frames in a TWO BY TWO grid of equal square cells, ordered top-left, top-right, bottom-left, bottom-right. Large dramatic shrine VFX. TWO immense ivory crane wings embracing an EMPTY full-body host channel, red-gold feathers and charcoal tips, left wing behind and right wing in front, tips curl to form tall U, base .86 and crown .15. Four frames gentle protective opening and closing. No crane body or person. All frames same scale and common center/ground. Subject fills .14..86 without touching cell margins. OUTPUT MUST BE A SQUARE CANVAS, a spacious TWO-BY-TWO atlas with exactly TWO rows of TWO frames. Every cell has completely EMPTY 12% margins on all four sides, no cell overlaps.",
+  "refs": [],
+  "receivedAt": "2026-10-10T15:18:43.800Z",
+  "width": 1254,
+  "height": 1254,
+  "status": "generated"
+}

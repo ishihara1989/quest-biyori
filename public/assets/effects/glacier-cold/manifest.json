@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-cold",
+  "label": "冷気弾",
+  "sheet": "glacier-cold.png",
+  "preview": "../../../../development/assets/effects/glacier-cold/glacier-cold-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1040,
+  "height": 240,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 260,
+  "frameHeight": 240,
+  "frameCount": 4,
+  "pivot": {
+    "x": 130,
+    "y": 120
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/cold.png",
+  "sourceScale": 0.2972972972972973,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-cold/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-cold-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 260,
+      "height": 240,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 61,
+        "top": 97,
+        "right": 198,
+        "bottom": 143
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 859,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 387,
+        "y": 275
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-cold-02.png",
+      "x": 260,
+      "y": 0,
+      "width": 260,
+      "height": 240,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 35,
+        "top": 69,
+        "right": 225,
+        "bottom": 170
+      },
+      "sourceCell": {
+        "x": 859,
+        "y": 0,
+        "width": 859,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 445,
+        "y": 292
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-cold-03.png",
+      "x": 520,
+      "y": 0,
+      "width": 260,
+      "height": 240,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 29,
+        "top": 42,
+        "right": 231,
+        "bottom": 198
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 603,
+        "width": 859,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 407,
+        "y": 285
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-cold-04.png",
+      "x": 780,
+      "y": 0,
+      "width": 260,
+      "height": 240,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 20,
+        "top": 71,
+        "right": 239,
+        "bottom": 169
+      },
+      "sourceCell": {
+        "x": 859,
+        "y": 603,
+        "width": 859,
+        "height": 603
+      },
+      "sourceAnchor": {
+        "x": 386,
+        "y": 304
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "projectile",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/cold-generated.png"
+}

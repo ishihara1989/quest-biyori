@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "enemy": "rock-horn-goat",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "rock-horn-goat-down.png",
+  "preview": "rock-horn-goat-down-preview.gif",
+  "prompt": "../../../../PROMPTS.md",
+  "width": 960,
+  "height": 350,
+  "columns": 2,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 350,
+  "frameCount": 2,
+  "pivot": {
+    "x": 274,
+    "y": 326
+  },
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 1220,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "hold",
+  "source": "../../registered/down.png",
+  "sourceScale": 0.3776978417266187,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 320,
+      "phase": "落下・崩れる",
+      "bounds": {
+        "left": 170,
+        "top": 165,
+        "right": 379,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 745,
+        "width": 684,
+        "height": 745
+      },
+      "sourceAnchor": {
+        "x": 342,
+        "y": 487
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 350,
+      "durationMs": 900,
+      "phase": "倒れた状態",
+      "bounds": {
+        "left": 150,
+        "top": 234,
+        "right": 383,
+        "bottom": 326
+      },
+      "sourceCell": {
+        "x": 684,
+        "y": 745,
+        "width": 684,
+        "height": 745
+      },
+      "sourceAnchor": {
+        "x": 359,
+        "y": 489
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/rock-horn-goat.png",
+  "originalSources": [
+    "../../../../sources/rock-horn-goat/reaction-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 703
+        },
+        {
+          "x": 640,
+          "y": 0,
+          "width": 614,
+          "height": 703
+        },
+        {
+          "x": 0,
+          "y": 703,
+          "width": 611,
+          "height": 551
+        },
+        {
+          "x": 611,
+          "y": 703,
+          "width": 643,
+          "height": 551
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 1.0145985401459854,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": []
+}

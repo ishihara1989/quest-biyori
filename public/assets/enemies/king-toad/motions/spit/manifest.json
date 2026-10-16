@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "enemy": "king-toad",
+  "motion": "spit",
+  "facing": "left",
+  "label": "毒液",
+  "sheet": "king-toad-spit.png",
+  "preview": "../../../../../../development/assets/enemies/king-toad/motions/spit/king-toad-spit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/king-toad/PROMPT.md",
+  "width": 2816,
+  "height": 352,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 352,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 335
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 740,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/king-toad/source/spit-registered.png",
+  "sourceScale": 0.5020408163265306,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "king-toad-spit-2",
+      "type": "spawn-projectile",
+      "effect": "toad-poison-bolt",
+      "frame": 2,
+      "timeMs": 380
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "spit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 140,
+      "phase": "待機から",
+      "bounds": {
+        "left": 270,
+        "top": 90,
+        "right": 565,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 622,
+        "height": 534
+      },
+      "sourceAnchor": {
+        "x": 290,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/king-toad/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "spit-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 240,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 276,
+        "top": 80,
+        "right": 578,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 641,
+        "y": 0,
+        "width": 679,
+        "height": 541
+      },
+      "sourceAnchor": {
+        "x": 299,
+        "y": 524
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "spit-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 140,
+      "phase": "作用",
+      "bounds": {
+        "left": 272,
+        "top": 90,
+        "right": 586,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 541,
+        "width": 660,
+        "height": 541
+      },
+      "sourceAnchor": {
+        "x": 287,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "spit-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 352,
+      "durationMs": 220,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 270,
+        "top": 90,
+        "right": 565,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 622,
+        "height": 534
+      },
+      "sourceAnchor": {
+        "x": 290,
+        "y": 504
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/king-toad/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/king-toad/source/spit-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 2,
+      "count": 199648,
+      "left": 38,
+      "top": 93,
+      "right": 626,
+      "bottom": 582,
+      "cx": 332.10174907837796,
+      "cy": 357.66900244430195
+    },
+    {
+      "id": 1,
+      "count": 214019,
+      "left": 645,
+      "top": 87,
+      "right": 1248,
+      "bottom": 595,
+      "cx": 934.8767913129208,
+      "cy": 370.6767016012597
+    },
+    {
+      "id": 3,
+      "count": 202046,
+      "left": 39,
+      "top": 681,
+      "right": 666,
+      "bottom": 1169,
+      "cx": 342.7465032715322,
+      "cy": 948.8924403353692
+    },
+    {
+      "id": 4,
+      "count": 203319,
+      "left": 647,
+      "top": 685,
+      "right": 1234,
+      "bottom": 1186,
+      "cx": 938.4161834358815,
+      "cy": 957.7799517015134
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 180,
+    "defaultZoom": 1,
+    "target": {
+      "x": 80,
+      "y": 335
+    },
+    "assets": [
+      {
+        "id": "toad-poison-bolt",
+        "manifest": "../../../../effects/toad-poison-bolt/manifest.json"
+      }
+    ],
+    "origin": {
+      "x": 280,
+      "y": 207.07999999999998
+    },
+    "targetRange": 193
+  }
+}

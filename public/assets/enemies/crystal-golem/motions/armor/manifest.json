@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "enemy": "crystal-golem",
+  "motion": "armor",
+  "facing": "left",
+  "label": "結晶装甲",
+  "sheet": "crystal-golem-armor.png",
+  "preview": "../../../../../../development/assets/enemies/crystal-golem/motions/armor/crystal-golem-armor-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2160,
+  "height": 420,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 420,
+  "frameCount": 4,
+  "pivot": {
+    "x": 302,
+    "y": 398
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1060,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/glacier-motions/registered/crystal-golem/armor.png",
+  "sourceScale": 0.517578125,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/generation.json",
+  "events": [
+    {
+      "type": "effect",
+      "effect": "glacier-armor",
+      "frame": 2,
+      "timeMs": 540,
+      "placement": "origin"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "armor-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 167,
+        "top": 135,
+        "right": 444,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 700,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 348.49055934128336,
+        "y": 599
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "armor-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 360,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 175,
+        "top": 138,
+        "right": 424,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 700,
+        "y": 0,
+        "width": 700,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 289.5,
+        "y": 599
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "armor-03.png",
+      "x": 1080,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 240,
+      "phase": "発動",
+      "bounds": {
+        "left": 143,
+        "top": 132,
+        "right": 474,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 668,
+        "width": 700,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 347.2922716322677,
+        "y": 564
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "armor-04.png",
+      "x": 1620,
+      "y": 0,
+      "width": 540,
+      "height": 420,
+      "durationMs": 280,
+      "phase": "復帰",
+      "bounds": {
+        "left": 167,
+        "top": 134,
+        "right": 445,
+        "bottom": 398
+      },
+      "sourceCell": {
+        "x": 700,
+        "y": 668,
+        "width": 700,
+        "height": 668
+      },
+      "sourceAnchor": {
+        "x": 280.0514638122918,
+        "y": 564
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/crystal-golem.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/crystal-golem/armor-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 638,
+          "height": 618
+        },
+        {
+          "x": 638,
+          "y": 0,
+          "width": 616,
+          "height": 618
+        },
+        {
+          "x": 0,
+          "y": 618,
+          "width": 668,
+          "height": 636
+        },
+        {
+          "x": 668,
+          "y": 618,
+          "width": 586,
+          "height": 636
+        }
+      ],
+      "normalizationScale": 1
+    }
+  ],
+  "action": {
+    "motion": "armor",
+    "warn": 4200,
+    "times": [
+      4200
+    ],
+    "kind": "armor",
+    "radius": 0,
+    "effect": "armor",
+    "rest": 9000,
+    "status": null,
+    "duration": 8200
+  },
+  "animationPhases": {
+    "anticipation": [
+      0,
+      1
+    ],
+    "release": 2,
+    "recovery": 3
+  }
+}

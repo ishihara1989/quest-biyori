@@ -1,0 +1,13 @@
+{
+  "id": "stone-tortoise-guardian-appear",
+  "source": "development/assets/skills/miko/source/stone-tortoise-guardian-appear-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-a580f0f4-a293-4c8e-9ab5-1e68f8fd11f3.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Reference is SAME GUARDIAN identity and full scale. Exactly THREE frames one row. An immense divine guardian version of ONE sacred stone tortoise, grey-violet carved hexagonal shell, ivory face and four short feet, golden shimenawa rope around shell and two white zigzag paper streamers, refined larger pixel-art details, bright thick ivory/red/gold outer contour, mostly translucent interior, no miniature creature, human, weapon-bearing human or second animal. Ground anchor (.50,.86), head/crest upper .18, wings/tail can span .12..88.  Frame1 complete outer silhouette in sparse white/gold spirit ribbons; frame2 full guardian assembles inward from those ribbons; frame3 complete pose close to reference frame1, ornate red-gold outline. Keep all phases at SAME scale and ground anchor; no shrinking creature. The reference is the approved SAME SUBJECT full guardian. Keep its outline inside x=.18..82,y=.12..88 in EVERY cell. WIDE EMPTY gutters. Absolutely no drawing or stray particles along a cell edge.",
+  "refs": [
+    "C:\\Users\\ashit\\src\\idle_rpgs\\idle_rpg_poc\\public\\assets\\skills\\miko\\source\\stone-tortoise-guardian-generated-v2.png"
+  ],
+  "receivedAt": "2026-10-10T16:30:22.159Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

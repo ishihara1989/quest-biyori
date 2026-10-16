@@ -1,0 +1,130 @@
+{
+  "id": "effects/burn",
+  "label": "火傷・状態ループ",
+  "enemy": null,
+  "motion": "effect",
+  "kind": "status",
+  "origin": "reuse",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "既存1",
+      "source": "../../../../../volcano-motions/v2/ready/effects/burn/frame-1.png",
+      "sourceSha256": "599cfc81e886b7f22c76a77bbe615f2edfec31bfd5bac83a4fe81d56d3e9386e",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "5ff08914e6cc21a758ee741accc22f93b1a14b56595fd6ffff82da135a74c8d7",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9473037719726562
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "既存2",
+      "source": "../../../../../volcano-motions/v2/ready/effects/burn/frame-2.png",
+      "sourceSha256": "a5091d47008e334dee268f9af8645f34deecde82d0e15af2a477a2730a9e9e97",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "02bc1e3866cd128820d30ecba1c3583919a0e511c223dfaf6fbf564c12bd355d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9264793395996094
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "既存3",
+      "source": "../../../../../volcano-motions/v2/ready/effects/burn/frame-3.png",
+      "sourceSha256": "c67c2bb1d7cc1ee073886a7b55a4f6b2f272a7c26ebd420adc59555b436fbefd",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "d1ae68acb52ff168163b231f86caf49a8229b9c8aae0b2e005aef63bb4359359",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9062156677246094
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "既存4",
+      "source": "../../../../../volcano-motions/v2/ready/effects/burn/frame-4.png",
+      "sourceSha256": "ada84dd16e837c4b38c14824fe373fae48e3c9a286be6c77504b9a46ac4020e6",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceAnchor": [
+        256,
+        256
+      ],
+      "scale": 1,
+      "pivot": [
+        256,
+        256
+      ],
+      "sha256": "3ba5c80ff0905f88d01fc7396092e147ee3c29b417247b4420f71457dc1abbd8",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9483070373535156
+    }
+  ],
+  "fingerprint": "a8534598e9cdbbd8f5422ec33354426acca66bd434d251f2d8f470f83af44ea4",
+  "events": [],
+  "effects": []
+}

@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "enemy": "mud-hand",
+  "motion": "punch",
+  "facing": "left",
+  "label": "パンチ",
+  "sheet": "mud-hand-punch.png",
+  "preview": "../../../../../../development/assets/enemies/mud-hand/motions/punch/mud-hand-punch-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/mud-hand/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 680,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/mud-hand/source/punch-registered.png",
+  "sourceScale": 0.4052863436123348,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "mud-hand-punch-2",
+      "type": "melee",
+      "effect": "mud-slam-impact",
+      "frame": 2,
+      "timeMs": 340,
+      "power": 1
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "punch-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "待機から",
+      "bounds": {
+        "left": 60,
+        "top": 88,
+        "right": 292,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 616,
+        "height": 541
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/mud-hand/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    },
+    {
+      "index": 1,
+      "file": "punch-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 220,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 115,
+        "top": 108,
+        "right": 294,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 633,
+        "y": 0,
+        "width": 683,
+        "height": 487
+      },
+      "sourceAnchor": {
+        "x": 307,
+        "y": 418
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "punch-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 120,
+      "phase": "作用",
+      "bounds": {
+        "left": 44,
+        "top": 116,
+        "right": 296,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 487,
+        "width": 658,
+        "height": 489
+      },
+      "sourceAnchor": {
+        "x": 459,
+        "y": 400
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "punch-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 220,
+      "phase": "待機へ復帰",
+      "bounds": {
+        "left": 60,
+        "top": 88,
+        "right": 292,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 616,
+        "height": 541
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 466
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "../../../../../../development/assets/enemies/mud-hand/source/idle-registered.png",
+      "reusedPose": "idle/0"
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/mud-hand/source/punch-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 1,
+      "count": 121397,
+      "left": 49,
+      "top": 132,
+      "right": 623,
+      "bottom": 585,
+      "cx": 340.4220038386451,
+      "cy": 355.51656960221425
+    },
+    {
+      "id": 2,
+      "count": 99210,
+      "left": 810,
+      "top": 188,
+      "right": 1253,
+      "bottom": 590,
+      "cx": 1027.5925914726338,
+      "cy": 395.16696905553874
+    },
+    {
+      "id": 6,
+      "count": 120679,
+      "left": 28,
+      "top": 779,
+      "right": 653,
+      "bottom": 1162,
+      "cx": 355.7642671881603,
+      "cy": 956.1462889152214
+    },
+    {
+      "id": 5,
+      "count": 122865,
+      "left": 675,
+      "top": 708,
+      "right": 1248,
+      "bottom": 1163,
+      "cx": 966.4536116876246,
+      "cy": 933.4277784560289
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 180,
+    "defaultZoom": 1,
+    "target": {
+      "x": 244,
+      "y": 271
+    },
+    "assets": [
+      {
+        "id": "mud-slam-impact",
+        "manifest": "../../../../effects/mud-slam-impact/manifest.json"
+      }
+    ],
+    "origin": {
+      "x": 153.07999999999998,
+      "y": 175.32
+    },
+    "targetRange": 162
+  }
+}

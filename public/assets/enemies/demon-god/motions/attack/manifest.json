@@ -1,0 +1,243 @@
+{
+  "id": "demon-god/attack",
+  "label": "拳撃",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../../../../../development/assets/demon-god-redesign/v2/references/demon-god.png",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "loop": false,
+  "terminal": false,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 160,
+      "phase": "構え",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/attack-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 677,
+        "height": 631
+      },
+      "sourceChestCore": {
+        "x": 301,
+        "y": 207
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.46901172529313234,
+      "transparentFraction": 0.7952338324652778,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 139,
+        "top": 46,
+        "right": 322,
+        "bottom": 325
+      },
+      "width": 384,
+      "height": 384,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 139,
+        "top": 46,
+        "right": 323,
+        "bottom": 326
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 260,
+      "phase": "引く",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/danger-1-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 637,
+        "height": 640
+      },
+      "sourceChestCore": {
+        "x": 309,
+        "y": 230
+      },
+      "plannedRoot": [
+        565,
+        550
+      ],
+      "exportChestCore": {
+        "x": 197.85,
+        "y": 133.05
+      },
+      "sourceScale": 0.47700170357751276,
+      "transparentFraction": 0.7942776150173612,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 162,
+        "top": 41,
+        "right": 339,
+        "bottom": 320
+      },
+      "width": 384,
+      "height": 384,
+      "index": 1,
+      "x": 384,
+      "y": 0,
+      "visibleBounds": {
+        "left": 162,
+        "top": 41,
+        "right": 340,
+        "bottom": 321
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "左へ拳撃",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/attack-generated.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 631,
+        "width": 717,
+        "height": 623
+      },
+      "sourceChestCore": {
+        "x": 317,
+        "y": 224
+      },
+      "plannedRoot": [
+        510,
+        555
+      ],
+      "exportChestCore": {
+        "x": 176.4,
+        "y": 135
+      },
+      "sourceScale": 0.46901172529313234,
+      "transparentFraction": 0.7858344184027778,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 66,
+        "top": 44,
+        "right": 334,
+        "bottom": 304
+      },
+      "width": 384,
+      "height": 384,
+      "index": 2,
+      "x": 768,
+      "y": 0,
+      "visibleBounds": {
+        "left": 66,
+        "top": 44,
+        "right": 335,
+        "bottom": 305
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 240,
+      "phase": "復帰",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/attack-generated.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 717,
+        "y": 631,
+        "width": 537,
+        "height": 623
+      },
+      "sourceChestCore": {
+        "x": 176,
+        "y": 200
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.46901172529313234,
+      "transparentFraction": 0.7919786241319444,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 140,
+        "top": 47,
+        "right": 323,
+        "bottom": 325
+      },
+      "width": 384,
+      "height": 384,
+      "index": 3,
+      "x": 1152,
+      "y": 0,
+      "visibleBounds": {
+        "left": 140,
+        "top": 47,
+        "right": 324,
+        "bottom": 326
+      }
+    }
+  ],
+  "events": [
+    {
+      "timeMs": 420,
+      "effect": "castle-demon-impact",
+      "kind": "melee"
+    }
+  ],
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact",
+  "pivot": {
+    "x": 192,
+    "y": 330
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 840,
+  "sheet": "sheet.png",
+  "motion": "attack",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-god-redesign/v2/review/attack/manifest.json",
+  "sourceFingerprint": "a570c05d9a789ecb7567da7c08bbb854b2920f6b5ca33c193be565d526109a65",
+  "acceptedForIntegration": true,
+  "action": {
+    "name": "通常攻撃",
+    "motion": "attack",
+    "warn": 0,
+    "times": [
+      420
+    ],
+    "kind": "melee",
+    "radius": 310,
+    "effect": "demon-impact",
+    "rest": 600,
+    "status": null,
+    "duration": 840
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-demon-impact",
+        "manifest": "../../../../effects/castle-demon-impact/manifest.json"
+      }
+    ]
+  }
+}

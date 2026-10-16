@@ -1,0 +1,19 @@
+{
+  "id": "effects/fire-fan",
+  "source": "sources/effects/fire-fan-v3.png",
+  "selected": true,
+  "prompt": "FOUR SMALL isolated pixel-art VFX thumbnails in EXACT equal2x2cells, TRUE transparent PNG. LEFTward FIRE FAN expanding from FIXED narrow round emitter at RIGHT. Use local512x512cell: mouth/emitter at(410,256), all flames grow towardLEFT. TL verySHORT tiny flame fan length90px width60; TR MEDIUM fan length180px width120; BL MAXIMUM fan length300px width230, layered gold-white flame tongues pushing broad open front LEFT; BR ONLY6 tiny DIM separated orange-red sparks, no bright flame or white emitter. TL is small, TR medium, BL largest, BR almost gone. Keep right emitter at SAME local location in first3 cells. Clear black-red outer contour, stepped crisp JRPG pixel clusters, no airbrush. Entire peak fits inside central70% of its cell with at least50px clear padding. Very wide transparent gutters, no edge clipping. Outside crisp flames alpha0: NO ambient haze/aura/gradient, floor, rectangle glow, character, text, watermark. BR ends in sparse embers under5% peak area so it fades out cleanly.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "58439f4b9774e3c4e4e58bc69d106a7dedfd20b35c93f83056527c7d8d58571a",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/fire-fan-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。背景透過と黒い外縁を検収する。",
+    "最大コマの左端がセル・原画の四辺に近い。発射点固定と見切れを確認する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

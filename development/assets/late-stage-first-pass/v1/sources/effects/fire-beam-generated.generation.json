@@ -1,0 +1,28 @@
+{
+  "id": "effects/fire-beam",
+  "effect": "fire-beam",
+  "region": "volcano",
+  "label": "双脈竜息",
+  "kind": "origin",
+  "cols": 2,
+  "rows": 2,
+  "reference": null,
+  "source": "sources/effects/fire-beam-generated.png",
+  "prompt": "Use case: stylized-concept. Transparent FOUR-frame battle VFX sheet EXACT 2x2 equal cells, order top-left, top-right, bottom-left, bottom-right. spectacular long horizontal LEFT-directed dragon breath, white-hot narrow core, layered gold-orange flame, clear red-black outer contour, embers trail right. Frame1 onset at 25% intensity, frame2 energetic expansion, frame3 spectacular maximum impact, frame4 dying fragments. Refined fantasy JRPG pixel art, chunky crisp clusters and stepped edges, dark defined contour, high contrast, dramatic late-game power. No character, weapon prop, landscape, solid floor, text, labels, grid, checkerboard, watermark, photographic smoke or airbrush. Actual transparent alpha including hollow centers. Each full effect in its own cell with 12% clear padding; no clipping or overlap. Local 0..1024 coordinates: fixed emission point at (850,512), extend toward LEFT. Keep size consistent, only purposeful expansion varies. Palette orange/gold/white heat with red-black edges.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-b9e6798a-f757-432e-b796-acd751191643.png",
+  "sha256": "e22e894c0ba2e25fb74c30a67f30039414e0f922aef271bff8e3ae36dd684a60",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "白熱した横長の核と重なった炎を表現。"
+    ],
+    "issues": [
+      "赤橙の背景光が混入。",
+      "右端が矢印状に尖り、右向きの弾にも見える。右の放射口から左へ押し寄せる炎として発射方向を明確にする。",
+      "最大コマで放射口と左端の位置が変わるため、口の基準点を固定する。"
+    ]
+  }
+}

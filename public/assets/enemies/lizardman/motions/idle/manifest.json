@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "lizardman",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "lizardman-idle.png",
+  "preview": "../../../../../../development/assets/enemies/lizardman/motions/idle/lizardman-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/lizardman/PROMPT.md",
+  "width": 1792,
+  "height": 352,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 448,
+  "frameHeight": 352,
+  "frameCount": 4,
+  "pivot": {
+    "x": 260,
+    "y": 335
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/lizardman/source/idle-registered.png",
+  "sourceScale": 0.40789473684210525,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 73,
+        "top": 181,
+        "right": 354,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 726,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 477,
+        "y": 395
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 448,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 90,
+        "top": 172,
+        "right": 356,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 726,
+        "y": 0,
+        "width": 726,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 435,
+        "y": 417
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 896,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 76,
+        "top": 181,
+        "right": 356,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 434,
+        "width": 726,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 468,
+        "y": 395
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1344,
+      "y": 0,
+      "width": 448,
+      "height": 352,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 79,
+        "top": 181,
+        "right": 348,
+        "bottom": 335
+      },
+      "sourceCell": {
+        "x": 726,
+        "y": 434,
+        "width": 726,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 462,
+        "y": 394
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/lizardman/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 69774,
+        "left": 41,
+        "top": 166,
+        "right": 734,
+        "bottom": 545,
+        "cx": 396.44724395906786,
+        "cy": 371.69160432252704
+      },
+      {
+        "id": 1,
+        "count": 69853,
+        "left": 728,
+        "top": 144,
+        "right": 1383,
+        "bottom": 545,
+        "cx": 1050.9603596123288,
+        "cy": 366.4322219518131
+      },
+      {
+        "id": 3,
+        "count": 71067,
+        "left": 41,
+        "top": 689,
+        "right": 728,
+        "bottom": 1068,
+        "cx": 389.7645602037514,
+        "cy": 892.6903204018743
+      },
+      {
+        "id": 4,
+        "count": 68760,
+        "left": 723,
+        "top": 691,
+        "right": 1387,
+        "bottom": 1069,
+        "cx": 1068.4548574752764,
+        "cy": 895.652123327516
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

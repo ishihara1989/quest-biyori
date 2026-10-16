@@ -1,0 +1,170 @@
+[
+  {
+    "enemy": "lava-salamander",
+    "file": "references/lava-salamander.png",
+    "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+    "rect": {
+      "left": 0,
+      "top": 0,
+      "width": 418,
+      "height": 418
+    },
+    "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+  },
+  {
+    "enemy": "obsidian-soldier",
+    "file": "references/obsidian-soldier.png",
+    "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+    "rect": {
+      "left": 431,
+      "top": 0,
+      "width": 399,
+      "height": 409
+    },
+    "sha256": "e32e29dd7943525d5656d13a9973bdfae81bed56d7a98fac3038447efce39a57"
+  },
+  {
+    "enemy": "young-fire-dragon",
+    "file": "references/young-fire-dragon.png",
+    "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+    "rect": {
+      "left": 830,
+      "top": 0,
+      "width": 424,
+      "height": 409
+    },
+    "sha256": "a13d12a29ea3a0e80223d22a3e1c2e492a9a434845dbc11a1578f0296c4406c8"
+  },
+  {
+    "enemy": "magma-salamander",
+    "file": "references/magma-salamander.png",
+    "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+    "rect": {
+      "left": 0,
+      "top": 409,
+      "width": 474,
+      "height": 404
+    },
+    "sha256": "4dbe0772ba4dc36895fafbe4aa8dd0b7413e7eea95024a79e2716a29603e3998"
+  },
+  {
+    "enemy": "obsidian-executioner",
+    "file": "references/obsidian-executioner.png",
+    "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+    "rect": {
+      "left": 474,
+      "top": 409,
+      "width": 378,
+      "height": 404
+    },
+    "sha256": "f3e9668fb5b632ea2ad16a0d6f0ca6c5eb1fa5c53eee22a445fef708ec7d9aa3"
+  },
+  {
+    "enemy": "dragon-girl",
+    "file": "references/dragon-girl.png",
+    "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+    "rect": {
+      "left": 852,
+      "top": 409,
+      "width": 402,
+      "height": 404
+    },
+    "sha256": "7aadb570cf7605c1588557389028db7ee4b248d97fe0c8d375f7a197831d141a"
+  },
+  {
+    "enemy": "dragon",
+    "file": "references/dragon.png",
+    "atlas": "../../mid-late-design/v1/volcano/monsters-v3.png",
+    "rect": {
+      "left": 0,
+      "top": 813,
+      "width": 1254,
+      "height": 441
+    },
+    "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+  },
+  {
+    "enemy": "demon-armored-soldier",
+    "file": "references/demon-armored-soldier.png",
+    "atlas": "../../mid-late-design/v1/demon-castle/monsters-v2.png",
+    "rect": {
+      "left": 0,
+      "top": 0,
+      "width": 452,
+      "height": 402
+    },
+    "sha256": "5aa7e06e731b610fa265964a424627b965f52659b20a556078124691425139a4"
+  },
+  {
+    "enemy": "imp",
+    "file": "references/imp.png",
+    "atlas": "../../mid-late-design/v1/demon-castle/monsters-v2.png",
+    "rect": {
+      "left": 452,
+      "top": 0,
+      "width": 370,
+      "height": 402
+    },
+    "sha256": "d12d4eb8261ca9896c6ea718bba0a5cf6ecdda1bcda5768f2433825b72d6bcac"
+  },
+  {
+    "enemy": "dream-demon",
+    "file": "references/dream-demon.png",
+    "atlas": "../../mid-late-design/v1/demon-castle/monsters-v2.png",
+    "rect": {
+      "left": 822,
+      "top": 0,
+      "width": 432,
+      "height": 402
+    },
+    "sha256": "c4e940abf1b2623984fd52a7044c6fb287dd4543191f03ac4fcb13d5e4cd5637"
+  },
+  {
+    "enemy": "black-knight",
+    "file": "references/black-knight.png",
+    "atlas": "../../mid-late-design/v1/demon-castle/monsters-v2.png",
+    "rect": {
+      "left": 0,
+      "top": 402,
+      "width": 436,
+      "height": 390
+    },
+    "sha256": "960272c41473b518701eeb9f49bb35c9d06273070244ac4f956e2196937d2c59"
+  },
+  {
+    "enemy": "arch-demon",
+    "file": "references/arch-demon.png",
+    "atlas": "../../mid-late-design/v1/demon-castle/monsters-v2.png",
+    "rect": {
+      "left": 436,
+      "top": 402,
+      "width": 404,
+      "height": 390
+    },
+    "sha256": "4595303add5f307662871dbb6a23d109b96c53cde2dbd3db4c2e5b69ae7ff09c"
+  },
+  {
+    "enemy": "lilith",
+    "file": "references/lilith.png",
+    "atlas": "../../mid-late-design/v1/demon-castle/monsters-v2.png",
+    "rect": {
+      "left": 840,
+      "top": 402,
+      "width": 414,
+      "height": 390
+    },
+    "sha256": "e3a3568e04dea574614081bfc5302c5815f5d0a55d181d7d0b2728f26dfdd66f"
+  },
+  {
+    "enemy": "demon-god",
+    "file": "references/demon-god.png",
+    "atlas": "../../mid-late-design/v1/demon-castle/monsters-v2.png",
+    "rect": {
+      "left": 0,
+      "top": 792,
+      "width": 1254,
+      "height": 462
+    },
+    "sha256": "071b280edd52a69a842e4ba618935ed44f9c85b025ac160bb30026f2d5b37470"
+  }
+]

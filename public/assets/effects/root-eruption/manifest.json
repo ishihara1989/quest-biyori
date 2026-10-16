@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "root-eruption",
+  "label": "根っこ攻撃",
+  "sheet": "root-eruption.png",
+  "preview": "../../../../development/assets/effects/root-eruption/root-eruption-preview.gif",
+  "prompt": "../../../../development/assets/effects/root-eruption/PROMPT.md",
+  "width": 1024,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 240
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 490,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/root-eruption/source/root-eruption-generated-v1.png",
+  "sourceScale": 0.4,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "name": "root-hit",
+      "frame": 1,
+      "timeMs": 80
+    },
+    {
+      "name": "max-extension",
+      "frame": 2,
+      "timeMs": 180
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "root-eruption-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 80,
+      "phase": "根の先端が出る",
+      "bounds": {
+        "left": 69,
+        "top": 201,
+        "right": 187,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 493
+      },
+      "sourceAnchor": {
+        "x": 417,
+        "y": 489
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "root-eruption-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 100,
+      "phase": "根が伸びる",
+      "bounds": {
+        "left": 39,
+        "top": 92,
+        "right": 217,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 578
+      },
+      "sourceAnchor": {
+        "x": 345,
+        "y": 498
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "root-eruption-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 130,
+      "phase": "最大突出",
+      "bounds": {
+        "left": 12,
+        "top": 42,
+        "right": 244,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 493,
+        "width": 768,
+        "height": 531
+      },
+      "sourceAnchor": {
+        "x": 436,
+        "y": 498
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "root-eruption-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "根が引っ込む",
+      "bounds": {
+        "left": 35,
+        "top": 111,
+        "right": 220,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 578,
+        "width": 768,
+        "height": 446
+      },
+      "sourceAnchor": {
+        "x": 372,
+        "y": 410
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

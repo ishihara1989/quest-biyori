@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "enemy": "manticore",
+  "motion": "pounce",
+  "facing": "left",
+  "label": "飛び込み",
+  "sheet": "manticore-pounce.png",
+  "preview": "../../../../../../development/assets/enemies/manticore/motions/pounce/manticore-pounce-preview.gif",
+  "prompt": "../../../../../../development/assets/highland-motions/PROMPTS.md",
+  "width": 3200,
+  "height": 580,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 800,
+  "frameHeight": 580,
+  "frameCount": 4,
+  "pivot": {
+    "x": 456,
+    "y": 556
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1240,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/highland-motions/enemies/manticore/registered/pounce.png",
+  "sourceScale": 0.7261410788381742,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPTS.md",
+  "events": [
+    {
+      "effect": "charge-impact",
+      "frame": 2,
+      "timeMs": 680,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "pounce-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 180,
+      "phase": "構え",
+      "bounds": {
+        "left": 212,
+        "top": 207,
+        "right": 637,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 730,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 512
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "pounce-02.png",
+      "x": 800,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 500,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 229,
+        "top": 172,
+        "right": 668,
+        "bottom": 511
+      },
+      "sourceCell": {
+        "x": 730,
+        "y": 0,
+        "width": 730,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 361,
+        "y": 498
+      },
+      "bakedOffset": {
+        "x": 12,
+        "y": -45
+      }
+    },
+    {
+      "index": 2,
+      "file": "pounce-03.png",
+      "x": 1600,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 260,
+      "phase": "発動",
+      "bounds": {
+        "left": 131,
+        "top": 255,
+        "right": 615,
+        "bottom": 532
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 544,
+        "width": 730,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 382,
+        "y": 413
+      },
+      "bakedOffset": {
+        "x": -70,
+        "y": -24
+      }
+    },
+    {
+      "index": 3,
+      "file": "pounce-04.png",
+      "x": 2400,
+      "y": 0,
+      "width": 800,
+      "height": 580,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 204,
+        "top": 230,
+        "right": 667,
+        "bottom": 556
+      },
+      "sourceCell": {
+        "x": 730,
+        "y": 544,
+        "width": 730,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 380,
+        "y": 480
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/highland-motions/references/manticore.png",
+  "originalSources": [
+    "../../../../../../development/assets/highland-motions/sources/manticore/pounce-generated.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "connected-components",
+      "rects": [
+        {
+          "x": 53,
+          "y": 52,
+          "width": 624,
+          "height": 513,
+          "mainComponent": 2
+        },
+        {
+          "x": 762,
+          "y": 37,
+          "width": 646,
+          "height": 498,
+          "mainComponent": 1
+        },
+        {
+          "x": 31,
+          "y": 593,
+          "width": 711,
+          "height": 408,
+          "mainComponent": 31
+        },
+        {
+          "x": 730,
+          "y": 578,
+          "width": 682,
+          "height": 479,
+          "mainComponent": 30
+        }
+      ]
+    }
+  ],
+  "normalizationScale": 0.9395711500974658,
+  "requestedScaleMultiplier": 1,
+  "registrationCorrections": [],
+  "effectAssets": [
+    {
+      "id": "highland-charge-impact",
+      "manifest": "../../../../effects/highland-charge-impact/manifest.json"
+    }
+  ],
+  "action": {
+    "motion": "pounce",
+    "warn": 1600,
+    "times": [
+      2100
+    ],
+    "power": 1.1,
+    "radius": 75,
+    "kind": "charge",
+    "effect": "charge-impact",
+    "status": null,
+    "push": 0,
+    "duration": 2600
+  }
+}

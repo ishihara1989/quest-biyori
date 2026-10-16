@@ -1,0 +1,141 @@
+{
+  "mode": "crop, nearest-neighbor proportional scale, cell reposition only; no drawn/interpolated pose pixels",
+  "cells": [
+    {
+      "source": "paladin-forward-generated-v8.png",
+      "rect": [
+        0,
+        0,
+        384,
+        512
+      ],
+      "scale": 1,
+      "waistX": 256,
+      "target": {
+        "left": 44,
+        "top": -2,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "source": "paladin-forward-generated-v8.png",
+      "rect": [
+        384,
+        0,
+        384,
+        512
+      ],
+      "scale": 1,
+      "waistX": 256,
+      "target": {
+        "left": 44,
+        "top": -2,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "source": "paladin-forward-generated-v8.png",
+      "rect": [
+        768,
+        0,
+        384,
+        512
+      ],
+      "scale": 1,
+      "waistX": 256,
+      "target": {
+        "left": 44,
+        "top": -2,
+        "width": 384,
+        "height": 512
+      }
+    },
+    {
+      "source": "paladin-forward-individual-repaired-v1.png",
+      "rect": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "scale": 0.7091561938958707,
+      "waistX": 385,
+      "target": {
+        "left": 27,
+        "top": 34,
+        "width": 445,
+        "height": 445
+      }
+    },
+    {
+      "source": "paladin-forward-individual-repaired-v1.png",
+      "rect": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "scale": 0.7091561938958707,
+      "waistX": 385,
+      "target": {
+        "left": 27,
+        "top": 34,
+        "width": 445,
+        "height": 445
+      }
+    },
+    {
+      "source": "paladin-forward-individual-repaired-v1.png",
+      "rect": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "scale": 0.7091561938958707,
+      "waistX": 385,
+      "target": {
+        "left": 27,
+        "top": 43,
+        "width": 445,
+        "height": 445
+      }
+    },
+    {
+      "source": "paladin-forward-individual-repaired-v1.png",
+      "rect": [
+        627,
+        627,
+        627,
+        627
+      ],
+      "scale": 0.7091561938958707,
+      "waistX": 385,
+      "target": {
+        "left": 27,
+        "top": 47,
+        "width": 445,
+        "height": 445
+      }
+    },
+    {
+      "source": "paladin-forward-generated-v8.png",
+      "rect": [
+        1152,
+        512,
+        384,
+        512
+      ],
+      "scale": 1,
+      "waistX": 256,
+      "target": {
+        "left": 44,
+        "top": 43,
+        "width": 384,
+        "height": 512
+      }
+    }
+  ]
+}

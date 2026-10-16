@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "scylla",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "scylla-idle.png",
+  "preview": "../../../../../../development/assets/enemies/scylla/motions/idle/scylla-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/scylla/PROMPT.md",
+  "width": 2560,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 371,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/scylla/source/idle-registered.png",
+  "sourceScale": 0.5030800821355236,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 235,
+        "top": 187,
+        "right": 567,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 693,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 286,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 235,
+        "top": 186,
+        "right": 566,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 693,
+        "y": 0,
+        "width": 693,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 287,
+        "y": 505
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 236,
+        "top": 187,
+        "right": 566,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 522,
+        "width": 693,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 285,
+        "y": 501
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 236,
+        "top": 191,
+        "right": 567,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 693,
+        "y": 522,
+        "width": 693,
+        "height": 522
+      },
+      "sourceAnchor": {
+        "x": 285,
+        "y": 493
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/scylla/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 154526,
+        "left": 61,
+        "top": 17,
+        "right": 721,
+        "bottom": 503,
+        "cx": 385.9559426892562,
+        "cy": 322.50391519873676
+      },
+      {
+        "id": 1,
+        "count": 161003,
+        "left": 826,
+        "top": 14,
+        "right": 1486,
+        "bottom": 503,
+        "cx": 1147.6654907051422,
+        "cy": 313.35393129320573
+      },
+      {
+        "id": 12,
+        "count": 166644,
+        "left": 64,
+        "top": 523,
+        "right": 721,
+        "bottom": 1008,
+        "cx": 390.1674467727611,
+        "cy": 812.5169223014329
+      },
+      {
+        "id": 13,
+        "count": 154339,
+        "left": 826,
+        "top": 528,
+        "right": 1486,
+        "bottom": 1005,
+        "cx": 1150.3821457959427,
+        "cy": 827.1395499517296
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

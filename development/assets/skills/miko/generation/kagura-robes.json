@@ -1,0 +1,13 @@
+{
+  "id": "kagura-robes",
+  "source": "development/assets/skills/miko/source/kagura-robes-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-de45b2c8-7ba1-4df2-966a-285e763309a4.png",
+  "prompt": "FINAL OUTPUT: VFX ONLY, WITHOUT ANY PERSON. Reference is ONLY the pixel palette and shading; do not copy its projectile shape.  NO PEOPLE, NO CASTER, NO HUMAN FIGURES anywhere. VFX ONLY: an isolated spell overlay, absolutely NO human, shrine maiden, person, caster, human face, human silhouette, hair, human limbs or dressed character in any frame. The center is EMPTY TRANSPARENT space for a character drawn separately by the game. Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas of Japanese shrine magic in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Exactly 4 chronological frames in a TWO BY TWO grid of equal square cells, ordered top-left, top-right, bottom-left, bottom-right. Large dramatic shrine VFX. ONE tall empty full-body enclosure made of crimson/white/gold spirit ribbons and shide paper, no person. Tall U-shaped backlight from ground (.50,.86) to upper halo (.50,.18), two sweeping side ribbons at x=.23/.77, open transparent central 30% column. Loop flowing robes rise along sides, then trail outward, then return. All frames same scale and common center/ground. Subject fills .18..82 without touching cell margins. Only the described magical objects are drawn; no people anywhere. Keep EVERY piece including beam tips and trails inside x=.20..80,y=.12..88 of each cell with wide EMPTY gutters; no fragments touch any cell edge. Square canvas, exactly TWO BY TWO frames, ordered TL,TR,BL,BR.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/foxfire-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T15:51:41.405Z",
+  "width": 1254,
+  "height": 1254,
+  "status": "generated"
+}

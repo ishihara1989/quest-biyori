@@ -1,0 +1,72 @@
+{
+  "source": "../../../source/bell-owl-guardian-generated-v1.png",
+  "sourceRects": [
+    {
+      "component": 2,
+      "sourceBounds": {
+        "l": 26,
+        "t": 53,
+        "r": 593,
+        "b": 587,
+        "n": 180237,
+        "width": 568,
+        "height": 535
+      }
+    },
+    {
+      "component": 1,
+      "sourceBounds": {
+        "l": 632,
+        "t": 44,
+        "r": 1236,
+        "b": 592,
+        "n": 219906,
+        "width": 605,
+        "height": 549
+      }
+    },
+    {
+      "component": 13,
+      "sourceBounds": {
+        "l": 14,
+        "t": 638,
+        "r": 693,
+        "b": 1210,
+        "n": 273611,
+        "width": 680,
+        "height": 573
+      }
+    },
+    {
+      "component": 16,
+      "sourceBounds": {
+        "l": 695,
+        "t": 677,
+        "r": 1236,
+        "b": 1210,
+        "n": 173560,
+        "width": 542,
+        "height": 534
+      }
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 979
+    },
+    {
+      "x": 512,
+      "y": 979
+    },
+    {
+      "x": 512,
+      "y": 979
+    },
+    {
+      "x": 512,
+      "y": 979
+    }
+  ],
+  "scale": 0.5071574642126789
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "slam",
+    "label": "巨腕打撃",
+    "manifest": "slam/manifest.json"
+  },
+  {
+    "id": "fire",
+    "label": "左右砲撃",
+    "manifest": "fire/manifest.json"
+  },
+  {
+    "id": "beam",
+    "label": "炉心照射",
+    "manifest": "beam/manifest.json"
+  },
+  {
+    "id": "stomp",
+    "label": "魔導踏撃",
+    "manifest": "stomp/manifest.json"
+  },
+  {
+    "id": "vent",
+    "label": "排熱停止",
+    "manifest": "vent/manifest.json"
+  }
+]

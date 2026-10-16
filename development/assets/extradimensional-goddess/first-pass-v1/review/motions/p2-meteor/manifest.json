@@ -1,0 +1,178 @@
+{
+  "id": "motions/p2-meteor",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-meteor/review/motions/p2-meteor/frame-01.png",
+      "index": 1,
+      "durationMs": 150,
+      "source": "source/motions/p2-meteor-1.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(170,244)/(352,260), neutral.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.44525312108909987,
+      "lowAlphaPixels": 22359,
+      "edgePixels": 0,
+      "bounds": [
+        23,
+        22,
+        707,
+        694
+      ],
+      "marginFraction": 0.022099447513812154
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-meteor/review/motions/p2-meteor/frame-02.png",
+      "index": 2,
+      "durationMs": 150,
+      "source": "source/motions/p2-meteor-1.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(174,211)/(347,218), lift palms.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4365804615243735,
+      "lowAlphaPixels": 23080,
+      "edgePixels": 0,
+      "bounds": [
+        38,
+        22,
+        707,
+        694
+      ],
+      "marginFraction": 0.022099447513812154
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-meteor/review/motions/p2-meteor/frame-03.png",
+      "index": 3,
+      "durationMs": 150,
+      "source": "source/motions/p2-meteor-1.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(186,168)/(336,174), palms raised; 3 stars will be separate FX, DO NOT draw them.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4088226091999634,
+      "lowAlphaPixels": 22581,
+      "edgePixels": 0,
+      "bounds": [
+        17,
+        22,
+        701,
+        694
+      ],
+      "marginFraction": 0.023480662983425413
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-meteor/review/motions/p2-meteor/frame-04.png",
+      "index": 4,
+      "durationMs": 150,
+      "source": "source/motions/p2-meteor-2.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(166,209)/(359,218), sweep DOWN to release first overhead meteor.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.3933507066328867,
+      "lowAlphaPixels": 19775,
+      "edgePixels": 207,
+      "bounds": [
+        10,
+        8,
+        723,
+        668
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-meteor/review/motions/p2-meteor/frame-05.png",
+      "index": 5,
+      "durationMs": 150,
+      "source": "source/motions/p2-meteor-2.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(158,257)/(366,267), follow-through downward.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.4029200115991575,
+      "lowAlphaPixels": 21610,
+      "edgePixels": 208,
+      "bounds": [
+        0,
+        9,
+        723,
+        689
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-meteor/review/motions/p2-meteor/frame-06.png",
+      "index": 6,
+      "durationMs": 150,
+      "source": "source/motions/p2-meteor-2.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "L/R=(170,244)/(352,260), return to idle.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.40249648972864077,
+      "lowAlphaPixels": 20445,
+      "edgePixels": 10,
+      "bounds": [
+        0,
+        6,
+        711,
+        686
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/motions/p2-meteor-1.png",
+    "source/motions/p2-meteor-2.png"
+  ],
+  "expectedFrames": 6,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p2-meteor/contact.png",
+  "gif": "review/motions/p2-meteor/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

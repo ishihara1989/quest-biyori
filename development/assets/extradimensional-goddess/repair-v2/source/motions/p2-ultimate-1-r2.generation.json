@@ -1,0 +1,19 @@
+{
+  "id": "motions/p2-ultimate-1",
+  "source": "source/motions/p2-ultimate-1-r2.png",
+  "sha256": "14d3bded97ce10036dfd14855f35bd65cc4ebae3d82d789f1da30baf5f7db05b",
+  "prompt": "Edit the supplied adult fantasy goddess into ONE transparent pixel-art animation strip of exactly THREE equal SQUARE cells in ONE HORIZONTAL ROW. Input 1 is the fixed original identity and palette; input 2 is the isolated floating body. Keep the same mature face, silver/lavender hair, ivory/navy/gold opaque costume, gold shoes and small crown. Body only: no large rings or throne. Full figure in each cell, upright hovering legs pointing downward as in the body reference. Identical head, hips, leg positions and character scale in all three cells. Broad empty transparent padding around EACH figure. Each figure is only 65 percent as tall as its cell. Read from LEFT to RIGHT:\nLEFT pose: both arms low, spread gently to the sides at waist height, palms up. MIDDLE pose: both elbows bend, hands move inward to the lower chest. RIGHT pose: hands hover close together in front of the upper chest, still BELOW THE CHIN, with a small gap between palms. All three poses keep hands below the chin. These are only the beginning of the spell, never draw raised arms.\nPrecisely two arms connected to their shoulders. Crisp pixel clusters, dark violet outlines, no text, no grid lines, no effects, no extra body or ghost trail. Preserve real transparent alpha.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13ddd-f530-70a0-b8d8-d5319eca75c0\\exec-5bd946fc-1d94-467d-a265-39ac978d218c.png",
+  "transparent_background": true,
+  "references": [
+    {
+      "file": "../v1/references/phase-2-awakened.png",
+      "sha256": "8337d88c7e18ba691285929385931dbc5b36bf91f9e758ced02a71ab5fab823c"
+    },
+    {
+      "file": "../first-pass-v1/source/parts/body-floating.png",
+      "sha256": "0a1e88d84dbb992cfe862982c503293b70b632f465b3c86c96ff7ef859fdeae4"
+    }
+  ],
+  "attempt": 2
+}

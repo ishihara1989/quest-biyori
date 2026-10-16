@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "effect": "venom",
+  "label": "毒尾の毒針",
+  "sheet": "venom.png",
+  "preview": "venom-preview.gif",
+  "prompt": "../../PROMPTS.md",
+  "width": 1360,
+  "height": 260,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 260,
+  "frameCount": 4,
+  "pivot": {
+    "x": 170,
+    "y": 130
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "registered.png",
+  "sourceScale": 0.3597122302158273,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "venom-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 119,
+        "top": 138,
+        "right": 191,
+        "bottom": 170
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 866,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 441,
+        "y": 283
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "venom-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 89,
+        "top": 130,
+        "right": 284,
+        "bottom": 165
+      },
+      "sourceCell": {
+        "x": 866,
+        "y": 0,
+        "width": 866,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 405,
+        "y": 302
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "venom-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 60,
+        "top": 112,
+        "right": 277,
+        "bottom": 155
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 544,
+        "width": 866,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 433,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "venom-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 260,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 113,
+        "top": 97,
+        "right": 260,
+        "bottom": 170
+      },
+      "sourceCell": {
+        "x": 866,
+        "y": 544,
+        "width": 866,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 359,
+        "y": 272
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": true,
+  "originalSource": "../../sources/effects/venom-generated.png",
+  "kind": "projectile"
+}

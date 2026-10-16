@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "character": "ninja",
+  "motion": "backward",
+  "source": "source/ninja-backward-generated-v11.png",
+  "measurement": "manual estimate of ankle center in 256x224 output, tolerance ±3px; occluded R in 3/7 inferred from exposed boot and shin",
+  "leftIdentity": "fishnet thigh + gold square buckle, always camera near",
+  "rightIdentity": "bare thigh + black band, always camera far",
+  "frames": [
+    {
+      "frame": 1,
+      "L": {
+        "x": 157,
+        "y": 194
+      },
+      "R": {
+        "x": 85,
+        "y": 197
+      }
+    },
+    {
+      "frame": 2,
+      "L": {
+        "x": 148,
+        "y": 194
+      },
+      "R": {
+        "x": 106,
+        "y": 195
+      }
+    },
+    {
+      "frame": 3,
+      "L": {
+        "x": 123,
+        "y": 197
+      },
+      "R": {
+        "x": 115,
+        "y": 195,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 4,
+      "L": {
+        "x": 95,
+        "y": 194
+      },
+      "R": {
+        "x": 162,
+        "y": 196
+      }
+    },
+    {
+      "frame": 5,
+      "L": {
+        "x": 84,
+        "y": 199
+      },
+      "R": {
+        "x": 159,
+        "y": 199
+      }
+    },
+    {
+      "frame": 6,
+      "L": {
+        "x": 99,
+        "y": 197
+      },
+      "R": {
+        "x": 150,
+        "y": 200
+      }
+    },
+    {
+      "frame": 7,
+      "L": {
+        "x": 125,
+        "y": 195
+      },
+      "R": {
+        "x": 119,
+        "y": 203,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 8,
+      "L": {
+        "x": 162,
+        "y": 199
+      },
+      "R": {
+        "x": 90,
+        "y": 201
+      }
+    }
+  ]
+}

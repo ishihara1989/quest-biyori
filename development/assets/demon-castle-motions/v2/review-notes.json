@@ -1,0 +1,944 @@
+{
+  "black-knight/attack": {
+    "fingerprint": "a4ff9606a165b32088ba4e7184240d66bca22a1d64a1d6ff001230fe93f8a879",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-initial.json",
+    "observations": [
+      "剣先とマントの全形、同じ剣の両手保持、頭・胴の縮尺、接地と復帰を確認。隣接コマの重なりを避け単コマ原画と独立矩形を選択。"
+    ],
+    "alpha": "Native alpha composited on light and castle backgrounds; no painted background. Source RGBA preserved without masks.",
+    "previousImageFingerprint": "071e760a30bd9aa8f9ce803a7222a87c21f1845fb4fec2f26a2350958c3ed50a",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "dream-demon/hit": {
+    "fingerprint": "efe225de6acdfd4f8a376a0df287f0c579a91401c44ebd9cfc77876dd7bfc294",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-initial.json",
+    "observations": [
+      "全コマで2脚・2足。被弾→復帰の顔・角・翼根・尾の接続と位置を確認。"
+    ],
+    "alpha": "Native alpha composited on light and castle backgrounds; no painted background. Source RGBA preserved without masks.",
+    "previousImageFingerprint": "1982fff4c8d7f828ce68e4c344169eea684c317cfb8fb3a4ff76e2e9b8b10458",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "dream-demon/down": {
+    "fingerprint": "3333a6fd62aa5bc94654814adfa3c6838552fb6aa5fccb9bdce544dcaea1c3e6",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-initial.json",
+    "observations": [
+      "2脚・2足を腰から膝・ブーツまで追跡。沈下→座り込みと終端保持を確認。"
+    ],
+    "alpha": "Native alpha composited on light and castle backgrounds; no painted background. Source RGBA preserved without masks.",
+    "previousImageFingerprint": "ef9a91b869a1af39bc5272c32de0a00305ad2a5fd2523c23e7fe4a1ca0cffaf4",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "demon-armored-soldier/attack": {
+    "fingerprint": "8e07d2ec0db9c61091e357f1c9d3338f6afa45c9716d7453360fa2e8af232404",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-initial.json",
+    "observations": [
+      "剣を持つ腕と盾を持つ腕を全コマで追跡。第三の手・浮いた盾がなく片手剣撃。"
+    ],
+    "alpha": "Native alpha composited on light and castle backgrounds; no painted background. Source RGBA preserved without masks.",
+    "previousImageFingerprint": "b7e964d193d873960f3e87822797f9e977310d54b20f046bb780631290ebb8bb",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "effects/curse-orb": {
+    "fingerprint": "39d8d7717c410ceaac15e5ebd9b4dc8d54f5899996152958653969bc378f20f5",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-initial.json",
+    "observations": [
+      "4コマとも球の核・輪郭を保持。核を位置合わせし飛行の脈動をループ。着弾を描かない。"
+    ],
+    "alpha": "Native alpha composited on light and castle backgrounds; no painted background. Source RGBA preserved without masks.",
+    "previousImageFingerprint": "9eada428bc66177ea4c99a026e3eec820c08f394004d055675e61d377915c7d1",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "effects/dark-slash": {
+    "fingerprint": "ffc51ac1bb799424680d31ace724c670c1644052053f01ccdd4ba5ba79daaaf9",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-initial.json",
+    "observations": [
+      "単独の弧が右上→左下へ展開し火の粉へ収束。追加の輪がなく、最後は非表示。"
+    ],
+    "alpha": "Native alpha composited on light and castle backgrounds; no painted background. Source RGBA preserved without masks.",
+    "previousImageFingerprint": "4d900608cda2dcf99d39355bdd6cb22ac6dff024ed2a29626d411623ebfcde71",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "dream-demon/danger-1": {
+    "fingerprint": "193cc1067db6a5f03a07adf5ac2ec55dec24477c62eec2d9ad04d5a73b832fd6",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-selected-initial.json",
+    "observations": [
+      "角・翼・尾の余白、2腕2脚、2800msの発動と1500msの月印を確認。本体に外部の月印なし。"
+    ],
+    "alpha": "Native alpha inspected on light and castle backgrounds. No painting, body-part assembly or alpha masking.",
+    "previousImageFingerprint": "6768e4baf4eec44634b842f26c3ed246d51fd53022c626a016d10a5bb376c6a8",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "lilith/danger-1": {
+    "fingerprint": "04cf502d3b44afa3b54294f860730e12a5ce700638bf4d419b294e94a055c30d",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-selected-initial.json",
+    "observations": [
+      "冠→掌を開く同じ二腕と翼根を追跡。5000/5800/6600msの3地点・0.8秒差を確認。"
+    ],
+    "alpha": "Native alpha inspected on light and castle backgrounds. No painting, body-part assembly or alpha masking.",
+    "previousImageFingerprint": "21714a643aa508e186b2b8d6011df00ada2fed802ab9814fb5864282d2f17565",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "effects/sleep-moon": {
+    "fingerprint": "1f494c423b7fa16d3978308a881ea10c09ed3332903ba3a7f4b114a6de2c09c3",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-selected-initial.json",
+    "observations": [
+      "月と楕円の輪郭と内部透過、同じ大きさの脈動、4→1を確認。"
+    ],
+    "alpha": "Native alpha inspected on light and castle backgrounds. No painting, body-part assembly or alpha masking.",
+    "previousImageFingerprint": "6ec898a4591ef926bee024caa49a143f836ef015ef97f78e843dca9f750df3dd",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "effects/dark-flower": {
+    "fingerprint": "4bad9d45cebd6310b0e6df01915819a2adb8402f50758b4ba5a1ca9b5023a114",
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-selected-initial.json",
+    "observations": [
+      "蕾→開花→低い最大→花弁に分散の順序、根元の位置、終端で非表示を確認。"
+    ],
+    "alpha": "Native alpha inspected on light and castle backgrounds. No painting, body-part assembly or alpha masking.",
+    "previousImageFingerprint": "75915f2d9201f66ad2c6ce1750b2bbb0497ed85e89c162cf9d8d5dd2aacad48e",
+    "fingerprintVersion": 2,
+    "migration": "Same checked frames/timings/events; verification identity now includes playback inputs."
+  },
+  "arch-demon/attack": {
+    "fingerprint": "30dfdf539df45b22a713211e839d53942f66ccb2575be9427cfea5b3bb71e839",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "全身の縮尺・色調・手足と装備の所属、構え→溜め→発動→復帰と対応FXを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "imp/attack": {
+    "fingerprint": "183cc63f4002c2db12a0218a803f6acf868af3f63d0e433c712661566583a808",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "全身の縮尺・色調・手足と装備の所属、構え→溜め→発動→復帰と対応FXを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "lilith/attack": {
+    "fingerprint": "e61cd864bf83e2de326a957b3365667bc1a5aa57c0c83315ada778f2007bc1bf",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "全身の縮尺・色調・手足と装備の所属、構え→溜め→発動→復帰と対応FXを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "demon-armored-soldier/idle": {
+    "fingerprint": "5bf44b61023d114792c85e716c4938bed20af988e7c022718d5fbc9e7cad6864",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "固定基準絵の体格・配色、装備と翼・尾の接続を比較し、呼吸・浮遊と4→1を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "demon-armored-soldier/hit": {
+    "fingerprint": "ce37f05c63cd58b8df90acd09d48311dcae9ebba4a78186eed4e7826c65586d5",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "被弾の反動から待機へ復帰する2コマ。頭・肩・2腕2脚と装備、翼・尾の接続を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "demon-armored-soldier/down": {
+    "fingerprint": "6ded50b315c824e5474620e8bb8cd8b55b82f27c4c13642f6cb1c3885322f8d4",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "2腕2脚と装備、翼根・尾の所属を追い、崩れる→最終姿勢と終端保持を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "demon-armored-soldier/move": {
+    "fingerprint": "3d7c72e28f5f7a1d15ab424902de74979b53ea0271f261c19b93bf8efc7e4465",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "盾の奥の股→膝→足首の2脚を追跡。2コマ目と5コマ目の遊脚・支持足が交代し、3→4・6→1と剣・盾の位置を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "imp/idle": {
+    "fingerprint": "7a20944b1dc3219c7236e954461c5717f1be8a99a22d752d22efad75223f7851",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "固定基準絵の体格・配色、装備と翼・尾の接続を比較し、呼吸・浮遊と4→1を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "imp/hit": {
+    "fingerprint": "7efc54739fda6a58e1d20d778c3d37383aca21736ec417637d84c21b98061ffd",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "元の単一の被弾星を含む2コマ。手足・翼根・尾の所属と復帰を確認。検収画面では別の衝撃星を重ねない。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "imp/down": {
+    "fingerprint": "5b859cf5e382e29342d7af13d37a163ebdd1931bcff36a362b82adeb02a7732c",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "2腕2脚と装備、翼根・尾の所属を追い、崩れる→最終姿勢と終端保持を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "imp/move": {
+    "fingerprint": "e0e93289347e625547e660cbe45243a6aea83775026e5a7f00a8713cbc3ac60a",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "身体と翼根を固定して浮遊移動。4→1の位置・大きさ・髪と裾のつながり、全コマの見切れを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "imp/danger-1": {
+    "fingerprint": "70ad43c4e1525d077cdebdf5f347c7fd5c970f1eec23b3809de7650cc47bf223",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "胸前の呪弾の溜めから両掌を左へ。2600ms発射、飛行600ms、着弾と呪印を別素材で確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "dream-demon/idle": {
+    "fingerprint": "8f1e080c085a10d0090d18beb0eb820bd0b5e4c1acfc793bd77f029a0169c4c0",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "固定基準絵の体格・配色、装備と翼・尾の接続を比較し、呼吸・浮遊と4→1を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "dream-demon/move": {
+    "fingerprint": "bcfe7a9272873e85de6ce58919e41a655ce66493eb6736a72bbcc1104596d145",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "身体と翼根を固定して浮遊移動。4→1の位置・大きさ・髪と裾のつながり、全コマの見切れを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "dream-demon/attack": {
+    "fingerprint": "305b67203db727b6aef36b9d0ab4d9d4ee40cbc8a9e1fe5f56abd0f82711fd30",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "上方の溜めから左掌へ発射。元の小さい掌光は残し、飛行弾と着弾の二重表示がないことを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "black-knight/idle": {
+    "fingerprint": "d620bdbef14c7e1747160dffbaf9b985c64b28d8c42d5d12ac1a3fd9650ac09b",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "固定基準絵の体格・配色、装備と翼・尾の接続を比較し、呼吸・浮遊と4→1を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "arch-demon/idle": {
+    "fingerprint": "02889d5ed9203e79a81fc6a82dc3da3b0b926e1ed8014531e63edf87548bd16f",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "固定基準絵の体格・配色、装備と翼・尾の接続を比較し、呼吸・浮遊と4→1を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "arch-demon/hit": {
+    "fingerprint": "66eb6a4b2b4da53b4911034ac826421d79980ffdf2bbbddc6dd1d5ad1e0bc283",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "被弾の反動から待機へ復帰する2コマ。頭・肩・2腕2脚と装備、翼・尾の接続を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "arch-demon/down": {
+    "fingerprint": "d2df793f65ddcc56dc8efdf924efd0c6ad23929b9d314020610dcd47d89ba5ef",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "2腕2脚と装備、翼根・尾の所属を追い、崩れる→最終姿勢と終端保持を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "arch-demon/move": {
+    "fingerprint": "1c39537e37f1b918f1c8d6b85793669d8f398533a9766a474ed9c15d89cf03b7",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "奥側を上げる初稿前半と、手前側を上げる修正後半を接続。2／5コマ目は別の脚が上がり、股・膝・足首・爪先を追跡。3→4・6→1を通常・低速で確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "arch-demon/danger-1": {
+    "fingerprint": "386c7798c42682bdbd34eca2d76b69e7caf1e8fbdf9988a79571614ff5b6e684",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "両掌の溜めから4800/5700msの2柱を0.9秒差。各1柱、原点は足元の陣。火傷の表示と後始末を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "arch-demon/danger-2": {
+    "fingerprint": "6c0d5944d61b0252d0203c0d193676c2575b7b725d8343107cfa3aa0e1a44d40",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "翼根・尾・二腕を保持して開掌。5000msに2門、5500msに2体のインプが開口から現れ、門・召喚表示の終了を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "lilith/hit": {
+    "fingerprint": "9b4557dca61b58224114106d3f0f387ae550f7557d822cdb3d266fdf52d18678",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "被弾の反動から待機へ復帰する2コマ。頭・肩・2腕2脚と装備、翼・尾の接続を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "lilith/down": {
+    "fingerprint": "4c124209b4a4ab48c7ad4bfc81e79c773cdc041940e1c0a158dadce94f4459da",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "2腕2脚と装備、翼根・尾の所属を追い、崩れる→最終姿勢と終端保持を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "lilith/move": {
+    "fingerprint": "d0ae7de821776dc5b7c7701e955e9144b444e9b454fd69c2c01051fae057a332",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "身体と翼根を固定して浮遊移動。4→1の位置・大きさ・髪と裾のつながり、全コマの見切れを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "lilith/danger-2": {
+    "fingerprint": "2272f32984f59635bda79ff9556ad17929bba0496f210cb315458dc0a11e7bba",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "口元の手を同じ腕に保ち、もう一方の腕を左へ伸ばす。2腕・翼根・浮遊する2脚、4600msの封印と復帰を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/royal-cleave": {
+    "fingerprint": "55f0ef2ac2964cb43879f27537446578068542adbf08a8e563bc027010c89ca1",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "右上から左下の同じ着地点へ太い斬撃。剣筋の終端が火花と岩片になり、枠外の見切れなし。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "lilith/idle": {
+    "fingerprint": "144c1b82eca86690bc9e1c19b64b83cf19ed94caf9ddce4f23c8ad67bf29dd3f",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "角・翼端・髪・裾の余白、同一縮尺、小さい浮遊上下と4→1を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "demon-armored-soldier/danger-1": {
+    "fingerprint": "9ac1dc13a510a364db9e4584de92be9b8123da3ca7564fffa0755ac0c99efb9d",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "剣の片腕と盾の腕を保持した水平の突き。剣先と盾の全形、2600msの衝撃と破甲表示を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "black-knight/danger-1": {
+    "fingerprint": "c6e0ebb86f3622cb3f3181bf0dde2c5c261227109c13dec0470348492949e501",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "修正済みの両手大剣姿勢を再利用。4.6秒の溜めと大きい専用斬撃で通常剣撃と区別し、剣先・手・接地・復帰を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "black-knight/hit": {
+    "fingerprint": "07332744e885d42d34a36449aa5e512f971372dd687d6b3b764c574e292cf52b",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "大剣を保持した反動と直立復帰。角・肩・剣と2腕2脚、全身の余白を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "black-knight/down": {
+    "fingerprint": "4235b38d66392fd77c26388c59040d16506b17e8ec15be442ad6e1277f07146c",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "2脚を折り、同じ大剣と手を地面へ下ろす。角・マント・柄の握りを保ち、最後の姿勢が保持されることを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "black-knight/danger-2": {
+    "fingerprint": "7888336d95f6dfdf29975789c04c19d814e1891a6a12bcf65be24bc56e090622",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "腰の高さで剣を右へ引く→左へ水平薙ぎ→復帰。両手の柄への接続、同じ剣、刀身とマントの余白、4400msの円弧を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "black-knight/move": {
+    "fingerprint": "2d7a3cb58a4ea134239924b9a845e8c15724f965f6fd50765e5cb9019c764ebd",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "第2生成を前半、第1生成を後半に配置。2／5コマ目で別の足が持ち上がり、2脚の股→膝→足首を追跡。透明な隙間が狭い後者は手動の矩形分割だけで保持し、隣の剣やマントの混入なし。3→4・6→1と色調を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/black-ring-slash": {
+    "fingerprint": "56e1794d77f761dde331259f5e9ac1bb7a11bb098c43708691307bba1f6484cb",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "中央が透過した左向き円弧。共通原点へ登録し、展開→最大→縮む軌跡、終了で非表示を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/curse-impact": {
+    "fingerprint": "da8645c65f0e0c87059eb64e4bd6612aa525dd4c554882d9ae3e62aa945fe716",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "空洞の輪の中心でなく白い着弾核へ登録。拡大と分散、対象への重ね合わせ、終端で非表示を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/demon-pillar": {
+    "fingerprint": "e1c478c273ce761145f3da37ac7b76aa8d4561ed9da0e6d5984749f99b4df2a6",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "陣の中心を共通の地面原点へ登録。単柱の展開・最大・収束、上端と外周の余白を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/demon-impact": {
+    "fingerprint": "35da0708912ff75ee1edb2c07f7116185a5344a8ee7d0d66f30e09443fcff644",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "短い一打の衝撃。白い核を固定し、小さく短い表示で対象を覆い続けないことを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/silence-seal": {
+    "fingerprint": "fea7c6d5f72f24bc39374f784e4cee19e67830c25dc945f771274f5d4bff1c7b",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "本編の忍者の封印を元RGB・alphaで流用。印の周囲の透過、出現と発光・終了、対象の頭上への小さい配置を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/curse": {
+    "fingerprint": "ee4864536cf192be3716c0aeb16fa9ac39787909ef3c50405f80af9cea73bd68",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "本編の呪術師の3コマの付与印を流用。記号の可読性・透過・順序と対象の頭上への配置を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/end-cross": {
+    "fingerprint": "ec08a326362c828ddf38bb7c082dbb77ec3d7b251ec49fa0ee9adecd08e1cc3b",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "本編の単独の炉心光線を元の青白色のまま流用。単帯4コマ・原点と左向きの放射を確認。±28度・1秒差の二帯は既存の魔神検収記録を維持。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/end-ring": {
+    "fingerprint": "d1453ceae23dfd312a655da5e6d7816619d0161d92b2b9e0990f2ece22721f08",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "本編の忍者の中空の終撃輪を流用。色調・透過を保ち、検収画面で縦0.3倍の低い楕円配置、分散と終了を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/armor-break": {
+    "fingerprint": "7ba1630ef8b04aaa03934570716ea6149fcf4c68aae37dbbfb6695e14437f1ce",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "火山で検収済みの割れた盾を流用。4コマとも盾を保つ脈動、中心位置と反復を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/burn": {
+    "fingerprint": "a8534598e9cdbbd8f5422ec33354426acca66bd434d251f2d8f470f83af44ea4",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "火山で検収済みの小さい火種の輪を流用。周囲と中心の透過、4→1の炎の脈動と対象への重なりを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/claw-arc": {
+    "fingerprint": "e01f2c81edd17ab0a4c70a512ec9342d5de257e6e0f970778febf5bdb90e15b1",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "火山で検収済みの3本の爪跡を流用。発生→最大→火の粉の順序、余白、インプの爪撃への接続を確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  },
+  "effects/summon-gate": {
+    "fingerprint": "ddc8052fa53f7760d7b329159636bf6b8b46495fb37c6e426781aae01e22df43",
+    "fingerprintVersion": 2,
+    "date": "2026-10-15 JST",
+    "framesChecked": true,
+    "playbackChecked": true,
+    "accepted": true,
+    "scope": "production candidate; runtime registration and combat timing pending",
+    "evidence": "../../../../public/assets/demon-castle-motions/v2/output/demon-castle-motions/browser/playback-e5caacea7386.json",
+    "observations": [
+      "明背景で門の内側の透明を確認。発光中の外枠寸法と足元を固定し、開く→最大→崩れる順、2地点とインプの重ね合わせを確認。"
+    ],
+    "normalPlaybackVisual": true,
+    "normalAndSlowBrowserVerified": true,
+    "alpha": "Native alpha composited on light and castle backgrounds. No opaque backdrop, clipping or foreign body fragments in exported rectangles.",
+    "runtimeCheckPending": true
+  }
+}

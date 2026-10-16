@@ -1,0 +1,101 @@
+{
+  "id": "imp/move",
+  "enemy": "imp",
+  "region": "demon-castle",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/imp/move-generated.png"
+  ],
+  "durations": [
+    150,
+    150,
+    150,
+    150
+  ],
+  "phases": [
+    "上",
+    "中立",
+    "下",
+    "中立"
+  ],
+  "enemyLabel": "インプ",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 200,
+        "top": 50,
+        "right": 711,
+        "bottom": 482
+      },
+      "sourceWidth": 812,
+      "sourceHeight": 531,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 296684,
+      "transparentFraction": 0.6880873526110229
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 99,
+        "top": 73,
+        "right": 569,
+        "bottom": 485
+      },
+      "sourceWidth": 724,
+      "sourceHeight": 531,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 262495,
+      "transparentFraction": 0.682791251781794
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 207,
+        "top": 46,
+        "right": 668,
+        "bottom": 455
+      },
+      "sourceWidth": 797,
+      "sourceHeight": 493,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 267977,
+      "transparentFraction": 0.6820124147093182
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 127,
+        "top": 43,
+        "right": 601,
+        "bottom": 455
+      },
+      "sourceWidth": 739,
+      "sourceHeight": 493,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 238974,
+      "transparentFraction": 0.6559327197819541
+    }
+  ],
+  "reference": "../../../references/imp.png",
+  "originalSources": [
+    "../../../sources/imp/move-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

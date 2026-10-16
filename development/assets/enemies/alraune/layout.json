@@ -1,0 +1,500 @@
+{
+  "assets": [
+    {
+      "enemy": "alraune",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 640,
+      "frameHeight": 384,
+      "pivot": {
+        "x": 360,
+        "y": 367
+      },
+      "anchorMode": "root",
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "id": "idle",
+      "label": "待機",
+      "scale": 0.5,
+      "loop": true,
+      "directory": "assets/enemies/alraune/motions/idle",
+      "source": "../../source/alraune-idle-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 400,
+          "phase": "基準姿勢",
+          "anchor": {
+            "x": 400,
+            "y": 502
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 400,
+          "phase": "息を吸う",
+          "anchor": {
+            "x": 403,
+            "y": 502
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 400,
+          "phase": "花と髪が揺れる",
+          "anchor": {
+            "x": 399,
+            "y": 502
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 400,
+          "phase": "基準姿勢へ",
+          "anchor": {
+            "x": 402,
+            "y": 502
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "alraune",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 640,
+      "frameHeight": 384,
+      "pivot": {
+        "x": 360,
+        "y": 367
+      },
+      "anchorMode": "root",
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "id": "move",
+      "label": "移動",
+      "scale": 0.5,
+      "loop": true,
+      "directory": "assets/enemies/alraune/motions/move",
+      "source": "../../source/alraune-move-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 200,
+          "phase": "前の根を伸ばす",
+          "anchor": {
+            "x": 420,
+            "y": 500
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 200,
+          "phase": "根を縮めて引く",
+          "anchor": {
+            "x": 423,
+            "y": 501
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 200,
+          "phase": "別の根を伸ばす",
+          "anchor": {
+            "x": 416,
+            "y": 476
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 200,
+          "phase": "接地・次の踏み替えへ",
+          "anchor": {
+            "x": 412,
+            "y": 476
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "alraune",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 640,
+      "frameHeight": 384,
+      "pivot": {
+        "x": 360,
+        "y": 367
+      },
+      "anchorMode": "root",
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "id": "hit",
+      "label": "被弾",
+      "scale": 0.56,
+      "reuseIdle": [
+        3
+      ],
+      "directory": "assets/enemies/alraune/motions/hit",
+      "source": "../../source/alraune-hit-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 100,
+          "phase": "衝撃・のけぞる",
+          "anchor": {
+            "x": 420,
+            "y": 482
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 140,
+          "phase": "深いのけぞり",
+          "anchor": {
+            "x": 477,
+            "y": 482
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 180,
+          "phase": "立て直す",
+          "anchor": {
+            "x": 408,
+            "y": 474
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 180,
+          "phase": "待機へ復帰",
+          "anchor": {
+            "x": 412,
+            "y": 474
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "alraune",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 640,
+      "frameHeight": 384,
+      "pivot": {
+        "x": 360,
+        "y": 367
+      },
+      "anchorMode": "root",
+      "rowEdges": [
+        0,
+        632,
+        1024
+      ],
+      "id": "down",
+      "label": "撃破",
+      "scale": 0.54,
+      "terminal": true,
+      "columnEdgesByRow": [
+        [
+          0,
+          768,
+          1536
+        ],
+        [
+          0,
+          758,
+          1536
+        ]
+      ],
+      "directory": "assets/enemies/alraune/motions/down",
+      "source": "../../source/alraune-down-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 250,
+          "phase": "萎れ始める",
+          "anchor": {
+            "x": 408,
+            "y": 535
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 300,
+          "phase": "花の中へ崩れる",
+          "anchor": {
+            "x": 379,
+            "y": 542
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 350,
+          "phase": "花とツルが倒れる",
+          "anchor": {
+            "x": 411,
+            "y": 321
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 600,
+          "phase": "低く倒れた姿で保持",
+          "anchor": {
+            "x": 389,
+            "y": 324
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "alraune",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 640,
+      "frameHeight": 384,
+      "pivot": {
+        "x": 360,
+        "y": 367
+      },
+      "anchorMode": "root",
+      "rowEdges": [
+        0,
+        592,
+        1086
+      ],
+      "id": "vine-slam",
+      "label": "ツルの叩きつけ",
+      "scale": 0.64,
+      "alphaCutoff": 64,
+      "columnEdgesByRow": [
+        [
+          0,
+          752,
+          1448
+        ],
+        [
+          0,
+          836,
+          1448
+        ]
+      ],
+      "reuseIdle": [
+        3
+      ],
+      "events": [
+        {
+          "id": "vine-impact",
+          "frame": 2,
+          "timeMs": 370,
+          "type": "attack",
+          "description": "ツルが左の地面に接触する開始時刻"
+        }
+      ],
+      "directory": "assets/enemies/alraune/motions/vine-slam",
+      "source": "../../source/alraune-vine-slam-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 240,
+          "phase": "振りかぶる",
+          "anchor": {
+            "x": 500,
+            "y": 567
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 130,
+          "phase": "振り下ろし・残像",
+          "anchor": {
+            "x": 416,
+            "y": 582
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 180,
+          "phase": "地面を叩く・残像",
+          "anchor": {
+            "x": 550,
+            "y": 465
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 250,
+          "phase": "ツルを戻して待機へ",
+          "anchor": {
+            "x": 315,
+            "y": 465
+          }
+        }
+      ]
+    },
+    {
+      "enemy": "alraune",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 640,
+      "frameHeight": 384,
+      "pivot": {
+        "x": 360,
+        "y": 367
+      },
+      "anchorMode": "root",
+      "rowEdges": [
+        0,
+        512,
+        1024
+      ],
+      "id": "seed-burst",
+      "projectilePreview": {
+        "effect": "alraune-seed-volley",
+        "manifest": "../../../../effects/alraune-seed-volley/manifest.json",
+        "velocity": {
+          "x": -480,
+          "y": 0
+        },
+        "lifetimeMs": 1600,
+        "scale": 1,
+        "leadInPx": 12,
+        "paddingLeft": 240,
+        "defaultZoom": 1,
+        "streams": [
+          {
+            "sourceY": 0,
+            "sourceHeight": 50,
+            "sourceCenterY": 35,
+            "muzzle": {
+              "x": 160,
+              "y": 202
+            }
+          },
+          {
+            "sourceY": 50,
+            "sourceHeight": 30,
+            "sourceCenterY": 66,
+            "muzzle": {
+              "x": 140,
+              "y": 252
+            }
+          },
+          {
+            "sourceY": 80,
+            "sourceHeight": 48,
+            "sourceCenterY": 96,
+            "muzzle": {
+              "x": 163,
+              "y": 305
+            }
+          }
+        ]
+      },
+      "label": "小花の種・連射",
+      "scale": 0.54,
+      "loop": true,
+      "events": [
+        {
+          "id": "seed-volley-a",
+          "frame": 0,
+          "timeMs": 0,
+          "type": "spawn-projectile",
+          "effect": "alraune-seed-volley",
+          "origin": {
+            "x": 140,
+            "y": 260
+          }
+        },
+        {
+          "id": "seed-volley-b",
+          "frame": 2,
+          "timeMs": 200,
+          "type": "spawn-projectile",
+          "effect": "alraune-seed-volley",
+          "origin": {
+            "x": 140,
+            "y": 260
+          }
+        }
+      ],
+      "directory": "assets/enemies/alraune/motions/seed-burst",
+      "source": "../../source/alraune-seed-burst-generated-v1.png",
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 100,
+          "phase": "発射A・小花が左へ伸びる",
+          "anchor": {
+            "x": 470,
+            "y": 483
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 100,
+          "phase": "反動A・小花が戻る",
+          "anchor": {
+            "x": 445,
+            "y": 483
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 100,
+          "phase": "発射B・小花が左へ伸びる",
+          "anchor": {
+            "x": 466,
+            "y": 474
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 100,
+          "phase": "反動B・次の連射へ",
+          "anchor": {
+            "x": 440,
+            "y": 476
+          }
+        }
+      ]
+    },
+    {
+      "id": "alraune-seed-volley",
+      "label": "アルラウネの種・弾群",
+      "directory": "assets/effects/alraune-seed-volley",
+      "source": "source/alraune-seed-volley-generated-v1.png",
+      "prompt": "PROMPT.md",
+      "frameWidth": 320,
+      "frameHeight": 128,
+      "pivot": {
+        "x": 160,
+        "y": 64
+      },
+      "scale": 0.2,
+      "anchorMode": "bounds-center",
+      "columns": 1,
+      "columnEdges": [
+        0,
+        1536
+      ],
+      "rowEdges": [
+        0,
+        1024
+      ],
+      "loop": true,
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 1000,
+          "phase": "左へ飛ぶ種の弾群・3段25粒"
+        }
+      ]
+    }
+  ]
+}

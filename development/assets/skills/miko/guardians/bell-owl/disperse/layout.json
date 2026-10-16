@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/bell-owl-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 664,
+      "height": 728
+    },
+    {
+      "x": 664,
+      "y": 0,
+      "width": 813,
+      "height": 728
+    },
+    {
+      "x": 1477,
+      "y": 0,
+      "width": 684,
+      "height": 728
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 840
+    },
+    {
+      "x": 512,
+      "y": 840
+    },
+    {
+      "x": 512,
+      "y": 840
+    }
+  ],
+  "scale": 0.5071574642126789
+}

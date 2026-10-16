@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "character": "miko",
+  "motion": "prayer",
+  "label": "祈り・左右に振る",
+  "facing": "right",
+  "sheet": "miko-prayer.png",
+  "width": 1280,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.30465116279069765,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/miko/motions/prayer/source/miko-prayer-generated-v1.png",
+  "sourceWidth": 1254,
+  "sourceHeight": 1254,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "columnSplit": 639,
+  "rowSplit": 623,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "prayer-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "左へ振る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 377,
+        "y": 597
+      },
+      "sourceBounds": {
+        "left": 170,
+        "top": 19,
+        "right": 499,
+        "bottom": 597
+      },
+      "bounds": {
+        "left": 97,
+        "top": 63,
+        "right": 197,
+        "bottom": 239
+      },
+      "visiblePixels": 8389,
+      "transparentPixels": 71864
+    },
+    {
+      "index": 1,
+      "file": "prayer-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "中央へ上げる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 314,
+        "y": 598
+      },
+      "sourceBounds": {
+        "left": 118,
+        "top": 17,
+        "right": 436,
+        "bottom": 598
+      },
+      "bounds": {
+        "left": 101,
+        "top": 62,
+        "right": 197,
+        "bottom": 239
+      },
+      "visiblePixels": 8112,
+      "transparentPixels": 72541
+    },
+    {
+      "index": 2,
+      "file": "prayer-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "右へ振る",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 378,
+        "y": 596
+      },
+      "sourceBounds": {
+        "left": 185,
+        "top": 20,
+        "right": 560,
+        "bottom": 596
+      },
+      "bounds": {
+        "left": 102,
+        "top": 64,
+        "right": 215,
+        "bottom": 239
+      },
+      "visiblePixels": 8483,
+      "transparentPixels": 71805
+    },
+    {
+      "index": 3,
+      "file": "prayer-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "中央へ戻す",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 314,
+        "y": 596
+      },
+      "sourceBounds": {
+        "left": 123,
+        "top": 37,
+        "right": 435,
+        "bottom": 596
+      },
+      "bounds": {
+        "left": 102,
+        "top": 69,
+        "right": 197,
+        "bottom": 239
+      },
+      "visiblePixels": 8180,
+      "transparentPixels": 72337
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "attack",
+    "label": "アークデーモン・拳撃",
+    "manifest": "attack/manifest.json"
+  },
+  {
+    "id": "idle",
+    "label": "アークデーモン・待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "アークデーモン・被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "アークデーモン・撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "アークデーモン・歩行",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "danger-1",
+    "label": "アークデーモン・魔炎双柱",
+    "manifest": "danger-1/manifest.json"
+  },
+  {
+    "id": "danger-2",
+    "label": "アークデーモン・悪魔の援軍",
+    "manifest": "danger-2/manifest.json"
+  }
+]

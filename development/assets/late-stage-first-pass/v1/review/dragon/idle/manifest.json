@@ -1,0 +1,101 @@
+{
+  "id": "dragon/idle",
+  "enemy": "dragon",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dragon/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "ドラゴン",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 112,
+        "top": 65,
+        "right": 725,
+        "bottom": 478
+      },
+      "sourceWidth": 785,
+      "sourceHeight": 516,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 215488,
+      "transparentFraction": 0.5319903224213697
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 59,
+        "top": 38,
+        "right": 693,
+        "bottom": 479
+      },
+      "sourceWidth": 751,
+      "sourceHeight": 516,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 182923,
+      "transparentFraction": 0.4720398641604476
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 112,
+        "top": 35,
+        "right": 725,
+        "bottom": 451
+      },
+      "sourceWidth": 790,
+      "sourceHeight": 508,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 212037,
+      "transparentFraction": 0.5283489484700489
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 64,
+        "top": 43,
+        "right": 680,
+        "bottom": 451
+      },
+      "sourceWidth": 746,
+      "sourceHeight": 508,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 191247,
+      "transparentFraction": 0.5046521078296848
+    }
+  ],
+  "reference": "../../../references/dragon.png",
+  "originalSources": [
+    "../../../sources/dragon/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

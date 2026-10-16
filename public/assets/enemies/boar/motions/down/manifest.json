@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "boar",
+  "motion": "down",
+  "facing": "left",
+  "label": "撃破",
+  "sheet": "boar-down.png",
+  "preview": "../../../../../../development/assets/enemies/boar/motions/down/boar-down-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/boar/PROMPT.md",
+  "width": 1280,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1020,
+  "loop": false,
+  "terminal": true,
+  "transitions": {
+    "from": "idle",
+    "to": null,
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "endBehavior": "hold",
+  "source": "../../../../../../development/assets/enemies/boar/source/boar-down-generated-v2.png",
+  "sourceScale": 0.34,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "down-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 140,
+      "phase": "前脚が崩れる",
+      "bounds": {
+        "left": 63,
+        "top": 55,
+        "right": 257,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 331,
+        "y": 612
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "down-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 220,
+      "phase": "胸を地面へ落とす",
+      "bounds": {
+        "left": 60,
+        "top": 90,
+        "right": 260,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 0,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 317,
+        "y": 606
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "down-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 260,
+      "phase": "手前の左側へ倒れる",
+      "bounds": {
+        "left": 61,
+        "top": 100,
+        "right": 259,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 324,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "down-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 224,
+      "durationMs": 400,
+      "phase": "横倒し・最終姿勢を保持",
+      "bounds": {
+        "left": 57,
+        "top": 104,
+        "right": 263,
+        "bottom": 207
+      },
+      "sourceCell": {
+        "x": 627,
+        "y": 627,
+        "width": 627,
+        "height": 627
+      },
+      "sourceAnchor": {
+        "x": 315,
+        "y": 511
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

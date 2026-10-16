@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "character": "mage",
+  "motion": "cast-forward",
+  "label": "杖を前へ",
+  "facing": "right",
+  "sheet": "mage-cast-forward.png",
+  "width": 1024,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 400,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "chant",
+    "to": "cast-forward-hold"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "scale": 0.30957683741648107,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/mage/motions/cast-forward/source/mage-cast-forward-generated-v1.png",
+  "sourceWidth": 1536,
+  "sourceHeight": 1024,
+  "sourceGrid": [
+    2,
+    2
+  ],
+  "columnSplit": 802,
+  "rowSplit": 521,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Draw at the shared ground pivot. Independent wind PNG effects live under assets/effects; connectionSource marks identical boundary poses.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "cast-forward-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "詠唱の構え",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 495
+      },
+      "sourceBounds": {
+        "left": 175,
+        "top": 41,
+        "right": 613,
+        "bottom": 495
+      },
+      "bounds": {
+        "left": 60,
+        "top": 68,
+        "right": 186,
+        "bottom": 207
+      },
+      "visiblePixels": 9372,
+      "transparentPixels": 46331,
+      "connectionSource": {
+        "motion": "chant",
+        "frame": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "cast-forward-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "肘を前へ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 370,
+        "y": 494
+      },
+      "sourceBounds": {
+        "left": 117,
+        "top": 43,
+        "right": 623,
+        "bottom": 494
+      },
+      "bounds": {
+        "left": 50,
+        "top": 68,
+        "right": 206,
+        "bottom": 207
+      },
+      "visiblePixels": 10306,
+      "transparentPixels": 45011
+    },
+    {
+      "index": 2,
+      "file": "cast-forward-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "腕を伸ばす",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 488
+      },
+      "sourceBounds": {
+        "left": 157,
+        "top": 36,
+        "right": 726,
+        "bottom": 488
+      },
+      "bounds": {
+        "left": 48,
+        "top": 67,
+        "right": 223,
+        "bottom": 207
+      },
+      "visiblePixels": 10633,
+      "transparentPixels": 44610
+    },
+    {
+      "index": 3,
+      "file": "cast-forward-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "前方へ構える",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 371,
+        "y": 488
+      },
+      "sourceBounds": {
+        "left": 111,
+        "top": 40,
+        "right": 738,
+        "bottom": 488
+      },
+      "bounds": {
+        "left": 48,
+        "top": 69,
+        "right": 241,
+        "bottom": 207
+      },
+      "visiblePixels": 10563,
+      "transparentPixels": 44800
+    }
+  ]
+}

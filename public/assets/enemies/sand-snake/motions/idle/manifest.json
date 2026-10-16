@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-snake",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "sand-snake-idle.png",
+  "preview": "../../../../../../development/assets/enemies/sand-snake/motions/idle/sand-snake-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1360,
+  "height": 280,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 340,
+  "frameHeight": 280,
+  "frameCount": 4,
+  "pivot": {
+    "x": 197,
+    "y": 262
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/sand-snake/source/idle-registered.png",
+  "sourceScale": 0.35864978902953587,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 220,
+      "phase": "呼吸1",
+      "bounds": {
+        "left": 94,
+        "top": 92,
+        "right": 288,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 771,
+        "height": 585
+      },
+      "sourceAnchor": {
+        "x": 431,
+        "y": 539
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 340,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 220,
+      "phase": "呼吸2",
+      "bounds": {
+        "left": 94,
+        "top": 89,
+        "right": 290,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 771,
+        "y": 0,
+        "width": 771,
+        "height": 585
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 539
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 680,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 220,
+      "phase": "呼吸3",
+      "bounds": {
+        "left": 95,
+        "top": 95,
+        "right": 292,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 585,
+        "width": 771,
+        "height": 585
+      },
+      "sourceAnchor": {
+        "x": 426,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1020,
+      "y": 0,
+      "width": 340,
+      "height": 280,
+      "durationMs": 220,
+      "phase": "呼吸4",
+      "bounds": {
+        "left": 94,
+        "top": 93,
+        "right": 289,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 771,
+        "y": 585,
+        "width": 771,
+        "height": 585
+      },
+      "sourceAnchor": {
+        "x": 367,
+        "y": 515
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-snake-idle-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-snake.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 735,
+          "height": 553
+        },
+        {
+          "x": 735,
+          "y": 0,
+          "width": 707,
+          "height": 553
+        },
+        {
+          "x": 0,
+          "y": 553,
+          "width": 739,
+          "height": 538
+        },
+        {
+          "x": 739,
+          "y": 553,
+          "width": 703,
+          "height": 538
+        }
+      ]
+    }
+  ]
+}

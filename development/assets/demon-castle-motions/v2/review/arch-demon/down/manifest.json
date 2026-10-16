@@ -1,0 +1,79 @@
+{
+  "id": "arch-demon/down",
+  "label": "アークデーモン・撃破",
+  "enemy": "arch-demon",
+  "motion": "down",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "翼と尾がセル境界に近い。2腕・2脚・翼根を倒れた姿勢でも追って検収する。",
+    "撃破後の腹核・目の明るさを整える。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": true,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 400,
+      "phase": "崩れる",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/reaction-generated.png",
+      "sourceSha256": "2325de9d697359336554fa7a4c75d99f454ef4dba71ad6081a4ec3735e4c4659",
+      "sourceRect": {
+        "left": 0,
+        "top": 653,
+        "width": 640,
+        "height": 579
+      },
+      "sourceAnchor": [
+        306,
+        514
+      ],
+      "scale": 0.4570383912248629,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "4053f6a2b4fc35bc69a2e0d83ad24c73497e5050f71218f8b2d359879a46cae4",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8410797119140625
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 1000,
+      "phase": "終端保持",
+      "source": "../../../../../late-stage-first-pass/v1/sources/arch-demon/reaction-generated.png",
+      "sourceSha256": "2325de9d697359336554fa7a4c75d99f454ef4dba71ad6081a4ec3735e4c4659",
+      "sourceRect": {
+        "left": 640,
+        "top": 653,
+        "width": 637,
+        "height": 579
+      },
+      "sourceAnchor": [
+        287,
+        505
+      ],
+      "scale": 0.4570383912248629,
+      "pivot": [
+        300,
+        445
+      ],
+      "sha256": "62c7ef1b4fef467b7e361ab49b9f9c586f3c8756ed4b429b4de7190d7238a027",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8806648254394531
+    }
+  ],
+  "fingerprint": "d2df793f65ddcc56dc8efdf924efd0c6ad23929b9d314020610dcd47d89ba5ef",
+  "events": [],
+  "effects": []
+}

@@ -1,0 +1,200 @@
+{
+  "id": "magma-salamander/attack",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "label": "噛みつき",
+  "kind": null,
+  "motion": "attack",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/magma-salamander.png",
+  "originalSources": [
+    "../../../sources/magma-salamander/attack-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/magma-salamander/attack/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "transparentFraction": 0.8747520446777344,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 111,
+        "top": 137,
+        "right": 441,
+        "bottom": 355
+      },
+      "visibleBounds": {
+        "left": 150,
+        "top": 171,
+        "right": 429,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/attack-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 804,
+        "height": 536
+      },
+      "sourceScale": 0.42105263157894735,
+      "sourceAnchor": {
+        "x": 461,
+        "y": 492
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "transparentFraction": 0.876861572265625,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 141,
+        "top": 151,
+        "right": 436,
+        "bottom": 356
+      },
+      "visibleBounds": {
+        "left": 151,
+        "top": 173,
+        "right": 430,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/attack-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 804,
+        "y": 0,
+        "width": 732,
+        "height": 536
+      },
+      "sourceScale": 0.42105263157894735,
+      "sourceAnchor": {
+        "x": 385,
+        "y": 491
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8660163879394531,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 119,
+        "top": 156,
+        "right": 454,
+        "bottom": 360
+      },
+      "visibleBounds": {
+        "left": 122,
+        "top": 173,
+        "right": 441,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/attack-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 536,
+        "width": 841,
+        "height": 488
+      },
+      "sourceScale": 0.42105263157894735,
+      "sourceAnchor": {
+        "x": 466,
+        "y": 433
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "transparentFraction": 0.881591796875,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 147,
+        "top": 156,
+        "right": 424,
+        "bottom": 347
+      },
+      "visibleBounds": {
+        "left": 154,
+        "top": 176,
+        "right": 420,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/magma-salamander/attack-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 841,
+        "y": 536,
+        "width": 695,
+        "height": 488
+      },
+      "sourceScale": 0.42105263157894735,
+      "sourceAnchor": {
+        "x": 382,
+        "y": 433
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "bite-impact",
+      "timeMs": 280,
+      "slot": 0,
+      "placement": "target",
+      "impact": null,
+      "residue": null,
+      "originFrame": 2
+    }
+  ],
+  "effects": [
+    "bite-impact"
+  ],
+  "repeatRelease": false
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head><base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idle RPG — 攻撃エフェクト</title>
+  <link rel="stylesheet" href="/development/labs/css/sprite-lab.css">
+  <link rel="stylesheet" href="/development/labs/css/effect-lab.css">
+  <script defer src="/development/labs/js/effect-lab.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">✦</span><span>IDLE RPG <b>SPRITE LAB</b></span></a><span class="study-number"><a href="/development/labs/enemies.html#treant">トレントの動作 ↗</a>　<a href="/development/labs/battle.html">戦闘シーン ↗</a></span></header>
+    <main>
+      <section class="intro"><div><p class="eyebrow">ATTACK EFFECTS</p><h1>樹の実・爆発・根っこ・種<span class="version">透過素材</span></h1><p class="intro-copy">樹の実爆弾、地面からの根っこ攻撃、アルラウネの種の弾群。爆発はほかの攻撃にも使用できます。<br>種は複数粒をまとめた1枚の投射物。ゲームでは画像全体を左へ動かします。</p></div></section>
+      <div class="effect-controls"><button id="toggle" type="button" class="play-button">一時停止</button><button id="restart" type="button" class="restart-button">最初から</button><label>背景 <select id="background"><option value="dark">暗色</option><option value="light">明色</option><option value="checker">透過確認</option></select></label><label>速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label></div>
+      <p id="status" role="status">素材を読み込んでいます…</p>
+      <div id="effects" class="effect-grid"></div>
+    </main>
+    <footer><span>IDLE RPG / SPRITE LAB</span><span>ATTACK EFFECT ASSETS</span></footer>
+  </div>
+</body>
+</html>

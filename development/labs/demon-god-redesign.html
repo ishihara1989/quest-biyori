@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>魔神 二腕・無面・浮遊</title><link rel="stylesheet" href="/development/labs/css/demon-god-redesign.css"></head>
+<body><header><div><h1>魔神 <small>二腕・無面・浮遊</small></h1><span class="badge">制作候補 v2</span></div><nav><a href="/development/labs/late-stage-first-pass.html">初回素材</a><a href="/development/assets/demon-god-redesign/v2/PROMPTS.md">生成指定</a><a href="/development/assets/demon-god-redesign/v2/qa.json">検収記録</a></nav></header>
+<main><aside><div class="reference"><img src="/development/assets/demon-god-redesign/v2/references/demon-god.png" alt="金の頭部装飾を加えた左向きの魔神"></div><div id="motions" aria-label="モーション"></div><p id="summary" role="status">読込中</p></aside>
+<section class="review"><div class="stage"><canvas id="canvas" width="768" height="400" aria-label="魔神のモーションと既存エフェクト"></canvas></div>
+<div class="controls"><button id="previous" title="前のコマ" aria-label="前のコマ">|◀</button><button id="play" title="再生・停止" aria-label="再生・停止">⏸</button><button id="next" title="次のコマ" aria-label="次のコマ">▶|</button><button id="replay" title="最初から再生" aria-label="最初から再生">↻</button><label>速度 <select id="speed" aria-label="再生速度"><option value="1">1×</option><option value="0.5">0.5×</option><option value="0.25">0.25×</option></select></label><label><input type="checkbox" id="loop">ループ</label><label><input type="checkbox" id="background" checked>魔王城</label><label><input type="checkbox" id="effects" checked>エフェクト</label><span id="phase"></span></div>
+<div id="frames" aria-label="全コマ"></div><div id="reuse"></div><p id="error" role="alert"></p></section></main>
+<script src="/development/labs/js/demon-god-redesign.js"></script></body></html>

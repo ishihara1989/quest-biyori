@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "enemy": "fenrir",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "fenrir-move.png",
+  "preview": "../../../../../../development/assets/enemies/fenrir/motions/move/fenrir-move-preview.gif",
+  "prompt": "../../../../../../development/assets/glacier-motions/SINGLE-TROT-PROMPTS.md",
+  "width": 3360,
+  "height": 400,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 560,
+  "frameHeight": 400,
+  "frameCount": 6,
+  "pivot": {
+    "x": 314,
+    "y": 378
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/glacier-motions/registered/fenrir/move.png",
+  "sourceScale": 0.24301964839710444,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "../../../../../../development/assets/glacier-motions/single-trot.json",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "移動1",
+      "bounds": {
+        "left": 184,
+        "top": 144,
+        "right": 439,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1311,
+        "height": 1311
+      },
+      "sourceAnchor": {
+        "x": 726.5,
+        "y": 1172.6666666666665
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 560,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "移動2",
+      "bounds": {
+        "left": 176,
+        "top": 144,
+        "right": 446,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 1311,
+        "y": 0,
+        "width": 1311,
+        "height": 1311
+      },
+      "sourceAnchor": {
+        "x": 744.5,
+        "y": 1207.6666666666665
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1120,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "移動3",
+      "bounds": {
+        "left": 187,
+        "top": 144,
+        "right": 436,
+        "bottom": 377
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1311,
+        "width": 1311,
+        "height": 1311
+      },
+      "sourceAnchor": {
+        "x": 654.5,
+        "y": 1141.6666666666665
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1680,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "移動4",
+      "bounds": {
+        "left": 188,
+        "top": 144,
+        "right": 435,
+        "bottom": 377
+      },
+      "sourceCell": {
+        "x": 1311,
+        "y": 1311,
+        "width": 1311,
+        "height": 1311
+      },
+      "sourceAnchor": {
+        "x": 736.5,
+        "y": 1172.6666666666665
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2240,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "移動5",
+      "bounds": {
+        "left": 185,
+        "top": 144,
+        "right": 438,
+        "bottom": 377
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 2622,
+        "width": 1311,
+        "height": 1311
+      },
+      "sourceAnchor": {
+        "x": 688.9494255668349,
+        "y": 1185.6666666666665
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2800,
+      "y": 0,
+      "width": 560,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "移動6",
+      "bounds": {
+        "left": 177,
+        "top": 144,
+        "right": 445,
+        "bottom": 378
+      },
+      "sourceCell": {
+        "x": 1311,
+        "y": 2622,
+        "width": 1311,
+        "height": 1311
+      },
+      "sourceAnchor": {
+        "x": 735,
+        "y": 1187.6666666666665
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "reference": "../../../../../../development/assets/glacier-motions/references/fenrir.png",
+  "originalSources": [
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/move-frame-1-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/move-frame-2-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/move-frame-3-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/move-frame-4-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/move-frame-5-generated-v2.png",
+    "../../../../../../development/assets/glacier-motions/sources/fenrir/move-frame-6-generated-v2.png"
+  ],
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.020042194092827
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 0.9415774099318404
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.0115062761506277
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 0.9747983870967742
+    },
+    {
+      "method": "transparent-grid",
+      "rects": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 1254,
+          "height": 1254
+        }
+      ],
+      "normalizationScale": 1.008342022940563
+    }
+  ],
+  "action": null,
+  "animationPhases": null,
+  "walkCycle": {
+    "gait": "trot",
+    "parts": 6,
+    "framesPerPart": 1,
+    "durationMs": 720,
+    "diagonalPairs": [
+      [
+        "LH",
+        "RF"
+      ],
+      [
+        "LF",
+        "RH"
+      ]
+    ],
+    "coordinateGuide": "../../../../../../development/assets/glacier-motions/guides/fenrir/coordinates.json"
+  }
+}

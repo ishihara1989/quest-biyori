@@ -1,0 +1,18 @@
+{
+  "id": "black-knight/reaction",
+  "source": "reaction-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame HIT / DEFEAT reaction sprite sheet of exact canonical horned BLACK KNIGHT.\nSame black plate armor with restrained gold trim, black horns, red slit visor, tattered dark-crimson cape, ONE broad black greatsword with silver edge and red center rune. Refined crisp JRPG pixel art, same canonical proportions, palette and LEFT-facing mild three-quarter view.\nExactly four SMALL complete separate poses in equal 2x2 cells, row-major. Make each figure including entire greatsword and cape fit comfortably in central 60% of its cell, with 20% transparent border and huge gutters. NO overlap between poses, no sword or cape crossing any cell boundary. Same body and weapon scale in every frame. The sword is about 330 normalized units long, never grows.\nPer-cell coordinates 0..1000: neutral pelvis (560,610), head (530,350), boot baseline y=835, cape maximum right x=800. Sword usually extends from hilt (500,650) down-left to tip (210,805).\nFrame 1 HIT: torso recoils 7 degrees right, head drops only 10 units, sword remains in near hand, other hand braces chest; sword tip at (230,800). Two planted boots, no particles or hit star.\nFrame 2 RECOVERY: return upright canonical neutral, same sword, horns, cape and feet. Two arms and two legs clearly connected.\nFrame 3 COLLAPSE: knees bend and pelvis lowers to (560,725); head bows to (500,500). Both knees connect naturally to thighs. One gauntlet braces ground (460,825), sword-hand lowers hilt to (570,805), blade lies diagonally down-left to tip (240,835). Cape settles behind to x=800. No detached hand or sword.\nFrame 4 DEFEATED HOLD: both knees down, pelvis (580,770), head bowed (505,610), bracing palm remains (460,835). Sword-hand still rests on hilt (570,825), SAME full blade lies across ground left to tip (240,845). Cape pooled calmly within x=350..800,y=690..850. Red visor dims. Exactly two arms and two legs, no extra boot or disembodied hand.\nNo external VFX, smoke, aura, floor slab, background glow, text, labels, grid, checkerboard or watermark. Genuine transparent alpha.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-7bd49ce3-5fa0-43e0-b764-878f95448cee.png",
+  "sha256": "fc77a0ed4b50bef7d332bfb159e1abf3a8a0d37d0b6bad7b64c5dd89bc9b69ef",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/black-knight.png",
+      "sha256": "960272c41473b518701eeb9f49bb35c9d06273070244ac4f956e2196937d2c59"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "reaction-v2.prompt.txt"
+}

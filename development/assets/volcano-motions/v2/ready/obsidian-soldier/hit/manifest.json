@@ -1,0 +1,112 @@
+{
+  "id": "obsidian-soldier/hit",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "label": "被弾",
+  "kind": null,
+  "motion": "hit",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "pivot": {
+    "x": 290,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../sources/obsidian-soldier/reaction-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "preview": "../../../review/obsidian-soldier/hit/preview.gif",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8963699340820312,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 131,
+        "top": 95,
+        "right": 410,
+        "bottom": 345
+      },
+      "visibleBounds": {
+        "left": 173,
+        "top": 126,
+        "right": 407,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-soldier/reaction-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 709,
+        "height": 669
+      },
+      "sourceScale": 0.426497277676951,
+      "sourceAnchor": {
+        "x": 396,
+        "y": 621
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8957061767578125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 183,
+        "top": 71,
+        "right": 445,
+        "bottom": 339
+      },
+      "visibleBounds": {
+        "left": 186,
+        "top": 104,
+        "right": 401,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../sources/obsidian-soldier/reaction-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 709,
+        "y": 0,
+        "width": 665,
+        "height": 669
+      },
+      "sourceScale": 0.426497277676951,
+      "sourceAnchor": {
+        "x": 279,
+        "y": 644
+      },
+      "pivot": {
+        "x": 290,
+        "y": 338
+      }
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false
+}

@@ -1,0 +1,101 @@
+{
+  "id": "lilith/move",
+  "enemy": "lilith",
+  "region": "demon-castle",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/lilith/move-generated.png"
+  ],
+  "durations": [
+    150,
+    150,
+    150,
+    150
+  ],
+  "phases": [
+    "上",
+    "中立",
+    "下",
+    "中立"
+  ],
+  "enemyLabel": "リリス",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 47,
+        "top": 31,
+        "right": 643,
+        "bottom": 568
+      },
+      "sourceWidth": 652,
+      "sourceHeight": 599,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 152457,
+      "transparentFraction": 0.3903668691172404
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 8,
+        "top": 40,
+        "right": 608,
+        "bottom": 579
+      },
+      "sourceWidth": 649,
+      "sourceHeight": 599,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 160697,
+      "transparentFraction": 0.4133674254214137
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 46,
+        "top": 23,
+        "right": 635,
+        "bottom": 557
+      },
+      "sourceWidth": 652,
+      "sourceHeight": 610,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 173260,
+      "transparentFraction": 0.4356331087197023
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 15,
+        "top": 18,
+        "right": 612,
+        "bottom": 559
+      },
+      "sourceWidth": 649,
+      "sourceHeight": 610,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 159180,
+      "transparentFraction": 0.4020813862436535
+    }
+  ],
+  "reference": "../../../references/lilith.png",
+  "originalSources": [
+    "../../../sources/lilith/move-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "effects/sleep-moon",
+  "source": "sleep-moon-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame looping SLEEP STATUS / SLEEP MOON ground marker, refined pixel-art JRPG.\nExactly four complete small effect sprites arranged in a 2x2 sheet. Wide empty transparent gutters and at least 20% clear border inside each cell. Same shape, scale, center and camera in all frames. Input image is only a palette/motif reference; do not copy its expansion or busy particles.\nOne delicate lavender crescent floats above a low thin elliptical magic seal. Center and most of the seal interior are completely transparent, allowing a character's boots to remain visible. Crescent is a thin solid curved stroke; the missing portion of moon is fully transparent, not filled with grey or black. Restrained small golden accents, very few square lavender motes. Calm readable status, not damage or explosion.\nPer-cell normalized geometry: ellipse center (500,660), outer radii (220,65), stroke width 12; hollow interior. Crescent center (500,445), radius 105, inner cutout offset 45 units right. Only 4 tiny detached motes around x=350..650,y=430..620. Entire effect stays inside x=230..770,y=300..750.\nFrames 1..4: identical moon and ellipse geometry. Very subtle light pulse medium -> bright -> medium -> slightly dim, only the four small motes rise at most 12 units and return on 4 to 1. Moon and seal never expand, rotate into another symbol, explode, collapse, disappear or gain new spikes. Seamless 4-to-1 loop.\nCrisp deliberate pixel clusters and stepped edges, clear thin contour, purple/lavender with tiny pale-gold points. Real native transparent alpha outside strokes and motes and throughout hollow interiors. No soft background sheet, vignette, floor, opaque disc, text, sleep letters, labels, grid, checkerboard or watermark. No character.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-921a312a-7b40-45c4-9e83-b4fb8e98ab0a.png",
+  "sha256": "8bf0c9202998e506df42eeb391d082fcbba0d0b64785f993afa64804d9d5a022",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/sources/effects/sleep-moon-generated.png",
+      "sha256": "c42c4ed1fc6cc6b44dec80108be25dfd7549cc113a465ee92a59f5597241517b"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "sleep-moon-v2.prompt.txt"
+}

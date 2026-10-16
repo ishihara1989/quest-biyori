@@ -1,0 +1,101 @@
+{
+  "id": "effects/claw-arc",
+  "region": "volcano",
+  "motion": "effect",
+  "label": "紅爪の軌跡",
+  "kind": "target",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/claw-arc-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 168,
+        "top": 90,
+        "right": 655,
+        "bottom": 381
+      },
+      "sourceWidth": 745,
+      "sourceHeight": 483,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 261377,
+      "transparentFraction": 0.7263801464560146
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 88,
+        "top": 72,
+        "right": 717,
+        "bottom": 434
+      },
+      "sourceWidth": 791,
+      "sourceHeight": 483,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 199714,
+      "transparentFraction": 0.5227389917105741
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 70,
+        "top": 47,
+        "right": 816,
+        "bottom": 490
+      },
+      "sourceWidth": 855,
+      "sourceHeight": 541,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 194409,
+      "transparentFraction": 0.4202938028991147
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 38,
+        "top": 86,
+        "right": 628,
+        "bottom": 441
+      },
+      "sourceWidth": 681,
+      "sourceHeight": 541,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 224042,
+      "transparentFraction": 0.6081140868734409
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/claw-arc-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

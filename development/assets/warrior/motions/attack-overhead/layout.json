@@ -1,0 +1,35 @@
+{
+  "source": "source/warrior-attack-overhead-assembled-v3.png",
+  "columns": 2,
+  "rows": 2,
+  "columnSplit": 1024,
+  "rowSplit": 768,
+  "scale": 0.32,
+  "anchorBasis": "feet",
+  "frames": [
+    {
+      "anchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "anchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "anchor": {
+        "x": 512,
+        "y": 720
+      }
+    },
+    {
+      "anchor": {
+        "x": 512,
+        "y": 720
+      }
+    }
+  ]
+}

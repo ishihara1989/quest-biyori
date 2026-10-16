@@ -1,0 +1,52 @@
+{
+  "id": "parts/halo-node",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/halo-node/review/parts/halo-node/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/halo-node.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "One cyan diamond gemstone with gold frame, thin dark-violet edge.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.9564157057861414,
+      "lowAlphaPixels": 6161,
+      "edgePixels": 0,
+      "bounds": [
+        450,
+        350,
+        803,
+        904
+      ],
+      "marginFraction": 0.2783094098883573
+    }
+  ],
+  "sources": [
+    "source/parts/halo-node.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/halo-node/contact.png",
+  "gif": "review/parts/halo-node/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

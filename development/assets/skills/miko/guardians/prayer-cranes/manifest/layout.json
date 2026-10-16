@@ -1,0 +1,48 @@
+{
+  "source": "../../../source/prayer-cranes-guardian-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 609
+    },
+    {
+      "x": 660,
+      "y": 0,
+      "width": 594,
+      "height": 609
+    },
+    {
+      "x": 0,
+      "y": 609,
+      "width": 664,
+      "height": 645
+    },
+    {
+      "x": 664,
+      "y": 609,
+      "width": 590,
+      "height": 645
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 905
+    },
+    {
+      "x": 512,
+      "y": 905
+    },
+    {
+      "x": 512,
+      "y": 905
+    },
+    {
+      "x": 512,
+      "y": 905
+    }
+  ],
+  "scale": 0.5254237288135594
+}

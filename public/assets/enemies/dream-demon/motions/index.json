@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hit",
+    "label": "夢魔・被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "夢魔・撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "danger-1",
+    "label": "夢魔・眠りの月",
+    "manifest": "danger-1/manifest.json"
+  },
+  {
+    "id": "idle",
+    "label": "夢魔・待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "夢魔・移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "attack",
+    "label": "夢魔・魔弾",
+    "manifest": "attack/manifest.json"
+  }
+]

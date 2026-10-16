@@ -1,0 +1,375 @@
+{
+  "assets": [
+    {
+      "id": "idle",
+      "label": "待機",
+      "enemy": "boss-slime",
+      "directory": "assets/enemies/boss-slime/motions/idle",
+      "source": "../../source/boss-slime-idle-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 576,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 288,
+        "y": 303
+      },
+      "scale": 0.5,
+      "anchorMode": "ground",
+      "loop": true,
+      "terminal": false,
+      "reuseIdle": [],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 320,
+          "phase": "基準姿勢"
+        },
+        {
+          "cell": 1,
+          "durationMs": 320,
+          "phase": "膨らむ"
+        },
+        {
+          "cell": 2,
+          "durationMs": 320,
+          "phase": "ゆるむ"
+        },
+        {
+          "cell": 3,
+          "durationMs": 320,
+          "phase": "基準姿勢へ"
+        }
+      ]
+    },
+    {
+      "id": "move",
+      "label": "移動",
+      "enemy": "boss-slime",
+      "directory": "assets/enemies/boss-slime/motions/move",
+      "source": "../../source/boss-slime-move-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 576,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 288,
+        "y": 303
+      },
+      "scale": 0.511,
+      "anchorMode": "ground",
+      "loop": true,
+      "terminal": false,
+      "reuseIdle": [
+        0
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 160,
+          "phase": "接地"
+        },
+        {
+          "cell": 1,
+          "durationMs": 140,
+          "phase": "ためる"
+        },
+        {
+          "cell": 2,
+          "durationMs": 200,
+          "phase": "跳ねる",
+          "offset": {
+            "x": 0,
+            "y": -16
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 180,
+          "phase": "着地"
+        }
+      ]
+    },
+    {
+      "id": "hit",
+      "label": "被弾",
+      "enemy": "boss-slime",
+      "directory": "assets/enemies/boss-slime/motions/hit",
+      "source": "../../source/boss-slime-hit-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 576,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 288,
+        "y": 303
+      },
+      "scale": 0.526,
+      "anchorMode": "ground",
+      "loop": false,
+      "terminal": false,
+      "reuseIdle": [
+        3
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 90,
+          "phase": "衝撃・ひるむ",
+          "offset": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 120,
+          "phase": "右へのけぞる",
+          "offset": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 140,
+          "phase": "立て直す",
+          "offset": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 170,
+          "phase": "待機の基準姿勢"
+        }
+      ]
+    },
+    {
+      "id": "attack",
+      "label": "攻撃",
+      "enemy": "boss-slime",
+      "directory": "assets/enemies/boss-slime/motions/attack",
+      "source": "../../source/boss-slime-attack-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 576,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 288,
+        "y": 303
+      },
+      "scale": 0.545,
+      "anchorMode": "ground",
+      "loop": false,
+      "terminal": false,
+      "reuseIdle": [
+        3
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ],
+      "columnEdgesByRow": [
+        [
+          0,
+          580,
+          1254
+        ],
+        [
+          0,
+          627,
+          1254
+        ]
+      ],
+      "events": [
+        {
+          "name": "melee-impact",
+          "frame": 1,
+          "timeMs": 180
+        }
+      ],
+      "frames": [
+        {
+          "cell": 0,
+          "durationMs": 180,
+          "phase": "右に引いてためる",
+          "offset": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        {
+          "cell": 1,
+          "durationMs": 100,
+          "phase": "左へ体当たり",
+          "offset": {
+            "x": -32,
+            "y": 0
+          }
+        },
+        {
+          "cell": 2,
+          "durationMs": 160,
+          "phase": "反動を戻す",
+          "offset": {
+            "x": -9,
+            "y": 0
+          }
+        },
+        {
+          "cell": 3,
+          "durationMs": 200,
+          "phase": "待機の基準姿勢"
+        }
+      ]
+    },
+    {
+      "id": "down",
+      "label": "撃破",
+      "enemy": "boss-slime",
+      "directory": "assets/enemies/boss-slime/motions/down",
+      "source": "../../source/boss-slime-down-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 576,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 288,
+        "y": 303
+      },
+      "scale": 0.516,
+      "anchorMode": "ground",
+      "loop": false,
+      "terminal": true,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "崩れ始める",
+          "durationMs": 180
+        },
+        {
+          "cell": 1,
+          "phase": "つぶれる",
+          "durationMs": 220
+        },
+        {
+          "cell": 2,
+          "phase": "溶ける",
+          "durationMs": 260
+        },
+        {
+          "cell": 3,
+          "phase": "水たまり・静止",
+          "durationMs": 540
+        }
+      ],
+      "rowEdges": [
+        0,
+        627,
+        1254
+      ]
+    },
+    {
+      "id": "split",
+      "label": "分裂",
+      "enemy": "boss-slime",
+      "directory": "assets/enemies/boss-slime/motions/split",
+      "source": "../../source/boss-slime-split-generated-v1.png",
+      "prompt": "../../PROMPT.md",
+      "frameWidth": 576,
+      "frameHeight": 320,
+      "pivot": {
+        "x": 288,
+        "y": 303
+      },
+      "scale": 0.55,
+      "anchorMode": "ground",
+      "loop": true,
+      "terminal": false,
+      "frames": [
+        {
+          "cell": 0,
+          "phase": "分裂開始・膨らみが出る",
+          "durationMs": 200,
+          "anchor": {
+            "x": 509,
+            "y": 463
+          }
+        },
+        {
+          "cell": 1,
+          "phase": "塊を押し出す",
+          "durationMs": 220,
+          "anchor": {
+            "x": 509,
+            "y": 463
+          }
+        },
+        {
+          "cell": 2,
+          "phase": "首が細くなる・まだ接続",
+          "durationMs": 240,
+          "anchor": {
+            "x": 509,
+            "y": 433
+          }
+        },
+        {
+          "cell": 3,
+          "phase": "ちぎれる・分離完了",
+          "durationMs": 220,
+          "anchor": {
+            "x": 509,
+            "y": 433
+          }
+        }
+      ],
+      "rowEdges": [
+        0,
+        496,
+        992
+      ],
+      "columnEdges": [
+        0,
+        793,
+        1586
+      ],
+      "events": [
+        {
+          "name": "spawn-slime",
+          "frame": 3,
+          "boundary": "end",
+          "timeMs": 880,
+          "repeat": "once-per-cycle",
+          "enemy": "slime",
+          "spawnOffset": {
+            "x": -218,
+            "y": -5
+          }
+        }
+      ],
+      "summonPreview": {
+        "enemy": "slime",
+        "lifetimeMs": 1800,
+        "velocity": {
+          "x": -80,
+          "y": 0
+        }
+      },
+      "registration": "Parent center is fixed; budding must not shift the boss. Separate entity replaces detached blob at the end of frame 4."
+    }
+  ]
+}

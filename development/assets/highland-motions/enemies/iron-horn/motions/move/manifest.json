@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "enemy": "iron-horn",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "iron-horn-move.png",
+  "preview": "iron-horn-move-preview.gif",
+  "prompt": "../../../../trot/iron-horn/PROMPTS.md",
+  "width": 3840,
+  "height": 460,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 460,
+  "frameCount": 6,
+  "pivot": {
+    "x": 365,
+    "y": 436
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../registered/move.png",
+  "sourceScale": 0.2734584450402145,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in trot/iron-horn/PROMPTS.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "中立・A遊脚",
+      "bounds": {
+        "left": 208,
+        "top": 141,
+        "right": 515,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 666.6274509803922,
+        "y": 1176
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.2734584450402145
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・A遊脚",
+      "bounds": {
+        "left": 208,
+        "top": 140,
+        "right": 510,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 0,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 666.6274509803922,
+        "y": 1176
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.2734584450402145
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "手前閉／奥開・B遊脚",
+      "bounds": {
+        "left": 208,
+        "top": 140,
+        "right": 511,
+        "bottom": 432
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 1286,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 666.6274509803922,
+        "y": 1176
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.2734584450402145
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "中立・B遊脚",
+      "bounds": {
+        "left": 208,
+        "top": 141,
+        "right": 507,
+        "bottom": 434
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 1286,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 666.6274509803922,
+        "y": 1176
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.2734584450402145
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2560,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・B遊脚",
+      "bounds": {
+        "left": 209,
+        "top": 142,
+        "right": 518,
+        "bottom": 428
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 2572,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 666.6274509803922,
+        "y": 1176
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.2734584450402145
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 3200,
+      "y": 0,
+      "width": 640,
+      "height": 460,
+      "durationMs": 120,
+      "phase": "手前開／奥閉・A遊脚",
+      "bounds": {
+        "left": 208,
+        "top": 141,
+        "right": 515,
+        "bottom": 436
+      },
+      "sourceCell": {
+        "x": 1286,
+        "y": 2572,
+        "width": 1286,
+        "height": 1286
+      },
+      "sourceAnchor": {
+        "x": 666.6274509803922,
+        "y": 1176
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceScale": 0.2734584450402145
+    }
+  ],
+  "region": "嵐渡りの高原",
+  "previewOnly": true,
+  "reference": "../../../../references/iron-horn.png",
+  "originalSources": [
+    "../../../../trot/iron-horn/sources/frame-1-single.png",
+    "../../../../trot/iron-horn/sources/frame-2-single.png",
+    "../../../../trot/iron-horn/sources/frame-3-single.png",
+    "../../../../trot/iron-horn/sources/frame-4-single.png",
+    "../../../../trot/iron-horn/sources/frame-5-single.png",
+    "../../../../trot/iron-horn/sources/frame-6-single.png"
+  ],
+  "sourceExtraction": [
+    {
+      "source": "trot/iron-horn/sources/frame-1-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-2-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-3-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-4-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-5-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    },
+    {
+      "source": "trot/iron-horn/sources/frame-6-single.png",
+      "method": "single-generated-pose",
+      "cell": 0
+    }
+  ],
+  "registration": {
+    "method": "fixed-eye-landmark",
+    "outputEye": {
+      "x": 259,
+      "y": 232
+    },
+    "recipe": "../../../../trot/iron-horn/recipe.json"
+  },
+  "walkCycle": {
+    "gait": "trot",
+    "status": "adopted-coordinate-guided",
+    "parts": 6,
+    "framesPerPart": 1,
+    "nearSide": "left",
+    "farSide": "right",
+    "diagonalPairs": {
+      "A": [
+        "left-hind",
+        "right-front"
+      ],
+      "B": [
+        "left-front",
+        "right-hind"
+      ]
+    },
+    "phases": [
+      "中立・A遊脚",
+      "手前閉／奥開・A遊脚",
+      "手前閉／奥開・B遊脚",
+      "中立・B遊脚",
+      "手前開／奥閉・B遊脚",
+      "手前開／奥閉・A遊脚"
+    ],
+    "contacts": [
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "closed",
+        "far": "open"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "neutral",
+        "far": "neutral"
+      },
+      {
+        "grounded": [
+          "left-hind",
+          "right-front"
+        ],
+        "lifted": [
+          "left-front",
+          "right-hind"
+        ],
+        "near": "open",
+        "far": "closed"
+      },
+      {
+        "grounded": [
+          "left-front",
+          "right-hind"
+        ],
+        "lifted": [
+          "left-hind",
+          "right-front"
+        ],
+        "near": "open",
+        "far": "closed"
+      }
+    ]
+  },
+  "effectAssets": [],
+  "coordinateGuide": {
+    "file": "../../../../trot/iron-horn/guide.json",
+    "targetsOnly": true
+  }
+}

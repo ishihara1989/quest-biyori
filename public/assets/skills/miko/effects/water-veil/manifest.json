@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "id": "water-veil",
+  "character": "miko",
+  "subject": "water-veil",
+  "group": "effect",
+  "motion": "effect",
+  "sheet": "water-veil-effect.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "scale": 0.5426695842450766,
+  "frames": [
+    {
+      "index": 0,
+      "file": "water-veil-effect-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 30,
+        "t": 86,
+        "r": 503,
+        "b": 487,
+        "n": 86023,
+        "width": 474,
+        "height": 402
+      }
+    },
+    {
+      "index": 1,
+      "file": "water-veil-effect-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 8,
+        "t": 40,
+        "r": 485,
+        "b": 486,
+        "n": 127532,
+        "width": 478,
+        "height": 447
+      }
+    },
+    {
+      "index": 2,
+      "file": "water-veil-effect-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 37,
+        "t": 34,
+        "r": 502,
+        "b": 458,
+        "n": 86437,
+        "width": 466,
+        "height": 425
+      }
+    },
+    {
+      "index": 3,
+      "file": "water-veil-effect-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 160,
+      "phase": "effect",
+      "bounds": {
+        "l": 8,
+        "t": 118,
+        "r": 479,
+        "b": 458,
+        "n": 54990,
+        "width": 472,
+        "height": 341
+      }
+    }
+  ],
+  "source": "../../../../../../development/assets/skills/miko/source/water-veil-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

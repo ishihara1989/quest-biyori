@@ -1,0 +1,104 @@
+{
+  "id": "obsidian-soldier/danger-1",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "motion": "danger-1",
+  "label": "破甲の斧",
+  "effects": [
+    "axe-arc",
+    "armor-break"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-soldier/danger-1-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "黒曜兵",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 57,
+        "top": 119,
+        "right": 658,
+        "bottom": 584
+      },
+      "sourceWidth": 703,
+      "sourceHeight": 602,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 283364,
+      "transparentFraction": 0.6695651762971224
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 45,
+        "top": 42,
+        "right": 573,
+        "bottom": 584
+      },
+      "sourceWidth": 609,
+      "sourceHeight": 602,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 199717,
+      "transparentFraction": 0.5447550311223126
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 48,
+        "top": 75,
+        "right": 695,
+        "bottom": 532
+      },
+      "sourceWidth": 713,
+      "sourceHeight": 597,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 271369,
+      "transparentFraction": 0.637523757168263
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 18,
+        "top": 17,
+        "right": 574,
+        "bottom": 523
+      },
+      "sourceWidth": 599,
+      "sourceHeight": 597,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 213641,
+      "transparentFraction": 0.5974250775301102
+    }
+  ],
+  "reference": "../../../references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../sources/obsidian-soldier/danger-1-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

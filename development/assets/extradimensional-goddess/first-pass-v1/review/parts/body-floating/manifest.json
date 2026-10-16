@@ -1,0 +1,52 @@
+{
+  "id": "parts/body-floating",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/body-floating/review/parts/body-floating/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/body-floating.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "Upright hovering, palms low and open, stern cyan eyes. No large rings.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.4517880899145064,
+      "lowAlphaPixels": 52477,
+      "edgePixels": 0,
+      "bounds": [
+        22,
+        25,
+        1238,
+        1218
+      ],
+      "marginFraction": 0.011961722488038277
+    }
+  ],
+  "sources": [
+    "source/parts/body-floating.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/body-floating/contact.png",
+  "gif": "review/parts/body-floating/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

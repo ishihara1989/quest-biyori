@@ -1,0 +1,18 @@
+{
+  "id": "imp/attack",
+  "source": "attack-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame normal short claw swipe by the exact small purple imp from canonical reference.\nPreserve same compact imp, purple skin, red eyes, two gold/brown horns, two pointed ears, two small attached purple/red bat wings, two short arms with three claw fingers plus thumb per hand, two bent legs, one arrow-tip tail. Refined crisp JRPG pixel art, unchanged reference colors and proportions. LEFT-facing mild three-quarter view.\nExactly four complete small separate poses in equal 2x2 cells, row-major, generous transparent margins and gutters. Same body scale across all frames. All horns, wing tips, fingertips, feet and tail fully visible. Whole figure stays inside x=200..800,y=180..840 in normalized cell coordinates.\nCritical correction: do NOT stretch the arm or fingers at release. Shoulder-to-wrist lengths remain the same in all frames; fingers remain short. Attack uses the FAR ARM on screen LEFT in the neutral pose. The near arm on screen-right stays bent down beside the body.\nPelvis stays near (540,610), head center (450,400), two feet hover with toes y=800, wing roots fixed on upper back.\nFrame 1: small ready crouch in midair, FAR attacking hand (385,610), near hand (570,640), neutral wings and tail.\nFrame 2: same FAR arm draws its short claw hand back to (435,490), elbow bends visibly from shoulder (445,500). Near hand remains (570,640). Do not raise the other arm overhead.\nFrame 3: short sharp rake to LEFT, FAR hand at (300,570), shoulder shifts only 20 units left. Bent elbow and short forearm visibly connect to same far shoulder. Torso leans 8 degrees left, body does not lengthen. Near hand remains (570,640), two feet still hover. Wings stay attached and same size.\nFrame 4: far hand returns to (385,610), body, horns, wings and tail recover to frame-1 neutral.\nBody only. Do not draw giant claw trails, external VFX, hit stars, aura, floor, ground shadow, background haze, text, grid, labels, checkerboard or watermark. Genuine transparent alpha outside the imp.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-9dc2ecb3-bb7e-4009-b0a2-7abf64358118.png",
+  "sha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/imp.png",
+      "sha256": "d12d4eb8261ca9896c6ea718bba0a5cf6ecdda1bcda5768f2433825b72d6bcac"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "attack-v2.prompt.txt"
+}

@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "enemy": "armored-golem",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "armored-golem-move.png",
+  "preview": "../../../../../../development/assets/enemies/armored-golem/motions/move/armored-golem-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/armored-golem/PROMPT.md",
+  "width": 3072,
+  "height": 400,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 512,
+  "frameHeight": 400,
+  "frameCount": 6,
+  "pivot": {
+    "x": 297,
+    "y": 382
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/armored-golem/source/move-registered.png",
+  "sourceScale": 0.40887480190174325,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "左接地",
+      "bounds": {
+        "left": 108,
+        "top": 125,
+        "right": 397,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 809,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 509.43023255813955,
+        "y": 689
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "右遊脚",
+      "bounds": {
+        "left": 129,
+        "top": 126,
+        "right": 394,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 809,
+        "y": 0,
+        "width": 809,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 439.43023255813955,
+        "y": 687
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "右前進",
+      "bounds": {
+        "left": 109,
+        "top": 123,
+        "right": 391,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 1618,
+        "y": 0,
+        "width": 809,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 485.43023255813955,
+        "y": 693
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "右接地",
+      "bounds": {
+        "left": 100,
+        "top": 124,
+        "right": 397,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 768,
+        "width": 809,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 536.4302325581396,
+        "y": 687
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2048,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "左遊脚",
+      "bounds": {
+        "left": 110,
+        "top": 127,
+        "right": 395,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 809,
+        "y": 768,
+        "width": 809,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 485.43023255813955,
+        "y": 687
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 2560,
+      "y": 0,
+      "width": 512,
+      "height": 400,
+      "durationMs": 120,
+      "phase": "左前進",
+      "bounds": {
+        "left": 116,
+        "top": 121,
+        "right": 387,
+        "bottom": 382
+      },
+      "sourceCell": {
+        "x": 1618,
+        "y": 768,
+        "width": 809,
+        "height": 768
+      },
+      "sourceAnchor": {
+        "x": 477.43023255813955,
+        "y": 693
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/armored-golem/source/move-1-generated.png",
+    "../../../../../../development/assets/enemies/armored-golem/source/move-2-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/armored-golem/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 2172,
+      "height": 724,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 752,
+          "height": 724
+        },
+        {
+          "x": 752,
+          "y": 0,
+          "width": 672,
+          "height": 724
+        },
+        {
+          "x": 1424,
+          "y": 0,
+          "width": 748,
+          "height": 724
+        }
+      ],
+      "normalizeScale": 1
+    },
+    {
+      "method": "transparent-grid",
+      "width": 2172,
+      "height": 724,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 764,
+          "height": 724
+        },
+        {
+          "x": 764,
+          "y": 0,
+          "width": 716,
+          "height": 724
+        },
+        {
+          "x": 1480,
+          "y": 0,
+          "width": 692,
+          "height": 724
+        }
+      ],
+      "normalizeScale": 1.0166309012875536
+    }
+  ],
+  "walkCycle": {
+    "nearLeg": "left",
+    "farLeg": "right",
+    "horizontalAnchor": "torso registered to idle",
+    "parts": [
+      "../../../../../../development/assets/enemies/armored-golem/source/move-1-generated.png",
+      "../../../../../../development/assets/enemies/armored-golem/source/move-2-generated.png"
+    ],
+    "phases": [
+      "left-contact",
+      "right-passing",
+      "right-approach",
+      "right-contact",
+      "left-passing",
+      "left-approach"
+    ]
+  }
+}

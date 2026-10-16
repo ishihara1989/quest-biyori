@@ -1,0 +1,101 @@
+{
+  "id": "arch-demon/idle",
+  "enemy": "arch-demon",
+  "region": "demon-castle",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/arch-demon/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "アークデーモン",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 42,
+        "top": 38,
+        "right": 606,
+        "bottom": 573
+      },
+      "sourceWidth": 624,
+      "sourceHeight": 617,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 161931,
+      "transparentFraction": 0.4205912604413415
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 16,
+        "top": 33,
+        "right": 621,
+        "bottom": 574
+      },
+      "sourceWidth": 653,
+      "sourceHeight": 617,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 167765,
+      "transparentFraction": 0.41639261257728327
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 42,
+        "top": 45,
+        "right": 608,
+        "bottom": 572
+      },
+      "sourceWidth": 631,
+      "sourceHeight": 615,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 164513,
+      "transparentFraction": 0.4239315578575754
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 22,
+        "top": 42,
+        "right": 597,
+        "bottom": 573
+      },
+      "sourceWidth": 646,
+      "sourceHeight": 615,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 171033,
+      "transparentFraction": 0.43049913161670317
+    }
+  ],
+  "reference": "../../../references/arch-demon.png",
+  "originalSources": [
+    "../../../sources/arch-demon/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "lava-salamander/attack",
+  "prompt": "Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ラヴァサラマンダー. Keep head aligned forward; no upward gaze. Jaw pulls right 25px, opens, lunges LEFT 35px, returns neutral. Neck NEVER stretches or changes thickness. All four legs support body. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed.",
+  "selected": true,
+  "tool": "built-in image_gen",
+  "source": "sources/lava-salamander/attack-v2.png",
+  "sha256": "a68aaed76b06545d708a084c73c06126f3616d06fea482f815e9a0ebfdd09d5a",
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "firstPass": "sources/lava-salamander/attack-generated.png",
+  "issues": [
+    "溜めで顎が大きく上を向くため、前方への噛みつきの軌道が上下に振れる。",
+    "発動コマで頭と首が伸び、背びれ・胴体の比率が変わる。基準絵と寸法を再確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "references/lava-salamander.png",
+      "sha256": "17b75cccc43d92a84a80bac437bc2e9819357ddd30bc863dd6d490ef1bdcba1e"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

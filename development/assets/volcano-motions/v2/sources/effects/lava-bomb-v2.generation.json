@@ -1,0 +1,20 @@
+{
+  "id": "effects/lava-bomb",
+  "source": "sources/effects/lava-bomb-v2.png",
+  "selected": true,
+  "prompt": "Use case: stylized-concept. FOUR-frame PIXEL-ART VFX sheet EXACT equal 2x2 TL TR BL BR. one falling diagonal down-left black basalt lava bomb with glowing cracks, white-hot core, long tail toward upper-right. FALLING FLIGHT LOOP ONLY: identical intact black basalt bomb centered (430,560), cracked orange core, short tail upper-RIGHT. Tail flickers 4 phases, no breaking apart, explosion or floor. Seamless 4->1. Fixed effect origin and uniform pixel scale. Complete effect within EACH cell with 14% clear padding and perfectly empty gutters. Refined crisp JRPG pixel clusters, orange gold white heat and black-red sharp outline; no airbrush. TRUE transparent alpha including hollow centers. NO ambient background glow, NO gradient haze, no ground slab, text, labels, grid, checkerboard, character or watermark. Glow confined to sharply defined flame tongues, no soft rectangular glow behind. Transparent pixels everywhere else.",
+  "actualInputImages": [],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "b414cbd24f8c500839927bf09a1686a5b25bfdd97320165a57fefc65c03415eb",
+  "reference": null,
+  "guide": null,
+  "firstPass": "sources/effects/lava-bomb-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "飛翔用なのに3コマ目で爆散する。落下のループと着弾エフェクトを分離する。",
+    "発生→最大衝撃→収束という共通指定を、飛翔の脈動・軌道に修正する。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

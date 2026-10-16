@@ -1,0 +1,28 @@
+{
+  "stageGrowth": 1.2,
+  "levelGrowth": 1.02,
+  "clearSeconds": 60,
+  "survivalSeconds": 85,
+  "sideRates": [
+    0.01,
+    0.015,
+    0.02,
+    0.03
+  ],
+  "crownRootRate": 0.03,
+  "crownRates": [
+    0.01,
+    0.02,
+    0.03
+  ],
+  "gemAxisCap": 1.5,
+  "skillBaseBudget": 0.6,
+  "skillBudgetPerLevel": 0.03,
+  "risk": {
+    "ranged": 1.1,
+    "area": 1.15,
+    "piercing": 1.1,
+    "control": 1.1
+  },
+  "targetCredit": 0.35
+}

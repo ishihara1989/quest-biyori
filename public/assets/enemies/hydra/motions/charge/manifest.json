@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "enemy": "hydra",
+  "motion": "charge",
+  "facing": "left",
+  "label": "毒ガス溜め",
+  "sheet": "hydra-charge.png",
+  "preview": "../../../../../../development/assets/enemies/hydra/motions/charge/hydra-charge-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/hydra/PROMPT.md",
+  "width": 2816,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 960,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/hydra/source/charge-registered.png",
+  "sourceScale": 0.6626016260162602,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "hydra-charge-0",
+      "type": "spawn-effect",
+      "effect": "hydra-poison-aura",
+      "frame": 0,
+      "timeMs": 0
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "charge-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "開始",
+      "bounds": {
+        "left": 142,
+        "top": 110,
+        "right": 576,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 712,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "charge-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 135,
+        "top": 109,
+        "right": 578,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 712,
+        "y": 0,
+        "width": 758,
+        "height": 521
+      },
+      "sourceAnchor": {
+        "x": 452,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "charge-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "作用",
+      "bounds": {
+        "left": 119,
+        "top": 107,
+        "right": 584,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 521,
+        "width": 735,
+        "height": 523
+      },
+      "sourceAnchor": {
+        "x": 452,
+        "y": 506
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "charge-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 448,
+      "durationMs": 240,
+      "phase": "終端",
+      "bounds": {
+        "left": 127,
+        "top": 110,
+        "right": 579,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 735,
+        "y": 521,
+        "width": 735,
+        "height": 523
+      },
+      "sourceAnchor": {
+        "x": 442,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSource": "../../../../../../development/assets/enemies/hydra/source/charge-generated.png",
+  "sourceExtraction": [
+    {
+      "id": 2,
+      "count": 164553,
+      "left": 95,
+      "top": 11,
+      "right": 751,
+      "bottom": 495,
+      "cx": 413.28885526243823,
+      "cy": 293.51255218683343
+    },
+    {
+      "id": 1,
+      "count": 171599,
+      "left": 843,
+      "top": 9,
+      "right": 1513,
+      "bottom": 495,
+      "cx": 1168.6546716472706,
+      "cy": 290.07259949067304
+    },
+    {
+      "id": 14,
+      "count": 176036,
+      "left": 70,
+      "top": 514,
+      "right": 772,
+      "bottom": 1003,
+      "cx": 422.1323876934263,
+      "cy": 796.1999079733691
+    },
+    {
+      "id": 15,
+      "count": 167969,
+      "left": 833,
+      "top": 518,
+      "right": 1518,
+      "bottom": 1003,
+      "cx": 1176.2643880716084,
+      "cy": 799.2277444052177
+    }
+  ],
+  "region": "poison-swamp",
+  "defaultZoom": 1,
+  "effectPreview": {
+    "paddingLeft": 300,
+    "defaultZoom": 1,
+    "target": {
+      "x": 140,
+      "y": 431
+    },
+    "assets": [
+      {
+        "id": "hydra-poison-aura",
+        "manifest": "../../../../effects/hydra-poison-aura/manifest.json"
+      }
+    ],
+    "origin": {
+      "x": 233.28000000000003,
+      "y": 261.48
+    },
+    "targetRange": 233
+  }
+}

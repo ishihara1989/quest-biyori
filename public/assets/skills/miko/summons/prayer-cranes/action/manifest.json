@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "prayer-cranes-action",
+  "character": "miko",
+  "subject": "prayer-cranes",
+  "group": "summon",
+  "motion": "action",
+  "sheet": "prayer-cranes-action.png",
+  "frameWidth": 128,
+  "frameHeight": 128,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 390,
+  "loop": false,
+  "pivot": {
+    "x": 64,
+    "y": 64
+  },
+  "scale": 0.11023622047244094,
+  "frames": [
+    {
+      "index": 0,
+      "file": "prayer-cranes-action-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 14,
+        "t": 24,
+        "r": 117,
+        "b": 101,
+        "n": 3690,
+        "width": 104,
+        "height": 78
+      }
+    },
+    {
+      "index": 1,
+      "file": "prayer-cranes-action-02.png",
+      "x": 128,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 13,
+        "t": 12,
+        "r": 114,
+        "b": 97,
+        "n": 4062,
+        "width": 102,
+        "height": 86
+      }
+    },
+    {
+      "index": 2,
+      "file": "prayer-cranes-action-03.png",
+      "x": 256,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 12,
+        "t": 31,
+        "r": 120,
+        "b": 100,
+        "n": 3475,
+        "width": 109,
+        "height": 70
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/prayer-cranes-action-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "registered silhouette",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/prayer-cranes-idle-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

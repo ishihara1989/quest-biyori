@@ -1,0 +1,201 @@
+{
+  "id": "volcano-lava-bomb",
+  "enemy": null,
+  "region": "volcano",
+  "label": "落下溶岩弾",
+  "kind": "projectile",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/lava-bomb-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9041023254394531,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 161,
+        "top": 99,
+        "right": 503,
+        "bottom": 316
+      },
+      "visibleBounds": {
+        "left": 200,
+        "top": 101,
+        "right": 464,
+        "bottom": 310
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-bomb-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 791,
+        "height": 509
+      },
+      "sourceScale": 0.4424620874219447,
+      "sourceAnchor": {
+        "x": 230.5,
+        "y": 370.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9196281433105469,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 161,
+        "top": 101,
+        "right": 489,
+        "bottom": 317
+      },
+      "visibleBounds": {
+        "left": 199,
+        "top": 112,
+        "right": 461,
+        "bottom": 309
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-bomb-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 791,
+        "y": 0,
+        "width": 745,
+        "height": 509
+      },
+      "sourceScale": 0.4424620874219447,
+      "sourceAnchor": {
+        "x": 214,
+        "y": 369.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9037857055664062,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 145,
+        "top": 94,
+        "right": 498,
+        "bottom": 316
+      },
+      "visibleBounds": {
+        "left": 199,
+        "top": 102,
+        "right": 466,
+        "bottom": 311
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-bomb-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 509,
+        "width": 801,
+        "height": 515
+      },
+      "sourceScale": 0.4424620874219447,
+      "sourceAnchor": {
+        "x": 250,
+        "y": 367
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.9115219116210938,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 168,
+        "top": 94,
+        "right": 483,
+        "bottom": 314
+      },
+      "visibleBounds": {
+        "left": 200,
+        "top": 99,
+        "right": 461,
+        "bottom": 310
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/lava-bomb-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 801,
+        "y": 509,
+        "width": 735,
+        "height": 515
+      },
+      "sourceScale": 0.4424620874219447,
+      "sourceAnchor": {
+        "x": 199.5,
+        "y": 368.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/lava-bomb/preview.gif",
+  "action": null
+}

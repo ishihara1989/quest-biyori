@@ -1,0 +1,29 @@
+{
+  "id": "demon-armored-soldier/attack",
+  "enemy": "demon-armored-soldier",
+  "region": "demon-castle",
+  "motion": "attack",
+  "label": "剣撃",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/demon-armored-soldier.png",
+  "guide": null,
+  "source": "sources/demon-armored-soldier/attack-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame NORMAL ATTACK 剣撃 by 魔鎧兵 EXACT 2x2. Ordered: frame1 anticipation, frame2 held windup, frame3 powerful release, frame4 recovery. Trajectory: sword tip (250,700) draws back to (660,330), rises (470,220), cuts left-down (160,760), returns (250,700). Original sword and shield if present retained. Exaggerated late-game weight and force, distinct readable poses, secondary cape/tail follows with lag. Body sheet only; tiny attached core/palm glow allowed, full attack VFX separate. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "effects": [
+    "dark-slash"
+  ],
+  "repeat": 1,
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-8fb0d357-0839-45e2-a63d-3527ed486b93.png",
+  "sha256": "631c703e5a842c59182ebcd8b79520bf4b4e4d4092006628b99f4aaf9d87ac90",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "溜めで剣を両手で持つように見える一方、盾が低い位置に残る。盾を持つ腕と2腕の接続を修正・確認する。",
+      "頭上の剣先と発動の左下先端の見切れを検収する。"
+    ]
+  }
+}

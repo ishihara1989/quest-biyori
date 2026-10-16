@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "rock-bolt",
+  "label": "岩石",
+  "sheet": "rock-bolt.png",
+  "preview": "../../../../development/assets/effects/rock-bolt/rock-bolt-preview.gif",
+  "prompt": "../../../../development/assets/effects/rock-bolt/PROMPT.md",
+  "width": 896,
+  "height": 224,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 224,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 112,
+    "y": 112
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/rock-bolt/source-generated.png",
+  "sourceScale": 0.4260869565217391,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "rock-bolt-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 22,
+        "top": 44,
+        "right": 201,
+        "bottom": 180
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 429,
+        "y": 273
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "rock-bolt-02.png",
+      "x": 224,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 25,
+        "top": 45,
+        "right": 199,
+        "bottom": 179
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 379,
+        "y": 279
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "rock-bolt-03.png",
+      "x": 448,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 22,
+        "top": 47,
+        "right": 202,
+        "bottom": 177
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 409,
+        "y": 245
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "rock-bolt-04.png",
+      "x": 672,
+      "y": 0,
+      "width": 224,
+      "height": 224,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 14,
+        "top": 51,
+        "right": 209,
+        "bottom": 173
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 404,
+        "y": 247
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

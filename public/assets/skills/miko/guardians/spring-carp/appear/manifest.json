@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "spring-carp-guardian-appear",
+  "character": "miko",
+  "subject": "spring-carp",
+  "group": "guardian",
+  "motion": "appear",
+  "sheet": "spring-carp-appear.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 450,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.3181818181818182,
+  "frames": [
+    {
+      "index": 0,
+      "file": "spring-carp-appear-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 107,
+        "t": 264,
+        "r": 413,
+        "b": 473,
+        "n": 39286,
+        "width": 307,
+        "height": 210
+      }
+    },
+    {
+      "index": 1,
+      "file": "spring-carp-appear-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 100,
+        "t": 266,
+        "r": 409,
+        "b": 475,
+        "n": 47216,
+        "width": 310,
+        "height": 210
+      }
+    },
+    {
+      "index": 2,
+      "file": "spring-carp-appear-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 102,
+        "t": 265,
+        "r": 409,
+        "b": 476,
+        "n": 47188,
+        "width": 308,
+        "height": 212
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/spring-carp-guardian-appear-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/spring-carp-guardian-generated-v1.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

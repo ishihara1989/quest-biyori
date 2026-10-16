@@ -1,0 +1,219 @@
+{
+  "id": "demon-god/move",
+  "label": "浮遊移動",
+  "enemy": "demon-god",
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "reference": "../../../../../../development/assets/demon-god-redesign/v2/references/demon-god.png",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "loop": true,
+  "terminal": false,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "滑空",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/move-generated.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 665,
+        "height": 622
+      },
+      "sourceChestCore": {
+        "x": 237,
+        "y": 205
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.47377326565143824,
+      "transparentFraction": 0.7981228298611112,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 145,
+        "top": 44,
+        "right": 343,
+        "bottom": 323
+      },
+      "width": 384,
+      "height": 384,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 145,
+        "top": 44,
+        "right": 344,
+        "bottom": 324
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "浮上",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/move-generated.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 665,
+        "y": 0,
+        "width": 589,
+        "height": 622
+      },
+      "sourceChestCore": {
+        "x": 200,
+        "y": 201
+      },
+      "plannedRoot": [
+        550,
+        543
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 130.32
+      },
+      "sourceScale": 0.47377326565143824,
+      "transparentFraction": 0.7967732747395834,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 147,
+        "top": 40,
+        "right": 350,
+        "bottom": 320
+      },
+      "width": 384,
+      "height": 384,
+      "index": 1,
+      "x": 384,
+      "y": 0,
+      "visibleBounds": {
+        "left": 147,
+        "top": 40,
+        "right": 351,
+        "bottom": 321
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "滑空",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/move-generated.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 622,
+        "width": 676,
+        "height": 632
+      },
+      "sourceChestCore": {
+        "x": 236,
+        "y": 207
+      },
+      "plannedRoot": [
+        550,
+        555
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 135
+      },
+      "sourceScale": 0.47377326565143824,
+      "transparentFraction": 0.796142578125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 146,
+        "top": 45,
+        "right": 353,
+        "bottom": 319
+      },
+      "width": 384,
+      "height": 384,
+      "index": 2,
+      "x": 768,
+      "y": 0,
+      "visibleBounds": {
+        "left": 146,
+        "top": 45,
+        "right": 354,
+        "bottom": 320
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "下降",
+      "originalSource": "../../../../../../development/assets/demon-god-redesign/v2/sources/move-generated.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 676,
+        "y": 622,
+        "width": 578,
+        "height": 632
+      },
+      "sourceChestCore": {
+        "x": 190,
+        "y": 222
+      },
+      "plannedRoot": [
+        550,
+        567
+      ],
+      "exportChestCore": {
+        "x": 192,
+        "y": 139.68
+      },
+      "sourceScale": 0.47377326565143824,
+      "transparentFraction": 0.7948744032118056,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 149,
+        "top": 47,
+        "right": 355,
+        "bottom": 325
+      },
+      "width": 384,
+      "height": 384,
+      "index": 3,
+      "x": 1152,
+      "y": 0,
+      "visibleBounds": {
+        "left": 149,
+        "top": 47,
+        "right": 356,
+        "bottom": 326
+      }
+    }
+  ],
+  "events": [],
+  "registration": "chest-core measured from source; planned pelvis deltas applied; one scale per source sheet; original alpha/RGB sampled intact",
+  "pivot": {
+    "x": 192,
+    "y": 330
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "motion": "move",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-god-redesign/v2/review/move/manifest.json",
+  "sourceFingerprint": "8c978da996c70c10b8d98faf3a7840abb77d6a06aa5d26ddfd6fce3f0350acb4",
+  "acceptedForIntegration": true,
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

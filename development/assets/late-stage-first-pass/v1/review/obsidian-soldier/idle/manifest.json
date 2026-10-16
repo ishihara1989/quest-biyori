@@ -1,0 +1,101 @@
+{
+  "id": "obsidian-soldier/idle",
+  "enemy": "obsidian-soldier",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-soldier/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "黒曜兵",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 58,
+        "top": 49,
+        "right": 586,
+        "bottom": 616
+      },
+      "sourceWidth": 614,
+      "sourceHeight": 631,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 228803,
+      "transparentFraction": 0.5905599405318067
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 26,
+        "top": 36,
+        "right": 613,
+        "bottom": 617
+      },
+      "sourceWidth": 647,
+      "sourceHeight": 631,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 237908,
+      "transparentFraction": 0.582740773581347
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 58,
+        "top": 12,
+        "right": 586,
+        "bottom": 577
+      },
+      "sourceWidth": 620,
+      "sourceHeight": 616,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 223259,
+      "transparentFraction": 0.5845700670297445
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 31,
+        "top": 16,
+        "right": 570,
+        "bottom": 579
+      },
+      "sourceWidth": 641,
+      "sourceHeight": 616,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 232962,
+      "transparentFraction": 0.589992300990741
+    }
+  ],
+  "reference": "../../../references/obsidian-soldier.png",
+  "originalSources": [
+    "../../../sources/obsidian-soldier/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

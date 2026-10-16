@@ -1,0 +1,13 @@
+{
+  "id": "spring-carp-action",
+  "source": "development/assets/skills/miko/source/spring-carp-action-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-130b145c-fca1-40fd-8015-a34c4daa3926.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Reference is SAME SUBJECT identity. Exactly THREE frames in ONE horizontal row of equal square cells. Subject: ONE ivory and pale-blue sacred koi carp with TWO gold whiskers, red forehead spot, blue dorsal fin and ONE flowing forked tail, gold scale accents. Preserve identity, camera, scale and local ground/hover anchor. Position head (.70,.48), tail (.24,.48), curved body across center. Ordered motion: frame1 tail bends left/up; frame2  body straightens and head lifts; frame3  tail bends right/down and water beads fall. No projectiles or recipient human baked into atlas; effect is composed separately. Keep all anatomy and motion effects entirely within each cell with clear 10% empty margins.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/spring-carp-idle-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T14:32:24.847Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

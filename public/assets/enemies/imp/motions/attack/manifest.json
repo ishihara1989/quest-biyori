@@ -1,0 +1,210 @@
+{
+  "id": "imp/attack",
+  "label": "インプ・爪撃",
+  "enemy": "imp",
+  "motion": "attack",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 754,
+        "height": 561
+      },
+      "sourceAnchor": [
+        412,
+        497
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "54b37f9fb0eb4a65aa545be664c0e5c0c6dc8aa06d3207dfa5a7c3b60a942d10",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8871879577636719,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 115,
+        "top": 179,
+        "right": 469,
+        "bottom": 415
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "溜め",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 754,
+        "top": 0,
+        "width": 694,
+        "height": 561
+      },
+      "sourceAnchor": [
+        320,
+        497
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "87985ae87f45dcff6d9803152992dfafe8a3ece7a1f39c2087cd10b77e808621",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8863639831542969,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 134,
+        "top": 175,
+        "right": 487,
+        "bottom": 394
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 400,
+      "phase": "発動",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 0,
+        "top": 561,
+        "width": 768,
+        "height": 525
+      },
+      "sourceAnchor": [
+        420,
+        458
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "422c9f976d78d84b11f45e271df7687d8a019c06e54ea8d5d5831886794a42d1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8884849548339844,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 158,
+        "top": 153,
+        "right": 472,
+        "bottom": 413
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 768,
+        "top": 561,
+        "width": 680,
+        "height": 525
+      },
+      "sourceAnchor": [
+        320,
+        461
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "b49849915d2e1ad3c3dd5883a96013425ffffe9f3c9e780cba7d4aa916dbe37c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8890151977539062,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 150,
+        "top": 181,
+        "right": 460,
+        "bottom": 414
+      }
+    }
+  ],
+  "fingerprint": "183cc63f4002c2db12a0218a803f6acf868af3f63d0e433c712661566583a808",
+  "events": [
+    {
+      "timeMs": 280,
+      "effect": "castle-claw",
+      "kind": "melee"
+    }
+  ],
+  "pivot": {
+    "x": 300,
+    "y": 390
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 900,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "stop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/imp/attack/manifest.json",
+  "sourceFingerprint": "183cc63f4002c2db12a0218a803f6acf868af3f63d0e433c712661566583a808",
+  "action": {
+    "name": "通常攻撃",
+    "motion": "attack",
+    "warn": 0,
+    "times": [
+      280
+    ],
+    "kind": "melee",
+    "radius": 190,
+    "effect": "claw",
+    "rest": 1800,
+    "status": null,
+    "duration": 900
+  },
+  "effectPreview": {
+    "assets": [
+      {
+        "id": "castle-claw",
+        "manifest": "../../../../effects/castle-claw/manifest.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "character": "warrior",
+  "motion": "forward",
+  "source": "source/warrior-forward-generated-v7.png",
+  "measurement": "manual visual estimate of ankle centers in output256x224; tolerance +/-5px; occluded far ankle in 3/7 inferred from shin/sole, not automatic identity proof",
+  "leftIdentity": "camera-near large bright frontal thigh buckle and kneeplate; thigh/knee/shin traced continuously; not screen-left foot",
+  "rightIdentity": "camera-far smaller darker sideways kneeplate and partly hidden shin",
+  "frames": [
+    {
+      "frame": 1,
+      "L": {
+        "x": 164,
+        "y": 198
+      },
+      "R": {
+        "x": 93,
+        "y": 196
+      }
+    },
+    {
+      "frame": 2,
+      "L": {
+        "x": 157,
+        "y": 198
+      },
+      "R": {
+        "x": 107,
+        "y": 193
+      }
+    },
+    {
+      "frame": 3,
+      "L": {
+        "x": 126,
+        "y": 200
+      },
+      "R": {
+        "x": 128,
+        "y": 197,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 4,
+      "L": {
+        "x": 92,
+        "y": 195
+      },
+      "R": {
+        "x": 163,
+        "y": 199
+      }
+    },
+    {
+      "frame": 5,
+      "L": {
+        "x": 86,
+        "y": 199
+      },
+      "R": {
+        "x": 156,
+        "y": 199
+      }
+    },
+    {
+      "frame": 6,
+      "L": {
+        "x": 103,
+        "y": 182
+      },
+      "R": {
+        "x": 137,
+        "y": 198
+      }
+    },
+    {
+      "frame": 7,
+      "L": {
+        "x": 124,
+        "y": 198
+      },
+      "R": {
+        "x": 116,
+        "y": 199,
+        "occluded": true
+      }
+    },
+    {
+      "frame": 8,
+      "L": {
+        "x": 168,
+        "y": 197
+      },
+      "R": {
+        "x": 98,
+        "y": 198
+      }
+    }
+  ]
+}

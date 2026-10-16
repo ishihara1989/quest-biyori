@@ -1,0 +1,38 @@
+[
+  {
+    "file": "move/horn-jackal-move-preview.gif",
+    "sha256": "8f2e59301518944b17446dbce28da6261bfdcfec74ead66ac9ddaac3a3c6f5c0"
+  },
+  {
+    "file": "move/horn-jackal-move.png",
+    "sha256": "365625a05842e946fa37ea43721db2fdfbf6e5c2b2417941887272cf64c4d608"
+  },
+  {
+    "file": "move/manifest.json",
+    "sha256": "ba4c262bcb6de3f3699576289de81d29d7557cb7bae094a7e4c8e0a93ef13ac3"
+  },
+  {
+    "file": "move/move-01.png",
+    "sha256": "e55ba8dcce8ec8b013ba7b8803d394c9e294951ff60551c8c84a4040d93a62df"
+  },
+  {
+    "file": "move/move-02.png",
+    "sha256": "61330f832fad976507c724f9be5d1cde4a4f834effecdc9152d515c5e4e32de0"
+  },
+  {
+    "file": "move/move-03.png",
+    "sha256": "1e551a08505cc209c7f0de677dc1df825e39a7b8a2c610d47befc648768725ad"
+  },
+  {
+    "file": "move/move-04.png",
+    "sha256": "c76cf05f1e0dfded591ce9db6663801728eb81bd5637212e485402dce27bf8eb"
+  },
+  {
+    "file": "move/move-05.png",
+    "sha256": "3565a4974b7f71b784005900cb1c4701df327f8c02870207b173250100327f3d"
+  },
+  {
+    "file": "move/move-06.png",
+    "sha256": "86876a5975f7515c8453107811530990ea5bea4f026e388b55d14ee42295aa7c"
+  }
+]

@@ -1,0 +1,10 @@
+Use case: stylized-concept.
+Asset type: FOUR-frame single SUMMON GATE VFX, separate arch-demon spell for a pixel-art JRPG.
+Use reference for dark-violet/crimson fire, black-and-gold pointed oval gate frame and gold-red ground seal. Correct the changing frame size. Exactly FOUR complete SMALL gates in a 2x2 sprite sheet, same scale, fixed geometry, wide transparent gutters, all sparks and crown tips inside central 60% of each cell.
+Normalized geometry per cell 0..1000 is IDENTICAL in all frames: tall oval outer frame centered (500,490), outer radii (170,245), top gold finial at (500,210), bottom frame rests at (500,735). Ground ellipse center (500,740), radii (230,45). Entire effect stays x=230..770,y=180..820. Opening inside oval stays fully transparent so an imp can be seen through it. No opaque disc, backdrop, floor or new character.
+Frame 1: fixed complete thin black/gold oval frame and finial faintly lit, a few tiny red-violet edge embers; opening clear.
+Frame 2: SAME frame shape, width and height, inner crimson/violet rim brightens to open the portal. Tiny gold rim details become bright; aperture remains transparent.
+Frame 3: SAME frame geometry at maximum power, bright flowing magenta inside the rim and 6 small embers confined near outer frame. No giant growing halo, lightning branches or increased frame size. Gold ground seal stays same position and size.
+Frame 4: SAME frame geometry dims and dissolves into sparse rim fragments, no intact bright portal after this frame. Ground seal fades. Stop and hide after frame 4.
+All frames fixed outer finial and ellipse coordinates. No expanding or contracting oval, extra ring, horned monster face, character, tall pillar or floor platform.
+Refined crisp JRPG pixel clusters, stepped edges and exact reference palette. Genuine transparent alpha outside frame, flames and sigil strokes AND inside the empty portal. No background glow sheet, text, labels, borders, grid, checkerboard or watermark.

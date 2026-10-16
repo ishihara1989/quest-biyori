@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "enemy": "bandage-soldier",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "bandage-soldier-idle.png",
+  "preview": "../../../../../../development/assets/enemies/bandage-soldier/motions/idle/bandage-soldier-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1920,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 480,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 278,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 880,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/bandage-soldier/source/idle-registered.png",
+  "sourceScale": 0.44468546637744033,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "呼吸1",
+      "bounds": {
+        "left": 158,
+        "top": 97,
+        "right": 369,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 802,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 481,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 480,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "呼吸2",
+      "bounds": {
+        "left": 155,
+        "top": 93,
+        "right": 380,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 802,
+        "y": 0,
+        "width": 802,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 392,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 960,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "呼吸3",
+      "bounds": {
+        "left": 158,
+        "top": 97,
+        "right": 369,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 544,
+        "width": 802,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 481,
+        "y": 503
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1440,
+      "y": 0,
+      "width": 480,
+      "height": 320,
+      "durationMs": 220,
+      "phase": "呼吸4",
+      "bounds": {
+        "left": 159,
+        "top": 97,
+        "right": 372,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 802,
+        "y": 544,
+        "width": 802,
+        "height": 544
+      },
+      "sourceAnchor": {
+        "x": 383,
+        "y": 503
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/bandage-soldier-idle-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/bandage-soldier.png",
+  "action": null,
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 770,
+          "height": 512
+        },
+        {
+          "x": 770,
+          "y": 0,
+          "width": 766,
+          "height": 512
+        },
+        {
+          "x": 0,
+          "y": 512,
+          "width": 770,
+          "height": 512
+        },
+        {
+          "x": 770,
+          "y": 512,
+          "width": 766,
+          "height": 512
+        }
+      ]
+    }
+  ]
+}

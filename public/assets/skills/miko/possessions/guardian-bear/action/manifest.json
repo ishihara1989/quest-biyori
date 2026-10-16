@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "guardian-bear-action",
+  "character": "miko",
+  "subject": "guardian-bear",
+  "group": "possession",
+  "motion": "action",
+  "sheet": "guardian-bear-action.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 390,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5188284518828452,
+  "frames": [
+    {
+      "index": 0,
+      "file": "guardian-bear-action-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 16,
+        "t": 100,
+        "r": 504,
+        "b": 476,
+        "n": 106648,
+        "width": 489,
+        "height": 377
+      }
+    },
+    {
+      "index": 1,
+      "file": "guardian-bear-action-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 63,
+        "t": 100,
+        "r": 408,
+        "b": 476,
+        "n": 92551,
+        "width": 346,
+        "height": 377
+      }
+    },
+    {
+      "index": 2,
+      "file": "guardian-bear-action-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 130,
+      "phase": "action",
+      "bounds": {
+        "l": 74,
+        "t": 100,
+        "r": 446,
+        "b": 476,
+        "n": 96472,
+        "width": 373,
+        "height": 377
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/guardian-bear-action-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/guardian-bear-idle-generated-v2.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

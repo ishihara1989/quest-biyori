@@ -1,0 +1,408 @@
+{
+  "date": "2026-10-14 JST",
+  "status": "development candidate; no runtime registration",
+  "reference": "references/demon-god.png",
+  "effects": {
+    "demon-impact": {
+      "manifest": "/development/assets/late-stage-first-pass/v1/review/effects/demon-impact/manifest.json",
+      "status": "first-pass reusable in review",
+      "use": "拳撃・断界。小さく短く表示",
+      "scale": 0.55
+    },
+    "demon-pillar": {
+      "manifest": "/development/assets/late-stage-first-pass/v1/review/effects/demon-pillar/manifest.json",
+      "status": "first-pass reusable in review",
+      "use": "三界魔柱。単柱を0.9秒差で3回",
+      "scale": 0.7
+    },
+    "curse": {
+      "manifest": "/assets/skills/shaman/effects/mark/manifest.json",
+      "status": "runtime asset reused",
+      "use": "胸前ではなく対象へ呪印",
+      "scale": 1
+    },
+    "silence-seal": {
+      "manifest": "/assets/skills/ninja/effects/seal/manifest.json",
+      "status": "runtime asset reused",
+      "use": "初回封声の印に背景・見切れの課題があるため封印を流用",
+      "scale": 1
+    },
+    "end-cross": {
+      "manifest": "/assets/effects/ruins-furnace-beam/manifest.json",
+      "status": "runtime asset reused",
+      "use": "単独の炉心光線を±28°で1秒差。現行の青白い色はそのまま保持",
+      "scale": 1
+    },
+    "end-ring": {
+      "manifest": "/assets/skills/ninja/effects/final-ring/manifest.json",
+      "status": "runtime asset reused",
+      "use": "終撃の輪を低い楕円配置で流用",
+      "scale": 2
+    }
+  },
+  "coordinateSystem": "normalized 0..1000 in each equal cell. Targets are design coordinates, not measurements. Root = pelvis center.",
+  "invariants": [
+    "left facing",
+    "two muscular arms",
+    "faceless obsidian head with gold crown frame",
+    "floating except terminal defeat",
+    "same canonical reference and palette",
+    "existing separate VFX; no new VFX generation"
+  ],
+  "motions": [
+    {
+      "id": "idle",
+      "label": "待機",
+      "durations": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "phases": [
+        "中立",
+        "浮上",
+        "中立",
+        "下降"
+      ],
+      "rootTargets": [
+        [
+          550,
+          555
+        ],
+        [
+          550,
+          541
+        ],
+        [
+          550,
+          555
+        ],
+        [
+          550,
+          569
+        ]
+      ],
+      "trajectory": "Subtle hovering idle. F1 neutral; F2 whole body floats UP 14 units, fists lag +6 units and cloth tips lag +10; F3 neutral, fists and cloth settle; F4 whole body floats DOWN 14 units, fists lag -6, cloth tips lag -10. Keep limbs relaxed and same body angle; both feet never touch ground. Halo translates with body, no size change. Symmetric easing F4 -> F1 -> F2, NO jump at loop boundary."
+    },
+    {
+      "id": "move",
+      "label": "浮遊移動",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "phases": [
+        "滑空",
+        "浮上",
+        "滑空",
+        "下降"
+      ],
+      "rootTargets": [
+        [
+          550,
+          555
+        ],
+        [
+          550,
+          543
+        ],
+        [
+          550,
+          555
+        ],
+        [
+          550,
+          567
+        ]
+      ],
+      "trajectory": "LEFTWARD gliding LOOP, no locomotion stepping and no horizontal travel within the sheet (game translates sprite). Constant forward torso lean 8 degrees versus reference, hips/root stays x=550. Both bent lower legs trail toward RIGHT +35 units, cloth streams RIGHT +30. F1 neutral height; F2 root UP12, cloth lags down8; F3 neutral height, knees float +6; F4 root DOWN12, cloth lags up8. Two fists held relaxed slightly behind ribcage; near fist about (400,550), far fist (690,530). No alternating ground contacts. F4 -> F1 natural gliding loop."
+    },
+    {
+      "id": "attack",
+      "label": "拳撃",
+      "durations": [
+        160,
+        260,
+        180,
+        240
+      ],
+      "phases": [
+        "構え",
+        "引く",
+        "左へ拳撃",
+        "復帰"
+      ],
+      "effects": [
+        {
+          "id": "demon-impact",
+          "frame": 2,
+          "placement": "target"
+        }
+      ],
+      "rootTargets": [
+        [
+          550,
+          555
+        ],
+        [
+          565,
+          550
+        ],
+        [
+          510,
+          555
+        ],
+        [
+          550,
+          555
+        ]
+      ],
+      "trajectory": "One powerful LEFT-directed punch with NEAR arm. F1 neutral hover, near fist (350,525), far fist (660,540). F2 near elbow pulls back to (625,440), near fist chambers (575,405), upper torso twists 10 degrees back; far fist stays by ribs (665,505). F3 near shoulder (445,360) -> elbow (325,390) -> clenched fist (175,405), ONE arm extended LEFT, upper torso lunges left, ROOT shifts x=510; far arm stays visibly bent guarding (650,475). F4 near fist returns (350,525), root/reference hover recovered. Legs remain dangling; no running or ground stomp. Reference crown/blank head unchanged."
+    },
+    {
+      "id": "danger-1",
+      "label": "魔腕の断界",
+      "durations": [
+        600,
+        900,
+        300,
+        420
+      ],
+      "phases": [
+        "両腕を引く",
+        "第一打",
+        "第二打",
+        "復帰"
+      ],
+      "effects": [
+        {
+          "id": "demon-impact",
+          "frame": 1,
+          "placement": "target"
+        },
+        {
+          "id": "demon-impact",
+          "frame": 2,
+          "placement": "target"
+        }
+      ],
+      "rootTargets": [
+        [
+          565,
+          545
+        ],
+        [
+          515,
+          550
+        ],
+        [
+          510,
+          555
+        ],
+        [
+          550,
+          555
+        ]
+      ],
+      "trajectory": "Final selected motion: TWO arms throughout. Both fists chamber in F1. One arm makes two sequential LEFT punches, upper line in F2 then lower line in F3; the other stays bent guarding the chest. Both relax in F4. Effect onsets F2 then F3 are 0.9 seconds apart. The attempt to alternate arms was not achieved by the revision and was not selected; the source identity/anatomy is preserved."
+    },
+    {
+      "id": "danger-2",
+      "label": "三界魔柱",
+      "durations": [
+        300,
+        540,
+        2000,
+        380
+      ],
+      "phases": [
+        "胸核へ集める",
+        "両掌を上げる",
+        "三柱を放つ",
+        "復帰"
+      ],
+      "effects": [
+        {
+          "id": "demon-pillar",
+          "frame": 2,
+          "delayMs": 0,
+          "placement": "pillar",
+          "slot": -1
+        },
+        {
+          "id": "demon-pillar",
+          "frame": 2,
+          "delayMs": 900,
+          "placement": "pillar",
+          "slot": 0
+        },
+        {
+          "id": "demon-pillar",
+          "frame": 2,
+          "delayMs": 1800,
+          "placement": "pillar",
+          "slot": 1
+        },
+        {
+          "id": "curse",
+          "frame": 2,
+          "placement": "status"
+        }
+      ],
+      "rootTargets": [
+        [
+          550,
+          555
+        ],
+        [
+          550,
+          540
+        ],
+        [
+          550,
+          530
+        ],
+        [
+          550,
+          555
+        ]
+      ],
+      "trajectory": "Floating chest-core invocation, three pillars will be existing VFX outside sheet. F1 BOTH hands gather toward chest core, palms (430,410),(535,415), elbows (375,470),(635,465). F2 both elbows open and palms lift to (345,265),(655,255), fully connected two arms. F3 both palms open upward/outward (295,330),(700,310), chest core brightens modestly, whole body levitates 25 units; feet hang, no change of body height. F4 hands and root return reference neutral. No generated columns, lightning, circles or particles in body sheet. Head/crown and halo preserve canonical shape."
+    },
+    {
+      "id": "danger-3",
+      "label": "封声",
+      "durations": [
+        280,
+        500,
+        360,
+        360
+      ],
+      "phases": [
+        "胸前で封印",
+        "掌を立てる",
+        "封声を放つ",
+        "復帰"
+      ],
+      "effects": [
+        {
+          "id": "silence-seal",
+          "frame": 2,
+          "placement": "status"
+        }
+      ],
+      "rootTargets": [
+        [
+          550,
+          555
+        ],
+        [
+          550,
+          550
+        ],
+        [
+          535,
+          545
+        ],
+        [
+          550,
+          555
+        ]
+      ],
+      "trajectory": "Seal cast by gestures; this creature HAS NO mouth. F1 far hand held near red chest core (530,410), near hand across chest (415,435). F2 near forearm lifts, open near palm VERTICAL facing LEFT at (320,330), elbow (395,450); far hand still at chest core. F3 near palm pushes LEFT to (210,375), elbow (355,385), root moves left15/up10, fingers readable but only one hand per arm, far hand remains (535,420). F4 returns neutral. Never put a hand to a mouth and NEVER add a mouth. No seal graphic baked on body; existing effect plays at target."
+    },
+    {
+      "id": "danger-4",
+      "label": "終焉の交差",
+      "durations": [
+        360,
+        640,
+        1200,
+        800
+      ],
+      "phases": [
+        "交差して溜める",
+        "斜め二方向へ",
+        "二帯を放つ",
+        "衝撃輪・復帰"
+      ],
+      "effects": [
+        {
+          "id": "end-cross",
+          "frame": 2,
+          "placement": "band",
+          "angle": -28
+        },
+        {
+          "id": "end-cross",
+          "frame": 2,
+          "delayMs": 1000,
+          "placement": "band",
+          "angle": 28
+        },
+        {
+          "id": "end-ring",
+          "frame": 3,
+          "placement": "ring"
+        }
+      ],
+      "rootTargets": [
+        [
+          550,
+          555
+        ],
+        [
+          550,
+          530
+        ],
+        [
+          535,
+          520
+        ],
+        [
+          550,
+          555
+        ]
+      ],
+      "trajectory": "Final spell using TWO arms, two crossing bands are separate reusable VFX. F1 forearms CROSS in front of chest: near hand (535,345), far hand (400,455), keep each shoulder-elbow-hand connection readable. F2 arms UNFOLD to two LEFT-directed diagonals: near palm (250,240), near elbow (340,335); far palm (240,560), far elbow (380,475); chest and halo brighten modestly. F3 both palms push a little farther LEFT: upper palm (175,220), lower palm (170,585), fingers spread, whole body hovers35 units UP with knees slightly curled. F4 arms lower to canonical idle, core returns subdued, cloth follows one beat later. No extra arms, generated beams or full-screen energy inside sheet; crown/head remain blank and ornate. Full upper hand and lower hand must fit cell margins."
+    },
+    {
+      "id": "reaction",
+      "label": "被弾・撃破",
+      "durations": [
+        200,
+        280,
+        440,
+        1200
+      ],
+      "phases": [
+        "浮遊被弾",
+        "浮遊復帰",
+        "墜落",
+        "終端保持"
+      ],
+      "rootTargets": [
+        [
+          580,
+          550
+        ],
+        [
+          550,
+          555
+        ],
+        [
+          560,
+          680
+        ],
+        [
+          545,
+          780
+        ]
+      ],
+      "trajectory": "FOUR frames but TWO separate motions: top row F1 hit and F2 recovery, bottom row F3 falling defeat and F4 terminal defeated. F1 upper torso recoils RIGHT 25 units and head tilts back10 degrees, near fist raises reflexively (390,450), far fist remains (680,550), feet STILL suspended. F2 return exact hovering reference idle. F3 defeat: body losing levitation, ROOT down125, knees fold toward LEFT, blank head slumps forward, arms fall naturally, halo lowers behind body intact. To fit margin, folding knees reduces total silhouette height without shrinking any body segment. F4 torso collapses/slumps near floor into a seated low folded pose, both legs bent under body, two arms limp down forward, blank head bowed LEFT; halo behind lowers but remains within cell. Same body segment lengths; do not replace with pile of rubble or erase body, no disintegration VFX. Terminal F4 is held and must NOT loop back to F3. Entire crown, halo, knees, hands and feet remain in own cell x=100..900 y=100..900. Keep same scale as other frames."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "attack",
+    "label": "黒騎士・剣撃",
+    "manifest": "attack/manifest.json"
+  },
+  {
+    "id": "idle",
+    "label": "黒騎士・待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "danger-1",
+    "label": "黒騎士・王断の大剣",
+    "manifest": "danger-1/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "黒騎士・被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "黒騎士・撃破",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "danger-2",
+    "label": "黒騎士・黒環薙ぎ",
+    "manifest": "danger-2/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "黒騎士・歩行",
+    "manifest": "move/manifest.json"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "enemy": "horn-jackal",
+    "frame": 3,
+    "prompt": "Edit ONLY the dark FAR RIGHT FRONT leg in this 1254x1254 transparent sprite. Keep head, horns, torso, near front leg, both rear legs, tail, body placement, size and colors EXACTLY unchanged. The dark FAR front is the LEFTMOST leg, currently stretched excessively toward the muzzle. Retract that leg's paw horizontally to bottom-center (350,1080). Keep it GROUNDED, do not lift it. Connect its thigh/knee/shin to this same dark paw naturally, behind the bright foreground shoulder. Shorten the excessive forward reach; the planted far paw should be near/behind the curled bright near front paw, NOT far out in front of the nose. Move its OWN existing foot and erase the old footprint, no new fifth paw. Bright near front stays curled/lifted EXACTLY as original, bright near hind stays grounded and far hind stays lifted. This is frame 3 in a six-pose trot; far planted forefoot X progresses 350 -> 385 -> 420 gently across frames 3,4,5. Only this one dark front leg changes. Preserve true transparent alpha and crisp original pixels/identity.",
+    "source": "trot/horn-jackal/sources/frame-3-focused.png",
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13090-86c2-7f71-8c3e-886a539df52e\\exec-f31b961b-374c-4f71-ba4a-cce8a60787d3.png",
+    "status": "selected",
+    "selectionReason": "Four connected legs and alternating diagonal support reviewed; canonical appearance retained."
+  },
+  {
+    "enemy": "horn-jackal",
+    "frame": 4,
+    "prompt": "Edit ONLY the dark FAR RIGHT FRONT leg in this 1254x1254 transparent sprite. Keep head, horns, torso, near front leg, both rear legs, tail, body placement, size and colors EXACTLY unchanged. The dark FAR front is the LEFTMOST leg, currently stretched excessively toward the muzzle. Retract that leg's paw horizontally to bottom-center (385,1080). Keep it GROUNDED, do not lift it. Connect its thigh/knee/shin to this same dark paw naturally, behind the bright foreground shoulder. Shorten the excessive forward reach; the planted far paw should be near/behind the curled bright near front paw, NOT far out in front of the nose. Move its OWN existing foot and erase the old footprint, no new fifth paw. Bright near front stays curled/lifted EXACTLY as original, bright near hind stays grounded and far hind stays lifted. This is frame 4 in a six-pose trot; far planted forefoot X progresses 350 -> 385 -> 420 gently across frames 3,4,5. Only this one dark front leg changes. Preserve true transparent alpha and crisp original pixels/identity.",
+    "source": "trot/horn-jackal/sources/frame-4-focused.png",
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13090-86c2-7f71-8c3e-886a539df52e\\exec-0c91d3ff-d6d4-48cd-af61-6bd82a43ad4d.png",
+    "status": "selected",
+    "selectionReason": "Four connected legs and alternating diagonal support reviewed; canonical appearance retained."
+  },
+  {
+    "enemy": "horn-jackal",
+    "frame": 5,
+    "prompt": "Edit ONLY the dark FAR RIGHT FRONT leg in this 1254x1254 transparent sprite. Keep head, horns, torso, near front leg, both rear legs, tail, body placement, size and colors EXACTLY unchanged. The dark FAR front is the LEFTMOST leg, currently stretched excessively toward the muzzle. Retract that leg's paw horizontally to bottom-center (420,1080). Keep it GROUNDED, do not lift it. Connect its thigh/knee/shin to this same dark paw naturally, behind the bright foreground shoulder. Shorten the excessive forward reach; the planted far paw should be near/behind the curled bright near front paw, NOT far out in front of the nose. Move its OWN existing foot and erase the old footprint, no new fifth paw. Bright near front stays curled/lifted EXACTLY as original, bright near hind stays grounded and far hind stays lifted. This is frame 5 in a six-pose trot; far planted forefoot X progresses 350 -> 385 -> 420 gently across frames 3,4,5. Only this one dark front leg changes. Preserve true transparent alpha and crisp original pixels/identity.",
+    "source": "trot/horn-jackal/sources/frame-5-focused.png",
+    "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13090-86c2-7f71-8c3e-886a539df52e\\exec-e0402b9a-43e9-4820-923a-f2582d0d925f.png",
+    "status": "selected",
+    "selectionReason": "Four connected legs and alternating diagonal support reviewed; canonical appearance retained."
+  }
+]

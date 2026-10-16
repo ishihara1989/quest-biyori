@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "id": "guardian-bear-appear",
+  "character": "miko",
+  "subject": "guardian-bear",
+  "group": "possession",
+  "motion": "appear",
+  "sheet": "guardian-bear-appear.png",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 450,
+  "loop": false,
+  "pivot": {
+    "x": 256,
+    "y": 476
+  },
+  "scale": 0.5188284518828452,
+  "frames": [
+    {
+      "index": 0,
+      "file": "guardian-bear-appear-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 29,
+        "t": 49,
+        "r": 494,
+        "b": 479,
+        "n": 126992,
+        "width": 466,
+        "height": 431
+      }
+    },
+    {
+      "index": 1,
+      "file": "guardian-bear-appear-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 14,
+        "t": 34,
+        "r": 491,
+        "b": 480,
+        "n": 141366,
+        "width": 478,
+        "height": 447
+      }
+    },
+    {
+      "index": 2,
+      "file": "guardian-bear-appear-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "phase": "appear",
+      "bounds": {
+        "l": 28,
+        "t": 51,
+        "r": 477,
+        "b": 476,
+        "n": 129315,
+        "width": 450,
+        "height": 426
+      }
+    }
+  ],
+  "source": "../../../../../../../development/assets/skills/miko/source/guardian-bear-appear-generated-v1.png",
+  "facing": "right",
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "common full-form ground anchor",
+  "generation": "built-in image_gen; preserved RGBA; nearest-neighbor registration; see PROMPT.md",
+  "referencePaths": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/guardian-bear-idle-generated-v2.png"
+  ],
+  "edgeBehavior": null,
+  "extraction": "transparent-gutter crop"
+}

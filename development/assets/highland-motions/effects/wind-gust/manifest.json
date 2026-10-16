@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "effect": "wind-gust",
+  "label": "翼の突風",
+  "sheet": "wind-gust.png",
+  "preview": "wind-gust-preview.gif",
+  "prompt": "../../PROMPTS.md",
+  "width": 2160,
+  "height": 340,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 540,
+  "frameHeight": 340,
+  "frameCount": 4,
+  "pivot": {
+    "x": 270,
+    "y": 170
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "registered.png",
+  "sourceScale": 0.4909983633387889,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "wind-gust-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 340,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 243,
+        "top": 131,
+        "right": 355,
+        "bottom": 238
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 739,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 328,
+        "y": 326
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "wind-gust-02.png",
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 340,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 173,
+        "top": 87,
+        "right": 379,
+        "bottom": 275
+      },
+      "sourceCell": {
+        "x": 739,
+        "y": 0,
+        "width": 739,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 347,
+        "y": 321
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "wind-gust-03.png",
+      "x": 1080,
+      "y": 0,
+      "width": 540,
+      "height": 340,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 128,
+        "top": 61,
+        "right": 420,
+        "bottom": 278
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 643,
+        "width": 739,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 369,
+        "y": 321
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "wind-gust-04.png",
+      "x": 1620,
+      "y": 0,
+      "width": 540,
+      "height": 340,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 149,
+        "top": 90,
+        "right": 376,
+        "bottom": 258
+      },
+      "sourceCell": {
+        "x": 739,
+        "y": 643,
+        "width": 739,
+        "height": 643
+      },
+      "sourceAnchor": {
+        "x": 310,
+        "y": 321
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "previewOnly": true,
+  "originalSource": "../../sources/effects/wind-gust-generated.png",
+  "kind": "origin"
+}

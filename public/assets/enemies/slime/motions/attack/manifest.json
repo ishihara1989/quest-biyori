@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "enemy": "slime",
+  "motion": "attack",
+  "label": "攻撃",
+  "facing": "left",
+  "sheet": "slime-attack.png",
+  "preview": "../../../../../../development/assets/enemies/slime/motions/attack/slime-attack-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/slime/PROMPT.md",
+  "width": 1024,
+  "height": 224,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 4,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 620,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "source": "../../../../../../development/assets/enemies/slime/source/slime-generated-v1.png",
+  "sourceScale": 0.5,
+  "frames": [
+    {
+      "index": 0,
+      "file": "attack-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "右に引いてためる",
+      "sourceCellIndex": 16,
+      "sourceCell": {
+        "x": 0,
+        "y": 1110,
+        "width": 286,
+        "height": 264
+      },
+      "sourceAnchor": {
+        "x": 185,
+        "y": 175
+      },
+      "bakedOffset": {
+        "x": 8,
+        "y": 0
+      },
+      "bounds": {
+        "left": 99,
+        "top": 150,
+        "right": 173,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 1,
+      "file": "attack-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "左へ体当たり",
+      "sourceCellIndex": 17,
+      "sourceCell": {
+        "x": 286,
+        "y": 1110,
+        "width": 287,
+        "height": 264
+      },
+      "sourceAnchor": {
+        "x": 156,
+        "y": 175
+      },
+      "bakedOffset": {
+        "x": -24,
+        "y": 0
+      },
+      "bounds": {
+        "left": 47,
+        "top": 159,
+        "right": 161,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 2,
+      "file": "attack-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "反動を戻す",
+      "sourceCellIndex": 18,
+      "sourceCell": {
+        "x": 573,
+        "y": 1110,
+        "width": 286,
+        "height": 264
+      },
+      "sourceAnchor": {
+        "x": 154,
+        "y": 175
+      },
+      "bakedOffset": {
+        "x": -5,
+        "y": 0
+      },
+      "bounds": {
+        "left": 78,
+        "top": 152,
+        "right": 168,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 3,
+      "file": "attack-04.png",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 200,
+      "phase": "待機の基準姿勢",
+      "sourceCellIndex": 0,
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 286,
+        "height": 320
+      },
+      "sourceAnchor": {
+        "x": 157,
+        "y": 271
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "left": 87,
+        "top": 153,
+        "right": 169,
+        "bottom": 207
+      }
+    }
+  ]
+}

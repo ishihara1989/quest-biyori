@@ -1,0 +1,467 @@
+[
+  {
+    "job": "parts/throne",
+    "index": 1,
+    "width": 1254,
+    "height": 1254,
+    "transparentFraction": 0.8093494756174182,
+    "edgePixels": 0,
+    "bounds": [
+      308,
+      322,
+      946,
+      996
+    ],
+    "marginFraction": 0.20494417862838915
+  },
+  {
+    "job": "parts/halo",
+    "index": 1,
+    "width": 1254,
+    "height": 1254,
+    "transparentFraction": 0.8580364206151162,
+    "edgePixels": 0,
+    "bounds": [
+      178,
+      195,
+      1076,
+      1048
+    ],
+    "marginFraction": 0.14114832535885166
+  },
+  {
+    "job": "motions/p1-shot",
+    "index": 1,
+    "width": 627,
+    "height": 627,
+    "transparentFraction": 0.6748599060359323,
+    "edgePixels": 0,
+    "bounds": [
+      100,
+      116,
+      551,
+      556
+    ],
+    "marginFraction": 0.11164274322169059
+  },
+  {
+    "job": "motions/p1-shot",
+    "index": 2,
+    "width": 627,
+    "height": 627,
+    "transparentFraction": 0.6740815355773805,
+    "edgePixels": 0,
+    "bounds": [
+      100,
+      116,
+      551,
+      556
+    ],
+    "marginFraction": 0.11164274322169059
+  },
+  {
+    "job": "motions/p1-shot",
+    "index": 3,
+    "width": 627,
+    "height": 627,
+    "transparentFraction": 0.6549783913168451,
+    "edgePixels": 0,
+    "bounds": [
+      100,
+      114,
+      559,
+      556
+    ],
+    "marginFraction": 0.10685805422647528
+  },
+  {
+    "job": "motions/p1-shot",
+    "index": 4,
+    "width": 627,
+    "height": 627,
+    "transparentFraction": 0.6572219296973767,
+    "edgePixels": 0,
+    "bounds": [
+      100,
+      115,
+      551,
+      556
+    ],
+    "marginFraction": 0.11164274322169059
+  },
+  {
+    "job": "motions/p2-cast-1",
+    "index": 1,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.6209364793504472,
+    "edgePixels": 0,
+    "bounds": [
+      135,
+      100,
+      706,
+      654
+    ],
+    "marginFraction": 0.023480662983425413
+  },
+  {
+    "job": "motions/p2-cast-1",
+    "index": 2,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.6308587192088153,
+    "edgePixels": 0,
+    "bounds": [
+      106,
+      100,
+      656,
+      654
+    ],
+    "marginFraction": 0.0925414364640884
+  },
+  {
+    "job": "motions/p2-cast-1",
+    "index": 3,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.6355842312505723,
+    "edgePixels": 0,
+    "bounds": [
+      70,
+      101,
+      611,
+      654
+    ],
+    "marginFraction": 0.09530386740331492
+  },
+  {
+    "job": "motions/p2-cast-2",
+    "index": 4,
+    "width": 532,
+    "height": 532,
+    "transparentFraction": 0.6017122222850358,
+    "edgePixels": 0,
+    "bounds": [
+      71,
+      79,
+      500,
+      493
+    ],
+    "marginFraction": 0.05827067669172932
+  },
+  {
+    "job": "motions/p2-cast-2",
+    "index": 5,
+    "width": 532,
+    "height": 532,
+    "transparentFraction": 0.6174140708915145,
+    "edgePixels": 0,
+    "bounds": [
+      70,
+      79,
+      476,
+      493
+    ],
+    "marginFraction": 0.07142857142857142
+  },
+  {
+    "job": "motions/p2-cast-2",
+    "index": 6,
+    "width": 532,
+    "height": 532,
+    "transparentFraction": 0.6144708575951157,
+    "edgePixels": 0,
+    "bounds": [
+      58,
+      79,
+      470,
+      492
+    ],
+    "marginFraction": 0.07330827067669173
+  },
+  {
+    "job": "motions/p2-ultimate-1",
+    "index": 1,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.4490934342663533,
+    "edgePixels": 0,
+    "bounds": [
+      26,
+      20,
+      706,
+      704
+    ],
+    "marginFraction": 0.023480662983425413
+  },
+  {
+    "job": "motions/p2-ultimate-1",
+    "index": 2,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.4484905833155276,
+    "edgePixels": 0,
+    "bounds": [
+      27,
+      21,
+      706,
+      704
+    ],
+    "marginFraction": 0.023480662983425413
+  },
+  {
+    "job": "motions/p2-ultimate-1",
+    "index": 3,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.45377506791611977,
+    "edgePixels": 0,
+    "bounds": [
+      26,
+      20,
+      706,
+      703
+    ],
+    "marginFraction": 0.023480662983425413
+  },
+  {
+    "job": "motions/p2-ultimate-2",
+    "index": 4,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.470143615884741,
+    "edgePixels": 0,
+    "bounds": [
+      35,
+      45,
+      687,
+      711
+    ],
+    "marginFraction": 0.016574585635359115
+  },
+  {
+    "job": "motions/p2-ultimate-2",
+    "index": 5,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.4416722627514423,
+    "edgePixels": 0,
+    "bounds": [
+      35,
+      42,
+      696,
+      712
+    ],
+    "marginFraction": 0.015193370165745856
+  },
+  {
+    "job": "motions/p2-ultimate-2",
+    "index": 6,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.4528211898293703,
+    "edgePixels": 0,
+    "bounds": [
+      33,
+      10,
+      688,
+      712
+    ],
+    "marginFraction": 0.013812154696132596
+  },
+  {
+    "job": "motions/p2-ultimate-3",
+    "index": 7,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.46075554775495253,
+    "edgePixels": 0,
+    "bounds": [
+      47,
+      24,
+      707,
+      706
+    ],
+    "marginFraction": 0.022099447513812154
+  },
+  {
+    "job": "motions/p2-ultimate-3",
+    "index": 8,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.5032565397881628,
+    "edgePixels": 0,
+    "bounds": [
+      63,
+      24,
+      691,
+      706
+    ],
+    "marginFraction": 0.023480662983425413
+  },
+  {
+    "job": "motions/p2-ultimate-3",
+    "index": 9,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.5046320319892555,
+    "edgePixels": 0,
+    "bounds": [
+      63,
+      24,
+      690,
+      706
+    ],
+    "marginFraction": 0.023480662983425413
+  },
+  {
+    "job": "motions/down",
+    "index": 1,
+    "width": 612,
+    "height": 642,
+    "transparentFraction": 0.5752982916946633,
+    "edgePixels": 0,
+    "bounds": [
+      64,
+      87,
+      582,
+      596
+    ],
+    "marginFraction": 0.04738562091503268
+  },
+  {
+    "job": "motions/down",
+    "index": 2,
+    "width": 613,
+    "height": 642,
+    "transparentFraction": 0.5760190676566399,
+    "edgePixels": 0,
+    "bounds": [
+      56,
+      88,
+      572,
+      597
+    ],
+    "marginFraction": 0.06525285481239804
+  },
+  {
+    "job": "motions/down",
+    "index": 3,
+    "width": 612,
+    "height": 642,
+    "transparentFraction": 0.5671079958463136,
+    "edgePixels": 0,
+    "bounds": [
+      69,
+      81,
+      574,
+      584
+    ],
+    "marginFraction": 0.06045751633986928
+  },
+  {
+    "job": "motions/down",
+    "index": 4,
+    "width": 613,
+    "height": 642,
+    "transparentFraction": 0.583263455860306,
+    "edgePixels": 0,
+    "bounds": [
+      66,
+      55,
+      569,
+      551
+    ],
+    "marginFraction": 0.0701468189233279
+  },
+  {
+    "job": "effects/goddess-return-1",
+    "index": 1,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.8739125789811056,
+    "edgePixels": 0,
+    "bounds": [
+      276,
+      149,
+      452,
+      554
+    ],
+    "marginFraction": 0.2058011049723757
+  },
+  {
+    "job": "effects/goddess-return-1",
+    "index": 2,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.7459059552516712,
+    "edgePixels": 0,
+    "bounds": [
+      191,
+      123,
+      532,
+      582
+    ],
+    "marginFraction": 0.16988950276243095
+  },
+  {
+    "job": "effects/goddess-return-1",
+    "index": 3,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.6620524404016972,
+    "edgePixels": 0,
+    "bounds": [
+      145,
+      108,
+      573,
+      598
+    ],
+    "marginFraction": 0.14917127071823205
+  },
+  {
+    "job": "effects/goddess-return-2",
+    "index": 4,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.6896576722322273,
+    "edgePixels": 0,
+    "bounds": [
+      216,
+      133,
+      634,
+      588
+    ],
+    "marginFraction": 0.12292817679558012
+  },
+  {
+    "job": "effects/goddess-return-2",
+    "index": 5,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.839435609413632,
+    "edgePixels": 0,
+    "bounds": [
+      254,
+      149,
+      474,
+      571
+    ],
+    "marginFraction": 0.2058011049723757
+  },
+  {
+    "job": "effects/goddess-return-2",
+    "index": 6,
+    "width": 724,
+    "height": 724,
+    "transparentFraction": 0.9312005891151064,
+    "edgePixels": 0,
+    "bounds": [
+      273,
+      244,
+      387,
+      488
+    ],
+    "marginFraction": 0.324585635359116
+  }
+]

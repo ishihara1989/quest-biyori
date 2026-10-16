@@ -1,0 +1,25 @@
+{
+  "purpose": "Unscaled static review crops; original pixels and alpha retained; not final game sprites",
+  "generation": "built-in image_gen reference edit",
+  "motionProduction": "not-started",
+  "crops": [
+    {
+      "id": "lamia",
+      "source": "desert/monsters-v3.png",
+      "file": "desert/lamia-v3-preview.png",
+      "left": 836,
+      "top": 418,
+      "width": 418,
+      "height": 418
+    },
+    {
+      "id": "dragon-girl",
+      "source": "volcano/monsters-v3.png",
+      "file": "volcano/dragon-girl-v3-preview.png",
+      "left": 836,
+      "top": 418,
+      "width": 418,
+      "height": 418
+    }
+  ]
+}

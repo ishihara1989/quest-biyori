@@ -1,0 +1,188 @@
+{
+  "id": "imp/idle",
+  "label": "インプ・待機",
+  "enemy": "imp",
+  "motion": "idle",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "上段と下段で体の傾きが変わる。呼吸・浮遊の待機として4→1の揺れを確認する。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "待機1",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/idle-generated.png",
+      "sourceSha256": "d97258525956c8e58d3e979fe2ed0c9305b83bc1d01f003f0724a86d58aafbd7",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 642,
+        "height": 646
+      },
+      "sourceAnchor": [
+        307,
+        577
+      ],
+      "scale": 0.4329004329004329,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "346a64fe15459e0e36bc4aab50c722e0b9674551f659a83df0534322797e91e4",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9043693542480469,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 191,
+        "top": 161,
+        "right": 441,
+        "bottom": 425
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "待機2",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/idle-generated.png",
+      "sourceSha256": "d97258525956c8e58d3e979fe2ed0c9305b83bc1d01f003f0724a86d58aafbd7",
+      "sourceRect": {
+        "left": 642,
+        "top": 0,
+        "width": 619,
+        "height": 646
+      },
+      "sourceAnchor": [
+        275,
+        579
+      ],
+      "scale": 0.4329004329004329,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "90fc2ba43dff726311bc4d824f246de354cdb38d9d401b30255132976b8b5b7f",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9005203247070312,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 196,
+        "top": 163,
+        "right": 429,
+        "bottom": 426
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "phase": "待機3",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/idle-generated.png",
+      "sourceSha256": "d97258525956c8e58d3e979fe2ed0c9305b83bc1d01f003f0724a86d58aafbd7",
+      "sourceRect": {
+        "left": 0,
+        "top": 646,
+        "width": 646,
+        "height": 601
+      },
+      "sourceAnchor": [
+        308,
+        524
+      ],
+      "scale": 0.4329004329004329,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "7fce7a778a53494eaf0cfaf474de29d70245f49cff5a4e947d730d3899e6f84d",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9039726257324219,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 181,
+        "top": 179,
+        "right": 446,
+        "bottom": 425
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "phase": "待機4",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/imp/idle-generated.png",
+      "sourceSha256": "d97258525956c8e58d3e979fe2ed0c9305b83bc1d01f003f0724a86d58aafbd7",
+      "sourceRect": {
+        "left": 646,
+        "top": 646,
+        "width": 615,
+        "height": 601
+      },
+      "sourceAnchor": [
+        280,
+        524
+      ],
+      "scale": 0.4329004329004329,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "b1eba3f634716802ff96dba8f378150c017ddfb8394f79edf998baac3eb5ba2b",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.9016036987304688,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 182,
+        "top": 176,
+        "right": 436,
+        "bottom": 419
+      }
+    }
+  ],
+  "fingerprint": "7a20944b1dc3219c7236e954461c5717f1be8a99a22d752d22efad75223f7851",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 400
+  },
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/imp/idle/manifest.json",
+  "sourceFingerprint": "7a20944b1dc3219c7236e954461c5717f1be8a99a22d752d22efad75223f7851",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

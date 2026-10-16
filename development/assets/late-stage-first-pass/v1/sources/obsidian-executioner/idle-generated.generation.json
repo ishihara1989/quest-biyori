@@ -1,0 +1,28 @@
+{
+  "id": "obsidian-executioner/idle",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "motion": "idle",
+  "label": "待機",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/obsidian-executioner.png",
+  "guide": null,
+  "source": "sources/obsidian-executioner/idle-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame IDLE breathing sheet EXACT 2x2, order top-left, top-right, bottom-left, bottom-right. 黒曜の処刑者. Frame1 canonical neutral; frame2 chest rises 8px, hair/tail/cape/wing tip moves 12px; frame3 neutral; frame4 chest settles 5px, secondary parts return. Feet stay planted, body does not translate, subtle distinct redraws, smooth 4->1 loop. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-79b5372b-1c5f-4f29-b056-9ac57149b4fc.png",
+  "sha256": "b507072e4ee6ed354ed7809e2649acd3ebb6a74cc7340673b4d37fee4b5931d0",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "observations": [
+      "両刃斧と両手の接続、閉じた兜を保持。"
+    ],
+    "issues": [
+      "マントが2コマ目で大きく広がる。復帰・ループで突発的に跳ねないか確認する。",
+      "コマごとの胴体サイズと足元の高さを採用時に揃える。"
+    ]
+  }
+}

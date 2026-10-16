@@ -1,0 +1,102 @@
+{
+  "id": "effects/star-impact",
+  "kind": "effect",
+  "loop": false,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-impact/review/effects/star-impact/frame-01.png",
+      "index": 1,
+      "durationMs": 60,
+      "source": "source/effects/star-impact.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F1: {\"f\":1,\"ms\":60,\"radius\":10,\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.953332468483868,
+      "lowAlphaPixels": 12558,
+      "edgePixels": 0,
+      "bounds": [
+        245,
+        258,
+        465,
+        456
+      ],
+      "marginFraction": 0.3383977900552486
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-impact/review/effects/star-impact/frame-02.png",
+      "index": 2,
+      "durationMs": 90,
+      "source": "source/effects/star-impact.png",
+      "sourceRect": {
+        "left": 724,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F2: {\"f\":2,\"ms\":90,\"radius\":38,\"alpha\":1}. ",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.7116293000824151,
+      "lowAlphaPixels": 70653,
+      "edgePixels": 0,
+      "bounds": [
+        55,
+        63,
+        668,
+        670
+      ],
+      "marginFraction": 0.07320441988950276
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/effects/star-impact/review/effects/star-impact/frame-03.png",
+      "index": 3,
+      "durationMs": 130,
+      "source": "source/effects/star-impact.png",
+      "sourceRect": {
+        "left": 1448,
+        "top": 0,
+        "width": 724,
+        "height": 724
+      },
+      "description": "Global F3: {\"f\":3,\"ms\":130,\"radius\":28,\"alpha\":0}. Show only very faint end afterglow, alpha approaches zero.",
+      "width": 724,
+      "height": 724,
+      "transparentFraction": 0.9023972864076188,
+      "lowAlphaPixels": 36212,
+      "edgePixels": 0,
+      "bounds": [
+        185,
+        154,
+        546,
+        570
+      ],
+      "marginFraction": 0.21132596685082872
+    }
+  ],
+  "sources": [
+    "source/effects/star-impact.png"
+  ],
+  "expectedFrames": 3,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/effects/star-impact/contact.png",
+  "gif": "review/effects/star-impact/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "obsidian-soldier/attack",
+  "source": "sources/obsidian-soldier/attack-v4.png",
+  "prompt": "Use case: background-extraction. EDIT THE PROVIDED IMAGE. Remove ONLY the diffuse brown/red/orange illuminated BACKDROP and all atmospheric glow halos outside the solid outlined sprite shapes. Produce a clean hard-edged transparent cutout of the FOUR pixel characters and their held axes/capes exactly as drawn, same poses, colors, proportions, positions and canvas grid. Alpha MUST be 0 for EVERY background pixel, also the soft red glow between and around the characters and through the gaps between limbs. Keep the hard dark outlines and all yellow/orange colored pixels INSIDE armor and axe. Do not change or redraw the characters, do not dim their internal colors, do not add anything, NO background, NO shadow, NO aura, NO fringe. Keep complete silhouettes, retain four poses TL TR BL BR. This is transparent background removal, not a lit scene.",
+  "selected": true,
+  "reason": "Remove remaining ambient backdrop only",
+  "tool": "built-in image_gen",
+  "sha256": "f5bf2e75c9daa695be01ebfc631191f3f32a1aa2bcf68282aafe5fa4528bb0e7",
+  "reference": "references/obsidian-soldier.png",
+  "guide": null,
+  "firstPass": "sources/obsidian-soldier/attack-generated.png",
+  "issues": [
+    "頭上に振り上げた斧が原画の上端に近い。刃の見切れと余白を確認する。",
+    "復帰が低い構えのため、直立待機への切り替えを確認する。"
+  ],
+  "accepted": false,
+  "actualInputImages": [
+    {
+      "file": "sources/obsidian-soldier/attack-v3.png",
+      "sha256": "02ccd20e2b893b14e32b86f6a048e29406af689467114c0626d91b8d9463ab77"
+    }
+  ],
+  "pathsRelativeTo": "volcano-motions/v2"
+}

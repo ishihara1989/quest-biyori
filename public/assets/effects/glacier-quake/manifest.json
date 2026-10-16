@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-quake",
+  "label": "氷震踏砕",
+  "sheet": "glacier-quake.png",
+  "preview": "../../../../development/assets/effects/glacier-quake/glacier-quake-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 2600,
+  "height": 370,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 650,
+  "frameHeight": 370,
+  "frameCount": 4,
+  "pivot": {
+    "x": 325,
+    "y": 348
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/quake.png",
+  "sourceScale": 0.6496062992125984,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-quake/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-quake-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 370,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 182,
+        "top": 171,
+        "right": 468,
+        "bottom": 348
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 691,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 577
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-quake-02.png",
+      "x": 650,
+      "y": 0,
+      "width": 650,
+      "height": 370,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 139,
+        "top": 96,
+        "right": 511,
+        "bottom": 348
+      },
+      "sourceCell": {
+        "x": 691,
+        "y": 0,
+        "width": 691,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 358,
+        "y": 594
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-quake-03.png",
+      "x": 1300,
+      "y": 0,
+      "width": 650,
+      "height": 370,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 128,
+        "top": 19,
+        "right": 522,
+        "bottom": 348
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 669,
+        "width": 691,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 332,
+        "y": 560
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-quake-04.png",
+      "x": 1950,
+      "y": 0,
+      "width": 650,
+      "height": 370,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 137,
+        "top": 85,
+        "right": 512,
+        "bottom": 348
+      },
+      "sourceCell": {
+        "x": 691,
+        "y": 669,
+        "width": 691,
+        "height": 669
+      },
+      "sourceAnchor": {
+        "x": 322,
+        "y": 576
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "ground",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/quake-generated.png"
+}

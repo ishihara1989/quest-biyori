@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "enemy": "alraune",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "alraune-move.png",
+  "preview": "../../../../../../development/assets/enemies/alraune/motions/move/alraune-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/alraune/PROMPT.md",
+  "width": 2560,
+  "height": 384,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 640,
+  "frameHeight": 384,
+  "frameCount": 4,
+  "pivot": {
+    "x": 360,
+    "y": 367
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 800,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/alraune/source/alraune-move-generated-v1.png",
+  "sourceScale": 0.5,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 200,
+      "phase": "前の根を伸ばす",
+      "bounds": {
+        "left": 164,
+        "top": 129,
+        "right": 528,
+        "bottom": 366
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 420,
+        "y": 500
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 640,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 200,
+      "phase": "根を縮めて引く",
+      "bounds": {
+        "left": 166,
+        "top": 153,
+        "right": 520,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 501
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1280,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 200,
+      "phase": "別の根を伸ばす",
+      "bounds": {
+        "left": 163,
+        "top": 134,
+        "right": 533,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 416,
+        "y": 476
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1920,
+      "y": 0,
+      "width": 640,
+      "height": 384,
+      "durationMs": 200,
+      "phase": "接地・次の踏み替えへ",
+      "bounds": {
+        "left": 185,
+        "top": 134,
+        "right": 527,
+        "bottom": 367
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 412,
+        "y": 476
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

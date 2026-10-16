@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "effect": "glacier-boulder",
+  "label": "氷塊天落",
+  "sheet": "glacier-boulder.png",
+  "preview": "../../../../development/assets/effects/glacier-boulder/glacier-boulder-preview.gif",
+  "prompt": "../../../../development/assets/glacier-motions/PROMPTS.md",
+  "width": 1400,
+  "height": 470,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 350,
+  "frameHeight": 470,
+  "frameCount": 4,
+  "pivot": {
+    "x": 175,
+    "y": 448
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/glacier-motions/registered/effects/boulder.png",
+  "sourceScale": 0.5317324185248714,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "../../../../development/assets/effects/glacier-boulder/built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "glacier-boulder-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 350,
+      "height": 470,
+      "durationMs": 100,
+      "phase": "発生",
+      "bounds": {
+        "left": 119,
+        "top": 162,
+        "right": 230,
+        "bottom": 448
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 690,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 340,
+        "y": 596
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "glacier-boulder-02.png",
+      "x": 350,
+      "y": 0,
+      "width": 350,
+      "height": 470,
+      "durationMs": 140,
+      "phase": "展開",
+      "bounds": {
+        "left": 55,
+        "top": 145,
+        "right": 295,
+        "bottom": 448
+      },
+      "sourceCell": {
+        "x": 690,
+        "y": 0,
+        "width": 690,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 362,
+        "y": 613
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "glacier-boulder-03.png",
+      "x": 700,
+      "y": 0,
+      "width": 350,
+      "height": 470,
+      "durationMs": 220,
+      "phase": "最大",
+      "bounds": {
+        "left": 20,
+        "top": 146,
+        "right": 329,
+        "bottom": 448
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 661,
+        "width": 690,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 611
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "glacier-boulder-04.png",
+      "x": 1050,
+      "y": 0,
+      "width": 350,
+      "height": 470,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 35,
+        "top": 155,
+        "right": 315,
+        "bottom": 448
+      },
+      "sourceCell": {
+        "x": 690,
+        "y": 661,
+        "width": 690,
+        "height": 661
+      },
+      "sourceAnchor": {
+        "x": 304,
+        "y": 609
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "蒼氷の聖域",
+  "previewOnly": false,
+  "kind": "ground",
+  "originalSource": "../../../../development/assets/glacier-motions/sources/effects/boulder-generated.png"
+}

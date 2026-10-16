@@ -1,0 +1,101 @@
+{
+  "id": "effects/armor-break",
+  "region": "shared",
+  "motion": "effect",
+  "label": "破甲",
+  "kind": "status",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/armor-break-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 133,
+        "top": 76,
+        "right": 568,
+        "bottom": 495
+      },
+      "sourceWidth": 631,
+      "sourceHeight": 581,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 232826,
+      "transparentFraction": 0.635076416146815
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 62,
+        "top": 40,
+        "right": 663,
+        "bottom": 559
+      },
+      "sourceWidth": 681,
+      "sourceHeight": 581,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 170238,
+      "transparentFraction": 0.43026226997353795
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 16,
+        "top": 15,
+        "right": 725,
+        "bottom": 580
+      },
+      "sourceWidth": 754,
+      "sourceHeight": 618,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 176066,
+      "transparentFraction": 0.37784673757221465
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 38,
+        "top": 89,
+        "right": 532,
+        "bottom": 498
+      },
+      "sourceWidth": 558,
+      "sourceHeight": 618,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 216162,
+      "transparentFraction": 0.6268399624177889
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/armor-break-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

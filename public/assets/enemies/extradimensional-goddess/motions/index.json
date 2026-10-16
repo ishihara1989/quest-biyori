@@ -1,0 +1,98 @@
+[
+  {
+    "id": "idle",
+    "label": "御座・待機",
+    "kind": "motion",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "shot",
+    "label": "指先の星",
+    "kind": "motion",
+    "manifest": "shot/manifest.json"
+  },
+  {
+    "id": "snap",
+    "label": "星鏡・指パッチン",
+    "kind": "motion",
+    "manifest": "snap/manifest.json"
+  },
+  {
+    "id": "floating",
+    "label": "浮遊・待機",
+    "kind": "motion",
+    "manifest": "floating/manifest.json"
+  },
+  {
+    "id": "cast",
+    "label": "界面の術式",
+    "kind": "motion",
+    "manifest": "cast/manifest.json"
+  },
+  {
+    "id": "ultimate",
+    "label": "零界収束",
+    "kind": "motion",
+    "manifest": "ultimate/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "満足・会釈・手振り・帰還",
+    "kind": "motion",
+    "manifest": "down/manifest.json"
+  },
+  {
+    "id": "return",
+    "label": "異次元への扉",
+    "kind": "effect",
+    "manifest": "return/manifest.json"
+  },
+  {
+    "id": "throne",
+    "label": "玉座",
+    "kind": "effect",
+    "manifest": "throne/manifest.json"
+  },
+  {
+    "id": "halo",
+    "label": "天環",
+    "kind": "effect",
+    "manifest": "halo/manifest.json"
+  },
+  {
+    "id": "star-impact",
+    "label": "星の着弾",
+    "kind": "effect",
+    "manifest": "star-impact/manifest.json"
+  },
+  {
+    "id": "snap-glint",
+    "label": "指先の光",
+    "kind": "effect",
+    "manifest": "snap-glint/manifest.json"
+  },
+  {
+    "id": "homing-meteor",
+    "label": "追尾流星",
+    "kind": "effect",
+    "manifest": "homing-meteor/manifest.json"
+  },
+  {
+    "id": "meteor-impact",
+    "label": "流星の星冠",
+    "kind": "effect",
+    "manifest": "meteor-impact/manifest.json"
+  },
+  {
+    "id": "rift-cut",
+    "label": "界面断裂",
+    "kind": "effect",
+    "manifest": "rift-cut/manifest.json"
+  },
+  {
+    "id": "celestial-wave",
+    "label": "天環の波",
+    "kind": "effect",
+    "manifest": "celestial-wave/manifest.json"
+  }
+]

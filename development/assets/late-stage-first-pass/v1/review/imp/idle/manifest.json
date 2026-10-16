@@ -1,0 +1,101 @@
+{
+  "id": "imp/idle",
+  "enemy": "imp",
+  "region": "demon-castle",
+  "motion": "idle",
+  "label": "待機",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/imp/idle-generated.png"
+  ],
+  "durations": [
+    180,
+    180,
+    180,
+    180
+  ],
+  "phases": [
+    "中立",
+    "呼吸↑",
+    "中立",
+    "呼吸↓"
+  ],
+  "enemyLabel": "インプ",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 99,
+        "top": 116,
+        "right": 580,
+        "bottom": 577
+      },
+      "sourceWidth": 642,
+      "sourceHeight": 646,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 281452,
+      "transparentFraction": 0.6786358419413019
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 61,
+        "top": 117,
+        "right": 562,
+        "bottom": 579
+      },
+      "sourceWidth": 619,
+      "sourceHeight": 646,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 261373,
+      "transparentFraction": 0.6536383960947698
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 98,
+        "top": 65,
+        "right": 579,
+        "bottom": 524
+      },
+      "sourceWidth": 646,
+      "sourceHeight": 601,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 254299,
+      "transparentFraction": 0.6549945137876501
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 65,
+        "top": 70,
+        "right": 558,
+        "bottom": 524
+      },
+      "sourceWidth": 615,
+      "sourceHeight": 601,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 231568,
+      "transparentFraction": 0.6265113699389906
+    }
+  ],
+  "reference": "../../../references/imp.png",
+  "originalSources": [
+    "../../../sources/imp/idle-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

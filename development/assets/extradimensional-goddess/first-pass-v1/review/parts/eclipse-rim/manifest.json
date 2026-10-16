@@ -1,0 +1,52 @@
+{
+  "id": "parts/eclipse-rim",
+  "kind": "component",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    256
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/parts/eclipse-rim/review/parts/eclipse-rim/frame-01.png",
+      "index": 1,
+      "durationMs": 160,
+      "source": "source/parts/eclipse-rim.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 1254,
+        "height": 1254
+      },
+      "description": "One thin cyan-pale-gold eclipse edge ring, transparent inside and outside, no opaque sky.",
+      "width": 1254,
+      "height": 1254,
+      "transparentFraction": 0.8491939032734802,
+      "lowAlphaPixels": 110298,
+      "edgePixels": 0,
+      "bounds": [
+        47,
+        45,
+        1211,
+        1203
+      ],
+      "marginFraction": 0.03349282296650718
+    }
+  ],
+  "sources": [
+    "source/parts/eclipse-rim.png"
+  ],
+  "expectedFrames": 1,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/parts/eclipse-rim/contact.png",
+  "gif": "review/parts/eclipse-rim/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

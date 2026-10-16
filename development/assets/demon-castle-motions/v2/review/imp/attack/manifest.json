@@ -1,0 +1,143 @@
+{
+  "id": "imp/attack",
+  "label": "インプ・爪撃",
+  "enemy": "imp",
+  "motion": "attack",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 754,
+        "height": 561
+      },
+      "sourceAnchor": [
+        412,
+        497
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "54b37f9fb0eb4a65aa545be664c0e5c0c6dc8aa06d3207dfa5a7c3b60a942d10",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8871879577636719
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "溜め",
+      "source": "../../../sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 754,
+        "top": 0,
+        "width": 694,
+        "height": 561
+      },
+      "sourceAnchor": [
+        320,
+        497
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "87985ae87f45dcff6d9803152992dfafe8a3ece7a1f39c2087cd10b77e808621",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8863639831542969
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 400,
+      "phase": "発動",
+      "source": "../../../sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 0,
+        "top": 561,
+        "width": 768,
+        "height": 525
+      },
+      "sourceAnchor": [
+        420,
+        458
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "422c9f976d78d84b11f45e271df7687d8a019c06e54ea8d5d5831886794a42d1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8884849548339844
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 220,
+      "phase": "復帰",
+      "source": "../../../sources/imp/attack-v2.png",
+      "sourceSha256": "80d9c1156785fa74a05e8adfe533417fd84b1170c73547e37b6feb9005ab9a7c",
+      "sourceRect": {
+        "left": 768,
+        "top": 561,
+        "width": 680,
+        "height": 525
+      },
+      "sourceAnchor": [
+        320,
+        461
+      ],
+      "scale": 0.52,
+      "pivot": [
+        300,
+        390
+      ],
+      "sha256": "b49849915d2e1ad3c3dd5883a96013425ffffe9f3c9e780cba7d4aa916dbe37c",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8890151977539062
+    }
+  ],
+  "fingerprint": "183cc63f4002c2db12a0218a803f6acf868af3f63d0e433c712661566583a808",
+  "events": [
+    {
+      "id": "effects/claw-arc",
+      "timeMs": 280,
+      "durationMs": 560,
+      "x": 450,
+      "y": 330,
+      "scale": 0.6,
+      "anchor": [
+        256,
+        256
+      ]
+    }
+  ],
+  "effects": []
+}

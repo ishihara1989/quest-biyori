@@ -1,0 +1,466 @@
+{
+  "lava-salamander/move": {
+    "anchors": [
+      {
+        "x": 861.2856177606177,
+        "y": 945
+      },
+      {
+        "x": 764.7929442508711,
+        "y": 995
+      },
+      {
+        "x": 747.1358885017421,
+        "y": 938
+      },
+      {
+        "x": 734.671511627907,
+        "y": 1078
+      },
+      {
+        "x": 724.6651162790697,
+        "y": 1042
+      },
+      {
+        "x": 752.9219512195123,
+        "y": 1045
+      }
+    ],
+    "scales": {
+      "sources/lava-salamander/move-frame-1-v2.png": 0.2746553552492047,
+      "sources/lava-salamander/move-frame-2-v2.png": 0.318534961154273,
+      "sources/lava-salamander/move-frame-3-v3.png": 0.3188888888888889,
+      "sources/lava-salamander/move-frame-4-v2.png": 0.2824302134646962,
+      "sources/lava-salamander/move-frame-5-v2.png": 0.27344992050874406,
+      "sources/lava-salamander/move-frame-6-v3.png": 0.3203125
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Approximate eye/helmet coordinates on exported PNG; fixed ground baseline; uniform scale only"
+  },
+  "young-fire-dragon/move": {
+    "anchors": [
+      {
+        "x": 706.5207692307692,
+        "y": 1027
+      },
+      {
+        "x": 697.8096153846154,
+        "y": 1030
+      },
+      {
+        "x": 732.325,
+        "y": 1024
+      },
+      {
+        "x": 675.1592032967034,
+        "y": 1006
+      },
+      {
+        "x": 679.9285714285714,
+        "y": 988
+      },
+      {
+        "x": 714.6425824175824,
+        "y": 1025
+      }
+    ],
+    "scales": {
+      "sources/young-fire-dragon/move-frame-1-v2.png": 0.30833347451166415,
+      "sources/young-fire-dragon/move-frame-2-v2.png": 0.297604447714823,
+      "sources/young-fire-dragon/move-frame-3-v2.png": 0.28776978417266186,
+      "sources/young-fire-dragon/move-frame-4-v2.png": 0.3313458650038687,
+      "sources/young-fire-dragon/move-frame-5-v2.png": 0.3111111111111111,
+      "sources/young-fire-dragon/move-frame-6-v3.png": 0.3041952197894033
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Approximate eye/helmet coordinates on exported PNG; fixed ground baseline; uniform scale only"
+  },
+  "magma-salamander/move": {
+    "anchors": [
+      {
+        "x": 792,
+        "y": 944
+      },
+      {
+        "x": 820.0142857142857,
+        "y": 966
+      },
+      {
+        "x": 779.9267142857143,
+        "y": 949
+      },
+      {
+        "x": 747.6171428571429,
+        "y": 949
+      },
+      {
+        "x": 775.8497142857143,
+        "y": 964
+      },
+      {
+        "x": 808.3997142857143,
+        "y": 1004
+      }
+    ],
+    "scales": {
+      "sources/magma-salamander/move-frame-1-v2.png": 0.2594995366079703,
+      "sources/magma-salamander/move-frame-2-v2.png": 0.2401372212692967,
+      "sources/magma-salamander/move-frame-3-v2.png": 0.24866343404202412,
+      "sources/magma-salamander/move-frame-4-v2.png": 0.25945144551519644,
+      "sources/magma-salamander/move-frame-5-v2.png": 0.2493143854400399,
+      "sources/magma-salamander/move-frame-6-v3.png": 0.2394021785598249
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Approximate eye/helmet coordinates on exported PNG; fixed ground baseline; uniform scale only"
+  },
+  "obsidian-executioner/move": {
+    "anchors": [
+      {
+        "x": 464,
+        "y": 669
+      },
+      {
+        "x": 439,
+        "y": 677
+      },
+      {
+        "x": 432,
+        "y": 669
+      },
+      {
+        "x": 712.0146263231048,
+        "y": 1129
+      },
+      {
+        "x": 770.6385117074735,
+        "y": 1129
+      },
+      {
+        "x": 755.1040521757725,
+        "y": 1148
+      }
+    ],
+    "scales": {
+      "sources/obsidian-executioner/move-1-v1-reused.png": 0.3683385579937304,
+      "sources/obsidian-executioner/move-frame-4-v5.png": 0.22458447190352931,
+      "sources/obsidian-executioner/move-frame-5-v5.png": 0.22387380918186603,
+      "sources/obsidian-executioner/move-frame-6-v5.png": 0.22268835534899667
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Approximate eye/helmet coordinates on exported PNG; fixed ground baseline; uniform scale only"
+  },
+  "dragon-girl/move": {
+    "anchors": [
+      {
+        "x": 373.0936170212766,
+        "y": 667
+      },
+      {
+        "x": 347.30212765957447,
+        "y": 667
+      },
+      {
+        "x": 358.30212765957447,
+        "y": 658
+      },
+      {
+        "x": 623.5002756035718,
+        "y": 1154
+      },
+      {
+        "x": 632.7692205930989,
+        "y": 1130
+      },
+      {
+        "x": 640.3536545033623,
+        "y": 1213
+      }
+    ],
+    "scales": {
+      "sources/dragon-girl/move-1-v2.png": 0.37066246056782337,
+      "sources/dragon-girl/move-frame-4-v3.png": 0.22605163476874005,
+      "sources/dragon-girl/move-frame-5-v3.png": 0.2341821824302694,
+      "sources/dragon-girl/move-frame-6-v3.png": 0.2081297007576279
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Approximate eye/helmet coordinates on exported PNG; fixed ground baseline; uniform scale only"
+  },
+  "dragon/move": {
+    "anchors": [
+      {
+        "x": 799.8321931589537,
+        "y": 879
+      },
+      {
+        "x": 805.6420523138834,
+        "y": 871
+      },
+      {
+        "x": 738.3184104627767,
+        "y": 900
+      },
+      {
+        "x": 734.2019114688129,
+        "y": 861
+      },
+      {
+        "x": 755.8214285714287,
+        "y": 894
+      },
+      {
+        "x": 756.075,
+        "y": 892
+      }
+    ],
+    "scales": {
+      "sources/dragon/move-frame-1-v2.png": 0.25184959967568665,
+      "sources/dragon/move-frame-2-v2.png": 0.24919775371038907,
+      "sources/dragon/move-frame-3-v2.png": 0.2520204101036352,
+      "sources/dragon/move-frame-4-v2.png": 0.25677787680345127,
+      "sources/dragon/move-frame-5-v3.png": 0.23829787234042554,
+      "sources/dragon/move-frame-6-v2.png": 0.24200518582541056
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Approximate eye/helmet coordinates on exported PNG; fixed ground baseline; uniform scale only"
+  },
+  "effects/fireball": {
+    "anchors": [
+      {
+        "x": 238.14000000000001,
+        "y": 268.98
+      },
+      {
+        "x": 211.60000000000002,
+        "y": 267.08
+      },
+      {
+        "x": 237.96,
+        "y": 238.86
+      },
+      {
+        "x": 205.52,
+        "y": 235.66
+      }
+    ],
+    "pivot": {
+      "x": 256,
+      "y": 256
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Constrained white core centroid, visually checked against sphere outline"
+  },
+  "effects/lava-bomb": {
+    "anchors": [
+      {
+        "x": 230.5,
+        "y": 370.5
+      },
+      {
+        "x": 214,
+        "y": 369.5
+      },
+      {
+        "x": 250,
+        "y": 367
+      },
+      {
+        "x": 199.5,
+        "y": 368.5
+      }
+    ],
+    "pivot": {
+      "x": 256,
+      "y": 256
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Approximate basalt sphere center, excluding the diagonal flame tail"
+  },
+  "effects/fire-fan": {
+    "anchors": [
+      {
+        "x": 493.53125,
+        "y": 335.6875
+      },
+      {
+        "x": 474.53125,
+        "y": 333.46875
+      },
+      {
+        "x": 555.625,
+        "y": 378.21875
+      },
+      {
+        "x": 430.53125,
+        "y": 374
+      }
+    ],
+    "pivot": {
+      "x": 384,
+      "y": 256
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Round mouth emitter, not the outer flame or sparse sparks"
+  },
+  "effects/fire-beam": {
+    "anchors": [
+      {
+        "x": 650.8125,
+        "y": 284.6875
+      },
+      {
+        "x": 616.375,
+        "y": 284.90625
+      },
+      {
+        "x": 709.6875,
+        "y": 277.53125
+      },
+      {
+        "x": 663.65625,
+        "y": 278.6875
+      }
+    ],
+    "pivot": {
+      "x": 384,
+      "y": 256
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Round mouth emitter; final sparse phase retains planned source location"
+  },
+  "effects/fissure": {
+    "anchors": [
+      {
+        "x": 696.0241935483871,
+        "y": 395.1532258064516
+      },
+      {
+        "x": 600.1875,
+        "y": 393.6915322580645
+      },
+      {
+        "x": 695.9657258064517,
+        "y": 334.9375
+      },
+      {
+        "x": 683.4657258064517,
+        "y": 306.9375
+      }
+    ],
+    "pivot": {
+      "x": 384,
+      "y": 338
+    },
+    "measurementRevision": "2026-10-14-resume",
+    "basis": "Right-hand fissure onset at axe contact, not the center of growing crack"
+  },
+  "lava-salamander/danger-1": {
+    "releaseOrigin": {
+      "x": 155,
+      "y": 261
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included"
+  },
+  "young-fire-dragon/danger-1": {
+    "releaseOrigin": {
+      "x": 156,
+      "y": 236
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included"
+  },
+  "magma-salamander/danger-1": {
+    "releaseOrigin": {
+      "x": 154,
+      "y": 269
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included"
+  },
+  "magma-salamander/danger-2": {
+    "releaseOrigin": {
+      "x": 154,
+      "y": 276
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included"
+  },
+  "dragon-girl/danger-1": {
+    "releaseOrigin": {
+      "x": 150,
+      "y": 176
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included"
+  },
+  "dragon-girl/danger-2": {
+    "releaseOrigin": {
+      "x": 189,
+      "y": 161
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included"
+  },
+  "dragon/danger-2": {
+    "releaseOrigin": {
+      "x": 155,
+      "y": 224
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included"
+  },
+  "dragon/danger-3": {
+    "releaseOrigin": {
+      "x": 216,
+      "y": 232
+    },
+    "releaseOriginBasis": "Approximate mouth/palm observation on actual exported frame3, +/-7px; flight rise included",
+    "anchors": [
+      {
+        "x": 473,
+        "y": 479
+      },
+      {
+        "x": 286,
+        "y": 605.2352941176471
+      },
+      {
+        "x": 453,
+        "y": 529.2352941176471
+      },
+      {
+        "x": 279,
+        "y": 423
+      }
+    ],
+    "riseApplied": true,
+    "verticalPoseRisePx": [
+      0,
+      80,
+      80,
+      0
+    ],
+    "basis": "Whole-frame translation for planned flight height; feet/paws are not edited"
+  },
+  "dragon/danger-1": {
+    "anchors": [
+      {
+        "x": 437,
+        "y": 427
+      },
+      {
+        "x": 316,
+        "y": 558.7156862745098
+      },
+      {
+        "x": 408,
+        "y": 411
+      },
+      {
+        "x": 313,
+        "y": 415
+      }
+    ],
+    "riseApplied": true,
+    "verticalPoseRisePx": [
+      0,
+      70,
+      0,
+      0
+    ],
+    "basis": "Whole-frame translation for planned flight height; feet/paws are not edited"
+  }
+}

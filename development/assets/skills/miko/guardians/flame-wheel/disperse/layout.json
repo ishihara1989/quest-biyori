@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/flame-wheel-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 666,
+      "height": 724
+    },
+    {
+      "x": 666,
+      "y": 0,
+      "width": 789,
+      "height": 724
+    },
+    {
+      "x": 1455,
+      "y": 0,
+      "width": 717,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 932
+    },
+    {
+      "x": 512,
+      "y": 932
+    },
+    {
+      "x": 512,
+      "y": 932
+    }
+  ],
+  "scale": 0.5134575569358178
+}

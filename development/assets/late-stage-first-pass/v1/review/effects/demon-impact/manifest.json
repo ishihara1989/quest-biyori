@@ -1,0 +1,101 @@
+{
+  "id": "effects/demon-impact",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "魔拳の衝撃",
+  "kind": "target",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/demon-impact-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 202,
+        "top": 66,
+        "right": 680,
+        "bottom": 386
+      },
+      "sourceWidth": 770,
+      "sourceHeight": 456,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 276933,
+      "transparentFraction": 0.7887132604237868
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 89,
+        "top": 38,
+        "right": 728,
+        "bottom": 445
+      },
+      "sourceWidth": 766,
+      "sourceHeight": 456,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 197187,
+      "transparentFraction": 0.5645269341761715
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 28,
+        "top": 9,
+        "right": 844,
+        "bottom": 551
+      },
+      "sourceWidth": 857,
+      "sourceHeight": 568,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 203624,
+      "transparentFraction": 0.41831150262132893
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 10,
+        "top": 95,
+        "right": 652,
+        "bottom": 506
+      },
+      "sourceWidth": 679,
+      "sourceHeight": 568,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 250389,
+      "transparentFraction": 0.6492278412744509
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/demon-impact-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

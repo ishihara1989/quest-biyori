@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "character": "shaman",
+  "motion": "staff-plant",
+  "label": "杖の接地",
+  "facing": "right",
+  "sheet": "shaman-staff-plant.png",
+  "width": 960,
+  "height": 256,
+  "columns": 3,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 900,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle"
+  },
+  "movementDirection": 0,
+  "pivot": {
+    "x": 160,
+    "y": 239
+  },
+  "scale": 0.21752738654147105,
+  "sampling": "nearest-neighbor",
+  "anchorBasis": "silhouette",
+  "source": "../../../../../development/assets/shaman/motions/staff-plant/source/shaman-staff-plant-generated-v1.png",
+  "sourceWidth": 2172,
+  "sourceHeight": 724,
+  "sourceGrid": [
+    3,
+    1
+  ],
+  "columnSplit": 1086,
+  "rowSplit": null,
+  "generation": "built-in image_gen; approved idle design/style references; full prompts in PROMPT.md",
+  "previewNotes": "Ground pivot shared with idle; full casting sequences in ritual-lab.html. Spin plays once without canvas rotation.",
+  "frames": [
+    {
+      "index": 0,
+      "file": "staff-plant-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 540,
+      "phase": "杖を上げる",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 386,
+        "y": 677
+      },
+      "sourceBounds": {
+        "left": 133,
+        "top": 38,
+        "right": 675,
+        "bottom": 677
+      },
+      "bounds": {
+        "left": 105,
+        "top": 100,
+        "right": 222,
+        "bottom": 239
+      },
+      "visiblePixels": 7956,
+      "transparentPixels": 71955
+    },
+    {
+      "index": 1,
+      "file": "staff-plant-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 240,
+      "phase": "地へ打つ",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 724,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 380,
+        "y": 677
+      },
+      "sourceBounds": {
+        "left": 134,
+        "top": 169,
+        "right": 694,
+        "bottom": 677
+      },
+      "bounds": {
+        "left": 107,
+        "top": 129,
+        "right": 228,
+        "bottom": 239
+      },
+      "visiblePixels": 7731,
+      "transparentPixels": 72267
+    },
+    {
+      "index": 2,
+      "file": "staff-plant-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 120,
+      "phase": "復帰",
+      "airborne": false,
+      "previewOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceCell": {
+        "x": 1448,
+        "y": 0,
+        "width": 724,
+        "height": 724
+      },
+      "sourceAnchor": {
+        "x": 355,
+        "y": 677
+      },
+      "sourceBounds": {
+        "left": 97,
+        "top": 122,
+        "right": 645,
+        "bottom": 677
+      },
+      "bounds": {
+        "left": 104,
+        "top": 119,
+        "right": 223,
+        "bottom": 239
+      },
+      "visiblePixels": 7953,
+      "transparentPixels": 72053
+    }
+  ]
+}

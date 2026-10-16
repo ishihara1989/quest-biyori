@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "enemy": "cave-troll",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "cave-troll-move.png",
+  "preview": "../../../../../../development/assets/enemies/cave-troll/motions/move/cave-troll-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/cave-troll/PROMPT.md",
+  "width": 4224,
+  "height": 512,
+  "columns": 6,
+  "rows": 1,
+  "frameWidth": 704,
+  "frameHeight": 512,
+  "frameCount": 6,
+  "pivot": {
+    "x": 408,
+    "y": 495
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/cave-troll/source/move-registered.png",
+  "sourceScale": 0.5597014925373134,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 120,
+      "phase": "左接地",
+      "bounds": {
+        "left": 79,
+        "top": 196,
+        "right": 469,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 745,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 612,
+        "y": 551
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 704,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 120,
+      "phase": "右遊脚",
+      "bounds": {
+        "left": 196,
+        "top": 195,
+        "right": 567,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 745,
+        "y": 0,
+        "width": 745,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 402,
+        "y": 552
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 1408,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 120,
+      "phase": "右前進",
+      "bounds": {
+        "left": 105,
+        "top": 197,
+        "right": 480,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 1490,
+        "y": 0,
+        "width": 745,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 565,
+        "y": 548
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 2112,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 120,
+      "phase": "右接地",
+      "bounds": {
+        "left": 84,
+        "top": 197,
+        "right": 482,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 569,
+        "width": 745,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 596,
+        "y": 549
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "move-05.png",
+      "x": 2816,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 120,
+      "phase": "左遊脚",
+      "bounds": {
+        "left": 221,
+        "top": 204,
+        "right": 598,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 745,
+        "y": 569,
+        "width": 745,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 351,
+        "y": 537
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "move-06.png",
+      "x": 3520,
+      "y": 0,
+      "width": 704,
+      "height": 512,
+      "durationMs": 120,
+      "phase": "左前進",
+      "bounds": {
+        "left": 210,
+        "top": 197,
+        "right": 571,
+        "bottom": 495
+      },
+      "sourceCell": {
+        "x": 1490,
+        "y": 569,
+        "width": 745,
+        "height": 569
+      },
+      "sourceAnchor": {
+        "x": 371,
+        "y": 548
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/cave-troll/source/move-1-generated.png",
+    "../../../../../../development/assets/enemies/cave-troll/source/move-2-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 9,
+        "count": 184256,
+        "left": 52,
+        "top": 98,
+        "right": 750,
+        "bottom": 633,
+        "cx": 462.46371352900314,
+        "cy": 369.46723037513027
+      },
+      {
+        "id": 3,
+        "count": 172756,
+        "left": 746,
+        "top": 91,
+        "right": 1409,
+        "bottom": 627,
+        "cx": 1132.4522968811502,
+        "cy": 355.6490830998634
+      },
+      {
+        "id": 8,
+        "count": 180559,
+        "left": 1436,
+        "top": 97,
+        "right": 2107,
+        "bottom": 629,
+        "cx": 1825.3697960223528,
+        "cy": 369.6376641430225
+      }
+    ],
+    [
+      {
+        "id": 2,
+        "count": 186868,
+        "left": 40,
+        "top": 133,
+        "right": 752,
+        "bottom": 666,
+        "cx": 457.09800500888326,
+        "cy": 406.52662307083074
+      },
+      {
+        "id": 4,
+        "count": 171376,
+        "left": 751,
+        "top": 139,
+        "right": 1425,
+        "bottom": 660,
+        "cx": 1133.712952805527,
+        "cy": 398.2279198954346
+      },
+      {
+        "id": 1,
+        "count": 180468,
+        "left": 1432,
+        "top": 131,
+        "right": 2078,
+        "bottom": 663,
+        "cx": 1804.9577432010108,
+        "cy": 399.1751667885719
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1,
+  "walkCycle": {
+    "nearLeg": "left",
+    "farLeg": "right",
+    "parts": [
+      "../../../../../../development/assets/enemies/cave-troll/source/move-1-generated.png",
+      "../../../../../../development/assets/enemies/cave-troll/source/move-2-generated.png"
+    ],
+    "phases": [
+      "left-contact",
+      "right-passing",
+      "right-approach",
+      "right-contact",
+      "left-passing",
+      "left-approach"
+    ]
+  }
+}

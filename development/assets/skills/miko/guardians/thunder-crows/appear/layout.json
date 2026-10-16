@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/thunder-crows-guardian-appear-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 731,
+      "height": 724
+    },
+    {
+      "x": 731,
+      "y": 0,
+      "width": 725,
+      "height": 724
+    },
+    {
+      "x": 1456,
+      "y": 0,
+      "width": 716,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 932
+    },
+    {
+      "x": 512,
+      "y": 932
+    },
+    {
+      "x": 512,
+      "y": 932
+    }
+  ],
+  "scale": 0.4775510204081633
+}

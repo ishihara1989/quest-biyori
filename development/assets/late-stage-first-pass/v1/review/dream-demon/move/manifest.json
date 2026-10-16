@@ -1,0 +1,101 @@
+{
+  "id": "dream-demon/move",
+  "enemy": "dream-demon",
+  "region": "demon-castle",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/dream-demon/move-generated.png"
+  ],
+  "durations": [
+    150,
+    150,
+    150,
+    150
+  ],
+  "phases": [
+    "上",
+    "中立",
+    "下",
+    "中立"
+  ],
+  "enemyLabel": "夢魔",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 96,
+        "top": 33,
+        "right": 674,
+        "bottom": 546
+      },
+      "sourceWidth": 690,
+      "sourceHeight": 588,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 247345,
+      "transparentFraction": 0.6096445824706694
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 14,
+        "top": 67,
+        "right": 623,
+        "bottom": 569
+      },
+      "sourceWidth": 684,
+      "sourceHeight": 588,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 245033,
+      "transparentFraction": 0.6092438437363249
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 116,
+        "top": 35,
+        "right": 626,
+        "bottom": 515
+      },
+      "sourceWidth": 668,
+      "sourceHeight": 557,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 230867,
+      "transparentFraction": 0.62048344961782
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 150,
+      "sourceBounds": {
+        "left": 39,
+        "top": 18,
+        "right": 646,
+        "bottom": 513
+      },
+      "sourceWidth": 706,
+      "sourceHeight": 557,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 242282,
+      "transparentFraction": 0.6161142502581107
+    }
+  ],
+  "reference": "../../../references/dream-demon.png",
+  "originalSources": [
+    "../../../sources/dream-demon/move-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

@@ -1,0 +1,260 @@
+{
+  "id": "arch-demon/move",
+  "label": "アークデーモン・歩行",
+  "enemy": "arch-demon",
+  "motion": "move",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": true,
+  "terminal": false,
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/late-stage-first-pass/v1/references/arch-demon.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "phase": "移動1",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/arch-demon/move-1-generated.png",
+      "sourceSha256": "04519d2268e8dc6b2d2d809f72708b446c843113110a6d43d5743fd6ecc4ddd9",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 758,
+        "height": 724
+      },
+      "sourceAnchor": [
+        344,
+        681
+      ],
+      "scale": 0.3686635944700461,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "f216039398affce0bd837463b60e5450f5adb8579959f36e1fcf3c71a3ae4db3",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8412094116210938,
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "visibleBounds": {
+        "left": 181,
+        "top": 169,
+        "right": 452,
+        "bottom": 413
+      }
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "phase": "移動2",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/arch-demon/move-1-generated.png",
+      "sourceSha256": "04519d2268e8dc6b2d2d809f72708b446c843113110a6d43d5743fd6ecc4ddd9",
+      "sourceRect": {
+        "left": 758,
+        "top": 0,
+        "width": 703,
+        "height": 724
+      },
+      "sourceAnchor": [
+        293,
+        685
+      ],
+      "scale": 0.3686635944700461,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "aa1073d9e1ea2510639d88eeb7429a11f3749c0dea7422c501c2605c8e8ac4b2",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8386192321777344,
+      "index": 1,
+      "x": 512,
+      "y": 0,
+      "visibleBounds": {
+        "left": 192,
+        "top": 163,
+        "right": 451,
+        "bottom": 412
+      }
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "phase": "移動3",
+      "source": "../../../../../../development/assets/late-stage-first-pass/v1/sources/arch-demon/move-1-generated.png",
+      "sourceSha256": "04519d2268e8dc6b2d2d809f72708b446c843113110a6d43d5743fd6ecc4ddd9",
+      "sourceRect": {
+        "left": 1461,
+        "top": 0,
+        "width": 711,
+        "height": 724
+      },
+      "sourceAnchor": [
+        286,
+        681
+      ],
+      "scale": 0.3686635944700461,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "3640bc7837dddf0e81161462adf08777c2cc63febb73e781c8f676699c576466",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8432502746582031,
+      "index": 2,
+      "x": 1024,
+      "y": 0,
+      "visibleBounds": {
+        "left": 195,
+        "top": 166,
+        "right": 451,
+        "bottom": 414
+      }
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "phase": "移動4",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/arch-demon/move-2-v2.png",
+      "sourceSha256": "613228afbb61b53f545482ec11c28aca1f028de9e98fe6a1bf7f097625c4890f",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 761,
+        "height": 724
+      },
+      "sourceAnchor": [
+        344,
+        690
+      ],
+      "scale": 0.36199095022624433,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "c201b0628fb3821bbc92c053e90e7e6b8ddd1a5abaa6c9b9c48d22c0bb16c915",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8438224792480469,
+      "index": 3,
+      "x": 1536,
+      "y": 0,
+      "visibleBounds": {
+        "left": 187,
+        "top": 166,
+        "right": 450,
+        "bottom": 411
+      }
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "phase": "移動5",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/arch-demon/move-2-v2.png",
+      "sourceSha256": "613228afbb61b53f545482ec11c28aca1f028de9e98fe6a1bf7f097625c4890f",
+      "sourceRect": {
+        "left": 761,
+        "top": 0,
+        "width": 710,
+        "height": 724
+      },
+      "sourceAnchor": [
+        296,
+        679
+      ],
+      "scale": 0.36199095022624433,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "6b7e8e3cdfd3a46933aa0b1ce9797f57f7e857319aa68d1f6ca64b13d43809a6",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8498497009277344,
+      "index": 4,
+      "x": 2048,
+      "y": 0,
+      "visibleBounds": {
+        "left": 193,
+        "top": 170,
+        "right": 450,
+        "bottom": 412
+      }
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "phase": "移動6",
+      "source": "../../../../../../development/assets/demon-castle-motions/v2/sources/arch-demon/move-2-v2.png",
+      "sourceSha256": "613228afbb61b53f545482ec11c28aca1f028de9e98fe6a1bf7f097625c4890f",
+      "sourceRect": {
+        "left": 1471,
+        "top": 0,
+        "width": 701,
+        "height": 724
+      },
+      "sourceAnchor": [
+        290,
+        669
+      ],
+      "scale": 0.36199095022624433,
+      "pivot": [
+        300,
+        410
+      ],
+      "sha256": "f9bd8a2f3c4ea3694183d027a361a5cf1f431e327ee42166a69d77a0c3c5a614",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8446083068847656,
+      "index": 5,
+      "x": 2560,
+      "y": 0,
+      "visibleBounds": {
+        "left": 195,
+        "top": 175,
+        "right": 449,
+        "bottom": 413
+      }
+    }
+  ],
+  "fingerprint": "1c39537e37f1b918f1c8d6b85793669d8f398533a9766a474ed9c15d89cf03b7",
+  "events": [],
+  "pivot": {
+    "x": 300,
+    "y": 410
+  },
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "sheet": "sheet.png",
+  "facing": "left",
+  "endBehavior": "loop",
+  "productionManifest": "../../../../../../development/assets/demon-castle-motions/v2/review/arch-demon/move/manifest.json",
+  "sourceFingerprint": "1c39537e37f1b918f1c8d6b85793669d8f398533a9766a474ed9c15d89cf03b7",
+  "action": null,
+  "effectPreview": {
+    "assets": []
+  }
+}

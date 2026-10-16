@@ -1,0 +1,174 @@
+{
+  "id": "imp/danger-1",
+  "label": "インプ・呪弾",
+  "enemy": "imp",
+  "motion": "danger-1",
+  "kind": null,
+  "origin": "first-pass",
+  "inheritedIssues": [
+    "発動で両手の指が重なる。手首・指の所属を確認する。",
+    "別の呪弾へ両手の発射点を合わせる。"
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/imp.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "phase": "構え",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 719,
+        "height": 584
+      },
+      "sourceAnchor": [
+        381,
+        557
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "9dd5c82461dcab6a083cee0f60904d2460101ebf4539ec1a597527bbac236de0",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8792228698730469
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 2420,
+      "phase": "溜め",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 719,
+        "top": 0,
+        "width": 610,
+        "height": 584
+      },
+      "sourceAnchor": [
+        249,
+        557
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        397
+      ],
+      "sha256": "1d10a0ef9d36b691abf2467ab575e947592e252962003826683821353be42f52",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8903541564941406
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 800,
+      "phase": "発動",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 0,
+        "top": 584,
+        "width": 712,
+        "height": 599
+      },
+      "sourceAnchor": [
+        374,
+        491
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        400
+      ],
+      "sha256": "2e8941fdfc16b1c4a2116c3267d11c846d10f4c6abc36688ce85097ac4029622",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8750572204589844
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 600,
+      "phase": "復帰",
+      "source": "../../../../../late-stage-first-pass/v1/sources/imp/danger-1-generated.png",
+      "sourceSha256": "09d1eef3efed8c2fa90b3d6471a5888fcc3c3b4b9680aad207ddd0901ca275e2",
+      "sourceRect": {
+        "left": 712,
+        "top": 584,
+        "width": 617,
+        "height": 599
+      },
+      "sourceAnchor": [
+        270,
+        500
+      ],
+      "scale": 0.4484304932735426,
+      "pivot": [
+        300,
+        403
+      ],
+      "sha256": "44ae4780e077f6937f30a5ff1665fb7bfc51883fb517220cfbbff8eef419bc00",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8852729797363281
+    }
+  ],
+  "fingerprint": "70ad43c4e1525d077cdebdf5f347c7fd5c970f1eec23b3809de7650cc47bf223",
+  "events": [
+    {
+      "id": "effects/curse-orb",
+      "timeMs": 2600,
+      "durationMs": 600,
+      "x": 520,
+      "y": 250,
+      "scale": 0.4,
+      "anchor": [
+        210,
+        256
+      ],
+      "to": [
+        405,
+        330
+      ]
+    },
+    {
+      "id": "effects/curse-impact",
+      "timeMs": 3200,
+      "durationMs": 520,
+      "x": 405,
+      "y": 330,
+      "scale": 0.45,
+      "anchor": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "effects/curse",
+      "timeMs": 3300,
+      "durationMs": 540,
+      "x": 405,
+      "y": 255,
+      "scale": 0.4,
+      "anchor": [
+        256,
+        256
+      ]
+    }
+  ],
+  "effects": []
+}

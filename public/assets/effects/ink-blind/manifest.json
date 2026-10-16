@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "effect": "ink-blind",
+  "label": "目潰し状態",
+  "sheet": "ink-blind.png",
+  "preview": "../../../../development/assets/effects/ink-blind/ink-blind-preview.gif",
+  "prompt": "../../../../development/assets/effects/ink-blind/PROMPT.md",
+  "width": 768,
+  "height": 128,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 192,
+  "frameHeight": 128,
+  "frameCount": 4,
+  "pivot": {
+    "x": 96,
+    "y": 64
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/ink-blind/source-generated.png",
+  "sourceScale": 0.22123893805309736,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ink-blind-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 36,
+        "top": 19,
+        "right": 156,
+        "bottom": 109
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 454,
+        "y": 299
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ink-blind-02.png",
+      "x": 192,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 34,
+        "top": 14,
+        "right": 158,
+        "bottom": 113
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 0,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 350,
+        "y": 278
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ink-blind-03.png",
+      "x": 384,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 28,
+        "top": 16,
+        "right": 164,
+        "bottom": 112
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 445,
+        "y": 239
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ink-blind-04.png",
+      "x": 576,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 180,
+      "phase": "終端",
+      "bounds": {
+        "left": 32,
+        "top": 18,
+        "right": 160,
+        "bottom": 110
+      },
+      "sourceCell": {
+        "x": 768,
+        "y": 512,
+        "width": 768,
+        "height": 512
+      },
+      "sourceAnchor": {
+        "x": 375,
+        "y": 250
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "sourceLayout": {
+    "columnEdges": [
+      0,
+      768,
+      1536
+    ],
+    "rowEdges": [
+      0,
+      512,
+      1024
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id": "young-fire-dragon/hit",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "label": "被弾",
+  "kind": null,
+  "motion": "hit",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 2,
+  "frameSequence": [
+    0,
+    1
+  ],
+  "durationMs": 400,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/young-fire-dragon.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/reaction-v1-reused.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "transparentFraction": 0.8514022827148438,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 115,
+        "top": 55,
+        "right": 422,
+        "bottom": 369
+      },
+      "visibleBounds": {
+        "left": 138,
+        "top": 128,
+        "right": 414,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/reaction-v1-reused.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 653,
+        "height": 682
+      },
+      "sourceScale": 0.49382716049382713,
+      "sourceAnchor": {
+        "x": 398,
+        "y": 598
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "transparentFraction": 0.8407096862792969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 137,
+        "top": 49,
+        "right": 427,
+        "bottom": 374
+      },
+      "visibleBounds": {
+        "left": 145,
+        "top": 125,
+        "right": 424,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/young-fire-dragon/reaction-v1-reused.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 653,
+        "y": 0,
+        "width": 624,
+        "height": 682
+      },
+      "sourceScale": 0.49382716049382713,
+      "sourceAnchor": {
+        "x": 335,
+        "y": 607
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/young-fire-dragon/hit/preview.gif",
+  "action": null
+}

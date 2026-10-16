@@ -1,0 +1,67 @@
+{
+  "id": "magma-salamander/hit",
+  "enemy": "magma-salamander",
+  "region": "volcano",
+  "motion": "hit",
+  "label": "被弾",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/magma-salamander/reaction-generated.png"
+  ],
+  "durations": [
+    180,
+    220
+  ],
+  "phases": [
+    "被弾",
+    "復帰"
+  ],
+  "enemyLabel": "マグマサラマンダー",
+  "expectedFrames": 2,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 106,
+        "top": 102,
+        "right": 743,
+        "bottom": 492
+      },
+      "sourceWidth": 785,
+      "sourceHeight": 555,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 262622,
+      "transparentFraction": 0.6027933666150227
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 41,
+        "top": 97,
+        "right": 697,
+        "bottom": 492
+      },
+      "sourceWidth": 751,
+      "sourceHeight": 555,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 236515,
+      "transparentFraction": 0.5674476073943451
+    }
+  ],
+  "reference": "../../../references/magma-salamander.png",
+  "originalSources": [
+    "../../../sources/magma-salamander/reaction-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

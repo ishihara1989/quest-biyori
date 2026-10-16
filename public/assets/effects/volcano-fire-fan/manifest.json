@@ -1,0 +1,201 @@
+{
+  "id": "volcano-fire-fan",
+  "enemy": null,
+  "region": "volcano",
+  "label": "灼熱の扇",
+  "kind": "origin",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "pivot": {
+    "x": 384,
+    "y": 256
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/fire-fan-v3.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9701347351074219,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 85,
+        "top": 61,
+        "right": 481,
+        "bottom": 418
+      },
+      "visibleBounds": {
+        "left": 278,
+        "top": 214,
+        "right": 397,
+        "bottom": 287
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-fan-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 646,
+        "height": 584
+      },
+      "sourceScale": 0.6557051970585805,
+      "sourceAnchor": {
+        "x": 493.53125,
+        "y": 335.6875
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9146041870117188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 73,
+        "top": 44,
+        "right": 470,
+        "bottom": 419
+      },
+      "visibleBounds": {
+        "left": 176,
+        "top": 162,
+        "right": 397,
+        "bottom": 323
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-fan-v3.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 646,
+        "y": 0,
+        "width": 608,
+        "height": 584
+      },
+      "sourceScale": 0.6557051970585805,
+      "sourceAnchor": {
+        "x": 474.53125,
+        "y": 333.46875
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.7781639099121094,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 20,
+        "top": 8,
+        "right": 462,
+        "bottom": 446
+      },
+      "visibleBounds": {
+        "left": 58,
+        "top": 77,
+        "right": 395,
+        "bottom": 363
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-fan-v3.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 584,
+        "width": 675,
+        "height": 670
+      },
+      "sourceScale": 0.6557051970585805,
+      "sourceAnchor": {
+        "x": 555.625,
+        "y": 378.21875
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9861259460449219,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 102,
+        "top": 11,
+        "right": 481,
+        "bottom": 416
+      },
+      "visibleBounds": {
+        "left": 298,
+        "top": 219,
+        "right": 398,
+        "bottom": 292
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/fire-fan-v3.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 675,
+        "y": 584,
+        "width": 579,
+        "height": 670
+      },
+      "sourceScale": 0.6557051970585805,
+      "sourceAnchor": {
+        "x": 430.53125,
+        "y": 374
+      },
+      "pivot": {
+        "x": 384,
+        "y": 256
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/fire-fan/preview.gif",
+  "action": null
+}

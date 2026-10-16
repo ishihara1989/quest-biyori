@@ -1,0 +1,77 @@
+{
+  "id": "motions/p2-hit",
+  "kind": "motion",
+  "loop": false,
+  "cell": [
+    512,
+    512
+  ],
+  "anchor": [
+    256,
+    448
+  ],
+  "frames": [
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-hit/review/motions/p2-hit/frame-01.png",
+      "index": 1,
+      "durationMs": 90,
+      "source": "source/motions/p2-hit.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 887,
+        "height": 887
+      },
+      "description": "Chest dx=3, face dx=2,dy=-1; hips fixed.",
+      "width": 887,
+      "height": 887,
+      "transparentFraction": 0.38662809541301196,
+      "lowAlphaPixels": 34204,
+      "edgePixels": 149,
+      "bounds": [
+        13,
+        19,
+        886,
+        860
+      ],
+      "marginFraction": 0
+    },
+    {
+      "file": "../../../../../../../public/assets/extradimensional-goddess/first-pass-v1/review/motions/p2-hit/review/motions/p2-hit/frame-02.png",
+      "index": 2,
+      "durationMs": 90,
+      "source": "source/motions/p2-hit.png",
+      "sourceRect": {
+        "left": 887,
+        "top": 0,
+        "width": 887,
+        "height": 887
+      },
+      "description": "Chest and face return to neutral.",
+      "width": 887,
+      "height": 887,
+      "transparentFraction": 0.3872991945539288,
+      "lowAlphaPixels": 29182,
+      "edgePixels": 146,
+      "bounds": [
+        0,
+        18,
+        874,
+        860
+      ],
+      "marginFraction": 0
+    }
+  ],
+  "sources": [
+    "source/motions/p2-hit.png"
+  ],
+  "expectedFrames": 2,
+  "complete": true,
+  "missingFrames": [],
+  "accepted": false,
+  "previewOnly": true,
+  "extraction": "fixed proportional rectangular cells; original alpha/RGB retained; no masks, retouching, re-centering, or per-pose scaling",
+  "contact": "review/motions/p2-hit/contact.png",
+  "gif": "review/motions/p2-hit/preview.gif",
+  "gifLoop": "review repeats; nonloop motions are one-shot in intended use; missing frames are NOT synthesized"
+}

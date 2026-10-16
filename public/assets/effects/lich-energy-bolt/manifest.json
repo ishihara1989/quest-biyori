@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "effect": "lich-energy-bolt",
+  "label": "闇のエネルギー弾",
+  "sheet": "lich-energy-bolt.png",
+  "preview": "../../../../development/assets/effects/lich-energy-bolt/lich-energy-bolt-preview.gif",
+  "prompt": "../../../../development/assets/effects/lich-energy-bolt/PROMPT.md",
+  "width": 768,
+  "height": 128,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 192,
+  "frameHeight": 128,
+  "frameCount": 4,
+  "pivot": {
+    "x": 96,
+    "y": 64
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "loop",
+  "source": "../../../../development/assets/effects/lich-energy-bolt/source-generated.png",
+  "sourceScale": 0.29295774647887324,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 32,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "lich-energy-bolt-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "発生",
+      "bounds": {
+        "left": 23,
+        "top": 13,
+        "right": 169,
+        "bottom": 115
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 636,
+        "height": 656
+      },
+      "sourceAnchor": {
+        "x": 346,
+        "y": 354
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "lich-energy-bolt-02.png",
+      "x": 192,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "展開",
+      "bounds": {
+        "left": 19,
+        "top": 12,
+        "right": 172,
+        "bottom": 115
+      },
+      "sourceCell": {
+        "x": 636,
+        "y": 0,
+        "width": 618,
+        "height": 656
+      },
+      "sourceAnchor": {
+        "x": 300,
+        "y": 371
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "lich-energy-bolt-03.png",
+      "x": 384,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "最大",
+      "bounds": {
+        "left": 21,
+        "top": 15,
+        "right": 170,
+        "bottom": 113
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 656,
+        "width": 640,
+        "height": 598
+      },
+      "sourceAnchor": {
+        "x": 350,
+        "y": 275
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "lich-energy-bolt-04.png",
+      "x": 576,
+      "y": 0,
+      "width": 192,
+      "height": 128,
+      "durationMs": 160,
+      "phase": "収束",
+      "bounds": {
+        "left": 20,
+        "top": 18,
+        "right": 172,
+        "bottom": 109
+      },
+      "sourceCell": {
+        "x": 640,
+        "y": 656,
+        "width": 614,
+        "height": 598
+      },
+      "sourceAnchor": {
+        "x": 294,
+        "y": 282
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "poison-swamp",
+  "facing": "left"
+}

@@ -1,0 +1,301 @@
+{
+  "id": "dragon/move",
+  "enemy": "dragon",
+  "region": "volcano",
+  "label": "移動",
+  "kind": null,
+  "motion": "move",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "pivot": {
+    "x": 300,
+    "y": 338
+  },
+  "facing": "left",
+  "loop": true,
+  "terminal": false,
+  "endBehavior": "loop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../../development/assets/volcano-motions/v2/references/dragon.png",
+  "originalSources": [
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-1-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-2-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-3-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-4-v2.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-5-v3.png",
+    "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-6-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8630752563476562,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 110,
+        "top": 131,
+        "right": 481,
+        "bottom": 369
+      },
+      "visibleBounds": {
+        "left": 176,
+        "top": 140,
+        "right": 453,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-1-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceScale": 0.25184959967568665,
+      "sourceAnchor": {
+        "x": 799.8321931589537,
+        "y": 879
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8719520568847656,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 137,
+        "top": 144,
+        "right": 464,
+        "bottom": 371
+      },
+      "visibleBounds": {
+        "left": 176,
+        "top": 145,
+        "right": 451,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-2-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceScale": 0.24919775371038907,
+      "sourceAnchor": {
+        "x": 805.6420523138834,
+        "y": 871
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8568840026855469,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 128,
+        "top": 120,
+        "right": 461,
+        "bottom": 370
+      },
+      "visibleBounds": {
+        "left": 173,
+        "top": 137,
+        "right": 458,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-3-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1493,
+        "height": 1053
+      },
+      "sourceScale": 0.2520204101036352,
+      "sourceAnchor": {
+        "x": 738.3184104627767,
+        "y": 900
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8582420349121094,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 117,
+        "top": 134,
+        "right": 492,
+        "bottom": 376
+      },
+      "visibleBounds": {
+        "left": 175,
+        "top": 143,
+        "right": 478,
+        "bottom": 337
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-4-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceScale": 0.25677787680345127,
+      "sourceAnchor": {
+        "x": 734.2019114688129,
+        "y": 861
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8655319213867188,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 155,
+        "top": 141,
+        "right": 485,
+        "bottom": 363
+      },
+      "visibleBounds": {
+        "left": 178,
+        "top": 142,
+        "right": 457,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-5-v3.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceScale": 0.23829787234042554,
+      "sourceAnchor": {
+        "x": 755.8214285714287,
+        "y": 894
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2048,
+      "y": 0,
+      "index": 4
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "transparentFraction": 0.8646163940429688,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 123,
+        "top": 140,
+        "right": 483,
+        "bottom": 366
+      },
+      "visibleBounds": {
+        "left": 179,
+        "top": 141,
+        "right": 459,
+        "bottom": 338
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../../../development/assets/volcano-motions/v2/sources/dragon/move-frame-6-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1024
+      },
+      "sourceScale": 0.24200518582541056,
+      "sourceAnchor": {
+        "x": 756.075,
+        "y": 892
+      },
+      "pivot": {
+        "x": 300,
+        "y": 338
+      },
+      "x": 2560,
+      "y": 0,
+      "index": 5
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "walkCycle": {
+    "gait": "trot",
+    "nearLeg": "left",
+    "farLeg": "right",
+    "swingPairs": [
+      "A",
+      "A",
+      "B",
+      "B",
+      "B",
+      "A"
+    ]
+  },
+  "repeatRelease": false,
+  "review": "../../../../../../development/assets/volcano-motions/v2/review/dragon/move/preview.gif",
+  "action": null
+}

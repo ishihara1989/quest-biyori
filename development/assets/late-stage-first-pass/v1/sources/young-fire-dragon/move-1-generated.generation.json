@@ -1,0 +1,25 @@
+{
+  "id": "young-fire-dragon/move-1",
+  "enemy": "young-fire-dragon",
+  "region": "volcano",
+  "motion": "move-1",
+  "label": "移動 1〜3",
+  "cols": 3,
+  "rows": 1,
+  "reference": "references/young-fire-dragon.png",
+  "guide": "guides/young-fire-dragon/half-1.png",
+  "source": "sources/young-fire-dragon/move-1-generated.png",
+  "prompt": "Use case: stylized-concept. THREE consecutive in-place TROT poses of 幼火竜 in a horizontal 3-cell sheet, frames 1-3 of six, 120ms each. SECOND reference is SKELETAL GUIDE only, never copy its lines/colors. Anatomical LEFT legs NEAR, RIGHT legs FAR darker. A=LH+RF, B=LF+RH alternate diagonal support. Exactly FOUR connected legs, track hip/thigh/knee/shin/ankle/paw for all including occluded legs. Naturally hide far legs; never widen them to show all feet. Stable head/torso, short smooth stride, wings held stable, tail sways 12px. Seamless 3->4 and 6->1. Target coordinates:\nFRAME 1: LF grounded paw-bottom (417,848), hip (417,633), knee (521,708); RF lifted paw-bottom (381,796), hip (381,611), knee (495,671); LH lifted paw-bottom (699,793), hip (699,610), knee (585,688); RH grounded paw-bottom (663,802), hip (663,588), knee (559,680)\nFRAME 2: LF grounded paw-bottom (448,845), hip (417,633), knee (533,687); RF lifted paw-bottom (355,813), hip (381,611), knee (475,700); LH lifted paw-bottom (671,811), hip (699,610), knee (578,675); RH grounded paw-bottom (681,801), hip (663,588), knee (569,691)\nFRAME 3: LF lifted paw-bottom (448,827), hip (417,633), knee (539,675); RF grounded paw-bottom (355,828), hip (381,611), knee (470,705); LH grounded paw-bottom (671,827), hip (699,610), knee (583,685); RH lifted paw-bottom (681,789), hip (663,588), knee (565,687) Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-73c9a07f-02a8-411b-8c40-53a00bb7aaa1.png",
+  "sha256": "a3aaf79dd238533e9f32ade9cdbe7a519350548f24e61b604a9b2ac9b52bf204",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "奥前脚と後脚の足先が重なり、対角接地ペアの読み取りが難しい。脚の接続と足先実測を分けて確認する。",
+      "翼の輪郭と尾先が各コマで変わる。頭・胴体の固定基準を合わせる。"
+    ]
+  }
+}

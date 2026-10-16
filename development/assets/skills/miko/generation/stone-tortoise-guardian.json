@@ -1,0 +1,15 @@
+{
+  "id": "stone-tortoise-guardian",
+  "source": "development/assets/skills/miko/source/stone-tortoise-guardian-generated-v2.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-81be3be8-4d40-4167-bd4b-282b49a13faf.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Reference image is SAME SPECIES design and palette. Exactly FOUR frames in a TWO BY TWO grid of equal square cells, ordered top-left, top-right, bottom-left, bottom-right. An immense divine guardian version of ONE sacred stone tortoise, grey-violet carved hexagonal shell, ivory face and four short feet, golden shimenawa rope around shell and two white zigzag paper streamers, refined larger pixel-art details, bright thick ivory/red/gold outer contour, mostly translucent interior, no miniature creature, human, weapon-bearing human or second animal. Ground anchor (.50,.86), head/crest upper .18, wings/tail can span .12..88.  Full-form pulse loop: 1 complete guardian standing/open wings with gold crests; 2 chest rises and wings/tail/antlers/crest expand slightly; 3 main crest glows, majestic full outer form; 4 ease toward frame1. Preserve exact anatomy including tail/antler counts. Square canvas, exactly a TWO BY TWO layout. Every complete ornate animal, halo and glow fits within x=.22..78, y=.20..80 of its own square. Make all four poses the same body size. Gold crests brighten without expanding beyond the margin. 22% EMPTY gutters, no cell overlaps. Reference is SAME divine guardian identity.",
+  "refs": [
+    "C:/Users/ashit/src/idle_rpgs/idle_rpg_poc/development/assets/skills/miko/source/stone-tortoise-guardian-generated-v1.png"
+  ],
+  "receivedAt": "2026-10-10T15:42:05.772Z",
+  "width": 1254,
+  "height": 1254,
+  "status": "generated",
+  "componentCrops": true,
+  "extraction": "Whole alpha-connected source silhouettes and their nearest detached particles. No recoloring, drawing or interpolation."
+}

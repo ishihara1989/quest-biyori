@@ -1,0 +1,103 @@
+{
+  "id": "demon-god/danger-3",
+  "enemy": "demon-god",
+  "region": "demon-castle",
+  "motion": "danger-3",
+  "label": "封声",
+  "effects": [
+    "silence-seal"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/demon-god/danger-3-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "魔神",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 38,
+        "top": 13,
+        "right": 652,
+        "bottom": 578
+      },
+      "sourceWidth": 667,
+      "sourceHeight": 580,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 171375,
+      "transparentFraction": 0.44298971204053145
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 15,
+        "top": 13,
+        "right": 612,
+        "bottom": 573
+      },
+      "sourceWidth": 645,
+      "sourceHeight": 580,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 151000,
+      "transparentFraction": 0.40363539160652234
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 42,
+        "top": 2,
+        "right": 656,
+        "bottom": 575
+      },
+      "sourceWidth": 673,
+      "sourceHeight": 619,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 180662,
+      "transparentFraction": 0.43367171803248783
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 16,
+        "top": 2,
+        "right": 605,
+        "bottom": 575
+      },
+      "sourceWidth": 639,
+      "sourceHeight": 619,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 169536,
+      "transparentFraction": 0.4286180193709375
+    }
+  ],
+  "reference": "../../../references/demon-god.png",
+  "originalSources": [
+    "../../../sources/demon-god/danger-3-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

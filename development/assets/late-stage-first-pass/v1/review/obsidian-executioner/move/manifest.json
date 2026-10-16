@@ -1,0 +1,137 @@
+{
+  "id": "obsidian-executioner/move",
+  "enemy": "obsidian-executioner",
+  "region": "volcano",
+  "motion": "move",
+  "label": "移動",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/obsidian-executioner/move-1-generated.png",
+    "sources/obsidian-executioner/move-2-generated.png"
+  ],
+  "durations": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "phases": [
+    "移動1",
+    "移動2",
+    "移動3",
+    "移動4",
+    "移動5",
+    "移動6"
+  ],
+  "enemyLabel": "黒曜の処刑者",
+  "expectedFrames": 6,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 65,
+        "top": 32,
+        "right": 710,
+        "bottom": 669
+      },
+      "sourceWidth": 736,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 301212,
+      "transparentFraction": 0.5652699375450396
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 25,
+        "top": 33,
+        "right": 686,
+        "bottom": 677
+      },
+      "sourceWidth": 714,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 289747,
+      "transparentFraction": 0.5605084575266571
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 26,
+        "top": 34,
+        "right": 672,
+        "bottom": 669
+      },
+      "sourceWidth": 722,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 297763,
+      "transparentFraction": 0.569632772684838
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 27,
+        "top": 31,
+        "right": 687,
+        "bottom": 668
+      },
+      "sourceWidth": 722,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 286940,
+      "transparentFraction": 0.5489279319263556
+    },
+    {
+      "file": "frame-5.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 33,
+        "top": 31,
+        "right": 707,
+        "bottom": 674
+      },
+      "sourceWidth": 737,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 309060,
+      "transparentFraction": 0.5792109267824613
+    },
+    {
+      "file": "frame-6.png",
+      "durationMs": 120,
+      "sourceBounds": {
+        "left": 29,
+        "top": 42,
+        "right": 692,
+        "bottom": 669
+      },
+      "sourceWidth": 713,
+      "sourceHeight": 724,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 290109,
+      "transparentFraction": 0.5619958466676481
+    }
+  ],
+  "reference": "../../../references/obsidian-executioner.png",
+  "originalSources": [
+    "../../../sources/obsidian-executioner/move-1-generated.png",
+    "../../../sources/obsidian-executioner/move-2-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

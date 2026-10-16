@@ -1,0 +1,25 @@
+{
+  "id": "dragon/danger-3",
+  "source": "sources/dragon/danger-3-v2.png",
+  "selected": true,
+  "prompt": "BODY ONLY NO EXTERNAL LAVA BOMB OR FLAME. Use case: stylized-concept. FOUR distinct attack poses EXACT equal 2x2 TL TR BL BR: anticipation, held dangerous windup, release, recovery. ドラゴン. Four-legged dragon. Wings raise, whole torso lifts 80px with FOUR connected tucked feet, wing downbeat and mouth aims down-LEFT release, four feet return neutral. Wing rim light ONLY, NO lava bombs in body. Same wing dimensions and tail shape. Three launches 0.9 seconds apart. Canonical reference is the immutable identity and color standard. LEFT-facing 3/4, refined JRPG pixel clusters, crisp stepped edges and dark outlines. SAME head size, torso proportions, armor, horns, wings and tail throughout. Exactly the original connected limbs; no extra feet, no claw elongation. TRUE transparent alpha. Absolutely NO ambient red haze, backdrop gradient, aura, shadow, floor, checkerboard, labels or watermark. Every pixel outside the sharply outlined silhouette is alpha=0. Orange light ONLY inside scales/fins/armor. Full complete silhouette including every blade, tail, wing and claw inside its cell with ample clear margin, and empty gutters. Do not bake full projectile, beam, impact or ground VFX into the body sheet. Only tiny attached emission/core light allowed. TL wings raise with dark orange rim; TR whole body lifted80px, four connected tucked paws, wing rim whitegold; BL wings downbeat, FOUR tucked paws and mouth open aiming downLEFT, small light inside mouth only; BR return canonical upright four-paw stance. Small central sprites with20% margin above wing tips, clear gutters.",
+  "actualInputImages": [
+    {
+      "file": "references/dragon.png",
+      "sha256": "3726331eee3cd9f752423d78386e2309c46b6ce343847c77100d5886fc517a70"
+    }
+  ],
+  "date": "2026-10-14 JST",
+  "tool": "built-in image_gen",
+  "sha256": "5e4d4d6a2c3b0604e2615f7214affff5315701ac420829398c979c5f13063b95",
+  "reference": "references/dragon.png",
+  "guide": null,
+  "firstPass": "sources/dragon/danger-3-generated.png",
+  "issues": [
+    "赤橙の背景光が混入。",
+    "飛翔で4脚の膝と爪が重なる。脚数・所属と翼の付け根を検収する。",
+    "3地点への時間差の溶岩落下は、この本体1ポーズと別素材・配置・時刻で組む必要がある。"
+  ],
+  "accepted": false,
+  "pathsRelativeTo": "volcano-motions/v2"
+}

@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "enemy": "sand-scorpion",
+  "motion": "sting",
+  "facing": "left",
+  "label": "sting",
+  "sheet": "sand-scorpion-sting.png",
+  "preview": "../../../../../../development/assets/enemies/sand-scorpion/motions/sting/sand-scorpion-sting-preview.gif",
+  "prompt": "../../../../../../development/assets/desert-motions/PROMPTS.md",
+  "width": 1440,
+  "height": 280,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 360,
+  "frameHeight": 280,
+  "frameCount": 4,
+  "pivot": {
+    "x": 209,
+    "y": 262
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1050,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/sand-scorpion/source/sting-registered.png",
+  "sourceScale": 0.36281179138321995,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 1,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "sting-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 210,
+      "phase": "構え",
+      "bounds": {
+        "left": 103,
+        "top": 102,
+        "right": 312,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 808,
+        "height": 607
+      },
+      "sourceAnchor": {
+        "x": 432,
+        "y": 543
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "sting-02.png",
+      "x": 360,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 390,
+      "phase": "予告",
+      "bounds": {
+        "left": 102,
+        "top": 97,
+        "right": 310,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 808,
+        "y": 0,
+        "width": 808,
+        "height": 607
+      },
+      "sourceAnchor": {
+        "x": 376,
+        "y": 543
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "sting-03.png",
+      "x": 720,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 200,
+      "phase": "発動",
+      "bounds": {
+        "left": 99,
+        "top": 103,
+        "right": 314,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 607,
+        "width": 808,
+        "height": 607
+      },
+      "sourceAnchor": {
+        "x": 437,
+        "y": 508
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "sting-04.png",
+      "x": 1080,
+      "y": 0,
+      "width": 360,
+      "height": 280,
+      "durationMs": 250,
+      "phase": "復帰",
+      "bounds": {
+        "left": 100,
+        "top": 100,
+        "right": 313,
+        "bottom": 262
+      },
+      "sourceCell": {
+        "x": 808,
+        "y": 607,
+        "width": 808,
+        "height": 607
+      },
+      "sourceAnchor": {
+        "x": 381,
+        "y": 509
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "金砂の墓域",
+  "originalSources": [
+    "../../../../../../development/assets/desert-motions/sand-scorpion-tail-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/desert-motions/references/sand-scorpion.png",
+  "action": {
+    "motion": "sting",
+    "warn": 600,
+    "times": [
+      600
+    ],
+    "power": 0.8,
+    "radius": 155,
+    "kind": "melee",
+    "status": "poison",
+    "duration": 1050
+  },
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 742,
+          "height": 555
+        },
+        {
+          "x": 742,
+          "y": 0,
+          "width": 694,
+          "height": 555
+        },
+        {
+          "x": 0,
+          "y": 555,
+          "width": 750,
+          "height": 541
+        },
+        {
+          "x": 750,
+          "y": 555,
+          "width": 686,
+          "height": 541
+        }
+      ]
+    }
+  ]
+}

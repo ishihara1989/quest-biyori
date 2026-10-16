@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "octopus",
+  "motion": "move",
+  "facing": "left",
+  "label": "移動",
+  "sheet": "octopus-move.png",
+  "preview": "../../../../../../development/assets/enemies/octopus/motions/move/octopus-move-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/octopus/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 640,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/octopus/source/move-registered.png",
+  "sourceScale": 0.3287671232876712,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "move-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "開始",
+      "bounds": {
+        "left": 113,
+        "top": 152,
+        "right": 319,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 747,
+        "height": 410
+      },
+      "sourceAnchor": {
+        "x": 352,
+        "y": 380
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "move-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 130,
+        "top": 151,
+        "right": 357,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 747,
+        "y": 0,
+        "width": 747,
+        "height": 410
+      },
+      "sourceAnchor": {
+        "x": 300,
+        "y": 381
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "move-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "作用",
+      "bounds": {
+        "left": 58,
+        "top": 152,
+        "right": 292,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 410,
+        "width": 747,
+        "height": 410
+      },
+      "sourceAnchor": {
+        "x": 519,
+        "y": 379
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "move-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 160,
+      "phase": "復帰",
+      "bounds": {
+        "left": 150,
+        "top": 147,
+        "right": 357,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 747,
+        "y": 410,
+        "width": 747,
+        "height": 410
+      },
+      "sourceAnchor": {
+        "x": 239,
+        "y": 393
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/octopus/source/move-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 140407,
+        "left": 79,
+        "top": 112,
+        "right": 708,
+        "bottom": 476,
+        "cx": 392.2421104360894,
+        "cy": 326.90714850399195
+      },
+      {
+        "id": 1,
+        "count": 149812,
+        "left": 790,
+        "top": 111,
+        "right": 1483,
+        "bottom": 476,
+        "cx": 1138.9328892211572,
+        "cy": 325.28462339465466
+      },
+      {
+        "id": 3,
+        "count": 146419,
+        "left": 44,
+        "top": 572,
+        "right": 758,
+        "bottom": 935,
+        "cx": 421.651397701118,
+        "cy": 780.602169117396
+      },
+      {
+        "id": 4,
+        "count": 145344,
+        "left": 841,
+        "top": 572,
+        "right": 1474,
+        "bottom": 949,
+        "cx": 1147.9947916666667,
+        "cy": 794.5050844892118
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

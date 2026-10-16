@@ -1,0 +1,48 @@
+{
+  "source": "../../../source/healing-butterflies-guardian-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 644,
+      "height": 611
+    },
+    {
+      "x": 644,
+      "y": 0,
+      "width": 610,
+      "height": 611
+    },
+    {
+      "x": 0,
+      "y": 611,
+      "width": 667,
+      "height": 643
+    },
+    {
+      "x": 667,
+      "y": 611,
+      "width": 587,
+      "height": 643
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 922
+    },
+    {
+      "x": 512,
+      "y": 922
+    },
+    {
+      "x": 512,
+      "y": 922
+    },
+    {
+      "x": 512,
+      "y": 922
+    }
+  ],
+  "scale": 0.4901185770750988
+}

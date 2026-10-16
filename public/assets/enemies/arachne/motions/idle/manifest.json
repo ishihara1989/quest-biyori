@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "arachne",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "arachne-idle.png",
+  "preview": "../../../../../../development/assets/enemies/arachne/motions/idle/arachne-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/arachne/PROMPT.md",
+  "width": 2304,
+  "height": 448,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 576,
+  "frameHeight": 448,
+  "frameCount": 4,
+  "pivot": {
+    "x": 334,
+    "y": 431
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/arachne/source/idle-registered.png",
+  "sourceScale": 0.5450733752620545,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 213,
+        "top": 172,
+        "right": 549,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 651,
+        "height": 527
+      },
+      "sourceAnchor": {
+        "x": 238,
+        "y": 492
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 576,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 214,
+        "top": 162,
+        "right": 547,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 651,
+        "y": 0,
+        "width": 651,
+        "height": 527
+      },
+      "sourceAnchor": {
+        "x": 236,
+        "y": 510
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 1152,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 217,
+        "top": 164,
+        "right": 553,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 527,
+        "width": 651,
+        "height": 527
+      },
+      "sourceAnchor": {
+        "x": 231,
+        "y": 506
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1728,
+      "y": 0,
+      "width": 576,
+      "height": 448,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 215,
+        "top": 171,
+        "right": 549,
+        "bottom": 431
+      },
+      "sourceCell": {
+        "x": 651,
+        "y": 527,
+        "width": 651,
+        "height": 527
+      },
+      "sourceAnchor": {
+        "x": 235,
+        "y": 494
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/arachne/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 155405,
+        "left": 127,
+        "top": 27,
+        "right": 744,
+        "bottom": 503,
+        "cx": 439.2588398056691,
+        "cy": 283.0761880248383
+      },
+      {
+        "id": 1,
+        "count": 158280,
+        "left": 883,
+        "top": 9,
+        "right": 1495,
+        "bottom": 503,
+        "cx": 1190.9335481425321,
+        "cy": 277.38241091736165
+      },
+      {
+        "id": 3,
+        "count": 159437,
+        "left": 130,
+        "top": 520,
+        "right": 748,
+        "bottom": 1010,
+        "cx": 439.99246724411523,
+        "cy": 784.1368252036855
+      },
+      {
+        "id": 4,
+        "count": 153510,
+        "left": 887,
+        "top": 532,
+        "right": 1501,
+        "bottom": 1010,
+        "cx": 1198.3843788678262,
+        "cy": 790.2398410527002
+      }
+    ]
+  ],
+  "region": "echo-cave",
+  "defaultZoom": 1
+}

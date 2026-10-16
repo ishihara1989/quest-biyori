@@ -1,0 +1,18 @@
+{
+  "id": "lilith/danger-2",
+  "source": "danger-2-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame \"seal of silence\" BODY casting animation of the exact canonical adult Lilith.\nSame adult demon queen, lavender hair, red curved horns, gold-red crown, black/crimson gold-trimmed long dress, two attached bat wings, exactly two arms and two booted legs. LEFT-facing mild three-quarter angle, same refined crisp JRPG pixel art and reference palette.\nExactly four complete SMALL separate poses in equal 2x2 cells with broad transparent margins. All horns, wings, fingers, hair and dress fit comfortably inside the central 60% of each cell. Never overlap cells. Same body scale throughout; maintain floating feet close together.\nPer-cell root: pelvis (520,585), head (485,300), boot tips (490,830),(560,835). Wing roots fixed behind shoulder blades.\nIdentify TWO arms and keep identity: FAR ARM originates at shoulder on SCREEN LEFT (around 435,400). It will point LEFT. NEAR ARM originates at shoulder on SCREEN RIGHT (around 570,405). Its index finger stays near her lips in windup and release.\nFrame 1: both hands relaxed near waist, far at (420,565), near at (565,565), wings relaxed.\nFrame 2: NEAR/right-origin elbow bends and NEAR index finger rises to lips (465,345); FAR/left-origin arm folds across lower chest with hand (440,490). Wings fold closer to back. Tiny attached crown glint only.\nFrame 3: SAME NEAR index finger remains at lips (465,345), connected through same elbow to right-origin shoulder. SAME FAR shoulder (435,400) extends its short forearm left with elbow (360,425), open palm (280,455). Two hands only, one near mouth and one pointing left. Torso stays upright and airborne, feet close together, no ground lunge.\nFrame 4: pointing far arm lowers and near index finger leaves lips, both return to canonical neutral hands. Wings, hair and dress settle to frame 1.\nSilence emblem is separate VFX, so no floating rune, spell circle, cloud, beam, large hand glow or mouth symbol on this body sheet. Native transparent alpha, no floor, background haze, shadow, text, labels, grid, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-f26c8902-c02b-46a5-85fc-bdf4f2a94187.png",
+  "sha256": "35d8e6bc12dc5faa1876820ab7d435fb571d8ac43957e502029ff88d4c814d66",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/references/lilith.png",
+      "sha256": "e3a3568e04dea574614081bfc5302c5815f5d0a55d181d7d0b2728f26dfdd66f"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "danger-2-v2.prompt.txt"
+}

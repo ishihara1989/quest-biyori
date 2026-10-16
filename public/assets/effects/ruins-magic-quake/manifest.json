@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-magic-quake",
+  "label": "魔導踏撃波",
+  "sheet": "ruins-magic-quake.png",
+  "preview": "../../../../development/assets/effects/ruins-magic-quake/ruins-magic-quake-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-magic-quake/PROMPT.md",
+  "width": 1536,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 192,
+    "y": 240
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-magic-quake/source-registered.png",
+  "sourceScale": 0.4808743169398907,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-magic-quake-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 34,
+        "top": 30,
+        "right": 350,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 817,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 466,
+        "y": 502
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-magic-quake-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 17,
+        "top": 53,
+        "right": 367,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 817,
+        "y": 0,
+        "width": 817,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 384,
+        "y": 494
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-magic-quake-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 16,
+        "top": 46,
+        "right": 367,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 552,
+        "width": 817,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 413,
+        "y": 455
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-magic-quake-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 18,
+        "top": 48,
+        "right": 365,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 817,
+        "y": 552,
+        "width": 817,
+        "height": 552
+      },
+      "sourceAnchor": {
+        "x": 388,
+        "y": 463
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "ground",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-magic-quake/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 520
+      },
+      {
+        "x": 785,
+        "y": 0,
+        "width": 751,
+        "height": 520
+      },
+      {
+        "x": 0,
+        "y": 520,
+        "width": 774,
+        "height": 504
+      },
+      {
+        "x": 774,
+        "y": 520,
+        "width": 762,
+        "height": 504
+      }
+    ]
+  }
+}

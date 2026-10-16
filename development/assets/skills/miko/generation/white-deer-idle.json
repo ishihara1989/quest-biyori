@@ -1,0 +1,11 @@
+{
+  "id": "white-deer-idle",
+  "source": "development/assets/skills/miko/source/white-deer-idle-generated-v1.png",
+  "original": "C:\\Users\\ashit\\.codex\\generated_images\\01a124b3-40f9-7781-a9ab-1452bf358535\\exec-e3da4ffd-5e8b-418a-9cf0-029f479af8ea.png",
+  "prompt": "Use case: stylized-concept. Production TRANSPARENT pixel-art animation atlas for a Japanese shrine-maiden summoner in a polished arcade/JRPG side-scrolling idle RPG. Reference image is locked pixel shading and palette guidance only unless identified as SAME SUBJECT. Deliberate clean square pixel clusters, dark crisp colored outlines, ivory highlights, violet-grey shadows, vermilion/white/gold shrine accents; no smooth illustration, painted gradients, blur or 3D. Real transparent RGBA, no painted checkerboard, floor, cast shadow, text, border, labels, separators or grid. All frame silhouettes fully inside x=.10..90,y=.10..90 with wide EMPTY transparent gutters. Same scale, camera, anatomy and palette across cells. Create exactly 3 frames in ONE horizontal row of equally sized square cells. Subject: ONE actual adult white DEER, long elegant neck, narrow elongated herbivore face, horizontal deer ears, FOUR long thin legs ending in split dark hooves, tiny SHORT deer tail, gentle amber eyes, TWO branching pale-jade antlers with exactly THREE branch tips per antler, gold neck rope with red tassel; never fox face, pointed fox ears, paws or bushy tail. ONE creature per cell, facing RIGHT, no effects baked into body. Position: head (.65,.38), antler crown (.62,.17), four hooves on .82. Idle loop: 1 exhale/relaxed; 2 chest/head rise one logical pixel and wings/tail lift two; 3 ease halfway back. Feet stay planted for ground creatures, hover center stays fixed for flying.",
+  "refs": [],
+  "receivedAt": "2026-10-10T14:00:05.559Z",
+  "width": 2172,
+  "height": 724,
+  "status": "generated"
+}

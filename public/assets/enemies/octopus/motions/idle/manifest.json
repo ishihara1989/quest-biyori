@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "enemy": "octopus",
+  "motion": "idle",
+  "facing": "left",
+  "label": "待機",
+  "sheet": "octopus-idle.png",
+  "preview": "../../../../../../development/assets/enemies/octopus/motions/idle/octopus-idle-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/octopus/PROMPT.md",
+  "width": 1536,
+  "height": 288,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 288,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 271
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1600,
+  "loop": true,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "loop",
+  "source": "../../../../../../development/assets/enemies/octopus/source/idle-registered.png",
+  "sourceScale": 0.32345013477088946,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [],
+  "frames": [
+    {
+      "index": 0,
+      "file": "idle-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "開始",
+      "bounds": {
+        "left": 150,
+        "top": 152,
+        "right": 354,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 672,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 242,
+        "y": 386
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "idle-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 121,
+        "top": 142,
+        "right": 326,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 672,
+        "y": 0,
+        "width": 672,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 333,
+        "y": 417
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "idle-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "作用",
+      "bounds": {
+        "left": 120,
+        "top": 147,
+        "right": 323,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 434,
+        "width": 672,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 334,
+        "y": 400
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "idle-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 288,
+      "durationMs": 400,
+      "phase": "復帰",
+      "bounds": {
+        "left": 120,
+        "top": 147,
+        "right": 326,
+        "bottom": 271
+      },
+      "sourceCell": {
+        "x": 672,
+        "y": 434,
+        "width": 672,
+        "height": 434
+      },
+      "sourceAnchor": {
+        "x": 337,
+        "y": 400
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "originalSources": [
+    "../../../../../../development/assets/enemies/octopus/source/idle-generated.png"
+  ],
+  "sourceExtraction": [
+    [
+      {
+        "id": 2,
+        "count": 143426,
+        "left": 71,
+        "top": 106,
+        "right": 702,
+        "bottom": 476,
+        "cx": 382.21151674033996,
+        "cy": 325.145210770711
+      },
+      {
+        "id": 1,
+        "count": 152461,
+        "left": 833,
+        "top": 84,
+        "right": 1471,
+        "bottom": 485,
+        "cx": 1143.79396698172,
+        "cy": 319.7623720164501
+      },
+      {
+        "id": 3,
+        "count": 149097,
+        "left": 71,
+        "top": 584,
+        "right": 700,
+        "bottom": 968,
+        "cx": 381.6733334674742,
+        "cy": 809.8958396211862
+      },
+      {
+        "id": 4,
+        "count": 148616,
+        "left": 833,
+        "top": 584,
+        "right": 1472,
+        "bottom": 968,
+        "cx": 1144.0443895677452,
+        "cy": 810.2824998654249
+      }
+    ]
+  ],
+  "region": "sunlit-coast",
+  "defaultZoom": 1
+}

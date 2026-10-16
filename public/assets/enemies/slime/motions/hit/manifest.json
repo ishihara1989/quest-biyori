@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "enemy": "slime",
+  "motion": "hit",
+  "label": "被攻撃",
+  "facing": "left",
+  "sheet": "slime-hit.png",
+  "preview": "../../../../../../development/assets/enemies/slime/motions/hit/slime-hit-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/slime/PROMPT.md",
+  "width": 768,
+  "height": 224,
+  "frameWidth": 256,
+  "frameHeight": 224,
+  "frameCount": 3,
+  "pivot": {
+    "x": 128,
+    "y": 207
+  },
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 400,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1280,
+    "idleLeadOutMs": 1280
+  },
+  "source": "../../../../../../development/assets/enemies/slime/source/slime-generated-v1.png",
+  "sourceScale": 0.5,
+  "frames": [
+    {
+      "index": 0,
+      "file": "hit-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 100,
+      "phase": "のけぞる",
+      "sourceCellIndex": 8,
+      "sourceCell": {
+        "x": 0,
+        "y": 600,
+        "width": 286,
+        "height": 260
+      },
+      "sourceAnchor": {
+        "x": 159,
+        "y": 185
+      },
+      "bakedOffset": {
+        "x": 8,
+        "y": 0
+      },
+      "bounds": {
+        "left": 86,
+        "top": 161,
+        "right": 186,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 1,
+      "file": "hit-02.png",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 140,
+      "phase": "立て直す",
+      "sourceCellIndex": 9,
+      "sourceCell": {
+        "x": 286,
+        "y": 600,
+        "width": 287,
+        "height": 260
+      },
+      "sourceAnchor": {
+        "x": 157,
+        "y": 185
+      },
+      "bakedOffset": {
+        "x": 3,
+        "y": 0
+      },
+      "bounds": {
+        "left": 86,
+        "top": 151,
+        "right": 175,
+        "bottom": 207
+      }
+    },
+    {
+      "index": 2,
+      "file": "hit-03.png",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 224,
+      "durationMs": 160,
+      "phase": "待機の基準姿勢",
+      "sourceCellIndex": 0,
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 286,
+        "height": 320
+      },
+      "sourceAnchor": {
+        "x": 157,
+        "y": 271
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "left": 87,
+        "top": 153,
+        "right": 169,
+        "bottom": 207
+      }
+    }
+  ]
+}

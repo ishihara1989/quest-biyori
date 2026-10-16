@@ -1,0 +1,112 @@
+# 魔法使いの追加モーションとエフェクト
+
+組み込み image_gen で生成。基準リファレンス: `public/assets/mage/mage-idle.png` と `development/assets/references/mage-original.png`。
+
+## attack
+
+Use case: identity-preserve.
+Asset type: transparent pixel-art RPG animation sprite atlas, NORMAL STAFF ATTACK.
+Input image 1 is the immutable mage pixel-art design/style and idle pose reference. Input image 2 is her character design reference ONLY, do not use its smooth illustration style.
+Create exactly FOUR distinct full-body right-facing poses in a clean 2x2 grid, reading upper-left, upper-right, lower-left, lower-right. Genuinely transparent RGBA background. No labels, borders, text, cast shadows, other characters or magic effects. Maintain the SAME blue-haired young female witch, indigo oversized gold-trim hat, indigo/gold robe with cream skirt, short boots, single brown ornate staff with large cyan crystal. Fine crisp pixel-art, same proportions, palette, outline and detail as image 1. Staff stays in SAME right hand on viewer right. Left hand open.
+Plan per 512x512 cell in normalized coordinates (0..1): feet contact center (.46,.91), head center (.45,.37); fixed feet and hat, character height about .72 of cell. Never crop hat, hair or staff. Character remains right-facing 3/4 side view, NO rotation to front. All cells have same character scale. Keep body/head mostly fixed. Entire staff visible with generous transparent margins.
+Frame 1: ready/wind-up from idle. Right hand (.60,.57), staff crystal (.60,.22), staff bottom (.56,.84). Slight bent elbow pulling staff back toward shoulder. Eyes OPEN.
+Frame 2: anticipation, raised diagonal back toward upper LEFT, hand (.55,.51), crystal (.32,.14), staff bottom (.71,.77). Slight lean back 2 degrees.
+Frame 3: strongest forward swing, hand (.65,.55), crystal (.87,.40), staff bottom (.39,.77). Right arm extends toward right, blue hair follows behind. This is the emission pose.
+Frame 4: follow-through then begin recovery, hand (.64,.60), crystal (.89,.62), staff bottom (.35,.58). Right arm low forward, hair settles. Feet keep fixed.
+Action trajectory: upright near right shoulder -> tip upper left -> upper right -> right/lower right. Clearly rotate a rigid STRAIGHT staff about its hand, preserving length, crystal shape, exactly one staff and two arms throughout. Do not simply copy idle pose four times. Do not add trails/effects, those will be separate assets. Match base reference color precisely. Each pose isolated within its own equal cell.
+
+## attack・2コマ目の持ち手修正
+
+Use case: identity-preserve. Asset: ONE transparent pixel-art mage sprite, anticipation frame of staff attack.
+EDIT THE PROVIDED CORRECT FIRST FRAME. Preserve the character exactly: same right-facing view, eyes, blue hair, hat, clothes, belt, pouch, feet, pixel style, proportions, colors. Preserve the free open hand at SCREEN LEFT pointing downward. It must stay free and down in the final pose.
+CRITICAL: The staff remains gripped by the SAME EXISTING arm and hand at SCREEN RIGHT. Never swap arms. The arm on screen left stays lowered and EMPTY exactly like the input. Only bend/raise the existing screen-right staff arm slightly and rotate the existing staff diagonally backward for attack anticipation. The gripping fist MUST be on SCREEN RIGHT of her face, near her right-screen cheek/temple, NOT at screen left. You must be able to trace the raised gripping hand to the original screen-right shoulder.
+Plan on a 640x600 transparent canvas: boot contact remains around (332,565), hat top around y120, face center about (349,256). Keep original lower body and free screen-left hand (220,405) unchanged. Screen-right shoulder about (392,300), screen-right elbow about (460,320), gripping hand about (435,228), so the raised arm visibly occupies the RIGHT side of the torso. Long straight staff rotates around that gripping hand: cyan crystal tip about (260,55), lower end about (563,370), diagonal upper-left to lower-right. The staff runs ABOVE the face. Large cyan crystal retains same shape and size and the staff retains original length. Exactly one staff, two hands; no extra limbs.
+This is the anticipation between original upright staff and a forward swing. Feet, head, body scale, clothing, waist position remain fixed; do NOT flip the character. Only the screen-RIGHT gripping arm and staff change. Single FULL BODY pose with clear transparent padding; actual RGBA alpha0 background, no glow, no effects, no shadow, no sheet, no text. Same crisp pixel art. Most important constraint: SCREEN-LEFT OPEN HAND STAYS DOWN; SCREEN-RIGHT HAND HOLDS THE STAFF.
+
+### 杖の長さと装飾の修正
+
+Use case: identity-preserve. Transparent pixel-art staff attack anticipation sprite correction.
+Image 1 is the CORRECT arm pose: keep this ENTIRE character and pose pixel-for-pixel as closely as possible. IMPORTANT keep the raised STAFF-GRIPPING HAND on SCREEN RIGHT of her face and keep the EMPTY hand on SCREEN LEFT DOWN. Do not move, swap, mirror, or redraw her arms or hands. Keep head, hair, face, hat, dress, feet, colors, scale, view identical to image1.
+ONLY FIX THE STAFF LENGTH AND DESIGN to match image2, the original equipment reference. Image1 staff is too long and has an invented cyan ornament on its lower end. Shorten the staff by about 30%, by bringing BOTH ends inward toward the unchanged gripping fist; preserve its upper-left to lower-right diagonal angle and the exact same grip point. Keep the fist at about (850,420) in image1's 1280x1200 canvas. Crystal tip should be about (575,175); the plain lower staff end about (1050,595). Full diagonal length about 650px, not the current 970px. This matches image2's staff length relative to her body. Staff must be rigid, straight, single wooden shaft.
+Retain original large single cyan crystal, original gold cradle and small cyan jewel immediately beneath its upper cradle from image2. Make the top crystal a little smaller than image1 so its scale matches image2's gem relative to her face. Lower shaft must be SIMPLE BROWN WOOD with the original pointed/tapered end like image2. NO jewel, gold pommel, knob, spike or ornament on bottom end. Preserve the complete character on same transparent canvas, no resizing her body. Only staff beyond the gripping hand changes. No effects, glow, shadow, text, grid. Genuine transparent RGBA alpha0 background, crisp pixel art.
+
+単独コマは `attack-staff/source/mage-attack-staff-frame02-generated-v2.png`。`development/records/mage-generation.json` の frameEdits に登録位置と倍率を記録し、元アトラスの2コマ目のみ差し替える。
+
+## chant
+
+Use case: identity-preserve. Asset type: RPG transparent pixel-art CASTING LOOP sprite atlas.
+Image 1 is the immutable pixel-art mage style/proportions/palette and neutral staff pose. Image 2 is character identity reference only.
+Exactly FOUR full-body poses in 2x2 equal cells, chronological top-left, top-right, bottom-left, bottom-right. All transparent RGBA; no labels, effects, floor, shadow or borders. Same young female mage with rich blue LONG hair flowing to the LEFT, indigo witch hat with golden edge and cyan jewel, indigo gold-trim robes with cream skirt, gold ornate single straight wooden staff with blue crystal on viewer RIGHT. Fine crisp pixel-art consistent with image1, same head/body size and equipment, right-facing 3/4 side view, fixed hat/head/feet. Eyes CLOSED in ALL four frames, calm focused expression. Exactly two arms, staff held in same hand as idle. Body and feet stay still.
+Position per cell normalized: feet center (.48,.91), head center (.48,.34), staff gripping hand (.67,.57), staff gem (.71,.22), staff bottom (.61,.86); whole character including hat about .75 cell height. Staff stays in idle upright pose for all frames. Head and outfit identical across frames; ONLY long hair tips and a few robe hems move.
+Hair floats outward/upward as if magic lifts it, distinct from gravity-hanging idle hair. Hair trajectory as a LOOP: frame1 neutral lifted hair curved left/up with tips around (.18,.47); frame2 lifted tips travel farther up around (.16,.43); frame3 tips sweep slightly down/out around (.12,.47); frame4 return close to frame1, tips (.16,.50). Roots stay attached under hat, locks preserve length, volume, saturation. Closed eyelids clearly visible. The hair must visibly sway; NOT four identical frames. Frame4->frame1 is small movement. No body levitation: boots touch same baseline. Keep each entire pose WITHIN its own cell with minimum 8% padding. No magic glow baked into character; casting aura generated separately. Match original reference colors, do not lighten/desaturate.
+
+### 透過修正
+
+Use case: background-extraction. Asset type: transparent pixel-art RPG casting loop sprite atlas.
+EDIT ONLY image1. It is four closed-eye mage frames with blue hair floating. Remove EVERY blue/purple/gold haze, aura, bloom, vignette, glow and shadow around the four characters. Empty space must be fully transparent RGBA, alpha=0, crisp silhouettes. Keep all four characters, their poses, coordinates, same pixel scale, eye closure, hair motion, staff, equipment, colors and shape unchanged. Keep the 2x2 arrangement. Do not repaint or move the characters. Do not add any effects or gradients. Image2 is the immutable crisp pixel-art palette/style reference; preserve matching colors. Flat transparent cutouts, only character pixels including actual hair and staff. Four poses remain distinct and right-facing.
+
+## forward
+
+Use case: identity-preserve. Asset type: transparent pixel-art RPG STAFF FORWARD transition, exactly FOUR full-body chronological poses in 2x2 grid.
+Input1 = immutable mage idle PIXEL-ART identity/style/palette. Input2 = preceding closed-eye chanting motion and floating hair reference. Generate the SAME witch, same body/head/hat dimensions, rich blue hair, indigo/gold hat and robe, cream skirt, brown ornate straight single staff with cyan crystal. Strict right-facing 3/4 side view. Eyes CLOSED or gently open only at final frame. No glow, haze, effects, text, borders, floor or shadows. Empty space completely transparent RGBA. Character scale consistent in all four cells. Do NOT use more than four poses.
+Purpose: connect upright chanting pose to a held staff pointing FORWARD RIGHT. Keep same feet planted; fixed hat/head, mostly same long blue hair floating left. Right hand is staff hand on viewer RIGHT, left arm remains viewer LEFT, NEVER swap hands. Staff is a rigid straight rod constant length. Whole weapon fits within each cell with 8% padding.
+Coordinates normalized to cell: foot center (.42,.91), head center (.42,.33), hat top around y=.16, hem around y=.81.
+Frame1 matches chanting end: hand (.60,.56), crystal (.64,.24), staff tail (.55,.85), hair tips (.16,.47).
+Frame2 right elbow travels forward: hand (.63,.52), crystal (.76,.29), staff tail (.44,.79).
+Frame3 arm extends: hand (.66,.51), crystal (.86,.37), staff tail (.39,.69).
+Frame4 final FORWARD spell pose: right arm extended horizontally at chest height, hand (.69,.50), crystal (.89,.47), staff tail (.31,.56). Staff almost HORIZONTAL, pointing right, with wood tail behind wrist across chest. Feet/face remain in same positions, eyes gently OPEN, hair remains lifted left around (.13,.43).
+There must be a clear continuous arc of tip upright -> diagonal right-up -> almost horizontal right. Constant grip attachment and staff length. Same character design and matching saturated colors as original reference. Crisp detailed pixel art. No airbrushed edges. Preserve breathing room around tip.
+
+## forwardHold
+
+Use case: identity-preserve. Asset type: FOUR-frame transparent PIXEL ART RPG FORWARD STAFF HOLD LOOP, 2x2 grid.
+Input1 is exact preceding forward transition FINAL POSE, use it as geometry reference. Input2 is ORIGINAL pixel-art mage immutable palette/style reference. Make the SAME blue-haired witch. Copy exact pose of image1 into every cell: eyes OPEN, face/head/hat/body/boots unmoving; right arm extended forward right at chest height, single ornate wooden staff almost HORIZONTAL pointing RIGHT, crystal at staff tip. Staff grip/rod position and length fixed across all frames. No hand swapping, no additional limbs, no duplicate staves. Frame1 identical posture and floating hair to input1. ONLY long hair and tiny robe hem moves. Do not shift arm, head, or boots.
+Four full-body poses chronological top-left/top-right/bottom-left/bottom-right, equal scale, strict right-facing 3/4 view, isolated cell with 8% transparent padding all around including full staff. Use each cell horizontal space fully but no cutting tip off.
+Normalized cell geometry: feet center(.43,.91), head(.43,.32), right grip(.69,.50), crystal(.91,.47), staff tail(.32,.56). Hair floats left; frame1 tips(.15,.45), frame2 tips(.13,.40), frame3 tips(.10,.45), frame4 tips(.13,.49), roots fixed. Small natural cycle 4->1, long full locks remain same length. Make hair change clearly visible, four different silhouettes. Crisp saturated blue, indigo robes/hat, golden trims, cream underskirt exactly original palette. Pixel art without painterly blur.
+Scene: COMPLETELY EMPTY TRANSPARENT BACKGROUND; no glow or haze, no colored mist, NO aura, NO gradients or magic effects, no shadow, no floor, no text or borders. Render strictly opaque crisp character pixels on alpha0 empty space.
+
+## up
+
+Use case: identity-preserve. Asset type: transparent RPG PIXEL ART STAFF RAISE transition, exactly FOUR full-body poses in ONE HORIZONTAL ROW of FOUR equal portrait-shaped cells, a 1x4 chronological strip.
+Image1 is immutable original mage pixel-art style/palette/identity. Image2 is preceding closed-eye chant pose reference. SAME young witch, rich blue long hair, indigo gold-trim pointed hat, cream skirt and ornate indigo-gold robe, ornate straight brown staff with cyan crystal. Crisp pixel art same proportions and colors. Right-facing 3/4 view. Staff held in right hand on viewer RIGHT, no swapping arms. Feet stay planted and hat/head fixed. All limbs anatomically attached, one rigid staff constant length.
+Motion: FROM upright closed-eye chanting pose, lift the right hand and STAFF toward the sky to an UPWARD spell pose, final staff vertical above/right of the hat, arm clearly raised and fully extended. Not pointing forward at the end.
+Per portrait cell normalized coordinates: feet(.46,.90), head(.46,.48), hat top(.46,.32), lifted hair tips(.12,.59); body height about .58 cell. The character body must be SMALLER inside each cell so fully raised staff has plenty of headroom. Keep staff top with minimum 8% transparent padding.
+Frame1 chanting start: grip(.65,.62), crystal(.69,.30), bottom(.59,.88). Eyes closed.
+Frame2 bent elbow raised: grip(.68,.50), crystal(.77,.20), bottom(.59,.79).
+Frame3 hand at forehead level: grip(.67,.36), crystal(.76,.11), bottom(.57,.63). Eyes starting to open.
+Frame4 final held-UP pose: right arm extended above head on viewer RIGHT, hand(.66,.30), crystal(.68,.08), staff lower end(.62,.58). Staff points straight UP. Eyes OPEN, focused. Do not hide hand in hat; arm visible beside brim.
+Hair floats left slightly through the four frames; roots locked under hat. Pose starts like reference chant and transitions naturally to raised arm. Scale body equally in all cells even though weapon increases total silhouette height. Entire hat, feet, hair and staff visible. Generous transparent gutters.
+Only character/staff opaque pixels; fully transparent RGBA everywhere else. No aura, haze, gradients, particles, floor, shadow, labels, borders. Keep reference saturated blue/indigo/gold palette.
+CRITICAL LAYOUT: only one row! FOUR full-body poses arranged LEFT TO RIGHT, no second row. Use wide canvas aspect about 3:1. Each character fully isolated in one vertical column, no overlap. Staff gem always at least .12 of cell height below the top border. Keep the mage body modest sized to fit skyward staff with plenty of padding. No part can reach another cell. Steps 1,2,3,4: staff upright at waist -> raised elbow -> arm overhead -> full upward hold. Frame4 crystal at y=.13, raised hand y=.38. Do NOT lift gem to canvas edge. No background whatsoever, true transparent.
+
+## upHold
+
+Use case: identity-preserve. Asset type: transparent RPG PIXEL ART STAFF UP HOLD LOOP, exactly FOUR full-body poses in ONE horizontal row, 1x4 equal portrait cells, wide approximately 3:1 atlas.
+Input1 is EXACT preceding upward transition final pose; maintain its pose, anatomy, angle, scale relationships and raised staff. Input2 is original mage immutable palette/style. SAME young blue-haired indigo/gold witch, same hat, robe, boots, face and ornate brown cyan-crystal staff.
+Copy input1 geometry across ALL four frames: face eyes OPEN facing RIGHT, right arm raised beside hat, elbow high, hand ABOVE forehead on viewer RIGHT, single straight staff VERTICAL pointing UP, large blue crystal well above hat. Keep staff grip, arm, head, boots and staff rod completely still. Boots fixed same baseline. No arm swapping. EXACTLY one staff and two arms.
+Only LONG hair floating to LEFT waves: frame1 same lifted hair as input1; frame2 tips rise gently by 4% body height; frame3 tips sweep out/left and down by 3%; frame4 tips come back close to frame1. Roots stay fixed under hat, full long locks remain same length/volume and rich blue color. Tiny robe hem sway allowed, no body scaling or bobbing. Four DISTINCT hair silhouettes, smooth small 4->1 loop.
+Generous transparent padding above staff tip and around entire silhouette. Important: modest sized body in portrait cells, hat top at y=.34, boot contact y=.91, crystal top y=.12. Full weapon visible in each cell, never at canvas edge. Do not use two rows.
+Crisp fine pixel art matching original reference indigo/blue/gold palette, no painterly smoothing. Truly EMPTY transparent RGBA background. No glow, no haze, no mist, no gradients, no aura/effects, no floor, no shadows, no labels or borders.
+
+## bolt
+
+Use case: stylized-concept. Asset type: transparent RPG PIXEL ART WIND MAGIC PROJECTILE animated sprite sheet, exactly FOUR frames in 2x2 equal cells, top-left/top-right/bottom-left/bottom-right.
+A luminous compact RIGHT-moving crescent wind bolt cast from a blue crystal staff by an indigo-robed blue-haired witch. Effect ONLY, no character or staff. Bright cyan and mint/turquoise wind with white glowing sharp crescent core, dark blue thin edge pixels, tapered streaming tail to LEFT, several little cyan diamond sparkles. Rich crisp fantasy pixel-art, readable small at 50px wide. Powerful and flashy yet clean silhouette.
+Each frame fixed core center(.60,.50) inside its cell; full effect from x=.13 to .83, y=.30 to .70. Crescent opening toward LEFT, tip moves RIGHT. Sharp forward head on RIGHT and fine layered curling streaks trailing LEFT. No motion changes in travel direction; bolt remains horizontal.
+Four-frame seamless flight loop: 1 compact two curl tail, 2 wind filaments spread and crescent brightens, 3 outer curl wraps around white core, 4 filaments return to frame1 shape. Core shape and position stay fixed; tail swirls with clearly different poses. Do not make a grow-and-disappear sequence, this is a looping projectile.
+RGBA fully transparent background with restrained semitransparent cyan edge glow ONLY near the effect. Generous empty margins 12% in every cell. No huge haze, colored background, checkerboard pixels, floors, text, labels, borders, circles of flat UI design, photorealism, smooth vector shapes. Use distinct chunky pixel clusters and fine pixel sparks matching detailed JRPG character sprites.
+
+## aura
+
+Use case: stylized-concept. Asset type: transparent RPG PIXEL ART CHANTING MAGIC AURA, exactly FOUR frames in 2x2 grid, effect ONLY.
+Cyan/mint magic circular seal on the ground seen as a flat horizontal ELLIPSE in 3/4 side battle view, with thin indigo and golden decorative small arcane ticks, and graceful cyan spirals/wind filaments rising from the circle left/right sides. Small white/cyan diamonds slowly rise. A hollow open CENTER for a mage character to stand in; character will be separate, never draw character, body, face, hat, staff or any solid object. Keep center visually open and gentle so character leg/body visible. Flashy bright rim and shimmering pixels, fine crisp JRPG pixel art.
+Fixed seal center per cell(.50,.79), ellipse width .67cell and height .17cell. Base same y and size in all four frames. Filaments climb along OUTSIDE sides between y=.35 and .79; no giant central pillar. Sparkles around(.24,.45) and(.77,.32). Circle stays fixed, motifs rotate subtly and sides lift a flowing loop of wind.
+Frame1 baseline ring + two fine rising curls; frame2 rune ticks move quarter turn, curls lift, little star shifts upward; frame3 two taller arcs and bright rim; frame4 curls descend to frame1 and ring returns. Seamless repeated 4->1 cycle, clearly four distinct frames, not fading out.
+RGBA true transparent background everywhere other than effect. Restrained translucent cyan edge bloom close to arcs, avoid huge diffuse background haze. Full effect contained inside cell with at least .10 margins on every edge. No checkerboard drawn into image, no floor patch, no text, labels, panel borders, UI symbols, smooth vector art or gradients.
+
+## impact
+
+Use case: stylized-concept. Asset type: transparent RPG PIXEL ART WIND IMPACT, exactly FOUR chronological frames in 2x2 equal cells.
+Bright cyan/mint/white wind magic hitting a target, effect ONLY. Small white flash expands into a curling round burst of sharp crescent wind blades and radiating short cyan streaks, then breaks apart into small diamond particles. Match cyan/mint wind bolt: indigo blue thin outline, vivid white core, crisp pixel clusters. Powerful readable at around 80px in a JRPG battle. No fire, explosions with smoke, character, staff, terrain, leaves or rocks.
+Fixed impact center (.5,.5) in every cell. Frame1 tight white/cyan star flash at center with a few short rays; frame2 largest white center with cyan crescent outward blades and dynamic radial rays; frame3 hollow turquoise wind ring separating into short curved shards as center clears; frame4 sparse fading tiny cyan diamonds and small curling filaments, almost dissipated. This is a one-shot ending in disappearance, NOT a looping projectile. Four clearly different phases, maximum effect size .76 of cell with >.10 margins.
+Fully transparent RGBA background; narrow translucent light near rays only, no broad haze/backdrop, no squares/checkerboards rendered, no text, labels, grids or borders. Pixel art, not smooth vector or painterly.

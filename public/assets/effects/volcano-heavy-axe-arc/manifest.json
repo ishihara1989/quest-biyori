@@ -1,0 +1,201 @@
+{
+  "id": "volcano-heavy-axe-arc",
+  "enemy": null,
+  "region": "volcano",
+  "label": "断罪大薙ぎ",
+  "kind": "target",
+  "motion": "effect",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 560,
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "facing": "left",
+  "loop": false,
+  "terminal": false,
+  "endBehavior": "stop",
+  "previewOnly": false,
+  "runtimeRegistered": true,
+  "acceptedForIntegration": true,
+  "reference": null,
+  "originalSources": [
+    "../../../../development/assets/volcano-motions/v2/sources/effects/heavy-axe-arc-v2.png"
+  ],
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9384880065917969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 44,
+        "top": 109,
+        "right": 429,
+        "bottom": 384
+      },
+      "visibleBounds": {
+        "left": 175,
+        "top": 191,
+        "right": 335,
+        "bottom": 321
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/heavy-axe-arc-v2.png",
+      "sourceCell": 0,
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 705,
+        "height": 490
+      },
+      "sourceScale": 0.562358276643991,
+      "sourceAnchor": {
+        "x": 394.5,
+        "y": 262
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 0,
+      "y": 0,
+      "index": 0
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "transparentFraction": 0.8255157470703125,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 8,
+        "top": 118,
+        "right": 468,
+        "bottom": 380
+      },
+      "visibleBounds": {
+        "left": 76,
+        "top": 148,
+        "right": 436,
+        "bottom": 364
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/heavy-axe-arc-v2.png",
+      "sourceCell": 1,
+      "sourceRect": {
+        "x": 705,
+        "y": 0,
+        "width": 831,
+        "height": 490
+      },
+      "sourceScale": 0.562358276643991,
+      "sourceAnchor": {
+        "x": 441,
+        "y": 268.5
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 512,
+      "y": 0,
+      "index": 1
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 140,
+      "transparentFraction": 0.6948432922363281,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 20,
+        "top": 109,
+        "right": 500,
+        "bottom": 408
+      },
+      "visibleBounds": {
+        "left": 43,
+        "top": 124,
+        "right": 470,
+        "bottom": 388
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/heavy-axe-arc-v2.png",
+      "sourceCell": 2,
+      "sourceRect": {
+        "x": 0,
+        "y": 490,
+        "width": 855,
+        "height": 534
+      },
+      "sourceScale": 0.562358276643991,
+      "sourceAnchor": {
+        "x": 420.5,
+        "y": 262
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 1024,
+      "y": 0,
+      "index": 2
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 140,
+      "transparentFraction": 0.9167594909667969,
+      "edgeOpaquePixels": 0,
+      "bounds": {
+        "left": 75,
+        "top": 113,
+        "right": 445,
+        "bottom": 408
+      },
+      "visibleBounds": {
+        "left": 104,
+        "top": 166,
+        "right": 407,
+        "bottom": 346
+      },
+      "width": 512,
+      "height": 512,
+      "originalSource": "../../../../development/assets/volcano-motions/v2/sources/effects/heavy-axe-arc-v2.png",
+      "sourceCell": 3,
+      "sourceRect": {
+        "x": 855,
+        "y": 490,
+        "width": 681,
+        "height": 534
+      },
+      "sourceScale": 0.562358276643991,
+      "sourceAnchor": {
+        "x": 321.5,
+        "y": 255
+      },
+      "pivot": {
+        "x": 256,
+        "y": 256
+      },
+      "x": 1536,
+      "y": 0,
+      "index": 3
+    }
+  ],
+  "events": [],
+  "effects": [],
+  "repeatRelease": false,
+  "review": "../../../../development/assets/volcano-motions/v2/review/effects/heavy-axe-arc/preview.gif",
+  "action": null
+}

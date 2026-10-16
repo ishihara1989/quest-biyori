@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/thunder-crows-action-generated-v2.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 728,
+      "height": 724
+    },
+    {
+      "x": 728,
+      "y": 0,
+      "width": 694,
+      "height": 724
+    },
+    {
+      "x": 1422,
+      "y": 0,
+      "width": 750,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    },
+    {
+      "x": 512,
+      "y": 512
+    }
+  ],
+  "scale": 0.11313131313131314
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "effect": "ruins-stone-impact",
+  "label": "石腕衝撃",
+  "sheet": "ruins-stone-impact.png",
+  "preview": "../../../../development/assets/effects/ruins-stone-impact/ruins-stone-impact-preview.gif",
+  "prompt": "../../../../development/assets/effects/ruins-stone-impact/PROMPT.md",
+  "width": 1280,
+  "height": 256,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 320,
+  "frameHeight": 256,
+  "frameCount": 4,
+  "pivot": {
+    "x": 160,
+    "y": 240
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 720,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": null,
+    "to": null
+  },
+  "endBehavior": "hide",
+  "source": "../../../../development/assets/effects/ruins-stone-impact/source-registered.png",
+  "sourceScale": 0.4022346368715084,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "frames": [
+    {
+      "index": 0,
+      "file": "ruins-stone-impact-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "発生",
+      "bounds": {
+        "left": 44,
+        "top": 47,
+        "right": 275,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 828,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 423,
+        "y": 514
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "ruins-stone-impact-02.png",
+      "x": 320,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "展開",
+      "bounds": {
+        "left": 17,
+        "top": 60,
+        "right": 303,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 828,
+        "y": 0,
+        "width": 828,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 418,
+        "y": 527
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "ruins-stone-impact-03.png",
+      "x": 640,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "最大",
+      "bounds": {
+        "left": 26,
+        "top": 55,
+        "right": 294,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 554,
+        "width": 828,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 415,
+        "y": 486
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "ruins-stone-impact-04.png",
+      "x": 960,
+      "y": 0,
+      "width": 320,
+      "height": 256,
+      "durationMs": 180,
+      "phase": "収束",
+      "bounds": {
+        "left": 30,
+        "top": 104,
+        "right": 290,
+        "bottom": 240
+      },
+      "sourceCell": {
+        "x": 828,
+        "y": 554,
+        "width": 828,
+        "height": 554
+      },
+      "sourceAnchor": {
+        "x": 383,
+        "y": 482
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "kind": "ground",
+  "facing": "left",
+  "originalSource": "../../../../development/assets/effects/ruins-stone-impact/source-generated.png",
+  "sourceExtraction": {
+    "method": "transparent-grid",
+    "cells": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 740,
+        "height": 522
+      },
+      {
+        "x": 740,
+        "y": 0,
+        "width": 796,
+        "height": 522
+      },
+      {
+        "x": 0,
+        "y": 522,
+        "width": 779,
+        "height": 502
+      },
+      {
+        "x": 779,
+        "y": 522,
+        "width": 757,
+        "height": 502
+      }
+    ]
+  }
+}

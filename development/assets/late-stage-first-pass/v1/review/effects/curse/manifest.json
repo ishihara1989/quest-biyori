@@ -1,0 +1,101 @@
+{
+  "id": "effects/curse",
+  "region": "demon-castle",
+  "motion": "effect",
+  "label": "呪い",
+  "kind": "status",
+  "effects": [],
+  "repeat": 1,
+  "sources": [
+    "sources/effects/curse-generated.png"
+  ],
+  "durations": [
+    100,
+    140,
+    220,
+    180
+  ],
+  "phases": [
+    "発生",
+    "展開",
+    "最大",
+    "収束"
+  ],
+  "enemyLabel": null,
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "sourceBounds": {
+        "left": 221,
+        "top": 80,
+        "right": 633,
+        "bottom": 405
+      },
+      "sourceWidth": 741,
+      "sourceHeight": 477,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 281216,
+      "transparentFraction": 0.7956158740667182
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 140,
+      "sourceBounds": {
+        "left": 106,
+        "top": 42,
+        "right": 731,
+        "bottom": 465
+      },
+      "sourceWidth": 795,
+      "sourceHeight": 477,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 238794,
+      "transparentFraction": 0.6297061033978086
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 220,
+      "sourceBounds": {
+        "left": 74,
+        "top": 10,
+        "right": 871,
+        "bottom": 523
+      },
+      "sourceWidth": 882,
+      "sourceHeight": 547,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 229879,
+      "transparentFraction": 0.47647858655954767
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 19,
+        "top": 100,
+        "right": 579,
+        "bottom": 472
+      },
+      "sourceWidth": 654,
+      "sourceHeight": 547,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 240304,
+      "transparentFraction": 0.6717318260850119
+    }
+  ],
+  "reference": null,
+  "originalSources": [
+    "../../../sources/effects/curse-generated.png"
+  ],
+  "loop": true,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

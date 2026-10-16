@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "poison-swamp",
+  "label": "毒の沼地",
+  "generation": "built-in image_gen",
+  "sampling": "nearest-neighbor",
+  "coordinateSystem": {
+    "previewWidth": 1024,
+    "previewHeight": 576,
+    "groundY": {
+      "min": 323,
+      "max": 512
+    },
+    "units": "preview pixels",
+    "notes": "Y is the foot/contact point; these bounds are an unobstructed recommended lane, not a collision map."
+  },
+  "repeat": {
+    "axis": "x",
+    "mode": "alternate-mirror",
+    "tilesPerPeriod": 2,
+    "notes": "Alternate the source and its horizontal mirror. Identical edge columns meet at both joins. Direct same-orientation repetition has small generated edge differences."
+  },
+  "layers": [
+    {
+      "id": "distant",
+      "label": "遠景",
+      "file": "swamp-distant.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "parallax": 0.28,
+      "source": "../../../../development/assets/stages/poison-swamp/source/swamp-distant-generated-v1.png"
+    },
+    {
+      "id": "ground-near",
+      "label": "地面＋近景",
+      "file": "swamp-ground-near.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": true,
+      "parallax": 1,
+      "source": "../../../../development/assets/stages/poison-swamp/source/swamp-ground-near-generated-v1.png"
+    }
+  ],
+  "notes": [
+    "Same stage rectangle and recommended contact lane as starting-forest (1024×576, Y323–512).",
+    "Draw distant, ground-near, then actors sorted by foot Y. Upper near-layer gaps have genuine transparency.",
+    "Alternate mirrored tiles independently per layer for seamless parallax. Source RGBA is preserved.",
+    "The battle preview uses the forest combat movement bounds, Y334–501."
+  ]
+}

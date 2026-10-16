@@ -1,0 +1,104 @@
+{
+  "id": "lava-salamander/danger-1",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "danger-1",
+  "label": "灼熱噴き",
+  "effects": [
+    "fire-fan",
+    "burn"
+  ],
+  "repeat": 1,
+  "sources": [
+    "sources/lava-salamander/danger-1-generated.png"
+  ],
+  "durations": [
+    180,
+    360,
+    240,
+    280
+  ],
+  "phases": [
+    "構え",
+    "溜め",
+    "発動",
+    "復帰"
+  ],
+  "enemyLabel": "ラヴァサラマンダー",
+  "expectedFrames": 4,
+  "complete": true,
+  "previewOnly": true,
+  "accepted": false,
+  "superseded": false,
+  "frameWidth": 384,
+  "frameHeight": 384,
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 180,
+      "sourceBounds": {
+        "left": 99,
+        "top": 167,
+        "right": 714,
+        "bottom": 517
+      },
+      "sourceWidth": 751,
+      "sourceHeight": 575,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 292031,
+      "transparentFraction": 0.676271637816245
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 360,
+      "sourceBounds": {
+        "left": 33,
+        "top": 101,
+        "right": 649,
+        "bottom": 519
+      },
+      "sourceWidth": 697,
+      "sourceHeight": 575,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 234453,
+      "transparentFraction": 0.5849990643128937
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 240,
+      "sourceBounds": {
+        "left": 48,
+        "top": 58,
+        "right": 739,
+        "bottom": 415
+      },
+      "sourceWidth": 763,
+      "sourceHeight": 511,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 220891,
+      "transparentFraction": 0.5665426155381091
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 280,
+      "sourceBounds": {
+        "left": 22,
+        "top": 56,
+        "right": 654,
+        "bottom": 413
+      },
+      "sourceWidth": 685,
+      "sourceHeight": 511,
+      "edgeOpaquePixels": 0,
+      "transparentPixels": 204836,
+      "transparentFraction": 0.5851871955661577
+    }
+  ],
+  "reference": "../../../references/lava-salamander.png",
+  "originalSources": [
+    "../../../sources/lava-salamander/danger-1-generated.png"
+  ],
+  "loop": false,
+  "terminal": false,
+  "note": "GIF repeats for review only. Defeat ends on last frame in the review player. No per-pose body scaling, anatomy edits or alpha cleaning."
+}

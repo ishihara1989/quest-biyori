@@ -1,0 +1,26 @@
+{
+  "id": "lava-salamander/reaction",
+  "enemy": "lava-salamander",
+  "region": "volcano",
+  "motion": "reaction",
+  "label": "被弾・撃破",
+  "cols": 2,
+  "rows": 2,
+  "reference": "references/lava-salamander.png",
+  "guide": null,
+  "source": "sources/lava-salamander/reaction-generated.png",
+  "prompt": "Use case: stylized-concept. FOUR-frame reaction sheet EXACT 2x2 of ラヴァサラマンダー. Top-left HIT: torso recoils 25px RIGHT and 12px down, head reacts, limbs remain connected. Top-right HIT RECOVERY returns to neutral. Bottom-left DEFEAT: all four knees bend, torso sinks 90px, tail and wings settle. Bottom-right TERMINAL DEFEAT: same whole creature lying low on its side, exactly four anatomically connected legs, no gore. Defeat holds, never jumps back to idle. Bright core/fins dim at defeat. No body explosion or detached pieces. Match the FIRST fixed canonical reference identity, palette, proportions, face, armor, weapons, wing/tail attachments and refined JRPG pixel art: crisp deliberate pixel clusters, stepped edges, dark outline, no airbrush or 3D render. LEFT-facing mild 3/4 view. All complete silhouettes have 12% clear margin in their own equal cells; no clipped tails, blades, wings, horns, fingers or feet. Same scale across every frame, true transparent alpha. No background, floor slab, shadow plate, labels, grid, checkerboard, text, watermark, extra creatures or detached body parts. Female characters remain clearly adults, dressed/armored as reference.  Each cell local 0..1024. Body root (540,550), head around (330,350) for bipeds or (300,520) for quadrupeds. Ground contacts y=850. Whole silhouette in x=100..920,y=120..880. Coordinates are movement targets, not evidence of output compliance.",
+  "generatedPath": "C:\\Users\\ashit\\.codex\\generated_images\\01a13555-1290-7060-bc9c-977a754d260e\\exec-f85b7fd4-f83f-4e02-8278-16f243e0666f.png",
+  "sha256": "303d702ad3e12fa097afdecb3af54fc1ce2c1c85ea6493a59cd4998e9747b970",
+  "status": "generated-unaccepted",
+  "issues": [],
+  "reviewStatus": "all source frames visually reviewed; playback and runtime acceptance pending",
+  "manualReview": {
+    "framesChecked": true,
+    "issues": [
+      "赤い光の背景が原画の広範囲に混入。透過PNGとしての再制作が必要。",
+      "撃破最終コマは低い伏せ姿勢になっているが背びれと溶岩光が残り、待機との状態差が弱い。",
+      "被弾1コマ目は前脚が浮くため、接地と荷重の対応を確認する。"
+    ]
+  }
+}

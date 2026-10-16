@@ -1,0 +1,18 @@
+{
+  "id": "effects/royal-cleave",
+  "source": "royal-cleave-v2.png",
+  "tool": "built-in image_gen",
+  "date": "2026-10-15 JST",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept.\nAsset type: FOUR-frame heavy \"ROYAL CLEAVE\" greatsword VFX, separate from knight body, for refined pixel-art JRPG.\nUse referenced effect ONLY for exact black/crimson/violet, white-hot and tiny gold-spark palette and crisp pixel-cluster quality. Correct its boundary overflow and persistent last white slash.\nExactly FOUR complete separate effect sprites in equal 2x2 cells with broad transparent gutters. Every single ray, rock shard, spark and tip must have a very large clear border; entire maximum silhouette lies within normalized x=200..800,y=200..800 of EACH cell. Make effects small to guarantee clearance. No crossing of cell borders.\nA SINGLE heavy diagonal greatsword slash travels from UPPER RIGHT (750,250) to LOWER LEFT impact (280,745). SAME fixed impact point (280,745) in every frame. A broad but controlled silver-white blade streak with crimson/violet outer edge, and only 5-8 small black rock shards around the lower-left impact point.\nFrame 1: thin upper-right starter streak from (750,250) to (550,430), faint crimson outline. No ground burst yet.\nFrame 2: powerful complete single diagonal slash to (280,745), with a compact impact fan at that point and 5-8 small rock shards contained inside x=200..430,y=630..800. Blade streak max width 65 units. Full streak and shards comfortably inside margins.\nFrame 3: same diagonal band position, reduced white intensity, compact red/purple afterglow follows the SAME single trajectory, rock shards begin falling. No huge expanding radial blast, no new fork or ring.\nFrame 4: only 6-10 tiny fading crimson/gold sparks and a few small black shards at lower-left impact point. The silver-white streak is COMPLETELY GONE. Effect then hides.\nThis is one directional heavy strike, no extra swords, no character, no projectile, no second arc, no circular shockwave, no continuous beam, no growing pillar. Keep the large action impressive with contrast and weight while preserving margins.\nNative transparent alpha outside effect pixels. No background, vignette, floor slab, shadow plate, text, labels, borders, grid, checkerboard or watermark.",
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13b2b-0edc-7391-8c56-478e4700990a/exec-9384df56-8f13-4cf0-b326-fc826e3edb05.png",
+  "sha256": "130a65b5203b7c8473ba0fb0143f3a29d5fd870ee0a7e0b3c2f12d34a7f1ea47",
+  "references": [
+    {
+      "file": "../../../../late-stage-first-pass/v1/sources/effects/royal-cleave-generated.png",
+      "sha256": "6a89062adb0dbe8ff6abc08c90ba27177158ba49dfa709391ce600e8c2db16f2"
+    }
+  ],
+  "status": "generated-unaccepted",
+  "promptFile": "royal-cleave-v2.prompt.txt"
+}

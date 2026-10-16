@@ -1,0 +1,32 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "enemies/wind-sprite/motions/idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "移動",
+    "manifest": "enemies/wind-sprite/motions/move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "被弾",
+    "manifest": "enemies/wind-sprite/motions/hit/manifest.json"
+  },
+  {
+    "id": "down",
+    "label": "撃破",
+    "manifest": "enemies/wind-sprite/motions/down/manifest.json"
+  },
+  {
+    "id": "blade",
+    "label": "風刃",
+    "manifest": "enemies/wind-sprite/motions/blade/manifest.json"
+  },
+  {
+    "id": "retreat",
+    "label": "後退",
+    "manifest": "enemies/wind-sprite/motions/retreat/manifest.json"
+  }
+]

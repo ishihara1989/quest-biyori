@@ -1,0 +1,159 @@
+{
+  "id": "lilith/attack",
+  "label": "リリス・魔弾",
+  "enemy": "lilith",
+  "motion": "attack",
+  "kind": null,
+  "origin": "revision",
+  "inheritedIssues": [],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "loop": false,
+  "terminal": false,
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "acceptedForIntegration": true,
+  "reference": "../../../../../late-stage-first-pass/v1/references/lilith.png",
+  "frames": [
+    {
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "phase": "構え",
+      "source": "../../../sources/lilith/attack-v2.png",
+      "sourceSha256": "4cf52a830493940b31d98ab66b5318638de02c465cf8635f0aeb1f5c58e6417e",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 766,
+        "height": 501
+      },
+      "sourceAnchor": [
+        440,
+        481
+      ],
+      "scale": 0.52,
+      "pivot": [
+        250,
+        410
+      ],
+      "sha256": "5d4f57eb6b09db3868ebf23a10aa4262d4300f0572465645cf9514e87b204a26",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8354530334472656
+    },
+    {
+      "file": "frame-2.png",
+      "durationMs": 180,
+      "phase": "溜め",
+      "source": "../../../sources/lilith/attack-v2.png",
+      "sourceSha256": "4cf52a830493940b31d98ab66b5318638de02c465cf8635f0aeb1f5c58e6417e",
+      "sourceRect": {
+        "left": 766,
+        "top": 0,
+        "width": 770,
+        "height": 501
+      },
+      "sourceAnchor": [
+        275,
+        481
+      ],
+      "scale": 0.52,
+      "pivot": [
+        250,
+        410
+      ],
+      "sha256": "fb6380b3cd893a543d3f6ccff4b31607593288511aee1df44619d5bf7e4e83a1",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8327713012695312
+    },
+    {
+      "file": "frame-3.png",
+      "durationMs": 800,
+      "phase": "発動",
+      "source": "../../../sources/lilith/attack-v2.png",
+      "sourceSha256": "4cf52a830493940b31d98ab66b5318638de02c465cf8635f0aeb1f5c58e6417e",
+      "sourceRect": {
+        "left": 0,
+        "top": 501,
+        "width": 811,
+        "height": 523
+      },
+      "sourceAnchor": [
+        440,
+        479
+      ],
+      "scale": 0.52,
+      "pivot": [
+        250,
+        410
+      ],
+      "sha256": "4a4d4acb8b5c6e28295e1cf77a3924cd805098f9df946dce0aa8a76a407878a6",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8323593139648438
+    },
+    {
+      "file": "frame-4.png",
+      "durationMs": 600,
+      "phase": "復帰",
+      "source": "../../../sources/lilith/attack-v2.png",
+      "sourceSha256": "4cf52a830493940b31d98ab66b5318638de02c465cf8635f0aeb1f5c58e6417e",
+      "sourceRect": {
+        "left": 811,
+        "top": 501,
+        "width": 725,
+        "height": 523
+      },
+      "sourceAnchor": [
+        260,
+        485
+      ],
+      "scale": 0.52,
+      "pivot": [
+        250,
+        410
+      ],
+      "sha256": "7fee5f957228b9f800c60c81813d9ebf913e731cd6f8fe9d7d03db937e5f3426",
+      "width": 512,
+      "height": 512,
+      "edgeOpaquePixels": 0,
+      "transparentFraction": 0.8332977294921875
+    }
+  ],
+  "fingerprint": "e61cd864bf83e2de326a957b3365667bc1a5aa57c0c83315ada778f2007bc1bf",
+  "events": [
+    {
+      "id": "effects/curse-orb",
+      "timeMs": 280,
+      "durationMs": 600,
+      "x": 520,
+      "y": 250,
+      "scale": 0.4,
+      "anchor": [
+        210,
+        256
+      ],
+      "to": [
+        405,
+        330
+      ]
+    },
+    {
+      "id": "effects/curse-impact",
+      "timeMs": 880,
+      "durationMs": 520,
+      "x": 405,
+      "y": 330,
+      "scale": 0.45,
+      "anchor": [
+        256,
+        256
+      ]
+    }
+  ],
+  "effects": []
+}

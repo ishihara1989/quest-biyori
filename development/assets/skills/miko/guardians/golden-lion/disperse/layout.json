@@ -1,0 +1,38 @@
+{
+  "source": "../../../source/golden-lion-guardian-disperse-generated-v1.png",
+  "sourceRects": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 637,
+      "height": 724
+    },
+    {
+      "x": 637,
+      "y": 0,
+      "width": 836,
+      "height": 724
+    },
+    {
+      "x": 1473,
+      "y": 0,
+      "width": 699,
+      "height": 724
+    }
+  ],
+  "anchors": [
+    {
+      "x": 512,
+      "y": 827
+    },
+    {
+      "x": 512,
+      "y": 827
+    },
+    {
+      "x": 512,
+      "y": 827
+    }
+  ],
+  "scale": 0.5265392781316348
+}

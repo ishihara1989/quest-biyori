@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "enemy": "ancient-crossbowman",
+  "motion": "double",
+  "facing": "left",
+  "label": "連射",
+  "sheet": "ancient-crossbowman-double.png",
+  "preview": "../../../../../../development/assets/enemies/ancient-crossbowman/motions/double/ancient-crossbowman-double-preview.gif",
+  "prompt": "../../../../../../development/assets/enemies/ancient-crossbowman/PROMPT.md",
+  "width": 1536,
+  "height": 320,
+  "columns": 4,
+  "rows": 1,
+  "frameWidth": 384,
+  "frameHeight": 320,
+  "frameCount": 4,
+  "pivot": {
+    "x": 223,
+    "y": 302
+  },
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 820,
+  "loop": false,
+  "terminal": false,
+  "transitions": {
+    "from": "idle",
+    "to": "idle",
+    "idleLeadInMs": 1600,
+    "idleLeadOutMs": 1600
+  },
+  "endBehavior": "idle",
+  "source": "../../../../../../development/assets/enemies/ancient-crossbowman/source/double-registered.png",
+  "sourceScale": 0.3559633027522936,
+  "sampling": "nearest-neighbor",
+  "alphaCutoff": 192,
+  "generation": "built-in image_gen; full prompts in PROMPT.md",
+  "events": [
+    {
+      "id": "ancient-crossbowman-double-1-0",
+      "type": "spawn-projectile",
+      "effect": "ruins-infantry-bolt",
+      "frame": 1,
+      "timeMs": 240,
+      "durationMs": 720,
+      "placement": "target"
+    },
+    {
+      "id": "ancient-crossbowman-double-2-0",
+      "type": "spawn-projectile",
+      "effect": "ruins-infantry-bolt",
+      "frame": 2,
+      "timeMs": 370,
+      "durationMs": 720,
+      "placement": "target"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "double-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 240,
+      "phase": "開始",
+      "bounds": {
+        "left": 55,
+        "top": 109,
+        "right": 247,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 0,
+        "width": 717,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 548,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "double-02.png",
+      "x": 384,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 130,
+      "phase": "予備動作",
+      "bounds": {
+        "left": 37,
+        "top": 109,
+        "right": 248,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 717,
+        "y": 0,
+        "width": 717,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 556,
+        "y": 616
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "double-03.png",
+      "x": 768,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 150,
+      "phase": "作用",
+      "bounds": {
+        "left": 36,
+        "top": 109,
+        "right": 247,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 0,
+        "y": 662,
+        "width": 717,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 573,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "double-04.png",
+      "x": 1152,
+      "y": 0,
+      "width": 384,
+      "height": 320,
+      "durationMs": 300,
+      "phase": "復帰",
+      "bounds": {
+        "left": 73,
+        "top": 109,
+        "right": 245,
+        "bottom": 302
+      },
+      "sourceCell": {
+        "x": 717,
+        "y": 662,
+        "width": 717,
+        "height": 662
+      },
+      "sourceAnchor": {
+        "x": 497,
+        "y": 589
+      },
+      "bakedOffset": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "region": "ancient-ruins",
+  "defaultZoom": 1,
+  "originalSources": [
+    "../../../../../../development/assets/enemies/ancient-crossbowman/source/double-generated.png"
+  ],
+  "reference": "../../../../../../development/assets/enemies/ancient-crossbowman/source/design-reference.png",
+  "sourceExtraction": [
+    {
+      "method": "transparent-grid",
+      "width": 1254,
+      "height": 1254,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 619,
+          "height": 630
+        },
+        {
+          "x": 619,
+          "y": 0,
+          "width": 635,
+          "height": 630
+        },
+        {
+          "x": 0,
+          "y": 630,
+          "width": 685,
+          "height": 624
+        },
+        {
+          "x": 685,
+          "y": 630,
+          "width": 569,
+          "height": 624
+        }
+      ],
+      "normalizeScale": 1
+    }
+  ],
+  "effectPreview": {
+    "paddingLeft": 280,
+    "defaultZoom": 1,
+    "target": {
+      "x": 115,
+      "y": 302
+    },
+    "origin": {
+      "x": 45,
+      "y": 166
+    },
+    "assets": [
+      {
+        "id": "ruins-infantry-bolt",
+        "manifest": "../../../../effects/ruins-infantry-bolt/manifest.json"
+      }
+    ]
+  }
+}

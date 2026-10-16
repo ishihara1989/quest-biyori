@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-16",
+  "source": "generation.json",
+  "checks": [
+    {
+      "id": "aura",
+      "frames": 4,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceEdgeAlpha": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "ring",
+      "frames": 4,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceEdgeAlpha": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "mote",
+      "frames": 4,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceEdgeAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "streak",
+      "frames": 4,
+      "sourceSize": [
+        1586,
+        992
+      ],
+      "sourceEdgeAlpha": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "size": [
+        256,
+        64
+      ]
+    },
+    {
+      "id": "lightning",
+      "frames": 4,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "sourceEdgeAlpha": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "size": [
+        256,
+        128
+      ]
+    },
+    {
+      "id": "portal",
+      "frames": 4,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceEdgeAlpha": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "size": [
+        256,
+        256
+      ]
+    }
+  ]
+}

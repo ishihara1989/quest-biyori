@@ -1,0 +1,10 @@
+{
+  "id": "parts/debris",
+  "source": "source/parts/debris.png",
+  "sha256": "bd48286bff83fdff3684d949cd58e5f592c4426d329bb6b2531b74083c603142",
+  "prompt": "Use case: stylized-concept\nAsset type: first-pass production component, transparent pixel-art PNG sprite sheet, asset ID parts/debris.\nInput images: original master images are identity/palette/style references, NOT images to repair. Make a NEW requested asset.\nMatch the supplied original master references: SAME adult goddess, mature face, cyan eyes, silver-white hair with lavender shadows, ivory/navy ceremonial dress, gold geometric trim, cyan diamonds, gold shoes, small floating crown. Crisp JRPG pixel art, stepped pixel clusters, dark purple contour. Shallow three-quarter view facing LEFT. Exactly two arms and two legs. No redesign, no wings, no text, labels, grid lines, scenery, checkerboard or watermark. Preserve true transparent alpha.\nLayout: One square transparent canvas, one complete isolated asset. Each cell's virtual coordinate system is 512x512; floor/registration anchor is (256,256). Keep at least 10 percent clear padding on all cell edges; never crop hair, sleeves, hands, ornaments, shoes or effects. Coordinates below are production targets, not text to draw.\nLayer separation: ONLY the specified isolated component or effect; NO goddess, humanoids, chairs or environment unless explicitly requested below.\nPrimary request: Background layer prop, NOT battle-floor rubble. Fragment within x=150..360,y=120..390, same pixel-art style as goddess sanctuary.\nFrames:\n1. One floating broken ivory marble column fragment with antique gold trim, subtly cool shading.\nNo duplicate contact-sheet legends, no numbers. True transparent background, readable discrete pixels. This is ONE initial generation; preserve the planned poses and timing.",
+  "transparent_background": true,
+  "generatedPath": "C:/Users/ashit/.codex/generated_images/01a13d47-af11-75d2-aaf1-475903e32599/exec-640fe282-257b-4f7e-a0ec-14cb148e9def.png",
+  "references": [],
+  "attempt": 1
+}
