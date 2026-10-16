@@ -13,7 +13,7 @@
  const REGIONS=[{id:8,name:'蒼氷の聖域',english:'THE GLACIAL SANCTUARY',path:'GLACIER PATH',asset:'glacial-sanctuary',crystal:'glacier-crystal',rare:'mammoth-ice-tusk',prefix:'glacier',intro:'蒼氷と白夜が包む巨獣の聖域'}];
  const a='frost-wolf',b='ice-shell-golem',c='snow-spirit',A='fenrir',B='crystal-golem',C='yuki-onna',pack=(id,n)=>Array(n).fill(id),mixed=n=>[...pack(a,n),...pack(b,n),...pack(c,n)];
  const names=['雪狼の小道','蒼牙の雪原','氷晶の巨腕','雪華の封域','氷河の大群','蒼牙と晶拳','狼と雪女','晶壁と雪華','三つの氷冠','白夜の氷牙'];
- const waves=[[[a,a,b,b,c],[a,a,a,b,b,c],[a,a,a,b,b,c,c]],[[...pack(a,5),...pack(b,3)],mixed(2),[A]],[[...pack(b,5),...pack(c,3)],mixed(2),[B]],[[...pack(c,5),...pack(a,3)],mixed(2),[C]],[mixed(5),mixed(5),mixed(5)],[mixed(3),mixed(3),[A],[B]],[mixed(3),mixed(3),[A],[C]],[mixed(3),mixed(3),[B],[C]],[mixed(4),mixed(3),[A],[B],[C]],[mixed(4),[A],[B],[C],['ice-tusk-mammoth']]];
+ const waves=[[mixed(1),mixed(1),mixed(1)],[[...pack(a,5),...pack(b,3)],mixed(2),[A]],[[...pack(b,5),...pack(c,3)],mixed(2),[B]],[[...pack(c,5),...pack(a,3)],mixed(2),[C]],[mixed(5),mixed(5),mixed(5)],[mixed(3),mixed(3),[A],[B]],[mixed(3),mixed(3),[A],[C]],[mixed(3),mixed(3),[B],[C]],[mixed(4),mixed(3),[A],[B],[C]],[mixed(4),[A],[B],[C],['ice-tusk-mammoth']]];
  const STAGES=waves.map((waves,i)=>({id:71+i,name:names[i],waves}));
  const hp=[22,180,170,180,9,75,75,72,55,34];
  const TUNING=Object.fromEntries(STAGES.map((s,i)=>[s.id,{hp:hp[i],damage:s.id===75?1.8:s.id===71?5:38,...s.id===80?{majorBossHp:1.6,majorBossDamage:5,majorBossDefense:4000}:{}}]));

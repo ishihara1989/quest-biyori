@@ -26,7 +26,7 @@ function encounter(type, stage = 14) {
   return { run, enemy };
 }
 test('swamp has ten three-wave stages with requested families, Lv.11–20 and the hydra finale', () => {
-  const expected = [['giga-toad'], ['giga-toad','king-toad'], ['mud-hand','mud-giant'], ['skeleton','lich'], ['giga-toad','mud-hand','skeleton'],
+  const expected = [['giga-toad','mud-hand','skeleton'], ['giga-toad','king-toad'], ['mud-hand','mud-giant'], ['skeleton','lich'], ['giga-toad','mud-hand','skeleton'],
     ['giga-toad','king-toad','mud-hand','mud-giant'], ['giga-toad','king-toad','skeleton','lich'], ['mud-hand','mud-giant','skeleton','lich'],
     ['giga-toad','king-toad','mud-hand','mud-giant','skeleton','lich'], ['giga-toad','king-toad','mud-hand','mud-giant','skeleton','lich','hydra']];
   assert.equal(stages.length, 10);

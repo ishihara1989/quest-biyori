@@ -23,7 +23,7 @@
     ['貝殻の砂浜','大殻の入り江','鱗の浅瀬','海魔の潮溜まり','海岸の大群','甲殻と鱗','泡と貝殻','槍と触手','潮騒の守り手','深海の巨影']];
   const pack=(id,count)=>Array(count).fill(id);
   function stages(region,a,A,b,B,c,C,boss){const waves=[
-    [pack(a,3),pack(a,4),pack(a,5)],
+    Array.from({length:3},()=>[a,b,c]),
     [pack(a,5),pack(a,6),[A,...pack(a,3)]],
     [pack(b,4),pack(b,5),[B,...pack(b,3)]],
     [pack(c,4),pack(c,5),[C,...pack(c,3)]],

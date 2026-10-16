@@ -15,11 +15,11 @@
   const pack=(id,n)=>Array(n).fill(id),g='stone-guard',r='rune-gargoyle',b='ancient-crossbowman',c='floating-magic-core',G='armored-golem',B='ancient-ballista',C='seraphina';
   const mixed=n=>[...pack(g,n),...pack(r,n),...pack(b,n),...pack(c,n)];
   const names=['目覚める石門','守護像の回廊','魔導の参道','守護姫の祭壇','石像兵の大群','青銅の防衛線','石と魔力の守り手','交差する射線','神殿の守護者','古代炉心'];
-  const waves=[[[g,g,g,b],[g,g,g,g,b],[g,g,g,g,b,b]],
+  const waves=[Array.from({length:3},()=>[g,b,c]),
     [[...pack(g,4),...pack(b,3)],[...pack(g,4),...pack(b,4)],[G]],
     [[...pack(r,4),...pack(c,4)],[...pack(r,3),...pack(b,3),...pack(c,3)],[B]],
     [[...pack(r,4),...pack(c,4)],[...pack(r,4),...pack(c,5)],[C]],
-    [mixed(4),mixed(4),mixed(4)],
+    Array.from({length:3},()=>[...pack(g,5),...pack(b,5),...pack(c,5)]),
     [[...pack(g,5),...pack(b,5)],[G],[B]],
     [[...pack(g,4),...pack(r,4),...pack(c,4)],[G],[C]],
     [[...pack(r,4),...pack(b,4),...pack(c,4)],[B],[C]],

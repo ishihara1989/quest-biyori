@@ -13,7 +13,7 @@
  const REGIONS=[{id:7,name:'嵐渡りの高原',english:'THE STORM HIGHLANDS',path:'HIGHLAND PATH',asset:'storm-highland',crystal:'highland-crystal',rare:'manticore-tail',prefix:'highland',intro:'風と雷が渡る獣の高原'}];
  const a='horn-jackal',b='rock-horn-goat',c='wind-sprite',A='storm-jackal',B='iron-horn',C='harpy-queen',pack=(id,n)=>Array(n).fill(id),mixed=n=>[...pack(a,n),...pack(b,n),...pack(c,n)];
  const names=['角獣の草原','雷獣の疾走','鉄角の断崖','翼姫の風峰','高原の大群','牙と鉄角','雷獣と翼','岩角と風羽','三つの嵐','人面獅子の毒尾'];
- const waves=[[[a,a,b,b,c],[a,a,a,b,b,c],[a,a,a,b,b,c,c]],[[...pack(a,5),...pack(b,3)],mixed(2),[A]],[[...pack(b,5),...pack(c,3)],mixed(2),[B]],[[...pack(c,5),...pack(a,3)],mixed(2),[C]],[mixed(5),mixed(5),mixed(5)],[mixed(3),mixed(3),[A],[B]],[mixed(3),mixed(3),[A],[C]],[mixed(3),mixed(3),[B],[C]],[mixed(4),mixed(3),[A],[B],[C]],[mixed(4),[A],[B],[C],['manticore']]];
+ const waves=[[mixed(1),mixed(1),mixed(1)],[[...pack(a,5),...pack(b,3)],mixed(2),[A]],[[...pack(b,5),...pack(c,3)],mixed(2),[B]],[[...pack(c,5),...pack(a,3)],mixed(2),[C]],[mixed(5),mixed(5),mixed(5)],[mixed(3),mixed(3),[A],[B]],[mixed(3),mixed(3),[A],[C]],[mixed(3),mixed(3),[B],[C]],[mixed(4),mixed(3),[A],[B],[C]],[mixed(4),[A],[B],[C],['manticore']]];
  const STAGES=waves.map((waves,i)=>({id:61+i,name:names[i],waves}));
  const hpRates=[20,122,115,120,8,72,70,70,50,34];
  const TUNING=Object.fromEntries(STAGES.map((s,i)=>[s.id,{hp:hpRates[i],damage:s.id===65?1.8:s.id===61?5:38,...s.id===70?{majorBossHp:1.35,majorBossDamage:1.8,majorBossDefense:2400}:{}}]));
