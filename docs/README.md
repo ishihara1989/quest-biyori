@@ -6,6 +6,7 @@
 
 ## 継続する方針と作業基準
 
+- [ワークツリーを使う開発手順](policies/development-workflow.md)
 - [テストと動作確認の方針](policies/testing-policy.md)
 - [放置RPGのバランス方針](policies/balance-policy.md)
 - [四足歩行の標準制作・検収手順](policies/quadruped-trot-production.md)

@@ -55,12 +55,18 @@ npm start
 
 ## 日常の変更
 
+通常の開発は [ワークツリーを使う開発手順](../policies/development-workflow.md) に従う。別ワークツリーの作業ブランチで実装・検証・コミットし、ユーザーの明示指示後に `main` へマージする。GitHubは主にバックアップに使い、PRは必須にしない。
+
+作業ブランチでは、今回の変更ファイルだけを確認してステージする。
+
 ```powershell
-git add .
+# 以下のパスは今回の変更ファイルに置き換える
+git add -- path/to/file1 path/to/file2
 git diff --cached --stat
 git commit -m "変更内容"
-git push
 ```
+
+`main` のバックアップpushは、マージ指示を受けてローカル統合を終えた後に `git push origin main` で行う。途中ブランチのバックアップは指示がある場合に、そのブランチを指定して行う。バックアップとCloudflare公開は別の操作として扱う。
 
 `public/assets/` に採用したPNG / GIFは自動でLFS管理される。それ以外の画像は `git add .` でも追加されない。`git add -f` で除外を回避しない。採用時には画像を `public/assets/` へ登録し、マニフェストとゲーム側の参照も更新する。
 
@@ -100,7 +106,7 @@ GitHub ActionsでLFSを取得してから、Cloudflare PagesのDirect Uploadへ�
 
 公開データは `output/pages/` に生成する。`public/game.html` をルート用の `index.html` として追加し、開発画像・プロンプト・検証画面・Nodeサーバーは含めない。画像がLFSポインタのままならビルドを失敗させる。Pages Freeの20,000ファイル・単一ファイル25 MiB制限もビルド時に確認する。[Cloudflare公式：Pagesの制限](https://developers.cloudflare.com/pages/platform/limits/)
 
-初回公開の確認後、push時の自動公開に変える場合はワークフローの `on` に次を追加する。設定前は手動公開を維持する。
+初回公開の確認後、ユーザーがpush時の自動公開を明示的に希望した場合に限り、ワークフローの `on` に次を追加する。通常のバックアップ運用では手動公開を維持する。
 
 ```yaml
   push:
