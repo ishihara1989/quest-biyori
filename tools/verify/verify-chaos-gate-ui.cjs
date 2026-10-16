@@ -12,7 +12,7 @@ async function main(){
   if(process.argv.includes('--offline-browser'))await page.route('**/*',route=>{const pathname=decodeURIComponent(new URL(route.request().url()).pathname);if(pathname==='/favicon.ico')return route.fulfill({status:204,body:''});const file=path.resolve(PUBLIC,pathname==='/'?'game.html':'.'+pathname);if(!inside(PUBLIC,file)||!fs.existsSync(file)||!fs.statSync(file).isFile())return route.fulfill({status:404,body:'Missing static file'});const types={'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.png':'image/png','.gif':'image/gif','.svg':'image/svg+xml'};return route.fulfill({status:200,contentType:types[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});});
   else await page.route('**/favicon.ico',r=>r.fulfill({status:204,body:''}));page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
   await page.clock.install();await page.addInitScript(({key,seed})=>{localStorage.setItem(key,JSON.stringify(seed));let sim;Object.defineProperty(window,'ForestSimulation',{configurable:true,get:()=>sim,set(v){sim=v;const create=v.createRun;v.createRun=(...args)=>window.testRun=create(...args);}});},{key:D.SAVE_KEY,seed});
-  await page.goto(url);await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});await page.clock.pauseAt(await page.evaluate(()=>Date.now()+1000));assert.equal(await page.locator('#start-button').innerText(),'冒険を始める');return {context,page};
+  await page.goto(url);await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});await page.clock.pauseAt(await page.evaluate(()=>Date.now()+1000));assert.equal(await page.locator('#start-button').innerText(),'開始');return {context,page};
  }
  const screenshot=(page,file)=>page.screenshot({path:path.join(output,file+'.png'),animations:'disabled'});
  async function unlockScene(){
@@ -25,7 +25,7 @@ async function main(){
   const live=await pageFor(seed),page=live.page;
   try{
    await page.locator('#start-button').click();
-   await page.evaluate(()=>{window.previousRun=testRun;testRun.wave=2;testRun.kills=53;testRun.enemies.forEach(e=>e.hp=0);});
+   await page.evaluate(()=>{window.previousRun=testRun;testRun.wave=2;testRun.kills=testRun.stage.total;testRun.enemies.forEach(e=>e.hp=0);});
    await page.clock.runFor(1500);assert.equal(await page.evaluate(()=>testRun.status),'victory');await page.locator('#result-skip').click();await page.clock.runFor(5500);
    assert.equal(await page.evaluate(()=>testRun.stage.id),C.ID);assert.equal(await page.evaluate(()=>testRun!==previousRun),true);assert.equal(await page.evaluate(()=>testRun.status),'running');
    await page.evaluate(()=>{for(const a of [testRun.hero,...testRun.allies])a.hp=0;});await page.clock.runFor(1000);assert.equal(await page.evaluate(()=>testRun.status),'defeat');await page.locator('#result-skip').click();await page.clock.runFor(5500);
@@ -57,16 +57,16 @@ async function main(){
   await select(page,C.ID);assert.equal(await page.locator('[data-stage-region]').count(),10);assert.equal(await page.locator('.stage-map .route-node').count(),D.SPECIAL_STAGES.length);assert.equal(await page.locator('.special-wave-preview strong').allTextContents().then(a=>a.join('/')),C.NAMES.join('/'));assert.ok((await page.locator('.special-drop-preview').innerText()).includes('Lv.10'));assert.ok(await page.locator('.stage-map').evaluate(e=>getComputedStyle(e).backgroundImage.includes('chaos-gate')));await screenshot(page,'stage-select');
   await page.locator('.stage-map [data-stage="dimensional-gate"]').click();assert.ok((await page.locator('.special-drop-preview').innerText()).includes('Lv.5'));assert.ok((await page.locator('.special-wave-preview img').first().getAttribute('src')).includes('dimensional-rift'));await page.locator('.stage-map [data-stage="chaos-gate"]').click();await page.locator('[data-enter="chaos-gate"]').click();
   await page.evaluate(()=>{for(const a of [testRun.hero,...testRun.allies])Object.assign(a,{manualOnly:true,hp:1e12,maxHp:1e12,invulnerable:true,damage:0,cooldown:1e9,skill:1e9,warriorSkills:[],mageSkills:[],paladinSkills:[],warriorCast:null,mageCast:null,paladinCast:null});});
-  await page.clock.runFor(700);await screenshot(page,'opening');await page.clock.runFor(4300);assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),10);await screenshot(page,'summon-mobs');
+  await page.clock.runFor(700);await screenshot(page,'opening');await page.clock.runFor(7300);assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),35);await screenshot(page,'summon-mobs');
   await gallery(page,C.ID);await gallery(page,Special.ID);
   for(let wave=0;wave<3;wave++){
    for(let batch=0;batch<(wave===2?1:3);batch++){
     await page.evaluate(()=>{for(const e of testRun.enemies.filter(e=>e.hp>0&&!e.dimensionalGate&&!e.bodyPart))ForestSimulation.hit(testRun,testRun.hero,e,1e12,[],false,null,{critical:false,skipHitRoll:true});});
-    await page.clock.runFor(batch===(wave===2?0:2)?3400:5000);
+    await page.clock.runFor(batch===(wave===2?0:2)?3400:wave===0?8000:5000);
     if(batch===(wave===2?0:2)&&wave<2){await page.clock.runFor(3000);assert.equal(await page.evaluate(()=>testRun.wave),wave+1);await screenshot(page,'summon-tier-'+(wave+1));}
    }
   }
-  await page.clock.runFor(12000);assert.equal(await page.evaluate(()=>testRun.status),'victory');assert.equal(await page.evaluate(()=>testRun.kills),53);assert.equal(await page.locator('#result-title').innerText(),'混沌の門を打ち破った');assert.equal(await page.locator('#next-button').isHidden(),false);await screenshot(page,'clear');
+  await page.clock.runFor(12000);assert.equal(await page.evaluate(()=>testRun.status),'victory');assert.equal(await page.evaluate(()=>testRun.kills),128);assert.equal(await page.locator('#result-title').innerText(),'混沌の門を打ち破った');assert.equal(await page.locator('#next-button').isHidden(),false);await screenshot(page,'clear');
   const saved=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),D.SAVE_KEY);assert.equal(saved.selectedStage,C.ID);assert.ok(saved.cleared.includes(C.ID));assert.equal(saved.inventory.potion,seed.inventory.potion);
   await page.reload();await page.locator('#start-button:not([disabled])').waitFor();assert.equal(await page.locator('body').getAttribute('data-special'),C.ID);await live.context.close();
   await unlockScene();

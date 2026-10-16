@@ -10,7 +10,7 @@ const output=path.resolve(__dirname,'../../output/dimensional-rift'),url=process
     const context=await browser.newContext({viewport,reducedMotion}),page=await context.newPage();
     await page.route('**/favicon.ico',r=>r.fulfill({status:204,body:''}));page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
     await page.clock.install();await page.addInitScript(({key,seed})=>{localStorage.setItem(key,JSON.stringify(seed));let s;Object.defineProperty(window,'ForestSimulation',{configurable:true,get:()=>s,set(v){s=v;const create=v.createRun;v.createRun=(...args)=>window.testRun=create(...args);}});},{key:D.SAVE_KEY,seed});
-    await page.goto(url);await page.locator('#start-button:not([disabled])').waitFor({timeout:60000});assert.equal(await page.locator('#start-button').innerText(),'冒険を始める');return {context,page};
+    await page.goto(url);await page.locator('#start-button:not([disabled])').waitFor({timeout:60000});assert.equal(await page.locator('#start-button').innerText(),'開始');return {context,page};
   }
   async function image(page,file){await page.screenshot({path:path.join(output,file+'.png'),animations:'disabled'});}
   try {
@@ -22,7 +22,7 @@ const output=path.resolve(__dirname,'../../output/dimensional-rift'),url=process
     await page.locator('[data-open=stages]').first().click();assert.equal(await page.locator('[data-stage-region]').count(),D.REGIONS.length);assert.equal(await page.locator('.region-tabs button').last().innerText(),'特殊ステージ');assert.equal(await page.locator('.special-wave-preview strong').allTextContents().then(a=>a.join('/')),Rift.NAMES.join('/'));assert.equal(await page.locator('[data-enter="dimensional-gate"]').isEnabled(),true);await image(page,'stage-select');
     await page.locator('[data-stage-region="6"]').click();assert.equal(await page.locator('.stage-map .route-node').count(),10);await page.locator('[data-special-stages]').click();await page.locator('[data-enter="dimensional-gate"]').click();
     await page.evaluate(()=>{for(const a of [testRun.hero,...testRun.allies])Object.assign(a,{manualOnly:true,hp:1e12,maxHp:1e12,damage:0,cooldown:1e9,skill:1e9,warriorSkills:[]});});
-    await page.clock.runFor(700);await image(page,'gate-opening');await page.clock.runFor(2100);assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),10);await image(page,'summon-mobs');
+    await page.clock.runFor(700);await image(page,'gate-opening');await page.clock.runFor(7300);assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),35);await image(page,'summon-mobs');
     await page.clock.runFor(1300);assert.equal(await page.evaluate(()=>testRun.enemies[0].gatePhase),'waiting');await image(page,'gate-closed');
     await page.evaluate(()=>{const r=testRun;for(const e of r.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart)){e.hp=0;r.kills++;}r.enemies[0].gateBatch=3;});await page.clock.runFor(200);assert.equal(await page.evaluate(()=>testRun.enemies[0].gatePhase),'shattering');await image(page,'gate-cracks');await page.clock.runFor(450);await image(page,'gate-shattering');
     await page.clock.runFor(2800);assert.equal(await page.evaluate(()=>testRun.wave),1);await page.clock.runFor(900);await image(page,'summon-bosses');
