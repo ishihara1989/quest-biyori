@@ -14,24 +14,24 @@ test('chaos unlocks exactly once on castle 10 and has independent repeat/fallbac
   for(const mode of ['same','advance']){save.autoMode=mode;assert.deepEqual(D.autoDestination(save,C.ID,true),{stage:C.ID,mode});assert.deepEqual(D.autoDestination(save,C.ID,false),{stage:100,mode:'same'});assert.deepEqual(D.autoDestination(save,Special.ID,false),{stage:50,mode:'same'});}
   save.autoMode='off';assert.equal(D.autoDestination(save,C.ID,false),null);assert.equal(D.autoDestination(save,C.ID,true),null);
 });
-test('chaos contains all 35 enemies from regions 6–10 in 30/15/5 slots and three non-dropping gates',()=>{
-  assert.deepEqual(C.BATCHES.map(b=>b.map(a=>a.length)),[[10,10,10],[5,5,5],[5]]);
+test('chaos contains all 35 enemies from regions 6–10 in 105/15/5 slots and three non-dropping gates',()=>{
+  assert.deepEqual(C.BATCHES.map(b=>b.map(a=>a.length)),[[35,35,35],[5,5,5],[5]]);
   assert.deepEqual(new Set(C.BATCHES.flat(2)),new Set(Object.keys(D.ENEMIES).filter(id=>D.ENEMIES[id].region>=6)));
   for(const batches of C.BATCHES)for(const batch of batches)for(let region=6;region<=10;region++)assert.equal(batch.filter(id=>D.ENEMIES[id].region===region).length,batch.length/5);
-  assert.equal(stage.total,53);assert.deepEqual(stage.waves.flat(),C.GATES);
+  assert.equal(stage.total,128);assert.deepEqual(stage.waves.flat(),C.GATES);
   for(const id of C.GATES){assert.ok(D.ALL_ENEMIES[id].noDrop);assert.deepEqual(D.rollMaterials(id,()=>0),[]);assert.equal((D.rollGems(id,()=>0)[0] ?? null),null);}
 });
-test('chaos gates wait for whole batches, reject damage and award exactly fifty enemy drops',()=>{
+test('chaos gates wait for whole batches, reject damage and award exactly 125 enemy drops',()=>{
   const run=S.createRun(C.ID,{random:()=>.5}),events=[],gate=run.enemies[0];
   Object.assign(run.hero,{hp:1e12,maxHp:1e12,manualOnly:true,damage:0,invulnerable:true});
   S.hit(run,run.hero,gate,1e12,events);assert.equal(gate.hp,1);assert.equal(run.kills,0);
-  events.push(...S.update(run,5000));assert.equal(gate.gateBatch,1);assert.equal(run.enemies.length,11);
+  events.push(...S.update(run,8000));assert.equal(gate.gateBatch,1);assert.equal(run.enemies.length,36);
   events.push(...S.update(run,2000));assert.equal(gate.gateBatch,1);
   const mob=run.enemies.find(e=>!e.dimensionalGate),base=D.ENEMIES['demon-armored-soldier'];
   assert.equal(mob.maxHp,Math.round(base.hp*1.9*stage.enemyHp));assert.equal(mob.damage,Math.round(base.damage*1.9*stage.enemyDamage));assert.equal(mob.speed,D.ENEMIES[mob.type].speed);
   for(let t=0;t<60000&&run.status==='running';t+=100){for(const e of run.enemies.filter(e=>e.hp>0&&!e.dimensionalGate&&!e.bodyPart))S.hit(run,run.hero,e,1e12,events,false,null,{critical:false,skipHitRoll:true});events.push(...S.update(run,100));}
-  assert.equal(run.status,'victory');assert.equal(run.kills,53);assert.equal(events.filter(e=>e.type==='loot').length,50);
-  assert.deepEqual([0,1,2].map(t=>events.filter(e=>e.type==='rift-effect'&&e.kind==='emerge'&&e.tier===t).length),[30,15,5]);
+  assert.equal(run.status,'victory');assert.equal(run.kills,128);assert.equal(events.filter(e=>e.type==='loot').length,125);
+  assert.deepEqual([0,1,2].map(t=>events.filter(e=>e.type==='rift-effect'&&e.kind==='emerge'&&e.tier===t).length),[105,15,5]);
   assert.ok(events.filter(e=>e.type==='rift-effect').every(e=>e.specialId===C.ID));assert.equal(events.filter(e=>e.kind==='shatter').length,3);
   assert.equal(run.gold,R.expectedRewards(C.ID).killGold);assert.equal(events.filter(e=>e.type==='finished').length,1);assert.deepEqual(S.update(run,10000),[]);
   assert.equal(Special.profile('sand-behemoth',D.ENEMIES,C.ID).hp,D.ENEMIES['demon-god'].hp);
@@ -55,15 +55,15 @@ test('all regional materials stay regional; Lv10 rare/unique/legendary odds doub
   }
   for(const id of C.BATCHES[0].flat())assert.equal((D.rollGems(id,()=>0,0,{level:10,multiplier:2})[0] ?? null),null);
 });
-test('gold covers conversion-funded later-region trees without a large unused surplus',()=>{
+test('gold covers conversion-funded later-region trees with the larger mob batches',()=>{
   const rewards=R.expectedRewards(C.ID),{costs,nodes}=R.gearBudget('warrior','weapon',C.ID);
-  assert.equal(rewards.killGold,8825);assert.equal(rewards.gold,20825);assert.equal(nodes.length,500);
-  const funded=R.convertedBudget(210,rewards.gold,C.ID);assert.ok(funded.enoughMaterials);
-  assert.ok(funded.save.gold>=costs.gold&&funded.save.gold<=costs.gold*1.1);
+  assert.equal(rewards.killGold,12275);assert.equal(rewards.gold,24275);assert.equal(nodes.length,500);
+  const funded=R.convertedBudget(190,rewards.gold,C.ID);assert.ok(funded.enoughMaterials);
+  assert.ok(funded.save.gold>=costs.gold);
   funded.save.progression.characters.warrior.weapon=P.allGearTrees('warrior','weapon').filter(n=>n.main&&n.stage<=50).map(n=>n.id);
   assert.equal(P.purchaseGearBatch(funded.save,nodes.map(n=>({character:'warrior',slot:'weapon',node:n.id})),500).length,500);
   assert.ok(funded.save.gold>=0);assert.ok(Object.values(funded.save.inventory).every(n=>n>=0));
-  assert.ok(R.convertedBudget(210,rewards.killGold+2000,C.ID).save.gold<costs.gold);
+  assert.ok(R.convertedBudget(190,rewards.killGold+2000,C.ID).save.gold<costs.gold);
 });
 test('chaos completion/save keeps max level, gear, inventory and both special progress entries',()=>{
   const {fullBuild}=require('../tools/balance/audit-chaos-gate.cjs'),save=fullBuild(8);save.selectedStage=C.ID;

@@ -12,7 +12,7 @@ async function main(){
   if(process.argv.includes('--offline-browser'))await page.route('**/*',route=>{const pathname=decodeURIComponent(new URL(route.request().url()).pathname);if(pathname==='/favicon.ico')return route.fulfill({status:204,body:''});const file=path.resolve(PUBLIC,pathname==='/'?'game.html':'.'+pathname);if(!inside(PUBLIC,file)||!fs.existsSync(file)||!fs.statSync(file).isFile())return route.fulfill({status:404,body:'Missing static file'});const types={'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.png':'image/png','.gif':'image/gif','.svg':'image/svg+xml'};return route.fulfill({status:200,contentType:types[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});});
   else await page.route('**/favicon.ico',r=>r.fulfill({status:204,body:''}));page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
   await page.clock.install();await page.addInitScript(({key,seed})=>{localStorage.setItem(key,JSON.stringify(seed));let sim;Object.defineProperty(window,'ForestSimulation',{configurable:true,get:()=>sim,set(v){sim=v;const create=v.createRun;v.createRun=(...args)=>window.testRun=create(...args);}});},{key:D.SAVE_KEY,seed});
-  await page.goto(url);await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});await page.clock.pauseAt(await page.evaluate(()=>Date.now()+1000));assert.equal(await page.locator('#start-button').innerText(),'冒険を始める');return {context,page};
+  await page.goto(url);await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});await page.clock.pauseAt(await page.evaluate(()=>Date.now()+1000));assert.equal(await page.locator('#start-button').innerText(),'開始');return {context,page};
  }
  const screenshot=(page,file)=>page.screenshot({path:path.join(output,file+'.png'),animations:'disabled'});
  async function unlockScene(){
@@ -25,7 +25,7 @@ async function main(){
   const live=await pageFor(seed),page=live.page;
   try{
    await page.locator('#start-button').click();
-   await page.evaluate(()=>{window.previousRun=testRun;testRun.wave=2;testRun.kills=53;testRun.enemies.forEach(e=>e.hp=0);});
+   await page.evaluate(()=>{window.previousRun=testRun;testRun.wave=2;testRun.kills=testRun.stage.total;testRun.enemies.forEach(e=>e.hp=0);});
    await page.clock.runFor(1500);assert.equal(await page.evaluate(()=>testRun.status),'victory');await page.locator('#result-skip').click();await page.clock.runFor(5500);
    assert.equal(await page.evaluate(()=>testRun.stage.id),C.ID);assert.equal(await page.evaluate(()=>testRun!==previousRun),true);assert.equal(await page.evaluate(()=>testRun.status),'running');
    await page.evaluate(()=>{for(const a of [testRun.hero,...testRun.allies])a.hp=0;});await page.clock.runFor(1000);assert.equal(await page.evaluate(()=>testRun.status),'defeat');await page.locator('#result-skip').click();await page.clock.runFor(5500);
@@ -36,6 +36,15 @@ async function main(){
   }finally{await live.context.close();}
  }
  async function select(page,id){await page.locator('[data-open=stages]').first().click();await page.locator('[data-special-stages]').click();await page.locator('.stage-map [data-stage="'+id+'"]').click();}
+  async function waitForBatch(page,tier,batch) {
+    for(let elapsed=0;elapsed<15000;elapsed+=500){
+      const ready=await page.evaluate(({tier,batch})=>{const gate=testRun.enemies.find(e=>e.dimensionalGate&&e.hp>0);return gate?.gateTier===tier&&gate.gateBatch===batch&&gate.gatePhase==='waiting';},{tier,batch});
+      if(ready){assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>e.hp>0&&!e.dimensionalGate&&!e.bodyPart).length),tier===0?35:5);return;}
+      await page.clock.runFor(500);
+    }
+    assert.fail('gate tier '+tier+' batch '+batch+' did not finish summoning: '+JSON.stringify(await page.evaluate(()=>({wave:testRun.wave,status:testRun.status,gate:testRun.enemies.find(e=>e.dimensionalGate)}))));
+  }
+  const clearBatch=page=>page.evaluate(()=>{for(const e of testRun.enemies.filter(e=>e.hp>0&&!e.dimensionalGate&&!e.bodyPart))ForestSimulation.hit(testRun,testRun.hero,e,1e12,[],false,null,{critical:false,skipHitRoll:true});});
  async function gallery(page,specialId){
   const frames=await page.evaluate(id=>{
    const frames=[],phases=[['waiting',0],['opening',0],['opening',300],['opening',600],['opening',900],['summoning',1000],['closing',0],['closing',325],['closing',650],['shattering',0],['shattering',300],['shattering',650],['shattering',1000],['shattering',1399]];
@@ -51,22 +60,22 @@ async function main(){
   if(process.argv.includes('--unlock-only')){await unlockScene();assert.deepEqual(errors,[]);console.log('Chaos unlock scene passed.');return;}
   if(process.argv.includes('--connections-only')){await connections();await unlockScene();assert.deepEqual(errors,[]);return;}
   const locked=A.referenceBuild(100,0).save;locked.cleared=locked.cleared.filter(id=>id!==100);locked.selectedStage=99;locked.autoMode='off';
-  const lock=await pageFor(locked);await select(lock.page,C.ID);assert.equal(await lock.page.locator('[data-enter="chaos-gate"]').isDisabled(),true);assert.equal(await lock.page.locator('.locked-message').innerText(),'魔王城10 クリアで解放');await screenshot(lock.page,'locked');await lock.context.close();
-  const seed=B.fullBuild(8);seed.selectedStage=C.ID;seed.autoMode='off';seed.speed=1;
-  const live=await pageFor(seed),page=live.page;assert.equal(await page.locator('body').getAttribute('data-special'),C.ID);assert.equal(await page.locator('#stage-number').innerText(),'SPECIAL');assert.equal(await page.locator('#route-nodes .route-node').count(),D.SPECIAL_STAGES.length);await screenshot(page,'ready');
-  await select(page,C.ID);assert.equal(await page.locator('[data-stage-region]').count(),10);assert.equal(await page.locator('.stage-map .route-node').count(),D.SPECIAL_STAGES.length);assert.equal(await page.locator('.special-wave-preview strong').allTextContents().then(a=>a.join('/')),C.NAMES.join('/'));assert.ok((await page.locator('.special-drop-preview').innerText()).includes('Lv.10'));assert.ok(await page.locator('.stage-map').evaluate(e=>getComputedStyle(e).backgroundImage.includes('chaos-gate')));await screenshot(page,'stage-select');
+  const lock=await pageFor(locked);await lock.page.locator('[data-open=stages]').first().click();await lock.page.locator('[data-special-stages]').click();assert.equal(await lock.page.locator('[data-stage="chaos-gate"], [data-enter="chaos-gate"]').count(),0);assert.deepEqual(await lock.page.locator('.stage-map .route-node').evaluateAll(nodes=>nodes.map(n=>n.dataset.stage)),[Special.ID]);await screenshot(lock.page,'locked');await lock.context.close();
+  const seed=B.fullBuild(8);seed.selectedStage=C.ID;seed.autoMode='off';seed.speed=1;seed.encounteredEnemies=[...Special.GATES,...C.GATES];
+  const live=await pageFor(seed),page=live.page;assert.equal(await page.locator('body').getAttribute('data-special'),C.ID);assert.equal(await page.locator('#stage-number').innerText(),'SPECIAL');assert.deepEqual(await page.locator('#route-nodes .route-node').evaluateAll(nodes=>nodes.map(n=>n.dataset.stage)),[Special.ID,C.ID]);await screenshot(page,'ready');
+  await select(page,C.ID);assert.equal(await page.locator('[data-stage-region]').count(),10);assert.deepEqual(await page.locator('.stage-map .route-node').evaluateAll(nodes=>nodes.map(n=>n.dataset.stage)),[Special.ID,C.ID]);assert.equal(await page.locator('.special-wave-preview strong').allTextContents().then(a=>a.join('/')),C.NAMES.join('/'));assert.deepEqual(await page.locator('.special-wave-preview small').allTextContents(),['35 × 3','5 × 3','5 × 1']);assert.ok((await page.locator('.special-wave-preview > div').first().getAttribute('data-tip')).includes('雑魚35体 × 3回'));assert.ok((await page.locator('.special-drop-preview').innerText()).includes('Lv.10'));assert.ok(await page.locator('.stage-map').evaluate(e=>getComputedStyle(e).backgroundImage.includes('chaos-gate')));await screenshot(page,'stage-select');
   await page.locator('.stage-map [data-stage="dimensional-gate"]').click();assert.ok((await page.locator('.special-drop-preview').innerText()).includes('Lv.5'));assert.ok((await page.locator('.special-wave-preview img').first().getAttribute('src')).includes('dimensional-rift'));await page.locator('.stage-map [data-stage="chaos-gate"]').click();await page.locator('[data-enter="chaos-gate"]').click();
   await page.evaluate(()=>{for(const a of [testRun.hero,...testRun.allies])Object.assign(a,{manualOnly:true,hp:1e12,maxHp:1e12,invulnerable:true,damage:0,cooldown:1e9,skill:1e9,warriorSkills:[],mageSkills:[],paladinSkills:[],warriorCast:null,mageCast:null,paladinCast:null});});
-  await page.clock.runFor(700);await screenshot(page,'opening');await page.clock.runFor(4300);assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),10);await screenshot(page,'summon-mobs');
+  await page.clock.runFor(700);await screenshot(page,'opening');await waitForBatch(page,0,1);assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),35);await screenshot(page,'summon-mobs');
   await gallery(page,C.ID);await gallery(page,Special.ID);
-  for(let wave=0;wave<3;wave++){
-   for(let batch=0;batch<(wave===2?1:3);batch++){
-    await page.evaluate(()=>{for(const e of testRun.enemies.filter(e=>e.hp>0&&!e.dimensionalGate&&!e.bodyPart))ForestSimulation.hit(testRun,testRun.hero,e,1e12,[],false,null,{critical:false,skipHitRoll:true});});
-    await page.clock.runFor(batch===(wave===2?0:2)?3400:5000);
-    if(batch===(wave===2?0:2)&&wave<2){await page.clock.runFor(3000);assert.equal(await page.evaluate(()=>testRun.wave),wave+1);await screenshot(page,'summon-tier-'+(wave+1));}
+  for(let tier=0;tier<3;tier++){
+   for(let batch=1;batch<=(tier===2?1:3);batch++){
+    await waitForBatch(page,tier,batch);
+    if(batch===1&&tier>0)await screenshot(page,'summon-tier-'+tier);
+    await clearBatch(page);
    }
   }
-  await page.clock.runFor(12000);assert.equal(await page.evaluate(()=>testRun.status),'victory');assert.equal(await page.evaluate(()=>testRun.kills),53);assert.equal(await page.locator('#result-title').innerText(),'混沌の門を打ち破った');assert.equal(await page.locator('#next-button').isHidden(),false);await screenshot(page,'clear');
+  await page.clock.runFor(12000);assert.equal(await page.evaluate(()=>testRun.status),'victory');assert.equal(await page.evaluate(()=>testRun.kills),128);assert.equal(await page.locator('#result-title').innerText(),'勝利');assert.equal(await page.locator('#next-button').isHidden(),false);await screenshot(page,'clear');
   const saved=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),D.SAVE_KEY);assert.equal(saved.selectedStage,C.ID);assert.ok(saved.cleared.includes(C.ID));assert.equal(saved.inventory.potion,seed.inventory.potion);
   await page.reload();await page.locator('#start-button:not([disabled])').waitFor();assert.equal(await page.locator('body').getAttribute('data-special'),C.ID);await live.context.close();
   await unlockScene();

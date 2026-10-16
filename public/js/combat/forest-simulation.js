@@ -55,9 +55,10 @@
       const batch = batches[gate.gateBatch];
       while (gate.gateSpawnIndex < batch.length && gate.gateClock >= gate.gateSpawnIndex * 160) {
         const index = gate.gateSpawnIndex++, type = batch[index];
-        // Five bosses alternate rows, keeping the same average Y as ten mobs.
-        const y = batch.length === 5 ? 379 + (index % 2) * 100 : 356 + Math.floor(index / 5) * 104 + (index % 2) * 22;
-        const enemy = spawn(run, type, { x: 550 + index % 5 * 76, y });
+        // Fit 35 mobs into seven columns and five rows within the same spawn area.
+        const columns = gate.gateTier === 0 ? 7 : 5;
+        const y = gate.gateTier === 0 ? 356 + Math.floor(index / columns) * 31.5 : 379 + (index % 2) * 100;
+        const enemy = spawn(run, type, { x: 550 + index % columns * (304 / (columns - 1)), y });
         enemy.summonedBy = gate.id; enemy.riftBornAt = run.time; enemy.cooldown += index * 450;
         emit('emerge', { x: enemy.x, y: enemy.y, enemy: enemy.id, from: { x: gate.x, y: gate.y - gate.height * .5 } });
       }

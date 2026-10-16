@@ -6,12 +6,13 @@
 })(globalThis, () => {
   const ID = 'dimensional-gate';
   const ASSET = 'assets/stages/dimensional-rift/';
-  // Each column is one family from every region. The ruins stone family has
-  // two variants, so its pair contains both instead of duplicating one.
+  // Seven summons per regional family; alternate the two ruins stone variants.
+  const mobBatch = (...families) => families.flatMap(family =>
+    Array.from({ length: 7 }, (_, index) => Array.isArray(family) ? family[index % family.length] : family));
   const MOB_BATCHES = [
-    ['slime','slime','giga-toad','giga-toad','cave-bat','cave-bat','hermit-crab','hermit-crab','stone-guard','rune-gargoyle'],
-    ['boar','boar','mud-hand','mud-hand','cave-worm','cave-worm','lizardman','lizardman','ancient-crossbowman','ancient-crossbowman'],
-    ['alraune-minion','alraune-minion','skeleton','skeleton','cave-spider','cave-spider','octopus','octopus','floating-magic-core','floating-magic-core'],
+    mobBatch('slime','giga-toad','cave-bat','hermit-crab',['stone-guard','rune-gargoyle']),
+    mobBatch('boar','mud-hand','cave-worm','lizardman','ancient-crossbowman'),
+    mobBatch('alraune-minion','skeleton','cave-spider','octopus','floating-magic-core'),
   ];
   const BOSS_BATCHES = [
     ['boss-slime','king-toad','great-bat','great-hermit','armored-golem'],
@@ -30,9 +31,9 @@
     COLORS: ['#ff665e','#ffae52','#ff5eaf'],
     BATCHES: [
       [
-        ['sand-scorpion','sand-scorpion','horn-jackal','horn-jackal','frost-wolf','frost-wolf','lava-salamander','lava-salamander','demon-armored-soldier','demon-armored-soldier'],
-        ['bandage-soldier','bandage-soldier','rock-horn-goat','rock-horn-goat','ice-shell-golem','ice-shell-golem','obsidian-soldier','obsidian-soldier','imp','imp'],
-        ['sand-snake','sand-snake','wind-sprite','wind-sprite','snow-spirit','snow-spirit','young-fire-dragon','young-fire-dragon','dream-demon','dream-demon'],
+        mobBatch('sand-scorpion','horn-jackal','frost-wolf','lava-salamander','demon-armored-soldier'),
+        mobBatch('bandage-soldier','rock-horn-goat','ice-shell-golem','obsidian-soldier','imp'),
+        mobBatch('sand-snake','wind-sprite','snow-spirit','young-fire-dragon','dream-demon'),
       ],
       [
         ['obsidian-scorpion','storm-jackal','fenrir','magma-salamander','black-knight'],
@@ -59,7 +60,7 @@
       majorBossHp: reference.majorBossHp, majorBossDefense: reference.majorBossDefense,
       majorBossDamage: reference.majorBossDamage,
       waves: GATES.map(id => [id]),
-      enemies: [...GATES, ...new Set(BATCHES.flat(2))], total: 53,
+      enemies: [...GATES, ...new Set(BATCHES.flat(2))], total: 128,
     }), ...(chaosReference ? [Object.freeze({
       id: CHAOS.ID, name: '混沌の門', realmName: '混沌の門', english: 'CHAOS GATE', special: true,
       materialRegions: [6,7,8,9,10], unlockLabel: '魔王城10',
@@ -68,7 +69,7 @@
       enemyHp: 1500, enemyDamage: 2000,
       majorBossHp: 1, majorBossDamage: 1, majorBossDefense: 4900,
       waves: CHAOS.GATES.map(id => [id]),
-      enemies: [...CHAOS.GATES, ...new Set(CHAOS.BATCHES.flat(2))], total: 53,
+      enemies: [...CHAOS.GATES, ...new Set(CHAOS.BATCHES.flat(2))], total: 128,
     })] : [])];
   }
   // Normalize every region to its gate's class budget, retaining its

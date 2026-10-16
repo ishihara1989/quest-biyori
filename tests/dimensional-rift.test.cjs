@@ -19,25 +19,27 @@ test('named special stages unlock on ruins 10 and stay outside numbered routes',
   assert.deepEqual(D.autoDestination(save,Rift.ID,false),{stage:50,mode:'same'});
   save.autoMode='off';assert.equal(D.autoDestination(save,Rift.ID,false),null);
 });
-test('all families and five regions appear in exact 30/15/5 summon budgets',()=>{
-  assert.deepEqual(Rift.BATCHES.map(b=>b.map(a=>a.length)),[[10,10,10],[5,5,5],[5]]);
+test('all families and five regions appear in exact 105/15/5 summon budgets',()=>{
+  assert.deepEqual(Rift.BATCHES.map(b=>b.map(a=>a.length)),[[35,35,35],[5,5,5],[5]]);
   assert.equal(new Set(Rift.BATCHES[0].flat()).size,16);assert.equal(new Set(Rift.BATCHES[1].flat()).size,15);
   for(const batches of Rift.BATCHES)for(const batch of batches)for(let region=1;region<=5;region++)assert.equal(batch.filter(id=>(D.ENEMIES[id].region||1)===region).length,batch.length/5);
-  assert.equal(stage.total,53);assert.deepEqual(stage.waves.flat(),Rift.GATES);
+  assert.equal(Rift.BATCHES[0][0].filter(id=>id==='stone-guard').length,4);
+  assert.equal(Rift.BATCHES[0][0].filter(id=>id==='rune-gargoyle').length,3);
+  assert.equal(stage.total,128);assert.deepEqual(stage.waves.flat(),Rift.GATES);
 });
 test('gates resist attacks, wait for every summon, reopen and shatter once per wave',()=>{
   const run=S.createRun(Rift.ID,{random:seeded(9)}),events=[];
   Object.assign(run.hero,{maxHp:1e12,hp:1e12,cooldown:1e9,skill:1e9,damage:0,speed:0,warriorSkills:[]});
   const gate=run.enemies[0];S.hit(run,run.hero,gate,1e12,events);assert.equal(gate.hp,1);assert.equal(run.kills,0);
-  events.push(...S.update(run,5000));assert.equal(gate.gateBatch,1);assert.equal(run.enemies.filter(e=>!e.dimensionalGate).length,10);
+  events.push(...S.update(run,8000));assert.equal(gate.gateBatch,1);assert.equal(run.enemies.filter(e=>!e.dimensionalGate).length,35);
   events.push(...S.update(run,4000));assert.equal(gate.gateBatch,1,'living summons prevent reopening');
   for(let t=0;t<60000&&run.status==='running';t+=100){for(const e of run.enemies.filter(e=>e.hp>0&&!e.dimensionalGate&&!e.bodyPart))S.hit(run,run.hero,e,1e12,events,false,null,{critical:false,skipHitRoll:true});events.push(...S.update(run,100));}
-  assert.equal(run.status,'victory');assert.equal(run.kills,53);assert.equal(run.extraEnemies,0);
-  assert.equal(events.filter(e=>e.type==='loot').length,50);assert.ok(events.filter(e=>e.type==='loot').every(e=>!Rift.GATES.includes(e.enemy)));
+  assert.equal(run.status,'victory');assert.equal(run.kills,128);assert.equal(run.extraEnemies,0);
+  assert.equal(events.filter(e=>e.type==='loot').length,125);assert.ok(events.filter(e=>e.type==='loot').every(e=>!Rift.GATES.includes(e.enemy)));
   assert.equal(run.gold,require('../tools/balance/audit-rift-rewards.cjs').expectedRewards().killGold);
-  assert.deepEqual([0,1,2].map(tier=>events.filter(e=>e.type==='rift-effect'&&e.kind==='emerge'&&e.tier===tier).length),[30,15,5]);
+  assert.deepEqual([0,1,2].map(tier=>events.filter(e=>e.type==='rift-effect'&&e.kind==='emerge'&&e.tier===tier).length),[105,15,5]);
   for(const tier of [0,1,2]){
-    const summons=events.filter(e=>e.type==='rift-effect'&&e.kind==='emerge'&&e.tier===tier),size=tier===0?10:5;
+    const summons=events.filter(e=>e.type==='rift-effect'&&e.kind==='emerge'&&e.tier===tier),size=tier===0?35:5;
     for(let offset=0;offset<summons.length;offset+=size){
       const batch=summons.slice(offset,offset+size),label='tier '+tier+' batch '+offset/size;
       assert.ok(batch.some(e=>e.y<419)&&batch.some(e=>e.y>419),label+' spans both rows');
@@ -83,15 +85,15 @@ test('rift gold covers five-region gear when surplus crystals are converted into
   const audit=require('../tools/balance/audit-rift-rewards.cjs'),{nodes,costs}=audit.gearBudget();
   const rewards=audit.expectedRewards(),normal=D.STAGES.find(s=>s.id===50);
   assert.equal(normal.reward,1000);assert.equal(stage.reward,3000);
-  assert.equal(rewards.gold,6220);
+  assert.equal(rewards.gold,7520);
   for(const id of Object.keys(P.CHARACTERS))for(const slot of ['weapon','armor']){
     assert.deepEqual(audit.gearBudget(id,slot).costs,costs);
   }
   const candidates=nodes.map(n=>({character:'warrior',slot:'weapon',node:n.id}));
-  const old=audit.convertedBudget(210,rewards.killGold+normal.reward);
+  const old=audit.convertedBudget(190,rewards.killGold+normal.reward);
   assert.equal(old.enoughMaterials,true);assert.ok(old.save.gold<costs.gold);
   assert.ok(P.purchaseGearBatch(old.save,candidates,500).length<500);
-  const updated=audit.convertedBudget(210,rewards.gold);
+  const updated=audit.convertedBudget(190,rewards.gold);
   assert.equal(updated.enoughMaterials,true);
   assert.equal(P.purchaseGearBatch(updated.save,candidates,500).length,500);
   assert.ok(updated.save.gold>=0);assert.ok(Object.values(updated.save.inventory).every(n=>n>=0));
@@ -104,7 +106,7 @@ test('main-only ruins completion loses, complete gear through every unique wins 
     const run=S.createRun(Rift.ID,{builds:builds(save),random:seeded(seed)});
     for(let t=0;t<240000&&run.status==='running';t+=100)S.update(run,100);
     assert.equal(run.status,expected,expected+' seed '+seed);
-    if(expected==='victory'){assert.equal(run.kills,53);assert.ok([run.hero,...run.allies].every(a=>a.hp>0));}
+    if(expected==='victory'){assert.equal(run.kills,128);assert.ok([run.hero,...run.allies].every(a=>a.hp>0));}
   }
 });
 test('gate PNG preserves transparent margins and the background is a usable wide image',async()=>{
