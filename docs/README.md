@@ -14,6 +14,8 @@
 
 ## 設計・仕様・提案
 
+- [転生・転生チャレンジ・実績システム企画（検討中・実装保留）](design/reincarnation-system-design.md)
+
 - [戦闘の引っかかり・描画性能とUI便利機能の初期調査（2026-10-15）](design/battle-performance-and-ui-review.md)
 - [最終裏ボス：異次元の女神（設計と採用範囲）](design/extradimensional-goddess-design.md)
 - [予備動作・行動妨害の設計と割り当て候補](design/action-interference-design.md)
