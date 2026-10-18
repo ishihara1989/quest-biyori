@@ -14,7 +14,8 @@
 
 ## 設計・仕様・提案
 
-- [転生・転生チャレンジ・実績システム企画（検討中・実装保留）](design/reincarnation-system-design.md)
+- [転生・転生チャレンジ・実績システム企画（検討中・ツリーモック作成）](design/reincarnation-system-design.md)
+- [転生ツリーのレビュー用モック（2026-10-18・未採用案）](design/reincarnation-tree-mock.md)
 
 - [戦闘の引っかかり・描画性能とUI便利機能の初期調査（2026-10-15）](design/battle-performance-and-ui-review.md)
 - [最終裏ボス：異次元の女神（設計と採用範囲）](design/extradimensional-goddess-design.md)

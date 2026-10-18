@@ -46,10 +46,11 @@ window.ForestProgressionUI = {
     function bindTree() {
       const view=document.querySelector('.skill-viewport');if(!view)return;fitTree();
       view.addEventListener('wheel',e=>{e.preventDefault();const r=view.getBoundingClientRect();zoom(Math.exp(-e.deltaY*.0015),e.clientX-r.left,e.clientY-r.top);$('tooltip').hidden=true;},{passive:false});
-      let drag;
-      view.addEventListener('pointerdown',e=>{if(e.button!==0||e.target.closest('button,a'))return;const c=camera();drag={x:e.clientX,y:e.clientY,ox:c.x,oy:c.y};view.setPointerCapture(e.pointerId);view.classList.add('dragging');});
-      view.addEventListener('pointermove',e=>{if(!drag)return;camera().x=drag.ox+e.clientX-drag.x;camera().y=drag.oy+e.clientY-drag.y;fitTree();$('tooltip').hidden=true;});
-      const end=()=>{drag=null;view.classList.remove('dragging');};view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('lostpointercapture',end);
+      TreeNavigation.bind(view, {
+        read: () => ({ x: camera().x, y: camera().y }),
+        write: position => { Object.assign(camera(), position); fitTree(); },
+        onPan: () => { $('tooltip').hidden = true; },
+      });
       view.addEventListener('keydown',e=>{if(e.target!==view)return;const move={ArrowLeft:[60,0],ArrowRight:[-60,0],ArrowUp:[0,60],ArrowDown:[0,-60]}[e.key];if(move){e.preventDefault();camera().x+=move[0];camera().y+=move[1];fitTree();}if(['+','=','-'].includes(e.key)){e.preventDefault();zoom(e.key==='-'?.85:1.15);}});
     }
     const forgeCameraKey = () => id() + ':' + slot + ':' + forgeRegion;
@@ -60,7 +61,7 @@ window.ForestProgressionUI = {
       const view = document.querySelector('.forge-viewport');
       if (!view) return;
       const frame = view.querySelector('.forge-frame'), tree = view.querySelector('.forge-tree'), key = forgeCameraKey();
-      let scale = forgeScales[key] || 1, drag;
+      let scale = forgeScales[key] || 1;
       function applyScale() {
         tree.style.transform = 'scale(' + scale + ')';
         frame.style.width = forgeTreeSize.width * scale + 'px';
@@ -76,20 +77,7 @@ window.ForestProgressionUI = {
         scale = next; applyScale(); view.scrollLeft = left; view.scrollTop = top;
         $('tooltip').hidden = true;
       }, { passive: false });
-      view.addEventListener('pointerdown', e => {
-        if (drag || e.button !== 0 || e.target.closest('button,a')) return;
-        e.preventDefault(); view.focus({ preventScroll: true });
-        drag = { pointer: e.pointerId, x: e.clientX, y: e.clientY, left: view.scrollLeft, top: view.scrollTop };
-        view.setPointerCapture(e.pointerId); view.classList.add('dragging');
-      });
-      view.addEventListener('pointermove', e => {
-        if (!drag || e.pointerId !== drag.pointer) return;
-        view.scrollLeft = drag.left + drag.x - e.clientX; view.scrollTop = drag.top + drag.y - e.clientY;
-        $('tooltip').hidden = true;
-      });
-      const end = e => { if (drag && e.pointerId === drag.pointer) { drag = null; view.classList.remove('dragging'); } };
-      view.addEventListener('pointerup', end); view.addEventListener('pointercancel', end); view.addEventListener('lostpointercapture', end);
-      view.addEventListener('dragstart', e => e.preventDefault());
+      TreeNavigation.bind(view, { onPan: () => { $('tooltip').hidden = true; } });
     }
     function id() { return save.progression.selected; }
     function bonuses(effect) { return Object.entries(effect).filter(([k]) => labels[k]).map(([k, v]) => '<span>' + labels[k] + ' <b>' + (k === 'discount' ? '−' : '+') + (['attackSpeed', 'skillPower', 'weaponPower', 'magicPower', 'haste', 'interferencePower'].includes(k) ? pct(v) : num(v)) + '</b></span>').join(''); }

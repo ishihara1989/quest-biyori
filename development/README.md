@@ -1,5 +1,7 @@
 # 開発用の素材と検証
 
+転生の星図は[ツリーモック](labs/reincarnation-tree.html)でレビューできます。140ノードの前提・仮価格・効果、6つの取得段階、取得確認、系統強調、検索・一覧を確認できます。火力・HP各18段階、容量17段階、技能16段階、ドロップ率15段階へ中間を拡充。大ボス素材無償化と最大100万PTの後半ノードを維持しています。空白ドラッグは本編のスキル・通常装備・女神装備と共通の操作です。[構成・操作・検証範囲](../docs/design/reincarnation-tree-mock.md)。本編のセーブは読み書きしません。
+
 この領域の画像・GIFはローカル専用でGit管理外です。プロンプト・レシピ・制作記録・検証コードはGitに保存します。新規cloneでは原画やプレビューが表示されないため、制作を続ける場合は必要な画像をバックアップから戻すか再生成してください。[GitHub・LFS・公開の運用](../docs/production/github-lfs-and-cloudflare.md)
 
 共通エフェクト6種・24コマの[原画・全文プロンプト](assets/effects/common/generation.json)、[全コマ・連続再生の検収画面](labs/common-effects.html)、[72項目の画像化と制作記録](../docs/production/common-image-effects.md)。本編登録は `npm run build:common-effects`。
