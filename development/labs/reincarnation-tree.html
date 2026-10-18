@@ -7,6 +7,8 @@
   <title>転生ツリー / Forestbound</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/development/labs/css/reincarnation-tree.css">
+  <link rel="stylesheet" href="/css/tree-navigation.css">
+  <script defer src="/js/ui/tree-navigation.js"></script>
   <script defer src="/development/labs/js/reincarnation-tree-data.js"></script>
   <script defer src="/development/labs/js/reincarnation-tree.js"></script>
 </head>
@@ -14,7 +16,7 @@
   <header class="topbar">
     <a class="brand" href="/development/labs/index.html"><span class="brand-mark">✧</span><span>FORESTBOUND<small>IDLE RPG</small></span></a>
     <div class="page-location"><span>永続成長</span><i>/</i><b>転生ツリー</b></div>
-    <span class="mock-badge">REVIEW MOCK <b>01</b></span>
+    <span class="mock-badge">REVIEW MOCK <b>02</b></span>
   </header>
   <main class="shell">
     <section class="heading">
@@ -22,7 +24,7 @@
       <div class="wallet"><span class="currency-mark">✧</span><div><small>転生ポイント</small><strong id="points">100</strong></div><span class="wallet-unit">PT</span></div>
     </section>
     <section class="review-bar" aria-label="レビュー設定">
-      <label><span class="review-label">レビュー状態</span><select id="scenario"><option value="first">初転生 · 100 PT</option><option value="goal">主目標の直前 · 6回相当</option><option value="speed">高速周回 · 15回相当</option><option value="trial">試練攻略 · 40回相当</option><option value="complete">全取得 · 内容確認</option></select></label>
+      <label><span class="review-label">レビュー状態</span><select id="scenario"><option value="first">初転生 · 100 PT</option><option value="goal">主目標の直前 · 6回相当</option><option value="speed">高速周回 · 15回相当</option><option value="trial">試練攻略 · 50,000 PT</option><option value="deep">深層試練 · 2,000,000 PT</option><option value="complete">全取得 · 内容確認</option></select></label>
       <button id="add-points" title="モックの所持ポイントを100追加">＋100 PT</button>
       <button id="reset" title="選択中のレビュー状態に戻す">状態を戻す</button>
       <span class="review-note">価格・後半効果は仮案 <span>／</span> 本編セーブへの保存なし</span>
@@ -32,8 +34,8 @@
         <div class="map-toolbar"><div class="view-switch" role="group" aria-label="表示形式"><button data-view="tree" aria-pressed="true">星図</button><button data-view="list" aria-pressed="false">ノード一覧 <span id="node-count"></span></button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ノード・効果を探す" aria-label="ノード・効果を探す"></label></div>
         <div id="families" class="families" role="group" aria-label="系統を強調"></div>
         <div id="tree-view" class="tree-view">
-          <div class="map-caption"><span>✧ <b>転生の起点</b>から力をつなぐ</span><span>ノードを選択して詳細</span></div>
-          <div id="map-viewport" class="map-viewport" tabindex="0" aria-label="星図。スクロールで移動、下部のボタンで拡大縮小">
+          <div class="map-caption"><span>✧ <b>転生の起点</b>から力をつなぐ</span><span>空白をドラッグで移動</span></div>
+          <div id="map-viewport" class="map-viewport" tabindex="0" title="空白をドラッグして移動。下部のボタンで拡大縮小。" aria-label="星図。空白をドラッグまたはスクロールで移動、下部のボタンで拡大縮小">
             <div id="map-size"><div id="star-map" class="star-map"><svg id="connections" viewBox="0 0 1280 1190" aria-hidden="true"></svg><div class="map-stage stage-one"><b>01</b> 旅を速める</div><div class="map-stage stage-two"><b>02</b> 再走の転換点</div><div class="map-stage stage-three"><b>03</b> 新しい旅のかたち</div><div id="nodes"></div></div></div>
           </div>
           <div class="map-bottom"><div class="legend"><span><i class="owned"></i>取得済</span><span><i class="available"></i>取得可能</span><span><i class="locked"></i>前提未達</span></div><div class="zoom-controls"><button id="zoom-out" aria-label="縮小" title="縮小">−</button><output id="zoom-label">80%</output><button id="zoom-in" aria-label="拡大" title="拡大">＋</button><button id="fit" title="ツリー全体を表示">全体</button><button id="actual" title="100%で表示">100%</button></div></div>
@@ -46,7 +48,7 @@
         <p class="sidebar-note">基本の自動化・設定変更は無料。<br>転生ポイントの振り直しなし。</p>
       </aside>
     </div>
-    <footer><span>MOCK / 2026.10.18</span><span>通常転生 <b>100 PT</b> / 回（仮）<i>·</i>全ノードを事前公開する案</span></footer>
+    <footer><span>MOCK / 2026.10.18 · REV.02</span><span>通常転生 <b>100 PT</b> / 回（仮）<i>·</i>後半 <b>10,000〜1,000,000 PT</b></span></footer>
   </main>
   <dialog id="purchase-dialog" aria-labelledby="confirm-title"><form method="dialog"><p class="eyebrow">PERMANENT UPGRADE</p><h2 id="confirm-title">この力を取得する</h2><div id="confirm-node"></div><p class="confirm-note">永久投資・払い戻しなし<br><small>この画面ではモック内の状態だけを変更します。</small></p><div class="dialog-actions"><button value="cancel">戻る</button><button id="confirm-purchase" value="purchase" class="primary">取得する</button></div></form></dialog>
   <div id="announcement" class="toast" role="status" aria-live="polite"></div>

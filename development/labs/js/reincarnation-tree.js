@@ -1,6 +1,7 @@
 (function () {
   'use strict';
   const M = window.ReincarnationMock;
+  const { width: mapWidth, height: mapHeight } = M.mapSize;
   const $ = id => document.getElementById(id);
   const asset = icon => '/assets/ui/' + icon;
   const labels = { owned: '取得済', available: '取得可能', locked: '前提未達', unaffordable: 'ポイント不足' };
@@ -25,12 +26,13 @@
       ['ドロップ数', '×' + t.drop * t.dropFinal], ['経験値', '×' + [1, 3, 9, 27][t.xp]], ['ゴールド', '×' + t.gold],
       ['通常メイン素材費', t.mainFree ? '0' : '通常'], ['与ダメージ', '×' + ((1 + t.damage / 100) * t.damageFinal)],
       ['最大HP', '×' + ((1 + t.hp / 100) * t.hpFinal)],
+      ['制作の大ボス素材費', t.gemBossDiscount >= 100 ? '0（欠片のみ）' : (100 - (t.gemBossDiscount || 0)) + '%'],
     ];
-    const additive = { rate: 'ドロップ率', sub: '通常サブ素材費', unique: '通常ユニーク素材費', gearGold: '装備ゴールド費', boss: '対ボス与ダメージ', recovery: '回復量', sp: 'レベル由来SP', spTen: '10Lvごとの追加SP', mp: 'MP消費', skill: '技能威力', common: '共通容量', attackCap: '攻撃容量', guardCap: '防御容量', utilityCap: '補助容量', forge: 'ジェム制作費', gemLevel: '地域Lv強化費' };
+    const additive = { rate: 'ドロップ率', sub: '通常サブ素材費', unique: '通常ユニーク素材費', gearGold: '装備ゴールド費', boss: '対ボス与ダメージ', recovery: '回復量', sp: 'レベル由来SP', spTen: '10Lvごとの追加SP', mp: 'MP消費', skill: '技能威力', common: '共通容量', attackCap: '攻撃容量', guardCap: '防御容量', utilityCap: '補助容量' };
     for (const [key, label] of Object.entries(additive)) if (t[key]) {
-      const reduction = ['sub', 'unique', 'gearGold', 'mp', 'forge', 'gemLevel'].includes(key);
+      const reduction = ['sub', 'unique', 'gearGold', 'mp'].includes(key);
       const plain = ['spTen', 'common', 'attackCap', 'guardCap', 'utilityCap'].includes(key);
-      rows.push([label, (reduction ? '−' : '＋') + t[key] + (plain ? '' : '%')]);
+      rows.push([label, (reduction ? '−' : '＋') + number(t[key]) + (plain ? '' : '%')]);
     }
     if (t.skip > 1) rows.push(['最大進行幅', '＋' + t.skip]);
     if (t.trial) rows.push(['試練', '解放']);
@@ -42,7 +44,7 @@
   }
   function renderGraph() {
     const path = ancestors(state.selected);
-    $('nodes').innerHTML = Object.entries(M.families).map(([id, f], i) => `<div class="lane-label" style="left:${i * 160 + 7}px;--family:${f.color}">${f.name}</div>`).join('') + M.nodes.map(n => {
+    $('nodes').innerHTML = Object.entries(M.families).map(([id, f], i) => `<div class="lane-label" style="left:${i * 160 + 7}px;--family:${f.color}">${f.name}</div>`).join('') + `<div class="lane-label" style="left:1287px;--family:${M.families.harvest.color}">収穫 / ドロップ率</div><div class="lane-label" style="left:1447px;--family:${M.families.gem.color}">制作 / 大ボス素材</div>` + M.nodes.map(n => {
       const status = M.status(state, n.id), f = M.families[n.family], selected = n.id === state.selected;
       const mark = status === 'owned' ? '✓' : status === 'locked' ? '◇' : status === 'available' ? '＋' : '−';
       return `<button class="node ${status}${n.milestone ? ' milestone' : ''}${selected ? ' selected' : ''}${relevant(n) || n.root ? '' : ' dimmed'}${query && relevant(n) ? ' matched' : ''}" data-node="${n.id}" style="left:${n.x}px;top:${n.y}px;--family:${f.color}" aria-pressed="${selected}" aria-label="${n.name}、${labels[status]}、${n.cost}ポイント" title="${n.name}｜${effectText(n) || '転生・基本の自動化 解放'}｜${labels[status]}${n.requires.length ? '｜前提：' + n.requires.map(p => M.byId[p].name).join('・') : ''}"><img src="${asset(n.root ? 'gems/goddess-residue.png' : f.icon)}" alt=""><span><span class="node-title">${n.name}</span><span class="node-effect">${n.effects[0] ? n.effects[0].label + ' ' + n.effects[0].value : '永続成長のはじまり'}</span></span><span class="node-price"><span>${status === 'owned' ? '取得済' : number(n.cost) + ' PT'}</span><small>${mark}</small></span></button>`;
@@ -55,6 +57,7 @@
       if (n.id === 'unique40') d = `M ${p.x + 70} ${p.y} H 1170 V ${n.y} H ${n.x + 70}`;
       if (n.id === 'drop-rate') d = `M ${p.x - 70} ${p.y} H 280 V ${n.y} H ${n.x - 70}`;
       if (n.id === 'trial-open' && parent === 'drop4') d = `M ${p.x + 70} ${p.y} H 1245 V ${end - 12} H ${n.x} V ${end}`;
+      if (n.id === 'rate250') d = `M ${p.x + 70} ${p.y} H 1325 V ${end - 12} H ${n.x} V ${end}`;
       if (n.id === 'trial-intrusion' && ['damage2', 'hp2'].includes(parent)) d = `M ${p.x + 70} ${p.y} H ${p.x + 79} V ${end - 12} H ${n.x} V ${end}`;
       if (n.id === 'trial-solo' && parent !== 'trial-intrusion') d = `M ${p.x} ${start} V ${end - 12} H ${n.x} V ${end}`;
       const selected = (path.has(n.id) || n.id === state.selected) && path.has(parent);
@@ -74,12 +77,15 @@
     const after = summaryRows(M.totals(previewState, n.id));
     const changes = status === 'owned' ? [] : after.filter(([key, val]) => prerequisiteTotals.find(r => r[0] === key)?.[1] !== val);
     const change = changes.length ? `<p class="preview-label">${status === 'locked' ? '前提を含む取得後の合計' : '取得後の合計'}</p>` + changes.map(([key, val]) => `<div class="preview-change"><span>${key}</span><b>${before.find(r => r[0] === key)?.[1] ?? '—'} → ${val}</b></div>`).join('') : '';
+    const costExample = n.effects.some(e => e.key === 'gemBossDiscount') ? `<div class="craft-example">制作例 / 大ボス素材30個<span>大ボス素材 ${M.bossMaterialCost(30, state)} → ${M.bossMaterialCost(30, { ...previewState, owned: new Set([...previewState.owned, n.id]) })} 個</span><span>欠片 100 → 100 個</span></div>` : '';
     let button = '取得する';
     if (status === 'owned') button = '✓ 取得済み';
     if (status === 'locked') button = '前提ノードが必要';
     if (status === 'unaffordable') button = 'あと ' + number(n.cost - M.points(state)) + ' PT';
     $('detail').style.setProperty('--family', f.color);
     $('detail').innerHTML = `<div class="detail-topline"><span>● ${f.name}</span><span class="status-badge">${labels[status]}</span></div><div class="detail-title"><img src="${asset(f.icon)}" alt=""><div><h2>${n.name}</h2><small>${n.id === 'main-free' ? 'KEYSTONE / 主目標' : n.milestone ? 'MILESTONE' : 'PERMANENT UPGRADE'}</small></div></div>${n.effects.length ? `<dl class="detail-effects">${n.effects.map(e => `<div><dt>${e.label}</dt><dd>${e.value}</dd></div>`).join('')}</dl>` : '<p class="detail-note">転生・基本の自動化 解放</p>'}${change}${n.note ? `<p class="detail-note">${n.note}</p>` : ''}${n.requires.length ? `<div class="prerequisites"><h3>前提ノード <span>／ すべて必要</span></h3>${n.requires.map(id => `<button data-select="${id}"><span class="${state.owned.has(id) ? 'check' : 'missing'}">${state.owned.has(id) ? '✓' : '◇'} ${M.byId[id].name}</span><span>↗</span></button>`).join('')}</div>` : ''}<div class="detail-cost"><span>取得コスト</span><b>${number(n.cost)} <small>PT</small></b></div><button class="primary purchase-button" id="purchase" ${status !== 'available' ? 'disabled' : ''}>${button}</button><p class="price-note">${n.root ? '転生の女神撃破で解放' : n.initial ? '企画書の比較用仮価格' : '* 価格・効果はレビュー用の追加案'}</p>`;
+    if (costExample) $('detail').querySelector('.detail-effects').insertAdjacentHTML('afterend', costExample);
+    if (n.cost >= 10000) $('detail').querySelector('.detail-cost').insertAdjacentHTML('afterend', `<p class="cost-scale">通常100 PT換算 ${number(n.cost / 100)}周分</p>`);
   }
   function render() {
     $('points').textContent = number(M.points(state));
@@ -92,14 +98,14 @@
     const viewport = $('map-viewport'), old = zoom;
     const cx = center?.x ?? (viewport.scrollLeft + viewport.clientWidth / 2) / old;
     const cy = center?.y ?? (viewport.scrollTop + viewport.clientHeight / 2) / old;
-    zoom = Math.min(1.3, Math.max(.3, value));
+    zoom = Math.min(1.3, Math.max(.15, value));
     $('star-map').style.transform = `scale(${zoom})`;
-    $('map-size').style.width = 1280 * zoom + 'px';
-    $('map-size').style.height = 1190 * zoom + 'px';
+    $('map-size').style.width = mapWidth * zoom + 'px';
+    $('map-size').style.height = mapHeight * zoom + 'px';
     $('zoom-label').textContent = Math.round(zoom * 100) + '%';
     viewport.scrollLeft = cx * zoom - viewport.clientWidth / 2;
     viewport.scrollTop = cy * zoom - viewport.clientHeight / 2;
-    $('zoom-out').disabled = zoom <= .3;
+    $('zoom-out').disabled = zoom <= .15;
     $('zoom-in').disabled = zoom >= 1.3;
   }
   function select(id, reveal = false) {
@@ -146,7 +152,7 @@
   });
   $('scenario').addEventListener('change', () => {
     state = M.createState($('scenario').value); render();
-    if (view === 'tree') setZoom(zoom, { x: state.selected === 'drop2' || state.selected === 'main-free' ? 640 : 900, y: state.selected === 'drop2' || state.selected === 'main-free' ? 270 : M.byId[state.selected].y });
+    if (view === 'tree') setZoom(zoom, { x: state.selected === 'drop2' || state.selected === 'main-free' ? 640 : M.byId[state.selected].x, y: state.selected === 'drop2' || state.selected === 'main-free' ? 270 : M.byId[state.selected].y });
   });
   $('reset').addEventListener('click', () => { state = M.createState($('scenario').value); render(); notify('レビュー状態を戻しました'); });
   $('add-points').addEventListener('click', () => { state.total += 100; render(); notify('モックに100 PTを追加しました'); });
@@ -154,7 +160,11 @@
   $('zoom-out').addEventListener('click', () => setZoom(zoom - .1));
   $('zoom-in').addEventListener('click', () => setZoom(zoom + .1));
   $('actual').addEventListener('click', () => setZoom(1));
-  $('fit').addEventListener('click', () => setZoom(Math.min(($('map-viewport').clientWidth - 16) / 1280, ($('map-viewport').clientHeight - 16) / 1190), { x: 640, y: 595 }));
+  $('fit').addEventListener('click', () => setZoom(Math.min(($('map-viewport').clientWidth - 16) / mapWidth, ($('map-viewport').clientHeight - 16) / mapHeight), { x: mapWidth / 2, y: mapHeight / 2 }));
+  $('star-map').style.setProperty('--map-width', mapWidth + 'px');
+  $('star-map').style.setProperty('--map-height', mapHeight + 'px');
+  $('connections').setAttribute('viewBox', `0 0 ${mapWidth} ${mapHeight}`);
+  TreeNavigation.bind($('map-viewport'));
   render();
   requestAnimationFrame(() => setZoom(window.innerWidth < 800 ? .9 : Math.max(.75, Math.min(.9, ($('map-viewport').clientWidth - 12) / 1280)), { x: 0, y: 0 }));
 })();
