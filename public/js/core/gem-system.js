@@ -30,7 +30,7 @@
     range: { name: 'スキル範囲', direction: 'attack', key: 'skillRange', min: 1, jobs: JOBS, icon: 'prism', value: () => 24 },
     interference: { name: '行動妨害力', direction: 'attack', key: 'interferencePower', min: 1, jobs: INTERRUPT, icon: 'interference', value: () => .20, percent: true },
     penetration: { name: '妨害抵抗貫通', direction: 'attack', key: 'interferencePenetration', min: 1, jobs: INTERRUPT, icon: 'interference', value: () => .10, percent: true },
-    fortune: { name: 'トレジャーハント', direction: 'utility', key: 'treasureHunt', min: 1, jobs: JOBS, icon: 'treasure', value: () => .20, percent: true, fixed: true, rarityScaled: true },
+    fortune: { name: 'ドロップ率', direction: 'utility', key: 'treasureHunt', min: 1, jobs: JOBS, icon: 'treasure', value: () => .20, percent: true, fixed: true, rarityScaled: true },
     echo: { name: '残響追撃', direction: 'attack', key: 'gemEcho', min: 2, jobs: JOBS, icon: 'legendary', value: () => .20, percent: true, suffix: ' / 1秒' },
     siphon: { name: '命中MP回復', direction: 'attack', key: 'gemSiphon', min: 2, jobs: JOBS, icon: 'legendary', value: () => .015, percent: true, suffix: ' / 1秒' },
     aegis: { name: '被弾バリア', direction: 'defense', key: 'gemAegis', min: 2, jobs: JOBS, icon: 'legendary', value: () => .06, percent: true, suffix: ' / 5秒' },

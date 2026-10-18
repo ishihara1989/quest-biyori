@@ -77,7 +77,7 @@ function fixture(){const s=D.freshSave();s.cleared=D.STAGES.map(s=>s.id);s.gold=
     await balancePage.addInitScript(({key,seed})=>{if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify(seed));},{key:D.SAVE_KEY,seed:balanceSeed});
     await balancePage.goto(url);await balancePage.locator('#start-button:not([disabled])').waitFor();await balancePage.locator('[data-open=gems]').first().click();
     assert.ok((await balancePage.locator('[data-gem-instance="1"]').getAttribute('data-tip')).includes('基本容量：攻撃 100'));
-    assert.ok((await balancePage.locator('[data-gem-instance="3"]').getAttribute('data-tip')).includes('トレジャーハント +30.9%'));
+    assert.ok((await balancePage.locator('[data-gem-instance="3"]').getAttribute('data-tip')).includes('ドロップ率 +30.9%'));
     await balancePage.locator('[data-gem-instance="1"]').click();await balancePage.locator('[data-gem-lock="1"]').click();
     const normalized=await balancePage.evaluate(key=>JSON.parse(localStorage.getItem(key)),D.SAVE_KEY);
     assert.equal(normalized.gems[0].id,1);assert.equal(normalized.gems[0].size,1);assert.equal(normalized.gems[0].options[0].weight,.5);
