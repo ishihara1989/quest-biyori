@@ -74,17 +74,23 @@ test('trial unlock uses milestone purchases rather than a reincarnation counter'
 
 test('full totals retain integer drop count and separate additive / multiplier / capacity effects', () => {
   const t = M.totals(M.createState('complete'));
-  assert.equal(t.drop * t.dropFinal, 100);
-  assert.equal((1 + t.damage / 100) * t.damageFinal, 75);
-  assert.equal((1 + t.hp / 100) * t.hpFinal, 75);
-  assert.equal(t.common, 250);
-  assert.equal(t.attackCap, 100);
+  assert.equal(t.drop, 100);
+  assert.equal(t.damage / 100, 75);
+  assert.equal(t.hp / 100, 75);
+  assert.equal(t.common, 750);
+  assert.equal(t.attackCap, 200);
   assert.equal(t.skip, 4);
-  assert.equal(t.xp, 3);
+  assert.equal(t.xp, 8);
   assert.equal(t.sub, 40);
   assert.equal(t.gold, 4);
   assert.equal(t.gemBossDiscount, 100);
   assert.equal(t.rate, 30000);
+  assert.equal(t.sp, 50);
+  assert.equal(t.spTen, 2);
+  assert.equal(t.mp, 20);
+  assert.equal(t.skill, 75);
+  assert.equal(t.boss, 50);
+  assert.equal(t.recovery, 50);
 });
 
 test('four boss material upgrades round up and finally require zero materials', () => {
@@ -100,14 +106,61 @@ test('four boss material upgrades round up and finally require zero materials', 
   assert.equal(M.totals(s).gemLevel, undefined, 'no region-level discount');
 });
 
-test('drop rate can reach 30000 percent through seven gem-independent purchases', () => {
+test('drop rate can reach 30000 percent through fifteen gem-independent purchases', () => {
   const s = M.createState(); s.total = 2000000;
   M.purchase(s, 'gold2');
-  const rates = ['drop-rate', 'rate250', 'rate500', 'rate1000', 'rate3000', 'rate10000', 'rate30000'];
-  const expected = [100, 250, 500, 1000, 3000, 10000, 30000];
+  const expected = [100, 150, 200, 250, 350, 500, 750, 1000, 1500, 2000, 3000, 5000, 10000, 20000, 30000];
+  const rates = expected.map(amount => amount === 100 ? 'drop-rate' : 'rate' + amount);
   rates.forEach((id, i) => { assert.equal(M.purchase(s, id), true); assert.equal(M.totals(s).rate, expected[i]); });
   assert.equal([...s.owned].some(id => M.byId[id].family === 'gem'), false);
   assert.equal(M.totals(s).drop, 1, 'drop rate does not change the count multiplier');
+});
+
+test('combat improvements are gradual and intermediate prerequisites cannot be skipped', () => {
+  for (const [family, key] of [['power', 'damage'], ['guard', 'hp']]) {
+    const branch = M.branches.find(b => b.family === family), s = M.createState('goal');
+    s.total = 100000000;
+    assert.equal(M.purchase(s, 'main-free'), true);
+    assert.equal(M.purchase(s, branch.ids.at(-1)), false);
+    let previous = 1, previousPrice = 100;
+    assert.equal(branch.ids.length, 18);
+    for (const id of branch.ids) {
+      assert.equal(M.purchase(s, id), true);
+      const current = M.totals(s)[key] / 100;
+      assert.ok(current > previous && current / previous <= 1.5, id + ' effect jump');
+      assert.ok(M.byId[id].cost / previousPrice <= 2, id + ' price jump');
+      previous = current; previousPrice = M.byId[id].cost;
+    }
+    assert.equal(previous, 75);
+  }
+});
+
+test('intermediate skill and capacity upgrades provide smaller increments', () => {
+  const skill = M.branches.find(b => b.family === 'skill'), capacity = M.branches.find(b => b.family === 'gem' && b.x === 1040);
+  assert.equal(skill.ids.length, 16);
+  assert.equal(capacity.ids.length, 17);
+  for (const id of skill.ids) for (const e of M.byId[id].effects) {
+    assert.ok(e.amount <= (e.key === 'spTen' ? 1 : e.key === 'mp' ? 5 : 25), id);
+  }
+  assert.equal(M.byId.common50.effects[0].amount, 25);
+  assert.equal(M.byId.direction100.effects[0].amount, 25);
+  for (const branch of M.branches.filter(b => !['journey', 'trial'].includes(b.family) && b.x !== 1520)) {
+    for (let i = 1; i < branch.ids.length; i++) {
+      assert.ok(M.byId[branch.ids[i]].cost / M.byId[branch.ids[i - 1]].cost <= 4, branch.ids[i]);
+    }
+  }
+});
+
+test('absolute multiplier steps are order-independent and experience display remains finite', () => {
+  const s = M.createState('complete'), reversed = { ...s, owned: new Set([...s.owned].reverse()) };
+  assert.deepEqual(M.totals(reversed), M.totals(s));
+  assert.equal(M.experienceMultipliers[M.totals(s).xp], 6561);
+  const positions = new Set();
+  for (const n of M.nodes) {
+    const key = n.x + ':' + n.y;
+    assert.equal(positions.has(key), false, 'overlapping nodes: ' + n.id);
+    positions.add(key);
+  }
 });
 
 test('late prices span 100 and 10000 base rewards and every node fits the map', () => {

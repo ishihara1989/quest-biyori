@@ -23,9 +23,9 @@
   }
   function summaryRows(t) {
     const rows = [
-      ['ドロップ数', '×' + t.drop * t.dropFinal], ['経験値', '×' + [1, 3, 9, 27][t.xp]], ['ゴールド', '×' + t.gold],
-      ['通常メイン素材費', t.mainFree ? '0' : '通常'], ['与ダメージ', '×' + ((1 + t.damage / 100) * t.damageFinal)],
-      ['最大HP', '×' + ((1 + t.hp / 100) * t.hpFinal)],
+      ['ドロップ数', '×' + number(t.drop)], ['経験値', '×' + number(M.experienceMultipliers[t.xp])], ['ゴールド', '×' + number(t.gold)],
+      ['通常メイン素材費', t.mainFree ? '0' : '通常'], ['与ダメージ', '×' + number(t.damage / 100)],
+      ['最大HP', '×' + number(t.hp / 100)],
       ['制作の大ボス素材費', t.gemBossDiscount >= 100 ? '0（欠片のみ）' : (100 - (t.gemBossDiscount || 0)) + '%'],
     ];
     const additive = { rate: 'ドロップ率', sub: '通常サブ素材費', unique: '通常ユニーク素材費', gearGold: '装備ゴールド費', boss: '対ボス与ダメージ', recovery: '回復量', sp: 'レベル由来SP', spTen: '10Lvごとの追加SP', mp: 'MP消費', skill: '技能威力', common: '共通容量', attackCap: '攻撃容量', guardCap: '防御容量', utilityCap: '補助容量' };
@@ -44,7 +44,7 @@
   }
   function renderGraph() {
     const path = ancestors(state.selected);
-    $('nodes').innerHTML = Object.entries(M.families).map(([id, f], i) => `<div class="lane-label" style="left:${i * 160 + 7}px;--family:${f.color}">${f.name}</div>`).join('') + `<div class="lane-label" style="left:1287px;--family:${M.families.harvest.color}">収穫 / ドロップ率</div><div class="lane-label" style="left:1447px;--family:${M.families.gem.color}">制作 / 大ボス素材</div>` + M.nodes.map(n => {
+    $('nodes').innerHTML = M.branches.map(branch => `<div class="lane-label" style="left:${branch.x - 73}px;--family:${M.families[branch.family].color}">${branch.heading}</div>`).join('') + M.nodes.map(n => {
       const status = M.status(state, n.id), f = M.families[n.family], selected = n.id === state.selected;
       const mark = status === 'owned' ? '✓' : status === 'locked' ? '◇' : status === 'available' ? '＋' : '−';
       return `<button class="node ${status}${n.milestone ? ' milestone' : ''}${selected ? ' selected' : ''}${relevant(n) || n.root ? '' : ' dimmed'}${query && relevant(n) ? ' matched' : ''}" data-node="${n.id}" style="left:${n.x}px;top:${n.y}px;--family:${f.color}" aria-pressed="${selected}" aria-label="${n.name}、${labels[status]}、${n.cost}ポイント" title="${n.name}｜${effectText(n) || '転生・基本の自動化 解放'}｜${labels[status]}${n.requires.length ? '｜前提：' + n.requires.map(p => M.byId[p].name).join('・') : ''}"><img src="${asset(n.root ? 'gems/goddess-residue.png' : f.icon)}" alt=""><span><span class="node-title">${n.name}</span><span class="node-effect">${n.effects[0] ? n.effects[0].label + ' ' + n.effects[0].value : '永続成長のはじまり'}</span></span><span class="node-price"><span>${status === 'owned' ? '取得済' : number(n.cost) + ' PT'}</span><small>${mark}</small></span></button>`;
@@ -57,9 +57,9 @@
       if (n.id === 'unique40') d = `M ${p.x + 70} ${p.y} H 1170 V ${n.y} H ${n.x + 70}`;
       if (n.id === 'drop-rate') d = `M ${p.x - 70} ${p.y} H 280 V ${n.y} H ${n.x - 70}`;
       if (n.id === 'trial-open' && parent === 'drop4') d = `M ${p.x + 70} ${p.y} H 1245 V ${end - 12} H ${n.x} V ${end}`;
-      if (n.id === 'rate250') d = `M ${p.x + 70} ${p.y} H 1325 V ${end - 12} H ${n.x} V ${end}`;
+      if (parent === 'drop-rate') d = `M ${p.x + 70} ${p.y} H 1325 V ${end - 12} H ${n.x} V ${end}`;
       if (n.id === 'trial-intrusion' && ['damage2', 'hp2'].includes(parent)) d = `M ${p.x + 70} ${p.y} H ${p.x + 79} V ${end - 12} H ${n.x} V ${end}`;
-      if (n.id === 'trial-solo' && parent !== 'trial-intrusion') d = `M ${p.x} ${start} V ${end - 12} H ${n.x} V ${end}`;
+      if (n.id === 'trial-solo' && parent !== 'trial-intrusion') d = `M ${p.x + 70} ${p.y} H ${p.x + 79} V ${end - 12} H ${n.x} V ${end}`;
       const selected = (path.has(n.id) || n.id === state.selected) && path.has(parent);
       return `<path d="${d}" class="connection${state.owned.has(parent) ? ' active' : ' pending'}${selected ? ' selected-path' : ''}${relevant(n) || selected ? '' : ' dimmed'}"/>`;
     })).join('');
