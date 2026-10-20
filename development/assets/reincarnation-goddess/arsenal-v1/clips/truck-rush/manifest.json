@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "previewOnly": true,
+  "id": "truck-rush",
+  "label": "トラック突進",
+  "kind": "truck",
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 448
+  },
+  "sheet": "../../../../../../public/assets/reincarnation-goddess/arsenal-v1/clips/truck-rush/sheet.png",
+  "frameCount": 3,
+  "durationMs": 270,
+  "loop": true,
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-1.png",
+      "durationMs": 90,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 1,
+      "file": "frame-2.png",
+      "durationMs": 90,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 2,
+      "file": "frame-3.png",
+      "durationMs": 90,
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

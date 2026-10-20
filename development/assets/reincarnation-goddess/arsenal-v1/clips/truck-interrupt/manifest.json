@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "previewOnly": true,
+  "id": "truck-interrupt",
+  "label": "トラック妨害・涙目",
+  "kind": "truck",
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 448
+  },
+  "sheet": "../../../../../../public/assets/reincarnation-goddess/arsenal-v1/clips/truck-interrupt/sheet.png",
+  "frameCount": 3,
+  "durationMs": 760,
+  "loop": false,
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-1.png",
+      "durationMs": 220,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 1,
+      "file": "frame-2.png",
+      "durationMs": 220,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 2,
+      "file": "frame-3.png",
+      "durationMs": 320,
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

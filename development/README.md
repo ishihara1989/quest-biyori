@@ -45,3 +45,5 @@
 エピックジェム12種・新レジェンダリー・残滓・女神強化ページの全17アイコンは [制作・原画・プロンプト・検収](assets/ui/epic-gems/README.md)に保存。本編登録は `npm run build:epic-gems`、[実装記録](../docs/implementation/epic-gems.md)。
 
 転生の女神（左向き敵）の待機・浮遊移動・涙目被弾・怒って帰還は [基本モーション検収画面](labs/reincarnation-goddess.html)。4種17コマの [原画・プロンプト・再構築](assets/reincarnation-goddess/basic-v1/README.md) と [制作・検収記録](../docs/production/reincarnation-goddess-basic-motions.md) を保存。素材候補で本編未登録です。
+
+転生の女神の通常SF兵器5種・大型トラック・帰還ゲートは [追加素材検収画面](labs/reincarnation-goddess-arsenal.html)。新規20素材60コマの [原画・プロンプト・検収](assets/reincarnation-goddess/arsenal-v1/README.md) と [攻撃範囲・想定効果の設計](../docs/design/reincarnation-goddess-arsenal.md) を保存。本編未登録の制作候補です。

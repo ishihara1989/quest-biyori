@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "body-pulse",
+    "frame": 1,
+    "source": "source/body-pulse.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      70,
+      104,
+      674,
+      640
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      352,
+      360
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.615,
+    "translation": [
+      29,
+      59
+    ],
+    "bounds": [
+      72,
+      123,
+      443,
+      452
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7447776794433594
+  },
+  {
+    "id": "body-pulse",
+    "frame": 2,
+    "source": "source/body-pulse.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      46,
+      106,
+      676,
+      641
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1076,
+      360
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.615,
+    "translation": [
+      29,
+      59
+    ],
+    "bounds": [
+      57,
+      124,
+      444,
+      453
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7286376953125
+  },
+  {
+    "id": "body-pulse",
+    "frame": 3,
+    "source": "source/body-pulse.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      33,
+      106,
+      648,
+      641
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1800,
+      360
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.615,
+    "translation": [
+      29,
+      59
+    ],
+    "bounds": [
+      49,
+      124,
+      427,
+      453
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7361488342285156
+  },
+  {
+    "id": "body-laser",
+    "frame": 1,
+    "source": "source/body-laser.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      24,
+      114,
+      720,
+      656
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      505,
+      409
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.6,
+    "translation": [
+      37,
+      35
+    ],
+    "bounds": [
+      51,
+      103,
+      468,
+      428
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7299842834472656
+  },
+  {
+    "id": "body-laser",
+    "frame": 2,
+    "source": "source/body-laser.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      17,
+      118,
+      717,
+      656
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1229,
+      409
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.6,
+    "translation": [
+      37,
+      35
+    ],
+    "bounds": [
+      47,
+      106,
+      466,
+      428
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7303428649902344
+  },
+  {
+    "id": "body-laser",
+    "frame": 3,
+    "source": "source/body-laser.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      10,
+      110,
+      713,
+      663
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      2000,
+      414
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.6,
+    "translation": [
+      9,
+      32
+    ],
+    "bounds": [
+      15,
+      98,
+      436,
+      429
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.678497314453125
+  },
+  {
+    "id": "body-missiles",
+    "frame": 1,
+    "source": "source/body-missiles.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      78,
+      64,
+      650,
+      666
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      319,
+      346
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.548,
+    "translation": [
+      70,
+      90
+    ],
+    "bounds": [
+      113,
+      125,
+      426,
+      455
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7323684692382812
+  },
+  {
+    "id": "body-missiles",
+    "frame": 2,
+    "source": "source/body-missiles.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      61,
+      65,
+      650,
+      666
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1043,
+      346
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.548,
+    "translation": [
+      70,
+      90
+    ],
+    "bounds": [
+      103,
+      126,
+      426,
+      455
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7217826843261719
+  },
+  {
+    "id": "body-missiles",
+    "frame": 3,
+    "source": "source/body-missiles.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      79,
+      67,
+      653,
+      666
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1793,
+      351
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.548,
+    "translation": [
+      56,
+      88
+    ],
+    "bounds": [
+      99,
+      125,
+      414,
+      453
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7244682312011719
+  },
+  {
+    "id": "body-discs",
+    "frame": 1,
+    "source": "source/body-discs.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 692,
+      "height": 724
+    },
+    "sourceBounds": [
+      92,
+      89,
+      665,
+      660
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      333,
+      365
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.577,
+    "translation": [
+      53,
+      69
+    ],
+    "bounds": [
+      105,
+      120,
+      436,
+      450
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7760009765625
+  },
+  {
+    "id": "body-discs",
+    "frame": 2,
+    "source": "source/body-discs.png",
+    "sourceRect": {
+      "left": 692,
+      "top": 0,
+      "width": 729,
+      "height": 724
+    },
+    "sourceBounds": [
+      28,
+      91,
+      714,
+      663
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1057,
+      365
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.577,
+    "translation": [
+      34,
+      69
+    ],
+    "bounds": [
+      50,
+      121,
+      446,
+      451
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7693595886230469
+  },
+  {
+    "id": "body-discs",
+    "frame": 3,
+    "source": "source/body-discs.png",
+    "sourceRect": {
+      "left": 1421,
+      "top": 0,
+      "width": 751,
+      "height": 724
+    },
+    "sourceBounds": [
+      15,
+      107,
+      693,
+      651
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1793,
+      376
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.577,
+    "translation": [
+      30,
+      63
+    ],
+    "bounds": [
+      38,
+      125,
+      429,
+      438
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7931442260742188
+  },
+  {
+    "id": "body-orbital",
+    "frame": 1,
+    "source": "source/body-orbital.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      61,
+      55,
+      706,
+      713
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      330,
+      375
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.52,
+    "translation": [
+      73,
+      85
+    ],
+    "bounds": [
+      105,
+      114,
+      439,
+      455
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.75640869140625
+  },
+  {
+    "id": "body-orbital",
+    "frame": 2,
+    "source": "source/body-orbital.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      59,
+      48,
+      707,
+      713
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1054,
+      375
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.52,
+    "translation": [
+      73,
+      85
+    ],
+    "bounds": [
+      104,
+      110,
+      440,
+      455
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7449684143066406
+  },
+  {
+    "id": "body-orbital",
+    "frame": 3,
+    "source": "source/body-orbital.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      59,
+      58,
+      712,
+      690
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1838,
+      393
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.52,
+    "translation": [
+      42,
+      76
+    ],
+    "bounds": [
+      73,
+      106,
+      411,
+      434
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7523765563964844
+  },
+  {
+    "id": "truck-mount",
+    "frame": 1,
+    "source": "source/truck-mount.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      22,
+      132,
+      712,
+      592
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      362,
+      563
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      88
+    ],
+    "bounds": [
+      38,
+      172,
+      479,
+      466
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6231346130371094
+  },
+  {
+    "id": "truck-mount",
+    "frame": 2,
+    "source": "source/truck-mount.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      22,
+      132,
+      713,
+      570
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086,
+      563
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      88
+    ],
+    "bounds": [
+      38,
+      172,
+      480,
+      452
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6305351257324219
+  },
+  {
+    "id": "truck-mount",
+    "frame": 3,
+    "source": "source/truck-mount.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      14,
+      136,
+      706,
+      570
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1810,
+      563
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      88
+    ],
+    "bounds": [
+      33,
+      175,
+      475,
+      452
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6344413757324219
+  },
+  {
+    "id": "truck-wait",
+    "frame": 1,
+    "source": "source/truck-wait.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      23,
+      146,
+      700,
+      563
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      362,
+      563
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      88
+    ],
+    "bounds": [
+      39,
+      181,
+      471,
+      448
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6468772888183594
+  },
+  {
+    "id": "truck-wait",
+    "frame": 2,
+    "source": "source/truck-wait.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      23,
+      133,
+      700,
+      563
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086,
+      563
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      88
+    ],
+    "bounds": [
+      39,
+      173,
+      471,
+      448
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6434783935546875
+  },
+  {
+    "id": "truck-wait",
+    "frame": 3,
+    "source": "source/truck-wait.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      23,
+      139,
+      700,
+      563
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1810,
+      563
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      88
+    ],
+    "bounds": [
+      39,
+      177,
+      471,
+      448
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6452178955078125
+  },
+  {
+    "id": "truck-rush",
+    "frame": 1,
+    "source": "source/truck-rush.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      22,
+      141,
+      705,
+      565
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      362,
+      565
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      86
+    ],
+    "bounds": [
+      38,
+      176,
+      474,
+      447
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6388931274414062
+  },
+  {
+    "id": "truck-rush",
+    "frame": 2,
+    "source": "source/truck-rush.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      24,
+      133,
+      705,
+      565
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086,
+      565
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      86
+    ],
+    "bounds": [
+      39,
+      171,
+      474,
+      447
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6371612548828125
+  },
+  {
+    "id": "truck-rush",
+    "frame": 3,
+    "source": "source/truck-rush.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      24,
+      133,
+      704,
+      565
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1810,
+      565
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      86
+    ],
+    "bounds": [
+      39,
+      171,
+      474,
+      447
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6391334533691406
+  },
+  {
+    "id": "truck-interrupt",
+    "frame": 1,
+    "source": "source/truck-interrupt.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      10,
+      128,
+      708,
+      586
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      362,
+      586
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      73
+    ],
+    "bounds": [
+      30,
+      155,
+      476,
+      447
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6039237976074219
+  },
+  {
+    "id": "truck-interrupt",
+    "frame": 2,
+    "source": "source/truck-interrupt.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      24,
+      128,
+      712,
+      586
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086,
+      586
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      73
+    ],
+    "bounds": [
+      39,
+      155,
+      479,
+      447
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6070022583007812
+  },
+  {
+    "id": "truck-interrupt",
+    "frame": 3,
+    "source": "source/truck-interrupt.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      30,
+      138,
+      712,
+      586
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1810,
+      586
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.64,
+    "translation": [
+      24,
+      73
+    ],
+    "bounds": [
+      43,
+      161,
+      479,
+      447
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.613555908203125
+  },
+  {
+    "id": "fx-summon",
+    "frame": 1,
+    "source": "source/fx-summon.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      261,
+      194,
+      458,
+      523
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      359.5,
+      358.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      33,
+      34
+    ],
+    "bounds": [
+      195,
+      154,
+      317,
+      358
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9392585754394531
+  },
+  {
+    "id": "fx-summon",
+    "frame": 2,
+    "source": "source/fx-summon.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      116,
+      26,
+      607,
+      697
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1085.5,
+      361.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      32,
+      32
+    ],
+    "bounds": [
+      104,
+      48,
+      408,
+      464
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7694053649902344
+  },
+  {
+    "id": "fx-summon",
+    "frame": 3,
+    "source": "source/fx-summon.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      93,
+      78,
+      637,
+      682
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1813,
+      380
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      30,
+      20
+    ],
+    "bounds": [
+      88,
+      68,
+      425,
+      443
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8091964721679688
+  },
+  {
+    "id": "fx-pulse",
+    "frame": 1,
+    "source": "source/fx-pulse.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      158,
+      306,
+      579,
+      434
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      280,
+      370
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      26,
+      27
+    ],
+    "bounds": [
+      124,
+      217,
+      385,
+      296
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9452400207519531
+  },
+  {
+    "id": "fx-pulse",
+    "frame": 2,
+    "source": "source/fx-pulse.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      103,
+      235,
+      639,
+      506
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1004,
+      370
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      26,
+      27
+    ],
+    "bounds": [
+      90,
+      173,
+      422,
+      340
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8792648315429688
+  },
+  {
+    "id": "fx-pulse",
+    "frame": 3,
+    "source": "source/fx-pulse.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      164,
+      267,
+      564,
+      467
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1728,
+      370
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      26,
+      27
+    ],
+    "bounds": [
+      128,
+      193,
+      375,
+      316
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9399185180664062
+  },
+  {
+    "id": "fx-beam",
+    "frame": 1,
+    "source": "source/fx-beam.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      76,
+      319,
+      641,
+      404
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      360,
+      362
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      33,
+      32
+    ],
+    "bounds": [
+      80,
+      230,
+      430,
+      282
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9562759399414062
+  },
+  {
+    "id": "fx-beam",
+    "frame": 2,
+    "source": "source/fx-beam.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      41,
+      255,
+      680,
+      462
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1084,
+      362
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      33,
+      32
+    ],
+    "bounds": [
+      58,
+      190,
+      454,
+      318
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8366279602050781
+  },
+  {
+    "id": "fx-beam",
+    "frame": 3,
+    "source": "source/fx-beam.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      67,
+      302,
+      649,
+      427
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1808,
+      362
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      33,
+      32
+    ],
+    "bounds": [
+      75,
+      219,
+      435,
+      296
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9232444763183594
+  },
+  {
+    "id": "fx-missile",
+    "frame": 1,
+    "source": "source/fx-missile.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      99,
+      242,
+      652,
+      481
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      99,
+      362
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      39,
+      32
+    ],
+    "bounds": [
+      100,
+      182,
+      443,
+      330
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8880043029785156
+  },
+  {
+    "id": "fx-missile",
+    "frame": 2,
+    "source": "source/fx-missile.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      58,
+      242,
+      698,
+      481
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      782,
+      362
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      64,
+      32
+    ],
+    "bounds": [
+      100,
+      182,
+      496,
+      330
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8655433654785156
+  },
+  {
+    "id": "fx-missile",
+    "frame": 3,
+    "source": "source/fx-missile.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      62,
+      242,
+      593,
+      481
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1510,
+      362
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      62,
+      32
+    ],
+    "bounds": [
+      100,
+      182,
+      429,
+      330
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8919181823730469
+  },
+  {
+    "id": "fx-disc",
+    "frame": 1,
+    "source": "source/fx-disc.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      81,
+      196,
+      642,
+      508
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      363,
+      360
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      31,
+      33
+    ],
+    "bounds": [
+      81,
+      155,
+      429,
+      348
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8451347351074219
+  },
+  {
+    "id": "fx-disc",
+    "frame": 2,
+    "source": "source/fx-disc.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      40,
+      194,
+      655,
+      520
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1120,
+      360
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      10,
+      33
+    ],
+    "bounds": [
+      35,
+      153,
+      416,
+      355
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.814178466796875
+  },
+  {
+    "id": "fx-disc",
+    "frame": 3,
+    "source": "source/fx-disc.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      46,
+      188,
+      657,
+      529
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1849,
+      360
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      7,
+      33
+    ],
+    "bounds": [
+      36,
+      150,
+      414,
+      361
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7921867370605469
+  },
+  {
+    "id": "fx-orbital",
+    "frame": 1,
+    "source": "source/fx-orbital.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      209,
+      58,
+      530,
+      636
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      362,
+      553
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.6,
+    "translation": [
+      39,
+      68
+    ],
+    "bounds": [
+      164,
+      103,
+      356,
+      449
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8935699462890625
+  },
+  {
+    "id": "fx-orbital",
+    "frame": 2,
+    "source": "source/fx-orbital.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      55,
+      32,
+      672,
+      691
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086,
+      553
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.6,
+    "translation": [
+      39,
+      68
+    ],
+    "bounds": [
+      72,
+      87,
+      441,
+      482
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7014579772949219
+  },
+  {
+    "id": "fx-orbital",
+    "frame": 3,
+    "source": "source/fx-orbital.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      156,
+      58,
+      565,
+      643
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1810,
+      553
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.6,
+    "translation": [
+      39,
+      68
+    ],
+    "bounds": [
+      133,
+      103,
+      377,
+      453
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8776092529296875
+  },
+  {
+    "id": "fx-impact",
+    "frame": 1,
+    "source": "source/fx-impact.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      247,
+      218,
+      489,
+      479
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      368,
+      348.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      28,
+      40
+    ],
+    "bounds": [
+      181,
+      175,
+      331,
+      337
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9263725280761719
+  },
+  {
+    "id": "fx-impact",
+    "frame": 2,
+    "source": "source/fx-impact.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      70,
+      78,
+      655,
+      629
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086.5,
+      353.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      31,
+      37
+    ],
+    "bounds": [
+      74,
+      85,
+      437,
+      427
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.6955451965332031
+  },
+  {
+    "id": "fx-impact",
+    "frame": 3,
+    "source": "source/fx-impact.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      94,
+      120,
+      656,
+      623
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1823,
+      371.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      24,
+      26
+    ],
+    "bounds": [
+      82,
+      100,
+      430,
+      412
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8037490844726562
+  },
+  {
+    "id": "fx-truck",
+    "frame": 1,
+    "source": "source/fx-truck.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      138,
+      338,
+      575,
+      594
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      362,
+      594
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      32,
+      52
+    ],
+    "bounds": [
+      118,
+      262,
+      388,
+      420
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8736343383789062
+  },
+  {
+    "id": "fx-truck",
+    "frame": 2,
+    "source": "source/fx-truck.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      28,
+      235,
+      687,
+      593
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086,
+      594
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      32,
+      52
+    ],
+    "bounds": [
+      49,
+      198,
+      458,
+      419
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7774162292480469
+  },
+  {
+    "id": "fx-truck",
+    "frame": 3,
+    "source": "source/fx-truck.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      36,
+      300,
+      649,
+      600
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1810,
+      594
+    ],
+    "anchorMethod": "manual anatomical/core landmark estimate",
+    "scale": 0.62,
+    "translation": [
+      32,
+      52
+    ],
+    "bounds": [
+      54,
+      238,
+      434,
+      424
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.8484382629394531
+  },
+  {
+    "id": "fx-blast",
+    "frame": 1,
+    "source": "source/fx-blast.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      202,
+      212,
+      515,
+      489
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      358.5,
+      350.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      34,
+      39
+    ],
+    "bounds": [
+      159,
+      170,
+      353,
+      342
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9090080261230469
+  },
+  {
+    "id": "fx-blast",
+    "frame": 2,
+    "source": "source/fx-blast.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      57,
+      106,
+      663,
+      589
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1084,
+      347.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      33,
+      41
+    ],
+    "bounds": [
+      68,
+      107,
+      444,
+      406
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.66497802734375
+  },
+  {
+    "id": "fx-blast",
+    "frame": 3,
+    "source": "source/fx-blast.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      100,
+      121,
+      603,
+      660
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1799.5,
+      390.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      38,
+      14
+    ],
+    "bounds": [
+      100,
+      89,
+      412,
+      423
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7697601318359375
+  },
+  {
+    "id": "fx-gate-open",
+    "frame": 1,
+    "source": "source/fx-gate-open.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      290,
+      34,
+      625,
+      647
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      457.5,
+      340.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      -28,
+      45
+    ],
+    "bounds": [
+      152,
+      66,
+      359,
+      446
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7767066955566406
+  },
+  {
+    "id": "fx-gate-open",
+    "frame": 2,
+    "source": "source/fx-gate-open.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      179,
+      34,
+      545,
+      647
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1086,
+      340.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      32,
+      45
+    ],
+    "bounds": [
+      143,
+      66,
+      370,
+      446
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7547492980957031
+  },
+  {
+    "id": "fx-gate-open",
+    "frame": 3,
+    "source": "source/fx-gate-open.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      62,
+      34,
+      465,
+      654
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1711.5,
+      344
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      93,
+      43
+    ],
+    "bounds": [
+      131,
+      64,
+      381,
+      448
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.73284912109375
+  },
+  {
+    "id": "fx-gate-close",
+    "frame": 1,
+    "source": "source/fx-gate-close.png",
+    "sourceRect": {
+      "left": 0,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      251,
+      31,
+      652,
+      658
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      451.5,
+      344.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      -24,
+      42
+    ],
+    "bounds": [
+      132,
+      61,
+      380,
+      450
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7274436950683594
+  },
+  {
+    "id": "fx-gate-close",
+    "frame": 2,
+    "source": "source/fx-gate-close.png",
+    "sourceRect": {
+      "left": 724,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      205,
+      31,
+      569,
+      658
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1111,
+      344.5
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      16,
+      42
+    ],
+    "bounds": [
+      143,
+      61,
+      368,
+      450
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.7490005493164062
+  },
+  {
+    "id": "fx-gate-close",
+    "frame": 3,
+    "source": "source/fx-gate-close.png",
+    "sourceRect": {
+      "left": 1448,
+      "top": 0,
+      "width": 724,
+      "height": 724
+    },
+    "sourceBounds": [
+      267,
+      294,
+      406,
+      440
+    ],
+    "sourceBoundaryPixels": 0,
+    "observedAnchor": [
+      1784.5,
+      367
+    ],
+    "anchorMethod": "observed effect bounds center",
+    "scale": 0.62,
+    "translation": [
+      47,
+      28
+    ],
+    "bounds": [
+      213,
+      210,
+      298,
+      300
+    ],
+    "edgePixels": 0,
+    "transparentFraction": 0.9777755737304688
+  }
+]

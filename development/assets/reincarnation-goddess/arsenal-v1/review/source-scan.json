@@ -1,0 +1,682 @@
+[
+  {
+    "id": "body-pulse",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          70,
+          104,
+          674,
+          640
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          46,
+          106,
+          676,
+          641
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          33,
+          106,
+          648,
+          641
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "body-laser",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          24,
+          114,
+          720,
+          656
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          17,
+          118,
+          717,
+          656
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          10,
+          110,
+          713,
+          663
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "body-missiles",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          78,
+          64,
+          650,
+          666
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          61,
+          65,
+          650,
+          666
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          79,
+          67,
+          653,
+          666
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "body-discs",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          92,
+          89,
+          723,
+          660
+        ],
+        "edgePixels": 19
+      },
+      {
+        "bounds": [
+          0,
+          91,
+          723,
+          663
+        ],
+        "edgePixels": 57
+      },
+      {
+        "bounds": [
+          0,
+          107,
+          666,
+          651
+        ],
+        "edgePixels": 37
+      }
+    ]
+  },
+  {
+    "id": "body-orbital",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          61,
+          55,
+          706,
+          713
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          59,
+          48,
+          707,
+          713
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          59,
+          58,
+          712,
+          690
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "truck-mount",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          22,
+          132,
+          712,
+          592
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          22,
+          132,
+          713,
+          570
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          14,
+          136,
+          706,
+          570
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "truck-wait",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          23,
+          146,
+          700,
+          563
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          23,
+          133,
+          700,
+          563
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          23,
+          139,
+          700,
+          563
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "truck-rush",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          22,
+          141,
+          705,
+          565
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          24,
+          133,
+          705,
+          565
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          24,
+          133,
+          704,
+          565
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "truck-interrupt",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          10,
+          128,
+          708,
+          586
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          24,
+          128,
+          712,
+          586
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          30,
+          138,
+          712,
+          586
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-summon",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          261,
+          194,
+          458,
+          523
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          116,
+          26,
+          607,
+          697
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          93,
+          78,
+          637,
+          682
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-pulse",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          158,
+          306,
+          579,
+          434
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          103,
+          235,
+          639,
+          506
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          164,
+          267,
+          564,
+          467
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-beam",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          76,
+          319,
+          641,
+          404
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          41,
+          255,
+          680,
+          462
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          67,
+          302,
+          649,
+          427
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-missile",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          99,
+          242,
+          652,
+          481
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          58,
+          242,
+          698,
+          481
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          62,
+          242,
+          593,
+          481
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-disc",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          81,
+          196,
+          642,
+          508
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          40,
+          194,
+          655,
+          520
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          46,
+          188,
+          657,
+          529
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-orbital",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          209,
+          58,
+          530,
+          636
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          55,
+          32,
+          672,
+          691
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          156,
+          58,
+          565,
+          643
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-impact",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          247,
+          218,
+          489,
+          479
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          70,
+          78,
+          655,
+          629
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          94,
+          120,
+          656,
+          623
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-truck",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          138,
+          338,
+          575,
+          594
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          28,
+          235,
+          687,
+          593
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          36,
+          300,
+          649,
+          600
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-blast",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          202,
+          212,
+          515,
+          489
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          57,
+          106,
+          663,
+          589
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          100,
+          121,
+          603,
+          660
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-gate-open",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          290,
+          34,
+          625,
+          647
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          179,
+          34,
+          545,
+          647
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          62,
+          34,
+          465,
+          654
+        ],
+        "edgePixels": 0
+      }
+    ]
+  },
+  {
+    "id": "fx-gate-close",
+    "width": 2172,
+    "height": 724,
+    "cells": [
+      {
+        "bounds": [
+          251,
+          31,
+          652,
+          658
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          205,
+          31,
+          569,
+          658
+        ],
+        "edgePixels": 0
+      },
+      {
+        "bounds": [
+          267,
+          294,
+          406,
+          440
+        ],
+        "edgePixels": 0
+      }
+    ]
+  }
+]

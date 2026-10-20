@@ -14,6 +14,8 @@
 
 ## 設計・仕様・提案
 
+- [転生の女神：SF兵器5種・大型トラック・ゲート帰還](design/reincarnation-goddess-arsenal.md)
+
 - [転生・転生チャレンジ・実績システム企画（検討中・ツリーモック作成）](design/reincarnation-system-design.md)
 - [転生ツリーのレビュー用モック（2026-10-18・未採用案）](design/reincarnation-tree-mock.md)
 
@@ -106,3 +108,5 @@
 ## 分類先が未確定の文書
 
 - [未分類の文書](unclassified/README.md)
+
+- [転生の女神：追加モーションとエフェクトの制作・検収](production/reincarnation-goddess-arsenal.md)
