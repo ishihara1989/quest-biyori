@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "enemy": "reincarnation-goddess",
+  "motion": "return",
+  "label": "涙目で怒って帰還",
+  "facing": "left-to-back",
+  "previewOnly": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 248,
+    "y": 257
+  },
+  "sheet": "sheet.png",
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 1320,
+  "loop": false,
+  "terminal": true,
+  "endBehavior": "depart",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180
+    },
+    {
+      "index": 4,
+      "file": "frame-05.png",
+      "x": 2048,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 220
+    },
+    {
+      "index": 5,
+      "file": "frame-06.png",
+      "x": 2560,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 340
+    }
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512
+}

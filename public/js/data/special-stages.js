@@ -75,7 +75,7 @@
   // Normalize every region to its gate's class budget, retaining its
   // original behavior, ranges, speed and drops. Early enemies stay relevant.
   function profile(type, enemies, specialId = ID) {
-    if(enemies[type].goddess)return enemies[type];
+    if(enemies[type].goddess || enemies[type].reincarnationGoddess)return enemies[type];
     const config = definition(specialId), base = enemies[type], major = config.BATCHES[2][0].includes(type);
     const reference = enemies[specialId === CHAOS.ID
       ? major ? 'demon-god' : base.boss ? 'black-knight' : 'demon-armored-soldier'

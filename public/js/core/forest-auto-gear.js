@@ -16,7 +16,7 @@
     settings.excludedCharacters = Array.isArray(raw?.excludedCharacters) ? [...new Set(raw.excludedCharacters.filter(id => CHARACTERS.includes(id)))] : [];
     return settings;
   }
-  const unlocked = save => save.cleared.includes(10);
+  const unlocked = save => P.known(save,10);
   const kind = node => node.main ? 'main' : node.unique ? 'unique' : 'sub';
   const trees = new Map();
   function nodes(character, slot) {
@@ -28,7 +28,7 @@
   function acquire(save, limit = 24) {
     const settings = restore(save.autoGear);
     if (!unlocked(save) || !settings.enabled) return [];
-    const cleared = new Set(save.cleared);
+    const cleared = new Set([...save.cleared,...(save.reincarnation?.passed||[])]);
     const candidates = settings.characters.filter(id => P.unlocked(save, id) && !settings.excludedCharacters.includes(id))
       .flatMap(character => ['weapon', 'armor'].flatMap(slot => {
         const owned = new Set(save.progression.characters[character][slot]);

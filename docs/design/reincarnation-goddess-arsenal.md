@@ -1,5 +1,7 @@
 # 転生の女神：SF兵器5種とトラック大技
 
+2026-10-20追記：本編へ採用し、戦闘・妨害・帰還・固定30配置を確認。[実装仕様と結果](../implementation/reincarnation-system.md)を参照。以下は制作時の設計記録。
+
 2026-10-20 JST。**今回の制作・検収用の設計。戦闘ロジック、本編登録、ダメージと難度調整は未実施。** 通常攻撃はSF兵器5種、大型トラックは別枠の大技とする。既存の金髪・白金衣装・青い宝石・生意気な成人女神を固定する。
 
 [転生全体の企画](reincarnation-system-design.md) / [基本モーション](../production/reincarnation-goddess-basic-motions.md) / [制作・検収](../production/reincarnation-goddess-arsenal.md) / [検収画面](../../development/labs/reincarnation-goddess-arsenal.html)

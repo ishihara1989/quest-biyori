@@ -48,7 +48,8 @@
     'demon-armored-soldier':{'danger-1':[55,80,2600]},imp:{'danger-1':[8,90,2600]},'dream-demon':{'danger-1':[10,95,2800]},
     'black-knight':{'danger-1':[115,200,4600],'danger-2':[85,190,4400]},'arch-demon':{'danger-1':[18,210,4800],'danger-2':[10,230,5000]},
     lilith:{'danger-1':[12,220,5000],'danger-2':[25,180,4600]},'demon-god':{'danger-1':[120,230,4800],'danger-2':[20,250,5200],'danger-3':[30,200,4600],'danger-4':[80,270,5600]},
-    'extradimensional-goddess':{rift:[180,1800,5000],wave:[145,2100,5400],ultimate:[200,2400,6200]}
+    'extradimensional-goddess':{rift:[180,1800,5000],wave:[145,2100,5400],ultimate:[200,2400,6200]},
+    'reincarnation-goddess':{laser:[140,1900,1500],truck:[170,2800,4060]}
   };
   function config(enemy,motion){const row=ACTIONS[enemy.type]?.[motion];return row?{resistance:row[0],capacity:row[1],warn:Math.max(row[2],enemy.boss?(['boss-boar','alraune','treant','king-toad','mud-giant','lich'].includes(enemy.type)?5000:3800):2000)}:null;}
   function skill(job,s,stats={}){

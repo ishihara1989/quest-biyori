@@ -9,8 +9,8 @@ window.ForestLootUI = {
       recruited = victory ? rewards.recruited : null;
       recruitDuration = recruited ? (reduced ? 2200 : 4600) : 0;
       const unlocks = victory ? rewards.unlocks || [] : [];
-      const specialUnlock = unlocks.find(entry => entry.special), riftUnlocked = !!specialUnlock;
-      unlockDuration = unlocks.length ? (reduced ? 2600 : specialUnlock?.final ? 6400 : riftUnlocked ? 4600 : 3200) : 0;
+      const specialUnlock = unlocks.find(entry => entry.special), rebirth=unlocks.some(entry=>entry.rebirth), divine=specialUnlock?.reincarnation||rebirth, riftUnlocked = !!specialUnlock;
+      unlockDuration = unlocks.length ? (reduced ? 2600 : divine ? 7600 : specialUnlock?.final ? 6400 : riftUnlocked ? 4600 : 3200) : 0;
       const introDuration = recruitDuration + unlockDuration;
       // Recruitment leads, then features, then the chest and automatic repeat.
       plan.completeAt += introDuration; plan.repeatAt += introDuration;
@@ -18,14 +18,17 @@ window.ForestLootUI = {
       $('recruit-intro').classList.remove('exiting');
       $('unlock-intro').hidden = !unlockDuration || !!recruited;
       $('unlock-intro').classList.remove('exiting');
-      $('unlock-intro').classList.toggle('rift-unlocked', riftUnlocked);
+      $('unlock-intro').classList.toggle('rift-unlocked', riftUnlocked && !divine);
       $('unlock-intro').classList.toggle('chaos-unlocked', specialUnlock?.id === 'chaos-gate');
       $('unlock-intro').classList.toggle('goddess-unlocked',!!specialUnlock?.final);
-      document.querySelector('.unlock-kicker').textContent='UNLOCKED';
-      $('unlock-title').textContent = specialUnlock?.title || '新規解放';
+      $('unlock-intro').classList.toggle('reincarnation-unlocked',!!specialUnlock?.reincarnation);
+      $('unlock-intro').classList.toggle('rebirth-unlocked',rebirth);
+      document.querySelector('.unlock-kicker').textContent=rebirth?'REINCARNATION AWAKENED':specialUnlock?.reincarnation?'A GODDESS DESCENDS':'UNLOCKED';
+      $('unlock-title').textContent = rebirth ? '転生、解放' : specialUnlock?.title || '新規解放';
       $('unlock-intro').style.setProperty('--unlock-duration', unlockDuration + 'ms');
       $('unlock-cards').innerHTML = unlocks.map((entry, index) => '<article class="unlock-card" data-unlock-id="' + escape(entry.id) + '" style="--card-delay:' + (index * 130) + 'ms"><span>' + icon(entry.icon) + '</span><div><strong>' + escape(entry.title) + '</strong><small>' + escape(entry.detail) + '</small></div><i>NEW</i></article>').join('');
       $('unlock-particles').innerHTML = Array.from({ length: 16 }, (_, i) => '<i style="--angle:' + (i * 137.5) + 'deg;--radius:' + (100 + i % 4 * 30) + 'px;--delay:' + (i % 4 * 100) + 'ms">✧</i>').join('');
+      if(divine)for(const particle of $('unlock-particles').children)particle.innerHTML='<img src="assets/enemies/reincarnation-goddess/motions/fx-impact/frame-1.png" alt="">';
       $('result-unlocks').hidden = !unlocks.length;
       $('result-unlocks').innerHTML = unlocks.map(entry => '<span data-tip="' + escape(entry.detail) + '" tabindex="0">' + icon(entry.icon) + escape(entry.title) + '<i>NEW</i></span>').join('');
       document.querySelector('.result-panel').hidden = !!introDuration;

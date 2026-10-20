@@ -7,7 +7,8 @@
 })(globalThis, (D, P) => {
   function create(run) {
     return { enemies: new Map(), gold: 0, goldRemainder: run.goldRemainder, settled: false,
-      hunt: [run.hero, ...run.allies].reduce((sum, actor) => sum + (actor.treasureHunt || 0), 0),
+      hunt: [run.hero, ...run.allies].reduce((sum, actor) => sum + (actor.treasureHunt || 0), 0)+(run.reincarnationBonuses?.rate||0)/100,
+      countMultiplier: run.reincarnationBonuses?.drop || 1,
       dropLevel: run.stage.dropLevel, multiplier: run.stage.gemMultiplier };
   }
   function record(pending, event) {
@@ -26,21 +27,29 @@
     // rewards are never added to the player's persistent save during combat.
     for (const [enemy, count] of pending.enemies) for (let i = 0; i < count; i++) {
       for (const id of D.rollMaterials(enemy, random, pending.hunt)) {
-        save.inventory[id] = (save.inventory[id] || 0) + 1; add(id);
+        save.inventory[id] = (save.inventory[id] || 0) + pending.countMultiplier; add(id,pending.countMultiplier);
       }
       for (const rolled of D.rollGems(enemy, random, pending.hunt, { level: pending.dropLevel, multiplier: pending.multiplier })) {
-        const gem = P.addGem(save, rolled);
+       for(let copy=0;copy<pending.countMultiplier;copy++){
+        const gem = P.addGem(save, copy===0?rolled:P.Gem.generate({rarity:rolled.rarity,level:rolled.level,random}));
         if (!gem) continue;
-        const dismantled = P.Gem.autoDismantle(save, gem.id);
+        const deferred=save.reincarnation?.unlocked&&save.reincarnation.automation.gems;
+        if(deferred)(result.deferred ||= []).push(gem.id);
+        const dismantled = deferred?false:P.Gem.autoDismantle(save, gem.id);
         if (dismantled) {
           result.dismantled++;
           for (const [id, amount] of Object.entries(dismantled.shards)) add(id, amount);
         } else { result.gems.push(gem); add('gem-instance-' + gem.id); }
+       }
       }
     }
     save.gold += pending.gold; save.goldRemainder = pending.goldRemainder;
     result.gold = pending.gold; pending.enemies.clear();
     return result;
   }
-  return { create, record, settle };
+  function finishDismantle(save,result){
+    for(const id of result.deferred||[]){const dismantled=P.Gem.autoDismantle(save,id);if(!dismantled)continue;result.dismantled++;delete result.loot['gem-instance-'+id];result.gems=result.gems.filter(g=>g.id!==id);for(const [key,n] of Object.entries(dismantled.shards))result.loot[key]=(result.loot[key]||0)+n;}
+    delete result.deferred;return result;
+  }
+  return { create, record, settle, finishDismantle };
 });

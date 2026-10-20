@@ -6,6 +6,7 @@
   const I=typeof module==='object'&&module.exports?require('./action-interference.js'):globalThis.ActionInterference;
   const Special = typeof module === 'object' && module.exports ? require('../data/special-stages.js') : globalThis.SpecialStages;
   const Goddess = typeof module === 'object' && module.exports ? require('./goddess-combat.js') : globalThis.GoddessCombat;
+  const Rebirth = typeof module === 'object' && module.exports ? require('./reincarnation-combat.js') : globalThis.ReincarnationCombat;
   const Epic=typeof module==='object'&&module.exports?require('./epic-gem-combat.js'):globalThis.EpicGemCombat;
   const Resistance = typeof module === 'object' && module.exports ? require('./status-resistance.js') : globalThis.StatusResistance;
   const STEP = 1000 / 60;
@@ -34,6 +35,7 @@
     if(enemy.region===9||enemy.region===10){enemy.x=Math.min(enemy.x,enemy.majorBoss?700:enemy.boss?780:860);if(enemy.majorBoss)enemy.y=Math.max(enemy.y,440);}
     if(enemy.majorBoss)enemy.cooldown+=enemy.type==='ancient-titan'?12500:8500;
     if(enemy.goddess)Object.assign(enemy,{x:800,y:474,cooldown:800,goddessPhase:1});
+    if(enemy.reincarnationGoddess)Object.assign(enemy,{x:810,y:460,cooldown:900});
     if (base.dimensionalGate) Object.assign(enemy, { hp: 1, maxHp: 1, invulnerable: true, x: 825, y: 452,
       gateBatch: 0, gateSpawnIndex: 0, gatePhase: 'waiting', gateClock: 0 });
     run.enemies.push(enemy); return enemy;
@@ -86,7 +88,7 @@
     const run = { stage, random, serial: 0, enemies: [], projectiles: [], wave: 0, phase: 'combat',
       status: 'running', time: 0, elapsed: 0, accumulator: 0, transition: 0, kills: 0, extraEnemies: 0, gold: 0,
       disableMikoSupport,
-      goldRemainder,
+      goldRemainder, reincarnationBonuses: builds.warrior?.reincarnationBonuses,
       hero: { id: 'hero', type: 'warrior', ...HERO, maxMp: 80, mpRegen: 3, attackSpeed: 1, critMultiplier: 1.7, ...builds.warrior, x: 260, y: 438,
         state: 'idle', motion: 'idle', time: 0, cooldown: 500, skill: 3200, flash: 0, facing: 1, warriorCooldowns:{}, warriorSkills:builds.warrior?.warriorSkills || [], normalRank:builds.warrior?.normalRank || 1 } };
     run.hero.hp = run.hero.maxHp; run.hero.mp = run.hero.maxMp; run.hero.evadeCooldown = 0;
@@ -123,7 +125,8 @@
     const guards=targetFriendly?fieldsFor(run,target):[],guard=guards.reduce((best,f)=>!best||f.spec.reduction>best.spec.reduction?f:best,null);
     const defense=options.preMitigated?1:targetFriendly?80/(80+(target.defense||0)*Volcano.defenseFactor(target,run.time)):Shaman.defenseFactor(run,target,options.attack||source.baseDamage||source.damage,options.penetration||0);
     const amplify=options.curseKind==='curse-dot'?1+Shaman.strongest(target,'amplify',run.time):1;
-    const raw=Math.max(1,Math.round(amount*(friendly?1+Epic.rage(source,run.time)*.2:Epic.reduction(run,target))*(source.epicPaladinWeapon&&element==='神聖'?2:1)*defense*(target.glacierArmorUntil>run.time?.7:1)*amplify*(friendly?1+Miko.spirit(run):1)*(element==='神聖'&&['skeleton','lich'].includes(target.type)?1.35:1)*(critical?options.critMultiplier||source.critMultiplier||1.7:1)));
+    const bossBonus=friendly&&(target.boss||target.majorBoss)?1+(source.reincarnationBoss||0):1;
+    const raw=Math.max(1,Math.round(amount*bossBonus*(friendly?1+Epic.rage(source,run.time)*.2:Epic.reduction(run,target))*(source.epicPaladinWeapon&&element==='神聖'?2:1)*defense*(target.glacierArmorUntil>run.time?.7:1)*amplify*(friendly?1+Miko.spirit(run):1)*(element==='神聖'&&['skeleton','lich'].includes(target.type)?1.35:1)*(critical?options.critMultiplier||source.critMultiplier||1.7:1)));
     const damage=options.gemProc?Math.max(1,Math.round(amount)):Math.max(1,Math.round(raw*(1-(guard?.spec.reduction||0))*(target.type==='great-hermit'&&['shell','spin'].includes(target.motion)?.3:1)));
     if(guard&&raw>damage){events.push({type:'paladin-block',x:target.x,y:target.y,amount:raw-damage,timeMs:run.time});if(guard.cast)guard.cast.absorbed+=raw-damage;}
     const lethal=guards.find(f=>f.id==='bastion'&&!f.spent.includes(target.id));
@@ -149,6 +152,7 @@
     if(friendly&&!targetFriendly)Epic.dealt(run,source,Math.min(previousHp,healthDamage),events,options);
     if (target.hp === 0) {
       if(target.goddess)Goddess.depart(run,target);
+      if(target.reincarnationGoddess)Rebirth.depart(run,target);
       I.clear(target);
       if(targetFriendly){target.warriorCast=null;target.mageCast=null;target.paladinCast=null;Ninja.clear(run,target,events);Shaman.clear(run,target);Miko.clear(run,target);run.paladinFields=run.paladinFields.filter(f=>f.source!==target);target.z=0;target.hidden=false;target.invulnerable=false;clearStatus(target);}else target.curse=null;
       target.swampPlan = null;
@@ -178,7 +182,7 @@
     if(!friendly&&targetFriendly){const reflection=guards.find(f=>f.spec.reflection>0);if(reflection&&reflection.source.hp>0&&source.hp>0)hit(run,reflection.source,source,damage*reflection.spec.reflection,events,true,'神聖',{secondary:true});}
     return true;
   }
-  function clearStatus(actor) { actor.goddessDot=null; Castle.clearStatus(actor,actor.worldTime||0); Glacier.clearStatus(actor,actor.worldTime||0);Volcano.clearStatus(actor); actor.rootUntil = 0; actor.rootAnchor = null; actor.poison = null; actor.bleed = null; actor.webUntil=0;actor.blindUntil=0;actor.bubbleUntil=0;actor.sandSlowUntil=0; }
+  function clearStatus(actor) { actor.goddessDot=null; actor.deliverySlowUntil=0; Castle.clearStatus(actor,actor.worldTime||0); Glacier.clearStatus(actor,actor.worldTime||0);Volcano.clearStatus(actor); actor.rootUntil = 0; actor.rootAnchor = null; actor.poison = null; actor.bleed = null; actor.webUntil=0;actor.blindUntil=0;actor.bubbleUntil=0;actor.sandSlowUntil=0; }
   function applyStatus(run, actor, kind, enemy, events) {
     if (actor.hp <= 0 || actor.invulnerable) return;
     if(fieldsFor(run,actor).some(f=>f.id==='sanctuary'))return;
@@ -289,7 +293,7 @@
     if (gap <= range + 1e-6) return false;
     if(actor.bubbleUntil>actor.worldTime)return false;
     const factor=Control.movement(actor,actor.worldTime);if(!factor)return true;
-    const travel = Math.min(gap - range, speed * factor * (actor.webUntil>actor.worldTime?.55:actor.sandSlowUntil>actor.worldTime?.65:actor.chillUntil>actor.worldTime?.7:1) * STEP / 1000);
+    const travel = Math.min(gap - range, speed * factor * (actor.deliverySlowUntil>actor.worldTime?.8:1) * (actor.webUntil>actor.worldTime?.55:actor.sandSlowUntil>actor.worldTime?.65:actor.chillUntil>actor.worldTime?.7:1) * STEP / 1000);
     actor.x = Math.max(90, Math.min(944, actor.x + (target.x - actor.x) / gap * travel));
     actor.y = Math.max(334, Math.min(501, actor.y + (target.y - actor.y) / gap * travel));
     if (actor.state !== 'moving' && actor.state !== 'attacking') state(actor, 'moving', !ENEMIES[actor.type] ? 'forward' : 'move');
@@ -561,6 +565,7 @@
     for (const enemy of living) {
       if(enemy.bodyPart)continue;
       if(enemy.goddess){const target=party.filter(a=>a.hp>0).sort((a,b)=>distance(enemy,a)-distance(enemy,b))[0];if(target)Goddess.act(run,enemy,target,desertAPI,events);continue;}
+      if(enemy.reincarnationGoddess){const target=party.filter(a=>a.hp>0).sort((a,b)=>distance(enemy,a)-distance(enemy,b))[0];if(target)Rebirth.act(run,enemy,target,desertAPI,events);continue;}
       const committed=enemy.swampPlan||enemy.expansionPlan||enemy.ruinsPlan||enemy.desertPlan||enemy.highlandPlan||enemy.glacierPlan||enemy.volcanoPlan||enemy.castlePlan||['attacking','windup','splitting'].includes(enemy.state);
       const hero = (committed&&party.find(a => a.id === enemy.targetId && a.hp > 0)) || (enemy.tauntUntil>run.time&&party.find(a=>a.id===enemy.tauntId&&a.hp>0)) || party.filter(a => a.hp > 0).sort((a, b) => distance(enemy, a) - distance(enemy, b))[0];
       if (enemy.hp <= 0 || !hero) continue;
@@ -700,8 +705,8 @@
     for (const actor of party) if (actor.hp > 0 && actor.rootAnchor) { actor.x = actor.rootAnchor.x; actor.y = actor.rootAnchor.y; }
     Goddess.tick(run,desertAPI,events);
     const timedOut=run.stage.timeLimit&&run.elapsed+1e-6>=run.stage.timeLimit&&run.enemies.some(e=>e.hp>0);
-    if (party.every(a => a.hp === 0)||timedOut) {
-      if(timedOut)run.failureReason='timeout';Goddess.clear(run);
+    if ((party.every(a => a.hp === 0)||timedOut) && run.deliveryVictoryAt == null) {
+      if(timedOut)run.failureReason='timeout';Goddess.clear(run);Rebirth.clear(run);
       run.status = 'defeat'; run.projectiles = [];run.enemies.forEach(I.clear);
       party.forEach(clearStatus);run.paladinFields=[];
       Ninja.clear(run,null,events);
@@ -710,6 +715,8 @@
       events.push({ type: 'finished', victory: false, timeMs: run.time });
     } else if (run.enemies.every(e => e.hp === 0)) {
       if(run.enemies.some(e=>e.goddess&&run.time-e.departedAt<2200))return;
+      if(run.enemies.some(e=>e.reincarnationGoddess&&run.time-e.departedAt<2400))return;
+      Rebirth.clear(run);
       Goddess.clear(run);
       run.enemies.forEach(I.clear);
       run.projectiles = [];run.paladinFields=[]; for(const a of party){clearStatus(a);a.warriorCast=null;a.mageCast=null;a.paladinCast=null;a.z=0;a.hidden=false;a.invulnerable=false;state(a,a.hp>0?'idle':'down');}

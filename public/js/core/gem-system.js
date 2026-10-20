@@ -5,6 +5,12 @@
   else root.GemSystem = api;
 })(globalThis, () => {
   const Epic = typeof module === 'object' && module.exports ? require('../data/epic-gems.js') : globalThis.EpicGems;
+  const Tree = typeof module === 'object' && module.exports ? require('../data/reincarnation-tree-data.js') : globalThis.ReincarnationTree;
+  const known = (save,id) => save.cleared.includes(id) || save.reincarnation?.passed?.includes(id) || save.reincarnation?.lifetimeStages?.includes(id) || save.reincarnation?.lifetimePassed?.includes(id);
+  const history = save => save.achievements ||= {version:1,earned:{},epics:[],trees:[],usage:[]};
+  function rememberEpic(save,gem){if(gem.rarity==='epic'&&!history(save).epics.includes(gem.family))history(save).epics.push(gem.family);}
+  function markUsage(save,key){if(!history(save).usage.includes(key))history(save).usage.push(key);}
+  function craftingCost(save,cost){if(!save||!cost)return cost;const b=Tree.totals({owned:new Set(save.reincarnation?.owned||[])});return Object.fromEntries(Object.entries(cost).map(([id,n])=>[id,id.startsWith('gem-shard-')?n:Math.ceil(n*(100-Math.min(100,b.gemBossDiscount||0))/100)]).filter(([,n])=>n>0));}
   const VERSION = 1, DIRECTIONS = ['attack', 'defense', 'utility'];
   const TIERS = { rare: { rank: 0, units: .5, capacity: 100, count: 1 }, unique: { rank: 1, units: 2.3, capacity: 340, count: 2 }, legendary: { rank: 2, units: 5.152, capacity: 580, count: 4 }, epic: { rank: 3, fixed: true, count: 1 } };
   const JOBS = ['warrior', 'mage', 'paladin', 'ninja', 'shaman', 'miko'];
@@ -153,16 +159,16 @@
     if (!save.discoveredGemRarities.includes(rarity)) save.discoveredGemRarities.push(rarity);
   }
   const salvage = gem => gem.rarity==='epic'?100:Math.floor(10 * gem.level * gem.size);
-  const unlocked = save => save.cleared.includes(50);
-  const maxLevel = save => Math.min(REGIONS.length, Math.floor(Math.max(0, ...save.cleared.filter(Number.isSafeInteger)) / 10) + 1);
-  function craftRecipe(rarity, level, family) {
-    if(rarity==='epic')return Epic.DEFINITIONS[family]?{[shardKey('epic')]:200,[Epic.MATERIAL]:30}:null;
+  const unlocked = save => known(save,50);
+  const maxLevel = save => Math.min(REGIONS.length, Math.floor(Math.max(0, ...[...save.cleared,...(save.reincarnation?.passed||[]),...(save.reincarnation?.lifetimeStages||[]),...(save.reincarnation?.lifetimePassed||[])].filter(Number.isSafeInteger)) / 10) + 1);
+  function craftRecipe(rarity, level, family, save = null) {
+    if(rarity==='epic')return Epic.DEFINITIONS[family]?craftingCost(save,{[shardKey('epic')]:200,[Epic.MATERIAL]:30}):null;
     const tier = TIERS[rarity], option = OPTIONS[family], region = REGIONS[level - 1];
     if (!tier || !region || !TYPES[rarity + '-' + family] || (rarity === 'legendary' && level < 6)) return null;
     const share = tier.rank === 0 ? 1 : (option.min || 0) >= 2 ? 1 : (option.min || 0) >= 1 || tier.rank === 2 ? .8 : .6;
     const cost = { [shardKey(rarity)]: Math.round(100 * level * share), [region.rare]: rarity === 'rare' ? 10 : 30 };
     if (share < 1) cost[shardKey(Object.keys(TIERS)[tier.rank - 1])] = Math.round(1000 * level * (1 - share));
-    return cost;
+    return craftingCost(save,cost);
   }
   function upgradeRecipe(gem, target) {
     if(gem.rarity==='epic')return null;
@@ -176,13 +182,13 @@
   function canPay(save, cost) { return !!cost && Object.entries(cost).every(([key, n]) => Number.isSafeInteger(n) && n > 0 && (save.inventory[key] || 0) >= n); }
   function pay(save, cost) { if (!canPay(save, cost)) return false; for (const [key, n] of Object.entries(cost)) save.inventory[key] -= n; return true; }
   function craft(save, rarity, level, family, random = Math.random) {
-    if(rarity==='epic'&&!save.cleared.includes(Epic.GODDESS))return null;
+    if(rarity==='epic'&&!known(save,Epic.GODDESS))return null;
     if (!unlocked(save) || (rarity!=='epic'&&level > maxLevel(save)) || !Number.isSafeInteger(save.nextGemId) || save.nextGemId < 1 || save.nextGemId >= Number.MAX_SAFE_INTEGER) return null;
-    const cost = craftRecipe(rarity, level, family);
+    const cost = craftRecipe(rarity, level, family, save);
     if (!canPay(save, cost)) return null;
     const gem = validate(generate({ rarity, level, family, size: 1, random }));
     if (!gem || !pay(save, cost)) return null;
-    gem.id = save.nextGemId++; save.gems.push(gem); rememberRarity(save, gem.rarity); return gem;
+    gem.id = save.nextGemId++; save.gems.push(gem); rememberRarity(save, gem.rarity); rememberEpic(save,gem); markUsage(save,'craft'); return gem;
   }
   const freshDismantleFilter = () => ({ maxLevel: null, maxRarity: 'rare', match: 'all', excludedDirections: [], excludedEffects: [] });
   function restoreDismantleFilter(raw) {
@@ -227,6 +233,7 @@
     for (const gem of gems) rememberRarity(save, gem.rarity);
     for (const [key, n] of Object.entries(shards)) save.inventory[key] = (save.inventory[key] || 0) + n;
     save.gems = save.gems.filter(gem => !selected.has(gem.id));
+    markUsage(save,'dismantle');
     return { ids: gems.map(gem => gem.id), count: gems.length, shards };
   }
   function dismantle(save, id) { return !!dismantleIds(save, [Number(id)]); }
@@ -243,7 +250,7 @@
   }
   function convert(save, rarity, count = 1) {
     const rank = TIERS[rarity]?.rank;
-    if (!unlocked(save) || ![0, 1, 2].includes(rank) || (rank===2&&!save.cleared.includes(Epic.GODDESS)) || !Number.isSafeInteger(count) || count <= 0 || count > Number.MAX_SAFE_INTEGER / 10) return false;
+    if (!unlocked(save) || ![0, 1, 2].includes(rank) || (rank===2&&!known(save,Epic.GODDESS)) || !Number.isSafeInteger(count) || count <= 0 || count > Number.MAX_SAFE_INTEGER / 10) return false;
     const next = Object.keys(TIERS)[rank + 1];
     if (next === 'legendary' && maxLevel(save) < 6) return false;
     const key = shardKey(next), amount = (save.inventory[key] || 0) + count;
@@ -251,7 +258,7 @@
     save.inventory[key] = amount; return true;
   }
   const shardItems = Object.keys(TIERS).map(rarity => ({ id: shardKey(rarity), name: { rare: 'レア', unique: 'ユニーク', legendary: 'レジェンダリー',epic:'エピック' }[rarity] + 'ジェムの破片', rarity, type: 'material', ...(rarity==='epic'?{revealStage:Epic.GODDESS}:{}), image: 'assets/ui/gems/shard-' + rarity + '.png', note: 'ジェム合成・アップグレード' }));
-  return { VERSION, TIERS, OPTIONS, TYPES, DIRECTIONS, REGIONS, Epic, configureReferences, generate, validate, describe, compatible,
+  return { rememberEpic, markUsage, VERSION, TIERS, OPTIONS, TYPES, DIRECTIONS, REGIONS, Epic, configureReferences, generate, validate, describe, compatible,
     shardKey, shardItems, rarityDiscovered, rememberRarity, salvage, unlocked, maxLevel, craftRecipe, upgradeRecipe, canPay, craft, dismantle, upgrade, convert,
     freshDismantleFilter, restoreDismantleFilter, freshAutoDismantle, restoreAutoDismantle, matchesDismantleFilter, canDismantle, dismantlePlan, bulkDismantle, autoDismantle };
 });
