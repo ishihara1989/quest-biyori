@@ -1,0 +1,3 @@
+[data-tree-pan] { cursor: grab; touch-action: none; }
+[data-tree-pan].dragging, [data-tree-pan].dragging * { cursor: grabbing !important; user-select: none; }
+[data-tree-pan] button:not(:disabled), [data-tree-pan] a { cursor: pointer; }
