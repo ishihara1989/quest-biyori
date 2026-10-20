@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-20",
+  "status": "passed-as-development-candidate",
+  "tool": "built-in image_gen",
+  "clips": 4,
+  "frames": 17,
+  "frameCounts": {
+    "idle": 4,
+    "move": 4,
+    "hit": 3,
+    "return": 6
+  },
+  "automatic": {
+    "nonEmpty": true,
+    "transparent": true,
+    "sourceBorderPixels": 0,
+    "outputBorderPixels": 0,
+    "minimumMarginPx": 12,
+    "gifFrameCountsAndTiming": "passed",
+    "structure": "passed",
+    "repositoryStructureTests": {
+      "passed": 4,
+      "failed": 0
+    },
+    "syntax": "passed",
+    "diffWhitespace": "passed"
+  },
+  "visual": {
+    "all17Frames": "Reviewed all-frames.png and source sheets; exactly two arms/hands, correct costume/palette, no clipped halo/hair/sleeves/toes.",
+    "normalPlayback": "Reviewed in local browser; four clips animate and sequence connects idle -> leftward floating -> hit -> turn -> upper-right departure.",
+    "slowPlayback": "0.35x playback reviewed for idle/move loop seam and return segment 3->4, turn 4->5->6.",
+    "backgrounds": [
+      "dark",
+      "light",
+      "checker"
+    ],
+    "controls": [
+      "global pause/resume including manual frame recovery",
+      "individual pause/restart",
+      "frame sliders",
+      "all 17 frame thumbnails",
+      "speed select",
+      "registration guides"
+    ],
+    "viewport": "696x762 in-app browser",
+    "proof": "browser-review.png"
+  },
+  "scope": {
+    "candidateOnly": true,
+    "runtimeRegistered": false,
+    "runtimeBattleDisplay": "Deferred until enemy adoption and combat integration; dedicated animation review page verified.",
+    "balanceTests": "Not applicable; no battle data or common runtime changes."
+  },
+  "reviewUrl": "http://127.0.0.1:4196/development/labs/reincarnation-goddess.html"
+}

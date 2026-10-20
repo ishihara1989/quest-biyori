@@ -43,3 +43,5 @@
 女神の浮遊待機4コマ・手振り後の180度ターンは [motion-v4](assets/extradimensional-goddess/motion-v4/README.md)。本編は計59コマ。`npm run build:goddess-motion` と `npm run check:goddess-motion-ui` で対象の登録・検証を再現できます。
 
 エピックジェム12種・新レジェンダリー・残滓・女神強化ページの全17アイコンは [制作・原画・プロンプト・検収](assets/ui/epic-gems/README.md)に保存。本編登録は `npm run build:epic-gems`、[実装記録](../docs/implementation/epic-gems.md)。
+
+転生の女神（左向き敵）の待機・浮遊移動・涙目被弾・怒って帰還は [基本モーション検収画面](labs/reincarnation-goddess.html)。4種17コマの [原画・プロンプト・再構築](assets/reincarnation-goddess/basic-v1/README.md) と [制作・検収記録](../docs/production/reincarnation-goddess-basic-motions.md) を保存。素材候補で本編未登録です。
