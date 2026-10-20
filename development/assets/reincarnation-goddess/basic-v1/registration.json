@@ -1,0 +1,584 @@
+{
+  "date": "2026-10-20",
+  "processing": "Measured empty gutters; per-segment uniform nearest-neighbor scale; observed waist registration; original RGBA preserved without recolor, alpha thresholding, repaint or mirroring.",
+  "frames": [
+    {
+      "clip": "idle",
+      "frame": 1,
+      "source": "source/idle.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 690,
+        "height": 627
+      },
+      "observedWaist": [
+        282,
+        255
+      ],
+      "sourceBounds": [
+        153,
+        14,
+        632,
+        606
+      ],
+      "scale": 0.5564924114671164,
+      "translation": [
+        91,
+        115
+      ],
+      "bounds": [
+        176,
+        123,
+        442,
+        452
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7746391296386719
+    },
+    {
+      "clip": "idle",
+      "frame": 2,
+      "source": "source/idle.png",
+      "sourceRect": {
+        "left": 690,
+        "top": 0,
+        "width": 564,
+        "height": 627
+      },
+      "observedWaist": [
+        884,
+        250
+      ],
+      "sourceBounds": [
+        57,
+        11,
+        556,
+        606
+      ],
+      "scale": 0.5564924114671164,
+      "translation": [
+        140,
+        115
+      ],
+      "bounds": [
+        172,
+        121,
+        449,
+        452
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7618751525878906
+    },
+    {
+      "clip": "idle",
+      "frame": 3,
+      "source": "source/idle.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 698,
+        "height": 627
+      },
+      "observedWaist": [
+        282,
+        886
+      ],
+      "sourceBounds": [
+        140,
+        10,
+        643,
+        593
+      ],
+      "scale": 0.5564924114671164,
+      "translation": [
+        91,
+        113
+      ],
+      "bounds": [
+        168,
+        119,
+        448,
+        443
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7693939208984375
+    },
+    {
+      "clip": "idle",
+      "frame": 4,
+      "source": "source/idle.png",
+      "sourceRect": {
+        "left": 698,
+        "top": 627,
+        "width": 556,
+        "height": 627
+      },
+      "observedWaist": [
+        890,
+        892
+      ],
+      "sourceBounds": [
+        55,
+        22,
+        546,
+        602
+      ],
+      "scale": 0.5564924114671164,
+      "translation": [
+        141,
+        113
+      ],
+      "bounds": [
+        171,
+        125,
+        444,
+        448
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7758140563964844
+    },
+    {
+      "clip": "move",
+      "frame": 1,
+      "source": "source/move.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 666,
+        "height": 627
+      },
+      "observedWaist": [
+        232,
+        250
+      ],
+      "sourceBounds": [
+        96,
+        15,
+        624,
+        582
+      ],
+      "scale": 0.5809859154929577,
+      "translation": [
+        113,
+        112
+      ],
+      "bounds": [
+        169,
+        121,
+        475,
+        450
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7379150390625
+    },
+    {
+      "clip": "move",
+      "frame": 2,
+      "source": "source/move.png",
+      "sourceRect": {
+        "left": 666,
+        "top": 0,
+        "width": 588,
+        "height": 627
+      },
+      "observedWaist": [
+        838,
+        236
+      ],
+      "sourceBounds": [
+        42,
+        5,
+        584,
+        573
+      ],
+      "scale": 0.5809859154929577,
+      "translation": [
+        148,
+        118
+      ],
+      "bounds": [
+        172,
+        120,
+        487,
+        450
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.731231689453125
+    },
+    {
+      "clip": "move",
+      "frame": 3,
+      "source": "source/move.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 627,
+        "width": 665,
+        "height": 627
+      },
+      "observedWaist": [
+        232,
+        872
+      ],
+      "sourceBounds": [
+        82,
+        2,
+        627,
+        573
+      ],
+      "scale": 0.5809859154929577,
+      "translation": [
+        113,
+        115
+      ],
+      "bounds": [
+        161,
+        116,
+        477,
+        447
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7116584777832031
+    },
+    {
+      "clip": "move",
+      "frame": 4,
+      "source": "source/move.png",
+      "sourceRect": {
+        "left": 665,
+        "top": 627,
+        "width": 589,
+        "height": 627
+      },
+      "observedWaist": [
+        844,
+        880
+      ],
+      "sourceBounds": [
+        37,
+        3,
+        574,
+        577
+      ],
+      "scale": 0.5809859154929577,
+      "translation": [
+        144,
+        112
+      ],
+      "bounds": [
+        165,
+        114,
+        477,
+        447
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7232933044433594
+    },
+    {
+      "clip": "hit",
+      "frame": 1,
+      "source": "source/hit.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 667,
+        "height": 764
+      },
+      "observedWaist": [
+        193,
+        335
+      ],
+      "sourceBounds": [
+        15,
+        6,
+        608,
+        756
+      ],
+      "scale": 0.4394141145139814,
+      "translation": [
+        163,
+        110
+      ],
+      "bounds": [
+        169,
+        113,
+        430,
+        442
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.786041259765625
+    },
+    {
+      "clip": "hit",
+      "frame": 2,
+      "source": "source/hit.png",
+      "sourceRect": {
+        "left": 667,
+        "top": 0,
+        "width": 767,
+        "height": 764
+      },
+      "observedWaist": [
+        1012,
+        337
+      ],
+      "sourceBounds": [
+        58,
+        13,
+        706,
+        756
+      ],
+      "scale": 0.4394141145139814,
+      "translation": [
+        102,
+        107
+      ],
+      "bounds": [
+        127,
+        113,
+        412,
+        439
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.7678871154785156
+    },
+    {
+      "clip": "hit",
+      "frame": 3,
+      "source": "source/hit.png",
+      "sourceRect": {
+        "left": 1434,
+        "top": 0,
+        "width": 623,
+        "height": 764
+      },
+      "observedWaist": [
+        1658,
+        353
+      ],
+      "sourceBounds": [
+        60,
+        6,
+        613,
+        756
+      ],
+      "scale": 0.4394141145139814,
+      "translation": [
+        151,
+        102
+      ],
+      "bounds": [
+        177,
+        105,
+        420,
+        434
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.790130615234375
+    },
+    {
+      "clip": "return-a",
+      "frame": 1,
+      "source": "source/return-a.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 674,
+        "height": 820
+      },
+      "observedWaist": [
+        248,
+        385
+      ],
+      "sourceBounds": [
+        81,
+        19,
+        639,
+        809
+      ],
+      "scale": 0.41719342604298354,
+      "translation": [
+        145,
+        96
+      ],
+      "bounds": [
+        179,
+        104,
+        411,
+        433
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8155975341796875
+    },
+    {
+      "clip": "return-a",
+      "frame": 2,
+      "source": "source/return-a.png",
+      "sourceRect": {
+        "left": 674,
+        "top": 0,
+        "width": 571,
+        "height": 820
+      },
+      "observedWaist": [
+        960,
+        385
+      ],
+      "sourceBounds": [
+        34,
+        19,
+        536,
+        809
+      ],
+      "scale": 0.41719342604298354,
+      "translation": [
+        129,
+        96
+      ],
+      "bounds": [
+        143,
+        104,
+        352,
+        433
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8247261047363281
+    },
+    {
+      "clip": "return-a",
+      "frame": 3,
+      "source": "source/return-a.png",
+      "sourceRect": {
+        "left": 1245,
+        "top": 0,
+        "width": 673,
+        "height": 820
+      },
+      "observedWaist": [
+        1668,
+        385
+      ],
+      "sourceBounds": [
+        34,
+        19,
+        592,
+        809
+      ],
+      "scale": 0.41719342604298354,
+      "translation": [
+        72,
+        96
+      ],
+      "bounds": [
+        86,
+        104,
+        319,
+        433
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.81512451171875
+    },
+    {
+      "clip": "return-b",
+      "frame": 1,
+      "source": "source/return-b.png",
+      "sourceRect": {
+        "left": 0,
+        "top": 0,
+        "width": 684,
+        "height": 820
+      },
+      "observedWaist": [
+        528,
+        400
+      ],
+      "sourceBounds": [
+        31,
+        17,
+        634,
+        787
+      ],
+      "scale": 0.41719342604298354,
+      "translation": [
+        28,
+        90
+      ],
+      "bounds": [
+        41,
+        97,
+        292,
+        418
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8022918701171875
+    },
+    {
+      "clip": "return-b",
+      "frame": 2,
+      "source": "source/return-b.png",
+      "sourceRect": {
+        "left": 684,
+        "top": 0,
+        "width": 656,
+        "height": 820
+      },
+      "observedWaist": [
+        1139,
+        400
+      ],
+      "sourceBounds": [
+        50,
+        25,
+        598,
+        784
+      ],
+      "scale": 0.41719342604298354,
+      "translation": [
+        58,
+        87
+      ],
+      "bounds": [
+        79,
+        97,
+        307,
+        413
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8206329345703125
+    },
+    {
+      "clip": "return-b",
+      "frame": 3,
+      "source": "source/return-b.png",
+      "sourceRect": {
+        "left": 1340,
+        "top": 0,
+        "width": 578,
+        "height": 820
+      },
+      "observedWaist": [
+        1686,
+        400
+      ],
+      "sourceBounds": [
+        58,
+        17,
+        559,
+        787
+      ],
+      "scale": 0.41719342604298354,
+      "translation": [
+        104,
+        84
+      ],
+      "bounds": [
+        128,
+        91,
+        337,
+        412
+      ],
+      "edgePixels": 0,
+      "transparentFraction": 0.8370285034179688
+    }
+  ]
+}

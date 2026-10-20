@@ -68,6 +68,8 @@
 
 ## 素材制作と引き継ぎ
 
+- [転生の女神の基本モーション（制作候補・4種17コマ）](production/reincarnation-goddess-basic-motions.md)
+
 - [GitHub・Git LFS・Cloudflare Pagesの運用](production/github-lfs-and-cloudflare.md)
 
 - [異次元の女神／界外の御座の実装・難度・検証](implementation/extradimensional-goddess.md)

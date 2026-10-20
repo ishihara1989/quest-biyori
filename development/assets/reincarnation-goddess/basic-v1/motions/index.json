@@ -1,0 +1,22 @@
+[
+  {
+    "id": "idle",
+    "label": "待機",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "label": "浮遊移動",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "label": "涙目の被弾",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "return",
+    "label": "涙目で怒って帰還",
+    "manifest": "return/manifest.json"
+  }
+]

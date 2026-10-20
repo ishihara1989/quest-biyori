@@ -1,0 +1,266 @@
+{
+  "targetCell": 512,
+  "targetHeight": 330,
+  "targetWaist": [
+    248,
+    257
+  ],
+  "sampling": "nearest-neighbor",
+  "alphaMeasurementThreshold": 32,
+  "sourceRectsAreMeasured": true,
+  "frames": [
+    {
+      "id": "idle",
+      "source": "source/idle.png",
+      "rows": [
+        {
+          "top": 0,
+          "height": 627,
+          "cuts": [
+            0,
+            690,
+            1254
+          ]
+        },
+        {
+          "top": 627,
+          "height": 627,
+          "cuts": [
+            0,
+            698,
+            1254
+          ]
+        }
+      ],
+      "anchors": [
+        [
+          282,
+          255
+        ],
+        [
+          884,
+          250
+        ],
+        [
+          282,
+          886
+        ],
+        [
+          890,
+          892
+        ]
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "move",
+      "source": "source/move.png",
+      "rows": [
+        {
+          "top": 0,
+          "height": 627,
+          "cuts": [
+            0,
+            666,
+            1254
+          ]
+        },
+        {
+          "top": 627,
+          "height": 627,
+          "cuts": [
+            0,
+            665,
+            1254
+          ]
+        }
+      ],
+      "anchors": [
+        [
+          232,
+          250
+        ],
+        [
+          838,
+          236
+        ],
+        [
+          232,
+          872
+        ],
+        [
+          844,
+          880
+        ]
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "hit",
+      "source": "source/hit.png",
+      "rows": [
+        {
+          "top": 0,
+          "height": 764,
+          "cuts": [
+            0,
+            667,
+            1434,
+            2057
+          ]
+        }
+      ],
+      "anchors": [
+        [
+          193,
+          335
+        ],
+        [
+          1012,
+          337
+        ],
+        [
+          1658,
+          353
+        ]
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          -2
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "return-a",
+      "source": "source/return-a.png",
+      "rows": [
+        {
+          "top": 0,
+          "height": 820,
+          "cuts": [
+            0,
+            674,
+            1245,
+            1918
+          ]
+        }
+      ],
+      "anchors": [
+        [
+          248,
+          385
+        ],
+        [
+          960,
+          385
+        ],
+        [
+          1668,
+          385
+        ]
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "return-b",
+      "source": "source/return-b.png",
+      "scaleFrom": "return-a",
+      "rows": [
+        {
+          "top": 0,
+          "height": 820,
+          "cuts": [
+            0,
+            684,
+            1340,
+            1918
+          ]
+        }
+      ],
+      "anchors": [
+        [
+          528,
+          400
+        ],
+        [
+          1139,
+          400
+        ],
+        [
+          1686,
+          400
+        ]
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          0,
+          -6
+        ]
+      ]
+    }
+  ]
+}
