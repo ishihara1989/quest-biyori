@@ -1,0 +1,233 @@
+{
+  "priorPlaybackRun": "40 checks completed before the first run stopped on unsupported output.inputValue in the control test; scene/control checks resumed separately.",
+  "date": "2026-10-20",
+  "clips": 20,
+  "frames": 60,
+  "playback": [],
+  "scenes": [
+    {
+      "id": "pulse",
+      "t": 500,
+      "drawn": [
+        "body-pulse"
+      ],
+      "time": 500
+    },
+    {
+      "id": "pulse",
+      "t": 1130,
+      "drawn": [
+        "body-pulse",
+        "fx-pulse",
+        "fx-pulse"
+      ],
+      "time": 1130
+    },
+    {
+      "id": "pulse",
+      "t": 1500,
+      "drawn": [
+        "idle",
+        "fx-impact",
+        "fx-pulse",
+        "fx-pulse",
+        "fx-pulse",
+        "fx-pulse",
+        "fx-pulse"
+      ],
+      "time": 1500
+    },
+    {
+      "id": "laser",
+      "t": 900,
+      "drawn": [
+        "body-laser"
+      ],
+      "time": 900
+    },
+    {
+      "id": "laser",
+      "t": 1950,
+      "drawn": [
+        "body-laser",
+        "fx-beam"
+      ],
+      "time": 1950
+    },
+    {
+      "id": "laser",
+      "t": 2500,
+      "drawn": [
+        "idle"
+      ],
+      "time": 2500
+    },
+    {
+      "id": "missiles",
+      "t": 700,
+      "drawn": [
+        "body-missiles"
+      ],
+      "time": 700
+    },
+    {
+      "id": "missiles",
+      "t": 1850,
+      "drawn": [
+        "idle",
+        "fx-missile",
+        "fx-missile",
+        "fx-missile"
+      ],
+      "time": 1850
+    },
+    {
+      "id": "missiles",
+      "t": 2800,
+      "drawn": [
+        "idle",
+        "fx-impact",
+        "fx-impact"
+      ],
+      "time": 2800
+    },
+    {
+      "id": "discs",
+      "t": 700,
+      "drawn": [
+        "body-discs"
+      ],
+      "time": 700
+    },
+    {
+      "id": "discs",
+      "t": 1500,
+      "drawn": [
+        "body-discs"
+      ],
+      "time": 1500
+    },
+    {
+      "id": "discs",
+      "t": 2300,
+      "drawn": [
+        "idle",
+        "fx-disc"
+      ],
+      "time": 2300
+    },
+    {
+      "id": "orbital",
+      "t": 800,
+      "drawn": [
+        "body-orbital"
+      ],
+      "time": 800
+    },
+    {
+      "id": "orbital",
+      "t": 1840,
+      "drawn": [
+        "body-orbital",
+        "fx-orbital"
+      ],
+      "time": 1840
+    },
+    {
+      "id": "orbital",
+      "t": 2500,
+      "drawn": [
+        "idle"
+      ],
+      "time": 2500
+    },
+    {
+      "id": "truck-rush",
+      "t": 400,
+      "drawn": [
+        "truck-mount"
+      ],
+      "time": 400
+    },
+    {
+      "id": "truck-rush",
+      "t": 2000,
+      "drawn": [
+        "fx-truck",
+        "truck-wait"
+      ],
+      "time": 2000
+    },
+    {
+      "id": "truck-rush",
+      "t": 4350,
+      "drawn": [
+        "fx-truck",
+        "truck-rush"
+      ],
+      "time": 4350
+    },
+    {
+      "id": "truck-cancel",
+      "t": 1800,
+      "drawn": [
+        "fx-truck",
+        "truck-wait"
+      ],
+      "time": 1800
+    },
+    {
+      "id": "truck-cancel",
+      "t": 2800,
+      "drawn": [
+        "truck-interrupt"
+      ],
+      "time": 2800
+    },
+    {
+      "id": "truck-cancel",
+      "t": 3550,
+      "drawn": [
+        "fx-blast"
+      ],
+      "time": 3550
+    },
+    {
+      "id": "return",
+      "t": 500,
+      "drawn": [
+        "fx-gate-open",
+        "return"
+      ],
+      "time": 500
+    },
+    {
+      "id": "return",
+      "t": 1300,
+      "drawn": [
+        "fx-gate-open",
+        "return"
+      ],
+      "time": 1300
+    },
+    {
+      "id": "return",
+      "t": 2200,
+      "drawn": [
+        "fx-gate-close"
+      ],
+      "time": 2200
+    },
+    {
+      "id": "return",
+      "t": 2400,
+      "drawn": [],
+      "time": 2400
+    }
+  ],
+  "returnFinalExactlyBackground": true,
+  "desktopWidth": 1440,
+  "narrowWidth": 390,
+  "localStorageUnchanged": true,
+  "errors": []
+}

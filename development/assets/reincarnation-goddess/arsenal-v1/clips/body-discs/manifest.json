@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "previewOnly": true,
+  "id": "body-discs",
+  "label": "重力ブーメラン",
+  "kind": "body",
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 245,
+    "y": 280
+  },
+  "sheet": "../../../../../../public/assets/reincarnation-goddess/arsenal-v1/clips/body-discs/sheet.png",
+  "frameCount": 3,
+  "durationMs": 660,
+  "loop": false,
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-1.png",
+      "durationMs": 240,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 1,
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 2,
+      "file": "frame-3.png",
+      "durationMs": 300,
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

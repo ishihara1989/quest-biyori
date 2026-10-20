@@ -28,3 +28,7 @@
 
 専用ワークツリーで npm ci 後、node tools/assets/build-reincarnation-goddess.cjs を実行。
 画像はGit管理外なので、このディレクトリ全体を保持する。Gitだけから原画・PNG・GIFは復元できない。ブラウザ検収は npm start 後、上記画面で通常／低速・暗色／明色／透過・全17コマを確認する。
+
+## 追加制作
+
+SF兵器5種・大型トラックの企み待機／（＞v＜）突進／涙目中断・ゲートへの帰還接続は [arsenal-v1](../arsenal-v1/README.md) と [追加検収画面](../../../labs/reincarnation-goddess-arsenal.html) に保存。この基本版の原画と17コマは保持する。

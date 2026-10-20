@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "previewOnly": true,
+  "id": "fx-impact",
+  "label": "共通着弾",
+  "kind": "fx",
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 256
+  },
+  "sheet": "../../../../../../public/assets/reincarnation-goddess/arsenal-v1/clips/fx-impact/sheet.png",
+  "frameCount": 3,
+  "durationMs": 380,
+  "loop": false,
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 1,
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "index": 2,
+      "file": "frame-3.png",
+      "durationMs": 160,
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-20",
+  "clips": 20,
+  "frames": 60,
+  "sourceHashesVerified": true,
+  "referenceHashesVerified": true,
+  "sourceBoundaryPixels": 0,
+  "outputBoundaryPixels": 0,
+  "gifFrameCountsAndTimingsVerified": true,
+  "minimumMargin": 15,
+  "visualReview": "See REVIEW.md",
+  "runtimeRegistered": false
+}

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "cell": 512,
+  "notes": "Observed anchors are manually estimated landmarks in original pixel coordinates, not prompt targets. Each clip uses ONE fixed scale across its frames. Disc cuts follow measured fully transparent gutters; FX origins follow observed core/rim, not character recentering.",
+  "clips": {
+    "body-pulse": {
+      "scale": 0.615,
+      "anchors": [
+        [
+          352,
+          360
+        ],
+        [
+          1076,
+          360
+        ],
+        [
+          1800,
+          360
+        ]
+      ],
+      "pivot": [
+        245,
+        280
+      ]
+    },
+    "body-laser": {
+      "scale": 0.6,
+      "anchors": [
+        [
+          505,
+          409
+        ],
+        [
+          1229,
+          409
+        ],
+        [
+          2000,
+          414
+        ]
+      ],
+      "pivot": [
+        340,
+        280
+      ]
+    },
+    "body-missiles": {
+      "scale": 0.548,
+      "anchors": [
+        [
+          319,
+          346
+        ],
+        [
+          1043,
+          346
+        ],
+        [
+          1793,
+          351
+        ]
+      ],
+      "pivot": [
+        245,
+        280
+      ]
+    },
+    "body-discs": {
+      "scale": 0.577,
+      "cuts": [
+        0,
+        692,
+        1421,
+        2172
+      ],
+      "anchors": [
+        [
+          333,
+          365
+        ],
+        [
+          1057,
+          365
+        ],
+        [
+          1793,
+          376
+        ]
+      ],
+      "pivot": [
+        245,
+        280
+      ]
+    },
+    "body-orbital": {
+      "scale": 0.52,
+      "anchors": [
+        [
+          330,
+          375
+        ],
+        [
+          1054,
+          375
+        ],
+        [
+          1838,
+          393
+        ]
+      ],
+      "pivot": [
+        245,
+        280
+      ]
+    },
+    "truck-mount": {
+      "scale": 0.64,
+      "anchors": [
+        [
+          362,
+          563
+        ],
+        [
+          1086,
+          563
+        ],
+        [
+          1810,
+          563
+        ]
+      ],
+      "pivot": [
+        256,
+        448
+      ]
+    },
+    "truck-wait": {
+      "scale": 0.64,
+      "anchors": [
+        [
+          362,
+          563
+        ],
+        [
+          1086,
+          563
+        ],
+        [
+          1810,
+          563
+        ]
+      ],
+      "pivot": [
+        256,
+        448
+      ]
+    },
+    "truck-rush": {
+      "scale": 0.64,
+      "anchors": [
+        [
+          362,
+          565
+        ],
+        [
+          1086,
+          565
+        ],
+        [
+          1810,
+          565
+        ]
+      ],
+      "pivot": [
+        256,
+        448
+      ]
+    },
+    "truck-interrupt": {
+      "scale": 0.64,
+      "anchors": [
+        [
+          362,
+          586
+        ],
+        [
+          1086,
+          586
+        ],
+        [
+          1810,
+          586
+        ]
+      ],
+      "pivot": [
+        256,
+        448
+      ]
+    },
+    "fx-summon": {
+      "scale": 0.62,
+      "centerBounds": true,
+      "pivot": [
+        256,
+        256
+      ]
+    },
+    "fx-pulse": {
+      "scale": 0.62,
+      "anchors": [
+        [
+          280,
+          370
+        ],
+        [
+          1004,
+          370
+        ],
+        [
+          1728,
+          370
+        ]
+      ],
+      "pivot": [
+        200,
+        256
+      ]
+    },
+    "fx-beam": {
+      "scale": 0.62,
+      "anchors": [
+        [
+          360,
+          362
+        ],
+        [
+          1084,
+          362
+        ],
+        [
+          1808,
+          362
+        ]
+      ],
+      "pivot": [
+        256,
+        256
+      ]
+    },
+    "fx-missile": {
+      "scale": 0.62,
+      "anchors": [
+        [
+          99,
+          362
+        ],
+        [
+          782,
+          362
+        ],
+        [
+          1510,
+          362
+        ]
+      ],
+      "pivot": [
+        100,
+        256
+      ]
+    },
+    "fx-disc": {
+      "scale": 0.62,
+      "anchors": [
+        [
+          363,
+          360
+        ],
+        [
+          1120,
+          360
+        ],
+        [
+          1849,
+          360
+        ]
+      ],
+      "pivot": [
+        256,
+        256
+      ]
+    },
+    "fx-orbital": {
+      "scale": 0.6,
+      "anchors": [
+        [
+          362,
+          553
+        ],
+        [
+          1086,
+          553
+        ],
+        [
+          1810,
+          553
+        ]
+      ],
+      "pivot": [
+        256,
+        400
+      ]
+    },
+    "fx-impact": {
+      "scale": 0.62,
+      "centerBounds": true,
+      "pivot": [
+        256,
+        256
+      ]
+    },
+    "fx-truck": {
+      "scale": 0.62,
+      "anchors": [
+        [
+          362,
+          594
+        ],
+        [
+          1086,
+          594
+        ],
+        [
+          1810,
+          594
+        ]
+      ],
+      "pivot": [
+        256,
+        420
+      ]
+    },
+    "fx-blast": {
+      "scale": 0.62,
+      "centerBounds": true,
+      "pivot": [
+        256,
+        256
+      ]
+    },
+    "fx-gate-open": {
+      "scale": 0.62,
+      "centerBounds": true,
+      "pivot": [
+        256,
+        256
+      ]
+    },
+    "fx-gate-close": {
+      "scale": 0.62,
+      "centerBounds": true,
+      "pivot": [
+        256,
+        256
+      ]
+    }
+  }
+}

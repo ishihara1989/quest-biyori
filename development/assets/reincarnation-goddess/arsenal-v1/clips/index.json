@@ -1,0 +1,122 @@
+[
+  {
+    "id": "body-pulse",
+    "label": "パルス散弾機関砲",
+    "kind": "body",
+    "manifest": "body-pulse/manifest.json"
+  },
+  {
+    "id": "body-laser",
+    "label": "陽電子レール砲",
+    "kind": "body",
+    "manifest": "body-laser/manifest.json"
+  },
+  {
+    "id": "body-missiles",
+    "label": "追尾ミサイル配送",
+    "kind": "body",
+    "manifest": "body-missiles/manifest.json"
+  },
+  {
+    "id": "body-discs",
+    "label": "重力ブーメラン",
+    "kind": "body",
+    "manifest": "body-discs/manifest.json"
+  },
+  {
+    "id": "body-orbital",
+    "label": "衛星スタンプ砲",
+    "kind": "body",
+    "manifest": "body-orbital/manifest.json"
+  },
+  {
+    "id": "truck-mount",
+    "label": "トラック乗車",
+    "kind": "truck",
+    "manifest": "truck-mount/manifest.json"
+  },
+  {
+    "id": "truck-wait",
+    "label": "トラック企み待機",
+    "kind": "truck",
+    "manifest": "truck-wait/manifest.json"
+  },
+  {
+    "id": "truck-rush",
+    "label": "トラック突進",
+    "kind": "truck",
+    "manifest": "truck-rush/manifest.json"
+  },
+  {
+    "id": "truck-interrupt",
+    "label": "トラック妨害・涙目",
+    "kind": "truck",
+    "manifest": "truck-interrupt/manifest.json"
+  },
+  {
+    "id": "fx-summon",
+    "label": "兵器召喚ゲート",
+    "kind": "fx",
+    "manifest": "fx-summon/manifest.json"
+  },
+  {
+    "id": "fx-pulse",
+    "label": "パルス弾",
+    "kind": "fx",
+    "manifest": "fx-pulse/manifest.json"
+  },
+  {
+    "id": "fx-beam",
+    "label": "直線レーザー",
+    "kind": "fx",
+    "manifest": "fx-beam/manifest.json"
+  },
+  {
+    "id": "fx-missile",
+    "label": "誘導ミサイル",
+    "kind": "fx",
+    "manifest": "fx-missile/manifest.json"
+  },
+  {
+    "id": "fx-disc",
+    "label": "重力円盤",
+    "kind": "fx",
+    "manifest": "fx-disc/manifest.json"
+  },
+  {
+    "id": "fx-orbital",
+    "label": "衛星砲撃柱",
+    "kind": "fx",
+    "manifest": "fx-orbital/manifest.json"
+  },
+  {
+    "id": "fx-impact",
+    "label": "共通着弾",
+    "kind": "fx",
+    "manifest": "fx-impact/manifest.json"
+  },
+  {
+    "id": "fx-truck",
+    "label": "トラック煙・空転",
+    "kind": "fx",
+    "manifest": "fx-truck/manifest.json"
+  },
+  {
+    "id": "fx-blast",
+    "label": "トラック中断のギャグ爆発",
+    "kind": "fx",
+    "manifest": "fx-blast/manifest.json"
+  },
+  {
+    "id": "fx-gate-open",
+    "label": "帰還ゲート開口",
+    "kind": "fx",
+    "manifest": "fx-gate-open/manifest.json"
+  },
+  {
+    "id": "fx-gate-close",
+    "label": "帰還ゲート閉口",
+    "kind": "fx",
+    "manifest": "fx-gate-close/manifest.json"
+  }
+]
