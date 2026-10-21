@@ -9,9 +9,10 @@ function fixture() {
   const seed = D.freshSave(); seed.cleared = D.STAGES.map(s => s.id); seed.selectedStage = 41; seed.autoMode = 'off';
   for (const [index, job] of Object.keys(P.CHARACTERS).entries()) {
     const c = seed.progression.characters[job]; c.xp = P.experience(50 + index, index / 10);
-    for (const slot of ['weapon', 'armor']) c[slot] = P.allGearTrees(job, slot).filter(n => n.main).map(n => n.id);
+    // Fixed-size attack gems need common capacity when tested in armor.
+    for (const slot of ['weapon', 'armor']) c[slot] = P.allGearTrees(job, slot).map(n => n.id);
   }
-  for (const family of ['physical', 'magic']) P.addGem(seed, P.Gem.generate({ rarity: 'rare', family, level: 1, size: .25, random: () => .5 }));
+  for (const family of ['physical', 'magic']) P.addGem(seed, P.Gem.generate({ rarity: 'rare', family, level: 1, random: () => .5 }));
   return seed;
 }
 (async () => {

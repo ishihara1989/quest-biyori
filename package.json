@@ -156,7 +156,8 @@
     "check:epic-gems-ui": "node tools/verify/verify-epic-gems-ui.cjs",
     "test:reincarnation": "node --test tests/reincarnation.test.cjs tests/reincarnation-assets.test.cjs",
     "audit:reincarnation": "node tools/balance/audit-reincarnation.cjs",
-    "check:reincarnation-ui": "node tools/verify/verify-reincarnation-ui.cjs"
+    "check:reincarnation-ui": "node tools/verify/verify-reincarnation-ui.cjs",
+    "check:status-indicators-ui": "node tools/verify/verify-status-indicators-ui.cjs"
   },
   "devDependencies": {
     "pngjs": "7.0.0",

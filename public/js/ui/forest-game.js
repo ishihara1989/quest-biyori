@@ -73,7 +73,7 @@
     pendingSave = false;
     const achieved = Achievements.sync(save);
     if (achieved.length) notify('実績獲得 · '+achieved.slice(0,2).map(d=>d.name).join(' / ')+(achieved.length>2?' ほか'+(achieved.length-2)+'件':''));
-    $('reincarnation-nav').hidden = !save.reincarnation.unlocked;
+    refreshReincarnationNav();
     try {
       localStorage.setItem(SAVE_KEY, JSON.stringify(save)); text('save-state', 'SAVED');
       clearTimeout(saveTimer); saveTimer = setTimeout(() => text('save-state', 'READY'), 1500);
@@ -81,6 +81,15 @@
       text('save-state', '保存不可');
       notify('保存領域を利用できません。この画面を開いている間は続けられます。');
     }
+  }
+  function refreshReincarnationNav() {
+    const nav = $('reincarnation-nav'), eligible = Reincarnation.eligible(save);
+    nav.hidden = !save.reincarnation.unlocked;
+    nav.classList.toggle('rebirth-ready', eligible);
+    nav.querySelector('.rebirth-ready-mark').hidden = !eligible;
+    const label = eligible ? '転生可能 · +100 PT' : '転生';
+    nav.dataset.tip = label;
+    nav.setAttribute('aria-label', label);
   }
   function notify(message) {
     $('notification').textContent = message; $('notification').classList.add('visible');
@@ -205,11 +214,20 @@
         button.type = 'button'; button.className = 'party-status-card'; button.dataset.partyCharacter = id;
         button.style.setProperty('--hero-color', job.color);
         button.dataset.tip = job.name + 'の詳細に切り替え';
-        button.innerHTML = '<span class="party-member-heading"><span class="party-member-avatar"><img src="assets/' + id + '/idle-01.png" alt=""></span><span><strong>' + job.name + '</strong><small></small></span><i class="party-member-state"></i></span>' + ['hp', 'mp'].map(resource => '<span class="party-vital ' + resource + '"><span><small>' + resource.toUpperCase() + '</small><b></b></span><span class="party-vital-track"><i></i></span></span>').join('');
+        button.innerHTML = '<span class="party-member-heading"><span class="party-member-avatar"><img src="assets/' + id + '/idle-01.png" alt=""></span><span><strong>' + job.name + '</strong><small></small></span><i class="party-member-state"></i></span><span class="party-epic-slots" hidden></span>' + ['hp', 'mp'].map(resource => '<span class="party-vital ' + resource + '"><span><small>' + resource.toUpperCase() + '</small><b></b></span><span class="party-vital-track"><i></i></span></span>').join('');
         $('party-status').append(button);
-        view = { button, level: button.querySelector('.party-member-heading small'), hp: button.querySelector('.hp b'), mp: button.querySelector('.mp b'), hpFill: button.querySelector('.hp i'), mpFill: button.querySelector('.mp i'), state: button.querySelector('.party-member-state') };
+        view = { button, epics: button.querySelector('.party-epic-slots'), level: button.querySelector('.party-member-heading small'), hp: button.querySelector('.hp b'), mp: button.querySelector('.mp b'), hpFill: button.querySelector('.hp i'), mpFill: button.querySelector('.mp i'), state: button.querySelector('.party-member-state') };
         partyViews.set(id, view);
       }
+      const epics = ['weapon', 'armor'].flatMap(slot => {
+        const gem = save.progression.characters[id].gems[slot].map(uid => P.gemInstance(save, uid)).find(gem => gem?.rarity === 'epic' && gem.family === id + '-' + slot);
+        return gem ? [{ slot, label: slot === 'weapon' ? '武器' : '防具', name: P.Gem.describe(gem).name }] : [];
+      });
+      const epicMarkup = epics.map(gem => '<span class="party-epic-slot" data-epic-slot="' + gem.slot + '" data-tip="' + escapeHTML('エピック · ' + gem.label + ' · ' + gem.name) + '">' + icon(gem.slot === 'weapon' ? 'sword' : 'shield') + gem.label + '</span>').join('');
+      if (view.epics.innerHTML !== epicMarkup) view.epics.innerHTML = epicMarkup;
+      view.epics.hidden = !epics.length;
+      view.epicLabel = epics.length ? ' · エピック装備 ' + epics.map(gem => gem.label + '：' + gem.name).join(' / ') : '';
+      view.button.dataset.tip = job.name + view.epicLabel + ' · 詳細に切り替え';
       view.stats = battleStats(id);
       view.level.textContent = 'Lv. ' + view.stats.level;
       view.button.setAttribute('aria-pressed', String(id === save.progression.selected));
@@ -231,7 +249,7 @@
       view.button.classList.toggle('down', hp <= 0);
       view.button.classList.toggle('wounded', hp > 0 && hp / stats.maxHp <= .25);
       view.state.textContent = hp <= 0 ? '×' : '';
-      const label = P.CHARACTERS[id].name + ' · HP ' + hpLabel + ' · MP ' + mpLabel + (hp <= 0 ? ' · 戦闘不能' : '') + ' · 詳細に切り替え';
+      const label = P.CHARACTERS[id].name + ' · HP ' + hpLabel + ' · MP ' + mpLabel + (hp <= 0 ? ' · 戦闘不能' : '') + view.epicLabel + ' · 詳細に切り替え';
       if (view.button.getAttribute('aria-label') !== label) view.button.setAttribute('aria-label', label);
     }
   }
