@@ -7,7 +7,7 @@
   if (common) module.exports = api; else root.Reincarnation = api;
 })(globalThis, (P, T, D) => {
   const fresh = () => ({ version: 1, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null,
-    total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false,
+    total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
       slots: Object.fromEntries(Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].map(slot=>[job+':'+slot,{effects:['fortune',slot==='weapon'?'attack':'vitality','recovery'],locked:false,epic:true,rarity:'rare',efficiency:true}]))) } });
   const integer = n => Number.isSafeInteger(n) && n >= 0;
@@ -28,6 +28,7 @@
     result.owned = [...state.owned].filter(id => id !== 'origin');
     const a = raw.automation;
     result.automation.skills = a?.skills === true; result.automation.gems = a?.gems === true;
+    result.automation.waitForMainGear = a?.waitForMainGear === true;
     for (const job of Object.keys(P.CHARACTERS)) {
       result.automation.priorities[job] = {};
       for (const n of P.SKILLS[job]) {
@@ -82,7 +83,8 @@
         r.unlocked = true;
         unlocks.push({ id: 'reincarnation', icon: 'repeat', title: '転生', detail: '新たな旅へ · 転生ツリー', target: 'reincarnation', rebirth: true },
           { id: 'auto-skills', icon: 'spark', title: 'スキル自動取得', detail: '設定 / 7段階の優先度', target: 'options' },
-          { id: 'auto-gems', icon: 'gem', title: 'ジェム自動装備', detail: '設定 / 効果と容量を優先', target: 'options' });
+          { id: 'auto-gems', icon: 'gem', title: 'ジェム自動装備', detail: '設定 / 効果と容量を優先', target: 'options' },
+          { id: 'wait-main-gear', icon: 'arrow', title: 'メイン強化後に進行', detail: '設定 / 全員の武器・防具', target: 'options' });
       }
     }
     return unlocks;
