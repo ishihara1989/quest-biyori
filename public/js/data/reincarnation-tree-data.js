@@ -133,9 +133,12 @@
   chain('gem', 1520, bossSteps.map(([id, name, cost], index) => [id, name, cost,
     [effect('制作の大ボス素材費', index === 3 ? '0' : (75 - index * 25) + '%', 'gemBossDiscount', 25)], { milestone: index === 3 }]),
     ['main-free'], 'ジェム制作の大ボス素材（星界の残滓を含む）。必要量75%→50%→25%→0、端数切り上げ。最終段階は欠片のみで制作。欠片の必要数は維持。地域Lv強化の結晶は対象外。', '制作 / 大ボス素材');
-  chain('harvest', 1680, [[2.25, 100], [2.5, 600], [2.75, 1800], [3, 6000], [3.25, 16000], [3.5, 40000], [3.75, 100000], [4, 250000]].map(([amount, cost], index) => [
-    amount === 4 ? 'gold4' : 'gold-step-' + (index + 1), amount === 4 ? '黄金の極星' : '黄金の記憶 ' + (index + 2), cost,
-    [effect('ゴールド', '×' + amount, 'gold', amount, 'max')],
+  // Match the drop-count progression; keep old IDs so existing purchases survive.
+  const goldSteps = [[3, 100], [4, 120], ...dropSteps];
+  chain('harvest', 1680, goldSteps.map(([amount, cost], index) => [
+    index === 7 ? 'gold4' : amount === 100 ? 'gold100' : 'gold-step-' + (index + 1),
+    amount === 100 ? '黄金の極星' : '黄金の記憶 ' + (index + 2), cost,
+    [effect('ゴールド', '×' + amount, 'gold', amount, 'max')], { milestone: [20, 100].includes(amount) },
   ]), ['gold2'], 'ドロップ数倍率とは別枠。', '収穫 / ゴールド');
   const mapSize = { width: 1760, height: Math.ceil((Math.max(...nodes.map(n => n.y)) + 70) / 10) * 10 };
   const byId = Object.fromEntries(nodes.map(n => [n.id, n]));

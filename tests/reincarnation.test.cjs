@@ -139,3 +139,40 @@ test('SP milestones and quadrupled capacities reach the new totals without chang
  s.reincarnation.cycle=1000000;const restored=D.readSave(JSON.stringify(s));assert.deepEqual(restored.reincarnation.owned,s.reincarnation.owned);assert.deepEqual(R.bonuses(restored),b);
  const reversed={owned:new Set([...s.reincarnation.owned].reverse())};assert.deepEqual(T.totals(reversed),b);
 });
+
+
+test('gold progression matches harvest through 100x, enforces the whole chain and preserves legacy purchases',()=>{
+ const branch=T.branches.find(b=>b.heading==='収穫 / ゴールド'),ids=['gold2',...branch.ids];
+ const expected=[2,3,4,5,6,7,8,9,10,12,14,16,18,20,25,30,40,50,60,75,100];
+ assert.equal(ids.length,21);assert.equal(T.byId['gold-step-1'].cost,100);
+ const s=ready();s.reincarnation.cycle=1000000;s.reincarnation.total=100000000;
+ assert.equal(R.purchase(s,'gold100'),false);
+ for(const [index,id]of ids.entries()){
+  if(index)assert.deepEqual(T.byId[id].requires,[ids[index-1]]);
+  if(index>=2){const drop=T.nodes.find(n=>n.effects.some(e=>e.key==='drop'&&e.amount===expected[index]));assert.equal(T.byId[id].cost,drop.cost);}
+  const budget=s.reincarnation.total,spent=budget-R.points(s);s.reincarnation.total=spent+T.byId[id].cost-1;
+  assert.equal(R.purchase(s,id),false);s.reincarnation.total++;assert.ok(R.purchase(s,id));assert.equal(R.points(s),0);s.reincarnation.total=budget;
+  assert.equal(R.bonuses(s).gold,expected[index]);assert.equal(R.bonuses(s).drop,1);
+  const n=T.byId[id];assert.ok(n.y+55<=T.mapSize.height);assert.equal(T.nodes.filter(other=>other.x===n.x&&other.y===n.y).length,1);
+ }
+ const restored=D.readSave(JSON.stringify(s));assert.deepEqual(restored.reincarnation.owned,s.reincarnation.owned);assert.equal(R.bonuses(restored).gold,100);
+ assert.equal(T.totals({owned:new Set([...ids].reverse())}).gold,100);
+ const legacy=ready();legacy.reincarnation.cycle=5000;legacy.reincarnation.total=500000;
+ legacy.reincarnation.owned=['gold2',...Array.from({length:7},(_,i)=>'gold-step-'+(i+1)),'gold4'];
+ const loaded=D.readSave(JSON.stringify(legacy));assert.deepEqual(loaded.reincarnation.owned,legacy.reincarnation.owned);assert.equal(R.bonuses(loaded).gold,10);
+ assert.equal(R.status(loaded,'gold-step-9'),'available');assert.equal(R.status(loaded,'gold100'),'locked');
+ assert.equal(R.points(loaded),500000-15040);
+});
+
+test('expanded gold rewards use the absolute multiplier once with treasure hunt and battle snapshots',()=>{
+ const s=ready();s.gold=0;s.goldRemainder=0;own(s,'gold-step-1');
+ const snapshot=R.capture(s);assert.equal(snapshot.bonuses.gold,3);
+ assert.equal(D.addGold(s,10,.5),45);
+ own(s,'gold100');assert.equal(R.bonuses(s).gold,100);
+ const before=s.gold;const reward=D.award(s,1,.5,snapshot);assert.equal(reward.gold,D.STAGES[0].reward*1.5*3);assert.equal(s.gold-before,reward.gold);
+ assert.equal(D.addGold(s,10,.5),1500);
+ const run=S.createRun(1,{builds:{warrior:P.stats(s,'warrior')},reincarnationBonuses:R.capture(s).bonuses});
+ assert.equal(D.addGold(run,10,.5),1500);const pending=Rewards.create(run);
+ Rewards.record(pending,{type:'loot',enemy:'slime',gold:1500,goldRemainder:0});
+ const wallet=s.gold;assert.equal(Rewards.settle(s,pending,true,()=>.99).gold,1500);assert.equal(s.gold-wallet,1500);
+});
