@@ -283,6 +283,11 @@
     if (save.autoMode === 'off') return null;
     const stage = ALL_STAGES.find(s => s.id === stageId);
     if (!victory) return { stage: stage?.special ? stage.unlockStage : Math.max(1, stageId - 1), mode: 'same' };
+    if (save.autoMode === 'advance' && save.reincarnation?.unlocked && save.reincarnation.automation?.waitForMainGear) {
+      let gearStage = stage;
+      while (gearStage?.special) gearStage = ALL_STAGES.find(s => s.id === gearStage.unlockStage);
+      if (gearStage && !AutoGear.mainComplete(save, gearStage.id)) return { stage: stageId, mode: save.autoMode };
+    }
     const next = nextStage(stageId);
     const skip = Rebirth.skipDestination(save,stageId);
     if (save.autoMode === 'advance' && skip && isUnlocked(save,skip)) return {stage:skip,mode:save.autoMode};
