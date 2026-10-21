@@ -62,7 +62,8 @@ test('regional first clears unlock forge pages; every region 10 reports actual n
     save.cleared.push(stage); assert.deepEqual(U.collect(save, stage), []);
     const end = region.id * 10, before = seed(end - 1), unlock = U.collect(before, end).find(row => row.recipes);
     const expected = C.RECIPES.filter(row => row.stages.every(id => id <= end) && row.stages.includes(end)).map(row => row.id);
-    assert.deepEqual(unlock.recipes, expected); assert.equal(expected.length, 9);
+    assert.deepEqual(unlock.recipes, expected); assert.equal(expected.length, 12);
+    assert.match(unlock.detail, /素材変換 \+9 \/ コモン購入 \+3/);
     for (let number = 1; number < 10; number++) {
       const id = (region.id - 1) * 10 + number;
       assert.equal(U.collect(seed(id - 1), id).some(row => row.recipes), false);

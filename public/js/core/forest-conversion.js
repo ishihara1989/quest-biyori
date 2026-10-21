@@ -5,6 +5,7 @@
   else root.ForestConversion = api;
 })(globalThis, D => {
   const CATEGORIES = Object.freeze([
+    { id: 'gold-common', from: 'ゴールド', to: 'コモン' },
     { id: 'common-crystal', from: 'コモン', to: '結晶' },
     { id: 'crystal-common', from: '結晶', to: 'コモン' },
     { id: 'crystal-rare', from: '結晶', to: '大ボス' },
@@ -21,14 +22,16 @@
       common: Object.freeze(items.filter(item => item.rarity === 'common').map(item => item.id)),
       rare: items.find(item => item.rarity === 'rare')?.id,
       unlockStage: stages.find(stage => stage.number === 10).id,
+      commonPrice: region.id * 50,
     });
   }));
-  function recipe(region, category, inputs, output, amount) {
+  function recipe(region, category, inputs, output, amount, gold = 0) {
     const stages = [region.unlockStage];
     return Object.freeze({ id: region.id + '-' + category + '-' + output, region: region.id, category,
-      inputs: Object.freeze(inputs), output, amount, stages: Object.freeze(stages) });
+      inputs: Object.freeze(inputs), output, amount, gold, stages: Object.freeze(stages) });
   }
   const RECIPES = Object.freeze(REGIONS.flatMap(region => [
+    ...region.common.map(id => recipe(region, 'gold-common', {}, id, 1, region.commonPrice)),
     recipe(region, 'common-crystal', Object.fromEntries(region.common.map(id => [id, 2])), region.crystal, 1),
     ...region.common.map(id => recipe(region, 'crystal-common', { [region.crystal]: 1 }, id, 3)),
     ...(region.rare ? [
@@ -47,7 +50,9 @@
     if (!integer(times) || !times || !save.inventory) return { ...result, status: 'invalid' };
     const counts = [...Object.keys(recipe.inputs), recipe.output].map(id => save.inventory[id] ?? 0);
     if (!counts.every(integer)) return { ...result, status: 'invalid' };
-    const resources = Math.min(...Object.entries(recipe.inputs).map(([id, amount]) => Math.floor((save.inventory[id] ?? 0) / amount)));
+    if (recipe.gold && !integer(save.gold)) return { ...result, status: 'invalid' };
+    const resources = Math.min(...Object.entries(recipe.inputs).map(([id, amount]) => Math.floor((save.inventory[id] ?? 0) / amount)),
+      recipe.gold ? Math.floor(save.gold / recipe.gold) : Number.MAX_SAFE_INTEGER);
     const room = Math.floor((Number.MAX_SAFE_INTEGER - (save.inventory[recipe.output] ?? 0)) / recipe.amount);
     result.max = Math.min(resources, room);
     result.status = times > resources ? 'cost' : times > room ? 'overflow' : 'available';
@@ -57,6 +62,7 @@
     const transaction = plan(save, recipeId, times);
     if (transaction.status !== 'available') return false;
     const { recipe } = transaction;
+    if (recipe.gold) save.gold -= recipe.gold * times;
     for (const [id, amount] of Object.entries(recipe.inputs)) save.inventory[id] = (save.inventory[id] ?? 0) - amount * times;
     save.inventory[recipe.output] = (save.inventory[recipe.output] ?? 0) + recipe.amount * times;
     return true;

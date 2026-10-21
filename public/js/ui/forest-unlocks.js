@@ -13,7 +13,7 @@
     const after = new Set([...save.cleared, stageId]), entries = [], region = D.REGIONS[stage.region - 1];
     if (stage.number === 1) entries.push({ id: 'forge-' + region.id, icon: 'sword', title: region.name + ' / 鍛冶', detail: '武器・防具', target: 'forge', region: region.id });
     const recipes = C.RECIPES.filter(recipe => recipe.stages.every(id => after.has(id)) && !recipe.stages.every(id => save.cleared.includes(id)));
-    if (recipes.length) entries.push({ id: 'recipes-' + stageId, icon: 'repeat', title: region.name + ' / 変換', detail: '素材変換 +' + recipes.length + ' レシピ', target: 'inventory', region: region.id, recipes: recipes.map(row => row.id) });
+    if (recipes.length) entries.push({ id: 'recipes-' + stageId, icon: 'repeat', title: region.name + ' / 変換・購入', detail: '素材変換 +' + recipes.filter(row => !row.gold).length + ' / コモン購入 +' + recipes.filter(row => row.gold).length, target: 'inventory', region: region.id, recipes: recipes.map(row => row.id) });
     if (stageId === 10) entries.push({ id: 'auto-gear', icon: 'spark', title: '自動強化', detail: '設定 / 優先度', target: 'options' });
     if (stageId === 50) entries.push({ id: 'gem-workshop', icon: 'gem', title: '工房', detail: 'ジェム / 合成・解体・強化・変換', target: 'gems' });
     for (const special of D.SPECIAL_STAGES) if (special.unlockStage === stageId) entries.unshift({ id: special.id, icon: 'spark', title: special.realmName, detail: '特殊ステージ / ' + special.name, target: 'stages', stage: special.id, special: true });

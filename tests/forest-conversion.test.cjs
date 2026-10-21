@@ -4,20 +4,27 @@ const D = require('../public/js/data/forest-data.js'), C = require('../public/js
 const ready = () => { const save = D.freshSave(); save.cleared = D.STAGES.map(stage => stage.id); return save; };
 const recipes = (region, category) => C.RECIPES.filter(row => row.region === region && row.category === category);
 const funded = () => {
-  const save = ready(); save.gold = 123;
+  const save = ready(); save.gold = 100000;
   save.inventory = Object.fromEntries(D.ITEMS.filter(item => item.type !== 'gem').map(item => [item.id, 20]));
   return save;
 };
 
-test('all ten regions provide five conversion categories and nine concrete recipes', () => {
+test('all ten regions provide conversion and common purchases at increasing prices up to 500G', () => {
   assert.equal(C.REGIONS.length, 10);
-  assert.equal(C.CATEGORIES.length, 5);
-  assert.equal(C.RECIPES.length, 90);
-  assert.equal(new Set(C.RECIPES.map(row => row.id)).size, 90);
+  assert.equal(C.CATEGORIES.length, 6);
+  assert.equal(C.RECIPES.length, 120);
+  assert.equal(new Set(C.RECIPES.map(row => row.id)).size, 120);
   for (const region of C.REGIONS) {
     assert.equal(region.common.length, 3);
     assert.ok(region.rare);
-    assert.deepEqual(C.CATEGORIES.map(category => recipes(region.id, category.id).length), [1, 3, 1, 1, 3]);
+    assert.deepEqual(C.CATEGORIES.map(category => recipes(region.id, category.id).length), [3, 1, 3, 1, 1, 3]);
+    assert.equal(region.commonPrice, region.id * 50);
+    for (const purchase of recipes(region.id, 'gold-common')) {
+      assert.deepEqual(purchase.inputs, {});
+      assert.equal(purchase.gold, region.commonPrice);
+      assert.equal(purchase.amount, 1);
+      assert.equal(D.ITEMS.find(item => item.id === purchase.output).rarity, 'common');
+    }
     assert.equal(region.unlockStage, region.id * 10);
     for (const recipe of C.RECIPES.filter(row => row.region === region.id)) assert.deepEqual(recipe.stages, [region.id * 10]);
   }
@@ -31,7 +38,7 @@ for (const region of C.REGIONS) {
       for (const [id, amount] of Object.entries(before.inventory)) {
         assert.equal(save.inventory[id], amount - (recipe.inputs[id] || 0) + (recipe.output === id ? recipe.amount : 0), recipe.id + ': ' + id);
       }
-      assert.equal(save.gold, before.gold);
+      assert.equal(save.gold, before.gold - recipe.gold);
       assert.deepEqual(save.cleared, before.cleared);
       assert.deepEqual(save.progression, before.progression);
       assert.deepEqual(save.gems, before.gems);
@@ -64,14 +71,14 @@ test('unlocking requires the regional final stage clear, regardless of inventory
   assert.equal(save.inventory.wood, 1);
 });
 
-test('every region keeps all recipes locked through stage 9 and unlocks all nine at stage 10', () => {
+test('every region keeps conversion and purchases locked through stage 9 and unlocks both at stage 10', () => {
   for (const region of C.REGIONS) {
     const save = funded(); save.cleared = [];
     const base = (region.id - 1) * 10;
     for (let number = 1; number <= 10; number++) {
       save.cleared.push(base + number);
       const available = C.RECIPES.filter(row => row.region === region.id && C.plan(save, row.id).status === 'available');
-      assert.equal(available.length, number < 10 ? 0 : 9);
+      assert.equal(available.length, number < 10 ? 0 : 12);
       const restored = D.readSave(JSON.stringify(save));
       assert.equal(C.RECIPES.filter(row => row.region === region.id && C.plan(restored, row.id).status === 'available').length, available.length);
     }
@@ -139,4 +146,53 @@ test('conversion remains exact after saving and restoring; round trips cannot mu
   assert.equal(C.convert(restored, toCrystal.id, 2), true);
   assert.equal(restored.inventory.crystal, 6); assert.equal(restored.inventory.wood, 0);
   assert.equal(C.convert(restored, toCrystal.id), false);
+});
+
+test('purchases debit gold exactly for 1/10/100/MAX, preserve other items and persist', () => {
+  for (const recipe of C.RECIPES.filter(row => row.gold)) {
+    for (const times of [1, 10, 100, 'max']) {
+      const save = ready(); save.gold = recipe.gold * 123 + 17;
+      save.inventory = { ...save.inventory, [recipe.output]: 7, [C.REGIONS.find(r => r.id === recipe.region).crystal]: 11 };
+      const before = structuredClone(save), amount = times === 'max' ? C.plan(save, recipe.id).max : times;
+      assert.equal(C.plan(save, recipe.id).max, 123);
+      assert.equal(C.convert(save, recipe.id, amount), true);
+      assert.equal(save.gold, before.gold - recipe.gold * amount);
+      assert.deepEqual(save.inventory, { ...before.inventory, [recipe.output]: 7 + amount });
+      const restored = D.readSave(JSON.stringify(save));
+      assert.equal(restored.gold, save.gold);
+      assert.deepEqual(restored.inventory, save.inventory);
+    }
+  }
+});
+
+test('purchase affordability, invalid gold and output capacity never partially debit', () => {
+  const recipe = recipes(10, 'gold-common')[0];
+  for (const gold of [0, 499, 500, 501, 999, 1000]) {
+    const save = ready(); save.gold = gold;
+    assert.equal(C.plan(save, recipe.id).max, Math.floor(gold / 500));
+    const before = structuredClone(save);
+    assert.equal(C.convert(save, recipe.id, Math.floor(gold / 500) + 1), false);
+    assert.deepEqual(save, before);
+    if (gold >= 500) {
+      assert.equal(C.convert(save, recipe.id), true);
+      assert.equal(save.gold, gold - 500);
+      assert.equal(save.inventory[recipe.output], 1);
+    }
+  }
+  for (const gold of [undefined, -1, .5, NaN, Infinity, '500', Number.MAX_SAFE_INTEGER + 1]) {
+    const save = ready(); save.gold = gold; const before = structuredClone(save);
+    assert.equal(C.plan(save, recipe.id).status, 'invalid');
+    assert.equal(C.convert(save, recipe.id), false);
+    assert.deepEqual(save, before);
+  }
+  const save = ready(); save.gold = 2000; save.inventory[recipe.output] = Number.MAX_SAFE_INTEGER - 1;
+  assert.equal(C.plan(save, recipe.id).max, 1);
+  const before = structuredClone(save);
+  assert.equal(C.convert(save, recipe.id, 2), false);
+  assert.deepEqual(save, before);
+  assert.equal(C.convert(save, recipe.id), true);
+  assert.equal(save.gold, 1500);
+  assert.equal(save.inventory[recipe.output], Number.MAX_SAFE_INTEGER);
+  assert.equal(C.plan(save, recipe.id).status, 'overflow');
+  assert.equal(C.plan(save, recipe.id).max, 0);
 });

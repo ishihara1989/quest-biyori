@@ -8,7 +8,7 @@ const output = path.join(__dirname, '../../output/conversion');
 const url = process.env.FOREST_TEST_URL || 'http://127.0.0.1:4191/';
 const errors = [];
 function fixture(cleared = D.STAGES.map(stage => stage.id)) {
-  const save = D.freshSave(); save.cleared = cleared; save.gold = 1000; save.autoMode = 'off';
+  const save = D.freshSave(); save.cleared = cleared; save.gold = 100000; save.autoMode = 'off';
   for (const item of D.ITEMS.filter(item => item.type === 'material')) save.inventory[item.id] = 100;
   return D.readSave(JSON.stringify(save));
 }
@@ -68,6 +68,18 @@ async function assertNoOverflow(page) {
     for (const width of [1440, 390, 320]) {
       const batch = await pageFor(browser, seedBulk, { viewport: { width, height: 1000 } });
       await ready(batch); await open(batch);
+      const purchase = C.RECIPES.find(row => row.region === 1 && row.category === 'gold-common');
+      for (const times of [1, 10, 100, 'max']) {
+        const expected = structuredClone(await saved(batch));
+        const amount = times === 'max' ? C.plan(expected, purchase.id).max : times;
+        assert.equal(C.convert(expected, purchase.id, amount), true);
+        await convertButton(batch, purchase.id, times).click();
+        assert.deepEqual((await saved(batch)).inventory, expected.inventory);
+        assert.equal((await saved(batch)).gold, expected.gold);
+      }
+      assert.equal(await convertButton(batch, purchase.id).isDisabled(), true);
+      assert.equal(await convertButton(batch, purchase.id, 'max').isDisabled(), true);
+      assert.match(await batch.locator('[data-recipe="' + purchase.id + '"] .conversion-state').innerText(), /ゴールド不足/);
       const recipe = C.RECIPES.find(row => row.region === 1 && row.category === 'common-crystal');
       for (const times of [10, 100]) {
         const expected = structuredClone(await saved(batch));
@@ -97,17 +109,18 @@ async function assertNoOverflow(page) {
       assert.equal(await shardButton('max').isDisabled(), true);
       assert.ok(await batch.locator('#menu-content').evaluate(el => el.scrollWidth <= el.clientWidth + 2));
       await batch.screenshot({ path: path.join(output, 'shard-batch-' + width + '.png'), fullPage: true });
-      const snapshot = (await saved(batch)).inventory;
+      const snapshot = await saved(batch);
       await batch.reload(); await batch.locator('#start-button:not([disabled])').waitFor();
-      assert.deepEqual((await saved(batch)).inventory, snapshot);
+      assert.deepEqual((await saved(batch)).inventory, snapshot.inventory);
+      assert.equal((await saved(batch)).gold, snapshot.gold);
       await batch.context().close();
     }
-    console.log('PASS material 10/100 and shard 1/10/100/MAX exact amounts, insufficient buttons, persistence and 1440/390/320px layouts');
+    console.log('PASS purchase 1/10/100/MAX, material 10/100 and shard 1/10/100/MAX exact amounts, insufficient buttons, persistence and 1440/390/320px layouts');
     const page = await pageFor(browser, fixture()); await ready(page); await open(page);
     assert.deepEqual(await page.locator('.conversion-tabs [role=tab]').allTextContents(), D.REGIONS.map(region => region.name));
-    assert.equal(await page.locator('.conversion-group').count(), 5);
-    assert.equal(await page.locator('.conversion-card').count(), 5);
-    assert.equal(await page.locator('[data-conversion-choice]').count(), 6);
+    assert.equal(await page.locator('.conversion-group').count(), 6);
+    assert.equal(await page.locator('.conversion-card').count(), 6);
+    assert.equal(await page.locator('[data-conversion-choice]').count(), 9);
     for (const region of C.REGIONS) {
       await page.locator('[data-conversion-region="' + region.id + '"]').click();
       for (const recipe of C.RECIPES.filter(row => row.region === region.id)) {
@@ -117,7 +130,7 @@ async function assertNoOverflow(page) {
         await convertButton(page, recipe.id).click();
         const after = await saved(page);
         assert.deepEqual(after.inventory, expected.inventory, recipe.id);
-        assert.equal(after.gold, before.gold); assert.deepEqual(after.cleared, before.cleared);
+        assert.equal(after.gold, expected.gold); assert.deepEqual(after.cleared, before.cleared);
         assert.match(await page.locator('.conversion-feedback').innerText(), new RegExp('＋' + recipe.amount));
       }
     }
@@ -172,14 +185,22 @@ async function assertNoOverflow(page) {
     await ready(unlock); await open(unlock);
     assert.equal(await unlock.locator('[data-conversion-region="9"]').count(), 0);
     const crystalCommon = C.RECIPES.find(row => row.region === 9 && row.category === 'crystal-common');
+    const unlockedPurchase = C.RECIPES.find(row => row.region === 9 && row.category === 'gold-common');
     assert.equal(await convertButton(unlock, crystalCommon.id).count(), 0);
+    assert.equal(await convertButton(unlock, unlockedPurchase.id).count(), 0);
     await unlock.locator('#close-menu').click(); await unlock.locator('#start-button').click();
     await unlock.clock.runFor(1000); await unlock.locator('#result-skip').click();
     await unlock.clock.runFor(100); await unlock.locator('[data-loot-id=crystal]').click();
     await unlock.locator('[data-filter=conversion]').click();
     await unlock.locator('[data-conversion-region="9"]').click();
     assert.equal(await convertButton(unlock, crystalCommon.id).isEnabled(), true);
+    assert.equal(await convertButton(unlock, unlockedPurchase.id).isEnabled(), true);
     assert.equal(await unlock.locator('.conversion-card.locked').count(), 0);
+    const expectedPurchase = structuredClone(await saved(unlock));
+    assert.equal(C.convert(expectedPurchase, unlockedPurchase.id), true);
+    await convertButton(unlock, unlockedPurchase.id).click();
+    assert.deepEqual((await saved(unlock)).inventory, expectedPurchase.inventory);
+    assert.equal((await saved(unlock)).gold, expectedPurchase.gold);
     await convertButton(unlock, crystalCommon.id).click();
     assert.ok((await saved(unlock)).cleared.includes(90));
     await unlock.reload(); await unlock.locator('#start-button:not([disabled])').waitFor(); await open(unlock);

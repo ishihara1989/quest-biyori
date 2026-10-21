@@ -486,7 +486,7 @@
   }
   function renderInventoryContent() {
     const filter = menu === 'gems' ? gemFilter : inventoryFilter;
-    const filters = menu === 'gems' ? [['gem', '装備'], ...(P.Gem.unlocked(save) ? [['gem-workshop', '工房'], ['gem-dismantle', '一括解体']] : [])] : [['material', '所持品'], ['conversion', '変換']];
+    const filters = menu === 'gems' ? [['gem', '装備'], ...(P.Gem.unlocked(save) ? [['gem-workshop', '工房'], ['gem-dismantle', '一括解体']] : [])] : [['material', '所持品'], ['conversion', '変換・購入']];
     if (menu === 'gems') text('menu-title', 'ジェム');
     if (filter === 'gem-dismantle') {
       $('menu-content').innerHTML = '<div class="inventory-menu"><div class="inventory-toolbar"><div class="inventory-filters">' + filters.map(([id, label]) => '<button data-filter="' + id + '" aria-pressed="' + (filter === id) + '">' + label + '</button>').join('') + '</div></div>' + gemWorkshop.wallet() + gemDismantleUI.renderBulk() + '</div>'; return;
