@@ -49,7 +49,7 @@ async function main(){
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await shot(page,'stat-purchases-'+viewport.width);
     await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
     const restored=await saveOf(page),b=R.bonuses(restored);assert.equal(restored.reincarnation.owned.length,9);assert.equal(b.mainFree,undefined);
-    assert.deepEqual([b.damage,b.hp,b.sp,b.common,b.attackCap,b.guardCap,b.utilityCap],[300,300,75,200,100,100,100]);assert.equal(R.points(restored),550);
+    assert.deepEqual([b.damage,b.hp,b.sp,b.common,b.attackCap,b.guardCap,b.utilityCap],[300,300,75,200,100,100,100]);assert.equal(R.points(restored),850);
     await context.close();
    }
    if(process.argv.includes('--stats-only')){assert.deepEqual(errors,[]);console.log('Stat/capacity tree UI passed: prerequisites, effects, purchases and reload at 1440px/390px; no resource or runtime errors.');return;}

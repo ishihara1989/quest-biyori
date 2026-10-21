@@ -100,7 +100,7 @@ test('stat and capacity entry nodes need only currency, retain their next prereq
   s.reincarnation.total=T.byId[id].cost;assert.ok(R.purchase(s,id));assert.equal(R.points(s),0);assert.equal(R.purchase(s,id),false);
   s.reincarnation.total=200;const restored=D.readSave(JSON.stringify(s));
   assert.deepEqual(restored.reincarnation.owned,[id]);assert.equal(R.points(restored),200-T.byId[id].cost);assert.equal(R.bonuses(restored).mainFree,undefined);
-  assert.equal(R.status(restored,nextId),'unaffordable');
+  assert.equal(R.status(restored,nextId),['damage25','hp25'].includes(id)?'available':'unaffordable');
  }
 });
 

@@ -23,11 +23,11 @@
   node('sub20', '工匠の心得', 'journey', 20, 840, 180, ['origin'], [effect('通常サブ素材費', '−20%', 'sub', 20)], { initial: true, note: '端数切り上げ。通常10地域・全職・武器／防具。' });
   node('unique20', '秘匠の心得', 'journey', 40, 1070, 180, ['origin'], [effect('通常ユニーク素材費', '−20%', 'unique', 20)], { initial: true, note: '端数切り上げ。通常10地域・全職・武器／防具。' });
   node('drop3', '豊穣の枝', 'harvest', 80, 150, 310, ['drop2'], [effect('ドロップ数', '×3', 'drop', 3, 'max')], { initial: true });
-  node('gold-cost', '旅支度の節約', 'journey', 100, 380, 310, ['gold2'], [effect('装備ゴールド費', '−20%', 'gearGold', 20)]);
+  node('gold-cost', '旅支度の節約', 'journey', 50, 380, 310, ['gold2'], [effect('装備ゴールド費', '−20%', 'gearGold', 20)]);
   node('sub40', '工匠の叡智', 'journey', 140, 1070, 310, ['sub20'], [effect('通常サブ素材費', '−20pt', 'sub', 20)]);
-  node('main-free', 'メイン材料無償化', 'journey', 400, 725, 363, ['xp3', 'sub20', 'unique20'], [effect('通常メイン素材費', '0', 'mainFree', 1)], { initial: true, milestone: true, note: '通常10地域・全職・武器／防具のメイン。ゴールドは必要。サブ・ユニーク・女神ツリー・ジェム制作は対象外。前提・今周の到達条件は維持。' });
+  node('main-free', 'メイン材料無償化', 'journey', 200, 725, 363, ['xp3', 'sub20', 'unique20'], [effect('通常メイン素材費', '0', 'mainFree', 1)], { initial: true, milestone: true, note: '通常10地域・全職・武器／防具のメイン。ゴールドは必要。サブ・ユニーク・女神ツリー・ジェム制作は対象外。前提・今周の到達条件は維持。' });
   node('drop4', '豊穣の実', 'harvest', 120, 150, 440, ['drop3'], [effect('ドロップ数', '×4', 'drop', 4, 'max')], { initial: true });
-  node('drop-rate', '幸運の星', 'harvest', 180, 380, 440, ['gold2'], [effect('ドロップ率', '＋100%', 'rate', 100)], { note: 'パーティー共通で1回加算。ジェム制限中も有効。ドロップ数倍率とは別枠。' });
+  node('drop-rate', '幸運の星', 'harvest', 90, 380, 440, ['gold2'], [effect('ドロップ率', '＋100%', 'rate', 100)], { note: 'パーティー共通で1回加算。ジェム制限中も有効。ドロップ数倍率とは別枠。' });
   node('unique40', '秘匠の叡智', 'journey', 180, 1070, 440, ['unique20'], [effect('通常ユニーク素材費', '−20pt', 'unique', 20)]);
   const branches = [];
   function chain(family, x, entries, parents, note = '', heading = families[family].name) {
@@ -62,7 +62,7 @@
   ], ['main-free'], '大ボス・必須特殊ボスを越えない。通過区間の経験値・素材・ゴールドなし。通過の確定は挑戦先の勝利時。');
   // Node IDs remain stable so existing purchases gain the revised effects on load.
   const combatTargets = [2, 3, 4, 5, 7.5, 10, 15, 20, 30, 40, 60, 80, 100, 150, 200, 300, 400, 500];
-  const combatPrices = [100, 200, 350, 600, 1200, 2200, 4000, 8000, 14000, 24000, 40000, 65000, 100000, 160000, 250000, 400000, 650000, 1000000];
+  const combatPrices = [50, 100, 350, 600, 1200, 2200, 4000, 8000, 14000, 24000, 40000, 65000, 100000, 160000, 250000, 400000, 650000, 1000000];
   for (const [family, key, x, label, title, secondary, secondaryLabel, special] of [
     ['power', 'damage', 560, '与ダメージ', '闘志', 'boss', '対ボス与ダメージ', 'boss50'],
     ['guard', 'hp', 720, '最大HP', '生命', 'recovery', '回復量', 'recovery'],
@@ -133,7 +133,7 @@
   chain('gem', 1520, bossSteps.map(([id, name, cost], index) => [id, name, cost,
     [effect('制作の大ボス素材費', index === 3 ? '0' : (75 - index * 25) + '%', 'gemBossDiscount', 25)], { milestone: index === 3 }]),
     ['main-free'], 'ジェム制作の大ボス素材（星界の残滓を含む）。必要量75%→50%→25%→0、端数切り上げ。最終段階は欠片のみで制作。欠片の必要数は維持。地域Lv強化の結晶は対象外。', '制作 / 大ボス素材');
-  chain('harvest', 1680, [[2.25, 200], [2.5, 600], [2.75, 1800], [3, 6000], [3.25, 16000], [3.5, 40000], [3.75, 100000], [4, 250000]].map(([amount, cost], index) => [
+  chain('harvest', 1680, [[2.25, 100], [2.5, 600], [2.75, 1800], [3, 6000], [3.25, 16000], [3.5, 40000], [3.75, 100000], [4, 250000]].map(([amount, cost], index) => [
     amount === 4 ? 'gold4' : 'gold-step-' + (index + 1), amount === 4 ? '黄金の極星' : '黄金の記憶 ' + (index + 2), cost,
     [effect('ゴールド', '×' + amount, 'gold', amount, 'max')],
   ]), ['gold2'], 'ドロップ数倍率とは別枠。', '収穫 / ゴールド');
