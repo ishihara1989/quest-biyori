@@ -46,7 +46,7 @@ test('equipment cost reductions apply equally to status, manual, batch and path 
 });
 test('experience stays normalized; SP uses integer arithmetic and retains extra ranks through save restoration',()=>{
  const s=ready();own(s,'sp50');own(s,'sp-ten2');own(s,'xp6561');
- for(let lv=1;lv<=100;lv++){s.progression.characters.warrior.xp=P.experience(lv);assert.equal(P.totalPoints(s,'warrior'),Math.floor(lv*150/100)+2*Math.floor(lv/10)+60);}
+ for(let lv=1;lv<=100;lv++){s.progression.characters.warrior.xp=P.experience(lv);assert.equal(P.totalPoints(s,'warrior'),Math.floor(lv*300/100)+2*Math.floor(lv/10)+60);}
  s.progression.characters.warrior.xp=P.experience(1);P.gainXp(s,1);assert.equal(s.progression.characters.warrior.xp.level,8);assert.ok(s.progression.characters.warrior.xp.progress>=0&&s.progression.characters.warrior.xp.progress<1);
  s.progression.characters.warrior.xp=P.experience(100);P.respec(s,'warrior');s.reincarnation.automation.skills=true;Auto.skills(s);const ranks=structuredClone(s.progression.characters.warrior.skillRanks),points=P.points(s,'warrior');s.reincarnation.cycle=10000;s.reincarnation.total=1000000;const restored=D.readSave(JSON.stringify(s));assert.deepEqual(restored.progression.characters.warrior.skillRanks,ranks);assert.equal(P.points(restored,'warrior'),points);
 });
@@ -90,4 +90,52 @@ test('laser/truck interruption cancels all scheduled damage; death cleans plans 
  const api={STEP:100,state:(e,state,motion)=>Object.assign(e,{state,motion}),attackPower:()=>e.damage,hit:()=>{throw Error('cancelled attack damaged');}};
  e.deliveryCycle=5;C.begin(run,e,run.hero,api,events);assert.equal(e.deliveryPlan.kind,'truck');I.impact(run,{id:'test',interferencePenetration:0},e,1e9,events);assert.equal(e.actionInterference.interrupted,true);C.act(run,e,run.hero,api,events);assert.ok(e.deliveryPlan.cancelAt!=null);assert.deepEqual(e.deliveryPlan.shapes,[]);run.time+=2400;C.act(run,e,run.hero,api,events);assert.equal(e.deliveryPlan,null);
  run.elapsed=179999;S.hit(run,run.hero,e,1e15,[],false,null,{critical:false});assert.equal(e.hp,0);assert.equal(e.deliveryPlan,null);S.update(run,2500);assert.equal(run.status,'victory');assert.equal(run.failureReason,undefined);
+});
+
+test('stat and capacity entry nodes need only currency, retain their next prerequisites and survive reload',()=>{
+ for(const [id,nextId] of [['damage25','damage-step-2'],['hp25','hp-step-2'],['sp20','sp25'],['common25','common50']]){
+  const s=R.prepare(ready(),D.freshSave);s.reincarnation.cycle=2;s.reincarnation.total=200;
+  assert.deepEqual(T.byId[id].requires,[]);assert.equal(R.status(s,nextId),'locked');
+  s.reincarnation.total=T.byId[id].cost-1;assert.equal(R.purchase(s,id),false);
+  s.reincarnation.total=T.byId[id].cost;assert.ok(R.purchase(s,id));assert.equal(R.points(s),0);assert.equal(R.purchase(s,id),false);
+  s.reincarnation.total=200;const restored=D.readSave(JSON.stringify(s));
+  assert.deepEqual(restored.reincarnation.owned,[id]);assert.equal(R.points(restored),200-T.byId[id].cost);assert.equal(R.bonuses(restored).mainFree,undefined);
+  assert.equal(R.status(restored,nextId),'unaffordable');
+ }
+});
+
+test('combat branches use stronger absolute multipliers for every job and keep battle snapshots fixed',()=>{
+ const expected=[2,3,4,5,7.5,10,15,20,30,40,60,80,100,150,200,300,400,500],s=ready();
+ const before=Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,P.stats(s,job)]));
+ for(const [family,key] of [['power','damage'],['guard','hp']]){
+  const branch=T.branches.find(b=>b.family===family);assert.equal(branch.ids.length,expected.length);
+  s.reincarnation.total=1e8;assert.equal(R.purchase(s,branch.ids.at(-1)),false);
+  for(const [i,id] of branch.ids.entries()){assert.ok(R.purchase(s,id));assert.equal(R.bonuses(s)[key]/100,expected[i]);}
+ }
+ for(const job of Object.keys(P.CHARACTERS)){
+  const after=P.stats(s,job);assert.equal(after.maxHp,before[job].maxHp*500);
+  for(const key of ['baseDamage','weaponDamage','magicDamage'])assert.equal(after[key],before[job][key]*500);
+ }
+ const old={...s.reincarnation,cycle:1000000,total:1e8};const restored=R.restore(old);
+ assert.deepEqual(restored.owned,s.reincarnation.owned);assert.equal(T.totals({owned:new Set(restored.owned)}).damage,50000);
+ const fresh=R.prepare(ready(),D.freshSave);fresh.reincarnation.total=500;
+ const run=S.createRun(1,{builds:{warrior:P.stats(fresh,'warrior')}}),initialHp=run.hero.maxHp,initialDamage=run.hero.damage;
+ assert.ok(R.purchase(fresh,'damage25'));assert.ok(R.purchase(fresh,'hp25'));
+ assert.equal(run.hero.maxHp,initialHp);assert.equal(run.hero.damage,initialDamage);
+ const next=S.createRun(1,{builds:{warrior:P.stats(fresh,'warrior')}});assert.equal(next.hero.maxHp,initialHp*2);assert.equal(next.hero.damage,initialDamage*2);
+});
+
+test('SP milestones and quadrupled capacities reach the new totals without changing dedicated capacity',()=>{
+ const s=ready();s.reincarnation.total=1e8;
+ const before=Object.fromEntries(Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].map(slot=>[job+':'+slot,P.capacity(s,job,slot)])));
+ for(const [id,expected]of [['sp20',50],['sp25',75],['sp30',100],['sp40',150],['sp50',200]]){own(s,id);assert.equal(R.bonuses(s).sp,expected);}
+ const branch=T.branches.find(b=>b.family==='gem'&&b.x===1040);
+ for(const id of branch.ids)assert.ok(R.purchase(s,id));
+ const b=R.bonuses(s);assert.equal(b.common,3000);for(const key of ['attackCap','guardCap','utilityCap'])assert.equal(b[key],800);
+ for(const job of Object.keys(P.CHARACTERS))for(const slot of ['weapon','armor']){
+  const cap=P.capacity(s,job,slot),base=before[job+':'+slot];assert.equal(cap.common,base.common+3000);
+  for(const key of ['attack','defense','utility'])assert.equal(cap[key],base[key]+800);assert.equal(cap.dedicated,base.dedicated);
+ }
+ s.reincarnation.cycle=1000000;const restored=D.readSave(JSON.stringify(s));assert.deepEqual(restored.reincarnation.owned,s.reincarnation.owned);assert.deepEqual(R.bonuses(restored),b);
+ const reversed={owned:new Set([...s.reincarnation.owned].reverse())};assert.deepEqual(T.totals(reversed),b);
 });

@@ -31,6 +31,30 @@ async function main(){
  const labOnly=process.argv.includes('--lab-only'),scenesOnly=process.argv.includes('--scenes-only'),boss=B.reference();boss.autoMode='off';
  try{
   if(!labOnly&&!scenesOnly){
+   for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
+    const seed=R.prepare(Object.assign(B.reference(),{reincarnation:{...R.fresh(),discovered:true,unlocked:true,defeatedCycle:0}}),D.freshSave);
+    seed.reincarnation.cycle=20;seed.reincarnation.total=2000;
+    const {page,context}=await pageFor(seed,viewport);await menu(page,'reincarnation');
+    for(const [id,nextId,value] of [['damage25','damage-step-2','×2'],['hp25','hp-step-2','×2'],['sp20','sp25','＋50%'],['common25','common50','＋100']]){
+     await page.locator('[data-reinc-node="'+nextId+'"]').click();assert.equal(await page.locator('[data-reinc-confirm]').isDisabled(),true);
+     await page.locator('[data-reinc-node="'+id+'"]').click();
+     assert.equal(await page.locator('.reinc-prerequisites button').count(),0);assert.equal(await page.locator('.reinc-effect b').first().innerText(),value);
+     assert.equal(await page.locator('[data-reinc-confirm]').isEnabled(),true);await page.locator('.reincarnation-page img').evaluateAll(images=>Promise.all(images.map(img=>img.decode())));await shot(page,'stat-entry-'+id+'-'+viewport.width);
+     await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="'+id+'"]').click();
+     await page.locator('[data-reinc-node="'+nextId+'"]').click();assert.equal(await page.locator('[data-reinc-confirm]').isEnabled(),true);
+     await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="'+nextId+'"]').click();
+    }
+    await page.locator('[data-reinc-node="direction25"]').click();assert.deepEqual(await page.locator('.reinc-effect b').allTextContents(),['＋100','＋100','＋100']);
+    await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="direction25"]').click();
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await shot(page,'stat-purchases-'+viewport.width);
+    await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
+    const restored=await saveOf(page),b=R.bonuses(restored);assert.equal(restored.reincarnation.owned.length,9);assert.equal(b.mainFree,undefined);
+    assert.deepEqual([b.damage,b.hp,b.sp,b.common,b.attackCap,b.guardCap,b.utilityCap],[300,300,75,200,100,100,100]);assert.equal(R.points(restored),550);
+    await context.close();
+   }
+   if(process.argv.includes('--stats-only')){assert.deepEqual(errors,[]);console.log('Stat/capacity tree UI passed: prerequisites, effects, purchases and reload at 1440px/390px; no resource or runtime errors.');return;}
+  }
+  if(!labOnly&&!scenesOnly){
   const fresh=await pageFor(D.freshSave());assert.equal(await fresh.page.locator('#reincarnation-nav').isVisible(),false);await menu(fresh.page,'achievements');
   assert.ok(!(await fresh.page.locator('#menu-content').innerText()).match(/転生|エピック|十二の星|女神/));await shot(fresh.page,'fresh-achievements');await fresh.context.close();
   const epic=B.reference();epic.selectedStage='extradimensional-goddess';epic.reincarnation.discovered=false;epic.autoMode='off';

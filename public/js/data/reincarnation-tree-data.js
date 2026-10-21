@@ -60,7 +60,8 @@
     ['skip3', '星間の近道', 4500, [effect('挑戦先の最大進行幅', '＋3', 'skip', 3, 'max')]],
     ['skip4', '星渡りの極み', 80000, [effect('挑戦先の最大進行幅', '＋4', 'skip', 4, 'max')]],
   ], ['main-free'], '大ボス・必須特殊ボスを越えない。通過区間の経験値・素材・ゴールドなし。通過の確定は挑戦先の勝利時。');
-  const combatTargets = [1.25, 1.5, 1.75, 2, 2.5, 3, 4, 5, 6, 7.5, 10, 15, 20, 30, 40, 50, 60, 75];
+  // Node IDs remain stable so existing purchases gain the revised effects on load.
+  const combatTargets = [2, 3, 4, 5, 7.5, 10, 15, 20, 30, 40, 60, 80, 100, 150, 200, 300, 400, 500];
   const combatPrices = [100, 200, 350, 600, 1200, 2200, 4000, 8000, 14000, 24000, 40000, 65000, 100000, 160000, 250000, 400000, 650000, 1000000];
   for (const [family, key, x, label, title, secondary, secondaryLabel, special] of [
     ['power', 'damage', 560, '与ダメージ', '闘志', 'boss', '対ボス与ダメージ', 'boss50'],
@@ -72,26 +73,26 @@
       const effects = [effect(label, '×' + target, key, Math.round(target * 100), 'max')];
       if ([5, 7, 9, 11, 13].includes(index)) effects.push(effect(secondaryLabel, '＋10%', secondary, 10));
       return [id, index === 17 ? '神域の' + title : title + ' ' + (index + 1), combatPrices[index], effects, { milestone: [4, 12, 17].includes(index) }];
-    }), ['main-free']);
+    }), []);
   }
   chain('skill', 880, [
-    ['sp20', '技の記憶 I', 140, [effect('レベル由来SP', '＋20%', 'sp', 20)]],
-    ['sp25', '技の記憶 II', 250, [effect('レベル由来SP', '＋5%', 'sp', 5)]],
-    ['sp30', '技の記憶 III', 450, [effect('レベル由来SP', '＋5%', 'sp', 5)]],
+    ['sp20', '技の記憶 I', 140, [effect('レベル由来SP', '＋50%', 'sp', 50)]],
+    ['sp25', '技の記憶 II', 250, [effect('レベル由来SP', '＋25%', 'sp', 25)]],
+    ['sp30', '技の記憶 III', 450, [effect('レベル由来SP', '＋25%', 'sp', 25)]],
     ['sp-ten', '研鑽の環 I', 1000, [effect('10Lvごとの追加SP', '＋1', 'spTen', 1)]],
     ['mp5', '魔力の循環 I', 2200, [effect('MP消費', '−5%', 'mp', 5)]],
     ['skill10', '技能の芽', 4500, [effect('技能威力', '＋10%', 'skill', 10)]],
-    ['sp40', '技の記憶 IV', 8000, [effect('レベル由来SP', '＋10%', 'sp', 10)]],
+    ['sp40', '技の記憶 IV', 8000, [effect('レベル由来SP', '＋50%', 'sp', 50)]],
     ['mp10', '魔力の循環 II', 14000, [effect('MP消費', '−5%', 'mp', 5)]],
     ['skill20', '技能の枝', 24000, [effect('技能威力', '＋10%', 'skill', 10)]],
     ['sp-ten2', '研鑽の環 II', 40000, [effect('10Lvごとの追加SP', '＋1', 'spTen', 1)]],
-    ['sp50', '技の記憶 V', 65000, [effect('レベル由来SP', '＋10%', 'sp', 10)]],
+    ['sp50', '技の記憶 V', 65000, [effect('レベル由来SP', '＋50%', 'sp', 50)]],
     ['mp15', '魔力の循環 III', 100000, [effect('MP消費', '−5%', 'mp', 5)]],
     ['skill35', '技能の花', 160000, [effect('技能威力', '＋15%', 'skill', 15)]],
     ['mp20', '魔力の循環 IV', 250000, [effect('MP消費', '−5%', 'mp', 5)]],
     ['skill50', '技能の極星', 500000, [effect('技能威力', '＋15%', 'skill', 15)]],
     ['skill75', '神域の技能', 1000000, [effect('技能威力', '＋25%', 'skill', 25)], { milestone: true }],
-  ], ['main-free']);
+  ], []);
   const capacitySteps = [
     ['common', 25, 70], ['common', 50, 140], ['direction', 25, 250], ['common', 75, 450],
     ['direction', 50, 800], ['common', 100, 1400], ['direction', 75, 2400], ['common', 125, 4000],
@@ -99,13 +100,14 @@
     ['direction', 150, 40000], ['common', 350, 80000], ['direction', 200, 160000], ['common', 500, 400000], ['common', 750, 1000000],
   ];
   const previousCapacity = { common: 0, direction: 0 };
-  chain('gem', 1040, capacitySteps.map(([kind, amount, cost]) => {
+  chain('gem', 1040, capacitySteps.map(([kind, baseAmount, cost]) => {
+    const amount = baseAmount * 4;
     const delta = amount - previousCapacity[kind]; previousCapacity[kind] = amount;
-    return [kind + amount, (kind === 'common' ? '星の器 ' : '三彩の器 ') + amount, cost,
+    return [kind + baseAmount, (kind === 'common' ? '星の器 ' : '三彩の器 ') + amount, cost,
       kind === 'common' ? [effect('共通容量', '＋' + delta, 'common', delta)] :
         [['攻撃容量', 'attackCap'], ['防御容量', 'guardCap'], ['補助容量', 'utilityCap']].map(([label, key]) => effect(label, '＋' + delta, key, delta)),
-      { milestone: amount === 750 }];
-  }), ['main-free'], '方向容量・共通容量は別枠。職専用容量は対象外。');
+      { milestone: baseAmount === 750 }];
+  }), [], '方向容量・共通容量は別枠。職専用容量は対象外。');
   chain('trial', 1200, [
     ['trial-open', '試練の扉', 260, [effect('試練', '解放', 'trial', 1)], { milestone: true }],
     ['trial-seals', '封印の試練', 1500, [effect('宝石封印・技能制限', '解放', 'seals', 1)]],
