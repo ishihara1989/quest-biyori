@@ -5,11 +5,12 @@
   else root.ForestAutoGear = api;
 })(globalThis, P => {
   const KINDS = ['main', 'sub', 'unique'], CHARACTERS = Object.keys(P.CHARACTERS);
-  const fresh = () => ({ enabled: false, kinds: [...KINDS], characters: [...CHARACTERS], excludedKinds: [], excludedCharacters: [] });
+  const fresh = () => ({ enabled: false, priorityBy: 'kinds', kinds: [...KINDS], characters: [...CHARACTERS], excludedKinds: [], excludedCharacters: [] });
   const order = (input, keys) => [...new Set([...(Array.isArray(input) ? input.filter(id => keys.includes(id)) : []), ...keys])];
   function restore(raw) {
     const settings = fresh();
     settings.enabled = raw?.enabled === true;
+    settings.priorityBy = raw?.priorityBy === 'characters' ? 'characters' : 'kinds';
     settings.kinds = order(raw?.kinds, KINDS);
     settings.characters = order(raw?.characters, CHARACTERS);
     settings.excludedKinds = Array.isArray(raw?.excludedKinds) ? [...new Set(raw.excludedKinds.filter(id => KINDS.includes(id)))] : [];
@@ -36,10 +37,13 @@
           .filter(node => cleared.has(node.stage) && !settings.excludedKinds.includes(kind(node)) && !owned.has(node.id))
           .map(node => ({ character, slot, node }));
       }));
-    candidates.sort((a, b) => settings.kinds.indexOf(kind(a.node)) - settings.kinds.indexOf(kind(b.node))
-      || settings.characters.indexOf(a.character) - settings.characters.indexOf(b.character)
-      || (typeof a.node.stage==='number'?a.node.stage:101) - (typeof b.node.stage==='number'?b.node.stage:101) || (a.node.depth || 0) - (b.node.depth || 0)
-      || a.node.y - b.node.y || ['weapon', 'armor'].indexOf(a.slot) - ['weapon', 'armor'].indexOf(b.slot));
+    candidates.sort((a, b) => {
+      const kindOrder = settings.kinds.indexOf(kind(a.node)) - settings.kinds.indexOf(kind(b.node));
+      const characterOrder = settings.characters.indexOf(a.character) - settings.characters.indexOf(b.character);
+      return (settings.priorityBy === 'characters' ? characterOrder || kindOrder : kindOrder || characterOrder)
+        || (typeof a.node.stage==='number'?a.node.stage:101) - (typeof b.node.stage==='number'?b.node.stage:101) || (a.node.depth || 0) - (b.node.depth || 0)
+        || a.node.y - b.node.y || ['weapon', 'armor'].indexOf(a.slot) - ['weapon', 'armor'].indexOf(b.slot);
+    });
     const kinds = new Map(candidates.map(row => [row.node.id, kind(row.node)]));
     return P.purchaseGearBatch(save, candidates.map(row => ({ character: row.character, slot: row.slot, node: row.node.id })), limit)
       .map(row => ({ ...row, kind: kinds.get(row.node) }));
