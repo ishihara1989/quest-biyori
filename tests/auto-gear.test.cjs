@@ -21,6 +21,46 @@ test('node priority leads character priority; order can favor a different charac
   save.autoGear.kinds = ['sub', 'unique', 'main'];
   assert.equal(A.acquire(save, 1)[0].kind, 'sub');
 });
+test('priority basis changes the winner when character and kind rankings conflict', () => {
+  const save = seed(); save.autoGear.characters = ['mage', ...A.CHARACTERS.filter(id => id !== 'mage')];
+  const first = A.acquire(save, 20);
+  assert.ok(first.every(row => row.character === 'mage' && row.kind === 'main'));
+  const characterFirst = structuredClone(save); characterFirst.autoGear.priorityBy = 'characters';
+  assert.equal(A.acquire(save, 1)[0].character, 'warrior');
+  const next = A.acquire(characterFirst, 1)[0];
+  assert.equal(next.character, 'mage'); assert.equal(next.kind, 'sub');
+  characterFirst.autoGear.priorityBy = 'kinds';
+  const switched = A.acquire(characterFirst, 1)[0];
+  assert.equal(switched.character, 'warrior'); assert.equal(switched.kind, 'main');
+});
+
+test('character priority still respects the selected kind order and newly available prerequisites', () => {
+  const save = seed(); save.autoGear.priorityBy = 'characters';
+  save.autoGear.characters = ['mage', ...A.CHARACTERS.filter(id => id !== 'mage')];
+  save.autoGear.kinds = ['sub', 'unique', 'main'];
+  const bought = A.acquire(save, 3);
+  assert.deepEqual(bought.map(row => [row.character, row.kind, row.slot, row.node]), [
+    ['mage', 'main', 'weapon', 'main-1'],
+    ['mage', 'sub', 'weapon', 'branch-1-up-1'],
+    ['mage', 'sub', 'weapon', 'branch-1-down-1'],
+  ]);
+});
+
+for (const priorityBy of ['kinds', 'characters']) test('manual costs, exclusions and affordability remain effective with ' + priorityBy + ' first', () => {
+  const save = seed(12); save.autoGear.priorityBy = priorityBy;
+  save.autoGear.excludedCharacters = ['warrior', 'paladin']; save.autoGear.excludedKinds = ['unique'];
+  const manual = structuredClone(save), bought = A.acquire(save);
+  assert.equal(bought.length, 24);
+  assert.ok(bought.every(row => row.character === 'mage' && row.kind !== 'unique'));
+  for (const row of bought) assert.equal(P.purchase(manual, row.character, row.slot, row.node), true);
+  assert.deepEqual(save, manual);
+  const poor = seed(); poor.autoGear.priorityBy = priorityBy; poor.gold = 10; poor.inventory = {};
+  poor.autoGear.characters = ['mage', ...A.CHARACTERS.filter(id => id !== 'mage')];
+  assert.deepEqual(A.acquire(poor), [{ character: 'mage', slot: 'weapon', node: 'main-1', kind: 'main' }]);
+  assert.equal(poor.gold, 0);
+  assert.deepEqual(A.acquire(poor), []);
+});
+
 test('automatic spending matches manual purchases exactly and never repurchases nodes', () => {
   const save = seed(), manual = structuredClone(save), bought = A.acquire(save);
   assert.equal(bought.length, 24);
@@ -49,7 +89,14 @@ test('unaffordable high priority nodes skip to an affordable candidate without g
 test('settings survive restoration; old and invalid settings receive safe defaults', () => {
   const save = seed(); save.autoGear.kinds.reverse(); save.autoGear.characters.reverse();
   save.autoGear.excludedKinds = ['sub']; save.autoGear.excludedCharacters = ['mage'];
+  save.autoGear.priorityBy = 'characters';
   assert.deepEqual(D.readSave(JSON.stringify(save)).autoGear, save.autoGear);
+  delete save.autoGear.priorityBy;
+  const migrated = D.readSave(JSON.stringify(save));
+  assert.deepEqual(migrated.autoGear, { ...save.autoGear, priorityBy: 'kinds' });
+  assert.deepEqual(D.readSave(JSON.stringify(migrated)).autoGear, migrated.autoGear);
+  for (const invalid of [undefined, null, '', 'character', [], 1]) assert.equal(A.restore({ priorityBy: invalid }).priorityBy, 'kinds');
+  assert.equal(A.fresh().priorityBy, 'kinds');
   delete save.autoGear; assert.deepEqual(D.readSave(JSON.stringify(save)).autoGear, A.fresh());
   const clean = A.restore({ enabled: 'true', kinds: ['unique', 'unique', 'skills'], characters: [null, 'mage'], excludedKinds: ['sub', 'sub', 'skills'], excludedCharacters: ['unknown'] });
   assert.equal(clean.enabled, false); assert.deepEqual(clean.kinds, ['unique', 'main', 'sub']);

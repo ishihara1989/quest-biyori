@@ -46,8 +46,7 @@ function focused(page, id) { return page.locator('#' + id).evaluate(node => node
   try {
     const locked = await setup(browser, seed(9));
     await locked.page.locator('[data-open=options]').first().click();
-    assert.equal(await locked.page.locator('[data-auto-gear-toggle]').isDisabled(), true);
-    assert.equal(await locked.page.locator('[data-gear-target=main]').isDisabled(), true);
+    assert.equal(await locked.page.locator('.auto-gear-options').count(), 0);
     await locked.page.screenshot({ path: path.join(output, 'options-locked.png') });
     await locked.context.close();
 
@@ -59,13 +58,25 @@ function focused(page, id) { return page.locator('#' + id).evaluate(node => node
     await page.locator('[data-gear-move=mage][data-direction="-1"]').click();
     for (const id of ['warrior', 'paladin', 'sub', 'unique']) await page.locator('[data-gear-target=' + id + ']').click();
     assert.equal(await page.locator('[data-gear-group=characters][data-gear-target]').first().getAttribute('data-gear-target'), 'mage');
+    const priorities = (await settings.saved()).autoGear;
+    await page.locator('[data-gear-priority=characters]').click();
+    assert.equal((await settings.saved()).autoGear.priorityBy, 'characters');
+    assert.equal(await page.locator('[data-gear-priority=characters]').getAttribute('aria-pressed'), 'true');
+    assert.deepEqual(await page.locator('.auto-gear-priority h4').allTextContents(), ['① キャラ', '② 種別']);
+    assert.match(await page.locator('.auto-gear-hint').getAttribute('data-tip'), /キャラ → ノード種別/);
+    assert.equal(await page.locator('[data-gear-priority=characters]').evaluate(node => node === document.activeElement), true);
+    assert.deepEqual((await settings.saved()).autoGear, { ...priorities, priorityBy: 'characters' });
+    await page.locator('[data-gear-priority=kinds]').press('Enter');
+    assert.deepEqual(await page.locator('.auto-gear-priority h4').allTextContents(), ['① 種別', '② キャラ']);
+    assert.match(await page.locator('.auto-gear-hint').getAttribute('data-tip'), /ノード種別 → キャラ/);
+    await page.locator('[data-gear-priority=characters]').click();
     for (const [width, height] of [[1440, 1000], [390, 844], [360, 740]]) {
       await page.setViewportSize({ width, height }); await page.clock.runFor(100);
-      await page.locator('[data-gear-target=miko]').scrollIntoViewIfNeeded();
+      await page.locator('[data-gear-priority=characters]').scrollIntoViewIfNeeded();
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
-      const bounds = await page.locator('[data-gear-target=miko]').boundingBox();
+      const bounds = await page.locator('[data-gear-priority=characters]').boundingBox();
       assert.ok(bounds.x >= 0 && bounds.x + bounds.width <= width);
-      await page.screenshot({ path: path.join(output, 'options-' + width + '.png') });
+      await page.locator('.auto-gear-options').screenshot({ path: path.join(output, 'options-' + width + '.png') });
     }
     await page.locator('[data-auto-gear-toggle]').click();
     let saved = await settings.saved();
@@ -81,7 +92,28 @@ function focused(page, id) { return page.locator('#' + id).evaluate(node => node
     await page.locator('[data-reset-save]').click(); await page.locator('#reset-confirm').click();
     await page.locator('#start-button:not([disabled])').waitFor(); assert.deepEqual((await settings.saved()).autoGear, D.freshSave().autoGear);
     await settings.context.close();
-    console.log('PASS locked options, priorities/exclusions, immediate purchase, OFF, save/reload/reset and three viewport widths');
+    console.log('PASS locked options, priority basis/order/exclusions, immediate purchase, OFF, save/reload/reset and three viewport widths');
+
+    for (const priorityBy of ['kinds', 'characters']) {
+      const save = seed(10); save.gold = 1000000;
+      for (const item of D.ITEMS.filter(i => i.type === 'material')) save.inventory[item.id] = 10000;
+      for (const slot of ['weapon', 'armor']) for (let i = 1; i <= 10; i++) assert.equal(P.purchase(save, 'mage', slot, 'main-' + i), true);
+      save.gold = 20; save.inventory = { crystal: 1 };
+      save.autoGear.characters = ['mage', ...save.autoGear.characters.filter(id => id !== 'mage')];
+      const scenario = await setup(browser, save);
+      await scenario.page.locator('[data-open=options]').first().click();
+      if (priorityBy === 'characters') await scenario.page.locator('[data-gear-priority=characters]').click();
+      await scenario.page.locator('[data-auto-gear-toggle]').click();
+      const acquired = await scenario.saved();
+      assert.equal(acquired.gold, 0);
+      assert.equal(acquired.progression.characters.mage.weapon.includes('branch-1-up-1'), priorityBy === 'characters');
+      assert.deepEqual(acquired.progression.characters.warrior.weapon, priorityBy === 'kinds' ? ['main-1'] : []);
+      assert.deepEqual(acquired.progression.characters.warrior.armor, priorityBy === 'kinds' ? ['main-1'] : []);
+      await scenario.context.close();
+    }
+    assert.deepEqual(errors, []);
+    console.log('PASS conflicting character/kind rankings spend the same limited budget according to the selected basis');
+    if (process.argv.includes('--options-only')) return;
 
     const first = await setup(browser, seed());
     await first.page.locator('[data-open=forge]').first().click(); assert.equal(await first.page.locator('.forge-page-locked').isVisible(), true);
