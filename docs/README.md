@@ -12,11 +12,13 @@
 - [四足歩行の標準制作・検収手順](policies/quadruped-trot-production.md)
 - [リポジトリの配置基準](policies/repository-structure.md)
 
+- [実績・転生の女神・転生システム（本編実装・試練はComing soon）](implementation/reincarnation-system.md)
+
 ## 設計・仕様・提案
 
 - [転生の女神：SF兵器5種・大型トラック・ゲート帰還](design/reincarnation-goddess-arsenal.md)
 
-- [転生・転生チャレンジ・実績システム企画（検討中・ツリーモック作成）](design/reincarnation-system-design.md)
+- [転生・転生チャレンジ・実績システム企画（設計経緯・採用範囲は実装記録へ）](design/reincarnation-system-design.md)
 - [転生ツリーのレビュー用モック（2026-10-18・未採用案）](design/reincarnation-tree-mock.md)
 
 - [戦闘の引っかかり・描画性能とUI便利機能の初期調査（2026-10-15）](design/battle-performance-and-ui-review.md)

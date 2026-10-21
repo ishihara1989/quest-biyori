@@ -45,7 +45,7 @@
     const recipe = RECIPES.find(row => row.id === recipeId);
     const result = { recipe, times, status: 'unknown', max: 0, lockedStages: [] };
     if (!recipe) return result;
-    result.lockedStages = recipe.stages.filter(id => !save.cleared.includes(id));
+    result.lockedStages = recipe.stages.filter(id => !D.stageVisible(save,D.STAGES.find(s=>s.id===id)) || ![...save.cleared,...(save.reincarnation?.passed||[]),...(save.reincarnation?.lifetimeStages||[]),...(save.reincarnation?.lifetimePassed||[])].includes(id));
     if (result.lockedStages.length) return { ...result, status: 'locked' };
     if (!integer(times) || !times || !save.inventory) return { ...result, status: 'invalid' };
     const counts = [...Object.keys(recipe.inputs), recipe.output].map(id => save.inventory[id] ?? 0);
@@ -65,6 +65,7 @@
     if (recipe.gold) save.gold -= recipe.gold * times;
     for (const [id, amount] of Object.entries(recipe.inputs)) save.inventory[id] = (save.inventory[id] ?? 0) - amount * times;
     save.inventory[recipe.output] = (save.inventory[recipe.output] ?? 0) + recipe.amount * times;
+    if(save.achievements&&!save.achievements.usage.includes('convert'))save.achievements.usage.push('convert');
     return true;
   }
   return { CATEGORIES, REGIONS, RECIPES, plan, convert };

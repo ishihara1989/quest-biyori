@@ -1,5 +1,7 @@
 # 転生の女神：SF兵器・トラック・帰還ゲート制作
 
+2026-10-20追記：24素材77コマを本編登録。原画は変更せず、再生メタデータを本編形式へ正規化。[本編の実装・検証](../implementation/reincarnation-system.md)を参照。以下は制作時の記録。
+
 2026-10-20 JST。**本編未登録の制作候補。** 通常のSF兵器5種と、別枠の大型トラック大技を制作する。
 
 [設計・範囲・想定効果](../design/reincarnation-goddess-arsenal.md) / [素材・再構築](../../development/assets/reincarnation-goddess/arsenal-v1/README.md) / [検収画面](../../development/labs/reincarnation-goddess-arsenal.html)

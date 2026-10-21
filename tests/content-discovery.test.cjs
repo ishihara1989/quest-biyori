@@ -49,7 +49,8 @@ test('old saves recover cleared encounters without exposing the next stage', () 
   const seed = D.freshSave(); delete seed.encounteredEnemies; seed.cleared = [1, 2];
   const restored = D.readSave(JSON.stringify(seed));
   assert.equal(D.enemyDiscovered(restored, 'boss-slime'), true);
-  assert.equal(D.enemyDiscovered(restored, 'boar'), false);
+  // Forest 1 now contains all three common families; the next boss is unseen.
+  assert.equal(D.enemyDiscovered(restored, 'boss-boar'), false);
   assert.equal(D.stageVisible(restored, D.STAGES[2]), true);
   assert.equal(D.stageVisible(restored, D.STAGES[3]), false);
   assert.equal(D.regionVisible(restored, 2), false);

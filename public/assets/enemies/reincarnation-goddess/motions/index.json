@@ -1,0 +1,98 @@
+[
+  {
+    "id": "idle",
+    "manifest": "idle/manifest.json"
+  },
+  {
+    "id": "move",
+    "manifest": "move/manifest.json"
+  },
+  {
+    "id": "hit",
+    "manifest": "hit/manifest.json"
+  },
+  {
+    "id": "return",
+    "manifest": "return/manifest.json"
+  },
+  {
+    "id": "body-pulse",
+    "manifest": "body-pulse/manifest.json"
+  },
+  {
+    "id": "body-laser",
+    "manifest": "body-laser/manifest.json"
+  },
+  {
+    "id": "body-missiles",
+    "manifest": "body-missiles/manifest.json"
+  },
+  {
+    "id": "body-discs",
+    "manifest": "body-discs/manifest.json"
+  },
+  {
+    "id": "body-orbital",
+    "manifest": "body-orbital/manifest.json"
+  },
+  {
+    "id": "truck-mount",
+    "manifest": "truck-mount/manifest.json"
+  },
+  {
+    "id": "truck-wait",
+    "manifest": "truck-wait/manifest.json"
+  },
+  {
+    "id": "truck-rush",
+    "manifest": "truck-rush/manifest.json"
+  },
+  {
+    "id": "truck-interrupt",
+    "manifest": "truck-interrupt/manifest.json"
+  },
+  {
+    "id": "fx-summon",
+    "manifest": "fx-summon/manifest.json"
+  },
+  {
+    "id": "fx-pulse",
+    "manifest": "fx-pulse/manifest.json"
+  },
+  {
+    "id": "fx-beam",
+    "manifest": "fx-beam/manifest.json"
+  },
+  {
+    "id": "fx-missile",
+    "manifest": "fx-missile/manifest.json"
+  },
+  {
+    "id": "fx-disc",
+    "manifest": "fx-disc/manifest.json"
+  },
+  {
+    "id": "fx-orbital",
+    "manifest": "fx-orbital/manifest.json"
+  },
+  {
+    "id": "fx-impact",
+    "manifest": "fx-impact/manifest.json"
+  },
+  {
+    "id": "fx-truck",
+    "manifest": "fx-truck/manifest.json"
+  },
+  {
+    "id": "fx-blast",
+    "manifest": "fx-blast/manifest.json"
+  },
+  {
+    "id": "fx-gate-open",
+    "manifest": "fx-gate-open/manifest.json"
+  },
+  {
+    "id": "fx-gate-close",
+    "manifest": "fx-gate-close/manifest.json"
+  }
+]

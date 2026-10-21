@@ -28,6 +28,22 @@
     miko: K.NODES,
   };
   const COMMON_MATERIALS = ['jelly', 'tusk', 'flower'];
+  const ReincarnationTree = typeof module === 'object' && module.exports ? require('../data/reincarnation-tree-data.js') : globalThis.ReincarnationTree;
+  const bonusCache = new WeakMap();
+  function permanent(save) {
+    const key = (save.reincarnation?.owned || []).join('|'), cached = bonusCache.get(save);
+    if (cached?.key === key) return cached.value;
+    const value = ReincarnationTree.totals({ owned: new Set(['origin', ...(save.reincarnation?.owned || [])]) });
+    bonusCache.set(save, { key, value }); return value;
+  }
+  const reached = (save, stage) => save.cleared.includes(stage) || !!save.reincarnation?.passed?.includes(stage);
+  const known = (save, stage) => reached(save, stage) || !!save.reincarnation?.lifetimeStages?.includes(stage) || !!save.reincarnation?.lifetimePassed?.includes(stage);
+  function gearCost(save, node) {
+    const b = permanent(save);
+    return Object.fromEntries(Object.entries(node.cost).map(([key, amount]) => [key,
+      key === 'gold' ? Math.ceil(amount * (100 - (b.gearGold || 0)) / 100) : typeof node.stage !== 'number' ? amount :
+      node.main && b.mainFree ? 0 : Math.ceil(amount * (100 - Math.min(100, node.main ? 0 : node.unique ? b.unique || 0 : b.sub || 0)) / 100)]));
+  }
   // Shared by every regional tree; regional remapping below preserves this order.
   const MAIN_MATERIALS = [[], ['jelly'], ['tusk'], ['flower'], ['jelly','tusk','flower'], ['jelly','tusk'], ['jelly','flower'], ['tusk','flower'], ['jelly','tusk','flower'], ['crystal']];
   const MAIN_NAMES = ['旅立ちの刻印', '雫の研磨', '獣牙の鍛造', '妖花の祝印', '群森の錬成', '獣雫の調和', '花雫の結晶', '茨の焼入れ', '深緑の真髄', '古樹の継承'];
@@ -176,10 +192,10 @@
     c.xp=experience(40);for(const slot of ['weapon','armor'])c[slot]=allGearTrees('miko',slot).filter(n=>n.main&&n.stage<=40).map(n=>n.id);
     for(const n of K.ACTIVE.filter(n=>n.kind==='active'&&n.unlockLevel<=40)){c.skillRanks[n.id]=5;c.skills.push(n.id);}return true;
   }
-  const unlocked = (save, id) => Object.hasOwn(CHARACTERS, id) && (!CHARACTERS[id].unlock || save.cleared.includes(CHARACTERS[id].unlock));
+  const unlocked = (save, id) => Object.hasOwn(CHARACTERS, id) && (!CHARACTERS[id].unlock || reached(save, CHARACTERS[id].unlock));
   const level = xp => xp.level;
   const xpPercent = xp => xp.level >= MAX_LEVEL ? 'MAX' : (xp.progress * 100).toFixed(2) + '%';
-  function totalPoints(save, id) { const c=save.progression.characters[id];return level(c.xp)+['weapon','armor'].reduce((sum,slot)=>sum+c[slot].reduce((points,uid)=>points+(GODDESS_SP.get(uid)||0),0),0); }
+  function totalPoints(save, id) { const c=save.progression.characters[id],lv=level(c.xp),b=permanent(save);return Math.floor(lv*(100+(b.sp||0))/100)+(b.spTen||0)*Math.floor(lv/10)+['weapon','armor'].reduce((sum,slot)=>sum+c[slot].reduce((points,uid)=>points+(GODDESS_SP.get(uid)||0),0),0); }
   function rank(save, id, nodeId) {
     const n = SKILLS[id]?.find(n => n.id === nodeId); if (!n) return 0;
     if (n.cost === 0) return 1;
@@ -202,9 +218,9 @@
     }));
   }
   function capacity(save, id, slot) {
-    const e = effects(save, id, slot);
-    return { attack:(slot==='weapon'?350:0)+(e.attackCapacity||0), defense:(slot==='armor'?300:0)+(e.defenseCapacity||0),
-      utility:(slot==='weapon'?100:150)+(e.utilityCapacity||0), common:50+(e.commonCapacity||0),dedicated:e.dedicatedCapacity||0,
+    const e = effects(save, id, slot), b = permanent(save);
+    return { attack:(slot==='weapon'?350:0)+(e.attackCapacity||0)+(b.attackCap||0), defense:(slot==='armor'?300:0)+(e.defenseCapacity||0)+(b.guardCap||0),
+      utility:(slot==='weapon'?100:150)+(e.utilityCapacity||0)+(b.utilityCap||0), common:50+(e.commonCapacity||0)+(b.common||0),dedicated:e.dedicatedCapacity||0,
       discount:1-Math.max(.6,.9**Math.round((e.discount||0)/.1)) };
   }
   function gemCost(save, id, slot, gemId, cap = capacity(save, id, slot)) {
@@ -225,7 +241,7 @@
     return { used, cap, fits: valid&&used.common <= cap.common&&used.dedicated<=cap.dedicated };
   }
   function stats(save, id) {
-    const c = CHARACTERS[id], state = save.progression.characters[id], lv = level(state.xp);
+    const c = CHARACTERS[id], state = save.progression.characters[id], lv = level(state.xp), b = permanent(save);
     const all = sumEffects([effects(save, id, 'weapon'), effects(save, id, 'armor'),
       ...SKILLS[id].map(n => Object.fromEntries(Object.entries(n.effect).map(([k,v]) => [k,v * rank(save,id,n.id)]))), ...['weapon', 'armor'].flatMap(slot => state.gems[slot].map(uid => Gem.describe(gemInstance(save, uid)).effect))]);
     const result = { ...c.base, level: lv, skillPower: 0, cooldownPenalty: 0, skillRange: 0, ...Object.fromEntries(Object.values(Gem.OPTIONS).filter(o=>!Object.hasOwn(c.base,o.key)).map(o=>[o.key,0])), ...Object.fromEntries(Object.entries(all).map(([k, v]) => [k, (c.base[k] || 0) + v])) };
@@ -235,7 +251,12 @@
     for (const key of ['maxHp', 'maxMp', 'defense']) result[key] *= 1 + (all[key + 'Percent'] || 0);
     if(result.epicMageArmor){result.maxMp*=3;result.mpRegen+=result.maxMp*.05;}
     result.mpRegen *= 1 + (all.mpRegenPercent || 0);
-    const damageScale = 1 + (all.damagePercent || 0);
+    result.maxHp *= b.hp / 100;
+    result.skillPower += (b.skill || 0) / 100;
+    result.healPower = (result.healPower || 0) + (b.recovery || 0) / 100;
+    result.reincarnationBoss = (b.boss || 0) / 100;
+    result.reincarnationBonuses = { ...b };
+    const damageScale = (1 + (all.damagePercent || 0)) * b.damage / 100;
     result.baseDamage = result.damage * damageScale;
     result.weaponDamage = (result.damage + (result.weaponFlat || 0)) * damageScale * (1 + (result.weaponPower || 0));
     result.magicDamage = (result.damage + (result.magicFlat || 0)) * damageScale * (1 + (result.magicPower || 0));
@@ -264,6 +285,8 @@
       result.paladinNormal=P.spec('mace',Math.max(1,rank(save,id,'mace')),rank(save,id,'mace-enhance'),result);
       result.paladinSkills=P.ACTIVE.filter(n=>n.kind==='active'&&rank(save,id,n.id)).map(n=>P.spec(n.id,rank(save,id,n.id),rank(save,id,n.id+'-enhance'),result));
     }
+    for (const key of ['warriorSkills','mageSkills','paladinSkills','ninjaSkills','shamanSkills','mikoSkills'])
+      for (const spec of result[key] || []) spec.mp *= (100 - (b.mp || 0)) / 100;
     return result;
   }
   function status(save, id, kind, n) {
@@ -272,8 +295,8 @@
     if (!unlocked(save, id)) return 'locked';
     if (skill && level(state.xp) < (n.unlockLevel || 1)) return 'locked';
     if (n.requires.some(req => skill ? !rank(save,id,req) : !state[kind].includes(req))) return 'locked';
-    if (!skill && !save.cleared.includes(n.stage)) return 'locked';
-    return skill ? points(save, id) >= n.cost ? 'available' : 'cost' : Object.entries(n.cost).every(([key, amount]) => (key === 'gold' ? save.gold : save.inventory[key] || 0) >= amount) ? 'available' : 'cost';
+    if (!skill && !reached(save, n.stage)) return 'locked';
+    return skill ? points(save, id) >= n.cost ? 'available' : 'cost' : Object.entries(gearCost(save,n)).every(([key, amount]) => (key === 'gold' ? save.gold : save.inventory[key] || 0) >= amount) ? 'available' : 'cost';
   }
   const purchaseTrees = new Map();
   function purchase(save, id, kind, nodeId) {
@@ -285,7 +308,7 @@
   }
   function purchaseNode(save, id, kind, n) {
     if (!n || status(save, id, kind, n) !== 'available') return false;
-    if (kind !== 'skills') for (const [key, amount] of Object.entries(n.cost)) { if (key === 'gold') save.gold -= amount; else save.inventory[key] -= amount; }
+    if (kind !== 'skills') for (const [key, amount] of Object.entries(gearCost(save,n))) { if (key === 'gold') save.gold -= amount; else if(amount) save.inventory[key] -= amount; }
     const c = save.progression.characters[id];
     if (kind === 'skills') { c.skillRanks ||= {}; c.skillRanks[n.id] = rank(save,id,n.id) + 1; }
     if (!c[kind].includes(n.id)) c[kind].push(n.id); return true;
@@ -325,11 +348,11 @@
       visiting.add(uid);
       for (const req of n.requires) if (!visit(req)) return false;
       visiting.delete(uid); visited.add(uid); plan.nodes.push(structuredClone(n));
-      for (const [key, amount] of Object.entries(n.cost)) plan.cost[key] = (plan.cost[key] || 0) + amount;
+      for (const [key, amount] of Object.entries(gearCost(save,n))) plan.cost[key] = (plan.cost[key] || 0) + amount;
       return true;
     }
     if (!visit(nodeId)) return { ...plan, nodes: [], cost: {} };
-    plan.blockedStage = plan.nodes.find(n => !save.cleared.includes(n.stage))?.stage ?? null;
+    plan.blockedStage = plan.nodes.find(n => !reached(save,n.stage))?.stage ?? null;
     plan.status = owned.has(nodeId) ? 'owned' : !unlocked(save, id) || plan.blockedStage !== null ? 'locked'
       : Object.entries(plan.cost).every(([key, amount]) => (key === 'gold' ? save.gold : save.inventory[key] || 0) >= amount) ? 'available' : 'cost';
     return plan;
@@ -340,7 +363,7 @@
     // Validate the entire path before spending anything or acquiring any nodes.
     for (const [key, amount] of Object.entries(plan.cost)) {
       if (key === 'gold') save.gold -= amount;
-      else save.inventory[key] -= amount;
+      else if(amount) save.inventory[key] -= amount;
     }
     save.progression.characters[id][slot].push(...plan.nodes.map(n => n.id));
     return true;
@@ -378,7 +401,7 @@
   function addGem(save,input,level=1,random=Math.random) {
     if(!Number.isSafeInteger(save.nextGemId)||save.nextGemId<1||save.nextGemId>=Number.MAX_SAFE_INTEGER)return null;
     const type=GEMS[input],value=Gem.validate(type?Gem.generate({rarity:type.rarity,family:type.family,level,random}):input);
-    if(!value)return null;const gem={...value,id:save.nextGemId++};save.gems.push(gem);Gem.rememberRarity(save,gem.rarity);return gem;
+    if(!value)return null;const gem={...value,id:save.nextGemId++};save.gems.push(gem);Gem.rememberRarity(save,gem.rarity);Gem.rememberEpic(save,gem);return gem;
   }
   function equipGem(save, id, slot, uid) {
     const gem = gemInstance(save, uid);
@@ -397,14 +420,14 @@
     const owner = gemOwner(save, uid);
     return owner ? unequipGem(save, owner.character, owner.slot, uid) : equipGem(save, id, slot, uid);
   }
-  function gainXp(save, stage) {
+  function gainXp(save, stage, xpExponent = permanent(save).xp) {
     const leveled = [];
     if (!Number.isSafeInteger(stage) || stage < 1) return leveled;
     for (const id of Object.keys(CHARACTERS)) if (unlocked(save, id)) {
       const c = save.progression.characters[id], before = level(c.xp);
       if(c.skipRecruitReward){const skip=c.skipRecruitReward;delete c.skipRecruitReward;if(stage===skip)continue;}
       if (c.xp.level >= MAX_LEVEL) { c.xp = experience(MAX_LEVEL); continue; }
-      let exponent = stage - c.xp.level - 1;
+      let exponent = stage + xpExponent - c.xp.level - 1;
       if (exponent <= -20) continue;
       // Carry in units of the current level. Never compute a positive power of 3.
       while (exponent > 0 && c.xp.level < MAX_LEVEL) { c.xp.progress = (c.xp.progress - 1) / 3; c.xp.level++; exponent--; }
@@ -416,8 +439,8 @@
     }
     return leveled;
   }
-  function restore(raw, cleared, instances = []) {
-    const clean = fresh(), save = { progression: clean, cleared, gems: instances, gold: 0 };
+  function restore(raw, cleared, instances = [], reincarnation = null) {
+    const clean = fresh(), save = { progression: clean, cleared, gems: instances, gold: 0, reincarnation };
     const equipped = new Set();
     for (const id of Object.keys(CHARACTERS)) {
       const input = raw?.characters?.[id], c = clean.characters[id];
@@ -444,7 +467,7 @@
         }
         // Restore in dependency order and reject orphaned purchases / overspent points.
         for (const n of nodes) if (n.cost !== 0 && requested.includes(n.id) && n.requires.every(req => c[kind].includes(req) || (kind === 'skills' && nodes.find(s => s.id === req)?.cost === 0)) &&
-          (kind === 'skills' ? points(save, id) >= n.cost : cleared.includes(n.stage)||(['ninja','shaman','miko'].includes(id)&&n.main&&n.stage<=CHARACTERS[id].unlock))) c[kind].push(n.id);
+          (kind === 'skills' ? points(save, id) >= n.cost : reached(save,n.stage)||(['ninja','shaman','miko'].includes(id)&&n.main&&n.stage<=CHARACTERS[id].unlock))) c[kind].push(n.id);
         if (Array.isArray(input?.gems?.[kind])) for (const uid of input.gems[kind]) if (Number.isSafeInteger(uid) && gemInstance(save, uid) && Gem.describe(gemInstance(save,uid)).jobs.includes(id) && !equipped.has(uid) && gemUsage(save, id, kind, [...c.gems[kind], uid]).fits) { c.gems[kind].push(uid); equipped.add(uid); }
       }
     }
@@ -452,5 +475,5 @@
     return clean;
   }
   function respec(save,id) { const c=save.progression.characters[id]; c.skills=[]; c.skillRanks={}; }
-  return { MAX_LEVEL, CHARACTERS, SKILLS, GEMS, Gem, GEM_DIRECTIONS, fresh, restore, unlocked, level, experience, xpPercent, totalPoints, points, rank, respec, decreaseSkill, gearTree, allGearTrees, equipmentAppearance, gearBonuses, effects, capacity, gemCost, gemCosts, gemUsage, gemInstance, gemOwner, addGem, availableGems, stats, status, purchase, purchaseGearBatch, gearPurchasePlan, purchaseGearPath, equipGem, unequipGem, toggleGem, gainXp, recruitNinja, recruitShaman, recruitMiko };
+  return { permanent, reached, known, gearCost, MAX_LEVEL, CHARACTERS, SKILLS, GEMS, Gem, GEM_DIRECTIONS, fresh, restore, unlocked, level, experience, xpPercent, totalPoints, points, rank, respec, decreaseSkill, gearTree, allGearTrees, equipmentAppearance, gearBonuses, effects, capacity, gemCost, gemCosts, gemUsage, gemInstance, gemOwner, addGem, availableGems, stats, status, purchase, purchaseGearBatch, gearPurchasePlan, purchaseGearPath, equipGem, unequipGem, toggleGem, gainXp, recruitNinja, recruitShaman, recruitMiko };
 });

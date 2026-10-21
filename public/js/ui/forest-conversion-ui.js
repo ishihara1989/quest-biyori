@@ -7,7 +7,7 @@ window.ForestConversionUI = {
     let region = initialRegion, container, feedback = null;
     const selectedOutputs = new Map();
     const item = id => D.ITEMS.find(row => row.id === id);
-    const visibleRecipes = () => C.RECIPES.filter(recipe => recipe.stages.every(id => save.cleared.includes(id)) &&
+    const visibleRecipes = () => C.RECIPES.filter(recipe => recipe.stages.every(id => ForestProgression.known(save,id)) &&
       [...Object.keys(recipe.inputs), recipe.output].every(id => D.itemDiscovered(save, item(id))));
     const visibleRegions = () => C.REGIONS.filter(row => visibleRecipes().some(recipe => recipe.region === row.id));
     const inputLabel = (recipe, times = 1) => recipe.gold ? format(recipe.gold * times) + ' G' :

@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/party-sidebar.css">
   <link rel="stylesheet" href="css/forest-unlocks.css">
   <link rel="stylesheet" href="css/dimensional-rift.css">
-  <link rel="stylesheet" href="css/goddess.css">
+  <link rel="stylesheet" href="css/goddess.css"><link rel="stylesheet" href="css/reincarnation.css">
   <link rel="stylesheet" href="css/museum.css">
   <style>.curse-status-focus{position:absolute;inset:0;pointer-events:none;z-index:4}.curse-status-focus button{position:absolute;padding:0;border:0;background:transparent;pointer-events:none}.curse-status-focus button:focus-visible{outline:2px solid #d7aeff;outline-offset:2px}</style>
   <script defer src="/js/data/interference-reference.js"></script>
@@ -56,6 +56,7 @@
   <script defer src="/js/render/shaman-skill-renderer.js"></script>
   <script defer src="/js/skills/miko-skills.js"></script>
   <script defer src="/js/ui/equipment-visuals.js"></script>
+  <script defer src="/js/data/reincarnation-tree-data.js"></script>
   <script defer src="/js/data/epic-gems.js"></script><script defer src="/js/core/gem-system.js"></script><script defer src="/js/core/forest-progression.js"></script>
   <script defer src="/js/data/expansion-data.js"></script>
   <script defer src="/js/core/forest-auto-gear.js"></script>
@@ -66,11 +67,12 @@
   <script defer src="/js/data/glacier-data.js"></script>
   <script defer src="/js/data/volcano-data.js"></script>
   <script defer src="/js/data/demon-castle-data.js"></script>
-  <script defer src="/js/data/special-stages.js"></script><script defer src="/js/data/goddess-data.js"></script><script defer src="/js/data/forest-data.js"></script>
+  <script defer src="/js/data/special-stages.js"></script><script defer src="/js/data/goddess-data.js"></script><script defer src="/js/data/reincarnation-data.js"></script><script defer src="/js/core/reincarnation.js"></script><script defer src="/js/core/achievements.js"></script><script defer src="/js/core/reincarnation-automation.js"></script><script defer src="/js/data/forest-data.js"></script>
   <script defer src="/js/core/forest-run-rewards.js"></script>
   <script defer src="/js/core/forest-gem-inventory.js"></script>
   <script defer src="/js/combat/status-resistance.js"></script>
   <script defer src="/js/combat/goddess-combat.js"></script><script defer src="/js/render/goddess-renderer.js"></script>
+  <script defer src="/js/combat/reincarnation-combat.js"></script><script defer src="/js/render/reincarnation-renderer.js"></script>
   <script defer src="/js/combat/swamp-combat.js"></script>
   <script defer src="/js/combat/expansion-combat.js"></script>
   <script defer src="/js/combat/miko-combat.js"></script>
@@ -94,6 +96,7 @@
   <script defer src="/js/render/rift-renderer.js"></script>
   <script defer src="/js/core/museum-library.js"></script>
   <script defer src="/js/ui/museum-ui.js"></script>
+  <script defer src="/js/ui/reincarnation-ui.js"></script>
   <script defer src="/js/ui/forest-game.js"></script>
 </head>
 <body>
@@ -128,6 +131,8 @@
         <button data-open="gems" data-tip="ジェム" aria-label="ジェム"><svg><use href="#i-gem"/></svg><span>ジェム</span></button>
         <button data-open="inventory" data-tip="アイテム" aria-label="アイテム"><svg><use href="#i-bag"/></svg><span>アイテム</span><b id="nav-item-count">7</b></button>
         <button data-open="museum" data-tip="資料館" aria-label="資料館"><svg><use href="#i-book"/></svg><span>資料館</span></button>
+        <button data-open="achievements" data-tip="実績" aria-label="実績"><svg><use href="#i-spark"/></svg><span>実績</span></button>
+        <button id="reincarnation-nav" data-open="reincarnation" data-tip="転生" aria-label="転生" hidden><svg><use href="#i-repeat"/></svg><span>転生</span></button>
         <button data-open="options" data-tip="設定" aria-label="設定"><span class="settings-icon" aria-hidden="true">⚙</span><span>設定</span></button>
       </nav>
       <div class="resources"><span data-tip="ゴールド"><img src="assets/ui/items/gold.png" alt="ゴールド"><b id="gold-count">0</b></span></div>
@@ -163,7 +168,7 @@
                 <div class="unlock-rays" aria-hidden="true"></div><div class="unlock-ring" aria-hidden="true"></div>
                 <div id="unlock-particles" class="unlock-particles" aria-hidden="true"></div>
                 <p class="unlock-kicker">UNLOCKED</p><div class="unlock-emblem" aria-hidden="true">✦</div>
-                <h2 id="unlock-title">新規解放</h2><div id="unlock-cards" class="unlock-cards"></div>
+                <div class="unlock-visual" aria-hidden="true"><img class="unlock-gate" src="assets/enemies/reincarnation-goddess/motions/fx-summon/frame-2.png" alt=""><img class="unlock-portrait" src="assets/ui/enemies/reincarnation-goddess.png" alt=""><img class="unlock-flare" src="assets/enemies/reincarnation-goddess/motions/fx-blast/frame-2.png" alt=""></div><h2 id="unlock-title">新規解放</h2><div id="unlock-cards" class="unlock-cards"></div>
                 <button id="unlock-continue" class="secondary-button">報酬 <svg><use href="#i-arrow"/></svg></button>
                 <div class="unlock-progress" aria-hidden="true"><i></i></div>
               </section>

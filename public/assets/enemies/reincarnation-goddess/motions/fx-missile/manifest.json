@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "previewOnly": false,
+  "id": "fx-missile",
+  "label": "誘導ミサイル",
+  "kind": "fx",
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 100,
+    "y": 256
+  },
+  "sheet": "sheet.png",
+  "frameCount": 3,
+  "durationMs": 380,
+  "loop": true,
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-1.png",
+      "durationMs": 100,
+      "width": 512,
+      "height": 512,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "index": 1,
+      "file": "frame-2.png",
+      "durationMs": 120,
+      "width": 512,
+      "height": 512,
+      "x": 512,
+      "y": 0
+    },
+    {
+      "index": 2,
+      "file": "frame-3.png",
+      "durationMs": 160,
+      "width": 512,
+      "height": 512,
+      "x": 1024,
+      "y": 0
+    }
+  ],
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ]
+}

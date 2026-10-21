@@ -8,6 +8,9 @@
     range: P.CHARACTERS.warrior.base.range, speed: 150, interval: 1080, skillDamage: 90, skillInterval: 6500 });
   const Special = typeof module === 'object' && module.exports ? require('./special-stages.js') : globalThis.SpecialStages;
   const Goddess = typeof module === 'object' && module.exports ? require('./goddess-data.js') : globalThis.GoddessData;
+  const RebirthData = typeof module === 'object' && module.exports ? require('./reincarnation-data.js') : globalThis.ReincarnationData;
+  const Rebirth = typeof module === 'object' && module.exports ? require('../core/reincarnation.js') : globalThis.Reincarnation;
+  const Achievements = typeof module === 'object' && module.exports ? require('../core/achievements.js') : globalThis.Achievements;
   const ENEMIES = {
     slime: { name: 'スライム', hp: 48, damage: 9, range: 68, speed: 70, interval: 1800, duration: 620, impact: 160, drop: 'jelly', gold: 3, scale: 1.2, height: 70 },
     'boss-slime': { name: 'ボススライム', hp: 440, damage: 24, range: 128, speed: 46, interval: 1900, duration: 640, impact: 180, drop: 'crystal', gold: 35, scale: 0.85, height: 140, boss: true },
@@ -27,7 +30,7 @@
   for (const [id, enemy] of Object.entries(ENEMIES)) if (enemy.region === 2) enemy.drop = id === 'hydra' ? 'hydra-scale' : enemy.boss ? 'swamp-crystal' : enemy.common;
   Object.assign(ENEMIES, X.ENEMIES);
   Object.assign(ENEMIES,R.ENEMIES,Desert.ENEMIES,Highland.ENEMIES,Glacier.ENEMIES,Volcano.ENEMIES,Castle.ENEMIES);
-  const ALL_ENEMIES = { ...ENEMIES, ...Special.ENEMIES, ...Goddess.ENEMIES };
+  const ALL_ENEMIES = { ...ENEMIES, ...Special.ENEMIES, ...Goddess.ENEMIES, ...RebirthData.ENEMIES };
   ENEMIES['cave-bat'].flying=true;ENEMIES['great-bat'].flying=true;
   const pack = (id, count) => Array(count).fill(id);
   // Stage-local profiles keep the easy 1/5 routes and other regions independent.
@@ -138,7 +141,7 @@
     ...Volcano.REGIONS,
     ...Castle.REGIONS,
   ];
-  const SPECIAL_STAGES = [...Special.stages(STAGES.find(s => s.id === 50), STAGES.find(s => s.id === 100)),Goddess.STAGE];
+  const SPECIAL_STAGES = [...Special.stages(STAGES.find(s => s.id === 50), STAGES.find(s => s.id === 100)),Goddess.STAGE,RebirthData.STAGE];
   const ALL_STAGES = [...STAGES, ...SPECIAL_STAGES];
   const stageLabel = id => { const stage = ALL_STAGES.find(s => s.id === id); return stage ? stage.special ? stage.name : stage.region + '-' + stage.number : ''; };
   const stageId = value => ALL_STAGES.find(s => String(s.id) === String(value))?.id;
@@ -189,12 +192,14 @@
   const SAVE_KEY = 'forest-idle-save-v1';
   const SAVE_VERSION = 2;
   const AutoGear = typeof module === 'object' && module.exports ? require('../core/forest-auto-gear.js') : globalThis.ForestAutoGear;
-  const freshSave = () => ({ version: SAVE_VERSION, gemVersion: P.Gem.VERSION, gold: 0, goldRemainder: 0, cleared: [], encounteredEnemies: [], discoveredGemRarities: [], inventory: { potion: 3 }, gems: [], nextGemId: 1, selectedStage: 1, autoMode: 'same', autoGear: AutoGear.fresh(), autoGemDismantle: P.Gem.freshAutoDismantle(), speed: 1, progression: P.fresh() });
+  const freshSave = () => ({ reincarnation: Rebirth.fresh(), achievements: Achievements.fresh(), version: SAVE_VERSION, gemVersion: P.Gem.VERSION, gold: 0, goldRemainder: 0, cleared: [], encounteredEnemies: [], discoveredGemRarities: [], inventory: { potion: 3 }, gems: [], nextGemId: 1, selectedStage: 1, autoMode: 'same', autoGear: AutoGear.fresh(), autoGemDismantle: P.Gem.freshAutoDismantle(), speed: 1, progression: P.fresh() });
   function readSave(raw) {
     try {
       const saved = JSON.parse(raw);
       if (!saved || saved.version !== SAVE_VERSION) return freshSave();
       const clean = freshSave();
+      clean.reincarnation = Rebirth.restore(saved.reincarnation);
+      clean.achievements = Achievements.restore(saved.achievements);
       const integer = n => Number.isSafeInteger(n) && n >= 0;
       if (integer(saved.gold)) clean.gold = saved.gold;
       if (Number.isFinite(saved.goldRemainder) && saved.goldRemainder >= 0 && saved.goldRemainder < 1) clean.goldRemainder = saved.goldRemainder;
@@ -220,15 +225,22 @@
       clean.autoGemDismantle = P.Gem.restoreAutoDismantle(saved.autoGemDismantle);
       clean.speed = [1, 2].includes(saved.speed) ? saved.speed : 1;
       if (ALL_STAGES.some(s => s.id === saved.selectedStage) && isUnlocked(clean, saved.selectedStage)) clean.selectedStage = saved.selectedStage;
-      clean.progression = P.restore(saved.progression, clean.cleared, clean.gems);
+      clean.progression = P.restore(saved.progression, clean.cleared, clean.gems, clean.reincarnation);
+      if (!saved.achievements) Achievements.sync(clean);
       return clean;
     } catch { return freshSave(); }
   }
-  function isUnlocked(save, id) { const stage = ALL_STAGES.find(s => s.id === id); return !!stage && (id === 1 || save.cleared.includes(stage.unlockStage ?? id - 1)); }
-  function isRevealed(save, content) { return !content?.revealStage || isUnlocked(save, content.revealStage) || save.cleared.includes(content.revealStage); }
-  const stageVisible = (save, stage) => !!stage && isRevealed(save, stage) && (isUnlocked(save, stage.id) || save.cleared.includes(stage.id));
+  function isUnlocked(save, id) {
+    const stage = ALL_STAGES.find(s => s.id === id); if (!stage) return false;
+    if (id === RebirthData.ID) return !!save.reincarnation?.discovered && save.cleared.includes(stage.unlockStage);
+    if (id === 1 || P.reached(save,stage.unlockStage ?? id - 1)) return true;
+    const frontier = Math.max(0, ...[...save.cleared, ...(save.reincarnation?.passed || [])].filter(Number.isInteger));
+    return Number.isInteger(id) && id > frontier && id <= (Rebirth.skipDestination(save,frontier) || frontier);
+  }
+  function isRevealed(save, content) { return !content?.revealStage || isUnlocked(save, content.revealStage) || P.known(save,content.revealStage); }
+  const stageVisible = (save, stage) => !!stage && (stage.id === RebirthData.ID ? !!save.reincarnation?.discovered : isRevealed(save, stage) || P.known(save,stage.id)) && (isUnlocked(save, stage.id) || P.known(save,stage.id) || stage.id === RebirthData.ID && save.reincarnation?.discovered);
   const regionVisible = (save, region) => STAGES.some(s => s.region === region && stageVisible(save, s));
-  const enemyDiscovered = (save, id) => !!ALL_ENEMIES[id] && (save.encounteredEnemies?.includes(id) || ALL_STAGES.some(s => save.cleared.includes(s.id) && s.waves.some(w => w.includes(id))));
+  const enemyDiscovered = (save, id) => !!ALL_ENEMIES[id] && (save.encounteredEnemies?.includes(id) || ALL_STAGES.some(s => (save.cleared.includes(s.id)||save.reincarnation?.lifetimeStages?.includes(s.id)) && s.waves.some(w => w.includes(id))));
   const itemDiscovered = (save, item) => !!item && (item.id.startsWith('gem-shard-')
     ? P.Gem.rarityDiscovered(save, item.rarity) : isRevealed(save, item) && Object.hasOwn(save.inventory, item.id));
   function recordEncounters(save, enemies) {
@@ -237,21 +249,24 @@
     for (const id of enemies) if (Object.hasOwn(ALL_ENEMIES, id) && !save.encounteredEnemies.includes(id)) { save.encounteredEnemies.push(id); changed = true; }
     return changed;
   }
-  function addGold(wallet, baseGold, treasureHunt = 0) {
+  function addGold(wallet, baseGold, treasureHunt = 0, permanent = null) {
+    const b = permanent || (wallet.progression ? P.permanent(wallet) : wallet.reincarnationBonuses) || {gold:1};
     const bonus = Math.max(0, Number.isFinite(treasureHunt) ? treasureHunt : 0);
     const remainder = Number.isFinite(wallet.goldRemainder) && wallet.goldRemainder >= 0 && wallet.goldRemainder < 1 ? wallet.goldRemainder : 0;
-    const raw = baseGold * (1 + bonus) + remainder, nearest = Math.round(raw);
+    const raw = baseGold * (1 + bonus) * b.gold + remainder, nearest = Math.round(raw);
     // Preserve fractions while correcting floating-point errors at whole-gold boundaries.
     const total = Math.abs(raw - nearest) <= Number.EPSILON * 8 * Math.max(1, raw) ? nearest : raw;
     const gold = Math.floor(total);
     wallet.gold += gold; wallet.goldRemainder = total - gold;
     return gold;
   }
-  function award(save, stageId, treasureHunt = 0) {
+  function award(save, stageId, treasureHunt = 0, evidence = null) {
     const stage = ALL_STAGES.find(s => s.id === stageId);
     if (!stage) throw new RangeError('Unknown stage');
     const first = !save.cleared.includes(stageId);
-    const gold = addGold(save, stage.reward, treasureHunt);
+    const gold = addGold(save, stage.reward, treasureHunt,evidence?.bonuses);
+    Rebirth.pass(save,stageId);
+    const reincarnationUnlocks = Rebirth.victory(save,stageId,evidence);
     if (first) {
       save.cleared.push(stageId);
       if (!stage.special) save.inventory.potion = (save.inventory.potion || 0) + 1;
@@ -261,7 +276,7 @@
         if (stageId === 30&&P.recruitShaman(save)) save.progression.characters.shaman.skipRecruitReward=30;
       if(stageId===40&&P.recruitMiko(save))save.progression.characters.miko.skipRecruitReward=40;
     }
-    return { gold, first, potion: first && !stage.special ? 1 : 0, recruited: first && stageId === 4 ? 'mage' : first&&stageId===10?'paladin':first&&stageId===20?'ninja':first&&stageId===30?'shaman':first&&stageId===40?'miko':null };
+    return { gold, first, reincarnationUnlocks, potion: first && !stage.special ? 1 : 0, recruited: first && stageId === 4 ? 'mage' : first&&stageId===10?'paladin':first&&stageId===20?'ninja':first&&stageId===30?'shaman':first&&stageId===40?'miko':null };
   }
   const CHAR_MAGE_STAGE = P.CHARACTERS.mage.unlock;
   function autoDestination(save, stageId, victory) {
@@ -269,6 +284,8 @@
     const stage = ALL_STAGES.find(s => s.id === stageId);
     if (!victory) return { stage: stage?.special ? stage.unlockStage : Math.max(1, stageId - 1), mode: 'same' };
     const next = nextStage(stageId);
+    const skip = Rebirth.skipDestination(save,stageId);
+    if (save.autoMode === 'advance' && skip && isUnlocked(save,skip)) return {stage:skip,mode:save.autoMode};
     return { stage: save.autoMode === 'advance' && next && isUnlocked(save, next.id) ? next.id : stageId, mode: save.autoMode };
   }
   function rollMaterials(enemyId, random = Math.random, treasureHunt = 0) {

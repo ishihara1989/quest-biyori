@@ -39,6 +39,12 @@
   const damageTextGroups = new Map();
   let lastCooldownUpdate = -Infinity;
   const partyViews = new Map();
+  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { autoGearPending = true; runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: () => {
+    const next = Reincarnation.prepare(save, freshSave); if (!next || resetting) return;
+    Achievements.sync(next);
+    try { localStorage.setItem(SAVE_KEY,JSON.stringify(next)); resetting=true;setPlaying(false);location.reload(); }
+    catch { notify('転生を保存できませんでした。保存領域を確認してください。');reincarnationUI.review(); }
+  } });
   const museumUI = MuseumUI.create({ save, container: $('menu-content'), icon, reduced });
   let skillCapacity = 0;
   const skillResize = new ResizeObserver(() => {
@@ -65,6 +71,9 @@
   function persist() {
     if (resetting) return;
     pendingSave = false;
+    const achieved = Achievements.sync(save);
+    if (achieved.length) notify('実績獲得 · '+achieved.slice(0,2).map(d=>d.name).join(' / ')+(achieved.length>2?' ほか'+(achieved.length-2)+'件':''));
+    $('reincarnation-nav').hidden = !save.reincarnation.unlocked;
     try {
       localStorage.setItem(SAVE_KEY, JSON.stringify(save)); text('save-state', 'SAVED');
       clearTimeout(saveTimer); saveTimer = setTimeout(() => text('save-state', 'READY'), 1500);
@@ -81,10 +90,12 @@
     if (!autoGearPending) return;
     autoGearPending = false;
     const bought = ForestAutoGear.acquire(save);
-    if (!bought.length) return;
+    const skills = ReincarnationAutomation.skills(save, menu === 'skills' ? save.progression.selected : null);
+    const gems = ReincarnationAutomation.gems(save);
+    if (!bought.length && !skills && !gems) return;
     autoGearPending = bought.length === 24;
     invalidateBuilds(); persist(); refreshResources(); refreshGrowth();
-    notify('装備強化 AUTO +' + bought.length);
+    notify('AUTO · 装備 '+bought.length+' / スキル '+skills+' / ジェム '+gems);
     if ($('menu-dialog').open) refreshOpenMenu();
   }
   function invalidateBuilds() {
@@ -246,8 +257,9 @@
   }
   function startStage(id = save.selectedStage, preserveMenu = false) {
     if (!ready || !isUnlocked(save, id)) return;
-    save.selectedStage = id; runBuilds = structuredClone(builds());
+    save.selectedStage = id; const reincarnationEvidence = Reincarnation.capture(save); runBuilds = structuredClone(builds());
     run = createRun(id, { builds: runBuilds, goldRemainder: save.goldRemainder }); pendingRewards = ForestRunRewards.create(run);
+    run.reincarnationEvidence = reincarnationEvidence;
     started = true; resultShown = false; resultAge = 0; resultNavigation = false;
     ForestData.recordEncounters(save, run.enemies.map(e => e.type));
     effects = []; particles = []; runLoot = {}; runGemItems = []; runXp = ''; shake = 0;
@@ -288,9 +300,10 @@
     if (victory) {
       const unlocks = ForestUnlocks.collect(save, run.stage.id);
       const hunt = [run.hero, ...run.allies].reduce((total, actor) => total + (actor.treasureHunt || 0), 0);
-      rewards = { ...award(save, run.stage.id, hunt), unlocks }; P.gainXp(save, run.stage.xpStage ?? run.stage.id);
+      rewards = { ...award(save, run.stage.id, hunt, run.reincarnationEvidence), unlocks }; rewards.unlocks.push(...rewards.reincarnationUnlocks); P.gainXp(save, run.stage.xpStage ?? run.stage.id,run.reincarnationEvidence?.bonuses.xp);
       invalidateBuilds(); autoGearPending = true;
       runAutomaticGear();
+      ForestRunRewards.finishDismantle(save, settled); runGemItems=settled.gems.map(gemItem);
       const xp = save.progression.characters.warrior.xp; runXp = 'Lv.' + xp.level + ' · ' + P.xpPercent(xp);
       if (rewards.potion) runLoot.potion = (runLoot.potion || 0) + rewards.potion;
       persist(); refreshResources(); refreshGrowth(); renderRoute();
@@ -323,6 +336,7 @@
         if(event.enemy===GoddessData.ID)effects=effects.filter(e=>e.type!=='goddess-effect');
         ForestRunRewards.record(pendingRewards, event);
       } else if (event.type === 'wave') toast('WAVE ' + String(event.wave).padStart(2, '0'));
+      else if(event.type==='delivery-effect'){effects.push(event);if(!reduced&&['fx-beam','fx-orbital','fx-truck'].includes(event.effect))shake=Math.max(shake,8);}
       else if(event.type==='goddess-effect'){if(event.kind==='awaken')effects=effects.filter(e=>e.type!=='goddess-effect');effects.push(event);burst(event.x,event.y-30,'#d1efff',event.kind==='awaken'?45:14);if(!reduced&&['zero','cross','awaken'].includes(event.kind))shake=Math.max(shake,9);}
       else if (event.type === 'rift-effect') { effects.push(event); burst(event.x, event.y - 55, SpecialStages.definition(event.specialId).COLORS[event.tier], event.kind === 'shatter' ? 60 : event.kind === 'emerge' ? 22 : 32); if (event.kind === 'shatter') shake = reduced ? 0 : 11; }
       else if(event.type==='gem-effect'){effects.push(event);burst(event.x,event.y-30,event.kind==='resistance'?'#79ffc4':event.kind==='siphon'?'#89efdf':'#ffd074',16);}
@@ -391,13 +405,15 @@
     if (resultShown && !$('result-overlay').hidden) resultNavigation = true;
     if (stageId) viewedStage = stageId;
     else if (which === 'stages') viewedStage = save.selectedStage;
+    if(which==='reincarnation'&&!save.reincarnation.unlocked)return;
     menu = which;
     if (which === 'gems') gemFilter = 'gem';
-    const titles = { stages: ['WORLD MAP / CHAPTER 01', '始まりの森'], character: ['ADVENTURERS / STATUS', '能力'], skills: ['ADVENTURERS / GROWTH', 'スキル'], forge: ['ADVENTURERS / GROWTH', '鍛冶'], gems: ['EQUIPMENT / GEMS', 'ジェム'], inventory: ['COLLECTION / INVENTORY', 'アイテム'], museum: ['COLLECTION / MOTIONS & EFFECTS', '資料館'], options: ['OPTIONS', '設定'] };
+    const titles = { stages: ['WORLD MAP / CHAPTER 01', '始まりの森'], character: ['ADVENTURERS / STATUS', '能力'], skills: ['ADVENTURERS / GROWTH', 'スキル'], forge: ['ADVENTURERS / GROWTH', '鍛冶'], gems: ['EQUIPMENT / GEMS', 'ジェム'], inventory: ['COLLECTION / INVENTORY', 'アイテム'], museum: ['COLLECTION / MOTIONS & EFFECTS', '資料館'], achievements: ['CHRONICLE / ACHIEVEMENTS','実績'], reincarnation: ['REINCARNATION / STAR MAP','転生'], options: ['OPTIONS', '設定'] };
     $('menu-dialog').classList.toggle('growth-dialog', ['character', 'skills', 'forge'].includes(which));
     $('menu-dialog').classList.toggle('museum-dialog', which === 'museum');
+    $('menu-dialog').classList.toggle('reincarnation-dialog',['reincarnation','achievements'].includes(which));
     text('menu-kicker', titles[which][0]); text('menu-title', titles[which][1]);
-    if (which === 'stages') renderStages(); else if (which === 'museum') museumUI.mount(museumFocus); else if (['character', 'skills', 'forge'].includes(which)) growthUI.render(which); else if (which === 'options') renderOptions(); else renderInventory();
+    if (which === 'reincarnation') reincarnationUI.render(); else if (which === 'achievements') reincarnationUI.achievements(); else if (which === 'stages') renderStages(); else if (which === 'museum') museumUI.mount(museumFocus); else if (['character', 'skills', 'forge'].includes(which)) growthUI.render(which); else if (which === 'options') renderOptions(); else renderInventory();
     $('menu-dialog').append($('tooltip'), $('notification'));
     if (!$('menu-dialog').open) $('menu-dialog').showModal();
     $('tooltip').hidden = true;
@@ -409,7 +425,9 @@
     const attribute = content.contains(active) ? [...active.attributes].find(a => a.name.startsWith('data-')) : null;
     const selector = attribute ? '[' + attribute.name + '="' + CSS.escape(attribute.value) + '"]' : null;
     const scroll = [content, ...content.querySelectorAll('.tree-viewport,.attributes-view')].map(node => [node.scrollLeft, node.scrollTop]);
-    if (['character', 'skills', 'forge'].includes(menu)) growthUI.render();
+    if(menu==='reincarnation')reincarnationUI.render();
+    else if(menu==='achievements')reincarnationUI.achievements();
+    else if (['character', 'skills', 'forge'].includes(menu)) growthUI.render();
     else if (menu === 'stages') renderStages();
     else if (menu === 'options') renderOptions();
     else renderInventory();
@@ -431,7 +449,7 @@
     $('result-auto').setAttribute('aria-pressed', String(save.autoMode !== 'off'));
   }
   function renderOptions() {
-    $('menu-content').innerHTML = '<div class="options-page"><h3>' + icon('repeat') + '自動周回</h3><div class="auto-modes">' + [['same', 'repeat', '周回'], ['advance', 'arrow', '進行'], ['off', 'pause', 'OFF']].map(([mode, img, label]) => '<button data-auto-mode="' + mode + '" aria-pressed="' + (save.autoMode === mode) + '" data-tip="' + (mode === 'advance' ? 'クリアすると次へ。敗北すると1つ前のステージで周回。' : mode === 'same' ? '同じステージを周回。敗北すると1つ前のステージで周回。' : '結果画面で停止') + '">' + icon(img) + '<span>' + label + '</span></button>').join('') + '</div>' + (P.Gem.unlocked(save) ? gemDismantleUI.renderOptions() : '') + (ForestAutoGear.unlocked(save) ? autoGearUI.render() : '') + '<div class="options-reset" data-tip="育成・所持品・進行をすべて初期化"><div><h3>初期化</h3></div><button class="reset-save-button" data-reset-save>' + icon('repeat') + '初期化</button></div></div>';
+    $('menu-content').innerHTML = '<div class="options-page"><h3>' + icon('repeat') + '自動周回</h3><div class="auto-modes">' + [['same', 'repeat', '周回'], ['advance', 'arrow', '進行'], ['off', 'pause', 'OFF']].map(([mode, img, label]) => '<button data-auto-mode="' + mode + '" aria-pressed="' + (save.autoMode === mode) + '" data-tip="' + (mode === 'advance' ? 'クリアすると次へ。敗北すると1つ前のステージで周回。' : mode === 'same' ? '同じステージを周回。敗北すると1つ前のステージで周回。' : '結果画面で停止') + '">' + icon(img) + '<span>' + label + '</span></button>').join('') + '</div>' + (P.Gem.unlocked(save) ? gemDismantleUI.renderOptions() : '') + (ForestAutoGear.unlocked(save) ? autoGearUI.render() : '') + reincarnationUI.automation() + '<div class="options-reset" data-tip="育成・所持品・進行をすべて初期化"><div><h3>初期化</h3></div><button class="reset-save-button" data-reset-save>' + icon('repeat') + '初期化</button></div></div>';
   }
   function resetSave() {
     try {
@@ -442,6 +460,7 @@
   function stageDetail() {
     const stage = STAGES.find(s => s.id === viewedStage), unlocked = isUnlocked(save, viewedStage);
     const first = !save.cleared.includes(viewedStage);
+    if(stage.reincarnation)return '<p class="eyebrow">DIVINE DELIVERY'+(first?'':' · CLEARED')+'</p><h3>'+stage.name+'</h3><div class="goddess-stage-art"><img src="'+enemyImage(ReincarnationData.ID)+'" alt="'+stage.name+'"></div><div class="detail-line"><span>'+icon('clock')+' 03:00</span><span>'+(unlocked?'':stage.unlockLabel+' · 今周のクリアが必要')+'</span></div><button class="primary-button" data-enter="'+stage.id+'"'+(!unlocked||!ready?' disabled':'')+'>'+icon(unlocked?'sword':'lock')+'開始</button>';
     if(stage.final)return '<p class="eyebrow">FINAL ENCOUNTER'+(first?'':' · CLEARED')+'</p><h3>'+stage.name+'</h3>'+(ForestData.enemyDiscovered(save,GoddessData.ID)?'<div class="goddess-stage-art"><img src="'+enemyImage(GoddessData.ID)+'" alt="'+stage.name+'"></div>':'')+'<div class="detail-line"><span>'+icon('clock')+' 03:00</span></div><button class="primary-button" data-enter="'+stage.id+'"'+(!unlocked||!ready?' disabled':'')+'>'+icon(unlocked?'sword':'lock')+'開始</button>';
     if (stage.special) {
       const config=SpecialStages.definition(stage.id),regions=REGIONS.filter(r=>stage.materialRegions.includes(r.id));
@@ -603,6 +622,7 @@
   }
   function drawActor(actor, ghostAlpha = 1) {
     if(actor.hidden)return;
+    if(actor.reincarnationGoddess){ReincarnationRenderer.draw(ctx,actor,run,sprites,drawAsset,reduced);return;}
     if(actor.goddess){GoddessRenderer.draw(ctx,actor,run,sprites,drawAsset,reduced);return;}
     if (actor.dimensionalGate) { RiftRenderer.gate(ctx, actor, run.time + previewTime, reduced); return; }
     if(actor.bodyPart){
@@ -740,7 +760,7 @@
         const color=e.kind==='resistance'?'#79ffc4':e.kind==='siphon'?'#92f6e5':'#ffd774';
         ImageEffects.ring(ctx,reduced?0:age,e.x,e.y-35,18+age/13,26+age/16,color,1-age/650);
         if(e.from)ImageEffects.link(ctx,{x:e.from.x,y:e.from.y-50},{x:e.x,y:e.y-35},color,1-age/650,20,reduced?0:age);
-      } else if(e.type==='goddess-effect'){GoddessRenderer.effect(ctx,e,age,sprites,effectSprites,drawAsset,reduced);} else if(e.type==='rift-effect'){RiftRenderer.effect(ctx,e,age,reduced);} else if(e.type==='castle-effect'){DemonCastleRenderer.effect(ctx,e,age,effectSprites,drawAsset);} else if(e.type==='volcano-effect'){VolcanoRenderer.effect(ctx,e,age,effectSprites,drawAsset);} else if(e.type==='glacier-effect'){GlacierRenderer.effect(ctx,e,age,effectSprites,drawAsset);} else if(e.type==='highland-effect'){drawAsset(effectSprites[e.effect],age,e.x,e.y,e.scale||.7,e.facing>0);} else if(e.type==='desert-effect'){drawDesertEffect(e,age);} else if(e.type==='ruins-effect'){drawRuinsEffect(e,age);} else if(e.type==='miko-block'){ctx.fillStyle='#fff0ad';ctx.font='bold 14px serif';ctx.fillText('◆ '+e.amount,e.x,e.y-70-age*.025);} else if (e.type === 'expansion-effect') {
+      } else if(e.type==='delivery-effect'){ReincarnationRenderer.effect(ctx,e,age,sprites,drawAsset);} else if(e.type==='goddess-effect'){GoddessRenderer.effect(ctx,e,age,sprites,effectSprites,drawAsset,reduced);} else if(e.type==='rift-effect'){RiftRenderer.effect(ctx,e,age,reduced);} else if(e.type==='castle-effect'){DemonCastleRenderer.effect(ctx,e,age,effectSprites,drawAsset);} else if(e.type==='volcano-effect'){VolcanoRenderer.effect(ctx,e,age,effectSprites,drawAsset);} else if(e.type==='glacier-effect'){GlacierRenderer.effect(ctx,e,age,effectSprites,drawAsset);} else if(e.type==='highland-effect'){drawAsset(effectSprites[e.effect],age,e.x,e.y,e.scale||.7,e.facing>0);} else if(e.type==='desert-effect'){drawDesertEffect(e,age);} else if(e.type==='ruins-effect'){drawRuinsEffect(e,age);} else if(e.type==='miko-block'){ctx.fillStyle='#fff0ad';ctx.font='bold 14px serif';ctx.fillText('◆ '+e.amount,e.x,e.y-70-age*.025);} else if (e.type === 'expansion-effect') {
         drawAsset(effectSprites[e.effect],age,e.x,e.y,e.scale||.7,e.facing>0);
       } else if(['part-emerge','part-hit','part-retract'].includes(e.type)){
         drawAsset(effectSprites[run.stage.region===3?'cave-quake':'sea-slam'],age,e.x,e.y,e.type==='part-hit'?.45:.6);
@@ -791,7 +811,7 @@
     ctx.imageSmoothingEnabled = false; ctx.clearRect(0, 0, 1024, 576);
     ctx.save();
     if (shake > 0 && active) { ctx.translate((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake); shake = Math.max(0, shake - dt / 70); }
-    if (run.stage.final) GoddessRenderer.background(ctx,run,run.time+previewTime,reduced);
+    if (run.stage.final || run.stage.reincarnation) GoddessRenderer.background(ctx,run,run.time+previewTime,reduced);
     else if (run.stage.special) RiftRenderer.background(ctx, run.time + previewTime, reduced, run.stage.id);
     else layers[run.stage.region].forEach(layer => ctx.drawImage(layer.image, layer.x||0, layer.y||0, layer.width||1024, layer.height||576));
     // Soft light rays and drifting motes add depth without obscuring the sprite art.
@@ -814,11 +834,13 @@
     NinjaSkillRenderer.backdrops(ctx,effects,run.time,ninjaEffects,reduced);
     if(![8,9,10].includes(run.stage.region))InterferenceRenderer.warnings(ctx,run);
     if (run.stage.final) GoddessRenderer.warnings(ctx,run);
+    if (run.stage.reincarnation) ReincarnationRenderer.warnings(ctx,run);
     else if (run.stage.special) RiftRenderer.emergence(ctx, run, reduced);
     NinjaSkillRenderer.echoPoses(ctx,run,drawActor);
     // Boss bodies share the goddess's foreground layer above party attacks.
     const foregroundEnemies = run.enemies.filter(actor => !actor.dimensionalGate && (actor.boss || actor.majorBoss || actor.goddess)).sort((a, b) => a.y - b.y);
     [...run.enemies.filter(actor => !actor.dimensionalGate && !actor.boss && !actor.majorBoss && !actor.goddess), run.hero, ...run.allies,...run.ninjaClones].sort((a, b) => a.y - b.y).forEach(actor=>actor.source?NinjaSkillRenderer.drawClone(ctx,actor,drawActor):drawActor(actor));
+    if(run.stage.reincarnation)ReincarnationRenderer.overlays(ctx,run,sprites,drawAsset);
     if(run.stage.final)GoddessRenderer.overlays(ctx,run,sprites,effectSprites,drawAsset,reduced);
     WarriorSkillRenderer.castOverlay(ctx,run.hero,warriorEffects);
     WarriorSkillRenderer.impacts(ctx,effects,run.time,warriorEffects);
@@ -942,6 +964,7 @@
   $('menu-dialog').addEventListener('close', () => {
     museumUI.stop();
     menu = ''; resultNavigation = false; $('tooltip').hidden = true; document.body.append($('tooltip'), $('notification')); lastTime = undefined;
+    autoGearPending=true;
   });
   document.addEventListener('visibilitychange', () => { lastTime = undefined; if (document.hidden) persist(); });
   window.addEventListener('pagehide', persist);
@@ -969,6 +992,8 @@
   canvas.addEventListener('pointerleave',()=>{delete canvas.dataset.tip;$('tooltip').hidden=true;});
   window.addEventListener('scroll', () => $('tooltip').hidden = true, { passive: true });
   refreshAutoControls(); text('speed-button', save.speed + '×');
+  $('reincarnation-nav').hidden = !save.reincarnation.unlocked;
+  persist();
   renderRoute(); refreshResources(); refreshGrowth();
   refreshRegion(); text('stage-number', run.stage.special ? 'SPECIAL' : run.stage.region + ' — ' + run.stage.number); text('stage-name', run.stage.name);
   $('encounter-list').innerHTML = enemyChips(run.stage.special ? run.stage.waves.flat() : run.stage.enemies);
