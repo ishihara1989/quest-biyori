@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {ROOT,PUBLIC,inside}=require('../lib/project-paths.cjs'),bundled=path.join(process.env.USERPROFILE,'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules');
 const {chromium}=require(require.resolve('playwright',{paths:[__dirname,bundled]}));
-const D=require('../../public/js/data/forest-data.js'),P=require('../../public/js/core/forest-progression.js'),R=require('../../public/js/core/reincarnation.js'),A=require('../../public/js/core/achievements.js'),B=require('../balance/audit-reincarnation.cjs');
+const D=require('../../public/js/data/forest-data.js'),P=require('../../public/js/core/forest-progression.js'),R=require('../../public/js/core/reincarnation.js'),T=require('../../public/js/data/reincarnation-tree-data.js'),A=require('../../public/js/core/achievements.js'),B=require('../balance/audit-reincarnation.cjs');
 async function main(){
  const output=path.join(ROOT,'output/reincarnation/ui');fs.mkdirSync(output,{recursive:true});
  const server=require('../../server.cjs').createServer();await new Promise(r=>server.listen(0,'127.0.0.1',r));
@@ -30,6 +30,29 @@ async function main(){
  async function menu(page,name){const dialog=page.locator('#menu-dialog');if(await dialog.isVisible())await page.locator('#close-menu').click();await page.locator('[data-open="'+name+'"]').first().click();}
  const labOnly=process.argv.includes('--lab-only'),scenesOnly=process.argv.includes('--scenes-only'),boss=B.reference();boss.autoMode='off';
  try{
+  if(!labOnly&&!scenesOnly&&!process.argv.includes('--stats-only')){
+   const branch=T.branches.find(b=>b.heading==='収穫 / ゴールド'),ids=['gold2',...branch.ids];
+   for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
+    const seed=D.freshSave();Object.assign(seed.reincarnation,{discovered:true,unlocked:true,cycle:100000,total:10000000,owned:ids.slice(0,-1)});
+    const {page,context}=await pageFor(seed,viewport);await menu(page,'reincarnation');
+    await page.locator('[data-reinc-node="gold-step-1"]').click();assert.equal(await page.locator('.reinc-effect b').innerText(),'×3');
+    assert.ok((await page.locator('[data-reinc-node="gold-step-1"] small').innerText()).includes('100 PT'));
+    await page.locator('[data-reinc-node="gold4"]').click();assert.equal(await page.locator('.reinc-effect b').innerText(),'×10');
+    await page.locator('[data-reinc-node="gold100"]').click();assert.equal(await page.locator('.reinc-effect b').innerText(),'×100');
+    assert.equal(await page.locator('.reinc-prerequisites button').innerText(),'✓ 黄金の記憶 20');
+    assert.equal(await page.locator('[data-reinc-confirm]').isEnabled(),true);
+    await page.locator('.reincarnation-page img').evaluateAll(images=>Promise.all(images.map(img=>img.decode())));
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await shot(page,'gold-final-'+viewport.width);
+    await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="gold100"]').click();
+    assert.ok((await page.locator('.rebirth-summary').innerText()).includes('ゴールド ×100'));
+    await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
+    const restored=await saveOf(page);assert.deepEqual(restored.reincarnation.owned,ids);assert.equal(R.bonuses(restored).gold,100);
+    assert.equal(R.points(restored),10000000-ids.reduce((sum,id)=>sum+T.byId[id].cost,0));
+    await menu(page,'reincarnation');await page.locator('[data-reinc-node="gold100"]').click();assert.equal(await page.locator('.node-state').innerText(),'取得済み');
+    await context.close();
+   }
+   if(process.argv.includes('--gold-only')){assert.deepEqual(errors,[]);console.log('Gold tree UI passed: 3x/10x/100x effects, price, extended map, final prerequisite, purchase and reload at 1440px/390px; no resource or runtime errors.');return;}
+  }
   if(!labOnly&&!scenesOnly){
    for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
     const seed=R.prepare(Object.assign(B.reference(),{reincarnation:{...R.fresh(),discovered:true,unlocked:true,defeatedCycle:0}}),D.freshSave);
@@ -49,7 +72,7 @@ async function main(){
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await shot(page,'stat-purchases-'+viewport.width);
     await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
     const restored=await saveOf(page),b=R.bonuses(restored);assert.equal(restored.reincarnation.owned.length,9);assert.equal(b.mainFree,undefined);
-    assert.deepEqual([b.damage,b.hp,b.sp,b.common,b.attackCap,b.guardCap,b.utilityCap],[300,300,75,200,100,100,100]);assert.equal(R.points(restored),550);
+    assert.deepEqual([b.damage,b.hp,b.sp,b.common,b.attackCap,b.guardCap,b.utilityCap],[300,300,75,200,100,100,100]);assert.equal(R.points(restored),850);
     await context.close();
    }
    if(process.argv.includes('--stats-only')){assert.deepEqual(errors,[]);console.log('Stat/capacity tree UI passed: prerequisites, effects, purchases and reload at 1440px/390px; no resource or runtime errors.');return;}
