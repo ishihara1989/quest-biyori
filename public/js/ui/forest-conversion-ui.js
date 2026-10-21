@@ -10,6 +10,13 @@ window.ForestConversionUI = {
     const visibleRecipes = () => C.RECIPES.filter(recipe => recipe.stages.every(id => save.cleared.includes(id)) &&
       [...Object.keys(recipe.inputs), recipe.output].every(id => D.itemDiscovered(save, item(id))));
     const visibleRegions = () => C.REGIONS.filter(row => visibleRecipes().some(recipe => recipe.region === row.id));
+    const inputLabel = (recipe, times = 1) => recipe.gold ? format(recipe.gold * times) + ' G' :
+      Object.entries(recipe.inputs).map(([id, count]) => item(id).name + ' ×' + format(count * times)).join(' ＋ ');
+    function goldIngredient(amount) {
+      return '<span class="conversion-material ' + (save.gold < amount ? 'insufficient' : '') + '" data-tip="ゴールド" tabindex="0">' +
+        '<span class="conversion-art"><img src="assets/ui/items/gold.png" alt="ゴールド"><b>' + format(amount) + ' G</b></span>' +
+        '<strong>ゴールド</strong><small>所持 <b>' + format(save.gold) + '</b></small></span>';
+    }
     function ingredient(id, amount, input) {
       const material = item(id), owned = save.inventory[id] || 0;
       return '<span class="conversion-material ' + (input && owned < amount ? 'insufficient' : '') + '" data-rarity="' + material.rarity + '" data-tip="' + escape(itemTip(material)) + '" tabindex="0">' +
@@ -19,17 +26,18 @@ window.ForestConversionUI = {
     function recipeCard(recipe, choices) {
       const plan = C.plan(save, recipe.id), locked = plan.status === 'locked';
       const requirement = plan.lockedStages.map(D.stageLabel).join(' / ') + ' クリア';
-      const label = Object.entries(recipe.inputs).map(([id, count]) => item(id).name + ' ×' + count).join(' ＋ ') + ' → ' + item(recipe.output).name + ' ×' + recipe.amount;
-      const blocked = locked ? requirement : plan.status === 'overflow' ? '所持数上限' : plan.status === 'invalid' ? '所持数不正' : '素材不足';
+      const action = recipe.gold ? '購入' : '変換';
+      const label = inputLabel(recipe) + ' → ' + item(recipe.output).name + ' ×' + recipe.amount;
+      const blocked = locked ? requirement : plan.status === 'overflow' ? '所持数上限' : plan.status === 'invalid' ? '所持数不正' : recipe.gold ? 'ゴールド不足' : '素材不足';
       const options = choices.length > 1 ? '<div class="conversion-choices" role="group" aria-label="獲得素材を選択">' + choices.map(row => '<button data-conversion-choice="' + row.id + '" aria-pressed="' + (row.id === recipe.id) + '" data-tip="' + escape(itemTip(item(row.output))) + '"><img src="' + itemImage(row.output) + '" alt=""><span>' + escape(item(row.output).name) + '</span><b>×' + row.amount + '</b></button>').join('') + '</div>' : '';
       return '<article class="conversion-card ' + (locked ? 'locked ' : '') + (feedback?.recipe === recipe.id ? 'converted' : '') + '" data-recipe="' + recipe.id + '" data-rarity="' + item(recipe.output).rarity + '" aria-label="' + escape(label) + '">' + options +
-        '<div class="conversion-formula"><div class="conversion-inputs">' + Object.entries(recipe.inputs).map(([id, count]) => ingredient(id, count, true)).join('<span class="conversion-plus" aria-hidden="true">＋</span>') + '</div>' +
+        '<div class="conversion-formula"><div class="conversion-inputs">' + (recipe.gold ? goldIngredient(recipe.gold) : Object.entries(recipe.inputs).map(([id, count]) => ingredient(id, count, true)).join('<span class="conversion-plus" aria-hidden="true">＋</span>')) + '</div>' +
         '<span class="conversion-arrow" aria-hidden="true">' + icon('arrow') + '</span><div class="conversion-output">' + ingredient(recipe.output, recipe.amount, false) + '<i class="conversion-spark" aria-hidden="true">✦</i></div></div>' +
-        '<div class="conversion-actions"><span class="conversion-state">' + (plan.status === 'available' ? icon('check') + '変換可能' : icon(locked ? 'lock' : 'bag') + escape(blocked)) + '</span>' +
+        '<div class="conversion-actions"><span class="conversion-state">' + (plan.status === 'available' ? icon('check') + action + '可能' : icon(locked ? 'lock' : 'bag') + escape(blocked)) + '</span>' +
         [1, 10, 100, 'max'].map(value => {
           const times = value === 'max' ? plan.max : value;
-          const tip = Object.entries(recipe.inputs).map(([id, count]) => item(id).name + ' ×' + format(count * times)).join(' ＋ ') + ' → ' + item(recipe.output).name + ' ×' + format(recipe.amount * times);
-          return '<button class="' + (value === 1 ? 'primary' : 'secondary') + '-button" data-convert="' + recipe.id + '" data-convert-times="' + value + '"' + (value === 'max' ? ' data-convert-max' : '') + ' aria-label="' + escape(label + 'を' + (value === 'max' ? '最大' : '') + times + '回変換') + '" data-tip="' + escape(tip) + '"' + (!times || times > plan.max ? ' disabled' : '') + '>' + (value === 'max' ? '最大 <b>×' + format(times) + '</b>' : times + '回') + '</button>';
+          const tip = inputLabel(recipe, times) + ' → ' + item(recipe.output).name + ' ×' + format(recipe.amount * times);
+          return '<button class="' + (value === 1 ? 'primary' : 'secondary') + '-button" data-convert="' + recipe.id + '" data-convert-times="' + value + '"' + (value === 'max' ? ' data-convert-max' : '') + ' aria-label="' + escape(label + 'を' + (value === 'max' ? '最大' : '') + times + (recipe.gold ? '個購入' : '回変換')) + '" data-tip="' + escape(tip) + '"' + (!times || times > plan.max ? ' disabled' : '') + '>' + (value === 'max' ? '最大 <b>×' + format(times) + '</b>' : times + (recipe.gold ? '個' : '回')) + '</button>';
         }).join('') + '</div></article>';
     }
     function render(target = container, focusSelector) {
