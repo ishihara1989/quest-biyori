@@ -6,3 +6,11 @@
 .menu-dialog.reincarnation-dialog{width:min(1240px,calc(100vw - 24px));max-width:none}
 
 .reincarnation-map>svg{width:100%;height:100%}.unlock-visual{margin:0 auto}.reincarnation-unlocked,.rebirth-unlocked{border-color:#d9c08c80;background:#151c2cf7}
+
+/* A persistent cue while this cycle's rebirth can be claimed. */
+#reincarnation-nav{position:relative}
+#reincarnation-nav.rebirth-ready{color:#eddaff;background:#7962ac24;box-shadow:inset 0 -2px #cab0f3}
+.main-nav .rebirth-ready-mark{position:absolute;display:grid;place-items:center;right:0;top:0;width:18px;height:18px;border:1px solid #f1d69b;border-radius:50%;background:#624287;color:#fff0bb;box-shadow:0 0 8px #cfb2ff80;pointer-events:none;animation:rebirth-ready-glow 2s ease-in-out infinite}
+.main-nav .rebirth-ready-mark svg{width:12px;height:12px;stroke-width:2}
+@keyframes rebirth-ready-glow{50%{box-shadow:0 0 13px #e1c3ff;filter:brightness(1.3)}}
+@media(prefers-reduced-motion:reduce){.main-nav .rebirth-ready-mark{animation:none}}
