@@ -28,7 +28,10 @@
   ninjaAPI.attackRate=shamanAPI.attackRate=Miko.attackRate;
   const startExpansionAttack = (run,enemy,target,events) => X.start(run,enemy,target,state,events);
   function spawn(run, type, position) {
-    const base = run.stage.special && !ENEMIES[type].dimensionalGate ? Special.profile(type, ENEMIES, run.stage.id) : ENEMIES[type], factor = base.dimensionalGate ? 1 : 1 + (run.stage.number - 1) * 0.1;
+    const profile = run.stage.special && !ENEMIES[type].dimensionalGate ? Special.profile(type, ENEMIES, run.stage.id) : ENEMIES[type];
+    // Match the duo HP budget before applying the shared trial multipliers.
+    const base = run.stage.goddessDuo && profile.goddess ? { ...profile, hp: RebirthData.ENEMIES[RebirthData.ID].hp } : profile;
+    const factor = base.dimensionalGate ? 1 : 1 + (run.stage.number - 1) * 0.1;
     const hpRate = run.stage.enemyHp * (base.majorBoss ? run.stage.majorBossHp ?? 1 : 1);
     const damageRate = run.stage.enemyDamage * (base.majorBoss ? run.stage.majorBossDamage ?? 1 : 1);
     const enemy = { id: `enemy-${++run.serial}`, type, ...base, defense:base.majorBoss&&run.stage.majorBossDefense!==undefined?run.stage.majorBossDefense:base.defense??Shaman.DEFENSE[type]??0, maxHp: Math.round(base.hp * factor * hpRate),
