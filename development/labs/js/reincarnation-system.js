@@ -1,7 +1,7 @@
 'use strict';
 (async()=>{
  const status=document.getElementById('status'),backupKey='reincarnation-runtime-review-backup';
- const core=new Set(['gem-system','forest-progression','forest-auto-gear','reincarnation','achievements','reincarnation-automation']);
+ const core=new Set(['trials','gem-system','forest-progression','forest-auto-gear','reincarnation','achievements','reincarnation-automation']);
  try{
   const source=await(await fetch('/game.html')).text(),doc=new DOMParser().parseFromString(source,'text/html');
   for(const script of doc.querySelectorAll('script[src]')){
@@ -26,6 +26,11 @@
    Achievements.sync(save);
    if(['tree','deep'].includes(preset))save=R.prepare(save,D.freshSave);
    if(preset==='deep'){save.reincarnation.cycle=10000;save.reincarnation.total=1000000;}
+   if(preset==='trials'){
+    Object.assign(save.reincarnation,{unlocked:true,cycle:20,total:2000});
+    const own=id=>{for(const parent of ReincarnationTree.byId[id].requires)if(parent!=='origin'&&!save.reincarnation.owned.includes(parent))own(parent);if(id!=='origin')save.reincarnation.owned.push(id);};
+    own('trial-open');save.reincarnation.trialCompleted=['onslaught','unyielding'];save.reincarnation.trials=['goddess-serious'];save.reincarnation.trialRun=true;
+   }
    Achievements.sync(save);return save;
   }
   for(const button of document.querySelectorAll('[data-preset]')){button.disabled=false;button.addEventListener('click',()=>{

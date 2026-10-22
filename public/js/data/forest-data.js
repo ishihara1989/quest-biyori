@@ -142,10 +142,14 @@
     ...Castle.REGIONS,
   ];
   const SPECIAL_STAGES = [...Special.stages(STAGES.find(s => s.id === 50), STAGES.find(s => s.id === 100)),Goddess.STAGE,RebirthData.STAGE];
+  const Trials = typeof module === 'object' && module.exports ? require('../core/trials.js') : globalThis.Trials;
+  const stageFor = (save, id) => id === Goddess.ID && Trials.serious(save) ? RebirthData.DUO_STAGE : [...STAGES, ...SPECIAL_STAGES].find(s=>s.id===id);
+  const stageCleared = (save,stage) => stage.goddessDuo ? save.reincarnation?.duoDefeatedJourney === (save.reincarnation?.journey||0) : save.cleared.includes(stage.id);
+  const specialStages = save => SPECIAL_STAGES.filter(s=>!Trials.serious(save)||s.id!==RebirthData.ID).map(s=>stageFor(save,s.id));
   const ALL_STAGES = [...STAGES, ...SPECIAL_STAGES];
   const stageLabel = id => { const stage = ALL_STAGES.find(s => s.id === id); return stage ? stage.special ? stage.name : stage.region + '-' + stage.number : ''; };
   const stageId = value => ALL_STAGES.find(s => String(s.id) === String(value))?.id;
-  const nextStage = id => { const stage = ALL_STAGES.find(s => s.id === id); return id==='chaos-gate'?Goddess.STAGE:stage && !stage.special ? STAGES.find(s => s.id === id + 1) : undefined; };
+  const nextStage = (id, save) => { const stage = ALL_STAGES.find(s => s.id === id); return id==='chaos-gate'?stageFor(save,Goddess.ID):stage && !stage.special ? STAGES.find(s => s.id === id + 1) : undefined; };
   const RARITIES = {
     common: { name: 'コモン', english: 'COMMON', color: '#ffffff', rank: 0 },
     uncommon: { name: 'アンコモン', english: 'UNCOMMON', color: '#7ddcff', rank: 1 },
@@ -225,6 +229,7 @@
       clean.autoGemDismantle = P.Gem.restoreAutoDismantle(saved.autoGemDismantle);
       clean.speed = [1, 2].includes(saved.speed) ? saved.speed : 1;
       if (ALL_STAGES.some(s => s.id === saved.selectedStage) && isUnlocked(clean, saved.selectedStage)) clean.selectedStage = saved.selectedStage;
+      if(saved.selectedStage===RebirthData.ID&&Trials.serious(clean)&&isUnlocked(clean,Goddess.ID))clean.selectedStage=Goddess.ID;
       clean.progression = P.restore(saved.progression, clean.cleared, clean.gems, clean.reincarnation);
       if (!saved.achievements) Achievements.sync(clean);
       return clean;
@@ -232,13 +237,14 @@
   }
   function isUnlocked(save, id) {
     const stage = ALL_STAGES.find(s => s.id === id); if (!stage) return false;
+    if (id === RebirthData.ID && Trials.serious(save)) return false;
     if (id === RebirthData.ID) return !!save.reincarnation?.discovered && save.cleared.includes(stage.unlockStage);
     if (id === 1 || P.reached(save,stage.unlockStage ?? id - 1)) return true;
     const frontier = Math.max(0, ...[...save.cleared, ...(save.reincarnation?.passed || [])].filter(Number.isInteger));
     return Number.isInteger(id) && id > frontier && id <= (Rebirth.skipDestination(save,frontier) || frontier);
   }
   function isRevealed(save, content) { return !content?.revealStage || isUnlocked(save, content.revealStage) || P.known(save,content.revealStage); }
-  const stageVisible = (save, stage) => !!stage && (stage.id === RebirthData.ID ? !!save.reincarnation?.discovered : isRevealed(save, stage) || P.known(save,stage.id)) && (isUnlocked(save, stage.id) || P.known(save,stage.id) || stage.id === RebirthData.ID && save.reincarnation?.discovered);
+  const stageVisible = (save, stage) => !!stage && !(stage.id===RebirthData.ID&&Trials.serious(save)) && (stage.id === RebirthData.ID ? !!save.reincarnation?.discovered : isRevealed(save, stage) || P.known(save,stage.id)) && (isUnlocked(save, stage.id) || P.known(save,stage.id) || stage.id === RebirthData.ID && save.reincarnation?.discovered);
   const regionVisible = (save, region) => STAGES.some(s => s.region === region && stageVisible(save, s));
   const enemyDiscovered = (save, id) => !!ALL_ENEMIES[id] && (save.encounteredEnemies?.includes(id) || ALL_STAGES.some(s => (save.cleared.includes(s.id)||save.reincarnation?.lifetimeStages?.includes(s.id)) && s.waves.some(w => w.includes(id))));
   const itemDiscovered = (save, item) => !!item && (item.id.startsWith('gem-shard-')
@@ -288,7 +294,7 @@
       while (gearStage?.special) gearStage = ALL_STAGES.find(s => s.id === gearStage.unlockStage);
       if (gearStage && !AutoGear.mainComplete(save, gearStage.id)) return { stage: stageId, mode: save.autoMode };
     }
-    const next = nextStage(stageId);
+    const next = nextStage(stageId,save);
     const skip = Rebirth.skipDestination(save,stageId);
     if (save.autoMode === 'advance' && skip && isUnlocked(save,skip)) return {stage:skip,mode:save.autoMode};
     return { stage: save.autoMode === 'advance' && next && isUnlocked(save, next.id) ? next.id : stageId, mode: save.autoMode };
@@ -344,5 +350,5 @@
     }
     return counts.flatMap(([rarity, count]) => Array.from({ length: count }, () => P.Gem.generate({ rarity, level: region, random })));
   }
-  return { HERO, ENEMIES, ALL_ENEMIES, STAGES, SPECIAL_STAGES, ALL_STAGES, STAGE_TUNING, tuneStage, REGIONS, stageLabel, stageId, nextStage, ITEMS, EQUIPMENT, RARITIES, SAVE_KEY, SAVE_VERSION, freshSave, readSave, isUnlocked, isRevealed, stageVisible, regionVisible, enemyDiscovered, itemDiscovered, recordEncounters, award, addGold, autoDestination, rollMaterials, rollGems, gemDropRates };
+  return { HERO, ENEMIES, ALL_ENEMIES, STAGES, SPECIAL_STAGES, ALL_STAGES, STAGE_TUNING, tuneStage, REGIONS, stageLabel, stageId, nextStage, stageFor, specialStages, stageCleared, ITEMS, EQUIPMENT, RARITIES, SAVE_KEY, SAVE_VERSION, freshSave, readSave, isUnlocked, isRevealed, stageVisible, regionVisible, enemyDiscovered, itemDiscovered, recordEncounters, award, addGold, autoDestination, rollMaterials, rollGems, gemDropRates };
 });

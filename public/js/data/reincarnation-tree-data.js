@@ -10,7 +10,7 @@
     gem: { name: '宝石・容量', color: '#e1a2c7', icon: 'progression/universal-gem.png' },
     trial: { name: '試練・異変', color: '#d88e98', icon: 'gems/goddess-page.png' },
   };
-  // Runtime prices adopted from the reviewed tree. Trial nodes are reserved and cannot be purchased.
+  // Runtime prices adopted from the reviewed tree. Only trial-open is currently implemented.
   const nodes = [];
   function node(id, name, family, cost, x, y, requires, effects, extra = {}) {
     nodes.push({ id, name, family, cost, x, y, requires, effects, ...extra });
@@ -25,7 +25,7 @@
   node('drop3', '豊穣の枝', 'harvest', 80, 150, 310, ['drop2'], [effect('ドロップ数', '×3', 'drop', 3, 'max')], { initial: true });
   node('gold-cost', '旅支度の節約', 'journey', 50, 380, 310, ['gold2'], [effect('装備ゴールド費', '−20%', 'gearGold', 20)]);
   node('sub40', '工匠の叡智', 'journey', 140, 1070, 310, ['sub20'], [effect('通常サブ素材費', '−20pt', 'sub', 20)]);
-  node('main-free', 'メイン材料無償化', 'journey', 200, 725, 363, ['xp3', 'sub20', 'unique20'], [effect('通常メイン素材費', '0', 'mainFree', 1)], { initial: true, milestone: true, note: '通常10地域・全職・武器／防具のメイン。ゴールドは必要。サブ・ユニーク・女神ツリー・ジェム制作は対象外。前提・今周の到達条件は維持。' });
+  node('main-free', 'メイン材料無償化', 'journey', 100, 725, 363, ['xp3', 'sub20', 'unique20'], [effect('通常メイン素材費', '0', 'mainFree', 1)], { initial: true, milestone: true, note: '通常10地域・全職・武器／防具のメイン。ゴールドは必要。サブ・ユニーク・女神ツリー・ジェム制作は対象外。前提・今周の到達条件は維持。' });
   node('drop4', '豊穣の実', 'harvest', 120, 150, 440, ['drop3'], [effect('ドロップ数', '×4', 'drop', 4, 'max')], { initial: true });
   node('drop-rate', '幸運の星', 'harvest', 90, 380, 440, ['gold2'], [effect('ドロップ率', '＋100%', 'rate', 100)], { note: 'パーティー共通で1回加算。ジェム制限中も有効。ドロップ数倍率とは別枠。' });
   node('unique40', '秘匠の叡智', 'journey', 180, 1070, 440, ['unique20'], [effect('通常ユニーク素材費', '−20pt', 'unique', 20)]);
@@ -109,12 +109,12 @@
       { milestone: baseAmount === 750 }];
   }), [], '方向容量・共通容量は別枠。職専用容量は対象外。');
   chain('trial', 1200, [
-    ['trial-open', '試練の扉', 260, [effect('試練', '解放', 'trial', 1)], { milestone: true }],
+    ['trial-open', '試練の扉', 100, [effect('試練', '解放', 'trial', 1)], { milestone: true }],
     ['trial-seals', '封印の試練', 1500, [effect('宝石封印・技能制限', '解放', 'seals', 1)]],
     ['trial-slots', '重なる試練', 10000, [effect('試練同時選択枠', '2', 'slots', 2, 'max')]],
     ['trial-intrusion', '異変の兆し', 100000, [effect('追加敵の試練', '解放', 'intrusion', 1)], { parents: ['damage2', 'hp2'], row: 5 }],
     ['trial-solo', '孤星の旅路', 1000000, [effect('少人数の上位試練', '解放', 'solo', 1)], { parents: ['common200', 'skill50'], row: 16, milestone: true }],
-  ], ['main-free', 'drop4'], '精算には今周の転生の女神撃破が必要。回数だけでは解放しない。');
+  ], ['main-free', 'drop4'], '試練の扉で強靭・猛攻・頑強・女神の本気を解放。精算PTは今周の転生の女神撃破時の最高値。');
   const rateSteps = [
     [150, 300], [200, 500], [250, 800], [350, 1800], [500, 4000], [750, 6500],
     [1000, 10000], [1500, 18000], [2000, 30000], [3000, 50000], [5000, 80000],

@@ -24,7 +24,7 @@
   };
   const builds = () => Object.fromEntries(Object.keys(P.CHARACTERS).filter(id => P.unlocked(save, id)).map(id => [id, savedStats(id)]));
   let runBuilds = structuredClone(builds());
-  let run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder }), started = false, playing = false, ready = false;
+  let run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder, trials: Trials.capture(save, save.selectedStage) }), started = false, playing = false, ready = false;
   let pendingRewards = ForestRunRewards.create(run);
   const battleStats = id => runBuilds[id] || savedStats(id);
   let lastTime, resultAge = 0, resultShown = false, resultNavigation = false, notifyTimer, toastTimer, saveTimer;
@@ -39,11 +39,15 @@
   const damageTextGroups = new Map();
   let lastCooldownUpdate = -Infinity;
   const partyViews = new Map();
-  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { autoGearPending = true; runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: () => {
-    const next = Reincarnation.prepare(save, freshSave); if (!next || resetting) return;
+  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { autoGearPending = true; runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: (options) => {
+    const next = Reincarnation.prepare(save, freshSave, options); if (!next || resetting) return;
     Achievements.sync(next);
     try { localStorage.setItem(SAVE_KEY,JSON.stringify(next)); resetting=true;setPlaying(false);location.reload(); }
-    catch { notify('転生を保存できませんでした。保存領域を確認してください。');reincarnationUI.review(); }
+    catch { notify('転生を保存できませんでした。保存領域を確認してください。');options?.restart?reincarnationUI.render():reincarnationUI.review(); }
+  }, onAbandon: () => {
+    if(!Trials.abandon(save))return;
+    const resume=playing,current=run.stage.id;invalidateBuilds();persist();
+    if(started){startStage(current,true);setPlaying(resume);}refreshResources();
   } });
   const museumUI = MuseumUI.create({ save, container: $('menu-content'), icon, reduced });
   let skillCapacity = 0;
@@ -87,7 +91,7 @@
     nav.hidden = !save.reincarnation.unlocked;
     nav.classList.toggle('rebirth-ready', eligible);
     nav.querySelector('.rebirth-ready-mark').hidden = !eligible;
-    const label = eligible ? '転生可能 · +100 PT' : '転生';
+    const label = eligible ? '転生可能 · +'+Reincarnation.payout(save).toLocaleString('ja-JP')+' PT' : '転生';
     nav.dataset.tip = label;
     nav.setAttribute('aria-label', label);
   }
@@ -111,7 +115,7 @@
     buildCache.clear();
     if (!started) {
       runBuilds = structuredClone(builds());
-      run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder });
+      run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder, trials: Trials.capture(save, save.selectedStage) });
       pendingRewards = ForestRunRewards.create(run);
     }
   }
@@ -120,7 +124,7 @@
     clearTimeout(toastTimer); toastTimer = setTimeout(() => $('wave-toast').classList.remove('show'), 1450);
   }
   function nodeMarkup(stage, current) {
-    const cleared = save.cleared.includes(stage.id), unlocked = isUnlocked(save, stage.id);
+    const cleared = ForestData.stageCleared(save,stage), unlocked = isUnlocked(save, stage.id);
     const type = stage.special ? stage.waves[0][0] : stage.enemies.at(-1), boss = stage.enemies.some(id => ForestData.enemyDiscovered(save,id) && ENEMIES[id].boss);
     const label = (stage.special ? '' : stageLabel(stage.id) + ' ') + stage.name + (cleared ? ' · クリア' : unlocked ? '' : ' · 未解放');
     return '<button class="route-node ' + (stage.special ? 'special-node ' : '') + (cleared ? 'cleared ' : '') + (unlocked ? 'unlocked ' : 'locked ') +
@@ -130,9 +134,9 @@
       '</span><small>' + (stage.special ? stage.name : (boss ? '◆ ' : '') + String(stage.number).padStart(2, '0')) + '</small></button>';
   }
   function renderRoute() {
-    const stages = (run.stage.special ? SPECIAL_STAGES : STAGES.filter(s => !s.special && s.region === run.stage.region)).filter(s => ForestData.stageVisible(save, s));
+    const stages = (run.stage.special ? ForestData.specialStages(save) : STAGES.filter(s => !s.special && s.region === run.stage.region)).filter(s => ForestData.stageVisible(save, s));
     $('route-nodes').innerHTML = stages.map(stage => nodeMarkup(stage, save.selectedStage)).join('');
-    text('clear-count', stages.filter(s => save.cleared.includes(s.id)).length + ' / ' + stages.length);
+    text('clear-count', stages.filter(s => ForestData.stageCleared(save,s)).length + ' / ' + stages.length);
   }
   function refreshRegion() {
     const region = REGIONS[run.stage.region - 1];
@@ -276,7 +280,7 @@
   function startStage(id = save.selectedStage, preserveMenu = false) {
     if (!ready || !isUnlocked(save, id)) return;
     save.selectedStage = id; const reincarnationEvidence = Reincarnation.capture(save); runBuilds = structuredClone(builds());
-    run = createRun(id, { builds: runBuilds, goldRemainder: save.goldRemainder }); pendingRewards = ForestRunRewards.create(run);
+    run = createRun(id, { builds: runBuilds, goldRemainder: save.goldRemainder, trials: Trials.capture(save, save.selectedStage) }); pendingRewards = ForestRunRewards.create(run);
     run.reincarnationEvidence = reincarnationEvidence;
     started = true; resultShown = false; resultAge = 0; resultNavigation = false;
     ForestData.recordEncounters(save, run.enemies.map(e => e.type));
@@ -327,10 +331,10 @@
       persist(); refreshResources(); refreshGrowth(); renderRoute();
     }
     if (!victory && save.autoMode !== 'off') { save.autoMode = 'same'; persist(); refreshAutoControls(); }
-    lootUI.render({ victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason });
+    lootUI.render({ victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason, trialReward:run.trials.reward });
     if ($('menu-dialog').open) refreshOpenMenu();
     if (victory) burst(512, 240, '#f1d890', 40);
-    canvas.setAttribute('aria-label', (run.stage.realmName || REGIONS[run.stage.region - 1].name) + ' ' + stageLabel(run.stage.id) + (victory ? ' クリア' : ' 敗北'));
+    canvas.setAttribute('aria-label', (run.stage.realmName || REGIONS[run.stage.region - 1].name) + ' ' + (run.stage.special?run.stage.name:stageLabel(run.stage.id)) + (victory ? ' クリア' : ' 敗北'));
   }
   function handleEvents(events) {
     if (ForestData.recordEncounters(save, run.enemies.map(e => e.type))) {
@@ -379,6 +383,9 @@
     if (pendingSave) persist();
   }
   function hud() {
+    const badge=$('battle-trials');badge.hidden=run.trials.reward===1;
+    text('battle-trials','試練 PT×'+run.trials.reward);
+    badge.dataset.tip=run.trials.ids.map(id=>Trials.byId[id].name).join(' / ');
     const hero = run.hero;
     refreshPartyVitals();
     const selected = partyActor(save.progression.selected), stats = selected || partyViews.get(save.progression.selected).stats;
@@ -408,6 +415,7 @@
     const bosses = run.enemies.filter(e => e.boss && e.hp > 0), gate = bosses.find(e => e.dimensionalGate);
     $('boss-hud').hidden = !started || !bosses.length;
     if (bosses.length) {
+      if(run.stage.goddessDuo){const both=run.enemies.filter(e=>e.boss);text('boss-name',both.map(e=>e.name+(e.goddess?' II':'')+' '+(100*e.hp/e.maxHp).toFixed(0)+'%').join(' / '));$('boss-hp-fill').style.width=100*both.reduce((n,e)=>n+e.hp,0)/both.reduce((n,e)=>n+e.maxHp,0)+'%';return;}
       if(run.stage.final){const e=bosses[0];text('boss-name',e.name+' · '+(e.phaseChangeAt!=null?'覚醒':e.goddessPhase===2?'II 浮遊':'I 御座')+' · '+(100*e.hp/e.maxHp).toFixed(1)+'%');$('boss-hp-fill').style.width=100*e.hp/e.maxHp+'%';return;}
       const batches = gate ? SpecialStages.definition(run.stage.id).BATCHES : null;
       const summonRound = gate ? Math.max(1, gate.gateBatch + (['opening','summoning'].includes(gate.gatePhase) ? 1 : 0)) : 0;
@@ -476,8 +484,9 @@
     } catch { resetting = false; $('reset-dialog').close(); notify('セーブをリセットできませんでした'); }
   }
   function stageDetail() {
-    const stage = STAGES.find(s => s.id === viewedStage), unlocked = isUnlocked(save, viewedStage);
-    const first = !save.cleared.includes(viewedStage);
+    const stage = ForestData.stageFor(save,viewedStage), unlocked = isUnlocked(save, viewedStage);
+    const first = !ForestData.stageCleared(save,stage);
+    if(stage.goddessDuo)return '<p class="eyebrow">GODDESS TRIAL'+(first?'':' · CLEARED')+'</p><h3>'+stage.name+'</h3><div class="goddess-stage-art goddess-duo-art"><img src="'+enemyImage(GoddessData.ID)+'" alt="異次元の女神"><img src="'+enemyImage(ReincarnationData.ID)+'" alt="転生の女神"></div><div class="detail-line"><span>'+icon('clock')+' 03:00</span><span data-tip="両女神の撃破で試練初クリア・転生が可能">異次元の女神 II · 両女神の撃破</span></div><button class="primary-button" data-enter="'+stage.id+'"'+(!unlocked||!ready?' disabled':'')+'>'+icon(unlocked?'sword':'lock')+'開始</button>';
     if(stage.reincarnation)return '<p class="eyebrow">DIVINE DELIVERY'+(first?'':' · CLEARED')+'</p><h3>'+stage.name+'</h3><div class="goddess-stage-art"><img src="'+enemyImage(ReincarnationData.ID)+'" alt="'+stage.name+'"></div><div class="detail-line"><span>'+icon('clock')+' 03:00</span><span>'+(unlocked?'':stage.unlockLabel+' · 今周のクリアが必要')+'</span></div><button class="primary-button" data-enter="'+stage.id+'"'+(!unlocked||!ready?' disabled':'')+'>'+icon(unlocked?'sword':'lock')+'開始</button>';
     if(stage.final)return '<p class="eyebrow">FINAL ENCOUNTER'+(first?'':' · CLEARED')+'</p><h3>'+stage.name+'</h3>'+(ForestData.enemyDiscovered(save,GoddessData.ID)?'<div class="goddess-stage-art"><img src="'+enemyImage(GoddessData.ID)+'" alt="'+stage.name+'"></div>':'')+'<div class="detail-line"><span>'+icon('clock')+' 03:00</span></div><button class="primary-button" data-enter="'+stage.id+'"'+(!unlocked||!ready?' disabled':'')+'>'+icon(unlocked?'sword':'lock')+'開始</button>';
     if (stage.special) {
@@ -497,10 +506,10 @@
   }
   function renderStages() {
     if (!ForestData.stageVisible(save, STAGES.find(s => s.id === viewedStage))) viewedStage = save.selectedStage;
-    const selected = STAGES.find(s => s.id === viewedStage), region = REGIONS[selected.region - 1];
+    const selected = ForestData.stageFor(save,viewedStage), region = REGIONS[selected.region - 1];
     text('menu-kicker', selected.special ? 'SPECIAL / ' + selected.english : 'WORLD MAP / CHAPTER ' + String(region.id).padStart(2, '0')); text('menu-title', selected.special ? selected.realmName : region.name);
-    const stages = (selected.special ? SPECIAL_STAGES : STAGES.filter(s => !s.special && s.region === region.id)).filter(s => ForestData.stageVisible(save, s));
-    $('menu-content').innerHTML = '<div class="region-tabs" role="group" aria-label="地域を選択">' + REGIONS.filter(r => ForestData.regionVisible(save,r.id)).map(r => '<button data-stage-region="' + r.id + '" aria-pressed="' + (!selected.special && r.id === region.id) + '" data-tip="' + r.name + ' · Lv.' + ((r.id - 1) * 10 + 1) + '〜' + r.id * 10 + '">' + (!isUnlocked(save, (r.id - 1) * 10 + 1) ? icon('lock') : icon('map')) + r.name + '</button>').join('') + (SPECIAL_STAGES.some(s=>ForestData.stageVisible(save,s)) ? '<button class="special-tab" data-special-stages aria-pressed="' + !!selected.special + '">' + icon('spark') + '特殊</button>' : '') + '</div><div class="stage-menu' + (selected.special ? ' special-stage-menu' : '') + '"><div class="stage-map" data-region="' + (selected.special ? 'special' : region.id) + '" aria-label="ステージを選択">' +
+    const stages = (selected.special ? ForestData.specialStages(save) : STAGES.filter(s => !s.special && s.region === region.id)).filter(s => ForestData.stageVisible(save, s));
+    $('menu-content').innerHTML = '<div class="region-tabs" role="group" aria-label="地域を選択">' + REGIONS.filter(r => ForestData.regionVisible(save,r.id)).map(r => '<button data-stage-region="' + r.id + '" aria-pressed="' + (!selected.special && r.id === region.id) + '" data-tip="' + r.name + ' · Lv.' + ((r.id - 1) * 10 + 1) + '〜' + r.id * 10 + '">' + (!isUnlocked(save, (r.id - 1) * 10 + 1) ? icon('lock') : icon('map')) + r.name + '</button>').join('') + (SPECIAL_STAGES.some(s=>ForestData.stageVisible(save,s)) ? '<button class="special-tab" data-special-stages aria-pressed="' + !!selected.special + '">' + icon('spark') + '特殊</button>' : '') + '</div>'+'<div class="stage-menu' + (selected.special ? ' special-stage-menu' : '') + '"><div class="stage-map" data-region="' + (selected.special ? 'special' : region.id) + '" aria-label="ステージを選択">' +
       stages.map(stage => nodeMarkup(stage, viewedStage)).join('') + '</div><div class="stage-detail">' + stageDetail() + '</div></div>';
     if(selected.special){const map=$('menu-content').querySelector('.stage-map');map.dataset.special=selected.id;map.style.backgroundImage='linear-gradient(#160b3266,#241a4677),url("'+selected.asset+'background.png")';}
   }
@@ -819,7 +828,7 @@
         }
         const plan = lootUI.plan, shownAge = resultAge - 700;
         const destination = autoDestination(save, run.stage.id, run.status === 'victory');
-        text('repeat-countdown', destination && shownAge >= plan.completeAt ? Math.max(0, Math.ceil((plan.repeatAt - shownAge) / 1000)) + '秒 → ' + stageLabel(destination.stage) : '');
+        text('repeat-countdown', destination && shownAge >= plan.completeAt ? Math.max(0, Math.ceil((plan.repeatAt - shownAge) / 1000)) + '秒 → ' + ForestData.stageFor(save,destination.stage).name : '');
         if (destination && shownAge >= plan.repeatAt) { save.autoMode = destination.mode; refreshAutoControls(); startStage(destination.stage, $('menu-dialog').open); }
       }
     }
@@ -860,6 +869,7 @@
     [...run.enemies.filter(actor => !actor.dimensionalGate && !actor.boss && !actor.majorBoss && !actor.goddess), run.hero, ...run.allies,...run.ninjaClones].sort((a, b) => a.y - b.y).forEach(actor=>actor.source?NinjaSkillRenderer.drawClone(ctx,actor,drawActor):drawActor(actor));
     if(run.stage.reincarnation)ReincarnationRenderer.overlays(ctx,run,sprites,drawAsset);
     if(run.stage.final)GoddessRenderer.overlays(ctx,run,sprites,effectSprites,drawAsset,reduced);
+    GoddessRenderer.trial(ctx,run,sprites,effectSprites,drawAsset,reduced);
     WarriorSkillRenderer.castOverlay(ctx,run.hero,warriorEffects);
     WarriorSkillRenderer.impacts(ctx,effects,run.time,warriorEffects);
     for(const mage of run.allies)MageSkillRenderer.castOverlay(ctx,mage,mageEffects,reduced);
@@ -972,7 +982,7 @@
   $('recruit-continue').addEventListener('click', () => { resultAge = Math.max(resultAge, 700 + lootUI.recruitDuration); lootUI.tick(resultAge - 700); });
   $('unlock-continue').addEventListener('click', () => { resultAge = Math.max(resultAge, 700 + lootUI.introDuration); lootUI.tick(resultAge - 700); });
   $('retry-button').addEventListener('click', () => startStage());
-  $('next-button').addEventListener('click', () => { const next = nextStage(run.stage.id); if (next) startStage(next.id); });
+  $('next-button').addEventListener('click', () => { const next = nextStage(run.stage.id,save); if (next) startStage(next.id); });
   $('close-menu').addEventListener('click', () => $('menu-dialog').close());
   $('menu-dialog').addEventListener('click', event => {
     if (event.target !== $('menu-dialog')) return;

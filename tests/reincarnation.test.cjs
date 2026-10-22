@@ -22,7 +22,7 @@ test('discovery is permanent; each new cycle still needs its own goddess victory
  A.sync(s);const next=R.prepare(s,D.freshSave);assert.equal(next.reincarnation.total,100);assert.equal(next.reincarnation.cycle,1);assert.equal(R.eligible(next),false);assert.equal(R.prepare(next,D.freshSave),null);
  assert.equal(D.isUnlocked(next,'reincarnation-goddess'),false);next.cleared.push('extradimensional-goddess');assert.equal(D.isUnlocked(next,'reincarnation-goddess'),true);
  R.victory(next,'reincarnation-goddess',{cycle:0});assert.equal(R.eligible(next),false);
- R.victory(next,'reincarnation-goddess',{cycle:1});const third=R.prepare(next,D.freshSave);assert.equal(third.reincarnation.total,200);
+ R.victory(next,'reincarnation-goddess',{cycle:1,journey:next.reincarnation.journey});const third=R.prepare(next,D.freshSave);assert.equal(third.reincarnation.total,200);
 });
 test('rebirth clears possessions, equipped/protected gems, growth, recruits and current progress; retains memories and settings',()=>{
  const s=ready();s.gold=123;s.inventory.potion=44;s.autoGear.enabled=true;s.autoMode='advance';s.speed=2;s.reincarnation.automation.skills=true;s.gems[0].locked=true;A.usage(s,'convert');A.sync(s);const original=JSON.stringify(s),next=R.prepare(s,D.freshSave);
@@ -35,7 +35,7 @@ test('tree purchases enforce prerequisites, available currency, no double purcha
  const s=R.prepare(ready(),D.freshSave);assert.equal(R.purchase(s,'drop3'),false);assert.ok(R.purchase(s,'drop2'));assert.ok(R.purchase(s,'xp3'));assert.ok(R.purchase(s,'gold2'));assert.equal(R.points(s),0);assert.equal(R.purchase(s,'drop2'),false);assert.equal(R.purchase(s,'sub20'),false);
  assert.deepEqual([R.bonuses(s).drop,R.bonuses(s).xp,R.bonuses(s).gold],[2,1,2]);
  const restored=D.readSave(JSON.stringify(s));assert.deepEqual(new Set(restored.reincarnation.owned),new Set(s.reincarnation.owned));assert.equal(R.points(restored),0);
- for(const n of T.nodes.filter(n=>n.family==='trial')){assert.equal(R.status(s,n.id),'soon');assert.equal(R.purchase(s,n.id),false);}
+ for(const n of T.nodes.filter(n=>n.family==='trial'&&n.id!=='trial-open')){assert.equal(R.status(s,n.id),'soon');assert.equal(R.purchase(s,n.id),false);}
  const corrupt=R.restore({...s.reincarnation,owned:['drop100','trial-open','xp3'],total:1e12});assert.deepEqual(corrupt.owned,['xp3']);assert.equal(corrupt.total,100);
 });
 test('equipment cost reductions apply equally to status, manual, batch and path buying; no goddess material waiver',()=>{
