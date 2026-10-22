@@ -34,19 +34,20 @@
   let gemOwners = new Map(), gemSearchTimer, otherLoadoutsOpen = false, updatingGemView = false, renderingInventory = false;
   const escapeHTML = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   let resetting = false;
-  let previewTime = 0, pendingSave = false, shake = 0, autoGearAge = 1000, autoGearPending = true;
+  let previewTime = 0, pendingSave = false, shake = 0, autoGearPending = true, autoGearTask = null, autoGearAuxPending = true;
+  const autoGearTotal = { gear: 0, skills: 0, gems: 0 };
   const skillSlots = new Map();
   const damageTextGroups = new Map();
   let lastCooldownUpdate = -Infinity;
   const partyViews = new Map();
-  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { autoGearPending = true; runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: (options) => {
+  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { requestAutomaticGear(); runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: (options) => {
     const next = Reincarnation.prepare(save, freshSave, options); if (!next || resetting) return;
     Achievements.sync(next);
     try { localStorage.setItem(SAVE_KEY,JSON.stringify(next)); resetting=true;setPlaying(false);location.reload(); }
     catch { notify('転生を保存できませんでした。保存領域を確認してください。');options?.restart?reincarnationUI.render():reincarnationUI.review(); }
   }, onAbandon: () => {
     if(!Trials.abandon(save))return;
-    const resume=playing,current=run.stage.id;invalidateBuilds();persist();
+    const resume=playing,current=run.stage.id;invalidateBuilds();requestAutomaticGear();persist();
     if(started){startStage(current,true);setPlaying(resume);}refreshResources();
   } });
   const museumUI = MuseumUI.create({ save, container: $('menu-content'), icon, reduced });
@@ -59,16 +60,16 @@
   });
   skillResize.observe($('skill-cooldowns'));
   skillResize.observe($('potion-button'));
-  const growthUI = ForestProgressionUI.create({ save, getRun: () => run, getStats: savedStats, isRunning: () => started && run.status === 'running', icon, persist, notify, onSelect: selectCharacter, onChange: () => { invalidateBuilds(); autoGearPending = true; refreshResources(); refreshGrowth(); } });
+  const growthUI = ForestProgressionUI.create({ save, getRun: () => run, getStats: savedStats, isRunning: () => started && run.status === 'running', icon, persist, notify, onSelect: selectCharacter, onChange: () => { invalidateBuilds(); requestAutomaticGear(); refreshResources(); refreshGrowth(); } });
   const lootUI = ForestLootUI.create({ itemImage, itemTip, icon, reduced, gemItems:()=>runGemItems });
   const autoGearUI = ForestAutoGearUI.create({ save, icon, onChange: focus => {
-    autoGearPending = true; runAutomaticGear(); persist(); renderOptions(); document.querySelector(focus)?.focus({ preventScroll: true }); $('tooltip').hidden = true;
+    requestAutomaticGear(); runAutomaticGear(); persist(); renderOptions(); document.querySelector(focus)?.focus({ preventScroll: true }); $('tooltip').hidden = true;
   } });
   const conversionUI = ForestConversionUI.create({ save, itemImage, itemTip, icon, initialRegion: run.stage.region,
-    onConvert: () => { autoGearPending = true; runAutomaticGear(); persist(); refreshResources(); refreshGrowth(); } });
-  const gemWorkshop = GemWorkshopUI.create({save,itemImage,icon,notify,onChange:(write=true)=>{if(write){invalidateBuilds();autoGearPending=true;persist();refreshResources();refreshGrowth();}renderInventory();},onCraft:uid=>{selectedGem=uid;gemFilter='gem';Object.assign(gemView,ForestGemInventory.defaults());renderInventory();}});
+    onConvert: () => { requestAutomaticGear(); runAutomaticGear(); persist(); refreshResources(); refreshGrowth(); } });
+  const gemWorkshop = GemWorkshopUI.create({save,itemImage,icon,notify,onChange:(write=true)=>{if(write){invalidateBuilds();requestAutomaticGear();persist();refreshResources();refreshGrowth();}renderInventory();},onCraft:uid=>{selectedGem=uid;gemFilter='gem';Object.assign(gemView,ForestGemInventory.defaults());renderInventory();}});
   const gemDismantleUI = GemDismantleUI.create({ save, itemImage, itemTip, icon, notify,
-    onChange: (scope, write) => { if (write) { autoGearPending = true; persist(); refreshResources(); } if (scope === 'auto') renderOptions(); else renderInventory(); $('tooltip').hidden = true; },
+    onChange: (scope, write) => { if (write) { requestAutomaticGear(); persist(); refreshResources(); } if (scope === 'auto') renderOptions(); else renderInventory(); $('tooltip').hidden = true; },
     onInspect: uid => { selectedGem = uid; gemFilter = 'gem'; Object.assign(gemView,ForestGemInventory.defaults()); renderInventory(); } });
   const format = number => number.toLocaleString('ja-JP', { maximumFractionDigits: 2 });
   function text(id, value) { if ($(id).textContent !== value) $(id).textContent = value; }
@@ -101,15 +102,30 @@
   }
   function runAutomaticGear() {
     if (!autoGearPending) return;
-    autoGearPending = false;
-    const bought = ForestAutoGear.acquire(save);
-    const skills = ReincarnationAutomation.skills(save, menu === 'skills' ? save.progression.selected : null);
-    const gems = ReincarnationAutomation.gems(save);
-    if (!bought.length && !skills && !gems) return;
-    autoGearPending = bought.length === 24;
-    invalidateBuilds(); persist(); refreshResources(); refreshGrowth();
-    notify('AUTO · 装備 '+bought.length+' / スキル '+skills+' / ジェム '+gems);
+    autoGearTask ||= ForestAutoGear.acquireSteps(save);
+    const deadline = performance.now() + 4;
+    let bought = 0;
+    do {
+      const step = autoGearTask.next();
+      if (step.done) { autoGearPending = false; autoGearTask = null; break; }
+      if (step.value) { bought++; autoGearTotal.gear++; }
+    } while (performance.now() < deadline);
+    // Run once before reward dismantling, and again with the final capacities.
+    const automate = autoGearAuxPending || !autoGearPending;
+    autoGearAuxPending = false;
+    const skills = automate ? ReincarnationAutomation.skills(save, menu === 'skills' ? save.progression.selected : null) : 0;
+    const gems = automate ? ReincarnationAutomation.gems(save) : 0;
+    autoGearTotal.skills += skills; autoGearTotal.gems += gems;
+    if (bought || skills || gems) { invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }
+    if (!autoGearPending && (autoGearTotal.gear || autoGearTotal.skills || autoGearTotal.gems)) {
+      notify('AUTO · 装備 '+autoGearTotal.gear+' / スキル '+autoGearTotal.skills+' / ジェム '+autoGearTotal.gems);
+      autoGearTotal.gear = autoGearTotal.skills = autoGearTotal.gems = 0;
+    }
+    if (!bought && !skills && !gems) return;
     if ($('menu-dialog').open) refreshOpenMenu();
+  }
+  function requestAutomaticGear() {
+    autoGearTask = null; autoGearPending = autoGearAuxPending = true;
   }
   function invalidateBuilds() {
     buildCache.clear();
@@ -325,7 +341,7 @@
       const unlocks = ForestUnlocks.collect(save, run.stage.id);
       const hunt = [run.hero, ...run.allies].reduce((total, actor) => total + (actor.treasureHunt || 0), 0);
       rewards = { ...award(save, run.stage.id, hunt, run.reincarnationEvidence), unlocks }; rewards.unlocks.push(...rewards.reincarnationUnlocks); P.gainXp(save, run.stage.xpStage ?? run.stage.id,run.reincarnationEvidence?.bonuses.xp);
-      invalidateBuilds(); autoGearPending = true;
+      invalidateBuilds(); requestAutomaticGear();
       runAutomaticGear();
       ForestRunRewards.finishDismantle(save, settled); runGemItems=settled.gems.map(gemItem);
       const xp = save.progression.characters.warrior.xp; runXp = 'Lv.' + xp.level + ' · ' + P.xpPercent(xp);
@@ -827,10 +843,7 @@
     const dt = lastTime === undefined ? 0 : Math.min(100, time - lastTime); lastTime = time;
     const active = started && playing && !document.hidden;
     const simDt = active ? dt * save.speed : 0;
-    if (!document.hidden) {
-      autoGearAge += dt;
-      if (autoGearAge >= 1000) { autoGearAge = 0; runAutomaticGear(); }
-    }
+    if (!document.hidden) runAutomaticGear();
     if (!started && !document.hidden && !reduced) previewTime += dt;
     if (active) {
       if (run.status === 'running' || resultAge < resultDelay) handleEvents(update(run, simDt));
@@ -1010,7 +1023,7 @@
   $('menu-dialog').addEventListener('close', () => {
     museumUI.stop();
     menu = ''; resultNavigation = false; $('tooltip').hidden = true; document.body.append($('tooltip'), $('notification')); lastTime = undefined;
-    autoGearPending=true;
+    requestAutomaticGear();
   });
   document.addEventListener('visibilitychange', () => { lastTime = undefined; if (document.hidden) persist(); });
   window.addEventListener('pagehide', persist);

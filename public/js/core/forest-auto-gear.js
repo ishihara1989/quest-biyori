@@ -32,18 +32,30 @@
         return nodes(character, slot).every(node => !node.main || !Number.isInteger(node.stage) || node.stage > stage || owned.has(node.id));
       }));
   }
-  // Bound each batch so a rich save does not stall the battle or options UI.
-  function acquire(save, limit = 24) {
+  function acquire(save, limit = Number.MAX_SAFE_INTEGER) {
+    if (!Number.isSafeInteger(limit) || limit <= 0) return [];
+    const bought = [];
+    for (const row of acquireSteps(save)) if (row) {
+      bought.push(row);
+      if (bought.length === limit) break;
+    }
+    return bought;
+  }
+  // Yield preparation as well as purchases so the UI can resume the same search
+  // on the next frame instead of paying for all candidates on every slice.
+  function* acquireSteps(save) {
     const settings = restore(save.autoGear);
-    if (!unlocked(save) || !settings.enabled) return [];
+    if (!unlocked(save) || !settings.enabled) return;
     const cleared = new Set([...save.cleared,...(save.reincarnation?.passed||[])]);
-    const candidates = settings.characters.filter(id => P.unlocked(save, id) && !settings.excludedCharacters.includes(id))
-      .flatMap(character => ['weapon', 'armor'].flatMap(slot => {
+    const candidates = [];
+    for (const character of settings.characters.filter(id => P.unlocked(save, id) && !settings.excludedCharacters.includes(id)))
+      for (const slot of ['weapon', 'armor']) {
+        yield null;
         const owned = new Set(save.progression.characters[character][slot]);
-        return nodes(character, slot)
-          .filter(node => cleared.has(node.stage) && !settings.excludedKinds.includes(kind(node)) && !owned.has(node.id))
-          .map(node => ({ character, slot, node }));
-      }));
+        for (const node of nodes(character, slot))
+          if (cleared.has(node.stage) && !settings.excludedKinds.includes(kind(node)) && !owned.has(node.id)) candidates.push({ character, slot, node });
+      }
+    yield null;
     candidates.sort((a, b) => {
       const kindOrder = settings.kinds.indexOf(kind(a.node)) - settings.kinds.indexOf(kind(b.node));
       const characterOrder = settings.characters.indexOf(a.character) - settings.characters.indexOf(b.character);
@@ -51,9 +63,10 @@
         || (typeof a.node.stage==='number'?a.node.stage:101) - (typeof b.node.stage==='number'?b.node.stage:101) || (a.node.depth || 0) - (b.node.depth || 0)
         || a.node.y - b.node.y || ['weapon', 'armor'].indexOf(a.slot) - ['weapon', 'armor'].indexOf(b.slot);
     });
+    yield null;
     const kinds = new Map(candidates.map(row => [row.node.id, kind(row.node)]));
-    return P.purchaseGearBatch(save, candidates.map(row => ({ character: row.character, slot: row.slot, node: row.node.id })), limit)
-      .map(row => ({ ...row, kind: kinds.get(row.node) }));
+    for (const row of P.purchaseGearSteps(save, candidates.map(row => ({ character: row.character, slot: row.slot, node: row.node.id }))))
+      yield row ? { ...row, kind: kinds.get(row.node) } : null;
   }
-  return { KINDS, CHARACTERS, fresh, restore, unlocked, mainComplete, acquire };
+  return { KINDS, CHARACTERS, fresh, restore, unlocked, mainComplete, acquire, acquireSteps };
 });
