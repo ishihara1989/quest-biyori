@@ -4110,7 +4110,7 @@
       "side": "enemy",
       "label": "イノシシ",
       "region": 1,
-      "firstStage": 3,
+      "firstStage": 1,
       "image": "/assets/ui/enemies/boar.png",
       "clips": [
         {
@@ -4262,7 +4262,7 @@
       "side": "enemy",
       "label": "植物クリーチャー",
       "region": 1,
-      "firstStage": 4,
+      "firstStage": 1,
       "image": "/assets/ui/enemies/alraune-minion.png",
       "clips": [
         {
@@ -4768,7 +4768,7 @@
       "side": "enemy",
       "label": "泥の手",
       "region": 2,
-      "firstStage": 13,
+      "firstStage": 11,
       "image": "/assets/ui/enemies/mud-hand.png",
       "clips": [
         {
@@ -4980,7 +4980,7 @@
       "side": "enemy",
       "label": "スケルトン",
       "region": 2,
-      "firstStage": 14,
+      "firstStage": 11,
       "image": "/assets/ui/enemies/skeleton.png",
       "clips": [
         {
@@ -5522,7 +5522,7 @@
       "side": "enemy",
       "label": "ワーム",
       "region": 3,
-      "firstStage": 23,
+      "firstStage": 21,
       "image": "/assets/ui/enemies/cave-worm.png",
       "clips": [
         {
@@ -5686,7 +5686,7 @@
       "side": "enemy",
       "label": "蜘蛛",
       "region": 3,
-      "firstStage": 24,
+      "firstStage": 21,
       "image": "/assets/ui/enemies/cave-spider.png",
       "clips": [
         {
@@ -6216,7 +6216,7 @@
       "side": "enemy",
       "label": "リザードマン",
       "region": 4,
-      "firstStage": 33,
+      "firstStage": 31,
       "image": "/assets/ui/enemies/lizardman.png",
       "clips": [
         {
@@ -6380,7 +6380,7 @@
       "side": "enemy",
       "label": "タコ",
       "region": 4,
-      "firstStage": 34,
+      "firstStage": 31,
       "image": "/assets/ui/enemies/octopus.png",
       "clips": [
         {
@@ -7040,7 +7040,7 @@
       "side": "enemy",
       "label": "浮遊魔導器",
       "region": 5,
-      "firstStage": 43,
+      "firstStage": 41,
       "image": "/assets/ui/enemies/floating-magic-core.png",
       "clips": [
         {
@@ -13062,6 +13062,304 @@
               "id": "celestial-wave",
               "label": "天環の波",
               "manifest": "/assets/enemies/extradimensional-goddess/motions/celestial-wave/manifest.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reincarnation-goddess",
+      "side": "enemy",
+      "label": "転生の女神",
+      "region": "special",
+      "firstStage": "reincarnation-goddess",
+      "image": "/assets/ui/enemies/reincarnation-goddess.png",
+      "clips": [
+        {
+          "id": "idle",
+          "label": "待機",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "idle",
+              "label": "待機",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/idle/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "move",
+          "label": "浮遊移動",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "move",
+              "label": "浮遊移動",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/move/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "hit",
+          "label": "涙目の被弾",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "hit",
+              "label": "涙目の被弾",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/hit/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "return",
+          "label": "涙目で怒って帰還",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "return",
+              "label": "涙目で怒って帰還",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/return/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "body-pulse",
+          "label": "パルス散弾機関砲",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "body-pulse",
+              "label": "パルス散弾機関砲",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/body-pulse/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "body-laser",
+          "label": "陽電子レール砲",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "body-laser",
+              "label": "陽電子レール砲",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/body-laser/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "body-missiles",
+          "label": "追尾ミサイル配送",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "body-missiles",
+              "label": "追尾ミサイル配送",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/body-missiles/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "body-discs",
+          "label": "重力ブーメラン",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "body-discs",
+              "label": "重力ブーメラン",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/body-discs/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "body-orbital",
+          "label": "衛星スタンプ砲",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "body-orbital",
+              "label": "衛星スタンプ砲",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/body-orbital/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "truck-mount",
+          "label": "トラック乗車",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "truck-mount",
+              "label": "トラック乗車",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/truck-mount/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "truck-wait",
+          "label": "トラック企み待機",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "truck-wait",
+              "label": "トラック企み待機",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/truck-wait/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "truck-rush",
+          "label": "トラック突進",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "truck-rush",
+              "label": "トラック突進",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/truck-rush/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "truck-interrupt",
+          "label": "トラック妨害・涙目",
+          "kind": "motion",
+          "assets": [
+            {
+              "id": "truck-interrupt",
+              "label": "トラック妨害・涙目",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/truck-interrupt/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-summon",
+          "label": "兵器召喚ゲート",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-summon",
+              "label": "兵器召喚ゲート",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-summon/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-pulse",
+          "label": "パルス弾",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-pulse",
+              "label": "パルス弾",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-pulse/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-beam",
+          "label": "直線レーザー",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-beam",
+              "label": "直線レーザー",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-beam/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-missile",
+          "label": "誘導ミサイル",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-missile",
+              "label": "誘導ミサイル",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-missile/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-disc",
+          "label": "重力円盤",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-disc",
+              "label": "重力円盤",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-disc/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-orbital",
+          "label": "衛星砲撃柱",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-orbital",
+              "label": "衛星砲撃柱",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-orbital/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-impact",
+          "label": "共通着弾",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-impact",
+              "label": "共通着弾",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-impact/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-truck",
+          "label": "トラック煙・空転",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-truck",
+              "label": "トラック煙・空転",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-truck/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-blast",
+          "label": "トラック中断のギャグ爆発",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-blast",
+              "label": "トラック中断のギャグ爆発",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-blast/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-gate-open",
+          "label": "帰還ゲート開口",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-gate-open",
+              "label": "帰還ゲート開口",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-gate-open/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "fx-gate-close",
+          "label": "帰還ゲート閉口",
+          "kind": "effect",
+          "assets": [
+            {
+              "id": "fx-gate-close",
+              "label": "帰還ゲート閉口",
+              "manifest": "/assets/enemies/reincarnation-goddess/motions/fx-gate-close/manifest.json"
             }
           ]
         }
