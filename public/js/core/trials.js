@@ -9,7 +9,7 @@
   ];
   const byId=Object.fromEntries(definitions.map(d=>[d.id,d])),gods=['extradimensional-goddess','reincarnation-goddess'];
   const clean=ids=>[...new Set((Array.isArray(ids)?ids:[]).filter(id=>Object.hasOwn(byId,id)))];
-  const availableNode=id=>id==='trial-open';
+  const availableNode=id=>id==='trial-open'||id==='trial-seals';
   const unlocked=save=>!!save?.reincarnation?.unlocked&&!!save.reincarnation.owned?.includes('trial-open');
   const completed=save=>clean(save.reincarnation?.trialCompleted);
   const available=(save,id)=>unlocked(save)&&!!byId[id]&&byId[id].requires.every(p=>completed(save).includes(p));

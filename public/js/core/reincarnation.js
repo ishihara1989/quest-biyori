@@ -141,7 +141,7 @@
     const destination = skipDestination(save,frontier);
     if (!destination || target > destination || target <= frontier) return;
     for (let id = frontier + 1; id < target; id++) if (!save.reincarnation.passed.includes(id)) save.reincarnation.passed.push(id);
-    for (const [job, def] of Object.entries(P.CHARACTERS)) if (def.unlock > frontier && def.unlock < target) {
+    for (const [job, def] of Object.entries(P.CHARACTERS)) if (!bonuses(save).allies && def.unlock > frontier && def.unlock < target) {
       const c = save.progression.characters[job];
       if (job === 'mage' || job === 'paladin') c.xp = P.experience(def.unlock);
       else P['recruit' + job[0].toUpperCase() + job.slice(1)](save);

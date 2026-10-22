@@ -195,7 +195,7 @@
     c.xp=experience(40);for(const slot of ['weapon','armor'])c[slot]=allGearTrees('miko',slot).filter(n=>n.main&&n.stage<=40).map(n=>n.id);
     for(const n of K.ACTIVE.filter(n=>n.kind==='active'&&n.unlockLevel<=40)){c.skillRanks[n.id]=5;c.skills.push(n.id);}return true;
   }
-  const unlocked = (save, id) => Object.hasOwn(CHARACTERS, id) && (!CHARACTERS[id].unlock || reached(save, CHARACTERS[id].unlock));
+  const unlocked = (save, id) => Object.hasOwn(CHARACTERS, id) && (!!permanent(save).allies || !CHARACTERS[id].unlock || reached(save, CHARACTERS[id].unlock));
   const level = xp => xp.level;
   const xpPercent = xp => xp.level >= MAX_LEVEL ? 'MAX' : (xp.progress * 100).toFixed(2) + '%';
   function totalPoints(save, id) { const c=save.progression.characters[id],lv=level(c.xp),b=permanent(save);return Math.floor(lv*(100+(b.sp||0))/100)+(b.spTen||0)*Math.floor(lv/10)+['weapon','armor'].reduce((sum,slot)=>sum+c[slot].reduce((points,uid)=>points+(GODDESS_SP.get(uid)||0),0),0); }
@@ -498,20 +498,21 @@
   }
   function restore(raw, cleared, instances = [], reincarnation = null) {
     const clean = fresh(), save = { progression: clean, cleared, gems: instances, gold: 0, reincarnation };
+    const bonded = !!permanent(save).allies;
     const equipped = new Set();
     for (const id of Object.keys(CHARACTERS)) {
       const input = raw?.characters?.[id], c = clean.characters[id];
-      if(!input&&id==='paladin'&&cleared.includes(10))c.xp=experience(10);
+      if(!bonded&&!input&&id==='paladin'&&cleared.includes(10))c.xp=experience(10);
       if (Number.isSafeInteger(input?.xp?.level) && input.xp.level >= 1 && Number.isFinite(input.xp.progress) && input.xp.progress >= 0 && input.xp.progress < 1) c.xp = experience(input.xp.level, input.xp.progress);
       if (!unlocked(save, id)) continue;
-      if(id==='ninja'&&(!input||((!input.xp||input.xp.level<=1)&&!input.weapon?.length&&!input.armor?.length&&!Object.keys(input.skillRanks||{}).length))) {recruitNinja(save);continue;}
-      if(id==='shaman'&&(!input||((!input.xp||input.xp.level<=1)&&!input.weapon?.length&&!input.armor?.length&&!Object.keys(input.skillRanks||{}).length))) {recruitShaman(save);continue;}
-      if(id==='miko'&&(!input||((!input.xp||input.xp.level<=1)&&!input.weapon?.length&&!input.armor?.length&&!Object.keys(input.skillRanks||{}).length))) {recruitMiko(save);continue;}
+      if(!bonded&&id==='ninja'&&(!input||((!input.xp||input.xp.level<=1)&&!input.weapon?.length&&!input.armor?.length&&!Object.keys(input.skillRanks||{}).length))) {recruitNinja(save);continue;}
+      if(!bonded&&id==='shaman'&&(!input||((!input.xp||input.xp.level<=1)&&!input.weapon?.length&&!input.armor?.length&&!Object.keys(input.skillRanks||{}).length))) {recruitShaman(save);continue;}
+      if(!bonded&&id==='miko'&&(!input||((!input.xp||input.xp.level<=1)&&!input.weapon?.length&&!input.armor?.length&&!Object.keys(input.skillRanks||{}).length))) {recruitMiko(save);continue;}
       if(id==='miko'&&input.skipRecruitReward===40)c.skipRecruitReward=40;
       if(id==='shaman'&&input.skipRecruitReward===30)c.skipRecruitReward=30;
       if(id==='ninja'&&input.skipRecruitReward===20)c.skipRecruitReward=20;
       // Recruitment grants the starting level's SP, including when restoring a save.
-      if (id === 'mage' && c.xp.level < CHARACTERS.mage.unlock) c.xp = experience(CHARACTERS.mage.unlock);
+      if (!bonded && id === 'mage' && c.xp.level < CHARACTERS.mage.unlock) c.xp = experience(CHARACTERS.mage.unlock);
       for (const kind of ['weapon', 'armor', 'skills']) {
         const nodes = kind === 'skills' ? SKILLS[id] : allGearTrees(id, kind, true), requested = Array.isArray(input?.[kind]) ? input[kind] : [];
         if (kind === 'skills') {
@@ -524,7 +525,7 @@
         }
         // Restore in dependency order and reject orphaned purchases / overspent points.
         for (const n of nodes) if (n.cost !== 0 && requested.includes(n.id) && n.requires.every(req => c[kind].includes(req) || (kind === 'skills' && nodes.find(s => s.id === req)?.cost === 0)) &&
-          (kind === 'skills' ? points(save, id) >= n.cost : reached(save,n.stage)||(['ninja','shaman','miko'].includes(id)&&n.main&&n.stage<=CHARACTERS[id].unlock))) c[kind].push(n.id);
+          (kind === 'skills' ? points(save, id) >= n.cost : reached(save,n.stage)||(!bonded&&['ninja','shaman','miko'].includes(id)&&n.main&&n.stage<=CHARACTERS[id].unlock))) c[kind].push(n.id);
         if (Array.isArray(input?.gems?.[kind])) for (const uid of input.gems[kind]) if (Number.isSafeInteger(uid) && gemInstance(save, uid) && Gem.describe(gemInstance(save,uid)).jobs.includes(id) && !equipped.has(uid) && gemUsage(save, id, kind, [...c.gems[kind], uid]).fits) { c.gems[kind].push(uid); equipped.add(uid); }
       }
     }

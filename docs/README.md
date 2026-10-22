@@ -17,6 +17,8 @@
 
 ## 設計・仕様・提案
 
+- [封印・ソロ試練と転生中盤のバランス案（基準測定・報酬と解放順の候補）](design/sealed-trials-and-progression.md)
+
 - [転生の女神：SF兵器5種・大型トラック・ゲート帰還](design/reincarnation-goddess-arsenal.md)
 
 - [転生・転生チャレンジ・実績システム企画（設計経緯・採用範囲は実装記録へ）](design/reincarnation-system-design.md)
@@ -42,6 +44,8 @@
 - [戦士スキルとツリー](design/warrior-skill-design.md)
 
 ## 実装済み機能と検証
+
+- [輪廻の絆・封印の試練の解放ノード（2026-10-22）](implementation/sealed-trial-unlocks.md)
 
 - [パッシブの成長能力を割合補正へ変更（2026-10-17）](implementation/passive-percent-stats.md)
 

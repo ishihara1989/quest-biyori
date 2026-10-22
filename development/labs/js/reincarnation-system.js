@@ -26,6 +26,11 @@
    Achievements.sync(save);
    if(['tree','deep'].includes(preset))save=R.prepare(save,D.freshSave);
    if(preset==='deep'){save.reincarnation.cycle=10000;save.reincarnation.total=1000000;}
+   if(preset==='seals'){
+    save=D.freshSave();Object.assign(save.reincarnation,{discovered:true,unlocked:true,cycle:100,total:20000});
+    const own=id=>{for(const parent of ReincarnationTree.byId[id].requires)if(parent!=='origin'&&!save.reincarnation.owned.includes(parent))own(parent);if(id!=='origin'&&!save.reincarnation.owned.includes(id))save.reincarnation.owned.push(id);};
+    for(const id of ['trial-open','damage2','hp2'])own(id);save.autoMode='off';
+   }
    if(['trials','gate-release','chaos-gate-release'].includes(preset)){
     Object.assign(save.reincarnation,{unlocked:true,cycle:20,total:2000});
     const own=id=>{for(const parent of ReincarnationTree.byId[id].requires)if(parent!=='origin'&&!save.reincarnation.owned.includes(parent))own(parent);if(id!=='origin')save.reincarnation.owned.push(id);};

@@ -30,6 +30,34 @@ async function main(){
  async function menu(page,name){const dialog=page.locator('#menu-dialog');if(await dialog.isVisible())await page.locator('#close-menu').click();await page.locator('[data-open="'+name+'"]').first().click();}
  const labOnly=process.argv.includes('--lab-only'),scenesOnly=process.argv.includes('--scenes-only'),boss=B.reference();boss.autoMode='off';
  try{
+  if(process.argv.includes('--seals-only')){
+   const own=(seed,id)=>{for(const p of T.byId[id].requires)if(p!=='origin'&&!seed.reincarnation.owned.includes(p))own(seed,p);if(id!=='origin'&&!seed.reincarnation.owned.includes(id))seed.reincarnation.owned.push(id);};
+   for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
+    const seed=D.freshSave();Object.assign(seed.reincarnation,{discovered:true,unlocked:true,cycle:100,total:20000});for(const id of ['trial-open','damage2','hp2'])own(seed,id);
+    const {page,context}=await pageFor(seed,viewport);await menu(page,'reincarnation');
+    await page.locator('[data-reinc-node="trial-seals"]').click();assert.ok(await page.locator('[data-reinc-confirm]').isDisabled());
+    assert.deepEqual(await page.locator('.reinc-prerequisites [data-reinc-jump]').evaluateAll(nodes=>nodes.map(n=>n.dataset.reincJump)),['trial-open','damage2','hp2','cycle-bond']);
+    await page.locator('[data-reinc-jump="cycle-bond"]').click();assert.equal(await page.locator('.reincarnation-detail h3').innerText(),'輪廻の絆');
+    assert.equal(await page.locator('[data-reinc-confirm]').innerText(),'4,000 PT · 取得');
+    await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-cancel]').click();assert.ok(!(await saveOf(page)).reincarnation.owned.includes('cycle-bond'));
+    await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="cycle-bond"]').click();
+    await page.locator('[data-reinc-node="trial-seals"]').click();assert.equal(await page.locator('[data-reinc-confirm]').innerText(),'4,000 PT · 取得');
+    assert.ok((await page.locator('.reinc-note').innerText()).includes('設計中'));assert.ok(await page.locator('[data-reinc-confirm]').isEnabled());
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.mouse.move(2,2);await shot(page,'seals-prerequisites-'+viewport.width);
+    await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="trial-seals"]').click();
+    const purchased=await saveOf(page);assert.equal(R.points(purchased),R.points(seed)-8000);
+    await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
+    const restored=await saveOf(page);assert.deepEqual(new Set(restored.reincarnation.owned),new Set(purchased.reincarnation.owned));
+    await menu(page,'skills');assert.equal(await page.locator('[data-character]').count(),6);await shot(page,'bond-party-'+viewport.width);
+    await menu(page,'reincarnation');await page.locator('[data-reinc-tab="trials"]').click();await page.locator('[data-trial-start]').click();
+    assert.ok((await page.locator('.trial-review').innerText()).includes('仲間は最初から全員同行'));await page.locator('[data-trial-confirm="start"]').click();
+    await page.waitForLoadState('load');await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
+    const next=await saveOf(page);assert.ok(Object.keys(P.CHARACTERS).every(job=>P.unlocked(next,job)&&next.progression.characters[job].xp.level===1));
+    await page.locator('#start-button').click();assert.equal(await page.evaluate(()=>testRun.allies.length),5);await page.clock.runFor(250);await shot(page,'bond-first-battle-'+viewport.width);
+    await context.close();
+   }
+   assert.deepEqual(errors,[]);console.log('Bond/seals UI passed at 1440px/390px: prerequisites, prices, cancel, purchase, reload, six Lv1 characters and first battle; no resource/runtime errors.');return;
+  }
   if(process.argv.includes('--luck-only')){
    const ids=['gold2','drop-rate',...T.branches.find(b=>b.heading==='収穫 / ドロップ率').ids];
    for(const viewport of [{width:1440,height:1050},{width:390,height:844}])for(const final of [false,true]){

@@ -276,13 +276,15 @@
     if (first) {
       save.cleared.push(stageId);
       if (!stage.special) save.inventory.potion = (save.inventory.potion || 0) + 1;
-      if (stageId === CHAR_MAGE_STAGE) save.progression.characters.mage.xp = P.experience(CHAR_MAGE_STAGE);
-      if (stageId === 10) save.progression.characters.paladin.xp=P.experience(10);
-      if (stageId === 20&&P.recruitNinja(save)) save.progression.characters.ninja.skipRecruitReward=20;
+      if (!P.permanent(save).allies) {
+        if (stageId === CHAR_MAGE_STAGE) save.progression.characters.mage.xp = P.experience(CHAR_MAGE_STAGE);
+        if (stageId === 10) save.progression.characters.paladin.xp=P.experience(10);
+        if (stageId === 20&&P.recruitNinja(save)) save.progression.characters.ninja.skipRecruitReward=20;
         if (stageId === 30&&P.recruitShaman(save)) save.progression.characters.shaman.skipRecruitReward=30;
-      if(stageId===40&&P.recruitMiko(save))save.progression.characters.miko.skipRecruitReward=40;
+        if(stageId===40&&P.recruitMiko(save))save.progression.characters.miko.skipRecruitReward=40;
+      }
     }
-    return { gold, first, reincarnationUnlocks, potion: first && !stage.special ? 1 : 0, recruited: first && stageId === 4 ? 'mage' : first&&stageId===10?'paladin':first&&stageId===20?'ninja':first&&stageId===30?'shaman':first&&stageId===40?'miko':null };
+    return { gold, first, reincarnationUnlocks, potion: first && !stage.special ? 1 : 0, recruited: !P.permanent(save).allies && first ? ({4:'mage',10:'paladin',20:'ninja',30:'shaman',40:'miko'}[stageId] || null) : null };
   }
   const CHAR_MAGE_STAGE = P.CHARACTERS.mage.unlock;
   function autoDestination(save, stageId, victory) {
