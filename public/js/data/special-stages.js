@@ -45,6 +45,10 @@
   };
   const RIFT = { ID, ASSET, GATES, NAMES, BATCHES, COLORS };
   const definition = id => id === CHAOS.ID ? CHAOS : RIFT;
+  const summonBatches = (id, tier, released = false) => {
+    const batches = definition(id).BATCHES[tier];
+    return released && tier < 2 ? [batches.flat()] : batches;
+  };
   const ENEMIES = Object.fromEntries([RIFT, CHAOS].flatMap(config => config.GATES.map((id, tier) => [id, {
     name: config.NAMES[tier], specialId: config.ID, dimensionalGate: true, gateTier: tier, noDrop: true,
     hp: 1, damage: 0, defense: 0, range: 0, speed: 0, interval: 1e9,
@@ -83,5 +87,5 @@
     return { ...base, hp: reference.hp, damage: reference.damage,
       defense: reference.defense, majorBoss: major };
   }
-  return { ID, ASSET, GATES, NAMES, BATCHES, COLORS, CHAOS, definition, ENEMIES, stages, profile };
+  return { ID, ASSET, GATES, NAMES, BATCHES, COLORS, CHAOS, definition, summonBatches, ENEMIES, stages, profile };
 });

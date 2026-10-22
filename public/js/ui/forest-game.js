@@ -419,7 +419,7 @@
     if (bosses.length) {
       if(run.stage.goddessDuo){const both=run.enemies.filter(e=>e.boss);text('boss-name',both.map(e=>e.name+(e.goddess?' II':'')+' '+(100*e.hp/e.maxHp).toFixed(0)+'%').join(' / '));$('boss-hp-fill').style.width=100*both.reduce((n,e)=>n+e.hp,0)/both.reduce((n,e)=>n+e.maxHp,0)+'%';return;}
       if(run.stage.final){const e=bosses[0];text('boss-name',e.name+' · '+(e.phaseChangeAt!=null?'覚醒':e.goddessPhase===2?'II 浮遊':'I 御座')+' · '+(100*e.hp/e.maxHp).toFixed(1)+'%');$('boss-hp-fill').style.width=100*e.hp/e.maxHp+'%';return;}
-      const batches = gate ? SpecialStages.definition(run.stage.id).BATCHES : null;
+      const batches = gate ? SpecialStages.definition(run.stage.id).BATCHES.map((_,tier)=>SpecialStages.summonBatches(run.stage.id,tier,run.trials.gateRelease)) : null;
       const summonRound = gate ? Math.max(1, gate.gateBatch + (['opening','summoning'].includes(gate.gatePhase) ? 1 : 0)) : 0;
       text('boss-name', gate ? gate.name + ' · ' + (gate.gatePhase === 'shattering' ? '崩壊' : '召喚 ' + Math.min(batches[gate.gateTier].length, summonRound) + ' / ' + batches[gate.gateTier].length) : bosses.map(e => e.name).join(' / '));
       const budget = gate ? batches[gate.gateTier].flat().length : 0;
