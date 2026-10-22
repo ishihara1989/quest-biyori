@@ -12,7 +12,7 @@
 - [四足歩行の標準制作・検収手順](policies/quadruped-trot-production.md)
 - [リポジトリの配置基準](policies/repository-structure.md)
 
-- [基本4系統の試練（強靭・猛攻・頑強・女神の本気）](implementation/simple-trials.md)
+- [基本5系統の試練（強靭・猛攻・頑強・女神の本気・ゲート解放）](implementation/simple-trials.md)
 - [実績・転生の女神・転生システム（本編実装）](implementation/reincarnation-system.md)
 
 ## 設計・仕様・提案

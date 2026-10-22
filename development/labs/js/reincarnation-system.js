@@ -26,10 +26,11 @@
    Achievements.sync(save);
    if(['tree','deep'].includes(preset))save=R.prepare(save,D.freshSave);
    if(preset==='deep'){save.reincarnation.cycle=10000;save.reincarnation.total=1000000;}
-   if(preset==='trials'){
+   if(['trials','gate-release','chaos-gate-release'].includes(preset)){
     Object.assign(save.reincarnation,{unlocked:true,cycle:20,total:2000});
     const own=id=>{for(const parent of ReincarnationTree.byId[id].requires)if(parent!=='origin'&&!save.reincarnation.owned.includes(parent))own(parent);if(id!=='origin')save.reincarnation.owned.push(id);};
     own('trial-open');save.reincarnation.trialCompleted=['onslaught','unyielding'];save.reincarnation.trials=['goddess-serious'];save.reincarnation.trialRun=true;
+    if(preset!=='trials'){save.reincarnation.trials=['gate-release'];save.reincarnation.appliedTrials=['onslaught','unyielding'];save.selectedStage=preset==='gate-release'?'dimensional-gate':'chaos-gate';save.speed=1;}
    }
    Achievements.sync(save);return save;
   }

@@ -30,7 +30,7 @@ async function main(){
   const own=(seed,id)=>{for(const p of T.byId[id].requires)if(p!=='origin'&&!seed.reincarnation.owned.includes(p))own(seed,p);if(id!=='origin')seed.reincarnation.owned.push(id);};
   async function trials(page){await menu(page,'reincarnation');await page.locator('[data-reinc-tab="trials"]').click();}
   async function win(page){await page.locator('#start-button').click();await page.evaluate(()=>ForestSimulation.hit(testRun,testRun.hero,testRun.enemies[0],1e30,[],false,null,{critical:false}));await page.clock.runFor(4000);if(await page.locator('#unlock-intro').isVisible())await page.locator('#unlock-continue').click();await page.locator('#result-skip').click();await page.locator('#retry-button').click();await page.locator('#pause-button').click();}
-  for(const width of (process.argv.includes('--effects-only')?[]:process.argv.includes('--mobile-only')?[390]:[1440,390])){
+  for(const width of (process.argv.includes('--effects-only')||process.argv.includes('--gate-only')?[]:process.argv.includes('--mobile-only')?[390]:[1440,390])){
    const seed=B.reference();seed.autoMode='off';Object.assign(seed.reincarnation,{unlocked:true,cycle:20,total:2000});for(const id of T.byId['trial-open'].requires)own(seed,id);
    assert.equal(seed.reincarnation.owned.includes('drop4'),false);
    const {page,context}=await pageFor(seed,width);await trials(page);assert.equal(await page.locator('.trial-locked').count(),1);
@@ -61,8 +61,38 @@ async function main(){
    }
    await fx.context.close();
   }
-  const lab=await pageFor(D.freshSave(),1440);await lab.page.unroute('**/*');await lab.page.goto('http://127.0.0.1:'+server.address().port+'/development/labs/reincarnation-system.html');await lab.page.locator('[data-preset="trials"]:not([disabled])').waitFor();await lab.page.locator('[data-preset="trials"]').click();await lab.page.locator('#start-button:not([disabled])').waitFor({timeout:90000});assert.equal((await saveOf(lab.page)).reincarnation.trials[0],'goddess-serious');await lab.context.close();
-  assert.deepEqual(errors,[]);console.log(process.argv.includes('--effects-only')?'Trial intervention UI passed: 20 regional phantoms, three divine warnings/impacts and no rendering/resource errors.':process.argv.includes('--layout-only')?'Trial tree layout passed at 1440px/390px: tabs, links, prerequisites and drag.':'Trial tree UI passed: tabs, prices, prerequisites, drag, unpaid/paid restart, cancel, abandon, first clear, next-journey rewards, save and review preset.');
+  if(process.argv.includes('--gate-only'))for(const width of [1440,390]){
+   const seed=B.reference();seed.autoMode='off';seed.selectedStage='dimensional-gate';
+   Object.assign(seed.reincarnation,{unlocked:true,cycle:20,total:2000,journey:1,trialRun:true,trials:['gate-release'],trialCompleted:['onslaught','unyielding','gate-release'],appliedTrials:['gate-release']});own(seed,'trial-open');
+   const {page,context}=await pageFor(seed,width);await trials(page);
+   await page.locator('[data-trial-node="gate-release"]').first().click();
+   assert.equal(await page.locator('[data-trial-toggle="gate-release"]').isEnabled(),true);
+   assert.equal(await page.locator('.trial-detail .reinc-prerequisites button').count(),2);
+   assert.ok((await page.locator('.trial-detail').innerText()).includes('他の素材費軽減と加算'));
+   assert.ok((await page.locator('.trial-permanent').innerText()).includes('素材費 −10%'));
+   if(width<700)await page.locator('.trial-detail').scrollIntoViewIfNeeded();
+   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+   await page.mouse.move(3,3);await page.screenshot({path:path.join(output,'gate-detail-'+width+'.png'),animations:'disabled'});
+   await page.locator('#close-menu').click();await page.locator('#start-button').click();await page.locator('#pause-button').click();
+   await page.evaluate(()=>{for(const a of [testRun.hero,...testRun.allies])Object.assign(a,{manualOnly:true,invulnerable:true,cooldown:1e9,skill:1e9,warriorSkills:[],mageSkills:[],paladinSkills:[]});});
+   await page.locator('#pause-button').click();await page.clock.runFor(1200);await page.locator('#pause-button').click();
+   assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),105);
+   assert.ok((await page.locator('#boss-name').innerText()).includes('1 / 1'));
+   await page.locator('#pause-button').click();await page.clock.runFor(900);await page.locator('#pause-button').click();
+   await page.locator('#game-canvas').screenshot({path:path.join(output,'gate-mobs-'+width+'.png')});
+   await page.evaluate(()=>{for(const e of testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart))ForestSimulation.hit(testRun,testRun.hero,e,1e30,[],false,null,{critical:false,skipHitRoll:true});});
+   await page.locator('#pause-button').click();await page.clock.runFor(6000);await page.locator('#pause-button').click();
+   assert.equal(await page.evaluate(()=>testRun.wave),1);
+   assert.equal(await page.evaluate(()=>testRun.enemies.filter(e=>!e.dimensionalGate&&!e.bodyPart).length),15);
+   assert.ok((await page.locator('#boss-name').innerText()).includes('1 / 1'));
+   await page.locator('#game-canvas').screenshot({path:path.join(output,'gate-bosses-'+width+'.png')});
+   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+   await context.close();
+  }
+  const lab=await pageFor(D.freshSave(),1440);await lab.page.unroute('**/*');await lab.page.goto('http://127.0.0.1:'+server.address().port+'/development/labs/reincarnation-system.html');const preset=process.argv.includes('--gate-only')?'gate-release':'trials';await lab.page.locator('[data-preset="'+preset+'"]:not([disabled])').waitFor();await lab.page.locator('[data-preset="'+preset+'"]').click();await lab.page.locator('#start-button:not([disabled])').waitFor({timeout:90000});const labSave=await saveOf(lab.page);assert.equal(labSave.reincarnation.trials[0],preset==='trials'?'goddess-serious':'gate-release');if(preset==='gate-release'){
+   assert.equal(labSave.selectedStage,'dimensional-gate');await lab.page.goto('http://127.0.0.1:'+server.address().port+'/development/labs/reincarnation-system.html');await lab.page.locator('[data-preset="chaos-gate-release"]:not([disabled])').waitFor();await lab.page.locator('[data-preset="chaos-gate-release"]').click();await lab.page.locator('#start-button:not([disabled])').waitFor({timeout:90000});const chaosSave=await saveOf(lab.page);assert.equal(chaosSave.selectedStage,'chaos-gate');assert.deepEqual(chaosSave.reincarnation.trials,['gate-release']);
+  }await lab.context.close();
+  assert.deepEqual(errors,[]);console.log(process.argv.includes('--gate-only')?'Gate release UI passed at 1440px/390px: prerequisites, additive reward, 105/15 summons and 1/1 HUD.':process.argv.includes('--effects-only')?'Trial intervention UI passed: 20 regional phantoms, three divine warnings/impacts and no rendering/resource errors.':process.argv.includes('--layout-only')?'Trial tree layout passed at 1440px/390px: tabs, links, prerequisites and drag.':'Trial tree UI passed: tabs, prices, prerequisites, drag, unpaid/paid restart, cancel, abandon, first clear, next-journey rewards, save and review preset.');
  }finally{await browser.close();await new Promise(r=>server.close(r));}
 }
 if(require.main===module)main().catch(e=>{console.error(e);process.exitCode=1;});module.exports={main};

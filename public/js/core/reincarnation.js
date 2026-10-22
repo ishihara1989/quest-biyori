@@ -7,6 +7,7 @@
   if (common) module.exports = api; else root.Reincarnation = api;
 })(globalThis, (P, T, D) => {
   const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
+  const maxPoints = Math.round(D.POINTS * Trials.summarize(Trials.definitions.map(d=>d.id)).reward * 1.5);
   const fresh = () => ({ version: 3, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [], trialRun: false, trialCompleted: [], appliedTrials: [], journey: 0, duoDefeatedJourney: null,
     resultOptions: { skip: false, delay: 5 }, total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
@@ -18,7 +19,7 @@
     result.discovered = raw.discovered === true;
     result.unlocked = result.discovered && raw.unlocked === true;
     result.cycle = result.unlocked && integer(raw.cycle) ? Math.min(raw.cycle, 1000000000) : 0;
-    result.total = raw.version >= 2 && integer(raw.total) && raw.total >= result.cycle * D.POINTS && raw.total <= result.cycle * 33750 ? raw.total : result.cycle * D.POINTS;
+    result.total = raw.version >= 2 && integer(raw.total) && raw.total >= result.cycle * D.POINTS && raw.total <= result.cycle * maxPoints ? raw.total : result.cycle * D.POINTS;
     result.defeatedCycle = result.unlocked && raw.defeatedCycle === result.cycle ? result.cycle : null;
     result.lifetimeStages = [...new Set((Array.isArray(raw.lifetimeStages) ? raw.lifetimeStages : []).filter(id =>
       Number.isInteger(id) && id >= 1 && id <= 100 || ['dimensional-gate', 'chaos-gate', 'extradimensional-goddess', D.ID].includes(id)))];
@@ -34,7 +35,7 @@
     result.trials = result.trialRun ? Trials.clean(raw.trials) : [];
     result.duoDefeatedJourney = result.trialRun && raw.duoDefeatedJourney === result.journey ? result.journey : null;
     if(Trials.serious({reincarnation:result})&&result.duoDefeatedJourney!==result.journey)result.defeatedCycle=null;
-    result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= 33750 ? raw.pendingPoints : D.POINTS) : 0;
+    result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= maxPoints ? raw.pendingPoints : D.POINTS) : 0;
     result.resultOptions = cleanResultOptions(raw.resultOptions);
     const a = raw.automation;
     result.automation.skills = a?.skills === true; result.automation.gems = a?.gems === true;

@@ -35,7 +35,7 @@
     const key = (save.reincarnation?.owned || []).join('|')+';'+(save.reincarnation?.appliedTrials || []).join('|'), cached = bonusCache.get(save);
     if (cached?.key === key) return cached.value;
     const value = ReincarnationTree.totals({ owned: new Set(['origin', ...(save.reincarnation?.owned || [])]) });
-    const trial=Trials.bonuses(save);value.gold*=trial.harvest;if(trial.harvest>1)value.trialRate=trial.harvest;value.hp*=trial.hp;value.damage*=trial.damage;
+    const trial=Trials.bonuses(save);value.gold*=trial.harvest;if(trial.harvest>1)value.trialRate=trial.harvest;value.hp*=trial.hp;value.damage*=trial.damage;if(trial.materialReduction){value.sub=(value.sub||0)+trial.materialReduction;value.unique=(value.unique||0)+trial.materialReduction;}
     bonusCache.set(save, { key, value }); return value;
   }
   const reached = (save, stage) => save.cleared.includes(stage) || !!save.reincarnation?.passed?.includes(stage);

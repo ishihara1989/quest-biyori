@@ -52,7 +52,8 @@
   function tickGate(run, events) {
     const gate = run.enemies.find(e => e.dimensionalGate && e.hp > 0);
     if (!gate) return;
-    const batches = Special.definition(run.stage.id).BATCHES[gate.gateTier];
+    const released = run.trials.gateRelease && gate.gateTier < 2;
+    const batches = Special.summonBatches(run.stage.id, gate.gateTier, released);
     const emit = (kind, extra = {}) => events.push({ type: 'rift-effect', kind, tier: gate.gateTier,
       specialId: run.stage.id, x: gate.x, y: gate.y, timeMs: run.time, ...extra });
     gate.gateClock += STEP;
@@ -64,16 +65,18 @@
       gate.gatePhase = 'summoning'; gate.gateClock = 0; gate.gateSpawnIndex = 0;
     } else if (gate.gatePhase === 'summoning') {
       const batch = batches[gate.gateBatch];
-      while (gate.gateSpawnIndex < batch.length && gate.gateClock >= gate.gateSpawnIndex * 160) {
+      while (gate.gateSpawnIndex < batch.length && gate.gateClock >= (released ? 0 : gate.gateSpawnIndex * 160)) {
         const index = gate.gateSpawnIndex++, type = batch[index];
-        // Fit 35 mobs into seven columns and five rows within the same spawn area.
-        const columns = gate.gateTier === 0 ? 7 : 5;
-        const y = gate.gateTier === 0 ? 356 + Math.floor(index / columns) * 31.5 : 379 + (index % 2) * 100;
+        // Released waves use a denser grid within the existing spawn area.
+        const columns = released && gate.gateTier === 0 ? 15 : gate.gateTier === 0 ? 7 : 5;
+        const rows = Math.ceil(batch.length / columns);
+        const y = released ? 356 + Math.floor(index / columns) * 126 / (rows - 1)
+          : gate.gateTier === 0 ? 356 + Math.floor(index / columns) * 31.5 : 379 + (index % 2) * 100;
         const enemy = spawn(run, type, { x: 550 + index % columns * (304 / (columns - 1)), y });
-        enemy.summonedBy = gate.id; enemy.riftBornAt = run.time; enemy.cooldown += index * 450;
+        enemy.summonedBy = gate.id; enemy.riftBornAt = run.time; enemy.cooldown += (released ? index % (gate.gateTier === 0 ? 35 : 5) : index) * 450;
         emit('emerge', { x: enemy.x, y: enemy.y, enemy: enemy.id, from: { x: gate.x, y: gate.y - gate.height * .5 } });
       }
-      if (gate.gateSpawnIndex === batch.length && gate.gateClock >= batch.length * 160 + 450) {
+      if (gate.gateSpawnIndex === batch.length && gate.gateClock >= (released ? 0 : batch.length * 160) + 450) {
         gate.gateBatch++; gate.gatePhase = 'closing'; gate.gateClock = 0;
       }
     } else if (gate.gatePhase === 'closing' && gate.gateClock >= 650) {
