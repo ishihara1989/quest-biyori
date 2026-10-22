@@ -39,10 +39,39 @@ test('tree purchases enforce prerequisites, available currency, no double purcha
  const corrupt=R.restore({...s.reincarnation,owned:['drop100','trial-open','xp3'],total:1e12});assert.deepEqual(corrupt.owned,['xp3']);assert.equal(corrupt.total,100);
 });
 test('equipment cost reductions apply equally to status, manual, batch and path buying; no goddess material waiver',()=>{
- const s=D.freshSave();s.cleared=[1,2,3,4,5,6,7,8,9,10];s.gold=1e9;own(s,'main-free');
- const node=P.gearTree('warrior','weapon',1).find(n=>n.id==='main-2');assert.equal(P.gearCost(s,node).jelly,0);assert.ok(P.purchase(s,'warrior','weapon','main-1'));assert.ok(P.purchase(s,'warrior','weapon','main-2'));assert.ok(!Number.isNaN(s.inventory.jelly));assert.equal(P.gearPurchasePlan(s,'warrior','armor','main-10').status,'available');assert.ok(P.purchaseGearPath(s,'warrior','armor','main-10'));
+ const s=D.freshSave();s.cleared=[1,2,3,4,5,6,7,8,9,10];s.gold=0;own(s,'main-free');const inventory=structuredClone(s.inventory);
+ const node=P.gearTree('warrior','weapon',1).find(n=>n.id==='main-2');assert.equal(P.gearCost(s,node).jelly,0);assert.equal(P.gearCost(s,node).gold,0);assert.ok(P.purchase(s,'warrior','weapon','main-1'));assert.ok(P.purchase(s,'warrior','weapon','main-2'));assert.ok(!Number.isNaN(s.inventory.jelly));assert.equal(P.gearPurchasePlan(s,'warrior','armor','main-10').status,'available');assert.ok(P.purchaseGearPath(s,'warrior','armor','main-10'));assert.equal(s.gold,0);assert.deepEqual(s.inventory,inventory);
  const goddess=P.gearTree('warrior','weapon','goddess')[0];assert.deepEqual(P.gearCost(s,goddess),goddess.cost);
  const unique=P.gearTree('warrior','weapon',1).find(n=>n.unique);assert.equal(P.gearCost(s,unique).jelly,Math.ceil(unique.cost.jelly*.8));
+});
+test('main waiver covers all normal regions, jobs and slots; stage gates and other costs remain',()=>{
+ const s=D.freshSave();own(s,'main-free');
+ for(const job of Object.keys(P.CHARACTERS))for(const slot of ['weapon','armor'])for(let region=1;region<=10;region++){
+  for(const n of P.gearTree(job,slot,region)){
+   const cost=P.gearCost(s,n);
+   if(n.main)assert.ok(Object.values(cost).every(v=>v===0),job+':'+slot+':'+n.id);
+   else {assert.equal(cost.gold,n.cost.gold);assert.ok(Object.values(cost).some(v=>v>0));}
+  }
+ }
+ assert.equal(P.purchase(s,'warrior','weapon','main-1'),false,'current run clear is still required');
+ assert.equal(P.gearPurchasePlan(s,'warrior','armor','main-10').status,'locked');
+ s.cleared=[1,2];assert.equal(P.purchase(s,'warrior','weapon','main-2'),false,'prerequisite is still required');
+ assert.equal(P.purchaseGearBatch(s,['main-1','main-2'].map(node=>({character:'warrior',slot:'weapon',node}))).length,2);
+ assert.equal(P.status(s,'warrior','weapon',P.gearTree('warrior','weapon').find(n=>n.id==='branch-2-up-1')),'cost');
+ const plain=D.freshSave(),n=P.gearTree('warrior','weapon')[0];assert.deepEqual(P.gearCost(plain,n),n.cost);
+ own(plain,'gold-cost');
+ assert.equal(P.gearCost(plain,n).gold,Math.ceil(n.cost.gold*.8));
+});
+test('automatic main acquisition works with no gold or materials and survives reload',()=>{
+ const s=D.freshSave();own(s,'main-free');s.reincarnation.discovered=true;s.reincarnation.unlocked=true;s.reincarnation.cycle=100;s.reincarnation.total=10000;
+ s.cleared=Array.from({length:100},(_,i)=>i+1);s.autoGear.enabled=true;
+ const restored=D.readSave(JSON.stringify(s)),before=structuredClone(restored.inventory);
+ const Gear=require('../public/js/core/forest-auto-gear.js');
+ const missing=Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].flatMap(slot=>P.allGearTrees(job,slot).filter(n=>n.main&&!restored.progression.characters[job][slot].includes(n.id))));
+ const bought=Gear.acquire(restored,2000);
+ assert.equal(bought.length,missing.length);assert.ok(Gear.mainComplete(restored,100));assert.ok(bought.every(row=>row.kind==='main'));
+ assert.equal(restored.gold,0);assert.deepEqual(restored.inventory,before);
+ assert.deepEqual(Gear.acquire(restored),[]);
 });
 test('experience stays normalized; SP uses integer arithmetic and retains extra ranks through save restoration',()=>{
  const s=ready();own(s,'sp50');own(s,'sp-ten2');own(s,'xp6561');

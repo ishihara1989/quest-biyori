@@ -25,7 +25,7 @@
   node('drop3', '豊穣の枝', 'harvest', 80, 150, 310, ['drop2'], [effect('ドロップ数', '×3', 'drop', 3, 'max')], { initial: true });
   node('gold-cost', '旅支度の節約', 'journey', 50, 380, 310, ['gold2'], [effect('装備ゴールド費', '−20%', 'gearGold', 20)]);
   node('sub40', '工匠の叡智', 'journey', 140, 1070, 310, ['sub20'], [effect('通常サブ素材費', '−20pt', 'sub', 20)]);
-  node('main-free', 'メイン材料無償化', 'journey', 100, 725, 363, ['xp3', 'sub20', 'unique20'], [effect('通常メイン素材費', '0', 'mainFree', 1)], { initial: true, milestone: true, note: '通常10地域・全職・武器／防具のメイン。ゴールドは必要。サブ・ユニーク・女神ツリー・ジェム制作は対象外。前提・今周の到達条件は維持。' });
+  node('main-free', 'メイン材料無償化', 'journey', 100, 725, 363, ['xp3', 'sub20', 'unique20'], [effect('通常メイン素材・ゴールド費', '0', 'mainFree', 1)], { initial: true, milestone: true, note: '通常10地域・全職・武器／防具のメインの素材・ゴールド消費なし。サブ・ユニーク・女神ツリー・ジェム制作は対象外。前提・今周の到達条件は維持。' });
   node('drop4', '豊穣の実', 'harvest', 120, 150, 440, ['drop3'], [effect('ドロップ数', '×4', 'drop', 4, 'max')], { initial: true });
   node('drop-rate', '幸運の星', 'harvest', 90, 380, 440, ['gold2'], [effect('ドロップ率', '＋100%', 'rate', 100)], { note: 'パーティー共通で1回加算。ジェム制限中も有効。ドロップ数倍率とは別枠。' });
   node('unique40', '秘匠の叡智', 'journey', 180, 1070, 440, ['unique20'], [effect('通常ユニーク素材費', '−20pt', 'unique', 20)]);

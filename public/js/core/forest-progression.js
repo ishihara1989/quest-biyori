@@ -42,9 +42,10 @@
   const known = (save, stage) => reached(save, stage) || !!save.reincarnation?.lifetimeStages?.includes(stage) || !!save.reincarnation?.lifetimePassed?.includes(stage);
   function gearCost(save, node) {
     const b = permanent(save);
+    const free = Number.isInteger(node.stage) && node.main && b.mainFree;
     return Object.fromEntries(Object.entries(node.cost).map(([key, amount]) => [key,
-      key === 'gold' ? Math.ceil(amount * (100 - (b.gearGold || 0)) / 100) : typeof node.stage !== 'number' ? amount :
-      node.main && b.mainFree ? 0 : Math.ceil(amount * (100 - Math.min(100, node.main ? 0 : node.unique ? b.unique || 0 : b.sub || 0)) / 100)]));
+      free ? 0 : key === 'gold' ? Math.ceil(amount * (100 - (b.gearGold || 0)) / 100) : typeof node.stage !== 'number' ? amount :
+      Math.ceil(amount * (100 - Math.min(100, node.main ? 0 : node.unique ? b.unique || 0 : b.sub || 0)) / 100)]));
   }
   // Shared by every regional tree; regional remapping below preserves this order.
   const MAIN_MATERIALS = [[], ['jelly'], ['tusk'], ['flower'], ['jelly','tusk','flower'], ['jelly','tusk'], ['jelly','flower'], ['tusk','flower'], ['jelly','tusk','flower'], ['crystal']];
