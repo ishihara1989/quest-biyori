@@ -29,7 +29,7 @@
    if(preset==='trials'){
     Object.assign(save.reincarnation,{unlocked:true,cycle:20,total:2000});
     const own=id=>{for(const parent of ReincarnationTree.byId[id].requires)if(parent!=='origin'&&!save.reincarnation.owned.includes(parent))own(parent);if(id!=='origin')save.reincarnation.owned.push(id);};
-    own('trial-open');save.reincarnation.trials=['strength-2'];
+    own('trial-open');save.reincarnation.trialCompleted=['onslaught','unyielding'];save.reincarnation.trials=['goddess-serious'];save.reincarnation.trialRun=true;
    }
    Achievements.sync(save);return save;
   }

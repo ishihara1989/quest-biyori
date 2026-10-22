@@ -7,18 +7,18 @@
   if (common) module.exports = api; else root.Reincarnation = api;
 })(globalThis, (P, T, D) => {
   const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
-  const fresh = () => ({ version: 2, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [],
+  const fresh = () => ({ version: 3, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [], trialRun: false, trialCompleted: [], appliedTrials: [], journey: 0,
     total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
       slots: Object.fromEntries(Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].map(slot=>[job+':'+slot,{effects:['fortune',slot==='weapon'?'attack':'vitality','recovery'],locked:false,epic:true,rarity:'rare',efficiency:true}]))) } });
   const integer = n => Number.isSafeInteger(n) && n >= 0;
   function restore(raw) {
     const result = fresh();
-    if (!raw || ![1, 2].includes(raw.version)) return result;
+    if (!raw || ![1, 2, 3].includes(raw.version)) return result;
     result.discovered = raw.discovered === true;
     result.unlocked = result.discovered && raw.unlocked === true;
     result.cycle = result.unlocked && integer(raw.cycle) ? Math.min(raw.cycle, 1000000000) : 0;
-    result.total = raw.version === 2 && integer(raw.total) && raw.total >= result.cycle * D.POINTS && raw.total <= result.cycle * D.POINTS * 225 ? raw.total : result.cycle * D.POINTS;
+    result.total = raw.version >= 2 && integer(raw.total) && raw.total >= result.cycle * D.POINTS && raw.total <= result.cycle * 33750 ? raw.total : result.cycle * D.POINTS;
     result.defeatedCycle = result.unlocked && raw.defeatedCycle === result.cycle ? result.cycle : null;
     result.lifetimeStages = [...new Set((Array.isArray(raw.lifetimeStages) ? raw.lifetimeStages : []).filter(id =>
       Number.isInteger(id) && id >= 1 && id <= 100 || ['dimensional-gate', 'chaos-gate', 'extradimensional-goddess', D.ID].includes(id)))];
@@ -27,8 +27,12 @@
     const requested = new Set(Array.isArray(raw.owned) ? raw.owned : []), state = { total: result.total, owned: new Set(['origin']) };
     for (const n of T.nodes) if (!n.root && (n.family !== 'trial' || Trials.availableNode(n.id)) && requested.has(n.id) && T.status(state, n.id) === 'available') state.owned.add(n.id);
     result.owned = [...state.owned].filter(id => id !== 'origin');
-    result.trials = Trials.unlocked({reincarnation:result}) ? Trials.clean(raw.trials) : [];
-    result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= D.POINTS * 225 ? raw.pendingPoints : D.POINTS) : 0;
+    result.journey = integer(raw.journey) ? raw.journey : 0;
+    result.trialCompleted = raw.version === 3 ? Trials.clean(raw.trialCompleted) : [];
+    result.appliedTrials = raw.version === 3 ? Trials.clean(raw.appliedTrials).filter(id=>result.trialCompleted.includes(id)) : [];
+    result.trialRun = raw.version === 3 && raw.trialRun === true && Trials.validPlan({reincarnation:result},raw.trials) && raw.trials.length > 0;
+    result.trials = result.trialRun ? Trials.clean(raw.trials) : [];
+    result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= 33750 ? raw.pendingPoints : D.POINTS) : 0;
     const a = raw.automation;
     result.automation.skills = a?.skills === true; result.automation.gems = a?.gems === true;
     result.automation.waitForMainGear = a?.waitForMainGear === true;
@@ -49,7 +53,7 @@
     return result;
   }
   const state = save => ({ total: save.reincarnation?.total || 0, owned: new Set(['origin', ...(save.reincarnation?.owned || [])]) });
-  const bonuses = save => T.totals(state(save));
+  const bonuses = save => P.permanent(save);
   const points = save => T.points(state(save));
   function status(save, id) {
     if (!save.reincarnation?.unlocked) return 'locked';
@@ -71,19 +75,20 @@
         used.add(uid); return true;
       });
     }));
-    return Object.freeze({ cycle: save.reincarnation?.cycle || 0, fullEpics, bonuses: { ...bonuses(save) }, trials: Trials.capture(save, stage) });
+    return Object.freeze({ cycle: save.reincarnation?.cycle || 0, journey: save.reincarnation?.journey || 0, fullEpics, bonuses: { ...bonuses(save) }, trials: Trials.capture(save, stage) });
   }
   function victory(save, stage, evidence) {
     const r = save.reincarnation ||= fresh(), unlocks = [];
-    if (evidence?.cycle !== r.cycle) return unlocks;
+    if (evidence?.cycle !== r.cycle || (evidence.journey || 0) !== (r.journey || 0)) return unlocks;
     if (stage === 'extradimensional-goddess' && evidence.fullEpics && !r.discovered) {
       r.discovered = true;
       unlocks.push({ id: D.ID, icon: 'spark', title: '女神の配送センター', detail: '転生の女神', target: 'stages', stage: D.ID, special: true, reincarnation: true });
     }
     if (stage === D.ID && r.discovered) {
       r.defeatedCycle = r.cycle;
-      const trial = Trials.summarize(evidence.trials?.ids, stage);
-      r.pendingPoints = Math.max(r.pendingPoints || D.POINTS, Math.round(D.POINTS * trial.reward));
+      const trial = Trials.capture(save, stage);
+      r.pendingPoints = Math.max(r.pendingPoints || D.POINTS, Math.round(D.POINTS * trial.reward * Trials.bonuses(save).pt));
+      for(const id of Trials.complete(save,evidence))unlocks.push({id:'trial-clear-'+id,icon:'spark',title:Trials.byId[id].name+' 初クリア',detail:Trials.byId[id].prize+' · 次の周から',target:'reincarnation'});
       if (!r.unlocked) {
         r.unlocked = true;
         unlocks.push({ id: 'reincarnation', icon: 'repeat', title: '転生', detail: '新たな旅へ · 転生ツリー', target: 'reincarnation', rebirth: true },
@@ -96,12 +101,16 @@
   }
   const eligible = save => !!save.reincarnation?.unlocked && save.reincarnation.defeatedCycle === save.reincarnation.cycle;
   const payout = save => eligible(save) ? save.reincarnation.pendingPoints || D.POINTS : 0;
-  function prepare(save, freshSave) {
-    if (!eligible(save)) return null;
+  function prepare(save, freshSave, options = {}) {
+    if (!eligible(save) && !options.restart) return null;
+    if (options.restart && !save.reincarnation?.unlocked) return null;
+    const chosen=options.trials === undefined ? Trials.clean(save.reincarnation?.trials) : options.trials;
+    if (!Trials.validPlan(save,chosen)) return null;
     const next = freshSave(), r = structuredClone(save.reincarnation);
     r.lifetimeStages = [...new Set([...r.lifetimeStages, ...save.cleared])];
     r.lifetimePassed = [...new Set([...r.lifetimePassed, ...r.passed])];
-    r.version = 2; r.cycle++; r.total += payout(save); r.defeatedCycle = null; r.pendingPoints = 0; r.passed = [];
+    r.version = 3; r.journey = (r.journey || 0) + 1; if(eligible(save))r.cycle++; r.total += payout(save); r.defeatedCycle = null; r.pendingPoints = 0; r.passed = [];
+    r.trials = [...chosen]; r.trialRun = chosen.length > 0; r.appliedTrials = Trials.completed(save);
     Object.assign(next, { reincarnation: r, achievements: structuredClone(save.achievements), inventory: {potion:0},
       encounteredEnemies: [...save.encounteredEnemies], discoveredGemRarities: [...save.discoveredGemRarities],
       autoGear: structuredClone(save.autoGear), autoGemDismantle: structuredClone(save.autoGemDismantle), autoMode: save.autoMode, speed: save.speed });

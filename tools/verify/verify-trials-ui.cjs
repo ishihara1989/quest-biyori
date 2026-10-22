@@ -27,40 +27,41 @@ async function main(){
  async function menu(page,name){if(await page.locator('#menu-dialog').isVisible())await page.locator('#close-menu').click();await page.locator('[data-open="'+name+'"]').first().click();}
  const saveOf=page=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)),D.SAVE_KEY);
  try{
-  const fresh=await pageFor(D.freshSave(),1440);await menu(fresh.page,'stages');assert.equal(await fresh.page.locator('.trials-panel').count(),0);await fresh.context.close();
-  for(const width of (process.argv.includes('--mobile-only')?[390]:[1440,390])){
-   const seed=B.reference();seed.autoMode='off';Object.assign(seed.reincarnation,{unlocked:true,cycle:20,total:2000});
-   const own=id=>{for(const p of T.byId[id].requires)if(p!=='origin'&&!seed.reincarnation.owned.includes(p))own(p);if(id!=='origin')seed.reincarnation.owned.push(id);};
-   for(const id of T.byId['trial-open'].requires)own(id);
-   const {page,context}=await pageFor(seed,width);await menu(page,'reincarnation');
-   await page.locator('[data-reinc-node="trial-open"]').click();assert.equal(await page.locator('.coming-soon').count(),0);
-   await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="trial-open"]').click();assert.equal(await page.locator('.trials-panel').count(),1);
-   await page.locator('[data-trial="strength"]').selectOption('strength-10');for(const id of ['onslaught','unyielding','goddess-serious'])await page.locator('[data-trial="'+id+'"]').check();
-   assert.equal(await page.locator('.trials-heading strong').innerText(),'報酬 ×225');
-   await page.locator('.trials-panel img').evaluateAll(images=>Promise.all(images.map(img=>img.decode())));
-   await page.screenshot({path:path.join(output,'layout-'+width+'.png'),animations:'disabled'});
-   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),JSON.stringify(await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,wide:[...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1&&!e.closest('.reincarnation-map')).map(e=>[e.tagName,e.id,e.className,e.getBoundingClientRect().left,e.getBoundingClientRect().right,getComputedStyle(e).position]).slice(0,20)}))));
-   await page.locator('#menu-content').evaluate(e=>e.scrollTop=0);await page.mouse.move(5,5);await page.screenshot({path:path.join(output,'selection-'+width+'.png'),animations:'disabled'});
-   await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});assert.equal((await saveOf(page)).reincarnation.trials.length,4);
-   await menu(page,'stages');assert.equal(await page.locator('.trials-heading strong').innerText(),'報酬 ×225');
-   await page.locator('[data-stage-region="1"]').click();assert.equal(await page.locator('.trials-heading strong').innerText(),'報酬 ×22.5');
-   await page.locator('[data-special-stages]').click();await page.locator('.stage-map [data-stage="reincarnation-goddess"]').click();
-   await page.locator('[data-enter="reincarnation-goddess"]').click();
-   assert.equal(await page.evaluate(()=>testRun.trials.reward),225);
-   assert.equal(await page.evaluate(()=>testRun.enemies[0].maxHp),6e11);
-   await menu(page,'stages');await page.locator('[data-trial="strength"]').selectOption('');for(const id of ['onslaught','unyielding','goddess-serious'])await page.locator('[data-trial="'+id+'"]').uncheck();
-   assert.equal(await page.evaluate(()=>testRun.trials.reward),225,'active battle keeps original trials');
-   await page.locator('#close-menu').click();await page.evaluate(()=>{ForestSimulation.hit(testRun,testRun.hero,testRun.enemies[0],1e30,[],false,null,{critical:false});});await page.clock.runFor(4000);
-   assert.equal((await saveOf(page)).reincarnation.pendingPoints,22500);
-   await page.locator('#result-skip').click();await page.locator('#retry-button').click();await page.locator('#pause-button').click();
-   await menu(page,'reincarnation');await page.locator('[data-rebirth-review]').click();assert.ok((await page.locator('.rebirth-points').innerText()).includes('22,500'));
-   await page.screenshot({path:path.join(output,'payout-'+width+'.png'),animations:'disabled'});
-   await page.locator('[data-rebirth-confirm]').click();await page.waitForLoadState('load');await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
-   const next=await saveOf(page);assert.equal(next.reincarnation.total,24500);assert.equal(next.reincarnation.pendingPoints,0);assert.equal(next.reincarnation.cycle,21);
-   await context.close();
+  const own=(seed,id)=>{for(const p of T.byId[id].requires)if(p!=='origin'&&!seed.reincarnation.owned.includes(p))own(seed,p);if(id!=='origin')seed.reincarnation.owned.push(id);};
+  async function trials(page){await menu(page,'reincarnation');await page.locator('[data-reinc-tab="trials"]').click();}
+  async function win(page){await page.locator('#start-button').click();await page.evaluate(()=>ForestSimulation.hit(testRun,testRun.hero,testRun.enemies[0],1e30,[],false,null,{critical:false}));await page.clock.runFor(4000);if(await page.locator('#unlock-intro').isVisible())await page.locator('#unlock-continue').click();await page.locator('#result-skip').click();await page.locator('#retry-button').click();await page.locator('#pause-button').click();}
+  for(const width of (process.argv.includes('--effects-only')?[]:process.argv.includes('--mobile-only')?[390]:[1440,390])){
+   const seed=B.reference();seed.autoMode='off';Object.assign(seed.reincarnation,{unlocked:true,cycle:20,total:2000});for(const id of T.byId['trial-open'].requires)own(seed,id);
+   const {page,context}=await pageFor(seed,width);await trials(page);assert.equal(await page.locator('.trial-locked').count(),1);
+   await page.locator('[data-reinc-tab="tree"]').click();await page.locator('[data-reinc-node="main-free"]').click();assert.ok((await page.locator('.reincarnation-detail').innerText()).includes('取得済み'));
+   await page.locator('[data-reinc-node="trial-open"]').click();assert.ok((await page.locator('[data-reinc-confirm]').innerText()).includes('100 PT'));await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="trial-open"]').click();await page.locator('[data-reinc-tab="trials"]').click();
+   for(const id of ['strength-2','onslaught','unyielding']){await page.locator('[data-trial-node="'+id+'"]').first().click();await page.locator('[data-trial-toggle="'+id+'"]').click();}
+   await page.locator('[data-trial-node="goddess-serious"]').first().click();assert.ok(await page.locator('[data-trial-toggle="goddess-serious"]').isDisabled());assert.equal(await page.locator('.trial-detail .reinc-prerequisites button').count(),2);
+   const view=page.locator('.trial-tree-viewport');await view.scrollIntoViewIfNeeded();await view.evaluate(e=>{e.scrollTop=200;e.scrollLeft=100;});const box=await view.boundingBox(),before=await view.evaluate(e=>[e.scrollLeft,e.scrollTop]);const hit=await page.evaluate(({x,y})=>document.elementFromPoint(x+20,y+160)?.outerHTML.slice(0,200),box);await page.screenshot({path:path.join(output,'drag-'+width+'.png')});await page.mouse.move(box.x+20,box.y+160);await page.mouse.down();await page.mouse.move(box.x+60,box.y+210);await page.mouse.up();const after=await view.evaluate(e=>[e.scrollLeft,e.scrollTop]);assert.ok(after[1]<before[1],JSON.stringify({box,before,after,hit}));
+   await page.locator('#menu-dialog').evaluate(e=>e.scrollTop=0);await view.evaluate(e=>{e.scrollTop=0;e.scrollLeft=0;});assert.equal((await view.locator('svg').boundingBox()).width,800);await page.mouse.move(3,3);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:path.join(output,'tree-'+width+'.png'),animations:'disabled'});
+   if(process.argv.includes('--layout-only')){await context.close();continue;}
+   const beforeSave=await saveOf(page);await page.locator('[data-trial-start]').click();assert.ok((await page.locator('.trial-review').innerText()).includes('PTなしでリセット'));await page.locator('[data-trial-cancel]').click();assert.equal((await saveOf(page)).gold,beforeSave.gold);
+   await page.locator('[data-trial-start]').click();await page.locator('[data-trial-confirm="start"]').click();await page.waitForLoadState('load');await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});let current=await saveOf(page);assert.equal(current.reincarnation.journey,1);assert.equal(current.reincarnation.total,2000);assert.equal(current.gold,0);assert.equal(current.progression.characters.warrior.xp.level,1);assert.equal(current.reincarnation.trials.length,3);
+   await trials(page);await page.locator('[data-trial-abandon]').click();await page.locator('[data-trial-cancel]').click();assert.equal((await saveOf(page)).reincarnation.trialRun,true);await page.locator('[data-trial-abandon]').click();await page.locator('[data-trial-confirm="abandon"]').click();current=await saveOf(page);assert.equal(current.reincarnation.trialRun,false);assert.equal(current.reincarnation.total,2000);await context.close();
+   const active=B.reference();active.autoMode='off';Object.assign(active.reincarnation,{unlocked:true,cycle:20,total:2000,journey:1,trialRun:true,trials:['strength-2','onslaught','unyielding']});own(active,'trial-open');
+   const paid=await pageFor(active,width);await win(paid.page);current=await saveOf(paid.page);assert.equal(current.reincarnation.pendingPoints,450);assert.equal(current.reincarnation.trialCompleted.length,3);assert.deepEqual(current.reincarnation.appliedTrials,[]);
+   await trials(paid.page);await paid.page.locator('[data-trial-node="goddess-serious"]').first().click();assert.equal(await paid.page.locator('[data-trial-toggle="goddess-serious"]').isEnabled(),true);assert.ok((await paid.page.locator('.trial-permanent').innerText()).includes('次の周から'));
+   await paid.page.locator('[data-trial-toggle="goddess-serious"]').click();await paid.page.locator('[data-trial-start]').click();assert.ok((await paid.page.locator('.rebirth-points').innerText()).includes('450'));await paid.page.screenshot({path:path.join(output,'restart-'+width+'.png'),animations:'disabled'});await paid.page.locator('[data-trial-confirm="start"]').click();await paid.page.waitForLoadState('load');await paid.page.locator('#start-button:not([disabled])').waitFor({timeout:90000});current=await saveOf(paid.page);assert.equal(current.reincarnation.total,2450);assert.equal(current.reincarnation.appliedTrials.length,3);assert.equal(current.reincarnation.cycle,21);assert.ok(current.reincarnation.trials.includes('goddess-serious'));await paid.context.close();
   }
-  const lab=await pageFor(D.freshSave(),1440);await lab.page.unroute('**/*');await lab.page.goto('http://127.0.0.1:'+server.address().port+'/development/labs/reincarnation-system.html');await lab.page.locator('[data-preset="trials"]:not([disabled])').waitFor();await lab.page.locator('[data-preset="trials"]').click();await lab.page.locator('#start-button:not([disabled])').waitFor({timeout:90000});await menu(lab.page,'stages');assert.equal(await lab.page.locator('.trials-panel').count(),1);await lab.context.close();
-  assert.deepEqual(errors,[]);console.log('Trials UI passed: secrecy, door purchase, four families, stage-specific rewards, save/reload, frozen battle settings, 22,500 PT settlement/rebirth, review preset, 1440px/390px and no resource/runtime errors.');
+  if(process.argv.includes('--effects-only')){
+   const seed=B.reference();seed.autoMode='off';Object.assign(seed.reincarnation,{unlocked:true,cycle:20,total:2000,journey:1,trialRun:true,trials:['goddess-serious'],trialCompleted:['onslaught','unyielding']});own(seed,'trial-open');seed.selectedStage=1;
+   const fx=await pageFor(seed,1440);await fx.page.locator('#start-button').click();await fx.page.locator('#pause-button').click();await fx.page.evaluate(()=>{for(const e of testRun.enemies){e.hp=e.maxHp=1e30;e.cooldown=1e9;}for(const a of [testRun.hero,...testRun.allies]){a.hp=a.maxHp=1e9;}});
+   for(let region=1;region<=10;region++)for(const major of [false,true]){
+    await fx.page.evaluate(({region,major})=>{testRun.stage={...ForestData.STAGES.find(s=>s.region===region)};testRun.random=()=>major?.9:.1;const p=TrialCombat.begin(testRun,'phantom');p.elapsed=1400;},{region,major});await fx.page.clock.runFor(40);await fx.page.locator('#game-canvas').screenshot({path:path.join(output,'phantom-'+region+'-'+Number(major)+'.png')});
+   }
+   for(const [i,name] of ['cross','rings','zero'].entries()){
+    await fx.page.evaluate(i=>{testRun.random=()=>[.1,.5,.9][i];const p=TrialCombat.begin(testRun,'divine');p.elapsed=1800;},i);await fx.page.clock.runFor(40);await fx.page.locator('#game-canvas').screenshot({path:path.join(output,'aid-'+name+'.png')});
+    await fx.page.evaluate(()=>{document.querySelector('#pause-button').click();});await fx.page.clock.runFor(800);await fx.page.locator('#pause-button').click();assert.equal(await fx.page.evaluate(()=>testRun.trialIntervention.plan?.next),1);await fx.page.locator('#game-canvas').screenshot({path:path.join(output,'aid-'+name+'-impact.png')});
+   }
+   await fx.context.close();
+  }
+  const lab=await pageFor(D.freshSave(),1440);await lab.page.unroute('**/*');await lab.page.goto('http://127.0.0.1:'+server.address().port+'/development/labs/reincarnation-system.html');await lab.page.locator('[data-preset="trials"]:not([disabled])').waitFor();await lab.page.locator('[data-preset="trials"]').click();await lab.page.locator('#start-button:not([disabled])').waitFor({timeout:90000});assert.equal((await saveOf(lab.page)).reincarnation.trials[0],'goddess-serious');await lab.context.close();
+  assert.deepEqual(errors,[]);console.log(process.argv.includes('--effects-only')?'Trial intervention UI passed: 20 regional phantoms, three divine warnings/impacts and no rendering/resource errors.':process.argv.includes('--layout-only')?'Trial tree layout passed at 1440px/390px: tabs, links, prerequisites and drag.':'Trial tree UI passed: tabs, prices, prerequisites, drag, unpaid/paid restart, cancel, abandon, first clear, next-journey rewards, save and review preset.');
  }finally{await browser.close();await new Promise(r=>server.close(r));}
 }
 if(require.main===module)main().catch(e=>{console.error(e);process.exitCode=1;});module.exports={main};

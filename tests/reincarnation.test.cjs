@@ -22,7 +22,7 @@ test('discovery is permanent; each new cycle still needs its own goddess victory
  A.sync(s);const next=R.prepare(s,D.freshSave);assert.equal(next.reincarnation.total,100);assert.equal(next.reincarnation.cycle,1);assert.equal(R.eligible(next),false);assert.equal(R.prepare(next,D.freshSave),null);
  assert.equal(D.isUnlocked(next,'reincarnation-goddess'),false);next.cleared.push('extradimensional-goddess');assert.equal(D.isUnlocked(next,'reincarnation-goddess'),true);
  R.victory(next,'reincarnation-goddess',{cycle:0});assert.equal(R.eligible(next),false);
- R.victory(next,'reincarnation-goddess',{cycle:1});const third=R.prepare(next,D.freshSave);assert.equal(third.reincarnation.total,200);
+ R.victory(next,'reincarnation-goddess',{cycle:1,journey:next.reincarnation.journey});const third=R.prepare(next,D.freshSave);assert.equal(third.reincarnation.total,200);
 });
 test('rebirth clears possessions, equipped/protected gems, growth, recruits and current progress; retains memories and settings',()=>{
  const s=ready();s.gold=123;s.inventory.potion=44;s.autoGear.enabled=true;s.autoMode='advance';s.speed=2;s.reincarnation.automation.skills=true;s.gems[0].locked=true;A.usage(s,'convert');A.sync(s);const original=JSON.stringify(s),next=R.prepare(s,D.freshSave);

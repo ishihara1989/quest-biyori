@@ -39,11 +39,15 @@
   const damageTextGroups = new Map();
   let lastCooldownUpdate = -Infinity;
   const partyViews = new Map();
-  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { autoGearPending = true; runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: () => {
-    const next = Reincarnation.prepare(save, freshSave); if (!next || resetting) return;
+  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { autoGearPending = true; runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: (options) => {
+    const next = Reincarnation.prepare(save, freshSave, options); if (!next || resetting) return;
     Achievements.sync(next);
     try { localStorage.setItem(SAVE_KEY,JSON.stringify(next)); resetting=true;setPlaying(false);location.reload(); }
-    catch { notify('転生を保存できませんでした。保存領域を確認してください。');reincarnationUI.review(); }
+    catch { notify('転生を保存できませんでした。保存領域を確認してください。');options?.restart?reincarnationUI.render():reincarnationUI.review(); }
+  }, onAbandon: () => {
+    if(!Trials.abandon(save))return;
+    const resume=playing,current=run.stage.id;invalidateBuilds();persist();
+    if(started){startStage(current,true);setPlaying(resume);}refreshResources();
   } });
   const museumUI = MuseumUI.create({ save, container: $('menu-content'), icon, reduced });
   let skillCapacity = 0;
@@ -318,7 +322,7 @@
     if (victory) {
       const unlocks = ForestUnlocks.collect(save, run.stage.id);
       const hunt = [run.hero, ...run.allies].reduce((total, actor) => total + (actor.treasureHunt || 0), 0);
-      rewards = { ...award(save, run.stage.id, hunt, run.reincarnationEvidence), unlocks }; rewards.unlocks.push(...rewards.reincarnationUnlocks); P.gainXp(save, run.stage.xpStage ?? run.stage.id,run.reincarnationEvidence?.bonuses.xp,run.trials.reward);
+      rewards = { ...award(save, run.stage.id, hunt, run.reincarnationEvidence), unlocks }; rewards.unlocks.push(...rewards.reincarnationUnlocks); P.gainXp(save, run.stage.xpStage ?? run.stage.id,run.reincarnationEvidence?.bonuses.xp);
       invalidateBuilds(); autoGearPending = true;
       runAutomaticGear();
       ForestRunRewards.finishDismantle(save, settled); runGemItems=settled.gems.map(gemItem);
@@ -380,7 +384,7 @@
   }
   function hud() {
     const badge=$('battle-trials');badge.hidden=run.trials.reward===1;
-    text('battle-trials','試練 ×'+run.trials.reward);
+    text('battle-trials','試練 PT×'+run.trials.reward);
     badge.dataset.tip=run.trials.ids.map(id=>Trials.byId[id].name).join(' / ');
     const hero = run.hero;
     refreshPartyVitals();
@@ -503,7 +507,7 @@
     const selected = STAGES.find(s => s.id === viewedStage), region = REGIONS[selected.region - 1];
     text('menu-kicker', selected.special ? 'SPECIAL / ' + selected.english : 'WORLD MAP / CHAPTER ' + String(region.id).padStart(2, '0')); text('menu-title', selected.special ? selected.realmName : region.name);
     const stages = (selected.special ? SPECIAL_STAGES : STAGES.filter(s => !s.special && s.region === region.id)).filter(s => ForestData.stageVisible(save, s));
-    $('menu-content').innerHTML = '<div class="region-tabs" role="group" aria-label="地域を選択">' + REGIONS.filter(r => ForestData.regionVisible(save,r.id)).map(r => '<button data-stage-region="' + r.id + '" aria-pressed="' + (!selected.special && r.id === region.id) + '" data-tip="' + r.name + ' · Lv.' + ((r.id - 1) * 10 + 1) + '〜' + r.id * 10 + '">' + (!isUnlocked(save, (r.id - 1) * 10 + 1) ? icon('lock') : icon('map')) + r.name + '</button>').join('') + (SPECIAL_STAGES.some(s=>ForestData.stageVisible(save,s)) ? '<button class="special-tab" data-special-stages aria-pressed="' + !!selected.special + '">' + icon('spark') + '特殊</button>' : '') + '</div>'+reincarnationUI.trials(viewedStage)+'<div class="stage-menu' + (selected.special ? ' special-stage-menu' : '') + '"><div class="stage-map" data-region="' + (selected.special ? 'special' : region.id) + '" aria-label="ステージを選択">' +
+    $('menu-content').innerHTML = '<div class="region-tabs" role="group" aria-label="地域を選択">' + REGIONS.filter(r => ForestData.regionVisible(save,r.id)).map(r => '<button data-stage-region="' + r.id + '" aria-pressed="' + (!selected.special && r.id === region.id) + '" data-tip="' + r.name + ' · Lv.' + ((r.id - 1) * 10 + 1) + '〜' + r.id * 10 + '">' + (!isUnlocked(save, (r.id - 1) * 10 + 1) ? icon('lock') : icon('map')) + r.name + '</button>').join('') + (SPECIAL_STAGES.some(s=>ForestData.stageVisible(save,s)) ? '<button class="special-tab" data-special-stages aria-pressed="' + !!selected.special + '">' + icon('spark') + '特殊</button>' : '') + '</div>'+'<div class="stage-menu' + (selected.special ? ' special-stage-menu' : '') + '"><div class="stage-map" data-region="' + (selected.special ? 'special' : region.id) + '" aria-label="ステージを選択">' +
       stages.map(stage => nodeMarkup(stage, viewedStage)).join('') + '</div><div class="stage-detail">' + stageDetail() + '</div></div>';
     if(selected.special){const map=$('menu-content').querySelector('.stage-map');map.dataset.special=selected.id;map.style.backgroundImage='linear-gradient(#160b3266,#241a4677),url("'+selected.asset+'background.png")';}
   }
@@ -863,6 +867,7 @@
     [...run.enemies.filter(actor => !actor.dimensionalGate && !actor.boss && !actor.majorBoss && !actor.goddess), run.hero, ...run.allies,...run.ninjaClones].sort((a, b) => a.y - b.y).forEach(actor=>actor.source?NinjaSkillRenderer.drawClone(ctx,actor,drawActor):drawActor(actor));
     if(run.stage.reincarnation)ReincarnationRenderer.overlays(ctx,run,sprites,drawAsset);
     if(run.stage.final)GoddessRenderer.overlays(ctx,run,sprites,effectSprites,drawAsset,reduced);
+    GoddessRenderer.trial(ctx,run,sprites,effectSprites,drawAsset,reduced);
     WarriorSkillRenderer.castOverlay(ctx,run.hero,warriorEffects);
     WarriorSkillRenderer.impacts(ctx,effects,run.time,warriorEffects);
     for(const mage of run.allies)MageSkillRenderer.castOverlay(ctx,mage,mageEffects,reduced);

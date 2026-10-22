@@ -5,11 +5,10 @@
     common ? require('./forest-progression.js') : root.ForestProgression);
   if (common) module.exports = api; else root.ForestRunRewards = api;
 })(globalThis, (D, P) => {
-  const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
   function create(run) {
     return { enemies: new Map(), gold: 0, goldRemainder: run.goldRemainder, settled: false,
-      hunt: [run.hero, ...run.allies].reduce((sum, actor) => sum + (actor.treasureHunt || 0), 0)+(run.reincarnationBonuses?.rate||0)/100,
-      countMultiplier: run.reincarnationBonuses?.drop || 1, trialMultiplier: run.trials?.reward || 1,
+      hunt: (1+[run.hero, ...run.allies].reduce((sum, actor) => sum + (actor.treasureHunt || 0), 0)+(run.reincarnationBonuses?.rate||0)/100)*(run.reincarnationBonuses?.trialRate||1)-1,
+      countMultiplier: run.reincarnationBonuses?.drop || 1,
       dropLevel: run.stage.dropLevel, multiplier: run.stage.gemMultiplier };
   }
   function record(pending, event) {
@@ -28,11 +27,11 @@
     // rewards are never added to the player's persistent save during combat.
     for (const [enemy, count] of pending.enemies) for (let i = 0; i < count; i++) {
       for (const id of D.rollMaterials(enemy, random, pending.hunt)) {
-        const count = Trials.count(pending.countMultiplier, pending.trialMultiplier || 1, random);
+        const count = pending.countMultiplier;
         if (count) { save.inventory[id] = (save.inventory[id] || 0) + count; add(id,count); }
       }
       for (const rolled of D.rollGems(enemy, random, pending.hunt, { level: pending.dropLevel, multiplier: pending.multiplier })) {
-       const copies = Trials.count(pending.countMultiplier, pending.trialMultiplier || 1, random);
+       const copies = pending.countMultiplier;
        for(let copy=0;copy<copies;copy++){
         const gem = P.addGem(save, copy===0?rolled:P.Gem.generate({rarity:rolled.rarity,level:rolled.level,random}));
         if (!gem) continue;

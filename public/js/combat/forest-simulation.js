@@ -10,6 +10,7 @@
   const Epic=typeof module==='object'&&module.exports?require('./epic-gem-combat.js'):globalThis.EpicGemCombat;
   const Resistance = typeof module === 'object' && module.exports ? require('./status-resistance.js') : globalThis.StatusResistance;
   const Trials = typeof module === 'object' && module.exports ? require('../core/trials.js') : globalThis.Trials;
+  const TrialCombat = typeof module === 'object' && module.exports ? require('./trial-combat.js') : globalThis.TrialCombat;
   const STEP = 1000 / 60;
   const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
   const state = (actor, value, motion = value) => { const began=actor.state!==value;actor.state = value; actor.motion = motion; actor.time = 0; actor.hit = false;
@@ -108,7 +109,7 @@
     if(builds.ninja)run.allies.push({id:'ninja',type:'ninja',...builds.ninja,hp:builds.ninja.maxHp,mp:builds.ninja.maxMp,x:210,y:470,state:'idle',motion:'idle',time:0,cooldown:500,skill:0,flash:0,facing:1,ninjaCooldowns:{},cloneReadyAt:0,ninjaNormal:builds.ninja.ninjaNormal||N.spec('shuriken',1,0,builds.ninja),ninjaSkills:builds.ninja.ninjaSkills||[]});
     if(builds.shaman)run.allies.push({id:'shaman',type:'shaman',...builds.shaman,hp:builds.shaman.maxHp,mp:builds.shaman.maxMp,x:165,y:435,state:'idle',motion:'idle',time:0,cooldown:650,skill:0,flash:0,facing:1,shamanCooldowns:{},shamanNormal:builds.shaman.shamanNormal||S.spec('curse-bolt',1,0,builds.shaman),shamanSkills:builds.shaman.shamanSkills||[]});
     if(builds.miko)run.allies.push({id:'miko',type:'miko',...builds.miko,hp:builds.miko.maxHp,mp:builds.miko.maxMp,x:125,y:480,state:'idle',motion:'idle',time:0,cooldown:650,skill:0,flash:0,facing:1,mikoCooldowns:{},mikoNormal:builds.miko.mikoNormal||K.spec('purifying-bolt',1,0,builds.miko),mikoSkills:builds.miko.mikoSkills||[]});
-    Goddess.init(run);spawnWave(run, []); return run;
+    Goddess.init(run);TrialCombat.init(run);spawnWave(run, []); return run;
   }
   function hit(run, source, target, amount, events, skill = false, element = null, options = {}) {
     if (target.hp <= 0 || run.status !== 'running' || target.invulnerable) return;
@@ -709,10 +710,10 @@
     Shaman.tick(run,shamanAPI,events);
     Miko.tick(run,mikoAPI,events);Ruins.tick(run,ruinsAPI,events);Desert.tick(run,desertAPI,events);Highland.tick(run,highlandAPI,events);Glacier.tick(run,highlandAPI,events);Volcano.tick(run,highlandAPI,events);Castle.tick(run,desertAPI,events);
     for (const actor of party) if (actor.hp > 0 && actor.rootAnchor) { actor.x = actor.rootAnchor.x; actor.y = actor.rootAnchor.y; }
-    Goddess.tick(run,desertAPI,events);
+    Goddess.tick(run,desertAPI,events);TrialCombat.tick(run,desertAPI,events);
     const timedOut=run.stage.timeLimit&&run.elapsed+1e-6>=run.stage.timeLimit&&run.enemies.some(e=>e.hp>0);
     if ((party.every(a => a.hp === 0)||timedOut) && run.deliveryVictoryAt == null) {
-      if(timedOut)run.failureReason='timeout';Goddess.clear(run);Rebirth.clear(run);
+      if(timedOut)run.failureReason='timeout';Goddess.clear(run);TrialCombat.clear(run);Rebirth.clear(run);
       run.status = 'defeat'; run.projectiles = [];run.enemies.forEach(I.clear);
       party.forEach(clearStatus);run.paladinFields=[];
       Ninja.clear(run,null,events);
@@ -723,7 +724,7 @@
       if(run.enemies.some(e=>e.goddess&&run.time-e.departedAt<2200))return;
       if(run.enemies.some(e=>e.reincarnationGoddess&&run.time-e.departedAt<2400))return;
       Rebirth.clear(run);
-      Goddess.clear(run);
+      Goddess.clear(run);TrialCombat.clear(run);
       run.enemies.forEach(I.clear);
       run.projectiles = [];run.paladinFields=[]; for(const a of party){clearStatus(a);a.warriorCast=null;a.mageCast=null;a.paladinCast=null;a.z=0;a.hidden=false;a.invulnerable=false;state(a,a.hp>0?'idle':'down');}
       Ninja.clear(run,null,events);

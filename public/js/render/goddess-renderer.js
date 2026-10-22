@@ -71,5 +71,10 @@ window.GoddessRenderer=(()=>{
     }
     ctx.restore();
   }
-  return{load,background,draw,warnings,overlays,effect};
+  function trial(ctx,run,sprites,effects,paint,reduced){const view=TrialCombat.view(run);if(!view)return;const p=view.enemies[0].goddessPlan;
+    if(p.divine){ctx.save();ctx.globalAlpha=.65;paint(sprites['extradimensional-goddess'].cast,p.elapsed,p.origin.x,p.origin.y,.65,false,.8);ctx.restore();
+      ctx.save();ctx.beginPath();ctx.rect(82,324,860,183);ctx.clip();ctx.setLineDash([6,5]);if(p.elapsed<p.warn)for(const s of p.shapes)shape(ctx,s,'#ffcda4',true);ctx.restore();
+    }else{warnings(ctx,view);overlays(ctx,view,sprites,effects,paint,reduced);}
+  }
+  return{load,background,draw,warnings,overlays,effect,trial};
 })();

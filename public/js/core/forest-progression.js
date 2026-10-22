@@ -29,11 +29,13 @@
   };
   const COMMON_MATERIALS = ['jelly', 'tusk', 'flower'];
   const ReincarnationTree = typeof module === 'object' && module.exports ? require('../data/reincarnation-tree-data.js') : globalThis.ReincarnationTree;
+  const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
   const bonusCache = new WeakMap();
   function permanent(save) {
-    const key = (save.reincarnation?.owned || []).join('|'), cached = bonusCache.get(save);
+    const key = (save.reincarnation?.owned || []).join('|')+';'+(save.reincarnation?.appliedTrials || []).join('|'), cached = bonusCache.get(save);
     if (cached?.key === key) return cached.value;
     const value = ReincarnationTree.totals({ owned: new Set(['origin', ...(save.reincarnation?.owned || [])]) });
+    const trial=Trials.bonuses(save);value.gold*=trial.harvest;if(trial.harvest>1)value.trialRate=trial.harvest;value.hp*=trial.hp;value.damage*=trial.damage;
     bonusCache.set(save, { key, value }); return value;
   }
   const reached = (save, stage) => save.cleared.includes(stage) || !!save.reincarnation?.passed?.includes(stage);
@@ -420,14 +422,14 @@
     const owner = gemOwner(save, uid);
     return owner ? unequipGem(save, owner.character, owner.slot, uid) : equipGem(save, id, slot, uid);
   }
-  function gainXp(save, stage, xpExponent = permanent(save).xp, rewardMultiplier = 1) {
+  function gainXp(save, stage, xpExponent = permanent(save).xp) {
     const leveled = [];
     if (!Number.isSafeInteger(stage) || stage < 1) return leveled;
     for (const id of Object.keys(CHARACTERS)) if (unlocked(save, id)) {
       const c = save.progression.characters[id], before = level(c.xp);
       if(c.skipRecruitReward){const skip=c.skipRecruitReward;delete c.skipRecruitReward;if(stage===skip)continue;}
       if (c.xp.level >= MAX_LEVEL) { c.xp = experience(MAX_LEVEL); continue; }
-      let exponent = stage + xpExponent - c.xp.level - 1 + Math.log(Math.max(1, rewardMultiplier)) / Math.log(3);
+      let exponent = stage + xpExponent - c.xp.level - 1;
       if (exponent <= -20) continue;
       // Carry in units of the current level. Never compute a positive power of 3.
       while (exponent > 0 && c.xp.level < MAX_LEVEL) { c.xp.progress = (c.xp.progress - 1) / 3; c.xp.level++; exponent--; }
