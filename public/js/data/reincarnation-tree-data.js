@@ -112,7 +112,7 @@
   }), [], '方向容量・共通容量は別枠。職専用容量は対象外。');
   chain('trial', 1200, [
     ['trial-open', '試練の扉', 100, [effect('試練', '解放', 'trial', 1)], { milestone: true }],
-    ['trial-seals', '封印の試練', 4000, [effect('封印系試練', '解放準備', 'seals', 1)], { parents: ['damage2', 'hp2', 'cycle-bond'], row: 5, note: '封印系試練の解放ノード。個別の試練は設計中。' }],
+    ['trial-seals', '封印の試練', 4000, [effect('封印・孤道の試練', '解放', 'seals', 1)], { parents: ['damage2', 'hp2', 'cycle-bond'], row: 5, note: '封印3種・全6職の孤道I〜IIIを解放。' }],
     ['trial-slots', '重なる試練', 10000, [effect('試練同時選択枠', '2', 'slots', 2, 'max')], { row: 6 }],
     ['trial-intrusion', '異変の兆し', 100000, [effect('追加敵の試練', '解放', 'intrusion', 1)], { parents: ['damage2', 'hp2'], row: 8 }],
     ['trial-solo', '孤星の旅路', 1000000, [effect('少人数の上位試練', '解放', 'solo', 1)], { parents: ['common200', 'skill50'], row: 16, milestone: true }],

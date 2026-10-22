@@ -37,6 +37,21 @@
     own('trial-open');save.reincarnation.trialCompleted=['onslaught','unyielding'];save.reincarnation.trials=['goddess-serious'];save.reincarnation.trialRun=true;
     if(preset!=='trials'){save.reincarnation.trials=['gate-release'];save.reincarnation.appliedTrials=['onslaught','unyielding'];save.selectedStage=preset==='gate-release'?'dimensional-gate':'chaos-gate';save.speed=1;}
    }
+   if(preset==='solo'){
+    const own=id=>{for(const parent of ReincarnationTree.byId[id].requires)if(parent!=='origin'&&!save.reincarnation.owned.includes(parent))own(parent);if(id!=='origin'&&!save.reincarnation.owned.includes(id))save.reincarnation.owned.push(id);};
+    Object.assign(save.reincarnation,{unlocked:true,cycle:10000,total:1000000});for(const n of ReincarnationTree.nodes.filter(n=>!n.root&&n.cost<=8000))own(n.id);
+    const prior=['strength-2','onslaught','unyielding','goddess-serious','gate-release','seal-gems','seal-skills',...Object.keys(P.CHARACTERS).flatMap(job=>[1,2].map(t=>`solo-${job}-${t}`))];
+    save.reincarnation.trialCompleted=[...prior];save.reincarnation.appliedTrials=[...prior];save.cleared=save.cleared.filter(id=>id!=='extradimensional-goddess');save.gems=[];save.nextGemId=1;save.achievements=D.freshSave().achievements;
+    for(const c of Object.values(save.progression.characters))c.gems={weapon:[],armor:[]};
+    let state=4281;const random=()=>{state=(state*1664525+1013904223)>>>0;return state/4294967296;};
+    for(const job of Object.keys(P.CHARACTERS)){
+     const c=save.progression.characters[job];for(const slot of ['weapon','armor']){c[slot]=P.allGearTrees(job,slot).map(n=>n.id);c.gems[slot]=[];const cap=P.capacity(save,job,slot),budget=(cap.attack+cap.defense+cap.utility+cap.common)*.5,families=slot==='weapon'?['attack','recovery','haste','siphon','range']:['vitality','recovery','defense','aegis','resistance'];
+      for(let i=0;i<30;i++)for(const rarity of ['legendary','unique','rare']){const family=families[i%families.length];if((P.Gem.OPTIONS[family].min||0)>P.Gem.TIERS[rarity].rank)continue;const gem=P.Gem.generate({rarity,family,level:10,random});gem.quality=1;const used=P.gemUsage(save,job,slot).used;if(used.attack+used.defense+used.utility+P.gemCost(save,job,slot,gem)>budget)continue;const added=P.addGem(save,gem);if(!P.equipGem(save,job,slot,added.id))save.gems=save.gems.filter(g=>g.id!==added.id);}
+     }
+     P.respec(save,job);for(const kind of ['active','enhancement','passive'])for(const n of P.SKILLS[job].filter(n=>n.kind===kind))while(P.purchase(save,job,'skills',n.id)){}
+    }
+    Object.assign(save.reincarnation,{trials:['solo-miko-3'],trialRun:true});save.progression.selected='miko';save.selectedStage='extradimensional-goddess';save.speed=1;
+   }
    Achievements.sync(save);return save;
   }
   for(const button of document.querySelectorAll('[data-preset]')){button.disabled=false;button.addEventListener('click',()=>{

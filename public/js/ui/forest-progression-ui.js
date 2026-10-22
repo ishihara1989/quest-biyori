@@ -142,6 +142,7 @@ window.ForestProgressionUI = {
     }
     function requirements(n, kind) {
       const character = id(), state = save.progression.characters[character];
+      const rules=Trials.rules(save);if(kind==='skills'&&rules.seals.skills&&(n.unlockLevel||1)>50)return '半知の戒律 · 封印中';if(kind!=='skills'&&rules.seals.gear&&!n.main)return '幹道の誓約 · 封印中';
       if (!P.unlocked(save, character)) return ForestData.stageLabel(P.CHARACTERS[character].unlock)+' クリア';
       const nodes = kind === 'skills' ? P.SKILLS[character] : P.allGearTrees(character, kind, true);
       if(kind==='skills'&&P.level(state.xp)<(n.unlockLevel||1))return 'Lv.'+n.unlockLevel+' 解放';

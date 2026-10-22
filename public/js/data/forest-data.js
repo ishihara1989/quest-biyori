@@ -350,7 +350,7 @@
       counts.push([rarity, guaranteed + (extra ? 1 : 0)]);
       offset = end >= 1 ? end - 1 : end;
     }
-    return counts.flatMap(([rarity, count]) => Array.from({ length: count }, () => P.Gem.generate({ rarity, level: region, random })));
+    return counts.flatMap(([rarity, count]) => Array.from({ length: count }, () => P.Gem.generate({ rarity, level: region, random, epicFamilies:options.epicFamilies }))).filter(Boolean);
   }
   return { HERO, ENEMIES, ALL_ENEMIES, STAGES, SPECIAL_STAGES, ALL_STAGES, STAGE_TUNING, tuneStage, REGIONS, stageLabel, stageId, nextStage, stageFor, specialStages, stageCleared, ITEMS, EQUIPMENT, RARITIES, SAVE_KEY, SAVE_VERSION, freshSave, readSave, isUnlocked, isRevealed, stageVisible, regionVisible, enemyDiscovered, itemDiscovered, recordEncounters, award, addGold, autoDestination, rollMaterials, rollGems, gemDropRates };
 });

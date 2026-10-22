@@ -30,10 +30,11 @@
         const count = pending.countMultiplier;
         if (count) { save.inventory[id] = (save.inventory[id] || 0) + count; add(id,count); }
       }
-      for (const rolled of D.rollGems(enemy, random, pending.hunt, { level: pending.dropLevel, multiplier: pending.multiplier })) {
+      for (const rolled of D.rollGems(enemy, random, pending.hunt, { level: pending.dropLevel, multiplier: pending.multiplier, epicFamilies:P.Gem.epicPool(save) })) {
        const copies = pending.countMultiplier;
        for(let copy=0;copy<copies;copy++){
-        const gem = P.addGem(save, copy===0?rolled:P.Gem.generate({rarity:rolled.rarity,level:rolled.level,random}));
+        const rolledCopy=copy===0?rolled:P.Gem.generate({rarity:rolled.rarity,level:rolled.level,random,epicFamilies:P.Gem.epicPool(save)});
+        const gem = rolledCopy&&P.addGem(save, rolledCopy);
         if (!gem) continue;
         const deferred=save.reincarnation?.unlocked&&save.reincarnation.automation.gems;
         if(deferred)(result.deferred ||= []).push(gem.id);

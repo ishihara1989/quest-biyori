@@ -48,7 +48,7 @@
   }, onAbandon: () => {
     if(!Trials.abandon(save))return;
     const resume=playing,current=run.stage.id;invalidateBuilds();requestAutomaticGear();persist();
-    if(started){startStage(current,true);setPlaying(resume);}refreshResources();
+    if(started){startStage(current,true);setPlaying(resume);}refreshResources();refreshGrowth();
   } });
   const museumUI = MuseumUI.create({ save, container: $('menu-content'), icon, reduced });
   let skillCapacity = 0;
@@ -193,8 +193,8 @@
     const skillLabel = hasUnusedSP ? 'スキル · 未使用SPあり' : 'スキル';
     extra.innerHTML = '<div class="sidebar-mp-label"><span>MP</span><b id="sidebar-mp">' + Number(stats.maxMp.toFixed(2)) + ' / ' + Number(stats.maxMp.toFixed(2)) + '</b></div><div class="resource-track mp"><i id="sidebar-mp-fill"></i></div><div class="sidebar-xp"><span>EXP</span><b>' + P.xpPercent(c.xp) + '</b></div><div class="growth-shortcuts"><button data-open="character" data-tip="' + job.name + 'の能力">' + icon('user') + '能力</button><button data-open="gems" data-tip="' + job.name + 'のジェム">' + icon('gem') + 'ジェム</button><button data-open="skills" data-tip="' + skillLabel + '" aria-label="' + skillLabel + '">' + icon('spark') + 'スキル' + (hasUnusedSP ? '<span class="unused-sp-mark" aria-hidden="true">!</span>' : '') + '</button><button data-open="forge" data-tip="' + job.name + 'の装備強化">' + icon('sword') + '装備強化</button></div>';
     refreshParty();
-    const warrior = character === 'warrior' ? stats : battleStats('warrior');
-    const skills = (warrior.warriorSkills.length ? warrior.warriorSkills : [WarriorSkills.spec('renjin',warrior.normalRank,warrior.normalEnhance,warrior)]).map(s=>({...s,owner:'warrior'}));
+    const warrior = runBuilds.warrior ? battleStats('warrior') : null;
+    const skills = warrior ? (warrior.warriorSkills.length ? warrior.warriorSkills : [WarriorSkills.spec('renjin',warrior.normalRank,warrior.normalEnhance,warrior)]).map(s=>({...s,owner:'warrior'})) : [];
     if(runBuilds.mage){const mage=battleStats('mage');skills.push(...[mage.mageNormal,...mage.mageSkills].map(s=>({...s,owner:'mage'})));}
     if(runBuilds.paladin){const p=battleStats('paladin');skills.push(...[p.paladinNormal,...p.paladinSkills].map(s=>({...s,owner:'paladin'})));}
     if(runBuilds.ninja){const n=battleStats('ninja');skills.push(...[n.ninjaNormal,...n.ninjaSkills].map(s=>({...s,owner:'ninja'})));}
@@ -241,7 +241,9 @@
       }
       const epics = ['weapon', 'armor'].flatMap(slot => {
         const gem = save.progression.characters[id].gems[slot].map(uid => P.gemInstance(save, uid)).find(gem => gem?.rarity === 'epic' && gem.family === id + '-' + slot);
-        return gem ? [{ slot, label: slot === 'weapon' ? '武器' : '防具', name: P.Gem.describe(gem).name }] : [];
+        const innate=Trials.rewards(save).epics.includes(id);
+        if(innate)return [{slot,label:slot==='weapon'?'武器':'防具',name:P.Gem.Epic.DEFINITIONS[id+'-'+slot].name+' · 恒常'}];
+        return gem && !Trials.rules(save).seals.gems ? [{ slot, label: slot === 'weapon' ? '武器' : '防具', name: P.Gem.describe(gem).name }] : [];
       });
       const epicMarkup = epics.map(gem => '<span class="party-epic-slot" data-epic-slot="' + gem.slot + '" data-tip="' + escapeHTML('エピック · ' + gem.label + ' · ' + gem.name) + '">' + icon(gem.slot === 'weapon' ? 'sword' : 'shield') + gem.label + '</span>').join('');
       if (view.epics.innerHTML !== epicMarkup) view.epics.innerHTML = epicMarkup;
@@ -255,7 +257,7 @@
     text('party-count', String(partyViews.size));
   }
   function partyActor(character) {
-    return character === 'warrior' ? run.hero : run.allies.find(actor => actor.type === character);
+    return [run.hero,...run.allies].find(actor => actor.type === character);
   }
   function refreshPartyVitals() {
     for (const [id, view] of partyViews) {
@@ -379,6 +381,7 @@
       else if(event.type==='delivery-effect'){effects.push(event);if(!reduced&&['fx-beam','fx-orbital','fx-truck'].includes(event.effect))shake=Math.max(shake,8);}
       else if(event.type==='goddess-effect'){if(event.kind==='awaken')effects=effects.filter(e=>e.type!=='goddess-effect');effects.push(event);burst(event.x,event.y-30,'#d1efff',event.kind==='awaken'?45:14);if(!reduced&&['zero','cross','awaken'].includes(event.kind))shake=Math.max(shake,9);}
       else if (event.type === 'rift-effect') { effects.push(event); burst(event.x, event.y - 55, SpecialStages.definition(event.specialId).COLORS[event.tier], event.kind === 'shatter' ? 60 : event.kind === 'emerge' ? 22 : 32); if (event.kind === 'shatter') shake = reduced ? 0 : 11; }
+      else if(event.type==='solo-support'){effects.push(event);}
       else if(event.type==='gem-effect'){effects.push(event);burst(event.x,event.y-30,event.kind==='resistance'?'#79ffc4':event.kind==='siphon'?'#89efdf':'#ffd074',16);}
       else if(event.type==='castle-effect'){effects.push(event);burst(event.x,event.y-20,'#c58cff',event.radius?24:12);if(!reduced&&['castle-royal-cleave','castle-demon-impact','castle-cross-beam','castle-end-ring'].includes(event.effect))shake=Math.max(shake,8);}
       else if(event.type==='volcano-effect'){effects.push(event);burst(event.x,event.y-20,'#ffaf4f',event.radius?24:12);if(!reduced&&['volcano-landing-shock','volcano-lava-impact','volcano-fissure'].includes(event.effect))shake=Math.max(shake,8);}
@@ -624,15 +627,18 @@
     if (P.toggleGem(save, save.progression.selected, inventorySlot, uid)) {
       invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); renderInventory();
       document.querySelector('[data-gem-instance="' + uid + '"]')?.focus({ preventScroll: true });
-    } else notify(P.Gem.describe(P.gemInstance(save,uid)).jobs.includes(save.progression.selected)?'容量不足':'装着対象外');
+    } else if(Trials.rules(save).seals.gems)notify('無彩の誓約 · ジェム封印中');
+    else if(P.gemInstance(save,uid)?.rarity==='epic'&&Trials.rewards(save).epics.includes(save.progression.selected))notify('恒常エピック取得済み');
+    else notify(P.Gem.describe(P.gemInstance(save,uid)).jobs.includes(save.progression.selected)?'容量不足':'装着対象外');
   }
   function renderInventorySelection() {
     if (menu === 'gems' && gemFilter === 'gem') {
       const instance = P.gemInstance(save, selectedGem), panel = $('inventory-selection');
       if (!instance || !panel) { if (panel) panel.hidden = true; return; }
       const gem = P.Gem.describe(instance), owner = P.gemOwner(save, instance.id);
+      const blocked=!owner&&(Trials.rules(save).seals.gems?'無彩の誓約 · 封印中':instance.rarity==='epic'&&Trials.rewards(save).epics.includes(save.progression.selected)?'恒常取得済み':'');
       panel.hidden = false; panel.dataset.rarity = gem.rarity;
-      panel.innerHTML = '<img src="' + gem.image + '" alt=""><div><strong>' + gem.name + '</strong><p>' + gem.note + '</p><small>' + (owner ? P.CHARACTERS[owner.character].name + ' · ' + (owner.slot === 'weapon' ? '武器' : '防具') : '未装着') + '</small></div><button class="secondary-button" data-toggle-inventory-gem="' + instance.id + '">' + icon(owner ? 'repeat' : inventorySlot === 'weapon' ? 'sword' : 'shield') + (owner ? '解除' : '装着') + '</button>'+gemWorkshop.actions(instance);
+      panel.innerHTML = '<img src="' + gem.image + '" alt=""><div><strong>' + gem.name + '</strong><p>' + gem.note + '</p><small>' + (owner ? P.CHARACTERS[owner.character].name + ' · ' + (owner.slot === 'weapon' ? '武器' : '防具') : '未装着') + '</small></div><button class="secondary-button" data-toggle-inventory-gem="' + instance.id + '"'+(blocked?' disabled':'')+'>' + icon(owner ? 'repeat' : inventorySlot === 'weapon' ? 'sword' : 'shield') + (blocked|| (owner ? '解除' : '装着')) + '</button>'+gemWorkshop.actions(instance);
       document.querySelectorAll('[data-gem-instance]').forEach(button => button.classList.toggle('selected', Number(button.dataset.gemInstance) === instance.id));
       return;
     }
@@ -817,6 +823,10 @@
         ctx.restore();
       } else if (e.type === 'impact' && e.kind !== 'seed' && age < 490) {
         drawAsset(effectSprites[e.kind === 'root' ? 'root-eruption' : 'explosion'], age, e.x, e.y, 0.85);
+      } else if(e.type==='solo-support'&&age<800){
+        const asset={warrior:warriorEffects.slash,mage:mageEffects['ice-impact'],paladin:paladinEffects.shield,ninja:ninjaEffects['shadow-slash'],shaman:shamanEffects.frailty,miko:mikoEffects['kagura-robes']}[e.job];
+        const points=e.targets.length?e.targets:[{x:e.x,y:e.y}];
+        for(const p of points)WarriorSkillRenderer.sprite(ctx,asset,reduced?200:age,p.x,p.y-55,e.tier===2?210:140,e.tier===2?240:160,0,Math.min(1,(800-age)/250));
       } else if(e.type==='gem-effect'&&age<650){
         const color=e.kind==='resistance'?'#79ffc4':e.kind==='siphon'?'#92f6e5':'#ffd774';
         ImageEffects.ring(ctx,reduced?0:age,e.x,e.y-35,18+age/13,26+age/16,color,1-age/650);
@@ -881,10 +891,10 @@
         const color=run.stage.region===8?i%3?'#bbebff':'#e6e4ff':run.stage.region===3?i%3?'#ad8dd4':'#ffd687':run.stage.region===4?i%3?'#87e7fb':'#fff6c4':run.stage.region===2?i%3?'#bb75ec':'#bcf76e':i%3?'#cce5a7':'#fff6c4';ImageEffects.mote(ctx,x,y,8,color,.5,ambient+i*53);
       }
     }
-    if(!reduced)WarriorSkillRenderer.ghosts(ctx,run.hero,drawActor);
+    if(!reduced&&run.hero.type==='warrior')WarriorSkillRenderer.ghosts(ctx,run.hero,drawActor);
     run.enemies.filter(actor => actor.dimensionalGate).forEach(actor => drawActor(actor));
     PaladinSkillRenderer.fields(ctx,run,paladinEffects,reduced);
-    for(const actor of run.allies.filter(a=>a.type==='ninja')){NinjaSkillRenderer.castAura(ctx,actor,run,ninjaEffects,reduced);if(!reduced)NinjaSkillRenderer.ghosts(ctx,actor,run,drawActor);}
+    for(const actor of [run.hero,...run.allies].filter(a=>a.type==='ninja')){NinjaSkillRenderer.castAura(ctx,actor,run,ninjaEffects,reduced);if(!reduced)NinjaSkillRenderer.ghosts(ctx,actor,run,drawActor);}
     NinjaSkillRenderer.fields(ctx,run,ninjaEffects,reduced);
     MikoSkillRenderer.backdrops(ctx,run,mikoEffects,reduced);
     ShamanSkillRenderer.fields(ctx,run,shamanEffects,reduced);
@@ -901,19 +911,19 @@
     if(run.stage.reincarnation)ReincarnationRenderer.overlays(ctx,run,sprites,drawAsset);
     if(run.stage.final)GoddessRenderer.overlays(ctx,run,sprites,effectSprites,drawAsset,reduced);
     GoddessRenderer.trial(ctx,run,sprites,effectSprites,drawAsset,reduced);
-    WarriorSkillRenderer.castOverlay(ctx,run.hero,warriorEffects);
+    if(run.hero.type==='warrior')WarriorSkillRenderer.castOverlay(ctx,run.hero,warriorEffects);
     WarriorSkillRenderer.impacts(ctx,effects,run.time,warriorEffects);
-    for(const mage of run.allies)MageSkillRenderer.castOverlay(ctx,mage,mageEffects,reduced);
+    for(const mage of [run.hero,...run.allies].filter(a=>a.type==='mage'))MageSkillRenderer.castOverlay(ctx,mage,mageEffects,reduced);
     MageSkillRenderer.impacts(ctx,effects,run.time,mageEffects,reduced);
-    for(const actor of run.allies)PaladinSkillRenderer.castOverlay(ctx,actor,paladinEffects,reduced);
+    for(const actor of [run.hero,...run.allies].filter(a=>a.type==='paladin'))PaladinSkillRenderer.castOverlay(ctx,actor,paladinEffects,reduced);
     PaladinSkillRenderer.impacts(ctx,effects,run.time,paladinEffects,reduced);
     NinjaSkillRenderer.projectiles(ctx,run,ninjaEffects,reduced);
     NinjaSkillRenderer.impacts(ctx,effects,run.time,ninjaEffects,reduced);
-    for(const actor of run.allies.filter(a=>a.type==='ninja'))NinjaSkillRenderer.overlay(ctx,actor,run,ninjaEffects,reduced);
+    for(const actor of [run.hero,...run.allies].filter(a=>a.type==='ninja'))NinjaSkillRenderer.overlay(ctx,actor,run,ninjaEffects,reduced);
     ninjaStatusRegions=NinjaSkillRenderer.statuses(ctx,run,ninjaEffects);
     ShamanSkillRenderer.projectiles(ctx,run,shamanEffects,reduced);
     ShamanSkillRenderer.impacts(ctx,effects,run.time,shamanEffects,reduced);
-    for(const actor of run.allies.filter(a=>a.type==='shaman'))ShamanSkillRenderer.castOverlay(ctx,actor,run,shamanEffects,reduced);
+    for(const actor of [run.hero,...run.allies].filter(a=>a.type==='shaman'))ShamanSkillRenderer.castOverlay(ctx,actor,run,shamanEffects,reduced);
     shamanStatusRegions=ShamanSkillRenderer.statuses(ctx,run,shamanEffects);
     if(run.stage.region!==8)interferenceStatusRegions=InterferenceRenderer.bars(ctx,run);
     syncCurseFocus();

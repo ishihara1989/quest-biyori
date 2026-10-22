@@ -42,7 +42,7 @@ async function main(){
     await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-cancel]').click();assert.ok(!(await saveOf(page)).reincarnation.owned.includes('cycle-bond'));
     await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="cycle-bond"]').click();
     await page.locator('[data-reinc-node="trial-seals"]').click();assert.equal(await page.locator('[data-reinc-confirm]').innerText(),'4,000 PT · 取得');
-    assert.ok((await page.locator('.reinc-note').innerText()).includes('設計中'));assert.ok(await page.locator('[data-reinc-confirm]').isEnabled());
+    assert.ok((await page.locator('.reinc-note').innerText()).includes('封印3種'));assert.ok(await page.locator('[data-reinc-confirm]').isEnabled());
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.mouse.move(2,2);await shot(page,'seals-prerequisites-'+viewport.width);
     await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="trial-seals"]').click();
     const purchased=await saveOf(page);assert.equal(R.points(purchased),R.points(seed)-8000);
@@ -150,7 +150,7 @@ async function main(){
    await unlock.page.locator('[data-reinc-node="'+id+'"]').click();await unlock.page.locator('[data-reinc-confirm]').click();await unlock.page.locator('[data-reinc-buy="'+id+'"]').click();
   }
   next=await saveOf(unlock.page);assert.equal(R.points(next),0);assert.deepEqual(new Set(next.reincarnation.owned),new Set(['drop2','xp3','gold2']));
-  await unlock.page.locator('[data-reinc-node="trial-seals"]').click();assert.ok(await unlock.page.locator('.reincarnation-detail .coming-soon').isVisible());assert.equal(await unlock.page.locator('[data-reinc-confirm]').count(),0);await shot(unlock.page,'tree-coming-soon');
+  await unlock.page.locator('[data-reinc-node="trial-intrusion"]').click();assert.ok(await unlock.page.locator('.reincarnation-detail .coming-soon').isVisible());assert.equal(await unlock.page.locator('[data-reinc-confirm]').count(),0);await shot(unlock.page,'tree-coming-soon');
   const view=unlock.page.locator('.reincarnation-viewport'),box=await view.boundingBox();await view.evaluate(e=>{e.scrollLeft=450;e.scrollTop=400;});const scroll=await view.evaluate(e=>[e.scrollLeft,e.scrollTop]);await unlock.page.mouse.move(box.x+25,box.y+25);await unlock.page.mouse.down();await unlock.page.mouse.move(box.x+110,box.y+90);await unlock.page.mouse.up();const after=await view.evaluate(e=>[e.scrollLeft,e.scrollTop]);assert.ok(after[0]<scroll[0]&&after[1]<scroll[1]);
   await menu(unlock.page,'options');await unlock.page.locator('[data-reinc-auto="skills"]').check();assert.equal((await saveOf(unlock.page)).reincarnation.automation.skills,true);await shot(unlock.page,'automation-options');
   await unlock.page.reload();await unlock.page.locator('#start-button:not([disabled])').waitFor({timeout:90000});next=await saveOf(unlock.page);assert.equal(next.reincarnation.cycle,1);assert.equal(R.points(next),0);assert.equal(next.reincarnation.owned.length,3);await unlock.context.close();

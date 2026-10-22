@@ -48,6 +48,7 @@
 ## 実装済み機能と検証
 
 - [輪廻の絆・封印の試練の解放ノード（2026-10-22）](implementation/sealed-trial-unlocks.md)
+- [封印3種・孤道I〜IIIの本編実装（全18ソロ・職別倍率・恒常エピック）](implementation/sealed-and-solo-trials.md)
 
 - [パッシブの成長能力を割合補正へ変更（2026-10-17）](implementation/passive-percent-stats.md)
 

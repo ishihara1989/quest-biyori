@@ -7,7 +7,7 @@
   if (common) module.exports = api; else root.Reincarnation = api;
 })(globalThis, (P, T, D) => {
   const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
-  const maxPoints = Math.round(D.POINTS * Trials.summarize(Trials.definitions.map(d=>d.id)).reward * 1.5);
+  const maxPoints = Math.round(D.POINTS * Trials.summarize(Trials.definitions.filter(d=>!d.solo).map(d=>d.id)).reward * 1.5);
   const fresh = () => ({ version: 3, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [], trialRun: false, trialCompleted: [], appliedTrials: [], journey: 0, duoDefeatedJourney: null,
     resultOptions: { skip: false, delay: 5 }, total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
@@ -125,6 +125,7 @@
     Object.assign(next, { reincarnation: r, achievements: structuredClone(save.achievements), inventory: {potion:0},
       encounteredEnemies: [...save.encounteredEnemies], discoveredGemRarities: [...save.discoveredGemRarities],
       autoGear: structuredClone(save.autoGear), autoGemDismantle: structuredClone(save.autoGemDismantle), autoMode: save.autoMode, speed: save.speed });
+    if(Trials.rules(next).solo)next.progression.selected=Trials.rules(next).solo.job;
     return next;
   }
   function skipDestination(save, from) {

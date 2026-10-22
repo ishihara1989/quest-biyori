@@ -40,5 +40,5 @@ test('seal node requires door, both fifth combat nodes and bond, charges 4000 PT
  const required=['trial-open','damage2','hp2','cycle-bond'];assert.equal(T.byId['trial-seals'].cost,4000);assert.deepEqual(T.byId['trial-seals'].requires,required);
  for(const absent of required){const save=ready();for(const id of required.filter(id=>id!==absent))own(save,id);assert.equal(R.status(save,'trial-seals'),'locked');assert.equal(R.purchase(save,'trial-seals'),false);}
  const save=ready();for(const id of required)own(save,id);const before=R.points(save);assert.ok(R.purchase(save,'trial-seals'));assert.equal(R.points(save),before-4000);assert.equal(R.purchase(save,'trial-seals'),false);
- const restored=D.readSave(JSON.stringify(save));assert.deepEqual(new Set(restored.reincarnation.owned),new Set(save.reincarnation.owned));assert.equal(R.points(restored),before-4000);assert.equal(R.status(restored,'trial-seals'),'owned');assert.equal(Trials.definitions.length,13,'individual sealed trials remain design proposals');
+ const restored=D.readSave(JSON.stringify(save));assert.deepEqual(new Set(restored.reincarnation.owned),new Set(save.reincarnation.owned));assert.equal(R.points(restored),before-4000);assert.equal(R.status(restored,'trial-seals'),'owned');assert.equal(Trials.definitions.length,34,'base trials, three seals and eighteen solos are available');
 });
