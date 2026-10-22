@@ -130,7 +130,7 @@
       }else if(s.role==='possession'){target=targetFor(run,s);if(!target)continue;const old=run.mikoPossessions.find(p=>p.id===s.id);if(old&&old.host===target&&old.until-run.time>3000)continue;
         const other=run.mikoPossessions.find(p=>p.host===target&&p.id!==s.id&&p.until-run.time>3000);if(other&&!actor.epicMikoArmor&&!(run.mikoTwin?.host===target&&run.mikoTwin.until>run.time)){const alternatives=friends.filter(a=>!run.mikoPossessions.some(p=>p.host===a&&p.until-run.time>3000));if(!alternatives.length)continue;target=alternatives[0];}
         if(s.heal&&!actor.epicMikoArmor&&target.hp/target.maxHp>.8)continue;score=s.barrier&&low.hp/low.maxHp<.45?80:14;
-      }else if(s.role==='festival'){if(run.mikoFestival?.until>run.time+(actor.epicMikoWeapon?3000:0)||friends.length<3||!live.length||live.reduce((n,e)=>n+e.hp,0)<friends.reduce((n,a)=>n+a.damage,0)*3)continue;
+      }else if(s.role==='festival'){if(run.mikoFestival?.until>run.time+(actor.epicMikoWeapon?3000:0)||(friends.length<3&&!run.trials?.solo)||!live.length||live.reduce((n,e)=>n+e.hp,0)<friends.reduce((n,a)=>n+a.damage,0)*3)continue;
         if(!run.mikoContracts.some(c=>c.spec.role==='attack')&&run.time<2000)continue;score=28+s.spirit;
       }else if(s.role==='command'){if(!run.mikoContracts.some(c=>c.spec.role==='attack'))continue;score=18;}
       else if(s.role==='channel'){if(run.mikoChannel?.until>run.time||!run.mikoContracts.some(c=>c.spec.role==='attack'))continue;score=24;}

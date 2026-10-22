@@ -10,7 +10,7 @@
     gem: { name: '宝石・容量', color: '#e1a2c7', icon: 'progression/universal-gem.png' },
     trial: { name: '試練・異変', color: '#d88e98', icon: 'gems/goddess-page.png' },
   };
-  // Runtime prices adopted from the reviewed tree. Only trial-open is currently implemented.
+  // Runtime prices adopted from the reviewed tree; later trial branches stay reserved.
   const nodes = [];
   function node(id, name, family, cost, x, y, requires, effects, extra = {}) {
     nodes.push({ id, name, family, cost, x, y, requires, effects, ...extra });
@@ -60,6 +60,8 @@
     ['skip3', '星間の近道', 4500, [effect('挑戦先の最大進行幅', '＋3', 'skip', 3, 'max')]],
     ['skip4', '星渡りの極み', 80000, [effect('挑戦先の最大進行幅', '＋4', 'skip', 4, 'max')]],
   ], ['main-free'], '大ボス・必須特殊ボスを越えない。通過区間の経験値・素材・ゴールドなし。通過の確定は挑戦先の勝利時。');
+  node('cycle-bond', '輪廻の絆', 'journey', 4000, 400, 1058, ['main-free'],
+    [effect('仲間', '最初から全員', 'allies', 1)], { milestone: true, note: '全6職がLv.1・初期装備から同行。加入時のレベル・装備・スキルの支給は行わない。' });
   // Node IDs remain stable so existing purchases gain the revised effects on load.
   const combatTargets = [2, 3, 4, 5, 7.5, 10, 15, 20, 30, 40, 60, 80, 100, 150, 200, 300, 400, 500];
   const combatPrices = [50, 100, 350, 600, 1200, 2200, 4000, 8000, 14000, 24000, 40000, 65000, 100000, 160000, 250000, 400000, 650000, 1000000];
@@ -110,9 +112,9 @@
   }), [], '方向容量・共通容量は別枠。職専用容量は対象外。');
   chain('trial', 1200, [
     ['trial-open', '試練の扉', 100, [effect('試練', '解放', 'trial', 1)], { milestone: true }],
-    ['trial-seals', '封印の試練', 1500, [effect('宝石封印・技能制限', '解放', 'seals', 1)]],
-    ['trial-slots', '重なる試練', 10000, [effect('試練同時選択枠', '2', 'slots', 2, 'max')]],
-    ['trial-intrusion', '異変の兆し', 100000, [effect('追加敵の試練', '解放', 'intrusion', 1)], { parents: ['damage2', 'hp2'], row: 5 }],
+    ['trial-seals', '封印の試練', 4000, [effect('封印・孤道の試練', '解放', 'seals', 1)], { parents: ['damage2', 'hp2', 'cycle-bond'], row: 5, note: '封印3種・全6職の孤道I〜IIIを解放。' }],
+    ['trial-slots', '重なる試練', 10000, [effect('試練同時選択枠', '2', 'slots', 2, 'max')], { row: 6 }],
+    ['trial-intrusion', '異変の兆し', 100000, [effect('追加敵の試練', '解放', 'intrusion', 1)], { parents: ['damage2', 'hp2'], row: 8 }],
     ['trial-solo', '孤星の旅路', 1000000, [effect('少人数の上位試練', '解放', 'solo', 1)], { parents: ['common200', 'skill50'], row: 16, milestone: true }],
   ], ['main-free'], '試練の扉で強靭・猛攻・頑強・女神の本気・ゲート解放を解放。精算PTは今周の転生の女神撃破時の最高値。');
   const rateSteps = [

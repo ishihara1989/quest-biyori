@@ -14,12 +14,12 @@ test('gate release requires both first clears, multiplies PT and roundtrips firs
  const next=R.prepare(restored,D.freshSave,{restart:true,trials:[]});assert.equal(next.reincarnation.total,2120);assert.equal(T.bonuses(next).materialReduction,10);assert.equal(T.capture(next).gateRelease,false);assert.equal(T.bonuses(D.readSave(JSON.stringify(next))).materialReduction,10);
  const abandoned=R.prepare(s,D.freshSave,{restart:true,trials:['gate-release']});const stale=R.capture(abandoned);T.abandon(abandoned);R.victory(abandoned,'reincarnation-goddess',stale);assert.equal(T.capture(abandoned).gateRelease,false);assert.equal(T.completed(abandoned).includes('gate-release'),false);
 });
-test('maximum 40500 PT and accumulated totals survive save restoration',()=>{
+test('legacy 40500 PT and the expanded trial ceiling survive save restoration',()=>{
  const s=ready(),all=['strength-10','onslaught','unyielding','goddess-serious','gate-release'];s.reincarnation.trialCompleted=T.definitions.map(d=>d.id);
  const run=R.prepare(s,D.freshSave,{restart:true,trials:all});assert.equal(T.capture(run).reward,270);R.victory(run,'extradimensional-goddess',R.capture(run,'extradimensional-goddess'));assert.equal(R.payout(run),40500);
  const loaded=D.readSave(JSON.stringify(run));assert.equal(R.payout(loaded),40500);assert.deepEqual(loaded.reincarnation.trials,all);
  const next=R.prepare(loaded,D.freshSave,{restart:true,trials:[]});next.reincarnation.cycle=1;next.reincarnation.total=40500;assert.equal(D.readSave(JSON.stringify(next)).reincarnation.total,40500);
- assert.equal(R.restore({...next.reincarnation,total:40501}).total,100);
+ assert.equal(R.restore({...next.reincarnation,total:1518751}).total,100);
 });
 test('material reward adds ten percentage points to normal sub and unique fees for every region, job and slot',()=>{
  const s=ready();s.reincarnation.trialCompleted=['gate-release'];s.reincarnation.appliedTrials=['gate-release'];assert.equal(P.permanent(s).sub,30);assert.equal(P.permanent(s).unique,30);own(s,'sub40');own(s,'unique40');

@@ -17,6 +17,10 @@
 
 ## 設計・仕様・提案
 
+- [ソロ試練I〜III：攻略順・混沌の門・職別PT倍率（1,080戦・巫女のソロ神楽AI案）](design/solo-trial-balance.md)
+
+- [封印・ソロ試練と転生中盤のバランス案（8,000 PT以下全取得の基準測定・報酬と解放順の候補）](design/sealed-trials-and-progression.md)
+
 - [転生の女神：SF兵器5種・大型トラック・ゲート帰還](design/reincarnation-goddess-arsenal.md)
 
 - [転生・転生チャレンジ・実績システム企画（設計経緯・採用範囲は実装記録へ）](design/reincarnation-system-design.md)
@@ -42,6 +46,9 @@
 - [戦士スキルとツリー](design/warrior-skill-design.md)
 
 ## 実装済み機能と検証
+
+- [輪廻の絆・封印の試練の解放ノード（2026-10-22）](implementation/sealed-trial-unlocks.md)
+- [封印3種・孤道I〜IIIの本編実装（全18ソロ・職別倍率・恒常エピック）](implementation/sealed-and-solo-trials.md)
 
 - [パッシブの成長能力を割合補正へ変更（2026-10-17）](implementation/passive-percent-stats.md)
 

@@ -12,6 +12,7 @@
   const Trials = typeof module === 'object' && module.exports ? require('../core/trials.js') : globalThis.Trials;
   const RebirthData = typeof module === 'object' && module.exports ? require('../data/reincarnation-data.js') : globalThis.ReincarnationData;
   const TrialCombat = typeof module === 'object' && module.exports ? require('./trial-combat.js') : globalThis.TrialCombat;
+  const SoloSupport = typeof module === 'object' && module.exports ? require('./solo-support.js') : globalThis.SoloSupport;
   const STEP = 1000 / 60;
   const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
   const state = (actor, value, motion = value) => { const began=actor.state!==value;actor.state = value; actor.motion = motion; actor.time = 0; actor.hit = false;
@@ -100,8 +101,9 @@
   function createRun(stageId = 1, { random = Math.random, builds = {}, disableMikoSupport=false, goldRemainder = 0, trials = null } = {}) {
     let stage = STAGES.find(s => s.id === stageId) || SPECIAL_STAGES.find(s => s.id === stageId);
     if (!stage) throw new RangeError('Unknown stage');
-    if(stage.id==='extradimensional-goddess'&&trials?.ids?.includes('goddess-serious'))stage=RebirthData.DUO_STAGE;
-    const run = { stage, trials: Trials.summarize(trials?.ids, stageId), random, serial: 0, enemies: [], projectiles: [], wave: 0, phase: 'combat',
+    const conditions=Trials.summarize(trials?.ids,stageId);conditions.support={...(trials?.support||{})};
+    if(stage.id==='extradimensional-goddess'&&conditions.intervention)stage=RebirthData.DUO_STAGE;
+    const run = { stage, trials: conditions, random, serial: 0, enemies: [], projectiles: [], wave: 0, phase: 'combat',
       status: 'running', time: 0, elapsed: 0, accumulator: 0, transition: 0, kills: 0, extraEnemies: 0, gold: 0,
       disableMikoSupport,
       goldRemainder, reincarnationBonuses: builds.warrior?.reincarnationBonuses,
@@ -118,7 +120,13 @@
     if(builds.ninja)run.allies.push({id:'ninja',type:'ninja',...builds.ninja,hp:builds.ninja.maxHp,mp:builds.ninja.maxMp,x:210,y:470,state:'idle',motion:'idle',time:0,cooldown:500,skill:0,flash:0,facing:1,ninjaCooldowns:{},cloneReadyAt:0,ninjaNormal:builds.ninja.ninjaNormal||N.spec('shuriken',1,0,builds.ninja),ninjaSkills:builds.ninja.ninjaSkills||[]});
     if(builds.shaman)run.allies.push({id:'shaman',type:'shaman',...builds.shaman,hp:builds.shaman.maxHp,mp:builds.shaman.maxMp,x:165,y:435,state:'idle',motion:'idle',time:0,cooldown:650,skill:0,flash:0,facing:1,shamanCooldowns:{},shamanNormal:builds.shaman.shamanNormal||S.spec('curse-bolt',1,0,builds.shaman),shamanSkills:builds.shaman.shamanSkills||[]});
     if(builds.miko)run.allies.push({id:'miko',type:'miko',...builds.miko,hp:builds.miko.maxHp,mp:builds.miko.maxMp,x:125,y:480,state:'idle',motion:'idle',time:0,cooldown:650,skill:0,flash:0,facing:1,mikoCooldowns:{},mikoNormal:builds.miko.mikoNormal||K.spec('purifying-bolt',1,0,builds.miko),mikoSkills:builds.miko.mikoSkills||[]});
-    Goddess.init(run);TrialCombat.init(run);spawnWave(run, []); return run;
+    if(conditions.solo){
+      const job=conditions.solo.job;
+      if(!builds[job])throw new RangeError('Solo participant build required');
+      if(job!=='warrior')run.hero=run.allies.find(a=>a.type===job);
+      run.allies=[];run.hero.x=260;run.hero.y=438;run.reincarnationBonuses=builds[job].reincarnationBonuses;
+    }
+    Goddess.init(run);TrialCombat.init(run);spawnWave(run, []);return run;
   }
   function hit(run, source, target, amount, events, skill = false, element = null, options = {}) {
     if (target.hp <= 0 || run.status !== 'running' || target.invulnerable) return;
@@ -431,6 +439,7 @@
     }
   }
   function tick(run, events) {
+    SoloSupport.tick(run,{hit},events);
     run.time += STEP;
     const hero = run.hero;
     const party = [hero, ...run.allies];

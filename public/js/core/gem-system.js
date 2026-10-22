@@ -6,6 +6,8 @@
 })(globalThis, () => {
   const Epic = typeof module === 'object' && module.exports ? require('../data/epic-gems.js') : globalThis.EpicGems;
   const Tree = typeof module === 'object' && module.exports ? require('../data/reincarnation-tree-data.js') : globalThis.ReincarnationTree;
+  const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
+  const epicPool = save => Object.keys(Epic.DEFINITIONS).filter(family=>!Trials.rewards(save).epics.includes(Epic.DEFINITIONS[family].job));
   const known = (save,id) => save.cleared.includes(id) || save.reincarnation?.passed?.includes(id) || save.reincarnation?.lifetimeStages?.includes(id) || save.reincarnation?.lifetimePassed?.includes(id);
   const history = save => save.achievements ||= {version:1,earned:{},epics:[],trees:[],usage:[]};
   function rememberEpic(save,gem){if(gem.rarity==='epic'&&!history(save).epics.includes(gem.family))history(save).epics.push(gem.family);}
@@ -56,7 +58,19 @@
     TYPES['epic-'+d.family]={type:'epic-'+d.family,family:d.family,rarity:'epic',name:d.name,image:d.image};
   }
   let references = [{ attack: 108, hp: 984, defense: 23, mp: 116 }];
-  function configureReferences(rows) { references = rows.map(row => ({ ...row })); }
+  const sealRewards=new Map();
+  function configureReferences(rows) { references = rows.map(row => ({ ...row }));sealRewards.clear(); }
+  // Fixed Lv.10, quality 1, one legendary affix per compatible ability.
+  function sealReward(job){
+    if(!sealRewards.has(job)){
+      const effect={};
+      for(const [family,o]of Object.entries(OPTIONS))if((o.min||0)<=2&&o.jobs.includes(job)){
+        const gem=generate({rarity:'legendary',family,level:10,random:()=>.5});gem.quality=1;
+        effect[o.key]=(effect[o.key]||0)+describe(gem).effect[o.key]*(['damage','maxHp','defense'].includes(o.key)?3:1);
+      }
+      sealRewards.set(job,Object.freeze(effect));
+    }return sealRewards.get(job);
+  }
   function icon(family, rarity) {
     if(rarity==='epic')return Epic.DEFINITIONS[family].image;
     if(family==='resistance')return 'assets/ui/gems/status-resistance.png';
@@ -74,8 +88,8 @@
     return !(directions.includes('attack') && directions.includes('defense')) && compatible(keys).length > 0;
   }
   const choose = (list, random) => list[Math.min(list.length - 1, Math.max(0, Math.floor(random() * list.length)))];
-  function generate({ rarity = 'rare', level = 1, family, random = Math.random } = {}) {
-    if(rarity==='epic'){family ||= choose(Object.keys(Epic.DEFINITIONS),random);return Epic.DEFINITIONS[family]?{version:VERSION,type:'epic-'+family,rarity,family,locked:false,options:[{key:family,weight:1}]}:null;}
+  function generate({ rarity = 'rare', level = 1, family, random = Math.random, epicFamilies = Object.keys(Epic.DEFINITIONS) } = {}) {
+    if(rarity==='epic'){if(!family&&!epicFamilies.length)return null;family ||= choose(epicFamilies,random);return Epic.DEFINITIONS[family]?{version:VERSION,type:'epic-'+family,rarity,family,locked:false,options:[{key:family,weight:1}]}:null;}
     const tier = TIERS[rarity];
     if (!tier || !Number.isInteger(level) || level < 1 || level > REGIONS.length || (rarity === 'legendary' && level < 6)) return null;
     family ||= choose(Object.keys(OPTIONS).filter(key => (OPTIONS[key].min || 0) <= tier.rank), random);
@@ -182,6 +196,7 @@
   function canPay(save, cost) { return !!cost && Object.entries(cost).every(([key, n]) => Number.isSafeInteger(n) && n > 0 && (save.inventory[key] || 0) >= n); }
   function pay(save, cost) { if (!canPay(save, cost)) return false; for (const [key, n] of Object.entries(cost)) save.inventory[key] -= n; return true; }
   function craft(save, rarity, level, family, random = Math.random) {
+    if(rarity==='epic'&&!epicPool(save).includes(family))return null;
     if(rarity==='epic'&&!known(save,Epic.GODDESS))return null;
     if (!unlocked(save) || (rarity!=='epic'&&level > maxLevel(save)) || !Number.isSafeInteger(save.nextGemId) || save.nextGemId < 1 || save.nextGemId >= Number.MAX_SAFE_INTEGER) return null;
     const cost = craftRecipe(rarity, level, family, save);
@@ -258,7 +273,7 @@
     save.inventory[key] = amount; return true;
   }
   const shardItems = Object.keys(TIERS).map(rarity => ({ id: shardKey(rarity), name: { rare: 'レア', unique: 'ユニーク', legendary: 'レジェンダリー',epic:'エピック' }[rarity] + 'ジェムの破片', rarity, type: 'material', ...(rarity==='epic'?{revealStage:Epic.GODDESS}:{}), image: 'assets/ui/gems/shard-' + rarity + '.png', note: 'ジェム合成・アップグレード' }));
-  return { rememberEpic, markUsage, VERSION, TIERS, OPTIONS, TYPES, DIRECTIONS, REGIONS, Epic, configureReferences, generate, validate, describe, compatible,
+  return { rememberEpic, markUsage, VERSION, TIERS, OPTIONS, TYPES, DIRECTIONS, REGIONS, Epic, configureReferences, sealReward, epicPool, generate, validate, describe, compatible,
     shardKey, shardItems, rarityDiscovered, rememberRarity, salvage, unlocked, maxLevel, craftRecipe, upgradeRecipe, canPay, craft, dismantle, upgrade, convert,
     freshDismantleFilter, restoreDismantleFilter, freshAutoDismantle, restoreAutoDismantle, matchesDismantleFilter, canDismantle, dismantlePlan, bulkDismantle, autoDismantle };
 });

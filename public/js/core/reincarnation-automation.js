@@ -19,13 +19,15 @@
   const slotDefaults=slot=>({effects:['fortune',slot==='weapon'?'attack':'vitality','recovery'],locked:false,epic:true,rarity:'rare',efficiency:true});
   function gems(save){
     if(!save.reincarnation?.unlocked||!save.reincarnation.automation.gems)return 0;
+    const trials=typeof module==='object'&&module.exports?require('./trials.js'):globalThis.Trials;
+    if(trials.rules(save).seals.gems)return 0;
     let changes=0;const descriptions=new Map(save.gems.map(g=>[g.id,P.Gem.describe(g)]));
     for(const job of Object.keys(P.CHARACTERS))if(P.unlocked(save,job))for(const slot of ['weapon','armor']){
       const setting={...slotDefaults(slot),...save.reincarnation.automation.slots[job+':'+slot]};if(setting.locked)continue;
       const current=save.progression.characters[job].gems[slot],currentSet=new Set(current),cap=P.capacity(save,job,slot);
       const assigned=new Set(Object.values(save.progression.characters).flatMap(c=>[...c.gems.weapon,...c.gems.armor]));
       const keys=setting.effects.map(k=>P.Gem.OPTIONS[k]?.key).filter(Boolean);
-      const candidates=save.gems.filter(g=>(currentSet.has(g.id)||!assigned.has(g.id))&&P.Gem.TIERS[g.rarity].rank>=P.Gem.TIERS[setting.rarity].rank&&descriptions.get(g.id).jobs.includes(job)&&(!descriptions.get(g.id).slot||descriptions.get(g.id).slot===slot)).map(g=>{
+      const candidates=save.gems.filter(g=>!(g.rarity==='epic'&&trials.rewards(save).epics.includes(job))).filter(g=>(currentSet.has(g.id)||!assigned.has(g.id))&&P.Gem.TIERS[g.rarity].rank>=P.Gem.TIERS[setting.rarity].rank&&descriptions.get(g.id).jobs.includes(job)&&(!descriptions.get(g.id).slot||descriptions.get(g.id).slot===slot)).map(g=>{
         const d=descriptions.get(g.id),cost=P.gemCosts(save,job,slot,g,cap),values=[setting.epic&&g.rarity==='epic'?1:0,...keys.map(k=>d.effect[k]||0)];
         return {id:g.id,cost,values,density:(values[0]*100000+(values[1]||0))/Math.max(1,Object.values(cost).reduce((s,n)=>s+n,0))};
       });
