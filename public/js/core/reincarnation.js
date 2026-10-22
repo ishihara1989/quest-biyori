@@ -7,7 +7,7 @@
   if (common) module.exports = api; else root.Reincarnation = api;
 })(globalThis, (P, T, D) => {
   const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
-  const fresh = () => ({ version: 3, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [], trialRun: false, trialCompleted: [], appliedTrials: [], journey: 0,
+  const fresh = () => ({ version: 3, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [], trialRun: false, trialCompleted: [], appliedTrials: [], journey: 0, duoDefeatedJourney: null,
     total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
       slots: Object.fromEntries(Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].map(slot=>[job+':'+slot,{effects:['fortune',slot==='weapon'?'attack':'vitality','recovery'],locked:false,epic:true,rarity:'rare',efficiency:true}]))) } });
@@ -32,6 +32,8 @@
     result.appliedTrials = raw.version === 3 ? Trials.clean(raw.appliedTrials).filter(id=>result.trialCompleted.includes(id)) : [];
     result.trialRun = raw.version === 3 && raw.trialRun === true && Trials.validPlan({reincarnation:result},raw.trials) && raw.trials.length > 0;
     result.trials = result.trialRun ? Trials.clean(raw.trials) : [];
+    result.duoDefeatedJourney = result.trialRun && raw.duoDefeatedJourney === result.journey ? result.journey : null;
+    if(Trials.serious({reincarnation:result})&&result.duoDefeatedJourney!==result.journey)result.defeatedCycle=null;
     result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= 33750 ? raw.pendingPoints : D.POINTS) : 0;
     const a = raw.automation;
     result.automation.skills = a?.skills === true; result.automation.gems = a?.gems === true;
@@ -84,7 +86,9 @@
       r.discovered = true;
       unlocks.push({ id: D.ID, icon: 'spark', title: '女神の配送センター', detail: '転生の女神', target: 'stages', stage: D.ID, special: true, reincarnation: true });
     }
-    if (stage === D.ID && r.discovered) {
+    const duo=Trials.serious(save)&&stage==='extradimensional-goddess'&&evidence.trials?.ids?.includes('goddess-serious');
+    if ((duo || stage === D.ID && !Trials.serious(save)) && r.discovered) {
+      if(duo)r.duoDefeatedJourney=r.journey||0;
       r.defeatedCycle = r.cycle;
       const trial = Trials.capture(save, stage);
       r.pendingPoints = Math.max(r.pendingPoints || D.POINTS, Math.round(D.POINTS * trial.reward * Trials.bonuses(save).pt));
@@ -99,7 +103,7 @@
     }
     return unlocks;
   }
-  const eligible = save => !!save.reincarnation?.unlocked && save.reincarnation.defeatedCycle === save.reincarnation.cycle;
+  const eligible = save => !!save.reincarnation?.unlocked && save.reincarnation.defeatedCycle === save.reincarnation.cycle && (!Trials.serious(save)||save.reincarnation.duoDefeatedJourney===(save.reincarnation.journey||0));
   const payout = save => eligible(save) ? save.reincarnation.pendingPoints || D.POINTS : 0;
   function prepare(save, freshSave, options = {}) {
     if (!eligible(save) && !options.restart) return null;
@@ -109,7 +113,7 @@
     const next = freshSave(), r = structuredClone(save.reincarnation);
     r.lifetimeStages = [...new Set([...r.lifetimeStages, ...save.cleared])];
     r.lifetimePassed = [...new Set([...r.lifetimePassed, ...r.passed])];
-    r.version = 3; r.journey = (r.journey || 0) + 1; if(eligible(save))r.cycle++; r.total += payout(save); r.defeatedCycle = null; r.pendingPoints = 0; r.passed = [];
+    r.version = 3; r.journey = (r.journey || 0) + 1; if(eligible(save))r.cycle++; r.total += payout(save); r.defeatedCycle = null; r.pendingPoints = 0; r.passed = []; r.duoDefeatedJourney = null;
     r.trials = [...chosen]; r.trialRun = chosen.length > 0; r.appliedTrials = Trials.completed(save);
     Object.assign(next, { reincarnation: r, achievements: structuredClone(save.achievements), inventory: {potion:0},
       encounteredEnemies: [...save.encounteredEnemies], discoveredGemRarities: [...save.discoveredGemRarities],

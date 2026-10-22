@@ -10,6 +10,7 @@
   const Epic=typeof module==='object'&&module.exports?require('./epic-gem-combat.js'):globalThis.EpicGemCombat;
   const Resistance = typeof module === 'object' && module.exports ? require('./status-resistance.js') : globalThis.StatusResistance;
   const Trials = typeof module === 'object' && module.exports ? require('../core/trials.js') : globalThis.Trials;
+  const RebirthData = typeof module === 'object' && module.exports ? require('../data/reincarnation-data.js') : globalThis.ReincarnationData;
   const TrialCombat = typeof module === 'object' && module.exports ? require('./trial-combat.js') : globalThis.TrialCombat;
   const STEP = 1000 / 60;
   const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
@@ -36,8 +37,9 @@
       state: 'idle', motion: 'idle', time: 0, cooldown: 650 + run.random() * 600, special: 5500, attacks: 0, flash: 0, facing: -1 };
     if(enemy.region===9||enemy.region===10){enemy.x=Math.min(enemy.x,enemy.majorBoss?700:enemy.boss?780:860);if(enemy.majorBoss)enemy.y=Math.max(enemy.y,440);}
     if(enemy.majorBoss)enemy.cooldown+=enemy.type==='ancient-titan'?12500:8500;
-    if(enemy.goddess)Object.assign(enemy,{x:800,y:474,cooldown:800,goddessPhase:1});
+    if(enemy.goddess)Object.assign(enemy,{x:800,y:474,cooldown:800,goddessPhase:run.stage.goddessDuo?2:1});
     if(enemy.reincarnationGoddess)Object.assign(enemy,{x:810,y:460,cooldown:900});
+    if(run.stage.goddessDuo){if(enemy.goddess)Object.assign(enemy,{x:735,y:415});if(enemy.reincarnationGoddess)Object.assign(enemy,{x:875,y:495});}
     if (base.dimensionalGate) Object.assign(enemy, { hp: 1, maxHp: 1, invulnerable: true, x: 825, y: 452,
       gateBatch: 0, gateSpawnIndex: 0, gatePhase: 'waiting', gateClock: 0 });
     if (!base.dimensionalGate) {
@@ -90,8 +92,9 @@
     events.push({ type: 'wave', wave: run.wave + 1, timeMs: run.time });
   }
   function createRun(stageId = 1, { random = Math.random, builds = {}, disableMikoSupport=false, goldRemainder = 0, trials = null } = {}) {
-    const stage = STAGES.find(s => s.id === stageId) || SPECIAL_STAGES.find(s => s.id === stageId);
+    let stage = STAGES.find(s => s.id === stageId) || SPECIAL_STAGES.find(s => s.id === stageId);
     if (!stage) throw new RangeError('Unknown stage');
+    if(stage.id==='extradimensional-goddess'&&trials?.ids?.includes('goddess-serious'))stage=RebirthData.DUO_STAGE;
     const run = { stage, trials: Trials.summarize(trials?.ids, stageId), random, serial: 0, enemies: [], projectiles: [], wave: 0, phase: 'combat',
       status: 'running', time: 0, elapsed: 0, accumulator: 0, transition: 0, kills: 0, extraEnemies: 0, gold: 0,
       disableMikoSupport,
@@ -160,6 +163,7 @@
     if (target.hp === 0) {
       if(target.goddess)Goddess.depart(run,target);
       if(target.reincarnationGoddess)Rebirth.depart(run,target);
+      if(run.stage.goddessDuo&&run.enemies.every(e=>e.hp<=0))run.deliveryVictoryAt=run.time;
       I.clear(target);
       if(targetFriendly){target.warriorCast=null;target.mageCast=null;target.paladinCast=null;Ninja.clear(run,target,events);Shaman.clear(run,target);Miko.clear(run,target);run.paladinFields=run.paladinFields.filter(f=>f.source!==target);target.z=0;target.hidden=false;target.invulnerable=false;clearStatus(target);}else target.curse=null;
       target.swampPlan = null;
@@ -570,7 +574,7 @@
     }
     Ninja.tick(run,ninjaAPI,events);
     for (const enemy of living) {
-      if(enemy.bodyPart)continue;
+      if(enemy.bodyPart||enemy.hp<=0)continue;
       if(enemy.goddess){const target=party.filter(a=>a.hp>0).sort((a,b)=>distance(enemy,a)-distance(enemy,b))[0];if(target)Goddess.act(run,enemy,target,desertAPI,events);continue;}
       if(enemy.reincarnationGoddess){const target=party.filter(a=>a.hp>0).sort((a,b)=>distance(enemy,a)-distance(enemy,b))[0];if(target)Rebirth.act(run,enemy,target,desertAPI,events);continue;}
       const committed=enemy.swampPlan||enemy.expansionPlan||enemy.ruinsPlan||enemy.desertPlan||enemy.highlandPlan||enemy.glacierPlan||enemy.volcanoPlan||enemy.castlePlan||['attacking','windup','splitting'].includes(enemy.state);

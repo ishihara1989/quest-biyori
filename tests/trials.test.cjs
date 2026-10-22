@@ -5,7 +5,7 @@ const all=['strength-10','onslaught','unyielding','goddess-serious'];
 function own(s,id){for(const p of Tree.byId[id].requires)if(p!=='origin'&&!s.reincarnation.owned.includes(p))own(s,p);if(id!=='origin')s.reincarnation.owned.push(id);}
 function ready(){const s=D.freshSave();Object.assign(s.reincarnation,{discovered:true,unlocked:true,cycle:20,total:2000});own(s,'trial-open');return s;}
 function start(ids,completed=[]){const s=ready();s.reincarnation.trialCompleted=completed;return R.prepare(s,D.freshSave,{restart:true,trials:ids});}
-function win(s){R.victory(s,'reincarnation-goddess',R.capture(s,'reincarnation-goddess'));}
+function win(s){const stage=T.serious(s)?'extradimensional-goddess':'reincarnation-goddess';R.victory(s,stage,R.capture(s,stage));}
 const run=(stage,ids=[])=>S.createRun(stage,{random:()=>.5,trials:T.summarize(ids,stage)});
 test('100 PT prices, sequential strength and goddess prerequisites',()=>{
  assert.equal(Tree.byId['main-free'].cost,100);assert.equal(Tree.byId['trial-open'].cost,100);const s=ready();assert.ok(T.available(s,'strength-2'));assert.equal(T.available(s,'strength-3'),false);assert.equal(T.available(s,'goddess-serious'),false);s.reincarnation.trialCompleted=['onslaught'];assert.equal(T.available(s,'goddess-serious'),false);s.reincarnation.trialCompleted.push('unyielding');assert.ok(T.available(s,'goddess-serious'));assert.equal(R.prepare(s,D.freshSave,{restart:true,trials:['strength-10']}),null);assert.equal(R.prepare(s,D.freshSave,{restart:true,trials:['strength-2','strength-3']}),null);assert.equal(T.summarize(['strength-2','strength-10','strength-10','onslaught','unyielding','goddess-serious'],1).reward,225);

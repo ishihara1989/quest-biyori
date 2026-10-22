@@ -14,6 +14,11 @@
     gemMultiplier: 1, materialRegions: [], asset: 'assets/stages/extradimensional-goddess/', reward: 30000,
     enemyHp: 1, enemyDamage: 1, majorBossHp: 1, majorBossDamage: 1, majorBossDefense: 4900,
     timeLimit: 180000, waves: [[ID]], enemies: [ID], total: 1 });
+  // Trial variant replaces the chaos-gate successor while retaining its stage ID.
+  const DUO_STAGE = Object.freeze({ ...STAGE, id: 'extradimensional-goddess', revealStage: 'extradimensional-goddess',
+    name: '異次元の女神＋転生の女神', realmName: '二柱の御座', english: 'TWO GODDESSES',
+    final: true, goddessDuo: true, unlockStage: 'chaos-gate', unlockLabel: '混沌の門',
+    waves: [['extradimensional-goddess', ID]], enemies: ['extradimensional-goddess', ID], total: 2 });
   const ATTACKS = [
     { id: 'pulse', name: 'パルス散弾機関砲', warn: 700, duration: 1800, hits: 6, budget: .20 },
     { id: 'laser', name: '陽電子レール砲', warn: 1500, duration: 2200, hits: 1, budget: .32 },
@@ -22,5 +27,5 @@
     { id: 'orbital', name: '衛星スタンプ砲', warn: 1400, duration: 2100, hits: 1, budget: .28 },
     { id: 'truck', name: '大型トラック', warn: 4060, duration: 5300, hits: 1, budget: .36 },
   ];
-  return { ID, ENEMIES, STAGE, ATTACKS, POINTS: 100 };
+  return { ID, ENEMIES, STAGE, DUO_STAGE, ATTACKS, POINTS: 100 };
 });

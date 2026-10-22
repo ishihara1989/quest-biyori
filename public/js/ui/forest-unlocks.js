@@ -9,7 +9,7 @@
   function collect(save, stageId) {
     const stage = D.ALL_STAGES.find(row => row.id === stageId);
     if (!stage || save.cleared.includes(stageId)) return [];
-    if(stage.special)return D.SPECIAL_STAGES.filter(s=>!s.reincarnation&&s.unlockStage===stageId).map(s=>({id:s.id,icon:'spark',title:s.realmName,detail:s.name,target:'stages',stage:s.id,special:true,final:!!s.final}));
+    if(stage.special)return D.specialStages(save).filter(s=>(!s.reincarnation||s.goddessDuo)&&s.unlockStage===stageId).map(s=>({id:s.id,icon:'spark',title:s.realmName,detail:s.name,target:'stages',stage:s.id,special:true,final:!!s.final}));
     const after = new Set([...save.cleared, stageId]), entries = [], region = D.REGIONS[stage.region - 1];
     if (stage.number === 1) entries.push({ id: 'forge-' + region.id, icon: 'sword', title: region.name + ' / 鍛冶', detail: '武器・防具', target: 'forge', region: region.id });
     const recipes = C.RECIPES.filter(recipe => recipe.stages.every(id => after.has(id)) && !recipe.stages.every(id => save.cleared.includes(id)));

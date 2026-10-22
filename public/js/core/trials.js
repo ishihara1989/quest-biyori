@@ -4,12 +4,12 @@
     ...Array.from({length:9},(_,i)=>({id:'strength-'+(i+2),family:'strength',name:'強靭 '+(i+2),reward:i+2,stats:i+2,image:'items/armor.png',effect:'敵HP・攻撃力・防御力 ×'+(i+2),prize:'ゴールド・素材／ジェムドロップ率 ×'+(i+2),requires:i?['strength-'+(i+1)]:[],x:170+i%3*230,y:150+Math.floor(i/3)*145})),
     {id:'onslaught',family:'onslaught',name:'猛攻',reward:1.5,cooldown:.5,image:'items/sword.png',effect:'敵の行動クール ×0.5',prize:'攻撃力 ×1.5',requires:[],x:210,y:660},
     {id:'unyielding',family:'unyielding',name:'頑強',reward:1.5,interference:3,image:'progression/heartgem.png',effect:'妨害耐性・妨害抵抗力 ×3',prize:'最大HP ×1.5',requires:[],x:590,y:660},
-    {id:'goddess-serious',family:'goddess',name:'女神の本気',reward:10,stats:3,goddess:true,image:'gems/goddess-page.png',effect:'両女神の能力 ×3 / 地域の幻影召喚 / 妨害不可の女神援護',prize:'獲得転生PT ×1.5',requires:['onslaught','unyielding'],x:400,y:865},
+    {id:'goddess-serious',family:'goddess',name:'女神の本気',reward:10,stats:3,goddess:true,image:'gems/goddess-page.png',effect:'両女神同時戦 ×3 / 異次元の女神フェーズII / 地域の幻影・女神援護',prize:'獲得転生PT ×1.5',requires:['onslaught','unyielding'],x:400,y:865},
   ];
   const byId=Object.fromEntries(definitions.map(d=>[d.id,d])),gods=['extradimensional-goddess','reincarnation-goddess'];
   const clean=ids=>[...new Set((Array.isArray(ids)?ids:[]).filter(id=>Object.hasOwn(byId,id)))];
   const availableNode=id=>id==='trial-open';
-  const unlocked=save=>!!save.reincarnation?.unlocked&&!!save.reincarnation.owned?.includes('trial-open');
+  const unlocked=save=>!!save?.reincarnation?.unlocked&&!!save.reincarnation.owned?.includes('trial-open');
   const completed=save=>clean(save.reincarnation?.trialCompleted);
   const available=(save,id)=>unlocked(save)&&!!byId[id]&&byId[id].requires.every(p=>completed(save).includes(p));
   function highest(ids){const families=new Map();for(const id of clean(ids)){const d=byId[id];if(!families.has(d.family)||families.get(d.family).reward<d.reward)families.set(d.family,d);}return [...families.values()];}
@@ -23,6 +23,7 @@
     }return result;
   }
   const capture=(save,stage=save.selectedStage)=>summarize(unlocked(save)&&save.reincarnation.trialRun?save.reincarnation.trials:[],stage);
+  const serious=save=>unlocked(save)&&save.reincarnation.trialRun===true&&save.reincarnation.trials.includes('goddess-serious');
   const validPlan=(save,ids)=>Array.isArray(ids)&&ids.every(id=>available(save,id))&&clean(ids).length===ids.length&&highest(ids).length===ids.length;
   function toggle(save,ids,id){if(!available(save,id))return clean(ids);return ids.includes(id)?ids.filter(v=>v!==id):[...clean(ids).filter(v=>byId[v].family!==byId[id].family),id];}
   function bonuses(save){const ids=clean(save.reincarnation?.appliedTrials);return {harvest:Math.max(1,...ids.filter(id=>byId[id].family==='strength').map(id=>byId[id].stats)),hp:ids.includes('unyielding')?1.5:1,damage:ids.includes('onslaught')?1.5:1,pt:ids.includes('goddess-serious')?1.5:1};}
@@ -31,5 +32,5 @@
     const first=ids.filter(id=>!completed(save).includes(id));r.trialCompleted=[...completed(save),...first];return first;
   }
   function abandon(save){if(!save.reincarnation?.trialRun)return false;save.reincarnation.trials=[];save.reincarnation.trialRun=false;save.reincarnation.journey=(save.reincarnation.journey||0)+1;return true;}
-  return {definitions,byId,gods,clean,availableNode,unlocked,completed,available,summarize,capture,validPlan,toggle,bonuses,complete,abandon,mapSize:{width:800,height:980}};
+  return {definitions,byId,gods,clean,availableNode,unlocked,completed,available,summarize,capture,serious,validPlan,toggle,bonuses,complete,abandon,mapSize:{width:800,height:980}};
 });

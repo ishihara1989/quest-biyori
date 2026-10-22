@@ -7,7 +7,7 @@
   const party=run=>[run.hero,...run.allies].filter(a=>a.hp>0), aim=a=>({x:Math.max(95,Math.min(930,a.x)),y:Math.max(334,Math.min(501,a.y))});
   const reference={warrior:[106132,4449.25],mage:[105418,4448.25],paladin:[106628,4453.25],ninja:[105448,4449.25],shaman:[105408,4448.25],miko:[105428,4449.25]};
   function clear(run){for(const e of run.enemies.filter(e=>e.reincarnationGoddess)){e.deliveryPlan=null;e.goddessForecast=null;I.clear(e);}run.deliveryEffects=[];}
-  function depart(run,e){clear(run);e.departedAt=run.time;run.deliveryVictoryAt=run.time;}
+  function depart(run,e){clear(run);e.departedAt=run.time;if(!run.stage.goddessDuo||run.enemies.every(a=>a.hp<=0))run.deliveryVictoryAt=run.time;}
   function shape(e,target,kind){
     const from={x:e.x,y:e.y},at=aim(target),angle=Math.atan2(at.y-from.y,at.x-from.x);
     if(kind==='pulse')return {kind:'sector',center:from,radius:500,direction:angle,angle:Math.PI*48/180};
