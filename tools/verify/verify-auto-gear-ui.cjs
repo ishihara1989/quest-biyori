@@ -18,23 +18,40 @@ async function setup(browser, save, options = {}) {
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => { if (response.status() >= 400) errors.push(response.status() + ' ' + response.url()); });
   await page.addInitScript(({ key, save }) => { if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify(save)); }, { key: D.SAVE_KEY, save });
-  await page.route('**/js/forest-simulation.js', async route => {
+  await page.route('**/js/combat/forest-simulation.js', async route => {
     const response = await route.fetch();
     await route.fulfill({ response, body: await response.text() + `\n(() => {
       const original = ForestSimulation.update;
       ForestSimulation.update = (run, dt) => {
         if (run.status !== 'running') return original(run, dt);
         run.status = 'victory'; run.elapsed = 12500;
-        return [{ type: 'finished', victory: true }];
+        const loot = window.testGateWindfall ? [{ type: 'loot', enemy: 'boss-slime', gold: 1e9, goldRemainder: 0 }] : [];
+        if (window.testGateWindfall) run.random = () => 0;
+        return [...loot, { type: 'finished', victory: true }];
       };
     })();` });
   });
   await page.clock.install(); await page.goto(url);
   await page.locator('#start-button:not([disabled])').waitFor();
+  assert.equal(await page.locator('#start-button span').innerText(), '開始', 'runtime images must load successfully');
   await page.clock.pauseAt(await page.evaluate(() => Date.now() + 100));
+  await page.evaluate(() => {
+    // The mocked clock stands still inside a task. Advance its CPU budget at
+    // deterministic checkpoints to exercise suspension and cancellation too.
+    const now = performance.now.bind(performance), acquire = ForestAutoGear.acquireSteps;
+    let cpuTime = 0, steps = 0;
+    performance.now = () => now() + cpuTime;
+    ForestAutoGear.acquireSteps = function* (...args) {
+      for (const row of acquire(...args)) {
+        if (++steps % 800 === 0) cpuTime += 5;
+        yield row;
+      }
+    };
+  });
   return { context, page, saved: () => page.evaluate(key => JSON.parse(localStorage.getItem(key)), D.SAVE_KEY) };
 }
 async function finish(page) { await page.locator('#start-button').click(); await page.clock.runFor(900); }
+async function flushGear(page) { await page.clock.runFor(500); }
 function focused(page, id) { return page.locator('#' + id).evaluate(node => node === document.activeElement); }
 (async () => {
   fs.mkdirSync(output, { recursive: true });
@@ -79,6 +96,7 @@ function focused(page, id) { return page.locator('#' + id).evaluate(node => node
       await page.locator('.auto-gear-options').screenshot({ path: path.join(output, 'options-' + width + '.png') });
     }
     await page.locator('[data-auto-gear-toggle]').click();
+    await flushGear(page);
     let saved = await settings.saved();
     assert.equal(saved.gold, 0); assert.deepEqual(saved.progression.characters.mage.weapon, ['main-1']);
     assert.deepEqual(saved.progression.characters.mage.armor, ['main-1']); assert.deepEqual(saved.progression.characters.warrior.weapon, []);
@@ -104,6 +122,7 @@ function focused(page, id) { return page.locator('#' + id).evaluate(node => node
       await scenario.page.locator('[data-open=options]').first().click();
       if (priorityBy === 'characters') await scenario.page.locator('[data-gear-priority=characters]').click();
       await scenario.page.locator('[data-auto-gear-toggle]').click();
+      await flushGear(scenario.page);
       const acquired = await scenario.saved();
       assert.equal(acquired.gold, 0);
       assert.equal(acquired.progression.characters.mage.weapon.includes('branch-1-up-1'), priorityBy === 'characters');
@@ -113,6 +132,57 @@ function focused(page, id) { return page.locator('#' + id).evaluate(node => node
     }
     assert.deepEqual(errors, []);
     console.log('PASS conflicting character/kind rankings spend the same limited budget according to the selected basis');
+
+    // A gate-sized windfall must keep making progress while the options/result
+    // screen is open, with no extra one-second wait between batches.
+    const windfall = seed(100); windfall.cleared.push('chaos-gate', 'extradimensional-goddess');
+    windfall.selectedStage = 'chaos-gate'; windfall.gold = 1e12;
+    for (const item of D.ITEMS.filter(i => i.type === 'material')) windfall.inventory[item.id] = 1e9;
+    const Auto = require('../../public/js/core/forest-auto-gear.js');
+    const expected = structuredClone(windfall); expected.autoGear.enabled = true;
+    const expectedCount = Auto.acquire(expected).length;
+    const catchup = await setup(browser, windfall);
+    await catchup.page.locator('[data-open=options]').first().click();
+    await catchup.page.locator('[data-auto-gear-toggle]').click();
+    // Cancel a suspended search; its queued purchases must not leak after OFF.
+    await catchup.page.locator('[data-auto-gear-toggle]').click();
+    const stopped = await catchup.saved(); await catchup.page.clock.runFor(300);
+    assert.deepEqual((await catchup.saved()).progression, stopped.progression);
+    await catchup.page.locator('[data-auto-gear-toggle]').click();
+    const count = s => Object.values(s.progression.characters).reduce((n, c) => n + c.weapon.length + c.armor.length, 0);
+    let elapsed = 0;
+    for (; elapsed < 3000 && count(await catchup.saved()) < expectedCount; elapsed += 100) await catchup.page.clock.runFor(100);
+    const completed = await catchup.saved();
+    assert.equal(count(completed), expectedCount); assert.ok(elapsed < 3000);
+    assert.deepEqual(completed.progression, expected.progression);
+    assert.equal(completed.gold, expected.gold); assert.deepEqual(completed.inventory, expected.inventory);
+    assert.equal(await catchup.page.locator('#menu-dialog').evaluate(node => node.open), true);
+    await catchup.page.clock.runFor(100);
+    assert.match(await catchup.page.locator('#notification').innerText(), /AUTO · 装備 \d{3,}/);
+    await catchup.page.screenshot({ path: path.join(output, 'windfall-complete.png') });
+    await catchup.page.reload(); await catchup.page.locator('#start-button:not([disabled])').waitFor();
+    assert.equal(count(await catchup.saved()), expectedCount);
+    await catchup.context.close();
+    console.log('PASS ' + expectedCount + ' nodes catch up within ' + elapsed + 'ms simulated time, OFF cancels queued purchases, reload retains all acquisitions');
+
+    // Exercise the actual victory connection with one clear and no next battle.
+    const clearSave = seed(50); clearSave.selectedStage = 'dimensional-gate'; clearSave.autoGear.enabled = true;
+    Object.assign(clearSave.reincarnation, { discovered: true, unlocked: true, cycle: 1, total: 100 });
+    clearSave.reincarnation.automation.gems = true;
+    Object.assign(clearSave.autoGemDismantle, { enabled: true, maxRarity: 'legendary' });
+    clearSave.gold = 0;
+    for (const item of D.ITEMS.filter(i => i.type === 'material')) clearSave.inventory[item.id] = 10000;
+    const victory = await setup(browser, clearSave);
+    assert.equal(count(await victory.saved()), 0, 'no upgrades are affordable before the reward');
+    await victory.page.evaluate(() => { window.testGateWindfall = true; });
+    await finish(victory.page); await victory.page.clock.runFor(1500);
+    const afterClear = await victory.saved();
+    assert.ok(afterClear.cleared.includes('dimensional-gate'), JSON.stringify({ stage: afterClear.selectedStage, state: await victory.page.locator('#battle-state').innerText(), errors })); assert.ok(count(afterClear) > 24);
+    assert.deepEqual(Auto.acquire(structuredClone(afterClear)), []);
+    assert.ok(afterClear.gems.some(gem => P.gemOwner(afterClear, gem.id)), 'reward gems equip before automatic dismantling during catchup');
+    await victory.context.close();
+    assert.deepEqual(errors, []);
+    console.log('PASS a gate victory completes available equipment while stopped at its result');
     if (process.argv.includes('--options-only')) return;
 
     const first = await setup(browser, seed());

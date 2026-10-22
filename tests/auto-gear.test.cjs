@@ -49,7 +49,7 @@ test('character priority still respects the selected kind order and newly availa
 for (const priorityBy of ['kinds', 'characters']) test('manual costs, exclusions and affordability remain effective with ' + priorityBy + ' first', () => {
   const save = seed(12); save.autoGear.priorityBy = priorityBy;
   save.autoGear.excludedCharacters = ['warrior', 'paladin']; save.autoGear.excludedKinds = ['unique'];
-  const manual = structuredClone(save), bought = A.acquire(save);
+  const manual = structuredClone(save), bought = A.acquire(save, 24);
   assert.equal(bought.length, 24);
   assert.ok(bought.every(row => row.character === 'mage' && row.kind !== 'unique'));
   for (const row of bought) assert.equal(P.purchase(manual, row.character, row.slot, row.node), true);
@@ -62,12 +62,63 @@ for (const priorityBy of ['kinds', 'characters']) test('manual costs, exclusions
 });
 
 test('automatic spending matches manual purchases exactly and never repurchases nodes', () => {
-  const save = seed(), manual = structuredClone(save), bought = A.acquire(save);
+  const save = seed(), manual = structuredClone(save), bought = A.acquire(save, 24);
   assert.equal(bought.length, 24);
   for (const row of bought) assert.equal(P.purchase(manual, row.character, row.slot, row.node), true);
   assert.deepEqual(save, manual);
   for (const row of A.acquire(save)) assert.ok(!bought.some(old => old.character === row.character && old.slot === row.slot && old.node === row.node));
   for (const c of Object.values(save.progression.characters)) for (const slot of ['weapon', 'armor']) assert.equal(new Set(c[slot]).size, c[slot].length);
+});
+
+test('a rich reward can finish every unlocked tree without a 24-node cap, including after reload', () => {
+  const save = seed(100); save.cleared.push('extradimensional-goddess'); save.gold = 1e12;
+  for (const item of D.ITEMS.filter(i => i.type === 'material')) save.inventory[item.id] = 1e9;
+  const expected = A.CHARACTERS.reduce((sum, id) => sum + ['weapon', 'armor'].reduce((n, slot) => n + P.allGearTrees(id, slot, true).length, 0), 0);
+  const task = A.acquireSteps(save), bought = [];
+  let checkpoints = 0;
+  for (let step = task.next(); !step.done; step = task.next()) {
+    if (step.value) bought.push(step.value); else checkpoints++;
+  }
+  assert.equal(bought.length, expected); assert.ok(bought.length > 12000); assert.ok(checkpoints > bought.length);
+  assert.ok(A.mainComplete(save, 100)); assert.deepEqual(A.acquire(save), []);
+  assert.deepEqual(A.acquire(D.readSave(JSON.stringify(save))), []);
+  const smaller = seed(); assert.equal(A.acquire(smaller).length, 600);
+});
+
+test('batch order and spending equal greedy manual purchases with reversed dependencies, duplicates and scarce resources', () => {
+  for (const rich of [false, true]) {
+    const save = seed(12); save.gold = rich ? 1e9 : 5000;
+    for (const item of D.ITEMS.filter(i => i.type === 'material')) save.inventory[item.id] = rich ? 10000 : 31;
+    const candidates = ['mage', 'warrior', 'ninja'].flatMap(character => ['weapon', 'armor'].flatMap(slot =>
+      [1, 2].flatMap(region => P.gearTree(character, slot, region)).reverse().map(node => ({ character, slot, node: node.id }))));
+    candidates.unshift(null, { character: 'unknown', slot: 'weapon', node: 'main-1' }, { character: 'mage', slot: 'skills', node: 'main-1' });
+    candidates.push({ character: 'mage', slot: 'weapon', node: 'main-1' });
+    const manual = structuredClone(save), expected = [];
+    for (;;) {
+      const row = candidates.find(row => row && P.purchase(manual, row.character, row.slot, row.node));
+      if (!row) break;
+      expected.push(row);
+    }
+    assert.deepEqual(P.purchaseGearBatch(save, candidates, 10000), expected);
+    assert.deepEqual(save, manual);
+  }
+});
+
+test('discarded acquisition can restart after a manual purchase, settings change or new resources', () => {
+  const save = seed(), task = A.acquireSteps(save);
+  let row;
+  while (!row) row = task.next().value;
+  assert.equal(row.character, 'warrior');
+  assert.equal(P.purchase(save, 'mage', 'weapon', 'main-1'), true);
+  save.autoGear.excludedCharacters = ['warrior', 'paladin']; save.autoGear.kinds = ['sub', 'main', 'unique'];
+  const before = [...save.progression.characters.warrior.weapon], manual = structuredClone(save);
+  const acquired = A.acquire(save);
+  assert.ok(acquired.every(row => row.character === 'mage'));
+  for (const row of acquired) assert.equal(P.purchase(manual, row.character, row.slot, row.node), true);
+  assert.deepEqual(save, manual); assert.deepEqual(save.progression.characters.warrior.weapon, before);
+  save.gold = 0; save.inventory = {}; assert.deepEqual(A.acquire(save), []);
+  for (const item of D.ITEMS.filter(i => i.type === 'material')) save.inventory[item.id] = 1e9;
+  save.gold = 1e9; assert.deepEqual(A.acquire(save), [], 'completed nodes are never repurchased');
 });
 test('exclusions, stage gates, dependencies and locked characters remain effective', () => {
   const save = seed(12); save.autoGear.excludedCharacters = ['warrior', 'paladin']; save.autoGear.excludedKinds = ['sub', 'unique'];

@@ -318,23 +318,77 @@
   }
   function purchaseGearBatch(save, candidates, limit = 24) {
     if (!Array.isArray(candidates) || !Number.isSafeInteger(limit) || limit <= 0) return [];
-    const trees = new Map(), rows = [];
-    for (const row of candidates) {
-      if (!Object.hasOwn(CHARACTERS, row?.character) || !['weapon', 'armor'].includes(row.slot)) continue;
-      const key = row.character + ':' + row.slot;
-      if (!trees.has(key)) trees.set(key, new Map(allGearTrees(row.character, row.slot, true).map(node => [node.id, node])));
-      const node = trees.get(key).get(row.node);
-      if (node) rows.push({ character: row.character, slot: row.slot, node });
-    }
     const bought = [];
-    // Re-evaluate prerequisites after each purchase, using authoritative trees
-    // built once per slot rather than rebuilding all 600 nodes per acquisition.
-    while (bought.length < limit) {
-      const next = rows.find(row => status(save, row.character, row.slot, row.node) === 'available');
-      if (!next || !purchaseNode(save, next.character, next.slot, next.node)) break;
-      bought.push({ character: next.character, slot: next.slot, node: next.node.id });
+    for (const row of purchaseGearSteps(save, candidates)) if (row) {
+      bought.push(row);
+      if (bought.length === limit) break;
     }
     return bought;
+  }
+  // A suspended iterator belongs to one unchanged input state. Callers must
+  // discard it after external purchases, rewards or automation setting changes.
+  function* purchaseGearSteps(save, candidates) {
+    if (!Array.isArray(candidates)) return;
+    const slots = new Map(), rows = [], ready = [];
+    const reachedStages = new Set([...save.cleared, ...(save.reincarnation?.passed || [])]);
+    for (const row of candidates) {
+      yield null;
+      if (!Object.hasOwn(CHARACTERS, row?.character) || !['weapon', 'armor'].includes(row.slot)) continue;
+      const key = row.character + ':' + row.slot;
+      if (!slots.has(key)) {
+        if (!purchaseTrees.has(key)) purchaseTrees.set(key, new Map(allGearTrees(row.character, row.slot, true).map(node => [node.id, node])));
+        slots.set(key, { owned: new Set(save.progression.characters[row.character][row.slot]), waiting: new Map(), unlocked: unlocked(save, row.character) });
+      }
+      const state = slots.get(key), node = purchaseTrees.get(key).get(row.node);
+      if (!node || !state.unlocked || state.owned.has(node.id) || !reachedStages.has(node.stage)) continue;
+      const index = rows.length, missing = node.requires.filter(id => !state.owned.has(id));
+      rows.push({ character: row.character, slot: row.slot, node, state, missing: missing.length });
+      if (!missing.length) ready.push(index);
+      for (const id of missing) {
+        if (!state.waiting.has(id)) state.waiting.set(id, []);
+        state.waiting.get(id).push(index);
+      }
+    }
+    // Candidate indexes are priorities. A min-heap lets a newly unlocked earlier
+    // candidate take its turn immediately without rescanning every owned node.
+    function enqueue(index) {
+      let i = ready.length; ready.push(index);
+      while (i > 0) {
+        const parent = (i - 1) >> 1;
+        if (ready[parent] <= index) break;
+        ready[i] = ready[parent]; i = parent;
+      }
+      ready[i] = index;
+    }
+    function dequeue() {
+      const first = ready[0], last = ready.pop();
+      if (ready.length) {
+        let i = 0;
+        while (i * 2 + 1 < ready.length) {
+          let child = i * 2 + 1;
+          if (child + 1 < ready.length && ready[child + 1] < ready[child]) child++;
+          if (last <= ready[child]) break;
+          ready[i] = ready[child]; i = child;
+        }
+        ready[i] = last;
+      }
+      return rows[first];
+    }
+    while (ready.length) {
+      yield null;
+      const next = dequeue(), { node, state } = next;
+      if (state.owned.has(node.id)) continue;
+      const cost = gearCost(save, node);
+      if (!Object.entries(cost).every(([key, amount]) => (key === 'gold' ? save.gold : save.inventory[key] || 0) >= amount)) continue;
+      for (const [key, amount] of Object.entries(cost)) {
+        if (key === 'gold') save.gold -= amount;
+        else if (amount) save.inventory[key] -= amount;
+      }
+      save.progression.characters[next.character][next.slot].push(node.id); state.owned.add(node.id);
+      for (const index of state.waiting.get(node.id) || []) if (--rows[index].missing === 0) enqueue(index);
+      state.waiting.delete(node.id);
+      yield { character: next.character, slot: next.slot, node: next.node.id };
+    }
   }
   function gearPurchasePlan(save, id, slot, nodeId) {
     const plan = { nodes: [], cost: {}, status: 'invalid', blockedStage: null };
@@ -478,5 +532,5 @@
     return clean;
   }
   function respec(save,id) { const c=save.progression.characters[id]; c.skills=[]; c.skillRanks={}; }
-  return { permanent, reached, known, gearCost, MAX_LEVEL, CHARACTERS, SKILLS, GEMS, Gem, GEM_DIRECTIONS, fresh, restore, unlocked, level, experience, xpPercent, totalPoints, points, rank, respec, decreaseSkill, gearTree, allGearTrees, equipmentAppearance, gearBonuses, effects, capacity, gemCost, gemCosts, gemUsage, gemInstance, gemOwner, addGem, availableGems, stats, status, purchase, purchaseGearBatch, gearPurchasePlan, purchaseGearPath, equipGem, unequipGem, toggleGem, gainXp, recruitNinja, recruitShaman, recruitMiko };
+  return { permanent, reached, known, gearCost, MAX_LEVEL, CHARACTERS, SKILLS, GEMS, Gem, GEM_DIRECTIONS, fresh, restore, unlocked, level, experience, xpPercent, totalPoints, points, rank, respec, decreaseSkill, gearTree, allGearTrees, equipmentAppearance, gearBonuses, effects, capacity, gemCost, gemCosts, gemUsage, gemInstance, gemOwner, addGem, availableGems, stats, status, purchase, purchaseGearBatch, purchaseGearSteps, gearPurchasePlan, purchaseGearPath, equipGem, unequipGem, toggleGem, gainXp, recruitNinja, recruitShaman, recruitMiko };
 });
