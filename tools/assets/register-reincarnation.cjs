@@ -10,7 +10,7 @@ function register(source=ROOT){
       m.frameSequence ||= m.frames.map((_,i)=>i);
       if(group.startsWith('basic'))m.pivot={x:248,y:257};
       for(const file of [m.sheet,...m.frames.map(f=>f.file)])fs.copyFileSync(path.join(src,file),path.join(dir,file));
-      writeAssetJson(path.join(dir,'manifest.json'),m);motions.push({id,manifest:id+'/manifest.json'});
+      writeAssetJson(path.join(dir,'manifest.json'),m);motions.push({id,label:m.label,kind:m.kind==='fx'?'effect':'motion',manifest:id+'/manifest.json'});
     }
   }
   writeAssetJson(path.join(out,'index.json'),motions);

@@ -40,6 +40,7 @@ const browsingOnly=process.argv.includes('--browsing-only');
     await open(page);
     assert.equal(await page.locator('.museum-owners button:not(.locked)').count(),1);
     assert.equal(await page.locator('[data-museum-owner=mage]').count(),0);
+    assert.equal(await page.locator('[data-museum-owner=reincarnation-goddess]').count(),0);
     const before=await read(page);
     await button(page,'next').click();assert.equal(await counter(page),'2 / 4');
     await page.clock.runFor(1200);assert.equal(await counter(page),'2 / 4');
@@ -105,6 +106,29 @@ const browsingOnly=process.argv.includes('--browsing-only');
     }
     assert.equal(await p.locator('[data-museum-clip=shot]').count(),0);
     await p.screenshot({path:path.join(output,'goddess-effects-desktop.png')});
+    await p.locator('[data-museum-owner=reincarnation-goddess]').click();await ready(p);
+    const rebirth=require('../../public/assets/museum/index.json').owners.find(o=>o.id==='reincarnation-goddess');
+    for(const kind of ['motion','effect']) {
+      await p.locator('[data-museum-kind='+kind+']').click();await ready(p);
+      const clips=rebirth.clips.filter(c=>c.kind===kind);
+      assert.equal(await p.locator('.museum-clips button').count(),clips.length);
+      for(const clip of clips) {
+        await p.locator('[data-museum-clip='+clip.id+']').click();await ready(p);
+        assert.equal(await p.locator('[data-museum-clip='+clip.id+'] span').innerText(),clip.label);
+        const m=require(path.resolve(__dirname,'../../public','.'+clip.assets[0].manifest));
+        assert.equal(await p.locator('.museum-filmstrip button').count(),m.frames.length);
+        for(let i=0;i<m.frames.length;i++) {
+          await p.locator('[data-museum-frame="'+i+'"]').click();assert.equal(await counter(p),(i+1)+' / '+m.frames.length);
+        }
+        await button(p,'replay').click();await p.clock.runFor(m.durationMs+200);
+        assert.equal(await button(p,'play').getAttribute('aria-label'),'一時停止');
+      }
+    }
+    await p.screenshot({path:path.join(output,'reincarnation-goddess-desktop.png')});
+    await p.setViewportSize({width:390,height:900});
+    assert.equal(await p.locator('#menu-content').evaluate(el=>el.scrollWidth<=el.clientWidth+2),true);
+    await p.screenshot({path:path.join(output,'reincarnation-goddess-mobile.png')});
+    await p.setViewportSize({width:1440,height:1000});
     await p.locator('[data-museum-kind=motion]').click();await ready(p);
     await p.locator('[data-museum-control=region]').selectOption('8');await ready(p);await p.locator('[data-museum-owner=fenrir]').click();await ready(p);
     await p.locator('[data-museum-clip=howl]').click();await ready(p);await button(p,'replay').click();await p.clock.runFor(400);
@@ -129,6 +153,6 @@ const browsingOnly=process.argv.includes('--browsing-only');
     await full.context.close();
     const reduce=await setup(D.freshSave(),'reduce');await open(reduce.page);assert.equal(await button(reduce.page,'play').getAttribute('aria-label'),'再生');await button(reduce.page,'next').click();assert.equal(await counter(reduce.page),'2 / 4');await reduce.context.close();
     assert.deepEqual(errors,[]);
-    console.log('PASS: recruitment and level visibility, encounter-based enemy visibility, all allies and regions, goddess effect classification, summon variants, playback/step/speed/loop/background, saved data, modal lifecycle, '+(browsingOnly?'':'battle pause/resume, ')+'desktop/mobile');
+    console.log('PASS: recruitment and level visibility, encounter-based enemy visibility, all allies and regions, goddess effect classification, all 24 reincarnation goddess clips and frames, summon variants, playback/step/speed/loop/background, saved data, modal lifecycle, '+(browsingOnly?'':'battle pause/resume, ')+'desktop/mobile');
   }finally{await browser.close();await new Promise(resolve=>server.close(resolve));}
 })().catch(e=>{console.error(e);process.exitCode=1;});

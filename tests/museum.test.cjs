@@ -76,3 +76,20 @@ test('frame stepping respects variable durations, sequence order, reverse and lo
   assert.equal(L.step(model,170,1),350);assert.equal(L.step(model,110,-1),0);
   assert.deepEqual([0,1,2,3].map(p=>L.timeAt(model,p)),[0,100,150,350]);
 });
+
+test('reincarnation goddess exposes all adopted clips with Japanese labels in the correct categories',()=>{
+  const owner=catalog.owners.find(o=>o.id==='reincarnation-goddess');
+  assert.equal(owner.region,'special');
+  assert.equal(owner.firstStage,'reincarnation-goddess');
+  assert.equal(owner.clips.length,24);
+  assert.equal(owner.clips.filter(c=>c.kind==='motion').length,13);
+  assert.equal(owner.clips.filter(c=>c.kind==='effect').length,11);
+  for(const c of owner.clips){
+    const m=JSON.parse(fs.readFileSync(path.join(root,c.assets[0].manifest),'utf8'));
+    assert.equal(c.label,m.label);assert.equal(c.assets[0].label,m.label);
+    assert.equal(c.kind,m.kind==='fx'?'effect':'motion');
+  }
+  const save=D.freshSave();
+  save.reincarnation.lifetimeStages.push(owner.firstStage);
+  for(const c of owner.clips)assert.equal(L.unlocked(D.readSave(JSON.stringify(save)),owner,c),true);
+});
