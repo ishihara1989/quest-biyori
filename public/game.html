@@ -56,7 +56,7 @@
   <script defer src="/js/render/shaman-skill-renderer.js"></script>
   <script defer src="/js/skills/miko-skills.js"></script>
   <script defer src="/js/ui/equipment-visuals.js"></script>
-  <script defer src="/js/data/reincarnation-tree-data.js"></script>
+  <script defer src="/js/core/trials.js"></script><script defer src="/js/data/reincarnation-tree-data.js"></script>
   <script defer src="/js/data/epic-gems.js"></script><script defer src="/js/core/gem-system.js"></script><script defer src="/js/core/forest-progression.js"></script>
   <script defer src="/js/data/expansion-data.js"></script>
   <script defer src="/js/core/forest-auto-gear.js"></script>
@@ -148,7 +148,7 @@
           <div class="arena">
             <canvas id="game-canvas" width="1024" height="576" role="img" aria-label="始まりの森の自動戦闘"></canvas>
             <div class="arena-vignette"></div>
-            <div class="arena-hud"><div class="wave-hud"><span>WAVE <b id="wave-number">01</b><i>/ 03</i></span><div id="wave-dots"><span class="active"></span><span></span><span></span></div></div><span class="arena-clock"><svg><use href="#i-clock"/></svg><b id="elapsed">00:00</b></span></div>
+            <div class="arena-hud"><div class="wave-hud"><span>WAVE <b id="wave-number">01</b><i>/ 03</i></span><div id="wave-dots"><span class="active"></span><span></span><span></span></div></div><span id="battle-trials" class="battle-trials" hidden></span><span class="arena-clock"><svg><use href="#i-clock"/></svg><b id="elapsed">00:00</b></span></div>
             <div id="boss-hud" class="boss-hud" hidden><span id="boss-name"></span><div><i id="boss-hp-fill"></i></div></div>
             <div id="wave-toast" class="wave-toast" aria-live="polite"></div>
             <div id="start-overlay" class="start-overlay"><div class="start-seal"><svg><use href="#i-leaf"/></svg></div><span class="eyebrow">ADVENTURE</span><h2>始まりの森</h2><button id="start-button" class="primary-button" disabled><svg><use href="#i-sword"/></svg><span>読込中</span></button></div>

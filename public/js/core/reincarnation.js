@@ -6,26 +6,29 @@
     common ? require('../data/reincarnation-data.js') : root.ReincarnationData);
   if (common) module.exports = api; else root.Reincarnation = api;
 })(globalThis, (P, T, D) => {
-  const fresh = () => ({ version: 1, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null,
+  const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
+  const fresh = () => ({ version: 2, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [],
     total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
       slots: Object.fromEntries(Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].map(slot=>[job+':'+slot,{effects:['fortune',slot==='weapon'?'attack':'vitality','recovery'],locked:false,epic:true,rarity:'rare',efficiency:true}]))) } });
   const integer = n => Number.isSafeInteger(n) && n >= 0;
   function restore(raw) {
     const result = fresh();
-    if (!raw || raw.version !== 1) return result;
+    if (!raw || ![1, 2].includes(raw.version)) return result;
     result.discovered = raw.discovered === true;
     result.unlocked = result.discovered && raw.unlocked === true;
     result.cycle = result.unlocked && integer(raw.cycle) ? Math.min(raw.cycle, 1000000000) : 0;
-    result.total = result.cycle * D.POINTS;
+    result.total = raw.version === 2 && integer(raw.total) && raw.total >= result.cycle * D.POINTS && raw.total <= result.cycle * D.POINTS * 225 ? raw.total : result.cycle * D.POINTS;
     result.defeatedCycle = result.unlocked && raw.defeatedCycle === result.cycle ? result.cycle : null;
     result.lifetimeStages = [...new Set((Array.isArray(raw.lifetimeStages) ? raw.lifetimeStages : []).filter(id =>
       Number.isInteger(id) && id >= 1 && id <= 100 || ['dimensional-gate', 'chaos-gate', 'extradimensional-goddess', D.ID].includes(id)))];
     result.passed = [...new Set((Array.isArray(raw.passed) ? raw.passed : []).filter(id => Number.isInteger(id) && id >= 1 && id <= 100))];
     result.lifetimePassed = [...new Set((Array.isArray(raw.lifetimePassed) ? raw.lifetimePassed : []).filter(id => Number.isInteger(id) && id >= 1 && id <= 100))];
     const requested = new Set(Array.isArray(raw.owned) ? raw.owned : []), state = { total: result.total, owned: new Set(['origin']) };
-    for (const n of T.nodes) if (!n.root && n.family !== 'trial' && requested.has(n.id) && T.status(state, n.id) === 'available') state.owned.add(n.id);
+    for (const n of T.nodes) if (!n.root && (n.family !== 'trial' || Trials.availableNode(n.id)) && requested.has(n.id) && T.status(state, n.id) === 'available') state.owned.add(n.id);
     result.owned = [...state.owned].filter(id => id !== 'origin');
+    result.trials = Trials.unlocked({reincarnation:result}) ? Trials.clean(raw.trials) : [];
+    result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= D.POINTS * 225 ? raw.pendingPoints : D.POINTS) : 0;
     const a = raw.automation;
     result.automation.skills = a?.skills === true; result.automation.gems = a?.gems === true;
     result.automation.waitForMainGear = a?.waitForMainGear === true;
@@ -50,14 +53,14 @@
   const points = save => T.points(state(save));
   function status(save, id) {
     if (!save.reincarnation?.unlocked) return 'locked';
-    if (T.byId[id]?.family === 'trial') return 'soon';
+    if (T.byId[id]?.family === 'trial' && !Trials.availableNode(id)) return 'soon';
     return T.status(state(save), id);
   }
   function purchase(save, id) {
     if (status(save, id) !== 'available') return false;
     save.reincarnation.owned.push(id); return true;
   }
-  function capture(save) {
+  function capture(save, stage = save.selectedStage) {
     const used = new Set();
     const fullEpics = Object.keys(P.CHARACTERS).every(job => P.unlocked(save, job) && ['weapon','armor'].every(slot => {
       const ids = save.progression.characters[job].gems[slot];
@@ -68,7 +71,7 @@
         used.add(uid); return true;
       });
     }));
-    return Object.freeze({ cycle: save.reincarnation?.cycle || 0, fullEpics, bonuses: { ...bonuses(save) } });
+    return Object.freeze({ cycle: save.reincarnation?.cycle || 0, fullEpics, bonuses: { ...bonuses(save) }, trials: Trials.capture(save, stage) });
   }
   function victory(save, stage, evidence) {
     const r = save.reincarnation ||= fresh(), unlocks = [];
@@ -79,6 +82,8 @@
     }
     if (stage === D.ID && r.discovered) {
       r.defeatedCycle = r.cycle;
+      const trial = Trials.summarize(evidence.trials?.ids, stage);
+      r.pendingPoints = Math.max(r.pendingPoints || D.POINTS, Math.round(D.POINTS * trial.reward));
       if (!r.unlocked) {
         r.unlocked = true;
         unlocks.push({ id: 'reincarnation', icon: 'repeat', title: '転生', detail: '新たな旅へ · 転生ツリー', target: 'reincarnation', rebirth: true },
@@ -90,12 +95,13 @@
     return unlocks;
   }
   const eligible = save => !!save.reincarnation?.unlocked && save.reincarnation.defeatedCycle === save.reincarnation.cycle;
+  const payout = save => eligible(save) ? save.reincarnation.pendingPoints || D.POINTS : 0;
   function prepare(save, freshSave) {
     if (!eligible(save)) return null;
     const next = freshSave(), r = structuredClone(save.reincarnation);
     r.lifetimeStages = [...new Set([...r.lifetimeStages, ...save.cleared])];
     r.lifetimePassed = [...new Set([...r.lifetimePassed, ...r.passed])];
-    r.cycle++; r.total += D.POINTS; r.defeatedCycle = null; r.passed = [];
+    r.version = 2; r.cycle++; r.total += payout(save); r.defeatedCycle = null; r.pendingPoints = 0; r.passed = [];
     Object.assign(next, { reincarnation: r, achievements: structuredClone(save.achievements), inventory: {potion:0},
       encounteredEnemies: [...save.encounteredEnemies], discoveredGemRarities: [...save.discoveredGemRarities],
       autoGear: structuredClone(save.autoGear), autoGemDismantle: structuredClone(save.autoGemDismantle), autoMode: save.autoMode, speed: save.speed });
@@ -121,5 +127,5 @@
       else P['recruit' + job[0].toUpperCase() + job.slice(1)](save);
     }
   }
-  return { fresh, restore, state, bonuses, points, status, purchase, capture, victory, eligible, prepare, skipDestination, pass };
+  return { fresh, restore, state, bonuses, points, status, purchase, capture, victory, eligible, payout, prepare, skipDestination, pass };
 });

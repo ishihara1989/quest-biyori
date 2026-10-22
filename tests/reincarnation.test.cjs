@@ -35,7 +35,7 @@ test('tree purchases enforce prerequisites, available currency, no double purcha
  const s=R.prepare(ready(),D.freshSave);assert.equal(R.purchase(s,'drop3'),false);assert.ok(R.purchase(s,'drop2'));assert.ok(R.purchase(s,'xp3'));assert.ok(R.purchase(s,'gold2'));assert.equal(R.points(s),0);assert.equal(R.purchase(s,'drop2'),false);assert.equal(R.purchase(s,'sub20'),false);
  assert.deepEqual([R.bonuses(s).drop,R.bonuses(s).xp,R.bonuses(s).gold],[2,1,2]);
  const restored=D.readSave(JSON.stringify(s));assert.deepEqual(new Set(restored.reincarnation.owned),new Set(s.reincarnation.owned));assert.equal(R.points(restored),0);
- for(const n of T.nodes.filter(n=>n.family==='trial')){assert.equal(R.status(s,n.id),'soon');assert.equal(R.purchase(s,n.id),false);}
+ for(const n of T.nodes.filter(n=>n.family==='trial'&&n.id!=='trial-open')){assert.equal(R.status(s,n.id),'soon');assert.equal(R.purchase(s,n.id),false);}
  const corrupt=R.restore({...s.reincarnation,owned:['drop100','trial-open','xp3'],total:1e12});assert.deepEqual(corrupt.owned,['xp3']);assert.equal(corrupt.total,100);
 });
 test('equipment cost reductions apply equally to status, manual, batch and path buying; no goddess material waiver',()=>{

@@ -98,10 +98,10 @@
     const recovery=e.majorBoss?({hydra:9000,kraken:1000,'ancient-titan':2500}[e.type]||3000):e.boss?(run.stage.id<=10?20000:9000):5000;
     e.cooldown=e.majorBoss?Math.max(e.interval||0,warn+recovery):Math.max(e.cooldown||0,warn+recovery);
     const count=e.interruptCount||0,a={actionId:e.id+'-threat-'+(++run.serial),motion,startedAt:run.time,endsAt:run.time+warn,
-      resistance:base.resistance*(1+.25*count),capacity:(extra.capacity||base.capacity)*(1+.15*count),remaining:0,
+      resistance:base.resistance*(1+.25*count)*(e.trialInterference||1),capacity:(extra.capacity||base.capacity)*(1+.15*count)*(e.trialInterference||1),remaining:0,
       interrupted:false,releaseDelay:extra.releaseDelay||0,damageSpan:extra.damageSpan||0,processed:new Set(),origin:{x:e.x,y:e.y},aim:{x:target.x,y:target.y},shapes:extra.shapes||[]};a.remaining=a.capacity;
     const risk=e.boss?(run.stage.id<=10?.3:.5):.1;
-    e.actionInterference=a;e.actionThreat={actionId:a.actionId,stage:run.stage.id,hits:extra.hits||1,risk,followupFraction:e.majorBoss?.6:risk*.4,damageScale:e.damage>0?(e.actionDamage??e.damage)/e.damage:0};
+    e.actionInterference=a;e.actionThreat={actionId:a.actionId,stage:run.stage.id,hits:extra.hits||1,risk,followupFraction:e.majorBoss?.6:risk*.4,damageScale:e.damage>0?(e.actionDamage??e.damage)/e.damage*(run.trials?.stats||1):0};
     events.push({type:'enemy-prepare',target:e.id,x:e.x,y:e.y,timeMs:run.time});return a;
   }
   function impact(run,source,e,powerValue,events=[],key=null){e=owner(run,e);if(!open(e,run.time)||e.invulnerable||!(powerValue>0))return false;

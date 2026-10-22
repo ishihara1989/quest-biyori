@@ -39,7 +39,7 @@
   function damage(run,e,a,p,fraction,api,events){
     if(a.hp<=0||a.invulnerable||a.immuneUntil>run.time||api.immune?.(run,a))return false;
     const [hp,defense]=reference[a.type]||reference.warrior;
-    return api.hit(run,e,a,hp*fraction*(1+defense/80)*api.attackPower(run,e)/Math.max(1,e.damage),events,false,null,{actionId:p.actionId,direct:true,miss:false});
+    return api.hit(run,e,a,hp*fraction*(1+defense/80)*api.attackPower(run,e)/Math.max(1,e.damage)*(run.trials?.stats||1),events,false,null,{actionId:p.actionId,direct:true,miss:false});
   }
   function release(run,e,p,index,api,events){
     const shapes=p.kind==='missiles'?[p.shapes[index]]:p.shapes;

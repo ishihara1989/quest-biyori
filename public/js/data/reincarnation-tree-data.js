@@ -10,7 +10,7 @@
     gem: { name: '宝石・容量', color: '#e1a2c7', icon: 'progression/universal-gem.png' },
     trial: { name: '試練・異変', color: '#d88e98', icon: 'gems/goddess-page.png' },
   };
-  // Runtime prices adopted from the reviewed tree. Trial nodes are reserved and cannot be purchased.
+  // Runtime prices adopted from the reviewed tree. Only trial-open is currently implemented.
   const nodes = [];
   function node(id, name, family, cost, x, y, requires, effects, extra = {}) {
     nodes.push({ id, name, family, cost, x, y, requires, effects, ...extra });
@@ -114,7 +114,7 @@
     ['trial-slots', '重なる試練', 10000, [effect('試練同時選択枠', '2', 'slots', 2, 'max')]],
     ['trial-intrusion', '異変の兆し', 100000, [effect('追加敵の試練', '解放', 'intrusion', 1)], { parents: ['damage2', 'hp2'], row: 5 }],
     ['trial-solo', '孤星の旅路', 1000000, [effect('少人数の上位試練', '解放', 'solo', 1)], { parents: ['common200', 'skill50'], row: 16, milestone: true }],
-  ], ['main-free', 'drop4'], '精算には今周の転生の女神撃破が必要。回数だけでは解放しない。');
+  ], ['main-free', 'drop4'], '試練の扉で強靭・猛攻・頑強・女神の本気を解放。精算PTは今周の転生の女神撃破時の最高値。');
   const rateSteps = [
     [150, 300], [200, 500], [250, 800], [350, 1800], [500, 4000], [750, 6500],
     [1000, 10000], [1500, 18000], [2000, 30000], [3000, 50000], [5000, 80000],

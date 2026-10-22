@@ -154,6 +154,8 @@
     "build:epic-gems": "node tools/assets/build-epic-gems.cjs",
     "test:epic-gems": "node --test tests/epic-gems.test.cjs tests/volcano-renderer.test.cjs",
     "check:epic-gems-ui": "node tools/verify/verify-epic-gems-ui.cjs",
+    "test:trials": "node --test tests/trials.test.cjs",
+    "check:trials-ui": "node tools/verify/verify-trials-ui.cjs",
     "test:reincarnation": "node --test tests/reincarnation.test.cjs tests/reincarnation-assets.test.cjs",
     "audit:reincarnation": "node tools/balance/audit-reincarnation.cjs",
     "check:reincarnation-ui": "node tools/verify/verify-reincarnation-ui.cjs",

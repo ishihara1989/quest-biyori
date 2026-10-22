@@ -3,7 +3,7 @@
   const Resistance = typeof module === 'object' && module.exports ? require('./status-resistance.js') : globalThis.StatusResistance;
   const clamp=(n,a,b)=>Math.max(a,Math.min(b,n)),party=run=>[run.hero,...run.allies].filter(a=>a.hp>0);
   const REFERENCE={warrior:[106132,4449.25],mage:[105418,4448.25],paladin:[106628,4453.25],ninja:[105448,4449.25],shaman:[105408,4448.25],miko:[105428,4449.25]};
-  function init(run){run.goddess={projectiles:[],phantom:null,bag:[],lastRegion:0,lastMajor:null,streak:0,lastImpact:-Infinity,nextMirror:1800,nextNormal:900,cycle:0};}
+  function init(run){run.goddess={projectiles:[],phantom:null,bag:[],lastRegion:0,lastMajor:null,streak:0,lastImpact:-Infinity,nextMirror:1800*(run.trials?.cooldown||1),nextNormal:900*(run.trials?.cooldown||1),cycle:0};}
   function clear(run){if(!run.goddess)return;run.goddess.projectiles=[];run.goddess.phantom=null;for(const e of run.enemies.filter(e=>e.goddess)){e.goddessPlan=null;e.goddessForecast=null;I.clear(e);}for(const a of [run.hero,...run.allies])a.goddessDot=null;}
   function depart(run,e){clear(run);e.departedAt=run.time;e.departurePhase=e.goddessPhase||1;e.phaseChangeAt=null;}
   function pick(run){const g=run.goddess;if(!g.bag.length){g.bag=Array.from({length:10},(_,i)=>i+1);for(let i=9;i>0;i--){const j=Math.floor(run.random()*(i+1));[g.bag[i],g.bag[j]]=[g.bag[j],g.bag[i]];}if(g.bag.at(-1)===g.lastRegion)[g.bag[0],g.bag[9]]=[g.bag[9],g.bag[0]];}
@@ -32,13 +32,13 @@
     events.push({type:'status',kind:{root:'拘束',freeze:'凍結',sand:'砂縛り',curse:'呪い',poison:'毒',burn:'火傷',push:'風圧'}[name],target:a.id,x:a.x,y:a.y,timeMs:run.time});
   }
   function damage(run,e,a,fraction,api,events,actionId,kind='direct'){if(a.hp<=0||immune(run,a,api))return false;const [hp,def]=REFERENCE[a.type]||REFERENCE.warrior;
-    const raw=hp*fraction*(1+def/80)*api.attackPower(run,e)/Math.max(1,e.damage);return api.hit(run,e,a,raw,events,false,null,{actionId,direct:kind==='direct',miss:false,curseKind:kind});}
+    const raw=hp*fraction*(1+def/80)*api.attackPower(run,e)/Math.max(1,e.damage)*(run.trials?.stats||1);return api.hit(run,e,a,raw,events,false,null,{actionId,direct:kind==='direct',miss:false,curseKind:kind});}
   function effect(run,events,kind,at,extra={}){events.push({type:'goddess-effect',kind,x:at.x,y:at.y,timeMs:run.time,...extra});}
   function forecast(e,run,p,targets){e.goddessForecast={endsAt:run.time+p.times[0],releaseDelay:p.kind==='meteor'?750:0,damageSpan:p.times.at(-1)-p.times[0],shapes:p.shapes||[],targetIds:targets||[]};}
   function begin(run,e,target,api,events){const g=run.goddess;
-    if(e.goddessPhase===1){if(run.time>=g.nextMirror&&run.time-g.lastImpact>=1500){const row=pick(run),times=row.kind==='triple'?[1200,1650,2100]:row.kind==='cross'?[1200,1800]:[1200];
-        const p={kind:'phantom',row,times,next:0,elapsed:0,duration:times.at(-1)+250,origin:{x:632,y:464},hitCounts:{},actionId:e.id+'-mirror-'+(++run.serial)};p.shapes=shapes(run,row.kind,p.origin,target);g.phantom=p;e.goddessPlan=p;api.state(e,'attacking','snap');forecast(e,run,p);g.nextMirror=run.time+8000;effect(run,events,'snap',{x:e.x+58,y:e.y-172});return;}
-      if(run.time>=g.nextNormal){const p=e.goddessPlan={kind:'star',times:[240],next:0,elapsed:0,duration:500,targetId:target.id,actionId:e.id+'-star-'+(++run.serial)};api.state(e,'attacking','shot');g.nextNormal=run.time+3000;forecast(e,run,p,[target.id]);}return;}
+    if(e.goddessPhase===1){if(run.time>=g.nextMirror&&run.time-g.lastImpact>=1500*(run.trials?.cooldown||1)){const row=pick(run),times=row.kind==='triple'?[1200,1650,2100]:row.kind==='cross'?[1200,1800]:[1200];
+        const p={kind:'phantom',row,times,next:0,elapsed:0,duration:times.at(-1)+250,origin:{x:632,y:464},hitCounts:{},actionId:e.id+'-mirror-'+(++run.serial)};p.shapes=shapes(run,row.kind,p.origin,target);g.phantom=p;e.goddessPlan=p;api.state(e,'attacking','snap');forecast(e,run,p);g.nextMirror=run.time+8000*(run.trials?.cooldown||1);effect(run,events,'snap',{x:e.x+58,y:e.y-172});return;}
+      if(run.time>=g.nextNormal){const p=e.goddessPlan={kind:'star',times:[240],next:0,elapsed:0,duration:500,targetId:target.id,actionId:e.id+'-star-'+(++run.serial)};api.state(e,'attacking','shot');g.nextNormal=run.time+3000*(run.trials?.cooldown||1);forecast(e,run,p,[target.id]);}return;}
     const next=g.cycle++%4;
     if(next%2===0){const selected=[...party(run)];for(let i=selected.length-1;i>0;i--){const j=Math.floor(run.random()*(i+1));[selected[i],selected[j]]=[selected[j],selected[i]];}
       const targets=selected.slice(0,3).map(a=>a.id),p=e.goddessPlan={kind:'meteor',times:targets.map((_,i)=>450+i*150),next:0,elapsed:0,duration:1500,targets,actionId:e.id+'-meteor-'+(++run.serial)};api.state(e,'attacking','meteor');forecast(e,run,p,targets);e.cooldown=5500;return;}

@@ -9,6 +9,7 @@
   const Rebirth = typeof module === 'object' && module.exports ? require('./reincarnation-combat.js') : globalThis.ReincarnationCombat;
   const Epic=typeof module==='object'&&module.exports?require('./epic-gem-combat.js'):globalThis.EpicGemCombat;
   const Resistance = typeof module === 'object' && module.exports ? require('./status-resistance.js') : globalThis.StatusResistance;
+  const Trials = typeof module === 'object' && module.exports ? require('../core/trials.js') : globalThis.Trials;
   const STEP = 1000 / 60;
   const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
   const state = (actor, value, motion = value) => { const began=actor.state!==value;actor.state = value; actor.motion = motion; actor.time = 0; actor.hit = false;
@@ -38,6 +39,11 @@
     if(enemy.reincarnationGoddess)Object.assign(enemy,{x:810,y:460,cooldown:900});
     if (base.dimensionalGate) Object.assign(enemy, { hp: 1, maxHp: 1, invulnerable: true, x: 825, y: 452,
       gateBatch: 0, gateSpawnIndex: 0, gatePhase: 'waiting', gateClock: 0 });
+    if (!base.dimensionalGate) {
+      enemy.hp = enemy.maxHp = Math.round(enemy.maxHp * run.trials.stats);
+      enemy.damage *= run.trials.stats; enemy.defense *= run.trials.stats;
+      enemy.trialInterference = run.trials.interference;
+    }
     run.enemies.push(enemy); return enemy;
   }
   function tickGate(run, events) {
@@ -82,10 +88,10 @@
     state(run.hero, 'idle');
     events.push({ type: 'wave', wave: run.wave + 1, timeMs: run.time });
   }
-  function createRun(stageId = 1, { random = Math.random, builds = {}, disableMikoSupport=false, goldRemainder = 0 } = {}) {
+  function createRun(stageId = 1, { random = Math.random, builds = {}, disableMikoSupport=false, goldRemainder = 0, trials = null } = {}) {
     const stage = STAGES.find(s => s.id === stageId) || SPECIAL_STAGES.find(s => s.id === stageId);
     if (!stage) throw new RangeError('Unknown stage');
-    const run = { stage, random, serial: 0, enemies: [], projectiles: [], wave: 0, phase: 'combat',
+    const run = { stage, trials: Trials.summarize(trials?.ids, stageId), random, serial: 0, enemies: [], projectiles: [], wave: 0, phase: 'combat',
       status: 'running', time: 0, elapsed: 0, accumulator: 0, transition: 0, kills: 0, extraEnemies: 0, gold: 0,
       disableMikoSupport,
       goldRemainder, reincarnationBonuses: builds.warrior?.reincarnationBonuses,
@@ -420,7 +426,7 @@
     for (const actor of [...party, ...run.enemies]) {
       actor.worldTime=run.time;Glacier.expire(actor,run.time);Volcano.expire(actor,run.time);Castle.expire(actor,run.time);Control.update(actor,run.time);const rate=actor.hp>0?actionRate(actor):1;
       const spiritRate=ENEMIES[actor.type]?1:Miko.attackRate(run,actor);
-      actor.time += STEP*rate*spiritRate; actor.cooldown = Math.max(0, actor.cooldown - STEP*(Control.stopped(actor,run.time)?1:rate)*spiritRate); actor.flash = Math.max(0, actor.flash - STEP);
+      actor.time += STEP*rate*spiritRate; actor.cooldown = Math.max(0, actor.cooldown - STEP*(Control.stopped(actor,run.time)?1:rate)*spiritRate*(ENEMIES[actor.type]?1/run.trials.cooldown:1)); actor.flash = Math.max(0, actor.flash - STEP);
     }
     if (run.status !== 'running') return;
     run.elapsed += STEP;
@@ -635,7 +641,7 @@
       }
       if(enemy.stagger>0){enemy.stagger=Math.max(0,enemy.stagger-STEP);enemy.motion='hit';continue;}
       if(enemy.motion==='hit')state(enemy,'idle');
-      enemy.special = Math.max(0, enemy.special - STEP);
+      enemy.special = Math.max(0, enemy.special - STEP / run.trials.cooldown);
       if (enemy.state === 'splitting') {
         if (enemy.time >= (I.config(enemy,'split')?.warn||880)) {
           if (run.enemies.filter(e => e.hp > 0).length < 18) {

@@ -4,7 +4,7 @@ window.ForestLootUI = {
     const $ = id => document.getElementById(id), D = ForestData, L = ForestLoot;
     let plan, shown = new Set(), groupShown = new Set(), completed = false, recruitDuration = 0, recruited = null, unlockDuration = 0;
     const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-    function render({ victory, rewards, loot, gold, stage, elapsed, kills, xp, failureReason }) {
+    function render({ victory, rewards, loot, gold, stage, elapsed, kills, xp, failureReason, trialReward = 1 }) {
       plan = L.presentation(loot, gold, { reduced, gemItems: gemItems() }); shown = new Set(); groupShown = new Set(); completed = false;
       recruited = victory ? rewards.recruited : null;
       recruitDuration = recruited ? (reduced ? 2200 : 4600) : 0;
@@ -54,7 +54,7 @@ window.ForestLootUI = {
       $('result-title').textContent = victory ? '勝利' : '敗北';
       $('result-stage').textContent = stage.special ? stage.realmName + ' / ' + stage.name : stage.region + ' — ' + String(stage.number).padStart(2, '0') + '  /  ' + stage.name;
       if(!victory&&failureReason==='timeout')$('result-title').textContent='時間切れ';
-      $('result-run-stats').innerHTML = '<span>' + icon('clock') + Math.floor(elapsed / 60000) + ':' + String(Math.floor(elapsed / 1000) % 60).padStart(2, '0') + '</span><span>' + icon('sword') + kills + ' 体撃破</span>' + (xp ? '<span>EXP <b>' + escape(xp) + '</b></span>' : '');
+      $('result-run-stats').innerHTML = '<span>' + icon('clock') + Math.floor(elapsed / 60000) + ':' + String(Math.floor(elapsed / 1000) % 60).padStart(2, '0') + '</span><span>' + icon('sword') + kills + ' 体撃破</span>' + (trialReward>1?'<span>試練 <b>×'+trialReward+'</b></span>':'') + (xp ? '<span>EXP <b>' + escape(xp) + '</b></span>' : '');
       $('result-gold').textContent = '+' + gold.toLocaleString('ja-JP', { maximumFractionDigits: 2 });
       $('result-gold-note').textContent = victory ? '撃破分 +' + (gold - rewards.gold) + ' / クリア +' + rewards.gold : 'クリア報酬なし';
       $('result-recruit').hidden = !rewards.recruited; if(rewards.recruited){const c=ForestProgression.CHARACTERS[rewards.recruited],img=$('result-recruit').querySelector('img');img.src='assets/'+rewards.recruited+'/idle-01.png';img.alt=c.name;$('result-recruit').querySelector('strong').textContent=c.name;} document.querySelector('.treasure-caption').textContent = 'REWARDS';

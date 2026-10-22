@@ -24,7 +24,7 @@
   };
   const builds = () => Object.fromEntries(Object.keys(P.CHARACTERS).filter(id => P.unlocked(save, id)).map(id => [id, savedStats(id)]));
   let runBuilds = structuredClone(builds());
-  let run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder }), started = false, playing = false, ready = false;
+  let run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder, trials: Trials.capture(save, save.selectedStage) }), started = false, playing = false, ready = false;
   let pendingRewards = ForestRunRewards.create(run);
   const battleStats = id => runBuilds[id] || savedStats(id);
   let lastTime, resultAge = 0, resultShown = false, resultNavigation = false, notifyTimer, toastTimer, saveTimer;
@@ -87,7 +87,7 @@
     nav.hidden = !save.reincarnation.unlocked;
     nav.classList.toggle('rebirth-ready', eligible);
     nav.querySelector('.rebirth-ready-mark').hidden = !eligible;
-    const label = eligible ? '転生可能 · +100 PT' : '転生';
+    const label = eligible ? '転生可能 · +'+Reincarnation.payout(save).toLocaleString('ja-JP')+' PT' : '転生';
     nav.dataset.tip = label;
     nav.setAttribute('aria-label', label);
   }
@@ -111,7 +111,7 @@
     buildCache.clear();
     if (!started) {
       runBuilds = structuredClone(builds());
-      run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder });
+      run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder, trials: Trials.capture(save, save.selectedStage) });
       pendingRewards = ForestRunRewards.create(run);
     }
   }
@@ -276,7 +276,7 @@
   function startStage(id = save.selectedStage, preserveMenu = false) {
     if (!ready || !isUnlocked(save, id)) return;
     save.selectedStage = id; const reincarnationEvidence = Reincarnation.capture(save); runBuilds = structuredClone(builds());
-    run = createRun(id, { builds: runBuilds, goldRemainder: save.goldRemainder }); pendingRewards = ForestRunRewards.create(run);
+    run = createRun(id, { builds: runBuilds, goldRemainder: save.goldRemainder, trials: Trials.capture(save, save.selectedStage) }); pendingRewards = ForestRunRewards.create(run);
     run.reincarnationEvidence = reincarnationEvidence;
     started = true; resultShown = false; resultAge = 0; resultNavigation = false;
     ForestData.recordEncounters(save, run.enemies.map(e => e.type));
@@ -318,7 +318,7 @@
     if (victory) {
       const unlocks = ForestUnlocks.collect(save, run.stage.id);
       const hunt = [run.hero, ...run.allies].reduce((total, actor) => total + (actor.treasureHunt || 0), 0);
-      rewards = { ...award(save, run.stage.id, hunt, run.reincarnationEvidence), unlocks }; rewards.unlocks.push(...rewards.reincarnationUnlocks); P.gainXp(save, run.stage.xpStage ?? run.stage.id,run.reincarnationEvidence?.bonuses.xp);
+      rewards = { ...award(save, run.stage.id, hunt, run.reincarnationEvidence), unlocks }; rewards.unlocks.push(...rewards.reincarnationUnlocks); P.gainXp(save, run.stage.xpStage ?? run.stage.id,run.reincarnationEvidence?.bonuses.xp,run.trials.reward);
       invalidateBuilds(); autoGearPending = true;
       runAutomaticGear();
       ForestRunRewards.finishDismantle(save, settled); runGemItems=settled.gems.map(gemItem);
@@ -327,7 +327,7 @@
       persist(); refreshResources(); refreshGrowth(); renderRoute();
     }
     if (!victory && save.autoMode !== 'off') { save.autoMode = 'same'; persist(); refreshAutoControls(); }
-    lootUI.render({ victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason });
+    lootUI.render({ victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason, trialReward:run.trials.reward });
     if ($('menu-dialog').open) refreshOpenMenu();
     if (victory) burst(512, 240, '#f1d890', 40);
     canvas.setAttribute('aria-label', (run.stage.realmName || REGIONS[run.stage.region - 1].name) + ' ' + stageLabel(run.stage.id) + (victory ? ' クリア' : ' 敗北'));
@@ -379,6 +379,9 @@
     if (pendingSave) persist();
   }
   function hud() {
+    const badge=$('battle-trials');badge.hidden=run.trials.reward===1;
+    text('battle-trials','試練 ×'+run.trials.reward);
+    badge.dataset.tip=run.trials.ids.map(id=>Trials.byId[id].name).join(' / ');
     const hero = run.hero;
     refreshPartyVitals();
     const selected = partyActor(save.progression.selected), stats = selected || partyViews.get(save.progression.selected).stats;
@@ -500,7 +503,7 @@
     const selected = STAGES.find(s => s.id === viewedStage), region = REGIONS[selected.region - 1];
     text('menu-kicker', selected.special ? 'SPECIAL / ' + selected.english : 'WORLD MAP / CHAPTER ' + String(region.id).padStart(2, '0')); text('menu-title', selected.special ? selected.realmName : region.name);
     const stages = (selected.special ? SPECIAL_STAGES : STAGES.filter(s => !s.special && s.region === region.id)).filter(s => ForestData.stageVisible(save, s));
-    $('menu-content').innerHTML = '<div class="region-tabs" role="group" aria-label="地域を選択">' + REGIONS.filter(r => ForestData.regionVisible(save,r.id)).map(r => '<button data-stage-region="' + r.id + '" aria-pressed="' + (!selected.special && r.id === region.id) + '" data-tip="' + r.name + ' · Lv.' + ((r.id - 1) * 10 + 1) + '〜' + r.id * 10 + '">' + (!isUnlocked(save, (r.id - 1) * 10 + 1) ? icon('lock') : icon('map')) + r.name + '</button>').join('') + (SPECIAL_STAGES.some(s=>ForestData.stageVisible(save,s)) ? '<button class="special-tab" data-special-stages aria-pressed="' + !!selected.special + '">' + icon('spark') + '特殊</button>' : '') + '</div><div class="stage-menu' + (selected.special ? ' special-stage-menu' : '') + '"><div class="stage-map" data-region="' + (selected.special ? 'special' : region.id) + '" aria-label="ステージを選択">' +
+    $('menu-content').innerHTML = '<div class="region-tabs" role="group" aria-label="地域を選択">' + REGIONS.filter(r => ForestData.regionVisible(save,r.id)).map(r => '<button data-stage-region="' + r.id + '" aria-pressed="' + (!selected.special && r.id === region.id) + '" data-tip="' + r.name + ' · Lv.' + ((r.id - 1) * 10 + 1) + '〜' + r.id * 10 + '">' + (!isUnlocked(save, (r.id - 1) * 10 + 1) ? icon('lock') : icon('map')) + r.name + '</button>').join('') + (SPECIAL_STAGES.some(s=>ForestData.stageVisible(save,s)) ? '<button class="special-tab" data-special-stages aria-pressed="' + !!selected.special + '">' + icon('spark') + '特殊</button>' : '') + '</div>'+reincarnationUI.trials(viewedStage)+'<div class="stage-menu' + (selected.special ? ' special-stage-menu' : '') + '"><div class="stage-map" data-region="' + (selected.special ? 'special' : region.id) + '" aria-label="ステージを選択">' +
       stages.map(stage => nodeMarkup(stage, viewedStage)).join('') + '</div><div class="stage-detail">' + stageDetail() + '</div></div>';
     if(selected.special){const map=$('menu-content').querySelector('.stage-map');map.dataset.special=selected.id;map.style.backgroundImage='linear-gradient(#160b3266,#241a4677),url("'+selected.asset+'background.png")';}
   }

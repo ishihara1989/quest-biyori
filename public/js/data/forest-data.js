@@ -253,7 +253,7 @@
     const b = permanent || (wallet.progression ? P.permanent(wallet) : wallet.reincarnationBonuses) || {gold:1};
     const bonus = Math.max(0, Number.isFinite(treasureHunt) ? treasureHunt : 0);
     const remainder = Number.isFinite(wallet.goldRemainder) && wallet.goldRemainder >= 0 && wallet.goldRemainder < 1 ? wallet.goldRemainder : 0;
-    const raw = baseGold * (1 + bonus) * b.gold + remainder, nearest = Math.round(raw);
+    const raw = baseGold * (1 + bonus) * b.gold * (wallet.trials?.reward || 1) + remainder, nearest = Math.round(raw);
     // Preserve fractions while correcting floating-point errors at whole-gold boundaries.
     const total = Math.abs(raw - nearest) <= Number.EPSILON * 8 * Math.max(1, raw) ? nearest : raw;
     const gold = Math.floor(total);
@@ -264,7 +264,8 @@
     const stage = ALL_STAGES.find(s => s.id === stageId);
     if (!stage) throw new RangeError('Unknown stage');
     const first = !save.cleared.includes(stageId);
-    const gold = addGold(save, stage.reward, treasureHunt,evidence?.bonuses);
+    const trialReward = evidence?.trials?.reward || 1;
+    const gold = addGold(save, stage.reward * trialReward, treasureHunt,evidence?.bonuses);
     Rebirth.pass(save,stageId);
     const reincarnationUnlocks = Rebirth.victory(save,stageId,evidence);
     if (first) {

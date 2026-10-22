@@ -420,14 +420,14 @@
     const owner = gemOwner(save, uid);
     return owner ? unequipGem(save, owner.character, owner.slot, uid) : equipGem(save, id, slot, uid);
   }
-  function gainXp(save, stage, xpExponent = permanent(save).xp) {
+  function gainXp(save, stage, xpExponent = permanent(save).xp, rewardMultiplier = 1) {
     const leveled = [];
     if (!Number.isSafeInteger(stage) || stage < 1) return leveled;
     for (const id of Object.keys(CHARACTERS)) if (unlocked(save, id)) {
       const c = save.progression.characters[id], before = level(c.xp);
       if(c.skipRecruitReward){const skip=c.skipRecruitReward;delete c.skipRecruitReward;if(stage===skip)continue;}
       if (c.xp.level >= MAX_LEVEL) { c.xp = experience(MAX_LEVEL); continue; }
-      let exponent = stage + xpExponent - c.xp.level - 1;
+      let exponent = stage + xpExponent - c.xp.level - 1 + Math.log(Math.max(1, rewardMultiplier)) / Math.log(3);
       if (exponent <= -20) continue;
       // Carry in units of the current level. Never compute a positive power of 3.
       while (exponent > 0 && c.xp.level < MAX_LEVEL) { c.xp.progress = (c.xp.progress - 1) / 3; c.xp.level++; exponent--; }
