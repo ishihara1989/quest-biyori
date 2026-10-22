@@ -27,7 +27,7 @@
   let run = createRun(save.selectedStage, { builds: runBuilds, goldRemainder: save.goldRemainder, trials: Trials.capture(save, save.selectedStage) }), started = false, playing = false, ready = false;
   let pendingRewards = ForestRunRewards.create(run);
   const battleStats = id => runBuilds[id] || savedStats(id);
-  let lastTime, resultAge = 0, resultShown = false, resultNavigation = false, notifyTimer, toastTimer, saveTimer;
+  let lastTime, resultAge = 0, resultDelay = 700, resultShown = false, resultNavigation = false, notifyTimer, toastTimer, saveTimer;
   let effects = [], particles = [], runLoot = {}, runGemItems = [], sprites = {}, layers = [], effectSprites = {}, warriorEffects = {}, mageEffects = {}, paladinEffects = {}, ninjaEffects = {}, shamanEffects = {}, mikoEffects = {}, ninjaStatusRegions=[], shamanStatusRegions=[], mikoStatusRegions=[], interferenceStatusRegions=[];
   let menu = '', viewedStage = save.selectedStage, inventoryFilter = 'material', gemFilter = 'gem', selectedItem = 'jelly', selectedGem = null, inventorySlot = 'weapon', runXp = '';
   const gemView = ForestGemInventory.defaults();
@@ -316,6 +316,8 @@
   function finish(victory) {
     if (resultShown) return;
     resultShown = true; resultAge = 0;
+    const resultOptions = Reincarnation.resultOptions(save);
+    resultDelay = resultOptions.skip ? 0 : 700;
     const settled = ForestRunRewards.settle(save, pendingRewards, victory, run.random);
     runLoot = settled.loot; runGemItems = settled.gems.map(gemItem);
     let rewards = { gold: 0, first: false, potion: 0, recruited: null };
@@ -331,7 +333,7 @@
       persist(); refreshResources(); refreshGrowth(); renderRoute();
     }
     if (!victory && save.autoMode !== 'off') { save.autoMode = 'same'; persist(); refreshAutoControls(); }
-    lootUI.render({ victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason, trialReward:run.trials.reward });
+    lootUI.render({ victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason, trialReward:run.trials.reward, skip: resultOptions.skip, repeatDelay: resultOptions.delay * 1000 });
     if ($('menu-dialog').open) refreshOpenMenu();
     if (victory) burst(512, 240, '#f1d890', 40);
     canvas.setAttribute('aria-label', (run.stage.realmName || REGIONS[run.stage.region - 1].name) + ' ' + (run.stage.special?run.stage.name:stageLabel(run.stage.id)) + (victory ? ' クリア' : ' 敗北'));
@@ -474,8 +476,24 @@
     $('result-auto').textContent = '自動周回 · ' + label;
     $('result-auto').setAttribute('aria-pressed', String(save.autoMode !== 'off'));
   }
+  function renderResultOptions() {
+    if (!Reincarnation.resultOptionsUnlocked(save)) return '';
+    const options = Reincarnation.resultOptions(save);
+    return '<section class="result-options"><label class="automation-toggle" data-tip="加入・解放・ドロップ演出を飛ばし、獲得品をすべて表示。次のリザルトから反映。"><input type="checkbox" data-result-option="skip" '+(options.skip ? 'checked' : '')+'>リザルト演出スキップ</label><label class="result-delay" data-tip="獲得品の表示完了から次の戦闘まで。次のリザルトから反映。"><span>次の周への待ち時間</span><output for="result-delay-slider" id="result-delay-value">'+options.delay.toFixed(1)+'秒</output><input id="result-delay-slider" data-result-option="delay" type="range" min="0.5" max="5" step="0.5" value="'+options.delay+'" aria-label="次の周への待ち時間" aria-valuetext="'+options.delay.toFixed(1)+'秒"><small>0.5秒</small><small>5.0秒</small></label></section>';
+  }
+  function changeResultOptions(input) {
+    if (!input.dataset.resultOption || !Reincarnation.resultOptionsUnlocked(save)) return false;
+    const options = save.reincarnation.resultOptions;
+    if (input.dataset.resultOption === 'skip') options.skip = input.checked;
+    else if (input.dataset.resultOption === 'delay') {
+      options.delay = Number(input.value);
+      $('result-delay-value').textContent = options.delay.toFixed(1) + '秒';
+      input.setAttribute('aria-valuetext', options.delay.toFixed(1) + '秒');
+    }
+    persist(); return true;
+  }
   function renderOptions() {
-    $('menu-content').innerHTML = '<div class="options-page"><h3>' + icon('repeat') + '自動周回</h3><div class="auto-modes">' + [['same', 'repeat', '周回'], ['advance', 'arrow', '進行'], ['off', 'pause', 'OFF']].map(([mode, img, label]) => '<button data-auto-mode="' + mode + '" aria-pressed="' + (save.autoMode === mode) + '" data-tip="' + (mode === 'advance' ? 'クリアすると次へ。敗北すると1つ前のステージで周回。' : mode === 'same' ? '同じステージを周回。敗北すると1つ前のステージで周回。' : '結果画面で停止') + '">' + icon(img) + '<span>' + label + '</span></button>').join('') + '</div>' + (save.reincarnation?.unlocked ? '<label class="automation-toggle" data-tip="進行中、加入済みの味方全員の武器・防具が現在のステージまでのメイン強化を終えるまで周回。サブ・固有は対象外。"><input type="checkbox" data-reinc-auto="waitForMainGear" ' + (save.reincarnation.automation.waitForMainGear ? 'checked' : '') + '>メイン強化後に進行</label>' : '') + (P.Gem.unlocked(save) ? gemDismantleUI.renderOptions() : '') + (ForestAutoGear.unlocked(save) ? autoGearUI.render() : '') + reincarnationUI.automation() + '<div class="options-reset" data-tip="育成・所持品・進行をすべて初期化"><div><h3>初期化</h3></div><button class="reset-save-button" data-reset-save>' + icon('repeat') + '初期化</button></div></div>';
+    $('menu-content').innerHTML = '<div class="options-page"><h3>' + icon('repeat') + '自動周回</h3><div class="auto-modes">' + [['same', 'repeat', '周回'], ['advance', 'arrow', '進行'], ['off', 'pause', 'OFF']].map(([mode, img, label]) => '<button data-auto-mode="' + mode + '" aria-pressed="' + (save.autoMode === mode) + '" data-tip="' + (mode === 'advance' ? 'クリアすると次へ。敗北すると1つ前のステージで周回。' : mode === 'same' ? '同じステージを周回。敗北すると1つ前のステージで周回。' : '結果画面で停止') + '">' + icon(img) + '<span>' + label + '</span></button>').join('') + '</div>' + (save.reincarnation?.unlocked ? '<label class="automation-toggle" data-tip="進行中、加入済みの味方全員の武器・防具が現在のステージまでのメイン強化を終えるまで周回。サブ・固有は対象外。"><input type="checkbox" data-reinc-auto="waitForMainGear" ' + (save.reincarnation.automation.waitForMainGear ? 'checked' : '') + '>メイン強化後に進行</label>' : '') + renderResultOptions() + (P.Gem.unlocked(save) ? gemDismantleUI.renderOptions() : '') + (ForestAutoGear.unlocked(save) ? autoGearUI.render() : '') + reincarnationUI.automation() + '<div class="options-reset" data-tip="育成・所持品・進行をすべて初期化"><div><h3>初期化</h3></div><button class="reset-save-button" data-reset-save>' + icon('repeat') + '初期化</button></div></div>';
   }
   function resetSave() {
     try {
@@ -815,26 +833,26 @@
     }
     if (!started && !document.hidden && !reduced) previewTime += dt;
     if (active) {
-      if (run.status === 'running' || resultAge < 700) handleEvents(update(run, simDt));
+      if (run.status === 'running' || resultAge < resultDelay) handleEvents(update(run, simDt));
       if (resultShown && !resultNavigation) {
         resultAge += dt;
-        if (resultAge >= 700) {
+        if (resultAge >= resultDelay) {
           if ($('result-overlay').hidden && !$('menu-dialog').open) {
             $('result-overlay').hidden = false; document.body.classList.add('result-active');
             document.querySelector('.game-shell').inert = true;
             (lootUI.recruitDuration ? $('recruit-continue') : lootUI.introDuration ? $('unlock-continue') : $('result-skip').hidden ? $('retry-button') : $('result-skip')).focus({ preventScroll: true });
           }
-          lootUI.tick(resultAge - 700);
+          lootUI.tick(resultAge - resultDelay);
         }
-        const plan = lootUI.plan, shownAge = resultAge - 700;
+        const plan = lootUI.plan, shownAge = resultAge - resultDelay;
         const destination = autoDestination(save, run.stage.id, run.status === 'victory');
-        text('repeat-countdown', destination && shownAge >= plan.completeAt ? Math.max(0, Math.ceil((plan.repeatAt - shownAge) / 1000)) + '秒 → ' + ForestData.stageFor(save,destination.stage).name : '');
+        text('repeat-countdown', destination && shownAge >= plan.completeAt ? Math.max(0, Math.ceil((plan.repeatAt - shownAge) / 100) / 10) + '秒 → ' + ForestData.stageFor(save,destination.stage).name : '');
         if (destination && shownAge >= plan.repeatAt) { save.autoMode = destination.mode; refreshAutoControls(); startStage(destination.stage, $('menu-dialog').open); }
       }
     }
     // The full-screen result owns animation now; its settled battle backdrop
     // can reuse the last Canvas frame until a new run starts.
-    if (resultShown && resultAge >= 700) { requestAnimationFrame(draw); return; }
+    if (resultShown && resultAge >= resultDelay) { requestAnimationFrame(draw); return; }
     ctx.imageSmoothingEnabled = false; ctx.clearRect(0, 0, 1024, 576);
     ctx.save();
     if (shake > 0 && active) { ctx.translate((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake); shake = Math.max(0, shake - dt / 70); }
@@ -933,7 +951,7 @@
     else if (button.dataset.inventorySlot) { inventorySlot = button.dataset.inventorySlot; renderInventory(); }
     else if (button.dataset.autoMode) {
       save.autoMode = button.dataset.autoMode;
-      if (resultShown && save.autoMode !== 'off' && resultAge >= 700 + lootUI.plan.completeAt) resultAge = 700 + lootUI.plan.completeAt;
+      if (resultShown && save.autoMode !== 'off' && resultAge >= resultDelay + lootUI.plan.completeAt) resultAge = resultDelay + lootUI.plan.completeAt;
       persist(); refreshAutoControls(); renderOptions(); document.querySelector('[data-auto-mode="' + save.autoMode + '"]').focus();
     }
     else if (button.hasAttribute('data-reset-save')) $('reset-dialog').showModal();
@@ -960,7 +978,7 @@
     } finally { updatingGemView = false; }
     return true;
   }
-  document.addEventListener('change', event => { if (!changeGemView(event.target) && !gemDismantleUI.change(event.target)) gemWorkshop.change(event.target); });
+  document.addEventListener('change', event => { if (!changeResultOptions(event.target) && !changeGemView(event.target) && !gemDismantleUI.change(event.target)) gemWorkshop.change(event.target); });
   document.addEventListener('input', event => {
     if (event.target.dataset.gemView !== 'search') return;
     gemView.search = event.target.value;
@@ -978,9 +996,9 @@
   $('result-stages').addEventListener('click', () => showMenu('stages', run.stage.id));
   $('reset-cancel').addEventListener('click', () => $('reset-dialog').close());
   $('reset-confirm').addEventListener('click', resetSave);
-  $('result-skip').addEventListener('click', () => { resultAge = Math.max(resultAge, 700 + lootUI.plan.completeAt); lootUI.tick(resultAge - 700); });
-  $('recruit-continue').addEventListener('click', () => { resultAge = Math.max(resultAge, 700 + lootUI.recruitDuration); lootUI.tick(resultAge - 700); });
-  $('unlock-continue').addEventListener('click', () => { resultAge = Math.max(resultAge, 700 + lootUI.introDuration); lootUI.tick(resultAge - 700); });
+  $('result-skip').addEventListener('click', () => { resultAge = Math.max(resultAge, resultDelay + lootUI.plan.completeAt); lootUI.tick(resultAge - resultDelay); });
+  $('recruit-continue').addEventListener('click', () => { resultAge = Math.max(resultAge, resultDelay + lootUI.recruitDuration); lootUI.tick(resultAge - resultDelay); });
+  $('unlock-continue').addEventListener('click', () => { resultAge = Math.max(resultAge, resultDelay + lootUI.introDuration); lootUI.tick(resultAge - resultDelay); });
   $('retry-button').addEventListener('click', () => startStage());
   $('next-button').addEventListener('click', () => { const next = nextStage(run.stage.id,save); if (next) startStage(next.id); });
   $('close-menu').addEventListener('click', () => $('menu-dialog').close());

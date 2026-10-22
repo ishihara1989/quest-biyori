@@ -5,7 +5,7 @@
   else root.ForestLoot = api;
 })(typeof globalThis === 'object' ? globalThis : this, ({ ITEMS, RARITIES }) => {
   const CHEST_END = 1500, REPEAT_DELAY = 5000;
-  function presentation(loot, gold, { reduced = false, gemItems = [] } = {}) {
+  function presentation(loot, gold, { reduced = false, gemItems = [], repeatDelay = REPEAT_DELAY } = {}) {
     const entries = [...ITEMS, ...gemItems].filter(item => (loot[item.id] || 0) > 0)
       .sort((a, b) => RARITIES[a.rarity].rank - RARITIES[b.rarity].rank)
       .map(item => ({ ...item, count: loot[item.id] }));
@@ -19,7 +19,7 @@
       at += reduced ? 0 : 300;
     }
     const completeAt = reduced ? 0 : Math.max(CHEST_END, at + 650);
-    return { entries, groups, gold, completeAt, repeatAt: completeAt + REPEAT_DELAY };
+    return { entries, groups, gold, completeAt, repeatAt: completeAt + repeatDelay };
   }
   function chestFrame(age, reduced = false) {
     if (reduced) return 3;

@@ -8,7 +8,7 @@
 })(globalThis, (P, T, D) => {
   const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
   const fresh = () => ({ version: 3, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [], trialRun: false, trialCompleted: [], appliedTrials: [], journey: 0, duoDefeatedJourney: null,
-    total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
+    resultOptions: { skip: false, delay: 5 }, total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
       slots: Object.fromEntries(Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].map(slot=>[job+':'+slot,{effects:['fortune',slot==='weapon'?'attack':'vitality','recovery'],locked:false,epic:true,rarity:'rare',efficiency:true}]))) } });
   const integer = n => Number.isSafeInteger(n) && n >= 0;
@@ -35,6 +35,7 @@
     result.duoDefeatedJourney = result.trialRun && raw.duoDefeatedJourney === result.journey ? result.journey : null;
     if(Trials.serious({reincarnation:result})&&result.duoDefeatedJourney!==result.journey)result.defeatedCycle=null;
     result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= 33750 ? raw.pendingPoints : D.POINTS) : 0;
+    result.resultOptions = cleanResultOptions(raw.resultOptions);
     const a = raw.automation;
     result.automation.skills = a?.skills === true; result.automation.gems = a?.gems === true;
     result.automation.waitForMainGear = a?.waitForMainGear === true;
@@ -54,6 +55,11 @@
     }
     return result;
   }
+  function cleanResultOptions(raw) {
+    return { skip: raw?.skip === true, delay: Number.isFinite(raw?.delay) && raw.delay >= .5 && raw.delay <= 5 && Number.isInteger(raw.delay * 2) ? raw.delay : 5 };
+  }
+  const resultOptionsUnlocked = save => !!save.reincarnation?.unlocked && save.reincarnation.cycle >= 1;
+  const resultOptions = save => cleanResultOptions(resultOptionsUnlocked(save) ? save.reincarnation.resultOptions : null);
   const state = save => ({ total: save.reincarnation?.total || 0, owned: new Set(['origin', ...(save.reincarnation?.owned || [])]) });
   const bonuses = save => P.permanent(save);
   const points = save => T.points(state(save));
@@ -140,5 +146,5 @@
       else P['recruit' + job[0].toUpperCase() + job.slice(1)](save);
     }
   }
-  return { fresh, restore, state, bonuses, points, status, purchase, capture, victory, eligible, payout, prepare, skipDestination, pass };
+  return { fresh, restore, resultOptionsUnlocked, resultOptions, state, bonuses, points, status, purchase, capture, victory, eligible, payout, prepare, skipDestination, pass };
 });
