@@ -25,3 +25,5 @@
 .forge-frame>.forge-tree{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
 
 .forge-purchase-side .node-cost-free{display:inline-flex;align-items:center;padding:5px 14px;border:1px solid #8bc69a;border-radius:4px;background:#284833;color:#d4f4cf;font-size:14px;font-weight:700;letter-spacing:.12em}
+
+.result-options{margin-top:20px;padding-top:8px;border-top:1px solid #45523c}.result-delay{display:grid;grid-template-columns:1fr auto;gap:10px;margin:18px 0;color:#c7c2a7;font-size:12px}.result-delay output{color:#efd79b;font-variant-numeric:tabular-nums}.result-delay input{grid-column:1/-1;width:100%;margin:0;accent-color:#d0b67a}.result-delay small{font-size:10px;color:#96a486}.result-delay small:last-child{text-align:right}

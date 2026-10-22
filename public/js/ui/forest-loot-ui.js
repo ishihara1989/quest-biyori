@@ -2,19 +2,20 @@
 window.ForestLootUI = {
   create({ itemImage, itemTip, icon, reduced, gemItems = () => [] }) {
     const $ = id => document.getElementById(id), D = ForestData, L = ForestLoot;
-    let plan, shown = new Set(), groupShown = new Set(), completed = false, recruitDuration = 0, recruited = null, unlockDuration = 0;
+    let plan, shown = new Set(), groupShown = new Set(), completed = false, recruitDuration = 0, recruited = null, unlockDuration = 0, skipped = false;
     const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-    function render({ victory, rewards, loot, gold, stage, elapsed, kills, xp, failureReason, trialReward = 1 }) {
-      plan = L.presentation(loot, gold, { reduced, gemItems: gemItems() }); shown = new Set(); groupShown = new Set(); completed = false;
+    function render({ victory, rewards, loot, gold, stage, elapsed, kills, xp, failureReason, trialReward = 1, skip = false, repeatDelay = L.REPEAT_DELAY }) {
+      skipped = skip;
+      plan = L.presentation(loot, gold, { reduced: reduced || skipped, gemItems: gemItems(), repeatDelay }); shown = new Set(); groupShown = new Set(); completed = false;
       recruited = victory ? rewards.recruited : null;
-      recruitDuration = recruited ? (reduced ? 2200 : 4600) : 0;
+      recruitDuration = recruited && !skipped ? (reduced ? 2200 : 4600) : 0;
       const unlocks = victory ? rewards.unlocks || [] : [];
       const specialUnlock = unlocks.find(entry => entry.special), rebirth=unlocks.some(entry=>entry.rebirth), divine=specialUnlock?.reincarnation||rebirth, riftUnlocked = !!specialUnlock;
-      unlockDuration = unlocks.length ? (reduced ? 2600 : divine ? 7600 : specialUnlock?.final ? 6400 : riftUnlocked ? 4600 : 3200) : 0;
+      unlockDuration = unlocks.length && !skipped ? (reduced ? 2600 : divine ? 7600 : specialUnlock?.final ? 6400 : riftUnlocked ? 4600 : 3200) : 0;
       const introDuration = recruitDuration + unlockDuration;
       // Recruitment leads, then features, then the chest and automatic repeat.
       plan.completeAt += introDuration; plan.repeatAt += introDuration;
-      $('recruit-intro').hidden = !recruited;
+      $('recruit-intro').hidden = !recruitDuration;
       $('recruit-intro').classList.remove('exiting');
       $('unlock-intro').hidden = !unlockDuration || !!recruited;
       $('unlock-intro').classList.remove('exiting');
@@ -32,7 +33,7 @@ window.ForestLootUI = {
       $('result-unlocks').hidden = !unlocks.length;
       $('result-unlocks').innerHTML = unlocks.map(entry => '<span data-tip="' + escape(entry.detail) + '" tabindex="0">' + icon(entry.icon) + escape(entry.title) + '<i>NEW</i></span>').join('');
       document.querySelector('.result-panel').hidden = !!introDuration;
-      $('result-overlay').setAttribute('aria-labelledby', recruited ? 'recruit-title' : unlockDuration ? 'unlock-title' : 'result-title');
+      $('result-overlay').setAttribute('aria-labelledby', recruitDuration ? 'recruit-title' : unlockDuration ? 'unlock-title' : 'result-title');
       $('recruit-continue').firstChild.textContent = unlockDuration ? '解放 ' : '報酬 ';
       if (recruited) {
         const character = ForestProgression.CHARACTERS[recruited];
@@ -45,6 +46,7 @@ window.ForestLootUI = {
         $('recruit-particles').innerHTML = Array.from({ length: 28 }, (_, i) => '<i style="--angle:' + (i * 137.5) + 'deg;--radius:' + (140 + i % 6 * 28) + 'px;--delay:' + (i % 7 * 90) + 'ms">✦</i>').join('');
       }
       $('result-overlay').classList.toggle('defeat', !victory);
+      $('result-overlay').classList.toggle('result-skipped', skipped);
       $('result-overlay').classList.remove('loot-complete');
       $('loot-flash').classList.remove('flash');
       $('result-chest').dataset.frame = reduced ? 3 : 0;
@@ -100,7 +102,7 @@ window.ForestLootUI = {
       }
       const lootAge = age - introDuration;
       const chest = $('result-chest');
-      const frame = L.chestFrame(lootAge, reduced);
+      const frame = L.chestFrame(lootAge, reduced || skipped);
       chest.style.backgroundPosition = [[0, 0], [100, 0], [0, 100], [100, 100]][frame].map(n => n + '%').join(' ');
       chest.dataset.frame = frame;
       $('chest-stage').classList.toggle('opened', frame === 3);
@@ -114,7 +116,7 @@ window.ForestLootUI = {
         const cell = $('result-rewards').querySelector('[data-loot-id="' + row.id + '"]'); cell.hidden = false;
         const rewards = $('result-rewards'); rewards.scrollTop = rewards.scrollHeight - rewards.clientHeight;
         $('loot-flash').dataset.rarity = row.rarity;
-        if (!reduced) { $('loot-flash').classList.remove('flash'); void $('loot-flash').offsetWidth; $('loot-flash').classList.add('flash'); }
+        if (!reduced && !skipped) { $('loot-flash').classList.remove('flash'); void $('loot-flash').offsetWidth; $('loot-flash').classList.add('flash'); }
       }
       if (age >= plan.completeAt && !completed) {
         completed = true; $('result-overlay').classList.add('loot-complete');
