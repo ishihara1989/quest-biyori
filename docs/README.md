@@ -17,7 +17,7 @@
 
 ## 設計・仕様・提案
 
-- [封印・ソロ試練と転生中盤のバランス案（基準測定・報酬と解放順の候補）](design/sealed-trials-and-progression.md)
+- [封印・ソロ試練と転生中盤のバランス案（8,000 PT以下全取得の基準測定・報酬と解放順の候補）](design/sealed-trials-and-progression.md)
 
 - [転生の女神：SF兵器5種・大型トラック・ゲート帰還](design/reincarnation-goddess-arsenal.md)
 
