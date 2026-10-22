@@ -205,3 +205,47 @@ test('expanded gold rewards use the absolute multiplier once with treasure hunt 
  Rewards.record(pending,{type:'loot',enemy:'slime',gold:1500,goldRemainder:0});
  const wallet=s.gold;assert.equal(Rewards.settle(s,pending,true,()=>.99).gold,1500);assert.equal(s.gold-wallet,1500);
 });
+
+test('luck successors halve prices, double cumulative rates, enforce purchase boundaries and refund legacy purchases on reload',()=>{
+ const steps=[[150,300],[200,500],[250,800],[350,1800],[500,4000],[750,6500],[1000,10000],[1500,18000],[2000,30000],[3000,50000],[5000,80000],[10000,200000],[20000,500000],[30000,1000000]];
+ const branch=T.branches.find(b=>b.heading==='収穫 / ドロップ率');
+ assert.deepEqual(branch.ids,steps.map(([amount])=>'rate'+amount));
+ assert.equal(T.byId['drop-rate'].cost,90);assert.equal(T.byId['drop-rate'].effects[0].amount,100);
+ const s=ready();s.reincarnation.cycle=100000;s.reincarnation.total=10000000;own(s,'drop-rate');
+ assert.equal(R.purchase(s,'rate30000'),false);
+ let oldSpent=110,previous=100;
+ for(const [i,[amount,oldCost]]of steps.entries()){
+  const id='rate'+amount,n=T.byId[id],budget=s.reincarnation.total,spent=budget-R.points(s);
+  assert.deepEqual(n.requires,[i?'rate'+steps[i-1][0]:'drop-rate']);assert.equal(n.cost,oldCost/2);assert.equal(n.milestone,i===steps.length-1);
+  assert.equal(n.effects[0].amount,amount*2-previous);assert.equal(n.effects[0].value,'＋'+(amount*2-previous).toLocaleString('ja-JP')+'%');
+  assert.equal(n.name,i===steps.length-1?'星海の幸運':'幸運 '+(amount*2).toLocaleString('ja-JP'));
+  s.reincarnation.total=spent+n.cost-1;assert.equal(R.purchase(s,id),false);
+  s.reincarnation.total++;assert.ok(R.purchase(s,id));assert.equal(R.points(s),0);assert.equal(R.purchase(s,id),false);
+  s.reincarnation.total=budget;assert.equal(R.bonuses(s).rate,amount*2);previous=amount*2;oldSpent+=oldCost;
+  const restored=D.readSave(JSON.stringify(s));
+  assert.deepEqual(restored.reincarnation.owned,s.reincarnation.owned);assert.equal(R.bonuses(restored).rate,amount*2);
+  assert.equal(R.points(restored)-(budget-oldSpent),steps.slice(0,i+1).reduce((sum,[,cost])=>sum+cost/2,0));
+  assert.deepEqual(R.bonuses(D.readSave(JSON.stringify(restored))),R.bonuses(restored));
+ }
+ assert.equal(T.totals({owned:new Set([...s.reincarnation.owned].reverse())}).rate,60000);
+});
+
+test('stronger luck adds once to party treasure hunt, preserves guaranteed and fractional drops, and stays fixed during battle',()=>{
+ const s=ready();own(s,'drop-rate');
+ const before=S.createRun(1,{builds:{warrior:P.stats(s,'warrior')}}),pending=Rewards.create(before);
+ assert.equal(pending.hunt,1);
+ own(s,'rate150');assert.equal(R.bonuses(s).rate,300);assert.equal(Rewards.create(before).hunt,1);
+ const run=S.createRun(1,{builds:{warrior:P.stats(s,'warrior'),mage:P.stats(s,'mage')}});
+ run.hero.treasureHunt=.5;run.allies[0].treasureHunt=.25;
+ assert.equal(Rewards.create(run).hunt,3.75);
+ assert.deepEqual(D.rollMaterials('slime',()=>.999,3),['jelly']);
+ assert.deepEqual(D.rollMaterials('slime',()=>.1,3),['jelly','jelly']);
+ assert.deepEqual(D.gemDropRates(10,3),{rare:.2,unique:.02,legendary:.002});
+ own(s,'rate30000');
+ const end=S.createRun(1,{builds:{warrior:P.stats(s,'warrior')}}),last=Rewards.create(end);assert.equal(last.hunt,600);
+ Rewards.record(last,{type:'loot',enemy:'extradimensional-goddess',gold:0,goldRemainder:0});
+ const result=Rewards.settle(s,last,true,()=>.999);
+ assert.equal(result.loot[P.Gem.Epic.MATERIAL],180);
+ assert.equal(result.gems.filter(g=>g.rarity==='epic').length,6);assert.equal(result.gems.filter(g=>g.rarity==='legendary').length,60);
+ assert.equal(new Set(result.gems.map(g=>g.id)).size,66);assert.equal(Rewards.settle(s,last,true),null);
+});
