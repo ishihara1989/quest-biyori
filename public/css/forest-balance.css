@@ -23,3 +23,5 @@
 .growth-dialog .forge-viewport.dragging{cursor:grabbing}
 .forge-frame{position:relative;overflow:hidden}
 .forge-frame>.forge-tree{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+
+.forge-purchase-side .node-cost-free{display:inline-flex;align-items:center;padding:5px 14px;border:1px solid #8bc69a;border-radius:4px;background:#284833;color:#d4f4cf;font-size:14px;font-weight:700;letter-spacing:.12em}

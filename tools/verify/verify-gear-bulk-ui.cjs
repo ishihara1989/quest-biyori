@@ -33,6 +33,55 @@ function richSave() {
     }, D.SAVE_KEY);
     await page.goto(url + 'game.html');
     await page.locator('#start-button:not([disabled])').waitFor();
+    if (process.argv.includes('--main-free-only')) {
+      const T = require('../../public/js/data/reincarnation-tree-data.js');
+      function own(save, id) {
+        for (const parent of T.byId[id].requires) if (parent !== 'origin' && !save.reincarnation.owned.includes(parent)) own(save, parent);
+        if (!save.reincarnation.owned.includes(id)) save.reincarnation.owned.push(id);
+      }
+      function freeSave() {
+        const save = richSave(); save.gold = 0; save.inventory = { potion: 3 }; save.autoGear.enabled = false;
+        Object.assign(save.reincarnation, { discovered: true, unlocked: true, cycle: 20, total: 2000 }); own(save, 'main-free');
+        return save;
+      }
+      const detailCosts = page.locator('.forge-purchase-side > .node-costs');
+      for (const [width, height] of [[1440, 1050], [390, 844]]) {
+        await page.setViewportSize({ width, height }); await load(freeSave()); await select('main-3');
+        assert.equal(await detailCosts.innerText(), '無料');
+        assert.equal(await page.locator('.forge-bulk-purchase .node-costs').innerText(), '無料');
+        assert.equal(await bulk('main-3').isEnabled(), true);
+        await page.locator('[data-growth-node="main-3"]').hover();
+        assert.ok((await page.locator('#tooltip').innerText()).includes('無料'));
+        assert.equal(await detailCosts.locator('.insufficient, .node-cost').count(), 0);
+        await page.screenshot({ path: path.join(output, 'main-free-' + width + '.png') });
+        await select('main-1'); await page.locator('[data-buy-node="main-1"]').click();
+        assert.equal((await saved()).gold, 0);
+        await select('main-3'); await bulk('main-3').click();
+        const bought = await saved();
+        assert.equal(bought.gold, 0); assert.deepEqual(bought.inventory, { potion: 3 });
+        assert.ok(['main-1', 'main-2', 'main-3'].every(id => bought.progression.characters.warrior.weapon.includes(id)));
+        await page.reload(); await page.locator('#start-button:not([disabled])').waitFor();
+        await page.locator('[data-open=forge]').first().click(); await select('main-3');
+        assert.equal(await detailCosts.innerText(), '無料');
+        assert.equal(await page.locator('[data-buy-node="main-3"]').innerText(), '取得済み');
+        const box = await detailCosts.boundingBox(); assert.ok(box.x >= 0 && box.x + box.width <= width);
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+        const gated = freeSave(); gated.cleared = [1, 3]; await load(gated); await select('main-3');
+        assert.equal(await detailCosts.innerText(), '無料'); assert.equal(await bulk('main-3').isEnabled(), false);
+      }
+      await page.setViewportSize({ width: 1440, height: 1050 });
+      const discounted = richSave();
+      Object.assign(discounted.reincarnation, { discovered: true, unlocked: true, cycle: 20, total: 2000 });
+      own(discounted, 'gold-cost'); own(discounted, 'sub20'); await load(discounted); await select('branch-2-up-4');
+      const node = P.gearTree('warrior', 'weapon').find(n => n.id === 'branch-2-up-4'), cost = P.gearCost(discounted, node);
+      for (const [key, amount] of Object.entries(cost)) {
+        assert.equal(await detailCosts.locator('.node-cost').filter({ has: page.locator('img[src$="/' + key + '.png"]') }).locator('b').textContent(), String(amount));
+      }
+      assert.deepEqual(errors, []);
+      console.log('Main-free UI passed: actual discounted costs, free detail/tooltip/path totals, zero-wallet single/path purchases, reload, stage gates and layout at 1440px/390px; no resource/runtime errors. Screenshots: ' + output);
+      return;
+    }
+
     const focusedNode = () => page.locator('.forge-tree .selected').getAttribute('data-growth-node');
     async function checkInitialFocus(seed, expected) {
       await load(seed); await page.clock.runFor(100);

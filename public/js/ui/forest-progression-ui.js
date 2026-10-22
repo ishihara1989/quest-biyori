@@ -133,7 +133,9 @@ window.ForestProgressionUI = {
       const statusLabel = { owned: '取得済み', available: '取得可能', cost: kind === 'skills' ? 'SP不足' : '素材不足', locked: '未解放' }[state];
       const stageRequirement = kind !== 'skills' && n.main ? ForestData.stageLabel(n.stage) + ' クリア' : '';
       const lockedRequirement = state === 'locked' ? requirements(n, kind) : '';
-      const forgeTip = kind === 'skills' ? '' : '\n' + statusLabel + (lockedRequirement && lockedRequirement !== stageRequirement ? ' · ' + lockedRequirement : '') + (state === 'owned' ? '' : '\n' + Object.entries(P.gearCost(save,n)).filter(([key])=>key==='gold'||ForestData.itemDiscovered(save,ForestData.ITEMS.find(i=>i.id===key))).map(([key, amount]) => (key === 'gold' ? 'ゴールド' : ForestData.ITEMS.find(i => i.id === key).name) + ' ' + (key === 'gold' ? save.gold : save.inventory[key] || 0) + ' / ' + amount).join('\n'));
+      const cost = kind === 'skills' ? null : P.gearCost(save, n);
+      const free = cost && Object.values(cost).every(amount => amount === 0);
+      const forgeTip = kind === 'skills' ? '' : '\n' + statusLabel + (lockedRequirement && lockedRequirement !== stageRequirement ? ' · ' + lockedRequirement : '') + (state === 'owned' ? '' : '\n' + (free ? '無料' : Object.entries(cost).filter(([key, amount])=>amount > 0 && (key==='gold'||ForestData.itemDiscovered(save,ForestData.ITEMS.find(i=>i.id===key)))).map(([key, amount]) => (key === 'gold' ? 'ゴールド' : ForestData.ITEMS.find(i => i.id === key).name) + ' ' + (key === 'gold' ? save.gold : save.inventory[key] || 0) + ' / ' + amount).join('\n')));
       const marker = bulkReady ? '<span class="forge-bulk-ready" aria-hidden="true">+' + plan.nodes.length + '</span>' : state === 'owned' ? icon('check') : state === 'locked' ? icon('lock') : kind === 'skills' ? '<i></i>' : '<span class="forge-status" aria-hidden="true">' + (state === 'available' ? '+' : '−') + '</span>';
       const tip = n.name + '\n' + (kind === 'skills' ? skillParameters(n) : n.note || '') + '\n' + Object.entries(kind === 'skills' ? {} : n.effect).filter(([k]) => labels[k]).map(([k, v]) => labels[k] + ' +' + (['skillPower', 'attackSpeed', 'weaponPower', 'magicPower', 'haste', 'interferencePower'].includes(k) ? pct(v) : num(v))).join(' / ') + (stageRequirement ? '\n' + (Number.isInteger(n.stage) ? ForestData.REGIONS[Math.ceil(n.stage / 10) - 1].name + ' ' : '') + stageRequirement : '');
       return '<button class="growth-node ' + state + ' ' + (bulkReady ? 'bulk-ready ' : '') + (rank?'learned ':'')+(n.kind||'')+' ' + (n.main ? 'main-node ' : '') + (n.unique ? 'unique ' : '') + (selected ? 'selected' : '') + '" style="left:' + n.x + 'px;top:' + n.y + 'px;--node-y:' + n.y + 'px" data-growth-node="' + n.id + '" data-kind="' + kind + '" data-tip="' + escape(tip+(kind==='skills'?'\n習得 Lv.'+(n.unlockLevel||1)+' · スキルLv '+rank+'/'+(n.maxRank||1)+'\n'+(n.requires.length?'前提：'+n.requires.map(req=>P.SKILLS[id()].find(p=>p.id===req).name+' Lv.1').join(' / '):'前提スキルなし'):forgeTip + (bulkReady ? '\nまとめて取得可能 · ' + plan.nodes.length + 'ノード' : ''))) + '" aria-label="' + escape(n.name + ' · '+(kind==='skills'?'Lv '+rank+'/'+(n.maxRank||1)+' · ':'') + (bulkReady ? 'まとめて取得可能 · ' + plan.nodes.length + 'ノード' : statusLabel)) + '" aria-pressed="' + selected + '"><span class="node-art"><img src="' + nodeArt(n) + '" alt=""></span>' + marker + '<small>' + (kind === 'skills' ? n.name : n.main && Number.isInteger(n.stage) ? (Math.ceil(n.stage / 10) + ' — ') + String((n.stage - 1) % 10 + 1).padStart(2, '0') : n.unique ? '◆ ' + n.name : n.name) + '</small>'+(kind==='skills'?'<span class="rank-pips">'+Array.from({length:n.maxRank||1},(_,i)=>'<i class="'+(i<rank?'on':'')+'"></i>').join('')+'</span><span class="unlock-tag">Lv.'+(n.unlockLevel||1)+'</span>':'')+'</button>';
@@ -149,7 +151,8 @@ window.ForestProgressionUI = {
       return kind === 'skills' ? 'SP不足' : '素材不足';
     }
     function materialCosts(cost) {
-      return Object.entries(cost).filter(([key]) => key === 'gold' || ForestData.itemDiscovered(save, ForestData.ITEMS.find(i => i.id === key))).map(([key, amount]) => {
+      if (Object.values(cost).every(amount => amount === 0)) return '<span class="node-cost-free" data-tip="素材・ゴールド消費なし" tabindex="0">無料</span>';
+      return Object.entries(cost).filter(([key, amount]) => amount > 0 && (key === 'gold' || ForestData.itemDiscovered(save, ForestData.ITEMS.find(i => i.id === key)))).map(([key, amount]) => {
         const held = key === 'gold' ? save.gold : save.inventory[key] || 0;
         const name = key === 'gold' ? 'ゴールド' : ForestData.ITEMS.find(i => i.id === key).name;
         return '<span class="node-cost ' + (held < amount ? 'insufficient' : '') + '" data-tip="' + escape(name + ' · 必要 ' + amount + ' / 所持 ' + held) + '" tabindex="0"><img src="' + itemArt(key) + '" alt="' + escape(name) + '"><b>' + amount + '</b></span>';
@@ -157,7 +160,7 @@ window.ForestProgressionUI = {
     }
     function selection(nodes, kind) {
       const n = nodes.find(n => n.id === (kind === 'skills' ? selectedSkill : selectedForge)) || nodes[0], state = P.status(save, id(), kind, n);
-      const costs = kind === 'skills' ? '<span class="sp-cost">' + n.cost + ' <small>SP</small></span>' : materialCosts(n.cost);
+      const costs = kind === 'skills' ? '<span class="sp-cost">' + n.cost + ' <small>SP</small></span>' : materialCosts(P.gearCost(save, n));
       const compact = { whirlwind: 'MP 18 · 6.5s · AUTO', evade: 'MP 8 · 5s · AUTO', counter: '反撃 +70%', gust: 'MP 16 · 5s · AUTO', vortex: 'MP 14 · 8s · AUTO', repel: 'MP 10 · 7s · AUTO', storm: '+2 TARGETS' };
       const rank=kind==='skills'?P.rank(save,id(),n.id):0;
       const detail=kind==='skills'?skillParameters(n):compact[n.id];
