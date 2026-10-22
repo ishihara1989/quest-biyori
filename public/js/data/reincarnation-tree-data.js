@@ -121,10 +121,12 @@
     [10000, 200000], [20000, 500000], [30000, 1000000],
   ];
   let previousRate = 100;
-  chain('harvest', 1360, rateSteps.map(([amount, cost]) => {
+  // Keep legacy IDs while doubling cumulative luck and halving successor prices.
+  chain('harvest', 1360, rateSteps.map(([legacyAmount, legacyCost]) => {
+    const amount = legacyAmount * 2, cost = legacyCost / 2;
     const delta = amount - previousRate; previousRate = amount;
-    return ['rate' + amount, amount === 30000 ? '星海の幸運' : '幸運 ' + amount.toLocaleString('ja-JP'), cost,
-      [effect('ドロップ率', '＋' + delta.toLocaleString('ja-JP') + '%', 'rate', delta)], { milestone: amount === 30000 }];
+    return ['rate' + legacyAmount, legacyAmount === 30000 ? '星海の幸運' : '幸運 ' + amount.toLocaleString('ja-JP'), cost,
+      [effect('ドロップ率', '＋' + delta.toLocaleString('ja-JP') + '%', 'rate', delta)], { milestone: legacyAmount === 30000 }];
   }), ['drop-rate'], 'パーティー共通で1回加算。ジェム制限中も有効。ドロップ数倍率とは別枠。', '収穫 / ドロップ率');
   const bossSteps = [
     ['gem-boss25', '素材の節約 I', 400], ['gem-boss50', '素材の節約 II', 4000],

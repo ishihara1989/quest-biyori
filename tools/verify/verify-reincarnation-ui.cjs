@@ -30,6 +30,33 @@ async function main(){
  async function menu(page,name){const dialog=page.locator('#menu-dialog');if(await dialog.isVisible())await page.locator('#close-menu').click();await page.locator('[data-open="'+name+'"]').first().click();}
  const labOnly=process.argv.includes('--lab-only'),scenesOnly=process.argv.includes('--scenes-only'),boss=B.reference();boss.autoMode='off';
  try{
+  if(process.argv.includes('--luck-only')){
+   const ids=['gold2','drop-rate',...T.branches.find(b=>b.heading==='収穫 / ドロップ率').ids];
+   for(const viewport of [{width:1440,height:1050},{width:390,height:844}])for(const final of [false,true]){
+    const owned=final?ids.slice(0,-1):ids.slice(0,2),id=final?'rate30000':'rate150';
+    const seed=D.freshSave();Object.assign(seed.reincarnation,{discovered:true,unlocked:true,cycle:100000,total:10000000,owned});
+    const {page,context}=await pageFor(seed,viewport);await menu(page,'reincarnation');
+    const loaded=await saveOf(page);assert.deepEqual(loaded.reincarnation.owned,owned);
+    assert.equal(R.points(loaded),10000000-owned.reduce((sum,id)=>sum+T.byId[id].cost,0));
+    if(!final){await page.locator('[data-reinc-node="rate200"]').click();assert.equal(await page.locator('[data-reinc-confirm]').isDisabled(),true);}
+    await page.locator('[data-reinc-node="'+id+'"]').click();
+    assert.equal(await page.locator('.reinc-effect b').innerText(),final?'＋20,000%':'＋200%');
+    assert.equal(await page.locator('.reincarnation-detail h3').innerText(),final?'星海の幸運':'幸運 300');
+    assert.equal(await page.locator('.reinc-prerequisites button').innerText(),final?'✓ 幸運 40,000':'✓ 幸運の星');
+    assert.equal(await page.locator('[data-reinc-confirm]').innerText(),final?'500,000 PT · 取得':'150 PT · 取得');
+    await page.locator('.reincarnation-page img').evaluateAll(images=>Promise.all(images.map(img=>img.decode())));
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    await shot(page,'luck-'+(final?'final':'entry')+'-'+viewport.width);
+    await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="'+id+'"]').click();
+    await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
+    const restored=await saveOf(page);assert.deepEqual(restored.reincarnation.owned,[...owned,id]);
+    assert.equal(R.bonuses(restored).rate,final?60000:300);
+    assert.equal(R.points(restored),R.points(loaded)-T.byId[id].cost);
+    await menu(page,'reincarnation');await page.locator('[data-reinc-node="'+id+'"]').click();assert.equal(await page.locator('.node-state').innerText(),'取得済み');
+    await context.close();
+   }
+   assert.deepEqual(errors,[]);console.log('Luck tree UI passed: halved prices, stronger effects, prerequisites, legacy purchases, purchase and reload at 1440px/390px; no resource or runtime errors.');return;
+  }
   if(!labOnly&&!scenesOnly&&!process.argv.includes('--stats-only')){
    const branch=T.branches.find(b=>b.heading==='収穫 / ゴールド'),ids=['gold2',...branch.ids];
    for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
