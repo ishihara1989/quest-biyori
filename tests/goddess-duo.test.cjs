@@ -10,8 +10,8 @@ test('chaos gate unlocks a combined stage only during goddess-serious, including
  T.abandon(s);assert.equal(D.stageFor(s,stage.id).goddessDuo,undefined);assert.ok(D.isUnlocked(s,'reincarnation-goddess'));assert.equal(D.nextStage('chaos-gate').name,'異次元の女神');
 });
 test('both goddess bodies spawn together at 3x and the extradimensional goddess starts immediately in phase 2',()=>{
- const r=duo();assert.equal(r.enemies.length,2);assert.deepEqual(r.stage.waves,[['extradimensional-goddess','reincarnation-goddess']]);const [a,b]=r.enemies;assert.equal(a.goddessPhase,2);assert.equal(a.phaseChangeAt,undefined);assert.equal(a.hp,7.5e9);assert.equal(b.hp,6e10);assert.notEqual(a.x,b.x);assert.notEqual(a.y,b.y);
- const normal=S.createRun('extradimensional-goddess');assert.equal(normal.enemies.length,1);assert.equal(normal.enemies[0].goddessPhase,1);
+ const r=duo();assert.equal(r.enemies.length,2);assert.deepEqual(r.stage.waves,[['extradimensional-goddess','reincarnation-goddess']]);const [a,b]=r.enemies;assert.equal(a.goddessPhase,2);assert.equal(a.phaseChangeAt,undefined);assert.equal(a.hp,6e10);assert.equal(a.maxHp,b.maxHp);assert.equal(b.hp,6e10);assert.equal(a.damage,b.damage);assert.equal(a.defense,b.defense);assert.notEqual(a.x,b.x);assert.notEqual(a.y,b.y);
+ const normal=S.createRun('extradimensional-goddess');assert.equal(normal.enemies.length,1);assert.equal(normal.enemies[0].goddessPhase,1);assert.equal(normal.enemies[0].maxHp,2.5e9);
  r.hero.hp=r.hero.maxHp=1e12;S.update(r,1000);assert.ok(a.goddessPlan);assert.equal(a.goddessPhase,2);assert.equal(a.phaseChangePending,undefined);
 });
 test('defeating reincarnation goddess first does not waive defeat or timeout while the other goddess lives',()=>{
