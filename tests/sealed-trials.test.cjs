@@ -38,6 +38,79 @@ test('gem seal blocks manual and automated equip, masks equipped effects and sur
  Object.assign(s.reincarnation,{trials:['seal-gems'],trialRun:true});const masked=P.stats(s,'warrior').damage;assert.ok(masked<buffed);assert.equal(P.equipGem(s,'mage','weapon',gem.id),false);s.reincarnation.automation.gems=true;assert.equal(Auto.gems(s),0);
  const restored=D.readSave(JSON.stringify(s));near(P.stats(restored,'warrior').damage,masked);assert.deepEqual(restored.progression.characters.warrior.gems.weapon,[]);assert.ok(T.abandon(s));near(P.stats(s,'warrior').damage,buffed);
 });
+test('active seals suppress their drop category, including guaranteed copies and automatic dismantling',()=>{
+ for(const ids of [[],['seal-gems'],['seal-gear'],['seal-gems','seal-gear']]){
+  const s=D.readSave(JSON.stringify(ready(ids)));own(s,'drop4');
+  s.autoGemDismantle.enabled=true;s.autoGemDismantle.maxRarity='legendary';
+  const existing=P.addGem(s,P.Gem.generate({rarity:'rare',level:10,family:'attack',random:()=>.5}));
+  const inventory={...s.inventory},beforeGold=s.gold;
+  const run=S.createRun('extradimensional-goddess',{builds:{warrior:{...P.stats(s,'warrior'),treasureHunt:199}},trials:T.capture(s,'extradimensional-goddess')});
+  const pending=Rewards.create(run);assert.equal(pending.countMultiplier,4);
+  for(const enemy of ['slime','treant','extradimensional-goddess'])Rewards.record(pending,{type:'loot',enemy,gold:12,goldRemainder:.75});
+  const result=Rewards.settle(s,pending,true,()=>{assert.ok(ids.length<2,'both seals skip drop rolls');return 0;});
+  assert.equal(result.gold,36);assert.equal(s.gold,beforeGold+36);assert.equal(s.goldRemainder,.75);
+  assert.ok(result.loot[P.Gem.Epic.MATERIAL]>0,'goddess residue drops even with both seals');
+  for(const material of ['jelly','flower','crystal','wood']){
+   if(ids.includes('seal-gear')){assert.equal(s.inventory[material],inventory[material]);assert.equal(result.loot[material],undefined);}
+   else assert.ok(result.loot[material]>0,material+' still drops');
+  }
+  assert.ok(s.gems.some(g=>g.id===existing.id));
+  if(ids.includes('seal-gems')){
+   assert.deepEqual(result.gems,[]);assert.equal(result.dismantled,0);assert.deepEqual(s.gems,[existing]);
+   assert.ok(Object.keys(result.loot).every(id=>!id.startsWith('gem-')));
+  }else{assert.ok(result.gems.some(g=>g.rarity==='epic'));assert.ok(result.dismantled>0);}
+  assert.equal(Rewards.settle(s,pending,true),null);
+ }
+});
+
+test('goddess residue keeps its fractional chance and count multiplier during both seals',()=>{
+ for(const enemy of ['extradimensional-goddess','reincarnation-goddess'])for(const roll of [.299999,.3]){
+  const s=ready(['seal-gear','seal-gems']);s.reincarnation.appliedTrials=[];own(s,'drop4');
+  const p=Rewards.create(S.createRun(enemy,{builds:{warrior:P.stats(s,'warrior')},trials:T.capture(s,enemy)}));
+  Rewards.record(p,{type:'loot',enemy,gold:0,goldRemainder:0});
+  const result=Rewards.settle(s,p,true,()=>roll);
+  assert.deepEqual(result.loot,enemy==='extradimensional-goddess'&&roll<.3?{[P.Gem.Epic.MATERIAL]:4}:{});assert.deepEqual(result.gems,[]);
+ }
+});
+
+test('drop seals use the battle snapshot; abandoning restores drops in the next battle only',()=>{
+ const s=ready(['seal-gems','seal-gear']);
+ const pending=Rewards.create(S.createRun(10,{builds:{warrior:P.stats(s,'warrior')},trials:T.capture(s,10)}));
+ Rewards.record(pending,{type:'loot',enemy:'treant',gold:10,goldRemainder:0});
+ assert.ok(T.abandon(s));
+ assert.deepEqual(Rewards.settle(s,pending,true,()=>{throw Error('sealed battle must not roll drops');}).loot,{});
+ const restored=D.readSave(JSON.stringify(s));
+ const next=Rewards.create(S.createRun(10,{builds:{warrior:P.stats(restored,'warrior')},trials:T.capture(restored,10)}));
+ Rewards.record(next,{type:'loot',enemy:'treant',gold:10,goldRemainder:0});
+ const result=Rewards.settle(restored,next,true,()=>0);
+ assert.ok(result.loot.flower>0);assert.ok(result.gems.length>0);
+ // Completion and permanent rewards alone do not suppress later ordinary runs.
+ restored.reincarnation.trialCompleted.push('seal-gems','seal-gear');restored.reincarnation.appliedTrials.push('seal-gems','seal-gear');
+ const ordinary=Rewards.create(S.createRun(10,{builds:{warrior:P.stats(restored,'warrior')},trials:T.capture(restored,10)}));
+ assert.ok(ordinary.materialsEnabled);assert.ok(ordinary.gemsEnabled);
+});
+
+test('main-only trial upgrades stay free without materials, and clear rewards remain available',()=>{
+ const s=R.prepare(ready(),D.freshSave,{restart:true,trials:['seal-gear','seal-gems']});
+ assert.ok(s);assert.equal(P.permanent(s).mainFree,1);
+ for(const job of jobs)for(const slot of ['weapon','armor'])for(const node of P.allGearTrees(job,slot).filter(n=>n.main)){
+  assert.ok(Object.values(P.gearCost(s,node)).every(cost=>cost===0));
+ }
+ s.cleared.push('extradimensional-goddess');
+ const root=P.gearTree('warrior','weapon','goddess').find(n=>n.main);
+ assert.deepEqual(P.gearCost(s,root),{[P.Gem.Epic.MATERIAL]:1});
+ assert.equal(P.purchase(s,'warrior','weapon',root.id),false);
+ const goddess=Rewards.create(S.createRun('extradimensional-goddess',{builds:{warrior:P.stats(s,'warrior')},trials:T.capture(s,'extradimensional-goddess')}));
+ Rewards.record(goddess,{type:'loot',enemy:'extradimensional-goddess',gold:0,goldRemainder:0});
+ assert.deepEqual(Rewards.settle(s,goddess,true,()=>0).loot,{[P.Gem.Epic.MATERIAL]:1});
+ assert.ok(P.purchase(s,'warrior','weapon',root.id));assert.equal(s.inventory[P.Gem.Epic.MATERIAL],0);
+ const beforeGold=s.gold,beforePotion=s.inventory.potion;
+ const reward=D.award(s,1,0,R.capture(s,1));
+ assert.ok(reward.gold>0);assert.equal(s.gold,beforeGold+reward.gold);assert.equal(s.inventory.potion,beforePotion+1);
+ assert.ok(P.purchase(s,'warrior','weapon','main-1'));assert.ok(P.purchase(s,'warrior','armor','main-1'));
+ assert.equal(s.gold,beforeGold+reward.gold);
+});
+
 test('skill seal locks unlock levels above 50, including existing effects, automation and restoration',()=>{
  const s=ready(),high=P.SKILLS.warrior.find(n=>n.kind==='active'&&n.unlockLevel>50);assert.ok(P.purchase(s,'warrior','skills',high.id));Object.assign(s.reincarnation,{trials:['seal-skills'],trialRun:true});assert.equal(P.rank(s,'warrior',high.id),0);assert.equal(P.status(s,'warrior','skills',high),'locked');assert.equal(P.purchase(s,'warrior','skills',high.id),false);s.reincarnation.automation.skills=true;Auto.skills(s);assert.ok(P.SKILLS.warrior.filter(n=>P.rank(s,'warrior',n.id)).every(n=>(n.unlockLevel||1)<=50));assert.equal(P.rank(D.readSave(JSON.stringify(s)),'warrior',high.id),0);
 });
