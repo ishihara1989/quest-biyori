@@ -59,8 +59,10 @@
     ['skip2', '星渡り', 220, [effect('挑戦先の最大進行幅', '＋2', 'skip', 2, 'max')]],
     ['skip3', '星間の近道', 4500, [effect('挑戦先の最大進行幅', '＋3', 'skip', 3, 'max')]],
     ['skip4', '星渡りの極み', 80000, [effect('挑戦先の最大進行幅', '＋4', 'skip', 4, 'max')]],
+    ['skip5', '星渡りの極み II', 200000, [effect('挑戦先の最大進行幅', '＋5', 'skip', 5, 'max')]],
+    ['skip10', '星渡りの極み III', 1000000, [effect('挑戦先の最大進行幅', '＋10', 'skip', 10, 'max')]],
   ], ['main-free'], '大ボス・必須特殊ボスを越えない。通過区間の経験値・素材・ゴールドなし。通過の確定は挑戦先の勝利時。');
-  node('cycle-bond', '輪廻の絆', 'journey', 4000, 400, 1058, ['main-free'],
+  node('cycle-bond', '輪廻の絆', 'journey', 4000, 400, 1170, ['main-free'],
     [effect('仲間', '最初から全員', 'allies', 1)], { milestone: true, note: '全6職がLv.1・初期装備から同行。加入時のレベル・装備・スキルの支給は行わない。' });
   // Node IDs remain stable so existing purchases gain the revised effects on load.
   const combatTargets = [2, 3, 4, 5, 7.5, 10, 15, 20, 30, 40, 60, 80, 100, 150, 200, 300, 400, 500];

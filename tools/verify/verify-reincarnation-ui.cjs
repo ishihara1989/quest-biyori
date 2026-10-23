@@ -30,6 +30,32 @@ async function main(){
  async function menu(page,name){const dialog=page.locator('#menu-dialog');if(await dialog.isVisible())await page.locator('#close-menu').click();await page.locator('[data-open="'+name+'"]').first().click();}
  const labOnly=process.argv.includes('--lab-only'),scenesOnly=process.argv.includes('--scenes-only'),boss=B.reference();boss.autoMode='off';
  try{
+  if(process.argv.includes('--skip-only')){
+   const own=(seed,id)=>{for(const parent of T.byId[id].requires)if(parent!=='origin'&&!seed.reincarnation.owned.includes(parent))own(seed,parent);if(id!=='origin'&&!seed.reincarnation.owned.includes(id))seed.reincarnation.owned.push(id);};
+   for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
+    const seed=D.freshSave();Object.assign(seed.reincarnation,{discovered:true,unlocked:true,cycle:20000,total:2000000});own(seed,'skip4');
+    const {page,context}=await pageFor(seed,viewport);await menu(page,'reincarnation');
+    await page.locator('[data-reinc-node="skip10"]').click();assert.ok(await page.locator('[data-reinc-confirm]').isDisabled());
+    for(const [id,parent,cost,width] of [['skip5','skip4',200000,5],['skip10','skip5',1000000,10]]){
+     await page.locator('[data-reinc-node="'+id+'"]').click();
+     assert.equal(await page.locator('.reinc-effect b').innerText(),'＋'+width);
+     assert.equal(await page.locator('[data-reinc-confirm]').innerText(),cost.toLocaleString('ja-JP')+' PT · 取得');
+     assert.equal(await page.locator('.reinc-prerequisites button').innerText(),'✓ '+T.byId[parent].name);
+     const selected=await page.locator('[data-reinc-node="'+id+'"]').boundingBox(),bond=await page.locator('[data-reinc-node="cycle-bond"]').boundingBox();assert.ok(selected.y+selected.height<bond.y);
+     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+     await page.locator('.reincarnation-page img').evaluateAll(images=>Promise.all(images.map(img=>img.decode())));
+     await page.locator('.reincarnation-detail').scrollIntoViewIfNeeded();
+     await page.mouse.move(2,2);await shot(page,id+'-'+viewport.width);
+     await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-cancel]').click();assert.ok(!(await saveOf(page)).reincarnation.owned.includes(id));
+     const before=await saveOf(page);await page.locator('[data-reinc-confirm]').click();await page.locator('[data-reinc-buy="'+id+'"]').click();
+     await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});
+     const restored=await saveOf(page);assert.equal(R.points(restored),R.points(before)-cost);assert.equal(R.bonuses(restored).skip,width);assert.ok(restored.reincarnation.owned.includes(id));
+     await menu(page,'reincarnation');await page.locator('[data-reinc-node="'+id+'"]').click();assert.equal(await page.locator('.node-state').innerText(),'取得済み');
+    }
+    await context.close();
+   }
+   assert.deepEqual(errors,[]);console.log('Star travel UI passed at 1440px/390px: prerequisites, effects, prices, spacing, cancel, purchase and reload; no resource/runtime errors.');return;
+  }
   if(process.argv.includes('--seals-only')){
    const own=(seed,id)=>{for(const p of T.byId[id].requires)if(p!=='origin'&&!seed.reincarnation.owned.includes(p))own(seed,p);if(id!=='origin'&&!seed.reincarnation.owned.includes(id))seed.reincarnation.owned.push(id);};
    for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
