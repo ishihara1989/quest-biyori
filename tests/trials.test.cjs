@@ -18,6 +18,16 @@ test('trial door needs only main material waiver, charges 100 PT and survives sa
 test('100 PT prices, sequential strength and goddess prerequisites',()=>{
  assert.equal(Tree.byId['main-free'].cost,100);assert.equal(Tree.byId['trial-open'].cost,100);const s=ready();assert.ok(T.available(s,'strength-2'));assert.equal(T.available(s,'strength-3'),false);assert.equal(T.available(s,'goddess-serious'),false);s.reincarnation.trialCompleted=['onslaught'];assert.equal(T.available(s,'goddess-serious'),false);s.reincarnation.trialCompleted.push('unyielding');assert.ok(T.available(s,'goddess-serious'));assert.equal(R.prepare(s,D.freshSave,{restart:true,trials:['strength-10']}),null);assert.equal(R.prepare(s,D.freshSave,{restart:true,trials:['strength-2','strength-3']}),null);assert.equal(T.summarize(['strength-2','strength-10','strength-10','onslaught','unyielding','goddess-serious'],1).reward,225);
 });
+test('selecting a trial adds cross-family prerequisites and removing one cascades to dependents',()=>{
+ const s=ready();s.reincarnation.trialCompleted=T.definitions.map(d=>d.id);
+ const selected=T.toggle(s,['strength-4'],'goddess-serious');assert.deepEqual(new Set(selected),new Set(['strength-4','goddess-serious','onslaught','unyielding']));
+ const shared=T.toggle(s,selected,'gate-release');assert.equal(shared.length,5);assert.ok(T.validPlan(s,shared));
+ for(const prerequisite of ['onslaught','unyielding'])assert.deepEqual(new Set(T.toggle(s,shared,prerequisite)),new Set(['strength-4',prerequisite==='onslaught'?'unyielding':'onslaught']));
+ assert.deepEqual(new Set(T.toggle(s,shared,'goddess-serious')),new Set(['strength-4','onslaught','unyielding','gate-release']));
+ assert.deepEqual(T.toggle(s,[],'strength-10'),['strength-10']);assert.deepEqual(T.toggle(s,['strength-10'],'strength-3'),['strength-3']);
+ const locked=ready(),ids=['onslaught'];assert.deepEqual(T.toggle(locked,ids,'goddess-serious'),ids);assert.deepEqual(ids,['onslaught']);
+});
+
 test('unpaid trial start resets progress and possessions without PT or extra rebirth count; survives reload',()=>{
  const s=ready();s.gold=123;s.cleared=[1,4,10];s.inventory.potion=7;s.progression.characters.warrior.xp=P.experience(30);const before=JSON.stringify(s),next=R.prepare(s,D.freshSave,{restart:true,trials:['onslaught']});assert.equal(JSON.stringify(s),before);assert.equal(next.reincarnation.total,2000);assert.equal(next.reincarnation.cycle,20);assert.equal(next.reincarnation.journey,1);assert.equal(next.gold,0);assert.deepEqual(next.cleared,[]);assert.equal(P.level(next.progression.characters.warrior.xp),1);assert.equal(next.inventory.potion,0);assert.equal(next.selectedStage,1);assert.ok(next.reincarnation.trialRun);const restored=D.readSave(JSON.stringify(next));assert.deepEqual(T.capture(restored).ids,['onslaught']);assert.deepEqual(new Set(restored.reincarnation.owned),new Set(next.reincarnation.owned));
 });

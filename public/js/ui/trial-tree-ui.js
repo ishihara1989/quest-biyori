@@ -5,7 +5,7 @@ window.TrialTreeUI={create({save,container,tabs,onStart,onAbandon}){
   const names=ids=>ids.length?ids.map(id=>T.byId[id].name).join(' / '):'試練なし';
   const badge=id=>T.rules(save).ids.includes(id)?'挑戦中':T.completed(save).includes(id)?'初クリア済':T.available(save,id)?'選択可能':'前提未達成';
   function render(){
-    if(planned===null)planned=[...save.reincarnation.trials];
+    if(planned===null)planned=T.selection(save.reincarnation.trials);
     const old=container.querySelector('.trial-tree-viewport');if(old)scroll=[old.scrollLeft,old.scrollTop];
     const n=T.byId[selected],r=save.reincarnation,done=T.completed(save),active=T.summarize(r.trials),preview=T.summarize(planned),bonus=T.bonuses(save);
     if(confirm){const active=T.rules(save);

@@ -15,6 +15,24 @@ test('seals require their node, solo tiers require previous clear and enforce ma
  const regular=['strength-10','onslaught','unyielding','goddess-serious','gate-release','seal-gems','seal-skills','seal-gear'];assert.equal(T.summarize(regular).reward,10125);assert.equal(T.summarize([...regular,'solo-miko-3']).reward,8100);
  const max=ready(regular);max.reincarnation.trialCompleted=T.definitions.map(d=>d.id);R.victory(max,'extradimensional-goddess',R.capture(max,'extradimensional-goddess'));assert.equal(R.payout(max),1518750);assert.equal(R.payout(D.readSave(JSON.stringify(max))),1518750);const next=R.prepare(max,D.freshSave,{trials:[]});assert.equal(D.readSave(JSON.stringify(next)).reincarnation.total,next.reincarnation.total);
 });
+test('solo selection shows mandatory trials, keeps stronger strength and removes dependent solos',()=>{
+ const s=ready();s.reincarnation.trialCompleted=T.definitions.map(d=>d.id);
+ for(const job of jobs){
+  const solo=`solo-${job}-2`,third=`solo-${job}-3`;
+  assert.deepEqual(new Set(T.toggle(s,[],solo)),new Set([solo,'strength-2']));
+  const higher=T.toggle(s,['strength-5','seal-gems'],solo);assert.deepEqual(new Set(higher),new Set(['strength-5','seal-gems',solo]));
+  assert.deepEqual(new Set(T.toggle(s,higher,'strength-5')),new Set(['seal-gems']));
+  const lower=T.toggle(s,higher,'strength-2');assert.ok(lower.includes(solo));assert.ok(!lower.includes('strength-5'));
+  const goddess=T.toggle(s,[],third);assert.deepEqual(new Set(goddess),new Set([third,'goddess-serious','onslaught','unyielding']));assert.ok(T.validPlan(s,goddess));
+  for(const prerequisite of ['onslaught','unyielding','goddess-serious'])assert.ok(!T.toggle(s,goddess,prerequisite).includes(third));
+  assert.deepEqual(new Set(T.toggle(s,goddess,third)),new Set(['goddess-serious','onslaught','unyielding']));
+  const switched=T.toggle(s,goddess,solo);assert.ok(!switched.includes(third));assert.ok(switched.includes(solo));assert.ok(switched.includes('strength-2'));assert.equal(switched.filter(id=>T.byId[id].solo).length,1);
+  const next=R.prepare(s,D.freshSave,{restart:true,trials:goddess});assert.deepEqual(new Set(D.readSave(JSON.stringify(next)).reincarnation.trials),new Set(goddess));
+ }
+ const original=['solo-miko-3'];assert.deepEqual(new Set(T.selection(original)),new Set(['solo-miko-3','goddess-serious','onslaught','unyielding']));assert.deepEqual(original,['solo-miko-3']);
+ assert.deepEqual(T.selection([]),[]);assert.deepEqual(T.selection(T.selection(original)),T.selection(original));
+});
+
 test('gem seal blocks manual and automated equip, masks equipped effects and survives reload; abandon restores effects',()=>{
  const s=ready(),gem=P.addGem(s,P.Gem.generate({rarity:'rare',level:10,family:'attack',random:()=>.5}));assert.ok(P.equipGem(s,'warrior','weapon',gem.id));const buffed=P.stats(s,'warrior').damage;
  Object.assign(s.reincarnation,{trials:['seal-gems'],trialRun:true});const masked=P.stats(s,'warrior').damage;assert.ok(masked<buffed);assert.equal(P.equipGem(s,'mage','weapon',gem.id),false);s.reincarnation.automation.gems=true;assert.equal(Auto.gems(s),0);

@@ -44,12 +44,26 @@
   function capture(save,stage=save.selectedStage){const result=summarize(active(save),stage);result.support=Object.fromEntries(Object.entries(rewards(save).support).filter(([job,tier])=>job!==result.solo?.job&&(result.solo?tier>0:result.ids.length>0&&tier===2)));return result;}
   const serious=save=>rules(save).intervention;
   const validPlan=(save,ids)=>Array.isArray(ids)&&ids.every(id=>available(save,id))&&clean(ids).length===ids.length&&highest(ids).length===ids.length;
-  function toggle(save,ids,id){if(!available(save,id))return clean(ids);return ids.includes(id)?ids.filter(v=>v!==id):[...clean(ids).filter(v=>byId[v].family!==byId[id].family),id];}
+  // Same-family prerequisites unlock higher tiers; only other families are selected together.
+  const dependencies=d=>d.requires.map(id=>byId[id]).filter(p=>p.family!==d.family);
+  const satisfies=(chosen,p)=>chosen.some(d=>d.family===p.family&&d.reward>=p.reward);
+  function selection(ids){
+    const chosen=highest(ids);
+    for(let i=0;i<chosen.length;i++)for(const p of dependencies(chosen[i]))if(!satisfies(chosen,p))chosen.push(p);
+    return highest(chosen.map(d=>d.id)).map(d=>d.id);
+  }
+  function toggle(save,ids,id){
+    if(!available(save,id))return clean(ids);
+    if(!ids.includes(id))return selection([...clean(ids).filter(v=>byId[v].family!==byId[id].family),id]);
+    let chosen=highest(ids.filter(v=>v!==id)),count;
+    do{count=chosen.length;chosen=chosen.filter(d=>dependencies(d).every(p=>satisfies(chosen,p)));}while(chosen.length!==count);
+    return chosen.map(d=>d.id);
+  }
   function bonuses(save){const ids=clean(save.reincarnation?.appliedTrials);return {harvest:Math.max(1,...ids.filter(id=>byId[id].family==='strength').map(id=>byId[id].stats)),hp:ids.includes('unyielding')?1.5:1,damage:ids.includes('onslaught')?1.5:1,pt:ids.includes('goddess-serious')?1.5:1,materialReduction:ids.includes('gate-release')?10:0};}
   function complete(save,evidence){const r=save.reincarnation;if(!r.trialRun||evidence?.journey!==(r.journey||0))return [];
     const ids=clean(evidence.trials?.ids),expected=rules(save).ids;if(ids.length!==expected.length||!ids.every(id=>expected.includes(id)))return [];
     const first=ids.filter(id=>!completed(save).includes(id));r.trialCompleted=[...completed(save),...first];return first;
   }
   function abandon(save){if(!save.reincarnation?.trialRun)return false;save.reincarnation.trials=[];save.reincarnation.trialRun=false;save.reincarnation.journey=(save.reincarnation.journey||0)+1;return true;}
-  return {definitions,byId,gods,jobs,soloMultipliers,clean,availableNode,unlocked,completed,available,summarize,capture,rules,rewards,serious,validPlan,toggle,bonuses,complete,abandon,mapSize:{width:800,height:2220}};
+  return {definitions,byId,gods,jobs,soloMultipliers,clean,availableNode,unlocked,completed,available,summarize,capture,rules,rewards,serious,validPlan,selection,toggle,bonuses,complete,abandon,mapSize:{width:800,height:2220}};
 });
