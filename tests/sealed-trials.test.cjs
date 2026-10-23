@@ -45,10 +45,34 @@ test('gear seal covers effects, manual, batch and full-path purchases and save r
  const s=ready(),tree=P.gearTree('warrior','weapon'),main=tree.find(n=>n.id==='main-1'),branch=tree.find(n=>n.id==='branch-1-up-1');assert.ok(P.purchase(s,'warrior','weapon',main.id));assert.ok(P.purchase(s,'warrior','weapon',branch.id));const all=P.effects(s,'warrior','weapon').damage;
  Object.assign(s.reincarnation,{trials:['seal-gear'],trialRun:true});near(P.effects(s,'warrior','weapon').damage,all-branch.effect.damage);assert.equal(P.status(s,'warrior','weapon',branch),'locked');assert.equal(P.gearPurchasePlan(s,'warrior','weapon','branch-1-up-2').status,'locked');assert.equal(P.purchaseGearPath(s,'warrior','weapon','branch-1-up-2'),false);assert.deepEqual(P.purchaseGearBatch(s,[{character:'warrior',slot:'weapon',node:'branch-1-up-2'}]),[]);assert.ok(P.purchase(s,'warrior','weapon','main-2'));const restored=D.readSave(JSON.stringify(s));assert.equal(restored.progression.characters.warrior.weapon.includes(branch.id),false);assert.ok(restored.progression.characters.warrior.weapon.includes('main-2'));s.cleared.push('extradimensional-goddess');s.progression.characters.warrior.armor=P.gearTree('warrior','armor','goddess').map(n=>n.id);assert.equal(P.totalPoints(s,'warrior'),100,'sealed goddess SP branches contribute no points');
 });
-test('gear clear increases only ordinary sub/unique attack, HP and defense, preserving capacity and goddess nodes',()=>{
+test('gear reward scales damage and HP continuously with the current wallet, without changing equipment effects',()=>{
  const s=ready();s.cleared.push('extradimensional-goddess');for(const slot of ['weapon','armor'])s.progression.characters.warrior[slot]=P.allGearTrees('warrior',slot,true).map(n=>n.id);
- const before=Object.fromEntries(['weapon','armor'].map(slot=>[slot,P.effects(s,'warrior',slot)])),caps=P.capacity(s,'warrior','weapon');s.reincarnation.appliedTrials.push('seal-gear');
- for(const slot of ['weapon','armor']){const after=P.effects(s,'warrior',slot);for(const key of Object.keys(after)){const extra=P.allGearTrees('warrior',slot).filter(n=>!n.main).reduce((v,n)=>v+(n.effect[key]||0),0)*(['damage','maxHp','defense'].includes(key)?.2:0);near(after[key],before[slot][key]+extra);}}assert.deepEqual(P.capacity(s,'warrior','weapon'),caps);
+ const before=Object.fromEntries(['weapon','armor'].map(slot=>[slot,P.effects(s,'warrior',slot)])),caps=P.capacity(s,'warrior','weapon');s.reincarnation.trialCompleted.push('seal-gear');s.reincarnation.appliedTrials.push('seal-gear');
+ for(const slot of ['weapon','armor'])assert.deepEqual(P.effects(s,'warrior',slot),before[slot]);assert.deepEqual(P.capacity(s,'warrior','weapon'),caps);
+ for(const job of jobs){
+  s.gold=0;const base=P.stats(s,job);
+  for(const [gold,multiplier]of [[0,1],[999,1],[1000,1],[10000,4/3],[100000,5/3],[1e6,2],[1e9,3],[1e12,4],[1000,1]]){
+   s.gold=gold;const actual=P.stats(s,job);
+   for(const key of ['damage','maxHp','baseDamage','weaponDamage','magicDamage','skillDamage'])near(actual[key],base[key]*multiplier);
+   for(const key of ['defense','maxMp','mpRegen','skillRange','haste'])near(actual[key],base[key]);
+   assert.deepEqual(P.stats(D.readSave(JSON.stringify(s)),job),actual);
+  }
+ }
+ s.gold=1e9;s.reincarnation.appliedTrials=s.reincarnation.appliedTrials.filter(id=>id!=='seal-gear');const noReward=P.stats(s,'warrior');s.reincarnation.trialCompleted.push('seal-gear');assert.deepEqual(P.stats(s,'warrior'),noReward,'recorded clear alone does not apply this journey');
+ const next=R.prepare(s,D.freshSave,{restart:true,trials:[]});assert.equal(next.gold,0);assert.ok(T.rewards(next).gear);const initial=P.stats(next,'warrior');next.reincarnation.appliedTrials=next.reincarnation.appliedTrials.filter(id=>id!=='seal-gear');assert.deepEqual(P.stats(next,'warrior'),initial,'new journey starts at 1x with no gold');
+ next.reincarnation.appliedTrials.push('seal-gear');next.gold=1e6;const run=S.createRun(1,{builds:{warrior:P.stats(next,'warrior')}});near(run.hero.maxHp,initial.maxHp*2);next.gold=1000;near(P.stats(next,'warrior').maxHp,initial.maxHp);near(run.hero.maxHp,initial.maxHp*2,'running battle retains its starting build');
+});
+test('gem reward grants compatible abilities from Lv1 without owning or equipping gems, even during the gem seal',()=>{
+ const s=D.freshSave();s.reincarnation.trialCompleted=['seal-gems'];const before=P.stats(s,'warrior');assert.equal(before.gemEcho,0);assert.equal(s.gems.length,0);
+ s.reincarnation.appliedTrials=['seal-gems'];
+ for(const job of jobs){
+  const actual=P.stats(s,job),flat=P.Gem.sealReward(job),base=P.CHARACTERS[job].base;
+  for(const key of ['defense','maxMp','mpRegen','skillRange','gemEcho','gemSiphon','gemAegis'])near(actual[key],(base[key]||0)+(flat[key]||0));
+  assert.ok(actual.damage>base.damage);assert.ok(actual.maxHp>base.maxHp);assert.ok(actual.gemEcho>0);assert.equal(actual[P.Gem.Epic.DEFINITIONS[job+'-weapon'].key],0);
+  assert.deepEqual(s.progression.characters[job].gems,{weapon:[],armor:[]});
+ }
+ own(s,'trial-seals');Object.assign(s.reincarnation,{discovered:true,total:1000000,cycle:10000});const regular=Object.fromEntries(jobs.map(job=>[job,P.stats(s,job)]));Object.assign(s.reincarnation,{unlocked:true,trials:['seal-gems'],trialRun:true});assert.ok(T.rules(s).seals.gems);
+ for(const job of jobs){assert.deepEqual(P.stats(s,job),regular[job]);assert.deepEqual(P.stats(D.readSave(JSON.stringify(s)),job),regular[job]);}assert.equal(s.gems.length,0);
 });
 test('real seal rewards match measured flat values and separate SP/capacity multipliers before skill specs',()=>{
  const Model=require('../tools/balance/measure-seal-reward-route.cjs'),s=ready();for(const id of ['sp30','common200'])own(s,id);const expected=Model.rewardBuilds(s).builds;s.reincarnation.trialCompleted.push('seal-gems','seal-skills');s.reincarnation.appliedTrials.push('seal-gems','seal-skills');

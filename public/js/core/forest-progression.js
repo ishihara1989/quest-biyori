@@ -221,7 +221,7 @@
       // reads current ownership, so purchases, resets and other saves are safe.
       if (!effectTrees.has(key)) effectTrees.set(key, gearTree(id, slot, region));
       const owned = effectTrees.get(key).filter(n => ownedIds.has(n.id)&&gearAllowed(save,n));
-      return [...owned.map(n => Trials.rewards(save).gear&&region!=='goddess'&&!n.main?Object.fromEntries(Object.entries(n.effect).map(([k,v])=>[k,['damage','maxHp','defense'].includes(k)?v*1.2:v])):n.effect), ...(region==='goddess'?[]:gearBonuses(id, slot).filter(b => owned.length >= b.count).map(b => b.effect))];
+      return [...owned.map(n => n.effect), ...(region==='goddess'?[]:gearBonuses(id, slot).filter(b => owned.length >= b.count).map(b => b.effect))];
     }));
   }
   function capacity(save, id, slot) {
@@ -261,13 +261,15 @@
     if(result.epicMageArmor){result.maxMp*=3;result.mpRegen+=result.maxMp*.05;}
     result.mpRegen *= 1 + (all.mpRegenPercent || 0);
     const spScale=rewards.sp?1+Math.max(0,totalPoints(save,id)-100)/100:1;
+    // Current wallet, with no bonus through 1,000; every further 3 digits adds 1x.
+    const goldScale=rewards.gear?Math.max(1,Math.log10(Math.max(1000,save.gold||0))/3):1;
     const capacityScale=slot=>{const cap=capacity(save,id,slot);return rewards.gems?1+(cap.attack+cap.defense+cap.utility+cap.common)/10000:1;};
-    result.maxHp *= b.hp / 100 * spScale * capacityScale('armor');
+    result.maxHp *= b.hp / 100 * spScale * capacityScale('armor') * goldScale;
     result.skillPower += (b.skill || 0) / 100;
     result.healPower = (result.healPower || 0) + (b.recovery || 0) / 100;
     result.reincarnationBoss = (b.boss || 0) / 100;
     result.reincarnationBonuses = { ...b };
-    const damageScale = (1 + (all.damagePercent || 0)) * b.damage / 100 * spScale * capacityScale('weapon');
+    const damageScale = (1 + (all.damagePercent || 0)) * b.damage / 100 * spScale * capacityScale('weapon') * goldScale;
     result.baseDamage = result.damage * damageScale;
     result.weaponDamage = (result.damage + (result.weaponFlat || 0)) * damageScale * (1 + (result.weaponPower || 0));
     result.magicDamage = (result.damage + (result.magicFlat || 0)) * damageScale * (1 + (result.magicPower || 0));
