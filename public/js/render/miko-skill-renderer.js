@@ -40,7 +40,10 @@ window.MikoSkillRenderer=(()=>{
   function statuses(ctx,run,assets){const regions=[];for(const actor of [run.hero,...run.allies].filter(a=>a.hp>0)){
     const list=run.mikoPossessions.filter(p=>p.host===actor).map(p=>({id:p.id,until:p.until,label:p.spec.name+' · '+MikoSkills.parameters(p.spec)}));
     if(actor.type==='miko')for(const c of run.mikoContracts)list.push({id:c.id,until:c.until,label:c.spec.name+' · '+c.units.length+'体 · '+MikoSkills.parameters(c.spec)});
-    if(run.mikoFestival)list.push({id:run.mikoFestival.spec.id,until:run.mikoFestival.until,label:run.mikoFestival.spec.name+' · '+MikoSkills.parameters(run.mikoFestival.spec)});
+    if(run.mikoFestival){const f=run.mikoFestival,s=f.spec;
+      // Solo support has a buff spec, without the MP or action parameters of a cast skill.
+      list.push(s.id==='solo-kagura'?{id:'spirit-kagura',until:f.until,label:'巫女の援護 · 霊威 +'+Math.round(s.spirit*100)+'%'}:{id:s.id,until:f.until,label:s.name+' · '+MikoSkills.parameters(s)});
+    }
     list.forEach((p,i)=>{const x=actor.x-list.length*9+i*18,y=actor.y-174,a=assets['icon-'+p.id];ctx.save();ctx.fillStyle='#18211ddd';ctx.fillRect(x,y,17,17);if(a)ctx.drawImage(a.image,x,y,17,17);ctx.fillStyle='#ffdc92';ctx.fillRect(x,y+17,17*Math.min(1,(p.until-run.time)/12000),2);ctx.restore();regions.push({x,y,w:17,h:20,label:p.label+' · 残り '+Math.max(0,(p.until-run.time)/1000).toFixed(1)+'秒'});});
   }return regions;}
   return {load,backdrops,units,impacts,projectiles,barriers,statuses};

@@ -86,6 +86,26 @@ test('support eligibility, tier replacement, self exclusion and wave/timer bound
  const events=[];Support.tick(run,{hit:S.hit},events);assert.deepEqual(run.soloSupport.calls,{mage:1,paladin:1});assert.ok(events.some(e=>e.type==='solo-support'));assert.ok(!events.some(e=>e.type==='gem-effect'));Support.tick(run,{hit:S.hit},[]);assert.equal(run.soloSupport.calls.mage,1);run.time=10000;Support.tick(run,{hit:S.hit},[]);assert.equal(run.soloSupport.calls.mage,2);run.wave++;Support.tick(run,{hit:S.hit},[]);assert.equal(run.soloSupport.calls.mage,3);run.phase='between';run.time+=20000;Support.tick(run,{hit:S.hit},[]);assert.equal(run.soloSupport.calls.mage,3);run.phase='combat';run.status='victory';Support.tick(run,{hit:S.hit},[]);assert.equal(run.soloSupport.calls.mage,3);
  s.reincarnation.trials=['strength-2'];assert.deepEqual(T.capture(s,1).support,{mage:2});s.reincarnation.trials=[];s.reincarnation.trialRun=false;assert.deepEqual(T.capture(s,1).support,{});
 });
+test('miko solo support renders its spirit buff for every other class without a cast skill spec',()=>{
+ const fs=require('node:fs'),vm=require('node:vm'),K=require('../public/js/skills/miko-skills.js'),context={window:{},MikoSkills:K};
+ vm.runInNewContext(fs.readFileSync(require.resolve('../public/js/render/miko-skill-renderer.js'),'utf8'),context);
+ const renderer=context.window.MikoSkillRenderer,icons=[],icon={},ctx={save(){},restore(){},fillRect(){},drawImage(image){icons.push(image);}},assets={'icon-spirit-kagura':{image:icon}};
+ for(const job of jobs.filter(j=>j!=='miko'))for(const tier of [1,2]){
+  const s=ready([`solo-${job}-3`]);s.reincarnation.appliedTrials.push(`solo-miko-${tier}`);
+  const run=S.createRun('dimensional-gate',{builds:{[job]:P.stats(s,job)},trials:T.capture(s,'dimensional-gate'),random:()=>.5});
+  Support.tick(run,{hit:S.hit},[]);icons.length=0;
+  const regions=renderer.statuses(ctx,run,assets);
+  if(tier===1){assert.equal(run.mikoFestival,null);assert.equal(regions.length,0);continue;}
+  assert.equal(run.mikoFestival.spec.id,'solo-kagura');assert.equal(run.mikoFestival.spec.mp,undefined);
+  assert.equal(regions.length,1);assert.equal(regions[0].label,'巫女の援護 · 霊威 +20% · 残り 5.0秒');assert.deepEqual(icons,[icon]);
+  assert.equal(Miko.spirit(run),.2);
+  S.update(run,5000);assert.equal(run.mikoFestival,null);assert.equal(renderer.statuses(ctx,run,assets).length,0);
+ }
+ const s=ready(),run=S.createRun('dimensional-gate',{builds:{miko:P.stats(s,'miko')},random:()=>.5}),spec=K.spec('spirit-kagura');
+ run.mikoFestival={source:run.hero,spec,start:0,until:spec.lifetime};
+ assert.equal(renderer.statuses(ctx,run,assets)[0].label,spec.name+' · '+K.parameters(spec)+' · 残り 6.0秒');
+});
+
 test('solo miko can choose kagura with the existing MP, cooldown and target guards',()=>{
  const s=ready(['solo-miko-1']);for(const n of P.SKILLS.miko.filter(n=>n.kind==='active'))while(P.purchase(s,'miko','skills',n.id)){}const run=S.createRun(1,{builds:{miko:P.stats(s,'miko')},trials:T.capture(s,1)}),a=run.hero;const festival=a.mikoSkills.find(n=>n.id==='spirit-kagura');assert.ok(festival);a.mikoSkills=[festival];run.time=3000;run.enemies[0].hp=1e20;assert.equal(Miko.choose(run,a)?.spec.id,'spirit-kagura');a.mp=0;assert.equal(Miko.choose(run,a),null);a.mp=a.maxMp;a.mikoCooldowns[festival.id]=1;assert.equal(Miko.choose(run,a),null);
 });
