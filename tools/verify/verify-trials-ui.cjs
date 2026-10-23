@@ -30,6 +30,39 @@ async function main(){
   const own=(seed,id)=>{for(const p of T.byId[id].requires)if(p!=='origin'&&!seed.reincarnation.owned.includes(p))own(seed,p);if(id!=='origin')seed.reincarnation.owned.push(id);};
   async function trials(page){await menu(page,'reincarnation');await page.locator('[data-reinc-tab="trials"]').click();}
   async function win(page){await page.locator('#start-button').click();await page.evaluate(()=>ForestSimulation.hit(testRun,testRun.hero,testRun.enemies[0],1e30,[],false,null,{critical:false}));await page.clock.runFor(4000);if(await page.locator('#unlock-intro').isVisible())await page.locator('#unlock-continue').click();await page.locator('#result-skip').click();await page.locator('#retry-button').click();await page.locator('#pause-button').click();}
+  if(process.argv.includes('--pt-display-only')){
+   const Trials=require('../../public/js/core/trials.js');
+   // This selection order reproduces 6749.999999999999 from real trial rules.
+   const high=['onslaught','unyielding','gate-release','seal-gear','goddess-serious','seal-gems','strength-10'];
+   for(const width of [1440,390])for(const [name,ids,label] of [['high',high,'6,750'],['decimal',['onslaught','unyielding','seal-skills'],'3.375'],['none',[],'1']]){
+    const seed=B.reference();seed.autoMode='off';seed.selectedStage='reincarnation-goddess';
+    Object.assign(seed.reincarnation,{unlocked:true,cycle:20,total:1000000,journey:1,trialRun:ids.length>0,trials:ids,trialCompleted:Trials.definitions.map(d=>d.id)});own(seed,'trial-open');own(seed,'trial-seals');
+    if(name==='high'){own(seed,'xp2187');own(seed,'gold2');Object.assign(seed.reincarnation,{defeatedCycle:20,pendingPoints:675000,duoDefeatedJourney:1,appliedTrials:['strength-10','onslaught','unyielding','goddess-serious']});}
+    assert.equal(Trials.rules(D.readSave(JSON.stringify(seed))).reward.toLocaleString('ja-JP',{maximumFractionDigits:3}),label);
+    const {page,context}=await pageFor(seed,width);
+    await page.locator('#start-button').click();await page.locator('#pause-button').click();
+    if(ids.length){
+     assert.equal(await page.locator('#battle-trials').innerText(),'試練 PT×'+label);
+     assert.ok(await page.locator('#battle-trials').evaluate(e=>{const b=e.getBoundingClientRect(),a=e.closest('.arena').getBoundingClientRect();return b.left>=a.left&&b.right<=a.right&&e.scrollWidth<=e.clientWidth;}),'PT badge stays inside arena');
+     await page.locator('.arena').screenshot({path:path.join(output,'pt-'+name+'-'+width+'.png')});
+    }else assert.equal(await page.locator('#battle-trials').isVisible(),false);
+    if(name==='high'){
+     await menu(page,'reincarnation');
+     assert.equal(await page.locator('.rebirth-summary>div>span').innerText(),'収穫 ×1 · 経験値 ×2,187 · ゴールド ×20');
+     await page.locator('[data-rebirth-review]').click();
+     assert.equal(await page.locator('.rebirth-bonuses').innerText(),'収穫 ×1 / 経験値 ×2,187 / ゴールド ×20');
+     await page.locator('[data-reinc-back]').click();
+    }
+    await trials(page);
+    if(name==='high')assert.ok((await page.locator('.trial-permanent').innerText()).includes('PT ×1.5'));
+    assert.equal(await page.locator('.trial-summary>div>span').innerText(),'今周 転生PT ×'+label);
+    assert.equal(await page.locator('.trial-start>div>span').innerText(),'転生PT ×'+label);
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    if(name==='high')await page.screenshot({path:path.join(output,'pt-menu-'+width+'.png')});
+    await context.close();
+   }
+   assert.deepEqual(errors,[]);console.log('Trial PT display passed at 1440px/390px: large multiplier, fractional multiplier, no trials, current/next journey and badge bounds.');return;
+  }
   for(const width of (process.argv.includes('--effects-only')||process.argv.includes('--gate-only')?[]:process.argv.includes('--mobile-only')?[390]:[1440,390])){
    const seed=B.reference();seed.autoMode='off';Object.assign(seed.reincarnation,{unlocked:true,cycle:20,total:2000});for(const id of T.byId['trial-open'].requires)own(seed,id);
    assert.equal(seed.reincarnation.owned.includes('drop4'),false);

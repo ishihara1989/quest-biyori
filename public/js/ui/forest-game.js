@@ -72,6 +72,7 @@
     onChange: (scope, write) => { if (write) { requestAutomaticGear(); persist(); refreshResources(); } if (scope === 'auto') renderOptions(); else renderInventory(); $('tooltip').hidden = true; },
     onInspect: uid => { selectedGem = uid; gemFilter = 'gem'; Object.assign(gemView,ForestGemInventory.defaults()); renderInventory(); } });
   const format = number => number.toLocaleString('ja-JP', { maximumFractionDigits: 2 });
+  const formatMultiplier = number => number.toLocaleString('ja-JP', { maximumFractionDigits: 3 });
   function text(id, value) { if ($(id).textContent !== value) $(id).textContent = value; }
   function persist() {
     if (resetting) return;
@@ -405,7 +406,7 @@
   }
   function hud() {
     const badge=$('battle-trials');badge.hidden=run.trials.reward===1;
-    text('battle-trials','試練 PT×'+run.trials.reward);
+    text('battle-trials','試練 PT×'+formatMultiplier(run.trials.reward));
     badge.dataset.tip=run.trials.ids.map(id=>Trials.byId[id].name).join(' / ');
     const hero = run.hero;
     refreshPartyVitals();
