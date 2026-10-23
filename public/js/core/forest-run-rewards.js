@@ -9,6 +9,7 @@
     return { enemies: new Map(), gold: 0, goldRemainder: run.goldRemainder, settled: false,
       hunt: (1+[run.hero, ...run.allies].reduce((sum, actor) => sum + (actor.treasureHunt || 0), 0)+(run.reincarnationBonuses?.rate||0)/100)*(run.reincarnationBonuses?.trialRate||1)-1,
       countMultiplier: run.reincarnationBonuses?.drop || 1,
+      materialsEnabled: !run.trials?.seals?.gear, gemsEnabled: !run.trials?.seals?.gems,
       dropLevel: run.stage.dropLevel, multiplier: run.stage.gemMultiplier };
   }
   function record(pending, event) {
@@ -26,11 +27,12 @@
     // The original per-enemy odds are evaluated only after a clear. Pending
     // rewards are never added to the player's persistent save during combat.
     for (const [enemy, count] of pending.enemies) for (let i = 0; i < count; i++) {
-      for (const id of D.rollMaterials(enemy, random, pending.hunt)) {
+      // Goddess residue remains available for the goddess equipment entrance.
+      for (const id of pending.materialsEnabled || D.ALL_ENEMIES[enemy]?.goddess ? D.rollMaterials(enemy, random, pending.hunt) : []) {
         const count = pending.countMultiplier;
         if (count) { save.inventory[id] = (save.inventory[id] || 0) + count; add(id,count); }
       }
-      for (const rolled of D.rollGems(enemy, random, pending.hunt, { level: pending.dropLevel, multiplier: pending.multiplier, epicFamilies:P.Gem.epicPool(save) })) {
+      for (const rolled of pending.gemsEnabled ? D.rollGems(enemy, random, pending.hunt, { level: pending.dropLevel, multiplier: pending.multiplier, epicFamilies:P.Gem.epicPool(save) }) : []) {
        const copies = pending.countMultiplier;
        for(let copy=0;copy<copies;copy++){
         const rolledCopy=copy===0?rolled:P.Gem.generate({rarity:rolled.rarity,level:rolled.level,random,epicFamilies:P.Gem.epicPool(save)});
