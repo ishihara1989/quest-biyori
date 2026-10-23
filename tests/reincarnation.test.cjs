@@ -84,6 +84,31 @@ test('skipping commits passage only on a win, recruits allies, grants no skipped
  const gold=s.gold;D.award(s,5,0,R.capture(s));assert.deepEqual(s.reincarnation.passed,[4]);assert.ok(P.unlocked(s,'mage'));assert.equal(s.progression.characters.mage.xp.level,4);assert.equal(s.cleared.includes(4),false);assert.equal(s.gold-gold,D.STAGES[4].reward);assert.equal(R.skipDestination(s,9),10);assert.equal(R.skipDestination(s,100),null);assert.equal(R.skipDestination(s,'extradimensional-goddess'),null);
  A.sync(s);assert.equal(s.achievements.earned['stage-4'],undefined);assert.ok(!s.reincarnation.passed.includes(6));
 });
+test('extended star travel requires each purchase, spends exact points and survives reload',()=>{
+ const s=D.freshSave();Object.assign(s.reincarnation,{discovered:true,unlocked:true,cycle:20000,total:2000000});own(s,'skip4');
+ const old=D.readSave(JSON.stringify(s));assert.equal(R.bonuses(old).skip,4);assert.deepEqual(old.reincarnation.owned,s.reincarnation.owned);
+ assert.equal(R.purchase(s,'skip10'),false);
+ for(const [id,parent,cost,width] of [['skip5','skip4',200000,5],['skip10','skip5',1000000,10]]){
+  assert.deepEqual(T.byId[id].requires,[parent]);assert.equal(T.byId[id].cost,cost);
+  const spent=T.spent(R.state(s));s.reincarnation.total=spent+cost-1;
+  assert.equal(R.status(s,id),'unaffordable');assert.equal(R.purchase(s,id),false);
+  s.reincarnation.total++;assert.equal(R.purchase(s,id),true);assert.equal(R.points(s),0);assert.equal(R.purchase(s,id),false);
+  assert.equal(R.bonuses(s).skip,width);
+  s.reincarnation.cycle=Math.floor(s.reincarnation.total/100);
+  const restored=D.readSave(JSON.stringify(s));assert.deepEqual(restored.reincarnation.owned,s.reincarnation.owned);assert.equal(R.bonuses(restored).skip,width);assert.equal(R.points(restored),0);
+  for(let from=0;from<100;from++)assert.equal(R.skipDestination(restored,from),Math.min(from+width,Math.ceil((from+1)/10)*10));
+  assert.equal(R.skipDestination(restored,100),null);assert.equal(R.skipDestination(restored,'dimensional-gate'),null);
+ }
+ for(const id of ['skip5','skip10']){
+  const run=D.freshSave();own(run,id);const target=id==='skip5'?5:10;
+  assert.equal(D.isUnlocked(run,target),true);assert.equal(D.isUnlocked(run,11),false);assert.deepEqual(run.reincarnation.passed,[]);
+  const gold=run.gold;D.award(run,target,0,R.capture(run));
+  assert.deepEqual(run.reincarnation.passed,Array.from({length:target-1},(_,i)=>i+1));assert.deepEqual(run.cleared,[target]);assert.equal(run.gold-gold,D.STAGES[target-1].reward);
+  assert.ok(P.unlocked(run,'mage'));A.sync(run);assert.equal(run.achievements.earned['stage-4'],undefined);
+ }
+ const nodes=T.nodes.filter(n=>n.x===400).sort((a,b)=>a.y-b.y);for(let i=1;i<nodes.length;i++)assert.ok(nodes[i].y-nodes[i-1].y>=112,'journey nodes overlap');
+});
+
 test('post-roll drop count multiplies actual materials and separately generated gem individuals; gold and first rewards stay separate',()=>{
  const s=D.freshSave();own(s,'drop2');own(s,'gold2');const run=S.createRun(1,{builds:{warrior:P.stats(s,'warrior')}}),pending=Rewards.create(run);Rewards.record(pending,{type:'loot',enemy:'boss-slime',gold:4,goldRemainder:0});const result=Rewards.settle(s,pending,true,()=>0);
  assert.equal(result.loot.jelly,2);assert.equal(result.loot.crystal,2);assert.equal(result.gems.length,2);assert.equal(new Set(result.gems.map(g=>g.id)).size,2);assert.equal(result.gold,4);assert.equal(Rewards.settle(s,pending,true),null);
