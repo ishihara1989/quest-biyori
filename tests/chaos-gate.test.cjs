@@ -10,7 +10,7 @@ test('chaos unlocks exactly once on castle 10 and has independent repeat/fallbac
   assert.equal(U.collect(save,100).filter(e=>e.id===C.ID&&e.special).length,1);
   D.award(save,100);assert.equal(D.isUnlocked(save,C.ID),true);assert.deepEqual(U.collect(save,100),[]);
   assert.equal(D.stageLabel(C.ID),'混沌の門');assert.equal(D.stageId(C.ID),C.ID);
-  assert.equal(D.STAGES.length,100);assert.equal(D.nextStage(100),undefined);assert.equal(D.nextStage(C.ID).id,'extradimensional-goddess');
+  assert.equal(D.STAGES.length,100);assert.equal(D.nextStage(100).id,Special.ID);assert.equal(D.nextStage(C.ID).id,'extradimensional-goddess');
   for(const mode of ['same','advance']){save.autoMode=mode;assert.deepEqual(D.autoDestination(save,C.ID,true),{stage:C.ID,mode});assert.deepEqual(D.autoDestination(save,C.ID,false),{stage:100,mode:'same'});assert.deepEqual(D.autoDestination(save,Special.ID,false),{stage:50,mode:'same'});}
   save.autoMode='off';assert.equal(D.autoDestination(save,C.ID,false),null);assert.equal(D.autoDestination(save,C.ID,true),null);
 });
