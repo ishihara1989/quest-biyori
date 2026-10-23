@@ -9,12 +9,12 @@ function fullBuild(){const {save}=A.referenceBuild(50,50);for(const id of Object
   assert.equal(save.progression.characters[id][slot].length,500);
 }return save;}
 const builds=save=>Object.fromEntries(Object.keys(P.CHARACTERS).map(id=>[id,P.stats(save,id)]));
-test('named special stages unlock on ruins 10 and stay outside numbered routes',()=>{
+test('named special stages unlock on ruins 10 and connect after the numbered route',()=>{
   const save=D.freshSave();save.cleared=[49];assert.equal(D.isUnlocked(save,Rift.ID),false);
   const unlocks=U.collect(save,50);assert.ok(unlocks.some(e=>e.id===Rift.ID&&e.special));
   D.award(save,50);assert.equal(D.isUnlocked(save,Rift.ID),true);assert.deepEqual(U.collect(save,50),[]);
   assert.equal(D.stageLabel(Rift.ID),'次元の門');assert.equal(D.stageId(Rift.ID),Rift.ID);assert.equal(D.STAGES.length,100);
-  assert.equal(D.nextStage(50).id,51);assert.equal(D.nextStage(60).id,61);assert.equal(D.nextStage(70).id,71);assert.equal(D.nextStage(80).id,81);assert.equal(D.nextStage(90).id,91);assert.equal(D.nextStage(100),undefined);assert.equal(D.nextStage(Rift.ID),undefined);
+  assert.equal(D.nextStage(50).id,51);assert.equal(D.nextStage(60).id,61);assert.equal(D.nextStage(70).id,71);assert.equal(D.nextStage(80).id,81);assert.equal(D.nextStage(90).id,91);assert.equal(D.nextStage(100).id,Rift.ID);assert.equal(D.nextStage(Rift.ID).id,Rift.CHAOS.ID);
   save.autoMode='advance';assert.deepEqual(D.autoDestination(save,Rift.ID,true),{stage:Rift.ID,mode:'advance'});
   assert.deepEqual(D.autoDestination(save,Rift.ID,false),{stage:50,mode:'same'});
   save.autoMode='off';assert.equal(D.autoDestination(save,Rift.ID,false),null);

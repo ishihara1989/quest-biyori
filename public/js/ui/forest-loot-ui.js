@@ -4,7 +4,7 @@ window.ForestLootUI = {
     const $ = id => document.getElementById(id), D = ForestData, L = ForestLoot;
     let plan, shown = new Set(), groupShown = new Set(), completed = false, recruitDuration = 0, recruited = null, unlockDuration = 0, skipped = false;
     const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-    function render({ victory, rewards, loot, gold, stage, elapsed, kills, xp, failureReason, trialReward = 1, skip = false, repeatDelay = L.REPEAT_DELAY }) {
+    function render({ victory, rewards, loot, gold, stage, save, elapsed, kills, xp, failureReason, trialReward = 1, skip = false, repeatDelay = L.REPEAT_DELAY }) {
       skipped = skip;
       plan = L.presentation(loot, gold, { reduced: reduced || skipped, gemItems: gemItems(), repeatDelay }); shown = new Set(); groupShown = new Set(); completed = false;
       recruited = victory ? rewards.recruited : null;
@@ -70,7 +70,8 @@ window.ForestLootUI = {
       $('loot-status').textContent = reduced ? '獲得品' : '開封中';
       $('result-skip').hidden = reduced;
       $('retry-button').querySelector('span').textContent = victory ? '再戦' : '再挑戦';
-      $('next-button').hidden = !victory || !D.nextStage(stage.id);
+      const next = D.nextStage(stage.id, save);
+      $('next-button').hidden = !victory || !next || !D.isUnlocked(save, next.id);
       tick(0);
       return plan;
     }

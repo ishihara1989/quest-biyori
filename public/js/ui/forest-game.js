@@ -351,7 +351,7 @@
       persist(); refreshResources(); refreshGrowth(); renderRoute();
     }
     if (!victory && save.autoMode !== 'off') { save.autoMode = 'same'; persist(); refreshAutoControls(); }
-    lootUI.render({ victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason, trialReward:run.trials.reward, skip: resultOptions.skip, repeatDelay: resultOptions.delay * 1000 });
+    lootUI.render({ save, victory, rewards, loot: runLoot, gold: settled.gold + rewards.gold, stage: run.stage, elapsed: run.elapsed, kills: run.kills, xp: runXp, failureReason:run.failureReason, trialReward:run.trials.reward, skip: resultOptions.skip, repeatDelay: resultOptions.delay * 1000 });
     if ($('menu-dialog').open) refreshOpenMenu();
     if (victory) burst(512, 240, '#f1d890', 40);
     canvas.setAttribute('aria-label', (run.stage.realmName || REGIONS[run.stage.region - 1].name) + ' ' + (run.stage.special?run.stage.name:stageLabel(run.stage.id)) + (victory ? ' クリア' : ' 敗北'));

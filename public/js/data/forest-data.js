@@ -149,7 +149,12 @@
   const ALL_STAGES = [...STAGES, ...SPECIAL_STAGES];
   const stageLabel = id => { const stage = ALL_STAGES.find(s => s.id === id); return stage ? stage.special ? stage.name : stage.region + '-' + stage.number : ''; };
   const stageId = value => ALL_STAGES.find(s => String(s.id) === String(value))?.id;
-  const nextStage = (id, save) => { const stage = ALL_STAGES.find(s => s.id === id); return id==='chaos-gate'?stageFor(save,Goddess.ID):stage && !stage.special ? STAGES.find(s => s.id === id + 1) : undefined; };
+  const nextStage = (id, save) => {
+    const stage = ALL_STAGES.find(s => s.id === id);
+    if (!stage || id === Goddess.ID && Trials.serious(save)) return undefined;
+    const nextId = { 100: Special.ID, [Special.ID]: Special.CHAOS.ID, [Special.CHAOS.ID]: Goddess.ID, [Goddess.ID]: RebirthData.ID }[id];
+    return stageFor(save, nextId ?? (!stage.special ? id + 1 : undefined));
+  };
   const RARITIES = {
     common: { name: 'コモン', english: 'COMMON', color: '#ffffff', rank: 0 },
     uncommon: { name: 'アンコモン', english: 'UNCOMMON', color: '#7ddcff', rank: 1 },
