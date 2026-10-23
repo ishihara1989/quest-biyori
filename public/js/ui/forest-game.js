@@ -66,7 +66,7 @@
     requestAutomaticGear(); runAutomaticGear(); persist(); renderOptions(); document.querySelector(focus)?.focus({ preventScroll: true }); $('tooltip').hidden = true;
   } });
   const conversionUI = ForestConversionUI.create({ save, itemImage, itemTip, icon, initialRegion: run.stage.region,
-    onConvert: () => { requestAutomaticGear(); runAutomaticGear(); persist(); refreshResources(); refreshGrowth(); } });
+    onConvert: () => { invalidateBuilds(); requestAutomaticGear(); runAutomaticGear(); persist(); refreshResources(); refreshGrowth(); } });
   const gemWorkshop = GemWorkshopUI.create({save,itemImage,icon,notify,onChange:(write=true)=>{if(write){invalidateBuilds();requestAutomaticGear();persist();refreshResources();refreshGrowth();}renderInventory();},onCraft:uid=>{selectedGem=uid;gemFilter='gem';Object.assign(gemView,ForestGemInventory.defaults());renderInventory();}});
   const gemDismantleUI = GemDismantleUI.create({ save, itemImage, itemTip, icon, notify,
     onChange: (scope, write) => { if (write) { requestAutomaticGear(); persist(); refreshResources(); } if (scope === 'auto') renderOptions(); else renderInventory(); $('tooltip').hidden = true; },
