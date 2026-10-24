@@ -17,6 +17,8 @@
 
 ## 設計・仕様・提案
 
+- [試練の追加敵：全10地域のSFデザイン初稿（静止画のみ・未承認）](design/trial-intruder-enemy-designs.md)
+
 - [ソロ試練I〜III：攻略順・混沌の門・職別PT倍率（1,080戦・巫女のソロ神楽AI案）](design/solo-trial-balance.md)
 
 - [封印・ソロ試練と転生中盤のバランス案（8,000 PT以下全取得の基準測定・報酬と解放順の候補）](design/sealed-trials-and-progression.md)
