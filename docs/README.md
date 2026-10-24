@@ -17,6 +17,8 @@
 
 ## 設計・仕様・提案
 
+- [試練追加敵11体：モーションとSFエフェクト企画（地域各3技・外宇宙の女神のブレード戦）](design/trial-intruder-motion-effects.md)
+
 - [試練の追加敵：全10地域＋外宇宙の女神（遺跡・玉座の女形案、左向き待機の基準）](design/trial-intruder-enemy-designs.md)
 
 - [ソロ試練I〜III：攻略順・混沌の門・職別PT倍率（1,080戦・巫女のソロ神楽AI案）](design/solo-trial-balance.md)
