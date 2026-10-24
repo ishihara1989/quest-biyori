@@ -1,0 +1,17 @@
+{
+  "name": "ヒュドラ",
+  "source": "public/assets/enemies/hydra/motions/idle/idle-01.png",
+  "sha256": "d9411a1305c49a5b8741926eb2bcf39dd2367840a315f7cb9b6303366957c66e",
+  "file": "references/hydra-idle-adopted.png",
+  "frameWidth": 704,
+  "frameHeight": 448,
+  "pivot": {
+    "x": 408,
+    "y": 431
+  },
+  "scale": 0.82,
+  "existingHeight": 267,
+  "scaleEvidence": "public/js/data/forest-data.js:28 and drawAsset in public/js/ui/forest-game.js",
+  "candidateCellPixels": 307,
+  "note": "Existing boss uses its actual drawing scale and pivot. Trial material size is for comparison only, not a new enemy definition."
+}

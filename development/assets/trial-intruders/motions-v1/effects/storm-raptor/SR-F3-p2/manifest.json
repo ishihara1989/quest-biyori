@@ -1,0 +1,27 @@
+{
+  "id": "SR-F3-p2",
+  "label": "斜めの飛行残像",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "kind": "image-reuse",
+  "source": "current-body-frame",
+  "reason": "Delayed original transparent body image is the matching afterimage, no new silhouette or recolor",
+  "instances": [
+    {
+      "delayMs": 75,
+      "alpha": 0.2
+    },
+    {
+      "delayMs": 145,
+      "alpha": 0.08
+    }
+  ],
+  "delayMs": [
+    80,
+    150
+  ],
+  "alpha": [
+    0.22,
+    0.1
+  ]
+}

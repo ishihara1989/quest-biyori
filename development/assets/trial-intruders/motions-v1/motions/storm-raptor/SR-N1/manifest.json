@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "SR-N1",
+  "label": "翼端パルス",
+  "enemy": "storm-raptor",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": false,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1150,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 220,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          128,
+          235
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 230,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          295
+        ],
+        "muzzle": [
+          128,
+          235
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 250,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          285
+        ],
+        "muzzle": [
+          128,
+          235
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 450,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          128,
+          235
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    }
+  ],
+  "source": [
+    "../../../source/SR-N1-1.png"
+  ],
+  "endBehavior": "return-idle",
+  "terminal": false
+}

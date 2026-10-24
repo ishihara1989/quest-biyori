@@ -1,0 +1,17 @@
+{
+  "id": "OG-F3",
+  "label": "短い身体残像",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "kind": "image-reuse",
+  "source": "current-body-frame",
+  "role": "Two delayed translucent image layers; no procedural silhouette or recolor",
+  "alpha": [
+    0.22,
+    0.1
+  ],
+  "delayMs": [
+    80,
+    150
+  ]
+}

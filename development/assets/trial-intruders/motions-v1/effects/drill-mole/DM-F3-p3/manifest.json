@@ -1,0 +1,17 @@
+{
+  "id": "DM-F3-p3",
+  "label": "制動火花",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "kind": "image-reuse",
+  "source": "DM-F1-p2",
+  "reason": "Same amber metal spark sprite placed at braking claw contacts",
+  "instances": [
+    {
+      "anchor": "nearClaw"
+    },
+    {
+      "anchor": "farClaw"
+    }
+  ]
+}

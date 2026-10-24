@@ -1,0 +1,14 @@
+{
+  "id": "FC-F1-p3",
+  "label": "頭脇の排気光",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "kind": "image-reuse",
+  "source": "DM-F3-p2",
+  "reason": "Matching short orange/gray mechanical head-side exhaust; place at head vent",
+  "instances": [
+    {
+      "scale": 0.65
+    }
+  ]
+}

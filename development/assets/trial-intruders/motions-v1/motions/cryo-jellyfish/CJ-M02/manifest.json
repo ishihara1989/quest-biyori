@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "CJ-M02",
+  "label": "移動",
+  "enemy": "cryo-jellyfish",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": true,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 480,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          180,
+          252
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          295
+        ],
+        "muzzle": [
+          180,
+          252
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          285
+        ],
+        "muzzle": [
+          180,
+          252
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          180,
+          252
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    }
+  ],
+  "source": [
+    "../../../source/CJ-M02-1.png"
+  ],
+  "endBehavior": "loop",
+  "terminal": false
+}

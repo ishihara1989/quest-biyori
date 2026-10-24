@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "RT-N1",
+  "label": "薬液カプセル砲",
+  "enemy": "reactor-toad",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": false,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1300,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 300,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          135,
+          315
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": {
+        "muzzle": [
+          93,
+          283
+        ],
+        "belly": [
+          238,
+          376
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/RT-N1-grid.png"
+      }
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 300,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          135,
+          315
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": {
+        "muzzle": [
+          95,
+          282
+        ],
+        "belly": [
+          241,
+          379
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/RT-N1-grid.png"
+      }
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          135,
+          315
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": {
+        "muzzle": [
+          86,
+          254
+        ],
+        "belly": [
+          242,
+          368
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/RT-N1-grid.png"
+      }
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 500,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          135,
+          315
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": {
+        "muzzle": [
+          87,
+          284
+        ],
+        "belly": [
+          236,
+          382
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/RT-N1-grid.png"
+      }
+    }
+  ],
+  "source": [
+    "../../../source/RT-N1-single-1.png",
+    "../../../source/RT-N1-single-2.png",
+    "../../../source/RT-N1-single-3.png",
+    "../../../source/RT-N1-single-4.png"
+  ],
+  "endBehavior": "return-idle",
+  "terminal": false
+}

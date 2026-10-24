@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "id": "G11",
+  "label": "制動・構え直し",
+  "enemy": "outer-space-goddess",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": false,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 900,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "plannedAnchors": {
+        "waist": [
+          242,
+          290
+        ],
+        "mainEmitter": [
+          190,
+          323
+        ],
+        "offEmitter": [
+          221,
+          276
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 280,
+      "plannedAnchors": {
+        "waist": [
+          247,
+          300
+        ],
+        "mainEmitter": [
+          222,
+          333
+        ],
+        "offEmitter": [
+          225,
+          285
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "plannedAnchors": {
+        "waist": [
+          253,
+          288
+        ],
+        "mainEmitter": [
+          260,
+          326
+        ],
+        "offEmitter": [
+          228,
+          298
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 240,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          280
+        ],
+        "mainEmitter": [
+          280,
+          330
+        ],
+        "offEmitter": [
+          222,
+          300
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    }
+  ],
+  "source": [
+    "../../../source/G11-1.png"
+  ],
+  "endBehavior": "return-idle",
+  "terminal": false
+}
