@@ -1,0 +1,443 @@
+{
+  "createdAt": "2026-10-24",
+  "timezone": "Asia/Tokyo",
+  "tool": "built-in image_gen.imagegen",
+  "skill": "imagegen",
+  "status": "left-idle-candidates-visually-reviewed",
+  "runtimeRegistered": false,
+  "userScope": "Eleven left-facing idle loops based on selected designs. Goddess whole body left, pale luminous lustrous eyes; only idle motion requested.",
+  "plan": "plan.json",
+  "processingPolicy": "Only measured crop, uniform nearest-neighbor scaling, translation and packing; original RGBA preserved; no recolor, alpha threshold editing, mirroring or procedural redraw.",
+  "goddessRevision": {
+    "source": "references/outer-space-goddess.png",
+    "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-3f860e05-d904-4308-b37d-d5a7f23fbe43.png",
+    "prompt": "Use case: precise-object-edit\nAsset type: fixed LEFT-FACING base sprite for the Goddess of Outer Space, for use as a subsequent idle-animation identity reference.\nInput reference: keep the specified character identity and costume from this concept, but TURN HER ENTIRE BODY TO THE LEFT. Her most recent appearance still had chest and hips aimed right; the user explicitly requires shoulders, torso, waist, hips, knees and toes all aimed toward screen-LEFT.\nPose: a coherent full-body 70-degree left-facing three-quarter/profile enemy stance. Her LEFTWARD nose is on the left silhouette; the visible near shoulder is on the RIGHT side of her chest in the image; her chest front and belt buckle face screen-left, the BACK is at screen-right. The near breast is located on the LEFT side of the torso silhouette, NOT the right. Knees and both boot toes point LEFT. Head aligned naturally with shoulders, no head looking backward, no torso twist, no over-shoulder pose. Slight relaxed float, arms hanging at sides, full figure at rest.\nEye change, highest priority: a clear pale ICE-LAVENDER/near-white lilac iris with pearly LUSTROUS shine and a bright luminous core, 2 clean white highlights. A thin dark pupil/iris border gives definition. Bold sharp upper eyelash and brow frame the softly glowing pale eye, forceful calm gaze aimed left. The eye is a LIGHT color, not dark saturated purple. Tiny localized glow on the eyelid only, no laser, glare ray, or full-face bloom. The near eye must be uncovered by the short fringe.\nPreserve adult woman, dark warm-brown skin, jaw-length silver SHORT BOB, very slender long limbs, fitted black/navy suit, ivory and subtle gold SF collar, forearm, hip and shin parts, one violet oval sternum core. THREE separated orbital halo arcs behind head and upper body, aligned in the same left-facing three-quarter plane as her torso, and TWO long detached ivory fins beside the legs. Do not add wings, hair length, skirt or additional limbs.\nStyle: RE-DRAW as clean deliberate chunky pixel art, designed at around a 256-pixel character height and enlarged with hard nearest-neighbor-like pixel clusters. Discrete 4-5 shade ramps per material, crisp dark outline, no painterly fine noise or semi-transparent outline grit.\nComposition: exactly ONE whole full-body sprite in a square image, whole figure including halo/fins/toes entirely within the central 72% of canvas, generous margin all around, no cropping.\nBackdrop: flat uniform LIGHT NEUTRAL GRAY (#dadada), no shadow, no gradient, no transparency or glow in empty space. No text, grid, labels or watermark. The gray backdrop is for checking this revised facing and face before the transparent loop sheet is made.",
+    "userChanges": [
+      "shoulders, chest, waist, hips and toes left",
+      "pale ice-lilac luminous glossy eye with catchlight"
+    ],
+    "input": "../design-v1/source/outer-space-goddess-v1.png",
+    "sha256": "b3b3dac0682966cbe0b2c7b1ca9ee7b0ccf753252dfb2ef31f3517f6e0cc04db"
+  },
+  "jobs": [
+    {
+      "id": "star-stag",
+      "label": "星芽の機鹿",
+      "region": 1,
+      "mode": "ground",
+      "source": "source/star-stag-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-396691fb-53d3-4fac-86c9-b38b4cbcec95.png",
+      "reference": "references/star-stag.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na slim FOUR-LEGGED cybernetic stag; TWO branching leaf-panel antlers; ivory articulated body, dark joints, green leaves, violet chest core; preserve thin legs and all four connections.\nPlanned 4-frame motion and local anchors:\nAll four hoof contact points stay fixed at y=432. Gentle chest expansion and neck/antler rise only 0,-3,0,+3 pixels; one tiny leaf-tip flex, no stepping and no bending the leg count.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 320,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "5f2bc5f2ffee283fb10e0c094a79b7b55117242cdd810709b81e4f2d75a67605",
+      "outputManifest": "motions/star-stag/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "38ee6c85e41ece86b91b850d173d69a8e4391344ce1c155501199216c918eb72"
+    },
+    {
+      "id": "reactor-toad",
+      "label": "瘴気の機蟾",
+      "region": 2,
+      "mode": "ground",
+      "source": "source/reactor-toad-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-9f0d36a8-d838-46d6-80da-641c8eb8c199.png",
+      "reference": "references/reactor-toad.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na squat reactor TOAD automaton, two small forelegs and two folded hindlegs, TWO translucent lime chemical tanks on the back, pale ceramic shell, dark belly, violet throat core.\nPlanned 4-frame motion and local anchors:\nFeet stay planted at y=432. Throat and upper shell gently expand then relax; tank liquid glints vary slightly. Torso height 0,-2,0,+2 pixels. Tanks remain the same size/shape, no bubbling particle FX.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 320,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "88f34417dd4ca7c8591ce5e6ab5eb65a39d95c8a555daaf7404eca8ace8eea33",
+      "outputManifest": "motions/reactor-toad/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "b52396ed40acd816fab0a06b49265b940c077553386bc3f89a947daa274c5083"
+    },
+    {
+      "id": "drill-mole",
+      "label": "深層の掘削獣",
+      "region": 3,
+      "mode": "ground",
+      "source": "source/drill-mole-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-351313a2-a3a2-43a2-bad1-ab14460aa439.png",
+      "reference": "references/drill-mole.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na heavy squat MOLE tunneling robot with TWO large shovel-claw forearms, two short rear legs, pointed drill nose facing left, rounded ivory armor, amber horizontal visor, violet chest core.\nPlanned 4-frame motion and local anchors:\nAll supporting claws and feet stay on y=432. Very small engine-breathing lift of back shell 0,-2,0,+2 pixels; amber visor remains fixed, no drill spin, no locomotion, do not add claws.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 320,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "72b84fb2da3fea3a3c7e559b54900a7e01e2717b04a2bfc69692cce8bf9fe334",
+      "outputManifest": "motions/drill-mole/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "8d3883eb85322ab11f540ced8bd37c6ac294d296169b4ec9e35a49d286c18ee7"
+    },
+    {
+      "id": "survey-manta",
+      "label": "潮境の星翼",
+      "region": 4,
+      "mode": "hover",
+      "source": "source/survey-manta-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-fa93266e-f03c-4a74-ade1-5ca6bcf980aa.png",
+      "reference": "references/survey-manta.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na broad flat manta-shaped survey craft with TWO swept cyan membrane wings, ivory central body, TWO short dangling sensor pods, one thin trailing antenna tail, violet central core. Nose points strongly left.\nPlanned 4-frame motion and local anchors:\nCenter of main body at local (256,256), vertical offsets 0,-4,0,+4 pixels. Wing tips make a shallow 0,-5,0,+5 pixel flex, pods counter-swing 2 pixels, tail tip sways 3 pixels. No wing redesign or detached extra pod.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 280,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "20b882cc351ad70a613e3fa102d0c185fe06cbc5856f209718f2e0dff1e1b88a",
+      "outputManifest": "motions/survey-manta/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "94fad289a3a1b8b951dab9d1763ac8cff97e838b872a3d30c55169816a972e79"
+    },
+    {
+      "id": "archive-maiden",
+      "label": "星環の記録官",
+      "region": 5,
+      "mode": "hover",
+      "source": "source/archive-maiden-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-8da6f708-b557-4eab-b835-cd9e857916eb.png",
+      "reference": "references/archive-maiden.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\nthe approved slender FEMININE archive android: smooth dark face with ONE vertical violet sensor, white/antique-gold body, subtle feminine torso and narrow waist, long white segmented skirt armor, TWO arms and TWO legs, exactly FOUR rectangular floating data tablets. No hair or human skin.\nPlanned 4-frame motion and local anchors:\nWaist stays near (256,258), body vertical offsets 0,-3,0,+3 pixels; four tablets counter-float by 0,+2,0,-2 pixels. Skirt tips sway 2 pixels. Keep head facing left, face mask and feminine curves identical. Do not hide rear leg by merging limbs.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 300,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "fabcf8f139800256f008f2f26bd8d7cdcdd5ac5397b2f9d0a6777f5c13e9f37b",
+      "outputManifest": "motions/archive-maiden/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "ca54a027bab686c9cc81eb5854a272a30d4035aa749e2dbe1d3a111569df94d2"
+    },
+    {
+      "id": "solar-scarab",
+      "label": "日輪の機甲虫",
+      "region": 6,
+      "mode": "ground",
+      "source": "source/solar-scarab-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-d9b497d1-6c11-4ab2-8295-79ca23108c46.png",
+      "reference": "references/solar-scarab.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na gold/ivory SCARAB machine with exactly SIX insect legs, closed elliptical shell, ONE tall circular solar collector disk mounted over upper back, turquoise seams, violet thorax core. Insect head and horn aim left.\nPlanned 4-frame motion and local anchors:\nAll six feet fixed in stance, lower contact baseline y=432. Upper shell makes a tiny 0,-2,0,+2 pixel rise. Solar disk and horn remain rigid and round, no rolling, no shell opening, no extra legs.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 320,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "052e2ae206480d04ab7bfe32d72864a85b648d8b155d3a3c4e9c0e6ded87058c",
+      "outputManifest": "motions/solar-scarab/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "c78219087330fc6d0028dbbd4c7266591ddac5a6e15b48aaa09eae5550fb7e81"
+    },
+    {
+      "id": "storm-raptor",
+      "label": "天嵐の星隼",
+      "region": 7,
+      "mode": "hover",
+      "source": "source/storm-raptor-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-233c2551-5a0d-408f-841f-31c6a1f15a27.png",
+      "reference": "references/storm-raptor.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na sharp crested mechanical RAPTOR BIRD with TWO wide swept ceramic feather wings, TWO tucked clawed feet, one tapered tail, cyan/violet lights and violet chest core, white and charcoal plates. Beak and chest aim screen-left.\nPlanned 4-frame motion and local anchors:\nBody center near (256,260), offsets 0,-4,0,+4 pixels. Shallow hovering wing flex at shoulders and tips, not a full flap: wingtip y offsets 0,-8,0,+8 pixels. Keep total wingspan almost constant and talons tucked in every frame.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 220,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "sha256": "a435b221e8bf1f68c3b01b71213c4636b5f9d633a2cda2b20e9bf5502a1c5fb2",
+      "outputManifest": "motions/storm-raptor/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "referenceSha256": "af388088f1dcd69d230e6b51aad96589ed003acdd86af17202152e56ad90ab61"
+    },
+    {
+      "id": "cryo-jellyfish",
+      "label": "氷晶の観測体",
+      "region": 8,
+      "mode": "hover",
+      "source": "source/cryo-jellyfish-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-dbc889d8-68eb-48ac-aaac-745dd36bffc8.png",
+      "reference": "references/cryo-jellyfish.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na cryogenic JELLYFISH probe: transparent ice-blue bell, ivory crown and rim fins, suspended violet oval core, exactly FOUR broad segmented crystalline ribbons below; no eyes or human limbs. In a slightly left-facing three-quarter view with left edge leading.\nPlanned 4-frame motion and local anchors:\nCore centered near (256,210), y offsets 0,-3,0,+3 pixels. Glass bell gently compresses 1% and relaxes; four crystal ribbon tips sway only 3 pixels. Preserve exactly four ribbons and a single core in every frame.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.\nREVISED FACING PRIORITY: do NOT draw a bilaterally symmetric front view. Turn the bell/body 50 degrees toward SCREEN-LEFT, so the oval violet core is attached to and visible on the FRONT-LEFT SIDE of the glass bell, around the LEFT THIRD of the bell silhouette, instead of in its center. The central front pointed ivory rim plate points toward the left and is on the left silhouette. The far/right side wraps behind the body and shows a smaller far rim fin. The near-side crystalline ribbons are larger, while far-side ribbons recede and remain countable: EXACTLY FOUR ribbons. All four frames preserve this same LEFT-facing three-quarter orientation. Existing silhouette, ice-blue palette, ivory rim and single purple core remain recognizable. Left-facing perspective is more important than perfect bilateral symmetry.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 300,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "4895f7e1f6876d111407625ac6204a355ea5bc0cf5ade9477f3249ca82458f9b",
+      "outputManifest": "motions/cryo-jellyfish/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 3,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "referenceSha256": "155df1bab4b8f2884ef55864b6fc6793528ca582ec81bc07e0f87dd4f4a7bf2b"
+    },
+    {
+      "id": "furnace-centipede",
+      "label": "炉心の百足",
+      "region": 9,
+      "mode": "ground",
+      "source": "source/furnace-centipede-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-f7c9f36c-8a16-4897-8709-7e0ac2974924.png",
+      "reference": "references/furnace-centipede.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\nthe low C-curved FURNACE CENTIPEDE machine: black/ivory articulated long body, orange reactor seams, paired short repeated mechanical legs, narrow pointed head to screen-left, small violet head core, vent stacks. Same segment and leg topology in all frames.\nPlanned 4-frame motion and local anchors:\nAll tiny feet and tail support remain fixed, low baseline near y=432. Tiny sequential upper plate lift only 0,-2,0,+2 pixels along body, head nod 2 pixels. Tail shape and all leg connections unchanged, no walking wave, no smoke/particles.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 340,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "47b07786612989c1d815405464c3f9cf7c4de229c5449e199f3b213cd41f9bde",
+      "outputManifest": "motions/furnace-centipede/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "9e4c112a7b5a8bc670de9da7e83eb55bff660ee9fcae67d9b5b9932f4899bc72"
+    },
+    {
+      "id": "throne-queen",
+      "label": "宵星の女王機",
+      "region": 10,
+      "mode": "hover",
+      "source": "source/throne-queen-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-586b4c14-f812-4c2f-ae94-2c8f37b79066.png",
+      "reference": "references/throne-queen.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\nthe approved FEMININE throne-queen android: ivory sealed face with horizontal violet eye slit, five-piece angular crown, slender graphite/midnight-violet torso, two arms and two legs, long skirt of dark tapered plates, tall open angular throne-back frame with two vertical spars and broken inverted-V top. No silver hair, human skin or circular halo.\nPlanned 4-frame motion and local anchors:\nWaist near (256,260), y offsets 0,-3,0,+3 pixels. Crown and throne-back frame remain rigid with body, lower gown plates sway 2 pixels. Two relaxed hands visible, feet separated, do not turn to viewer.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "grid": [
+        2,
+        2
+      ],
+      "durationMs": 300,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "3b8530345f4363e34c0463509e970164be2b659e72513dc0b0354fc35d7f6f22",
+      "outputManifest": "motions/throne-queen/idle/manifest.json",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "6d69462d316ea1c21fbf15528479144a6c95fc230bbc465c66dfc4f113a89c8a"
+    },
+    {
+      "id": "outer-space-goddess",
+      "label": "外宇宙の女神",
+      "region": null,
+      "mode": "hover",
+      "source": "source/outer-space-goddess-idle-generated-v1.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-7ebedc54-c20a-4c2d-99e3-8f65e0e50ce2.png",
+      "reference": "references/outer-space-goddess.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame idle loop of the supplied left-facing Goddess of Outer Space.\nUse the input exactly as the FIXED character reference, preserving face, palette, LEFTWARD whole-body pose and costume. Her chest, waist, hips, knees and both toes all aim LEFT as shown, never reverse torso orientation. Dark brown skin, silver short bob, slim adult body, ivory/navy/gold SF suit, three broken halo arcs, two side fins.\nHer near eye is a PALE ICY LILAC, nearly white iris with PEARLY GLOSS and a tiny luminous white core, clean bright highlights, dark upper lash and sharp brow. Keep this pale luminous eye clearly visible and OPEN throughout; no saturated dark-purple iris and no blink.\nCreate exactly FOUR frames in ONE HORIZONTAL ROW, a wide landscape strip. Four equal-width columns, same height and consistent camera and scale. Top/bottom margins very generous. Each full figure is entirely inside the central70% of its column; halo and toes do not approach image edges. Full transparent gaps between all four copies; no columns overlap. Do not use a2x2 grid.\nIdle sequence left to right:1neutral floating stance,2wholebody rises slightly (about4px at256px character height) with hair and fins lagging2px,3neutral with hair/fins returning,4body sinks4px with fins laggingopposite. All three halo arcs move rigidly with head. Torso, face and all limbs retain identical facing, shape and size. No locomotion or turning.\nRender deliberate CRISP pixel-art sprites with clean hard dark outline, square color clusters and discrete palette. Remove the LIGHT GRAY reference backdrop completely; actual fully transparent RGBA around and between sprites. No colored fringe, no red/yellow outline grit, no glow beyond mechanical insets, no floor, shadows, gradient or painted checkerboard. No text, labels, separators or extra pieces. One complete character exactly four times.",
+      "grid": [
+        4,
+        1
+      ],
+      "durationMs": 300,
+      "frameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sha256": "ab3281cdad5014c084c118cfc8a261431b8d35fe2b7cfd16ad99632bb97c8e44",
+      "outputManifest": "motions/outer-space-goddess/idle/manifest.json",
+      "sourceSize": [
+        1983,
+        793
+      ],
+      "actualFrameCount": 4,
+      "actualFrameSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "referenceSha256": "b3b3dac0682966cbe0b2c7b1ca9ee7b0ccf753252dfb2ef31f3517f6e0cc04db"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "goddess-eye-base-early",
+      "source": "references/goddess-left-eye-base.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: fixed left-facing base sprite for a Japanese pixel-art idle RPG enemy, to become the reference for a 4-frame idle loop.\nInput image: edit the supplied Goddess of Outer Space concept. Preserve her identity and costume: adult woman with dark warm-brown skin, silver SHORT jaw-length bob, slender long limbs and slim silhouette, fitted navy-black torso and leg suit, ivory SF collar/forearm/shin/hip parts with tiny gold joints and purple oval chest core, THREE separated orbital halo arcs behind head/shoulders, TWO long detached ivory fin-panels beside lower body.\nPrimary request: re-pose into a clear screen-LEFT-facing three-quarter enemy idle stance, about 60 degrees turned toward screen-left, so face/nose, chest, feet all aim screen-left. Left is the side of the canvas; never face right or look at the viewer. Neutral upright floating position, two relaxed arms at sides, exactly two hands and two legs.\nMost important requested change: give her a much more compelling, intense gaze (Japanese '眼力'). The near eye is fully visible and boldly drawn, silver fringe swept clear of this eye. Sharply defined long upper lashes, thick confident dark eyebrows with a slight downward angle, a large vivid violet iris with crisp white catchlight and dark pupil, a dark sharp upper eyelid. Eyes look unwaveringly to screen-left. Proud composed expression with a tiny self-assured closed smile, strong presence, not angry screaming, not closed sleepy eyelids. Avoid white glowing blank eyes or laser beams. Preserve the dark skin, not pale.\nStyle: intentional chunky polished JRPG pixel art, visible square pixel clusters, discrete 4-6 tone ramps, dark 1-2 pixel outline; the character is designed around a 256-pixel-tall sprite and enlarged crisply. Do not copy the fine painted noise of the concept. Readable face and eye even at game sprite scale. No chibi; adult slim proportions.\nComposition: one complete full-body sprite including all 3 halo arcs and both long fins, in a square canvas with at least 12% blank margin on every side. Keep halo behind the head without eclipsing the near eye. No extra portrait, no closeup, no other character, no sprite-sheet cells.\nBackground: true transparent RGBA with fully transparent empty space and sharp alpha boundaries, no opaque scenery, no broad outer glow, no halo-shaped background gradient, no ground shadow, no matte, no checkerboard painted into image, no labels/watermarks.",
+      "reason": "Eye strengthened but whole-body facing needed correction; superseded by explicit user request for pale luminous eyes and full body left."
+    },
+    {
+      "id": "goddess-idle-early-a",
+      "source": "source/rejected/goddess-idle-early-a.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-bd9efb47-6e72-4bed-b096-f97617f1f733.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\nthe adult Goddess of Outer Space with DARK WARM BROWN skin, jaw-length SILVER SHORT BOB, SLENDER proportions, fitted navy/black suit, ivory SF forearm/shin/hip parts, purple chest core, THREE broken orbital halo arcs and TWO long detached ivory side fins. Face and strong visible violet eye exactly as fixed eye-base reference.\nPlanned 4-frame motion and local anchors:\nWaist near (256,260), body y offsets 0,-3,0,+3 pixels; halo moves with body as rigid three arcs, two side fins sway 2 pixels, short hair edge shifts 2 pixels. Keep the near eye OPEN and intense in all frames: bold upper lash line, sharp brow, bright violet iris with catchlight and dark pupil, gaze firmly left. No blink or looking at viewer.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "reason": "Body still twisted to the right and saturated violet eye; superseded by user clarification."
+    },
+    {
+      "id": "goddess-idle-early-b",
+      "source": "source/rejected/goddess-idle-early-b.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-6cb581b1-d7b9-4376-8229-a8c7879563c9.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: FOUR-FRAME looping left-facing idle sprite sheet for the supplied Goddess of Outer Space. Use supplied concept only as identity/costume reference.\nCreate a clean NEW 2x2 square animation sheet, exactly four equal cells. IMPORTANT: very generous blank space. Each entire full-body sprite occupies only the MIDDLE 60% of its own cell HEIGHT, from local y=100 to y=408 on a 512x512 conceptual cell. Entire halo, hands, side fins and toes must fit within this central region; at least 80 transparent pixels all around each figure. Tall adult slender proportions preserved by reducing the entire sprite, not squashing it.\nMatch adult dark-brown-skinned woman, silver short jaw-length bob, navy-black fitted suit and ivory/gold SF cuffs/shin guards/hip parts, violet chest core, exactly THREE separated orbital halo arcs and TWO long detached side fins.\nTurn the WHOLE figure, face, shoulders, torso, hips and toes into a screen-LEFT-facing 3/4 idle stance. Nose points left. Calm confident neutral float, two arms relaxed, two hands and two legs.\nEye enhancement: a large clearly visible near violet eye uncovered by fringe, bold dark upper eyelashes and sharp dark eyebrow, precise white catchlight and dark pupil; forceful composed gaze to the left in ALL four frames, no blinking. Dark skin must remain rich brown.\nAnimation order top-left, top-right, bottom-left, bottom-right: neutral, body rises 3px with fins swinging 2px outward, neutral with hair tips returning, body sinks 3px with fins 2px inward. Same scale, location, face, proportions and part counts. Loop4->1 smoothly.\nCRITICAL CLEAN RENDER: deliberate chunky pixel-art with hard dark brown/graphite outlines, limited crisp palettes and square clusters. NO RED, YELLOW, GREEN or GRAY fringe/noise around the sprite. NO antialiasing halo, compression noise, broad glow, dust, star field, gradient, or tiny detached edge specks. Empty space must be genuinely alpha-zero transparent, NOT black paint or a color matte. All visible pixels belong to character or its three halo arcs/two fins.\nOne character FOUR times; exact2x2 layout; no text, labels, frame borders, portrait, extra pieces or shadows. Transparent background.",
+      "reason": "Body still not fully left and eye not pale; superseded by user clarification."
+    },
+    {
+      "id": "jelly-idle-front",
+      "source": "source/rejected/jelly-idle-front.png",
+      "originalGeneratedPath": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-60dda27f-dadc-4d58-b608-36a780deb0c3.png",
+      "prompt": "Use case: precise-object-edit\nAsset type: four-frame looping IDLE animation sprite sheet for one enemy in an existing Japanese pixel-art RPG.\nInput: the supplied image is the approved character's identity/color/shape reference only. Discard any reference background, label, grid line, or grounded shadow.\nPrimary request: create exactly FOUR sequential full-body versions of this SAME character arranged in a precise 2 by 2 square sheet: frame1 upper-left, frame2 upper-right, frame3 lower-left, frame4 lower-right. Four equal square cells with generous fully TRANSPARENT gutters. NO other sprites, annotations, separators or text.\nFacing: EVERY FRAME is clearly screen-LEFT-facing THREE-QUARTER VIEW (about 60 degrees to the left), with nose/beak/face, chest and feet directed toward the LEFT edge of the image. Do not face right or stare frontally at viewer. Retain rear-side anatomy where visible. A symmetric creature without a face uses a slight left-leading three-quarter tilt.\nLayout: target 1024x1024 sheet, each conceptual cell512x512. In EACH cell the complete character fits between local x=58..454 and y=56..448, includes all antlers, wings, tails, fins, tablet/crown and hands/feet. Never let a limb cross cell edges. Use exactly identical camera, scale and part sizes across all four cells. Main body anchor same local x=256 throughout. Keep each entire sprite and its light entirely within cell with at least 40px transparent padding. No ground shadows or cast glows.\nAnimation: a calm breathing/hovering IDLE, not walking, attacking, turning or transforming. Frame1 neutral, frame2 slight upward/inward excursion, frame3 neutral with secondary parts returning, frame4 slight downward/outward excursion. Smooth 4->1 quarter-cycle join. Use real small visible drawn pose differences, not four duplicates, motion trails, opacity-only changes or tween blur. No changing camera or facing. Topology and identity never change.\nRendering: premium deliberately chunky pixel-art game sprites, dark crisp outline, visible square color clusters, 4-6 discrete tones per material, consistent pixel density and lighting across cells. Do NOT recreate fine painterly noise. Organic joints and mechanical connectors remain coherent. Preserve all signature material colors and part counts in every frame.\nBackground: actual RGBA transparency, fully alpha-zero empty space and gutters. No painted checkerboard, solid background, gradient, fog, particles, or floor. Keep emissive accents inside the sprite or tightly against it, no broad glow.\nCharacter invariants:\na cryogenic JELLYFISH probe: transparent ice-blue bell, ivory crown and rim fins, suspended violet oval core, exactly FOUR broad segmented crystalline ribbons below; no eyes or human limbs. In a slightly left-facing three-quarter view with left edge leading.\nPlanned 4-frame motion and local anchors:\nCore centered near (256,210), y offsets 0,-3,0,+3 pixels. Glass bell gently compresses 1% and relaxes; four crystal ribbon tips sway only 3 pixels. Preserve exactly four ribbons and a single core in every frame.\nConstraints: one character four times, exact 2x2 order, every copy intact and facing left, same body proportions and equipment, no additional design choices.",
+      "reason": "Near-symmetric front view; regenerated with a left-facing three-quarter bell/core."
+    }
+  ],
+  "acceptance": "User review pending; no runtime integration"
+}

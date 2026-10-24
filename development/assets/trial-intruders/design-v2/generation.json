@@ -1,0 +1,93 @@
+{
+  "createdAt": "2026-10-24",
+  "timezone": "Asia/Tokyo",
+  "status": "appearance-proposal-unapproved",
+  "tool": "built-in image_gen.imagegen",
+  "skill": "imagegen",
+  "baseRef": "dev",
+  "workBranch": "codex/trial-sf-enemy-designs",
+  "previousDesignCommit": "c226eef8",
+  "scope": "Static appearance revision only. No motion, animation, gameplay, runtime, balance or save edits.",
+  "userDecisions": {
+    "regionalIntruderCount": 10,
+    "outerSpaceGoddess": "Separate additional final boss planned after the reincarnation goddess, not the stage-100 intruder.",
+    "regionalFeminineSilhouettes": [
+      "region 5 ancient ruins",
+      "region 10 demon-castle throne"
+    ],
+    "motion": "Only after appearance approval."
+  },
+  "supersedes": [
+    "design-v1 stage-100 assignment of the Goddess of Outer Space",
+    "design-v1 panel 05 neutral/skeletal ruins appearance"
+  ],
+  "retains": [
+    "design-v1 regional concepts 01-04 and 06-09",
+    "design-v1 Goddess of Outer Space appearance; only placement corrected"
+  ],
+  "images": [
+    {
+      "id": "ruins-archivist-feminine-v2",
+      "file": "source/ruins-archivist-feminine-v2.png",
+      "sourceFile": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-3ad9ed3a-41c7-47c9-a514-db702a817d30.png",
+      "useCase": "precise-object-edit",
+      "transparentBackgroundRequested": false,
+      "referencedImage": "../design-v1/source/regions-01-09-lineup-v1.png",
+      "referenceRole": "Use central panel 05 only as source for a standalone refined character.",
+      "prompt": "Use case: precise-object-edit\nAsset type: ONE static standalone full-body enemy design for a pixel-art Japanese idle RPG; appearance proposal, no animation.\nInput image: reference/edit source is a nine-cell design sheet. Use ONLY the central panel \"05 RUINS\" as the design source and match its pixel-art rendering and ivory/graphite/gold/turquoise/violet materials. Produce a NEW single-character sheet of that character, refining its appearance. Do not reproduce the 3x3 sheet or any of the other eight creatures.\nPrimary request: refine the central archive-custodian machine into a subtly feminine ancient-ruins android. A viewer should vaguely read an elegant adult female silhouette from the narrow shoulders, lightly shaped waist, gently rounded hip plates and long skirt-like segmented panels, while it remains clearly a faceless artificial machine.\nPreserve: off-white ceramic body, charcoal articulated joints, fine antique gold inlays, turquoise seams, oval violet sternum core, four detached rectangular data slabs floating in an open architectural fan behind the upper body, smooth dark oval face with a single thin vertical violet sensor. Keep the original faceless geometric design recognizable.\nChange: soften the strongly skeletal/male-neutral chest into a modest smooth feminine breastplate with subtle curves and no explicit breasts; narrow shoulders and long delicate forearms; gently tapered waist and hip shell. From the hips, add three long slim ivory segmented skirt-like hanging armor panels with open gaps to reveal two slim articulated legs and pointed feet. The leg shape remains mechanical. Small symmetrical gold temples beside the blank face imply a ceremonial headdress, no hair, no human skin or eyes.\nExactly two arms with relaxed open hands, exactly two legs, exactly four detached data tablets. One complete figure only, head, hands, panels and feet all comfortably in frame. Neutral upright hover, slightly elevated three-quarter view facing screen-left.\nStyle: polished JRPG pixel-art concept, deliberate square pixel clusters, crisp contours and limited material ramps matching the reference, readable shape hierarchy, no 3D or photorealism. Tall adult proportions, not chibi. Feminine through silhouette only, no sexualization, no cleavage, no oversized chest, no flesh, no wide shoulders.\nBackdrop: flat deep desaturated navy, no scenery or ground, no captions, numbers, watermark, attack effects, motion trails, alternate views or sprite frames.",
+      "review": {
+        "status": "proposal-only",
+        "fullImageViewed": true,
+        "visibleFeatures": [
+          "subtly feminine waist and torso shell",
+          "sealed face with vertical sensor",
+          "four separate data tablets",
+          "ivory skirt-like armor panels",
+          "two arms and two legs",
+          "full body within margins"
+        ],
+        "limitations": "Background-bearing static concept, not a runtime cutout. Pixel density, individual joints and silhouette at gameplay size need final asset review after appearance approval."
+      },
+      "fileMetadata": {
+        "width": 1024,
+        "height": 1536,
+        "format": "png",
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 1738134,
+        "sha256": "ca54a027bab686c9cc81eb5854a272a30d4035aa749e2dbe1d3a111569df94d2"
+      }
+    },
+    {
+      "id": "throne-queen-automaton-v1",
+      "file": "source/throne-queen-automaton-v1.png",
+      "sourceFile": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-5bebbd87-dd84-46f6-b17d-0167a98d6ef6.png",
+      "useCase": "stylized-concept",
+      "transparentBackgroundRequested": false,
+      "referencedImage": null,
+      "prompt": "Use case: stylized-concept\nAsset type: ONE static standalone full-body new enemy design for the demon-castle throne region of a pixel-art Japanese idle RPG. This enemy joins the existing demon-god major boss in region 10. It is a queen-like MACHINE with a subtly feminine silhouette, not the Goddess of Outer Space and not a human.\nPrimary request: design an elegant faceless SF throne-warden automaton that vaguely resembles an adult queen. Narrow shoulders, a gently tapered waist, moderate hip shell and a long segmented gown silhouette. It should read as regal advanced alien machinery from a dark castle throne, slim and clearly feminine yet unmistakably artificial.\nDesign: dark graphite and midnight-violet ceramic armor, sparse thin ivory edges and antique gold joints, an oval violet energy core in the upper sternum linking it to a faction of ivory/graphite/violet-core alien machines. Smooth sealed pale ivory face mask with one subtle violet horizontal eye slit, no mouth or nose, no flesh, no realistic female face. Five narrow angular crown antenna segments on the head, clean and geometric, not medieval ornamental jewelry. Short nape plates at the back of the head, no silver hair or bob haircut.\nTwo slim articulated arms and delicate mechanical hands hanging naturally at the sides; exactly two legs, visible through narrow gaps in a long skirt made of six suspended tapered black-violet armor panels with fine ivory tips. The panels imply a royal dress but are rigid machine parts, no fabric or lace, no breast exaggeration or cleavage.\nA separate tall open angular throne-back FRAME floats behind the upper body: two narrow vertical graphite spars rise to high tapered tips, connected by a broken inverted-V crosspiece, fine violet light within the frame. This is part of the character's mechanical ornament silhouette, not a seat or background architecture. The frame adds regal vertical scale while leaving the face and narrow body clear. No circular halo or full wings.\nComposition: one complete full-body figure only, head crown, frame tips, both hands, all long armor panels and pointed feet fully in frame with generous margins. Neutral upright pose with a very slight hover. Slightly elevated three-quarter view turned toward screen-left. Tall adult proportions about 7 heads, not chibi. No separate portrait or turnaround.\nStyle/medium: refined JRPG pixel-art concept, crisp square pixel clusters and dark contour lines, discrete shading ramps, readable high-contrast silhouette, subtle emissive violet core accents. No 3D, no photorealism, no smooth oil painting. This is a static appearance design, not an animation.\nBackdrop: flat deep desaturated navy, no scenery, floor, actual throne furniture, captions, numbers or watermark. No weapon, attack effects, motion trails, other characters or animation frames.",
+      "review": {
+        "status": "proposal-only",
+        "fullImageViewed": true,
+        "visibleFeatures": [
+          "feminine gown-like rigid armor silhouette",
+          "narrow body and mechanical hands",
+          "sealed mask and crown antenna",
+          "angular open throne-back frame",
+          "graphite and midnight-violet panels with ivory trim",
+          "full body and frame tips within margins"
+        ],
+        "limitations": "Background-bearing static concept, not a runtime cutout. Individual crown/panel counts and pixel density are concept details, not approved animation specifications."
+      },
+      "fileMetadata": {
+        "width": 1024,
+        "height": 1536,
+        "format": "png",
+        "channels": 3,
+        "hasAlpha": false,
+        "bytes": 1772904,
+        "sha256": "6d69462d316ea1c21fbf15528479144a6c95fc230bbc465c66dfc4f113a89c8a"
+      }
+    }
+  ]
+}

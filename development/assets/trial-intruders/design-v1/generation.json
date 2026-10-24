@@ -1,0 +1,77 @@
+{
+  "createdAt": "2026-10-24",
+  "timezone": "Asia/Tokyo",
+  "status": "appearance-proposal-unapproved",
+  "tool": "built-in image_gen.imagegen",
+  "skill": "imagegen",
+  "useCase": "stylized-concept",
+  "baseRef": "dev",
+  "baseCommit": "9c64ef60a3eb6af0abcc8dc12f31de31a57f71a1",
+  "scope": "Static appearance proposals only. No motions, animation, runtime registration, gameplay, balance, or save changes.",
+  "assumption": "One new intruder at each normal region's major-boss stage, IDs 10,20,30,40,50,60,70,80,90,100. The Goddess of Outer Space is proposed at stage 100.",
+  "references": [],
+  "images": [
+    {
+      "id": "regions-01-09-lineup-v1",
+      "file": "source/regions-01-09-lineup-v1.png",
+      "sourceFile": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-193a326f-62ee-4943-a870-aeea7c682d8d.png",
+      "transparentBackgroundRequested": false,
+      "prompt": "Use case: stylized-concept\nAsset type: ONE static art-direction review board for an existing Japanese idle RPG, showing nine proposed science-fiction trial intruders. This is a comparative design sheet, not game-ready sprites, animation, a motion sheet, or a comic.\nPrimary request: Draw a carefully composed 3 by 3 square grid with exactly nine isolated full-body enemy concepts, one per cell, generously separated. Readable, polished pixel-art JRPG enemy-design aesthetic: deliberate square pixel clusters, crisp dark outlines, limited material ramps, beautiful emissive cores, no smooth airbrush, no photorealism, no voxel/3D. Consistent slightly elevated three-quarter view, each looking toward screen-left, neutral static presentation.\nShared visual language: alien technology, smooth off-white ceramic plates over dark graphite articulated structures, a small violet oval energy core on every creature, sparse fine violet circuitry. Regional secondary colors and strongly different silhouettes. These are separate new enemies added beside existing fantasy bosses, not mechanical reskins of those bosses. Medium stylization, charming but formidable; no chibi toy proportions.\nBackground: uniform deep desaturated navy within each cell, subtle thin grid separators, no scenery, no pedestals, no attack effects or speed lines. Large subject scale with comfortable margins, no cropped extremities.\nExact labels, small clean light gray type at top-left of each cell:\nTop row: \"01 FOREST\", \"02 SWAMP\", \"03 CAVE\"\nMiddle row: \"04 COAST\", \"05 RUINS\", \"06 DESERT\"\nBottom row: \"07 HIGHLAND\", \"08 GLACIER\", \"09 VOLCANO\"\nNo other text.\n01 FOREST: a graceful alien cybernetic stag. Four slender anatomically coherent legs, two broad branching antenna antlers with green leaf-shaped solar plates, pale segmented ceramic spine, exposed dark joints, luminous emerald chest and violet forehead core. Upright tall branching silhouette. No tree-trunk body.\n02 SWAMP: a squat amphibious reactor-toad machine with two small front feet and two folded rear legs. Rounded pale shell, paired translucent lime-green chemical tanks embedded in its back, dark rubbery belly, filter vents on cheeks, violet oval core under chin. Low wide rounded silhouette, clearly a toad, no dragon or multiple heads, no leaking sludge.\n03 CAVE: a compact heavy tunnel-probe mole automaton. Two enormous shovel-shaped foreclaws, two short supporting rear legs, rounded armored back, recessed horizontal amber sensor visor, a circular drill collar around the pointed snout, bronze scuffs, small violet sternum core. Wedge silhouette, no humanoid troll.\n04 COAST: a floating manta-shaped ocean survey craft, broad smooth triangular swept wings with translucent cyan-edged membranes, pale ceramic central body, navy underside, two short dangling sensor pods, violet central core, one narrow tail antenna. Broad flat silhouette, no octopus tentacles.\n05 RUINS: a slim faceless humanoid archive custodian hovering upright, long narrow ivory-and-black body with exactly two arms, two tapered legs, a blank obsidian face with a single vertical violet sensor. Four separated rectangular engraved data slabs arranged in a broken circular halo behind its upper body, restrained antique gold edging, turquoise secondary light. Architectural vertical silhouette, no bulky titan.\n06 DESERT: a solar scarab reconnaissance machine, elegant gold and pale sand ceramic shell over graphite frame, exactly six short insect legs, split elliptical wing covers closed, a vertical circular solar collector disk mounted over its upper back, thin turquoise seams, violet central thorax core. Clear beetle silhouette with disk; no scorpion claws or large quadruped.\n07 HIGHLAND: an aerodynamic storm raptor drone in a poised static hover with two wide crescent swept wings, two small tucked talons, a crested bird head, layered ceramic feather plates with graphite undersides, cyan and electric violet navigation strips and a violet chest core. Sharp wide arrow silhouette; no lion body, no humanoid harpy.\n08 GLACIER: an alien cryogenic jellyfish probe. Translucent icy-blue glass bell with a ceramic crown, a clearly visible violet oval core suspended inside, four broad short segmented crystal ribbons hanging symmetrically below, pale blue cooling fins around the rim. Suspended bell silhouette, elegant and geometric, no mammoth or quadruped.\n09 VOLCANO: an industrial furnace-centipede machine with a long low armored body curled into a gentle open C, articulated black obsidian segments, glowing orange reactor seams, small repeated paired mechanical legs, white heat-shield plates on its head and first segments, dark vent stacks, small violet head core. Low segmented serpentine silhouette, no dragon head or wings.\nConstraints: all nine clearly distinct, all full bodies intact, each only appears once, exact grid order, regional identities readable without labels. No goddess on this board. No motion design, no weapons in action, no sprite frames, no gore, no logos or watermarks.",
+      "review": {
+        "status": "proposal-only",
+        "fullImageViewed": true,
+        "composition": "All nine concepts are visible in the expected grid order. Different regional silhouettes and shared ceramic/graphite/violet-core palette.",
+        "limitations": "Review board only; do not cut into runtime sprites. Individual anatomy and small-scale pixel readability need final asset review after appearance approval."
+      },
+      "fileMetadata": {
+        "width": 1254,
+        "height": 1254,
+        "format": "png",
+        "channels": 3,
+        "hasAlpha": false,
+        "alphaRange": null,
+        "bytes": 2320250,
+        "sha256": "9af6cc38c7a32fdf4b38ef3f824abb7bbb373b20611213e6ad6d0318f0ad1201"
+      }
+    },
+    {
+      "id": "outer-space-goddess-v1",
+      "file": "source/outer-space-goddess-v1.png",
+      "sourceFile": "C:/Users/ashit/.codex/generated_images/01a16c0a-c7bb-7831-a538-a9c4df13fb7d/exec-3e84664c-843d-417a-bf9a-63d7c7021e24.png",
+      "transparentBackgroundRequested": true,
+      "prompt": "Use case: stylized-concept\nAsset type: one static full-body character design candidate for a pixel-art Japanese idle RPG. New final trial intruder called the Goddess of Outer Space.\nPrimary request: a beautiful adult cosmic goddess with very dark warm brown skin, a neat silver short bob ending at jaw level, a slim slender elongated silhouette, clearly science-fiction mechanical ornaments. Preserve the specified hairstyle and dark complexion as the most recognizable features.\nStyle/medium: refined anime-JRPG pixel-art concept sprite, visible deliberate pixel clusters and crisp contours, controlled material ramps, delicate yet readable facial features, no photorealism, no 3D, no painterly gradients. Adult proportions about 7 heads tall, elegant slim build, narrow shoulders and waist, long slim legs, not chibi. Dark warm brown skin remains dark even in highlights, silver hair remains cool light silver.\nComposition/framing: one character only, complete full body from halo to toes, very generous margin, slightly elevated three-quarter view turned gently toward screen-left. Calm dignified neutral floating posture; exactly two arms and two legs. Relaxed hands separated from body, fingers simple and readable. A quiet self-assured expression. No extra portrait, no turnaround, no animation frames.\nDesign: precise blunt silver short bob with a slight asymmetrical swept fringe exposing one eye and jawline; small violet star-like eyes. A fitted graphite-black full torso suit with a high collar, narrow dark blue paneling and tiny star-speckled material accents, clean off-white ceramic inserts at collarbones and hips. The suit is elegant and fully covers the chest, pelvis, and upper thighs; no plunging neckline. Slender uncovered dark-brown arms with disconnected ceramic forearm cuffs; slim graphite legs with narrow ivory shin guards and pointed boots, no bulky armor. A small oval violet core at the sternum, tiny pale gold joins. Sparse straight violet emissive lines on hardware, no printed circuits all over the body.\nMechanical divine silhouette: a large thin broken orbital halo behind her head and shoulders, made of three separated precision-engineered ivory arcs with dark inner faces and tiny violet core nodes. Halo reads as orbital machinery, not a crown of fantasy spikes. Two long slender detached ivory fin-panels float vertically beside the hips and lower legs with generous air gaps; these imply a long ceremonial skirt while the actual body silhouette stays slim. No physical fabric skirt, flowing cloak, long hair, giant wings or large weapon. Restrained violet and cold white glows only at the core and mechanical insets. Her face and body stay visually central and unobscured.\nScene/backdrop: genuinely transparent background. No stars, nebula scenery, platform, painted checkerboard, ground shadow, or caption. No movement trails or attack FX.\nConstraints: silver SHORT BOB, dark skin, adult woman, slender silhouette, one complete body, science-fiction parts, pixel-art taste, static appearance review only, no motion, no gore, no text or watermark.",
+      "review": {
+        "status": "proposal-only",
+        "fullImageViewed": true,
+        "userConstraints": [
+          "silver short bob",
+          "dark warm brown skin",
+          "slender adult full-body silhouette",
+          "SF mechanical parts"
+        ],
+        "composition": "One complete body, three separated halo arcs, two detached long side fins. Head, hands and toes are visible.",
+        "limitations": "Concept source has broad halo/background glow; production transparency and pixel density must be resolved when making approved runtime assets.",
+        "transparency": "Contains transparent pixels; broad outer glow is also visible. Recheck edge alpha on final game assets."
+      },
+      "fileMetadata": {
+        "width": 1024,
+        "height": 1536,
+        "format": "png",
+        "channels": 4,
+        "hasAlpha": true,
+        "alphaRange": [
+          0,
+          254
+        ],
+        "bytes": 1657342,
+        "sha256": "6092cd04077a74c234b8263d8888d573990588f5026a36b5242bcfb4fcf24312"
+      }
+    }
+  ],
+  "supersededDecisions": {
+    "updatedAt": "2026-10-24",
+    "currentRecord": "../design-v2/generation.json",
+    "placementCorrection": "The original assumption assigning the Goddess of Outer Space to stage 100 is withdrawn. The user plans her after the reincarnation goddess. Stage 100 needs its own separate enemy.",
+    "ruinsCorrection": "The original panel 05 appearance is superseded by design-v2 feminine archivist. Original source images and prompts are retained as history."
+  }
+}

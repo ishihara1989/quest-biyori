@@ -1,0 +1,457 @@
+{
+  "createdAt": "2026-10-24",
+  "scope": "11 left-facing idle loops only; user motion request authorizes proceeding with the selected designs.",
+  "designSource": "docs/design/trial-intruder-enemy-designs.md",
+  "layout": {
+    "source": "Four generated frames in a 2x2 square transparent sheet, row-major order",
+    "requestedSourceCell": [
+      512,
+      512
+    ],
+    "outputCell": [
+      512,
+      512
+    ],
+    "defaultPivot": [
+      256,
+      448
+    ],
+    "frameSequence": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "loop": true,
+    "registration": "One uniform scale and common translation per clip. Preserve generated motion; measure alpha gutters and source bounds, not assumed anatomy. No mirroring, recolor or alpha threshold editing."
+  },
+  "cycle": "0 -> negative excursion -> neutral -> positive excursion -> 0; frame4-to-frame1 is one quarter-cycle, not a hold or teleport.",
+  "characters": [
+    {
+      "id": "star-stag",
+      "name": "星芽の機鹿",
+      "region": 1,
+      "panel": 0,
+      "mode": "ground",
+      "duration": 320,
+      "identity": "a slim FOUR-LEGGED cybernetic stag; TWO branching leaf-panel antlers; ivory articulated body, dark joints, green leaves, violet chest core; preserve thin legs and all four connections.",
+      "motion": "All four hoof contact points stay fixed at y=432. Gentle chest expansion and neck/antler rise only 0,-3,0,+3 pixels; one tiny leaf-tip flex, no stepping and no bending the leg count.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 320,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 320,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 320,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 320,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -2,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "reactor-toad",
+      "name": "瘴気の機蟾",
+      "region": 2,
+      "panel": 1,
+      "mode": "ground",
+      "duration": 320,
+      "identity": "a squat reactor TOAD automaton, two small forelegs and two folded hindlegs, TWO translucent lime chemical tanks on the back, pale ceramic shell, dark belly, violet throat core.",
+      "motion": "Feet stay planted at y=432. Throat and upper shell gently expand then relax; tank liquid glints vary slightly. Torso height 0,-2,0,+2 pixels. Tanks remain the same size/shape, no bubbling particle FX.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 320,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 320,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 320,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 320,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -2,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "drill-mole",
+      "name": "深層の掘削獣",
+      "region": 3,
+      "panel": 2,
+      "mode": "ground",
+      "duration": 320,
+      "identity": "a heavy squat MOLE tunneling robot with TWO large shovel-claw forearms, two short rear legs, pointed drill nose facing left, rounded ivory armor, amber horizontal visor, violet chest core.",
+      "motion": "All supporting claws and feet stay on y=432. Very small engine-breathing lift of back shell 0,-2,0,+2 pixels; amber visor remains fixed, no drill spin, no locomotion, do not add claws.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 320,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 320,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 320,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 320,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -2,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "survey-manta",
+      "name": "潮境の星翼",
+      "region": 4,
+      "panel": 3,
+      "mode": "hover",
+      "duration": 280,
+      "identity": "a broad flat manta-shaped survey craft with TWO swept cyan membrane wings, ivory central body, TWO short dangling sensor pods, one thin trailing antenna tail, violet central core. Nose points strongly left.",
+      "motion": "Center of main body at local (256,256), vertical offsets 0,-4,0,+4 pixels. Wing tips make a shallow 0,-5,0,+5 pixel flex, pods counter-swing 2 pixels, tail tip sways 3 pixels. No wing redesign or detached extra pod.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 280,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 280,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 280,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 280,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -3,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "archive-maiden",
+      "name": "星環の記録官",
+      "region": 5,
+      "reference": "design-v2/source/ruins-archivist-feminine-v2.png",
+      "mode": "hover",
+      "duration": 300,
+      "identity": "the approved slender FEMININE archive android: smooth dark face with ONE vertical violet sensor, white/antique-gold body, subtle feminine torso and narrow waist, long white segmented skirt armor, TWO arms and TWO legs, exactly FOUR rectangular floating data tablets. No hair or human skin.",
+      "motion": "Waist stays near (256,258), body vertical offsets 0,-3,0,+3 pixels; four tablets counter-float by 0,+2,0,-2 pixels. Skirt tips sway 2 pixels. Keep head facing left, face mask and feminine curves identical. Do not hide rear leg by merging limbs.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 300,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 300,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 300,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 300,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -3,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "solar-scarab",
+      "name": "日輪の機甲虫",
+      "region": 6,
+      "panel": 5,
+      "mode": "ground",
+      "duration": 320,
+      "identity": "a gold/ivory SCARAB machine with exactly SIX insect legs, closed elliptical shell, ONE tall circular solar collector disk mounted over upper back, turquoise seams, violet thorax core. Insect head and horn aim left.",
+      "motion": "All six feet fixed in stance, lower contact baseline y=432. Upper shell makes a tiny 0,-2,0,+2 pixel rise. Solar disk and horn remain rigid and round, no rolling, no shell opening, no extra legs.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 320,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 320,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 320,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 320,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -2,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "storm-raptor",
+      "name": "天嵐の星隼",
+      "region": 7,
+      "panel": 6,
+      "mode": "hover",
+      "duration": 220,
+      "identity": "a sharp crested mechanical RAPTOR BIRD with TWO wide swept ceramic feather wings, TWO tucked clawed feet, one tapered tail, cyan/violet lights and violet chest core, white and charcoal plates. Beak and chest aim screen-left.",
+      "motion": "Body center near (256,260), offsets 0,-4,0,+4 pixels. Shallow hovering wing flex at shoulders and tips, not a full flap: wingtip y offsets 0,-8,0,+8 pixels. Keep total wingspan almost constant and talons tucked in every frame.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 220,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 220,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 220,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 220,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -3,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "cryo-jellyfish",
+      "name": "氷晶の観測体",
+      "region": 8,
+      "panel": 7,
+      "mode": "hover",
+      "duration": 300,
+      "identity": "a cryogenic JELLYFISH probe: transparent ice-blue bell, ivory crown and rim fins, suspended violet oval core, exactly FOUR broad segmented crystalline ribbons below; no eyes or human limbs. In a slightly left-facing three-quarter view with left edge leading.",
+      "motion": "Core centered near (256,210), y offsets 0,-3,0,+3 pixels. Glass bell gently compresses 1% and relaxes; four crystal ribbon tips sway only 3 pixels. Preserve exactly four ribbons and a single core in every frame.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 300,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 300,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 300,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 300,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -3,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "furnace-centipede",
+      "name": "炉心の百足",
+      "region": 9,
+      "panel": 8,
+      "mode": "ground",
+      "duration": 340,
+      "identity": "the low C-curved FURNACE CENTIPEDE machine: black/ivory articulated long body, orange reactor seams, paired short repeated mechanical legs, narrow pointed head to screen-left, small violet head core, vent stacks. Same segment and leg topology in all frames.",
+      "motion": "All tiny feet and tail support remain fixed, low baseline near y=432. Tiny sequential upper plate lift only 0,-2,0,+2 pixels along body, head nod 2 pixels. Tail shape and all leg connections unchanged, no walking wave, no smoke/particles.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 340,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 340,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 340,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 340,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -2,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "throne-queen",
+      "name": "宵星の女王機",
+      "region": 10,
+      "reference": "design-v2/source/throne-queen-automaton-v1.png",
+      "mode": "hover",
+      "duration": 300,
+      "identity": "the approved FEMININE throne-queen android: ivory sealed face with horizontal violet eye slit, five-piece angular crown, slender graphite/midnight-violet torso, two arms and two legs, long skirt of dark tapered plates, tall open angular throne-back frame with two vertical spars and broken inverted-V top. No silver hair, human skin or circular halo.",
+      "motion": "Waist near (256,260), y offsets 0,-3,0,+3 pixels. Crown and throne-back frame remain rigid with body, lower gown plates sway 2 pixels. Two relaxed hands visible, feet separated, do not turn to viewer.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 300,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 300,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 300,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 300,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -3,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "outer-space-goddess",
+      "name": "外宇宙の女神",
+      "region": null,
+      "reference": "references/goddess-left-eye-base.png",
+      "mode": "hover",
+      "duration": 300,
+      "identity": "the adult Goddess of Outer Space with DARK WARM BROWN skin, jaw-length SILVER SHORT BOB, SLENDER proportions, fitted navy/black suit, ivory SF forearm/shin/hip parts, purple chest core, THREE broken orbital halo arcs and TWO long detached ivory side fins. Face and strong visible violet eye exactly as fixed eye-base reference.",
+      "motion": "Waist near (256,260), body y offsets 0,-3,0,+3 pixels; halo moves with body as rigid three arcs, two side fins sway 2 pixels, short hair edge shifts 2 pixels. Keep the near eye OPEN and intense in all frames: bold upper lash line, sharp brow, bright violet iris with catchlight and dark pupil, gaze firmly left. No blink or looking at viewer.",
+      "frames": [
+        {
+          "frame": 1,
+          "durationMs": 300,
+          "phaseDegrees": 0
+        },
+        {
+          "frame": 2,
+          "durationMs": 300,
+          "phaseDegrees": 90
+        },
+        {
+          "frame": 3,
+          "durationMs": 300,
+          "phaseDegrees": 180
+        },
+        {
+          "frame": 4,
+          "durationMs": 300,
+          "phaseDegrees": 270
+        }
+      ],
+      "plannedOffsetY": [
+        0,
+        -3,
+        0,
+        3
+      ]
+    }
+  ],
+  "userRevision": {
+    "wholeGoddessBody": "left-facing shoulders, chest, waist, knees and toes",
+    "eyes": "pale ice-lilac, luminous and lustrous with sharp brows and upper lashes"
+  },
+  "actualPlayback": {
+    "cycleDurationMs": 1440,
+    "note": "Final registration keeps generated drawings distinct from initial targets. See registration.json and generation.json for observed crop and chosen playback."
+  }
+}
