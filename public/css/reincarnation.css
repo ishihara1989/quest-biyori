@@ -5,6 +5,25 @@
 
 .menu-dialog.reincarnation-dialog{width:min(1240px,calc(100vw - 24px));max-width:none}
 
+.reincarnation-node.bulk-ready{opacity:1;border-color:#f3cf7c;background:#38372f;box-shadow:0 0 0 2px #e5bd6244,0 0 16px #e5bd6226}
+.reinc-bulk-ready{position:absolute;right:-8px;top:-9px;min-width:27px;padding:3px 6px;border:1px solid #ffe4a0;border-radius:12px;background:#715328;color:#fff4ce;font-size:11px;font-weight:700;pointer-events:none}
+.reincarnation-node.purchase-route{border-color:#fbe5a4;background:#454033;box-shadow:0 0 0 2px #e5bd6266}
+.reincarnation-node.dimmed{opacity:.18}
+.reincarnation-map path.purchase-route{stroke:#f0ce82;stroke-width:3;stroke-dasharray:7 4}
+.reinc-bulk-purchase{display:grid;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #d6b86a66}
+.reinc-bulk-total{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:11px;color:#d7c99f}
+.reinc-bulk-total strong{width:100%;font-size:19px;color:#ffe0a0;text-align:right}
+.reinc-bulk-action{display:block;border-radius:8px}
+.reinc-bulk-action:focus-visible{outline:2px solid #fff3ba;outline-offset:3px}
+.reinc-bulk-purchase .primary-button{border-color:#d6b86a}
+.reinc-bulk-shortage{color:#edb7a7!important;text-align:right}
+.reinc-purchase-confirm>b{font-size:12px;color:#f0d69f}
+.reinc-purchase-nodes{max-height:230px;overflow:auto;margin:12px 0;padding-left:20px;font-size:11px;color:#dfd5bc}
+.reinc-purchase-nodes li{padding:5px 0;overflow-wrap:anywhere}
+.reinc-purchase-nodes small{display:block;color:#aebbc7}
+.reinc-purchase-confirm p{font-size:13px;line-height:1.8}
+.reinc-purchase-confirm .secondary-button{width:100%;margin-top:8px}
+
 .reincarnation-map>svg{width:100%;height:100%}.unlock-visual{margin:0 auto}.reincarnation-unlocked,.rebirth-unlocked{border-color:#d9c08c80;background:#151c2cf7}
 
 /* A persistent cue while this cycle's rebirth can be claimed. */

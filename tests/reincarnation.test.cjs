@@ -38,6 +38,45 @@ test('tree purchases enforce prerequisites, available currency, no double purcha
  for(const n of T.nodes.filter(n=>n.family==='trial'&&!['trial-open','trial-seals'].includes(n.id))){assert.equal(R.status(s,n.id),'soon');assert.equal(R.purchase(s,n.id),false);}
  const corrupt=R.restore({...s.reincarnation,owned:['drop100','trial-open','xp3'],total:1e12});assert.deepEqual(corrupt.owned,['xp3']);assert.equal(corrupt.total,100);
 });
+test('bulk reincarnation paths match individual purchases and survive save reload for every released node',()=>{
+ for(const node of T.nodes.filter(n=>!n.root&&R.status({reincarnation:{unlocked:true}},n.id)!=='soon')){
+  const s=D.freshSave();Object.assign(s.reincarnation,{discovered:true,unlocked:true,cycle:100000,total:10000000});
+  const expected=structuredClone(s);own(expected,node.id);
+  const plan=R.purchasePlan(s,node.id),ids=plan.nodes.map(n=>n.id);
+  assert.equal(plan.status,'available',node.id);assert.deepEqual(ids,expected.reincarnation.owned,node.id);
+  assert.equal(new Set(ids).size,ids.length,'shared prerequisites are counted once');
+  assert.equal(plan.cost,ids.reduce((sum,id)=>sum+T.byId[id].cost,0));
+  const single=structuredClone(s);for(const id of ids)assert.ok(R.purchase(single,id));
+  assert.ok(R.purchasePath(s,node.id));assert.deepEqual(s,single);
+  assert.equal(R.points(s),10000000-plan.cost);assert.deepEqual(R.bonuses(s),R.bonuses(single));
+  const restored=D.readSave(JSON.stringify(s));assert.deepEqual(new Set(restored.reincarnation.owned),new Set(ids));assert.equal(R.points(restored),R.points(s));
+  assert.equal(R.purchasePath(s,node.id),false,'already owned');
+ }
+});
+
+test('bulk paths skip owned ancestors and unrelated branches and accept the exact combined PT cost',()=>{
+ const s=D.freshSave();Object.assign(s.reincarnation,{discovered:true,unlocked:true,cycle:100,total:10000});
+ assert.ok(R.purchasePath(s,'drop3'));assert.ok(R.purchase(s,'gold2'));
+ const before=[...s.reincarnation.owned],plan=R.purchasePlan(s,'drop5');
+ assert.ok(plan.nodes.some(n=>n.id==='main-free'));assert.ok(!plan.nodes.some(n=>before.includes(n.id)));
+ s.reincarnation.total=T.spent(R.state(s))+plan.cost;
+ assert.equal(R.purchasePlan(s,'drop5').status,'available');assert.ok(R.purchasePath(s,'drop5'));assert.equal(R.points(s),0);
+ assert.deepEqual(s.reincarnation.owned,[...before,...plan.nodes.map(n=>n.id)]);
+ assert.ok(!s.reincarnation.owned.includes('gold-cost'));
+});
+
+test('bulk paths reject shortages, locked trees, reserved trials and invalid targets without partial acquisition',()=>{
+ const seed=D.freshSave();Object.assign(seed.reincarnation,{discovered:true,unlocked:true,cycle:100,total:10000});
+ const cost=R.purchasePlan(seed,'trial-seals').cost;
+ for(const [id,patch,status]of [['trial-seals',{total:cost-1},'unaffordable'],['main-free',{unlocked:false},'locked'],['trial-intrusion',{},'soon'],['missing',{},'invalid'],['constructor',{},'invalid'],['origin',{},'owned']]){
+  const s=structuredClone(seed);Object.assign(s.reincarnation,patch);const before=structuredClone(s);
+  assert.equal(R.purchasePlan(s,id).status,status);assert.equal(R.purchasePath(s,id),false);assert.deepEqual(s,before);
+ }
+ const s=structuredClone(seed),plan=R.purchasePlan(s,'trial-seals');s.reincarnation.total=plan.cost-1;
+ assert.equal(R.purchasePath(s,'trial-seals'),false,'rechecks PT after preview');assert.deepEqual(s.reincarnation.owned,[]);
+ assert.equal(R.purchasePath(D.freshSave(),'drop2'),false);
+});
+
 test('equipment cost reductions apply equally to status, manual, batch and path buying; no goddess material waiver',()=>{
  const s=D.freshSave();s.cleared=[1,2,3,4,5,6,7,8,9,10];s.gold=0;own(s,'main-free');const inventory=structuredClone(s.inventory);
  const node=P.gearTree('warrior','weapon',1).find(n=>n.id==='main-2');assert.equal(P.gearCost(s,node).jelly,0);assert.equal(P.gearCost(s,node).gold,0);assert.ok(P.purchase(s,'warrior','weapon','main-1'));assert.ok(P.purchase(s,'warrior','weapon','main-2'));assert.ok(!Number.isNaN(s.inventory.jelly));assert.equal(P.gearPurchasePlan(s,'warrior','armor','main-10').status,'available');assert.ok(P.purchaseGearPath(s,'warrior','armor','main-10'));assert.equal(s.gold,0);assert.deepEqual(s.inventory,inventory);
