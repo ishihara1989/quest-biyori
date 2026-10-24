@@ -67,5 +67,11 @@
         "sha256": "6092cd04077a74c234b8263d8888d573990588f5026a36b5242bcfb4fcf24312"
       }
     }
-  ]
+  ],
+  "supersededDecisions": {
+    "updatedAt": "2026-10-24",
+    "currentRecord": "../design-v2/generation.json",
+    "placementCorrection": "The original assumption assigning the Goddess of Outer Space to stage 100 is withdrawn. The user plans her after the reincarnation goddess. Stage 100 needs its own separate enemy.",
+    "ruinsCorrection": "The original panel 05 appearance is superseded by design-v2 feminine archivist. Original source images and prompts are retained as history."
+  }
 }

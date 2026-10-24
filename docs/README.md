@@ -17,7 +17,7 @@
 
 ## 設計・仕様・提案
 
-- [試練の追加敵：全10地域のSFデザイン初稿（静止画のみ・未承認）](design/trial-intruder-enemy-designs.md)
+- [試練の追加敵：全10地域＋外宇宙の女神（遺跡・玉座の女形案、静止画のみ・未承認）](design/trial-intruder-enemy-designs.md)
 
 - [ソロ試練I〜III：攻略順・混沌の門・職別PT倍率（1,080戦・巫女のソロ神楽AI案）](design/solo-trial-balance.md)
 
