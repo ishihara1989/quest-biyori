@@ -27,9 +27,56 @@ async function main(){
  const saveOf=page=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)),D.SAVE_KEY);
  const shot=(page,name)=>page.screenshot({path:path.join(output,name+'.png'),animations:'disabled'});
  async function fastWin(page){await page.locator('#start-button').click();await page.evaluate(()=>{testRun.enemies[0].hp=1;});await page.clock.runFor(6000);}
- async function menu(page,name){const dialog=page.locator('#menu-dialog');if(await dialog.isVisible())await page.locator('#close-menu').click();await page.locator('[data-open="'+name+'"]').first().click();}
+ async function menu(page,name){const notice=page.locator('.option-unlock-dialog[open]');if(await notice.isVisible())await notice.getByRole('button',{name:'続ける'}).click();const dialog=page.locator('#menu-dialog');if(await dialog.isVisible())await page.locator('#close-menu').click();await page.locator('[data-open="'+name+'"]').first().click();}
  const labOnly=process.argv.includes('--lab-only'),scenesOnly=process.argv.includes('--scenes-only'),boss=B.reference();boss.autoMode='off';
  try{
+  if(process.argv.includes('--bulk-only')){
+   for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){
+    for(const shortage of [false,true]){
+     const seed=D.freshSave();Object.assign(seed.reincarnation,{discovered:true,unlocked:true,cycle:1,total:shortage?199:200,owned:['gold2']});
+     const {page,context}=await pageFor(seed,viewport);await menu(page,'reincarnation');
+     const before=await saveOf(page),plan=R.purchasePlan(before,'main-free');assert.equal(plan.cost,180);assert.equal(plan.nodes.length,4);
+     const node=page.locator('[data-reinc-node="main-free"]');await node.click();
+     assert.ok(await page.locator('[data-reinc-confirm]').isDisabled());
+     assert.equal(await node.locator('.reinc-bulk-ready').count(),shortage?0:1);
+     assert.equal(await page.locator('[data-reinc-confirm-path]').isDisabled(),shortage);
+     assert.equal(await page.locator('.reinc-bulk-total').innerText(),'合計\n4 ノード\n180 PT');
+     if(shortage){
+      assert.equal(await page.locator('.reinc-bulk-shortage').innerText(),'あと 1 PT');
+      await page.locator('.reincarnation-detail').scrollIntoViewIfNeeded();await shot(page,'bulk-shortage-'+viewport.width);
+     }else{
+      assert.equal(await node.locator('.reinc-bulk-ready').innerText(),'+4');assert.ok((await node.getAttribute('aria-label')).includes('まとめて取得可能'));
+      assert.ok((await node.getAttribute('data-tip')).includes('合計 180 PT'));
+      assert.equal(await page.locator('.reincarnation-node.purchase-route').count(),4);assert.ok(await page.locator('path.purchase-route').count()>0);
+      await page.locator('.reincarnation-detail').scrollIntoViewIfNeeded();await page.mouse.move(2,2);await shot(page,'bulk-ready-'+viewport.width);
+      await page.locator('[data-reinc-confirm-path]').click();assert.equal(await page.locator('.reinc-purchase-nodes li').count(),4);
+      assert.deepEqual(await page.locator('.reinc-purchase-nodes li').evaluateAll(nodes=>nodes.map(n=>n.firstChild.textContent)),plan.nodes.map(n=>n.name));
+      await page.locator('[data-reinc-cancel]').click();assert.deepEqual(await saveOf(page),before);
+      const view=page.locator('.reincarnation-viewport');await view.evaluate(e=>{e.scrollLeft=450;e.scrollTop=400;e.scrollIntoView({block:'center'});});const box=await view.boundingBox(),scroll=await view.evaluate(e=>[e.scrollLeft,e.scrollTop]);
+      await page.mouse.move(box.x+25,box.y+25);await page.mouse.down();await page.mouse.move(box.x+100,box.y+85);await page.mouse.up();const after=await view.evaluate(e=>[e.scrollLeft,e.scrollTop]);assert.ok(after[0]<scroll[0]&&after[1]<scroll[1],JSON.stringify({viewport,box,scroll,after}));assert.deepEqual(await saveOf(page),before);
+      await page.locator('[data-reinc-confirm-path]').click();await page.locator('.reincarnation-detail').scrollIntoViewIfNeeded();await shot(page,'bulk-confirm-'+viewport.width);
+      await page.locator('[data-reinc-buy-path="main-free"]').click();const bought=await saveOf(page);
+      assert.deepEqual(bought.reincarnation.owned,['gold2',...plan.nodes.map(n=>n.id)]);assert.equal(R.points(bought),0);
+      await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});await menu(page,'reincarnation');
+      assert.deepEqual((await saveOf(page)).reincarnation.owned,bought.reincarnation.owned);await page.locator('[data-reinc-node="main-free"]').click();assert.equal(await page.locator('.node-state').innerText(),'取得済み');assert.equal(await page.locator('[data-reinc-confirm-path]').count(),0);
+      await page.locator('[data-reinc-node="drop3"]').click();assert.ok(await page.locator('[data-reinc-confirm-path]').isDisabled());assert.equal(await page.locator('[data-reinc-node="drop3"] .reinc-bulk-ready').count(),0);
+     }
+     await page.locator('[data-reinc-node="trial-intrusion"]').click();assert.ok(await page.locator('.coming-soon').isVisible());assert.equal(await page.locator('[data-reinc-confirm-path]').count(),0);
+     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await context.close();
+    }
+    const seed=D.freshSave();Object.assign(seed.reincarnation,{discovered:true,unlocked:true,cycle:1000,total:100000});
+    const plan=R.purchasePlan(seed,'trial-seals');seed.reincarnation.total=plan.cost;seed.reincarnation.cycle=Math.floor(plan.cost/100);
+    const {page,context}=await pageFor(seed,viewport);await menu(page,'reincarnation');await page.locator('[data-reinc-node="trial-seals"]').click();
+    await page.locator('[data-reinc-confirm-path]').click();assert.equal(await page.locator('.reinc-purchase-nodes li').count(),plan.nodes.length);
+    await page.locator('.reincarnation-detail').scrollIntoViewIfNeeded();await shot(page,'bulk-shared-prerequisites-'+viewport.width);
+    await page.locator('[data-reinc-buy-path="trial-seals"]').click();assert.equal(R.points(await saveOf(page)),0);
+    await page.reload();await page.locator('#start-button:not([disabled])').waitFor({timeout:90000});const restored=await saveOf(page);
+    assert.deepEqual(new Set(restored.reincarnation.owned),new Set(plan.nodes.map(n=>n.id)));assert.equal(R.bonuses(restored).allies,1);
+    await menu(page,'reincarnation');await page.locator('[data-reinc-tab="trials"]').click();assert.ok(await page.locator('.trial-tree-page').isVisible());
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await context.close();
+   }
+   assert.deepEqual(errors,[]);console.log('Bulk reincarnation UI passed at 1440px/390px: badges, path preview, exact PT, shortage, shared prerequisites, cancel, tree drag, purchase/save/reload, trial unlock and Coming soon; no resource/runtime errors.');return;
+  }
   if(process.argv.includes('--skip-only')){
    const own=(seed,id)=>{for(const parent of T.byId[id].requires)if(parent!=='origin'&&!seed.reincarnation.owned.includes(parent))own(seed,parent);if(id!=='origin'&&!seed.reincarnation.owned.includes(id))seed.reincarnation.owned.push(id);};
    for(const viewport of [{width:1440,height:1050},{width:390,height:844}]){

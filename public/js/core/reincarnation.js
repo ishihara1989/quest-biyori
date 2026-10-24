@@ -86,6 +86,32 @@
     if (status(save, id) !== 'available') return false;
     save.reincarnation.owned.push(id); return true;
   }
+  function purchasePlan(save, id) {
+    const plan = { nodes: [], cost: 0, status: 'invalid' };
+    if (!Object.hasOwn(T.byId, id)) return plan;
+    if (!save.reincarnation?.unlocked) return { ...plan, status: 'locked' };
+    const owned = state(save).owned, visited = new Set(), visiting = new Set();
+    function visit(uid) {
+      if (owned.has(uid) || visited.has(uid)) return true;
+      const node = T.byId[uid];
+      if (!node || visiting.has(uid)) return false;
+      if (node.family === 'trial' && !Trials.availableNode(uid)) { plan.status = 'soon'; return false; }
+      visiting.add(uid);
+      for (const parent of node.requires) if (!visit(parent)) return false;
+      visiting.delete(uid); visited.add(uid); plan.nodes.push(node); plan.cost += node.cost;
+      return true;
+    }
+    if (!visit(id)) return { ...plan, nodes: [], cost: 0 };
+    plan.status = owned.has(id) ? 'owned' : points(save) >= plan.cost ? 'available' : 'unaffordable';
+    return plan;
+  }
+  function purchasePath(save, id) {
+    const plan = purchasePlan(save, id);
+    if (plan.status !== 'available') return false;
+    // Validate all prerequisites and their combined cost before changing the save.
+    save.reincarnation.owned.push(...plan.nodes.map(node => node.id));
+    return true;
+  }
   function capture(save, stage = save.selectedStage) {
     const used = new Set();
     const fullEpics = Object.keys(P.CHARACTERS).every(job => P.unlocked(save, job) && ['weapon','armor'].every(slot => {
@@ -164,5 +190,5 @@
       else P['recruit' + job[0].toUpperCase() + job.slice(1)](save);
     }
   }
-  return { fresh, restore, resultOptionsUnlocked, resultOptions, optionUnlocks, autoRebirth, state, bonuses, points, status, purchase, capture, victory, eligible, payout, prepare, skipDestination, pass };
+  return { fresh, restore, resultOptionsUnlocked, resultOptions, optionUnlocks, autoRebirth, state, bonuses, points, status, purchase, purchasePlan, purchasePath, capture, victory, eligible, payout, prepare, skipDestination, pass };
 });
