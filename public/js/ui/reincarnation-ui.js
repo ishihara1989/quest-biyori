@@ -58,6 +58,7 @@ window.ReincarnationUI={create({save,container,onChange,onRebirth,onAbandon,noti
     if(t.hasAttribute('data-achievement-category')){achievementCategory=t.value;achievements();return;}
     let changed=false;
     if(t.dataset.reincAuto){a[t.dataset.reincAuto]=t.checked;changed=true;}
+    if(t.dataset.gateTarget && R.resultOptionsUnlocked(save) && ['off','sub','all'].includes(t.value)){a.gates[t.dataset.gateTarget]=t.value;changed=true;}
     if(t.dataset.autoSkill){const [job,id]=t.dataset.autoSkill.split(':');a.priorities[job] ||= {};a.priorities[job][id]={enabled:Number(t.value)!==0,priority:Number(t.value)||Auto.defaultPriority(P.SKILLS[job].find(n=>n.id===id))};changed=true;}
     if(t.dataset.autoGem){const [job,slot]=t.dataset.autoGem.split(':'),s=a.slots[t.dataset.autoGem] ||= Auto.slotDefaults(slot);if(t.dataset.effect!==undefined)s.effects[Number(t.dataset.effect)]=t.value;else s[t.dataset.setting]=t.type==='checkbox'?t.checked:t.value;changed=true;}
     if(changed)onChange();

@@ -9,7 +9,7 @@
   const Trials = typeof module === 'object' && module.exports ? require('./trials.js') : globalThis.Trials;
   const maxPoints = Math.round(D.POINTS * Trials.summarize(Trials.definitions.filter(d=>!d.solo).map(d=>d.id)).reward * 1.5);
   const fresh = () => ({ version: 3, discovered: false, unlocked: false, cycle: 0, defeatedCycle: null, pendingPoints: 0, trials: [], trialRun: false, trialCompleted: [], appliedTrials: [], journey: 0, duoDefeatedJourney: null,
-    resultOptions: { skip: false, delay: 5 }, total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false,
+    resultOptions: { skip: false, delay: 5 }, pendingOptions: [], resumeAfterRebirth: false, total: 0, owned: [], lifetimeStages: [], lifetimePassed: [], passed: [], automation: { skills: false, gems: false, waitForMainGear: false, rebirth: false, gates: { 'dimensional-gate': 'off', 'chaos-gate': 'off' },
       priorities: Object.fromEntries(Object.keys(P.CHARACTERS).map(job=>[job,{}])),
       slots: Object.fromEntries(Object.keys(P.CHARACTERS).flatMap(job=>['weapon','armor'].map(slot=>[job+':'+slot,{effects:['fortune',slot==='weapon'?'attack':'vitality','recovery'],locked:false,epic:true,rarity:'rare',efficiency:true}]))) } });
   const integer = n => Number.isSafeInteger(n) && n >= 0;
@@ -37,9 +37,13 @@
     if(Trials.serious({reincarnation:result})&&result.duoDefeatedJourney!==result.journey)result.defeatedCycle=null;
     result.pendingPoints = result.defeatedCycle === result.cycle ? (integer(raw.pendingPoints) && raw.pendingPoints >= D.POINTS && raw.pendingPoints <= maxPoints ? raw.pendingPoints : D.POINTS) : 0;
     result.resultOptions = cleanResultOptions(raw.resultOptions);
+    result.pendingOptions = optionUnlocks({reincarnation:result}).map(o=>o.id).filter(id=>Array.isArray(raw.pendingOptions) && raw.pendingOptions.includes(id));
+    result.resumeAfterRebirth = raw.resumeAfterRebirth === true && result.cycle > 0;
     const a = raw.automation;
     result.automation.skills = a?.skills === true; result.automation.gems = a?.gems === true;
     result.automation.waitForMainGear = a?.waitForMainGear === true;
+    result.automation.rebirth = a?.rebirth === true;
+    for (const gate of ['dimensional-gate', 'chaos-gate']) result.automation.gates[gate] = ['sub', 'all'].includes(a?.gates?.[gate]) ? a.gates[gate] : 'off';
     for (const job of Object.keys(P.CHARACTERS)) {
       result.automation.priorities[job] = {};
       for (const n of P.SKILLS[job]) {
@@ -60,6 +64,15 @@
     return { skip: raw?.skip === true, delay: Number.isFinite(raw?.delay) && raw.delay >= .5 && raw.delay <= 5 && Number.isInteger(raw.delay * 2) ? raw.delay : 5 };
   }
   const resultOptionsUnlocked = save => !!save.reincarnation?.unlocked && save.reincarnation.cycle >= 1;
+  function optionUnlocks(save) {
+    const entries = [];
+    if (resultOptionsUnlocked(save)) entries.push(
+      { id: 'gate-farming', icon: 'repeat', title: '門の強化待ち', detail: '設定 / 次元の門・混沌の門', target: 'options' },
+      { id: 'result-options', icon: 'clock', title: 'リザルト設定', detail: '設定 / 演出スキップ・待ち時間', target: 'options' });
+    if (Trials.unlocked(save)) entries.push({ id: 'auto-rebirth', icon: 'repeat', title: '自動転生', detail: '設定 / 今の試練を引き継いで次の周へ', target: 'options' });
+    return entries;
+  }
+  const autoRebirth = save => Trials.unlocked(save) && save.reincarnation.automation?.rebirth === true && eligible(save);
   const resultOptions = save => cleanResultOptions(resultOptionsUnlocked(save) ? save.reincarnation.resultOptions : null);
   const state = save => ({ total: save.reincarnation?.total || 0, owned: new Set(['origin', ...(save.reincarnation?.owned || [])]) });
   const bonuses = save => P.permanent(save);
@@ -126,6 +139,9 @@
       encounteredEnemies: [...save.encounteredEnemies], discoveredGemRarities: [...save.discoveredGemRarities],
       autoGear: structuredClone(save.autoGear), autoGemDismantle: structuredClone(save.autoGemDismantle), autoMode: save.autoMode, speed: save.speed });
     if(Trials.rules(next).solo)next.progression.selected=Trials.rules(next).solo.job;
+    const knownOptions = new Set(optionUnlocks(save).map(o=>o.id));
+    r.pendingOptions = [...new Set([...(r.pendingOptions || []), ...optionUnlocks(next).filter(o=>!knownOptions.has(o.id)).map(o=>o.id)])];
+    r.resumeAfterRebirth = options.automatic === true;
     return next;
   }
   function skipDestination(save, from) {
@@ -148,5 +164,5 @@
       else P['recruit' + job[0].toUpperCase() + job.slice(1)](save);
     }
   }
-  return { fresh, restore, resultOptionsUnlocked, resultOptions, state, bonuses, points, status, purchase, capture, victory, eligible, payout, prepare, skipDestination, pass };
+  return { fresh, restore, resultOptionsUnlocked, resultOptions, optionUnlocks, autoRebirth, state, bonuses, points, status, purchase, capture, victory, eligible, payout, prepare, skipDestination, pass };
 });
