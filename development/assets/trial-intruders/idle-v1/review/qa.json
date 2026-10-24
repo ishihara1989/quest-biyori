@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-24",
+  "status": "automatic-and-visual-review-passed-candidates-awaiting-user-review",
+  "clips": 11,
+  "uniqueFrames": 43,
+  "cycleDurationMs": 1440,
+  "facing": "left",
+  "alphaPreserved": true,
+  "sourceSolidBorderPixels": 0,
+  "destinationSolidBorderPixels": 0,
+  "minimumOutputMarginPx": 12,
+  "gifPagesAndTimingVerified": true,
+  "runtimeRegistered": false,
+  "playbackAdjustments": [
+    "storm-raptor uses 1-2-3-4-3-2 to return through intermediate wing poses",
+    "cryo-jellyfish excludes source pose 2 with an occluded crystal ribbon, uses source poses 1-3-4 in playback 1-2-3-2"
+  ],
+  "visualReview": {
+    "all43Frames": true,
+    "continuousNormalSpeed": true,
+    "continuousSlowSpeed": 0.35,
+    "loopJoins": true,
+    "groundedContacts": true,
+    "floatingParts": true,
+    "faceAndLimbConnections": true,
+    "paletteAndTransparency": true,
+    "backgrounds": [
+      "dark",
+      "light",
+      "checker"
+    ],
+    "facing": "Left. Goddess face, shoulders, chest, waist, knees and toes aim left; jelly core/front rim turned left.",
+    "goddessEye": "Pale ice-lilac pearly luminous iris, white highlights, dark upper lash and strong brow; open in all four drawings.",
+    "reviewedIn": "Local in-app browser and full-size contact sheets.",
+    "runtimeRegistered": false
+  },
+  "browser": {
+    "url": "http://127.0.0.1:4194/development/labs/trial-intruder-idles.html",
+    "normalWidth": 1200,
+    "narrowWidth": 360,
+    "controls": [
+      "pause/resume",
+      "restart",
+      "enemy selection",
+      "frame stepping with wrap",
+      "normal/0.35 speed",
+      "dark/light/checker",
+      "full-frame gallery"
+    ],
+    "screenshots": [
+      "browser-eye-review.png",
+      "browser-gallery-checker.png",
+      "browser-width-1200.png",
+      "browser-width-360.png",
+      "browser-gallery-light-slow.png"
+    ]
+  },
+  "validation": {
+    "structure": "passed",
+    "repositoryStructureTests": "4/4 passed",
+    "builderSyntax": "passed",
+    "previewSyntax": "passed",
+    "diffCheck": "passed"
+  }
+}

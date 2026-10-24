@@ -1,6 +1,6 @@
 # 開発用の素材と検証
 
-試練追加敵の[全10地域＋外宇宙の女神のSFデザイン案](../docs/design/trial-intruder-enemy-designs.md)と[遺跡・玉座の女形の静止画・全文プロンプト・検収記録](assets/trial-intruders/design-v2/README.md)を保存。外宇宙の女神は転生の女神の後。初稿の05遺跡を修正し、10玉座用の女王機を別に追加。未承認・本編未登録で、モーションは未制作です。
+試練追加敵の[全10地域＋外宇宙の女神のSFデザイン案](../docs/design/trial-intruder-enemy-designs.md)と[遺跡・玉座の女形の静止画・全文プロンプト・検収記録](assets/trial-intruders/design-v2/README.md)を保存。外宇宙の女神は転生の女神の後。初稿の05遺跡を修正し、10玉座用の女王機を別に追加。左向き待機は[11体・43枚の制作と検収](assets/trial-intruders/idle-v1/README.md)へ進みました。[通常／低速・目元・全コマの検収画面](labs/trial-intruder-idles.html)を用意。本編未登録です。
 
 転生の星図は[ツリーモック](labs/reincarnation-tree.html)でレビューできます。140ノードの前提・仮価格・効果、6つの取得段階、取得確認、系統強調、検索・一覧を確認できます。火力・HP各18段階、容量17段階、技能16段階、ドロップ率15段階へ中間を拡充。大ボス素材無償化と最大100万PTの後半ノードを維持しています。空白ドラッグは本編のスキル・通常装備・女神装備と共通の操作です。[構成・操作・検証範囲](../docs/design/reincarnation-tree-mock.md)。本編のセーブは読み書きしません。
 

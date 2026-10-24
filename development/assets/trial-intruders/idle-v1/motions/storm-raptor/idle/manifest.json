@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "enemy": "storm-raptor",
+  "label": "天嵐の星隼",
+  "motion": "idle",
+  "facing": "left",
+  "previewOnly": true,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "pivot": {
+    "x": 256,
+    "y": 448
+  },
+  "sheet": "sheet.png",
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "frameDurationMs": 240,
+  "durationMs": 1440,
+  "loop": true,
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 240
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 240
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 240
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 240
+    }
+  ],
+  "source": "../../../source/storm-raptor-idle-generated-v1.png"
+}

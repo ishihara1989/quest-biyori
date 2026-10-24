@@ -1,0 +1,68 @@
+[
+  {
+    "id": "star-stag",
+    "label": "星芽の機鹿",
+    "region": 1,
+    "manifest": "star-stag/idle/manifest.json"
+  },
+  {
+    "id": "reactor-toad",
+    "label": "瘴気の機蟾",
+    "region": 2,
+    "manifest": "reactor-toad/idle/manifest.json"
+  },
+  {
+    "id": "drill-mole",
+    "label": "深層の掘削獣",
+    "region": 3,
+    "manifest": "drill-mole/idle/manifest.json"
+  },
+  {
+    "id": "survey-manta",
+    "label": "潮境の星翼",
+    "region": 4,
+    "manifest": "survey-manta/idle/manifest.json"
+  },
+  {
+    "id": "archive-maiden",
+    "label": "星環の記録官",
+    "region": 5,
+    "manifest": "archive-maiden/idle/manifest.json"
+  },
+  {
+    "id": "solar-scarab",
+    "label": "日輪の機甲虫",
+    "region": 6,
+    "manifest": "solar-scarab/idle/manifest.json"
+  },
+  {
+    "id": "storm-raptor",
+    "label": "天嵐の星隼",
+    "region": 7,
+    "manifest": "storm-raptor/idle/manifest.json"
+  },
+  {
+    "id": "cryo-jellyfish",
+    "label": "氷晶の観測体",
+    "region": 8,
+    "manifest": "cryo-jellyfish/idle/manifest.json"
+  },
+  {
+    "id": "furnace-centipede",
+    "label": "炉心の百足",
+    "region": 9,
+    "manifest": "furnace-centipede/idle/manifest.json"
+  },
+  {
+    "id": "throne-queen",
+    "label": "宵星の女王機",
+    "region": 10,
+    "manifest": "throne-queen/idle/manifest.json"
+  },
+  {
+    "id": "outer-space-goddess",
+    "label": "外宇宙の女神",
+    "region": null,
+    "manifest": "outer-space-goddess/idle/manifest.json"
+  }
+]

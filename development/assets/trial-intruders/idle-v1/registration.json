@@ -1,0 +1,2241 @@
+{
+  "date": "2026-10-24",
+  "processing": "Only measured crop, uniform nearest-neighbor scaling, translation and packing; original RGBA preserved; no recolor, alpha threshold editing, mirroring or procedural redraw.",
+  "alphaMeasurementThreshold": 32,
+  "note": "Threshold used only for measurements; no alpha/color pixel editing. Bounding-box anchors are measured proxies, not anatomical waist coordinates.",
+  "clips": [
+    {
+      "id": "star-stag",
+      "xCuts": [
+        0,
+        622,
+        1254
+      ],
+      "yCuts": [
+        0,
+        633,
+        1254
+      ],
+      "source": "source/star-stag-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          66,
+          14,
+          1177,
+          1236
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 452634,
+        "transparentFraction": 0.5752094096339878
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 622,
+            "height": 633
+          },
+          "crop": {
+            "left": 62,
+            "top": 32,
+            "width": 494,
+            "height": 587
+          },
+          "sourceBounds": [
+            66,
+            36,
+            551,
+            614
+          ],
+          "measuredAnchorProxy": [
+            308.5,
+            614
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6655574043261231,
+          "translation": [
+            92,
+            61
+          ],
+          "bounds": [
+            95,
+            64,
+            417,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 49194,
+          "transparentFraction": 0.7269096374511719,
+          "sha256": "01cc1c15a5db8640e6294c8f34d8315ffa6ed97304f24ea102c661419fe441c3"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 622,
+            "top": 0,
+            "width": 632,
+            "height": 633
+          },
+          "crop": {
+            "left": 699,
+            "top": 10,
+            "width": 483,
+            "height": 609
+          },
+          "sourceBounds": [
+            703,
+            14,
+            1177,
+            614
+          ],
+          "measuredAnchorProxy": [
+            940,
+            614
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6655574043261231,
+          "translation": [
+            96,
+            46
+          ],
+          "bounds": [
+            99,
+            49,
+            413,
+            447
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 51097,
+          "transparentFraction": 0.7174911499023438,
+          "sha256": "6ba64a7be3de27537b29f1a6abfc36299df277824dd8fb5ef0dbc59db1109917"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 633,
+            "width": 622,
+            "height": 621
+          },
+          "crop": {
+            "left": 63,
+            "top": 648,
+            "width": 493,
+            "height": 593
+          },
+          "sourceBounds": [
+            67,
+            652,
+            551,
+            1236
+          ],
+          "measuredAnchorProxy": [
+            309,
+            1236
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6655574043261231,
+          "translation": [
+            92,
+            57
+          ],
+          "bounds": [
+            94,
+            60,
+            417,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 49753,
+          "transparentFraction": 0.7198524475097656,
+          "sha256": "fc91ec52f74212aeda9318f7efea91b8d47bedc2b08a13b7b0a9759dec0020e4"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 622,
+            "top": 633,
+            "width": 632,
+            "height": 621
+          },
+          "crop": {
+            "left": 690,
+            "top": 653,
+            "width": 492,
+            "height": 588
+          },
+          "sourceBounds": [
+            694,
+            657,
+            1177,
+            1236
+          ],
+          "measuredAnchorProxy": [
+            935.5,
+            1236
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6655574043261231,
+          "translation": [
+            93,
+            60
+          ],
+          "bounds": [
+            96,
+            63,
+            416,
+            447
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 50325,
+          "transparentFraction": 0.72186279296875,
+          "sha256": "75bbde6c279cd1ef17c827e60dacfcd8875e1001b5a5ce80f3d28e90f2d8de6f"
+        }
+      ]
+    },
+    {
+      "id": "reactor-toad",
+      "xCuts": [
+        0,
+        623,
+        1254
+      ],
+      "yCuts": [
+        0,
+        656,
+        1254
+      ],
+      "source": "source/reactor-toad-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          25,
+          143,
+          1222,
+          1171
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 736329,
+        "transparentFraction": 0.4883314382810731
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 623,
+            "height": 656
+          },
+          "crop": {
+            "left": 22,
+            "top": 146,
+            "width": 590,
+            "height": 451
+          },
+          "sourceBounds": [
+            26,
+            150,
+            607,
+            592
+          ],
+          "measuredAnchorProxy": [
+            316.5,
+            592
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            54,
+            143
+          ],
+          "bounds": [
+            57,
+            146,
+            454,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 85896,
+          "transparentFraction": 0.6409759521484375,
+          "sha256": "db1adf4437230911018dc9e36853d68fabf0d164cf0e60d16bb134ab25fee520"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 623,
+            "top": 0,
+            "width": 631,
+            "height": 656
+          },
+          "crop": {
+            "left": 635,
+            "top": 139,
+            "width": 590,
+            "height": 458
+          },
+          "sourceBounds": [
+            639,
+            143,
+            1220,
+            592
+          ],
+          "measuredAnchorProxy": [
+            929.5,
+            592
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            54,
+            138
+          ],
+          "bounds": [
+            56,
+            141,
+            455,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 87799,
+          "transparentFraction": 0.636138916015625,
+          "sha256": "550f72799325ecdde4e632d55949666a293cd75275f5ce45393e30a34756706f"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 656,
+            "width": 623,
+            "height": 598
+          },
+          "crop": {
+            "left": 21,
+            "top": 716,
+            "width": 591,
+            "height": 455
+          },
+          "sourceBounds": [
+            25,
+            720,
+            607,
+            1166
+          ],
+          "measuredAnchorProxy": [
+            316,
+            1166
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            54,
+            140
+          ],
+          "bounds": [
+            57,
+            143,
+            455,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 87739,
+          "transparentFraction": 0.6368904113769531,
+          "sha256": "90532a8681b050724c61d3fe99820b73a26a9c179a38e3bdc5dff6c19a6668f8"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 623,
+            "top": 656,
+            "width": 631,
+            "height": 598
+          },
+          "crop": {
+            "left": 635,
+            "top": 735,
+            "width": 592,
+            "height": 441
+          },
+          "sourceBounds": [
+            639,
+            739,
+            1222,
+            1171
+          ],
+          "measuredAnchorProxy": [
+            930.5,
+            1171
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            54,
+            149
+          ],
+          "bounds": [
+            57,
+            152,
+            455,
+            447
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 84366,
+          "transparentFraction": 0.6487960815429688,
+          "sha256": "331aa21a63ac5e9860dd6a6a7f694c9b375ef64c5ba36b25c38c94a11e5413e4"
+        }
+      ]
+    },
+    {
+      "id": "drill-mole",
+      "xCuts": [
+        0,
+        625,
+        1254
+      ],
+      "yCuts": [
+        0,
+        629,
+        1254
+      ],
+      "source": "source/drill-mole-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          31,
+          88,
+          1236,
+          1181
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 742113,
+        "transparentFraction": 0.47510104825642474
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 625,
+            "height": 629
+          },
+          "crop": {
+            "left": 27,
+            "top": 95,
+            "width": 594,
+            "height": 470
+          },
+          "sourceBounds": [
+            31,
+            99,
+            616,
+            560
+          ],
+          "measuredAnchorProxy": [
+            323.5,
+            560
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6633499170812603,
+          "translation": [
+            59,
+            140
+          ],
+          "bounds": [
+            61,
+            143,
+            450,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 80381,
+          "transparentFraction": 0.6613540649414062,
+          "sha256": "30ff365ad33d7ff5b0a3edca51429531b2845a25b6fb99ea09d83e0cef05991b"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 625,
+            "top": 0,
+            "width": 629,
+            "height": 629
+          },
+          "crop": {
+            "left": 645,
+            "top": 84,
+            "width": 586,
+            "height": 472
+          },
+          "sourceBounds": [
+            649,
+            88,
+            1226,
+            551
+          ],
+          "measuredAnchorProxy": [
+            937.5,
+            551
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6633499170812603,
+          "translation": [
+            62,
+            138
+          ],
+          "bounds": [
+            65,
+            140,
+            447,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 81842,
+          "transparentFraction": 0.6554603576660156,
+          "sha256": "71ec5dbe51c91dee72ab60f2b2c7d64bd2ce42134b0f7c5f158f7a48d460fc39"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 629,
+            "width": 625,
+            "height": 625
+          },
+          "crop": {
+            "left": 27,
+            "top": 694,
+            "width": 594,
+            "height": 472
+          },
+          "sourceBounds": [
+            31,
+            698,
+            616,
+            1161
+          ],
+          "measuredAnchorProxy": [
+            323.5,
+            1161
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6633499170812603,
+          "translation": [
+            59,
+            138
+          ],
+          "bounds": [
+            62,
+            141,
+            449,
+            447
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 81268,
+          "transparentFraction": 0.6581344604492188,
+          "sha256": "db0777827386c521867661383cf1d8a5fba96e7ea940c1c27ec9f78e72796f47"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 625,
+            "top": 629,
+            "width": 629,
+            "height": 625
+          },
+          "crop": {
+            "left": 630,
+            "top": 706,
+            "width": 611,
+            "height": 480
+          },
+          "sourceBounds": [
+            634,
+            710,
+            1236,
+            1181
+          ],
+          "measuredAnchorProxy": [
+            935,
+            1181
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6633499170812603,
+          "translation": [
+            54,
+            133
+          ],
+          "bounds": [
+            57,
+            136,
+            455,
+            447
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 83089,
+          "transparentFraction": 0.6506729125976562,
+          "sha256": "2d8f965972a091caf15a386855fe5c969f9bdec6689b0d63f54bac57a666ec52"
+        }
+      ]
+    },
+    {
+      "id": "survey-manta",
+      "xCuts": [
+        0,
+        629,
+        1254
+      ],
+      "yCuts": [
+        0,
+        624,
+        1254
+      ],
+      "source": "source/survey-manta-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          33,
+          91,
+          1231,
+          1175
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 398639,
+        "transparentFraction": 0.6460347621264267
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 629,
+            "height": 624
+          },
+          "crop": {
+            "left": 29,
+            "top": 102,
+            "width": 575,
+            "height": 445
+          },
+          "sourceBounds": [
+            33,
+            106,
+            599,
+            542
+          ],
+          "measuredAnchorProxy": [
+            316,
+            324
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.6993006993006993,
+          "translation": [
+            55,
+            97
+          ],
+          "bounds": [
+            58,
+            100,
+            453,
+            404
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 47214,
+          "transparentFraction": 0.7614707946777344,
+          "sha256": "6cbb08f56297facad56bbfad6d37bc27fc8c218f4ccc3a6aa84aa99955ca5ba6"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 629,
+            "top": 0,
+            "width": 625,
+            "height": 624
+          },
+          "crop": {
+            "left": 657,
+            "top": 87,
+            "width": 566,
+            "height": 444
+          },
+          "sourceBounds": [
+            661,
+            91,
+            1218,
+            526
+          ],
+          "measuredAnchorProxy": [
+            939.5,
+            308.5
+          ],
+          "targetAnchor": [
+            256,
+            249
+          ],
+          "scale": 0.6993006993006993,
+          "translation": [
+            58,
+            94
+          ],
+          "bounds": [
+            61,
+            96,
+            450,
+            400
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 49026,
+          "transparentFraction": 0.7606697082519531,
+          "sha256": "a568661697a4a6519c6d8ea60d023aa540d0056f4c66c0eb19cce37430ad5b18"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 624,
+            "width": 629,
+            "height": 630
+          },
+          "crop": {
+            "left": 29,
+            "top": 702,
+            "width": 574,
+            "height": 445
+          },
+          "sourceBounds": [
+            33,
+            706,
+            598,
+            1142
+          ],
+          "measuredAnchorProxy": [
+            315.5,
+            924
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.6993006993006993,
+          "translation": [
+            56,
+            97
+          ],
+          "bounds": [
+            59,
+            100,
+            453,
+            404
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 48563,
+          "transparentFraction": 0.7650909423828125,
+          "sha256": "1e879eee487e26c3110c8e805da1fdab614f55363be1063de9f5aded60530e03"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 629,
+            "top": 624,
+            "width": 625,
+            "height": 630
+          },
+          "crop": {
+            "left": 656,
+            "top": 713,
+            "width": 580,
+            "height": 467
+          },
+          "sourceBounds": [
+            660,
+            717,
+            1231,
+            1175
+          ],
+          "measuredAnchorProxy": [
+            945.5,
+            946
+          ],
+          "targetAnchor": [
+            256,
+            255
+          ],
+          "scale": 0.6993006993006993,
+          "translation": [
+            54,
+            92
+          ],
+          "bounds": [
+            57,
+            95,
+            456,
+            415
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 50279,
+          "transparentFraction": 0.7512016296386719,
+          "sha256": "f481d04f992588b613dc5e8c0522931465aaceca621945c4db6f53a97045a14f"
+        }
+      ]
+    },
+    {
+      "id": "archive-maiden",
+      "xCuts": [
+        0,
+        629,
+        1254
+      ],
+      "yCuts": [
+        0,
+        626,
+        1254
+      ],
+      "source": "source/archive-maiden-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          146,
+          16,
+          1124,
+          1229
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 375344,
+        "transparentFraction": 0.6448347743361594
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 629,
+            "height": 626
+          },
+          "crop": {
+            "left": 145,
+            "top": 18,
+            "width": 366,
+            "height": 587
+          },
+          "sourceBounds": [
+            149,
+            22,
+            506,
+            600
+          ],
+          "measuredAnchorProxy": [
+            327.5,
+            311
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            131,
+            51
+          ],
+          "bounds": [
+            134,
+            53,
+            378,
+            449
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 43554,
+          "transparentFraction": 0.7616195678710938,
+          "sha256": "669d410b2c0d690dbed3bde90bb66a2d1680627555b14f58df73ea61c65fbf07"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 629,
+            "top": 0,
+            "width": 625,
+            "height": 626
+          },
+          "crop": {
+            "left": 751,
+            "top": 12,
+            "width": 376,
+            "height": 592
+          },
+          "sourceBounds": [
+            755,
+            16,
+            1122,
+            599
+          ],
+          "measuredAnchorProxy": [
+            938.5,
+            307.5
+          ],
+          "targetAnchor": [
+            256,
+            249
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            128,
+            47
+          ],
+          "bounds": [
+            131,
+            49,
+            382,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 43798,
+          "transparentFraction": 0.7559967041015625,
+          "sha256": "dbb394bc92647f6ceafe0075265193846d00f8ef1e7a8c4eda7337f45de3c179"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 626,
+            "width": 629,
+            "height": 628
+          },
+          "crop": {
+            "left": 142,
+            "top": 648,
+            "width": 368,
+            "height": 578
+          },
+          "sourceBounds": [
+            146,
+            652,
+            505,
+            1221
+          ],
+          "measuredAnchorProxy": [
+            325.5,
+            936.5
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            130,
+            54
+          ],
+          "bounds": [
+            133,
+            57,
+            378,
+            446
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 43868,
+          "transparentFraction": 0.7536697387695312,
+          "sha256": "23a0654e620cb6ac22eb3ef3d0eed9399e58c32b71015b81f43e1fb2231f9148"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 629,
+            "top": 626,
+            "width": 625,
+            "height": 628
+          },
+          "crop": {
+            "left": 749,
+            "top": 656,
+            "width": 380,
+            "height": 578
+          },
+          "sourceBounds": [
+            753,
+            660,
+            1124,
+            1229
+          ],
+          "measuredAnchorProxy": [
+            938.5,
+            944.5
+          ],
+          "targetAnchor": [
+            256,
+            255
+          ],
+          "scale": 0.684931506849315,
+          "translation": [
+            126,
+            57
+          ],
+          "bounds": [
+            129,
+            60,
+            382,
+            449
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 45172,
+          "transparentFraction": 0.749755859375,
+          "sha256": "e531c67a2735ce8b60cd3bddf2775b5cb0b7da3ca389ced1078f38daa61015fa"
+        }
+      ]
+    },
+    {
+      "id": "solar-scarab",
+      "xCuts": [
+        0,
+        626,
+        1254
+      ],
+      "yCuts": [
+        0,
+        625,
+        1254
+      ],
+      "source": "source/solar-scarab-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          44,
+          36,
+          1222,
+          1219
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 676604,
+        "transparentFraction": 0.5214274449353774
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 626,
+            "height": 625
+          },
+          "crop": {
+            "left": 41,
+            "top": 36,
+            "width": 561,
+            "height": 574
+          },
+          "sourceBounds": [
+            45,
+            40,
+            597,
+            605
+          ],
+          "measuredAnchorProxy": [
+            321,
+            605
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.7017543859649122,
+          "translation": [
+            60,
+            49
+          ],
+          "bounds": [
+            63,
+            52,
+            450,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 82190,
+          "transparentFraction": 0.6519088745117188,
+          "sha256": "268ec19fe24f881b45729cfe1c9d86723a313fd811a33cdcd824795b5e3c823d"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 626,
+            "top": 0,
+            "width": 628,
+            "height": 625
+          },
+          "crop": {
+            "left": 651,
+            "top": 32,
+            "width": 562,
+            "height": 578
+          },
+          "sourceBounds": [
+            655,
+            36,
+            1208,
+            605
+          ],
+          "measuredAnchorProxy": [
+            931.5,
+            605
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.7017543859649122,
+          "translation": [
+            59,
+            46
+          ],
+          "bounds": [
+            61,
+            49,
+            449,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 83488,
+          "transparentFraction": 0.6459884643554688,
+          "sha256": "3b17b0db0175f23bcdb269de5adf15b78137b0fa1e4e80f1bce38ac6f6035354"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 625,
+            "width": 626,
+            "height": 629
+          },
+          "crop": {
+            "left": 40,
+            "top": 641,
+            "width": 562,
+            "height": 575
+          },
+          "sourceBounds": [
+            44,
+            645,
+            597,
+            1211
+          ],
+          "measuredAnchorProxy": [
+            320.5,
+            1211
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.7017543859649122,
+          "translation": [
+            59,
+            48
+          ],
+          "bounds": [
+            61,
+            51,
+            449,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 83443,
+          "transparentFraction": 0.6458244323730469,
+          "sha256": "7a0e1d05e72dd79a2d6fbbcbd786910d176f3c5fa12b327daa340bb556b75664"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 626,
+            "top": 625,
+            "width": 628,
+            "height": 629
+          },
+          "crop": {
+            "left": 655,
+            "top": 646,
+            "width": 572,
+            "height": 578
+          },
+          "sourceBounds": [
+            659,
+            650,
+            1222,
+            1219
+          ],
+          "measuredAnchorProxy": [
+            940.5,
+            1219
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.7017543859649122,
+          "translation": [
+            56,
+            46
+          ],
+          "bounds": [
+            58,
+            49,
+            453,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 84621,
+          "transparentFraction": 0.6418418884277344,
+          "sha256": "9b78b6ffcadd221dae46b2d74ba5e82eadffece75bb14e5b4d68123b015595db"
+        }
+      ]
+    },
+    {
+      "id": "storm-raptor",
+      "xCuts": [
+        0,
+        627,
+        1254
+      ],
+      "yCuts": [
+        0,
+        621,
+        1254
+      ],
+      "source": "source/storm-raptor-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          47,
+          14,
+          1229,
+          1235
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 521760,
+        "transparentFraction": 0.5719445779883957
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 621
+          },
+          "crop": {
+            "left": 49,
+            "top": 12,
+            "width": 554,
+            "height": 594
+          },
+          "sourceBounds": [
+            53,
+            16,
+            598,
+            601
+          ],
+          "measuredAnchorProxy": [
+            325.5,
+            308.5
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.6791171477079796,
+          "translation": [
+            68,
+            51
+          ],
+          "bounds": [
+            71,
+            54,
+            440,
+            450
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 61678,
+          "transparentFraction": 0.6973381042480469,
+          "sha256": "4e7398aef526fbdab736324ba4187df5045a79889f39cb05b5fcd0c6f12361f2"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 627,
+            "top": 0,
+            "width": 627,
+            "height": 621
+          },
+          "crop": {
+            "left": 667,
+            "top": 10,
+            "width": 532,
+            "height": 592
+          },
+          "sourceBounds": [
+            671,
+            14,
+            1194,
+            597
+          ],
+          "measuredAnchorProxy": [
+            932.5,
+            305.5
+          ],
+          "targetAnchor": [
+            256,
+            249
+          ],
+          "scale": 0.6791171477079796,
+          "translation": [
+            76,
+            48
+          ],
+          "bounds": [
+            79,
+            51,
+            433,
+            446
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 59979,
+          "transparentFraction": 0.7056312561035156,
+          "sha256": "6d1784cf27da299416dc2ba3b8729cb0debee5e22a3a8879148031466e044929"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 621,
+            "width": 627,
+            "height": 633
+          },
+          "crop": {
+            "left": 43,
+            "top": 638,
+            "width": 562,
+            "height": 597
+          },
+          "sourceBounds": [
+            47,
+            642,
+            600,
+            1230
+          ],
+          "measuredAnchorProxy": [
+            323.5,
+            936
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.6791171477079796,
+          "translation": [
+            66,
+            50
+          ],
+          "bounds": [
+            69,
+            52,
+            444,
+            451
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 62141,
+          "transparentFraction": 0.6977806091308594,
+          "sha256": "ea5aba7d6035c53f24f871c141a8b4768867c8fb7e5d7328e0e48bbddc2e01cd"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 627,
+            "top": 621,
+            "width": 627,
+            "height": 633
+          },
+          "crop": {
+            "left": 650,
+            "top": 702,
+            "width": 584,
+            "height": 538
+          },
+          "sourceBounds": [
+            654,
+            706,
+            1229,
+            1235
+          ],
+          "measuredAnchorProxy": [
+            941.5,
+            970.5
+          ],
+          "targetAnchor": [
+            256,
+            255
+          ],
+          "scale": 0.6791171477079796,
+          "translation": [
+            58,
+            73
+          ],
+          "bounds": [
+            61,
+            75,
+            451,
+            434
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 57000,
+          "transparentFraction": 0.7260665893554688,
+          "sha256": "2050db35f3aa75984182bcb6fcb9fa05cf854aa6ce2d1bc0bb3690c563055246"
+        }
+      ]
+    },
+    {
+      "id": "cryo-jellyfish",
+      "xCuts": [
+        0,
+        627,
+        1254
+      ],
+      "yCuts": [
+        0,
+        622,
+        1254
+      ],
+      "source": "source/cryo-jellyfish-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          112,
+          2,
+          1164,
+          1246
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 608123,
+        "transparentFraction": 0.5290712463339006
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 622
+          },
+          "crop": {
+            "left": 115,
+            "top": 0,
+            "width": 474,
+            "height": 622
+          },
+          "sourceBounds": [
+            119,
+            2,
+            584,
+            618
+          ],
+          "measuredAnchorProxy": [
+            351.5,
+            310
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.644122383252818,
+          "translation": [
+            104,
+            52
+          ],
+          "bounds": [
+            106,
+            53,
+            405,
+            450
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 64713,
+          "transparentFraction": 0.7028427124023438,
+          "sha256": "3d0f45811351761795a465645dfe6073812145daccb64731f6489fbebe9ccb5b"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 622,
+            "width": 627,
+            "height": 632
+          },
+          "crop": {
+            "left": 108,
+            "top": 626,
+            "width": 489,
+            "height": 622
+          },
+          "sourceBounds": [
+            112,
+            630,
+            592,
+            1243
+          ],
+          "measuredAnchorProxy": [
+            352,
+            936.5
+          ],
+          "targetAnchor": [
+            256,
+            249
+          ],
+          "scale": 0.644122383252818,
+          "translation": [
+            99,
+            49
+          ],
+          "bounds": [
+            101,
+            52,
+            411,
+            446
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 65645,
+          "transparentFraction": 0.6954612731933594,
+          "sha256": "7daa991316d8d0559715be0dc1b48cbaa55890e366dcd65b1c47ed6c2722df52"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 627,
+            "top": 622,
+            "width": 627,
+            "height": 632
+          },
+          "crop": {
+            "left": 659,
+            "top": 622,
+            "width": 510,
+            "height": 629
+          },
+          "sourceBounds": [
+            663,
+            626,
+            1164,
+            1246
+          ],
+          "measuredAnchorProxy": [
+            913.5,
+            936
+          ],
+          "targetAnchor": [
+            256,
+            255
+          ],
+          "scale": 0.644122383252818,
+          "translation": [
+            92,
+            53
+          ],
+          "bounds": [
+            95,
+            55,
+            417,
+            454
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 67366,
+          "transparentFraction": 0.6877059936523438,
+          "sha256": "35414efb67d4673728fe6b38c9b920c616822f88e8b2220aa2abce28d4977966"
+        }
+      ]
+    },
+    {
+      "id": "furnace-centipede",
+      "xCuts": [
+        0,
+        627,
+        1254
+      ],
+      "yCuts": [
+        0,
+        624,
+        1254
+      ],
+      "source": "source/furnace-centipede-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          30,
+          63,
+          1232,
+          1199
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 754126,
+        "transparentFraction": 0.43603689882964625
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 627,
+            "height": 624
+          },
+          "crop": {
+            "left": 27,
+            "top": 61,
+            "width": 591,
+            "height": 534
+          },
+          "sourceBounds": [
+            31,
+            65,
+            613,
+            590
+          ],
+          "measuredAnchorProxy": [
+            322,
+            590
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6756756756756757,
+          "translation": [
+            57,
+            91
+          ],
+          "bounds": [
+            59,
+            94,
+            452,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 85271,
+          "transparentFraction": 0.6190528869628906,
+          "sha256": "5a570ad1e5e6192f5f9787c35d07908cda47f1455486d89298de4e5e34ccac40"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 627,
+            "top": 0,
+            "width": 627,
+            "height": 624
+          },
+          "crop": {
+            "left": 636,
+            "top": 59,
+            "width": 593,
+            "height": 536
+          },
+          "sourceBounds": [
+            640,
+            63,
+            1224,
+            590
+          ],
+          "measuredAnchorProxy": [
+            932,
+            590
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6756756756756757,
+          "translation": [
+            56,
+            89
+          ],
+          "bounds": [
+            59,
+            91,
+            453,
+            448
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 85725,
+          "transparentFraction": 0.6175079345703125,
+          "sha256": "420708d4658ab2bc23506a7cbf6328804e3cfa7512d3817ccf9305e2841e17a7"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 624,
+            "width": 627,
+            "height": 630
+          },
+          "crop": {
+            "left": 26,
+            "top": 654,
+            "width": 593,
+            "height": 546
+          },
+          "sourceBounds": [
+            30,
+            658,
+            614,
+            1195
+          ],
+          "measuredAnchorProxy": [
+            322,
+            1195
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6756756756756757,
+          "translation": [
+            56,
+            82
+          ],
+          "bounds": [
+            59,
+            85,
+            453,
+            447
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 87021,
+          "transparentFraction": 0.611236572265625,
+          "sha256": "04337711c7c02037e3bdf275a9cca52c2483fb6900b69b43c023052686631b95"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 627,
+            "top": 624,
+            "width": 627,
+            "height": 630
+          },
+          "crop": {
+            "left": 637,
+            "top": 671,
+            "width": 600,
+            "height": 533
+          },
+          "sourceBounds": [
+            641,
+            675,
+            1232,
+            1199
+          ],
+          "measuredAnchorProxy": [
+            936.5,
+            1199
+          ],
+          "targetAnchor": [
+            256,
+            448
+          ],
+          "scale": 0.6756756756756757,
+          "translation": [
+            54,
+            91
+          ],
+          "bounds": [
+            57,
+            94,
+            455,
+            447
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 86477,
+          "transparentFraction": 0.61431884765625,
+          "sha256": "bd7cd0754f8715b58541af66f948034db3f979185af3e45ff5d0f5772ff47e6b"
+        }
+      ]
+    },
+    {
+      "id": "throne-queen",
+      "xCuts": [
+        0,
+        650,
+        1254
+      ],
+      "yCuts": [
+        0,
+        624,
+        1254
+      ],
+      "source": "source/throne-queen-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          166,
+          7,
+          1168,
+          1244
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 425818,
+        "transparentFraction": 0.6637852969381551
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 650,
+            "height": 624
+          },
+          "crop": {
+            "left": 162,
+            "top": 3,
+            "width": 378,
+            "height": 616
+          },
+          "sourceBounds": [
+            166,
+            7,
+            535,
+            614
+          ],
+          "measuredAnchorProxy": [
+            350.5,
+            310.5
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.6546644844517185,
+          "translation": [
+            133,
+            51
+          ],
+          "bounds": [
+            135,
+            54,
+            377,
+            450
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 45476,
+          "transparentFraction": 0.7864418029785156,
+          "sha256": "a2cc207434c4c2e38df46ee59e97491bddaf9bbf964f880f028531a74d51f806"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 650,
+            "top": 0,
+            "width": 604,
+            "height": 624
+          },
+          "crop": {
+            "left": 778,
+            "top": 3,
+            "width": 371,
+            "height": 614
+          },
+          "sourceBounds": [
+            782,
+            7,
+            1144,
+            612
+          ],
+          "measuredAnchorProxy": [
+            963,
+            309.5
+          ],
+          "targetAnchor": [
+            256,
+            249
+          ],
+          "scale": 0.6546644844517185,
+          "translation": [
+            135,
+            48
+          ],
+          "bounds": [
+            138,
+            51,
+            374,
+            446
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 44356,
+          "transparentFraction": 0.7903060913085938,
+          "sha256": "f1b90017ac4ea64d6a4575ae96bb97ed2d717a518a5302173b90924281c2dc1d"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 0,
+            "top": 624,
+            "width": 650,
+            "height": 630
+          },
+          "crop": {
+            "left": 174,
+            "top": 630,
+            "width": 369,
+            "height": 619
+          },
+          "sourceBounds": [
+            178,
+            634,
+            538,
+            1244
+          ],
+          "measuredAnchorProxy": [
+            358,
+            939
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.6546644844517185,
+          "translation": [
+            136,
+            50
+          ],
+          "bounds": [
+            139,
+            52,
+            374,
+            451
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 45918,
+          "transparentFraction": 0.7832679748535156,
+          "sha256": "ac85a10c4b4efd26995695512246b29630b39d806c2b789b4d4e99c3bb894693"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 650,
+            "top": 624,
+            "width": 604,
+            "height": 630
+          },
+          "crop": {
+            "left": 759,
+            "top": 630,
+            "width": 414,
+            "height": 618
+          },
+          "sourceBounds": [
+            763,
+            634,
+            1168,
+            1243
+          ],
+          "measuredAnchorProxy": [
+            965.5,
+            938.5
+          ],
+          "targetAnchor": [
+            256,
+            255
+          ],
+          "scale": 0.6546644844517185,
+          "translation": [
+            121,
+            53
+          ],
+          "bounds": [
+            123,
+            56,
+            389,
+            454
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 46903,
+          "transparentFraction": 0.7773780822753906,
+          "sha256": "f6aa47551ba41827fe7a8d8929e9bf27fc5dd0df2336a03971a080f5a6bbbc73"
+        }
+      ]
+    },
+    {
+      "id": "outer-space-goddess",
+      "xCuts": [
+        0,
+        555,
+        992,
+        1420,
+        1983
+      ],
+      "yCuts": [
+        0,
+        793
+      ],
+      "source": "source/outer-space-goddess-idle-generated-v1.png",
+      "sourceStats": {
+        "bounds": [
+          186,
+          12,
+          1791,
+          786
+        ],
+        "edgePixels": 0,
+        "visiblePixels": 465379,
+        "transparentFraction": 0.5899852402419303
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "sourceFrame": 1,
+          "measuredCell": {
+            "left": 0,
+            "top": 0,
+            "width": 555,
+            "height": 793
+          },
+          "crop": {
+            "left": 182,
+            "top": 10,
+            "width": 311,
+            "height": 780
+          },
+          "sourceBounds": [
+            186,
+            14,
+            488,
+            785
+          ],
+          "measuredAnchorProxy": [
+            337,
+            399.5
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.5181347150259067,
+          "translation": [
+            176,
+            50
+          ],
+          "bounds": [
+            178,
+            52,
+            334,
+            451
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 31663,
+          "transparentFraction": 0.8352928161621094,
+          "sha256": "ba71d621e47231ce2d7c79c27d72999f3b60a2f186bc4f0e98907eac5fd02184"
+        },
+        {
+          "frame": 2,
+          "sourceFrame": 2,
+          "measuredCell": {
+            "left": 555,
+            "top": 0,
+            "width": 437,
+            "height": 793
+          },
+          "crop": {
+            "left": 619,
+            "top": 8,
+            "width": 315,
+            "height": 761
+          },
+          "sourceBounds": [
+            623,
+            12,
+            929,
+            764
+          ],
+          "measuredAnchorProxy": [
+            776,
+            388
+          ],
+          "targetAnchor": [
+            256,
+            249
+          ],
+          "scale": 0.5181347150259067,
+          "translation": [
+            175,
+            52
+          ],
+          "bounds": [
+            177,
+            54,
+            335,
+            443
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 30902,
+          "transparentFraction": 0.8379478454589844,
+          "sha256": "efc82f3ace0888cf4df64c99149f1fbc963a07e444a519dea27c612ffaf064ca"
+        },
+        {
+          "frame": 3,
+          "sourceFrame": 3,
+          "measuredCell": {
+            "left": 992,
+            "top": 0,
+            "width": 428,
+            "height": 793
+          },
+          "crop": {
+            "left": 1051,
+            "top": 10,
+            "width": 313,
+            "height": 780
+          },
+          "sourceBounds": [
+            1055,
+            14,
+            1359,
+            785
+          ],
+          "measuredAnchorProxy": [
+            1207,
+            399.5
+          ],
+          "targetAnchor": [
+            256,
+            252
+          ],
+          "scale": 0.5181347150259067,
+          "translation": [
+            175,
+            50
+          ],
+          "bounds": [
+            177,
+            52,
+            334,
+            451
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 31729,
+          "transparentFraction": 0.8323020935058594,
+          "sha256": "0b03ad5034d57b5900c14cbe44c541d4d6e60909dfff4e449ed25d7f5ea6adfa"
+        },
+        {
+          "frame": 4,
+          "sourceFrame": 4,
+          "measuredCell": {
+            "left": 1420,
+            "top": 0,
+            "width": 563,
+            "height": 793
+          },
+          "crop": {
+            "left": 1478,
+            "top": 44,
+            "width": 318,
+            "height": 747
+          },
+          "sourceBounds": [
+            1482,
+            48,
+            1791,
+            786
+          ],
+          "measuredAnchorProxy": [
+            1636.5,
+            417
+          ],
+          "targetAnchor": [
+            256,
+            255
+          ],
+          "scale": 0.5181347150259067,
+          "translation": [
+            174,
+            62
+          ],
+          "bounds": [
+            176,
+            63,
+            336,
+            446
+          ],
+          "edgePixels": 0,
+          "visiblePixels": 30766,
+          "transparentFraction": 0.8367271423339844,
+          "sha256": "b9db7ff002c10ebcaf7cbf56a86ac38960fe236025e8deb70023d9317e7973b6"
+        }
+      ]
+    }
+  ]
+}
