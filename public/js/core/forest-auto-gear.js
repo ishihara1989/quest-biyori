@@ -32,6 +32,14 @@
         return nodes(character, slot).every(node => !node.main || !Number.isInteger(node.stage) || node.stage > stage || owned.has(node.id));
       }));
   }
+  function gateComplete(save, regions, target) {
+    return CHARACTERS.filter(character => P.unlocked(save, character)).every(character =>
+      ['weapon', 'armor'].every(slot => {
+        const owned = new Set(save.progression.characters[character][slot]);
+        return nodes(character, slot).every(node => !Number.isInteger(node.stage) ||
+          !regions.includes(Math.ceil(node.stage / 10)) || target === 'sub' && node.unique || owned.has(node.id));
+      }));
+  }
   function acquire(save, limit = Number.MAX_SAFE_INTEGER) {
     if (!Number.isSafeInteger(limit) || limit <= 0) return [];
     const bought = [];
@@ -68,5 +76,5 @@
     for (const row of P.purchaseGearSteps(save, candidates.map(row => ({ character: row.character, slot: row.slot, node: row.node.id }))))
       yield row ? { ...row, kind: kinds.get(row.node) } : null;
   }
-  return { KINDS, CHARACTERS, fresh, restore, unlocked, mainComplete, acquire, acquireSteps };
+  return { KINDS, CHARACTERS, fresh, restore, unlocked, mainComplete, gateComplete, acquire, acquireSteps };
 });

@@ -15,7 +15,11 @@
     const recipes = C.RECIPES.filter(recipe => recipe.stages.every(id => after.has(id)) && !recipe.stages.every(id => save.cleared.includes(id)));
     if (recipes.length) entries.push({ id: 'recipes-' + stageId, icon: 'repeat', title: region.name + ' / 変換・購入', detail: '素材変換 +' + recipes.filter(row => !row.gold).length + ' / コモン購入 +' + recipes.filter(row => row.gold).length, target: 'inventory', region: region.id, recipes: recipes.map(row => row.id) });
     if (stageId === 10) entries.push({ id: 'auto-gear', icon: 'spark', title: '自動強化', detail: '設定 / 優先度', target: 'options' });
-    if (stageId === 50) entries.push({ id: 'gem-workshop', icon: 'gem', title: '工房', detail: 'ジェム / 合成・解体・強化・変換', target: 'gems' });
+    if (stageId === 50) {
+      entries.push({ id: 'gem-workshop', icon: 'gem', title: '工房', detail: 'ジェム / 合成・解体・強化・変換', target: 'gems' });
+      if (!save.reincarnation?.lifetimeStages?.includes(50) && !save.reincarnation?.lifetimePassed?.includes(50))
+        entries.push({ id: 'auto-dismantle', icon: 'gem', title: 'ジェム自動解体', detail: '設定 / 新規取得ジェムの条件指定', target: 'options' });
+    }
     for (const special of D.SPECIAL_STAGES) if (!special.reincarnation && special.unlockStage === stageId) entries.unshift({ id: special.id, icon: 'spark', title: special.realmName, detail: '特殊ステージ / ' + special.name, target: 'stages', stage: special.id, special: true });
     if (stage.number === 10 && D.REGIONS[stage.region]) entries.push({ id: 'region-' + (stage.region + 1), icon: 'map', title: D.REGIONS[stage.region].name, detail: '新地域', target: 'stages', region: stage.region + 1 });
     return entries;
