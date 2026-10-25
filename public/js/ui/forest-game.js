@@ -40,12 +40,23 @@
   const damageTextGroups = new Map();
   let lastCooldownUpdate = -Infinity;
   const partyViews = new Map();
-  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { requestAutomaticGear(); runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: (options) => {
+  function performRebirth(options) {
     const next = Reincarnation.prepare(save, freshSave, options); if (!next || resetting) return;
     Achievements.sync(next);
     try { localStorage.setItem(SAVE_KEY,JSON.stringify(next)); resetting=true;setPlaying(false);location.reload(); }
-    catch { notify('転生を保存できませんでした。保存領域を確認してください。');options?.restart?reincarnationUI.render():reincarnationUI.review(); }
-  }, onAbandon: () => {
+    catch { setPlaying(false); notify('転生を保存できませんでした。保存領域を確認してください。');if(!options?.automatic)options?.restart?reincarnationUI.render():reincarnationUI.review(); }
+  }
+  const optionNotice = document.createElement('dialog');
+  optionNotice.className = 'option-unlock-dialog'; optionNotice.setAttribute('aria-labelledby', 'option-unlock-title'); document.body.append(optionNotice);
+  let knownOptions = new Set(Reincarnation.optionUnlocks(save).map(o=>o.id)), optionNoticeTimer;
+  function showOptionUnlocks(entries) {
+    if (!entries.length) return;
+    optionNotice.innerHTML = '<section class="unlock-intro"><p class="unlock-kicker">NEW OPTIONS</p><div class="unlock-emblem"><img src="assets/enemies/reincarnation-goddess/motions/fx-summon/frame-2.png" alt=""></div><h2 id="option-unlock-title">新しい設定、解放</h2><div class="unlock-cards">'+entries.map((entry,i)=>'<article class="unlock-card" data-unlock-id="'+entry.id+'" style="--card-delay:'+i*130+'ms"><span>'+icon(entry.icon)+'</span><div><strong>'+entry.title+'</strong><small>'+entry.detail+'</small></div><i>NEW</i></article>').join('')+'</div><form method="dialog"><button class="secondary-button" autofocus>続ける</button></form></section>';
+    if (!optionNotice.open) optionNotice.showModal();
+    clearTimeout(optionNoticeTimer); optionNoticeTimer = setTimeout(()=>optionNotice.close(), reduced?3200:5200);
+  }
+  optionNotice.addEventListener('close',()=>{clearTimeout(optionNoticeTimer);lastTime=undefined;});
+  const reincarnationUI = ReincarnationUI.create({ save, container: $('menu-content'), notify, onChange: () => { requestAutomaticGear(); runAutomaticGear(); invalidateBuilds(); persist(); refreshResources(); refreshGrowth(); }, onRebirth: performRebirth, onAbandon: () => {
     if(!Trials.abandon(save))return;
     const resume=playing,current=run.stage.id;invalidateBuilds();requestAutomaticGear();persist();
     if(started){startStage(current,true);setPlaying(resume);}refreshResources();refreshGrowth();
@@ -76,6 +87,9 @@
   function text(id, value) { if ($(id).textContent !== value) $(id).textContent = value; }
   function persist() {
     if (resetting) return;
+    const options = Reincarnation.optionUnlocks(save), newlyUnlocked = options.filter(o=>!knownOptions.has(o.id));
+    knownOptions = new Set(options.map(o=>o.id));
+    if (newlyUnlocked.length) showOptionUnlocks(newlyUnlocked);
     pendingSave = false;
     const achieved = Achievements.sync(save);
     if (achieved.length) notify('実績獲得 · '+achieved.slice(0,2).map(d=>d.name).join(' / ')+(achieved.length>2?' ほか'+(achieved.length-2)+'件':''));
@@ -514,6 +528,14 @@
   }
   function renderOptions() {
     $('menu-content').innerHTML = '<div class="options-page"><h3>' + icon('repeat') + '自動周回</h3><div class="auto-modes">' + [['same', 'repeat', '周回'], ['advance', 'arrow', '進行'], ['off', 'pause', 'OFF']].map(([mode, img, label]) => '<button data-auto-mode="' + mode + '" aria-pressed="' + (save.autoMode === mode) + '" data-tip="' + (mode === 'advance' ? 'クリアすると次へ。敗北すると1つ前のステージで周回。' : mode === 'same' ? '同じステージを周回。敗北すると1つ前のステージで周回。' : '結果画面で停止') + '">' + icon(img) + '<span>' + label + '</span></button>').join('') + '</div>' + (save.reincarnation?.unlocked ? '<label class="automation-toggle" data-tip="進行中、加入済みの味方全員の武器・防具が現在のステージまでのメイン強化を終えるまで周回。サブ・固有は対象外。"><input type="checkbox" data-reinc-auto="waitForMainGear" ' + (save.reincarnation.automation.waitForMainGear ? 'checked' : '') + '>メイン強化後に進行</label>' : '') + renderResultOptions() + (P.Gem.unlocked(save) ? gemDismantleUI.renderOptions() : '') + (ForestAutoGear.unlocked(save) ? autoGearUI.render() : '') + reincarnationUI.automation() + '<div class="options-reset" data-tip="育成・所持品・進行をすべて初期化"><div><h3>初期化</h3></div><button class="reset-save-button" data-reset-save>' + icon('repeat') + '初期化</button></div></div>';
+    $('menu-content').querySelector('.auto-modes').insertAdjacentHTML('afterend', renderLoopOptions());
+  }
+  function renderLoopOptions() {
+    const a = save.reincarnation.automation;
+    let html = '';
+    if (Reincarnation.resultOptionsUnlocked(save)) html += '<section class="gate-farming-options"><h3>'+icon('repeat')+'門の強化待ち</h3>'+[['dimensional-gate','次元の門','森〜遺跡'],['chaos-gate','混沌の門','砂漠〜魔王城']].map(([id,name,regions])=>'<label class="gate-farming-target" data-tip="進行モードで、'+regions+'の加入済み全員の武器・防具が指定の強化を取得するまで門を周回。メイン強化限定の試練では無視。自動強化の除外設定はそのまま適用。"><span>'+name+'</span><select data-gate-target="'+id+'" aria-label="'+name+'の進行条件">'+[['off','OFF'],['sub','メイン・サブまで'],['all','固有まですべて']].map(([value,label])=>'<option value="'+value+'" '+(a.gates[id]===value?'selected':'')+'>'+label+'</option>').join('')+'</select></label>').join('')+'</section>';
+    if (Trials.unlocked(save)) html += '<label class="automation-toggle" data-tip="転生可能になると、報酬表示後に今の試練を引き継いで自動転生し、森1から戦闘を再開。自動周回OFF中は停止。"><input type="checkbox" data-reinc-auto="rebirth" '+(a.rebirth?'checked':'')+'>自動転生</label>';
+    return html;
   }
   function resetSave() {
     try {
@@ -852,7 +874,7 @@
   }
   function draw(time) {
     const dt = lastTime === undefined ? 0 : Math.min(100, time - lastTime); lastTime = time;
-    const active = started && playing && !document.hidden;
+    const active = started && playing && !document.hidden && !optionNotice.open;
     const simDt = active ? dt * save.speed : 0;
     if (!document.hidden) runAutomaticGear();
     if (!started && !document.hidden && !reduced) previewTime += dt;
@@ -869,9 +891,13 @@
           lootUI.tick(resultAge - resultDelay);
         }
         const plan = lootUI.plan, shownAge = resultAge - resultDelay;
+        const rebirth = save.autoMode !== 'off' && Reincarnation.autoRebirth(save);
         const destination = autoDestination(save, run.stage.id, run.status === 'victory');
-        text('repeat-countdown', destination && shownAge >= plan.completeAt ? Math.max(0, Math.ceil((plan.repeatAt - shownAge) / 100) / 10) + '秒 → ' + ForestData.stageFor(save,destination.stage).name : '');
-        if (destination && shownAge >= plan.repeatAt) { save.autoMode = destination.mode; refreshAutoControls(); startStage(destination.stage, $('menu-dialog').open); }
+        text('repeat-countdown', (rebirth || destination) && shownAge >= plan.completeAt ? Math.max(0, Math.ceil((plan.repeatAt - shownAge) / 100) / 10) + '秒 → ' + (rebirth ? '転生' : ForestData.stageFor(save,destination.stage).name) : '');
+        if (shownAge >= plan.repeatAt && !autoGearPending) {
+          if (rebirth) performRebirth({automatic:true});
+          else if (destination) { save.autoMode = destination.mode; refreshAutoControls(); startStage(destination.stage, $('menu-dialog').open); }
+        }
       }
     }
     // The full-screen result owns animation now; its settled battle backdrop
@@ -1083,6 +1109,11 @@
     await RiftRenderer.load();
     await GoddessRenderer.load();
     ready = true; $('start-button').disabled = false; $('start-button').querySelector('span').textContent = '開始';
+    const pendingOptions = Reincarnation.optionUnlocks(save).filter(o=>save.reincarnation.pendingOptions.includes(o.id));
+    const resumeAfterRebirth = save.reincarnation.resumeAfterRebirth;
+    save.reincarnation.pendingOptions = []; save.reincarnation.resumeAfterRebirth = false; persist();
+    showOptionUnlocks(pendingOptions);
+    if (resumeAfterRebirth && save.autoMode !== 'off') startStage();
     if (menu === 'stages') $('menu-content').querySelector('.stage-detail').innerHTML = stageDetail();
     requestAnimationFrame(draw);
   } catch (error) {
