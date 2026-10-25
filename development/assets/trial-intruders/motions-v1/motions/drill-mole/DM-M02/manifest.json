@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "id": "DM-M02",
+  "label": "移動",
+  "enemy": "drill-mole",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": true,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 720,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          135,
+          302
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ],
+        "feet": {
+          "LF": [
+            169,
+            423
+          ],
+          "RF": [
+            95,
+            412
+          ],
+          "LH": [
+            349,
+            433
+          ],
+          "RH": [
+            357,
+            391
+          ]
+        }
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          296
+        ],
+        "muzzle": [
+          135,
+          302
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ],
+        "feet": {
+          "LF": [
+            157,
+            418
+          ],
+          "RF": [
+            107,
+            412
+          ],
+          "LH": [
+            361,
+            433
+          ],
+          "RH": [
+            345,
+            386
+          ]
+        }
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          294
+        ],
+        "muzzle": [
+          135,
+          302
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ],
+        "feet": {
+          "LF": [
+            136,
+            423
+          ],
+          "RF": [
+            128,
+            412
+          ],
+          "LH": [
+            382,
+            433
+          ],
+          "RH": [
+            324,
+            391
+          ]
+        }
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          286
+        ],
+        "muzzle": [
+          135,
+          302
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ],
+        "feet": {
+          "LF": [
+            166,
+            436
+          ],
+          "RF": [
+            98,
+            399
+          ],
+          "LH": [
+            352,
+            420
+          ],
+          "RH": [
+            354,
+            404
+          ]
+        }
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 4,
+      "file": "frame-05.png",
+      "x": 2048,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          284
+        ],
+        "muzzle": [
+          135,
+          302
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ],
+        "feet": {
+          "LF": [
+            145,
+            436
+          ],
+          "RF": [
+            119,
+            394
+          ],
+          "LH": [
+            373,
+            415
+          ],
+          "RH": [
+            333,
+            404
+          ]
+        }
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 5,
+      "file": "frame-06.png",
+      "x": 2560,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 120,
+      "plannedAnchors": {
+        "root": [
+          256,
+          448
+        ],
+        "bodyCenter": [
+          256,
+          290
+        ],
+        "muzzle": [
+          135,
+          302
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ],
+        "feet": {
+          "LF": [
+            133,
+            436
+          ],
+          "RF": [
+            131,
+            399
+          ],
+          "LH": [
+            385,
+            420
+          ],
+          "RH": [
+            321,
+            404
+          ]
+        }
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    }
+  ],
+  "source": [
+    "../../../source/DM-M02-1.png",
+    "../../../source/DM-M02-2.png"
+  ],
+  "endBehavior": "loop",
+  "terminal": false
+}

@@ -1,0 +1,1521 @@
+[
+  {
+    "id": "G03",
+    "label": "ブースト踏み込み",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G03/manifest.json"
+  },
+  {
+    "id": "G04",
+    "label": "パルス二連斬り",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G04/manifest.json"
+  },
+  {
+    "id": "G05",
+    "label": "ポイントレーザー",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G05/manifest.json"
+  },
+  {
+    "id": "G11",
+    "label": "制動・構え直し",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G11/manifest.json"
+  },
+  {
+    "id": "ST-M01",
+    "label": "登場・起動",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-M01/manifest.json"
+  },
+  {
+    "id": "ST-M03",
+    "label": "小被弾",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-M03/manifest.json"
+  },
+  {
+    "id": "ST-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-M04/manifest.json"
+  },
+  {
+    "id": "ST-M05",
+    "label": "撃破・停止",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-M05/manifest.json"
+  },
+  {
+    "id": "ST-M02",
+    "label": "移動",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-M02/manifest.json"
+  },
+  {
+    "id": "ST-N1",
+    "label": "枝角レーザー",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-N1/manifest.json"
+  },
+  {
+    "id": "ST-F1-p1",
+    "label": "角に沿う充填光",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F1-p1/manifest.json"
+  },
+  {
+    "id": "ST-F1-p2",
+    "label": "3方向の細い分岐レーザー",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F1-p2/manifest.json"
+  },
+  {
+    "id": "ST-F1-p3",
+    "label": "葉脈形の着弾光",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F1-p3/manifest.json"
+  },
+  {
+    "id": "ST-N2",
+    "label": "星種爆弾",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-N2/manifest.json"
+  },
+  {
+    "id": "ST-F2-p1",
+    "label": "固体の種子弾",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F2-p1/manifest.json"
+  },
+  {
+    "id": "ST-F2-p2",
+    "label": "短い点線状の尾",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F2-p2/manifest.json"
+  },
+  {
+    "id": "ST-F2-p3",
+    "label": "割れる外殻と小さな緑白爆発",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F2-p3/manifest.json"
+  },
+  {
+    "id": "ST-S1",
+    "label": "光角の突進",
+    "enemy": "star-stag",
+    "kind": "body",
+    "manifest": "motions/star-stag/ST-S1/manifest.json"
+  },
+  {
+    "id": "ST-F3-p1",
+    "label": "角の光刃",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F3-p1/manifest.json"
+  },
+  {
+    "id": "ST-F3-p2",
+    "label": "脚後方の短い推進光",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F3-p2/manifest.json"
+  },
+  {
+    "id": "ST-F3-p3",
+    "label": "通過後に切れる角の残像",
+    "enemy": "star-stag",
+    "kind": "effect",
+    "manifest": "effects/star-stag/ST-F3-p3/manifest.json"
+  },
+  {
+    "id": "RT-M01",
+    "label": "登場・起動",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-M01/manifest.json"
+  },
+  {
+    "id": "RT-M03",
+    "label": "小被弾",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-M03/manifest.json"
+  },
+  {
+    "id": "RT-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-M04/manifest.json"
+  },
+  {
+    "id": "RT-M05",
+    "label": "撃破・停止",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-M05/manifest.json"
+  },
+  {
+    "id": "RT-M02",
+    "label": "移動",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-M02/manifest.json"
+  },
+  {
+    "id": "RT-N1",
+    "label": "薬液カプセル砲",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-N1/manifest.json"
+  },
+  {
+    "id": "RT-F1-p1",
+    "label": "黄緑のカプセル弾",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F1-p1/manifest.json"
+  },
+  {
+    "id": "RT-F1-p2",
+    "label": "空気の噴出口光",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F1-p2/manifest.json"
+  },
+  {
+    "id": "RT-F1-p3",
+    "label": "割れた殻と薬液爆発",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F1-p3/manifest.json"
+  },
+  {
+    "id": "RT-N2",
+    "label": "圧力スプレー",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-N2/manifest.json"
+  },
+  {
+    "id": "RT-F2-p1",
+    "label": "短い扇状の噴流",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F2-p1/manifest.json"
+  },
+  {
+    "id": "RT-F2-p2",
+    "label": "六角粒の飛沫",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F2-p2/manifest.json"
+  },
+  {
+    "id": "RT-F2-p3",
+    "label": "タンク脇の排気",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F2-p3/manifest.json"
+  },
+  {
+    "id": "RT-S1",
+    "label": "跳躍爆撃",
+    "enemy": "reactor-toad",
+    "kind": "body",
+    "manifest": "motions/reactor-toad/RT-S1/manifest.json"
+  },
+  {
+    "id": "RT-F3-p1",
+    "label": "腹下の投下光",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F3-p1/manifest.json"
+  },
+  {
+    "id": "RT-F3-p4",
+    "label": "着地圧力輪",
+    "enemy": "reactor-toad",
+    "kind": "effect",
+    "manifest": "effects/reactor-toad/RT-F3-p4/manifest.json"
+  },
+  {
+    "id": "DM-M01",
+    "label": "登場・起動",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-M01/manifest.json"
+  },
+  {
+    "id": "DM-M03",
+    "label": "小被弾",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-M03/manifest.json"
+  },
+  {
+    "id": "DM-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-M04/manifest.json"
+  },
+  {
+    "id": "DM-M05",
+    "label": "撃破・停止",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-M05/manifest.json"
+  },
+  {
+    "id": "DM-M02",
+    "label": "移動",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-M02/manifest.json"
+  },
+  {
+    "id": "DM-N1",
+    "label": "掘削爪の交差",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-N1/manifest.json"
+  },
+  {
+    "id": "DM-F1-p1",
+    "label": "短い琥珀の刃軌跡2本",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F1-p1/manifest.json"
+  },
+  {
+    "id": "DM-F1-p2",
+    "label": "爪先の金属火花",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F1-p2/manifest.json"
+  },
+  {
+    "id": "DM-F1-p3",
+    "label": "地面の小破片",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F1-p3/manifest.json"
+  },
+  {
+    "id": "DM-N2",
+    "label": "穿孔弾",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-N2/manifest.json"
+  },
+  {
+    "id": "DM-F2-p1",
+    "label": "床を進む細い穿孔光",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F2-p1/manifest.json"
+  },
+  {
+    "id": "DM-F2-p2",
+    "label": "固定地点から出るドリル型エネルギー",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F2-p2/manifest.json"
+  },
+  {
+    "id": "DM-F2-p3",
+    "label": "短い破砕輪",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F2-p3/manifest.json"
+  },
+  {
+    "id": "DM-S1",
+    "label": "ドリルブースト",
+    "enemy": "drill-mole",
+    "kind": "body",
+    "manifest": "motions/drill-mole/DM-S1/manifest.json"
+  },
+  {
+    "id": "DM-F3-p1",
+    "label": "鼻先の回転円錐光",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F3-p1/manifest.json"
+  },
+  {
+    "id": "DM-F3-p2",
+    "label": "胴後部の排気",
+    "enemy": "drill-mole",
+    "kind": "effect",
+    "manifest": "effects/drill-mole/DM-F3-p2/manifest.json"
+  },
+  {
+    "id": "SM-M01",
+    "label": "登場・起動",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-M01/manifest.json"
+  },
+  {
+    "id": "SM-M03",
+    "label": "小被弾",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-M03/manifest.json"
+  },
+  {
+    "id": "SM-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-M04/manifest.json"
+  },
+  {
+    "id": "SM-M05",
+    "label": "撃破・停止",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-M05/manifest.json"
+  },
+  {
+    "id": "SM-M02",
+    "label": "移動",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-M02/manifest.json"
+  },
+  {
+    "id": "SM-N1",
+    "label": "双連レーザー",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-N1/manifest.json"
+  },
+  {
+    "id": "SM-F1-p1",
+    "label": "2つのポッド充填光",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F1-p1/manifest.json"
+  },
+  {
+    "id": "SM-F1-p2",
+    "label": "間隔を保つ平行ビーム",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F1-p2/manifest.json"
+  },
+  {
+    "id": "SM-F1-p3",
+    "label": "四角い着弾片",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F1-p3/manifest.json"
+  },
+  {
+    "id": "SM-N2",
+    "label": "浮遊機雷の敷設",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-N2/manifest.json"
+  },
+  {
+    "id": "SM-F2-p1",
+    "label": "球形機雷",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F2-p1/manifest.json"
+  },
+  {
+    "id": "SM-F2-p2",
+    "label": "短い浮遊安定光",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F2-p2/manifest.json"
+  },
+  {
+    "id": "SM-F2-p3",
+    "label": "起爆前の縮む光環",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F2-p3/manifest.json"
+  },
+  {
+    "id": "SM-F2-p4",
+    "label": "水色の爆発輪",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F2-p4/manifest.json"
+  },
+  {
+    "id": "SM-S1",
+    "label": "翼端スライド",
+    "enemy": "survey-manta",
+    "kind": "body",
+    "manifest": "motions/survey-manta/SM-S1/manifest.json"
+  },
+  {
+    "id": "SM-F3-p1",
+    "label": "翼端の薄い光刃",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F3-p1/manifest.json"
+  },
+  {
+    "id": "SM-F3-p2",
+    "label": "切れ目のある通過軌跡",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F3-p2/manifest.json"
+  },
+  {
+    "id": "SM-F3-p3",
+    "label": "短い尾の推進光",
+    "enemy": "survey-manta",
+    "kind": "effect",
+    "manifest": "effects/survey-manta/SM-F3-p3/manifest.json"
+  },
+  {
+    "id": "AM-M01",
+    "label": "登場・起動",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-M01/manifest.json"
+  },
+  {
+    "id": "AM-M03",
+    "label": "小被弾",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-M03/manifest.json"
+  },
+  {
+    "id": "AM-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-M04/manifest.json"
+  },
+  {
+    "id": "AM-M05",
+    "label": "撃破・停止",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-M05/manifest.json"
+  },
+  {
+    "id": "AM-M02",
+    "label": "移動",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-M02/manifest.json"
+  },
+  {
+    "id": "AM-N1",
+    "label": "記録光弾",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-N1/manifest.json"
+  },
+  {
+    "id": "AM-F1-p1",
+    "label": "板面の矩形走査光",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F1-p1/manifest.json"
+  },
+  {
+    "id": "AM-F1-p2",
+    "label": "角柱状の光弾",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F1-p2/manifest.json"
+  },
+  {
+    "id": "AM-F1-p3",
+    "label": "角形の着弾光",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F1-p3/manifest.json"
+  },
+  {
+    "id": "AM-N2",
+    "label": "データ封鎖面",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-N2/manifest.json"
+  },
+  {
+    "id": "AM-F2-p1",
+    "label": "4隅の接続光",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F2-p1/manifest.json"
+  },
+  {
+    "id": "AM-F2-p2",
+    "label": "短時間だけ立つ格子面",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F2-p2/manifest.json"
+  },
+  {
+    "id": "AM-F2-p3",
+    "label": "消失する矩形片",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F2-p3/manifest.json"
+  },
+  {
+    "id": "AM-S1",
+    "label": "四板の交差砲",
+    "enemy": "archive-maiden",
+    "kind": "body",
+    "manifest": "motions/archive-maiden/AM-S1/manifest.json"
+  },
+  {
+    "id": "AM-F3-p1",
+    "label": "板端の充填回路",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F3-p1/manifest.json"
+  },
+  {
+    "id": "AM-F3-p2",
+    "label": "交差射線の合成補助",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F3-p2/manifest.json"
+  },
+  {
+    "id": "AM-F3-p3",
+    "label": "交点の小さな四角光",
+    "enemy": "archive-maiden",
+    "kind": "effect",
+    "manifest": "effects/archive-maiden/AM-F3-p3/manifest.json"
+  },
+  {
+    "id": "SS-M01",
+    "label": "登場・起動",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-M01/manifest.json"
+  },
+  {
+    "id": "SS-M03",
+    "label": "小被弾",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-M03/manifest.json"
+  },
+  {
+    "id": "SS-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-M04/manifest.json"
+  },
+  {
+    "id": "SS-M05",
+    "label": "撃破・停止",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-M05/manifest.json"
+  },
+  {
+    "id": "SS-M02",
+    "label": "移動",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-M02/manifest.json"
+  },
+  {
+    "id": "SS-N1",
+    "label": "日輪集光砲",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-N1/manifest.json"
+  },
+  {
+    "id": "SS-F1-p1",
+    "label": "日輪の外周から中央へ集まる光",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F1-p1/manifest.json"
+  },
+  {
+    "id": "SS-F1-p2",
+    "label": "金白の一本線",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F1-p2/manifest.json"
+  },
+  {
+    "id": "SS-F1-p3",
+    "label": "短い排熱片",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F1-p3/manifest.json"
+  },
+  {
+    "id": "SS-N2",
+    "label": "太陽電池爆弾",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-N2/manifest.json"
+  },
+  {
+    "id": "SS-F2-p1",
+    "label": "青緑セルの円盤爆弾",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F2-p1/manifest.json"
+  },
+  {
+    "id": "SS-F2-p2",
+    "label": "回転軌跡",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F2-p2/manifest.json"
+  },
+  {
+    "id": "SS-F2-p3",
+    "label": "分割された金色爆発輪",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F2-p3/manifest.json"
+  },
+  {
+    "id": "SS-S1",
+    "label": "装甲ラム",
+    "enemy": "solar-scarab",
+    "kind": "body",
+    "manifest": "motions/solar-scarab/SS-S1/manifest.json"
+  },
+  {
+    "id": "SS-F3-p1",
+    "label": "甲殻に沿う熱縁",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F3-p1/manifest.json"
+  },
+  {
+    "id": "SS-F3-p2",
+    "label": "低い推進砂煙",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F3-p2/manifest.json"
+  },
+  {
+    "id": "SS-F3-p3",
+    "label": "扇形の衝突光",
+    "enemy": "solar-scarab",
+    "kind": "effect",
+    "manifest": "effects/solar-scarab/SS-F3-p3/manifest.json"
+  },
+  {
+    "id": "SR-M01",
+    "label": "登場・起動",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-M01/manifest.json"
+  },
+  {
+    "id": "SR-M03",
+    "label": "小被弾",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-M03/manifest.json"
+  },
+  {
+    "id": "SR-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-M04/manifest.json"
+  },
+  {
+    "id": "SR-M05",
+    "label": "撃破・停止",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-M05/manifest.json"
+  },
+  {
+    "id": "SR-M02",
+    "label": "移動",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-M02/manifest.json"
+  },
+  {
+    "id": "SR-N1",
+    "label": "翼端パルス",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-N1/manifest.json"
+  },
+  {
+    "id": "SR-F1-p1",
+    "label": "翼端の短い充填光",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F1-p1/manifest.json"
+  },
+  {
+    "id": "SR-F1-p2",
+    "label": "青紫の光槍",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F1-p2/manifest.json"
+  },
+  {
+    "id": "SR-F1-p3",
+    "label": "細い着弾星",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F1-p3/manifest.json"
+  },
+  {
+    "id": "SR-N2",
+    "label": "羽型誘導弾",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-N2/manifest.json"
+  },
+  {
+    "id": "SR-F2-p1",
+    "label": "本体の羽とは別の羽型ミサイル",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F2-p1/manifest.json"
+  },
+  {
+    "id": "SR-F2-p2",
+    "label": "角度が折れる推進尾",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F2-p2/manifest.json"
+  },
+  {
+    "id": "SR-F2-p3",
+    "label": "小型電撃爆発",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F2-p3/manifest.json"
+  },
+  {
+    "id": "SR-S1",
+    "label": "急降下ブレード",
+    "enemy": "storm-raptor",
+    "kind": "body",
+    "manifest": "motions/storm-raptor/SR-S1/manifest.json"
+  },
+  {
+    "id": "SR-F3-p1",
+    "label": "左右の翼刃光",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F3-p1/manifest.json"
+  },
+  {
+    "id": "SR-F3-p3",
+    "label": "制動時の分割空圧輪",
+    "enemy": "storm-raptor",
+    "kind": "effect",
+    "manifest": "effects/storm-raptor/SR-F3-p3/manifest.json"
+  },
+  {
+    "id": "CJ-M01",
+    "label": "登場・起動",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-M01/manifest.json"
+  },
+  {
+    "id": "CJ-M03",
+    "label": "小被弾",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-M03/manifest.json"
+  },
+  {
+    "id": "CJ-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-M04/manifest.json"
+  },
+  {
+    "id": "CJ-M05",
+    "label": "撃破・停止",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-M05/manifest.json"
+  },
+  {
+    "id": "CJ-M02",
+    "label": "移動",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-M02/manifest.json"
+  },
+  {
+    "id": "CJ-N1",
+    "label": "結晶レンズ砲",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-N1/manifest.json"
+  },
+  {
+    "id": "CJ-F1-p1",
+    "label": "結晶内の屈折光",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F1-p1/manifest.json"
+  },
+  {
+    "id": "CJ-F1-p2",
+    "label": "結晶射線・屈折光の合成補助",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F1-p2/manifest.json"
+  },
+  {
+    "id": "CJ-F1-p3",
+    "label": "角張った着弾光",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F1-p3/manifest.json"
+  },
+  {
+    "id": "CJ-N2",
+    "label": "冷却機雷",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-N2/manifest.json"
+  },
+  {
+    "id": "CJ-F2-p1",
+    "label": "結晶カプセル",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F2-p1/manifest.json"
+  },
+  {
+    "id": "CJ-F2-p2",
+    "label": "短い冷却霧",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F2-p2/manifest.json"
+  },
+  {
+    "id": "CJ-F2-p3",
+    "label": "割れた六角外殻",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F2-p3/manifest.json"
+  },
+  {
+    "id": "CJ-F2-p4",
+    "label": "氷青の爆発",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F2-p4/manifest.json"
+  },
+  {
+    "id": "CJ-S1",
+    "label": "極低温パルス",
+    "enemy": "cryo-jellyfish",
+    "kind": "body",
+    "manifest": "motions/cryo-jellyfish/CJ-S1/manifest.json"
+  },
+  {
+    "id": "CJ-F3-p1",
+    "label": "コアへの収束線",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F3-p1/manifest.json"
+  },
+  {
+    "id": "CJ-F3-p2",
+    "label": "広がる六角衝撃波",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F3-p2/manifest.json"
+  },
+  {
+    "id": "CJ-F3-p3",
+    "label": "外側へほどける冷却片",
+    "enemy": "cryo-jellyfish",
+    "kind": "effect",
+    "manifest": "effects/cryo-jellyfish/CJ-F3-p3/manifest.json"
+  },
+  {
+    "id": "FC-M01",
+    "label": "登場・起動",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-M01/manifest.json"
+  },
+  {
+    "id": "FC-M03",
+    "label": "小被弾",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-M03/manifest.json"
+  },
+  {
+    "id": "FC-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-M04/manifest.json"
+  },
+  {
+    "id": "FC-M05",
+    "label": "撃破・停止",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-M05/manifest.json"
+  },
+  {
+    "id": "FC-M02",
+    "label": "移動",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-M02/manifest.json"
+  },
+  {
+    "id": "FC-N1",
+    "label": "炉心熱線",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-N1/manifest.json"
+  },
+  {
+    "id": "FC-F1-p1",
+    "label": "節を渡る充填光",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F1-p1/manifest.json"
+  },
+  {
+    "id": "FC-F1-p2",
+    "label": "橙白の太い熱線",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F1-p2/manifest.json"
+  },
+  {
+    "id": "FC-N2",
+    "label": "排熱爆弾",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-N2/manifest.json"
+  },
+  {
+    "id": "FC-F2-p1",
+    "label": "赤熱カプセル",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F2-p1/manifest.json"
+  },
+  {
+    "id": "FC-F2-p2",
+    "label": "短い煙尾",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F2-p2/manifest.json"
+  },
+  {
+    "id": "FC-F2-p3",
+    "label": "殻の破片",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F2-p3/manifest.json"
+  },
+  {
+    "id": "FC-F2-p4",
+    "label": "低く広がる熱爆発",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F2-p4/manifest.json"
+  },
+  {
+    "id": "FC-S1",
+    "label": "連節ブースト",
+    "enemy": "furnace-centipede",
+    "kind": "body",
+    "manifest": "motions/furnace-centipede/FC-S1/manifest.json"
+  },
+  {
+    "id": "FC-F3-p1",
+    "label": "節ごとの排熱噴流",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F3-p1/manifest.json"
+  },
+  {
+    "id": "FC-F3-p3",
+    "label": "頭部の衝突光",
+    "enemy": "furnace-centipede",
+    "kind": "effect",
+    "manifest": "effects/furnace-centipede/FC-F3-p3/manifest.json"
+  },
+  {
+    "id": "TQ-M01",
+    "label": "登場・起動",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-M01/manifest.json"
+  },
+  {
+    "id": "TQ-M03",
+    "label": "小被弾",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-M03/manifest.json"
+  },
+  {
+    "id": "TQ-M04",
+    "label": "大技の妨害・失速",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-M04/manifest.json"
+  },
+  {
+    "id": "TQ-M05",
+    "label": "撃破・停止",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-M05/manifest.json"
+  },
+  {
+    "id": "TQ-M02",
+    "label": "移動",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-M02/manifest.json"
+  },
+  {
+    "id": "TQ-N1",
+    "label": "冠の光矢",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-N1/manifest.json"
+  },
+  {
+    "id": "TQ-F1-p1",
+    "label": "冠先の充填光",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F1-p1/manifest.json"
+  },
+  {
+    "id": "TQ-F1-p2",
+    "label": "紫白の針状レーザー",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F1-p2/manifest.json"
+  },
+  {
+    "id": "TQ-F1-p3",
+    "label": "菱形の着弾片",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F1-p3/manifest.json"
+  },
+  {
+    "id": "TQ-N2",
+    "label": "王冠爆弾",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-N2/manifest.json"
+  },
+  {
+    "id": "TQ-F2-p1",
+    "label": "実体のある小型冠型爆弾",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F2-p1/manifest.json"
+  },
+  {
+    "id": "TQ-F2-p2",
+    "label": "浮遊光",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F2-p2/manifest.json"
+  },
+  {
+    "id": "TQ-F2-p3",
+    "label": "内へ収縮して冠状に開く爆発",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F2-p3/manifest.json"
+  },
+  {
+    "id": "TQ-S1",
+    "label": "玉座包囲砲",
+    "enemy": "throne-queen",
+    "kind": "body",
+    "manifest": "motions/throne-queen/TQ-S1/manifest.json"
+  },
+  {
+    "id": "TQ-F3-p1",
+    "label": "フレーム内の砲口光",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F3-p1/manifest.json"
+  },
+  {
+    "id": "TQ-F3-p2",
+    "label": "2組の角形レーザー",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F3-p2/manifest.json"
+  },
+  {
+    "id": "TQ-F3-p3",
+    "label": "砲撃後に閉じる外周回路",
+    "enemy": "throne-queen",
+    "kind": "effect",
+    "manifest": "effects/throne-queen/TQ-F3-p3/manifest.json"
+  },
+  {
+    "id": "G01",
+    "label": "登場・臨戦",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G01/manifest.json"
+  },
+  {
+    "id": "G02",
+    "label": "戦闘移動",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G02/manifest.json"
+  },
+  {
+    "id": "G06",
+    "label": "クロスブレード",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G06/manifest.json"
+  },
+  {
+    "id": "G07",
+    "label": "ブースト刺突",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G07/manifest.json"
+  },
+  {
+    "id": "G08",
+    "label": "後退射撃",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G08/manifest.json"
+  },
+  {
+    "id": "G09",
+    "label": "軌道リング砲",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G09/manifest.json"
+  },
+  {
+    "id": "G10",
+    "label": "星断ち連携（大技）",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G10/manifest.json"
+  },
+  {
+    "id": "G12",
+    "label": "小被弾",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G12/manifest.json"
+  },
+  {
+    "id": "G13",
+    "label": "大技の妨害・体勢崩れ",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G13/manifest.json"
+  },
+  {
+    "id": "G14",
+    "label": "敗北・帰還",
+    "enemy": "outer-space-goddess",
+    "kind": "body",
+    "manifest": "motions/outer-space-goddess/G14/manifest.json"
+  },
+  {
+    "id": "OG-F1",
+    "label": "分割リングの転送光",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F1/manifest.json"
+  },
+  {
+    "id": "OG-F2",
+    "label": "フィン推進噴流",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F2/manifest.json"
+  },
+  {
+    "id": "OG-F4a",
+    "label": "主剣・斜め刃弧",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F4a/manifest.json"
+  },
+  {
+    "id": "OG-F4b",
+    "label": "補助剣・水平刃弧",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F4b/manifest.json"
+  },
+  {
+    "id": "OG-F4c",
+    "label": "斬撃接触火花",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F4c/manifest.json"
+  },
+  {
+    "id": "OG-F5a",
+    "label": "前腕充填光",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F5a/manifest.json"
+  },
+  {
+    "id": "OG-F5b",
+    "label": "ポイントレーザー",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F5b/manifest.json"
+  },
+  {
+    "id": "OG-F5c",
+    "label": "角形着弾",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F5c/manifest.json"
+  },
+  {
+    "id": "OG-F6",
+    "label": "X字の交差刃弧",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F6/manifest.json"
+  },
+  {
+    "id": "OG-F7",
+    "label": "細長い刺突光",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F7/manifest.json"
+  },
+  {
+    "id": "OG-F8",
+    "label": "リングの排熱光",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F8/manifest.json"
+  },
+  {
+    "id": "OG-F9a",
+    "label": "縦斬り下ろし光",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F9a/manifest.json"
+  },
+  {
+    "id": "OG-F9b",
+    "label": "着地衝撃輪",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F9b/manifest.json"
+  },
+  {
+    "id": "OG-F10a",
+    "label": "刃の点灯と収納",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F10a/manifest.json"
+  },
+  {
+    "id": "OG-F10b",
+    "label": "短い放電片",
+    "enemy": "outer-space-goddess",
+    "kind": "effect",
+    "manifest": "effects/outer-space-goddess/OG-F10b/manifest.json"
+  },
+  {
+    "id": "CF01-open",
+    "label": "機械転送・開口",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF01-open/manifest.json"
+  },
+  {
+    "id": "CF01-close",
+    "label": "機械転送・閉口",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF01-close/manifest.json"
+  },
+  {
+    "id": "CF02-charge",
+    "label": "汎用充填",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF02-charge/manifest.json"
+  },
+  {
+    "id": "CF02-muzzle",
+    "label": "砲口閃光",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF02-muzzle/manifest.json"
+  },
+  {
+    "id": "CF03-flight",
+    "label": "パルス弾",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF03-flight/manifest.json"
+  },
+  {
+    "id": "CF03-hit",
+    "label": "パルス着弾",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF03-hit/manifest.json"
+  },
+  {
+    "id": "CF04-start",
+    "label": "レーザー発生",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF04-start/manifest.json"
+  },
+  {
+    "id": "CF04-hold",
+    "label": "レーザー持続",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF04-hold/manifest.json"
+  },
+  {
+    "id": "CF04-end",
+    "label": "レーザー収束",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF04-end/manifest.json"
+  },
+  {
+    "id": "CF05-arm",
+    "label": "起爆収束",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF05-arm/manifest.json"
+  },
+  {
+    "id": "CF05-burst",
+    "label": "機械爆発",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF05-burst/manifest.json"
+  },
+  {
+    "id": "CF05-after",
+    "label": "爆発残光",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF05-after/manifest.json"
+  },
+  {
+    "id": "CF06-hit",
+    "label": "装甲火花",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF06-hit/manifest.json"
+  },
+  {
+    "id": "CF06-interrupt",
+    "label": "短い放電",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF06-interrupt/manifest.json"
+  },
+  {
+    "id": "CF07-start",
+    "label": "推進点火",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF07-start/manifest.json"
+  },
+  {
+    "id": "CF07-hold",
+    "label": "推進噴流",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF07-hold/manifest.json"
+  },
+  {
+    "id": "CF07-end",
+    "label": "推進停止",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF07-end/manifest.json"
+  },
+  {
+    "id": "CF08",
+    "label": "機械停止・光片",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF08/manifest.json"
+  },
+  {
+    "id": "CF09",
+    "label": "接地・制動の小衝撃",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF09/manifest.json"
+  },
+  {
+    "id": "CF04-cyan-ray",
+    "label": "独立した水色の射線",
+    "enemy": "common",
+    "kind": "effect",
+    "manifest": "effects/common/CF04-cyan-ray/manifest.json"
+  }
+]

@@ -1,0 +1,514 @@
+[
+  {
+    "file": "outer-space-goddess-body-all-1.png",
+    "clips": [
+      "G03",
+      "G04",
+      "G05",
+      "G11"
+    ]
+  },
+  {
+    "file": "outer-space-goddess-body-all-2.png",
+    "clips": [
+      "G01",
+      "G02",
+      "G06",
+      "G07"
+    ]
+  },
+  {
+    "file": "outer-space-goddess-body-all-3.png",
+    "clips": [
+      "G08",
+      "G09",
+      "G10",
+      "G12"
+    ]
+  },
+  {
+    "file": "outer-space-goddess-body-all-4.png",
+    "clips": [
+      "G13",
+      "G14"
+    ]
+  },
+  {
+    "file": "star-stag-body-all-1.png",
+    "clips": [
+      "ST-M01",
+      "ST-M03",
+      "ST-M04",
+      "ST-M05"
+    ]
+  },
+  {
+    "file": "star-stag-body-all-2.png",
+    "clips": [
+      "ST-M02",
+      "ST-N1",
+      "ST-N2",
+      "ST-S1"
+    ]
+  },
+  {
+    "file": "star-stag-effect-all-1.png",
+    "clips": [
+      "ST-F1-p1",
+      "ST-F1-p2",
+      "ST-F1-p3",
+      "ST-F2-p1"
+    ]
+  },
+  {
+    "file": "star-stag-effect-all-2.png",
+    "clips": [
+      "ST-F2-p2",
+      "ST-F2-p3",
+      "ST-F3-p1",
+      "ST-F3-p2"
+    ]
+  },
+  {
+    "file": "star-stag-effect-all-3.png",
+    "clips": [
+      "ST-F3-p3"
+    ]
+  },
+  {
+    "file": "reactor-toad-body-all-1.png",
+    "clips": [
+      "RT-M01",
+      "RT-M03",
+      "RT-M04",
+      "RT-M05"
+    ]
+  },
+  {
+    "file": "reactor-toad-body-all-2.png",
+    "clips": [
+      "RT-M02",
+      "RT-N1",
+      "RT-N2",
+      "RT-S1"
+    ]
+  },
+  {
+    "file": "reactor-toad-effect-all-1.png",
+    "clips": [
+      "RT-F1-p1",
+      "RT-F1-p2",
+      "RT-F1-p3",
+      "RT-F2-p1"
+    ]
+  },
+  {
+    "file": "reactor-toad-effect-all-2.png",
+    "clips": [
+      "RT-F2-p2",
+      "RT-F2-p3",
+      "RT-F3-p1",
+      "RT-F3-p4"
+    ]
+  },
+  {
+    "file": "drill-mole-body-all-1.png",
+    "clips": [
+      "DM-M01",
+      "DM-M03",
+      "DM-M04",
+      "DM-M05"
+    ]
+  },
+  {
+    "file": "drill-mole-body-all-2.png",
+    "clips": [
+      "DM-M02",
+      "DM-N1",
+      "DM-N2",
+      "DM-S1"
+    ]
+  },
+  {
+    "file": "drill-mole-effect-all-1.png",
+    "clips": [
+      "DM-F1-p1",
+      "DM-F1-p2",
+      "DM-F1-p3",
+      "DM-F2-p1"
+    ]
+  },
+  {
+    "file": "drill-mole-effect-all-2.png",
+    "clips": [
+      "DM-F2-p2",
+      "DM-F2-p3",
+      "DM-F3-p1",
+      "DM-F3-p2"
+    ]
+  },
+  {
+    "file": "survey-manta-body-all-1.png",
+    "clips": [
+      "SM-M01",
+      "SM-M03",
+      "SM-M04",
+      "SM-M05"
+    ]
+  },
+  {
+    "file": "survey-manta-body-all-2.png",
+    "clips": [
+      "SM-M02",
+      "SM-N1",
+      "SM-N2",
+      "SM-S1"
+    ]
+  },
+  {
+    "file": "survey-manta-effect-all-1.png",
+    "clips": [
+      "SM-F1-p1",
+      "SM-F1-p2",
+      "SM-F1-p3",
+      "SM-F2-p1"
+    ]
+  },
+  {
+    "file": "survey-manta-effect-all-2.png",
+    "clips": [
+      "SM-F2-p2",
+      "SM-F2-p3",
+      "SM-F2-p4",
+      "SM-F3-p1"
+    ]
+  },
+  {
+    "file": "survey-manta-effect-all-3.png",
+    "clips": [
+      "SM-F3-p2",
+      "SM-F3-p3"
+    ]
+  },
+  {
+    "file": "archive-maiden-body-all-1.png",
+    "clips": [
+      "AM-M01",
+      "AM-M03",
+      "AM-M04",
+      "AM-M05"
+    ]
+  },
+  {
+    "file": "archive-maiden-body-all-2.png",
+    "clips": [
+      "AM-M02",
+      "AM-N1",
+      "AM-N2",
+      "AM-S1"
+    ]
+  },
+  {
+    "file": "archive-maiden-effect-all-1.png",
+    "clips": [
+      "AM-F1-p1",
+      "AM-F1-p2",
+      "AM-F1-p3",
+      "AM-F2-p1"
+    ]
+  },
+  {
+    "file": "archive-maiden-effect-all-2.png",
+    "clips": [
+      "AM-F2-p2",
+      "AM-F2-p3",
+      "AM-F3-p1",
+      "AM-F3-p2"
+    ]
+  },
+  {
+    "file": "archive-maiden-effect-all-3.png",
+    "clips": [
+      "AM-F3-p3"
+    ]
+  },
+  {
+    "file": "solar-scarab-body-all-1.png",
+    "clips": [
+      "SS-M01",
+      "SS-M03",
+      "SS-M04",
+      "SS-M05"
+    ]
+  },
+  {
+    "file": "solar-scarab-body-all-2.png",
+    "clips": [
+      "SS-M02",
+      "SS-N1",
+      "SS-N2",
+      "SS-S1"
+    ]
+  },
+  {
+    "file": "solar-scarab-effect-all-1.png",
+    "clips": [
+      "SS-F1-p1",
+      "SS-F1-p2",
+      "SS-F1-p3",
+      "SS-F2-p1"
+    ]
+  },
+  {
+    "file": "solar-scarab-effect-all-2.png",
+    "clips": [
+      "SS-F2-p2",
+      "SS-F2-p3",
+      "SS-F3-p1",
+      "SS-F3-p2"
+    ]
+  },
+  {
+    "file": "solar-scarab-effect-all-3.png",
+    "clips": [
+      "SS-F3-p3"
+    ]
+  },
+  {
+    "file": "storm-raptor-body-all-1.png",
+    "clips": [
+      "SR-M01",
+      "SR-M03",
+      "SR-M04",
+      "SR-M05"
+    ]
+  },
+  {
+    "file": "storm-raptor-body-all-2.png",
+    "clips": [
+      "SR-M02",
+      "SR-N1",
+      "SR-N2",
+      "SR-S1"
+    ]
+  },
+  {
+    "file": "storm-raptor-effect-all-1.png",
+    "clips": [
+      "SR-F1-p1",
+      "SR-F1-p2",
+      "SR-F1-p3",
+      "SR-F2-p1"
+    ]
+  },
+  {
+    "file": "storm-raptor-effect-all-2.png",
+    "clips": [
+      "SR-F2-p2",
+      "SR-F2-p3",
+      "SR-F3-p1",
+      "SR-F3-p3"
+    ]
+  },
+  {
+    "file": "cryo-jellyfish-body-all-1.png",
+    "clips": [
+      "CJ-M01",
+      "CJ-M03",
+      "CJ-M04",
+      "CJ-M05"
+    ]
+  },
+  {
+    "file": "cryo-jellyfish-body-all-2.png",
+    "clips": [
+      "CJ-M02",
+      "CJ-N1",
+      "CJ-N2",
+      "CJ-S1"
+    ]
+  },
+  {
+    "file": "cryo-jellyfish-effect-all-1.png",
+    "clips": [
+      "CJ-F1-p1",
+      "CJ-F1-p2",
+      "CJ-F1-p3",
+      "CJ-F2-p1"
+    ]
+  },
+  {
+    "file": "cryo-jellyfish-effect-all-2.png",
+    "clips": [
+      "CJ-F2-p2",
+      "CJ-F2-p3",
+      "CJ-F2-p4",
+      "CJ-F3-p1"
+    ]
+  },
+  {
+    "file": "cryo-jellyfish-effect-all-3.png",
+    "clips": [
+      "CJ-F3-p2",
+      "CJ-F3-p3"
+    ]
+  },
+  {
+    "file": "furnace-centipede-body-all-1.png",
+    "clips": [
+      "FC-M01",
+      "FC-M03",
+      "FC-M04",
+      "FC-M05"
+    ]
+  },
+  {
+    "file": "furnace-centipede-body-all-2.png",
+    "clips": [
+      "FC-M02",
+      "FC-N1",
+      "FC-N2",
+      "FC-S1"
+    ]
+  },
+  {
+    "file": "furnace-centipede-effect-all-1.png",
+    "clips": [
+      "FC-F1-p1",
+      "FC-F1-p2",
+      "FC-F2-p1",
+      "FC-F2-p2"
+    ]
+  },
+  {
+    "file": "furnace-centipede-effect-all-2.png",
+    "clips": [
+      "FC-F2-p3",
+      "FC-F2-p4",
+      "FC-F3-p1",
+      "FC-F3-p3"
+    ]
+  },
+  {
+    "file": "throne-queen-body-all-1.png",
+    "clips": [
+      "TQ-M01",
+      "TQ-M03",
+      "TQ-M04",
+      "TQ-M05"
+    ]
+  },
+  {
+    "file": "throne-queen-body-all-2.png",
+    "clips": [
+      "TQ-M02",
+      "TQ-N1",
+      "TQ-N2",
+      "TQ-S1"
+    ]
+  },
+  {
+    "file": "throne-queen-effect-all-1.png",
+    "clips": [
+      "TQ-F1-p1",
+      "TQ-F1-p2",
+      "TQ-F1-p3",
+      "TQ-F2-p1"
+    ]
+  },
+  {
+    "file": "throne-queen-effect-all-2.png",
+    "clips": [
+      "TQ-F2-p2",
+      "TQ-F2-p3",
+      "TQ-F3-p1",
+      "TQ-F3-p2"
+    ]
+  },
+  {
+    "file": "throne-queen-effect-all-3.png",
+    "clips": [
+      "TQ-F3-p3"
+    ]
+  },
+  {
+    "file": "outer-space-goddess-effect-all-1.png",
+    "clips": [
+      "OG-F1",
+      "OG-F2",
+      "OG-F4a",
+      "OG-F4b"
+    ]
+  },
+  {
+    "file": "outer-space-goddess-effect-all-2.png",
+    "clips": [
+      "OG-F4c",
+      "OG-F5a",
+      "OG-F5b",
+      "OG-F5c"
+    ]
+  },
+  {
+    "file": "outer-space-goddess-effect-all-3.png",
+    "clips": [
+      "OG-F6",
+      "OG-F7",
+      "OG-F8",
+      "OG-F9a"
+    ]
+  },
+  {
+    "file": "outer-space-goddess-effect-all-4.png",
+    "clips": [
+      "OG-F9b",
+      "OG-F10a",
+      "OG-F10b"
+    ]
+  },
+  {
+    "file": "common-effect-all-1.png",
+    "clips": [
+      "CF01-open",
+      "CF01-close",
+      "CF02-charge",
+      "CF02-muzzle"
+    ]
+  },
+  {
+    "file": "common-effect-all-2.png",
+    "clips": [
+      "CF03-flight",
+      "CF03-hit",
+      "CF04-start",
+      "CF04-hold"
+    ]
+  },
+  {
+    "file": "common-effect-all-3.png",
+    "clips": [
+      "CF04-end",
+      "CF05-arm",
+      "CF05-burst",
+      "CF05-after"
+    ]
+  },
+  {
+    "file": "common-effect-all-4.png",
+    "clips": [
+      "CF06-hit",
+      "CF06-interrupt",
+      "CF07-start",
+      "CF07-hold"
+    ]
+  },
+  {
+    "file": "common-effect-all-5.png",
+    "clips": [
+      "CF07-end",
+      "CF08",
+      "CF09",
+      "CF04-cyan-ray"
+    ]
+  }
+]

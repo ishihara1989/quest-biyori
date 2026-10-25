@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "id": "G04",
+  "label": "パルス二連斬り",
+  "enemy": "outer-space-goddess",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": false,
+  "frameCount": 6,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "durationMs": 1360,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 350,
+      "plannedAnchors": {
+        "waist": [
+          263,
+          281
+        ],
+        "mainEmitter": [
+          310,
+          162
+        ],
+        "offEmitter": [
+          236,
+          264
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "mainEmitter": [
+          342,
+          117
+        ],
+        "offEmitter": [
+          166,
+          254
+        ],
+        "mainDirectionRadians": 1.35,
+        "offDirectionRadians": -0.8
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G04-grid.png"
+      }
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 100,
+      "plannedAnchors": {
+        "waist": [
+          253,
+          282
+        ],
+        "mainEmitter": [
+          217,
+          199
+        ],
+        "offEmitter": [
+          236,
+          264
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "mainEmitter": [
+          224,
+          146
+        ],
+        "offEmitter": [
+          204,
+          252
+        ],
+        "mainDirectionRadians": 0.1,
+        "offDirectionRadians": -1.2
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G04-grid.png"
+      }
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 180,
+      "plannedAnchors": {
+        "waist": [
+          244,
+          291
+        ],
+        "mainEmitter": [
+          166,
+          332
+        ],
+        "offEmitter": [
+          240,
+          270
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "mainEmitter": [
+          181,
+          251
+        ],
+        "offEmitter": [
+          324,
+          254
+        ],
+        "mainDirectionRadians": -0.65,
+        "offDirectionRadians": -2.2
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G04-grid.png"
+      }
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 350,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          280
+        ],
+        "head": [
+          245,
+          130
+        ],
+        "nearShoulder": [
+          280,
+          200
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          240,
+          245
+        ],
+        "mainWrist": [
+          192,
+          290
+        ],
+        "mainEmitter": [
+          204,
+          278
+        ],
+        "offElbow": [
+          270,
+          217
+        ],
+        "offWrist": [
+          316,
+          205
+        ],
+        "offEmitter": [
+          305,
+          208
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": {
+        "mainEmitter": [
+          298,
+          211
+        ],
+        "offEmitter": [
+          300,
+          130
+        ],
+        "mainDirectionRadians": -2,
+        "offDirectionRadians": 3.14
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G04-grid.png"
+      }
+    },
+    {
+      "index": 4,
+      "file": "frame-05.png",
+      "x": 2048,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 100,
+      "plannedAnchors": {
+        "waist": [
+          244,
+          286
+        ],
+        "mainEmitter": [
+          214,
+          328
+        ],
+        "offEmitter": [
+          165,
+          272
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "mainEmitter": [
+          276,
+          228
+        ],
+        "offEmitter": [
+          176,
+          179
+        ],
+        "mainDirectionRadians": 0.6,
+        "offDirectionRadians": 0
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G04-grid.png"
+      }
+    },
+    {
+      "index": 5,
+      "file": "frame-06.png",
+      "x": 2560,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 280,
+      "plannedAnchors": {
+        "waist": [
+          255,
+          280
+        ],
+        "mainEmitter": [
+          275,
+          320
+        ],
+        "offEmitter": [
+          228,
+          307
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "mainEmitter": [
+          292,
+          247
+        ],
+        "offEmitter": [
+          330,
+          237
+        ],
+        "mainDirectionRadians": -1,
+        "offDirectionRadians": -2
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G04-grid.png"
+      }
+    }
+  ],
+  "source": [
+    "../../../source/G04-1.png",
+    "../../../source/G04-2.png",
+    "../../../source/G04-middle-1.png",
+    "../../../source/G04-middle-4.png"
+  ],
+  "endBehavior": "return-idle",
+  "terminal": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "RT-F3-p2",
+  "label": "3個の小型薬液爆弾",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "kind": "image-reuse",
+  "source": "RT-F1-p1",
+  "reason": "Three smaller copies of the SAME chemical capsule, separated positions and timing",
+  "instances": [
+    {
+      "scale": 0.55,
+      "delayMs": 0
+    },
+    {
+      "scale": 0.55,
+      "delayMs": 80
+    },
+    {
+      "scale": 0.55,
+      "delayMs": 160
+    }
+  ]
+}

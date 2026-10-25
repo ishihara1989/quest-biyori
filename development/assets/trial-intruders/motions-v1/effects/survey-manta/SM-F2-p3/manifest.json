@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "SM-F2-p3",
+  "label": "起爆前の縮む光環",
+  "enemy": "survey-manta",
+  "kind": "effect",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": false,
+  "frameCount": 3,
+  "frameSequence": [
+    0,
+    1,
+    2
+  ],
+  "durationMs": 240,
+  "origin": [
+    256,
+    256
+  ],
+  "originMethod": "Measured alpha-boundary proxy; inspect attachment in composited preview",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 80,
+      "plannedAnchors": {
+        "effectOrigin": [
+          256,
+          256
+        ],
+        "phase": 0
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 80,
+      "plannedAnchors": {
+        "effectOrigin": [
+          256,
+          256
+        ],
+        "phase": 0.5
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 80,
+      "plannedAnchors": {
+        "effectOrigin": [
+          256,
+          256
+        ],
+        "phase": 1
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    }
+  ],
+  "source": [
+    "../../../source/SM-F2-p3-1.png"
+  ],
+  "endBehavior": "remove",
+  "terminal": false
+}

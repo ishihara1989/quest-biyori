@@ -86,6 +86,7 @@
 ## 素材制作と引き継ぎ
 
 - [試練追加敵11体の左向き待機ループ（43枚・女神の淡い発光する瞳）](production/trial-intruder-idle-loops.md)
+- [試練追加敵の追加モーション・SFエフェクト素材と検収](production/trial-intruder-motion-assets.md)
 
 - [転生の女神の基本モーション（制作候補・4種17コマ）](production/reincarnation-goddess-basic-motions.md)
 

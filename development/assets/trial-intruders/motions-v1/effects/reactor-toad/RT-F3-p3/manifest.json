@@ -1,0 +1,20 @@
+{
+  "id": "RT-F3-p3",
+  "label": "時間差の破裂",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "kind": "image-reuse",
+  "source": "RT-F1-p3",
+  "reason": "Same chemical shell rupture at three landing points",
+  "instances": [
+    {
+      "delayMs": 0
+    },
+    {
+      "delayMs": 80
+    },
+    {
+      "delayMs": 160
+    }
+  ]
+}

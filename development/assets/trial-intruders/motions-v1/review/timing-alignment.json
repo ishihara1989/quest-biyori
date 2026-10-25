@@ -1,0 +1,33 @@
+{
+  "source": "approved motion/effect planning table",
+  "unit": "milliseconds; all frames quantized to GIF 10ms resolution without changing phase totals",
+  "changedClips": [
+    "RT-N1",
+    "RT-N2",
+    "RT-S1",
+    "DM-N1",
+    "DM-N2",
+    "DM-S1",
+    "SM-N1",
+    "SM-N2",
+    "SM-S1",
+    "AM-N1",
+    "AM-N2",
+    "AM-S1",
+    "SS-N1",
+    "SS-N2",
+    "SS-S1",
+    "SR-N1",
+    "SR-N2",
+    "SR-S1",
+    "CJ-N1",
+    "CJ-N2",
+    "CJ-S1",
+    "FC-N1",
+    "FC-N2",
+    "FC-S1",
+    "TQ-N1",
+    "TQ-N2",
+    "TQ-S1"
+  ]
+}

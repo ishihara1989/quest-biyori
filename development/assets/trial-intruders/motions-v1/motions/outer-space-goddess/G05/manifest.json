@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "id": "G05",
+  "label": "ポイントレーザー",
+  "enemy": "outer-space-goddess",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": false,
+  "frameCount": 4,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationMs": 1100,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 450,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          280
+        ],
+        "mainEmitter": [
+          280,
+          330
+        ],
+        "offEmitter": [
+          199,
+          247
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "offEmitter": [
+          194,
+          147
+        ],
+        "mainEmitter": [
+          348,
+          227
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G05-grid.png"
+      }
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          280
+        ],
+        "mainEmitter": [
+          280,
+          330
+        ],
+        "offEmitter": [
+          160,
+          244
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "offEmitter": [
+          194,
+          151
+        ],
+        "mainEmitter": [
+          350,
+          230
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G05-grid.png"
+      }
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 100,
+      "plannedAnchors": {
+        "waist": [
+          260,
+          282
+        ],
+        "mainEmitter": [
+          284,
+          330
+        ],
+        "offEmitter": [
+          164,
+          244
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "offEmitter": [
+          196,
+          152
+        ],
+        "mainEmitter": [
+          355,
+          230
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G05-grid.png"
+      }
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 400,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          280
+        ],
+        "mainEmitter": [
+          280,
+          330
+        ],
+        "offEmitter": [
+          222,
+          300
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          304,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            90
+          ],
+          [
+            199,
+            155
+          ],
+          [
+            328,
+            155
+          ]
+        ],
+        "finRoots": [
+          [
+            264,
+            296
+          ],
+          [
+            301,
+            296
+          ]
+        ]
+      },
+      "measuredAnchors": {
+        "offEmitter": [
+          230,
+          199
+        ],
+        "mainEmitter": [
+          354,
+          233
+        ]
+      },
+      "anchorMeasurement": {
+        "method": "Manual observation of packed 512px RGBA sprite on 50px coordinate grid",
+        "uncertaintyPx": 8,
+        "space": "output cell; estimates are attachment centers, not collision geometry",
+        "evidence": "review/G05-grid.png"
+      }
+    }
+  ],
+  "source": [
+    "../../../source/G05-1.png"
+  ],
+  "endBehavior": "return-idle",
+  "terminal": false
+}

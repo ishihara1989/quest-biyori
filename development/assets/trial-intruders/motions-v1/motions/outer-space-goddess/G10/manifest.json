@@ -1,0 +1,846 @@
+{
+  "schemaVersion": 1,
+  "id": "G10",
+  "label": "星断ち連携（大技）",
+  "enemy": "outer-space-goddess",
+  "kind": "body",
+  "previewOnly": true,
+  "runtimeRegistered": false,
+  "cell": {
+    "width": 512,
+    "height": 512
+  },
+  "facing": "left",
+  "loop": false,
+  "frameCount": 9,
+  "frameSequence": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "durationMs": 3800,
+  "origin": [
+    256,
+    448
+  ],
+  "originMethod": "Ground/registration pivot, not a muzzle",
+  "emissionVector": null,
+  "mountRotationRadians": 0,
+  "sheet": "sheet.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-01.png",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 1500,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          295
+        ],
+        "head": [
+          245,
+          130
+        ],
+        "nearShoulder": [
+          290,
+          190
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          269.14,
+          256.82
+        ],
+        "mainWrist": [
+          285,
+          325
+        ],
+        "mainEmitter": [
+          281.03,
+          307.95
+        ],
+        "offElbow": [
+          195.19,
+          249.54
+        ],
+        "offWrist": [
+          220,
+          315
+        ],
+        "offEmitter": [
+          213.8,
+          298.63
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          0,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 1,
+      "file": "frame-02.png",
+      "x": 512,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "plannedAnchors": {
+        "waist": [
+          245,
+          290
+        ],
+        "head": [
+          245,
+          130
+        ],
+        "nearShoulder": [
+          290,
+          190
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          218.95,
+          235.28
+        ],
+        "mainWrist": [
+          165,
+          300
+        ],
+        "mainEmitter": [
+          178.49,
+          283.82
+        ],
+        "offElbow": [
+          183.37,
+          240.35
+        ],
+        "offWrist": [
+          220,
+          300
+        ],
+        "offEmitter": [
+          210.84,
+          285.09
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -45,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 2,
+      "file": "frame-03.png",
+      "x": 1024,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "plannedAnchors": {
+        "waist": [
+          248,
+          286
+        ],
+        "head": [
+          245,
+          130
+        ],
+        "nearShoulder": [
+          290,
+          190
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          234.63,
+          247.82
+        ],
+        "mainWrist": [
+          200,
+          320
+        ],
+        "mainEmitter": [
+          208.66,
+          301.95
+        ],
+        "offElbow": [
+          220,
+          270
+        ],
+        "offWrist": [
+          160,
+          270
+        ],
+        "offEmitter": [
+          175,
+          270
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -90,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 3,
+      "file": "frame-04.png",
+      "x": 1536,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          260
+        ],
+        "head": [
+          245,
+          110
+        ],
+        "nearShoulder": [
+          285,
+          175
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          270.51,
+          243.48
+        ],
+        "mainWrist": [
+          300,
+          180
+        ],
+        "mainEmitter": [
+          292.63,
+          195.87
+        ],
+        "offElbow": [
+          183.37,
+          240.35
+        ],
+        "offWrist": [
+          220,
+          300
+        ],
+        "offEmitter": [
+          210.84,
+          285.09
+        ],
+        "frontFoot": [
+          220,
+          410
+        ],
+        "rearFoot": [
+          302,
+          410
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -135,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 4,
+      "file": "frame-05.png",
+      "x": 2048,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "plannedAnchors": {
+        "waist": [
+          250,
+          250
+        ],
+        "head": [
+          245,
+          110
+        ],
+        "nearShoulder": [
+          285,
+          175
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          354.88,
+          179.11
+        ],
+        "mainWrist": [
+          305,
+          130
+        ],
+        "mainEmitter": [
+          317.47,
+          142.28
+        ],
+        "offElbow": [
+          165.78,
+          212.68
+        ],
+        "offWrist": [
+          225,
+          250
+        ],
+        "offEmitter": [
+          210.19,
+          240.67
+        ],
+        "frontFoot": [
+          220,
+          410
+        ],
+        "rearFoot": [
+          302,
+          410
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -180,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 5,
+      "file": "frame-06.png",
+      "x": 2560,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 200,
+      "plannedAnchors": {
+        "waist": [
+          242,
+          312
+        ],
+        "head": [
+          225,
+          173
+        ],
+        "nearShoulder": [
+          270,
+          230
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          207.97,
+          281.66
+        ],
+        "mainWrist": [
+          165,
+          350
+        ],
+        "mainEmitter": [
+          175.74,
+          332.92
+        ],
+        "offElbow": [
+          186.77,
+          243.43
+        ],
+        "offWrist": [
+          228,
+          300
+        ],
+        "offEmitter": [
+          217.69,
+          285.86
+        ],
+        "frontFoot": [
+          180,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -180,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 6,
+      "file": "frame-07.png",
+      "x": 3072,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "plannedAnchors": {
+        "waist": [
+          250,
+          285
+        ],
+        "head": [
+          245,
+          130
+        ],
+        "nearShoulder": [
+          290,
+          190
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          283.14,
+          260.85
+        ],
+        "mainWrist": [
+          300,
+          330
+        ],
+        "mainEmitter": [
+          295.78,
+          312.71
+        ],
+        "offElbow": [
+          196.77,
+          250.49
+        ],
+        "offWrist": [
+          205,
+          320
+        ],
+        "offEmitter": [
+          202.94,
+          302.62
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -180,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 7,
+      "file": "frame-08.png",
+      "x": 3584,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 150,
+      "plannedAnchors": {
+        "waist": [
+          258,
+          290
+        ],
+        "head": [
+          245,
+          130
+        ],
+        "nearShoulder": [
+          290,
+          190
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          283.14,
+          260.85
+        ],
+        "mainWrist": [
+          300,
+          330
+        ],
+        "mainEmitter": [
+          295.78,
+          312.71
+        ],
+        "offElbow": [
+          196.77,
+          250.49
+        ],
+        "offWrist": [
+          205,
+          320
+        ],
+        "offEmitter": [
+          202.94,
+          302.62
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -180,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    },
+    {
+      "index": 8,
+      "file": "frame-09.png",
+      "x": 4096,
+      "y": 0,
+      "width": 512,
+      "height": 512,
+      "durationMs": 1000,
+      "plannedAnchors": {
+        "waist": [
+          256,
+          280
+        ],
+        "head": [
+          245,
+          130
+        ],
+        "nearShoulder": [
+          290,
+          190
+        ],
+        "farShoulder": [
+          232,
+          190
+        ],
+        "mainElbow": [
+          264.02,
+          255
+        ],
+        "mainWrist": [
+          290,
+          320
+        ],
+        "mainEmitter": [
+          283.5,
+          303.75
+        ],
+        "offElbow": [
+          184.17,
+          241.11
+        ],
+        "offWrist": [
+          222,
+          300
+        ],
+        "offEmitter": [
+          212.54,
+          285.28
+        ],
+        "frontFoot": [
+          220,
+          448
+        ],
+        "rearFoot": [
+          310,
+          448
+        ],
+        "ringNodes": [
+          [
+            244,
+            80
+          ],
+          [
+            190,
+            148
+          ],
+          [
+            332,
+            148
+          ]
+        ],
+        "finRoots": [
+          [
+            270,
+            290
+          ],
+          [
+            300,
+            290
+          ]
+        ],
+        "fieldOffset": [
+          -180,
+          0
+        ]
+      },
+      "measuredAnchors": null,
+      "anchorMeasurement": null
+    }
+  ],
+  "source": [
+    "../../../source/G10-1.png",
+    "../../../source/G10-2.png",
+    "../../../source/G10-3.png"
+  ],
+  "endBehavior": "return-idle",
+  "terminal": false
+}
